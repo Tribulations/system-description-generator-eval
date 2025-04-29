@@ -2,7 +2,7 @@ import textwrap
 
 def get_task_introduction_prompt(metric_name):
     metric_name = metric_name.lower()
-    
+
     task_introduction = textwrap.dedent(f"""
     You will be given a high-level description of an existing software system. 
     This description is intended for developers who will maintain, extend, or contribute new code to the system. 
