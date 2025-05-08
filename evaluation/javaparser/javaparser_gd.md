@@ -1,6 +1,4 @@
-# This file contains the SDG-generated description for Javaparser
-
-javaparser = """System Description: Here's a structured summary of the JavaParser system based on the provided knowledge graph:
+System Description: Here's a structured summary of the JavaParser system based on the provided knowledge graph:
 
 1. System Purpose:
 JavaParser is a Java source code analysis and manipulation tool that provides capabilities to parse, analyze, and transform Java source code through an Abstract Syntax Tree (AST) representation.
@@ -39,4 +37,3 @@ Java Stream API
 Java Optional API
 Internal metamodel framework for reflection capabilities
 The system follows a clear hierarchical structure where Node serves as the foundation, with Expression and Statement extending it to provide specialized functionality for different Java language constructs. The implementation emphasizes type safety, immutability where appropriate, and extensible design through well-defined patterns.
-"""

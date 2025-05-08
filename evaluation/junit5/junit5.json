@@ -1,0 +1,110 @@
+{
+    "systemName" : "junit5",
+    "classes" : [ {
+      "name" : "CloseablePath",
+      "packageName" : "org.junit.jupiter.engine.extension",
+      "extendedClasses" : [ ],
+      "implementedInterfaces" : [ "AutoCloseable", "Closeable", "CloseableResource" ],
+      "methods" : [ {
+        "name" : "close",
+        "visibility" : "public",
+        "methodCalls" : [ "trace", "info", "delete", "name", "isEmpty", "getOrDefault", "getStore", "put", "getContextSpecificStore", "selfOrChildFailed", "format", "flush", "launcherSessionClosed", "awaitTermination", "shutdown", "shutdownNow", "getExtensionContext", "getValue", "sorted", "forEach", "execute", "assertEmpty", "evaluateSafely", "entrySet", "getKey", "map", "filter", "stream", "release", "compareAndSet", "close" ]
+      }, {
+        "name" : "getPath",
+        "visibility" : "public",
+        "methodCalls" : [ "get" ]
+      } ],
+      "imports" : [ "org.junit.jupiter.api.io.CleanupMode.DEFAULT", "org.junit.platform.commons.util.Preconditions", "org.junit.jupiter.engine.config.EnumConfigurationParameterConverter", "org.junit.platform.commons.PreconditionViolationException", "org.junit.platform.commons.util.ReflectionUtils.isRecordObject", "org.junit.platform.commons.support.ReflectionSupport.makeAccessible", "java.util.function.Predicate", "org.junit.jupiter.engine.config.JupiterConfiguration", "java.lang.reflect.Parameter", "java.nio.file.Files", "org.junit.jupiter.api.io.CleanupMode", "org.junit.platform.commons.support.ModifierSupport", "java.nio.file.FileVisitResult", "org.junit.platform.commons.util.ToStringBuilder", "org.junit.jupiter.api.io.TempDir", "org.junit.platform.commons.logging.LoggerFactory", "org.junit.jupiter.api.extension.TestInstantiationAwareExtension.ExtensionContextScope.TEST_METHOD", "java.util.Collections", "java.lang.reflect.Constructor", "java.io.File", "org.junit.platform.commons.util.ClassUtils", "org.junit.jupiter.api.extension.BeforeEachCallback", "java.nio.file.DirectoryNotEmptyException", "org.junit.jupiter.api.extension.ExtensionContext", "java.util.function.Function", "java.util.Collections.emptyMap", "java.util.concurrent.atomic.AtomicInteger", "java.net.URISyntaxException", "java.net.URI", "java.nio.file.Path", "java.util.concurrent.atomic.AtomicBoolean", "java.nio.file.FileSystem", "java.nio.file.Paths", "java.nio.file.FileSystems", "java.io.UncheckedIOException", "java.util.concurrent.ConcurrentMap", "java.util.concurrent.ConcurrentHashMap", "java.io.Closeable", "java.io.IOException", "java.nio.file.NoSuchFileException", "java.nio.file.FileVisitResult.CONTINUE", "java.lang.reflect.Field", "org.junit.platform.commons.support.AnnotationSupport.findAnnotation", "org.junit.platform.commons.logging.Logger", "java.util.stream.Collectors.joining", "java.nio.file.SimpleFileVisitor", "org.junit.jupiter.api.extension.ExtensionContext.Namespace", "org.junit.platform.commons.JUnitException", "java.nio.file.FileVisitResult.SKIP_SUBTREE", "java.util.TreeMap", "org.junit.jupiter.api.extension.ParameterContext", "org.junit.platform.commons.util.ExceptionUtils", "org.junit.jupiter.api.extension.ParameterResolver", "org.junit.jupiter.api.extension.ExtensionConfigurationException", "java.lang.reflect.Executable", "java.nio.file.attribute.DosFileAttributeView", "org.junit.platform.commons.support.ReflectionSupport", "org.junit.platform.commons.support.AnnotationSupport.findAnnotatedFields", "java.util.HashSet", "java.util.SortedMap", "org.junit.jupiter.api.io.TempDirFactory", "java.lang.reflect.AnnotatedElement", "java.nio.file.attribute.BasicFileAttributes", "java.nio.file.LinkOption", "org.junit.jupiter.api.extension.ExtensionContext.Store", "org.junit.jupiter.api.extension.BeforeAllCallback", "org.junit.jupiter.api.io.CleanupMode.NEVER", "org.junit.jupiter.api.extension.AnnotatedElementContext", "org.junit.jupiter.api.io.CleanupMode.ON_SUCCESS", "java.util.Set" ]
+    }, {
+      "name" : "SuiteLauncherDiscoveryRequestBuilder",
+      "packageName" : "org.junit.platform.suite.commons",
+      "extendedClasses" : [ ],
+      "implementedInterfaces" : [ ],
+      "methods" : [ {
+        "name" : "applySelectorsAndFiltersFromSuite",
+        "visibility" : "public",
+        "methodCalls" : [ "notNull" ]
+      }, {
+        "name" : "configurationParameter",
+        "visibility" : "public",
+        "methodCalls" : [ "put", "notBlank", "configurationParameter" ]
+      }, {
+        "name" : "enableImplicitConfigurationParameters",
+        "visibility" : "public",
+        "methodCalls" : [ "enableImplicitConfigurationParameters" ]
+      }, {
+        "name" : "parentConfigurationParameters",
+        "visibility" : "public",
+        "methodCalls" : [ "notNull" ]
+      }, {
+        "name" : "outputDirectoryProvider",
+        "visibility" : "public",
+        "methodCalls" : [ "notNull", "outputDirectoryProvider" ]
+      }, {
+        "name" : "build",
+        "visibility" : "public",
+        "methodCalls" : [ "parentConfigurationParameters", "build", "filters" ]
+      }, {
+        "name" : "configurationParametersResource",
+        "visibility" : "public",
+        "methodCalls" : [ "configurationParametersResources" ]
+      }, {
+        "name" : "applyConfigurationParametersFromSuite",
+        "visibility" : "public",
+        "methodCalls" : [ "configurationParametersResource", "configurationParameter", "notNull", "findRepeatableAnnotations", "findAnnotation", "ifPresent", "value", "key", "forEach" ]
+      }, {
+        "name" : "filters",
+        "visibility" : "public",
+        "methodCalls" : [ "stream", "containsNoNullElements", "notNull", "forEach", "filters" ]
+      }, {
+        "name" : "selectors",
+        "visibility" : "public",
+        "methodCalls" : [ "asList", "notNull", "addAll", "emptySet", "notEmpty", "containsNoNullElements", "selectors" ]
+      }, {
+        "name" : "listener",
+        "visibility" : "public",
+        "methodCalls" : [ "listeners" ]
+      }, {
+        "name" : "suite",
+        "visibility" : "public",
+        "methodCalls" : [ "applyConfigurationParametersFromSuite", "applySelectorsAndFiltersFromSuite", "notNull" ]
+      }, {
+        "name" : "request",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "filterStandardClassNamePatterns",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "configurationParameters",
+        "visibility" : "public",
+        "methodCalls" : [ "notNull", "forEach", "configurationParameters" ]
+      } ],
+      "imports" : [ "org.junit.platform.engine.DiscoverySelector", "org.junit.platform.launcher.core.LauncherDiscoveryRequestBuilder", "org.junit.platform.suite.api.SelectPackages", "org.junit.platform.suite.api.IncludeClassNamePatterns", "java.util.LinkedHashSet", "java.lang.reflect.AnnotatedElement", "org.junit.platform.suite.api.ExcludePackages", "org.junit.platform.commons.support.AnnotationSupport.findAnnotation", "org.junit.platform.suite.api.SelectUris", "java.lang.annotation.Annotation", "org.junit.platform.engine.reporting.OutputDirectoryProvider", "org.junit.platform.suite.api.DisableParentConfigurationParameters", "org.junit.platform.suite.api.SelectMethod", "java.util.function.Function", "org.apiguardian.api.API", "org.junit.platform.suite.api.SelectClasses", "java.util.List", "org.junit.platform.suite.api.IncludeTags", "java.util.regex.Pattern", "org.junit.platform.launcher.LauncherDiscoveryListener", "java.util.Map", "org.junit.platform.engine.discovery.ClassSelector", "java.util.Optional", "org.junit.platform.engine.discovery.ClassNameFilter", "java.util.stream.Stream", "java.util.Arrays", "org.junit.platform.engine.Filter", "org.junit.platform.engine.discovery.MethodSelector", "org.junit.platform.engine.discovery.PackageNameFilter", "org.junit.platform.commons.support.AnnotationSupport.findRepeatableAnnotations", "org.junit.platform.suite.api.ConfigurationParameter", "org.junit.platform.launcher.LauncherDiscoveryRequest", "org.junit.platform.suite.api.IncludeEngines", "org.junit.platform.suite.api.SelectFile", "org.junit.platform.suite.commons.AdditionalDiscoverySelectors.selectClasspathResource", "org.junit.platform.suite.commons.AdditionalDiscoverySelectors.selectFile", "org.junit.platform.suite.api.ExcludeClassNamePatterns", "org.junit.platform.commons.util.Preconditions", "org.junit.platform.suite.api.SelectModules", "org.apiguardian.api.API.Status.INTERNAL", "org.junit.platform.engine.discovery.DiscoverySelectors", "org.junit.platform.engine.discovery.ClassNameFilter.STANDARD_INCLUDE_PATTERN", "java.util.stream.Collectors.toList", "org.junit.platform.suite.api.SelectClasspathResource", "org.junit.platform.engine.ConfigurationParameters", "org.junit.platform.launcher.TagFilter", "org.junit.platform.launcher.EngineFilter", "org.junit.platform.suite.api.Select", "org.junit.platform.suite.api.IncludePackages", "org.junit.platform.suite.api.ConfigurationParametersResource", "org.junit.platform.commons.util.StringUtils", "org.junit.platform.suite.api.ExcludeTags", "org.junit.platform.suite.api.ExcludeEngines", "java.util.Set", "org.junit.platform.suite.api.SelectDirectories" ]
+    }, {
+      "name" : "FieldContext",
+      "packageName" : "org.junit.jupiter.engine.extension",
+      "extendedClasses" : [ "AnnotatedElementContext" ],
+      "implementedInterfaces" : [ "AnnotatedElementContext" ],
+      "methods" : [ {
+        "name" : "toString",
+        "visibility" : "public",
+        "methodCalls" : [ "toString", "substring", "toLowerCase", "endsWith", "name", "length", "getMethod", "get", "getTestClass", "getMethodName", "getParameterTypeNames", "toGenericString", "getClassName", "append", "getName", "orElse", "getOnlyElement", "forEach", "joining", "map", "collect", "stream", "format", "getColumn", "getSimpleName", "getClass", "getEnclosingClassNames", "getClassLoader", "getNestedClassName" ]
+      }, {
+        "name" : "getParameterIndex",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "getField",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "getAnnotatedElement",
+        "visibility" : "public",
+        "methodCalls" : [ "getParameter" ]
+      } ],
+      "imports" : [ "java.util.Collections", "java.nio.file.Paths", "java.util.SortedMap", "org.junit.platform.commons.logging.Logger", "org.junit.jupiter.api.io.TempDir", "java.util.function.Predicate", "org.junit.platform.commons.util.ToStringBuilder", "java.lang.reflect.Parameter", "java.nio.file.FileSystems", "java.nio.file.SimpleFileVisitor", "org.junit.platform.commons.logging.LoggerFactory", "org.junit.jupiter.api.extension.BeforeEachCallback", "java.util.HashSet", "org.junit.jupiter.api.extension.ParameterContext", "org.junit.jupiter.api.extension.ExtensionContext.Namespace", "org.junit.platform.commons.support.AnnotationSupport.findAnnotation", "java.nio.file.DirectoryNotEmptyException", "java.util.stream.Collectors.joining", "org.apiguardian.api.API", "org.apiguardian.api.API.Status.EXPERIMENTAL", "org.junit.jupiter.api.extension.AnnotatedElementContext", "org.junit.jupiter.params.ParameterizedClass", "org.junit.jupiter.params.Parameter", "java.lang.reflect.Field", "org.junit.jupiter.api.io.CleanupMode", "org.junit.jupiter.api.extension.ExtensionContext.Store", "java.nio.file.Path", "org.junit.jupiter.api.io.CleanupMode.NEVER", "java.util.TreeMap", "org.junit.jupiter.api.extension.TestInstantiationAwareExtension.ExtensionContextScope.TEST_METHOD", "org.junit.jupiter.api.extension.ExtensionContext", "java.lang.reflect.Constructor", "org.junit.platform.commons.util.Preconditions", "org.junit.platform.commons.PreconditionViolationException", "org.junit.jupiter.api.io.TempDirFactory", "org.junit.platform.commons.util.ReflectionUtils.isRecordObject", "org.junit.platform.commons.util.ExceptionUtils", "org.junit.platform.commons.support.ReflectionSupport.makeAccessible", "org.junit.platform.commons.support.ModifierSupport", "org.junit.jupiter.engine.config.JupiterConfiguration", "java.nio.file.FileVisitResult", "org.junit.platform.commons.JUnitException", "org.junit.jupiter.api.extension.ExtensionConfigurationException", "java.io.IOException", "java.nio.file.FileVisitResult.SKIP_SUBTREE", "java.nio.file.attribute.DosFileAttributeView", "java.nio.file.FileVisitResult.CONTINUE", "org.junit.platform.commons.support.AnnotationSupport.findAnnotatedFields", "org.junit.jupiter.api.extension.BeforeAllCallback", "java.nio.file.NoSuchFileException", "org.junit.platform.commons.support.ReflectionSupport", "org.junit.jupiter.api.extension.ParameterResolver", "java.io.File", "java.util.Set", "org.junit.jupiter.api.io.CleanupMode.ON_SUCCESS", "org.junit.platform.commons.util.ClassUtils", "java.lang.reflect.AnnotatedElement", "java.lang.reflect.Executable", "java.nio.file.attribute.BasicFileAttributes", "org.junit.jupiter.engine.config.EnumConfigurationParameterConverter", "java.nio.file.Files", "org.junit.jupiter.api.io.CleanupMode.DEFAULT", "java.nio.file.LinkOption" ]
+    } ]
+  }
+  

@@ -1,0 +1,1537 @@
+{
+    "systemName" : "javaparser",
+    "classes" : [ {
+      "name" : "Expression",
+      "packageName" : "com.github.javaparser.ast.expr",
+      "extendedClasses" : [ "Node" ],
+      "implementedInterfaces" : [ ],
+      "methods" : [ {
+        "name" : "isNullLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "ifPatternExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "isPolyExpression",
+        "visibility" : "public",
+        "methodCalls" : [ "isUsingDiamondOperator", "isPolyExpression", "getInner", "isQualified", "getReturnType", "appearsInInvocationContext", "appearsInAssignmentContext", "elidesTypeArguments", "resolve" ]
+      }, {
+        "name" : "asLiteralStringValueExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "f", "getSimpleName", "getClass" ]
+      }, {
+        "name" : "toSuperExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "asVariableDeclarationExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "getClass", "f", "getSimpleName" ]
+      }, {
+        "name" : "isBinaryExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "asAnnotationExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "getSimpleName", "f", "getClass" ]
+      }, {
+        "name" : "ifAnnotationExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "ifAssignExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "asNormalAnnotationExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "f", "getSimpleName", "getClass" ]
+      }, {
+        "name" : "asLongLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "getClass", "getSimpleName", "f" ]
+      }, {
+        "name" : "toArrayAccessExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "toObjectCreationExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "isMethodReferenceExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "asThisExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "f", "getClass", "getSimpleName" ]
+      }, {
+        "name" : "ifNormalAnnotationExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "toLongLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "asTypePatternExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "getClass", "f", "getSimpleName" ]
+      }, {
+        "name" : "asObjectCreationExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "f", "getClass", "getSimpleName" ]
+      }, {
+        "name" : "toLiteralStringValueExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "asLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "f", "getClass", "getSimpleName" ]
+      }, {
+        "name" : "ifLambdaExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "asTextBlockLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "getClass", "getSimpleName", "f" ]
+      }, {
+        "name" : "ifCastExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "isCastExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "ifVariableDeclarationExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "isClassExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "toAssignExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "isBooleanLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "isFieldAccessExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "ifArrayCreationExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "toAnnotationExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "ifCharLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "ifStringLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "isVariableDeclarationExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "isStringLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "appearsInAssignmentContext",
+        "visibility" : "public",
+        "methodCalls" : [ "getParentNode", "isAssignmentContext", "isPresent", "get" ]
+      }, {
+        "name" : "toSingleMemberAnnotationExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "toIntegerLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "ifMethodReferenceExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "ifUnaryExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "ifMarkerAnnotationExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "ifTypeExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "asSingleMemberAnnotationExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "getClass", "getSimpleName", "f" ]
+      }, {
+        "name" : "toSwitchExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "toRecordPatternExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "isLiteralStringValueExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "asLambdaExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "getClass", "getSimpleName", "f" ]
+      }, {
+        "name" : "ifFieldAccessExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "asSuperExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "getClass", "f", "getSimpleName" ]
+      }, {
+        "name" : "isLambdaExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "isPatternExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "isConditionalExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "asClassExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "getSimpleName", "getClass", "f" ]
+      }, {
+        "name" : "ifMethodCallExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "ifDoubleLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "ifIntegerLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "asNameExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "getClass", "f", "getSimpleName" ]
+      }, {
+        "name" : "toLambdaExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "ifArrayAccessExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "toFieldAccessExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "isLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "ifSuperExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "ifRecordPatternExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "appearsInInvocationContext",
+        "visibility" : "public",
+        "methodCalls" : [ "get", "isInvocationContext", "getParentNode", "isPresent" ]
+      }, {
+        "name" : "asInstanceOfExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "getSimpleName", "getClass", "f" ]
+      }, {
+        "name" : "toTypePatternExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "asNullLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "f", "getSimpleName", "getClass" ]
+      }, {
+        "name" : "getMetaModel",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "asMarkerAnnotationExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "getClass", "f", "getSimpleName" ]
+      }, {
+        "name" : "calculateResolvedType",
+        "visibility" : "public",
+        "methodCalls" : [ "calculateType", "getSymbolResolver" ]
+      }, {
+        "name" : "isSingleMemberAnnotationExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "ifEnclosedExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "asArrayAccessExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "getClass", "getSimpleName", "f" ]
+      }, {
+        "name" : "clone",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "asFieldAccessExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "getSimpleName", "f", "getClass" ]
+      }, {
+        "name" : "isIntegerLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "asCharLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "getClass", "getSimpleName", "f" ]
+      }, {
+        "name" : "isStandaloneExpression",
+        "visibility" : "public",
+        "methodCalls" : [ "isPolyExpression" ]
+      }, {
+        "name" : "toCharLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "ifInstanceOfExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "toClassExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "empty", "of" ]
+      }, {
+        "name" : "isUnaryExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "isLongLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "isArrayInitializerExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "asBooleanLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "getClass", "getSimpleName", "f" ]
+      }, {
+        "name" : "ifLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "ifObjectCreationExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "isSwitchExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "toEnclosedExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "toPatternExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "toArrayCreationExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "asRecordPatternExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "getClass", "getSimpleName", "f" ]
+      }, {
+        "name" : "asCastExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "f", "getClass", "getSimpleName" ]
+      }, {
+        "name" : "isCharLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "asTypeExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "getClass", "getSimpleName", "f" ]
+      }, {
+        "name" : "asPatternExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "getClass", "getSimpleName", "f" ]
+      }, {
+        "name" : "toThisExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "toCastExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "toNameExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "isAssignExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "isTypePatternExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "isEnclosedExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "ifBooleanLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "isTextBlockLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "toConditionalExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "asDoubleLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "getSimpleName", "f", "getClass" ]
+      }, {
+        "name" : "isInstanceOfExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "isArrayCreationExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "isNormalAnnotationExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "ifConditionalExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "toInstanceOfExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "asStringLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "getClass", "f", "getSimpleName" ]
+      }, {
+        "name" : "toDoubleLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "toNormalAnnotationExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "elidesTypeArguments",
+        "visibility" : "public",
+        "methodCalls" : [ "get", "isUsingDiamondOperator", "isPresent", "hasScope", "elidesTypeArguments", "getScope", "getTypeArguments" ]
+      }, {
+        "name" : "ifSwitchExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "toBinaryExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "isAnnotationExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "asAssignExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "getSimpleName", "f", "getClass" ]
+      }, {
+        "name" : "ifLiteralStringValueExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "asArrayCreationExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "f", "getSimpleName", "getClass" ]
+      }, {
+        "name" : "toMethodCallExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "isTypeExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "asMethodCallExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "f", "getClass", "getSimpleName" ]
+      }, {
+        "name" : "asArrayInitializerExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "getSimpleName", "f", "getClass" ]
+      }, {
+        "name" : "toNullLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "asConditionalExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "getClass", "f", "getSimpleName" ]
+      }, {
+        "name" : "ifSingleMemberAnnotationExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "ifTextBlockLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "toMarkerAnnotationExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "toMethodReferenceExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "ifArrayInitializerExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "isMarkerAnnotationExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "isArrayAccessExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "asEnclosedExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "getSimpleName", "getClass", "f" ]
+      }, {
+        "name" : "isDoubleLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "ifLongLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "toTypeExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "isSuperExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "asUnaryExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "f", "getClass", "getSimpleName" ]
+      }, {
+        "name" : "asSwitchExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "getClass", "f", "getSimpleName" ]
+      }, {
+        "name" : "asBinaryExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "getSimpleName", "getClass", "f" ]
+      }, {
+        "name" : "isObjectCreationExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "toVariableDeclarationExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "ifTypePatternExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "toUnaryExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "asMethodReferenceExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "getSimpleName", "f", "getClass" ]
+      }, {
+        "name" : "isQualified",
+        "visibility" : "public",
+        "methodCalls" : [ "hasScope" ]
+      }, {
+        "name" : "ifBinaryExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "toLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "toArrayInitializerExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "ifClassExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "toBooleanLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "isMethodCallExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "ifNameExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "toStringLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      }, {
+        "name" : "ifNullLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "isThisExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "isRecordPatternExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "asIntegerLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "f", "getClass", "getSimpleName" ]
+      }, {
+        "name" : "ifThisExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "isNameExpr",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "toTextBlockLiteralExpr",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "empty" ]
+      } ],
+      "imports" : [ "com.github.javaparser.metamodel.JavaParserMetaModel", "com.github.javaparser.resolution.types.ResolvedType", "com.github.javaparser.ast.Generated", "com.github.javaparser.metamodel.ExpressionMetaModel", "com.github.javaparser.ast.AllFieldsConstructor", "com.github.javaparser.TokenRange", "com.github.javaparser.ast.nodeTypes.NodeWithOptionalScope", "com.github.javaparser.ast.nodeTypes.NodeWithTypeArguments", "com.github.javaparser.ast.visitor.CloneVisitor", "java.util.Optional", "com.github.javaparser.ast.Node", "com.github.javaparser.utils.CodeGenerationUtils.f", "java.util.function.Consumer", "java.util.function.Function", "java.util.function.Predicate" ]
+    }, {
+      "name" : "GeneratedJavaParser",
+      "packageName" : "com.github.javaparser",
+      "extendedClasses" : [ "GeneratedJavaParserBase" ],
+      "implementedInterfaces" : [ "GeneratedJavaParserConstants" ],
+      "methods" : [ {
+        "name" : "enable_tracing",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "StatementExpression",
+        "visibility" : "public",
+        "methodCalls" : [ "token", "PrimaryExpression", "Expression", "AssignmentOperator", "PreIncrementExpression", "PreDecrementExpression", "range" ]
+      }, {
+        "name" : "TypeParameters",
+        "visibility" : "public",
+        "methodCalls" : [ "add", "Annotations", "endAt", "token", "TypeParameter", "beginAt" ]
+      }, {
+        "name" : "ClassOrInterfaceBody",
+        "visibility" : "public",
+        "methodCalls" : [ "emptyNodeList", "ClassOrInterfaceBodyDeclaration", "add" ]
+      }, {
+        "name" : "CompilationUnit",
+        "visibility" : "public",
+        "methodCalls" : [ "emptyNodeList", "add", "EnumDeclaration", "token", "getHomeToken", "ImportDeclaration", "Modifiers", "ModuleDeclaration", "recover", "range", "AnnotationTypeDeclaration", "PackageDeclaration", "RecordDeclaration", "ClassOrInterfaceDeclaration", "setParsed" ]
+      }, {
+        "name" : "InclusiveOrExpression",
+        "visibility" : "public",
+        "methodCalls" : [ "range", "token", "ExclusiveOrExpression" ]
+      }, {
+        "name" : "PackageDeclarationParseStart",
+        "visibility" : "public",
+        "methodCalls" : [ "PackageDeclaration" ]
+      }, {
+        "name" : "AnnotationParseStart",
+        "visibility" : "public",
+        "methodCalls" : [ "Annotation" ]
+      }, {
+        "name" : "Resource",
+        "visibility" : "public",
+        "methodCalls" : [ "PrimaryExpression", "VariableDeclarationExpression" ]
+      }, {
+        "name" : "ForStatement",
+        "visibility" : "public",
+        "methodCalls" : [ "emptyNodeList", "Statement", "Expression", "ForUpdate", "VariableDeclarationExpression", "ForInit", "token", "range" ]
+      }, {
+        "name" : "MemberValueArrayInitializer",
+        "visibility" : "public",
+        "methodCalls" : [ "token", "emptyNodeList", "add", "MemberValue", "range" ]
+      }, {
+        "name" : "ClassOrInterfaceBodyDeclaration",
+        "visibility" : "public",
+        "methodCalls" : [ "Modifiers", "AnnotationTypeDeclaration", "ClassOrInterfaceDeclaration", "InitializerDeclaration", "MethodDeclaration", "EnumDeclaration", "RecordDeclaration", "FieldDeclaration", "ConstructorDeclaration" ]
+      }, {
+        "name" : "MemberValuePairs",
+        "visibility" : "public",
+        "methodCalls" : [ "add", "MemberValuePair" ]
+      }, {
+        "name" : "PrimaryExpression",
+        "visibility" : "public",
+        "methodCalls" : [ "PrimaryPrefix", "PrimarySuffix" ]
+      }, {
+        "name" : "Expression",
+        "visibility" : "public",
+        "methodCalls" : [ "ConditionalExpression", "range", "Identifier", "TypeArguments", "token", "LambdaBody", "generateLambda", "Expression", "AssignmentOperator" ]
+      }, {
+        "name" : "BlockStatement",
+        "visibility" : "public",
+        "methodCalls" : [ "VariableDeclarationExpression", "token", "Modifiers", "YieldStatement", "ClassOrInterfaceDeclaration", "recoverStatement", "RecordDeclaration", "range", "Statement" ]
+      }, {
+        "name" : "RecordBodyDeclaration",
+        "visibility" : "public",
+        "methodCalls" : [ "ConstructorDeclaration", "FieldDeclaration", "RecordDeclaration", "EnumDeclaration", "InitializerDeclaration", "AnnotationTypeDeclaration", "Modifiers", "CompactConstructorDeclaration", "MethodDeclaration", "ClassOrInterfaceDeclaration" ]
+      }, {
+        "name" : "ArrayBracketPair",
+        "visibility" : "public",
+        "methodCalls" : [ "Annotations", "token", "orIfInvalid", "range" ]
+      }, {
+        "name" : "InitializerDeclaration",
+        "visibility" : "public",
+        "methodCalls" : [ "range", "orIfInvalid", "Block", "token" ]
+      }, {
+        "name" : "Type",
+        "visibility" : "public",
+        "methodCalls" : [ "PrimitiveType", "ReferenceType" ]
+      }, {
+        "name" : "ImportDeclarationParseStart",
+        "visibility" : "public",
+        "methodCalls" : [ "ImportDeclaration" ]
+      }, {
+        "name" : "PrimaryPrefix",
+        "visibility" : "public",
+        "methodCalls" : [ "range", "ResultType", "AllocationExpression", "TypeArguments", "Identifier", "SimpleName", "token", "tokenRange", "Expression", "emptyNodeList", "InferredLambdaParameters", "AnnotatedType", "Literal", "Arguments", "LambdaParameters" ]
+      }, {
+        "name" : "AnnotationTypeDeclaration",
+        "visibility" : "public",
+        "methodCalls" : [ "orIfInvalid", "SimpleName", "AnnotationTypeBody", "token", "range", "emptyNodeList" ]
+      }, {
+        "name" : "ReferenceType",
+        "visibility" : "public",
+        "methodCalls" : [ "PrimitiveType", "ArrayBracketPair", "wrapInArrayTypes", "ClassOrInterfaceType", "add" ]
+      }, {
+        "name" : "BreakStatement",
+        "visibility" : "public",
+        "methodCalls" : [ "token", "SimpleName", "range" ]
+      }, {
+        "name" : "ForUpdate",
+        "visibility" : "public",
+        "methodCalls" : [ "ExpressionList" ]
+      }, {
+        "name" : "ParameterParseStart",
+        "visibility" : "public",
+        "methodCalls" : [ "Parameter" ]
+      }, {
+        "name" : "AdditiveExpression",
+        "visibility" : "public",
+        "methodCalls" : [ "token", "range", "MultiplicativeExpression" ]
+      }, {
+        "name" : "PatternList",
+        "visibility" : "public",
+        "methodCalls" : [ "add", "PatternExpression" ]
+      }, {
+        "name" : "CastExpression",
+        "visibility" : "public",
+        "methodCalls" : [ "PrimitiveType", "AnnotatedReferenceType", "range", "size", "get", "ReferenceType", "emptyNodeList", "token", "add", "UnaryExpressionNotPlusMinus", "Annotations", "UnaryExpression" ]
+      }, {
+        "name" : "PrimaryExpressionWithoutSuperSuffix",
+        "visibility" : "public",
+        "methodCalls" : [ "PrimaryPrefix", "PrimarySuffixWithoutSuper" ]
+      }, {
+        "name" : "AndExpression",
+        "visibility" : "public",
+        "methodCalls" : [ "EqualityExpression", "range", "token" ]
+      }, {
+        "name" : "AnnotatedClassOrInterfaceType",
+        "visibility" : "public",
+        "methodCalls" : [ "ClassOrInterfaceType", "Annotations" ]
+      }, {
+        "name" : "PreIncrementExpression",
+        "visibility" : "public",
+        "methodCalls" : [ "UnaryExpression", "range", "token" ]
+      }, {
+        "name" : "VariableInitializer",
+        "visibility" : "public",
+        "methodCalls" : [ "Expression", "ArrayInitializer" ]
+      }, {
+        "name" : "AnnotationBodyDeclaration",
+        "visibility" : "public",
+        "methodCalls" : [ "Modifiers", "AnnotationTypeMemberDeclaration", "FieldDeclaration", "ClassOrInterfaceDeclaration", "RecordDeclaration", "EnumDeclaration", "AnnotationTypeDeclaration" ]
+      }, {
+        "name" : "PackageDeclaration",
+        "visibility" : "public",
+        "methodCalls" : [ "Annotation", "add", "orIfInvalid", "token", "Name", "range" ]
+      }, {
+        "name" : "ExpressionList",
+        "visibility" : "public",
+        "methodCalls" : [ "Expression", "add" ]
+      }, {
+        "name" : "SwitchStatement",
+        "visibility" : "public",
+        "methodCalls" : [ "SwitchEntry", "emptyNodeList", "range", "Expression", "token", "add" ]
+      }, {
+        "name" : "ExpressionParseStart",
+        "visibility" : "public",
+        "methodCalls" : [ "Expression" ]
+      }, {
+        "name" : "SimpleNameParseStart",
+        "visibility" : "public",
+        "methodCalls" : [ "SimpleName" ]
+      }, {
+        "name" : "SwitchEntryExpression",
+        "visibility" : "public",
+        "methodCalls" : [ "withEnd", "getTokenRange", "token", "orElse", "Expression" ]
+      }, {
+        "name" : "InferredLambdaParameters",
+        "visibility" : "public",
+        "methodCalls" : [ "add", "VariableDeclaratorId", "emptyNodeList", "range" ]
+      }, {
+        "name" : "SimpleName",
+        "visibility" : "public",
+        "methodCalls" : [ "Identifier", "tokenRange" ]
+      }, {
+        "name" : "ModuleDeclaration",
+        "visibility" : "public",
+        "methodCalls" : [ "range", "orIfInvalid", "token", "ModuleDirective", "add", "Name" ]
+      }, {
+        "name" : "Wildcard",
+        "visibility" : "public",
+        "methodCalls" : [ "ReferenceType", "range", "Annotations", "token" ]
+      }, {
+        "name" : "EqualityExpression",
+        "visibility" : "public",
+        "methodCalls" : [ "range", "token", "InstanceOfExpression" ]
+      }, {
+        "name" : "getNextToken",
+        "visibility" : "public",
+        "methodCalls" : [ "ofNullable", "getNextToken", "getEndLine", "readChar", "getEndColumn", "backup", "TokenLexicalActions", "getImage", "MoreLexicalActions", "beginToken", "setLength", "jjFillToken", "SkipLexicalActions" ]
+      }, {
+        "name" : "UnaryExpressionNotPlusMinus",
+        "visibility" : "public",
+        "methodCalls" : [ "UnaryExpression", "SwitchExpression", "range", "CastExpression", "PostfixExpression", "token" ]
+      }, {
+        "name" : "PermitsList",
+        "visibility" : "public",
+        "methodCalls" : [ "AnnotatedClassOrInterfaceType", "add" ]
+      }, {
+        "name" : "Annotation",
+        "visibility" : "public",
+        "methodCalls" : [ "emptyNodeList", "MemberValuePairs", "range", "Name", "token", "MemberValue" ]
+      }, {
+        "name" : "BlockStatementParseStart",
+        "visibility" : "public",
+        "methodCalls" : [ "BlockStatement", "ExplicitConstructorInvocation" ]
+      }, {
+        "name" : "AssertStatement",
+        "visibility" : "public",
+        "methodCalls" : [ "Expression", "range", "token" ]
+      }, {
+        "name" : "TypeParameterParseStart",
+        "visibility" : "public",
+        "methodCalls" : [ "Annotations", "TypeParameter" ]
+      }, {
+        "name" : "ArrayInitializer",
+        "visibility" : "public",
+        "methodCalls" : [ "VariableInitializer", "add", "emptyNodeList", "range", "token" ]
+      }, {
+        "name" : "ModuleDirective",
+        "visibility" : "public",
+        "methodCalls" : [ "Modifiers", "emptyNodeList", "getText", "range", "Name", "setTokenKind", "token", "add" ]
+      }, {
+        "name" : "PrimarySuffix",
+        "visibility" : "public",
+        "methodCalls" : [ "PrimarySuffixWithoutSuper", "scopeToName", "token", "range" ]
+      }, {
+        "name" : "TypeParameter",
+        "visibility" : "public",
+        "methodCalls" : [ "SimpleName", "TypeBound", "token", "emptyNodeList", "range" ]
+      }, {
+        "name" : "AnnotatedReferenceType",
+        "visibility" : "public",
+        "methodCalls" : [ "Annotations", "ReferenceType" ]
+      }, {
+        "name" : "WhileStatement",
+        "visibility" : "public",
+        "methodCalls" : [ "Expression", "Statement", "range", "token" ]
+      }, {
+        "name" : "RSIGNEDSHIFT",
+        "visibility" : "public",
+        "methodCalls" : [ "getToken" ]
+      }, {
+        "name" : "TypeArgument",
+        "visibility" : "public",
+        "methodCalls" : [ "Annotations", "Type", "Wildcard" ]
+      }, {
+        "name" : "CompactConstructorDeclaration",
+        "visibility" : "public",
+        "methodCalls" : [ "orIfInvalid", "SimpleName", "range", "add", "ExplicitConstructorInvocation", "getBegin", "TypeParameters", "token", "Statements", "prepend", "emptyNodeList", "AnnotatedReferenceType" ]
+      }, {
+        "name" : "ConditionalOrExpression",
+        "visibility" : "public",
+        "methodCalls" : [ "range", "ConditionalAndExpression", "token" ]
+      }, {
+        "name" : "VariableDeclarationExpressionParseStart",
+        "visibility" : "public",
+        "methodCalls" : [ "VariableDeclarationExpression" ]
+      }, {
+        "name" : "EnumConstantDeclaration",
+        "visibility" : "public",
+        "methodCalls" : [ "add", "Arguments", "emptyNodeList", "token", "SimpleName", "range", "orIfInvalid", "ClassOrInterfaceBody", "Annotation" ]
+      }, {
+        "name" : "DoStatement",
+        "visibility" : "public",
+        "methodCalls" : [ "Expression", "range", "Statement", "token" ]
+      }, {
+        "name" : "ResultTypeParseStart",
+        "visibility" : "public",
+        "methodCalls" : [ "ResultType", "Annotations" ]
+      }, {
+        "name" : "Literal",
+        "visibility" : "public",
+        "methodCalls" : [ "NullLiteral", "BooleanLiteral", "unTripleQuote", "tokenRange", "unquote" ]
+      }, {
+        "name" : "PatternExpression",
+        "visibility" : "public",
+        "methodCalls" : [ "RecordPatternExpression", "TypePatternExpression" ]
+      }, {
+        "name" : "RecordBody",
+        "visibility" : "public",
+        "methodCalls" : [ "RecordBodyDeclaration", "add", "emptyNodeList" ]
+      }, {
+        "name" : "DefaultValue",
+        "visibility" : "public",
+        "methodCalls" : [ "MemberValue" ]
+      }, {
+        "name" : "ClassOrInterfaceTypeParseStart",
+        "visibility" : "public",
+        "methodCalls" : [ "AnnotatedClassOrInterfaceType" ]
+      }, {
+        "name" : "ModuleDirectiveParseStart",
+        "visibility" : "public",
+        "methodCalls" : [ "ModuleDirective" ]
+      }, {
+        "name" : "MethodDeclaration",
+        "visibility" : "public",
+        "methodCalls" : [ "AnnotatedReferenceType", "SimpleName", "nodeListBegin", "range", "Parameters", "juggleArrayType", "addAll", "ResultType", "add", "orIfInvalid", "ArrayBracketPair", "Annotations", "getBegin", "emptyNodeList", "token", "TypeParameters", "Block" ]
+      }, {
+        "name" : "VariableDeclaratorId",
+        "visibility" : "public",
+        "methodCalls" : [ "add", "getTokenRange", "get", "token", "setTokenRange", "ArrayBracketPair", "SimpleName", "withEnd" ]
+      }, {
+        "name" : "ExplicitConstructorInvocationParseStart",
+        "visibility" : "public",
+        "methodCalls" : [ "ExplicitConstructorInvocation" ]
+      }, {
+        "name" : "disable_tracing",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "AnnotatedType",
+        "visibility" : "public",
+        "methodCalls" : [ "Annotations", "Type" ]
+      }, {
+        "name" : "ArgumentList",
+        "visibility" : "public",
+        "methodCalls" : [ "add", "Expression", "emptyNodeList" ]
+      }, {
+        "name" : "ConditionalAndExpression",
+        "visibility" : "public",
+        "methodCalls" : [ "range", "InclusiveOrExpression", "token" ]
+      }, {
+        "name" : "ArrayCreation",
+        "visibility" : "public",
+        "methodCalls" : [ "Annotations", "juggleArrayCreation", "Expression", "emptyNodeList", "ArrayInitializer", "range", "add", "get", "token", "orIfInvalid", "isEmpty" ]
+      }, {
+        "name" : "Arguments",
+        "visibility" : "public",
+        "methodCalls" : [ "emptyNodeList", "ArgumentList" ]
+      }, {
+        "name" : "Identifier",
+        "visibility" : "public",
+        "methodCalls" : [ "setTokenKind" ]
+      }, {
+        "name" : "ImportDeclaration",
+        "visibility" : "public",
+        "methodCalls" : [ "range", "token", "Name" ]
+      }, {
+        "name" : "Statement",
+        "visibility" : "public",
+        "methodCalls" : [ "StatementExpression", "Block", "SynchronizedStatement", "IfStatement", "DoStatement", "ReturnStatement", "WhileStatement", "SwitchStatement", "ThrowStatement", "BreakStatement", "ContinueStatement", "recoverStatement", "EmptyStatement", "ForStatement", "TryStatement", "LabeledStatement", "YieldStatement", "AssertStatement" ]
+      }, {
+        "name" : "IntersectionType",
+        "visibility" : "public",
+        "methodCalls" : [ "ReferenceType", "range", "emptyNodeList", "add", "AnnotatedReferenceType", "orIfInvalid", "token" ]
+      }, {
+        "name" : "ImplementsList",
+        "visibility" : "public",
+        "methodCalls" : [ "add", "AnnotatedClassOrInterfaceType" ]
+      }, {
+        "name" : "RecordDeclaration",
+        "visibility" : "public",
+        "methodCalls" : [ "ImplementsList", "RecordBody", "SimpleName", "TypeParameters", "Parameters", "orIfInvalid", "emptyNodeList", "token", "range" ]
+      }, {
+        "name" : "RelationalExpression",
+        "visibility" : "public",
+        "methodCalls" : [ "ShiftExpression", "range", "token" ]
+      }, {
+        "name" : "LambdaParameters",
+        "visibility" : "public",
+        "methodCalls" : [ "Parameter", "add" ]
+      }, {
+        "name" : "InstanceOfExpression",
+        "visibility" : "public",
+        "methodCalls" : [ "getType", "token", "AnnotatedReferenceType", "PatternExpression", "asReferenceType", "range", "RelationalExpression" ]
+      }, {
+        "name" : "AnnotationBodyDeclarationParseStart",
+        "visibility" : "public",
+        "methodCalls" : [ "AnnotationBodyDeclaration" ]
+      }, {
+        "name" : "BooleanLiteral",
+        "visibility" : "public",
+        "methodCalls" : [ "tokenRange" ]
+      }, {
+        "name" : "TryStatement",
+        "visibility" : "public",
+        "methodCalls" : [ "get", "ResourceSpecification", "range", "emptyNodeList", "Modifiers", "VariableDeclaratorId", "token", "ReferenceType", "Block", "add", "orIfInvalid", "size", "AnnotatedReferenceType" ]
+      }, {
+        "name" : "PrimarySuffixWithoutSuper",
+        "visibility" : "public",
+        "methodCalls" : [ "Arguments", "range", "TypeArguments", "emptyNodeList", "Expression", "token", "SimpleName", "AllocationExpression", "scopeToName" ]
+      }, {
+        "name" : "generateParseException",
+        "visibility" : "public",
+        "methodCalls" : [ "clear", "get", "size", "add" ]
+      }, {
+        "name" : "UnaryExpression",
+        "visibility" : "public",
+        "methodCalls" : [ "range", "token", "UnaryExpression", "UnaryExpressionNotPlusMinus", "PreDecrementExpression", "PreIncrementExpression" ]
+      }, {
+        "name" : "PostfixExpression",
+        "visibility" : "public",
+        "methodCalls" : [ "range", "token", "PrimaryExpression" ]
+      }, {
+        "name" : "NullLiteral",
+        "visibility" : "public",
+        "methodCalls" : [ "tokenRange" ]
+      }, {
+        "name" : "Parameter",
+        "visibility" : "public",
+        "methodCalls" : [ "Modifiers", "juggleArrayType", "VariableDeclaratorId", "orIfInvalid", "Type", "emptyNodeList", "Annotations", "range", "token" ]
+      }, {
+        "name" : "Name",
+        "visibility" : "public",
+        "methodCalls" : [ "token", "range", "Identifier", "tokenRange" ]
+      }, {
+        "name" : "trace_enabled",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "ExtendsList",
+        "visibility" : "public",
+        "methodCalls" : [ "add", "AnnotatedClassOrInterfaceType" ]
+      }, {
+        "name" : "SynchronizedStatement",
+        "visibility" : "public",
+        "methodCalls" : [ "range", "token", "Block", "Expression" ]
+      }, {
+        "name" : "ExplicitConstructorInvocation",
+        "visibility" : "public",
+        "methodCalls" : [ "TypeArguments", "getBegin", "token", "PrimaryExpressionWithoutSuperSuffix", "range", "orIfInvalid", "Arguments" ]
+      }, {
+        "name" : "Annotations",
+        "visibility" : "public",
+        "methodCalls" : [ "add", "Annotation" ]
+      }, {
+        "name" : "ReceiverParameter",
+        "visibility" : "public",
+        "methodCalls" : [ "ReceiverParameterId", "Annotations", "emptyNodeList", "token", "range", "Type" ]
+      }, {
+        "name" : "Block",
+        "visibility" : "public",
+        "methodCalls" : [ "setParsed", "recover", "range", "Statements", "token", "emptyNodeList" ]
+      }, {
+        "name" : "LabeledStatement",
+        "visibility" : "public",
+        "methodCalls" : [ "SimpleName", "token", "range", "Statement" ]
+      }, {
+        "name" : "LambdaBody",
+        "visibility" : "public",
+        "methodCalls" : [ "Expression", "range", "token", "Block" ]
+      }, {
+        "name" : "AssignmentOperator",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "SwitchExpression",
+        "visibility" : "public",
+        "methodCalls" : [ "SwitchEntry", "add", "Expression", "emptyNodeList", "range", "token" ]
+      }, {
+        "name" : "ContinueStatement",
+        "visibility" : "public",
+        "methodCalls" : [ "SimpleName", "range", "token" ]
+      }, {
+        "name" : "AnnotationTypeBody",
+        "visibility" : "public",
+        "methodCalls" : [ "addWhenNotNull", "AnnotationBodyDeclaration", "emptyNodeList" ]
+      }, {
+        "name" : "NameParseStart",
+        "visibility" : "public",
+        "methodCalls" : [ "Name" ]
+      }, {
+        "name" : "RUNSIGNEDSHIFT",
+        "visibility" : "public",
+        "methodCalls" : [ "getToken" ]
+      }, {
+        "name" : "EmptyStatement",
+        "visibility" : "public",
+        "methodCalls" : [ "tokenRange" ]
+      }, {
+        "name" : "TypeArguments",
+        "visibility" : "public",
+        "methodCalls" : [ "TypeArgument", "endAt", "add", "token", "beginAt" ]
+      }, {
+        "name" : "ForInit",
+        "visibility" : "public",
+        "methodCalls" : [ "add", "ExpressionList", "VariableDeclarationExpression" ]
+      }, {
+        "name" : "YieldStatement",
+        "visibility" : "public",
+        "methodCalls" : [ "token", "Expression", "range" ]
+      }, {
+        "name" : "RecordPatternExpression",
+        "visibility" : "public",
+        "methodCalls" : [ "Modifiers", "token", "PatternList", "range", "ReferenceType" ]
+      }, {
+        "name" : "TypePatternExpression",
+        "visibility" : "public",
+        "methodCalls" : [ "token", "Modifiers", "SimpleName", "range", "Type" ]
+      }, {
+        "name" : "Modifiers",
+        "visibility" : "public",
+        "methodCalls" : [ "orIfInvalid", "add", "Annotation", "token", "tokenRange" ]
+      }, {
+        "name" : "PreDecrementExpression",
+        "visibility" : "public",
+        "methodCalls" : [ "token", "UnaryExpression", "range" ]
+      }, {
+        "name" : "PrimitiveType",
+        "visibility" : "public",
+        "methodCalls" : [ "tokenRange" ]
+      }, {
+        "name" : "AllocationExpression",
+        "visibility" : "public",
+        "methodCalls" : [ "ClassOrInterfaceType", "PrimitiveType", "orIfInvalid", "token", "ClassOrInterfaceBody", "Annotations", "range", "Arguments", "ArrayCreation", "TypeArguments" ]
+      }, {
+        "name" : "ConditionalExpression",
+        "visibility" : "public",
+        "methodCalls" : [ "range", "token", "ConditionalOrExpression", "Expression" ]
+      }, {
+        "name" : "ResultType",
+        "visibility" : "public",
+        "methodCalls" : [ "Type", "tokenRange" ]
+      }, {
+        "name" : "getToken",
+        "visibility" : "public",
+        "methodCalls" : [ "getNextToken" ]
+      }, {
+        "name" : "TypeBound",
+        "visibility" : "public",
+        "methodCalls" : [ "AnnotatedClassOrInterfaceType", "add", "emptyNodeList" ]
+      }, {
+        "name" : "ExclusiveOrExpression",
+        "visibility" : "public",
+        "methodCalls" : [ "range", "token", "AndExpression" ]
+      }, {
+        "name" : "ModuleDeclarationParseStart",
+        "visibility" : "public",
+        "methodCalls" : [ "ModuleDeclaration", "Modifiers" ]
+      }, {
+        "name" : "ShiftExpression",
+        "visibility" : "public",
+        "methodCalls" : [ "token", "RUNSIGNEDSHIFT", "AdditiveExpression", "range", "RSIGNEDSHIFT" ]
+      }, {
+        "name" : "VariableDeclarator",
+        "visibility" : "public",
+        "methodCalls" : [ "token", "VariableInitializer", "juggleArrayType", "VariableDeclaratorId", "range" ]
+      }, {
+        "name" : "TypeDeclarationParseStart",
+        "visibility" : "public",
+        "methodCalls" : [ "AnnotationTypeDeclaration", "Modifiers", "ClassOrInterfaceDeclaration", "EnumDeclaration" ]
+      }, {
+        "name" : "Parameters",
+        "visibility" : "public",
+        "methodCalls" : [ "add", "Parameter", "ReceiverParameter", "emptyNodeList" ]
+      }, {
+        "name" : "IfStatement",
+        "visibility" : "public",
+        "methodCalls" : [ "range", "Statement", "Expression", "token" ]
+      }, {
+        "name" : "ResourceSpecification",
+        "visibility" : "public",
+        "methodCalls" : [ "Resources" ]
+      }, {
+        "name" : "ConstructorDeclaration",
+        "visibility" : "public",
+        "methodCalls" : [ "AnnotatedReferenceType", "prepend", "emptyNodeList", "orIfInvalid", "SimpleName", "add", "TypeParameters", "ExplicitConstructorInvocation", "range", "getBegin", "token", "Parameters", "Statements" ]
+      }, {
+        "name" : "ReturnStatement",
+        "visibility" : "public",
+        "methodCalls" : [ "token", "Expression", "range" ]
+      }, {
+        "name" : "ReceiverParameterId",
+        "visibility" : "public",
+        "methodCalls" : [ "tokenRange", "Name" ]
+      }, {
+        "name" : "BlockParseStart",
+        "visibility" : "public",
+        "methodCalls" : [ "Block" ]
+      }, {
+        "name" : "AnnotationTypeMemberDeclaration",
+        "visibility" : "public",
+        "methodCalls" : [ "SimpleName", "Type", "emptyNodeList", "orIfInvalid", "range", "DefaultValue", "token" ]
+      }, {
+        "name" : "EnumDeclaration",
+        "visibility" : "public",
+        "methodCalls" : [ "ClassOrInterfaceBodyDeclaration", "range", "EnumConstantDeclaration", "ImplementsList", "emptyNodeList", "orIfInvalid", "token", "SimpleName", "add" ]
+      }, {
+        "name" : "Resources",
+        "visibility" : "public",
+        "methodCalls" : [ "Resource", "add" ]
+      }, {
+        "name" : "MemberValuePair",
+        "visibility" : "public",
+        "methodCalls" : [ "SimpleName", "range", "MemberValue", "token" ]
+      }, {
+        "name" : "FieldDeclaration",
+        "visibility" : "public",
+        "methodCalls" : [ "add", "orIfInvalid", "VariableDeclarator", "emptyNodeList", "token", "range", "Type" ]
+      }, {
+        "name" : "MemberValue",
+        "visibility" : "public",
+        "methodCalls" : [ "MemberValueArrayInitializer", "ConditionalExpression", "Annotation" ]
+      }, {
+        "name" : "ReInit",
+        "visibility" : "public",
+        "methodCalls" : [ "reInit", "ReInit", "SwitchTo" ]
+      }, {
+        "name" : "ClassOrInterfaceDeclaration",
+        "visibility" : "public",
+        "methodCalls" : [ "SimpleName", "ClassOrInterfaceBody", "TypeParameters", "emptyNodeList", "ImplementsList", "orIfInvalid", "PermitsList", "ExtendsList", "token", "range" ]
+      }, {
+        "name" : "VariableDeclarationExpression",
+        "visibility" : "public",
+        "methodCalls" : [ "Modifiers", "range", "emptyNodeList", "VariableDeclarator", "orIfInvalid", "token", "add", "Type" ]
+      }, {
+        "name" : "MethodDeclarationParseStart",
+        "visibility" : "public",
+        "methodCalls" : [ "Modifiers", "MethodDeclaration" ]
+      }, {
+        "name" : "MultiplicativeExpression",
+        "visibility" : "public",
+        "methodCalls" : [ "UnaryExpression", "token", "range" ]
+      }, {
+        "name" : "ThrowStatement",
+        "visibility" : "public",
+        "methodCalls" : [ "token", "Expression", "range" ]
+      }, {
+        "name" : "ClassOrInterfaceBodyDeclarationParseStart",
+        "visibility" : "public",
+        "methodCalls" : [ "ClassOrInterfaceBodyDeclaration" ]
+      }, {
+        "name" : "ClassOrInterfaceType",
+        "visibility" : "public",
+        "methodCalls" : [ "TypeArguments", "SimpleName", "token", "Annotations", "range" ]
+      }, {
+        "name" : "SwitchEntry",
+        "visibility" : "public",
+        "methodCalls" : [ "Block", "add", "Statements", "emptyNodeList", "token", "SwitchEntryExpression", "NullLiteral", "ConditionalExpression", "PatternExpression", "range", "ThrowStatement" ]
+      }, {
+        "name" : "Statements",
+        "visibility" : "public",
+        "methodCalls" : [ "add", "emptyNodeList", "BlockStatement" ]
+      } ],
+      "imports" : [ "com.github.javaparser.ast.NodeList", "com.github.javaparser.ast.stmt.SwitchEntry.Type", "com.github.javaparser.ast.comments", "com.github.javaparser.JavaToken.INVALID", "com.github.javaparser.Range", "com.github.javaparser.GeneratedJavaParserTokenManagerBase", "java.io", "com.github.javaparser.ast.stmt", "com.github.javaparser.utils.Utils", "com.github.javaparser.ast.body", "com.github.javaparser.GeneratedJavaParser", "java.util", "com.github.javaparser.ast.expr", "com.github.javaparser.Position", "com.github.javaparser.utils", "com.github.javaparser.ast.modules", "com.github.javaparser.ast.Node.Parsedness.UNPARSABLE", "com.github.javaparser.ast", "com.github.javaparser.ast.type", "com.github.javaparser.ast.type.ArrayType" ]
+    }, {
+      "name" : "Node",
+      "packageName" : "com.github.javaparser.ast",
+      "extendedClasses" : [ ],
+      "implementedInterfaces" : [ "NodeWithTokenRange", "Visitable", "NodeWithRange", "HasParentNode", "Cloneable" ],
+      "methods" : [ {
+        "name" : "removeOrphanComment",
+        "visibility" : "public",
+        "methodCalls" : [ "setParentNode", "notifyPropertyChange", "remove", "trimToSize" ]
+      }, {
+        "name" : "removeComment",
+        "visibility" : "public",
+        "methodCalls" : [ "setComment" ]
+      }, {
+        "name" : "removeForced",
+        "visibility" : "public",
+        "methodCalls" : [ "ifPresent", "getParentNode", "remove" ]
+      }, {
+        "name" : "setParsed",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "setData",
+        "visibility" : "public",
+        "methodCalls" : [ "put" ]
+      }, {
+        "name" : "getChildNodesByType",
+        "visibility" : "public",
+        "methodCalls" : [ "add", "cast", "getChildNodesByType", "getChildNodes", "addAll", "isInstance" ]
+      }, {
+        "name" : "getMetaModel",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "replace",
+        "visibility" : "public",
+        "methodCalls" : [ "setName", "setMemberValue", "setCompare", "setRecordDeclaration", "setPackageDeclaration", "setModule", "setDimension", "setIterable", "setVariable", "setClassDeclaration", "setThenStmt", "setElseStmt", "setStatement", "setParameter", "setThenExpr", "setCondition", "setTypeName", "setElseExpr", "setValue", "setTryBlock", "setIndex", "setQualifier", "setRight", "setLeft", "setLabel", "setFinallyBlock", "setTarget", "setGuard", "setMessage", "setInner", "setCheck", "setExpression", "setPattern", "setSelector", "setScope", "setElementType", "setType", "setBody", "setInitializer", "replace", "set", "size", "get", "setDefaultValue", "setReceiverParameter", "setSuperType", "setExtendedType", "add", "indexOf", "remove", "setComponentType", "setComment" ]
+      }, {
+        "name" : "getRange",
+        "visibility" : "public",
+        "methodCalls" : [ "ofNullable" ]
+      }, {
+        "name" : "hasScope",
+        "visibility" : "public",
+        "methodCalls" : [ "getClass", "getScope", "isPresent", "isAssignableFrom" ]
+      }, {
+        "name" : "isPhantom",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "setLineComment",
+        "visibility" : "public",
+        "methodCalls" : [ "setComment" ]
+      }, {
+        "name" : "isRegistered",
+        "visibility" : "public",
+        "methodCalls" : [ "contains" ]
+      }, {
+        "name" : "walk",
+        "visibility" : "public",
+        "methodCalls" : [ "getClass", "walk", "cast", "isAssignableFrom", "accept" ]
+      }, {
+        "name" : "removeData",
+        "visibility" : "public",
+        "methodCalls" : [ "remove" ]
+      }, {
+        "name" : "getLineEndingStyleOrDefault",
+        "visibility" : "public",
+        "methodCalls" : [ "getLineEndingStyle", "isStandardEol" ]
+      }, {
+        "name" : "getComment",
+        "visibility" : "public",
+        "methodCalls" : [ "ofNullable" ]
+      }, {
+        "name" : "getSymbolResolver",
+        "visibility" : "public",
+        "methodCalls" : [ "findCompilationUnit", "getData", "map", "containsData", "orElseThrow" ]
+      }, {
+        "name" : "getParentNodeForChildren",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "unregister",
+        "visibility" : "public",
+        "methodCalls" : [ "trimToSize", "remove" ]
+      }, {
+        "name" : "setTokenRange",
+        "visibility" : "public",
+        "methodCalls" : [ "get", "getBegin", "getRange", "getEnd", "hasRange" ]
+      }, {
+        "name" : "findCompilationUnit",
+        "visibility" : "public",
+        "methodCalls" : [ "findRootNode", "empty", "of" ]
+      }, {
+        "name" : "registerForSubtree",
+        "visibility" : "public",
+        "methodCalls" : [ "getChildNodes", "getAllPropertyMetaModels", "forEach", "getValue", "register", "getMetaModel", "registerForSubtree", "isNodeList" ]
+      }, {
+        "name" : "getParsed",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "getAllContainedComments",
+        "visibility" : "public",
+        "methodCalls" : [ "getComment", "getChildNodes", "addAll", "ifPresent", "getAllContainedComments" ]
+      }, {
+        "name" : "tryAddImportToParentCompilationUnit",
+        "visibility" : "public",
+        "methodCalls" : [ "addImport", "ifPresent", "findAncestor" ]
+      }, {
+        "name" : "getTokenRange",
+        "visibility" : "public",
+        "methodCalls" : [ "ofNullable" ]
+      }, {
+        "name" : "setBlockComment",
+        "visibility" : "public",
+        "methodCalls" : [ "setComment" ]
+      }, {
+        "name" : "getNodesByType",
+        "visibility" : "public",
+        "methodCalls" : [ "getChildNodesByType" ]
+      }, {
+        "name" : "findData",
+        "visibility" : "public",
+        "methodCalls" : [ "empty", "getData", "containsData", "of" ]
+      }, {
+        "name" : "setComment",
+        "visibility" : "public",
+        "methodCalls" : [ "setCommentedNode", "notifyPropertyChange", "setComment" ]
+      }, {
+        "name" : "register",
+        "visibility" : "public",
+        "methodCalls" : [ "register", "transformInPropagatingObserver", "registerForSubtree", "add", "contains" ]
+      }, {
+        "name" : "isAncestorOf",
+        "visibility" : "public",
+        "methodCalls" : [ "findFirst", "isPresent" ]
+      }, {
+        "name" : "notifyPropertyChange",
+        "visibility" : "public",
+        "methodCalls" : [ "forEach", "propertyChange" ]
+      }, {
+        "name" : "findAll",
+        "visibility" : "public",
+        "methodCalls" : [ "isAssignableFrom", "add", "getClass", "test", "walk", "cast" ]
+      }, {
+        "name" : "setRange",
+        "visibility" : "public",
+        "methodCalls" : [ "notifyPropertyChange" ]
+      }, {
+        "name" : "getDataKeys",
+        "visibility" : "public",
+        "methodCalls" : [ "keySet", "emptySet" ]
+      }, {
+        "name" : "findFirst",
+        "visibility" : "public",
+        "methodCalls" : [ "getClass", "empty", "of", "isPresent", "isAssignableFrom", "findFirst", "test", "apply", "cast" ]
+      }, {
+        "name" : "getChildNodes",
+        "visibility" : "public",
+        "methodCalls" : [ "unmodifiableList" ]
+      }, {
+        "name" : "containsData",
+        "visibility" : "public",
+        "methodCalls" : [ "containsKey" ]
+      }, {
+        "name" : "getParentNode",
+        "visibility" : "public",
+        "methodCalls" : [ "ofNullable" ]
+      }, {
+        "name" : "getLineEndingStyle",
+        "visibility" : "public",
+        "methodCalls" : [ "getParentNode", "getData", "get", "isPresent", "containsData" ]
+      }, {
+        "name" : "hashCode",
+        "visibility" : "public",
+        "methodCalls" : [ "hashCode", "getClass", "accept", "hash", "getCanonicalName", "declaredOnMethod", "getQualifiedName", "declaredOnType" ]
+      }, {
+        "name" : "stream",
+        "visibility" : "public",
+        "methodCalls" : [ "stream", "spliteratorUnknownSize" ]
+      }, {
+        "name" : "toString",
+        "visibility" : "public",
+        "methodCalls" : [ "getName", "f", "replace", "orElse", "getKind", "getRange", "getText", "getLineEndingStyleOrDefault", "setConfiguration", "getPrinter", "asRawString", "containsData", "addOption", "print", "getConfiguration", "asString", "getStackTrace", "getVerboseMessage", "isSuccessful", "getTypeName", "collect", "map", "getProperty", "joining", "format", "stream", "getQualifiedName", "getTypeBound", "getSimpleName", "getCanonicalName", "getClass", "toString", "getId", "append" ]
+      }, {
+        "name" : "findByRange",
+        "visibility" : "public",
+        "methodCalls" : [ "contains", "hasRange", "getChildNodes", "of", "empty", "getRange", "get", "isPresent", "findByRange" ]
+      }, {
+        "name" : "clone",
+        "visibility" : "public",
+        "methodCalls" : [ "accept" ]
+      }, {
+        "name" : "setParentNode",
+        "visibility" : "public",
+        "methodCalls" : [ "size", "trimToSize", "remove", "parentChange", "add", "get", "forEach" ]
+      }, {
+        "name" : "getOrphanComments",
+        "visibility" : "public",
+        "methodCalls" : [ "unmodifiableList" ]
+      }, {
+        "name" : "getData",
+        "visibility" : "public",
+        "methodCalls" : [ "get" ]
+      }, {
+        "name" : "addOrphanComment",
+        "visibility" : "public",
+        "methodCalls" : [ "setParentNode", "notifyPropertyChange", "add" ]
+      }, {
+        "name" : "equals",
+        "visibility" : "public",
+        "methodCalls" : [ "equals", "accept", "get", "hasRange", "getRange", "contains", "isReferenceType", "asReferenceType", "getName", "getClass", "getCanonicalName", "totalLoadTime", "hitCount", "loadExceptionCount", "evictionCount", "missCount", "loadSuccessCount", "getTypeParameters", "declaredOnMethod", "declaredOnType", "getQualifiedName" ]
+      }, {
+        "name" : "findRootNode",
+        "visibility" : "public",
+        "methodCalls" : [ "getParentNode", "isPresent", "get", "getCommentedNode", "orElse" ]
+      }, {
+        "name" : "remove",
+        "visibility" : "public",
+        "methodCalls" : [ "setComment", "removeCompare", "removeModule", "removeDimension", "removePackageDeclaration", "removeElseStmt", "removeTypeName", "removeFinallyBlock", "removeQualifier", "removeLabel", "removeExpression", "removeGuard", "removeMessage", "removePattern", "removeScope", "removeComment", "removeOrphanComment", "isPresent", "remove", "invalidate", "get", "size", "match", "isWhiteSpace", "removeInitializer", "removeDefaultValue", "removeReceiverParameter", "removeBody", "removeSuperType", "removeExtendedType", "setParentNode", "indexOf", "notifyElementRemoved", "getParentNode" ]
+      } ],
+      "imports" : [ "com.github.javaparser.ast.observer.AstObserver", "com.github.javaparser.metamodel.InternalProperty", "java.util.Comparator", "java.util.Spliterator.DISTINCT", "com.github.javaparser.ast.nodeTypes.NodeWithOptionalScope", "com.github.javaparser.ast.nodeTypes.NodeWithTokenRange", "com.github.javaparser.printer.DefaultPrettyPrinter", "com.github.javaparser.printer.configuration.DefaultPrinterConfiguration", "java.util.Collections.unmodifiableList", "java.util.List", "com.github.javaparser.ast.visitor.EqualsVisitor", "com.github.javaparser.printer.configuration.DefaultConfigurationOption", "java.util.Queue", "java.util.function.Consumer", "com.github.javaparser.metamodel.JavaParserMetaModel", "com.github.javaparser.HasParentNode", "java.util.stream.Stream", "java.util.stream.StreamSupport", "java.util.function.Predicate", "java.util.function.Function", "com.github.javaparser.ast.visitor.Visitable", "com.github.javaparser.ast.observer.ObservableProperty", "com.github.javaparser.printer.configuration.DefaultPrinterConfiguration.ConfigOption", "com.github.javaparser.ast.nodeTypes.NodeWithRange", "com.github.javaparser.printer.configuration.PrinterConfiguration", "com.github.javaparser.printer.ConfigurablePrinter", "java.util.LinkedList", "java.util.Collections", "com.github.javaparser.metamodel.NodeMetaModel", "com.github.javaparser.ast.comments.BlockComment", "java.util.Spliterator.NONNULL", "com.github.javaparser.printer.Printer", "com.github.javaparser.ast.visitor.CloneVisitor", "com.github.javaparser.TokenRange", "java.util.Set", "com.github.javaparser.ast.comments.LineComment", "com.github.javaparser.Position", "com.github.javaparser.ast.visitor.HashCodeVisitor", "com.github.javaparser.ast.nodeTypes.NodeWithScope", "com.github.javaparser.ast.observer.PropagatingAstObserver", "com.github.javaparser.ast.comments.Comment", "com.github.javaparser.resolution.SymbolResolver", "java.util.Iterator", "java.util.IdentityHashMap", "com.github.javaparser.utils.LineSeparator", "java.util.Spliterators", "java.util.ArrayList", "java.util.Collections.emptySet", "java.util.Stack", "com.github.javaparser.ast.Node.Parsedness.PARSED", "com.github.javaparser.Range", "com.github.javaparser.metamodel.OptionalProperty", "com.github.javaparser.metamodel.PropertyMetaModel", "java.util.Optional", "com.github.javaparser.ast.Node.TreeTraversal.PREORDER" ]
+    } ]
+  }
