@@ -1,0 +1,985 @@
+{
+  "systemName" : "besu",
+  "classes" : [ {
+    "name" : "Builder",
+    "packageName" : "org.hyperledger.besu.ethereum.eth.sync.snapsync",
+    "extendedClasses" : [ "Builder" ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "fromEthNetworkConfig",
+      "visibility" : "public",
+      "methodCalls" : [ "networkId", "fromGenesisFile", "genesisConfig" ]
+    }, {
+      "name" : "configuration",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "fastSyncState",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "dynamicPivotBlockSelector",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "downloadState",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "persistDataStep",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "maxOutstandingRequests",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "requestDataStep",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "completeTaskStep",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "hashCountPerRequest",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "loadLocalDataStep",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "pivotBlockHeader",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPingPacketDataFactory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPongPacketDataFactory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "includeBootnodesOnPeerRefresh",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "peerRequirement",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "setPacketFactory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "tableRefreshIntervalMs",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument" ]
+    }, {
+      "name" : "setEnrResponsePacketDataFactory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setEnrRequestPacketDataFactory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "filterOnEnrForkId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setNeighborsPacketDataFactory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "outboundMessageHandler",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "localPeer",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "cleanPeerTableIntervalMs",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument" ]
+    }, {
+      "name" : "workerExecutor",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "timerUtil",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "setFindNeighborsPacketDataFactory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "cacheForEnrRequests",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "bootstrapNodes",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll" ]
+    }, {
+      "name" : "peerPrivileges",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "peerTable",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "connectionInitializer",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "localNode",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "connectionEvents",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "peerDiscoveryAgent",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "vertx",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "timestampForks",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "config",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "maxPeers",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "allActiveConnectionsSupplier",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "blockNumberForks",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "rlpxAgent",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "supportedCapabilities",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull", "asList" ]
+    }, {
+      "name" : "allConnectionsSupplier",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "natService",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "peerPermissions",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "blockchain",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "maintainedPeers",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "nodeKey",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull", "values", "forEach", "nodeKey" ]
+    }, {
+      "name" : "storageProvider",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull", "forEach", "values", "storageProvider" ]
+    }, {
+      "name" : "ipAddress",
+      "visibility" : "public",
+      "methodCalls" : [ "ipAddress", "forUriString", "isInetAddress", "updateEnabled", "of", "isUriInetAddress", "getByName", "forString", "getHostName", "getLocalHost", "dnsEnabled", "isLoopbackAddress", "dnsDisabled" ]
+    }, {
+      "name" : "disableListening",
+      "visibility" : "public",
+      "methodCalls" : [ "empty" ]
+    }, {
+      "name" : "discoveryAndListeningPorts",
+      "visibility" : "public",
+      "methodCalls" : [ "discoveryPort", "listeningPort" ]
+    }, {
+      "name" : "disableDiscovery",
+      "visibility" : "public",
+      "methodCalls" : [ "empty", "stop" ]
+    }, {
+      "name" : "useDefaultPorts",
+      "visibility" : "public",
+      "methodCalls" : [ "discoveryAndListeningPorts" ]
+    }, {
+      "name" : "listeningPort",
+      "visibility" : "public",
+      "methodCalls" : [ "of", "listeningPort", "filter" ]
+    }, {
+      "name" : "configureFromEnode",
+      "visibility" : "public",
+      "methodCalls" : [ "getIp", "getDiscoveryPort", "getNodeId", "discoveryPort", "listeningPort", "nodeId", "getListeningPort", "ipAddress" ]
+    }, {
+      "name" : "addRule",
+      "visibility" : "public",
+      "methodCalls" : [ "apply", "validate", "add", "includeInLightValidation" ]
+    }, {
+      "name" : "difficultyCalculator",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "nodeId",
+      "visibility" : "public",
+      "methodCalls" : [ "getNodeId", "getPeerInfo", "wrap", "fromHexString" ]
+    }, {
+      "name" : "discoveryPort",
+      "visibility" : "public",
+      "methodCalls" : [ "of", "discoveryPort", "filter" ]
+    }, {
+      "name" : "protocolManagers",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "subProtocols",
+      "visibility" : "public",
+      "methodCalls" : [ "asList", "addAll" ]
+    }, {
+      "name" : "network",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "ethPeersShouldConnect",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "metricsSystem",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull", "forEach", "metricsSystem", "values" ]
+    }, {
+      "name" : "warmCoinbase",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "coinbaseFeePriceCalculator",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "clearEmptyAccounts",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "populateFrom",
+      "visibility" : "public",
+      "methodCalls" : [ "getCoinbase", "difficulty", "getParentHash", "getPrevRandao", "getExtraData", "baseFee", "stateRoot", "orElse", "logsBloom", "checkNotNull", "getNumber", "parentHash", "getReceiptsRoot", "getGasUsed", "receiptsRoot", "coinbase", "getOmmersHash", "getWithdrawalsRoot", "getTransactionsRoot", "getDifficulty", "gasUsed", "withdrawalsRoot", "getLogsBloom", "timestamp", "ifPresent", "gasLimit", "getBlobGasUsed", "getTimestamp", "getStateRoot", "getBaseFee", "getGasLimit", "transactionsRoot", "extraData", "ommersHash", "getExcessBlobGas", "getRequestsHash", "requestsHash", "number", "getParentBeaconBlockRoot" ]
+    }, {
+      "name" : "messageCallProcessor",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "gasCalculator",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "contractCreationProcessor",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "feeMarket",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "transactionValidatorFactory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "codeDelegationProcessor",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "miningBeneficiaryReward",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "transactionProcessingResult",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isMiningBeneficiaryTouchedPreRewardByTransaction",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "transactionAccumulator",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addProcessor",
+      "visibility" : "public",
+      "methodCalls" : [ "put" ]
+    }, {
+      "name" : "privateFrom",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "accessList",
+      "visibility" : "public",
+      "methodCalls" : [ "empty", "of", "isEmpty" ]
+    }, {
+      "name" : "guessType",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "isPresent" ]
+    }, {
+      "name" : "maxPriorityFeePerGas",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "maxFeePerBlobGas",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "blobsWithCommitments",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "restriction",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "maxFeePerGas",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTransactionType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "rawRlp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "payload",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "kzgBlobs",
+      "visibility" : "public",
+      "methodCalls" : [ "stream", "toList", "map", "getData", "isEmpty", "sha256" ]
+    }, {
+      "name" : "copiedFrom",
+      "visibility" : "public",
+      "methodCalls" : [ "orElse" ]
+    }, {
+      "name" : "privacyGroupId",
+      "visibility" : "public",
+      "methodCalls" : [ "of" ]
+    }, {
+      "name" : "codeDelegations",
+      "visibility" : "public",
+      "methodCalls" : [ "ofNullable" ]
+    }, {
+      "name" : "v",
+      "visibility" : "public",
+      "methodCalls" : [ "of", "getRecId" ]
+    }, {
+      "name" : "privateFor",
+      "visibility" : "public",
+      "methodCalls" : [ "of" ]
+    }, {
+      "name" : "signature",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "chainId",
+      "visibility" : "public",
+      "methodCalls" : [ "of" ]
+    }, {
+      "name" : "signAndBuild",
+      "visibility" : "public",
+      "methodCalls" : [ "getEncodedBytes", "computeSignature", "checkState", "getPublicKey", "extract", "sender", "writeLongScalar", "signature", "get", "concatenate", "writeBytes", "writeBigIntegerScalar", "build", "encoded", "sign", "endList", "hash", "startList" ]
+    }, {
+      "name" : "nonce",
+      "visibility" : "public",
+      "methodCalls" : [ "of" ]
+    }, {
+      "name" : "withBlockHash",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withShouldWorldStateUpdateHead",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withBlockHeader",
+      "visibility" : "public",
+      "methodCalls" : [ "getStateRoot", "getBlockHash", "of" ]
+    }, {
+      "name" : "withStateRoot",
+      "visibility" : "public",
+      "methodCalls" : [ "ofNullable" ]
+    }, {
+      "name" : "setEnclaveFactory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPrivacyUserIdUsingFile",
+      "visibility" : "public",
+      "methodCalls" : [ "getDecoder", "read", "decode", "asCharSource" ]
+    }, {
+      "name" : "setPrivateNonceAlwaysIncrementsEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setEnclaveUrl",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPrivacyTlsKnownEnclaveFile",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setStorageProvider",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMultiTenancyEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPrivacyKeyStorePasswordFile",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPrivateKeyPath",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setFlexiblePrivacyGroupsEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPrivacyKeyStoreFile",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPrivacyPluginEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "getEthPeers", "get", "subscribeConnect", "error", "completedFuture", "loadFromDisk", "subscribe", "of", "isEnabled", "exceptionally", "set" ]
+    }, {
+      "name" : "setPrivacyService",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withConsensusContext",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withBadBlockManager",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withWorldStateArchive",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withBlockchain",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withServiceManager",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "from",
+      "visibility" : "public",
+      "methodCalls" : [ "getBytes", "getStorageBySegmentIdentifier", "getMaxEOFVersion", "getEvmConfiguration", "maxCodeSizeOverride", "from", "orElse", "getMaxCodeSize", "getEvmVersion", "getTraceFrames", "getGasRemaining", "stream", "of", "getSender", "getPrivateTransaction", "map", "getReward", "get", "toUnmodifiableList", "collect", "toHexString", "builder", "getPrecompiledGasCost", "isEmpty", "getBaseFeePerGas", "getBlobGasUsedRatio", "getBaseFeePerBlobGas", "value", "getValue", "gas", "getGasUsedRatio", "create", "toList", "getOldestBlock", "getHash", "toRlp", "getTransaction", "getInvalidReason", "getErrorMessage", "convertTransactionInvalidReason", "filter" ]
+    }, {
+      "name" : "gas",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getFrom",
+      "visibility" : "public",
+      "methodCalls" : [ "orElseGet", "of", "getTransaction", "ofNullable", "getAndMapWorldState", "or", "getBlockchainQueries", "getArgument", "orElse", "getSender", "get" ]
+    }, {
+      "name" : "getGas",
+      "visibility" : "public",
+      "methodCalls" : [ "getGasRemaining", "getTransaction", "getGasLimit" ]
+    }, {
+      "name" : "balance",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "callType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "to",
+      "visibility" : "public",
+      "methodCalls" : [ "ofNullable" ]
+    }, {
+      "name" : "refundAddress",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "author",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "creationMethod",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "init",
+      "visibility" : "public",
+      "methodCalls" : [ "getIV", "checkArgument", "getSharedSecret", "info", "loadTrustedSetupFromResource", "toAbsolutePath", "compareAndSet", "toString", "loadTrustedSetup", "register", "builder", "isCategoryEnabled" ]
+    }, {
+      "name" : "getCallType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTo",
+      "visibility" : "public",
+      "methodCalls" : [ "getBlockchainQueries", "flatMap", "getTo", "getTransaction", "or", "getAndMapWorldState", "getArgument", "get", "of", "orElseGet", "ofNullable" ]
+    }, {
+      "name" : "rewardType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "input",
+      "visibility" : "public",
+      "methodCalls" : [ "input" ]
+    }, {
+      "name" : "getAddress",
+      "visibility" : "public",
+      "methodCalls" : [ "createPublicKey", "publicKeyToAddress", "getInstance", "toString", "of", "address", "getAddress" ]
+    }, {
+      "name" : "of",
+      "visibility" : "public",
+      "methodCalls" : [ "map", "toList", "stream", "collect", "copy" ]
+    }, {
+      "name" : "isGasUsedEmpty",
+      "visibility" : "public",
+      "methodCalls" : [ "equals" ]
+    }, {
+      "name" : "gasUsed",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument" ]
+    }, {
+      "name" : "getCode",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "toArrayUnsafe", "getUpdated", "isEmpty", "ofNullable", "wrappedWorldView", "getCodeHash", "getFlatCode", "getIfPresent", "put", "checkNotNull", "getCodeUncached", "get", "getCode", "headBlockNumber", "orElse", "getAndMapWorldState", "of", "getBlockchainQueries", "getAddress", "map", "getBlockHashByNumber", "addressHash", "getWorldStateStorage", "empty", "getFlatDbStrategy" ]
+    }, {
+      "name" : "vmTrace",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "stateDiff",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addTrace",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "output",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "transactionPosition",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "traceAddress",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSubtraces",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTraceAddress",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBlockHash",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "valueOf", "map", "getHash" ]
+    }, {
+      "name" : "getType",
+      "visibility" : "public",
+      "methodCalls" : [ "findFirst", "stream", "filter", "getEmit", "map", "orElse", "getTransaction", "getType", "of", "ordinal" ]
+    }, {
+      "name" : "getResultBuilder",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getRevertReason",
+      "visibility" : "public",
+      "methodCalls" : [ "map", "flatMap" ]
+    }, {
+      "name" : "getActionBuilder",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "revertReason",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBlockNumber",
+      "visibility" : "public",
+      "methodCalls" : [ "getNumber", "isPending", "map", "headBlockNumber", "safeBlockHeader", "isFinalized", "finalizedBlockHeader", "of", "isSafe", "isLatest" ]
+    }, {
+      "name" : "getTransactionHash",
+      "visibility" : "public",
+      "methodCalls" : [ "getTransactionHash" ]
+    }, {
+      "name" : "getError",
+      "visibility" : "public",
+      "methodCalls" : [ "orElse" ]
+    }, {
+      "name" : "getTransactionPosition",
+      "visibility" : "public",
+      "methodCalls" : [ "getTransactionPosition" ]
+    }, {
+      "name" : "transactionHash",
+      "visibility" : "public",
+      "methodCalls" : [ "getOmmers", "collect", "getTransactions", "toList", "getTotalDifficulty", "transactionHash", "getHeader", "map", "getSize", "stream", "getWithdrawals" ]
+    }, {
+      "name" : "error",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "initialGas",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "code",
+      "visibility" : "public",
+      "methodCalls" : [ "hash", "code", "getCode" ]
+    }, {
+      "name" : "type",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "worldUpdater",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "accessListWarmAddresses",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "value",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isStatic",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "sender",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "blockValues",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "originator",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "parentMessageFrame",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "reason",
+      "visibility" : "public",
+      "methodCalls" : [ "ofNullable" ]
+    }, {
+      "name" : "miningBeneficiary",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "apparentValue",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "maxStackSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "completer",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "gasPrice",
+      "visibility" : "public",
+      "methodCalls" : [ "filter", "sorted", "orElseThrow", "get", "max", "getGasPriceBlocks", "mapToObj", "getForNextBlockHeader", "range", "getBlockByNumber", "currentTimeMillis", "concat", "of", "toArray", "getGasPriceFraction", "getGasPrice", "getFeeMarket", "isPresent", "min", "getHeader", "getNumber", "flatMap", "map", "getChainHeadBlock", "getGasPriceMax" ]
+    }, {
+      "name" : "accessListWarmStorage",
+      "visibility" : "public",
+      "methodCalls" : [ "putAll", "of" ]
+    }, {
+      "name" : "contextVariables",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "blobGasPrice",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "inputData",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "contract",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "versionedHashes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addresses",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll", "isEmpty", "asList" ]
+    }, {
+      "name" : "address",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "topics",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll", "isEmpty" ]
+    }, {
+      "name" : "insertFilter",
+      "visibility" : "public",
+      "methodCalls" : [ "set", "size", "get" ]
+    }, {
+      "name" : "insertBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "keccak256" ]
+    }, {
+      "name" : "insertLogs",
+      "visibility" : "public",
+      "methodCalls" : [ "forEach" ]
+    }, {
+      "name" : "insertLog",
+      "visibility" : "public",
+      "methodCalls" : [ "getTopics", "getLogger", "insertBytes" ]
+    }, {
+      "name" : "fromGenesisFile",
+      "visibility" : "public",
+      "methodCalls" : [ "getTerminalTotalDifficulty", "getPowAlgorithm", "isPresent", "isClique", "isConsensusMigration", "isIbft2", "genesisConfig", "isQbft", "isIbftLegacy", "getConfigOptions" ]
+    }, {
+      "name" : "withMovePrecompileToAddress",
+      "visibility" : "public",
+      "methodCalls" : [ "ofNullable" ]
+    }, {
+      "name" : "withState",
+      "visibility" : "public",
+      "methodCalls" : [ "ofNullable" ]
+    }, {
+      "name" : "withNonce",
+      "visibility" : "public",
+      "methodCalls" : [ "ofNullable", "map", "getValue", "of" ]
+    }, {
+      "name" : "withStateDiff",
+      "visibility" : "public",
+      "methodCalls" : [ "ofNullable" ]
+    }, {
+      "name" : "withCode",
+      "visibility" : "public",
+      "methodCalls" : [ "ofNullable" ]
+    }, {
+      "name" : "build",
+      "visibility" : "public",
+      "methodCalls" : [ "getEthstatsCaCert", "dequeueTrieNodeRequestBlocking", "requestCode", "getTrienodeCountPerRequest", "requestAccount", "requestTrieNodeByPath", "dequeueCodeRequestBlocking", "getBytecodeCountPerRequest", "dequeueAccountFlatDatabaseHealingRequestBlocking", "healFlatDatabase", "requestLocalFlatAccounts", "distinct", "check", "dequeueLargeStorageRequestBlocking", "dequeueStorageRequestBlocking", "getStorageCountPerRequest", "requestLocalFlatStorages", "count", "dequeueStorageFlatDatabaseHealingRequestBlocking", "requestStorage", "reloadHealWhenNeeded", "dequeueAccountRequestBlocking", "loadLocalDataTrieNode", "thenProcessAsyncOrdered", "getInputPipe", "markAsCompleteOrFailed", "createPipeline", "thenProcess", "createPipelineFrom", "andFinishWith", "loadLocalData", "requestData", "persist", "thenFlatMapInParallel", "createLabelledCounter", "thenProcessAsync", "inBatches", "containsKey", "put", "getEnclave", "getPrivateStateRootResolver", "getPrivateStateStorage", "getPrivateWorldStateArchive", "getPrivateStateGenesisAllocator", "apply", "guessType", "setPrivateWorldStateReader", "setPrivacyPluginEnabled", "setPrivateStateStorage", "load", "setEnclave", "createWorldStatePreimageStorage", "setPrivateNonceAlwaysIncrementsEnabled", "setPrivateWorldStateArchive", "setMultiTenancyEnabled", "setEnclavePublicKeyFile", "setSigningKeyPair", "setPrivacyUserId", "createPrivateStateStorage", "toFile", "setFlexiblePrivacyGroupsEnabled", "setPrivateStateRootResolver", "setPrivacyService", "createVertxEnclave", "setPrivateStorageProvider", "setEnclaveUri", "getVersion", "getActionBuilder", "getType", "getBlockNumber", "getTransactionHash", "getError", "getResultBuilder", "getSubtraces", "getTransactionPosition", "getTraceAddress", "emptyList", "calculateSize", "getPrivateWorldStateReader", "getKey", "getWorldUpdater", "updater", "entries", "getValue", "messageFrameStack", "warmUpStorage", "warmUpAddress", "addFirst", "isMultiTenancyEnabled", "getSubscriptionType", "getIncludeTransaction", "createConsensusContext", "createSynchronizer", "getByBlockHeader", "setTrailingPeerRequirementsSupplier", "set", "getBlockHash", "createWorldStateStorageCoordinator", "createProtocolContext", "createAdditionalJsonRpcMethodFactory", "subscribe", "createMiningCoordinator", "getNumber", "getChainPruningEnabled", "prepForBuild", "equals", "createWorldStateArchive", "subscribeInSync", "getAsLong", "createAdditionalPluginServices", "getMaxMessageSize", "getWorldState", "createMutable", "isFullSync", "getTrieLogManager", "createPeerValidators", "writeStateTo", "getPathBasedExtraStorageConfiguration", "isPeerTaskSystemEnabled", "getComputationParallelism", "isValid", "getPrivateStorageProvider", "getDataStorageFormat", "add", "blockHash", "getDownloaderParallelism", "toString", "createBlockchainStorage", "totalDifficulty", "validateContext", "getCheckpointOptions", "getTotalDifficulty", "snapServerPeersNeeded", "getStrategy", "getLimitTrieLogsEnabled", "createVariablesStorage", "blockNumber", "orElseGet", "getSyncMode", "getGasCap", "setPublicWorldStateArchiveForPrivacyBlockProcessor", "getTransactionsParallelism", "getChainHeadHeader", "createProtocolSchedule", "getChainPruningBlocksFrequency", "createTransactionPool", "getChainPruningBlocksRetained", "createEthProtocolManager", "fromHexString", "getHash", "createSubProtocolConfiguration", "getEthstatsUrl", "getForkBlockNumbers", "getTransactionPool", "getTransactionLogBloomCacher", "maxPeers", "getHeader", "setAdvertisedHost", "ifPresent", "getScheduler", "setRlpx", "getNetworkConfig", "updateNodeRecord", "toLowerCase", "methods", "getNamedPlugins", "setBootnodes", "observeBlockAdded", "getEncodedBytes", "natService", "getBlockchain", "getBlock", "ofNullable", "storageProvider", "getTransactionSimulator", "getSubProtocols", "config", "combine", "getStratumNetworkInterface", "getMiningCoordinator", "of", "setClientId", "getPath", "forEach", "allActiveConnectionsSupplier", "getDiscovery", "size", "create", "startsWith", "isPoa", "getChainId", "network", "privacyParameters", "getProtocolManager", "blockchain", "setDnsDiscoveryURL", "collect", "getRpcApis", "setBindPort", "getRlpxAgent", "debug", "createEngineDefault", "stream", "nodeKey", "isStratumMiningEnabled", "nodeName", "filter", "empty", "getEthstatsContact", "blockNumberForks", "getSubProtocolConfiguration", "getBootnodes", "checkNotNull", "isPresent", "metricsSystem", "ethContext", "setBindHost", "fromParams", "info", "addEthHashObserver", "getProtocolSchedule", "getForkBlockTimestamps", "toSet", "getGenesisBlockHeader", "getNodeKey", "getNetwork", "subProtocols", "isAuthenticationEnabled", "getPrivacyParameters", "isDiscoveryV5Enabled", "map", "setIncludeBootnodesOnPeerRefresh", "getSynchronizer", "setDiscoveryV5Enabled", "getUnstable", "getInProcessRpcApis", "isOnMilestoneBoundary", "getMaxPeers", "getStratumExtranonce", "checkState", "isEmpty", "get", "setSyncState", "build", "getSyncState", "getPostMergeContext", "allConnectionsSupplier", "setDiscovery", "getWorldStateArchive", "getEnabledApis", "getSupportedCapabilities", "isFilterOnEnrForkIdEnabled", "resolve", "getName", "isEnabled", "getProtocolManagers", "getPublicKey", "putIfAbsent", "supportedCapabilities", "setSupportedProtocols", "flatMap", "getAuthenticationPublicKeyFile", "setRlpxAgent", "getProtocolContext", "builder", "protocolManagers", "bootNodes", "peerPermissions", "setInsufficientPeersPermissioningProvider", "orElse", "buildGraphQL", "setFilterOnEnrForkId", "dnsDiscoveryUrl", "blockchainQueries", "ethPeersShouldConnect", "timestampForks", "deployVerticle", "getGenesisConfigOptions", "transactionPool", "vertx", "toList", "getMiningParameters", "getEthPeers", "getClass", "setEnabled", "getStratumPort" ]
+    }, {
+      "name" : "withBalance",
+      "visibility" : "public",
+      "methodCalls" : [ "ofNullable" ]
+    }, {
+      "name" : "appendRoundChangeMessage",
+      "visibility" : "public",
+      "methodCalls" : [ "roundChangeReady", "add", "createRoundChangeCertificate", "roundChangeQuorumReceived", "of", "empty", "info" ]
+    }, {
+      "name" : "buildCertificate",
+      "visibility" : "public",
+      "methodCalls" : [ "map", "stream", "collect", "toList" ]
+    }, {
+      "name" : "addTransactionTraceResult",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "timestamp",
+      "visibility" : "public",
+      "methodCalls" : [ "setTimestamp" ]
+    }, {
+      "name" : "gasLimit",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument", "setGasLimit" ]
+    }, {
+      "name" : "extraData",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "blockNumber",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "stateRoot",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "mixHashOrPrevRandao",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "difficulty",
+      "visibility" : "public",
+      "methodCalls" : [ "getChainHead", "greaterOrEqualThan", "difficulty", "getTotalDifficulty", "of", "checkNotNull", "setDifficultyBytes" ]
+    }, {
+      "name" : "blobBaseFee",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "baseFeePerGas",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "feeRecipient",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "blockHashLookup",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "blockHash",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    } ],
+    "imports" : [ "java.io.Closeable", "org.hyperledger.besu.ethereum.eth.sync.snapsync.request.BytecodeRequest", "org.hyperledger.besu.ethereum.eth.sync.snapsync.request.SnapDataRequest", "org.hyperledger.besu.ethereum.eth.sync.snapsync.DynamicPivotBlockSelector.doNothingOnPivotChange", "org.hyperledger.besu.services.pipeline.WritePipe", "org.hyperledger.besu.services.tasks.Task", "org.hyperledger.besu.services.pipeline.Pipeline", "org.hyperledger.besu.services.pipeline.PipelineBuilder", "org.hyperledger.besu.services.pipeline.PipelineBuilder.createPipelineFrom", "org.hyperledger.besu.services.pipeline.Pipe", "org.hyperledger.besu.util.ExceptionUtils", "java.util.concurrent.CancellationException", "org.hyperledger.besu.ethereum.eth.sync.worldstate.TaskQueueIterator", "org.hyperledger.besu.ethereum.eth.manager.EthScheduler", "org.hyperledger.besu.ethereum.eth.sync.worldstate.WorldStateDownloadProcess", "org.hyperledger.besu.ethereum.p2p.discovery.internal.packet.Packet", "java.time.Instant", "org.hyperledger.besu.ethereum.p2p.discovery.internal.packet.neighbors.NeighborsPacketDataFactory", "java.util.concurrent.TimeUnit.SECONDS", "org.hyperledger.besu.ethereum.p2p.discovery.internal.packet.DaggerPacketPackage", "java.util.concurrent.TimeUnit.MILLISECONDS", "org.hyperledger.besu.ethereum.p2p.discovery.internal.packet.enrrequest.EnrRequestPacketDataFactory", "org.hyperledger.besu.ethereum.p2p.discovery.internal.packet.pong.PongPacketData", "org.hyperledger.besu.ethereum.p2p.discovery.internal.packet.findneighbors.FindNeighborsPacketData", "org.hyperledger.besu.ethereum.p2p.discovery.internal.packet.ping.PingPacketData", "org.ethereum.beacon.discovery.schema.NodeRecord", "org.hyperledger.besu.ethereum.p2p.discovery.internal.packet.enrresponse.EnrResponsePacketData", "org.hyperledger.besu.ethereum.p2p.discovery.internal.packet.PacketPackage", "org.hyperledger.besu.ethereum.p2p.discovery.internal.packet.findneighbors.FindNeighborsPacketDataFactory", "org.hyperledger.besu.ethereum.p2p.discovery.internal.packet.enrresponse.EnrResponsePacketDataFactory", "org.hyperledger.besu.ethereum.p2p.discovery.internal.packet.PacketData", "java.util.OptionalLong", "java.util.concurrent.TimeoutException", "java.util.concurrent.ConcurrentHashMap", "org.hyperledger.besu.ethereum.p2p.peers.PeerId", "org.hyperledger.besu.ethereum.p2p.discovery.internal.packet.PacketFactory", "org.hyperledger.besu.ethereum.p2p.discovery.internal.packet.neighbors.NeighborsPacketData", "org.hyperledger.besu.ethereum.p2p.discovery.internal.packet.ping.PingPacketDataFactory", "org.hyperledger.besu.ethereum.p2p.discovery.internal.packet.pong.PongPacketDataFactory", "org.hyperledger.besu.ethereum.p2p.discovery.internal.packet.enrrequest.EnrRequestPacketData", "org.hyperledger.besu.ethereum.p2p.config.RlpxConfiguration", "org.hyperledger.besu.ethereum.p2p.rlpx.connections.netty.NettyConnectionInitializer", "org.hyperledger.besu.ethereum.p2p.rlpx.connections.PeerConnectionEvents", "org.hyperledger.besu.ethereum.p2p.rlpx.connections.PeerRlpxPermissions", "java.util.concurrent.ConcurrentMap", "org.hyperledger.besu.ethereum.p2p.rlpx.connections.ConnectionInitializer", "org.hyperledger.besu.util.Subscribers", "java.util.concurrent.ExecutionException", "javax.annotation.Nonnull", "org.hyperledger.besu.ethereum.p2p.rlpx.ConnectCallback", "com.google.common.base.Preconditions.checkNotNull", "org.hyperledger.besu.ethereum.p2p.peers.MutableLocalNode", "java.util.concurrent.Executors", "org.hyperledger.besu.ethereum.p2p.permissions.PeerPermissions", "org.hyperledger.besu.nat.NatService", "org.hyperledger.besu.nat.NatMethod", "java.util.concurrent.CompletableFuture", "org.hyperledger.besu.ethereum.p2p.rlpx.DisconnectCallback", "org.hyperledger.besu.nat.upnp.UpnpNatManager", "org.hyperledger.besu.ethereum.p2p.discovery.dns.EthereumNodeRecord", "org.hyperledger.besu.ethereum.p2p.discovery.DiscoveryPeer", "org.hyperledger.besu.ethereum.p2p.discovery.internal.PeerTable", "io.vertx.core.ThreadingModel", "org.hyperledger.besu.ethereum.p2p.discovery.PeerDiscoveryAgent", "java.util.concurrent.TimeUnit", "io.vertx.core.Vertx", "org.hyperledger.besu.ethereum.chain.Blockchain", "org.hyperledger.besu.nat.core.domain.NetworkProtocol", "org.hyperledger.besu.ethereum.p2p.peers.LocalNode", "java.util.stream.Stream", "java.time.Duration", "io.vertx.core.Future", "org.hyperledger.besu.ethereum.core.Util", "org.hyperledger.besu.ethereum.p2p.rlpx.connections.PeerConnection", "java.util.concurrent.ScheduledExecutorService", "org.hyperledger.besu.ethereum.p2p.discovery.dns.DNSDaemon", "org.hyperledger.besu.ethereum.p2p.permissions.PeerPermissionsDenylist", "org.hyperledger.besu.ethereum.p2p.config.NetworkingConfiguration", "org.hyperledger.besu.ethereum.p2p.discovery.VertxPeerDiscoveryAgent", "io.vertx.core.DeploymentOptions", "org.hyperledger.besu.nat.core.domain.NatServiceType", "org.hyperledger.besu.ethereum.p2p.peers.DefaultPeerPrivileges", "org.hyperledger.besu.ethereum.p2p.peers.EnodeURLImpl", "org.hyperledger.besu.ethereum.p2p.discovery.dns.DNSDaemonListener", "org.hyperledger.besu.ethereum.p2p.peers.MaintainedPeers", "org.hyperledger.besu.ethereum.p2p.rlpx.MessageCallback", "org.hyperledger.besu.nat.core.NatManager", "org.hyperledger.besu.ethereum.p2p.discovery.PeerDiscoveryStatus", "org.hyperledger.besu.ethereum.p2p.rlpx.wire.ShouldConnectCallback", "org.hyperledger.besu.ethereum.forkid.ForkIdManager", "org.hyperledger.besu.ethereum.p2p.peers.PeerPrivileges", "java.util.Comparator", "java.util.Locale", "org.hyperledger.besu.plugin.data.EnodeURL", "java.net.UnknownHostException", "java.util.OptionalInt", "org.hyperledger.besu.util.NetworkUtility", "java.util.regex.Matcher", "java.net.InetAddress", "com.google.common.net.InetAddresses", "com.google.common.primitives.Ints", "java.util.function.Predicate", "java.util.regex.Pattern", "org.hyperledger.besu.plugin.services.MetricsSystem", "org.hyperledger.besu.ethereum.p2p.rlpx.wire.Capability", "java.util.concurrent.CountDownLatch", "org.hyperledger.besu.ethereum.p2p.peers.Peer", "org.hyperledger.besu.ethereum.p2p.rlpx.wire.SubProtocol", "org.hyperledger.besu.ethereum.p2p.rlpx.wire.messages.DisconnectMessage.DisconnectReason", "org.hyperledger.besu.ethereum.p2p.rlpx.RlpxAgent", "org.hyperledger.besu.metrics.BesuMetricCategory", "org.hyperledger.besu.plugin.services.metrics.LabelledMetric", "java.util.function.BiFunction", "org.hyperledger.besu.plugin.services.metrics.Counter", "java.util.concurrent.atomic.AtomicBoolean", "org.hyperledger.besu.ethereum.core.feemarket.CoinbaseFeePriceCalculator", "org.hyperledger.besu.ethereum.mainnet.PrivateStateUtils.KEY_PRIVATE_METADATA_UPDATER", "org.hyperledger.besu.evm.account.CodeDelegationAccount", "org.hyperledger.besu.ethereum.transaction.TransactionInvalidReason", "org.hyperledger.besu.evm.account.MutableAccount", "org.hyperledger.besu.ethereum.mainnet.feemarket.FeeMarket", "org.hyperledger.besu.evm.processor.MessageCallProcessor", "org.hyperledger.besu.evm.worldstate.CodeDelegationHelper.getTargetAccount", "org.hyperledger.besu.evm.internal.Words.clampedAdd", "org.hyperledger.besu.ethereum.trie.MerkleTrieException", "org.hyperledger.besu.evm.worldstate.CodeDelegationHelper.hasCodeDelegation", "org.hyperledger.besu.ethereum.mainnet.PrivateStateUtils.KEY_IS_PERSISTING_PRIVATE_STATE", "org.hyperledger.besu.evm.processor.AbstractMessageProcessor", "org.hyperledger.besu.ethereum.core.ProcessableBlockHeader", "org.hyperledger.besu.evm.frame.ExceptionalHaltReason", "org.hyperledger.besu.evm.frame.MessageFrame", "org.hyperledger.besu.evm.code.CodeV0", "org.hyperledger.besu.ethereum.mainnet.PrivateStateUtils.KEY_TRANSACTION_HASH", "org.hyperledger.besu.evm.processor.ContractCreationProcessor", "org.hyperledger.besu.evm.tracing.OperationTracer", "org.hyperledger.besu.evm.account.Account", "org.hyperledger.besu.evm.gascalculator.GasCalculator", "org.hyperledger.besu.ethereum.privacy.storage.PrivateMetadataUpdater", "org.hyperledger.besu.evm.code.CodeInvalid", "com.google.common.collect.ImmutableMap", "org.hyperledger.besu.ethereum.mainnet.PrivateStateUtils.KEY_TRANSACTION", "org.hyperledger.besu.ethereum.trie.pathbased.common.worldview.accumulator.PathBasedWorldStateUpdateAccumulator", "org.hyperledger.besu.ethereum.processing.TransactionProcessingResult", "org.hyperledger.besu.datatypes.RequestType", "com.google.common.collect.ImmutableSortedMap", "org.hyperledger.besu.ethereum.core.Request", "org.hyperledger.besu.ethereum.core.encoding.TransactionEncoder", "org.hyperledger.besu.datatypes.VersionedHash.SHA256_VERSION_ID", "org.hyperledger.besu.ethereum.core.Transaction", "com.google.common.base.Supplier", "org.hyperledger.besu.datatypes.Blob", "org.hyperledger.besu.plugin.data.Restriction.RESTRICTED", "org.hyperledger.besu.datatypes.Sha256Hash", "org.hyperledger.besu.datatypes.KZGProof", "com.google.common.primitives.Longs", "org.hyperledger.besu.datatypes.CodeDelegation", "org.hyperledger.besu.plugin.data.Restriction.UNSUPPORTED", "com.google.common.cache.CacheBuilder", "org.apache.tuweni.units.bigints.UInt256s", "org.hyperledger.besu.ethereum.core.encoding.EncodingContext", "org.hyperledger.besu.ethereum.core.encoding.TransactionDecoder", "org.hyperledger.besu.ethereum.rlp.RLP", "org.hyperledger.besu.plugin.data.Restriction", "org.hyperledger.besu.ethereum.core.encoding.BlobTransactionEncoder", "org.hyperledger.besu.datatypes.AccessListEntry", "com.google.common.cache.Cache", "org.hyperledger.besu.datatypes.BlobsWithCommitments", "org.hyperledger.besu.datatypes.KZGCommitment", "org.hyperledger.besu.datatypes.TransactionType", "org.hyperledger.besu.plugin.data.Restriction.UNRESTRICTED", "org.hyperledger.besu.crypto.SECPPublicKey", "org.hyperledger.besu.ethereum.core.encoding.AccessListTransactionEncoder", "org.hyperledger.besu.crypto.SignatureAlgorithmFactory", "org.hyperledger.besu.ethereum.rlp.BytesValueRLPOutput", "org.hyperledger.besu.ethereum.core.json.ChainIdDeserializer", "org.hyperledger.besu.crypto.SignatureAlgorithm", "org.hyperledger.besu.crypto.SECPSignature", "org.hyperledger.besu.ethereum.core.encoding.CodeDelegationTransactionEncoder", "org.hyperledger.besu.ethereum.core.BlockHeader", "java.nio.charset.StandardCharsets.UTF_8", "java.io.File", "org.hyperledger.besu.evm.internal.EvmConfiguration", "com.google.common.annotations.VisibleForTesting", "org.hyperledger.besu.ethereum.privacy.PrivateStateRootResolver", "org.hyperledger.besu.ethereum.privacy.storage.PrivateStateStorage", "java.net.URI", "org.hyperledger.besu.ethereum.privacy.storage.PrivacyStorageProvider", "org.hyperledger.besu.plugin.services.PrivacyPluginService", "org.hyperledger.besu.ethereum.worldstate.WorldStatePreimageStorage", "org.hyperledger.besu.crypto.KeyPairUtil", "org.hyperledger.besu.ethereum.privacy.PrivateStateGenesisAllocator", "java.util.Base64", "org.hyperledger.besu.plugin.services.privacy.PrivacyGroupGenesisProvider", "org.hyperledger.besu.enclave.Enclave", "org.hyperledger.besu.ethereum.trie.forest.ForestWorldStateArchive", "java.nio.file.Path", "org.hyperledger.besu.enclave.EnclaveFactory", "com.google.common.io.Files", "org.hyperledger.besu.crypto.KeyPair", "org.hyperledger.besu.ethereum.privacy.PrivateWorldStateReader", "java.util.Collections", "org.hyperledger.besu.ethereum.worldstate.WorldStateStorageCoordinator", "org.hyperledger.besu.ethereum.chain.MutableBlockchain", "org.hyperledger.besu.plugin.ServiceManager", "org.hyperledger.besu.ethereum.chain.BadBlockManager", "org.hyperledger.besu.ethereum.worldstate.WorldStateArchive", "com.fasterxml.jackson.annotation.JsonInclude.Include", "com.fasterxml.jackson.annotation.JsonInclude.Include.ALWAYS", "com.fasterxml.jackson.annotation.JsonGetter", "org.hyperledger.besu.ethereum.api.jsonrpc.internal.results.tracing.diff.StateDiffTrace", "org.hyperledger.besu.ethereum.api.jsonrpc.internal.results.tracing.vm.VmTrace", "org.hyperledger.besu.ethereum.api.jsonrpc.internal.results.tracing.flat.FlatTrace", "org.hyperledger.besu.ethereum.api.jsonrpc.internal.processor.TransactionTrace", "org.hyperledger.besu.ethereum.api.jsonrpc.internal.results.tracing.Trace", "org.hyperledger.besu.ethereum.api.jsonrpc.internal.results.tracing.flat.Action", "com.fasterxml.jackson.annotation.JsonInclude", "com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL", "org.hyperledger.besu.ethereum.api.jsonrpc.internal.results.Quantity", "org.hyperledger.besu.ethereum.debug.TraceFrame", "com.fasterxml.jackson.annotation.JsonPropertyOrder", "java.util.concurrent.atomic.AtomicReference", "org.hyperledger.besu.ethereum.api.jsonrpc.internal.processor.privateProcessor.PrivateTransactionTrace", "org.hyperledger.besu.ethereum.api.jsonrpc.internal.results.tracing.flat.Result", "org.hyperledger.besu.collections.undo.UndoScalar", "org.hyperledger.besu.evm.worldstate.WorldUpdater", "org.hyperledger.besu.collections.undo.UndoTable", "org.hyperledger.besu.collections.undo.UndoSet", "java.util.Deque", "java.util.Set", "com.google.common.collect.Multimap", "com.google.common.base.Suppliers", "org.hyperledger.besu.evm.internal.OperandStack", "org.hyperledger.besu.evm.internal.MemoryEntry", "java.util.Collections.emptySet", "org.hyperledger.besu.evm.blockhash.BlockHashLookup", "com.google.common.collect.HashBasedTable", "org.hyperledger.besu.evm.internal.StorageEntry", "org.hyperledger.besu.evm.internal.ReturnStack", "java.util.ArrayDeque", "com.google.common.collect.HashMultimap", "org.hyperledger.besu.evm.Code", "java.util.function.Supplier", "org.hyperledger.besu.datatypes.VersionedHash", "org.hyperledger.besu.evm.internal.UnderflowException", "org.hyperledger.besu.evm.operation.Operation", "com.google.common.collect.Table", "java.util.function.Consumer", "org.hyperledger.besu.collections.trie.BytesTrieSet", "org.hyperledger.besu.ethereum.api.jsonrpc.internal.parameters.TopicsDeserializer", "java.util.stream.Collectors.toUnmodifiableList", "com.fasterxml.jackson.annotation.JsonFormat", "org.hyperledger.besu.evm.log.LogTopic", "com.fasterxml.jackson.annotation.JsonProperty", "com.fasterxml.jackson.annotation.JsonCreator", "org.hyperledger.besu.evm.log.LogsBloomFilter", "java.util.Collections.emptyList", "java.util.Arrays", "org.hyperledger.besu.evm.log.Log", "java.util.stream.IntStream", "org.hyperledger.besu.crypto.Hash.keccak256", "org.apache.tuweni.bytes.MutableBytes", "com.google.common.base.Preconditions.checkArgument", "org.hyperledger.besu.ethereum.rlp.RLPException", "org.apache.tuweni.bytes.DelegatingBytes", "org.hyperledger.besu.cli.config.EthNetworkConfig", "org.hyperledger.besu.ethereum.eth.sync.state.SyncState", "org.hyperledger.besu.ethereum.api.jsonrpc.internal.methods.JsonRpcMethod", "java.io.IOException", "org.hyperledger.besu.ethereum.ProtocolContext", "org.hyperledger.besu.ethereum.storage.StorageProvider", "org.hyperledger.besu.ethereum.core.Synchronizer", "org.hyperledger.besu.ethereum.core.MiningConfiguration", "org.hyperledger.besu.ethereum.transaction.TransactionSimulator", "org.hyperledger.besu.ethereum.p2p.config.SubProtocolConfiguration", "java.util.HashMap", "org.hyperledger.besu.config.PowAlgorithm", "org.hyperledger.besu.ethereum.api.jsonrpc.methods.JsonRpcMethods", "org.hyperledger.besu.config.GenesisConfig", "org.hyperledger.besu.ethereum.eth.transactions.TransactionPool", "org.hyperledger.besu.ethereum.blockcreation.MiningCoordinator", "org.hyperledger.besu.ethereum.worldstate.DataStorageConfiguration", "org.hyperledger.besu.ethereum.mainnet.ProtocolSchedule", "org.hyperledger.besu.ethereum.eth.manager.EthPeers", "org.hyperledger.besu.ethereum.core.PrivacyParameters", "org.hyperledger.besu.config.GenesisConfigOptions", "org.hyperledger.besu.config.QbftConfigOptions", "org.hyperledger.besu.ethereum.eth.manager.EthProtocolManager", "org.hyperledger.besu.cryptoservices.NodeKey", "org.apache.tuweni.units.bigints.UInt256", "org.hyperledger.besu.ethereum.eth.sync.SyncMode", "com.fasterxml.jackson.annotation.JsonIgnoreProperties", "java.util.Optional", "org.hyperledger.besu.datatypes.parameters.UnsignedLongParameter", "com.fasterxml.jackson.annotation.JsonAnySetter", "com.fasterxml.jackson.databind.annotation.JsonDeserialize", "org.slf4j.Logger", "java.util.Map", "com.google.common.base.Preconditions.checkState", "org.slf4j.LoggerFactory", "java.util.Objects", "org.hyperledger.besu.consensus.ibft.messagewrappers.RoundChange", "org.hyperledger.besu.ethereum.rlp.RLPInput", "org.hyperledger.besu.ethereum.rlp.RLPOutput", "java.util.Collection", "com.google.common.collect.Lists", "org.hyperledger.besu.consensus.common.bft.payload.SignedData", "java.util.List", "java.util.StringJoiner", "java.util.stream.Collectors", "java.util.ArrayList", "java.util.Iterator", "org.apache.tuweni.bytes.Bytes", "java.math.BigInteger", "org.apache.tuweni.bytes.Bytes32", "org.hyperledger.besu.datatypes.Hash", "java.util.function.Function", "org.hyperledger.besu.datatypes.Address", "org.hyperledger.besu.datatypes.Wei" ]
+  }, {
+    "name" : "BesuCommand",
+    "packageName" : "org.hyperledger.besu.cli",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ "Runnable", "DefaultCommandValues" ],
+    "methods" : [ {
+      "name" : "getMetricsOptions",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "metricsConfiguration",
+      "visibility" : "public",
+      "methodCalls" : [ "setMetricCategoryRegistry", "getMetricsEnabled", "getMetricsHost", "build", "checkOptionDependencies", "validate", "isNullOrEmpty", "getHostAddress", "autoDiscoverDefaultIP", "asList", "pushHost", "getMetricsPushHost", "getMetricsPushEnabled", "host", "toDomainObject", "hostsAllowlist", "setMetricsConfiguration" ]
+    }, {
+      "name" : "parse",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getStorageProvider",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getColorEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "ofNullable" ]
+    }, {
+      "name" : "configureLogging",
+      "visibility" : "public",
+      "methodCalls" : [ "println", "setLevel", "getLogLevel", "reconfigure" ]
+    }, {
+      "name" : "getNetwork",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "buildController",
+      "visibility" : "public",
+      "methodCalls" : [ "setupControllerBuilder", "getMessage", "build" ]
+    }, {
+      "name" : "run",
+      "visibility" : "public",
+      "methodCalls" : [ "dump", "mineBlock", "currentThread", "isCancelled", "interrupt", "cleanup", "executeTaskTimed", "isDone", "whenComplete", "compareAndSet", "getAccountsHealingList", "createAccountTrieNodeDataRequest", "clearFlatDatabase", "setHealTrieStatus", "getEndKeyHash", "notifyRangeProgress", "getCurrentAccountRange", "applyOnMatchingStrategy", "initRange", "createAccountRangeDataRequest", "getStartKeyHash", "configuration", "clear", "getPivotBlockWindowValidity", "getPivotBlockDistanceBeforeCaching", "clearTrieLog", "setPivotBlockSelector", "generateAllRanges", "toLogString", "fastSyncState", "setAccountsHealingList", "dynamicPivotBlockSelector", "setWorldStateDownloadProcess", "downloadState", "completedFuture", "isDownloading", "persistDataStep", "metricsSystem", "getNumber", "getStateRoot", "pivotBlockHeader", "maxOutstandingRequests", "requestDataStep", "downloadWasResumed", "getScheduler", "isWorldStateAvailable", "hashCountPerRequest", "getClass", "completeTaskStep", "getSimpleName", "enqueueRequest", "createAccountDataRequest", "startDownload", "completeExceptionally", "getPivotBlockHeader", "loadLocalDataStep", "cancel", "requestTransactions", "getScheduledFuture", "hasAvailableRequestCapacity", "isDisconnected", "runAsyncBlock", "sender", "nonce", "gasPrice", "dumpWorldState", "getChainHeadHeader", "process", "type", "rootHash", "accessListWarmAddresses", "stateRoot", "createGenesisModule", "blockHashLookup", "baseFee", "logsBloom", "worldUpdater", "getBaseFee", "getEofLayout", "orElse", "getBaseFeePerGas", "contract", "address", "originator", "getProtocolSpec", "evmToolCommandOptionsModule", "getWorldUpdater", "compareTo", "inputData", "value", "genesisFileModule", "getMessageFrameStack", "getWorldState", "dataStoreModule", "getGasLimit", "reset", "getRevertReason", "mixHash", "receiptsRoot", "getCode", "peek", "getFeeMarket", "builder", "build", "setCode", "getCoinbase", "extraData", "getCodeForCreation", "delegateCodeGasCost", "containerMode", "accessListGasCost", "timestamp", "completer", "code", "commit", "getTransactionProcessor", "apparentValue", "getGasCalculator", "implementsBaseFee", "coinbase", "codeDelegationListSize", "getBlockHashProcessor", "getAccessList", "contractAddress", "miningBeneficiary", "getExceptionalHaltReason", "createBlockHashLookup", "getDifficulty", "clearAccountsThatAreEmpty", "getSelfDestructs", "getSize", "parentHash", "number", "gasUsed", "updater", "getOrCreate", "ommersHash", "transactionsRoot", "payload", "blockValues", "blobGasPrice", "initialGas", "getEofVersion", "difficulty", "to", "or", "getOutputData", "elapsed", "createUnstarted", "getRemainingGas", "gasLimit", "transactionIntrinsicGasCost", "providesGenesisConfig", "metricsSystemModule", "considerCode", "setPrecompileCaching", "runBenchmark", "allOf", "extractTransactions", "iterator", "emptyIterator", "isBlank", "containsKey", "resultObject", "isArray", "allocObject", "bodyBytes", "persist", "create", "convertValue", "runTest", "isNull", "remove", "elements", "blockHeaderFunctions", "writeTo", "writeRaw", "createObjectMapper", "textValue", "encoded", "createObjectNode", "endList", "startList", "buildBlockHeader", "getHash", "writeValueAsString", "writerWithDefaultPrettyPrinter", "fromHeader", "reader", "printStackTrace", "set", "setPort", "createHttpServer", "onFailure", "handle", "vertx", "setCompressionSupported", "listen", "actualPort", "setHandle100ContinueAutomatically", "setHost", "requestHandler", "onSuccess", "bodyHandler", "setDefaultInstance", "exit", "versionCompatibilityChecks", "configureNativeLibs", "isDeprecated", "getMetricsSystem", "setIgnorableStorageSegments", "beforeExternalServices", "startEthereumMainLoop", "ofNullable", "startExternalServices", "afterExternalServicesMainLoop", "debug", "warn", "generate", "createVertx", "next", "put", "hasNext", "isOpen", "accept", "complete", "parseEOF", "isValid", "slice", "hasFork", "getEvmVersion", "getMaxEofVersion", "setLevel", "toHexString", "geSpecByName", "print", "container", "getFork", "flush", "invalidReason", "getName", "fromHexString", "prettyPrint", "getEvm", "getInvalidReason", "getInstance", "getCodeUncached", "abort", "processNextInput", "isAborted", "attemptFinalization", "close", "hasMore", "asBoolean", "asLong", "objectNodeFromString", "readString", "size", "addAll", "configureLogging", "initMetrics", "equals", "init", "forFilteredColumnFamily", "getAndPrintUsageForColumnFamily", "printTotals", "printStatsForColumnFamily", "forEachColumnFamily", "isEmpty", "add", "printTableHeader", "getCommandSpec", "mixins", "format", "asText", "readTree", "writeValue", "valueOf", "asInt", "of", "has", "map", "stream", "createVariablesStorage", "getCount", "get", "configureEcCurve", "buildController", "formatOutputSize", "exportTrieLog", "run", "getProtocolSchedule", "getTrieLogContext", "importTrieLog", "toAbsolutePath", "toList", "createBlockchainStorage", "blockchain", "publicKeyToAddress", "newFixedThreadPool", "printCount", "getDataStorageConfiguration", "submit", "rootWorldStateStorage", "getNetwork", "toString", "contains", "getPublicKey", "config", "prune", "getOut", "generateLogBloomCache", "exists", "isBackingUp", "getMessage", "getWorldStateArchive", "toNanos", "doubleValue", "empty", "getStorageCount", "dataDir", "countDown", "ifPresent", "info", "stop", "start", "error", "getPrivateStateStorage", "runMigrationIfRequired", "commandLine", "usage", "parkNanos", "getTargetBlockNum", "getChainHeadBlockNumber", "mkdirs", "fromHexStringLenient", "getProtocolContext", "err", "println", "getAccountCount", "version", "gensalt", "lines", "requestBackup", "getBlockchain", "forEach", "getCurrentAccountBytes", "min", "getCodeSize", "fileStreamReader", "toFile", "checkNotNull", "awaitStop", "getWorldStateStorage", "printf", "getStoredBlockNum", "toPath", "resolve", "hashpw", "pow", "getStorageProvider", "toUnsignedBigInteger", "checkArgument" ]
+    }, {
+      "name" : "getEnodeDnsConfiguration",
+      "visibility" : "public",
+      "methodCalls" : [ "toDomainObject" ]
+    }, {
+      "name" : "getVersionCompatibilityProtection",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "dataDir",
+      "visibility" : "public",
+      "methodCalls" : [ "toAbsolutePath" ]
+    }, {
+      "name" : "getBesuPluginContext",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "loadKeyPair",
+      "visibility" : "public",
+      "methodCalls" : [ "loadKeyPair" ]
+    }, {
+      "name" : "parameterExceptionHandler",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "executionExceptionHandler",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setIgnorableStorageSegments",
+      "visibility" : "public",
+      "methodCalls" : [ "getChainDataPruningEnabled", "addIgnorableSegmentIdentifier" ]
+    }, {
+      "name" : "getMetricsSystem",
+      "visibility" : "public",
+      "methodCalls" : [ "getMetricsSystem" ]
+    }, {
+      "name" : "toCommandLine",
+      "visibility" : "public",
+      "methodCalls" : [ "setCaseInsensitiveEnumValuesAllowed" ]
+    }, {
+      "name" : "setupControllerBuilder",
+      "visibility" : "public",
+      "methodCalls" : [ "getUnstable", "genesisStateHashCacheEnabled", "withMiningParameters", "storageProvider", "transactionPoolConfiguration", "clock", "init", "getDataStorageFormat", "cacheLastBlocks", "isEarlyRoundChangeEnabled", "dataStorageConfiguration", "evmConfiguration", "dataDirectory", "reorgLoggingThreshold", "getDataStorageConfiguration", "requiredBlocks", "ethProtocolConfiguration", "dataDir", "equals", "withJsonRpcHttpOptions", "besuComponent", "randomPeerPriority", "chainPruningConfiguration", "maxRemotelyInitiatedPeers", "systemUTC", "maxPeers", "apiConfiguration", "nodeKey", "isParallelTxProcessingEnabled", "toDomainObject", "messagePermissioningProviders", "metricsSystem", "synchronizerConfiguration", "resolve", "miningParameters", "getPathBasedExtraStorageConfiguration", "getMessagePermissioningProviders", "fromEthNetworkConfig", "networkConfiguration", "get", "isRevertReasonEnabled", "getMetricsSystem" ]
+    }, {
+      "name" : "getDataStorageConfiguration",
+      "visibility" : "public",
+      "methodCalls" : [ "withPathBasedExtraStorageConfiguration", "copyOf", "format", "isOptionSet", "equals", "getLimitTrieLogsEnabled", "getPathBasedExtraStorageConfiguration", "warn", "withLimitTrieLogsEnabled", "getDataStorageFormat", "toDomainObject" ]
+    } ],
+    "imports" : [ "org.hyperledger.besu.services.TransactionSelectionServiceImpl", "java.util.TreeMap", "org.hyperledger.besu.plugin.services.MetricsSystem", "picocli.CommandLine.Command", "org.hyperledger.besu.plugin.services.storage.rocksdb.RocksDBPlugin", "org.hyperledger.besu.chainimport.Era1BlockImporter", "org.hyperledger.besu.Runner", "org.hyperledger.besu.plugin.services.TransactionSimulationService", "org.hyperledger.besu.ethereum.api.jsonrpc.RpcApis", "org.hyperledger.besu.RunnerBuilder", "java.io.File", "java.time.Clock", "org.hyperledger.besu.datatypes.Hash", "org.hyperledger.besu.util.LogConfigurator", "org.hyperledger.besu.services.SecurityModuleServiceImpl", "org.hyperledger.besu.cli.options.NetworkingOptions", "org.hyperledger.besu.cli.options.JsonRpcHttpOptions", "com.google.common.annotations.VisibleForTesting", "org.hyperledger.besu.cli.options.GraphQlOptions", "org.hyperledger.besu.ethereum.p2p.config.DiscoveryConfiguration", "com.google.common.base.Preconditions.checkNotNull", "picocli.CommandLine.Option", "org.hyperledger.besu.plugin.services.BesuConfiguration", "io.vertx.core.Vertx", "org.hyperledger.besu.services.PrivacyPluginServiceImpl", "org.hyperledger.besu.cli.options.PluginsConfigurationOptions", "java.util.OptionalInt", "picocli.CommandLine.ExecutionException", "org.hyperledger.besu.plugin.services.metrics.MetricCategoryRegistry", "org.hyperledger.besu.ethereum.api.jsonrpc.JsonRpcConfiguration", "org.hyperledger.besu.ethereum.p2p.peers.EnodeDnsConfiguration", "org.hyperledger.besu.config.MergeConfiguration", "org.hyperledger.besu.services.BesuConfigurationImpl", "org.hyperledger.besu.ethereum.worldstate.ImmutableDataStorageConfiguration", "org.hyperledger.besu.datatypes.Wei", "org.slf4j.Logger", "org.hyperledger.besu.cli.presynctasks.PrivateDatabaseMigrationPreSyncTask", "org.hyperledger.besu.metrics.BesuMetricCategory", "org.hyperledger.besu.cli.custom.JsonRPCAllowlistHostsProperty", "java.util.function.Predicate", "java.io.InputStreamReader", "org.hyperledger.besu.cli.subcommands.ValidateConfigSubCommand", "org.hyperledger.besu.cli.options.SynchronizerOptions", "org.hyperledger.besu.evm.precompile.AbstractAltBnPrecompiledContract", "org.hyperledger.besu.cli.presynctasks.PreSynchronizationTaskRunner", "org.hyperledger.besu.cli.options.EthProtocolOptions", "io.vertx.core.VertxOptions", "org.hyperledger.besu.datatypes.Address", "org.hyperledger.besu.plugin.services.sync.SynchronizationService", "org.hyperledger.besu.services.StorageServiceImpl", "java.util.ArrayList", "org.hyperledger.besu.cli.util.CommandLineUtils.isOptionSet", "org.hyperledger.besu.services.RpcEndpointServiceImpl", "org.hyperledger.besu.ethereum.eth.transactions.ImmutableTransactionPoolConfiguration", "org.hyperledger.besu.util.number.PositiveNumber", "java.nio.file.attribute.GroupPrincipal", "org.hyperledger.besu.metrics.prometheus.MetricsConfiguration", "oshi.PlatformEnum", "java.util.function.Function", "java.util.Arrays", "org.hyperledger.besu.ethereum.chain.Blockchain", "org.hyperledger.besu.cli.config.ProfilesCompletionCandidates", "org.hyperledger.besu.cli.options.RpcWebsocketOptions", "org.hyperledger.besu.cli.options.unstable.QBFTOptions", "org.hyperledger.besu.util.EphemeryGenesisUpdater", "org.hyperledger.besu.evm.precompile.AbstractPrecompiledContract", "org.hyperledger.besu.cli.subcommands.PublicKeySubCommand", "org.hyperledger.besu.services.PermissioningServiceImpl", "java.net.URL", "org.hyperledger.besu.services.MiningServiceImpl", "java.io.IOException", "org.hyperledger.besu.ethereum.worldstate.ImmutablePathBasedExtraStorageConfiguration", "org.hyperledger.besu.services.kvstore.InMemoryStoragePlugin", "org.hyperledger.besu.ethereum.storage.StorageProvider", "org.hyperledger.besu.cli.config.NativeRequirement.NativeRequirementResult", "org.hyperledger.besu.plugin.services.BlockSimulationService", "org.hyperledger.besu.services.BesuPluginContextImpl", "org.hyperledger.besu.ethereum.api.jsonrpc.ipc.JsonRpcIpcConfiguration", "org.hyperledger.besu.services.P2PServiceImpl", "org.hyperledger.besu.cli.util.CommandLineUtils.DEPENDENCY_WARNING_MSG", "org.hyperledger.besu.cli.config.NetworkName.MAINNET", "org.hyperledger.besu.ethereum.permissioning.PermissioningConfiguration", "java.util.Arrays.asList", "java.util.Map", "org.hyperledger.besu.plugin.services.TraceService", "org.hyperledger.besu.plugin.services.BlockchainService", "org.hyperledger.besu.ethereum.eth.sync.SyncMode", "org.hyperledger.besu.ethereum.api.jsonrpc.authentication.EngineAuthService.EPHEMERAL_JWT_FILE", "org.hyperledger.besu.services.TransactionPoolValidatorServiceImpl", "org.hyperledger.besu.services.BesuEventsImpl", "org.hyperledger.besu.cryptoservices.NodeKey", "org.hyperledger.besu.metrics.StandardMetricCategory", "org.hyperledger.besu.ethereum.worldstate.PathBasedExtraStorageConfiguration", "java.io.BufferedReader", "org.hyperledger.besu.ethereum.core.MiningParametersMetrics", "org.hyperledger.besu.ethereum.permissioning.LocalPermissioningConfiguration", "org.hyperledger.besu.crypto.KeyPair", "java.nio.charset.StandardCharsets.UTF_8", "io.vertx.core.json.DecodeException", "org.hyperledger.besu.services.TransactionPoolServiceImpl", "org.apache.tuweni.units.bigints.UInt256", "org.hyperledger.besu.services.PicoCLIOptionsImpl", "org.hyperledger.besu.chainimport.JsonBlockImporter", "org.hyperledger.besu.services.BlockchainServiceImpl", "org.hyperledger.besu.cli.subcommands.blocks.BlocksSubCommand", "org.hyperledger.besu.cryptoservices.KeyPairSecurityModule", "org.hyperledger.besu.ethereum.p2p.discovery.P2PDiscoveryConfiguration", "org.hyperledger.besu.ethereum.core.PrivacyParameters", "org.hyperledger.besu.services.TraceServiceImpl", "org.hyperledger.besu.plugin.services.TransactionPoolValidatorService", "org.hyperledger.besu.config.GenesisConfigOptions", "org.hyperledger.besu.util.InvalidConfigurationException", "org.hyperledger.besu.plugin.services.TransactionSelectionService", "org.hyperledger.besu.cli.options.PrivacyPluginOptions", "org.hyperledger.besu.plugin.services.p2p.P2PService", "org.hyperledger.besu.cli.options.EngineRPCConfiguration", "org.hyperledger.besu.plugin.data.EnodeURL", "picocli.CommandLine.IExecutionStrategy", "org.hyperledger.besu.enclave.EnclaveFactory", "org.hyperledger.besu.evm.precompile.BigIntegerModularExponentiationPrecompiledContract", "org.hyperledger.besu.evm.precompile.AbstractBLS12PrecompiledContract", "org.hyperledger.besu.cli.options.MetricsOptions", "org.apache.tuweni.bytes.Bytes", "org.hyperledger.besu.util.PermissioningConfigurationValidator", "org.hyperledger.besu.plugin.services.SecurityModuleService", "org.hyperledger.besu.cli.subcommands.operator.OperatorSubCommand", "org.hyperledger.besu.cli.util.ConfigDefaultValueProviderStrategy", "org.hyperledger.besu.plugin.services.mining.MiningService", "java.util.HashSet", "org.hyperledger.besu.plugin.services.BesuEvents", "org.hyperledger.besu.plugin.services.rlp.RlpConverterService", "org.hyperledger.besu.crypto.Blake2bfMessageDigest", "org.hyperledger.besu.cli.subcommands.TxParseSubCommand", "org.hyperledger.besu.ethereum.api.ApiConfiguration", "org.hyperledger.besu.services.TransactionSimulationServiceImpl", "org.hyperledger.besu.cli.options.NatOptions", "org.hyperledger.besu.cli.options.RPCOptions", "java.util.Objects", "java.nio.file.attribute.PosixFilePermission", "org.hyperledger.besu.plugin.services.PrivacyPluginService", "org.hyperledger.besu.plugin.services.exception.StorageException", "org.hyperledger.besu.crypto.SignatureAlgorithmFactory", "org.hyperledger.besu.ethereum.eth.sync.SynchronizerConfiguration", "org.hyperledger.besu.cli.subcommands.PasswordSubCommand", "org.hyperledger.besu.evm.precompile.KZGPointEvalPrecompiledContract", "org.hyperledger.besu.config.CheckpointConfigOptions", "picocli.AutoComplete", "org.hyperledger.besu.ethereum.worldstate.DataStorageConfiguration", "org.hyperledger.besu.ethereum.core.MiningConfiguration", "org.hyperledger.besu.cli.options.NativeLibraryOptions", "java.nio.file.Files", "org.hyperledger.besu.cli.options.DnsOptions", "org.hyperledger.besu.util.number.Percentage", "com.google.common.collect.ImmutableMap", "org.hyperledger.besu.cli.options.EngineRPCOptions", "java.util.Set", "org.hyperledger.besu.controller.BesuControllerBuilder", "java.util.Collection", "org.hyperledger.besu.controller.BesuController", "org.hyperledger.besu.metrics.MetricCategoryRegistryImpl", "java.util.Collections.singletonList", "com.google.common.base.Suppliers", "org.hyperledger.besu.cli.util.CommandLineUtils", "com.google.common.base.Strings", "com.google.common.base.Splitter", "org.hyperledger.besu.cli.config.NetworkName", "org.hyperledger.besu.cli.options.storage.PathBasedExtraStorageOptions", "org.hyperledger.besu.plugin.services.storage.PrivacyKeyValueStorageFactory", "org.hyperledger.besu.crypto.SignatureAlgorithmType", "org.hyperledger.besu.cli.options.MiningOptions", "org.hyperledger.besu.ethereum.api.jsonrpc.InProcessRpcConfiguration", "org.hyperledger.besu.ethereum.core.VersionMetadata", "org.hyperledger.besu.cli.options.PermissionsOptions", "org.hyperledger.besu.util.number.Fraction", "org.hyperledger.besu.cli.options.TransactionPoolOptions", "org.hyperledger.besu.cli.util.BesuCommandCustomFactory", "org.hyperledger.besu.cli.options.IpcOptions", "org.hyperledger.besu.chainexport.RlpBlockExporter", "org.hyperledger.besu.controller.BesuController.DATABASE_PATH", "org.hyperledger.besu.cli.config.NetworkName.EPHEMERY", "org.hyperledger.besu.cli.options.P2PDiscoveryOptions", "org.hyperledger.besu.cli.options.EthstatsOptions", "org.hyperledger.besu.config.GenesisConfig", "org.hyperledger.besu.ethereum.eth.transactions.TransactionPoolConfiguration", "org.hyperledger.besu.metrics.ObservableMetricsSystem", "org.hyperledger.besu.services.SynchronizationServiceImpl", "org.hyperledger.besu.plugin.services.PicoCLIOptions", "org.hyperledger.besu.plugin.services.PermissioningService", "org.hyperledger.besu.util.BesuVersionUtils", "org.hyperledger.besu.ethereum.api.jsonrpc.websocket.WebSocketConfiguration", "org.hyperledger.besu.components.BesuComponent", "java.math.BigInteger", "org.hyperledger.besu.cli.subcommands.rlp.RLPSubCommand", "org.hyperledger.besu.cli.options.LoggingLevelOption", "org.hyperledger.besu.cli.config.EthNetworkConfig", "java.util.Optional", "org.hyperledger.besu.cli.options.NodePrivateKeyFileOption", "picocli.CommandLine", "java.net.URI", "org.hyperledger.besu.ethereum.privacy.storage.keyvalue.PrivacyKeyValueStorageProviderBuilder", "org.hyperledger.besu.cli.options.InProcessRpcOptions", "java.util.List", "org.hyperledger.besu.plugin.services.storage.DataStorageFormat", "org.hyperledger.besu.services.BlockSimulatorServiceImpl", "org.hyperledger.besu.ethereum.p2p.peers.StaticNodesParser", "oshi.SystemInfo", "org.hyperledger.besu.ethereum.api.jsonrpc.authentication.JwtAlgorithm", "org.hyperledger.besu.metrics.vertx.VertxMetricsAdapterFactory", "org.hyperledger.besu.ethereum.storage.keyvalue.KeyValueSegmentIdentifier", "picocli.CommandLine.ParameterException", "org.hyperledger.besu.util.NetworkUtility", "org.hyperledger.besu.ethereum.p2p.peers.EnodeURLImpl", "org.hyperledger.besu.cli.error.BesuParameterExceptionHandler", "org.hyperledger.besu.chainimport.RlpBlockImporter", "org.hyperledger.besu.metrics.MetricsProtocol", "org.hyperledger.besu.cli.util.VersionProvider", "org.hyperledger.besu.ethereum.storage.keyvalue.KeyValueStorageProviderBuilder", "org.hyperledger.besu.ethereum.api.query.BlockchainQueries", "org.hyperledger.besu.cli.options.EvmOptions", "org.hyperledger.besu.cli.DefaultCommandValues.getDefaultBesuDataPath", "java.util.stream.Collectors", "org.hyperledger.besu.ethereum.storage.keyvalue.KeyValueStorageProvider", "org.hyperledger.besu.plugin.services.securitymodule.SecurityModule", "org.hyperledger.besu.services.RlpConverterServiceImpl", "java.nio.file.attribute.PosixFileAttributes", "org.hyperledger.besu.ethereum.privacy.storage.keyvalue.PrivacyKeyValueStorageProvider", "java.io.InputStream", "org.hyperledger.besu.cli.error.BesuExecutionExceptionHandler", "org.hyperledger.besu.plugin.services.transactionpool.TransactionPoolService", "org.hyperledger.besu.ethereum.api.graphql.GraphQLConfiguration", "org.hyperledger.besu.cli.subcommands.storage.StorageSubCommand", "java.util.HashMap", "org.hyperledger.besu.plugin.services.StorageService", "org.hyperledger.besu.cli.options.ChainPruningOptions", "java.util.function.Supplier", "org.hyperledger.besu.cli.options.ApiConfigurationOptions", "org.hyperledger.besu.plugin.services.RpcEndpointService", "org.hyperledger.besu.crypto.KeyPairUtil", "com.google.common.base.Preconditions.checkState", "org.hyperledger.besu.cli.options.storage.DataStorageOptions", "java.nio.file.Path", "java.nio.file.attribute.UserPrincipal", "org.hyperledger.besu.nat.NatMethod" ]
+  }, {
+    "name" : "PrivacyOptionGroup",
+    "packageName" : "org.hyperledger.besu.cli",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ ],
+    "imports" : [ "com.google.common.base.Suppliers", "java.util.stream.Collectors", "org.hyperledger.besu.ethereum.p2p.discovery.P2PDiscoveryConfiguration", "org.hyperledger.besu.plugin.services.exception.StorageException", "org.hyperledger.besu.datatypes.Address", "org.hyperledger.besu.services.TransactionPoolServiceImpl", "org.hyperledger.besu.controller.BesuController", "java.nio.file.attribute.PosixFileAttributes", "picocli.CommandLine.ParameterException", "org.hyperledger.besu.plugin.services.storage.DataStorageFormat", "org.hyperledger.besu.cli.options.MiningOptions", "java.io.File", "org.hyperledger.besu.cli.options.RpcWebsocketOptions", "org.hyperledger.besu.services.PicoCLIOptionsImpl", "org.hyperledger.besu.util.PermissioningConfigurationValidator", "org.hyperledger.besu.chainimport.RlpBlockImporter", "org.hyperledger.besu.cli.DefaultCommandValues.getDefaultBesuDataPath", "org.hyperledger.besu.services.kvstore.InMemoryStoragePlugin", "oshi.PlatformEnum", "org.hyperledger.besu.cli.subcommands.storage.StorageSubCommand", "org.hyperledger.besu.util.BesuVersionUtils", "com.google.common.annotations.VisibleForTesting", "java.util.ArrayList", "org.hyperledger.besu.cli.util.ConfigDefaultValueProviderStrategy", "org.hyperledger.besu.services.SynchronizationServiceImpl", "org.hyperledger.besu.util.LogConfigurator", "org.hyperledger.besu.ethereum.permissioning.PermissioningConfiguration", "java.util.Set", "org.hyperledger.besu.services.TransactionPoolValidatorServiceImpl", "java.util.Collection", "org.hyperledger.besu.config.CheckpointConfigOptions", "java.util.Arrays", "org.hyperledger.besu.cryptoservices.NodeKey", "org.hyperledger.besu.util.EphemeryGenesisUpdater", "org.hyperledger.besu.cli.options.InProcessRpcOptions", "org.hyperledger.besu.services.RpcEndpointServiceImpl", "org.hyperledger.besu.plugin.services.storage.PrivacyKeyValueStorageFactory", "org.hyperledger.besu.evm.precompile.AbstractAltBnPrecompiledContract", "org.hyperledger.besu.ethereum.worldstate.ImmutableDataStorageConfiguration", "org.hyperledger.besu.ethereum.eth.transactions.TransactionPoolConfiguration", "org.hyperledger.besu.ethereum.eth.transactions.ImmutableTransactionPoolConfiguration", "picocli.CommandLine.IExecutionStrategy", "org.hyperledger.besu.ethereum.api.jsonrpc.authentication.JwtAlgorithm", "org.hyperledger.besu.ethereum.p2p.config.DiscoveryConfiguration", "org.slf4j.Logger", "org.hyperledger.besu.metrics.BesuMetricCategory", "org.hyperledger.besu.ethereum.api.jsonrpc.RpcApis", "org.hyperledger.besu.cli.error.BesuExecutionExceptionHandler", "org.hyperledger.besu.cli.options.PrivacyPluginOptions", "org.hyperledger.besu.plugin.data.EnodeURL", "org.hyperledger.besu.plugin.services.transactionpool.TransactionPoolService", "com.google.common.base.Preconditions.checkState", "org.hyperledger.besu.plugin.services.BlockchainService", "org.hyperledger.besu.cli.config.NetworkName", "org.hyperledger.besu.cli.util.CommandLineUtils.isOptionSet", "org.hyperledger.besu.services.BlockchainServiceImpl", "org.hyperledger.besu.util.number.Fraction", "java.io.IOException", "org.hyperledger.besu.config.GenesisConfigOptions", "org.hyperledger.besu.cli.options.NodePrivateKeyFileOption", "org.hyperledger.besu.cli.options.TransactionPoolOptions", "org.hyperledger.besu.ethereum.api.jsonrpc.JsonRpcConfiguration", "org.hyperledger.besu.evm.precompile.AbstractPrecompiledContract", "org.hyperledger.besu.services.BesuEventsImpl", "org.apache.tuweni.bytes.Bytes", "org.hyperledger.besu.Runner", "org.hyperledger.besu.cli.util.CommandLineUtils", "org.hyperledger.besu.cli.util.CommandLineUtils.DEPENDENCY_WARNING_MSG", "org.hyperledger.besu.metrics.ObservableMetricsSystem", "org.hyperledger.besu.cli.error.BesuParameterExceptionHandler", "org.hyperledger.besu.plugin.services.sync.SynchronizationService", "io.vertx.core.Vertx", "org.hyperledger.besu.crypto.SignatureAlgorithmFactory", "org.hyperledger.besu.ethereum.core.PrivacyParameters", "org.hyperledger.besu.cli.options.MetricsOptions", "org.hyperledger.besu.cli.options.SynchronizerOptions", "org.hyperledger.besu.crypto.KeyPairUtil", "org.hyperledger.besu.plugin.services.metrics.MetricCategoryRegistry", "org.hyperledger.besu.cli.options.NatOptions", "org.hyperledger.besu.cli.presynctasks.PrivateDatabaseMigrationPreSyncTask", "org.hyperledger.besu.plugin.services.p2p.P2PService", "org.hyperledger.besu.chainexport.RlpBlockExporter", "org.hyperledger.besu.cli.custom.JsonRPCAllowlistHostsProperty", "org.hyperledger.besu.services.BlockSimulatorServiceImpl", "org.hyperledger.besu.cli.options.storage.PathBasedExtraStorageOptions", "org.hyperledger.besu.ethereum.privacy.storage.keyvalue.PrivacyKeyValueStorageProvider", "org.hyperledger.besu.plugin.services.TransactionPoolValidatorService", "org.hyperledger.besu.ethereum.api.ApiConfiguration", "org.hyperledger.besu.cli.subcommands.TxParseSubCommand", "org.hyperledger.besu.ethereum.chain.Blockchain", "org.hyperledger.besu.services.PrivacyPluginServiceImpl", "org.hyperledger.besu.util.number.Percentage", "org.hyperledger.besu.services.TransactionSelectionServiceImpl", "org.hyperledger.besu.config.MergeConfiguration", "java.io.InputStreamReader", "org.hyperledger.besu.enclave.EnclaveFactory", "org.hyperledger.besu.services.RlpConverterServiceImpl", "org.hyperledger.besu.cli.config.NativeRequirement.NativeRequirementResult", "org.hyperledger.besu.ethereum.storage.keyvalue.KeyValueStorageProviderBuilder", "java.nio.file.attribute.GroupPrincipal", "org.hyperledger.besu.plugin.services.BesuEvents", "org.hyperledger.besu.cli.options.LoggingLevelOption", "oshi.SystemInfo", "org.hyperledger.besu.plugin.services.BlockSimulationService", "org.hyperledger.besu.services.StorageServiceImpl", "org.hyperledger.besu.cli.options.ApiConfigurationOptions", "org.hyperledger.besu.cli.options.GraphQlOptions", "org.hyperledger.besu.plugin.services.mining.MiningService", "org.hyperledger.besu.cli.options.EngineRPCOptions", "org.hyperledger.besu.ethereum.api.jsonrpc.ipc.JsonRpcIpcConfiguration", "java.util.Objects", "org.hyperledger.besu.cli.options.EthstatsOptions", "org.hyperledger.besu.ethereum.core.MiningConfiguration", "org.apache.tuweni.units.bigints.UInt256", "org.hyperledger.besu.ethereum.storage.keyvalue.KeyValueStorageProvider", "org.hyperledger.besu.plugin.services.BesuConfiguration", "org.hyperledger.besu.cli.subcommands.rlp.RLPSubCommand", "java.nio.file.Files", "java.util.HashMap", "org.hyperledger.besu.cli.util.BesuCommandCustomFactory", "org.hyperledger.besu.cryptoservices.KeyPairSecurityModule", "org.hyperledger.besu.datatypes.Wei", "org.hyperledger.besu.metrics.MetricsProtocol", "org.hyperledger.besu.crypto.SignatureAlgorithmType", "org.hyperledger.besu.plugin.services.PicoCLIOptions", "io.vertx.core.json.DecodeException", "org.hyperledger.besu.metrics.MetricCategoryRegistryImpl", "java.io.BufferedReader", "org.hyperledger.besu.ethereum.eth.sync.SynchronizerConfiguration", "org.hyperledger.besu.ethereum.eth.sync.SyncMode", "org.hyperledger.besu.ethereum.api.jsonrpc.websocket.WebSocketConfiguration", "org.hyperledger.besu.cli.options.NativeLibraryOptions", "org.hyperledger.besu.cli.options.P2PDiscoveryOptions", "org.hyperledger.besu.crypto.KeyPair", "org.hyperledger.besu.cli.options.IpcOptions", "org.hyperledger.besu.plugin.services.RpcEndpointService", "org.hyperledger.besu.chainimport.Era1BlockImporter", "org.hyperledger.besu.plugin.services.SecurityModuleService", "java.util.List", "java.util.Collections.singletonList", "org.hyperledger.besu.cli.presynctasks.PreSynchronizationTaskRunner", "org.hyperledger.besu.services.SecurityModuleServiceImpl", "java.nio.file.attribute.PosixFilePermission", "org.hyperledger.besu.ethereum.p2p.peers.EnodeDnsConfiguration", "org.hyperledger.besu.ethereum.worldstate.DataStorageConfiguration", "picocli.CommandLine.Command", "java.util.Arrays.asList", "java.util.function.Supplier", "java.time.Clock", "org.hyperledger.besu.evm.precompile.AbstractBLS12PrecompiledContract", "org.hyperledger.besu.ethereum.api.graphql.GraphQLConfiguration", "org.hyperledger.besu.plugin.services.securitymodule.SecurityModule", "org.hyperledger.besu.crypto.Blake2bfMessageDigest", "org.hyperledger.besu.cli.options.EngineRPCConfiguration", "picocli.CommandLine.Option", "org.hyperledger.besu.services.TransactionSimulationServiceImpl", "org.hyperledger.besu.metrics.StandardMetricCategory", "org.hyperledger.besu.plugin.services.rlp.RlpConverterService", "org.hyperledger.besu.services.BesuPluginContextImpl", "java.util.Optional", "org.hyperledger.besu.ethereum.core.VersionMetadata", "org.hyperledger.besu.services.P2PServiceImpl", "org.hyperledger.besu.ethereum.api.jsonrpc.InProcessRpcConfiguration", "org.hyperledger.besu.cli.options.NetworkingOptions", "org.hyperledger.besu.cli.options.RPCOptions", "org.hyperledger.besu.plugin.services.TraceService", "org.hyperledger.besu.cli.subcommands.PasswordSubCommand", "org.hyperledger.besu.cli.options.JsonRpcHttpOptions", "java.net.URL", "java.util.function.Function", "org.hyperledger.besu.evm.precompile.BigIntegerModularExponentiationPrecompiledContract", "org.hyperledger.besu.plugin.services.storage.rocksdb.RocksDBPlugin", "org.hyperledger.besu.evm.precompile.KZGPointEvalPrecompiledContract", "java.io.InputStream", "org.hyperledger.besu.util.InvalidConfigurationException", "org.hyperledger.besu.metrics.vertx.VertxMetricsAdapterFactory", "org.hyperledger.besu.cli.subcommands.ValidateConfigSubCommand", "org.hyperledger.besu.services.BesuConfigurationImpl", "org.hyperledger.besu.ethereum.core.MiningParametersMetrics", "java.math.BigInteger", "org.hyperledger.besu.ethereum.permissioning.LocalPermissioningConfiguration", "com.google.common.base.Strings", "org.hyperledger.besu.nat.NatMethod", "org.hyperledger.besu.plugin.services.MetricsSystem", "org.hyperledger.besu.plugin.services.StorageService", "org.hyperledger.besu.cli.config.EthNetworkConfig", "org.hyperledger.besu.util.number.PositiveNumber", "org.hyperledger.besu.cli.options.unstable.QBFTOptions", "org.hyperledger.besu.ethereum.privacy.storage.keyvalue.PrivacyKeyValueStorageProviderBuilder", "org.hyperledger.besu.plugin.services.PermissioningService", "org.hyperledger.besu.cli.config.ProfilesCompletionCandidates", "org.hyperledger.besu.cli.options.PermissionsOptions", "org.hyperledger.besu.cli.options.DnsOptions", "org.hyperledger.besu.cli.options.PluginsConfigurationOptions", "org.hyperledger.besu.config.GenesisConfig", "org.hyperledger.besu.services.TraceServiceImpl", "org.hyperledger.besu.cli.config.NetworkName.EPHEMERY", "org.hyperledger.besu.controller.BesuControllerBuilder", "java.nio.file.attribute.UserPrincipal", "org.hyperledger.besu.plugin.services.TransactionSelectionService", "org.hyperledger.besu.controller.BesuController.DATABASE_PATH", "org.hyperledger.besu.chainimport.JsonBlockImporter", "org.hyperledger.besu.ethereum.storage.keyvalue.KeyValueSegmentIdentifier", "org.hyperledger.besu.util.NetworkUtility", "org.hyperledger.besu.RunnerBuilder", "org.hyperledger.besu.cli.options.storage.DataStorageOptions", "org.hyperledger.besu.ethereum.p2p.peers.EnodeURLImpl", "org.hyperledger.besu.plugin.services.PrivacyPluginService", "org.hyperledger.besu.services.PermissioningServiceImpl", "java.util.Map", "org.hyperledger.besu.cli.util.VersionProvider", "org.hyperledger.besu.ethereum.storage.StorageProvider", "org.hyperledger.besu.cli.options.EthProtocolOptions", "org.hyperledger.besu.ethereum.api.query.BlockchainQueries", "org.hyperledger.besu.cli.subcommands.operator.OperatorSubCommand", "org.hyperledger.besu.ethereum.worldstate.ImmutablePathBasedExtraStorageConfiguration", "picocli.CommandLine", "org.hyperledger.besu.services.MiningServiceImpl", "org.hyperledger.besu.cli.subcommands.blocks.BlocksSubCommand", "org.hyperledger.besu.metrics.prometheus.MetricsConfiguration", "java.util.HashSet", "java.util.OptionalInt", "java.nio.file.Path", "org.hyperledger.besu.datatypes.Hash", "org.hyperledger.besu.cli.config.NetworkName.MAINNET", "org.hyperledger.besu.cli.options.ChainPruningOptions", "com.google.common.collect.ImmutableMap", "java.util.function.Predicate", "picocli.AutoComplete", "org.hyperledger.besu.components.BesuComponent", "java.util.TreeMap", "org.hyperledger.besu.cli.options.EvmOptions", "io.vertx.core.VertxOptions", "org.hyperledger.besu.cli.subcommands.PublicKeySubCommand", "com.google.common.base.Preconditions.checkNotNull", "java.net.URI", "org.hyperledger.besu.ethereum.p2p.peers.StaticNodesParser", "com.google.common.base.Splitter", "java.nio.charset.StandardCharsets.UTF_8", "org.hyperledger.besu.ethereum.api.jsonrpc.authentication.EngineAuthService.EPHEMERAL_JWT_FILE", "picocli.CommandLine.ExecutionException", "org.hyperledger.besu.ethereum.worldstate.PathBasedExtraStorageConfiguration", "org.hyperledger.besu.plugin.services.TransactionSimulationService" ]
+  } ]
+}

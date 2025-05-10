@@ -1,0 +1,665 @@
+{
+  "systemName" : "phoenix",
+  "classes" : [ {
+    "name" : "ConnectionQueryServicesImpl",
+    "packageName" : "org.apache.phoenix.query",
+    "extendedClasses" : [ "DelegateQueryServices" ],
+    "implementedInterfaces" : [ "ConnectionQueryServices" ],
+    "methods" : [ {
+      "name" : "clearTableRegionCache",
+      "visibility" : "public",
+      "methodCalls" : [ "info", "clearRegionLocationCache", "toString", "getRegionLocator", "getDelegate", "clearTableRegionCache" ]
+    }, {
+      "name" : "getKeepDeletedCells",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "getKeepDeletedCells", "getColumnFamily", "getEmptyColumnFamily" ]
+    }, {
+      "name" : "updateAndConfirmSplitPolicyForTask",
+      "visibility" : "public",
+      "methodCalls" : [ "setRegionSplitPolicyClassName", "getPhysicalTableName", "getRegionSplitPolicyClassName", "build", "of", "isNotEmpty", "getTableName", "equals" ]
+    }, {
+      "name" : "getLowestClusterHBaseVersion",
+      "visibility" : "public",
+      "methodCalls" : [ "getLowestClusterHBaseVersion", "getDelegate" ]
+    }, {
+      "name" : "invalidateStats",
+      "visibility" : "public",
+      "methodCalls" : [ "getDelegate", "invalidateStats", "requireNonNull", "invalidate" ]
+    }, {
+      "name" : "connect",
+      "visibility" : "public",
+      "methodCalls" : [ "buildException", "toString", "build", "provide", "getPolicy", "setHaGroupInfo", "setMessage", "getErrorCode", "increment", "createConnection", "acceptsURL", "checkClosed", "connect", "getDelegate" ]
+    }, {
+      "name" : "clearTableFromCache",
+      "visibility" : "public",
+      "methodCalls" : [ "getTenantId", "getTableKey", "toByteArray", "invalidate", "setControllerException", "getInstance", "getMetaDataCache", "getSchemaName", "getTableName", "createIOException", "error", "coprocessorService", "build", "get", "setClientVersion", "updateMetricsForSystemCatalogTableMethod", "getController", "getPhysicalName", "encodeVersion", "setTableName", "setTenantId", "close", "wrap", "setSchemaName", "getProps", "currentTimeMillis", "setClientTimestamp", "parseServerException", "setNextException", "toString", "getName", "newBuilder", "getDelegate", "clearTableFromCache" ]
+    }, {
+      "name" : "createFunction",
+      "visibility" : "public",
+      "methodCalls" : [ "setReplace", "newArrayList", "getInstance", "getTemporary", "releaseRowLocks", "incrementCreateFunctionCount", "getMutations", "currentTimeMillis", "getRegion", "setReturnCode", "addFunction", "acquireLock", "getTenantIdAndFunctionName", "getMetaDataCache", "getReplace", "getTimeStamp", "error", "toString", "run", "createIOException", "setMutationTime", "setControllerException", "emptySet", "info", "mutateRowsWithLocks", "getClientTimeStamp", "invalidate", "getDelegate", "createFunction", "newArrayListWithExpectedSize", "removeFunction", "getFunctionInfo", "isTemporary", "next", "addAll", "get", "setInt", "getMutationState", "size", "getTenantId", "getReturnType", "toMutations", "add", "getString", "getMutationCode", "setString", "getJarPath", "getAutoCommit", "prepareStatement", "execute", "getFunctions", "isReplace", "getSecond", "getMutationTime", "rollback", "getClassName", "getFunctionArguments", "setAutoCommit", "getQueryServices", "getFunctionName", "getController", "getVarChars", "newBuilder", "toByteString", "getFunctionKey", "encodeVersion", "build", "toProto", "getPutOnlyTableHeaderRow", "addTableMetadataMutations", "getRow", "setTemporary", "setClientVersion" ]
+    }, {
+      "name" : "updateIndexState",
+      "visibility" : "public",
+      "methodCalls" : [ "error", "set", "currentTimeMillis", "release", "setMutationTime", "addColumn", "abs", "getClientTimeStamp", "getValueOffset", "getTableName", "addRowKeyOrderOptimizableCell", "getSerializedValue", "createIOException", "isDisabled", "acquireLock", "getTimestamp", "newKeyValue", "valueOf", "next", "getLastDDLTimestampUpdate", "getValue", "getRegion", "toLong", "compareTo", "getQualifierOffset", "isEmpty", "setReturnCode", "invalidate", "getClientVersion", "setControllerException", "preIndexUpdate", "getValueLength", "getQualifierArray", "getColumnLatestCell", "getTenantIdAndSchemaAndTableName", "getQualifierLength", "toStringBinary", "toBytes", "run", "getFamilyCellMap", "equalsIgnoreCase", "getColumnsToClone", "getOffset", "getTableHeaderRow", "setState", "getMutationValue", "getVarChars", "getTableRef", "get", "fromSerializedValue", "getTable", "toString", "newName", "updateIndexState", "build", "getRow", "builderWithColumns", "getDelegate", "newHashSetWithExpectedSize", "getPhysicalHBaseTableName", "addTableMetadataMutations", "size", "getPhysicalName", "newBuilder", "encodeVersion", "getBytes", "isNamespaceMappingEnabled", "toProto", "getTableDescriptor", "add", "setClientVersion", "emptySet", "getTableKey", "toByteString", "getIndexes", "remove", "getController", "getScanner", "getMutations", "setTable", "create", "getMetaDataCache", "getInstance", "mutateRowsWithLocks", "cloneValue", "getValueArray", "toObject" ]
+    }, {
+      "name" : "removeSchema",
+      "visibility" : "public",
+      "methodCalls" : [ "getQueryServices", "getDelegate", "unlock", "removeSchema", "writeLock", "lock", "remove", "getSchemaKey" ]
+    }, {
+      "name" : "dropSchema",
+      "visibility" : "public",
+      "methodCalls" : [ "info", "mutateRowsWithLocks", "preDropSchema", "setControllerException", "put", "getInstance", "emptySet", "newArrayList", "createIOException", "dropSchema", "getDelegate", "getSchema", "build", "getQueryServices", "newArrayListWithExpectedSize", "setAutoCommit", "removeSchema", "getMutationCode", "getSchemaKey", "getSchemaName", "ifExists", "buildException", "add", "getSCN", "getAutoCommit", "setSchemaName", "rollback", "updateMetricsForSystemCatalogTableMethod", "getMutationTime", "get", "addSchemaMetadataMutations", "encodeVersion", "toByteString", "getBoolean", "newBuilder", "getController", "toProto", "setClientVersion", "getProps", "invalidate", "releaseRowLocks", "incrementMetadataCacheUsedSize", "getMutations", "run", "getClientTimeStamp", "getMetaDataCache", "incrementMetadataCacheAddCount", "incrementDropSchemaCount", "acquireLock", "getRegion", "error", "getEstimatedSize" ]
+    }, {
+      "name" : "addColumn",
+      "visibility" : "public",
+      "methodCalls" : [ "setIndexes", "getClientVersion", "hasParentTable", "getTransformingNewTable", "createFromProto", "getAddingColumns", "getParentTable", "hasTransformingNewTable", "setControllerException", "run", "getMutations", "createIOException", "error", "incrementAlterAddColumnCount", "newBuilder", "getMutationValue", "getRow", "getController", "getLength", "toObject", "keySet", "emptySet", "encodeVersion", "getPhysicalHBaseTableName", "setTransformingNewTable", "setClientVersion", "containsAll", "values", "isNamespaceMappingEnabled", "getTableDescriptor", "getOffset", "getMutationCode", "toProto", "toByteString", "setAddingColumns", "getTableKey", "getVarChars", "addTableMetadataMutations", "getClientTimeStamp", "setParentTable", "currentTimeMillis", "newColumnKey", "toString", "getViewIndexPhysicalName", "useStatsForParallelization", "getParentName", "size", "getTableType", "getSCN", "getIndexes", "toMutations", "addCustomAnnotations", "isPK", "contains", "setPhysicalNames", "setName", "setAutoCommit", "setLong", "isNullable", "getDefaultFamilyName", "isImmutableRows", "getBytes", "getSequenceNumber", "columnDef", "getColumnEncodedBytes", "setTableName", "getIsImmutableRows", "getNonTxToTx", "newArrayListWithExpectedSize", "getResolver", "info", "hasConditionalTTL", "getColumnQualifierBytes", "getKey", "isNullOrEmpty", "isTransactional", "anyMatch", "getEncodedCQCounter", "setSchemaName", "setViewType", "isCascade", "getPKColumns", "getTransactionProvider", "setAllColumns", "newHashSetWithExpectedSize", "getNextQualifier", "getPhysicalTableName", "getSchemaVersion", "setRowKeySchema", "valueOf", "getColumnForColumnName", "get", "getTableName", "isFixedWidth", "setType", "isRowTimestamp", "isNull", "setInt", "getColumnFamily", "updateData", "checkIsTransformNeeded", "getTableNameFromFullName", "setImmutableStorageScheme", "removeTable", "newColumn", "getIndexColumnName", "getValue", "getIndexColumnDataType", "getIndexType", "getColumnName", "booleanValue", "setKey", "add", "reverse", "clearCache", "deleteViewIndexSequences", "getSchemaNameFromFullName", "getPKName", "singletonList", "getViewType", "getEmptyColumnFamily", "isAppendOnlySchema", "getColumnDefs", "prepareStatement", "setUseStatsForParallelization", "getFamilyName", "hasViewIndexTable", "setTimeStamp", "setNamespaceMapped", "getLowestClusterHBaseVersion", "getTableTimestamp", "getMaxKeySeq", "emptyList", "execute", "getViewIndexId", "findExistingColumn", "ifNotExists", "setFamilyAttributes", "hasIndexWALCodec", "getAutoCommit", "getTenantId", "getTable", "getName", "setPkColumns", "equals", "entrySet", "getMutationTime", "getSchemaName", "getResolvedTime", "updateMetricsForSystemCatalogTableMethod", "setMessage", "hasLocalIndexTable", "getParentTableName", "getColumnFamilies", "getType", "validateDefault", "isArrayType", "addColumnMutation", "compile", "getMultiTenant", "newArrayList", "build", "addAll", "getColumns", "builderWithColumns", "getDelegate", "addColumn", "increment", "getDataType", "newName", "getImmutableStorageScheme", "isDebugEnabled", "getTimeStamp", "format", "getSecond", "getUpdateCacheFrequency", "iterator", "rollback", "stream", "buildException", "getColumnEncodedBytesProp", "getPColumnForColumnName", "usesEncodedColumnNames", "getMaxLength", "setColumnName", "getColumnDefName", "getProps", "getSortOrder", "getTables", "put", "getQueryServices", "next", "getSqlTypeName", "getTableNoCache", "setString", "getString", "getBucketNum", "getScale", "getPhysicalName", "isEmpty", "setQualifierEncodingScheme", "getMutationState", "caseSensitiveColumnName", "getBoolean", "addTransform", "isNamespaceMapped", "debug" ]
+    }, {
+      "name" : "upgradeSystemLog",
+      "visibility" : "public",
+      "methodCalls" : [ "executeUpdate", "tableHasKeepDeleted", "tableHasMaxVersions", "createStatement", "getLogTableDDL" ]
+    }, {
+      "name" : "createTable",
+      "visibility" : "public",
+      "methodCalls" : [ "isMultiTenant", "getPKColumns", "invalidate", "incrementCreateExportCount", "getFamilyOffset", "newArrayListWithExpectedSize", "setAutoPartitionNum", "getConfiguration", "error", "getAutoPartitionColumnName", "getPutOnlyAutoPartitionColumn", "getSystemTableForChildLinks", "equals", "getBaseTableLogicalName", "setReturnCode", "copyBytesIfNecessary", "hasParentTable", "setTable", "setViewIndexId", "getLong", "getLastDDLTimestampUpdate", "valueOf", "getFamilyLength", "toBytes", "getViewIndexPhysicalName", "toStringBinary", "getCellBuilder", "getInstance", "getSqlType", "getTimestamp", "addTagsToPutsForViewAlteredProperties", "info", "getString", "getProjector", "isCoercibleTo", "hasAllocateIndexId", "getChangeDetectionEnabled", "getParentTable", "getParentTableName", "incrementCreateExportFailureCount", "getName", "dropChildViews", "getVersion", "toObject", "getIndexes", "getNamespaceMappedName", "getDataType", "getAutoPartitionColIndex", "newResultSet", "getClientVersion", "emptySet", "getAutoPartitionSeqName", "getIndexDataType", "compileQuery", "getAllocateIndexId", "getRowLength", "getEncodingScheme", "getViewStatement", "setViewIndexIdType", "getPhysicalName", "debug", "isSystemTable", "updateCreateExportTime", "getRowArray", "setControllerException", "isNameSpaceMapped", "getByteSize", "getRowOffset", "preCreateTable", "acquireLock", "run", "getContext", "releaseRowLocks", "getMetaDataCache", "mutateRowsWithLocks", "getMutations", "getFamilyArray", "getViewPartitionClause", "getTenantIdAndSchemaAndTableName", "addRowKeyOrderOptimizableCell", "currentTimeMillis", "createFromProto", "createIOException", "updateCreateExportFailureTime", "getRegion", "newKeyValue", "getFamilyCellMap", "setMutationTime", "getIndexType", "unwrap", "format", "deepCopy", "getConnection", "getUrl", "createStatement", "generateUniqueName", "execute", "encodeVersion", "compareTo", "newName", "isEmpty", "getPhysicalHBaseTableName", "setParentTable", "setAllocateIndexId", "getVarChars", "setClientVersion", "startsWith", "getPutOnlyTableHeaderRow", "getClientTimeStamp", "getMutationValue", "addTableMetadataMutations", "copyKeyBytesIfNecessary", "toProto", "getTableKey", "toByteString", "getOffset", "newArrayList", "emptyMap", "removeChildLinkMutations", "newBuilder", "add", "isNamespaceMappingEnabled", "getBytes", "getController", "set", "getRow", "next", "put", "getFirst", "getViewIndexIdDataType", "toString", "get", "isLocalIndexFamily", "iterator", "getDelegate", "createTable", "getTable", "immutableRows", "getTableName", "getTableType", "getMutationCode", "create", "setIsPK", "getType", "setTableName", "getColumnDefs", "newHashMapWithExpectedSize", "updateData", "getSchemaName", "getValue", "build", "singletonList", "ifNotExists", "setSchemaName", "getSCN", "compile", "getPrimaryKeyConstraint", "size", "isAppendOnlySchema", "addColumn", "isNoVerify", "getEmptyColumnFamily", "updateMetricsForSystemCatalogTableMethod", "contains", "buildException", "getColumnDefName", "getUpdateCacheFrequency", "getQueryServices", "getProps", "getTimeStamp", "isSalted", "getLength" ]
+    }, {
+      "name" : "invalidateServerMetadataCache",
+      "visibility" : "public",
+      "methodCalls" : [ "toByteArray", "invalidate", "getInvalidateServerMetadataCacheRequestsList", "toString", "getServerMetadataCache", "getSchemaName", "getTableName", "getTenantId", "sleep", "getLong", "setControllerException", "incrementMetadataCacheInvalidationSuccessCount", "info", "addMetadataCacheInvalidationTotalTime", "getInvalidateMetadataCacheConnection", "stop", "incrementMetadataCacheInvalidationOperationsCount", "isServerConnection", "start", "getBoolean", "elapsedMillis", "getAdmin", "incrementMetadataCacheInvalidationFailureCount", "getRegionServers", "warn", "getDelegate", "invalidateServerMetadataCache" ]
+    }, {
+      "name" : "getKeyValueBuilder",
+      "visibility" : "public",
+      "methodCalls" : [ "getKeyValueBuilder", "getDelegate" ]
+    }, {
+      "name" : "incrementSequences",
+      "visibility" : "public",
+      "methodCalls" : [ "incrementSequences", "getDelegate", "getSchemaName", "get", "build", "getSequenceKey", "remove", "getSequenceName", "buildException", "checkIfLimitReached" ]
+    }, {
+      "name" : "getCachedConnections",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createSequence",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalName", "getName", "build", "buildException", "getSchemaName", "rawCells", "decodeInt", "asList", "setSchemaName", "fromErrorCode", "getKey", "getCodec", "getValueArray", "ordinal", "newKeyValue", "getFamilyCellMap", "getTimestamp", "toBytes", "put", "setTableName", "getSequenceName", "setAttribute", "getValueOffset", "getDefault", "getSequenceSaltBuckets", "get", "createSequence", "getDelegate", "getTableName", "ifNotExists", "getCycle", "equals", "getString", "getResolverForSchema", "getProps", "getTenantId", "isNamespaceMappingEnabled", "getQueryServices", "getSchema", "getSCN", "append", "closeQuietly", "parseServerException", "getLock", "unlock", "putIfAbsent", "lock" ]
+    }, {
+      "name" : "addFunction",
+      "visibility" : "public",
+      "methodCalls" : [ "getQueryServices", "getFunction", "getFunctionName", "notifyAll", "getTenantId", "getTimeStamp", "getDelegate", "lock", "writeLock", "unlock", "addFunction", "put", "getKey", "increment", "getEstimatedSize", "update" ]
+    }, {
+      "name" : "acquireUpgradeMutex",
+      "visibility" : "public",
+      "methodCalls" : [ "writeMutexCell", "getVersion", "checkArgument" ]
+    }, {
+      "name" : "getProps",
+      "visibility" : "public",
+      "methodCalls" : [ "iterator", "getProps" ]
+    }, {
+      "name" : "closeAllConnections",
+      "visibility" : "public",
+      "methodCalls" : [ "buildException", "warn", "close", "build", "get", "isClosed" ]
+    }, {
+      "name" : "clearUpgradeRequired",
+      "visibility" : "public",
+      "methodCalls" : [ "set", "clearUpgradeRequired", "getDelegate" ]
+    }, {
+      "name" : "initTransactionClient",
+      "visibility" : "public",
+      "methodCalls" : [ "ordinal", "getTransactionClient", "getDelegate", "initTransactionClient" ]
+    }, {
+      "name" : "getFunctions",
+      "visibility" : "public",
+      "methodCalls" : [ "currentTimeMillis", "getFunctionKey", "addFunction", "add", "getFirst", "isEmpty", "toString", "size", "getFunction", "getDelegate", "getFunctions", "emptyList", "setTenantId", "get", "getBytes", "build", "setClientTimestamp", "wrap", "newBuilder", "encodeVersion", "addFunctionTimestamps", "getController", "longValue", "addFunctionNames", "getSecond", "setClientVersion", "getClientTimestamp", "toByteArray", "setMutationTime", "getFunctionNamesList", "getRegion", "toProto", "createIOException", "run", "setReturnCode", "getTenantId", "setControllerException", "getFunctionNamesCount", "getFunctionTimestampsList", "error" ]
+    }, {
+      "name" : "getQueryDisruptor",
+      "visibility" : "public",
+      "methodCalls" : [ "getDelegate", "getQueryDisruptor" ]
+    }, {
+      "name" : "getTableIfExists",
+      "visibility" : "public",
+      "methodCalls" : [ "getSchemaNameFromFullName", "getAdmin", "tableExists", "valueOf", "getTableNameFromFullName", "getDelegate", "getTableIfExists" ]
+    }, {
+      "name" : "getConnectionInfo",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createSchema",
+      "visibility" : "public",
+      "methodCalls" : [ "getTimeStamp", "mutateRowsWithLocks", "info", "setMutationTime", "invalidate", "getMutations", "getMetaDataCache", "acquireLock", "setReturnCode", "newArrayList", "releaseRowLocks", "getInstance", "error", "setSchema", "createIOException", "setControllerException", "preCreateSchema", "currentTimeMillis", "emptySet", "getRegion", "incrementCreateSchemaCount", "equals", "getDelegate", "createSchema", "setSchemaName", "next", "isNamespaceMappingEnabled", "buildException", "isIfNotExists", "getMutationTime", "prepareStatement", "getAutoCommit", "rollback", "getMutationCode", "getProps", "toMutations", "getSchema", "setString", "getSecond", "updateMetricsForSystemCatalogTableMethod", "getMutationState", "build", "execute", "setAutoCommit", "getQueryServices", "getSchemaName", "toProto", "ensureNamespaceCreated", "toByteString", "getPutOnlyTableHeaderRow", "addTableMetadataMutations", "encodeVersion", "newBuilder", "getController", "setClientVersion", "get", "getRow", "close", "generateUniqueName", "getConnection", "getUrl", "createStatement", "getClientTimeStamp", "run" ]
+    }, {
+      "name" : "upgradeSystemStats",
+      "visibility" : "public",
+      "methodCalls" : [ "getSqlTypeName", "executeUpdate", "clearCache", "tableHasKeepDeleted", "tableHasMaxVersions", "createStatement", "removeTable", "getTimeStamp" ]
+    }, {
+      "name" : "getTableDescriptor",
+      "visibility" : "public",
+      "methodCalls" : [ "getDescriptor", "toString", "getCause", "closeQuietly", "getVarChars", "getDelegate", "getTableDescriptor" ]
+    }, {
+      "name" : "writeMutexCell",
+      "visibility" : "public",
+      "methodCalls" : [ "getRuntimeMXBean", "getColumnKey", "getTableKey", "parseServerException", "debug", "checkAndMutate", "getName", "ifNotExists", "build", "getSysMutexTable", "isSuccess", "error", "newBuilder", "writeMutexCell", "getDelegate" ]
+    }, {
+      "name" : "addSchema",
+      "visibility" : "public",
+      "methodCalls" : [ "getQueryServices", "getDelegate", "unlock", "addSchema", "writeLock", "lock", "increment", "put", "getSchemaKey", "update", "getEstimatedSize" ]
+    }, {
+      "name" : "dropTable",
+      "visibility" : "public",
+      "methodCalls" : [ "fromSerializedValue", "setPriority", "getSystemTableForChildLinks", "findAllDescendantViews", "preDropTable", "getTenantIdAndSchemaAndTableName", "setTenantId", "toStringBinary", "getName", "currentTimeMillis", "getConfiguration", "getHTableForCoprocessorScan", "setMutationTime", "getLastDDLTimestampUpdate", "setConn", "getIndexes", "getInstance", "debug", "getRegion", "error", "setDaemon", "incrementMetadataCacheUsedSize", "invalidate", "setData", "equals", "newArrayListWithExpectedSize", "setTaskStatus", "valueOf", "acquireLock", "addTask", "getFamilyCellMap", "mutateRowsWithLocks", "getParentTableName", "getEstimatedSize", "start", "run", "unwrap", "info", "getClientVersion", "add", "setAccessCheckEnabled", "equalsIgnoreCase", "getSecond", "setStartTs", "put", "getMutations", "getFirst", "getCascade", "releaseRowLocks", "emptySet", "size", "incrementMetadataCacheAddCount", "isEmpty", "setEndTs", "setSchemaName", "newArrayList", "remove", "toString", "getDelegate", "dropTable", "getTableName", "getSchema", "getTableType", "getSchemaName", "ifExists", "cascade", "getSkipAddingParentColumns", "getPhysicalName", "addTableMetadataMutations", "getVarChars", "toProto", "encodeVersion", "newBuilder", "getMutationCode", "getClientTimeStamp", "getProps", "getTableKey", "isNamespaceMappingEnabled", "getRow", "setCascade", "getBytes", "get", "getBoolean", "dropTables", "getPhysicalHBaseTableName", "getSerializedValue", "toByteString", "build", "invalidateAll", "setClientVersion", "setTableType", "getTableNamesToDelete", "getController", "setControllerException", "setReturnCode", "getMetaDataCache", "setTaskType", "setTableName", "createIOException" ]
+    }, {
+      "name" : "upgradeSystemTables",
+      "visibility" : "public",
+      "methodCalls" : [ "clearUpgradeRequired", "warn", "remove", "syncTableAndIndexProperties", "setNextException", "getSystemCatalogTimeStamp", "releaseUpgradeMutex", "ensureSystemTablesMigratedToSystemNamespace", "isNamespaceMappingEnabled", "removeProperty", "getSystemCatalogTableDDL", "info", "valueOf", "deepCopy", "createSysMutexTableIfNotExists", "executeUpdate", "mergeViewIndexIdSequences", "getAdmin", "getMessage", "put", "upgradeLocalIndexes", "getSysTableSnapshotName", "createStatement", "isUpgradeRequired", "get", "toString", "upgradeSystemCatalogIfRequired", "getProps", "acquireUpgradeMutex", "setProperty", "setRunningUpgrade", "getQueryServices", "getTimeStamp", "checkUpgradeBlockMutex", "debug", "close", "upgradeSystemTables", "getDelegate" ]
+    }, {
+      "name" : "getReplicationScope",
+      "visibility" : "public",
+      "methodCalls" : [ "getEmptyColumnFamily", "getScope", "getColumnFamily" ]
+    }, {
+      "name" : "validateSequences",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "size", "getQueryServices", "add", "getSCN", "entrySet", "newArrayListWithExpectedSize", "getIndex", "getConnection", "getKey", "sort", "getValue", "getDelegate", "validateSequences", "getSequenceName", "getSequenceKey", "getSchemaName", "get" ]
+    }, {
+      "name" : "getAdmin",
+      "visibility" : "public",
+      "methodCalls" : [ "getDelegate", "getAdmin" ]
+    }, {
+      "name" : "dropSequence",
+      "visibility" : "public",
+      "methodCalls" : [ "getTimestamp", "getCodec", "build", "getFamilyCellMap", "getSequenceName", "buildException", "setAttribute", "getKey", "asList", "newKeyValue", "setSchemaName", "getSchemaName", "getValueArray", "ordinal", "getValueOffset", "decodeInt", "setTableName", "toBytes", "getDefault", "put", "fromErrorCode", "rawCells", "getSequenceSaltBuckets", "remove", "getDelegate", "dropSequence", "getTableName", "getQueryServices", "getString", "getTenantId", "getSchema", "getSCN", "ifExists", "parseServerException", "closeQuietly", "getName", "putIfAbsent", "getProps", "append", "getLock", "lock", "unlock", "getPhysicalName" ]
+    }, {
+      "name" : "deleteMutexCell",
+      "visibility" : "public",
+      "methodCalls" : [ "getRuntimeMXBean", "parseServerException", "debug", "getName", "delete", "getTableKey", "getColumnKey", "getSysMutexTable", "getDelegate", "deleteMutexCell" ]
+    }, {
+      "name" : "removeFunction",
+      "visibility" : "public",
+      "methodCalls" : [ "getQueryServices", "notifyAll", "getDelegate", "removeFunction", "lock", "writeLock", "unlock", "remove" ]
+    }, {
+      "name" : "close",
+      "visibility" : "public",
+      "methodCalls" : [ "getConfiguration", "flush", "commit", "isMRSnapshotManagedExternally", "updateStatistics", "closeRegionOperation", "format", "decrementScansReferenceCount", "getSpillFile", "stop", "getRegionInfo", "logToIndexToolResultTable", "getRegionName", "closeQuietly", "getChannel", "getAbsolutePath", "call", "createCallable", "getConfig", "getBoolean", "runTask", "getStatsCollectionRunTracker", "currentThread", "cancel", "getConnection", "newArrayListWithExpectedSize", "isEmpty", "getSplits", "getSecond", "interrupt", "purge", "getExecutor", "unlock", "lock", "size", "runOnStatements", "removeStatement", "isNullOrEmpty", "getTable", "getCloseConnection1ExecutorService", "getCurrentTable", "toString", "isPointLookup", "handle", "removeResultSet", "getPhysicalName", "getFutureNoRetry", "supplyAsync", "getIndex", "debug", "getString", "thenApply", "getOverAllRequestReadMetrics", "stopResultSetWatch", "endQuery", "asMap", "warn", "getAnyOfNonExceptionally", "sync", "addSuppressed", "runOnPreparedStatements", "values", "isDebugEnabled", "isSynced", "getScanMetricsHolderList", "log", "getReadMetrics", "add", "getScanRanges", "getResult", "getCloseConnection2ExecutorService", "increment", "updateConnectionQueryServiceOpenInternalConnectionHistogram", "getQueryServices", "getConnectionCount", "get", "getMutationMetrics", "updateConnectionQueryServiceOpenConnectionHistogram", "removeConnection", "pushMetricsFromConnInstanceMethod", "clearMetrics", "updateMetrics", "isInternalConnection", "closeAllQuietly", "close", "clear", "closeCursor", "info", "shutdown", "error", "setNextException", "closeIterators", "isClosed", "shutdownNow", "parseServerException", "notifyAll", "decrement", "invalidateAll", "delete", "keySet", "removeServerCache", "getRequestReadMetricInfo", "logRequestReadMetrics", "resetMetrics", "getOverAllReadRequestMetricInfo", "logOverAllReadRequestMetrics", "loggingMetricsHelper" ]
+    }, {
+      "name" : "removeColumn",
+      "visibility" : "public",
+      "methodCalls" : [ "update", "iterator", "matchingQualifier", "isEmpty", "hasNext", "remove", "cloneFamily", "next", "getFamilyCellMap", "getQueryServices", "size", "getTimestamp", "getEstimatedSize", "subList", "isDynamic", "getBucketNum", "setSequenceNumber", "getPKColumn", "isViewReferenced", "get", "getTable", "makePTableRef", "build", "getFamilyName", "getDataType", "getKey", "getMaxLength", "getExpressionStr", "isNullable", "getScale", "newArrayListWithExpectedSize", "getViewConstant", "getPColumnForColumnName", "getArraySize", "getCurrentTime", "builderWithColumns", "setTimeStamp", "getSortOrder", "addAll", "getPosition", "put", "getColumns", "getColumnFamily", "add", "isRowTimestamp", "getName", "getColumnQualifierBytes", "increment", "getString", "lock", "writeLock", "removeColumn", "unlock", "getDelegate" ]
+    }, {
+      "name" : "getChildQueryServices",
+      "visibility" : "public",
+      "methodCalls" : [ "newChildQueryService", "putIfAbsent", "get", "getChildQueryServices", "getDelegate" ]
+    }, {
+      "name" : "supportsFeature",
+      "visibility" : "public",
+      "methodCalls" : [ "isSupported", "get", "getDelegate", "supportsFeature" ]
+    }, {
+      "name" : "existingColumnFamilies",
+      "visibility" : "public",
+      "methodCalls" : [ "getString", "add", "getColumnFamilies", "size", "getName" ]
+    }, {
+      "name" : "getInvalidateMetadataCacheConnection",
+      "visibility" : "public",
+      "methodCalls" : [ "cloneConfig", "setClass" ]
+    }, {
+      "name" : "clearCache",
+      "visibility" : "public",
+      "methodCalls" : [ "run", "getInstance", "setUnfreedBytes", "clearTenantCache", "getTenantId", "getString", "unwrap", "toBytes", "clearTableFromCache", "getMetaDataCache", "removeTable", "getQueryServices", "format", "newBuilder", "invalidateAll", "getController", "getName", "get", "entrySet", "parseServerException", "getUnfreedBytes", "getValue", "updateMetricsForSystemCatalogTableMethod", "currentTimeMillis", "getPhysicalName", "setClientVersion", "encodeVersion", "build", "getProps", "coprocessorService", "clearCache", "getDelegate" ]
+    }, {
+      "name" : "convertForeverAndNoneTTLValue",
+      "visibility" : "public",
+      "methodCalls" : [ "equalsIgnoreCase" ]
+    }, {
+      "name" : "getConfiguration",
+      "visibility" : "public",
+      "methodCalls" : [ "getConfiguration", "getDelegate" ]
+    }, {
+      "name" : "removeConnection",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "isLastConnection", "isInternalConnection", "newConcurrentMap", "returnConnection", "isShouldThrottleNumConnections", "removeConnection", "getDelegate" ]
+    }, {
+      "name" : "returnSequences",
+      "visibility" : "public",
+      "methodCalls" : [ "lock", "getProps", "unlock", "buildException", "getName", "get", "setRootCause", "returnValue", "isEmpty", "parseServerException", "add", "close", "newArrayListWithExpectedSize", "newReturn", "getPhysicalName", "size", "batch", "putIfAbsent", "build", "interrupt", "setNextException", "getLock", "currentThread", "returnSequences", "getDelegate" ]
+    }, {
+      "name" : "hasIndexWALCodec",
+      "visibility" : "public",
+      "methodCalls" : [ "hasIndexWALCodec", "getDelegate" ]
+    }, {
+      "name" : "getTable",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument", "preGetTable", "getConfiguration", "getViewType", "setMutationTime", "getClientTimestamp", "getIndexes", "getParentName", "currentTimeMillis", "setReturnCode", "setTable", "getRegion", "getClientVersion", "getString", "getSchemaName", "getIndexDisableTimestamp", "getTableTimestamp", "getIndexState", "addDerivedColumnsFromParent", "run", "getType", "toProto", "getTimeStamp", "getPhysicalName", "getQueryServices", "unwrap", "createIOException", "getTableName", "toByteArray", "getPhysicalTableName", "setControllerException", "error", "getTable", "createFromProto", "parseFrom", "getTableRef", "valueOf", "getDelegate", "toString", "getTableKey", "build", "get", "getHTableFactory", "setTenantId", "setClientVersion", "setClientTimestamp", "setTableName", "getController", "isNamespaceMappingEnabled", "setTableTimestamp", "wrap", "encodeVersion", "newBuilder", "getPhysicalHBaseTableName", "setSchemaName", "getBytes", "getTableNoCache", "checkNotNull", "newName", "getName", "getTenantId", "getResolvedTimeStamp" ]
+    }, {
+      "name" : "getUser",
+      "visibility" : "public",
+      "methodCalls" : [ "getUser", "getDelegate" ]
+    }, {
+      "name" : "currentSequenceValue",
+      "visibility" : "public",
+      "methodCalls" : [ "unlock", "currentValue", "getLock", "lock", "getDelegate", "currentSequenceValue", "getSchemaName", "build", "getSequenceName", "setTableName", "get", "buildException", "setSchemaName" ]
+    }, {
+      "name" : "checkUpgradeBlockMutex",
+      "visibility" : "public",
+      "methodCalls" : [ "getSysMutexTable", "parseServerException", "get", "isEmpty", "toBytes" ]
+    }, {
+      "name" : "getRenewLeaseThresholdMilliSeconds",
+      "visibility" : "public",
+      "methodCalls" : [ "getRenewLeaseThresholdMilliSeconds", "getDelegate" ]
+    }, {
+      "name" : "getSequenceSaltBuckets",
+      "visibility" : "public",
+      "methodCalls" : [ "getSequenceSaltBuckets", "getDelegate", "getInt", "getProps" ]
+    }, {
+      "name" : "getLiveRegionServers",
+      "visibility" : "public",
+      "methodCalls" : [ "getLiveRegionServers", "getDelegate" ]
+    }, {
+      "name" : "getTableRegions",
+      "visibility" : "public",
+      "methodCalls" : [ "sleep", "setRootCause", "add", "compareTo", "getRegionLocation", "getInt", "newArrayList", "error", "toStringBinary", "equals", "currentTimeMillis", "getRegionLocator", "getNextRegionStartKey", "buildException", "getNameAsString", "getProps", "initCause", "getDelegate", "get", "build", "newBuilder", "setStartKey", "singletonList", "toString", "valueOf", "getTableRegions" ]
+    }, {
+      "name" : "checkClosed",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSysMutexTable",
+      "visibility" : "public",
+      "methodCalls" : [ "replace", "toBytes", "getTableIfExists" ]
+    }, {
+      "name" : "dropFunction",
+      "visibility" : "public",
+      "methodCalls" : [ "invalidate", "getMetaDataCache", "add", "getEstimatedSize", "newArrayList", "getMutations", "releaseRowLocks", "getMutationCode", "mutateRowsWithLocks", "getTenantIdAndFunctionName", "incrementMetadataCacheUsedSize", "info", "getInstance", "getClientTimeStamp", "getRegion", "emptySet", "incrementDropFunctionCount", "run", "put", "toString", "acquireLock", "setControllerException", "incrementMetadataCacheAddCount", "error", "createIOException", "encodeVersion", "toProto", "get", "newBuilder", "setIfExists", "build", "getController", "getRow", "toByteString", "addTableMetadataMutations", "getVarChars", "setClientVersion", "getFunctionKey", "getFunctionName", "ifExists", "dropFunction", "getDelegate" ]
+    }, {
+      "name" : "updateResolvedTimestamp",
+      "visibility" : "public",
+      "methodCalls" : [ "getQueryServices", "notifyAll", "getDelegate", "lock", "unlock", "writeLock", "updateResolvedTimestamp", "increment", "makePTableRef", "getEstimatedSize", "put", "getKey", "getCurrentTime", "update" ]
+    }, {
+      "name" : "getNextRegionStartKey",
+      "visibility" : "public",
+      "methodCalls" : [ "toStringBinary", "warn", "compareTo", "getEndKey", "equals", "getStartKey", "getRegion", "increment" ]
+    }, {
+      "name" : "releaseUpgradeMutex",
+      "visibility" : "public",
+      "methodCalls" : [ "deleteMutexCell" ]
+    }, {
+      "name" : "getSchema",
+      "visibility" : "public",
+      "methodCalls" : [ "getTimeStamp", "get", "getName", "lock", "readLock", "unlock", "getSchema", "getDelegate", "newInstance", "buildSchema", "setSchemaName", "setClientVersion", "getController", "build", "setClientTimestamp", "newBuilder", "getSchemaKey", "encodeVersion", "getQueryServices", "normalizeIdentifier", "getMetaDataCache", "wrapActionDuringFailover", "run", "getRegion", "currentTimeMillis", "getSchemaName", "setSchema", "acquireLock", "releaseRowLocks", "setMutationTime", "toProto", "newArrayList", "setReturnCode", "preGetSchema", "getClientTimestamp" ]
+    }, {
+      "name" : "isUpgradeRequired",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "getDelegate", "isUpgradeRequired" ]
+    }, {
+      "name" : "addTable",
+      "visibility" : "public",
+      "methodCalls" : [ "getQueryServices", "getTableRef", "notifyAll", "getDelegate", "addTable", "writeLock", "unlock", "lock", "setTimeStamp", "equals", "replace", "getString", "setIndexes", "getPhysicalName", "addAll", "getTableName", "getKey", "getColumnsToClone", "add", "build", "isNullOrEmpty", "getType", "getName", "size", "getParentName", "getIndexes", "update", "put", "getTimeStamp", "getCurrentTime", "getEstimatedSize", "newArrayListWithExpectedSize", "getTable", "increment", "getTenantId", "remove", "builderWithColumns", "get", "makePTableRef", "getSchemaName" ]
+    }, {
+      "name" : "updateData",
+      "visibility" : "public",
+      "methodCalls" : [ "execute", "commit", "updateData", "getDelegate", "getContext", "getConnection" ]
+    }, {
+      "name" : "getAllTableRegions",
+      "visibility" : "public",
+      "methodCalls" : [ "buildException", "build", "sleep", "getProps", "getInt", "getAllTableRegions", "getDelegate", "getTableRegions" ]
+    }, {
+      "name" : "getConnectionLimiter",
+      "visibility" : "public",
+      "methodCalls" : [ "getConnectionLimiter", "getDelegate" ]
+    }, {
+      "name" : "addConnection",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "add", "acquireConnection", "isRenewingLeasesEnabled", "getDelegate", "addConnection" ]
+    }, {
+      "name" : "getTableRegionLocation",
+      "visibility" : "public",
+      "methodCalls" : [ "getNameAsString", "error", "setRootCause", "getRegionLocator", "getRegionLocation", "getTableNameFromFullName", "buildException", "getSchemaNameFromFullName", "getDelegate", "getTableRegionLocation", "compareTo", "valueOf", "newBuilder", "getRegion", "get", "getStartKey", "setStartKey", "setEndKey", "toString", "getEndKey", "build" ]
+    }, {
+      "name" : "addTableStats",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "put" ]
+    }, {
+      "name" : "upgradeSystemSequence",
+      "visibility" : "public",
+      "methodCalls" : [ "getSystemSequenceTableDDL", "executeUpdate", "clearTableRegionCache", "getTimeStamp", "valueOf", "upgradeSequenceTable", "createStatement", "removeTable", "clearTableFromCache", "getSqlTypeName" ]
+    }, {
+      "name" : "getConnectionCount",
+      "visibility" : "public",
+      "methodCalls" : [ "getInternalConnectionCount", "getDelegate", "getConnectionCount" ]
+    }, {
+      "name" : "getTableStats",
+      "visibility" : "public",
+      "methodCalls" : [ "parseServerException", "getTableStats", "getDelegate", "get" ]
+    }, {
+      "name" : "getTTL",
+      "visibility" : "public",
+      "methodCalls" : [ "getTimeToLive", "getEmptyColumnFamily", "getColumnFamily" ]
+    }, {
+      "name" : "refreshLiveRegionServers",
+      "visibility" : "public",
+      "methodCalls" : [ "parseServerException", "getRegionServers", "info", "getAdmin", "refreshLiveRegionServers", "getDelegate" ]
+    }, {
+      "name" : "removeTable",
+      "visibility" : "public",
+      "methodCalls" : [ "getQueryServices", "notifyAll", "getDelegate", "unlock", "removeTable", "writeLock", "lock", "isEmpty", "getKey", "setTimeStamp", "getName", "getResolvedTimeStamp", "getParentName", "build", "update", "remove", "addAll", "getEstimatedSize", "increment", "getTable", "makePTableRef", "put", "newArrayListWithExpectedSize", "size", "get", "builderWithColumns", "setIndexes", "getCurrentTime", "getColumnsToClone", "getIndexes", "equals", "getString" ]
+    }, {
+      "name" : "isRenewingLeasesEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "supportsFeature", "isRenewingLeasesEnabled", "getDelegate" ]
+    }, {
+      "name" : "getMetaDataCache",
+      "visibility" : "public",
+      "methodCalls" : [ "maximumWeight", "incrementMetadataCacheEvictionCount", "getEstimatedSize", "decrementMetadataCacheUsedSize", "newBuilder", "wasEvicted", "getLong", "getValue", "weigher", "getLongBytes", "getLength", "expireAfterAccess", "removalListener", "build", "incrementMetadataCacheRemovalCount", "getQueryServices", "getDelegate", "getMetaDataCache" ]
+    }, {
+      "name" : "dropColumn",
+      "visibility" : "public",
+      "methodCalls" : [ "setSchemaName", "info", "error", "getConfiguration", "setControllerException", "hasParentTable", "getParentTable", "getClientVersion", "getMutations", "createFromProto", "run", "createIOException", "incrementAlterDropColumnCount", "getVarChars", "setClientVersion", "addTableMetadataMutations", "toProto", "setParentTable", "getPhysicalHBaseTableName", "encodeVersion", "isNamespaceMappingEnabled", "getTableNamesToDelete", "toByteString", "getRow", "getMutationCode", "getController", "newBuilder", "dropTables", "newHashSet", "addCustomAnnotations", "addAll", "setIndexes", "setRowKeySchema", "getColumnFamily", "getTableNameFromFullName", "getPhysicalName", "getIndexColumnName", "getAutoCommit", "get", "setNamespaceMapped", "setTenantId", "setColumnName", "getSecond", "getCompiledTTLExpression", "getKey", "setTableName", "getColumnRefs", "getResolvedTimestamp", "of", "containsKey", "cloneAtTimestamp", "setViewIndexIdType", "next", "getResolver", "setAllColumns", "put", "getSchemaName", "toMutations", "isAppendOnlySchema", "getTables", "getPhysicalNames", "getType", "isDebugEnabled", "emptyList", "getProps", "setColumns", "updateMetricsForSystemCatalogTableMethod", "getTimeStamp", "setMultiTenant", "getCoveredColumns", "getColumnName", "subList", "getFamilyName", "getMutationState", "getParentName", "buildException", "getSchemaNameFromFullName", "setViewIndexId", "newArrayListWithExpectedSize", "getIndexes", "getTableKey", "setEncodedCQCounter", "compile", "getColumnForColumnName", "debug", "getName", "getTableRef", "newArrayList", "setFamilyAttributes", "getTable", "isEmpty", "isNamespaceMapped", "setImmutableStorageScheme", "build", "getViewIndexId", "setExcludedColumns", "ifExists", "getColumn", "getTenantId", "rollback", "setType", "singletonList", "getIndexMaintainer", "getViewIndexIdType", "size", "entrySet", "resolveColumn", "setQualifierEncodingScheme", "removeTable", "contains", "getColumns", "getBoolean", "getDelegate", "dropColumn", "setUseStatsForParallelization", "getBucketNum", "getClientInfo", "getValue", "setTimeStamp", "isViewReferenced", "removeColumn", "useStatsForParallelization", "getPosition", "isImmutableRows", "copyOf", "setProperty", "isMultiTenant", "isPKColumn", "toString", "getTableTimestamp", "getMutationTime", "getColumnsReferenced", "getTableType", "getColumnFamilies", "reverse", "getBytes", "setAppendOnlySchema", "getTableName", "hasConditionalTTL", "isTransactional", "newHashSetWithExpectedSize", "getString", "newHashMap", "setPkColumns", "setRowKeyOrderOptimizable", "getColumnQualifierBytes", "getSCN", "setAutoCommit", "getIndexedColumnInfo", "updateData", "getSharedTablesToDelete", "getImmutableStorageScheme", "add", "newArrayListWithCapacity", "setPhysicalNames", "getEncodedCQCounter", "getQueryServices", "addColumn", "setBucketNum" ]
+    }, {
+      "name" : "getUserName",
+      "visibility" : "public",
+      "methodCalls" : [ "getQueryServices", "getUserName", "getDelegate" ]
+    }, {
+      "name" : "init",
+      "visibility" : "public",
+      "methodCalls" : [ "setUpgradeRequired", "create", "getPort", "getListenerAddress", "getClass", "assertEquals", "setInt", "generateUniqueName", "execute", "format", "prepareStatement", "commit", "getConnection", "getUrl", "getMetric", "reset", "markSinkInitialized", "getFirst", "getSecond", "cancel", "compareAndSet", "submit", "getSortOrder", "propagateIfInstanceOf", "parseServerException", "checkClosed", "propagate", "valueOf", "warn", "call", "refreshLiveRegionServers", "error", "removeProperty", "deepCopy", "executeUpdate", "getFunctionTableDDL", "getSystemCatalogTableDDL", "remove", "close", "getTransformDDL", "getCDCStreamDDL", "setRunningUpgrade", "toString", "createStatement", "getSequenceSaltBuckets", "setProperty", "getChildLinkDDL", "getCDCStreamStatusDDL", "getTaskDDL", "getLogTableDDL", "getSystemSequenceTableDDL", "setNextException", "getMutexDDL", "getDelegate", "init", "currentTimeMillis", "fill", "isNoUpgradeSet", "getName", "singletonList", "get", "info", "getTimeStamp", "getProperty", "getPhysicalName", "upgradeSystemTables", "isInitialized", "increment", "setInitialized", "getSystemTableVersion", "getProps", "getBoolean" ]
+    } ],
+    "imports" : [ "org.apache.phoenix.util.ByteUtil", "java.sql.Statement", "org.apache.hadoop.hbase.TableExistsException", "org.apache.hadoop.hbase.ipc.RpcControllerFactory", "org.apache.phoenix.query.QueryServicesOptions.DEFAULT_RUN_RENEW_LEASE_FREQUENCY_INTERVAL_MILLISECONDS", "org.apache.phoenix.schema.SaltingUtil", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SYSTEM_MUTEX_TABLE_NAME", "org.apache.phoenix.coprocessor.generated.MetaDataProtos.GetVersionResponse", "org.apache.phoenix.util.LogUtil", "java.sql.PreparedStatement", "org.apache.phoenix.schema.types.PLong", "org.apache.phoenix.coprocessor.generated.MetaDataProtos.GetFunctionsRequest", "org.apache.phoenix.schema.NewerSchemaAlreadyExistsException", "org.apache.phoenix.exception.UpgradeRequiredException", "org.apache.hadoop.ipc.RemoteException", "org.apache.phoenix.coprocessorclient.MetaDataProtocol.PHOENIX_MAJOR_VERSION", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.VIEW_INDEX_ID", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SYSTEM_MUTEX_COLUMN_NAME_BYTES", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SYSTEM_MUTEX_FAMILY_NAME_BYTES", "org.apache.phoenix.log.DefaultConnectionLimiter", "org.apache.phoenix.schema.stats.GuidePostsInfo", "org.apache.phoenix.schema.PTableType", "org.apache.hadoop.hbase.client.ColumnFamilyDescriptorBuilder", "org.apache.phoenix.query.QueryServicesOptions.DEFAULT_PHOENIX_METADATA_INVALIDATE_CACHE_ENABLED", "java.util.concurrent.atomic.AtomicInteger", "org.apache.phoenix.schema.PMetaData", "org.apache.phoenix.coprocessor.generated.MetaDataProtos.DropColumnRequest", "java.util.concurrent.ThreadLocalRandom", "org.apache.hadoop.hbase.client.Mutation", "org.apache.phoenix.coprocessorclient.metrics.MetricsMetadataCachingSource", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.DATA_TABLE_NAME", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.TTL_NOT_DEFINED", "org.apache.phoenix.exception.SQLExceptionCode", "org.apache.phoenix.coprocessorclient.metrics.MetricsPhoenixCoprocessorSourceFactory", "org.apache.phoenix.schema.types.PInteger", "org.apache.phoenix.util.UpgradeUtil", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SYSTEM_SCHEMA_NAME", "org.apache.phoenix.coprocessor.generated.MetaDataProtos.MetaDataService", "org.apache.phoenix.schema.TableProperty", "org.apache.hadoop.hbase.client.MetricsConnection.CLIENT_SIDE_METRICS_ENABLED_KEY", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.ARRAY_SIZE", "org.apache.phoenix.schema.PName", "org.apache.hadoop.hbase.ipc.ServerRpcController", "org.apache.phoenix.parse.PSchema", "org.apache.phoenix.schema.PColumnImpl", "org.apache.phoenix.coprocessorclient.MetaDataProtocol.MIN_SYSTEM_TABLE_TIMESTAMP", "org.apache.phoenix.transaction.TransactionFactory.Provider", "org.apache.phoenix.schema.NewerTableAlreadyExistsException", "java.sql.Types", "org.apache.phoenix.coprocessor.generated.MetaDataProtos.DropSchemaRequest", "org.apache.phoenix.thirdparty.com.google.common.collect.Lists", "org.apache.phoenix.coprocessorclient.SequenceRegionObserverConstants", "org.apache.hadoop.hbase.ipc.controller.InvalidateMetadataCacheControllerFactory", "org.apache.phoenix.coprocessor.generated.MetaDataProtos.CreateSchemaRequest", "java.util.Collection", "java.util.Map.Entry", "org.apache.phoenix.util.SchemaUtil", "org.apache.phoenix.exception.RetriableUpgradeException", "java.util.concurrent.Executors", "java.util.concurrent.Callable", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SYSTEM_CATALOG_SCHEMA", "org.apache.phoenix.coprocessorclient.MetaDataProtocol.MIN_SYSTEM_TABLE_TIMESTAMP_4_16_0", "org.apache.hadoop.hbase.ServerName", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData", "org.apache.phoenix.coprocessorclient.MetaDataProtocol.MetaDataMutationResult", "java.util.Random", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SYSTEM_MUTEX_NAME", "org.apache.phoenix.schema.types.PDataType", "javax.annotation.concurrent.GuardedBy", "java.util.concurrent.TimeUnit", "java.util.Arrays", "org.apache.phoenix.util.UpgradeUtil.moveOrCopyChildLinks", "org.apache.phoenix.hbase.index.util.KeyValueBuilder", "java.sql.SQLException", "org.apache.hadoop.hbase.client.ColumnFamilyDescriptorBuilder.REPLICATION_SCOPE", "org.apache.phoenix.coprocessorclient.MetaDataProtocol.PHOENIX_MINOR_VERSION", "org.apache.phoenix.util.StringUtil", "org.apache.phoenix.monitoring.GlobalClientMetrics.GLOBAL_HBASE_COUNTER_METADATA_INCONSISTENCY", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.COLUMN_NAME", "org.apache.hadoop.hbase.client.Result", "org.apache.hadoop.hbase.io.ImmutableBytesWritable", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SYSTEM_FUNCTION_HBASE_TABLE_NAME", "org.apache.phoenix.query.QueryServicesOptions.DEFAULT_RENEW_LEASE_THREAD_POOL_SIZE", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.COLUMN_FAMILY", "org.apache.phoenix.coprocessor.generated.MetaDataProtos.ClearTableFromCacheRequest", "org.apache.hadoop.hbase.NamespaceNotFoundException", "org.apache.phoenix.schema.TableAlreadyExistsException", "org.apache.phoenix.util.UpgradeUtil.copyTTLValuesFromPhoenixTTLColumnToTTLColumn", "org.apache.phoenix.schema.LiteralTTLExpression", "org.apache.phoenix.schema.types.PTimestamp", "org.apache.phoenix.log.ConnectionLimiter", "java.util.concurrent.TimeoutException", "org.apache.hadoop.hbase.client.TableDescriptor", "org.apache.phoenix.util.ClientUtil", "org.apache.phoenix.util.UpgradeUtil.syncTableAndIndexProperties", "org.apache.phoenix.log.LoggingConnectionLimiter", "java.lang.ref.WeakReference", "org.apache.phoenix.thirdparty.com.google.common.base.Strings", "org.apache.phoenix.coprocessor.generated.MetaDataProtos.DropFunctionRequest", "org.apache.phoenix.schema.PColumnFamily", "org.apache.phoenix.parse.PFunction", "java.util.List", "org.apache.hadoop.hbase.protobuf.generated.ClientProtos.MutationProto", "org.apache.hadoop.hbase.client.Put", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.PK_NAME", "org.apache.phoenix.util.MetaDataUtil", "org.apache.phoenix.schema.types.PVarbinary", "org.apache.phoenix.thirdparty.com.google.common.collect.ImmutableMap", "org.apache.phoenix.util.Closeables", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SYSTEM_TASK_TABLE", "java.util.concurrent.ConcurrentHashMap", "org.apache.hadoop.hbase.client.Connection", "org.apache.hadoop.hbase.util.VersionInfo", "org.apache.hadoop.conf.Configuration", "org.apache.phoenix.exception.InvalidRegionSplitPolicyException", "org.apache.phoenix.coprocessor.generated.MetaDataProtos.DropTableRequest", "org.apache.phoenix.util.PhoenixStopWatch", "org.apache.phoenix.coprocessorclient.MetaDataProtocol.MIN_SYSTEM_TABLE_TIMESTAMP_5_3_0", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SYSTEM_STATS_NAME", "java.util.concurrent.ExecutorService", "org.apache.phoenix.coprocessor.generated.MetaDataProtos.GetVersionRequest", "org.apache.phoenix.coprocessor.generated.MetaDataProtos.GetSchemaRequest", "org.apache.phoenix.query.QueryServicesOptions.DEFAULT_PHOENIX_VIEW_TTL_ENABLED", "org.apache.phoenix.util.UpgradeUtil.addParentToChildLinks", "org.apache.phoenix.coprocessor.generated.MetaDataProtos.CreateTableRequest", "org.apache.phoenix.protobuf.ProtobufUtil", "org.apache.phoenix.coprocessor.generated.MetaDataProtos.CreateFunctionRequest", "org.apache.hadoop.hbase.ipc.RpcControllerFactory.CUSTOM_CONTROLLER_CONF_KEY", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.TASK_TABLE_TTL", "org.apache.phoenix.coprocessor.generated.MetaDataProtos.ClearTableFromCacheResponse", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.COLUMN_SIZE", "org.apache.hadoop.hbase.NamespaceDescriptor", "org.apache.hadoop.hbase.client.ColumnFamilyDescriptorBuilder.KEEP_DELETED_CELLS", "java.nio.charset.StandardCharsets", "org.apache.phoenix.schema.EmptySequenceCacheException", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SYSTEM_CATALOG_NAME", "org.apache.hadoop.hbase.ipc.HBaseRpcController", "org.apache.phoenix.thirdparty.com.google.common.util.concurrent.ThreadFactoryBuilder", "org.apache.hadoop.hbase.security.User", "org.apache.phoenix.schema.MetaDataClient", "org.apache.phoenix.coprocessorclient.MetaDataProtocol.getVersion", "org.apache.phoenix.log.QueryLoggerDisruptor", "org.apache.phoenix.schema.SortOrder", "org.apache.phoenix.exception.UpgradeInProgressException", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.ORDINAL_POSITION", "org.apache.phoenix.schema.ColumnAlreadyExistsException", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.TTL_FOR_MUTEX", "java.util.concurrent.TimeUnit.MILLISECONDS", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SYSTEM_CATALOG_HBASE_TABLE_NAME", "org.apache.phoenix.coprocessor.generated.MetaDataProtos.MetaDataResponse", "java.io.IOException", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.TABLE_NAME", "org.apache.phoenix.util.EnvironmentEdgeManager", "org.apache.phoenix.util.PhoenixRuntime", "org.apache.phoenix.thirdparty.com.google.common.collect.Iterables", "org.apache.hadoop.hbase.client.TableDescriptorBuilder", "org.apache.phoenix.thirdparty.com.google.common.collect.Sets", "org.apache.phoenix.iterate.TableResultIterator", "org.apache.phoenix.query.QueryConstants.DEFAULT_COLUMN_FAMILY", "java.util.concurrent.CountDownLatch", "org.apache.hadoop.hbase.client.ColumnFamilyDescriptorBuilder.MAX_VERSIONS", "org.apache.phoenix.transaction.PhoenixTransactionClient", "org.apache.phoenix.util.IndexUtil", "java.util.ArrayList", "org.apache.phoenix.coprocessor.generated.MetaDataProtos.GetTableRequest", "org.apache.hadoop.hbase.client.ColumnFamilyDescriptor", "org.apache.phoenix.schema.PColumn", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SORT_ORDER", "org.apache.hadoop.hbase.ipc.controller.ServerToServerRpcController", "org.apache.phoenix.schema.SequenceKey", "java.util.HashMap", "org.apache.phoenix.exception.PhoenixIOException", "java.util.Set", "org.apache.phoenix.monitoring.MetricType.TIME_SPENT_IN_SYSTEM_TABLE_RPC_CALLS", "org.apache.phoenix.schema.Sequence", "org.apache.phoenix.monitoring.GlobalClientMetrics.GLOBAL_HCONNECTIONS_COUNTER", "org.apache.phoenix.schema.TableNotFoundException", "org.apache.phoenix.exception.SQLExceptionInfo", "org.apache.phoenix.schema.ReadOnlyTableException", "org.apache.phoenix.exception.UpgradeNotRequiredException", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.VIEW_CONSTANT", "java.util.concurrent.ThreadFactory", "org.apache.phoenix.coprocessorclient.MetaDataProtocol.PHOENIX_PATCH_NUMBER", "java.util.concurrent.ExecutionException", "org.apache.phoenix.query.QueryServicesOptions.DEFAULT_SYSTEM_CATALOG_INDEXES_ENABLED", "org.apache.phoenix.compile.MutationPlan", "org.apache.phoenix.util.UpgradeUtil.addViewIndexToParentLinks", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.TENANT_ID", "org.apache.phoenix.transaction.PhoenixTransactionContext", "java.util.Map", "org.apache.phoenix.schema.types.PBoolean", "org.apache.phoenix.util.ReadOnlyProps", "org.apache.phoenix.util.PhoenixContextExecutor", "org.apache.phoenix.query.QueryServicesOptions.DEFAULT_DROP_METADATA", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SYSTEM_CATALOG_NAME_BYTES", "java.util.concurrent.ScheduledExecutorService", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SYSTEM_FUNCTION_NAME_BYTES", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.TRANSACTIONAL", "org.apache.hadoop.hbase.client.Table", "org.apache.phoenix.coprocessor.generated.ChildLinkMetaDataProtos.ChildLinkMetaDataService", "org.apache.commons.lang3.StringUtils", "org.apache.phoenix.thirdparty.com.google.common.base.Preconditions", "org.apache.hadoop.hbase.HConstants", "org.apache.phoenix.coprocessorclient.MetaDataProtocol.MIN_SYSTEM_TABLE_TIMESTAMP_4_15_0", "org.apache.hadoop.hbase.KeepDeletedCells", "org.slf4j.Logger", "org.apache.phoenix.schema.ConnectionProperty", "org.apache.phoenix.query.QueryServicesOptions.DEFAULT_RENEW_LEASE_ENABLED", "org.apache.phoenix.schema.PMetaDataImpl", "org.apache.phoenix.thirdparty.com.google.common.base.Throwables", "org.apache.phoenix.thirdparty.com.google.common.collect.ImmutableList", "org.apache.phoenix.coprocessor.generated.RegionServerEndpointProtos", "com.google.protobuf.RpcController", "java.util.concurrent.CompletionException", "org.apache.phoenix.schema.types.PVarchar", "org.apache.phoenix.schema.PNameFactory", "org.apache.hadoop.hbase.client.ColumnFamilyDescriptorBuilder.TTL", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.IS_ROW_TIMESTAMP", "org.apache.hadoop.hbase.client.CheckAndMutate", "java.util.HashSet", "org.apache.phoenix.thirdparty.com.google.common.annotations.VisibleForTesting", "org.apache.phoenix.util.ConfigUtil", "org.apache.phoenix.index.PhoenixIndexCodec", "org.apache.hadoop.hbase.snapshot.SnapshotCreationException", "java.util.Properties", "org.apache.phoenix.coprocessor.generated.MetaDataProtos.AddColumnRequest", "java.util.Collections", "org.apache.hadoop.hbase.TableName", "org.apache.phoenix.monitoring.MetricType.NUM_SYSTEM_TABLE_RPC_SUCCESS", "com.google.protobuf.ServiceException", "org.apache.phoenix.coprocessor.generated.MetaDataProtos", "org.apache.phoenix.monitoring.MetricType.NUM_SYSTEM_TABLE_RPC_FAILURES", "org.apache.phoenix.schema.stats.GuidePostsKey", "org.apache.phoenix.util.UpgradeUtil.getSysTableSnapshotName", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.IS_VIEW_REFERENCED", "org.apache.hadoop.hbase.client.Admin", "org.apache.phoenix.jdbc.RPCConnectionInfo", "org.apache.phoenix.util.QueryUtil", "org.apache.hadoop.hbase.security.AccessDeniedException", "java.util.concurrent.atomic.AtomicBoolean", "org.apache.phoenix.query.QueryServicesOptions.DEFAULT_TIMEOUT_DURING_UPGRADE_MS", "org.apache.phoenix.schema.TTLExpression", "org.apache.phoenix.execute.MutationState", "org.apache.phoenix.schema.PTableKey", "org.apache.phoenix.iterate.TableResultIterator.RenewLeaseStatus", "org.apache.phoenix.coprocessor.generated.MetaDataProtos.ClearCacheRequest", "java.sql.ResultSetMetaData", "org.apache.hadoop.hbase.ipc.CoprocessorRpcUtils.BlockingRpcCallback", "org.apache.phoenix.hbase.index.util.VersionUtil", "org.apache.hadoop.hbase.HRegionLocation", "org.apache.hadoop.hbase.client.Increment", "org.apache.phoenix.schema.types.PTinyint", "org.apache.phoenix.monitoring.TableMetricsManager", "org.apache.hadoop.hbase.util.Bytes", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.DEFAULT_COLUMN_FAMILY_NAME", "org.apache.phoenix.thirdparty.com.google.common.collect.Maps", "java.util.concurrent.CompletableFuture", "org.apache.hadoop.hbase.ipc.controller.ServerSideRPCControllerFactory", "org.apache.hadoop.hbase.client.Get", "org.apache.phoenix.jdbc.ConnectionInfo", "org.apache.phoenix.schema.ColumnFamilyNotFoundException", "org.apache.hadoop.hbase.TableNotEnabledException", "java.util.concurrent.LinkedBlockingQueue", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.MAPPED_SYSTEM_CATALOG_NAME", "java.sql.SQLTimeoutException", "org.apache.phoenix.transaction.TransactionFactory", "org.apache.phoenix.schema.PTable", "org.apache.phoenix.exception.UpgradeBlockedException", "org.apache.phoenix.coprocessorclient.MetaDataProtocol", "org.apache.phoenix.util.JDBCUtil", "org.apache.phoenix.schema.PTableImpl", "org.apache.phoenix.transaction.PhoenixTransactionProvider", "java.util.regex.Pattern", "org.apache.phoenix.thirdparty.com.google.common.base.Joiner", "org.apache.phoenix.util.PropertiesUtil", "java.util.Objects", "org.apache.hadoop.hbase.client.coprocessor.Batch", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.NULLABLE", "org.apache.hadoop.hbase.client.Append", "org.apache.phoenix.jdbc.PhoenixConnection", "org.apache.phoenix.coprocessor.generated.MetaDataProtos.UpdateIndexStateRequest", "org.apache.hadoop.hbase.client.Delete", "org.apache.hadoop.hbase.zookeeper.ZKConfig", "org.apache.phoenix.schema.types.PUnsignedTinyint", "java.lang.management.ManagementFactory", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.TABLE_SCHEM", "org.apache.phoenix.util.UpgradeUtil.upgradeTo4_5_0", "org.apache.phoenix.schema.FunctionNotFoundException", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.KEY_SEQ", "org.apache.phoenix.coprocessor.generated.MetaDataProtos.ClearCacheResponse", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.DECIMAL_DIGITS", "java.util.concurrent.Future", "org.apache.phoenix.schema.SequenceAllocation", "org.apache.phoenix.schema.PTableRef", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SYSTEM_CATALOG_TABLE", "org.apache.phoenix.query.QueryServicesOptions.DEFAULT_RENEW_LEASE_THRESHOLD_MILLISECONDS", "org.apache.hadoop.hbase.util.Pair", "org.apache.hadoop.hbase.util.ByteStringer", "org.apache.phoenix.monitoring.GlobalClientMetrics.GLOBAL_QUERY_SERVICES_COUNTER", "java.util.concurrent.ConcurrentMap", "org.slf4j.LoggerFactory", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.DATA_TYPE", "org.apache.phoenix.coprocessorclient.InvalidateServerMetadataCacheRequest", "org.apache.hadoop.hbase.client.CoprocessorDescriptorBuilder", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.COLUMN_DEF", "org.apache.phoenix.coprocessorclient.MetaDataProtocol.MutationCode" ]
+  }, {
+    "name" : "MetaProperties",
+    "packageName" : "org.apache.phoenix.schema",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "setStoreNullsProp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPhysicalTableName",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "valueOf", "put" ]
+    }, {
+      "name" : "setUseStatsForParallelizationProp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMultiTenantProp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setStreamingTopicName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setColumnEncodedBytesProp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setUpdateCacheFrequencyProp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getPhysicalTableName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getStoreNullsProp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSchemaVersion",
+      "visibility" : "public",
+      "methodCalls" : [ "getSchemaVersion" ]
+    }, {
+      "name" : "setGuidePostWidth",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAppendOnlySchemaProp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDisableWALProp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isChangeDetectionEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "isChangeDetectionEnabled" ]
+    }, {
+      "name" : "getIsTransactionalProp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getStreamingTopicName",
+      "visibility" : "public",
+      "methodCalls" : [ "getStreamingTopicName" ]
+    }, {
+      "name" : "setImmutableRowsProp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTTL",
+      "visibility" : "public",
+      "methodCalls" : [ "getTimeToLive", "getEmptyColumnFamily", "getColumnFamily" ]
+    }, {
+      "name" : "getColumnEncodedBytesProp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setNonTxToTx",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDisableWALProp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getImmutableStorageSchemeProp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getImmutableRowsProp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTTL",
+      "visibility" : "public",
+      "methodCalls" : [ "getRowTTLForCompaction", "put", "getTTLExpression" ]
+    }, {
+      "name" : "setImmutableStorageSchemeProp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTransactionProviderProp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getNonTxToTx",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTransactionProviderProp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGuidePostWidth",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getUpdateCacheFrequencyProp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPhysicalTableNameProp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getAppendOnlySchemaProp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSchemaVersion",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setIsTransactionalProp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setChangeDetectionEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getPhysicalTableNameProp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getUseStatsForParallelizationProp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMultiTenantProp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    } ],
+    "imports" : [ "java.util.HashMap", "java.nio.file.Path", "org.apache.phoenix.parse.DropCDCStatement", "org.apache.phoenix.util.IndexUtil", "java.io.IOException", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.COLUMN_QUALIFIER_COUNTER", "java.util.ArrayList", "org.apache.phoenix.schema.ColumnMetaDataOps.addColumnMutation", "org.apache.phoenix.compile.PostLocalIndexDDLCompiler", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.DEFAULT_COLUMN_FAMILY_NAME", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.VIEW_STATEMENT", "java.util.Set", "org.apache.phoenix.schema.PTable.IndexType", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SCHEMA_VERSION", "org.apache.phoenix.compile.StatementContext", "org.apache.hadoop.hbase.security.access.Permission", "org.apache.phoenix.transaction.PhoenixTransactionContext", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.RETURN_TYPE", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.LAST_STATS_UPDATE_TIME", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.TRANSACTION_PROVIDER", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.UPDATE_CACHE_FREQUENCY", "org.apache.phoenix.query.QueryServices.DEFAULT_DISABLE_VIEW_SUBTREE_VALIDATION", "org.apache.phoenix.util.MetaDataUtil", "org.apache.phoenix.util.ClientUtil", "org.apache.hadoop.hbase.security.AccessDeniedException", "org.apache.hadoop.hbase.client.Table", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.JAR_PATH", "org.apache.phoenix.parse.CloseStatement", "org.apache.phoenix.parse.ColumnDefInPkConstraint", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.TABLE_TYPE", "org.apache.phoenix.schema.types.PDataType.TRUE_BYTES", "org.apache.phoenix.exception.SQLExceptionCode.INSUFFICIENT_MULTI_TENANT_COLUMNS", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.COLUMN_FAMILY", "org.apache.phoenix.schema.types.PVarchar", "org.apache.phoenix.thirdparty.com.google.common.collect.ListMultimap", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.PK_NAME", "org.apache.phoenix.coprocessorclient.MetaDataProtocol", "org.apache.phoenix.util.ByteUtil", "org.apache.phoenix.query.ConnectionlessQueryServicesImpl", "org.apache.phoenix.schema.types.PVarbinary", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.LINK_TYPE", "org.apache.phoenix.schema.PTable.EncodedCQCounter.NULL_COUNTER", "org.apache.phoenix.query.QueryConstants.SPLITS_FILE", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.IS_ARRAY", "org.apache.phoenix.parse.NamedTableNode", "org.apache.hadoop.hbase.util.Bytes", "org.apache.hadoop.hbase.client.TableDescriptor", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.TRANSACTIONAL", "org.slf4j.Logger", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.CLASS_NAME", "java.util.Properties", "org.apache.phoenix.expression.Determinism", "org.apache.phoenix.schema.LiteralTTLExpression.TTL_EXPRESSION_NOT_DEFINED", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.TABLE_SCHEM", "org.apache.phoenix.parse.ColumnDef", "org.apache.phoenix.query.QueryServicesOptions.DEFAULT_DROP_METADATA", "org.apache.phoenix.schema.types.PDataType", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.COLUMN_DEF", "org.apache.phoenix.query.QueryServicesOptions", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.IS_NAMESPACE_MAPPED", "org.apache.phoenix.parse.TableName", "java.util.LinkedHashMap", "java.sql.SQLFeatureNotSupportedException", "java.sql.PreparedStatement", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SYSTEM_CATALOG_SCHEMA", "org.apache.phoenix.util.TransactionUtil", "org.apache.phoenix.coprocessorclient.MetaDataProtocol.SharedTableState", "org.apache.phoenix.schema.PTable.ImmutableStorageScheme.SINGLE_CELL_ARRAY_WITH_OFFSETS", "org.apache.phoenix.parse.DropSequenceStatement", "java.util.Collections", "org.apache.phoenix.parse.IndexKeyConstraint", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.VIEW_TYPE", "org.apache.phoenix.util.CDCUtil.CDC_STREAM_NAME_FORMAT", "org.apache.phoenix.monitoring.MetricType.NUM_METADATA_LOOKUP_FAILURES", "org.apache.hadoop.hbase.HConstants", "org.apache.phoenix.compile.QueryPlan", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SORT_ORDER", "org.apache.phoenix.transaction.TransactionFactory.Provider", "org.apache.hadoop.util.StringUtils", "org.apache.phoenix.query.QueryServicesOptions.DEFAULT_RUN_UPDATE_STATS_ASYNC", "org.apache.phoenix.parse.ColumnName", "org.apache.phoenix.compile.ServerBuildIndexCompiler", "org.apache.phoenix.schema.PTable.ViewType.UPDATABLE", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.TABLE_NAME", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.NUM_ARGS", "org.apache.phoenix.exception.SQLExceptionCode.ERROR_WRITING_TO_SCHEMA_REGISTRY", "org.apache.phoenix.util.LogUtil", "org.apache.phoenix.schema.PTable.LinkType", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.USE_STATS_FOR_PARALLELIZATION", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.ARRAY_SIZE", "java.io.BufferedReader", "org.apache.phoenix.schema.ColumnMetaDataOps.newColumn", "org.apache.phoenix.query.QueryConstants", "org.apache.phoenix.query.QueryServices.DISABLE_VIEW_SUBTREE_VALIDATION", "org.apache.phoenix.schema.transform.TransformClient", "org.apache.phoenix.compile.PostIndexDDLCompiler", "org.apache.phoenix.thirdparty.com.google.common.primitives.Ints", "org.apache.phoenix.thirdparty.com.google.common.collect.Sets", "java.io.File", "org.apache.phoenix.parse.AddColumnStatement", "org.apache.phoenix.transaction.TransactionFactory", "org.apache.phoenix.coprocessorclient.MetaDataProtocol.MetaDataMutationResult", "org.apache.phoenix.parse.DropFunctionStatement", "org.apache.phoenix.parse.ParseNode", "java.sql.Date", "org.apache.phoenix.coprocessorclient.tasks.IndexRebuildTaskConstants.REBUILD_ALL", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SYSTEM_CATALOG_TABLE", "org.apache.phoenix.util.SchemaUtil", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.TYPE", "org.apache.phoenix.parse.PrimaryKeyConstraint", "org.apache.phoenix.parse.CreateTableStatement", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.GUIDE_POSTS_WIDTH", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.IS_VIEW_REFERENCED", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.ENCODING_SCHEME", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.MAX_VALUE", "org.apache.phoenix.parse.CreateFunctionStatement", "org.apache.phoenix.parse.DropIndexStatement", "java.sql.Types", "org.apache.phoenix.schema.types.PLong", "org.apache.phoenix.parse.UseSchemaStatement", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.NULLABLE", "org.apache.phoenix.thirdparty.com.google.common.collect.Sets.newLinkedHashSet", "org.apache.phoenix.expression.function.PartitionIdFunction", "org.apache.hadoop.hbase.client.Scan", "org.apache.phoenix.schema.PTable.ViewType.MAPPED", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.FUNCTION_NAME", "org.apache.phoenix.schema.types.PTimestamp", "org.apache.phoenix.thirdparty.com.google.common.collect.Maps", "org.apache.hadoop.conf.Configuration", "java.util.Collection", "org.apache.phoenix.thirdparty.com.google.common.base.Strings", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.ASYNC_REBUILD_TIMESTAMP", "org.apache.phoenix.parse.CreateSchemaStatement", "org.apache.phoenix.parse.CreateCDCStatement", "org.apache.phoenix.schema.PTableType.INDEX", "org.apache.phoenix.schema.task.SystemTaskParams", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.DECIMAL_DIGITS", "org.apache.phoenix.transaction.PhoenixTransactionProvider", "org.apache.phoenix.compile.StatementNormalizer", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.MIN_VALUE", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.CHANGE_DETECTION_ENABLED", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.PHYSICAL_NAME", "org.apache.phoenix.parse.DeclareCursorStatement", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.IMMUTABLE_STORAGE_SCHEME", "java.util.BitSet", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.MULTI_TENANT", "org.apache.hadoop.hbase.client.ColumnFamilyDescriptorBuilder", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.CDC_INCLUDE_TABLE", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.PHYSICAL_TABLE_NAME", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SYSTEM_CDC_STREAM_STATUS_NAME", "org.apache.phoenix.compile.PostDDLCompiler", "org.apache.phoenix.schema.stats.GuidePostsKey", "java.util.Map.Entry", "org.apache.phoenix.parse.CreateIndexStatement", "org.apache.phoenix.query.DelegateQueryServices", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SYSTEM_CHILD_LINK_NAME_BYTES", "org.apache.phoenix.query.ConnectionQueryServices", "org.apache.phoenix.parse.OpenStatement", "org.apache.phoenix.schema.stats.StatisticsUtil", "java.sql.Connection", "org.apache.phoenix.schema.PTable.ImmutableStorageScheme", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.DATA_TYPE", "java.util.HashSet", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.ORDINAL_POSITION", "java.util.List", "org.apache.phoenix.schema.PTable.ImmutableStorageScheme.ONE_CELL_PER_COLUMN", "org.apache.phoenix.parse.PFunction", "org.apache.phoenix.thirdparty.com.google.common.collect.ImmutableList", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SYSTEM_FUNCTION_TABLE", "org.apache.phoenix.expression.RowKeyColumnExpression", "org.apache.phoenix.parse.ParseNodeFactory", "org.apache.phoenix.schema.PTable.QualifierEncodingScheme.QualifierOutOfRangeException", "org.apache.phoenix.util.PhoenixRuntime", "org.apache.phoenix.exception.SQLExceptionInfo", "org.slf4j.LoggerFactory", "org.apache.phoenix.parse.DropTableStatement", "org.apache.phoenix.util.CDCUtil", "org.apache.phoenix.schema.PTable.QualifierEncodingScheme", "java.sql.ResultSet", "org.apache.hadoop.hbase.client.Delete", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SYNC_INDEX_CREATED_DATE", "org.apache.phoenix.query.QueryServices.DROP_METADATA_ATTRIB", "org.apache.phoenix.schema.stats.GuidePostsInfo", "org.apache.hadoop.hbase.client.Admin", "java.sql.Timestamp", "org.apache.phoenix.parse.NamedNode", "org.apache.phoenix.coprocessorclient.MetaDataProtocol.MutationCode", "org.apache.phoenix.jdbc.PhoenixStatement", "org.apache.phoenix.schema.PTable.EncodedCQCounter", "org.apache.phoenix.parse.DropColumnStatement", "org.apache.phoenix.query.QueryServices", "org.apache.phoenix.util.CursorUtil", "org.apache.hadoop.hbase.client.ColumnFamilyDescriptor", "org.apache.phoenix.exception.SQLExceptionCode.SALTING_NOT_ALLOWED_FOR_CDC", "java.sql.SQLException", "org.apache.phoenix.thirdparty.com.google.common.collect.Sets.newLinkedHashSetWithExpectedSize", "org.apache.phoenix.monitoring.TableMetricsManager", "org.apache.phoenix.execute.MutationState", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.APPEND_ONLY_SCHEMA", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.PARENT_TENANT_ID", "org.apache.phoenix.jdbc.PhoenixConnection", "org.apache.phoenix.schema.types.PDate", "org.apache.phoenix.thirdparty.com.google.common.collect.Lists", "org.apache.phoenix.compile.MutationPlan", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.INDEX_TYPE", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.TABLE_SEQ_NUM", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.INDEX_DISABLE_TIMESTAMP", "org.apache.phoenix.parse.AlterIndexStatement", "org.apache.phoenix.expression.Expression", "org.apache.phoenix.coprocessorclient.tasks.IndexRebuildTaskConstants.INDEX_NAME", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.TTL", "org.apache.phoenix.parse.CreateSequenceStatement", "org.apache.hadoop.hbase.security.access.AccessControlClient", "org.apache.phoenix.util.StringUtil", "org.apache.phoenix.query.QueryServices.INDEX_CREATE_DEFAULT_STATE", "java.util.Map", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.IS_CONSTANT", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.KEY_SEQ", "org.apache.phoenix.parse.PSchema", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.STORE_NULLS", "org.apache.hadoop.hbase.client.Mutation", "org.apache.phoenix.util.QueryUtil", "org.apache.phoenix.expression.function.PhoenixRowTimestampFunction", "org.apache.phoenix.exception.SQLExceptionCode", "java.util.Iterator", "org.apache.phoenix.query.ConnectionQueryServicesImpl", "org.apache.phoenix.index.IndexMaintainer", "java.nio.file.Paths", "org.apache.phoenix.hbase.index.covered.update.ColumnReference", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.COLUMN_NAME", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.ROW_KEY_MATCHER", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SYSTEM_TASK_TABLE", "org.apache.phoenix.util.EncodedColumnsUtil", "org.apache.phoenix.parse.DropSchemaStatement", "org.apache.phoenix.schema.PTable.QualifierEncodingScheme.NON_ENCODED_QUALIFIERS", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.INDEX_WHERE", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.STREAMING_TOPIC_NAME", "org.apache.phoenix.schema.PTableType.TABLE", "java.util.LinkedHashSet", "org.apache.phoenix.coprocessorclient.BaseScannerRegionObserverConstants.RUN_UPDATE_STATS_ASYNC_ATTRIB", "org.apache.phoenix.query.QueryConstants.SYSTEM_SCHEMA_NAME", "org.apache.phoenix.exception.SQLExceptionCode.CANNOT_TRANSFORM_TRANSACTIONAL_TABLE", "java.nio.charset.StandardCharsets", "org.apache.phoenix.util.UpgradeUtil", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData", "org.apache.phoenix.parse.PFunction.FunctionArgument", "org.apache.phoenix.schema.LiteralTTLExpression.TTL_EXPRESSION_FOREVER", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.COLUMN_COUNT", "org.apache.phoenix.schema.PTable.ViewType", "org.apache.hadoop.hbase.client.Put", "org.apache.phoenix.schema.types.PDataType.FALSE_BYTES", "org.apache.phoenix.query.QueryConstants.ENCODED_CQ_COUNTER_INITIAL_VALUE", "org.apache.phoenix.query.QueryConstants.BASE_TABLE_BASE_COLUMN_COUNT", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.AUTO_PARTITION_SEQ", "org.apache.phoenix.util.ScanUtil", "org.apache.phoenix.exception.SQLExceptionCode.CDC_ALREADY_ENABLED", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.ASYNC_CREATED_DATE", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.BASE_COLUMN_COUNT", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.DISABLE_WAL", "java.nio.file.Files", "org.apache.phoenix.util.ValidateLastDDLTimestampUtil", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SYSTEM_CHILD_LINK_NAMESPACE_BYTES", "org.apache.phoenix.compile.FromCompiler", "org.apache.phoenix.schema.types.PUnsignedLong", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.VIEW_INDEX_ID_DATA_TYPE", "org.apache.hadoop.hbase.util.Pair", "org.apache.phoenix.schema.PTableType.CDC", "org.apache.phoenix.util.ViewUtil", "org.apache.phoenix.compile.ColumnResolver", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.ARG_POSITION", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.IMMUTABLE_ROWS", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.INDEX_STATE", "org.apache.phoenix.util.EnvironmentEdgeManager", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SALT_BUCKETS", "org.apache.phoenix.parse.ChangePermsStatement", "org.apache.phoenix.util.JacksonUtil", "org.apache.phoenix.coprocessorclient.TableInfo", "org.apache.phoenix.query.QueryConstants.DEFAULT_COLUMN_FAMILY", "org.apache.phoenix.schema.PTableType.VIEW", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.COLUMN_ENCODED_BYTES", "org.apache.phoenix.compile.IndexExpressionCompiler", "org.apache.phoenix.util.ReadOnlyProps", "org.apache.phoenix.exception.SQLExceptionCode.PARENT_TABLE_NOT_FOUND", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.TENANT_ID", "org.apache.phoenix.thirdparty.com.google.common.annotations.VisibleForTesting", "org.apache.phoenix.exception.SQLExceptionCode.CANNOT_SET_CONDITIONAL_TTL_ON_TABLE_WITH_MULTIPLE_COLUMN_FAMILIES", "org.apache.phoenix.util.TaskMetaDataServiceCallBack", "org.apache.phoenix.query.ConnectionQueryServices.Feature", "org.apache.phoenix.schema.task.Task", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.COLUMN_SIZE", "org.apache.phoenix.parse.UpdateStatisticsStatement", "org.apache.commons.lang3.mutable.MutableBoolean", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.DATA_TABLE_NAME", "org.apache.phoenix.exception.SQLExceptionCode.TABLE_ALREADY_EXIST", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.VIEW_CONSTANT", "java.util.Comparator", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.DEFAULT_VALUE" ]
+  }, {
+    "name" : "MetaPropertiesEvaluated",
+    "packageName" : "org.apache.phoenix.schema",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "setDisableWAL",
+      "visibility" : "public",
+      "methodCalls" : [ "valueOf", "put" ]
+    }, {
+      "name" : "getUpdateCacheFrequency",
+      "visibility" : "public",
+      "methodCalls" : [ "getUpdateCacheFrequency" ]
+    }, {
+      "name" : "getColumnEncodedBytes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTransactionProvider",
+      "visibility" : "public",
+      "methodCalls" : [ "fromCode", "getTransactionProvider" ]
+    }, {
+      "name" : "isChangeDetectionEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "isChangeDetectionEnabled" ]
+    }, {
+      "name" : "getImmutableStorageScheme",
+      "visibility" : "public",
+      "methodCalls" : [ "getImmutableStorageScheme" ]
+    }, {
+      "name" : "setMultiTenant",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "valueOf" ]
+    }, {
+      "name" : "getSchemaVersion",
+      "visibility" : "public",
+      "methodCalls" : [ "getSchemaVersion" ]
+    }, {
+      "name" : "getUseStatsForParallelization",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setStreamingTopicName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGuidePostWidth",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setIsTransactional",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setUseStatsForParallelization",
+      "visibility" : "public",
+      "methodCalls" : [ "setBoolean", "put", "valueOf" ]
+    }, {
+      "name" : "getMultiTenant",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setStoreNulls",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getAppendOnlySchema",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getStreamingTopicName",
+      "visibility" : "public",
+      "methodCalls" : [ "getStreamingTopicName" ]
+    }, {
+      "name" : "setChangeDetectionEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPhysicalTableName",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "valueOf", "put" ]
+    }, {
+      "name" : "setIsImmutableRows",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getIsTransactional",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setUpdateCacheFrequency",
+      "visibility" : "public",
+      "methodCalls" : [ "valueOf", "put" ]
+    }, {
+      "name" : "getGuidePostWidth",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTransactionProvider",
+      "visibility" : "public",
+      "methodCalls" : [ "valueOf", "put" ]
+    }, {
+      "name" : "getStoreNulls",
+      "visibility" : "public",
+      "methodCalls" : [ "getStoreNulls" ]
+    }, {
+      "name" : "getIsImmutableRows",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getPhysicalTableName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTTL",
+      "visibility" : "public",
+      "methodCalls" : [ "getRowTTLForCompaction", "put", "getTTLExpression" ]
+    }, {
+      "name" : "setSchemaVersion",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTTL",
+      "visibility" : "public",
+      "methodCalls" : [ "getTimeToLive", "getEmptyColumnFamily", "getColumnFamily" ]
+    }, {
+      "name" : "setAppendOnlySchema",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "valueOf" ]
+    }, {
+      "name" : "getDisableWAL",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setImmutableStorageScheme",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "put" ]
+    }, {
+      "name" : "setColumnEncodedBytes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    } ],
+    "imports" : [ "org.apache.phoenix.parse.IndexKeyConstraint", "org.apache.phoenix.schema.types.PVarbinary", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.FUNCTION_NAME", "org.apache.phoenix.util.EnvironmentEdgeManager", "org.apache.phoenix.query.QueryServices.INDEX_CREATE_DEFAULT_STATE", "org.apache.phoenix.transaction.TransactionFactory.Provider", "org.apache.phoenix.schema.PTable.IndexType", "org.apache.phoenix.exception.SQLExceptionCode.CANNOT_TRANSFORM_TRANSACTIONAL_TABLE", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.MIN_VALUE", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.IS_VIEW_REFERENCED", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.COLUMN_SIZE", "org.apache.phoenix.compile.StatementNormalizer", "org.apache.phoenix.coprocessorclient.TableInfo", "org.apache.phoenix.schema.PTable.ImmutableStorageScheme.ONE_CELL_PER_COLUMN", "org.apache.phoenix.schema.PTable.LinkType", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.PARENT_TENANT_ID", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.ENCODING_SCHEME", "org.apache.phoenix.expression.function.PartitionIdFunction", "org.apache.phoenix.schema.PTable.QualifierEncodingScheme.NON_ENCODED_QUALIFIERS", "org.apache.phoenix.jdbc.PhoenixConnection", "org.apache.phoenix.jdbc.PhoenixStatement", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.INDEX_TYPE", "org.apache.phoenix.exception.SQLExceptionInfo", "org.apache.phoenix.util.TransactionUtil", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.USE_STATS_FOR_PARALLELIZATION", "org.apache.phoenix.monitoring.MetricType.NUM_METADATA_LOOKUP_FAILURES", "org.apache.phoenix.query.ConnectionQueryServices.Feature", "org.apache.phoenix.exception.SQLExceptionCode.INSUFFICIENT_MULTI_TENANT_COLUMNS", "org.apache.phoenix.expression.Determinism", "org.apache.phoenix.parse.AlterIndexStatement", "org.apache.phoenix.util.CDCUtil", "org.apache.phoenix.schema.PTable.EncodedCQCounter.NULL_COUNTER", "org.apache.phoenix.parse.DeclareCursorStatement", "java.util.Map", "org.apache.phoenix.parse.DropSchemaStatement", "org.apache.phoenix.parse.CloseStatement", "java.nio.file.Path", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.MULTI_TENANT", "org.apache.phoenix.schema.LiteralTTLExpression.TTL_EXPRESSION_NOT_DEFINED", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.TYPE", "java.sql.Date", "org.apache.phoenix.compile.PostIndexDDLCompiler", "org.apache.phoenix.coprocessorclient.MetaDataProtocol", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SYSTEM_FUNCTION_TABLE", "org.apache.phoenix.compile.MutationPlan", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.PK_NAME", "org.apache.phoenix.schema.PTable.EncodedCQCounter", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.NULLABLE", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SYSTEM_CHILD_LINK_NAME_BYTES", "org.apache.phoenix.schema.PTable.ImmutableStorageScheme", "org.apache.phoenix.coprocessorclient.tasks.IndexRebuildTaskConstants.INDEX_NAME", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.KEY_SEQ", "org.apache.phoenix.parse.ColumnDef", "java.sql.Types", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.ASYNC_REBUILD_TIMESTAMP", "java.util.LinkedHashSet", "org.apache.hadoop.hbase.util.Bytes", "org.apache.phoenix.thirdparty.com.google.common.collect.Sets", "org.apache.phoenix.schema.ColumnMetaDataOps.newColumn", "org.apache.phoenix.schema.types.PDataType.TRUE_BYTES", "java.sql.Timestamp", "org.apache.phoenix.transaction.TransactionFactory", "org.apache.phoenix.query.DelegateQueryServices", "org.apache.phoenix.query.QueryConstants", "org.apache.phoenix.util.PhoenixRuntime", "org.apache.phoenix.coprocessorclient.MetaDataProtocol.SharedTableState", "org.apache.phoenix.schema.types.PTimestamp", "org.apache.phoenix.schema.types.PDate", "org.apache.phoenix.parse.CreateFunctionStatement", "org.apache.phoenix.exception.SQLExceptionCode.SALTING_NOT_ALLOWED_FOR_CDC", "org.apache.phoenix.thirdparty.com.google.common.collect.Sets.newLinkedHashSet", "org.apache.phoenix.parse.CreateSchemaStatement", "org.apache.phoenix.thirdparty.com.google.common.collect.Lists", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.IMMUTABLE_ROWS", "org.apache.phoenix.compile.ServerBuildIndexCompiler", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SYSTEM_CATALOG_SCHEMA", "org.apache.phoenix.parse.PrimaryKeyConstraint", "org.apache.phoenix.schema.types.PDataType.FALSE_BYTES", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.VIEW_CONSTANT", "org.apache.phoenix.parse.DropColumnStatement", "org.apache.phoenix.parse.OpenStatement", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.VIEW_INDEX_ID_DATA_TYPE", "org.apache.hadoop.util.StringUtils", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SCHEMA_VERSION", "org.apache.phoenix.exception.SQLExceptionCode.TABLE_ALREADY_EXIST", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.CHANGE_DETECTION_ENABLED", "org.apache.phoenix.query.QueryServices.DEFAULT_DISABLE_VIEW_SUBTREE_VALIDATION", "org.apache.phoenix.parse.ParseNode", "org.apache.phoenix.thirdparty.com.google.common.collect.ListMultimap", "org.apache.phoenix.util.EncodedColumnsUtil", "org.apache.hadoop.hbase.client.ColumnFamilyDescriptorBuilder", "org.apache.hadoop.hbase.security.AccessDeniedException", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.VIEW_STATEMENT", "java.sql.Connection", "org.apache.phoenix.parse.CreateSequenceStatement", "org.apache.hadoop.hbase.client.ColumnFamilyDescriptor", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.STORE_NULLS", "org.apache.phoenix.parse.PSchema", "org.apache.phoenix.parse.DropCDCStatement", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.ROW_KEY_MATCHER", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.COLUMN_QUALIFIER_COUNTER", "org.apache.phoenix.thirdparty.com.google.common.collect.ImmutableList", "org.apache.phoenix.parse.ParseNodeFactory", "java.util.Collections", "org.apache.phoenix.schema.PTableType.TABLE", "java.util.LinkedHashMap", "org.apache.phoenix.query.ConnectionQueryServicesImpl", "org.apache.hadoop.hbase.security.access.Permission", "org.apache.phoenix.query.QueryServicesOptions", "org.apache.phoenix.query.ConnectionQueryServices", "org.apache.phoenix.exception.SQLExceptionCode.PARENT_TABLE_NOT_FOUND", "java.io.BufferedReader", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SYSTEM_CATALOG_TABLE", "org.apache.phoenix.parse.CreateIndexStatement", "org.apache.phoenix.exception.SQLExceptionCode.CDC_ALREADY_ENABLED", "org.apache.phoenix.query.QueryServices", "org.apache.phoenix.query.QueryServicesOptions.DEFAULT_RUN_UPDATE_STATS_ASYNC", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.IS_CONSTANT", "org.apache.phoenix.schema.types.PUnsignedLong", "org.apache.phoenix.util.TaskMetaDataServiceCallBack", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SYSTEM_CDC_STREAM_STATUS_NAME", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.COLUMN_ENCODED_BYTES", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.DEFAULT_VALUE", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.TENANT_ID", "org.apache.phoenix.util.ScanUtil", "org.apache.phoenix.query.QueryServices.DROP_METADATA_ATTRIB", "org.apache.phoenix.util.ReadOnlyProps", "org.apache.hadoop.hbase.client.Mutation", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.DATA_TABLE_NAME", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.CLASS_NAME", "org.apache.phoenix.parse.ColumnName", "org.slf4j.LoggerFactory", "org.apache.hadoop.hbase.client.Admin", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.PHYSICAL_NAME", "org.apache.phoenix.schema.stats.GuidePostsKey", "org.apache.phoenix.query.QueryConstants.ENCODED_CQ_COUNTER_INITIAL_VALUE", "org.apache.phoenix.schema.ColumnMetaDataOps.addColumnMutation", "org.apache.phoenix.compile.PostLocalIndexDDLCompiler", "org.apache.phoenix.query.QueryServices.DISABLE_VIEW_SUBTREE_VALIDATION", "org.apache.phoenix.coprocessorclient.tasks.IndexRebuildTaskConstants.REBUILD_ALL", "java.util.Comparator", "org.apache.phoenix.thirdparty.com.google.common.collect.Sets.newLinkedHashSetWithExpectedSize", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.IMMUTABLE_STORAGE_SCHEME", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.TTL", "java.util.Iterator", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.COLUMN_COUNT", "org.apache.hadoop.hbase.security.access.AccessControlClient", "org.apache.phoenix.parse.AddColumnStatement", "org.apache.phoenix.parse.UseSchemaStatement", "org.apache.phoenix.thirdparty.com.google.common.base.Strings", "org.apache.phoenix.coprocessorclient.BaseScannerRegionObserverConstants.RUN_UPDATE_STATS_ASYNC_ATTRIB", "org.apache.phoenix.parse.TableName", "org.apache.phoenix.compile.QueryPlan", "org.apache.phoenix.expression.Expression", "org.apache.phoenix.compile.ColumnResolver", "org.apache.phoenix.schema.types.PVarchar", "java.util.HashMap", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.VIEW_TYPE", "org.apache.phoenix.util.StringUtil", "org.apache.hadoop.hbase.client.TableDescriptor", "org.apache.phoenix.schema.PTable.ImmutableStorageScheme.SINGLE_CELL_ARRAY_WITH_OFFSETS", "org.apache.phoenix.parse.DropSequenceStatement", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.TABLE_TYPE", "org.apache.phoenix.util.ViewUtil", "org.apache.phoenix.util.MetaDataUtil", "org.apache.hadoop.hbase.client.Table", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.ARRAY_SIZE", "org.apache.phoenix.schema.PTable.QualifierEncodingScheme.QualifierOutOfRangeException", "java.sql.SQLException", "org.apache.phoenix.schema.PTable.ViewType.UPDATABLE", "java.util.Collection", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.PHYSICAL_TABLE_NAME", "java.util.ArrayList", "org.apache.phoenix.schema.types.PLong", "java.util.Set", "org.apache.phoenix.query.QueryConstants.DEFAULT_COLUMN_FAMILY", "org.apache.phoenix.query.QueryServicesOptions.DEFAULT_DROP_METADATA", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.IS_NAMESPACE_MAPPED", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.IS_ARRAY", "org.apache.phoenix.query.QueryConstants.SPLITS_FILE", "org.apache.phoenix.parse.ChangePermsStatement", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.INDEX_DISABLE_TIMESTAMP", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.ORDINAL_POSITION", "org.apache.phoenix.compile.IndexExpressionCompiler", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.ARG_POSITION", "org.apache.phoenix.parse.DropIndexStatement", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.NUM_ARGS", "org.apache.phoenix.query.ConnectionlessQueryServicesImpl", "org.apache.phoenix.schema.types.PDataType", "org.apache.phoenix.transaction.PhoenixTransactionProvider", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.BASE_COLUMN_COUNT", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.INDEX_STATE", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.GUIDE_POSTS_WIDTH", "org.apache.phoenix.index.IndexMaintainer", "org.apache.hadoop.hbase.client.Put", "org.apache.phoenix.schema.PTable.ViewType.MAPPED", "org.apache.phoenix.exception.SQLExceptionCode.ERROR_WRITING_TO_SCHEMA_REGISTRY", "org.apache.phoenix.schema.task.Task", "org.apache.phoenix.schema.PTable.QualifierEncodingScheme", "org.apache.phoenix.util.ByteUtil", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.APPEND_ONLY_SCHEMA", "java.util.HashSet", "org.apache.phoenix.parse.CreateCDCStatement", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.TABLE_SCHEM", "org.apache.hadoop.hbase.HConstants", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.MAX_VALUE", "java.util.Map.Entry", "org.apache.phoenix.monitoring.TableMetricsManager", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.AUTO_PARTITION_SEQ", "org.apache.phoenix.query.QueryConstants.SYSTEM_SCHEMA_NAME", "org.apache.phoenix.exception.SQLExceptionCode.CANNOT_SET_CONDITIONAL_TTL_ON_TABLE_WITH_MULTIPLE_COLUMN_FAMILIES", "org.apache.commons.lang3.mutable.MutableBoolean", "org.apache.phoenix.util.SchemaUtil", "org.apache.phoenix.parse.DropTableStatement", "org.apache.phoenix.util.CDCUtil.CDC_STREAM_NAME_FORMAT", "org.slf4j.Logger", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.RETURN_TYPE", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.TRANSACTIONAL", "org.apache.phoenix.util.IndexUtil", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.TABLE_SEQ_NUM", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.JAR_PATH", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.DISABLE_WAL", "org.apache.phoenix.parse.ColumnDefInPkConstraint", "org.apache.hadoop.hbase.client.Scan", "org.apache.phoenix.parse.PFunction", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.UPDATE_CACHE_FREQUENCY", "org.apache.phoenix.util.QueryUtil", "java.io.File", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.DEFAULT_COLUMN_FAMILY_NAME", "org.apache.phoenix.schema.task.SystemTaskParams", "java.nio.file.Paths", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.INDEX_WHERE", "org.apache.phoenix.parse.UpdateStatisticsStatement", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SYSTEM_TASK_TABLE", "org.apache.phoenix.hbase.index.covered.update.ColumnReference", "java.util.List", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.COLUMN_DEF", "org.apache.phoenix.query.QueryConstants.BASE_TABLE_BASE_COLUMN_COUNT", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SYSTEM_CHILD_LINK_NAMESPACE_BYTES", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SYNC_INDEX_CREATED_DATE", "org.apache.phoenix.schema.PTableType.INDEX", "org.apache.phoenix.parse.NamedTableNode", "org.apache.phoenix.schema.PTableType.VIEW", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SORT_ORDER", "org.apache.hadoop.hbase.util.Pair", "java.nio.charset.StandardCharsets", "org.apache.phoenix.thirdparty.com.google.common.annotations.VisibleForTesting", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.SALT_BUCKETS", "org.apache.phoenix.expression.function.PhoenixRowTimestampFunction", "org.apache.hadoop.conf.Configuration", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.ASYNC_CREATED_DATE", "org.apache.phoenix.coprocessorclient.MetaDataProtocol.MetaDataMutationResult", "org.apache.phoenix.compile.StatementContext", "org.apache.phoenix.util.ClientUtil", "org.apache.phoenix.schema.PTableType.CDC", "java.io.IOException", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.STREAMING_TOPIC_NAME", "java.sql.PreparedStatement", "org.apache.phoenix.schema.transform.TransformClient", "org.apache.phoenix.parse.PFunction.FunctionArgument", "org.apache.phoenix.schema.PTable.ViewType", "org.apache.phoenix.coprocessorclient.MetaDataProtocol.MutationCode", "org.apache.phoenix.compile.FromCompiler", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.COLUMN_NAME", "org.apache.phoenix.transaction.PhoenixTransactionContext", "org.apache.phoenix.util.UpgradeUtil", "org.apache.phoenix.parse.DropFunctionStatement", "java.sql.SQLFeatureNotSupportedException", "org.apache.phoenix.parse.NamedNode", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.LAST_STATS_UPDATE_TIME", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.DECIMAL_DIGITS", "org.apache.phoenix.util.LogUtil", "org.apache.phoenix.exception.SQLExceptionCode", "java.nio.file.Files", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.DATA_TYPE", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.CDC_INCLUDE_TABLE", "org.apache.phoenix.parse.CreateTableStatement", "org.apache.phoenix.expression.RowKeyColumnExpression", "org.apache.phoenix.schema.LiteralTTLExpression.TTL_EXPRESSION_FOREVER", "org.apache.phoenix.schema.stats.GuidePostsInfo", "org.apache.phoenix.util.JacksonUtil", "org.apache.phoenix.util.CursorUtil", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.TABLE_NAME", "org.apache.phoenix.execute.MutationState", "org.apache.phoenix.compile.PostDDLCompiler", "org.apache.phoenix.thirdparty.com.google.common.collect.Maps", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.COLUMN_FAMILY", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.TRANSACTION_PROVIDER", "java.sql.ResultSet", "java.util.BitSet", "java.util.Properties", "org.apache.phoenix.jdbc.PhoenixDatabaseMetaData.LINK_TYPE", "org.apache.hadoop.hbase.client.Delete", "org.apache.phoenix.util.ValidateLastDDLTimestampUtil", "org.apache.phoenix.thirdparty.com.google.common.primitives.Ints", "org.apache.phoenix.schema.stats.StatisticsUtil" ]
+  } ]
+}

@@ -1,0 +1,2073 @@
+{
+  "systemName" : "XChange",
+  "classes" : [ {
+    "name" : "OERRates",
+    "packageName" : "org.knowm.xchange.oer.dto.marketdata",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "getUGX",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSTD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSBD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setXDR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGEL",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMVR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMNT",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setKZT",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSLL",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getKHR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getRSD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTZS",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSAR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getNOK",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setARS",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getEEK",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setRWF",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCOP",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setBAM",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getPKR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setNAD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getVEF",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGTQ",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCNY",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setBWP",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTND",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMRO",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getRON",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTJS",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "toString",
+      "visibility" : "public",
+      "methodCalls" : [ "append", "calcBid", "calcAsk", "getExchange", "getLimit", "getPricePerUnit", "getImmediateOrCancel", "getTimeStamp", "getCondition", "getConditional", "getConditionTarget", "getQuantityRemaining", "getOrderUuid", "getProductId", "getQuantity", "getCurrencyPair", "isTrade", "getSide", "pairToString", "map", "ofNullable", "orElse", "getOptionalErrorMessage", "writeValueAsString", "getTimestampCreated", "getExpiresAt", "getCreatedAt", "getCreationTimestamp", "getExpirationTimestamp", "getCompletedTimestamp", "forEach", "getActualTakerRate", "getActualMakerRate", "getMakerFeeRate", "getTakerFeeRate", "getList", "getMakerFee", "getTakerFee", "getTs", "getMinAmount", "getDefaultAmount", "getError", "getMaxAmount", "toUpperCase", "getPrice", "getResult", "getBid", "getAsk", "getTag", "getExchangeName", "getName", "hashCode", "getCommission", "getAddress", "getPaymentId", "getTrades", "getEvent", "getHiddenOrders", "getOpenOrders", "getCount", "getTime", "getVwap", "toMillisNullSafe", "equals", "getCurrency", "getAmount", "isNotBlank", "getBids", "getAsks", "getClose", "getVol", "getOpen", "getAveragePrice", "getData", "getMessage", "getCode", "getBuy", "getLow", "getLast", "getHigh", "getTimestamp", "getVolume", "getSell", "size", "getOHLCs", "getSymbol", "getEventTime", "get", "warn", "asJsonString", "getTakerPays", "getType", "getTakerGets", "isSuccess", "getClass", "getSimpleName", "getUserReference", "getInstrument", "toString", "getId", "getMtsCreate", "getOrderPrice", "getExecAmount", "getOrderType", "getExecPrice", "getOrderId", "getPair", "format", "getCurrencyCode", "toLowerCase", "getBase", "getCounter" ]
+    }, {
+      "name" : "getLBP",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setBND",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getPAB",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBAM",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setBOB",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getKPW",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getALL",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMKD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getJMD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTRY",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGBP",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setKRW",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSBD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getZWL",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMZN",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getEGP",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setBRL",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setVEF",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setXPF",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPAB",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCAD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setEEK",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setHUF",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCVE",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSOS",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTOP",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setUSD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getLKR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setFJD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCUP",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getJEP",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setBBD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSGD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setBIF",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGYD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setLSL",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAMD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getNZD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setJOD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAOA",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getPLN",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGNF",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setLVL",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getHUF",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGYD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCHF",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getAWG",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setILS",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMGA",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGIP",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBBD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTJS",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDZD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getUYU",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setZAR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setKGS",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setBHD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setNZD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPHP",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setXOF",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCDF",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getRWF",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGBP",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBIF",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSZL",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getLSL",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setETB",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSZL",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSRD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getPGK",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMXN",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setLRD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMYR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMMK",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSAR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMAD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDKK",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBTN",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getUZS",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getEUR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setHNL",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setZWL",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getKGS",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setEUR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setNGN",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTZS",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setVUV",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getLVL",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCHF",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAWG",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getNAD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setBSD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setLKR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCLF",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTWD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTRY",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getLRD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setKYD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMDL",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getLAK",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSHP",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGNF",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getZAR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setLYD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSCR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAZN",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setHRK",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAUD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getZMK",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCLP",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSCR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setNOK",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMVR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setBZD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTOP",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMYR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAFN",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCOP",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setFKP",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getPHP",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getKRW",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getAZN",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getKES",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMRO",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMUR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getHNL",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getIRR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSDG",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTWD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setANG",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setRON",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getKMF",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getAED",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getETB",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPEN",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getPEN",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setISK",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getNIO",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDOP",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getKWD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setVND",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setIDR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCRC",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setRSD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSHP",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setLBP",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setIQD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getKYD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCLP",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGEL",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTTD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setBMD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCUP",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSYP",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPGK",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setQAR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setYER",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setINR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMKD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getLYD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMOP",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDJF",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCDF",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getUAH",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMZN",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setKES",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTMT",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTHB",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getFJD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setUZS",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBYR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getNGN",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getXOF",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setZMK",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDOP",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDZD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getUSD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGHS",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getKZT",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getVND",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setEGP",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getHKD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCNY",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSDG",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSOS",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBDT",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setUYU",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setLTL",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getLTL",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getAUD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setXCD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getIDR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSGD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setJPY",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCAD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMNT",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBGN",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSYP",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSEK",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPLN",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOMR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getJOD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGHS",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSRD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getISK",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGIP",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPKR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getXPF",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getVUV",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setUAH",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCZK",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setIRR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getJPY",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setHKD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGMD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBHD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getIQD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPYG",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getARS",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getPYG",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMGA",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setBGN",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getXCD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setXAF",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCZK",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setUGX",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getHRK",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAED",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCLF",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMXN",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setNPR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getQAR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setJEP",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setBDT",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMDL",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSTD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSVC",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBMD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getRUB",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setJMD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCRC",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setKWD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setBTC",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getOMR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBND",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setKHR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTMT",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMUR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getINR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSEK",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setNIO",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getYER",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getAFN",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSLL",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getILS",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setBYR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getWST",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getAOA",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGTQ",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSVC",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTND",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMOP",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBZD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGMD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setKMF",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getNPR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDJF",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBRL",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTTD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setWST",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTHB",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBTC",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMMK",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setHTG",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getAMD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMWK",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getXDR",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBOB",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBSD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setLAK",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMWK",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getFKP",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getHTG",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDKK",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCVE",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getXAF",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMAD",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setKPW",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setBTN",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setRUB",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getANG",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBWP",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setALL",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    } ],
+    "imports" : [ "com.fasterxml.jackson.annotation.JsonProperty" ]
+  }, {
+    "name" : "Builder",
+    "packageName" : "org.knowm.xchange.gemini.v1.dto.trade",
+    "extendedClasses" : [ "Builder" ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "close",
+      "visibility" : "public",
+      "methodCalls" : [ "dispose" ]
+    }, {
+      "name" : "cancelAfter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "postOnly",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "timeInForce",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "productId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "side",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "stop",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "clientOid",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "stp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "funds",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withOrderType",
+      "visibility" : "public",
+      "methodCalls" : [ "valueOfIgnoreCase" ]
+    }, {
+      "name" : "withTimestamp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withTicker",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withExecutedVolume",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withAveragePrice",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withState",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withRemainingVolume",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withTradesCount",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withSell",
+      "visibility" : "public",
+      "methodCalls" : [ "valueOf" ]
+    }, {
+      "name" : "withHigh",
+      "visibility" : "public",
+      "methodCalls" : [ "valueOf" ]
+    }, {
+      "name" : "withPrice",
+      "visibility" : "public",
+      "methodCalls" : [ "valueOf" ]
+    }, {
+      "name" : "withSide",
+      "visibility" : "public",
+      "methodCalls" : [ "fromOrderType", "valueOfIgnoreCase" ]
+    }, {
+      "name" : "withId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withVol",
+      "visibility" : "public",
+      "methodCalls" : [ "valueOf" ]
+    }, {
+      "name" : "withCreatedAt",
+      "visibility" : "public",
+      "methodCalls" : [ "toDate", "isEmpty" ]
+    }, {
+      "name" : "withFunds",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withBuy",
+      "visibility" : "public",
+      "methodCalls" : [ "valueOf" ]
+    }, {
+      "name" : "withVolume",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withMarket",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withLast",
+      "visibility" : "public",
+      "methodCalls" : [ "valueOf" ]
+    }, {
+      "name" : "withLow",
+      "visibility" : "public",
+      "methodCalls" : [ "valueOf" ]
+    }, {
+      "name" : "withAsks",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withBids",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "limit",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "offset",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "strike",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "expireDate",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setStatus",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "feeAmount",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setBalance",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setInternalId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDate",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setBlockchainTransactionHash",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "makerOrderId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "liquidationPrice",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "leverage",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "price",
+      "visibility" : "public",
+      "methodCalls" : [ "price" ]
+    }, {
+      "name" : "setFee",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAddressTag",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "type",
+      "visibility" : "public",
+      "methodCalls" : [ "equalsIgnoreCase", "type" ]
+    }, {
+      "name" : "orderId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAmount",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "orderUserReference",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "takerOrderId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "size",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "unRealisedPnl",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "feeCurrency",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAddress",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCurrency",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDescription",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "balances",
+      "visibility" : "public",
+      "methodCalls" : [ "balances", "decorateApiCall", "retry", "withRetry", "call", "add", "keySet", "userInfo", "adaptBalance", "get", "transform", "values", "getBalances", "randomUUID", "getNonceFactory", "balance" ]
+    }, {
+      "name" : "maxLeverage",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "loaned",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "averagePrice",
+      "visibility" : "public",
+      "methodCalls" : [ "averagePrice" ]
+    }, {
+      "name" : "name",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "orderType",
+      "visibility" : "public",
+      "methodCalls" : [ "orderType" ]
+    }, {
+      "name" : "limitPrice",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "currency",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "remainingAmount",
+      "visibility" : "public",
+      "methodCalls" : [ "remainingAmount" ]
+    }, {
+      "name" : "frozen",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "flags",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll", "flags" ]
+    }, {
+      "name" : "depositing",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "total",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "fee",
+      "visibility" : "public",
+      "methodCalls" : [ "fee" ]
+    }, {
+      "name" : "withdrawing",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "originalAmount",
+      "visibility" : "public",
+      "methodCalls" : [ "originalAmount" ]
+    }, {
+      "name" : "orderStatus",
+      "visibility" : "public",
+      "methodCalls" : [ "getNonceFactory", "toString", "getData", "orderStatus" ]
+    }, {
+      "name" : "id",
+      "visibility" : "public",
+      "methodCalls" : [ "id", "parseLong" ]
+    }, {
+      "name" : "currentLeverage",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "trailValue",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "flag",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "flag" ]
+    }, {
+      "name" : "cumulativeAmount",
+      "visibility" : "public",
+      "methodCalls" : [ "cumulativeAmount" ]
+    }, {
+      "name" : "borrowed",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "intention",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "available",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "userReference",
+      "visibility" : "public",
+      "methodCalls" : [ "userReference" ]
+    }, {
+      "name" : "stopPrice",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "features",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "tradingFeeCurrency",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "fundingRate1h",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "fundingRateDate",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "priceStepSize",
+      "visibility" : "public",
+      "methodCalls" : [ "stripTrailingZeros" ]
+    }, {
+      "name" : "fundingRate8h",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "volumeScale",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "contractValue",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "amountStepSize",
+      "visibility" : "public",
+      "methodCalls" : [ "stripTrailingZeros" ]
+    }, {
+      "name" : "feeTiers",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "tradingFee",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "fundingRateEffectiveInMinutes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "priceScale",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "marketOrderEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "minimumAmount",
+      "visibility" : "public",
+      "methodCalls" : [ "stripTrailingZeros" ]
+    }, {
+      "name" : "counterMinimumAmount",
+      "visibility" : "public",
+      "methodCalls" : [ "stripTrailingZeros" ]
+    }, {
+      "name" : "maximumAmount",
+      "visibility" : "public",
+      "methodCalls" : [ "stripTrailingZeros" ]
+    }, {
+      "name" : "counterMaximumAmount",
+      "visibility" : "public",
+      "methodCalls" : [ "stripTrailingZeros" ]
+    }, {
+      "name" : "last",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "low",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "vwap",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "counterCounterparty",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "baseCounterparty",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "from",
+      "visibility" : "public",
+      "methodCalls" : [ "getOpen", "setFee", "instrument", "setBlockchainTransactionHash", "unRealisedPnl", "getSize", "setDescription", "setDate", "setStatus", "setType", "size", "setBalance", "setCurrency", "setAmount", "getLiquidationPrice", "setInternalId", "setAddressTag", "getUnRealisedPnl", "setAddress", "liquidationPrice", "getUserReference", "getTrailValue", "userReference", "orderStatus", "getAveragePrice", "balances", "getTotal", "stopPrice", "available", "fee", "getIntention", "total", "borrowed", "trailValue", "getBorrowed", "getLoaned", "frozen", "getInstrument", "getFrozen", "depositing", "withdrawing", "loaned", "currency", "intention", "getFee", "getCumulativeAmount", "getStatus", "getAvailable", "cumulativeAmount", "getCurrency", "getWithdrawing", "getDepositing", "averagePrice", "getStopPrice", "bidSize", "getHigh", "getQuotaVolume", "getId", "getCurrencyPair", "id", "getOrderFlags", "originalAmount", "getOriginalAmount", "getTimestamp", "baseCounterparty", "getCounterCounterparty", "limitPrice", "counterCounterparty", "getBaseCounterparty", "currencyPair", "orderType", "getLimitPrice", "timestamp", "getType", "flags", "getFeeCurrency", "orderId", "type", "feeCurrency", "price", "feeAmount", "getFeeAmount", "getPrice", "getOrderId", "getCost", "cost", "high", "quotaVolume", "open", "getClose", "last", "volume", "getLow", "bid", "getBidSize", "getBid", "askSize", "vwap", "getLast", "getVwap", "ask", "getVolume", "getAsk", "getAskSize", "low", "close" ]
+    }, {
+      "name" : "build",
+      "visibility" : "public",
+      "methodCalls" : [ "createClientConfig", "toArray", "forEach", "createProxy", "customize", "subtract", "setLeverage", "calculateFundingRateEffectiveInMinutes", "setOrderFlags" ]
+    }, {
+      "name" : "baseTransferFee",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "counterTransferFee",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOrderQuantity",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSimpleOrderQuantity",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setLeavesQuantity",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSimpleLeavesQuantity",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOrderId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setClOrdId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOrigClOrdId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setStopPrice",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPrice",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPegOffsetValue",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setText",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "cost",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "quoteVolume",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "bid",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "currencyPair",
+      "visibility" : "public",
+      "methodCalls" : [ "next", "iterator", "currencyPair", "instrument" ]
+    }, {
+      "name" : "instrument",
+      "visibility" : "public",
+      "methodCalls" : [ "instrument", "notNull" ]
+    }, {
+      "name" : "bidSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "open",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "ask",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "askSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "timestamp",
+      "visibility" : "public",
+      "methodCalls" : [ "timestamp" ]
+    }, {
+      "name" : "volume",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "quotaVolume",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "percentageChange",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "high",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    } ],
+    "imports" : [ "com.fasterxml.jackson.databind.annotation.JsonDeserialize", "org.knowm.xchange.kuna.dto.enums.KunaOrderType", "org.knowm.xchange.kuna.util.KunaUtils", "org.knowm.xchange.kuna.dto.enums.KunaSide", "org.knowm.xchange.service.trade.params.TradeHistoryParamCurrency", "org.knowm.xchange.service.trade.params.TradeHistoryParamOffset", "org.knowm.xchange.service.trade.params.TradeHistoryParamLimit", "java.text.ParseException", "com.fasterxml.jackson.annotation.JsonValue", "java.text.SimpleDateFormat", "java.util.Comparator", "java.text.DateFormat", "lombok.Setter", "org.knowm.xchange.service.marketdata.MarketDataService", "org.knowm.xchange.dto.trade.MarketOrder", "org.knowm.xchange.service.trade.TradeService", "java.util.Random", "com.fasterxml.jackson.annotation.JsonTypeInfo", "com.fasterxml.jackson.annotation.JsonSubTypes", "org.knowm.xchange.service.trade.params.TradeHistoryParams", "java.util.HashSet", "org.knowm.xchange.dto.marketdata.Trade", "org.knowm.xchange.dto.trade.StopOrder", "java.util.stream.Stream", "java.util.Collection", "com.fasterxml.jackson.annotation.JsonCreator", "java.util.Map", "java.util.Collections", "org.apache.commons.lang3.ObjectUtils", "com.fasterxml.jackson.annotation", "org.slf4j.LoggerFactory", "java.util.Set", "java.util.HashMap", "org.slf4j.Logger", "java.util.stream.Collectors", "com.fasterxml.jackson.annotation.JsonProperty", "java.util.concurrent.TimeUnit", "com.fasterxml.jackson.annotation.JsonInclude", "lombok.ToString", "java.util.Arrays", "java.time.Instant", "lombok.Getter", "org.knowm.xchange.currency.CurrencyPair", "org.knowm.xchange.dto.Order", "java.util.Date", "org.knowm.xchange.dto.trade.LimitOrder", "java.math.BigDecimal", "org.knowm.xchange.dto.trade.UserTrade", "org.knowm.xchange.currency.Currency", "org.knowm.xchange.dto.Order.OrderType", "javax.annotation.Nullable", "javax.annotation.Nonnull", "java.util.Objects", "org.knowm.xchange.utils.Assert", "java.math.RoundingMode", "java.io.Serializable", "com.fasterxml.jackson.annotation.JsonIgnore", "com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder", "org.knowm.xchange.utils.DateUtils", "org.knowm.xchange.instrument.Instrument" ]
+  }, {
+    "name" : "OkexV3",
+    "packageName" : "org.knowm.xchange.okcoin",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "marginPlaceOrder",
+      "visibility" : "public",
+      "methodCalls" : [ "timestamp", "setMarginTrading", "checkResult", "marginPlaceOrder" ]
+    }, {
+      "name" : "getOrderBook",
+      "visibility" : "public",
+      "methodCalls" : [ "toOrderBook", "getBittrexSequencedOrderBook", "adaptCurrencyPairToMarketId", "just", "constructCollectionType", "fromIterable", "getInstruments", "adaptLimitOrder", "error", "parseLong", "flatMap", "getContractValue", "getTypeFactory", "getLykkeOrderBook", "getBiboxOrderBook", "getGeminiOrderBook", "adaptBitcointoyouOrderBook", "getBitcointoyouOrderBook", "toPoloniexDepth", "empty", "reduce", "subscribeCurrencyPairChannel", "scan", "toOkCoinDepth", "setS", "setB", "getSells", "getBuys", "getName", "addAll", "adaptVaultoroOrderBook", "asLong", "getVaultoroOrderBook", "getOrderBookRaw", "inclusiveBetween", "notNull", "adaptToOrderBook", "getGlobitexOrderBookBySymbol", "getBTCTurkOrderBook", "toBitmexOrderbook", "emptyList", "toBitmexOrderbookLevels", "subscribeBitmexChannel", "toRawOrderBook", "getAction", "getCoingiOrderBook", "getAscendexOrderbook", "getIndependentReserveOrderBook", "getRawWebsocketTransactions", "productId", "getHttpBody", "getCoinfloorOrderBook", "getSize", "getOrderbook", "builder", "getCoinexOrderBook", "instrument", "isInstanceOf", "interval", "limit", "getZaifFullBook", "createOrderBook", "getCoincheckOrderBook", "adaptToOrderbook", "getCryptowatchOrderBook", "getBitgetMarketDepthDtos", "requireNonNull", "toLowerCase", "getCoinEggOrders", "getCoinbaseProProductOrderBook", "getClass", "getOrderBooks", "next", "iterator", "getKunaOrderBook", "mapKunaOrder2LimitOrder", "getLevel2OrderBook", "getEngine", "maybeThrow", "getKrakenFuturesOrderBook", "adaptKrakenFuturesSymbol", "getSide", "update", "has", "asText", "getQty", "getLimitPrice", "timestamp", "adaptKrakenFuturesSnapshot", "toPairStringV1", "getBitfinexOrderBook", "toOrderbook", "toGeminiOrderbook", "toGeminiLimitOrdersUpdate", "getCoindealOrderbook", "getCoinoneOrderBook", "getBitbayOrderBook", "getTimestamp", "toLunoPair", "orderbook", "toHitbtcOrderBook", "getBitsoOrderBook", "getValue", "toList", "getTs", "getKey", "entrySet", "getHuobiDepth", "collect", "getMarketData", "getExpiresAt", "getSymbol", "getGateioOrderBook", "getHitbtcOrderBook", "getCoindirectOrderbook", "clear", "getChannelName", "subscribe", "adaptOrderbookMessage", "parseOrderBookSize", "defaultIfNull", "newTreeSet", "getEnigmaOrderBook", "replace", "getBitcoindeCompactOrderBook", "adaptCompactOrderBook", "getSimpleName", "getBitcoindeOrderBook", "remove", "getDataType", "set", "getSubscribeMessage", "equalsIgnoreCase", "getMessage", "getUnsubscribeMessage", "getData", "newArrayList", "convertToBybitSymbol", "sendMessage", "getU", "isSocketOpen", "doOnError", "adaptCurrencyPairToBookTopic", "isEmpty", "newTreeMap", "compareTo", "negateExact", "warn", "getPoloniexDepth", "adaptPoloniexDepth", "GetOrderBookChannelForCurrencyPair", "getOkexOrderbook", "adaptInstrument", "getExchangeMetaData", "getTradeOgreOrderBook", "intValue", "getCCEXOrderBook", "getCurrencyCode", "getBTEROrderBook", "limitPrice", "printStackTrace", "build", "getMarket", "getOrderHash", "getAmount", "originalAmount", "market", "getPrice", "safeParse", "orderBook", "id", "getDepth", "getFuturesDepth", "toSpotInstrument", "convertOrderBook", "stream", "getType", "equals", "format", "getRawWebSocketTransactions", "anyMatch", "firstNonNull", "getProduct", "reverseOrder", "getKucoinOrderBookPartialShallow", "asList", "getKucoinOrderBookPartial", "getKucoinOrderBookFull", "getBitZOrders", "toPairString", "getItBitDepth", "adaptOrders", "getBTCMarketsOrderBook", "getKrakenDepth", "getMercadoBitcoinOrderBook", "contains", "getProductSubscription", "isLiveSubscriptionEnabled", "getCexIOOrderBook", "getError", "getDeribitOrderBook", "adaptInstrumentName", "createHuobiCurrencyPair", "longValue", "add", "decimalValue", "size", "getBitmexDepth", "getUpbitOrderBook", "getRippleOrderBook", "toBitflyerOrderbook", "filter", "updateLevels", "getCounter", "containsKey", "mergeWith", "getBase", "adaptBleutradeOrderBook", "getBleutradeOrderBook", "computeIfAbsent", "adapt", "getOrderBookL3", "toCurrencyPair", "map", "io", "getAsks", "observeOn", "computation", "forEach", "fromCallable", "getBids", "flatMapObservable", "getOrderBook", "subscribeChannel", "parseOrderBookUpdates", "subscribeOn", "currencyPairToProduct", "adaptCoinjarException", "adaptOrderbook", "getCoinmateOrderBook", "getPair", "adaptOrderBook", "getOrDefault", "toBitfinexDepth", "toBitfinexOrderBook", "toString", "getObjectMapper", "put", "get", "isArray", "treeToValue", "getBitstampOrderBook", "getLatokenOrderbook", "adaptMarketDepth", "getPaymiumMarketDepth", "getBithumbOrderBook" ]
+    }, {
+      "name" : "getSpotOrderList",
+      "visibility" : "public",
+      "methodCalls" : [ "getSpotOrderList", "timestamp" ]
+    }, {
+      "name" : "futuresCancelOrder",
+      "visibility" : "public",
+      "methodCalls" : [ "returnOrThrow", "signatureCreator", "valueOf", "getName", "timestamp", "checkResult", "futuresCancelOrder" ]
+    }, {
+      "name" : "spotCancelOrder",
+      "visibility" : "public",
+      "methodCalls" : [ "timestamp", "spotCancelOrder", "checkResult" ]
+    }, {
+      "name" : "withdrawal",
+      "visibility" : "public",
+      "methodCalls" : [ "accessToken", "timestamp", "withdrawal", "checkResult" ]
+    }, {
+      "name" : "getMarginTransactionDetails",
+      "visibility" : "public",
+      "methodCalls" : [ "getMarginTransactionDetails", "timestamp" ]
+    }, {
+      "name" : "getFuturesLeverage",
+      "visibility" : "public",
+      "methodCalls" : [ "checkResult", "timestamp", "getFuturesLeverage" ]
+    }, {
+      "name" : "futuresPlaceOrder",
+      "visibility" : "public",
+      "methodCalls" : [ "checkResult", "futuresPlaceOrder", "timestamp" ]
+    }, {
+      "name" : "marginBorrow",
+      "visibility" : "public",
+      "methodCalls" : [ "marginBorrow", "timestamp" ]
+    }, {
+      "name" : "futuresPlaceMultipleOrders",
+      "visibility" : "public",
+      "methodCalls" : [ "futuresPlaceMultipleOrders", "timestamp", "checkResult" ]
+    }, {
+      "name" : "getAllSwapInstruments",
+      "visibility" : "public",
+      "methodCalls" : [ "getAllSwapInstruments" ]
+    }, {
+      "name" : "currencyInformation",
+      "visibility" : "public",
+      "methodCalls" : [ "timestamp", "currencyInformation" ]
+    }, {
+      "name" : "swapCancelOrder",
+      "visibility" : "public",
+      "methodCalls" : [ "timestamp", "checkResult", "swapCancelOrder" ]
+    }, {
+      "name" : "fundingAccountInformation",
+      "visibility" : "public",
+      "methodCalls" : [ "fundingAccountInformation", "timestamp" ]
+    }, {
+      "name" : "getSpotTransactionDetails",
+      "visibility" : "public",
+      "methodCalls" : [ "timestamp", "getSpotTransactionDetails" ]
+    }, {
+      "name" : "marginAccounts",
+      "visibility" : "public",
+      "methodCalls" : [ "marginAccounts", "timestamp" ]
+    }, {
+      "name" : "marginRepayment",
+      "visibility" : "public",
+      "methodCalls" : [ "marginRepayment", "timestamp" ]
+    }, {
+      "name" : "getSwapAccounts",
+      "visibility" : "public",
+      "methodCalls" : [ "getSwapAccounts", "timestamp", "checkResult", "getInfo" ]
+    }, {
+      "name" : "spotCancelMultipleOrders",
+      "visibility" : "public",
+      "methodCalls" : [ "timestamp", "spotCancelMultipleOrders" ]
+    }, {
+      "name" : "marginCancelOrder",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSwapPositions",
+      "visibility" : "public",
+      "methodCalls" : [ "timestamp", "getSwapPositions" ]
+    }, {
+      "name" : "swapPlaceMultipleOrders",
+      "visibility" : "public",
+      "methodCalls" : [ "timestamp", "checkResult", "swapPlaceMultipleOrders" ]
+    }, {
+      "name" : "getSwapTransactionDetails",
+      "visibility" : "public",
+      "methodCalls" : [ "getSwapTransactionDetails", "timestamp" ]
+    }, {
+      "name" : "getMarginOrderList",
+      "visibility" : "public",
+      "methodCalls" : [ "timestamp", "getMarginOrderList" ]
+    }, {
+      "name" : "futuresCancelMultipleOrders",
+      "visibility" : "public",
+      "methodCalls" : [ "futuresCancelMultipleOrders", "timestamp", "checkResult" ]
+    }, {
+      "name" : "getFuturesPositions",
+      "visibility" : "public",
+      "methodCalls" : [ "getFuturesPositions", "getHolding", "emptyList", "timestamp", "checkResult", "isEmpty", "get" ]
+    }, {
+      "name" : "getSpotOrderDetails",
+      "visibility" : "public",
+      "methodCalls" : [ "timestamp", "getSpotOrderDetails" ]
+    }, {
+      "name" : "getFuturesTransactionDetails",
+      "visibility" : "public",
+      "methodCalls" : [ "getFuturesTransactionDetails", "timestamp" ]
+    }, {
+      "name" : "recentWithdrawalHistory",
+      "visibility" : "public",
+      "methodCalls" : [ "timestamp", "recentWithdrawalHistory" ]
+    }, {
+      "name" : "getAllFutureTickers",
+      "visibility" : "public",
+      "methodCalls" : [ "getAllFutureTickers" ]
+    }, {
+      "name" : "getFuturesBills",
+      "visibility" : "public",
+      "methodCalls" : [ "getFuturesBills", "timestamp" ]
+    }, {
+      "name" : "setLeverage",
+      "visibility" : "public",
+      "methodCalls" : [ "instrumentId", "toUTCISODateString", "builder", "rateLimiter", "getApiKey", "getExchangeSpecificParametersItem", "decorateApiCall", "positionSide", "marginMode", "withRateLimiter", "call", "setLeverage", "currency", "getExchangeSpecification", "leverage", "handleError", "build", "getCategory", "convertToBybitSymbol", "setLeverageRaw", "getRetCode" ]
+    }, {
+      "name" : "spotTradingAccount",
+      "visibility" : "public",
+      "methodCalls" : [ "spotTradingAccount", "timestamp" ]
+    }, {
+      "name" : "fundsTransfer",
+      "visibility" : "public",
+      "methodCalls" : [ "checkResult", "instrumentId", "fundsTransfer", "builder", "timestamp", "to", "subAccount", "currency", "build", "amount", "from" ]
+    }, {
+      "name" : "getSpotTicker",
+      "visibility" : "public",
+      "methodCalls" : [ "getSpotTicker" ]
+    }, {
+      "name" : "getAllFutureInstruments",
+      "visibility" : "public",
+      "methodCalls" : [ "getAllFutureInstruments" ]
+    }, {
+      "name" : "spotPlaceMultipleOrders",
+      "visibility" : "public",
+      "methodCalls" : [ "spotPlaceMultipleOrders", "timestamp" ]
+    }, {
+      "name" : "marginAccountsSettings",
+      "visibility" : "public",
+      "methodCalls" : [ "marginAccountsSettings", "timestamp" ]
+    }, {
+      "name" : "getAllSpotTickers",
+      "visibility" : "public",
+      "methodCalls" : [ "getAllSpotTickers" ]
+    }, {
+      "name" : "getFuturesOrderList",
+      "visibility" : "public",
+      "methodCalls" : [ "getFuturesOrderList", "getOrders", "checkResult", "timestamp" ]
+    }, {
+      "name" : "swapCancelMultipleOrders",
+      "visibility" : "public",
+      "methodCalls" : [ "timestamp", "swapCancelMultipleOrders", "checkResult" ]
+    }, {
+      "name" : "getFuturesAccounts",
+      "visibility" : "public",
+      "methodCalls" : [ "timestamp", "checkResult", "getFuturesAccounts" ]
+    }, {
+      "name" : "recentDepositHistory",
+      "visibility" : "public",
+      "methodCalls" : [ "timestamp", "recentDepositHistory" ]
+    }, {
+      "name" : "getAllSpotInstruments",
+      "visibility" : "public",
+      "methodCalls" : [ "getAllSpotInstruments" ]
+    }, {
+      "name" : "swapPlaceOrder",
+      "visibility" : "public",
+      "methodCalls" : [ "swapPlaceOrder", "timestamp", "checkResult" ]
+    }, {
+      "name" : "spotPlaceOrder",
+      "visibility" : "public",
+      "methodCalls" : [ "checkResult", "spotPlaceOrder", "timestamp" ]
+    }, {
+      "name" : "getSwapOrderList",
+      "visibility" : "public",
+      "methodCalls" : [ "getSwapOrderList", "checkResult", "timestamp", "getOrders" ]
+    }, {
+      "name" : "getAllSwapTickers",
+      "visibility" : "public",
+      "methodCalls" : [ "getAllSwapTickers" ]
+    } ],
+    "imports" : [ "org.knowm.xchange.okcoin.v3.service.OkexException", "org.knowm.xchange.okcoin.v3.dto.account.OkexCurrencyInformation", "org.knowm.xchange.okcoin.v3.dto.marketdata.OkexSpotTicker", "org.knowm.xchange.okcoin.v3.dto.trade.FuturesAccountsByCurrencyResponse", "org.knowm.xchange.okcoin.v3.dto.trade.FuturesOrderPlacementRequest", "jakarta.ws.rs.QueryParam", "org.knowm.xchange.okcoin.v3.dto.account.OkexDepositRecord", "org.knowm.xchange.okcoin.v3.dto.account.FuturesBillsResponse", "org.knowm.xchange.okcoin.v3.dto.trade.FuturesPositionsResponse", "org.knowm.xchange.okcoin.v3.dto.trade.SwapPositionsEntry", "jakarta.ws.rs.Path", "java.util.Map", "org.knowm.xchange.okcoin.v3.dto.account.OkexFundingAccountRecord", "org.knowm.xchange.okcoin.v3.dto.trade.FundsTransferRequest", "jakarta.ws.rs.Consumes", "jakarta.ws.rs.core.MediaType", "jakarta.ws.rs.PathParam", "jakarta.ws.rs.Produces", "org.knowm.xchange.okcoin.v3.dto.trade.FuturesAccountsResponse", "org.knowm.xchange.okcoin.v3.dto.trade.OrderCancellationRequest", "org.knowm.xchange.okcoin.v3.dto.trade.OrderPlacementResponse", "org.knowm.xchange.okcoin.v3.dto.trade.FundsTransferResponse", "org.knowm.xchange.okcoin.v3.dto.trade.OkexOpenOrder", "org.knowm.xchange.okcoin.v3.dto.marketdata.OkexSwapTicker", "org.knowm.xchange.okcoin.v3.dto.trade.FuturesMultipleOrderPlacementRequest", "org.knowm.xchange.okcoin.v3.dto.marketdata.OkexFutureTicker", "org.knowm.xchange.okcoin.v3.dto.marketdata.OkexFutureInstrument", "org.knowm.xchange.okcoin.v3.dto.account.MarginAccountSettingsRecord", "org.knowm.xchange.okcoin.v3.dto.trade.SwapOrderPlacementRequest", "org.knowm.xchange.okcoin.v3.dto.account.FuturesLeverageResponse", "org.knowm.xchange.okcoin.v3.dto.trade.MarginRepaymentRequest", "org.knowm.xchange.okcoin.v3.dto.trade.OkexSwapTransaction", "org.knowm.xchange.okcoin.v3.dto.trade.OkexResponse", "org.knowm.xchange.okcoin.v3.dto.trade.MarginBorrowRequest", "org.knowm.xchange.okcoin.v3.dto.trade.FuturesOpenOrdersResponse", "org.knowm.xchange.okcoin.v3.dto.account.OkexWithdrawalRecord", "java.io.IOException", "org.knowm.xchange.okcoin.v3.dto.trade.OkexTransaction", "java.util.List", "org.knowm.xchange.okcoin.v3.dto.trade.MarginBorrowResponse", "org.knowm.xchange.okcoin.v3.dto.trade.FuturesMultipleOrderCancellationResponse", "org.knowm.xchange.okcoin.v3.dto.account.MarginAccountResponse", "org.knowm.xchange.okcoin.v3.dto.trade.SwapOpenOrdersResponse", "org.knowm.xchange.okcoin.v3.dto.trade.SwapFuturesMultipleOrderPlacementResponse", "org.knowm.xchange.okcoin.v3.dto.trade.SwapMultipleOrderPlacementRequest", "org.knowm.xchange.okcoin.v3.dto.trade.SwapAccountsResponse", "org.knowm.xchange.okcoin.v3.dto.marketdata.OkexSwapInstrument", "org.knowm.xchange.okcoin.v3.dto.trade.SpotOrderPlacementRequest", "org.knowm.xchange.okcoin.v3.dto.trade.SwapOrderBatchCancellationRequest", "org.knowm.xchange.okcoin.v3.dto.trade.OkexFuturesTransaction", "org.knowm.xchange.okcoin.v3.dto.trade.SwapMultipleOrderCancellationResponse", "jakarta.ws.rs.HeaderParam", "org.knowm.xchange.okcoin.v3.dto.marketdata.OkexSpotInstrument", "org.knowm.xchange.okcoin.v3.dto.account.OkexSpotAccountRecord", "org.knowm.xchange.okcoin.v3.dto.marketdata.OkexOrderBook", "org.knowm.xchange.okcoin.v3.dto.trade.OrderBatchCancellationRequest", "org.knowm.xchange.okcoin.v3.dto.account.BillType", "si.mazi.rescu.ParamsDigest", "jakarta.ws.rs.POST", "org.knowm.xchange.okcoin.v3.dto.trade.OrderCancellationResponse", "org.knowm.xchange.okcoin.v3.dto.trade.MarginRepaymentResponse", "org.knowm.xchange.okcoin.v3.dto.trade.MarginSetLeverageRequest", "jakarta.ws.rs.GET", "org.knowm.xchange.okcoin.v3.dto.account.OkexWithdrawalRequest", "org.knowm.xchange.okcoin.v3.dto.account.OkexWithdrawalResponse" ]
+  } ]
+}

@@ -1,0 +1,1317 @@
+{
+  "systemName" : "iceberg",
+  "classes" : [ {
+    "name" : "Builder",
+    "packageName" : "org.apache.iceberg.data",
+    "extendedClasses" : [ "MaintenanceTaskBuilder" ],
+    "implementedInterfaces" : [ "ProcedureBuilder", "IcebergSinkBuilder", "Serializable", "TableBuilder", "SortOrderBuilder" ],
+    "methods" : [ {
+      "name" : "build",
+      "visibility" : "public",
+      "methodCalls" : [ "validate", "withCompressionCodec", "useBloomFilter", "useDictionaryFilter", "withDictionaryEncoding", "useStatsFilter", "rowGroupCheckMaxRecordCount", "setType", "dictionaryPageSize", "withFooterKey", "withMaxBloomFilterBytes", "withMinRowCountForPageSizeCheck", "bloomFilterMaxBytes", "withWriteMode", "empty", "dictionaryEnabled", "withEncryption", "useRecordFilter", "callInit", "getSchema", "withRange", "setKeyValueMetadata", "readSupport", "getFileMetaData", "toByteArray", "value", "rowGroupSize", "pageSize", "setConfig", "withoutAADPrefixStorage", "withFileRange", "setWriteSupport", "withFilter", "withAADPrefix", "withDictionaryPageSize", "getConf", "withDecryption", "compressionLevel", "withPageSize", "pageRowLimit", "withMaxRowCountForPageSizeCheck", "rowGroupCheckMinRecordCount", "withWriterVersion", "withNameMapping", "withRowGroupSize", "file", "withPageRowCountLimit", "unset", "loadTable", "emitterWithWatermark", "exposeLocality", "resolveConfig", "watermarkColumn", "open", "watermark", "schema", "planParallelism", "includeColumnStats", "isLocalityEnabled", "watermarkColumnTimeUnit", "defaultEmitter", "addSource", "factory", "min", "getMaxParallelism", "transform", "createInput", "inferParallelism", "createInputSplits", "format", "setParallelism", "isStreaming", "limit", "buildFormat", "toTypeInfo", "project", "dataFileCount", "eqDeleteFileCount", "commitCount", "toMillis", "eqDeleteRecordCount", "dataFileSizeInBytes", "posDeleteRecordCount", "posDeleteFileCount", "bloomFilterFpp", "set", "setBoolean", "vectorizedRowBatchSize", "blockSize", "put", "stripeSize", "compressionKind", "setDouble", "setString", "setLong", "bloomFilterColumns", "compressionStrategy", "bind", "buildRuntimeException", "join", "on", "getValue", "timestampRange", "contains", "second", "timestampMillis", "currentSnapshot", "current", "dataManifests", "rewriteNot", "getKey", "first", "snapshotId", "newHashSet", "snapshot", "filter", "entrySet", "joinFilters", "io", "flatMap", "newArrayList", "values", "lastUpdatedMillis", "currentTimeMillis", "toList", "copyOf", "toSet", "randomUUID", "versionId", "max", "add", "map", "of", "viewVersion", "addAll", "updateHistory", "propertyAsInt", "stream", "toString", "propertyAsBoolean", "collect", "expireVersions", "toScope", "withProxy", "configureConnectionManager", "toCharArray", "gitCommitShortId", "withHeader", "propertyAsNullableInt", "propertyAsString", "setCredentials", "fullVersion", "withProxyCredentialsProvider", "asList", "create", "toJson", "convert", "apply", "meta", "setClassLoader", "codec", "isUnpartitioned", "setRenames", "setCustomTypes", "createSerializableMap", "doBuild", "get", "getConstant", "icebergType", "isDummy", "validatePartitionTransforms", "asOverwriteByFilter", "alwaysTrue", "asCopyOnWriteOperation", "spec", "applicationId", "asBatchAppend", "asStreamingOverwrite", "asRewrite", "asDynamicOverwrite", "asStreamingAppend", "checkState", "sparkContext", "rewrittenFileSetId", "fetchTasks", "checkArgument", "isEmpty", "name", "supportsRowLineage", "checkCompatibility", "buildUnchecked", "checkNotNull", "fromFileName", "copy", "locationProvider", "encryption", "keySet", "builder", "isNullOrEmpty", "setIf", "addTo", "size", "build", "putAll", "orderId", "unsorted" ]
+    }, {
+      "name" : "startingStrategy",
+      "visibility" : "public",
+      "methodCalls" : [ "flinkConfig", "defaultValue", "option", "enumConfParser", "parse" ]
+    }, {
+      "name" : "useBranch",
+      "visibility" : "public",
+      "methodCalls" : [ "schema", "table", "newRefinedScan", "context", "useBranch", "refs", "get", "isBranch", "checkArgument", "getClass", "getName" ]
+    }, {
+      "name" : "useTag",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "resolveConfig",
+      "visibility" : "public",
+      "methodCalls" : [ "splitFileOpenCost", "asOfTimestamp", "snapshotId", "includeColumnStats", "caseSensitive", "limit", "splitLookback", "streaming", "endSnapshotId", "splitSize", "startSnapshotId", "useTag", "watermarkColumn", "planParallelism", "startingStrategy", "workerPoolSize", "startSnapshotTimestamp", "tag", "useSnapshotId", "maxAllowedPlanningFailures", "useBranch", "branch", "nameMapping", "maxPlanningSnapshotCount", "watermarkColumnTimeUnit", "splitOpenFileCost", "startTag", "monitorInterval", "endTag" ]
+    }, {
+      "name" : "lockCheckDelay",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "slotSharingGroup",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "rateLimit",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument", "checkNotNull", "toMillis" ]
+    }, {
+      "name" : "maxReadBack",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument" ]
+    }, {
+      "name" : "parallelism",
+      "visibility" : "public",
+      "methodCalls" : [ "validateParallelism", "numShufflePartitions", "sessionState", "defaultParallelism", "max", "conf", "sparkContext" ]
+    }, {
+      "name" : "maxAllowedPlanningFailures",
+      "visibility" : "public",
+      "methodCalls" : [ "key", "toString", "put", "defaultValue", "parse", "option", "flinkConfig", "intConf" ]
+    }, {
+      "name" : "watermarkColumn",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "checkArgument", "defaultValue", "flinkConfig", "stringConf", "parseOptional", "option" ]
+    }, {
+      "name" : "assignerFactory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "flinkConfig",
+      "visibility" : "public",
+      "methodCalls" : [ "self" ]
+    }, {
+      "name" : "startSnapshotTimestamp",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "toString", "option", "key", "parseOptional", "longConf" ]
+    }, {
+      "name" : "readerFunction",
+      "visibility" : "public",
+      "methodCalls" : [ "checkState" ]
+    }, {
+      "name" : "watermarkColumnTimeUnit",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "name", "flinkConfig", "parse", "defaultValue", "enumConfParser", "option" ]
+    }, {
+      "name" : "planParallelism",
+      "visibility" : "public",
+      "methodCalls" : [ "key", "toString", "put" ]
+    }, {
+      "name" : "splitComparator",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "buildStream",
+      "visibility" : "public",
+      "methodCalls" : [ "checkState", "shouldInferParallelism", "build", "noWatermarks", "fromSource", "schema", "project", "name", "inferParallelism", "setParallelism" ]
+    }, {
+      "name" : "streamingStartingStrategy",
+      "visibility" : "public",
+      "methodCalls" : [ "name", "put" ]
+    }, {
+      "name" : "useSnapshotId",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "key", "put" ]
+    }, {
+      "name" : "snapshotProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "putAll" ]
+    }, {
+      "name" : "uidSuffix",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "project",
+      "visibility" : "public",
+      "methodCalls" : [ "truncateDecimal", "width", "truncateLong", "get", "term", "equal", "notEqual", "literal", "asLiteralPredicate", "truncateArray", "isSetPredicate", "projectTransformPredicate", "transformSet", "length", "isUnaryPredicate", "asSetPredicate", "truncateInteger", "type", "project", "isLiteralPredicate", "predicate", "op", "projectStrict", "value", "toEnum", "visit", "bind", "apply", "checkState", "newRefinedScan" ]
+    }, {
+      "name" : "splitSize",
+      "visibility" : "public",
+      "methodCalls" : [ "flinkConfig", "put", "toString", "parse", "longConf", "option", "defaultValue", "tableProperty" ]
+    }, {
+      "name" : "overwrite",
+      "visibility" : "public",
+      "methodCalls" : [ "key", "put", "toString", "overwrite", "internalWrite", "convert", "checkState", "alwaysTrue", "equals" ]
+    }, {
+      "name" : "splitOpenFileCost",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "toString", "table", "options", "properties", "propertyAsLong", "checkArgument", "splitOpenFileCost", "tableProperty", "longConf", "option", "parse", "defaultValue" ]
+    }, {
+      "name" : "env",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "splitLookback",
+      "visibility" : "public",
+      "methodCalls" : [ "flinkConfig", "put", "toString", "table", "options", "propertyAsInt", "properties", "checkArgument", "splitLookback", "parse", "defaultValue", "intConf", "tableProperty", "option" ]
+    }, {
+      "name" : "filters",
+      "visibility" : "public",
+      "methodCalls" : [ "filters" ]
+    }, {
+      "name" : "equalityFieldColumns",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "rangeDistributionSortKeyBaseWeight",
+      "visibility" : "public",
+      "methodCalls" : [ "option", "doubleConf", "flinkConfig", "defaultValue", "parse", "put", "toString", "key" ]
+    }, {
+      "name" : "asOfTimestamp",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "key", "put", "parseOptional", "option", "longConf" ]
+    }, {
+      "name" : "tableLoader",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "properties",
+      "visibility" : "public",
+      "methodCalls" : [ "immutableMap", "putAll", "properties", "operations", "put", "forEach", "filter", "current", "build", "entrySet", "stream", "location", "getKey", "contains", "builder", "formatVersion", "valueOf", "schema", "snapshotId", "isUnsorted", "sortOrder", "currentSnapshot", "isEmpty", "getOrDefault", "describe", "identifierFieldNames", "join", "getClass", "format", "of" ]
+    }, {
+      "name" : "monitorInterval",
+      "visibility" : "public",
+      "methodCalls" : [ "flinkConfig", "stringConf", "defaultValue", "parseDuration", "parse", "option", "toNanos", "put" ]
+    }, {
+      "name" : "distributionMode",
+      "visibility" : "public",
+      "methodCalls" : [ "defaultValue", "option", "tableProperty", "stringConf", "fromName", "flinkConfig", "parse", "equals", "checkArgument", "put", "modeName", "key" ]
+    }, {
+      "name" : "streaming",
+      "visibility" : "public",
+      "methodCalls" : [ "flinkConfig", "parse", "option", "booleanConf", "defaultValue", "toString", "put" ]
+    }, {
+      "name" : "rangeDistributionStatisticsType",
+      "visibility" : "public",
+      "methodCalls" : [ "parse", "flinkConfig", "stringConf", "defaultValue", "option", "valueOf", "name", "put", "key" ]
+    }, {
+      "name" : "uidPrefix",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "toBranch",
+      "visibility" : "public",
+      "methodCalls" : [ "key", "put", "targetBranch", "getName", "format", "getClass" ]
+    }, {
+      "name" : "buildFormat",
+      "visibility" : "public",
+      "methodCalls" : [ "planParallelism", "io", "project", "open", "validate", "exposeLocality", "encryption", "isLocalityEnabled", "build", "resolveConfig", "convert", "schema", "loadTable", "checkNotNull", "get" ]
+    }, {
+      "name" : "branch",
+      "visibility" : "public",
+      "methodCalls" : [ "defaultValue", "parse", "key", "put", "refs", "option", "properties", "conf", "propertyAsBoolean", "get", "equals", "containsKey", "stringConf", "wapEnabled", "wapId", "parseOptional", "sessionConf", "check" ]
+    }, {
+      "name" : "endTag",
+      "visibility" : "public",
+      "methodCalls" : [ "parseOptional", "option", "stringConf", "key", "put" ]
+    }, {
+      "name" : "startSnapshotId",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "put", "key", "option", "parseOptional", "longConf" ]
+    }, {
+      "name" : "tableSchema",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSnapshotProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "putAll" ]
+    }, {
+      "name" : "startTag",
+      "visibility" : "public",
+      "methodCalls" : [ "stringConf", "option", "parseOptional", "key", "put" ]
+    }, {
+      "name" : "table",
+      "visibility" : "public",
+      "methodCalls" : [ "copyOf", "join", "name", "encodeNamespace", "namespace", "encodeString", "table", "value", "fetchContent", "orElse", "unwrap" ]
+    }, {
+      "name" : "tag",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "key", "parseOptional", "stringConf", "option" ]
+    }, {
+      "name" : "exposeLocality",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "upsert",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "toString", "key" ]
+    }, {
+      "name" : "append",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument", "taskId", "size", "of", "slotSharingGroup", "newArrayListWithCapacity", "get", "evaluator", "loadTable", "open", "clone", "assignTimestampsAndWatermarks", "add", "checkNotNull", "union", "reinterpretAsKeyedStream", "append", "forceNonParallel", "isEmpty", "filter", "process", "transform", "toMillis", "build", "setParallelism", "sinkTo", "defaultSuffix", "name", "uid", "writeParallelism", "apply", "copyPlan", "toRewrite", "addAll" ]
+    }, {
+      "name" : "flinkConf",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "maxPlanningSnapshotCount",
+      "visibility" : "public",
+      "methodCalls" : [ "flinkConfig", "intConf", "defaultValue", "parse", "option", "toString", "put" ]
+    }, {
+      "name" : "writeParallelism",
+      "visibility" : "public",
+      "methodCalls" : [ "intConf", "parseOptional", "option", "put", "key", "toString" ]
+    }, {
+      "name" : "snapshotId",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "toString", "key", "snapshotId", "longConf", "parseOptional", "option" ]
+    }, {
+      "name" : "setAll",
+      "visibility" : "public",
+      "methodCalls" : [ "or", "putAll", "setAll" ]
+    }, {
+      "name" : "nameMapping",
+      "visibility" : "public",
+      "methodCalls" : [ "parseOptional", "option", "stringConf", "put" ]
+    }, {
+      "name" : "setSnapshotProperty",
+      "visibility" : "public",
+      "methodCalls" : [ "put" ]
+    }, {
+      "name" : "endSnapshotId",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "key", "put", "longConf", "option", "parseOptional" ]
+    }, {
+      "name" : "partialProgressEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "minFileSizeBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "valueOf" ]
+    }, {
+      "name" : "maxRewriteBytes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "rewriteAll",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "valueOf" ]
+    }, {
+      "name" : "deleteFileThreshold",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "valueOf" ]
+    }, {
+      "name" : "minInputFiles",
+      "visibility" : "public",
+      "methodCalls" : [ "valueOf", "put" ]
+    }, {
+      "name" : "partialProgressMaxCommits",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "maxFileSizeBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "valueOf", "put" ]
+    }, {
+      "name" : "targetFileSizeBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "valueOf", "put" ]
+    }, {
+      "name" : "maxFileGroupSizeBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "valueOf" ]
+    }, {
+      "name" : "planningWorkerPoolSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "eqDeleteFileCount",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "posDeleteFileCount",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "retainLast",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument" ]
+    }, {
+      "name" : "dataFileSizeInBytes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "dataFileCount",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "timeout",
+      "visibility" : "public",
+      "methodCalls" : [ "defaultValue", "sessionConf", "parse", "durationConf" ]
+    }, {
+      "name" : "maxSnapshotAge",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "commitCount",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "deleteBatchSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "eqDeleteRecordCount",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "posDeleteRecordCount",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "orNoop",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "hiddenImpl",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "getDeclaredMethod", "doPrivileged", "getName", "getDeclaredField", "add", "methodName", "forName", "getDeclaredConstructor", "hiddenImpl" ]
+    }, {
+      "name" : "buildStatic",
+      "visibility" : "public",
+      "methodCalls" : [ "asStatic", "build" ]
+    }, {
+      "name" : "defaultAlwaysNull",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "buildStaticChecked",
+      "visibility" : "public",
+      "methodCalls" : [ "asStatic", "buildChecked" ]
+    }, {
+      "name" : "buildChecked",
+      "visibility" : "public",
+      "methodCalls" : [ "bind", "buildChecked", "buildCheckedException", "on", "join" ]
+    }, {
+      "name" : "loader",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "impl",
+      "visibility" : "public",
+      "methodCalls" : [ "getField", "methodName", "getConstructor", "getName", "getMethod", "impl", "put", "forName", "add" ]
+    }, {
+      "name" : "orNull",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "after",
+      "visibility" : "public",
+      "methodCalls" : [ "deleteQuietly", "walk", "sorted", "reverseOrder", "map", "forEach", "get", "value", "withoutZone", "to", "greaterThanOrEqual", "after", "of" ]
+    }, {
+      "name" : "throwIfLimited",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "limit",
+      "visibility" : "public",
+      "methodCalls" : [ "longConf", "parse", "option", "defaultValue", "flinkConfig", "toString", "put" ]
+    }, {
+      "name" : "before",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "toManifestFile", "add", "get", "builder", "localOutput", "currentTimeMillis", "write", "build", "withFileSizeInBytes", "getAbsolutePath", "withPath", "unpartitioned", "withMetrics", "randomUUID", "withRecordCount", "format", "getProperty", "withFormat", "before", "of", "withoutZone", "to", "value", "lessThanOrEqual" ]
+    }, {
+      "name" : "removePartitionStatistics",
+      "visibility" : "public",
+      "methodCalls" : [ "remove", "add" ]
+    }, {
+      "name" : "discardChanges",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addPartitionSpec",
+      "visibility" : "public",
+      "methodCalls" : [ "addPartitionSpec", "build", "get", "bind" ]
+    }, {
+      "name" : "withMetadataLocation",
+      "visibility" : "public",
+      "methodCalls" : [ "lastUpdatedMillis" ]
+    }, {
+      "name" : "setDefaultPartitionSpec",
+      "visibility" : "public",
+      "methodCalls" : [ "setDefaultPartitionSpec", "add", "check" ]
+    }, {
+      "name" : "setDefaultSortOrder",
+      "visibility" : "public",
+      "methodCalls" : [ "setDefaultSortOrder", "add", "check" ]
+    }, {
+      "name" : "setRef",
+      "visibility" : "public",
+      "methodCalls" : [ "type", "check", "get", "maxSnapshotAgeMs", "add", "minSnapshotsToKeep", "put", "snapshotId", "timestampMillis", "equals", "currentTimeMillis", "maxRefAgeMs" ]
+    }, {
+      "name" : "removeStatistics",
+      "visibility" : "public",
+      "methodCalls" : [ "empty", "put", "remove", "add" ]
+    }, {
+      "name" : "suppressHistoricalSnapshots",
+      "visibility" : "public",
+      "methodCalls" : [ "keySet", "toSet", "map", "values", "stream", "difference", "collect" ]
+    }, {
+      "name" : "setSnapshotsSupplier",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "removeRef",
+      "visibility" : "public",
+      "methodCalls" : [ "remove", "add", "equals" ]
+    }, {
+      "name" : "setStatistics",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull", "put", "add", "snapshotId", "of" ]
+    }, {
+      "name" : "addSortOrder",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "bind" ]
+    }, {
+      "name" : "removeEncryptionKey",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "remove", "equals", "removeIf", "keyId" ]
+    }, {
+      "name" : "setPreviousFileLocation",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "removeSnapshots",
+      "visibility" : "public",
+      "methodCalls" : [ "map", "removeSnapshots", "stream", "collect", "toSet" ]
+    }, {
+      "name" : "setCurrentSchema",
+      "visibility" : "public",
+      "methodCalls" : [ "putAll", "get", "add", "updateSpecSchema", "transform", "check", "setCurrentSchema", "newArrayList", "updateSortOrderSchema", "checkArgument", "indexSpecs", "clear", "indexSortOrders" ]
+    }, {
+      "name" : "setBranchSnapshot",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "addSnapshot", "check", "snapshotId" ]
+    }, {
+      "name" : "addEncryptionKey",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "containsKey", "add", "keyId" ]
+    }, {
+      "name" : "addSnapshot",
+      "visibility" : "public",
+      "methodCalls" : [ "containsKey", "firstRowId", "put", "add", "parentId", "snapshotId", "timestampMillis", "sequenceNumber", "check", "isEmpty", "addedRows" ]
+    }, {
+      "name" : "setPartitionStatistics",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "of", "checkNotNull", "snapshotId", "put" ]
+    }, {
+      "name" : "setCurrentVersionId",
+      "visibility" : "public",
+      "methodCalls" : [ "timestampMillis", "currentTimeMillis", "build", "versionId", "setCurrentVersionId", "check", "add", "checkArgument", "anyMatch", "builder", "get", "viewVersion" ]
+    }, {
+      "name" : "addSchema",
+      "visibility" : "public",
+      "methodCalls" : [ "convert", "highestFieldId", "max" ]
+    }, {
+      "name" : "setMetadataLocation",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "assignUUID",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "randomUUID", "add", "equals", "checkArgument" ]
+    }, {
+      "name" : "addVersion",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "removeProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "removeProperties", "removeAll", "keySet", "put", "debug", "forEach", "newHashMap", "putAll", "checkArgument", "loadNamespaceMetadata", "contains", "convertToDatabase", "namespaceExists", "computeIfPresent", "copyOf", "checkNotNull", "isEmpty", "updateNamespaceMetadata", "of", "add", "updateProperties", "join", "updateCatalogEntryMetadata", "iterator", "newArrayList", "toPropertyCol", "catalogId", "glueCatalogSkipNameValidation", "build", "glueCatalogId", "toDatabaseInput", "updateDatabase", "databaseInput", "name", "builder", "toDatabaseName", "remove" ]
+    }, {
+      "name" : "setLocation",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "checkArgument", "equals" ]
+    }, {
+      "name" : "setCurrentVersion",
+      "visibility" : "public",
+      "methodCalls" : [ "from", "schemaId", "build", "builder", "setCurrentVersionId" ]
+    }, {
+      "name" : "upgradeFormatVersion",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "checkArgument" ]
+    }, {
+      "name" : "withSource",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "withDestination",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "withToken",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setExpirationInSeconds",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withTokenType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addScopes",
+      "visibility" : "public",
+      "methodCalls" : [ "forEach" ]
+    }, {
+      "name" : "addScope",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument", "add", "isValidScopeToken" ]
+    }, {
+      "name" : "withIssuedTokenType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withHeaders",
+      "visibility" : "public",
+      "methodCalls" : [ "putAll" ]
+    }, {
+      "name" : "withProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "putAll", "withProperties" ]
+    }, {
+      "name" : "uri",
+      "visibility" : "public",
+      "methodCalls" : [ "stripTrailingSlash", "checkNotNull", "create" ]
+    }, {
+      "name" : "addRemoved",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument", "contains", "addAll", "checkNotNull", "add" ]
+    }, {
+      "name" : "withProxy",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "withProxyCredentialsProvider",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "withHeader",
+      "visibility" : "public",
+      "methodCalls" : [ "put" ]
+    }, {
+      "name" : "addUpdated",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument", "addAll", "checkNotNull", "add", "contains" ]
+    }, {
+      "name" : "createOrReplaceTransaction",
+      "visibility" : "public",
+      "methodCalls" : [ "replaceTransaction", "createTransaction", "invalidateTable", "addCallback", "viewExists", "createOrReplaceTransaction" ]
+    }, {
+      "name" : "replaceTransaction",
+      "visibility" : "public",
+      "methodCalls" : [ "noneMatch", "builder", "contextualSession", "buildKeepingLast", "withAuthSession", "loadInternal", "stream", "buildReplacement", "tableMetadata", "unsorted", "metrics", "trackFileIO", "fullTableName", "tableSession", "unpartitioned", "build", "replaceTableTransaction", "putAll", "add", "metricsReporter", "defaultSpecId", "config", "check", "location", "changes", "credentials", "tableFileIO", "defaultSortOrderId", "table", "currentSchemaId", "viewExists", "invalidateTable", "replaceTransaction", "addCallback" ]
+    }, {
+      "name" : "create",
+      "visibility" : "public",
+      "methodCalls" : [ "putAll", "createReader", "createWriter", "stream", "convert", "refreshTable", "checkNotNull", "isUnpartitioned", "io", "uri", "setSchema", "apply", "withSortOrder", "withProperties", "wrap", "buildTable", "newViewOps", "requirements", "schema", "timestampMillis", "view", "withLocation", "check", "withSchema", "viewVersion", "addAllRepresentations", "tableFileIO", "versionId", "withName", "withPartitionSpec", "metadata", "post", "tableErrorHandler", "withWriteOrder", "views", "fullViewName", "currentTimeMillis", "schemaId", "table", "namespace", "tables", "metrics", "uuid", "checkState", "defaultNamespace", "defaultCatalog", "tableMetadata", "trackFileIO", "tableSession", "properties", "isEmpty", "setProperties", "putAllSummary", "forUpdateTable", "credentials", "equals", "updates", "contextualSession", "checkArgument", "changes", "withAuthSession", "viewErrorHandler", "buildKeepingLast", "identifier", "newTableOps", "createOrOverwrite", "exists", "location", "viewExists", "tableExists", "create", "of", "asStruct", "isDirectory", "mkdirs", "getAbsolutePath", "getParentFile", "getClass", "unpartitioned", "getName", "unsorted", "get", "set", "canonicalizeIdentifier", "encryptingOutputFile", "fileExists", "prefix", "config", "build", "builder", "newTableMetadata", "defaultWarehouseLocation", "commit", "current", "fullTableName", "metricsReporter", "name" ]
+    }, {
+      "name" : "withObjectMapper",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withProperty",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "withProperty" ]
+    }, {
+      "name" : "withAuthSession",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "addMissing",
+      "visibility" : "public",
+      "methodCalls" : [ "contains", "addAll", "checkNotNull", "add", "checkArgument" ]
+    }, {
+      "name" : "createTransaction",
+      "visibility" : "public",
+      "methodCalls" : [ "build", "tableMetadata", "fullTableName", "check", "tableSession", "contextualSession", "withAuthSession", "config", "tableFileIO", "createChanges", "trackFileIO", "credentials", "metrics", "table", "metricsReporter", "newTableOps", "current", "newTableMetadata", "toString", "defaultWarehouseLocation", "putAll", "createTableTransaction", "createTransaction" ]
+    }, {
+      "name" : "withNamespace",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "withType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withMessage",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "updateAll",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument", "checkNotNull", "containsValue", "filterValues", "putAll", "keySet", "containsKey" ]
+    }, {
+      "name" : "responseCode",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "removeAll",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull", "addAll", "checkArgument", "contains" ]
+    }, {
+      "name" : "remove",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull", "containsKey", "checkArgument", "add", "remove" ]
+    }, {
+      "name" : "update",
+      "visibility" : "public",
+      "methodCalls" : [ "lastKey", "compare", "format", "get", "size", "apply", "remove", "put", "checkNotNull", "insert", "write", "update", "hasValue", "eval", "nextInt", "getClass", "getName" ]
+    }, {
+      "name" : "withStackTrace",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "split", "printStackTrace", "asList" ]
+    }, {
+      "name" : "addConfig",
+      "visibility" : "public",
+      "methodCalls" : [ "put" ]
+    }, {
+      "name" : "addAllCredentials",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll" ]
+    }, {
+      "name" : "addCredential",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "addAllConfig",
+      "visibility" : "public",
+      "methodCalls" : [ "putAll" ]
+    }, {
+      "name" : "withTableMetadata",
+      "visibility" : "public",
+      "methodCalls" : [ "metadataFileLocation" ]
+    }, {
+      "name" : "setProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "databaseInput", "glueCatalogId", "toDatabaseName", "setProperties", "putAll", "checkArgument", "convertToDatabase", "keySet", "debug", "get", "loadNamespaceMetadata", "newHashMap", "computeIfPresent", "builder", "buildKeepingLast", "namespaceExists", "put", "checkNotNull", "containsKey", "isEmpty", "filterValues", "containsValue", "updateNamespaceMetadata", "of", "add", "toPropertyCol", "getValue", "getKey", "join", "s", "updateCatalogEntryMetadata", "build", "entrySet", "updateProperties", "newArrayList", "updateDatabase", "name", "toDatabaseInput", "glueCatalogSkipNameValidation", "catalogId" ]
+    }, {
+      "name" : "withSchema",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "nextPageToken",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "stageCreate",
+      "visibility" : "public",
+      "methodCalls" : [ "withProperties", "createTransaction", "rebuildCreateProperties", "withPartitionSpec", "convert", "withLocation", "toPartitionSpec", "stageCreate", "createTable", "get" ]
+    }, {
+      "name" : "setProperty",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument", "put" ]
+    }, {
+      "name" : "withLocation",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "checkArgument", "format", "withLocation" ]
+    }, {
+      "name" : "withPartitionSpec",
+      "visibility" : "public",
+      "methodCalls" : [ "unpartitioned", "withPartitionSpec" ]
+    }, {
+      "name" : "withWriteOrder",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addValue",
+      "visibility" : "public",
+      "methodCalls" : [ "isNaN", "compare" ]
+    }, {
+      "name" : "config",
+      "visibility" : "public",
+      "methodCalls" : [ "set", "of", "putAllConfig", "clear" ]
+    }, {
+      "name" : "withContentOffset",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "putConfig",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "requireNonNull", "put", "getKey" ]
+    }, {
+      "name" : "withContentSizeInBytes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withReferencedDataFile",
+      "visibility" : "public",
+      "methodCalls" : [ "toString" ]
+    }, {
+      "name" : "ofEqualityDeletes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "prefix",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull" ]
+    }, {
+      "name" : "from",
+      "visibility" : "public",
+      "methodCalls" : [ "fromTimer", "toString", "region", "method", "uri", "getName", "propertyAsString", "snapshotId", "stream", "properties", "type", "inputFields", "sequenceNumber", "toImmutableList", "map", "collect", "requireNonNull", "putAllConfig", "config", "prefix", "manifestsCreated", "removedFilesSizeInBytes", "counterFrom", "removedEqualityDeletes", "addedDeleteFiles", "removedEqualityDeleteFiles", "totalRecords", "removedPositionalDeleteFiles", "removedRecords", "totalEqualityDeletes", "totalPositionalDeletes", "addedDataFiles", "fromCounter", "build", "addedPositionalDeleteFiles", "addedPositionalDeletes", "builder", "attempts", "addedRecords", "removedDVs", "addedEqualityDeletes", "totalFilesSizeInBytes", "removedPositionalDeletes", "addedDVs", "manifestsKept", "totalDeleteFiles", "manifestEntriesProcessed", "addedFilesSizeInBytes", "removedDataFiles", "addedEqualityDeleteFiles", "removedDeleteFiles", "value", "skippedDeleteManifests", "scanMetrics", "totalDeleteFileSizeInBytes", "scannedDataManifests", "equalityDeleteFiles", "skippedDeleteFiles", "totalFileSizeInBytes", "totalDeleteManifests", "totalDuration", "toMillis", "totalPlanningDuration", "totalDataManifests", "skippedDataManifests", "resultDataFiles", "skippedDataFiles", "indexedDeleteFiles", "scannedDeleteManifests", "positionalDeleteFiles", "resultDeleteFiles", "from", "basicType", "readByte", "sizeInBytes", "slice", "remaining", "of", "totalDataFiles", "manifestsReplaced", "checkArgument" ]
+    }, {
+      "name" : "ofPositionDeletes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "putAllConfig",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "entrySet", "getKey", "getValue", "put" ]
+    }, {
+      "name" : "deletedFile",
+      "visibility" : "public",
+      "methodCalls" : [ "removedFile", "getSimpleName", "deletedFile", "getClass", "incrementAndGet", "trace", "debug", "name", "equalsIgnoreCase" ]
+    }, {
+      "name" : "incrementDuplicateDeletes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "set",
+      "visibility" : "public",
+      "methodCalls" : [ "update", "of", "put", "set", "self", "internalSet", "checkArgument", "contains", "checkNotNull", "add", "toByteArray", "propagate" ]
+    }, {
+      "name" : "add",
+      "visibility" : "public",
+      "methodCalls" : [ "endRecord", "update", "copy", "merge", "containsKey", "format", "addRowBatch", "location", "reset", "addEntry", "wrapAppend", "write", "checkState", "checkNotNull", "append", "prepare", "addReferencedDataFiles", "addDeleteFiles", "addDataFiles", "addRewrittenDeleteFiles", "add", "put" ]
+    }, {
+      "name" : "addDeleteFiles",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll" ]
+    }, {
+      "name" : "addReferencedDataFiles",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll" ]
+    }, {
+      "name" : "addedManifest",
+      "visibility" : "public",
+      "methodCalls" : [ "addedManifest", "clear" ]
+    }, {
+      "name" : "addRewrittenDeleteFiles",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll" ]
+    }, {
+      "name" : "addAll",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument", "checkNotNull", "contains", "forEachRemaining", "forEach", "addAll", "iterator", "add", "next", "hasNext" ]
+    }, {
+      "name" : "addedFile",
+      "visibility" : "public",
+      "methodCalls" : [ "addedFile" ]
+    }, {
+      "name" : "addDataFiles",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll" ]
+    }, {
+      "name" : "merge",
+      "visibility" : "public",
+      "methodCalls" : [ "getClass", "isEmpty", "getName", "deleteFiles", "forEach", "length", "copyWithNewLength", "computeIfAbsent", "putAll", "getValue", "getKey", "clear", "entrySet", "merge", "value", "addAll" ]
+    }, {
+      "name" : "setPartitionSummaryLimit",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "ioSupplier",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "defaultSpec",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "suffix",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "operationId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "format",
+      "visibility" : "public",
+      "methodCalls" : [ "format", "fromString", "getString" ]
+    }, {
+      "name" : "encryptionAlgorithm",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withPartitionPath",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "fillFromPath", "checkArgument" ]
+    }, {
+      "name" : "withEncryptionKeyMetadata",
+      "visibility" : "public",
+      "methodCalls" : [ "buffer", "withEncryptionKeyMetadata" ]
+    }, {
+      "name" : "copy",
+      "visibility" : "public",
+      "methodCalls" : [ "format", "mapAssignment", "rangeBounds", "checkpointId", "keyFrequency", "keySamples", "toByteArray", "newHashMap", "heapify", "type", "deserialize", "result", "serialize", "record", "statistics", "reuseStatistics", "fromRecord", "writeBoolean", "hasRecord", "readBoolean", "fromStatistics", "reuseRecord", "aadPrefix", "encryptionKey", "content", "nullValueCounts", "addAll", "keyArray", "array", "valueArray", "copy", "duplicate", "copyWithoutStats", "put", "newHashMapWithExpectedSize", "wrap", "specId", "keyMetadata", "copyOf", "nanValueCounts", "upperBounds", "lowerBounds", "partition", "sortOrderId", "location", "checkState", "columnSizes", "fileSizeInBytes", "valueCounts", "firstRowId", "recordCount", "copyPartitionData", "splitOffsets" ]
+    }, {
+      "name" : "withPartition",
+      "visibility" : "public",
+      "methodCalls" : [ "copyPartitionData" ]
+    }, {
+      "name" : "withSortOrder",
+      "visibility" : "public",
+      "methodCalls" : [ "unsorted", "orderId", "withSortOrder" ]
+    }, {
+      "name" : "withFirstRowId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withMetrics",
+      "visibility" : "public",
+      "methodCalls" : [ "recordCount", "nanValueCounts", "lowerBounds", "columnSizes", "upperBounds", "valueCounts", "nullValueCounts" ]
+    }, {
+      "name" : "withPartitionValues",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "checkArgument", "fillFromValues" ]
+    }, {
+      "name" : "withPath",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withFileSizeInBytes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withFormat",
+      "visibility" : "public",
+      "methodCalls" : [ "fromString" ]
+    }, {
+      "name" : "withSplitOffsets",
+      "visibility" : "public",
+      "methodCalls" : [ "copyOf" ]
+    }, {
+      "name" : "withEncryptedOutputFile",
+      "visibility" : "public",
+      "methodCalls" : [ "keyMetadata", "encryptingOutputFile", "withEncryptionKeyMetadata", "toInputFile", "withInputFile" ]
+    }, {
+      "name" : "withStatus",
+      "visibility" : "public",
+      "methodCalls" : [ "getLen", "toString", "getPath" ]
+    }, {
+      "name" : "withRecordCount",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "clear",
+      "visibility" : "public",
+      "methodCalls" : [ "unsorted", "orderId", "clear", "fill" ]
+    }, {
+      "name" : "withInputFile",
+      "visibility" : "public",
+      "methodCalls" : [ "withStatus", "getStat", "getLength", "location" ]
+    }, {
+      "name" : "includeColumnStats",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "toString", "option", "flinkConfig", "parse", "defaultValue", "booleanConf", "newRefinedScan", "toSet", "stream", "findField", "collect", "shouldReturnColumnStats", "map", "fieldId", "columnsToKeepStats", "includeColumnStats", "getClass", "getName" ]
+    }, {
+      "name" : "asOfTime",
+      "visibility" : "public",
+      "methodCalls" : [ "fromSnapshotId", "toSnapshotId", "context", "format", "snapshotIdAsOfTime", "table", "useSnapshot", "inSnapshot", "current", "checkArgument", "snapshotId", "formatTimestampMillis", "snapshotLog", "timestampMillis", "tableType", "asOfTime" ]
+    }, {
+      "name" : "month",
+      "visibility" : "public",
+      "methodCalls" : [ "asc", "findColumnName", "fieldId", "ref", "get", "toEnum", "month", "months", "sort" ]
+    }, {
+      "name" : "withMetadataMatching",
+      "visibility" : "public",
+      "methodCalls" : [ "and" ]
+    }, {
+      "name" : "truncate",
+      "visibility" : "public",
+      "methodCalls" : [ "asc", "findColumnName", "fieldId", "ref", "get", "truncate", "sort", "apply", "column", "literal" ]
+    }, {
+      "name" : "alwaysNull",
+      "visibility" : "public",
+      "methodCalls" : [ "findColumnName", "fieldId", "get" ]
+    }, {
+      "name" : "withRecordsMatching",
+      "visibility" : "public",
+      "methodCalls" : [ "and" ]
+    }, {
+      "name" : "year",
+      "visibility" : "public",
+      "methodCalls" : [ "asc", "findColumnName", "fieldId", "ref", "get", "toEnum", "year", "years", "sort" ]
+    }, {
+      "name" : "caseInsensitive",
+      "visibility" : "public",
+      "methodCalls" : [ "caseSensitive" ]
+    }, {
+      "name" : "day",
+      "visibility" : "public",
+      "methodCalls" : [ "asc", "findColumnName", "fieldId", "ref", "get", "toEnum", "day", "sort", "days" ]
+    }, {
+      "name" : "identity",
+      "visibility" : "public",
+      "methodCalls" : [ "asc", "findColumnName", "fieldId", "get", "identity" ]
+    }, {
+      "name" : "bucket",
+      "visibility" : "public",
+      "methodCalls" : [ "asc", "findColumnName", "fieldId", "ref", "get", "bucket", "sort" ]
+    }, {
+      "name" : "hour",
+      "visibility" : "public",
+      "methodCalls" : [ "asc", "fieldId", "findColumnName", "ref", "toEnum", "get", "hour", "hours", "sort" ]
+    }, {
+      "name" : "withSpecId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "collect",
+      "visibility" : "public",
+      "methodCalls" : [ "currentSnapshot", "dataManifests", "entries", "specsById", "ignoreDeleted", "io", "filterFiles", "snapshot", "caseSensitive", "filterPartitions", "copy", "filterData", "transform", "file", "empty", "current" ]
+    }, {
+      "name" : "inSnapshot",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument", "snapshot" ]
+    }, {
+      "name" : "inPartitions",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument", "get", "equal", "name", "alwaysFalse", "asList", "and", "current", "or", "fields", "spec", "inPartitions", "specId", "size", "alwaysTrue", "equals" ]
+    }, {
+      "name" : "inPartition",
+      "visibility" : "public",
+      "methodCalls" : [ "inPartitions" ]
+    }, {
+      "name" : "maxSnapshotAgeMs",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "checkArgument" ]
+    }, {
+      "name" : "minSnapshotsToKeep",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "checkArgument" ]
+    }, {
+      "name" : "maxRefAgeMs",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument" ]
+    }, {
+      "name" : "asOptional",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isOptional",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withInitialDefault",
+      "visibility" : "public",
+      "methodCalls" : [ "withInitialDefault", "lit" ]
+    }, {
+      "name" : "withWriteDefault",
+      "visibility" : "public",
+      "methodCalls" : [ "lit", "withWriteDefault" ]
+    }, {
+      "name" : "withId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withDoc",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "ofType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withName",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "asRequired",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withOrderId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "caseSensitive",
+      "visibility" : "public",
+      "methodCalls" : [ "option", "flinkConfig", "toString", "put", "setBoolean", "newRefinedScan", "setCaseSensitive", "self", "getName", "getClass", "caseSensitive", "booleanConf", "defaultValueString", "defaultValue", "parse", "sessionConf", "key", "CASE_SENSITIVE" ]
+    }, {
+      "name" : "desc",
+      "visibility" : "public",
+      "methodCalls" : [ "desc", "ref" ]
+    }, {
+      "name" : "sortBy",
+      "visibility" : "public",
+      "methodCalls" : [ "ref" ]
+    }, {
+      "name" : "asc",
+      "visibility" : "public",
+      "methodCalls" : [ "ref", "asc" ]
+    }, {
+      "name" : "withTableCatalog",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    } ],
+    "imports" : [ "org.apache.iceberg.spark.data.SparkAvroWriter", "org.apache.iceberg.data.orc.GenericOrcWriter", "org.apache.iceberg.data.avro.DataWriter", "org.apache.iceberg.data.parquet.GenericParquetWriter", "org.apache.flink.streaming.api.functions.source.SourceFunction", "org.apache.flink.util.TimeUtils", "org.apache.flink.table.api.TableSchema", "org.apache.iceberg.flink.maintenance.operator.TriggerManager", "org.apache.flink.api.common.eventtime.TimestampAssigner", "org.apache.iceberg.flink.maintenance.operator.LockRemover", "org.apache.flink.api.common.eventtime.TimestampAssignerSupplier", "org.apache.flink.api.common.operators.util.OperatorValidationUtils", "org.apache.flink.api.common.eventtime.Watermark", "org.apache.iceberg.flink.sink.IcebergSink", "org.apache.flink.api.connector.source.util.ratelimit.RateLimiterStrategy", "org.apache.flink.api.common.eventtime.WatermarkOutput", "org.apache.flink.streaming.api.graph.StreamGraphGenerator", "org.apache.flink.api.common.eventtime.WatermarkGenerator", "org.apache.flink.api.dag.Transformation", "org.apache.iceberg.flink.maintenance.operator.MonitorSource", "org.apache.flink.streaming.api.datastream.DataStreamUtils", "org.apache.iceberg.flink.maintenance.operator.TriggerEvaluator", "org.apache.flink.api.common.ExecutionConfig", "org.apache.flink.api.common.eventtime.WatermarkGeneratorSupplier", "org.apache.iceberg.flink.maintenance.operator.TableChange", "org.apache.iceberg.flink.source.enumerator.IcebergEnumeratorStateSerializer", "org.apache.iceberg.flink.source.enumerator.ContinuousSplitPlannerImpl", "org.apache.iceberg.flink.source.assigner.SimpleSplitAssignerFactory", "org.apache.flink.streaming.api.datastream.DataStreamSource", "org.apache.iceberg.flink.data.FlinkParquetWriters", "org.apache.iceberg.flink.source.enumerator.ContinuousSplitPlanner", "org.apache.iceberg.util.ThreadPools", "org.apache.iceberg.flink.source.reader.IcebergSourceReaderMetrics", "org.apache.iceberg.BaseMetadataTable", "org.apache.iceberg.flink.source.split.SerializableComparator", "org.apache.iceberg.flink.source.split.SplitComparators", "org.apache.iceberg.flink.source.reader.ConverterReaderFunction", "org.apache.flink.api.connector.source.Source", "org.apache.iceberg.flink.source.split.IcebergSourceSplit", "org.apache.iceberg.flink.source.split.IcebergSourceSplitSerializer", "org.apache.flink.api.connector.source.SourceReader", "org.apache.flink.table.data.StringData", "org.apache.iceberg.flink.source.assigner.OrderedSplitAssignerFactory", "org.apache.flink.api.connector.source.SourceReaderContext", "org.apache.iceberg.flink.source.enumerator.StaticIcebergEnumerator", "org.apache.iceberg.flink.source.reader.RowDataReaderFunction", "org.apache.iceberg.flink.source.reader.SplitWatermarkExtractor", "org.apache.iceberg.flink.source.reader.ReaderFunction", "org.apache.iceberg.flink.data.FlinkAvroWriter", "org.apache.iceberg.flink.data.FlinkOrcWriter", "org.apache.iceberg.flink.source.assigner.SplitAssignerFactory", "org.apache.flink.api.common.eventtime.WatermarkStrategy", "org.apache.iceberg.flink.source.assigner.SplitAssigner", "org.apache.flink.api.connector.source.SplitEnumerator", "org.apache.flink.api.connector.source.SplitEnumeratorContext", "org.apache.iceberg.flink.source.reader.MetaDataReaderFunction", "org.apache.iceberg.flink.source.enumerator.IcebergEnumeratorState", "org.apache.iceberg.flink.source.reader.ColumnStatsWatermarkExtractor", "org.apache.iceberg.flink.source.enumerator.ContinuousIcebergEnumerator", "org.apache.flink.api.connector.source.Boundedness", "org.apache.iceberg.flink.source.reader.RowDataConverter", "org.apache.iceberg.flink.FlinkReadConf", "org.apache.iceberg.flink.source.reader.SerializableRecordEmitter", "org.apache.iceberg.flink.source.reader.IcebergSourceReader", "org.apache.iceberg.io.WriteResult", "org.apache.flink.api.connector.sink2.WriterInitContext", "org.apache.flink.api.connector.sink2.Committer", "org.apache.flink.api.connector.sink2.CommitterInitContext", "org.apache.flink.api.connector.sink2.SupportsCommitter", "org.apache.flink.api.connector.sink2.SinkWriter", "org.apache.flink.streaming.api.connector.sink2.SupportsPreWriteTopology", "org.apache.flink.core.io.SimpleVersionedSerializer", "org.apache.flink.api.connector.sink2.Sink", "org.apache.flink.annotation.Experimental", "org.apache.flink.streaming.api.connector.sink2.CommittableMessage", "org.apache.flink.streaming.api.connector.sink2.SupportsPostCommitTopology", "org.apache.flink.streaming.api.connector.sink2.CommittableMessageTypeInfo", "org.apache.flink.streaming.api.connector.sink2.SupportsPreCommitTopology", "org.apache.iceberg.flink.sink.shuffle.DataStatisticsOperatorFactory", "org.apache.flink.configuration.ReadableConfig", "org.apache.iceberg.TableProperties.ORC_COMPRESSION_STRATEGY", "org.apache.flink.streaming.api.functions.sink.v2.DiscardingSink", "org.apache.flink.api.common.functions.MapFunction", "org.apache.iceberg.flink.FlinkConfigOptions", "org.apache.iceberg.flink.TableLoader", "org.apache.iceberg.flink.util.FlinkCompatibilityUtil", "org.apache.flink.types.Row", "org.apache.flink.streaming.api.operators.OneInputStreamOperatorFactory", "org.apache.iceberg.flink.FlinkSchemaUtil", "org.apache.iceberg.flink.sink.shuffle.StatisticsOrRecord", "org.apache.iceberg.DistributionMode", "org.apache.flink.api.common.typeinfo.Types", "org.apache.flink.table.types.logical.RowType", "org.apache.iceberg.TableProperties", "org.apache.iceberg.SerializableTable", "org.apache.iceberg.flink.sink.shuffle.RangePartitioner", "org.apache.iceberg.flink.FlinkWriteConf", "org.apache.iceberg.flink.FlinkWriteOptions", "org.apache.iceberg.TableProperties.PARQUET_COMPRESSION", "org.apache.iceberg.flink.sink.shuffle.StatisticsType", "org.apache.iceberg.TableProperties.ORC_COMPRESSION", "org.apache.flink.streaming.api.functions.source.legacy.SourceFunction", "org.apache.flink.table.legacy.api.TableSchema", "org.apache.flink.table.data.util.DataFormatConverters", "org.apache.flink.configuration.Configuration", "org.apache.iceberg.TableProperties.AVRO_COMPRESSION_LEVEL", "org.apache.flink.api.common.functions.FlatMapFunction", "org.apache.iceberg.TableScan", "org.apache.iceberg.flink.sink.shuffle.StatisticsOrRecordTypeInformation", "org.apache.flink.table.types.DataType", "org.apache.flink.table.data.RowData", "org.apache.iceberg.TableProperties.PARQUET_COMPRESSION_LEVEL", "org.apache.iceberg.flink.FlinkReadOptions", "org.apache.iceberg.Partitioning", "org.apache.flink.streaming.api.datastream.DataStreamSink", "org.apache.flink.streaming.api.environment.StreamExecutionEnvironment", "org.apache.iceberg.PartitionField", "org.apache.iceberg.TableProperties.AVRO_COMPRESSION", "org.apache.iceberg.TableProperties.WRITE_DISTRIBUTION_MODE", "org.apache.iceberg.flink.maintenance.operator.DataFileRewriteCommitter", "org.apache.iceberg.actions.SizeBasedFileRewritePlanner", "org.apache.iceberg.flink.maintenance.operator.DataFileRewriteRunner", "org.apache.iceberg.actions.BinPackRewriteFilePlanner", "org.apache.iceberg.flink.maintenance.operator.DataFileRewritePlanner", "org.apache.iceberg.flink.maintenance.operator.TaskResultAggregator", "org.apache.flink.streaming.api.watermark.Watermark", "org.apache.flink.streaming.api.datastream.DataStream", "org.apache.flink.api.common.typeinfo.TypeInformation", "java.time.Duration", "org.apache.iceberg.flink.maintenance.operator.DeleteFilesProcessor", "org.apache.flink.annotation.Internal", "org.apache.iceberg.Snapshot", "org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator", "org.apache.iceberg.flink.maintenance.operator.ExpireSnapshotsProcessor", "java.security.AccessController", "java.security.PrivilegedAction", "org.apache.iceberg.relocated.com.google.common.base.Throwables", "java.lang.reflect.Method", "java.lang.reflect.Modifier", "java.lang.reflect.InvocationTargetException", "java.lang.reflect.Field", "java.lang.reflect.Constructor", "java.util.NavigableMap", "org.apache.iceberg.expressions.Expression.Operation", "org.apache.iceberg.expressions.And", "org.apache.iceberg.expressions.NamedReference", "org.apache.iceberg.relocated.com.google.common.collect.ImmutableSortedMap", "org.apache.iceberg.expressions.UnboundPredicate", "org.apache.iceberg.util.PartitionUtil", "org.apache.iceberg.relocated.com.google.common.base.Objects", "org.apache.iceberg.encryption.EncryptedKey", "org.apache.iceberg.util.Pair", "org.apache.iceberg.util.SerializableSupplier", "org.apache.iceberg.util.LocationUtil", "java.util.function.Predicate", "org.immutables.value.Value", "java.util.stream.Stream", "org.apache.iceberg.rest.auth.OAuth2Util", "org.apache.iceberg.BaseTable", "org.apache.iceberg.util.PropertyUtil", "org.apache.iceberg.view.ViewVersion", "org.apache.iceberg.Transactions", "org.apache.iceberg.util.EnvironmentUtil", "org.apache.iceberg.exceptions.NoSuchTableException", "org.apache.iceberg.rest.responses.ErrorResponse", "org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManagerBuilder", "java.nio.charset.StandardCharsets", "org.apache.iceberg.view.ViewUtil", "org.apache.iceberg.rest.requests.RenameTableRequest", "org.apache.iceberg.rest.requests.CreateTableRequest", "org.slf4j.Logger", "org.apache.hc.core5.http.ContentType", "org.apache.iceberg.catalog.Catalog", "org.apache.iceberg.MetadataTableUtils", "org.apache.iceberg.view.BaseView", "org.apache.iceberg.exceptions.NoSuchViewException", "java.io.UncheckedIOException", "org.apache.iceberg.view.ImmutableSQLViewRepresentation", "org.apache.iceberg.metrics.MetricsReporters", "org.apache.iceberg.IcebergBuild", "org.apache.hc.client5.http.impl.classic.CloseableHttpResponse", "org.apache.iceberg.exceptions.AlreadyExistsException", "org.apache.iceberg.CatalogProperties", "org.apache.iceberg.catalog.BaseViewSessionCatalog", "org.apache.iceberg.rest.auth.AuthSession", "org.apache.iceberg.relocated.com.google.common.annotations.VisibleForTesting", "org.apache.hc.core5.http.io.entity.EntityUtils", "org.apache.hc.client5.http.impl.classic.CloseableHttpClient", "java.io.Closeable", "org.apache.iceberg.rest.requests.ImmutableCreateViewRequest", "org.apache.iceberg.view.View", "org.apache.iceberg.CatalogUtil", "org.apache.iceberg.MetadataUpdate", "org.apache.iceberg.rest.auth.AuthManagers", "org.apache.iceberg.rest.requests.CreateNamespaceRequest", "org.apache.iceberg.rest.requests.RegisterTableRequest", "org.apache.iceberg.rest.responses.ListNamespacesResponse", "org.apache.hc.client5.http.auth.CredentialsProvider", "org.apache.hc.client5.http.io.HttpClientConnectionManager", "java.util.function.Consumer", "org.apache.iceberg.rest.responses.LoadViewResponse", "org.apache.hc.core5.http.HttpHeaders", "org.apache.iceberg.rest.responses.GetNamespaceResponse", "org.apache.iceberg.rest.responses.ConfigResponse", "org.apache.hc.core5.io.CloseMode", "org.apache.iceberg.rest.responses.LoadTableResponse", "org.apache.iceberg.io.CloseableGroup", "org.apache.hc.client5.http.classic.methods.HttpUriRequestBase", "org.apache.iceberg.view.ImmutableViewVersion", "org.apache.hc.core5.http.Header", "org.apache.iceberg.catalog.TableCommit", "org.apache.hc.client5.http.impl.classic.HttpClientBuilder", "org.apache.iceberg.rest.responses.ListTablesResponse", "org.apache.hc.core5.http.HttpStatus", "org.apache.hc.client5.http.impl.classic.HttpClients", "com.fasterxml.jackson.core.JsonProcessingException", "org.apache.iceberg.rest.requests.ImmutableRegisterTableRequest", "org.apache.iceberg.rest.auth.AuthManager", "org.apache.iceberg.rest.requests.CreateViewRequest", "org.apache.hc.core5.http.io.entity.StringEntity", "org.apache.iceberg.io.FileIOTracker", "org.apache.iceberg.rest.requests.CommitTransactionRequest", "org.apache.iceberg.io.StorageCredential", "org.apache.hc.core5.http.HttpHost", "org.apache.iceberg.exceptions.NoSuchNamespaceException", "org.apache.hc.client5.http.auth.AuthScope", "org.apache.iceberg.rest.requests.UpdateTableRequest", "org.apache.iceberg.exceptions.RESTException", "org.apache.iceberg.hadoop.Configurable", "org.apache.iceberg.rest.requests.UpdateNamespacePropertiesRequest", "org.slf4j.LoggerFactory", "org.apache.iceberg.metrics.MetricsReporter", "java.util.function.BiFunction", "java.util.concurrent.TimeUnit", "java.net.URI", "org.apache.iceberg.rest.responses.UpdateNamespacePropertiesResponse", "org.apache.hc.client5.http.auth.UsernamePasswordCredentials", "org.apache.hc.client5.http.config.ConnectionConfig", "org.apache.iceberg.MetadataTableType", "org.apache.hc.client5.http.impl.auth.BasicCredentialsProvider", "org.apache.hc.core5.http.impl.EnglishReasonPhraseCatalog", "org.apache.iceberg.rest.responses.CreateNamespaceResponse", "org.apache.iceberg.EnvironmentContext", "org.apache.iceberg.rest.HTTPRequest.HTTPMethod", "com.fasterxml.jackson.databind.ObjectMapper", "org.apache.iceberg.view.ViewRepresentation", "org.apache.hc.core5.http.ParseException", "org.apache.iceberg.view.ViewBuilder", "org.apache.iceberg.Transaction", "org.apache.iceberg.exceptions.UnprocessableEntityException", "org.apache.iceberg.relocated.com.google.common.collect.ImmutableSet", "org.apache.iceberg.catalog.Namespace", "java.io.PrintWriter", "java.io.StringWriter", "java.util.Comparator", "org.apache.iceberg.TableMetadata", "org.apache.iceberg.types.Comparators", "org.apache.iceberg.util.Tasks", "org.apache.iceberg.rest.credentials.Credential", "org.apache.iceberg.expressions.Projections", "java.util.Queue", "org.apache.iceberg.metrics.ScanMetrics", "com.github.benmanes.caffeine.cache.Caffeine", "org.apache.iceberg.util.ArrayUtil", "org.apache.iceberg.io.FileIO", "com.github.benmanes.caffeine.cache.LoadingCache", "org.apache.iceberg.metrics.ScanMetricsUtil", "org.apache.iceberg.exceptions.RuntimeIOException", "org.apache.iceberg.expressions.ManifestEvaluator", "java.io.IOException", "org.apache.iceberg.util.PartitionMap", "java.util.concurrent.ConcurrentLinkedQueue", "org.apache.iceberg.util.PartitionSet", "org.apache.iceberg.catalog.TableIdentifier", "org.apache.iceberg.rest.RESTRequest", "org.apache.iceberg.UnboundPartitionSpec", "java.util.Collection", "org.apache.iceberg.rest.RESTResponse", "org.apache.iceberg.UnboundSortOrder", "com.google.errorprone.annotations.Var", "javax.annotation.CheckReturnValue", "com.google.errorprone.annotations.CanIgnoreReturnValue", "org.apache.iceberg.util.SerializableMap", "java.util.LinkedHashMap", "javax.annotation.concurrent.NotThreadSafe", "javax.annotation.concurrent.Immutable", "javax.annotation.ParametersAreNonnullByDefault", "javax.annotation.Nullable", "org.apache.iceberg.DeleteFile", "org.apache.iceberg.DataFile", "org.apache.iceberg.util.ScanTaskUtil", "org.apache.iceberg.relocated.com.google.common.base.Joiner.MapJoiner", "org.apache.iceberg.util.ContentFileUtil", "org.apache.iceberg.relocated.com.google.common.base.Strings", "org.apache.iceberg.relocated.com.google.common.collect.Iterables", "org.apache.iceberg.util.CharSequenceSet", "org.apache.iceberg.StructLike", "org.apache.iceberg.encryption.EncryptionManager", "org.apache.iceberg.PartitionSpec", "java.util.function.Supplier", "java.util.UUID", "org.apache.iceberg.io.InputFile", "org.apache.iceberg.encryption.EncryptionKeyMetadata", "org.apache.iceberg.util.ByteBuffers", "org.apache.iceberg.types.Conversions", "org.apache.iceberg.hadoop.HadoopInputFile", "java.nio.ByteBuffer", "org.apache.iceberg.encryption.EncryptedOutputFile", "org.apache.hadoop.fs.FileStatus", "org.apache.iceberg.view.ViewMetadata", "java.util.Set", "java.io.UnsupportedEncodingException", "java.util.stream.Collectors", "org.apache.iceberg.io.CloseableIterable", "java.net.URLEncoder", "org.apache.iceberg.relocated.com.google.common.collect.ListMultimap", "org.apache.iceberg.relocated.com.google.common.collect.Multimaps", "org.apache.iceberg.types.Types", "org.apache.iceberg.util.DateTimeUtil", "org.apache.iceberg.types.TypeUtil", "org.apache.iceberg.relocated.com.google.common.collect.Maps", "org.apache.iceberg.types.Types.StructType", "java.util.AbstractMap", "java.util.concurrent.atomic.AtomicInteger", "org.apache.iceberg.transforms.UnknownTransform", "org.apache.iceberg.relocated.com.google.common.collect.Sets", "org.apache.iceberg.relocated.com.google.common.base.MoreObjects", "java.util.Locale", "org.apache.iceberg.types.Type.NestedType", "java.util.regex.Matcher", "org.apache.iceberg.relocated.com.google.common.base.Joiner", "org.apache.iceberg.types.Type.PrimitiveType", "java.util.regex.Pattern", "java.util.Objects", "java.io.ObjectStreamException", "org.apache.iceberg.expressions.Literal", "org.apache.iceberg.expressions.UnboundTerm", "java.io.Serializable", "java.util.Collections", "org.apache.iceberg.expressions.Term", "org.apache.iceberg.expressions.BoundTerm", "org.apache.iceberg.expressions.Expressions", "java.util.stream.IntStream", "org.apache.iceberg.expressions.BoundTransform", "org.apache.iceberg.expressions.BoundReference", "java.util.Arrays", "org.apache.iceberg.relocated.com.google.common.collect.ImmutableList", "org.apache.iceberg.transforms.Transform", "org.apache.iceberg.transforms.Transforms", "org.apache.iceberg.relocated.com.google.common.collect.Lists", "org.apache.iceberg.types.Type", "java.util.List", "org.apache.iceberg.avro.Avro", "org.apache.iceberg.data.BaseFileWriterFactory", "org.apache.iceberg.spark.SparkSchemaUtil", "org.apache.iceberg.spark.data.SparkParquetWriters", "org.apache.iceberg.MetadataColumns.DELETE_FILE_ROW_FIELD_NAME", "org.apache.iceberg.relocated.com.google.common.collect.ImmutableMap", "org.apache.iceberg.spark.source.SparkTable", "org.apache.iceberg.exceptions.ValidationException", "org.apache.spark.sql.connector.catalog.Table", "org.apache.iceberg.expressions.Expression", "org.apache.iceberg.relocated.com.google.common.base.Preconditions", "org.apache.iceberg.spark.Spark3Util.CatalogAndIdentifier", "java.util.concurrent.ExecutorService", "java.util.function.Function", "org.apache.spark.sql.Dataset", "java.util.Map", "org.apache.spark.sql.connector.catalog.TableCatalog", "java.util.concurrent.ThreadPoolExecutor", "java.util.concurrent.Executors", "org.apache.spark.sql.connector.catalog.Identifier", "org.apache.iceberg.spark.procedures.SparkProcedures.ProcedureBuilder", "org.apache.spark.sql.AnalysisException", "org.apache.spark.sql.catalyst.InternalRow", "org.apache.spark.sql.execution.datasources.v2.DataSourceV2Relation", "org.apache.iceberg.relocated.com.google.common.util.concurrent.MoreExecutors", "scala.Option", "org.apache.spark.sql.catalyst.expressions.GenericInternalRow", "org.apache.spark.sql.types.DataType", "org.apache.iceberg.spark.actions.SparkActions", "org.apache.spark.sql.connector.catalog.CatalogPlugin", "org.apache.spark.sql.execution.datasources.SparkExpressionConverter", "org.apache.spark.sql.SparkSession", "org.apache.spark.sql.Row", "org.apache.iceberg.spark.Spark3Util", "org.apache.spark.sql.catalyst.analysis.NoSuchTableException", "org.apache.spark.sql.types.DataTypes", "org.apache.spark.sql.connector.iceberg.catalog.Procedure", "org.apache.spark.sql.execution.CacheManager", "org.apache.iceberg.relocated.com.google.common.util.concurrent.ThreadFactoryBuilder", "org.apache.iceberg.FileFormat", "org.apache.iceberg.io.DeleteSchemaUtil", "org.apache.spark.sql.types.StructType", "org.apache.spark.unsafe.types.UTF8String", "org.apache.iceberg.orc.ORC", "org.apache.iceberg.TableProperties.DEFAULT_FILE_FORMAT", "org.apache.iceberg.TableProperties.DEFAULT_FILE_FORMAT_DEFAULT", "org.apache.iceberg.TableProperties.DELETE_DEFAULT_FILE_FORMAT", "org.apache.iceberg.Table", "org.apache.iceberg.SortOrder", "org.apache.spark.sql.types.StructField", "org.apache.iceberg.parquet.Parquet", "org.apache.iceberg.Schema", "org.apache.iceberg.spark.data.SparkOrcWriter" ]
+  }, {
+    "name" : "ReadBuilder",
+    "packageName" : "org.apache.iceberg.parquet",
+    "extendedClasses" : [ "AvroWithPartnerVisitor", "AvroSchemaWithTypeVisitor", "TypeWithSchemaVisitor", "OrcSchemaWithTypeVisitor" ],
+    "implementedInterfaces" : [ "ReadBuilder" ],
+    "methods" : [ {
+      "name" : "message",
+      "visibility" : "public",
+      "methodCalls" : [ "emptyList", "getType", "contains", "concat", "newArrayListWithExpectedSize", "isOptional", "of", "asGroupType", "forEach", "fieldId", "add", "name", "getFields", "intValue", "format", "vectorizedReader", "newHashMap", "fields", "put", "initialDefault", "containsKey", "get", "size", "getId", "range", "filter", "struct", "positions", "positionsWithSetArrowValidityVector", "apply", "type", "nulls", "named", "buildMessage", "addField", "getName", "newArrayList", "stream", "withNewFields", "field", "getFieldCount" ]
+    }, {
+      "name" : "set",
+      "visibility" : "public",
+      "methodCalls" : [ "update", "of", "put", "set", "self", "internalSet", "checkArgument", "contains", "checkNotNull", "add", "toByteArray", "propagate" ]
+    }, {
+      "name" : "withFileEncryptionKey",
+      "visibility" : "public",
+      "methodCalls" : [ "withFileEncryptionKey" ]
+    }, {
+      "name" : "callInit",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "filterRecords",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "caseInsensitive",
+      "visibility" : "public",
+      "methodCalls" : [ "caseSensitive" ]
+    }, {
+      "name" : "readSupport",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withAADPrefix",
+      "visibility" : "public",
+      "methodCalls" : [ "withAADPrefix" ]
+    }, {
+      "name" : "variantVisitor",
+      "visibility" : "public",
+      "methodCalls" : [ "currentPath", "asList" ]
+    }, {
+      "name" : "config",
+      "visibility" : "public",
+      "methodCalls" : [ "set", "of", "putAllConfig", "clear" ]
+    }, {
+      "name" : "filter",
+      "visibility" : "public",
+      "methodCalls" : [ "and", "wrap", "isEmpty", "rowFilter", "filterRows", "newRefinedScan", "context", "findStartIndex", "newArrayList", "arraycopy", "wrapped", "canContainEqDeletesForFile", "toArray", "collect", "size", "resetTasks", "get", "toList", "caseSensitive", "inclusive", "newHashMap", "toSanitizedString", "partitionType", "specId", "specs", "info", "add", "eval", "filter", "partition", "alwaysTrue", "stream", "table", "tasks", "spec", "name", "put", "project", "snapshotId", "newHashSet", "checkState", "file", "equalsIgnoreCase", "location", "values", "attribute", "equals", "warn", "contains", "test", "increment", "combine", "checkArgument", "iterator" ]
+    }, {
+      "name" : "caseSensitive",
+      "visibility" : "public",
+      "methodCalls" : [ "option", "flinkConfig", "toString", "put", "setBoolean", "newRefinedScan", "setCaseSensitive", "self", "getName", "getClass", "caseSensitive", "booleanConf", "defaultValueString", "defaultValue", "parse", "sessionConf", "key", "CASE_SENSITIVE" ]
+    }, {
+      "name" : "recordsPerBatch",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createBatchedReaderFunc",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument" ]
+    }, {
+      "name" : "variant",
+      "visibility" : "public",
+      "methodCalls" : [ "withName", "intValue", "concat", "size", "nullCount", "fieldName", "isEmpty", "metricsMode", "upperBound", "toByteBuffer", "newTreeSet", "subList", "lowerBound", "put", "metadata", "object", "newArrayList", "valueCount", "getId", "visit", "add", "getRepetition", "apply", "equals", "addField", "required", "named", "optional", "getName", "id", "buildGroup", "checkArgument", "isRepetition", "makeCompatibleName", "variant", "currentPath", "setId", "find", "withId", "of", "format", "isVariantType", "test", "get", "variants", "createRecord", "addToSchema", "peek", "clone", "icebergID", "isOptional", "builder", "build", "currentFieldName", "ofType", "isPresent", "map" ]
+    }, {
+      "name" : "withFooterSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withFileSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "project",
+      "visibility" : "public",
+      "methodCalls" : [ "truncateDecimal", "width", "truncateLong", "get", "term", "equal", "notEqual", "literal", "asLiteralPredicate", "truncateArray", "isSetPredicate", "projectTransformPredicate", "transformSet", "length", "isUnaryPredicate", "asSetPredicate", "truncateInteger", "type", "project", "isLiteralPredicate", "predicate", "op", "projectStrict", "value", "toEnum", "visit", "bind", "apply", "checkState", "newRefinedScan" ]
+    }, {
+      "name" : "split",
+      "visibility" : "public",
+      "methodCalls" : [ "format", "self", "isStrictlyAscending", "isSplittable", "length", "of" ]
+    }, {
+      "name" : "createReaderFunc",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument", "checkState" ]
+    }, {
+      "name" : "reuseContainers",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setRootType",
+      "visibility" : "public",
+      "methodCalls" : [ "put" ]
+    }, {
+      "name" : "classLoader",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createResolvingReader",
+      "visibility" : "public",
+      "methodCalls" : [ "checkState" ]
+    }, {
+      "name" : "build",
+      "visibility" : "public",
+      "methodCalls" : [ "validate", "withCompressionCodec", "useBloomFilter", "useDictionaryFilter", "withDictionaryEncoding", "useStatsFilter", "rowGroupCheckMaxRecordCount", "setType", "dictionaryPageSize", "withFooterKey", "withMaxBloomFilterBytes", "withMinRowCountForPageSizeCheck", "bloomFilterMaxBytes", "withWriteMode", "empty", "dictionaryEnabled", "withEncryption", "useRecordFilter", "callInit", "getSchema", "withRange", "setKeyValueMetadata", "readSupport", "getFileMetaData", "toByteArray", "value", "rowGroupSize", "pageSize", "setConfig", "withoutAADPrefixStorage", "withFileRange", "setWriteSupport", "withFilter", "withAADPrefix", "withDictionaryPageSize", "getConf", "withDecryption", "compressionLevel", "withPageSize", "pageRowLimit", "withMaxRowCountForPageSizeCheck", "rowGroupCheckMinRecordCount", "withWriterVersion", "withNameMapping", "withRowGroupSize", "file", "withPageRowCountLimit", "unset", "loadTable", "emitterWithWatermark", "exposeLocality", "resolveConfig", "watermarkColumn", "open", "watermark", "schema", "planParallelism", "includeColumnStats", "isLocalityEnabled", "watermarkColumnTimeUnit", "defaultEmitter", "addSource", "factory", "min", "getMaxParallelism", "transform", "createInput", "inferParallelism", "createInputSplits", "format", "setParallelism", "isStreaming", "limit", "buildFormat", "toTypeInfo", "project", "dataFileCount", "eqDeleteFileCount", "commitCount", "toMillis", "eqDeleteRecordCount", "dataFileSizeInBytes", "posDeleteRecordCount", "posDeleteFileCount", "bloomFilterFpp", "set", "setBoolean", "vectorizedRowBatchSize", "blockSize", "put", "stripeSize", "compressionKind", "setDouble", "setString", "setLong", "bloomFilterColumns", "compressionStrategy", "bind", "buildRuntimeException", "join", "on", "getValue", "timestampRange", "contains", "second", "timestampMillis", "currentSnapshot", "current", "dataManifests", "rewriteNot", "getKey", "first", "snapshotId", "newHashSet", "snapshot", "filter", "entrySet", "joinFilters", "io", "flatMap", "newArrayList", "values", "lastUpdatedMillis", "currentTimeMillis", "toList", "copyOf", "toSet", "randomUUID", "versionId", "max", "add", "map", "of", "viewVersion", "addAll", "updateHistory", "propertyAsInt", "stream", "toString", "propertyAsBoolean", "collect", "expireVersions", "toScope", "withProxy", "configureConnectionManager", "toCharArray", "gitCommitShortId", "withHeader", "propertyAsNullableInt", "propertyAsString", "setCredentials", "fullVersion", "withProxyCredentialsProvider", "asList", "create", "toJson", "convert", "apply", "meta", "setClassLoader", "codec", "isUnpartitioned", "setRenames", "setCustomTypes", "createSerializableMap", "doBuild", "get", "getConstant", "icebergType", "isDummy", "validatePartitionTransforms", "asOverwriteByFilter", "alwaysTrue", "asCopyOnWriteOperation", "spec", "applicationId", "asBatchAppend", "asStreamingOverwrite", "asRewrite", "asDynamicOverwrite", "asStreamingAppend", "checkState", "sparkContext", "rewrittenFileSetId", "fetchTasks", "checkArgument", "isEmpty", "name", "supportsRowLineage", "checkCompatibility", "buildUnchecked", "checkNotNull", "fromFileName", "copy", "locationProvider", "encryption", "keySet", "builder", "isNullOrEmpty", "setIf", "addTo", "size", "build", "putAll", "orderId", "unsorted" ]
+    }, {
+      "name" : "rename",
+      "visibility" : "public",
+      "methodCalls" : [ "join", "put" ]
+    }, {
+      "name" : "setCustomType",
+      "visibility" : "public",
+      "methodCalls" : [ "put" ]
+    }, {
+      "name" : "withNameMapping",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "union",
+      "visibility" : "public",
+      "methodCalls" : [ "format", "add", "createUnion", "filter", "optional", "newArrayListWithExpectedSize", "fieldId", "fields", "required", "toList", "stream", "getName", "of", "collect", "any", "fromOption", "isOptionSchema", "checkState", "newArrayList", "equals", "fromOptions", "toOption", "contains", "getType", "getTypes", "option", "union", "nulls", "size", "checkArgument", "get" ]
+    }, {
+      "name" : "array",
+      "visibility" : "public",
+      "methodCalls" : [ "type", "getMaxRepetitionLevel", "shredded", "getMaxDefinitionLevel", "equal", "createMap", "contains", "checkState", "parsingFingerprint64", "getElementId", "warn", "getValue", "getObjectProps", "createArray", "addProp", "entrySet", "getKey", "writer", "arrayMap", "fieldId", "fieldNames", "elementId", "ofOptional", "containsNull", "ofRequired", "arrayElementType", "array", "copyOfRange", "isListType", "schema", "equals", "checkArgument", "getFields", "getField", "getFieldId", "getElementType", "getLogicalType", "createProjectionMap", "get", "getFullName", "asMapType", "isKeyValueSchema", "asListType", "replaceElement", "elementType", "name", "fields", "asNestedType", "isMapType", "of", "hasProperty", "find", "asStructType", "id", "isOptionSchema", "isOptional", "field" ]
+    }, {
+      "name" : "list",
+      "visibility" : "public",
+      "methodCalls" : [ "peek", "withNewFields", "equal", "makeCompatibleName", "id", "element", "getFieldName", "collections", "as", "named", "buildGroup", "listType", "repeatedGroup", "isRepetition", "getRepetition", "addFields", "getElementType", "find", "copy", "setId", "empty", "ofType", "currentFieldName", "type", "isPresent", "withId", "builder", "build", "withName", "icebergID", "createList", "isOptional", "field", "lookupSchema", "toOption", "cacheSchema", "createArray", "addProp", "checkState", "contains", "isPrimitiveType", "isStructType", "apply", "isElementOptional", "elementType", "containsNull", "get", "checkArgument", "elementId", "ofRequired", "ofOptional", "array", "list", "getName", "getMaxDefinitionLevel", "determineListElementType", "getMaxRepetitionLevel", "path", "option", "getChildren", "currentPath", "getType", "asGroupType", "getFields", "add", "fieldId", "fields", "put", "asListType", "isListType", "format", "isElementRequired", "copyOf", "asNestedType", "of", "addAll", "newArrayList", "test" ]
+    }, {
+      "name" : "primitive",
+      "visibility" : "public",
+      "methodCalls" : [ "getType", "metricsMode", "truncateLength", "makeCompatibleName", "id", "asVariant", "decimalAsLong", "decimalAsInteger", "decimalAsFixed", "findType", "getRepetition", "as", "primitive", "getTypeLength", "named", "timestampReader", "unboxed", "fixedReader", "timestampMills", "peek", "timestampMicros", "getTypeRoot", "timeMicros", "timestampTzNanos", "timestamp", "setId", "find", "withName", "getAttributeValue", "icebergID", "isOptional", "isPresent", "empty", "builder", "withId", "build", "ofType", "withZone", "currentFieldName", "equalsIgnoreCase", "withoutZone", "clone", "dates", "isTimestamptz", "timestamptzNanos", "times", "timestampNanos", "timestamptz", "cacheSchema", "length", "createFixed", "decimalRequiredBytes", "addToSchema", "second", "fixedWriter", "byteBuffers", "utf8s", "ofLength", "logicalType", "create", "fixupPrimitive", "test", "isPrimitiveType", "toLowerCase", "asPrimitiveType", "of", "format", "isPromotionAllowed", "toString", "timestamps", "int96Timestamps", "accept", "equals", "orElseThrow", "uuidType", "fieldId", "read", "getOriginalType", "tinyints", "getFixedSize", "floatsAsDoubles", "shouldAdjustToUTC", "getClass", "precision", "apply", "scale", "checkArgument", "get", "typeId", "contains", "longs", "doubles", "getCategory", "decimals", "getPrecision", "bytes", "getMaxRepetitionLevel", "timestampTzs", "getId", "intValue", "uuids", "utf8String", "ints", "type", "getScale", "floats", "getColumnDescription", "currentPath", "convert", "findField", "booleans", "byteArrays", "fixed", "getPrimitiveTypeName", "getEnumSymbols", "intsAsLongs", "shorts", "nulls", "strings", "enums", "decimalBytesReader", "getLogicalTypeAnnotation", "getName", "getLogicalType", "timestampTz", "decimal" ]
+    }, {
+      "name" : "map",
+      "visibility" : "public",
+      "methodCalls" : [ "isValueRequired", "withNewFields", "makeCompatibleName", "value", "key", "isRepetition", "equal", "mapType", "buildGroup", "named", "addFields", "maps", "getFieldName", "as", "getRepetition", "repeatedGroup", "getMessage", "create", "addSuppressed", "hasNext", "abort", "next", "write", "error", "dataFiles", "getKeyType", "convert", "setId", "copy", "withId", "isPresent", "builder", "empty", "withName", "ofType", "currentFieldName", "build", "icebergID", "type", "field", "containsKey", "warn", "getValueId", "getKeyId", "lookupSchema", "toOption", "cacheSchema", "entrySet", "getObjectProps", "getValue", "createMap", "getKey", "addProp", "fieldNames", "id", "find", "isOptional", "hasProperty", "equals", "getValueType", "replaceValue", "isNestedType", "checkState", "isPrimitiveType", "contains", "isStructType", "peek", "test", "format", "of", "ofOptional", "ofRequired", "valueContainsNull", "apply", "keyId", "valueId", "valueType", "get", "keyType", "isValueOptional", "checkArgument", "map", "getChildren", "mapKeyType", "mapValueType", "asGroupType", "getFields", "currentPath", "getName", "getMaxDefinitionLevel", "path", "getMaxRepetitionLevel", "arrayMap", "option", "strings", "getType", "fields", "fieldId", "add", "put", "asMapType", "isMapType", "newArrayList", "copyOf", "asNestedType", "addAll" ]
+    }, {
+      "name" : "record",
+      "visibility" : "public",
+      "methodCalls" : [ "of", "equal", "row", "reduce", "orElse", "find", "currentPath", "setId", "forEach", "currentFieldName", "map", "withName", "noneMatch", "builder", "filter", "build", "anyMatch", "ofType", "isPresent", "empty", "withId", "icebergID", "isEqual", "stream", "createStruct", "addField", "createStructWriter", "createStructReader", "pos", "isEmpty", "hasFieldId", "first", "createRecordWriter", "doc", "fieldNames", "optional", "required", "getFieldId", "copyField", "struct", "mapToObj", "collect", "toList", "range", "skipStruct", "size", "asStructType", "fieldNameAndType", "buildReadPlan", "getChildren", "fields", "second", "increment", "checkArgument", "add", "convert", "name", "metadataFieldIds", "equals", "get", "containsKey", "isNestedType", "put", "schema", "makeCompatibleName", "newHashMap", "isOptional", "contains", "toOption", "getFullName", "fieldId", "copyRecord", "addProp", "newArrayList", "newArrayListWithExpectedSize", "getFields", "isStructType", "type", "asNestedType", "any" ]
+    }, {
+      "name" : "struct",
+      "visibility" : "public",
+      "methodCalls" : [ "constant", "getFieldCount", "concat", "collect", "withNewFields", "stream", "toList", "filter", "find", "id", "makeCompatibleName", "isRepetition", "getRepetition", "createStructWriter", "addField", "buildGroup", "named", "createStructReader", "convertConstant", "is", "copy", "equals", "addProp", "cacheSchema", "lookupSchema", "createRecord", "sanitize", "validAvroName", "isRequired", "forEach", "caseInsensitiveField", "range", "isEmpty", "peek", "test", "copyOf", "field", "addAll", "asStructType", "isStructType", "iterator", "withId", "next", "ofType", "build", "from", "findField", "withDoc", "getValue", "newAccessor", "getKey", "entrySet", "replaceWithMetadataReader", "getType", "dataType", "nulls", "getMetadata", "isNullable", "optional", "add", "get", "contains", "toString", "getFields", "required", "getName", "of", "newArrayListWithExpectedSize", "name", "type", "fieldId", "withComment", "checkArgument", "fields", "checkNotNull", "isOptional", "size", "newArrayList", "doc", "apply", "isDefined", "getComment", "nullable", "newHashMap", "initialDefault", "containsKey", "getMaxDefinitionLevel", "path", "put", "getOrDefault", "option", "currentPath", "internalToSpark", "format", "getId", "position", "intValue" ]
+    }, {
+      "name" : "arrayMap",
+      "visibility" : "public",
+      "methodCalls" : [ "utf8s", "strings", "arrayMap" ]
+    } ],
+    "imports" : [ "org.apache.avro.LogicalTypes", "org.apache.iceberg.SystemConfigs", "org.apache.iceberg.TableProperties.PARQUET_PAGE_SIZE_BYTES_DEFAULT", "org.apache.iceberg.TableProperties.DELETE_PARQUET_COMPRESSION_LEVEL", "org.apache.parquet.hadoop.ParquetFileWriter", "org.apache.iceberg.TableProperties.DELETE_PARQUET_DICT_SIZE_BYTES", "org.apache.iceberg.TableProperties.DELETE_PARQUET_PAGE_ROW_LIMIT", "org.apache.iceberg.TableProperties.PARQUET_PAGE_ROW_LIMIT", "org.apache.iceberg.TableProperties.PARQUET_ROW_GROUP_SIZE_BYTES", "org.apache.iceberg.TableProperties.PARQUET_BLOOM_FILTER_MAX_BYTES", "org.apache.iceberg.TableProperties.PARQUET_ROW_GROUP_CHECK_MAX_RECORD_COUNT_DEFAULT", "org.apache.parquet.ParquetReadOptions", "org.apache.parquet.hadoop.ParquetFileReader", "org.apache.iceberg.TableProperties.PARQUET_PAGE_ROW_LIMIT_DEFAULT", "org.apache.parquet.hadoop.metadata.CompressionCodecName", "java.io.File", "org.apache.parquet.conf.PlainParquetConfiguration", "org.apache.parquet.column.ParquetProperties.WriterVersion", "org.apache.iceberg.TableProperties.DELETE_PARQUET_ROW_GROUP_CHECK_MIN_RECORD_COUNT", "org.apache.parquet.crypto.FileDecryptionProperties", "org.apache.parquet.avro.AvroWriteSupport", "org.apache.parquet.hadoop.ParquetReader", "org.apache.iceberg.TableProperties.PARQUET_BLOOM_FILTER_COLUMN_FPP_PREFIX", "org.apache.iceberg.TableProperties.PARQUET_ROW_GROUP_CHECK_MIN_RECORD_COUNT_DEFAULT", "org.apache.parquet.hadoop.api.WriteSupport", "org.apache.iceberg.relocated.com.google.common.annotations.VisibleForTesting", "org.apache.iceberg.TableProperties.PARQUET_BLOOM_FILTER_MAX_BYTES_DEFAULT", "org.apache.iceberg.data.parquet.GenericParquetWriter", "org.apache.iceberg.util.ByteBuffers", "java.util.Collection", "org.apache.parquet.hadoop.api.ReadSupport", "org.apache.iceberg.Files", "org.apache.iceberg.TableProperties.PARQUET_ROW_GROUP_CHECK_MIN_RECORD_COUNT", "org.apache.parquet.hadoop.ParquetWriter", "org.apache.iceberg.TableProperties.PARQUET_COMPRESSION_LEVEL", "org.apache.iceberg.TableProperties.PARQUET_COMPRESSION", "org.apache.iceberg.TableProperties.DELETE_PARQUET_ROW_GROUP_SIZE_BYTES", "org.apache.parquet.HadoopReadOptions", "org.apache.parquet.column.ParquetProperties", "org.apache.iceberg.TableProperties.PARQUET_COMPRESSION_DEFAULT", "org.apache.iceberg.TableProperties.PARQUET_BLOOM_FILTER_COLUMN_ENABLED_PREFIX", "org.apache.iceberg.parquet.ParquetValueWriters.StructWriter", "org.apache.iceberg.TableProperties.PARQUET_DICT_SIZE_BYTES", "org.apache.iceberg.TableProperties.PARQUET_ROW_GROUP_CHECK_MAX_RECORD_COUNT", "java.util.function.BiConsumer", "org.apache.iceberg.TableProperties.PARQUET_DICT_SIZE_BYTES_DEFAULT", "org.apache.iceberg.relocated.com.google.common.collect.Sets", "org.apache.iceberg.TableProperties.PARQUET_PAGE_SIZE_BYTES", "org.apache.iceberg.TableProperties.PARQUET_ROW_GROUP_SIZE_BYTES_DEFAULT", "org.apache.iceberg.TableProperties.DELETE_PARQUET_COMPRESSION", "org.apache.iceberg.TableProperties.DELETE_PARQUET_ROW_GROUP_CHECK_MAX_RECORD_COUNT", "org.apache.parquet.crypto.FileEncryptionProperties", "org.apache.parquet.avro.AvroReadSupport", "org.apache.iceberg.parquet.ParquetValueWriters.PositionDeleteStructWriter", "org.apache.iceberg.TableProperties.PARQUET_COMPRESSION_LEVEL_DEFAULT", "org.apache.iceberg.TableProperties.DELETE_PARQUET_PAGE_SIZE_BYTES", "org.apache.parquet.hadoop.ParquetOutputFormat", "org.apache.iceberg.parquet.ParquetValueReaders.LongAsDecimalReader", "org.apache.avro.generic.GenericData.Record", "org.apache.iceberg.parquet.ParquetValueReaders.ListReader", "org.apache.iceberg.parquet.ParquetValueReaders.BytesReader", "org.apache.avro.util.Utf8", "org.apache.iceberg.parquet.ParquetValueReaders.MapReader", "org.apache.iceberg.parquet.ParquetValueReaders.IntegerAsDecimalReader", "org.apache.avro.generic.GenericData.Fixed", "java.util.UUID", "org.apache.parquet.schema.LogicalTypeAnnotation.LogicalTypeAnnotationVisitor", "org.apache.parquet.schema.LogicalTypeAnnotation.TimeLogicalTypeAnnotation", "org.apache.parquet.schema.LogicalTypeAnnotation.StringLogicalTypeAnnotation", "org.apache.parquet.schema.LogicalTypeAnnotation.EnumLogicalTypeAnnotation", "org.apache.iceberg.parquet.ParquetVariantVisitor", "org.apache.parquet.schema.LogicalTypeAnnotation.IntLogicalTypeAnnotation", "org.apache.parquet.schema.LogicalTypeAnnotation.JsonLogicalTypeAnnotation", "org.apache.iceberg.parquet.VariantReaderBuilder", "org.apache.parquet.schema.LogicalTypeAnnotation.DateLogicalTypeAnnotation", "org.apache.parquet.schema.LogicalTypeAnnotation.TimestampLogicalTypeAnnotation", "org.apache.flink.table.data.RawValueData", "org.apache.flink.table.data.TimestampData", "org.apache.flink.table.data.DecimalData", "org.apache.flink.table.data.GenericRowData", "org.apache.parquet.schema.LogicalTypeAnnotation", "org.apache.flink.table.data.StringData", "org.apache.flink.table.data.GenericArrayData", "java.util.Optional", "org.apache.flink.table.data.RowData", "org.apache.flink.table.data.MapData", "org.apache.flink.table.data.ArrayData", "java.util.Collections", "org.apache.iceberg.data.Record", "org.apache.hadoop.fs.Path", "org.apache.orc.OrcFile.CompressionStrategy", "org.apache.iceberg.data.orc.GenericOrcWriters", "org.apache.iceberg.TableProperties.ORC_BLOCK_SIZE_BYTES_DEFAULT", "org.apache.iceberg.TableProperties.ORC_COMPRESSION", "org.apache.iceberg.TableProperties.ORC_WRITE_BATCH_SIZE_DEFAULT", "org.apache.orc.OrcFile", "org.apache.orc.CompressionKind", "org.apache.iceberg.TableProperties.ORC_BLOCK_SIZE_BYTES", "org.apache.iceberg.TableProperties.ORC_BLOOM_FILTER_FPP_DEFAULT", "org.apache.orc.Writer", "org.apache.orc.OrcConf", "org.apache.iceberg.TableProperties", "org.apache.iceberg.TableProperties.DELETE_ORC_COMPRESSION_STRATEGY", "org.apache.iceberg.TableProperties.DELETE_ORC_BLOCK_SIZE_BYTES", "org.apache.iceberg.TableProperties.ORC_BLOOM_FILTER_COLUMNS_DEFAULT", "org.apache.iceberg.TableProperties.ORC_COMPRESSION_STRATEGY_DEFAULT", "org.apache.iceberg.TableProperties.ORC_BLOOM_FILTER_FPP", "org.apache.iceberg.encryption.NativeEncryptionInputFile", "org.apache.iceberg.expressions.Expression", "org.apache.iceberg.TableProperties.DELETE_ORC_WRITE_BATCH_SIZE", "org.apache.iceberg.TableProperties.ORC_WRITE_BATCH_SIZE", "org.apache.iceberg.TableProperties.ORC_COMPRESSION_STRATEGY", "org.apache.iceberg.hadoop.HadoopInputFile", "org.apache.iceberg.TableProperties.ORC_COMPRESSION_DEFAULT", "org.apache.iceberg.data.orc.GenericOrcWriter", "org.apache.iceberg.TableProperties.ORC_STRIPE_SIZE_BYTES_DEFAULT", "java.nio.charset.StandardCharsets", "org.apache.iceberg.exceptions.RuntimeIOException", "org.apache.orc.Reader", "org.apache.iceberg.encryption.NativeEncryptionOutputFile", "org.apache.iceberg.TableProperties.DELETE_ORC_STRIPE_SIZE_BYTES", "org.apache.orc.OrcFile.ReaderOptions", "org.apache.iceberg.TableProperties.ORC_STRIPE_SIZE_BYTES", "org.apache.hadoop.conf.Configuration", "org.apache.iceberg.TableProperties.ORC_BLOOM_FILTER_COLUMNS", "org.apache.iceberg.util.PropertyUtil", "org.apache.iceberg.TableProperties.DELETE_ORC_COMPRESSION", "org.apache.iceberg.hadoop.HadoopOutputFile", "org.apache.iceberg.data.GenericDataUtil", "org.apache.iceberg.avro.AvroSchemaWithTypeVisitor", "org.apache.iceberg.avro.AvroSchemaUtil", "org.apache.iceberg.avro.InternalWriter", "org.slf4j.LoggerFactory", "org.apache.iceberg.common.DynMethods", "org.slf4j.Logger", "org.apache.iceberg.io.CloseableIterable", "org.apache.iceberg.avro.Avro", "org.apache.iceberg.avro.InternalReader", "java.util.function.Function", "org.apache.iceberg.TableProperties.DELETE_AVRO_COMPRESSION", "org.apache.iceberg.Table", "java.util.stream.Stream", "org.apache.iceberg.MetricsConfig", "org.apache.iceberg.deletes.PositionDelete", "org.apache.avro.file.CodecFactory", "org.apache.iceberg.TableProperties.DELETE_AVRO_COMPRESSION_LEVEL", "org.apache.iceberg.encryption.EncryptionKeyMetadata", "org.apache.iceberg.mapping.NameMapping", "org.apache.iceberg.TableProperties.AVRO_COMPRESSION", "org.apache.iceberg.PartitionSpec", "java.util.Objects", "org.apache.avro.io.Encoder", "org.apache.iceberg.io.DeleteSchemaUtil", "org.apache.iceberg.FileFormat", "org.apache.avro.generic.GenericData", "org.apache.iceberg.TableProperties.AVRO_COMPRESSION_DEFAULT", "org.apache.iceberg.FieldMetrics", "org.apache.iceberg.SortOrder", "java.util.stream.Collectors", "org.apache.iceberg.StructLike", "org.apache.iceberg.io.DataWriter", "org.apache.iceberg.util.ArrayUtil", "org.apache.iceberg.relocated.com.google.common.base.Preconditions", "java.util.Locale", "org.apache.iceberg.mapping.MappingUtil", "org.apache.iceberg.io.FileAppender", "org.apache.iceberg.encryption.EncryptedOutputFile", "org.apache.iceberg.TableProperties.AVRO_COMPRESSION_LEVEL_DEFAULT", "org.apache.iceberg.io.OutputFile", "org.apache.iceberg.SchemaParser", "org.apache.iceberg.deletes.EqualityDeleteWriter", "org.apache.iceberg.InternalData", "java.util.function.BiFunction", "org.apache.avro.Conversions", "org.apache.avro.io.DatumWriter", "org.apache.iceberg.TableProperties.AVRO_COMPRESSION_LEVEL", "org.apache.iceberg.deletes.PositionDeleteWriter", "org.apache.avro.specific.SpecificData", "org.apache.iceberg.io.InputFile", "org.apache.spark.sql.vectorized.ColumnarBatch", "org.apache.spark.sql.vectorized.ColumnarMap", "org.apache.orc.storage.ql.exec.vector.MapColumnVector", "org.apache.spark.sql.vectorized.ColumnarArray", "org.apache.iceberg.orc.OrcBatchReader", "org.apache.iceberg.spark.data.SparkOrcValueReaders", "org.apache.iceberg.spark.SparkSchemaUtil", "org.apache.orc.storage.ql.exec.vector.ListColumnVector", "org.apache.spark.sql.vectorized.ColumnVector", "java.util.stream.IntStream", "org.apache.iceberg.parquet.ParquetValueReaders.UnboxedReader", "org.apache.spark.sql.catalyst.expressions.GenericInternalRow", "org.apache.spark.sql.catalyst.util.MapData", "org.apache.iceberg.util.Pair", "org.apache.iceberg.parquet.ParquetValueReaders", "java.util.function.Supplier", "org.apache.spark.unsafe.types.CalendarInterval", "org.apache.iceberg.avro.ValueReaders", "org.apache.parquet.column.ColumnDescriptor", "org.apache.parquet.schema.MessageType", "org.apache.iceberg.parquet.ParquetValueReaders.StructReader", "org.apache.spark.sql.catalyst.util.GenericArrayData", "org.apache.iceberg.parquet.ParquetValueReaders.ReusableEntry", "org.apache.avro.io.Decoder", "org.apache.iceberg.parquet.ParquetValueReaders.IntAsLongReader", "org.apache.iceberg.relocated.com.google.common.collect.Maps", "org.apache.iceberg.parquet.TypeWithSchemaVisitor", "org.apache.avro.io.DatumReader", "org.apache.iceberg.avro.ValueReader", "org.apache.iceberg.parquet.ParquetValueReaders.RepeatedKeyValueReader", "org.apache.iceberg.parquet.ParquetValueReader", "org.apache.spark.sql.catalyst.util.ArrayData", "java.math.BigDecimal", "org.apache.iceberg.parquet.ParquetValueReaders.PrimitiveReader", "org.apache.iceberg.types.Types", "org.apache.spark.sql.catalyst.InternalRow", "org.apache.orc.TypeDescription", "org.apache.orc.storage.ql.exec.vector.StructColumnVector", "org.apache.iceberg.orc.OrcRowReader", "org.apache.orc.storage.ql.exec.vector.VectorizedRowBatch", "org.apache.iceberg.orc.OrcValueReader", "org.apache.iceberg.types.Type", "java.util.Map", "java.util.List", "org.apache.iceberg.relocated.com.google.common.collect.ImmutableMap", "org.apache.iceberg.orc.OrcValueReaders", "org.apache.iceberg.orc.OrcSchemaWithTypeVisitor", "org.apache.avro.LogicalType", "org.apache.iceberg.parquet.ParquetUtil", "org.apache.parquet.schema.LogicalTypeAnnotation.DecimalLogicalTypeAnnotation", "org.apache.iceberg.parquet.ParquetSchemaUtil", "java.math.BigInteger", "org.apache.spark.unsafe.types.UTF8String", "org.apache.iceberg.util.UUIDUtil", "org.apache.iceberg.Schema", "org.apache.iceberg.avro.SupportsRowPosition", "org.apache.spark.sql.types.Decimal", "org.apache.parquet.schema.GroupType", "org.apache.spark.sql.catalyst.util.ArrayBasedMapData", "org.apache.iceberg.relocated.com.google.common.collect.Lists", "java.util.Arrays", "org.apache.iceberg.parquet.ParquetValueReaders.FloatAsDoubleReader", "org.apache.spark.sql.types.DataType", "org.apache.parquet.schema.PrimitiveType", "org.apache.iceberg.MetadataColumns", "java.io.IOException", "org.apache.iceberg.avro.AvroWithPartnerVisitor", "org.apache.parquet.io.api.Binary", "org.apache.avro.Schema", "org.apache.iceberg.spark.SparkUtil", "org.apache.iceberg.relocated.com.google.common.collect.ImmutableList", "org.apache.parquet.schema.Type", "org.apache.iceberg.parquet.ParquetValueReaders.RepeatedReader", "java.nio.ByteBuffer", "org.apache.iceberg.types.Type.TypeID", "java.nio.ByteOrder" ]
+  }, {
+    "name" : "WriteBuilder",
+    "packageName" : "org.apache.iceberg.parquet",
+    "extendedClasses" : [ "ParquetWithSparkSchemaVisitor", "ParquetTypeVisitor", "TypeWithSchemaVisitor", "ParquetWithFlinkSchemaVisitor", "FlinkSchemaVisitor", "AvroWithFlinkSchemaVisitor", "AvroSchemaVisitor", "BaseWriteBuilder", "OrcSchemaWithTypeVisitor", "AvroWithSparkSchemaVisitor" ],
+    "implementedInterfaces" : [ "WriteBuilder" ],
+    "methods" : [ {
+      "name" : "message",
+      "visibility" : "public",
+      "methodCalls" : [ "emptyList", "getType", "contains", "concat", "newArrayListWithExpectedSize", "isOptional", "of", "asGroupType", "forEach", "fieldId", "add", "name", "getFields", "intValue", "format", "vectorizedReader", "newHashMap", "fields", "put", "initialDefault", "containsKey", "get", "size", "getId", "range", "filter", "struct", "positions", "positionsWithSetArrowValidityVector", "apply", "type", "nulls", "named", "buildMessage", "addField", "getName", "newArrayList", "stream", "withNewFields", "field", "getFieldCount" ]
+    }, {
+      "name" : "variantShreddingFunc",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "writerVersion",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withFileEncryptionKey",
+      "visibility" : "public",
+      "methodCalls" : [ "withFileEncryptionKey" ]
+    }, {
+      "name" : "writeSupport",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withAADPrefix",
+      "visibility" : "public",
+      "methodCalls" : [ "withAADPrefix" ]
+    }, {
+      "name" : "variantVisitor",
+      "visibility" : "public",
+      "methodCalls" : [ "currentPath", "asList" ]
+    }, {
+      "name" : "afterField",
+      "visibility" : "public",
+      "methodCalls" : [ "removeLast", "pop" ]
+    }, {
+      "name" : "beforeField",
+      "visibility" : "public",
+      "methodCalls" : [ "getName", "addLast", "name", "fieldId", "push" ]
+    }, {
+      "name" : "metadata",
+      "visibility" : "public",
+      "methodCalls" : [ "of", "byteBuffers", "getColumnDescription", "order", "metadata", "size", "emptyMetadata", "getBytes", "sizeOf", "writeLittleEndianUnsigned", "asList", "compareTo", "remaining", "allocate", "writeBufferAbsolute", "metadataHeader", "wrap", "put", "from", "isEmpty" ]
+    }, {
+      "name" : "variant",
+      "visibility" : "public",
+      "methodCalls" : [ "withName", "intValue", "concat", "size", "nullCount", "fieldName", "isEmpty", "metricsMode", "upperBound", "toByteBuffer", "newTreeSet", "subList", "lowerBound", "put", "metadata", "object", "newArrayList", "valueCount", "getId", "visit", "add", "getRepetition", "apply", "equals", "addField", "required", "named", "optional", "getName", "id", "buildGroup", "checkArgument", "isRepetition", "makeCompatibleName", "variant", "currentPath", "setId", "find", "withId", "of", "format", "isVariantType", "test", "get", "variants", "createRecord", "addToSchema", "peek", "clone", "icebergID", "isOptional", "builder", "build", "currentFieldName", "ofType", "isPresent", "map" ]
+    }, {
+      "name" : "compressFooter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "compressBlobs",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createdBy",
+      "visibility" : "public",
+      "methodCalls" : [ "put" ]
+    }, {
+      "name" : "set",
+      "visibility" : "public",
+      "methodCalls" : [ "update", "of", "put", "set", "self", "internalSet", "checkArgument", "contains", "checkNotNull", "add", "toByteArray", "propagate" ]
+    }, {
+      "name" : "named",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "overwrite",
+      "visibility" : "public",
+      "methodCalls" : [ "key", "put", "toString", "overwrite", "internalWrite", "convert", "checkState", "alwaysTrue", "equals" ]
+    }, {
+      "name" : "build",
+      "visibility" : "public",
+      "methodCalls" : [ "validate", "withCompressionCodec", "useBloomFilter", "useDictionaryFilter", "withDictionaryEncoding", "useStatsFilter", "rowGroupCheckMaxRecordCount", "setType", "dictionaryPageSize", "withFooterKey", "withMaxBloomFilterBytes", "withMinRowCountForPageSizeCheck", "bloomFilterMaxBytes", "withWriteMode", "empty", "dictionaryEnabled", "withEncryption", "useRecordFilter", "callInit", "getSchema", "withRange", "setKeyValueMetadata", "readSupport", "getFileMetaData", "toByteArray", "value", "rowGroupSize", "pageSize", "setConfig", "withoutAADPrefixStorage", "withFileRange", "setWriteSupport", "withFilter", "withAADPrefix", "withDictionaryPageSize", "getConf", "withDecryption", "compressionLevel", "withPageSize", "pageRowLimit", "withMaxRowCountForPageSizeCheck", "rowGroupCheckMinRecordCount", "withWriterVersion", "withNameMapping", "withRowGroupSize", "file", "withPageRowCountLimit", "unset", "loadTable", "emitterWithWatermark", "exposeLocality", "resolveConfig", "watermarkColumn", "open", "watermark", "schema", "planParallelism", "includeColumnStats", "isLocalityEnabled", "watermarkColumnTimeUnit", "defaultEmitter", "addSource", "factory", "min", "getMaxParallelism", "transform", "createInput", "inferParallelism", "createInputSplits", "format", "setParallelism", "isStreaming", "limit", "buildFormat", "toTypeInfo", "project", "dataFileCount", "eqDeleteFileCount", "commitCount", "toMillis", "eqDeleteRecordCount", "dataFileSizeInBytes", "posDeleteRecordCount", "posDeleteFileCount", "bloomFilterFpp", "set", "setBoolean", "vectorizedRowBatchSize", "blockSize", "put", "stripeSize", "compressionKind", "setDouble", "setString", "setLong", "bloomFilterColumns", "compressionStrategy", "bind", "buildRuntimeException", "join", "on", "getValue", "timestampRange", "contains", "second", "timestampMillis", "currentSnapshot", "current", "dataManifests", "rewriteNot", "getKey", "first", "snapshotId", "newHashSet", "snapshot", "filter", "entrySet", "joinFilters", "io", "flatMap", "newArrayList", "values", "lastUpdatedMillis", "currentTimeMillis", "toList", "copyOf", "toSet", "randomUUID", "versionId", "max", "add", "map", "of", "viewVersion", "addAll", "updateHistory", "propertyAsInt", "stream", "toString", "propertyAsBoolean", "collect", "expireVersions", "toScope", "withProxy", "configureConnectionManager", "toCharArray", "gitCommitShortId", "withHeader", "propertyAsNullableInt", "propertyAsString", "setCredentials", "fullVersion", "withProxyCredentialsProvider", "asList", "create", "toJson", "convert", "apply", "meta", "setClassLoader", "codec", "isUnpartitioned", "setRenames", "setCustomTypes", "createSerializableMap", "doBuild", "get", "getConstant", "icebergType", "isDummy", "validatePartitionTransforms", "asOverwriteByFilter", "alwaysTrue", "asCopyOnWriteOperation", "spec", "applicationId", "asBatchAppend", "asStreamingOverwrite", "asRewrite", "asDynamicOverwrite", "asStreamingAppend", "checkState", "sparkContext", "rewrittenFileSetId", "fetchTasks", "checkArgument", "isEmpty", "name", "supportsRowLineage", "checkCompatibility", "buildUnchecked", "checkNotNull", "fromFileName", "copy", "locationProvider", "encryption", "keySet", "builder", "isNullOrEmpty", "setIf", "addTo", "size", "build", "putAll", "orderId", "unsorted" ]
+    }, {
+      "name" : "meta",
+      "visibility" : "public",
+      "methodCalls" : [ "metadata", "forEach", "putAll", "put", "meta" ]
+    }, {
+      "name" : "setAll",
+      "visibility" : "public",
+      "methodCalls" : [ "or", "putAll", "setAll" ]
+    }, {
+      "name" : "schema",
+      "visibility" : "public",
+      "methodCalls" : [ "selectNot", "map", "of", "asStructType", "stream", "toList", "addAndMoveFields", "collect", "operations", "currentSchemaId", "schemasById", "getType", "current", "fromJson", "getSchema", "readableMetricsSchema", "join", "table", "schema", "get", "convert", "asStruct", "select", "isEmpty", "checkState", "required", "fields", "newHashSet", "partitionType" ]
+    }, {
+      "name" : "metricsConfig",
+      "visibility" : "public",
+      "methodCalls" : [ "metricsConfig" ]
+    }, {
+      "name" : "forTable",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull", "getExecutionEnvironment", "metricsConfig", "forTable", "schema", "setAll", "spec", "properties", "withSpec", "rowSchema" ]
+    }, {
+      "name" : "createWriterFunc",
+      "visibility" : "public",
+      "methodCalls" : [ "apply", "createWriterFunc" ]
+    }, {
+      "name" : "primitive",
+      "visibility" : "public",
+      "methodCalls" : [ "getType", "metricsMode", "truncateLength", "makeCompatibleName", "id", "asVariant", "decimalAsLong", "decimalAsInteger", "decimalAsFixed", "findType", "getRepetition", "as", "primitive", "getTypeLength", "named", "timestampReader", "unboxed", "fixedReader", "timestampMills", "peek", "timestampMicros", "getTypeRoot", "timeMicros", "timestampTzNanos", "timestamp", "setId", "find", "withName", "getAttributeValue", "icebergID", "isOptional", "isPresent", "empty", "builder", "withId", "build", "ofType", "withZone", "currentFieldName", "equalsIgnoreCase", "withoutZone", "clone", "dates", "isTimestamptz", "timestamptzNanos", "times", "timestampNanos", "timestamptz", "cacheSchema", "length", "createFixed", "decimalRequiredBytes", "addToSchema", "second", "fixedWriter", "byteBuffers", "utf8s", "ofLength", "logicalType", "create", "fixupPrimitive", "test", "isPrimitiveType", "toLowerCase", "asPrimitiveType", "of", "format", "isPromotionAllowed", "toString", "timestamps", "int96Timestamps", "accept", "equals", "orElseThrow", "uuidType", "fieldId", "read", "getOriginalType", "tinyints", "getFixedSize", "floatsAsDoubles", "shouldAdjustToUTC", "getClass", "precision", "apply", "scale", "checkArgument", "get", "typeId", "contains", "longs", "doubles", "getCategory", "decimals", "getPrecision", "bytes", "getMaxRepetitionLevel", "timestampTzs", "getId", "intValue", "uuids", "utf8String", "ints", "type", "getScale", "floats", "getColumnDescription", "currentPath", "convert", "findField", "booleans", "byteArrays", "fixed", "getPrimitiveTypeName", "getEnumSymbols", "intsAsLongs", "shorts", "nulls", "strings", "enums", "decimalBytesReader", "getLogicalTypeAnnotation", "getName", "getLogicalType", "timestampTz", "decimal" ]
+    }, {
+      "name" : "union",
+      "visibility" : "public",
+      "methodCalls" : [ "format", "add", "createUnion", "filter", "optional", "newArrayListWithExpectedSize", "fieldId", "fields", "required", "toList", "stream", "getName", "of", "collect", "any", "fromOption", "isOptionSchema", "checkState", "newArrayList", "equals", "fromOptions", "toOption", "contains", "getType", "getTypes", "option", "union", "nulls", "size", "checkArgument", "get" ]
+    }, {
+      "name" : "map",
+      "visibility" : "public",
+      "methodCalls" : [ "isValueRequired", "withNewFields", "makeCompatibleName", "value", "key", "isRepetition", "equal", "mapType", "buildGroup", "named", "addFields", "maps", "getFieldName", "as", "getRepetition", "repeatedGroup", "getMessage", "create", "addSuppressed", "hasNext", "abort", "next", "write", "error", "dataFiles", "getKeyType", "convert", "setId", "copy", "withId", "isPresent", "builder", "empty", "withName", "ofType", "currentFieldName", "build", "icebergID", "type", "field", "containsKey", "warn", "getValueId", "getKeyId", "lookupSchema", "toOption", "cacheSchema", "entrySet", "getObjectProps", "getValue", "createMap", "getKey", "addProp", "fieldNames", "id", "find", "isOptional", "hasProperty", "equals", "getValueType", "replaceValue", "isNestedType", "checkState", "isPrimitiveType", "contains", "isStructType", "peek", "test", "format", "of", "ofOptional", "ofRequired", "valueContainsNull", "apply", "keyId", "valueId", "valueType", "get", "keyType", "isValueOptional", "checkArgument", "map", "getChildren", "mapKeyType", "mapValueType", "asGroupType", "getFields", "currentPath", "getName", "getMaxDefinitionLevel", "path", "getMaxRepetitionLevel", "arrayMap", "option", "strings", "getType", "fields", "fieldId", "add", "put", "asMapType", "isMapType", "newArrayList", "copyOf", "asNestedType", "addAll" ]
+    }, {
+      "name" : "record",
+      "visibility" : "public",
+      "methodCalls" : [ "of", "equal", "row", "reduce", "orElse", "find", "currentPath", "setId", "forEach", "currentFieldName", "map", "withName", "noneMatch", "builder", "filter", "build", "anyMatch", "ofType", "isPresent", "empty", "withId", "icebergID", "isEqual", "stream", "createStruct", "addField", "createStructWriter", "createStructReader", "pos", "isEmpty", "hasFieldId", "first", "createRecordWriter", "doc", "fieldNames", "optional", "required", "getFieldId", "copyField", "struct", "mapToObj", "collect", "toList", "range", "skipStruct", "size", "asStructType", "fieldNameAndType", "buildReadPlan", "getChildren", "fields", "second", "increment", "checkArgument", "add", "convert", "name", "metadataFieldIds", "equals", "get", "containsKey", "isNestedType", "put", "schema", "makeCompatibleName", "newHashMap", "isOptional", "contains", "toOption", "getFullName", "fieldId", "copyRecord", "addProp", "newArrayList", "newArrayListWithExpectedSize", "getFields", "isStructType", "type", "asNestedType", "any" ]
+    }, {
+      "name" : "array",
+      "visibility" : "public",
+      "methodCalls" : [ "type", "getMaxRepetitionLevel", "shredded", "getMaxDefinitionLevel", "equal", "createMap", "contains", "checkState", "parsingFingerprint64", "getElementId", "warn", "getValue", "getObjectProps", "createArray", "addProp", "entrySet", "getKey", "writer", "arrayMap", "fieldId", "fieldNames", "elementId", "ofOptional", "containsNull", "ofRequired", "arrayElementType", "array", "copyOfRange", "isListType", "schema", "equals", "checkArgument", "getFields", "getField", "getFieldId", "getElementType", "getLogicalType", "createProjectionMap", "get", "getFullName", "asMapType", "isKeyValueSchema", "asListType", "replaceElement", "elementType", "name", "fields", "asNestedType", "isMapType", "of", "hasProperty", "find", "asStructType", "id", "isOptionSchema", "isOptional", "field" ]
+    }, {
+      "name" : "list",
+      "visibility" : "public",
+      "methodCalls" : [ "peek", "withNewFields", "equal", "makeCompatibleName", "id", "element", "getFieldName", "collections", "as", "named", "buildGroup", "listType", "repeatedGroup", "isRepetition", "getRepetition", "addFields", "getElementType", "find", "copy", "setId", "empty", "ofType", "currentFieldName", "type", "isPresent", "withId", "builder", "build", "withName", "icebergID", "createList", "isOptional", "field", "lookupSchema", "toOption", "cacheSchema", "createArray", "addProp", "checkState", "contains", "isPrimitiveType", "isStructType", "apply", "isElementOptional", "elementType", "containsNull", "get", "checkArgument", "elementId", "ofRequired", "ofOptional", "array", "list", "getName", "getMaxDefinitionLevel", "determineListElementType", "getMaxRepetitionLevel", "path", "option", "getChildren", "currentPath", "getType", "asGroupType", "getFields", "add", "fieldId", "fields", "put", "asListType", "isListType", "format", "isElementRequired", "copyOf", "asNestedType", "of", "addAll", "newArrayList", "test" ]
+    }, {
+      "name" : "struct",
+      "visibility" : "public",
+      "methodCalls" : [ "constant", "getFieldCount", "concat", "collect", "withNewFields", "stream", "toList", "filter", "find", "id", "makeCompatibleName", "isRepetition", "getRepetition", "createStructWriter", "addField", "buildGroup", "named", "createStructReader", "convertConstant", "is", "copy", "equals", "addProp", "cacheSchema", "lookupSchema", "createRecord", "sanitize", "validAvroName", "isRequired", "forEach", "caseInsensitiveField", "range", "isEmpty", "peek", "test", "copyOf", "field", "addAll", "asStructType", "isStructType", "iterator", "withId", "next", "ofType", "build", "from", "findField", "withDoc", "getValue", "newAccessor", "getKey", "entrySet", "replaceWithMetadataReader", "getType", "dataType", "nulls", "getMetadata", "isNullable", "optional", "add", "get", "contains", "toString", "getFields", "required", "getName", "of", "newArrayListWithExpectedSize", "name", "type", "fieldId", "withComment", "checkArgument", "fields", "checkNotNull", "isOptional", "size", "newArrayList", "doc", "apply", "isDefined", "getComment", "nullable", "newHashMap", "initialDefault", "containsKey", "getMaxDefinitionLevel", "path", "put", "getOrDefault", "option", "currentPath", "internalToSpark", "format", "getId", "position", "intValue" ]
+    } ],
+    "imports" : [ "org.apache.iceberg.parquet.ParquetValueWriters.PrimitiveWriter", "org.apache.iceberg.TableProperties.PARQUET_BLOOM_FILTER_MAX_BYTES", "org.apache.parquet.ParquetReadOptions", "org.apache.iceberg.TableProperties.PARQUET_ROW_GROUP_CHECK_MAX_RECORD_COUNT_DEFAULT", "org.apache.parquet.hadoop.api.WriteSupport", "org.apache.parquet.avro.AvroWriteSupport", "org.apache.parquet.crypto.FileEncryptionProperties", "org.apache.iceberg.Files", "org.apache.iceberg.TableProperties.PARQUET_PAGE_ROW_LIMIT_DEFAULT", "org.apache.iceberg.TableProperties.PARQUET_COMPRESSION", "org.apache.iceberg.TableProperties.DELETE_PARQUET_PAGE_ROW_LIMIT", "org.apache.iceberg.TableProperties.PARQUET_ROW_GROUP_CHECK_MIN_RECORD_COUNT_DEFAULT", "org.apache.iceberg.util.ByteBuffers", "org.apache.iceberg.TableProperties.PARQUET_BLOOM_FILTER_MAX_BYTES_DEFAULT", "org.apache.iceberg.TableProperties.PARQUET_DICT_SIZE_BYTES_DEFAULT", "org.apache.iceberg.TableProperties.DELETE_PARQUET_COMPRESSION", "org.apache.iceberg.SystemConfigs", "org.apache.parquet.HadoopReadOptions", "org.apache.parquet.column.ParquetProperties", "org.apache.iceberg.TableProperties.PARQUET_BLOOM_FILTER_COLUMN_FPP_PREFIX", "org.apache.iceberg.TableProperties.DELETE_PARQUET_PAGE_SIZE_BYTES", "org.apache.parquet.hadoop.ParquetFileReader", "org.apache.parquet.avro.AvroReadSupport", "org.apache.iceberg.TableProperties.PARQUET_ROW_GROUP_CHECK_MIN_RECORD_COUNT", "org.apache.iceberg.parquet.ParquetValueWriters.PositionDeleteStructWriter", "org.apache.parquet.hadoop.ParquetReader", "java.util.Collection", "org.apache.parquet.column.ParquetProperties.WriterVersion", "org.apache.iceberg.TableProperties.PARQUET_ROW_GROUP_CHECK_MAX_RECORD_COUNT", "org.apache.iceberg.TableProperties.PARQUET_COMPRESSION_DEFAULT", "org.apache.iceberg.relocated.com.google.common.collect.Sets", "org.apache.iceberg.TableProperties.DELETE_PARQUET_ROW_GROUP_CHECK_MIN_RECORD_COUNT", "org.apache.iceberg.TableProperties.PARQUET_ROW_GROUP_SIZE_BYTES_DEFAULT", "org.apache.parquet.hadoop.ParquetOutputFormat", "org.apache.parquet.hadoop.api.ReadSupport", "org.apache.iceberg.data.parquet.GenericParquetWriter", "org.apache.iceberg.TableProperties.PARQUET_BLOOM_FILTER_COLUMN_ENABLED_PREFIX", "org.apache.iceberg.TableProperties.PARQUET_DICT_SIZE_BYTES", "org.apache.iceberg.TableProperties.PARQUET_PAGE_ROW_LIMIT", "org.apache.parquet.conf.PlainParquetConfiguration", "org.apache.parquet.hadoop.metadata.CompressionCodecName", "java.io.File", "org.apache.iceberg.TableProperties.DELETE_PARQUET_ROW_GROUP_SIZE_BYTES", "org.apache.parquet.hadoop.ParquetFileWriter", "org.apache.iceberg.TableProperties.PARQUET_COMPRESSION_LEVEL_DEFAULT", "org.apache.iceberg.TableProperties.PARQUET_COMPRESSION_LEVEL", "org.apache.iceberg.relocated.com.google.common.annotations.VisibleForTesting", "org.apache.iceberg.TableProperties.PARQUET_PAGE_SIZE_BYTES_DEFAULT", "org.apache.iceberg.TableProperties.DELETE_PARQUET_DICT_SIZE_BYTES", "org.apache.parquet.hadoop.ParquetWriter", "org.apache.parquet.crypto.FileDecryptionProperties", "org.apache.iceberg.TableProperties.PARQUET_ROW_GROUP_SIZE_BYTES", "org.apache.iceberg.relocated.com.google.common.collect.ImmutableMap", "org.apache.iceberg.TableProperties.DELETE_PARQUET_ROW_GROUP_CHECK_MAX_RECORD_COUNT", "org.apache.iceberg.TableProperties.DELETE_PARQUET_COMPRESSION_LEVEL", "java.util.function.BiConsumer", "org.apache.iceberg.TableProperties.PARQUET_PAGE_SIZE_BYTES", "org.apache.iceberg.parquet.ParquetValueWriters.StructWriter", "org.apache.avro.generic.IndexedRecord", "org.apache.avro.generic.GenericData.Fixed", "org.apache.iceberg.parquet.VariantWriterBuilder", "org.apache.iceberg.parquet.ParquetVariantVisitor", "java.util.Arrays", "org.apache.iceberg.parquet.TypeWithSchemaVisitor", "org.apache.flink.table.types.logical.SmallIntType", "org.apache.flink.table.types.logical.LogicalTypeRoot", "org.apache.parquet.schema.LogicalTypeAnnotation.IntLogicalTypeAnnotation", "org.apache.flink.table.data.DecimalData", "org.apache.flink.table.types.logical.RowType.RowField", "org.apache.parquet.schema.LogicalTypeAnnotation.TimestampLogicalTypeAnnotation", "org.apache.parquet.schema.LogicalTypeAnnotation.DateLogicalTypeAnnotation", "org.apache.iceberg.parquet.ParquetValueReaders", "org.apache.iceberg.flink.FlinkRowData", "org.apache.parquet.schema.LogicalTypeAnnotation.BsonLogicalTypeAnnotation", "org.apache.flink.table.data.MapData", "org.apache.flink.table.types.logical.TinyIntType", "org.apache.flink.table.data.ArrayData", "org.apache.parquet.schema.LogicalTypeAnnotation.LogicalTypeAnnotationVisitor", "org.apache.parquet.schema.LogicalTypeAnnotation.StringLogicalTypeAnnotation", "org.apache.flink.table.types.logical.MapType", "org.apache.parquet.schema.LogicalTypeAnnotation.EnumLogicalTypeAnnotation", "org.apache.parquet.schema.LogicalTypeAnnotation.JsonLogicalTypeAnnotation", "org.apache.flink.table.types.logical.ArrayType", "org.apache.flink.table.data.TimestampData", "org.apache.parquet.schema.LogicalTypeAnnotation.TimeLogicalTypeAnnotation", "org.apache.flink.table.data.StringData", "java.util.Deque", "org.apache.flink.table.types.logical.LogicalType", "org.apache.flink.table.types.logical.RowType", "org.apache.flink.table.data.RowData", "org.apache.iceberg.data.Record", "org.apache.iceberg.TableProperties.ORC_BLOOM_FILTER_FPP_DEFAULT", "org.apache.orc.OrcConf", "org.apache.iceberg.expressions.Expression", "org.apache.iceberg.TableProperties", "org.apache.iceberg.TableProperties.ORC_WRITE_BATCH_SIZE", "org.apache.orc.OrcFile", "org.apache.iceberg.hadoop.HadoopOutputFile", "org.apache.iceberg.TableProperties.ORC_COMPRESSION_DEFAULT", "org.apache.iceberg.TableProperties.ORC_BLOCK_SIZE_BYTES_DEFAULT", "org.apache.iceberg.encryption.NativeEncryptionInputFile", "org.apache.iceberg.TableProperties.DELETE_ORC_COMPRESSION_STRATEGY", "org.apache.orc.Writer", "org.apache.iceberg.TableProperties.ORC_COMPRESSION_STRATEGY", "org.apache.iceberg.exceptions.RuntimeIOException", "org.apache.iceberg.util.PropertyUtil", "org.apache.iceberg.TableProperties.ORC_BLOOM_FILTER_COLUMNS_DEFAULT", "org.apache.iceberg.TableProperties.DELETE_ORC_COMPRESSION", "org.apache.iceberg.TableProperties.DELETE_ORC_BLOCK_SIZE_BYTES", "org.apache.iceberg.TableProperties.ORC_BLOOM_FILTER_COLUMNS", "org.apache.hadoop.fs.Path", "org.apache.iceberg.hadoop.HadoopInputFile", "org.apache.orc.CompressionKind", "org.apache.iceberg.TableProperties.ORC_STRIPE_SIZE_BYTES", "org.apache.iceberg.TableProperties.DELETE_ORC_WRITE_BATCH_SIZE", "org.apache.orc.OrcFile.CompressionStrategy", "org.apache.iceberg.TableProperties.ORC_BLOOM_FILTER_FPP", "org.apache.iceberg.TableProperties.DELETE_ORC_STRIPE_SIZE_BYTES", "org.apache.iceberg.TableProperties.ORC_STRIPE_SIZE_BYTES_DEFAULT", "java.nio.charset.StandardCharsets", "org.apache.orc.OrcFile.ReaderOptions", "org.apache.orc.Reader", "org.apache.iceberg.encryption.NativeEncryptionOutputFile", "org.apache.iceberg.data.orc.GenericOrcWriter", "org.apache.hadoop.conf.Configuration", "org.apache.iceberg.TableProperties.ORC_COMPRESSION_STRATEGY_DEFAULT", "org.apache.iceberg.TableProperties.ORC_WRITE_BATCH_SIZE_DEFAULT", "org.apache.iceberg.TableProperties.ORC_BLOCK_SIZE_BYTES", "org.apache.iceberg.TableProperties.ORC_COMPRESSION", "org.apache.iceberg.avro.AvroSchemaUtil", "org.apache.iceberg.avro.AvroSchemaVisitor", "org.apache.iceberg.avro.LogicalMap", "org.apache.iceberg.avro.InternalWriter", "org.apache.iceberg.avro.InternalReader", "org.apache.iceberg.common.DynMethods", "org.apache.iceberg.avro.Avro", "org.apache.iceberg.io.CloseableIterable", "org.slf4j.LoggerFactory", "org.slf4j.Logger", "org.apache.avro.specific.SpecificData", "org.apache.iceberg.PartitionSpec", "org.apache.iceberg.mapping.MappingUtil", "org.apache.iceberg.TableProperties.AVRO_COMPRESSION", "org.apache.iceberg.TableProperties.DELETE_AVRO_COMPRESSION", "org.apache.avro.Conversions", "org.apache.iceberg.TableProperties.AVRO_COMPRESSION_DEFAULT", "org.apache.iceberg.mapping.NameMapping", "org.apache.iceberg.encryption.EncryptedOutputFile", "org.apache.iceberg.encryption.EncryptionKeyMetadata", "org.apache.iceberg.SortOrder", "org.apache.iceberg.TableProperties.AVRO_COMPRESSION_LEVEL", "org.apache.iceberg.StructLike", "org.apache.iceberg.io.InputFile", "org.apache.iceberg.io.OutputFile", "org.apache.iceberg.deletes.PositionDeleteWriter", "org.apache.avro.io.DatumWriter", "org.apache.avro.generic.GenericData", "org.apache.avro.file.CodecFactory", "org.apache.iceberg.TableProperties.DELETE_AVRO_COMPRESSION_LEVEL", "org.apache.iceberg.io.DeleteSchemaUtil", "org.apache.iceberg.io.DataWriter", "org.apache.iceberg.deletes.PositionDelete", "java.util.function.BiFunction", "org.apache.iceberg.FileFormat", "org.apache.iceberg.relocated.com.google.common.collect.Maps", "org.apache.iceberg.InternalData", "org.apache.avro.io.DatumReader", "org.apache.iceberg.Table", "org.apache.iceberg.util.ArrayUtil", "org.apache.iceberg.deletes.EqualityDeleteWriter", "org.apache.iceberg.SchemaParser", "org.apache.iceberg.MetricsConfig", "java.util.function.Function", "java.util.Objects", "java.util.Locale", "org.apache.iceberg.io.FileAppender", "org.apache.iceberg.TableProperties.AVRO_COMPRESSION_LEVEL_DEFAULT", "org.apache.parquet.schema.LogicalTypeAnnotation", "org.apache.iceberg.types.TypeUtil", "java.util.Optional", "java.util.NoSuchElementException", "org.apache.iceberg.parquet.ParquetValueWriters.RepeatedKeyValueWriter", "org.apache.spark.sql.types.MapType", "org.apache.parquet.schema.Type", "org.apache.parquet.schema.PrimitiveType", "org.apache.parquet.schema.MessageType", "org.apache.parquet.column.ColumnDescriptor", "org.apache.spark.unsafe.types.UTF8String", "org.apache.spark.sql.types.Decimal", "org.apache.parquet.schema.GroupType", "java.util.Map", "org.apache.spark.sql.types.ArrayType", "java.util.Iterator", "org.apache.parquet.io.api.Binary", "java.util.UUID", "org.apache.iceberg.parquet.ParquetValueWriters.RepeatedWriter", "org.apache.spark.sql.catalyst.util.ArrayData", "java.nio.ByteOrder", "org.apache.spark.sql.catalyst.util.MapData", "org.apache.iceberg.orc.OrcValueWriter", "org.apache.iceberg.relocated.com.google.common.base.Preconditions", "org.apache.orc.storage.ql.exec.vector.VectorizedRowBatch", "org.apache.spark.sql.types.StructType", "org.apache.iceberg.relocated.com.google.common.collect.Lists", "java.util.List", "org.apache.avro.LogicalTypes", "org.apache.avro.Schema", "org.apache.iceberg.data.orc.GenericOrcWriters", "org.apache.orc.TypeDescription", "org.apache.avro.io.Encoder", "org.apache.iceberg.avro.MetricsAwareDatumWriter", "org.apache.avro.LogicalType", "org.apache.iceberg.types.Type", "org.apache.spark.sql.types.DataType", "org.apache.iceberg.orc.OrcSchemaWithTypeVisitor", "org.apache.iceberg.FieldMetrics", "java.util.stream.Stream", "java.io.IOException", "java.io.Serializable", "org.apache.iceberg.orc.ORCSchemaUtil", "org.apache.iceberg.Schema", "java.util.stream.IntStream", "org.apache.spark.sql.catalyst.InternalRow", "org.apache.spark.sql.catalyst.expressions.SpecializedGetters", "org.apache.spark.sql.types.ByteType", "org.apache.iceberg.avro.ValueWriter", "java.util.stream.Collectors", "org.apache.spark.sql.types.ShortType", "org.apache.iceberg.types.Types", "org.apache.iceberg.avro.ValueWriters", "javax.annotation.Nullable", "org.apache.iceberg.orc.OrcRowWriter", "org.apache.parquet.schema.LogicalTypeAnnotation.DecimalLogicalTypeAnnotation", "org.apache.spark.sql.types.StructField", "org.apache.iceberg.parquet.ParquetValueWriters", "org.apache.iceberg.util.UUIDUtil", "java.nio.ByteBuffer", "org.apache.iceberg.util.DecimalUtil", "org.apache.iceberg.parquet.ParquetValueWriter", "org.apache.iceberg.parquet.ParquetValueReaders.ReusableEntry" ]
+  } ]
+}

@@ -1,0 +1,709 @@
+{
+  "systemName" : "armeria",
+  "classes" : [ {
+    "name" : "ServerBuilder",
+    "packageName" : "com.linecorp.armeria.server",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ "TlsSetters", "ServiceConfigsBuilder" ],
+    "methods" : [ {
+      "name" : "multipartUploadsLocation",
+      "visibility" : "public",
+      "methodCalls" : [ "self", "multipartUploadsLocation", "requireNonNull" ]
+    }, {
+      "name" : "successFunction",
+      "visibility" : "public",
+      "methodCalls" : [ "option", "get", "self", "requireNonNull", "successFunction" ]
+    }, {
+      "name" : "childChannelPipelineCustomizer",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "andThen" ]
+    }, {
+      "name" : "gracefulShutdown",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull" ]
+    }, {
+      "name" : "tlsProvider",
+      "visibility" : "public",
+      "methodCalls" : [ "checkState", "get", "requireNonNull", "tlsProvider" ]
+    }, {
+      "name" : "http2InitialStreamWindowSize",
+      "visibility" : "public",
+      "methodCalls" : [ "option", "get", "checkArgument" ]
+    }, {
+      "name" : "setHeaders",
+      "visibility" : "public",
+      "methodCalls" : [ "ensureNoPseudoHeader", "setObject", "requireNonNull", "self", "setHeaders" ]
+    }, {
+      "name" : "annotatedServiceExtensions",
+      "visibility" : "public",
+      "methodCalls" : [ "copyOf", "requireNonNull", "annotatedServiceExtensions" ]
+    }, {
+      "name" : "addHeader",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "toHeaderValue", "headerName", "ensureNoPseudoHeader", "requireNonNull", "of", "addObject", "self", "addHeader" ]
+    }, {
+      "name" : "accessLogger",
+      "visibility" : "public",
+      "methodCalls" : [ "getLogger", "requireNonNull", "accessLogger" ]
+    }, {
+      "name" : "http1MaxInitialLineLength",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument", "option", "get", "validateNonNegative" ]
+    }, {
+      "name" : "unloggedExceptionsReportIntervalMillis",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument" ]
+    }, {
+      "name" : "serverListener",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "requireNonNull" ]
+    }, {
+      "name" : "requestTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ "requestTimeoutMillis", "toMillis", "requireNonNull" ]
+    }, {
+      "name" : "virtualHost",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument", "filter", "defaultVirtualHost", "port", "add", "stream", "get", "isPresent", "hostnamePattern", "findFirst", "defaultHostname", "virtualHost" ]
+    }, {
+      "name" : "decoratorUnder",
+      "visibility" : "public",
+      "methodCalls" : [ "decorator", "builder", "build", "pathPrefix", "decoratorUnder" ]
+    }, {
+      "name" : "serviceWorkerGroup",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "of", "add", "self", "serviceWorkerGroup", "newEventLoopGroup" ]
+    }, {
+      "name" : "contextHook",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "mergeHooks", "self", "contextHook", "requireNonNull" ]
+    }, {
+      "name" : "rejectedRouteHandler",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "rejectedRouteHandler" ]
+    }, {
+      "name" : "http2InitialConnectionWindowSize",
+      "visibility" : "public",
+      "methodCalls" : [ "option", "get", "checkArgument" ]
+    }, {
+      "name" : "requestAutoAbortDelay",
+      "visibility" : "public",
+      "methodCalls" : [ "self", "toMillis", "requestAutoAbortDelayMillis", "requireNonNull", "requestAutoAbortDelay" ]
+    }, {
+      "name" : "workerGroup",
+      "visibility" : "public",
+      "methodCalls" : [ "option", "get", "workerGroup", "newEventLoopGroup", "requireNonNull", "checkArgument" ]
+    }, {
+      "name" : "tlsEngineType",
+      "visibility" : "public",
+      "methodCalls" : [ "format", "option", "get", "requireNonNull", "tlsEngineType" ]
+    }, {
+      "name" : "serviceUnder",
+      "visibility" : "public",
+      "methodCalls" : [ "routes", "build", "as", "addMappedRoute", "requireNonNull", "service", "self", "pathPrefix", "forEach", "addServiceConfigSetters", "builder", "withPrefix", "serviceUnder" ]
+    }, {
+      "name" : "baseContextPath",
+      "visibility" : "public",
+      "methodCalls" : [ "ensureAbsolutePath", "baseContextPath" ]
+    }, {
+      "name" : "tlsCustomizer",
+      "visibility" : "public",
+      "methodCalls" : [ "defaultValue", "option", "accept", "value", "get", "getSimpleName", "requireNonNull", "checkState", "andThen", "tlsCustomizer" ]
+    }, {
+      "name" : "http1MaxChunkSize",
+      "visibility" : "public",
+      "methodCalls" : [ "option", "checkArgument", "get", "validateNonNegative" ]
+    }, {
+      "name" : "http1MaxHeaderSize",
+      "visibility" : "public",
+      "methodCalls" : [ "option", "checkArgument", "get", "validateNonNegative" ]
+    }, {
+      "name" : "requestIdGenerator",
+      "visibility" : "public",
+      "methodCalls" : [ "option", "self", "requireNonNull", "get", "requestIdGenerator" ]
+    }, {
+      "name" : "unloggedExceptionsReportInterval",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "isNegative", "toMillis", "unloggedExceptionsReportIntervalMillis", "checkArgument" ]
+    }, {
+      "name" : "http2MaxHeaderListSize",
+      "visibility" : "public",
+      "methodCalls" : [ "option", "get", "checkArgument" ]
+    }, {
+      "name" : "gracefulShutdownTimeoutMillis",
+      "visibility" : "public",
+      "methodCalls" : [ "gracefulShutdownTimeoutMillis", "quietPeriodMillis", "gracefulShutdown", "timeoutMillis", "build", "builder" ]
+    }, {
+      "name" : "setHeader",
+      "visibility" : "public",
+      "methodCalls" : [ "ensureNoPseudoHeader", "requireNonNull", "of", "setObject", "self", "setHeader" ]
+    }, {
+      "name" : "http1HeaderNaming",
+      "visibility" : "public",
+      "methodCalls" : [ "option", "get", "requireNonNull" ]
+    }, {
+      "name" : "idleTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ "idleTimeoutMillis", "validateIdleTimeoutMillis", "toMillis", "requireNonNull" ]
+    }, {
+      "name" : "clientAddressSources",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "copyOf" ]
+    }, {
+      "name" : "disableDateHeader",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "gracefulShutdownTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ "builder", "timeout", "gracefulShutdown", "build", "quietPeriod" ]
+    }, {
+      "name" : "dependencyInjector",
+      "visibility" : "public",
+      "methodCalls" : [ "of", "orElse", "add", "requireNonNull" ]
+    }, {
+      "name" : "accessLogFormat",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "custom", "accessLogWriter" ]
+    }, {
+      "name" : "childChannelOption",
+      "visibility" : "public",
+      "methodCalls" : [ "contains", "prohibitedOptions", "checkArgument", "requireNonNull", "put", "validate" ]
+    }, {
+      "name" : "connectionDrainDuration",
+      "visibility" : "public",
+      "methodCalls" : [ "toMicros", "connectionDrainDurationMicros", "toNanos", "requireNonNull" ]
+    }, {
+      "name" : "contextPath",
+      "visibility" : "public",
+      "methodCalls" : [ "copyOf", "requireNonNull", "contextPath" ]
+    }, {
+      "name" : "multipartRemovalStrategy",
+      "visibility" : "public",
+      "methodCalls" : [ "self", "requireNonNull", "multipartRemovalStrategy" ]
+    }, {
+      "name" : "tlsSelfSigned",
+      "visibility" : "public",
+      "methodCalls" : [ "checkState", "getSimpleName", "tlsSelfSigned" ]
+    }, {
+      "name" : "startStopExecutor",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull" ]
+    }, {
+      "name" : "requestAutoAbortDelayMillis",
+      "visibility" : "public",
+      "methodCalls" : [ "unwrap", "option", "get", "checkArgument", "self", "requestAutoAbortDelayMillis" ]
+    }, {
+      "name" : "http2MaxResetFramesPerWindow",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument" ]
+    }, {
+      "name" : "clientAddressTrustedProxyFilter",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull" ]
+    }, {
+      "name" : "disableServerHeader",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "requestTimeoutMillis",
+      "visibility" : "public",
+      "methodCalls" : [ "toMillis", "timeoutNanos", "checkArgument", "validateRequestTimeoutMillis", "self", "requestTimeoutMillis", "unwrap" ]
+    }, {
+      "name" : "maxConnectionAgeMillis",
+      "visibility" : "public",
+      "methodCalls" : [ "option", "get", "checkArgument" ]
+    }, {
+      "name" : "blockingTaskExecutor",
+      "visibility" : "public",
+      "methodCalls" : [ "config", "of", "add", "self", "requireNonNull", "checkArgument", "build", "numThreads", "builder", "unwrap", "blockingTaskExecutor" ]
+    }, {
+      "name" : "routeDecorator",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "errorHandler",
+      "visibility" : "public",
+      "methodCalls" : [ "errorHandler", "self", "orElse", "requireNonNull" ]
+    }, {
+      "name" : "withRoute",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "accept" ]
+    }, {
+      "name" : "tls",
+      "visibility" : "public",
+      "methodCalls" : [ "of", "keyManager", "tlsCustomizer", "certificateChain", "forServer", "privateKey", "requireNonNull", "tls" ]
+    }, {
+      "name" : "defaultHostname",
+      "visibility" : "public",
+      "methodCalls" : [ "config", "defaultVirtualHost", "normalizeDefaultHostname", "defaultHostname" ]
+    }, {
+      "name" : "maxConnectionAge",
+      "visibility" : "public",
+      "methodCalls" : [ "toMillis", "requireNonNull", "maxConnectionAgeMillis" ]
+    }, {
+      "name" : "http2MaxStreamsPerConnection",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument" ]
+    }, {
+      "name" : "meterRegistry",
+      "visibility" : "public",
+      "methodCalls" : [ "option", "unwrap", "get", "config", "self", "requireNonNull", "meterRegistry" ]
+    }, {
+      "name" : "port",
+      "visibility" : "public",
+      "methodCalls" : [ "setPortIfAbsent", "self", "checkArgument", "port", "requireNonNull", "add" ]
+    }, {
+      "name" : "maxNumRequestsPerConnection",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument", "option", "get", "validateNonNegative" ]
+    }, {
+      "name" : "pingInterval",
+      "visibility" : "public",
+      "methodCalls" : [ "toMillis", "requireNonNull", "pingIntervalMillis" ]
+    }, {
+      "name" : "defaultVirtualHost",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "unhandledExceptionsReportInterval",
+      "visibility" : "public",
+      "methodCalls" : [ "unloggedExceptionsReportInterval" ]
+    }, {
+      "name" : "clientAddressFilter",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull" ]
+    }, {
+      "name" : "withDefaultVirtualHost",
+      "visibility" : "public",
+      "methodCalls" : [ "accept" ]
+    }, {
+      "name" : "maxNumConnections",
+      "visibility" : "public",
+      "methodCalls" : [ "validateMaxNumConnections" ]
+    }, {
+      "name" : "proxyProtocolMaxTlvSize",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument" ]
+    }, {
+      "name" : "connectionDrainDurationMicros",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument" ]
+    }, {
+      "name" : "pingIntervalMillis",
+      "visibility" : "public",
+      "methodCalls" : [ "option", "get", "checkArgument" ]
+    }, {
+      "name" : "defaultServiceNaming",
+      "visibility" : "public",
+      "methodCalls" : [ "self", "defaultServiceNaming", "requireNonNull" ]
+    }, {
+      "name" : "https",
+      "visibility" : "public",
+      "methodCalls" : [ "port", "requireNonNull" ]
+    }, {
+      "name" : "clientAddressMapper",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull" ]
+    }, {
+      "name" : "withVirtualHost",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "add", "accept" ]
+    }, {
+      "name" : "accessLogWriter",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "andThen", "of", "add", "self", "accessLogWriter" ]
+    }, {
+      "name" : "tlsAllowUnsafeCiphers",
+      "visibility" : "public",
+      "methodCalls" : [ "option", "get", "tlsAllowUnsafeCiphers" ]
+    }, {
+      "name" : "absoluteUriTransformer",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull" ]
+    }, {
+      "name" : "http2MaxFrameSize",
+      "visibility" : "public",
+      "methodCalls" : [ "option", "get", "checkArgument" ]
+    }, {
+      "name" : "localPort",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "nextPortGroup", "copyOf", "port", "hasIpV6", "localPort" ]
+    }, {
+      "name" : "build",
+      "visibility" : "public",
+      "methodCalls" : [ "getAcceptHandler", "put", "toImmutableList", "entityId", "ofHttpPost", "ofHttpRedirect", "asDefault", "acsEndpoint", "toAutoFiller", "ofJwt", "toImmutableSet", "ensureAvailability", "completedFuture", "encryptionCredential", "signingCredential", "map", "isDefault", "load", "getInstance", "toCharArray", "clientBuilderParams", "retryingClientOptions", "toImmutableMap", "collect", "stream", "entrySet", "asMap", "useBlockingTaskExecutor", "addServices", "printer", "withCause", "newValue", "parser", "ignoringUnknownFields", "resolve", "omittingInsignificantWhitespace", "isInstance", "option", "containsDecorators", "intercept", "getDefaultInstance", "setDefaultExceptionHandler", "getMethods", "entries", "type", "addService", "jsonMarshaller", "bindService", "queryParamMatchRules", "additionalDecorators", "errorHandler", "register", "toBuilder", "getServer", "setPosixFilePermissions", "createTempDirectory", "getService", "getState", "logger", "getLogger", "lifecycle", "getName", "isTraceEnabled", "successfulResponseLogLevel", "requestLogLevel", "jersey", "followRedirects", "isJerseyEnabled", "createThreadPool", "metrics", "additionalConfig", "printBanner", "newDecorator", "decorator", "disable", "getWebClient", "buildServer", "clientFactory", "now", "getKey", "getValue", "ofResourceOwnerPassword", "accessTokenRequest", "ofClientCredentials", "buildClientAuthentication", "from", "destroy", "addBean", "unlock", "setSessionIdManager", "setStopTimeout", "info", "setHandler", "setDumpAfterStart", "lock", "isManaged", "setDumpBeforeStop", "setRequestLog", "bean", "toString", "randomUUID", "currentTimeMillis", "isUserSpecifiedCuratorFramework", "znodePath", "buildCuratorFramework", "immutableEnumSet", "transientServiceOptions", "buildRequest", "contentType", "contentDisposition", "withMutations", "concat", "isContentLengthUnknown", "isEndOfStream", "containsKey", "size", "bufferSize", "promoteDelegate", "updateParent", "parent", "delegate", "content", "ofJson", "httpTrailers", "publisher", "requestContentSanitizer", "responseTrailersSanitizer", "responseContentSanitizer", "ofText", "requestTrailersSanitizer", "requestHeadersSanitizer", "responseHeadersSanitizer", "get", "sensitiveHeaders", "maskingFunction", "attrs", "resHeaders", "newDefaultObjectMapper", "addAll", "add", "reqHeaders", "builtIns", "withPrefix", "responseLogLevelMapper", "firstNonNull", "requestLogLevelMapper", "warn", "unmodifiableList", "compareTo", "rule", "isPerHost", "isPerPath", "validateMappingKeys", "isPerMethod", "ruleWithContent", "fallback", "handler", "ticker", "executor", "totalSteps", "ofCount", "newCheckerFactory", "ofRatio", "rampingUpIntervalMillis", "saturatedAdd", "rampingUpTaskWindowMillis", "all", "validate", "weightTransition", "timestampFunction", "rpcRequest", "requestHeaders", "init", "resolvedAddressTypes", "parse", "requestContent", "method", "logBuilder", "finishInitialization", "handle", "ofClient", "authority", "timeoutNow", "session", "backoff", "dnsQueryListeners", "buildResolver", "maxTtl", "minTtl", "getOrAcquireEventLoop", "hostname", "selectionStrategy", "buildWebClient", "failureSampler", "successSampler", "copyOf", "retryConfig", "nullOrEmptyToSlash", "getRawAuthority", "validateUri", "shortUriText", "validateScheme", "doBuild", "mapping", "knownMethods", "contextPaths", "ofDefault", "buildHeaders", "entityTagFunction", "isContentTypeAutoDetectionEnabled", "isDateEnabled", "nonExistent", "isLastModifiedEnabled", "clock", "unifyFilter", "build0", "contains", "addServiceConfigSetters", "buildServerConfig", "accept", "addRoute", "remoteAddress", "getHostString", "config", "sessionProtocol", "requestTarget", "path", "headers", "defaultServiceNaming", "localAddress", "addListener", "setResult", "query", "defaultLogName", "defaultVirtualHost", "route", "request", "meterRegistry", "contextHook", "currentTimeMicros", "requestStartTimeMicros", "nanoTime", "requestStartTimeNanos", "isRequestStartTimeSet", "sslSession", "id", "fakeChannel", "initAndStart", "ofServer", "finished", "timedOut", "workerGroup", "next", "eventLoop", "clientAddressMapper", "apply", "getAddress", "exchangeType", "meterIdPrefixFunction", "distributionStatisticConfig", "service", "successFunction", "annotatedServiceBindingBuilder", "routingDecorator", "as", "getStrategy", "getRejectHandler", "getSimpleName", "streaming", "builder", "buildOptions", "factory", "unsafeCreate", "blocking", "newClient", "absolutePathRef", "paramsBuilder", "options", "port", "callFactory", "build", "host", "isEmpty", "toArray", "shouldAllowEmptyEndpoints", "selectionTimeoutMillis", "getHost", "getScheme", "getPort", "asList", "of", "orElse", "checkArgument", "addRouteDecoratingService", "forEach", "checkState", "requireNonNull", "buildRouteList", "empty", "logWriter" ]
+    }, {
+      "name" : "decorator",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "addRouteDecoratingService", "requireNonNull", "builder", "build", "path", "ofCatchAll", "self", "decorator" ]
+    }, {
+      "name" : "route",
+      "visibility" : "public",
+      "methodCalls" : [ "hasResult", "result", "build", "builder", "path", "self", "requireNonNull", "add", "route", "config", "patternString" ]
+    }, {
+      "name" : "annotatedService",
+      "visibility" : "public",
+      "methodCalls" : [ "of", "copyOf", "identity", "ofExceptionHandlersAndConverters", "responseConverters", "build", "decorator", "pathPrefix", "exceptionHandlers", "annotatedService", "requireNonNull", "requestConverters" ]
+    }, {
+      "name" : "channelOption",
+      "visibility" : "public",
+      "methodCalls" : [ "of", "contains", "requireNonNull", "put", "checkArgument", "prohibitedOptions", "validate" ]
+    }, {
+      "name" : "http",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "port" ]
+    }, {
+      "name" : "unhandledExceptionsReportIntervalMillis",
+      "visibility" : "public",
+      "methodCalls" : [ "unloggedExceptionsReportIntervalMillis" ]
+    }, {
+      "name" : "maxRequestLength",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument", "validateMaxRequestLength", "self", "maxRequestLength", "unwrap" ]
+    }, {
+      "name" : "verboseResponses",
+      "visibility" : "public",
+      "methodCalls" : [ "self", "verboseResponses" ]
+    }, {
+      "name" : "service",
+      "visibility" : "public",
+      "methodCalls" : [ "decorate", "forEach", "builder", "addServiceConfigSetters", "build", "path", "self", "routes", "copyOf", "service", "patternString", "requireNonNull" ]
+    }, {
+      "name" : "addHeaders",
+      "visibility" : "public",
+      "methodCalls" : [ "ensureNoPseudoHeader", "requireNonNull", "addObject", "self", "addHeaders" ]
+    }, {
+      "name" : "idleTimeoutMillis",
+      "visibility" : "public",
+      "methodCalls" : [ "option", "checkArgument", "idleTimeoutMillis", "defaultClientKeepAliveOnPing", "get", "ofMillis", "idleTimeout" ]
+    } ],
+    "imports" : [ "com.linecorp.armeria.server.VirtualHost.normalizeHostnamePattern", "com.linecorp.armeria.common.util.DomainSocketAddress", "com.linecorp.armeria.server.annotation.ExceptionHandlerFunction", "com.google.common.collect.ImmutableList", "com.linecorp.armeria.common.SessionProtocol.PROXY", "java.util.Map.Entry", "com.linecorp.armeria.common.DependencyInjector", "com.linecorp.armeria.common.TlsKeyPair", "io.netty.util.Mapping", "io.micrometer.core.instrument.MeterRegistry", "com.linecorp.armeria.common.RequestId", "com.google.common.base.Preconditions.checkState", "com.linecorp.armeria.common.annotation.Nullable", "java.util.function.Consumer", "com.linecorp.armeria.server.VirtualHost.validateHostnamePattern", "javax.net.ssl.KeyManagerFactory", "com.linecorp.armeria.server.logging.LoggingService", "io.netty.channel.ChannelPipeline", "com.linecorp.armeria.common.SessionProtocol.HTTP", "io.netty.handler.codec.http2.Http2CodecUtil.MAX_FRAME_SIZE_LOWER_BOUND", "com.linecorp.armeria.common.Flags", "java.security.PrivateKey", "com.linecorp.armeria.common.CommonPools", "com.linecorp.armeria.server.logging.AccessLogWriter", "io.netty.handler.codec.http2.Http2CodecUtil.MAX_FRAME_SIZE_UPPER_BOUND", "io.netty.channel.ChannelOption", "com.linecorp.armeria.server.annotation.ResponseConverterFunction", "com.google.common.collect.ImmutableSet", "java.io.File", "com.linecorp.armeria.server.DefaultServerConfig.validateNonNegative", "com.linecorp.armeria.server.DefaultServerConfig.validateMaxNumConnections", "com.google.common.net.HostAndPort", "com.linecorp.armeria.internal.common.util.ChannelUtil", "com.linecorp.armeria.common.Http1HeaderNaming", "com.linecorp.armeria.internal.common.ReflectiveDependencyInjector", "com.linecorp.armeria.common.Request", "com.linecorp.armeria.common.HttpResponse", "java.util.function.Predicate", "com.linecorp.armeria.common.HttpRequest", "java.util.concurrent.Executor", "com.linecorp.armeria.internal.server.annotation.AnnotatedServiceExtensions", "com.linecorp.armeria.internal.common.BuiltInDependencyInjector", "java.util.concurrent.TimeUnit", "com.google.common.base.Preconditions.checkNotNull", "com.linecorp.armeria.common.util.BlockingTaskExecutor", "io.netty.util.NetUtil", "java.util.Collection", "java.util.concurrent.ScheduledExecutorService", "java.util.ArrayList", "com.linecorp.armeria.common.TlsProvider", "com.linecorp.armeria.common.SessionProtocol.HTTPS", "com.linecorp.armeria.server.DefaultServerConfig.validateIdleTimeoutMillis", "java.util.function.Supplier", "com.linecorp.armeria.common.annotation.UnstableApi", "io.netty.handler.ssl.SslContext", "java.net.InetAddress", "java.util.Optional", "com.linecorp.armeria.common.SessionProtocol", "com.google.common.annotations.VisibleForTesting", "java.util.function.Function", "io.netty.channel.EventLoopGroup", "java.security.cert.X509Certificate", "io.netty.handler.ssl.SslContextBuilder", "java.util.concurrent.Executors", "com.linecorp.armeria.internal.common.RequestContextUtil", "java.net.InetSocketAddress", "com.linecorp.armeria.common.RequestContext", "java.util.List", "java.io.InputStream", "java.util.Map", "com.linecorp.armeria.server.annotation.RequestConverterFunction", "java.time.Duration", "com.linecorp.armeria.common.SuccessFunction", "com.google.common.base.Preconditions.checkArgument", "java.nio.file.Path", "io.netty.channel.ChannelHandler", "com.google.common.collect.Sets", "com.linecorp.armeria.common.util.SystemInfo", "com.linecorp.armeria.common.util.EventLoopGroups", "com.google.common.collect.ImmutableList.toImmutableList", "com.linecorp.armeria.common.util.ThreadFactories", "com.linecorp.armeria.common.util.TlsEngineType", "com.linecorp.armeria.common.logging.RequestOnlyLog", "java.util.concurrent.ExecutorService", "com.linecorp.armeria.common.HttpHeaderNames", "com.linecorp.armeria.common.TlsSetters", "com.linecorp.armeria.common.RequestContextStorage", "it.unimi.dsi.fastutil.objects.Object2ObjectArrayMap", "java.util.Objects.requireNonNull", "org.slf4j.LoggerFactory", "com.linecorp.armeria.common.ResponseHeaders", "com.linecorp.armeria.internal.server.RouteDecoratingService", "java.util.Collections", "org.slf4j.Logger" ]
+  }, {
+    "name" : "Builder",
+    "packageName" : "com.linecorp.armeria.server.grpc",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "build",
+      "visibility" : "public",
+      "methodCalls" : [ "getAcceptHandler", "put", "toImmutableList", "entityId", "ofHttpPost", "ofHttpRedirect", "asDefault", "acsEndpoint", "toAutoFiller", "ofJwt", "toImmutableSet", "ensureAvailability", "completedFuture", "encryptionCredential", "signingCredential", "map", "isDefault", "load", "getInstance", "toCharArray", "clientBuilderParams", "retryingClientOptions", "toImmutableMap", "collect", "stream", "entrySet", "asMap", "useBlockingTaskExecutor", "addServices", "printer", "withCause", "newValue", "parser", "ignoringUnknownFields", "resolve", "omittingInsignificantWhitespace", "isInstance", "option", "containsDecorators", "intercept", "getDefaultInstance", "setDefaultExceptionHandler", "getMethods", "entries", "type", "addService", "jsonMarshaller", "bindService", "queryParamMatchRules", "additionalDecorators", "errorHandler", "register", "toBuilder", "getServer", "setPosixFilePermissions", "createTempDirectory", "getService", "getState", "logger", "getLogger", "lifecycle", "getName", "isTraceEnabled", "successfulResponseLogLevel", "requestLogLevel", "jersey", "followRedirects", "isJerseyEnabled", "createThreadPool", "metrics", "additionalConfig", "printBanner", "newDecorator", "decorator", "disable", "getWebClient", "buildServer", "clientFactory", "now", "getKey", "getValue", "ofResourceOwnerPassword", "accessTokenRequest", "ofClientCredentials", "buildClientAuthentication", "from", "destroy", "addBean", "unlock", "setSessionIdManager", "setStopTimeout", "info", "setHandler", "setDumpAfterStart", "lock", "isManaged", "setDumpBeforeStop", "setRequestLog", "bean", "toString", "randomUUID", "currentTimeMillis", "isUserSpecifiedCuratorFramework", "znodePath", "buildCuratorFramework", "immutableEnumSet", "transientServiceOptions", "buildRequest", "contentType", "contentDisposition", "withMutations", "concat", "isContentLengthUnknown", "isEndOfStream", "containsKey", "size", "bufferSize", "promoteDelegate", "updateParent", "parent", "delegate", "content", "ofJson", "httpTrailers", "publisher", "requestContentSanitizer", "responseTrailersSanitizer", "responseContentSanitizer", "ofText", "requestTrailersSanitizer", "requestHeadersSanitizer", "responseHeadersSanitizer", "get", "sensitiveHeaders", "maskingFunction", "attrs", "resHeaders", "newDefaultObjectMapper", "addAll", "add", "reqHeaders", "builtIns", "withPrefix", "responseLogLevelMapper", "firstNonNull", "requestLogLevelMapper", "warn", "unmodifiableList", "compareTo", "rule", "isPerHost", "isPerPath", "validateMappingKeys", "isPerMethod", "ruleWithContent", "fallback", "handler", "ticker", "executor", "totalSteps", "ofCount", "newCheckerFactory", "ofRatio", "rampingUpIntervalMillis", "saturatedAdd", "rampingUpTaskWindowMillis", "all", "validate", "weightTransition", "timestampFunction", "rpcRequest", "requestHeaders", "init", "resolvedAddressTypes", "parse", "requestContent", "method", "logBuilder", "finishInitialization", "handle", "ofClient", "authority", "timeoutNow", "session", "backoff", "dnsQueryListeners", "buildResolver", "maxTtl", "minTtl", "getOrAcquireEventLoop", "hostname", "selectionStrategy", "buildWebClient", "failureSampler", "successSampler", "copyOf", "retryConfig", "nullOrEmptyToSlash", "getRawAuthority", "validateUri", "shortUriText", "validateScheme", "doBuild", "mapping", "knownMethods", "contextPaths", "ofDefault", "buildHeaders", "entityTagFunction", "isContentTypeAutoDetectionEnabled", "isDateEnabled", "nonExistent", "isLastModifiedEnabled", "clock", "unifyFilter", "build0", "contains", "addServiceConfigSetters", "buildServerConfig", "accept", "addRoute", "remoteAddress", "getHostString", "config", "sessionProtocol", "requestTarget", "path", "headers", "defaultServiceNaming", "localAddress", "addListener", "setResult", "query", "defaultLogName", "defaultVirtualHost", "route", "request", "meterRegistry", "contextHook", "currentTimeMicros", "requestStartTimeMicros", "nanoTime", "requestStartTimeNanos", "isRequestStartTimeSet", "sslSession", "id", "fakeChannel", "initAndStart", "ofServer", "finished", "timedOut", "workerGroup", "next", "eventLoop", "clientAddressMapper", "apply", "getAddress", "exchangeType", "meterIdPrefixFunction", "distributionStatisticConfig", "service", "successFunction", "annotatedServiceBindingBuilder", "routingDecorator", "as", "getStrategy", "getRejectHandler", "getSimpleName", "streaming", "builder", "buildOptions", "factory", "unsafeCreate", "blocking", "newClient", "absolutePathRef", "paramsBuilder", "options", "port", "callFactory", "build", "host", "isEmpty", "toArray", "shouldAllowEmptyEndpoints", "selectionTimeoutMillis", "getHost", "getScheme", "getPort", "asList", "of", "orElse", "checkArgument", "addRouteDecoratingService", "forEach", "checkState", "requireNonNull", "buildRouteList", "empty", "logWriter" ]
+    }, {
+      "name" : "request",
+      "visibility" : "public",
+      "methodCalls" : [ "request", "eventLoop", "unwrap", "isEos", "onError", "execute", "cancel", "inEventLoop", "abort", "saturatedAdd", "compareAndSet", "unsubscribe", "requestDemand", "signal", "executor" ]
+    } ],
+    "imports" : [ "com.linecorp.armeria.internal.server.FileAggregatedMultipart", "io.grpc.ServerServiceDefinition", "com.linecorp.armeria.server.Route", "com.google.common.base.Converter", "com.linecorp.armeria.internal.server.annotation.DecoratorAnnotationUtil", "com.linecorp.armeria.common.grpc.GrpcExceptionHandlerFunction", "com.linecorp.armeria.internal.server.annotation.DecoratorAnnotationUtil.DecoratorAndOrder", "io.grpc.MethodDescriptor", "org.reflections.ReflectionUtils.withModifier", "java.lang.reflect.Modifier", "com.linecorp.armeria.server.annotation.Blocking", "io.grpc.ServerMethodDefinition", "com.linecorp.armeria.internal.common.grpc.InternalGrpcExceptionHandler", "com.google.common.collect.ImmutableMap", "com.google.common.base.CaseFormat", "com.linecorp.armeria.internal.common.ReflectiveDependencyInjector", "com.google.common.annotations.VisibleForTesting", "java.util.HashMap", "com.linecorp.armeria.server.HttpService", "com.linecorp.armeria.internal.server.annotation.AnnotationUtil", "com.google.common.base.Preconditions.checkState", "dagger.BindsInstance", "java.time.Duration", "java.util.stream.Collectors", "dagger.producers.Produces", "com.google.common.util.concurrent.ListenableFuture", "com.google.common.util.concurrent.Futures", "dagger.producers.ProductionSubcomponent", "dagger.producers.Production", "com.linecorp.armeria.common.AggregatedHttpResponse", "java.util.concurrent.Executor", "java.util.stream.Stream", "example.armeria.contextpropagation.dagger.Main.MainModule", "com.linecorp.armeria.client.WebClient", "dagger.producers.ProducerModule", "com.linecorp.armeria.common.HttpResponse", "com.spotify.futures.CompletableFuturesExtra.toListenableFuture", "com.google.common.util.concurrent.Uninterruptibles", "com.google.common.util.concurrent.ListeningScheduledExecutorService", "com.linecorp.armeria.internal.server.annotation.AnnotatedServiceFactory.findDescription", "com.google.common.collect.ImmutableList.toImmutableList", "com.linecorp.armeria.common.util.Exceptions", "org.slf4j.LoggerFactory", "com.google.common.base.Ascii", "com.linecorp.armeria.internal.server.annotation.AnnotatedBeanFactoryRegistry.BeanFactoryId", "org.slf4j.Logger", "com.linecorp.armeria.server.ServiceRequestContext", "com.linecorp.armeria.common.Cookies", "scala.concurrent.ExecutionContext", "com.linecorp.armeria.server.annotation.StringRequestConverterFunction", "java.lang.reflect.ParameterizedType", "com.linecorp.armeria.server.annotation.ByteArrayRequestConverterFunction", "java.util.Optional", "java.lang.reflect.TypeVariable", "com.linecorp.armeria.server.annotation.RequestConverterFunction", "java.lang.reflect.AnnotatedElement", "com.linecorp.armeria.common.HttpHeaders", "com.linecorp.armeria.server.annotation.JacksonRequestConverterFunction", "java.util.function.Supplier", "com.linecorp.armeria.common.multipart.Multipart", "com.linecorp.armeria.common.MediaType", "java.util.EnumSet", "java.lang.reflect.Method", "io.netty.handler.codec.http.HttpConstants", "com.linecorp.armeria.server.annotation.Default", "java.lang.annotation.Annotation", "com.linecorp.armeria.server.annotation.AnnotatedService", "com.linecorp.armeria.internal.server.annotation.DefaultValues.getSpecifiedValue", "java.io.File", "com.linecorp.armeria.server.annotation.Header", "com.google.common.primitives.Primitives", "java.util.ServiceLoader", "java.util.Collection", "java.util.Map.Entry", "io.netty.util.AttributeKey", "com.google.common.collect.ImmutableMap.toImmutableMap", "com.linecorp.armeria.common.RequestContext", "com.linecorp.armeria.server.annotation.Attribute", "com.linecorp.armeria.common.AggregatedHttpRequest", "java.util.Objects", "java.util.Map", "com.linecorp.armeria.common.RequestHeaders", "com.linecorp.armeria.internal.server.annotation.AnnotatedElementNameUtil.getName", "com.linecorp.armeria.server.docs.DescriptionInfo", "com.linecorp.armeria.server.annotation.Delimiter", "java.util.ArrayList", "java.lang.reflect.Parameter", "com.linecorp.armeria.common.QueryParams", "com.linecorp.armeria.server.annotation.RequestConverter", "java.lang.reflect.WildcardType", "com.linecorp.armeria.common.Request", "com.linecorp.armeria.common.DependencyInjector", "java.lang.reflect.Field", "com.linecorp.armeria.server.annotation.RequestObject", "com.linecorp.armeria.server.logging.AccessLogComponent.TextComponent", "com.google.common.collect.ImmutableSet", "com.linecorp.armeria.server.logging.AccessLogComponent.RequestLogComponent", "com.linecorp.armeria.server.logging.AccessLogComponent.AttributeComponent", "com.linecorp.armeria.server.logging.AccessLogType.VariableRequirement", "com.linecorp.armeria.server.logging.AccessLogType.AUTHENTICATED_USER", "com.linecorp.armeria.server.logging.AccessLogType.RESPONSE_STATUS_CODE", "com.google.common.base.Preconditions.checkArgument", "com.linecorp.armeria.common.ResponseHeaders", "com.linecorp.armeria.server.logging.AccessLogType.RFC931", "java.util.Set", "com.linecorp.armeria.server.logging.AccessLogComponent.HttpHeaderComponent", "java.util.function.Function", "com.linecorp.armeria.common.annotation.Nullable", "com.linecorp.armeria.common.HttpStatus", "com.linecorp.armeria.common.HttpHeaderNames", "com.linecorp.armeria.server.logging.AccessLogComponent.ofPredefinedCommon", "com.google.common.base.MoreObjects", "com.linecorp.armeria.server.logging.AccessLogComponent.TimestampComponent", "com.linecorp.armeria.server.logging.AccessLogType.REMOTE_HOST", "com.linecorp.armeria.server.logging.AccessLogType.RESPONSE_LENGTH", "com.linecorp.armeria.server.logging.AccessLogComponent.ofText", "com.linecorp.armeria.server.logging.AccessLogComponent.ofQuotedRequestHeader", "java.util.List", "com.linecorp.armeria.server.logging.AccessLogType.REQUEST_LINE", "com.google.common.collect.ImmutableList", "com.linecorp.armeria.server.logging.AccessLogComponent.ofDefaultRequestTimestamp", "com.linecorp.armeria.server.logging.AccessLogComponent.CommonComponent", "java.util.Objects.requireNonNull", "com.google.common.collect.Iterables", "com.google.common.base.MoreObjects.firstNonNull", "com.linecorp.armeria.server.annotation.Param", "java.lang.reflect.Executable", "com.google.common.base.Splitter", "com.linecorp.armeria.internal.server.annotation.AnnotatedServiceTypeUtil.stringToType", "java.util.LinkedHashSet", "java.nio.charset.StandardCharsets", "com.linecorp.armeria.common.Cookie", "com.linecorp.armeria.internal.server.annotation.AnnotatedElementNameUtil.getNameOrDefault", "java.util.Arrays", "com.linecorp.armeria.internal.server.annotation.AnnotatedElementNameUtil.findName", "com.linecorp.armeria.common.multipart.MultipartFile", "com.linecorp.armeria.server.annotation.FallthroughException", "com.linecorp.armeria.server.annotation.RequestConverterFunctionProvider", "java.util.function.BiFunction", "java.lang.reflect.Type", "java.lang.reflect.Constructor", "com.linecorp.armeria.common.HttpRequest", "java.nio.file.Path" ]
+  }, {
+    "name" : "Flags",
+    "packageName" : "com.linecorp.armeria.common",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "maxNumConnections",
+      "visibility" : "public",
+      "methodCalls" : [ "validateMaxNumConnections" ]
+    }, {
+      "name" : "defaultMaxClientConnectionAgeMillis",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "reportBlockedEventLoop",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "defaultClientIdleTimeoutMillis",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "defaultMultipartRemovalStrategy",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "defaultMaxRequestLength",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "useJdkDnsResolver",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "defaultHttp2InitialConnectionWindowSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "dnsCacheSpec",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "numCommonBlockingTaskThreads",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "headerValueCacheSpec",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "defaultHttp2MaxFrameSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "defaultMaxResponseLength",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "useEpoll",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "distributionStatisticConfig",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "distributionStatisticConfig" ]
+    }, {
+      "name" : "meterRegistry",
+      "visibility" : "public",
+      "methodCalls" : [ "option", "unwrap", "get", "config", "self", "requireNonNull", "meterRegistry" ]
+    }, {
+      "name" : "responseTimeoutMode",
+      "visibility" : "public",
+      "methodCalls" : [ "unwrap", "option", "requireNonNull", "get", "responseTimeoutMode" ]
+    }, {
+      "name" : "defaultMaxClientNumRequestsPerConnection",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "defaultMultipartUploadsLocation",
+      "visibility" : "public",
+      "methodCalls" : [ "getProperty", "get" ]
+    }, {
+      "name" : "defaultServerConnectionDrainDurationMicros",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "defaultHttp2MaxStreamsPerConnection",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "defaultConnectTimeoutMillis",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "reportMaskedRoutes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "defaultHttp1MaxInitialLineLength",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "defaultHttp2MaxHeaderListSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "useOpenSsl",
+      "visibility" : "public",
+      "methodCalls" : [ "tlsEngineType" ]
+    }, {
+      "name" : "routeCacheSpec",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "defaultMaxTotalAttempts",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "defaultHttp1ConnectionCloseDelayMillis",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "verboseResponses",
+      "visibility" : "public",
+      "methodCalls" : [ "self", "verboseResponses" ]
+    }, {
+      "name" : "dumpOpenSslInfo",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "defaultHttp1MaxChunkSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "defaultServerIdleTimeoutMillis",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "defaultRequestAutoAbortDelayMillis",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "requestContextLeakDetectionSampler",
+      "visibility" : "public",
+      "methodCalls" : [ "never", "of" ]
+    }, {
+      "name" : "fileServiceCacheSpec",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "defaultWriteTimeoutMillis",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "allowDoubleDotsInQueryString",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "defaultClientHttp2GracefulShutdownTimeoutMillis",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "defaultUseHttp2WithoutAlpn",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "warnNettyVersions",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "allowSemicolonInPathComponent",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "preferredIpV4Addresses",
+      "visibility" : "public",
+      "methodCalls" : [ "map", "stream", "splitToList", "collect", "get", "size", "test", "filter", "warn", "ofCidr", "toList" ]
+    }, {
+      "name" : "defaultServerHttp2MaxResetFramesPerMinute",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "defaultMaxClientHelloLength",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "verboseExceptionSampler",
+      "visibility" : "public",
+      "methodCalls" : [ "of" ]
+    }, {
+      "name" : "defaultClientKeepAliveOnPing",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "validateHeaders",
+      "visibility" : "public",
+      "methodCalls" : [ "validateHeaders" ]
+    }, {
+      "name" : "useDefaultSocketOptions",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "transportType",
+      "visibility" : "public",
+      "methodCalls" : [ "isAvailable", "format" ]
+    }, {
+      "name" : "requestContextStorageProvider",
+      "visibility" : "public",
+      "methodCalls" : [ "threadLocal", "filter", "size", "getName", "isEmpty", "toImmutableList", "equals", "getRequestContextStorageProviders", "collect", "getProperty", "stream", "get", "getClass", "getSimpleName" ]
+    }, {
+      "name" : "numCommonWorkers",
+      "visibility" : "public",
+      "methodCalls" : [ "availableProcessors", "getRuntime" ]
+    }, {
+      "name" : "routeDecoratorCacheSpec",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "defaultPingIntervalMillis",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "tlsAllowUnsafeCiphers",
+      "visibility" : "public",
+      "methodCalls" : [ "option", "get", "tlsAllowUnsafeCiphers" ]
+    }, {
+      "name" : "defaultResponseTimeoutMillis",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "transientServiceOptions",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "noneOf", "forEach", "copyOf", "of", "map", "immutableEnumSet", "toUpperCase", "toImmutableSet", "valueOf", "split", "stream", "collect", "transientServiceOptions" ]
+    }, {
+      "name" : "defaultUnloggedExceptionsReportIntervalMillis",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "defaultPreferHttp1",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "cachedHeaders",
+      "visibility" : "public",
+      "methodCalls" : [ "trimResults", "omitEmptyStrings", "on", "splitToList" ]
+    }, {
+      "name" : "defaultHttp2InitialStreamWindowSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "defaultUseHttp1Pipelining",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "annotatedServiceExceptionVerbosity",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "tlsEngineType",
+      "visibility" : "public",
+      "methodCalls" : [ "format", "option", "get", "requireNonNull", "tlsEngineType" ]
+    }, {
+      "name" : "defaultHttp1MaxHeaderSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "defaultBackoffSpec",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "parsedPathCacheSpec",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "defaultMaxServerNumRequestsPerConnection",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "defaultMaxServerConnectionAgeMillis",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "verboseSocketExceptions",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "defaultRequestTimeoutMillis",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "defaultUnhandledExceptionsReportIntervalMillis",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "defaultServerKeepAliveOnPing",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "verboseExceptionSamplerSpec",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "useLegacyRouteDecoratorOrdering",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "defaultUseHttp2Preface",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    } ],
+    "imports" : [ "com.linecorp.armeria.client.retry.Backoff", "io.micrometer.core.instrument.DistributionSummary", "com.linecorp.armeria.client.ResponseTimeoutMode", "com.linecorp.armeria.server.file.HttpFile", "com.linecorp.armeria.common.annotation.UnstableApi", "java.net.InetAddress", "java.util.concurrent.ScheduledExecutorService", "com.github.benmanes.caffeine.cache.CaffeineSpec", "com.linecorp.armeria.server.ServerErrorHandler", "com.linecorp.armeria.client.Endpoint", "com.linecorp.armeria.server.HttpService", "org.slf4j.LoggerFactory", "com.linecorp.armeria.server.TransientService", "java.nio.channels.ClosedChannelException", "io.netty.util.ReferenceCountUtil", "com.linecorp.armeria.client.DnsResolverGroupBuilder", "io.netty.buffer.ByteBufAllocator", "com.linecorp.armeria.client.ClientFactoryBuilder", "com.linecorp.armeria.internal.common.FlagsLoaded", "com.linecorp.armeria.server.TransientServiceOption", "com.linecorp.armeria.server.Service", "io.netty.handler.ssl.OpenSsl", "org.slf4j.Logger", "java.util.concurrent.CompletableFuture", "com.google.common.base.CharMatcher", "com.google.common.collect.ImmutableList", "java.io.IOException", "io.micrometer.core.instrument.distribution.DistributionStatisticConfig", "java.util.stream.Collectors", "com.linecorp.armeria.server.file.FileService", "javax.net.ssl.SSLException", "java.util.Arrays", "com.linecorp.armeria.client.ClientBuilder", "com.linecorp.armeria.client.retry.RetryingRpcClient", "com.linecorp.armeria.common.util.TransportType", "com.linecorp.armeria.common.util.Sampler", "io.micrometer.core.instrument.Timer", "com.linecorp.armeria.common.util.TlsEngineType", "com.linecorp.armeria.server.file.FileServiceBuilder", "io.netty.handler.ssl.SslContextBuilder", "com.linecorp.armeria.server.ServerBuilder", "io.netty.handler.codec.http2.Http2Exception", "javax.net.ssl.SSLEngine", "com.linecorp.armeria.server.MultipartRemovalStrategy", "com.linecorp.armeria.server.annotation.ExceptionVerbosity", "io.netty.resolver.dns.DnsNameResolverTimeoutException", "java.util.Comparator", "com.linecorp.armeria.server.annotation.ExceptionHandler", "com.linecorp.armeria.client.retry.RetryingClient", "com.linecorp.armeria.common.annotation.Nullable", "com.linecorp.armeria.server.ServiceWithRoutes", "com.linecorp.armeria.internal.common.util.SslContextUtil", "com.linecorp.armeria.common.util.SystemInfo", "com.linecorp.armeria.server.logging.LoggingService", "io.micrometer.core.instrument.MeterRegistry", "io.netty.resolver.DefaultAddressResolverGroup", "io.micrometer.core.instrument.Metrics", "java.util.List", "java.util.Set", "com.google.common.base.Ascii", "com.linecorp.armeria.server.ServiceRequestContext", "java.util.function.Function", "java.util.ServiceLoader", "java.time.Duration", "io.netty.handler.codec.http2.Http2CodecUtil", "io.netty.channel.ChannelOption", "com.linecorp.armeria.common.util.Exceptions", "java.nio.file.Path", "java.util.function.Predicate", "io.netty.channel.EventLoopGroup" ]
+  } ]
+}

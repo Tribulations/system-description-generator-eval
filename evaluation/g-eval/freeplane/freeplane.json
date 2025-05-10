@@ -1,0 +1,1013 @@
+{
+  "systemName" : "freeplane",
+  "classes" : [ {
+    "name" : "AFreeplaneAction",
+    "packageName" : "org.freeplane.core.ui",
+    "extendedClasses" : [ "AbstractAction" ],
+    "implementedInterfaces" : [ "IFreeplaneAction" ],
+    "methods" : [ {
+      "name" : "afterMapChange",
+      "visibility" : "public",
+      "methodCalls" : [ "addChangeListener", "dispose", "afterMapChange", "isEnabled", "setEnabled", "saveNote", "removeViewedContent", "getNotePanel", "getTableModel", "setVisible", "setModel", "getRegistry", "removeAttributesListener", "getSelection", "getCurrentController", "addAttributesListener", "getCurrentModeController", "equals", "restart", "getExtension", "removeChangeListener", "canRedo", "canUndo" ]
+    }, {
+      "name" : "addConstraint",
+      "visibility" : "public",
+      "methodCalls" : [ "and", "addConstraint" ]
+    }, {
+      "name" : "getKey",
+      "visibility" : "public",
+      "methodCalls" : [ "getKey", "getAttribute", "getName" ]
+    }, {
+      "name" : "getIconKey",
+      "visibility" : "public",
+      "methodCalls" : [ "getIconKey" ]
+    }, {
+      "name" : "checkSelectionOnPopup",
+      "visibility" : "public",
+      "methodCalls" : [ "getClass", "getAnnotation", "checkOnPopup" ]
+    }, {
+      "name" : "isSelected",
+      "visibility" : "public",
+      "methodCalls" : [ "isDescendingFrom", "getContent", "getMap", "isPrinting", "getNodeView", "isVisible", "getMapViewManager", "getMapViewComponent", "contains", "getCurrentController", "getValue", "isSelected", "equals" ]
+    }, {
+      "name" : "getIcon",
+      "visibility" : "public",
+      "methodCalls" : [ "getObject", "getIcons", "addIcon", "zoomBy", "getIconHeight", "getMindIcon", "getInstance", "getValue", "endsWith", "put", "toBaseUnitsRounded", "containsKey", "registerIcon", "getUrl", "createIconPrivileged", "getPath", "createSVGIcon", "getIconKey", "getAttribute", "getName", "getResourceController", "get", "getIcon" ]
+    }, {
+      "name" : "checkEnabledOnChange",
+      "visibility" : "public",
+      "methodCalls" : [ "checkOnNodeChange", "getClass", "getAnnotation" ]
+    }, {
+      "name" : "getRawText",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawText" ]
+    }, {
+      "name" : "getTooltipKey",
+      "visibility" : "public",
+      "methodCalls" : [ "getTooltipKey", "getAction", "getTextKey" ]
+    }, {
+      "name" : "setSelected",
+      "visibility" : "public",
+      "methodCalls" : [ "isPropertySelected", "isActiveForSelection", "areScrollbarsVisible", "isMapOverviewVisible", "hasCloud", "isMenubarVisible", "isFullScreenEnabled", "getViewController", "isVisible", "parseBoolean", "propertyValue", "getClientProperty", "getModeController", "getSelected", "getPropertySetDefault", "isAnchored", "getWidth", "isItalic", "isBold", "isStrikedThrough", "getStyle", "getSelectedNode", "getMapController", "getShape", "getModel", "getCurrentModeController", "setSelected", "getNodes", "get", "getValueClass", "isEmpty", "getExtension", "isPropertySet", "fireItemStateChanged", "getGroup", "valueOf", "fireStateChanged", "putValue", "isSelected", "getController", "getMap", "showNotesInMap", "getCurrentController", "firePropertyChange", "getLayoutType", "getMapViewManager", "getMapViewComponent", "equals", "getProperty", "getResourceController", "isNoteEditorShowing", "getValue", "anyMatch", "limit", "getSelection", "getSearchRoot", "getAttributeViewType" ]
+    }, {
+      "name" : "getTextKey",
+      "visibility" : "public",
+      "methodCalls" : [ "getDescriptionTranslationKey", "getName", "getRawText", "getAttribute", "getTextKey", "isEmpty", "getAction" ]
+    }, {
+      "name" : "setVisible",
+      "visibility" : "public",
+      "methodCalls" : [ "onDeselect", "onSelect", "getSelected", "getController", "getSelection", "paintImmediately", "setMouseArea", "requestFocusInWindow", "getParent", "moveFocusFromDescendantToSelection", "getMapViewManager", "getDefaultToolkit", "setVisible", "revalidate", "setProperty", "removeAWTEventListener", "getCurrentController", "addAWTEventListener" ]
+    }, {
+      "name" : "isSelectable",
+      "visibility" : "public",
+      "methodCalls" : [ "getAnnotation", "getClass" ]
+    }, {
+      "name" : "setEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "getSelectedNodes", "getExtension", "getController", "isAnchored", "isCloneTreeRootOrContentClone", "isFoldedOnCurrentView", "hasHiddenChildren", "getMapViewManager", "getDetail", "getModel", "getAttributes", "getSelectedNode", "getAttributeTableLength", "hasAttributes", "getComponent", "getEditor", "getComponentCount", "getEditorComponent", "canBeEnabled", "isActiveForSelection", "canGoForward", "canGoBack", "hasExternalResource", "hasProgressIcons", "setCloud", "setEnabled", "getCurrentController", "getMap", "isSaved", "isEnabled", "forEach", "getColor", "setBackground", "isShortened", "getSelected", "getSelection", "test", "hasExtendedProgressIcon", "getMapController", "getCurrentModeController" ]
+    }, {
+      "name" : "checkSelectionOnChange",
+      "visibility" : "public",
+      "methodCalls" : [ "checkOnNodeChange", "getClass", "getAnnotation" ]
+    }, {
+      "name" : "checkSelectionOnPropertyChange",
+      "visibility" : "public",
+      "methodCalls" : [ "getAnnotation", "checkOnPropertyChange", "equals", "getClass" ]
+    } ],
+    "imports" : [ "javax.swing.Action", "org.freeplane.core.resources.ResourceController", "javax.swing.AbstractAction", "org.freeplane.core.ui.menubuilders.generic.UserRole", "javax.swing.Icon", "org.freeplane.core.util.TextUtils", "org.freeplane.core.ui.menubuilders.generic.UserRoleConstraint" ]
+  }, {
+    "name" : "NodeProxy",
+    "packageName" : "org.freeplane.plugin.script.proxy",
+    "extendedClasses" : [ "AbstractProxy" ],
+    "implementedInterfaces" : [ "Node" ],
+    "methods" : [ {
+      "name" : "setVerticalShift",
+      "visibility" : "public",
+      "methodCalls" : [ "getCurrentModeController", "getMap", "execute", "getDelegate", "fromString", "setVerticalShift", "getLocationController" ]
+    }, {
+      "name" : "isTopOrLeftOnViewsWithRoot",
+      "visibility" : "public",
+      "methodCalls" : [ "getDelegate", "isTopOrLeft" ]
+    }, {
+      "name" : "getNodesSharingContentAndSubtree",
+      "visibility" : "public",
+      "methodCalls" : [ "getScriptContext", "createNodeList", "subtreeClones", "remove", "toCollection", "getDelegate" ]
+    }, {
+      "name" : "setChildNodesLayout",
+      "visibility" : "public",
+      "methodCalls" : [ "execute", "getCurrentModeController", "getMap", "getDelegate", "setChildNodesLayout", "getLayoutController" ]
+    }, {
+      "name" : "isLeaf",
+      "visibility" : "public",
+      "methodCalls" : [ "getChildCount", "isEmpty", "isLeaf", "getDelegate" ]
+    }, {
+      "name" : "getNote",
+      "visibility" : "public",
+      "methodCalls" : [ "getExtension", "getNoteText", "getScriptContext", "getDelegate" ]
+    }, {
+      "name" : "getChildren",
+      "visibility" : "public",
+      "methodCalls" : [ "unmodifiableList", "emptyList", "getChildrenInternal", "getChildren", "getDelegate", "getScriptContext", "createListOfChildren" ]
+    }, {
+      "name" : "createChild",
+      "visibility" : "public",
+      "methodCalls" : [ "getChildCount", "getDelegate" ]
+    }, {
+      "name" : "getChildNodesLayout",
+      "visibility" : "public",
+      "methodCalls" : [ "getProperty", "getLayoutController", "getChildNodesLayout", "getDelegate" ]
+    }, {
+      "name" : "getCreatedAt",
+      "visibility" : "public",
+      "methodCalls" : [ "getCreatedAt", "getHistoryInformation", "getDelegate" ]
+    }, {
+      "name" : "appendChild",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBranchAsTextOutline",
+      "visibility" : "public",
+      "methodCalls" : [ "singletonList", "getAsPlainText", "getDelegate" ]
+    }, {
+      "name" : "setFree",
+      "visibility" : "public",
+      "methodCalls" : [ "getFreeNodeHook", "undoableToggleHook", "isActive", "getDelegate" ]
+    }, {
+      "name" : "getNext",
+      "visibility" : "public",
+      "methodCalls" : [ "getScriptContext", "findNext", "getDelegate" ]
+    }, {
+      "name" : "setMinimized",
+      "visibility" : "public",
+      "methodCalls" : [ "getDelegate", "getTextController", "setIsMinimized" ]
+    }, {
+      "name" : "getLayoutOrientation",
+      "visibility" : "public",
+      "methodCalls" : [ "getEffectiveChildNodesLayout", "layoutOrientation", "getLayoutOrientation", "getLayoutController", "getDelegate" ]
+    }, {
+      "name" : "setDetailsText",
+      "visibility" : "public",
+      "methodCalls" : [ "isHtml", "getDelegate", "textToHTML", "setDetails", "isEmpty", "getTextController", "isHtmlContentType", "setDetailsHidden", "getDetailsContentType" ]
+    }, {
+      "name" : "xor",
+      "visibility" : "public",
+      "methodCalls" : [ "getTo", "xor", "getNum0" ]
+    }, {
+      "name" : "getPrevious",
+      "visibility" : "public",
+      "methodCalls" : [ "findPrevious", "getScriptContext", "getDelegate" ]
+    }, {
+      "name" : "setAlias",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "of", "putExtension", "createID", "add", "isGlobal", "getAlias", "execute", "getMap", "equals", "getMapController", "nodeChanged", "getExplorer", "setAlias", "getDelegate" ]
+    }, {
+      "name" : "isTopOrLeft",
+      "visibility" : "public",
+      "methodCalls" : [ "wouldBeTopOrLeft", "getParentNode", "side", "getRootNode", "getMap", "isTopOrLeft", "getDelegate" ]
+    }, {
+      "name" : "multiply",
+      "visibility" : "public",
+      "methodCalls" : [ "getTo", "getNum0", "multiply" ]
+    }, {
+      "name" : "getValue",
+      "visibility" : "public",
+      "methodCalls" : [ "isVisible", "warn", "create", "getQuantifiedValue", "isSelected", "colorToRGBAString", "getColorValue", "getName", "getValue", "get", "toString", "getSelectedIndex", "getSelectedItem", "getText", "getTo" ]
+    }, {
+      "name" : "or",
+      "visibility" : "public",
+      "methodCalls" : [ "getNum0", "or", "getTo" ]
+    }, {
+      "name" : "isFolded",
+      "visibility" : "public",
+      "methodCalls" : [ "isRoot", "getNodeView", "getCurrentController", "getSelection", "isFolded", "getDelegate" ]
+    }, {
+      "name" : "getDetails",
+      "visibility" : "public",
+      "methodCalls" : [ "getScriptContext", "getDelegate", "getDetailText" ]
+    }, {
+      "name" : "getTags",
+      "visibility" : "public",
+      "methodCalls" : [ "getExtension", "emptyList", "getContent", "add", "filter", "isEmpty", "getScriptContext", "getTags", "collect", "toList", "map", "stream", "getDelegate" ]
+    }, {
+      "name" : "getText",
+      "visibility" : "public",
+      "methodCalls" : [ "getUserObject", "getNoteText", "getDetailText", "getResources", "getResourceString", "getRawText", "getAction", "getAttribute", "isEmpty", "getName", "getSelectedItem", "getText", "getUri", "toString" ]
+    }, {
+      "name" : "getHtmlText",
+      "visibility" : "public",
+      "methodCalls" : [ "isHtml", "plainToHTML", "getText" ]
+    }, {
+      "name" : "findAll",
+      "visibility" : "public",
+      "methodCalls" : [ "getDelegate", "getScriptContext", "findAll" ]
+    }, {
+      "name" : "getShortText",
+      "visibility" : "public",
+      "methodCalls" : [ "length", "getResourceController", "indexOf", "getIntProperty", "getText", "substring", "htmlSubstring", "htmlToPlain", "isHtml", "getShortPlainText", "getTextController" ]
+    }, {
+      "name" : "getBaseDistanceToChildrenAsLength",
+      "visibility" : "public",
+      "methodCalls" : [ "getBaseHGapToChildren", "getLocationController", "getDelegate" ]
+    }, {
+      "name" : "appendTextOutlineAsBranch",
+      "visibility" : "public",
+      "methodCalls" : [ "getDelegate", "paste", "getClipboardController" ]
+    }, {
+      "name" : "getStyle",
+      "visibility" : "public",
+      "methodCalls" : [ "format", "create", "getStyleNode", "getExtension", "getProperty", "getParentNode", "getScriptContext", "getDelegate", "getStyle" ]
+    }, {
+      "name" : "getPlainNote",
+      "visibility" : "public",
+      "methodCalls" : [ "getNoteText", "getDelegate", "htmlToPlain" ]
+    }, {
+      "name" : "at",
+      "visibility" : "public",
+      "methodCalls" : [ "getNode", "getScriptContext", "getMapExplorer", "getExplorer", "getDelegate" ]
+    }, {
+      "name" : "sortChildrenBy",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "previous",
+      "visibility" : "public",
+      "methodCalls" : [ "previous", "getNum0", "getTo", "subtract" ]
+    }, {
+      "name" : "hasEncryption",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setNote",
+      "visibility" : "public",
+      "methodCalls" : [ "setNoteText", "toString" ]
+    }, {
+      "name" : "setIsGlobal",
+      "visibility" : "public",
+      "methodCalls" : [ "getExplorer", "makeGlobal", "getDelegate" ]
+    }, {
+      "name" : "getCountNodesSharingContentAndSubtree",
+      "visibility" : "public",
+      "methodCalls" : [ "subtreeClones", "size", "getDelegate" ]
+    }, {
+      "name" : "minus",
+      "visibility" : "public",
+      "methodCalls" : [ "getTo", "subtract", "getNum0" ]
+    }, {
+      "name" : "addConnectorTo",
+      "visibility" : "public",
+      "methodCalls" : [ "getId", "getDelegate", "addConnectorTo", "getScriptContext", "addConnector" ]
+    }, {
+      "name" : "removeConnector",
+      "visibility" : "public",
+      "methodCalls" : [ "removeArrowLink", "getConnector" ]
+    }, {
+      "name" : "removeEncryption",
+      "visibility" : "public",
+      "methodCalls" : [ "nodeChanged", "removeExtension", "toggleLock", "getCurrentModeController", "execute", "addExtension", "getModel", "getMap", "isAccessible", "getMapController", "getEncryptionController", "getDelegate", "removeEncryption" ]
+    }, {
+      "name" : "mod",
+      "visibility" : "public",
+      "methodCalls" : [ "getNum0", "mod", "getTo" ]
+    }, {
+      "name" : "and",
+      "visibility" : "public",
+      "methodCalls" : [ "getTo", "and", "getNum0" ]
+    }, {
+      "name" : "setHorizontalShift",
+      "visibility" : "public",
+      "methodCalls" : [ "getCurrentModeController", "execute", "getMap", "setHorizontalShift", "getLocationController", "getDelegate", "fromString" ]
+    }, {
+      "name" : "power",
+      "visibility" : "public",
+      "methodCalls" : [ "getNum0", "power", "getTo" ]
+    }, {
+      "name" : "appendAsCloneWithSubtree",
+      "visibility" : "public",
+      "methodCalls" : [ "getDelegate" ]
+    }, {
+      "name" : "div",
+      "visibility" : "public",
+      "methodCalls" : [ "divide", "getTo", "getNum0" ]
+    }, {
+      "name" : "setDetails",
+      "visibility" : "public",
+      "methodCalls" : [ "getDetail", "equals", "copy", "getDetailText", "setText", "setDetailsText", "toString" ]
+    }, {
+      "name" : "setFormat",
+      "visibility" : "public",
+      "methodCalls" : [ "setNodeFormat", "getValue", "getDelegate", "getAttribute", "performSetValueAt", "transformObject" ]
+    }, {
+      "name" : "getCloud",
+      "visibility" : "public",
+      "methodCalls" : [ "getProperty" ]
+    }, {
+      "name" : "getBinary",
+      "visibility" : "public",
+      "methodCalls" : [ "decode64", "replaceAll", "getText" ]
+    }, {
+      "name" : "getPathToRoot",
+      "visibility" : "public",
+      "methodCalls" : [ "getParentNode", "asList", "createNodeList", "getPathToRoot", "getScriptContext", "getDelegate" ]
+    }, {
+      "name" : "next",
+      "visibility" : "public",
+      "methodCalls" : [ "next", "current", "getNum0", "add", "getTo", "hasNext" ]
+    }, {
+      "name" : "getNodeLevel",
+      "visibility" : "public",
+      "methodCalls" : [ "getMap", "getDelegate", "getFilter", "getNodeLevel" ]
+    }, {
+      "name" : "setBaseDistanceToChildren",
+      "visibility" : "public",
+      "methodCalls" : [ "setBaseHGapToChildren", "fromString", "getDelegate", "getLocationController" ]
+    }, {
+      "name" : "isFree",
+      "visibility" : "public",
+      "methodCalls" : [ "isFreeNode", "getNode", "getDelegate", "isActive", "getFreeNodeHook" ]
+    }, {
+      "name" : "plus",
+      "visibility" : "public",
+      "methodCalls" : [ "getTo", "add", "getNum0" ]
+    }, {
+      "name" : "getConditionalStyles",
+      "visibility" : "public",
+      "methodCalls" : [ "getDelegate", "getScriptContext" ]
+    }, {
+      "name" : "getDisplayedText",
+      "visibility" : "public",
+      "methodCalls" : [ "createAcceleratorDescription", "getTransformedText", "getShortText", "isMinimized" ]
+    }, {
+      "name" : "getReminder",
+      "visibility" : "public",
+      "methodCalls" : [ "getScriptContext", "getDelegate" ]
+    }, {
+      "name" : "appendBranch",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDetailsContentType",
+      "visibility" : "public",
+      "methodCalls" : [ "getController", "getContentType", "getDetail", "getExtension", "getMap", "getStyleNode", "getStyles", "getDetailsContentType", "getTextController", "getDelegate" ]
+    }, {
+      "name" : "getConnectorsOut",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getPlainText",
+      "visibility" : "public",
+      "methodCalls" : [ "getText", "htmlToPlain" ]
+    }, {
+      "name" : "getIsGlobal",
+      "visibility" : "public",
+      "methodCalls" : [ "isGlobal", "getDelegate", "getExplorer" ]
+    }, {
+      "name" : "getChildPosition",
+      "visibility" : "public",
+      "methodCalls" : [ "getDelegate", "getIndex" ]
+    }, {
+      "name" : "getPlainTextContent",
+      "visibility" : "public",
+      "methodCalls" : [ "getPlainText" ]
+    }, {
+      "name" : "delete",
+      "visibility" : "public",
+      "methodCalls" : [ "deleteNode", "getDelegate" ]
+    }, {
+      "name" : "setHideDetails",
+      "visibility" : "public",
+      "methodCalls" : [ "getTextController", "setDetailsHidden", "getDelegate" ]
+    }, {
+      "name" : "positive",
+      "visibility" : "public",
+      "methodCalls" : [ "getTo", "getNum0" ]
+    }, {
+      "name" : "setDateTime",
+      "visibility" : "public",
+      "methodCalls" : [ "getDelegate", "setNodeObject", "getTextController", "createDefaultFormattedDateTime" ]
+    }, {
+      "name" : "getNoteText",
+      "visibility" : "public",
+      "methodCalls" : [ "getExtension", "getText", "getNote", "getNoteText", "getDelegate" ]
+    }, {
+      "name" : "getParentNode",
+      "visibility" : "public",
+      "methodCalls" : [ "getParentNode", "getParent" ]
+    }, {
+      "name" : "find",
+      "visibility" : "public",
+      "methodCalls" : [ "getScriptContext", "getDelegate", "find", "getValue", "getUserObject" ]
+    }, {
+      "name" : "setMinimalDistanceBetweenChildren",
+      "visibility" : "public",
+      "methodCalls" : [ "fromString", "getLocationController", "setCommonVGapBetweenChildren", "getDelegate" ]
+    }, {
+      "name" : "getLink",
+      "visibility" : "public",
+      "methodCalls" : [ "getHyperLink", "getLinkExtension", "getClientProperty", "getZoom", "getDocument", "getURLOfExistingLink", "getUI", "viewToModel", "getTextR", "contains", "getScriptContext", "getDelegate" ]
+    }, {
+      "name" : "putAt",
+      "visibility" : "public",
+      "methodCalls" : [ "findFirst", "set", "remove", "getAttributes", "toString", "getController", "setProperty", "getDelegate" ]
+    }, {
+      "name" : "getPrecedents",
+      "visibility" : "public",
+      "methodCalls" : [ "getScriptContext", "getDelegate" ]
+    }, {
+      "name" : "getAlias",
+      "visibility" : "public",
+      "methodCalls" : [ "getExtension", "getExplorer", "getDelegate", "getAlias" ]
+    }, {
+      "name" : "isDescendantOf",
+      "visibility" : "public",
+      "methodCalls" : [ "isDescendantOf", "getParentNode", "equals", "getDelegate" ]
+    }, {
+      "name" : "setBinary",
+      "visibility" : "public",
+      "methodCalls" : [ "encode64", "replaceAll", "setObject" ]
+    }, {
+      "name" : "setFolded",
+      "visibility" : "public",
+      "methodCalls" : [ "fold", "valueOf", "unfold", "isFolded", "isAlwaysUnfolded", "isRoot", "fireNodeChanged", "revalidate", "getFilter", "getDelegate", "getMap", "setFolded" ]
+    }, {
+      "name" : "getHideDetails",
+      "visibility" : "public",
+      "methodCalls" : [ "getDetail", "isHidden", "getDelegate" ]
+    }, {
+      "name" : "getExternalObject",
+      "visibility" : "public",
+      "methodCalls" : [ "getDelegate", "getScriptContext" ]
+    }, {
+      "name" : "findAllDepthFirst",
+      "visibility" : "public",
+      "methodCalls" : [ "getDelegate", "getScriptContext", "findAll" ]
+    }, {
+      "name" : "getIcons",
+      "visibility" : "public",
+      "methodCalls" : [ "getProperty", "isLeaf", "getGroupIcon", "forEach", "map", "stream", "getUIIcon", "getUIIconName", "singletonList", "getScriptContext", "unmodifiableList", "getName", "add", "getIcons", "emptyList", "size", "getDelegate", "getTagIcons" ]
+    }, {
+      "name" : "getId",
+      "visibility" : "public",
+      "methodCalls" : [ "createID", "getDelegate" ]
+    }, {
+      "name" : "setAttributes",
+      "visibility" : "public",
+      "methodCalls" : [ "entrySet", "set", "getValue", "getAttributes", "clear", "getKey" ]
+    }, {
+      "name" : "getNodesSharingContent",
+      "visibility" : "public",
+      "methodCalls" : [ "toCollection", "allClones", "remove", "getScriptContext", "createNodeList", "getDelegate" ]
+    }, {
+      "name" : "encrypt",
+      "visibility" : "public",
+      "methodCalls" : [ "doFinal", "getBytes", "toBase64", "initWithNewSalt", "getEncryptionController", "isEncrypted", "toggleLock", "getDelegate" ]
+    }, {
+      "name" : "negative",
+      "visibility" : "public",
+      "methodCalls" : [ "subtract", "getNum0", "getTo" ]
+    }, {
+      "name" : "moveTo",
+      "visibility" : "public",
+      "methodCalls" : [ "moveNodes", "undoableDeactivateHook", "getFreeNodeHook", "asList", "getMap", "getController", "getIndex", "moveConditionalStyle", "toString", "getConditionalStyleModel", "getDelegate" ]
+    }, {
+      "name" : "decrypt",
+      "visibility" : "public",
+      "methodCalls" : [ "length", "containsKey", "put", "getChildrenInternal", "split", "severe", "indexOf", "fromBase64", "doFinal", "substring", "getEncryptionController", "toggleLock", "getDelegate", "isEncrypted" ]
+    }, {
+      "name" : "hasStyle",
+      "visibility" : "public",
+      "methodCalls" : [ "hasStyle", "getDelegate", "getStyles", "toKeyString", "getController", "equals" ]
+    }, {
+      "name" : "isRoot",
+      "visibility" : "public",
+      "methodCalls" : [ "getRootNode", "getMap", "isRoot", "getDelegate" ]
+    }, {
+      "name" : "getTo",
+      "visibility" : "public",
+      "methodCalls" : [ "nodeModelToConvertible", "getScriptContext" ]
+    }, {
+      "name" : "setSideAtRoot",
+      "visibility" : "public",
+      "methodCalls" : [ "values", "ordinal" ]
+    }, {
+      "name" : "setDetailsContentType",
+      "visibility" : "public",
+      "methodCalls" : [ "copy", "getDetail", "getDetailContentType", "setContentType", "equals", "anyMatch", "getDelegate", "setDetailsContentType", "of", "getTextController", "getDetailContentTypes" ]
+    }, {
+      "name" : "getMinimalDistanceBetweenChildrenAsLength",
+      "visibility" : "public",
+      "methodCalls" : [ "getLocationController", "getCommonVGapBetweenChildren", "getDelegate" ]
+    }, {
+      "name" : "setObject",
+      "visibility" : "public",
+      "methodCalls" : [ "getDelegate", "transformObject", "setNodeObject", "getTextController" ]
+    }, {
+      "name" : "setNoteText",
+      "visibility" : "public",
+      "methodCalls" : [ "copy", "getNote", "setText", "getNoteText", "equals", "getXml", "isHtmlContentType", "getDelegate", "isHtml", "setNoteText", "getNoteContentType", "getNoteController", "textToHTML" ]
+    }, {
+      "name" : "getObject",
+      "visibility" : "public",
+      "methodCalls" : [ "getObject", "getUserObject", "getUri", "getNum", "getDate" ]
+    }, {
+      "name" : "setLastModifiedAt",
+      "visibility" : "public",
+      "methodCalls" : [ "getTime", "execute", "setLastModifiedAt", "getDelegate", "getLastModifiedAt", "getMap", "getModeController", "getHistoryInformation" ]
+    }, {
+      "name" : "getLastModifiedAt",
+      "visibility" : "public",
+      "methodCalls" : [ "getLastModifiedAt", "getHistoryInformation", "getDelegate" ]
+    }, {
+      "name" : "setCreatedAt",
+      "visibility" : "public",
+      "methodCalls" : [ "getTime", "getMap", "getHistoryInformation", "getModeController", "execute", "getDelegate", "setCreatedAt", "getCreatedAt" ]
+    }, {
+      "name" : "getGeometry",
+      "visibility" : "public",
+      "methodCalls" : [ "getScriptContext", "getDelegate" ]
+    }, {
+      "name" : "isMinimized",
+      "visibility" : "public",
+      "methodCalls" : [ "getShortenedTextModel", "getDelegate", "isMinimized", "getTextController" ]
+    }, {
+      "name" : "getNodeID",
+      "visibility" : "public",
+      "methodCalls" : [ "createID", "getId" ]
+    }, {
+      "name" : "isEncrypted",
+      "visibility" : "public",
+      "methodCalls" : [ "isAccessible" ]
+    }, {
+      "name" : "pasteAsClone",
+      "visibility" : "public",
+      "methodCalls" : [ "getClipboardContents", "getClipboardController", "addClone", "getDelegate" ]
+    }, {
+      "name" : "getConnectorsIn",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDetailsText",
+      "visibility" : "public",
+      "methodCalls" : [ "getDetailText", "getDelegate" ]
+    }, {
+      "name" : "getSideAtRoot",
+      "visibility" : "public",
+      "methodCalls" : [ "values", "ordinal", "getDelegate", "getSide" ]
+    }, {
+      "name" : "getParent",
+      "visibility" : "public",
+      "methodCalls" : [ "getDelegate", "getScriptContext", "getParentNode" ]
+    }, {
+      "name" : "getAt",
+      "visibility" : "public",
+      "methodCalls" : [ "getScriptContext", "getFirst", "attributeValueToConvertible", "getAttributes", "getName", "size", "getIcons", "get", "getController", "getDelegate", "getProperty" ]
+    }, {
+      "name" : "getVerticalShiftAsLength",
+      "visibility" : "public",
+      "methodCalls" : [ "getVerticalShift", "getLocationController", "getDelegate" ]
+    }, {
+      "name" : "getDependents",
+      "visibility" : "public",
+      "methodCalls" : [ "getDelegate", "getScriptContext" ]
+    }, {
+      "name" : "getMindMap",
+      "visibility" : "public",
+      "methodCalls" : [ "getScriptContext", "getDelegate", "getMap" ]
+    }, {
+      "name" : "getAttributes",
+      "visibility" : "public",
+      "methodCalls" : [ "getNode", "getModel", "hasMoreElements", "getFullName", "getValue", "put", "nextElement", "elements", "getScriptContext", "withRawValues", "getDelegate" ]
+    }, {
+      "name" : "allAt",
+      "visibility" : "public",
+      "methodCalls" : [ "getScriptContext", "getNodes", "getMapExplorer", "getDelegate", "createNodeList", "getExplorer" ]
+    }, {
+      "name" : "setNoteContentType",
+      "visibility" : "public",
+      "methodCalls" : [ "getNote", "setContentType", "getNoteContentType", "copy", "equals", "getNoteContentTypes", "getDelegate", "setNoteContentType", "getNoteController", "of", "anyMatch" ]
+    }, {
+      "name" : "isVisibleOnViewsWithRoot",
+      "visibility" : "public",
+      "methodCalls" : [ "isDescendantOf", "getDelegate", "isVisible", "getMap" ]
+    }, {
+      "name" : "setLeft",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isVisible",
+      "visibility" : "public",
+      "methodCalls" : [ "isHiddenSummary", "getToolbar", "of", "isDescendingFrom", "getNodeView", "isContentVisible", "getSource", "getTarget", "areAttributesVisible", "getView", "getViewport", "isVisible", "getResourceController", "equals", "getProperty", "getDelegate", "hasVisibleContent", "getMap", "getFilter" ]
+    }, {
+      "name" : "getHorizontalShiftAsLength",
+      "visibility" : "public",
+      "methodCalls" : [ "getHorizontalShift", "getLocationController", "getDelegate" ]
+    }, {
+      "name" : "getNoteContentType",
+      "visibility" : "public",
+      "methodCalls" : [ "getStyleNode", "getExtension", "getStyles", "getMap", "getController", "getNote", "getContentType", "getNoteController", "getDelegate", "getNoteContentType" ]
+    }, {
+      "name" : "getTransformedText",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "getTextController", "getTransformedTextNoThrow" ]
+    }, {
+      "name" : "getFormat",
+      "visibility" : "public",
+      "methodCalls" : [ "getUserObject", "getPattern", "getNodeFormat", "getDelegate", "getTextController" ]
+    }, {
+      "name" : "setText",
+      "visibility" : "public",
+      "methodCalls" : [ "getText", "getXml", "cleanXhtml", "replaceAscii0BySpace", "severe", "cleanHtml", "toXMLEscapedText", "trim", "isOk", "isHtml", "getExtension", "setNoteText", "getCurrentModeController", "getController", "setDetails", "setAttribute", "setText", "setNodeText", "setObject", "getTextController", "getDelegate", "setLink" ]
+    }, {
+      "name" : "getCountNodesSharingContent",
+      "visibility" : "public",
+      "methodCalls" : [ "allClones", "size", "getDelegate" ]
+    }, {
+      "name" : "appendAsCloneWithoutSubtree",
+      "visibility" : "public",
+      "methodCalls" : [ "getDelegate" ]
+    } ],
+    "imports" : [ "org.freeplane.api.Quantity", "org.codehaus.groovy.runtime.DefaultGroovyMethods", "java.util.Map", "org.freeplane.features.format.IFormattedObject", "org.freeplane.api.Node", "org.freeplane.features.encrypt.PasswordStrategy", "java.util.Date", "org.freeplane.api.Tags", "java.util.Collections", "org.freeplane.api.NodeRO", "java.util.Comparator", "org.freeplane.api.LayoutOrientation", "org.freeplane.api.Cloud", "org.freeplane.features.text.mindmapmode.MTextController", "groovy.lang.Closure", "org.freeplane.features.layout.mindmapmode.MLayoutController", "org.freeplane.plugin.script.ScriptContext", "org.freeplane.features.nodestyle.mindmapmode.MNodeStyleController", "org.freeplane.features.ui.ViewController", "org.freeplane.features.mode.Controller", "org.freeplane.features.text.DetailModel", "org.freeplane.api.LengthUnit", "org.freeplane.features.map.clipboard.MindMapPlainTextWriter", "org.freeplane.plugin.script.dependencies.DependencySearchStrategy", "org.freeplane.api.NodeToComparableMapper", "org.freeplane.features.map.MapController", "org.freeplane.features.note.mindmapmode.MNoteController", "org.freeplane.api.Attributes", "java.util.Arrays", "org.freeplane.api.ConditionalStyles", "org.freeplane.features.text.TextController", "org.freeplane.core.util.LogUtils", "org.freeplane.features.encrypt.Base64Coding", "org.freeplane.features.map.MapModel", "org.freeplane.core.util.TextUtils", "org.freeplane.features.filter.condition.ICondition", "java.util.List", "org.freeplane.features.explorer.AccessedNodes", "java.util.Map.Entry", "org.freeplane.core.undo.IActor", "org.freeplane.features.explorer.NodeNotFoundException", "org.freeplane.features.map.mindmapmode.InsertionRelation", "org.freeplane.features.map.MapNavigationUtils", "org.freeplane.features.nodelocation.mindmapmode.MLocationController", "org.freeplane.features.explorer.mindmapmode.MMapExplorerController", "org.freeplane.features.link.LinkController", "org.freeplane.api.Reminder", "java.util.ArrayList", "java.awt.datatransfer.StringSelection", "org.freeplane.api.NodeGeometry", "org.freeplane.features.explorer.MapExplorer", "org.codehaus.groovy.runtime.typehandling.NumberMath", "org.freeplane.features.map.EncryptionModel", "org.freeplane.features.note.NoteModel", "org.freeplane.api.Side", "org.freeplane.features.filter.FilterController", "org.freeplane.features.map.MapController.Direction", "org.freeplane.features.map.NodeModel", "org.freeplane.api.NodeStyle", "org.freeplane.core.util.HtmlUtils", "java.util.stream.Stream", "org.freeplane.features.map.mindmapmode.clipboard.MMapClipboardController", "org.freeplane.features.map.IMapSelection", "org.freeplane.api.ChildNodesLayout", "org.freeplane.features.link.ConnectorModel", "org.freeplane.features.map.FreeNode", "org.freeplane.features.link.mindmapmode.MLinkController", "org.freeplane.features.map.mindmapmode.MMapController", "org.freeplane.features.nodestyle.NodeStyleController", "org.freeplane.api.Connector", "org.freeplane.api.NodeCondition", "org.freeplane.api.DependencyLookup", "org.freeplane.features.map.clipboard.MapClipboardController.CopiedNodeSet", "java.util.Collection" ]
+  }, {
+    "name" : "MapView",
+    "packageName" : "org.freeplane.view.swing.map",
+    "extendedClasses" : [ "JPanel" ],
+    "implementedInterfaces" : [ "IMapChangeListener", "Autoscroll", "Configurable", "IFreeplanePropertyListener", "Printable" ],
+    "methods" : [ {
+      "name" : "getDetailFont",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "selectPageUp",
+      "visibility" : "public",
+      "methodCalls" : [ "getSelectionEnd" ]
+    }, {
+      "name" : "getIconLocation",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getLayoutType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addNotify",
+      "visibility" : "public",
+      "methodCalls" : [ "addUINodeChangeListener", "getParent", "addComponentListener", "add", "addListDataListener", "elementAt", "size", "setScrollbarIncrement", "addNotify", "getResourceController", "getMapController", "getCurrentModeController", "addPropertyChangeListener", "addMapChangeListener" ]
+    }, {
+      "name" : "setMoveCursor",
+      "visibility" : "public",
+      "methodCalls" : [ "getCursor", "setCursor", "getType" ]
+    }, {
+      "name" : "usePreviousViewRoot",
+      "visibility" : "public",
+      "methodCalls" : [ "usePreviousViewRoot", "remove", "size", "isFolded", "fireFoldingChanged" ]
+    }, {
+      "name" : "detectView",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "size", "detectCollision" ]
+    }, {
+      "name" : "getMapView",
+      "visibility" : "public",
+      "methodCalls" : [ "getAncestorOfClass", "getNodeView", "getMap" ]
+    }, {
+      "name" : "getZoomed",
+      "visibility" : "public",
+      "methodCalls" : [ "getZoomed", "ceil" ]
+    }, {
+      "name" : "setShowsSelectedAfterScroll",
+      "visibility" : "public",
+      "methodCalls" : [ "setShowsSelectedAfterScroll" ]
+    }, {
+      "name" : "display",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSelection",
+      "visibility" : "public",
+      "methodCalls" : [ "getMapViewManager", "getMapSelection", "getSelection", "getSelectedNodes", "unmodifiableSet" ]
+    }, {
+      "name" : "getDraggingAreaWidth",
+      "visibility" : "public",
+      "methodCalls" : [ "getZoomed" ]
+    }, {
+      "name" : "getSelectionEnd",
+      "visibility" : "public",
+      "methodCalls" : [ "getSelected", "get", "getSelectionEnd" ]
+    }, {
+      "name" : "scrollNodeToVisible",
+      "visibility" : "public",
+      "methodCalls" : [ "scrollNodeToVisible", "getNodeView" ]
+    }, {
+      "name" : "setSelectionRectangle",
+      "visibility" : "public",
+      "methodCalls" : [ "getLineWidth", "repaint", "union" ]
+    }, {
+      "name" : "getTagLocation",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "scrollBy",
+      "visibility" : "public",
+      "methodCalls" : [ "scrollBy" ]
+    }, {
+      "name" : "getNodeView",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "getViewers", "getRoot", "getNode", "getMap", "getAncestorOfClass" ]
+    }, {
+      "name" : "setZoom",
+      "visibility" : "public",
+      "methodCalls" : [ "getCurrentModeController", "valueOf", "getExtension", "getViewController", "out", "getMapView", "getHeight", "getSelected", "getWidth", "anchorToNode", "getMainView", "convertPointToAncestor", "getZoom", "execute", "mapSaved", "getMapController", "revalidate", "repaint", "getContent", "getLayout", "setFinalViewerSize", "calculatePreferredSize", "getMap", "getDelegate", "getModeController", "setZoom" ]
+    }, {
+      "name" : "setRepaintsViewOnSelectionChange",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDetailBackground",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "endPrinting",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isElementHighlighted",
+      "visibility" : "public",
+      "methodCalls" : [ "getExtension", "isContained", "getAncestorOfClass" ]
+    }, {
+      "name" : "showsIcons",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "showsConnectorLines",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSelectionRectangleColor",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "autoscroll",
+      "visibility" : "public",
+      "methodCalls" : [ "getViewRect", "scrollRectToVisible", "contains", "getParent" ]
+    }, {
+      "name" : "isSpotlightEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "isSpotlightEnabled" ]
+    }, {
+      "name" : "getOrderedSelectedNodes",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "updateSelectedNode", "getSelectedList", "deselect", "add", "size", "getNode", "contains" ]
+    }, {
+      "name" : "getNoteCss",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getLayoutSpecificMaxNodeWidth",
+      "visibility" : "public",
+      "methodCalls" : [ "getViewportSize", "getZoomed", "usesLayoutSpecificMaxNodeWidth", "max" ]
+    }, {
+      "name" : "selectLeft",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "onEditingFinished",
+      "visibility" : "public",
+      "methodCalls" : [ "putClientProperty" ]
+    }, {
+      "name" : "showsTagsOnMinimizedNodes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "selectPageDown",
+      "visibility" : "public",
+      "methodCalls" : [ "getSelectionEnd" ]
+    }, {
+      "name" : "replaceSelection",
+      "visibility" : "public",
+      "methodCalls" : [ "toArray", "isVisible", "display", "getNode", "replaceSelection", "replace", "isEmpty", "requestFocusInWindow", "getNodeView", "add" ]
+    }, {
+      "name" : "getNoteForeground",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getNoteBackground",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "mapChanged",
+      "visibility" : "public",
+      "methodCalls" : [ "getSelection", "getCurrentController", "getFile", "setEnabled", "getTagLocation", "getPropertySetDefault", "repaint", "isAutoCompactLayoutEnabled", "updateIcons", "getExtension", "getModeController", "setBackground", "revalidate", "tagLocation", "iconLocation", "resetLayoutPropertiesRecursively", "getSelected", "getController", "getRoot", "allowsCompactLayout", "disposeDialog", "removeExtension", "getRootNode", "forEach", "of", "updateColumnWidths", "getNewValue", "parseBoolean", "getSource", "adjustColumnWidths", "getClass", "getMap", "equals", "getProperty", "clearCache" ]
+    }, {
+      "name" : "drawsRectangleForSelection",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setBackground",
+      "visibility" : "public",
+      "methodCalls" : [ "setBackground" ]
+    }, {
+      "name" : "invalidate",
+      "visibility" : "public",
+      "methodCalls" : [ "isValid", "invalidate" ]
+    }, {
+      "name" : "selectVisibleAncestorOrSelf",
+      "visibility" : "public",
+      "methodCalls" : [ "getParentView", "selectAsTheOnlyOneSelected", "isContentVisible" ]
+    }, {
+      "name" : "getRoot",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "getRoot", "getTree", "getDelegate", "getScriptContext", "getRootNode" ]
+    }, {
+      "name" : "selectAsTheOnlyOneSelected",
+      "visibility" : "public",
+      "methodCalls" : [ "getResourceController", "getNodeView", "selectAsTheOnlyOneSelected", "isHiddenSummary", "isVisible", "display", "scrollNodeToVisible", "requestFocusInWindow", "getParent", "setLastSelectedChild", "isActive", "focused", "getNode", "scrollNodeToCenter", "getBooleanProperty" ]
+    }, {
+      "name" : "getAutoscrollInsets",
+      "visibility" : "public",
+      "methodCalls" : [ "getParent", "getBounds" ]
+    }, {
+      "name" : "selectNodeViewBySelectionRectangle",
+      "visibility" : "public",
+      "methodCalls" : [ "replace", "forEach", "isEmpty" ]
+    }, {
+      "name" : "usesLayoutSpecificMaxNodeWidth",
+      "visibility" : "public",
+      "methodCalls" : [ "isOutlineLayoutSet" ]
+    }, {
+      "name" : "getDetailForeground",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBackground",
+      "visibility" : "public",
+      "methodCalls" : [ "stringToColor", "getBackgroundColor", "getResourceController", "getExtension", "getProperty", "getBackground" ]
+    }, {
+      "name" : "getDetailHorizontalAlignment",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "preserveRootNodeLocationOnScreen",
+      "visibility" : "public",
+      "methodCalls" : [ "preserveRootNodeLocationOnScreen", "anchorToRoot" ]
+    }, {
+      "name" : "refresh",
+      "visibility" : "public",
+      "methodCalls" : [ "repaint" ]
+    }, {
+      "name" : "getSiblingMaxLevel",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getNoteFont",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "onEditingStarted",
+      "visibility" : "public",
+      "methodCalls" : [ "putClientProperty" ]
+    }, {
+      "name" : "getMapSelection",
+      "visibility" : "public",
+      "methodCalls" : [ "getMapView", "getMapSelection" ]
+    }, {
+      "name" : "isPrinting",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getPreferredSize",
+      "visibility" : "public",
+      "methodCalls" : [ "preferredLayoutSize", "getLayout", "getHeight", "getMinimumWidth", "getIcon", "getMaximumRowWidth", "getInsets", "getTotalHeight", "getZoom", "ceil", "getParent", "getWidth", "getComponent", "validate", "isValid", "doLayout", "isMinimumSizeSet", "isMaximumSizeSet", "max", "getMaximumSize", "getMinimumSize", "getFont", "getTitle", "getFontMetrics", "stringWidth", "isPreferredSizeSet", "min", "getPreferredSize" ]
+    }, {
+      "name" : "getMap",
+      "visibility" : "public",
+      "methodCalls" : [ "getMapViewManager", "containsExtension", "lock", "keySet", "getURL", "equals", "getMapView", "getSelected", "getMap", "getRowCount", "put", "emptyMap", "getName", "getAttributes", "getMindMap" ]
+    }, {
+      "name" : "scroll",
+      "visibility" : "public",
+      "methodCalls" : [ "scrollBy" ]
+    }, {
+      "name" : "deselect",
+      "visibility" : "public",
+      "methodCalls" : [ "getParent", "deselect", "contains" ]
+    }, {
+      "name" : "getSelectedNodes",
+      "visibility" : "public",
+      "methodCalls" : [ "getCurrentController", "getSelection", "getOrderedSelection", "emptyList", "getNode", "iterator", "size", "remove", "updateSelectedNode", "hasNext", "deselect", "next", "contains", "add", "getSelectedSet" ]
+    }, {
+      "name" : "setMap",
+      "visibility" : "public",
+      "methodCalls" : [ "afterMapChange", "beforeMapChange", "setMap", "selectAsTheOnlyOneSelected", "createTransparentFilter", "getMapViewLayout", "translate", "getExtension", "getRoot", "repaint", "iconLocation", "showNotesInMap", "preserveRootNodeLocationOnScreen", "getVisibleRect", "setName", "getController", "clear", "isAutoCompactLayoutEnabled", "getPropertySetDefault", "addMapChangeListener", "getModeController", "getLocationOnScreen", "scrollRectToVisible", "getMainView", "removeMapChangeListener", "tagLocation", "getTitle", "revalidate", "parseBoolean", "getMap", "allowsCompactLayout", "isShowing", "setBackground", "getZoom", "invokeLater" ]
+    }, {
+      "name" : "removeNotify",
+      "visibility" : "public",
+      "methodCalls" : [ "getParent", "removeComponentListener", "removeNodeChangeListener", "removeListDataListener", "removeAll", "delete", "doPrivileged", "getMapController", "getCurrentModeController", "removePropertyChangeListener", "removeMapChangeListener", "getResourceController", "removeNotify" ]
+    }, {
+      "name" : "setSize",
+      "visibility" : "public",
+      "methodCalls" : [ "validate", "getHeight", "setSize", "getWidth", "getDelegate", "setFontSize" ]
+    }, {
+      "name" : "getModeController",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "getModeController", "getMModeController" ]
+    }, {
+      "name" : "setAnchorContentLocation",
+      "visibility" : "public",
+      "methodCalls" : [ "setAnchorContentLocation" ]
+    }, {
+      "name" : "getDetailCss",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "selectRight",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "detectObject",
+      "visibility" : "public",
+      "methodCalls" : [ "detectView", "getConnector" ]
+    }, {
+      "name" : "isSelected",
+      "visibility" : "public",
+      "methodCalls" : [ "isDescendingFrom", "getContent", "getMap", "isPrinting", "getNodeView", "isVisible", "getMapViewManager", "getMapViewComponent", "contains", "getCurrentController", "getValue", "isSelected", "equals" ]
+    }, {
+      "name" : "paint",
+      "visibility" : "public",
+      "methodCalls" : [ "getLookAndFeel", "createTeXIcon", "paintDisabledText", "getDisabledIcon", "isEnabled", "getAscent", "isHorizontal", "getInsets", "getText", "transform", "paintEnabledText", "getIcon", "layoutCL", "paintIcon", "getClass", "getFontMetrics", "getSimpleName", "setFont", "getVersion", "getProtocol", "drawString", "deriveFont", "getResource", "getIconWidth", "stringWidth", "isSubtreeVisible", "getResourceController", "invokeLater", "getBooleanProperty", "repaint", "containsExtension", "withAntialias", "isPrinting", "createImage", "preparePrinting", "print", "drawImage", "severe", "createGraphics", "endPrinting", "paintPaper", "getStartInclination", "calcEndInclination", "isTopOrLeft", "getZoomed", "getLinkPoint", "calcStartInclination", "getEndInclination", "getBackground", "getID", "fillRect", "getWidth", "isBorderPainted", "setContentAreaFilled", "paint", "getBounds", "getTransform", "isSelected", "setTransform", "isRoot", "getSource", "getTarget", "scale", "getPaintingMode", "equals", "getMap", "getParent", "setRenderingHint", "getClientProperty", "resetPainter", "getRenderingHint", "translate", "getVerticalAlignment", "getZoom", "useFractionalMetrics", "getHeight", "isTargetVisible", "getShapeStart", "isSourceVisible", "getEnd", "getArrows", "getShape", "setColor", "getStroke", "draw", "setStroke", "getColor", "getExteriorColor", "create", "dispose", "paintDecoration", "getNodeView" ]
+    }, {
+      "name" : "preparePrinting",
+      "visibility" : "public",
+      "methodCalls" : [ "valueOf", "getInnerBounds" ]
+    }, {
+      "name" : "calculateNewZoom",
+      "visibility" : "public",
+      "methodCalls" : [ "max", "getIntProperty", "getWheelRotation", "round", "log", "getZoom", "min", "getResourceController", "pow" ]
+    }, {
+      "name" : "preserveNodeLocationOnScreen",
+      "visibility" : "public",
+      "methodCalls" : [ "preserveNodeLocationOnScreen", "isTopOrLeft", "getNodeView", "anchorToNode" ]
+    }, {
+      "name" : "getInnerBounds",
+      "visibility" : "public",
+      "methodCalls" : [ "max", "getY", "getInnerBounds", "getX", "stream", "map", "forEach", "isContentVisible", "getSpaceAround", "getChildrenViews", "increaseBounds", "getHeight", "getBounds", "getWidth", "intersection", "size", "get" ]
+    }, {
+      "name" : "select",
+      "visibility" : "public",
+      "methodCalls" : [ "newMapView", "changeToMap", "getMap", "filter", "getMapViewComponent", "stream", "get", "getNodeFromID_", "findFirst", "getViews", "removeMapViewChangeListener", "addMapViewChangeListener", "isPresent", "equals", "getController", "getMapViewManager", "getModeController", "changeToMapView", "selectAsTheOnlyOneSelected", "iterator", "select", "getCurrentController", "getCurrentModeController", "hasNext", "getSelection", "next", "displayNode", "getDelegate", "toggleSelected", "getMapController" ]
+    }, {
+      "name" : "getViewportSize",
+      "visibility" : "public",
+      "methodCalls" : [ "getSize", "getParent" ]
+    }, {
+      "name" : "selectUp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "selectDown",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "preserveSelectedNodeLocation",
+      "visibility" : "public",
+      "methodCalls" : [ "getSelected", "preserveNodeLocationOnScreen" ]
+    }, {
+      "name" : "getSelected",
+      "visibility" : "public",
+      "methodCalls" : [ "getNode", "isVisible", "isDescendingFrom", "getContent", "getCurrentController", "getSelected", "getSelection" ]
+    }, {
+      "name" : "getFilter",
+      "visibility" : "public",
+      "methodCalls" : [ "getMap", "getCurrentController", "createTransparentFilter", "getExtension", "getSelection", "putExtension", "getFilter" ]
+    }, {
+      "name" : "getNoteHorizontalAlignment",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getZoom",
+      "visibility" : "public",
+      "methodCalls" : [ "getExtension", "getZoom" ]
+    }, {
+      "name" : "repaintVisible",
+      "visibility" : "public",
+      "methodCalls" : [ "repaint", "getParent" ]
+    }, {
+      "name" : "paintOverview",
+      "visibility" : "public",
+      "methodCalls" : [ "print", "setRenderingHint" ]
+    }, {
+      "name" : "getNodeContentLocation",
+      "visibility" : "public",
+      "methodCalls" : [ "convertPointToAncestor", "getContent" ]
+    }, {
+      "name" : "propertyChanged",
+      "visibility" : "public",
+      "methodCalls" : [ "setSelected", "getDecimalFormat", "addParsersForStandardFormats", "selectScanner", "equalsFormatLocaleName", "getFormatLocaleFromResources", "getMap", "getController", "contains", "repaintAll", "getRoot", "length", "shtmlPrefChanged", "substring", "valueOf", "setUnitIncrement", "getHorizontalScrollBar", "getVerticalScrollBar", "getViewController", "getBounds", "revalidate", "startsWith", "getCurrentController", "setLocation", "isMapOverviewVisible", "setVisible", "parseBoolean", "stop", "equals" ]
+    }, {
+      "name" : "repaintsViewOnSelectionChange",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "print",
+      "visibility" : "public",
+      "methodCalls" : [ "clipRect", "ceil", "min", "getX", "getImageableX", "getY", "getImageableHeight", "getResourceController", "getImageableY", "getHeight", "create", "getWidth", "translate", "getImageableWidth", "dispose", "getDoubleProperty", "max", "scale", "floor", "setJobName", "print", "preparePrinting", "endPrinting", "acquirePrinterJobAndPageFormat", "printDialog", "getName", "setPrintable", "warn", "getPageFormat" ]
+    } ],
+    "imports" : [ "org.freeplane.core.extension.HighlightedElements", "org.freeplane.view.swing.ui.MouseEventActor", "org.freeplane.features.link.NodeLinks", "java.awt.Container", "java.beans.PropertyChangeListener", "java.io.FileNotFoundException", "org.freeplane.features.styles.MapStyleModel", "java.awt.Stroke", "java.util.List", "org.freeplane.core.util.LogUtils", "org.freeplane.features.text.TextController", "org.freeplane.core.awt.GraphicsHints", "java.awt.geom.RoundRectangle2D", "org.freeplane.features.styles.LogicalStyleController.StyleOption", "org.freeplane.view.swing.map.link.EdgeLinkView", "org.freeplane.features.link.ConnectorShape", "org.freeplane.features.nodestyle.NodeCss", "org.freeplane.core.resources.IFreeplanePropertyListener", "org.freeplane.features.icon.TagCategories", "org.freeplane.api.ChildrenSides", "org.freeplane.core.util.ColorUtils", "org.freeplane.features.map.IMapSelection", "org.freeplane.features.note.NoteController", "org.freeplane.features.styles.MapViewLayout", "java.awt.print.Printable", "java.awt.Graphics", "org.freeplane.view.swing.features.filepreview.ScalableComponent", "org.freeplane.features.edge.EdgeColorsConfigurationFactory", "org.freeplane.features.link.ConnectorModel", "org.freeplane.core.extension.Configurable", "org.freeplane.view.swing.map.MapViewScrollPane.MapViewPort", "java.awt.BasicStroke", "java.util.Vector", "java.util.TreeSet", "java.util.Iterator", "org.freeplane.features.map.INodeView", "org.freeplane.features.filter.Filter", "org.freeplane.features.icon.Tag", "org.freeplane.features.highlight.NodeHighlighter", "java.awt.AWTKeyStroke", "java.awt.Frame", "org.freeplane.core.ui.components.UITools", "org.freeplane.features.attribute.AttributeController", "java.awt.Font", "java.util.ArrayList", "java.awt.dnd.Autoscroll", "org.freeplane.features.map.IMapChangeListener", "java.util.AbstractList", "java.net.URI", "org.freeplane.view.swing.map.link.ConnectorView", "java.awt.Point", "org.freeplane.features.map.NodeRelativePath", "java.awt.KeyboardFocusManager", "java.util.HashSet", "org.freeplane.features.map.NodeModel", "java.util.Set", "org.freeplane.features.map.MapChangeEvent", "org.freeplane.core.ui.AntiAliasingConfigurator", "java.awt.Component", "java.util.AbstractSet", "java.util.LinkedHashSet", "org.freeplane.core.io.xml.TreeXmlReader", "org.freeplane.features.styles.MapStyle", "org.freeplane.features.map.SummaryNode", "java.util.Collections", "javax.swing.SwingUtilities", "java.awt.Insets", "org.freeplane.view.swing.map.NodeView.PreferredChild", "org.freeplane.features.link.NodeLinkModel", "javax.swing.JPanel", "java.awt.Color", "org.freeplane.features.map.NodeSubtrees", "org.freeplane.features.attribute.ModelessAttributeController", "org.freeplane.view.swing.features.filepreview.ViewerController", "org.freeplane.features.mode.Controller", "org.freeplane.features.ui.IMapViewManager", "javax.swing.JComponent", "java.awt.print.PageFormat", "java.awt.event.ComponentEvent", "java.awt.event.MouseWheelEvent", "org.freeplane.features.map.MapController", "java.awt.Graphics2D", "org.freeplane.features.link.LinkController", "org.freeplane.core.resources.ResourceController", "java.awt.Cursor", "org.freeplane.features.map.MapModel", "org.freeplane.features.nodestyle.NodeStyleController", "org.freeplane.features.link.Connectors", "org.freeplane.api.ChildNodesAlignment", "java.beans.PropertyChangeEvent", "java.util.Arrays", "org.freeplane.api.LayoutOrientation", "org.freeplane.features.print.FitMap", "org.freeplane.features.url.UrlManager", "org.freeplane.features.mode.ModeController", "javax.swing.JOptionPane", "org.freeplane.features.map.NodeChangeEvent", "javax.swing.JViewport", "org.freeplane.view.swing.features.filepreview.IViewerFactory", "java.util.Collection", "org.freeplane.features.map.INodeChangeListener", "java.awt.EventQueue", "java.awt.Dimension", "java.awt.event.ComponentAdapter", "org.freeplane.core.ui.IUserInputListenerFactory", "org.freeplane.view.swing.map.link.ILinkView", "java.awt.Rectangle" ]
+  } ]
+}

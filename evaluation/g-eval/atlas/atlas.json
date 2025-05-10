@@ -1,0 +1,1025 @@
+{
+  "systemName" : "atlas",
+  "classes" : [ {
+    "name" : "AtlasClientV2",
+    "packageName" : "org.apache.atlas",
+    "extendedClasses" : [ "AtlasBaseClient" ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "createGlossary",
+      "visibility" : "public",
+      "methodCalls" : [ "getPerfTracer", "isPerfTraceEnabled", "log", "callAPI", "getQualifiedName", "debug", "setQualifiedName", "isNull", "isEmpty", "getName", "isNameInvalid", "save", "createGlossary", "setName", "setShortDescription", "setLanguage" ]
+    }, {
+      "name" : "getRelationshipByGuid",
+      "visibility" : "public",
+      "methodCalls" : [ "valueOf", "add", "callAPI" ]
+    }, {
+      "name" : "disassociateTermFromEntities",
+      "visibility" : "public",
+      "methodCalls" : [ "callAPI", "formatPathParameters" ]
+    }, {
+      "name" : "getCategoryTerms",
+      "visibility" : "public",
+      "methodCalls" : [ "parseInt", "getPerfTracer", "log", "isPerfTraceEnabled", "getCategoryTerms", "validateQueryParamLength", "formatPathParameters", "callAPI", "valueOf", "add", "getCategory", "debug", "emptyList", "compareTo", "isNotEmpty", "getPaginatedList", "isNull", "sort", "getTerms" ]
+    }, {
+      "name" : "deleteClassifications",
+      "visibility" : "public",
+      "methodCalls" : [ "getTypeName", "callAPI", "formatPathParameters", "isNotEmpty", "findByGuid", "getTraitNames", "deleteClassification" ]
+    }, {
+      "name" : "createEntity",
+      "visibility" : "public",
+      "methodCalls" : [ "createEntity", "parseToV1ArrayNode", "asList", "callAPI" ]
+    }, {
+      "name" : "fullTextSearchWithParams",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "valueOf", "callAPI" ]
+    }, {
+      "name" : "dslSearchWithParams",
+      "visibility" : "public",
+      "methodCalls" : [ "callAPI", "valueOf", "add" ]
+    }, {
+      "name" : "removeBusinessAttributes",
+      "visibility" : "public",
+      "methodCalls" : [ "singletonMap", "log", "isPerfTraceEnabled", "getPerfTracer", "formatPathParameters", "callAPI", "isNotEmpty", "getKey", "updateModificationMetadata", "get", "getIdFromVertex", "containsKey", "getName", "getValue", "getVertexPropertyName", "getBusinessAttributes", "onBusinessAttributesUpdated", "removeProperty", "values", "entrySet", "removeBusinessAttributes", "verifyAccess", "getTypeName", "keySet", "findByGuid", "toAtlasEntityHeaderWithClassifications", "debug", "getEntityTypeByName", "isEmpty", "setBusinessMetadata", "build" ]
+    }, {
+      "name" : "getClassificationDefByGuid",
+      "visibility" : "public",
+      "methodCalls" : [ "validateQueryParamLength", "getTypeDefByGuid", "verifyAccess", "getClassificationDefByGuid" ]
+    }, {
+      "name" : "fullTextSearch",
+      "visibility" : "public",
+      "methodCalls" : [ "callAPI", "add" ]
+    }, {
+      "name" : "getClassificationDefByName",
+      "visibility" : "public",
+      "methodCalls" : [ "validateQueryParamLength", "getTypeDefByName", "verifyAccess", "getClassificationRoot", "equalsIgnoreCase", "getClassificationDef", "getClassificationDefByName" ]
+    }, {
+      "name" : "getEnumDefByName",
+      "visibility" : "public",
+      "methodCalls" : [ "validateQueryParamLength", "getTypeDefByName", "verifyAccess", "getEnumDefByName" ]
+    }, {
+      "name" : "dslSearch",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "callAPI" ]
+    }, {
+      "name" : "createStructDef",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "getStructDefs", "createAtlasTypeDefs", "get" ]
+    }, {
+      "name" : "addLabels",
+      "visibility" : "public",
+      "methodCalls" : [ "getGuidByUniqueAttributes", "getPerfTracer", "isPerfTraceEnabled", "log", "toString", "validateQueryParamLength", "formatPathParameters", "callAPI", "isNotEmpty", "equals", "addAll", "removeAll", "updateModificationMetadata", "onLabelsUpdatedFromEntity", "getLabels", "verifyAccess", "findByGuid", "addLabels", "isEmpty", "build", "toAtlasEntityHeaderWithClassifications", "debug", "setLabel", "validateLabels" ]
+    }, {
+      "name" : "updateEntity",
+      "visibility" : "public",
+      "methodCalls" : [ "callAPIWithRetries", "queryParam", "getResource", "toV1Json", "extractEntityResult", "callAPIWithBodyAndParams", "callAPI", "getGuidByUniqueAttributes", "getUniqueAttributes", "setGuid", "isAssignedGuid", "getEntityTypeByName", "getGuid", "getTypeName", "debug", "getEntity" ]
+    }, {
+      "name" : "addSavedSearch",
+      "visibility" : "public",
+      "methodCalls" : [ "log", "isPerfTraceEnabled", "getSearchType", "getPerfTracer", "getCurrentUserName", "callAPI", "addSavedSearch", "setOwnerName", "error", "isEmpty", "equals", "getSavedSearches", "add", "save", "getName", "getUserProfile", "getOwnerName" ]
+    }, {
+      "name" : "createGlossaryCategories",
+      "visibility" : "public",
+      "methodCalls" : [ "getPerfTracer", "isNull", "log", "getAnchor", "isPerfTraceEnabled", "createCategories", "callAPI" ]
+    }, {
+      "name" : "getGlossaryTerms",
+      "visibility" : "public",
+      "methodCalls" : [ "log", "validateQueryParamLength", "getPerfTracer", "getGlossaryTerms", "parseInt", "isPerfTraceEnabled", "callAPI", "formatPathParameters", "valueOf", "isNull", "load", "getGlossaryTermsHeaders", "add", "getAtlasGlossaryTermSkeleton", "debug", "getTermGuid" ]
+    }, {
+      "name" : "getRelatedCategories",
+      "visibility" : "public",
+      "methodCalls" : [ "parseInt", "getRelatedCategories", "getPerfTracer", "log", "isPerfTraceEnabled", "valueOf", "callAPI", "formatPathParameters", "getChildrenCategories", "getParentCategory", "isNotEmpty", "add", "put", "debug", "getCategory", "isNull" ]
+    }, {
+      "name" : "getGlossaryExtInfo",
+      "visibility" : "public",
+      "methodCalls" : [ "formatPathParameters", "callAPI" ]
+    }, {
+      "name" : "getEntitiesByAttribute",
+      "visibility" : "public",
+      "methodCalls" : [ "getEntitiesByAttribute", "callAPI", "add", "valueOf" ]
+    }, {
+      "name" : "postNotificationToTopic",
+      "visibility" : "public",
+      "methodCalls" : [ "formatPathParameters", "callAPI" ]
+    }, {
+      "name" : "getRelationshipDefByName",
+      "visibility" : "public",
+      "methodCalls" : [ "validateQueryParamLength", "getTypeDefByName", "getRelationshipDefByName", "verifyAccess" ]
+    }, {
+      "name" : "getGlossaryCategories",
+      "visibility" : "public",
+      "methodCalls" : [ "getPerfTracer", "parseInt", "validateQueryParamLength", "isPerfTraceEnabled", "log", "getGlossaryCategories", "formatPathParameters", "valueOf", "callAPI", "getGlossaryCategoriesHeaders", "debug", "getAtlasGlossaryCategorySkeleton", "add", "load", "getCategoryGuid", "isNull" ]
+    }, {
+      "name" : "getEntityByGuid",
+      "visibility" : "public",
+      "methodCalls" : [ "callAPI", "valueOf", "add", "log", "getEntityByGuid" ]
+    }, {
+      "name" : "getEntityByAttribute",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "callAPI", "getEntityByAttribute", "valueOf" ]
+    }, {
+      "name" : "deleteTypeByName",
+      "visibility" : "public",
+      "methodCalls" : [ "callAPI", "setEntityDefs", "setStructDefs", "deleteTypesDef", "setClassificationDefs", "setEnumDefs", "singletonList", "getType", "setBusinessMetadataDefs", "setRelationshipDefs" ]
+    }, {
+      "name" : "getAuditEvents",
+      "visibility" : "public",
+      "methodCalls" : [ "warn", "put", "getRequestId", "toV2AuditEvent", "verifyAccess", "build", "log", "getAtlasErrorCode", "debug", "equalsIgnoreCase", "listEventsV2", "listEvents", "getErrorResponse", "error", "toV1Json", "getPerfTracer", "getCanonicalName", "isPerfTraceEnabled", "getClass", "getHeaderById", "ok", "toV1AuditEvent", "callAPI", "toString", "valueOf", "add", "formatPathParameters", "listEventsV1" ]
+    }, {
+      "name" : "updateGlossaryTermByGuid",
+      "visibility" : "public",
+      "methodCalls" : [ "formatPathParameters", "callAPI" ]
+    }, {
+      "name" : "facetedSearch",
+      "visibility" : "public",
+      "methodCalls" : [ "callAPI" ]
+    }, {
+      "name" : "getEntityDefByGuid",
+      "visibility" : "public",
+      "methodCalls" : [ "validateQueryParamLength", "getTypeDefByGuid", "getEntityDefByGuid", "verifyAccess" ]
+    }, {
+      "name" : "executeSavedSearch",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "callAPI", "formatPathParameters" ]
+    }, {
+      "name" : "getLineageInfoOnDemand",
+      "visibility" : "public",
+      "methodCalls" : [ "callAPI" ]
+    }, {
+      "name" : "getRelatedTerms",
+      "visibility" : "public",
+      "methodCalls" : [ "isPerfTraceEnabled", "log", "validateQueryParamLength", "parseInt", "getPerfTracer", "put", "isNotEmpty", "formatPathParameters", "add", "valueOf", "callAPI", "getRelatedTerms", "hasTerms", "debug", "emptyMap", "isNull", "getTerm" ]
+    }, {
+      "name" : "getEntitiesAssignedWithTerm",
+      "visibility" : "public",
+      "methodCalls" : [ "validateQueryParamLength", "isPerfTraceEnabled", "parseInt", "getAssignedEntities", "log", "getPerfTracer", "callAPI", "add", "formatPathParameters", "valueOf" ]
+    }, {
+      "name" : "getGlossaryCategory",
+      "visibility" : "public",
+      "methodCalls" : [ "log", "getCategory", "isPerfTraceEnabled", "getPerfTracer", "validateQueryParamLength", "callAPI" ]
+    }, {
+      "name" : "updateAtlasTypeDefs",
+      "visibility" : "public",
+      "methodCalls" : [ "updateTypesDef", "isPerfTraceEnabled", "log", "getPerfTracer", "toDebugString", "toJson", "callAPI" ]
+    }, {
+      "name" : "getEntityHeaders",
+      "visibility" : "public",
+      "methodCalls" : [ "currentTimeMillis", "getPerfTracer", "isPerfTraceEnabled", "get", "log", "add", "callAPI", "toString" ]
+    }, {
+      "name" : "createGlossaryTerms",
+      "visibility" : "public",
+      "methodCalls" : [ "isNull", "createTerms", "isPerfTraceEnabled", "getAnchor", "log", "getPerfTracer", "callAPI" ]
+    }, {
+      "name" : "getSavedSearch",
+      "visibility" : "public",
+      "methodCalls" : [ "getSavedSearchByName", "validateQueryParamLength", "isPerfTraceEnabled", "log", "getCurrentUserName", "getPerfTracer", "callAPI", "add", "formatPathParameters", "setGuid", "load" ]
+    }, {
+      "name" : "deleteEntityByGuid",
+      "visibility" : "public",
+      "methodCalls" : [ "callAPI" ]
+    }, {
+      "name" : "partialUpdateGlossaryByGuid",
+      "visibility" : "public",
+      "methodCalls" : [ "callAPI", "formatPathParameters" ]
+    }, {
+      "name" : "getStructDefByName",
+      "visibility" : "public",
+      "methodCalls" : [ "validateQueryParamLength", "getTypeDefByName", "verifyAccess", "getStructDefByName" ]
+    }, {
+      "name" : "deleteEntitiesByGuids",
+      "visibility" : "public",
+      "methodCalls" : [ "callAPI" ]
+    }, {
+      "name" : "quickSearch",
+      "visibility" : "public",
+      "methodCalls" : [ "getEntityFilters", "getSortBy", "getTypeName", "length", "getOffset", "isPerfTraceEnabled", "getLimit", "getPerfTracer", "add", "valueOf", "callAPI", "createSearchParameters", "setQuery", "debug", "getSearchParameters", "getQuery", "hastokenizeChar", "getVertexIndexKeys", "getAggregatedMetrics", "isNotEmpty", "get", "getEntities", "log", "getSearchResults", "printStackTrace", "size", "quickSearch" ]
+    }, {
+      "name" : "assignTermToEntities",
+      "visibility" : "public",
+      "methodCalls" : [ "log", "validateQueryParamLength", "assignTermToEntities", "getPerfTracer", "isPerfTraceEnabled", "formatPathParameters", "callAPI", "onTermAddedToEntities", "debug", "getAtlasGlossaryTermSkeleton", "processTermAssignments", "load" ]
+    }, {
+      "name" : "typeWithNameExists",
+      "visibility" : "public",
+      "methodCalls" : [ "callAPI" ]
+    }, {
+      "name" : "updateEntityByAttribute",
+      "visibility" : "public",
+      "methodCalls" : [ "callAPI" ]
+    }, {
+      "name" : "updateEntities",
+      "visibility" : "public",
+      "methodCalls" : [ "getPerfTracer", "debug", "error", "getRequestPayload", "isPerfTraceEnabled", "size", "ok", "parseToV1ArrayNode", "build", "toV1Json", "getErrorResponse", "get", "createOrUpdate", "toAtlasEntities", "log", "toCreateUpdateEntitiesResult", "toWebApplicationException", "getEntityResult", "updateEntities", "asList", "callAPI" ]
+    }, {
+      "name" : "getGlossaryCategoryHeaders",
+      "visibility" : "public",
+      "methodCalls" : [ "callAPI", "valueOf", "formatPathParameters", "add" ]
+    }, {
+      "name" : "updateGlossaryByGuid",
+      "visibility" : "public",
+      "methodCalls" : [ "formatPathParameters", "callAPI" ]
+    }, {
+      "name" : "importGlossary",
+      "visibility" : "public",
+      "methodCalls" : [ "callAPI" ]
+    }, {
+      "name" : "deleteSavedSearch",
+      "visibility" : "public",
+      "methodCalls" : [ "getPerfTracer", "log", "isPerfTraceEnabled", "getCurrentUserName", "validateQueryParamLength", "callAPI", "formatPathParameters", "error", "getSavedSearch", "deleteSavedSearch", "delete" ]
+    }, {
+      "name" : "getEntityHeaderByGuid",
+      "visibility" : "public",
+      "methodCalls" : [ "callAPI", "formatPathParameters" ]
+    }, {
+      "name" : "getAllGlossaries",
+      "visibility" : "public",
+      "methodCalls" : [ "callAPI", "valueOf", "add" ]
+    }, {
+      "name" : "createEnumDef",
+      "visibility" : "public",
+      "methodCalls" : [ "createAtlasTypeDefs", "getEnumDefs", "get", "add" ]
+    }, {
+      "name" : "getSavedSearches",
+      "visibility" : "public",
+      "methodCalls" : [ "getCurrentUserName", "validateQueryParamLength", "log", "isPerfTraceEnabled", "getPerfTracer", "add", "callAPI", "equals", "error", "isEmpty", "getUserProfile", "getSavedSearches" ]
+    }, {
+      "name" : "addOrUpdateBusinessAttributes",
+      "visibility" : "public",
+      "methodCalls" : [ "getPerfTracer", "singletonMap", "log", "isPerfTraceEnabled", "callAPI", "valueOf", "formatPathParameters", "getIdFromVertex", "getValue", "values", "getKey", "getVertexPropertyName", "updateModificationMetadata", "isNotEmpty", "entrySet", "containsKey", "getName", "getEncodedProperty", "onBusinessAttributesUpdated", "isEmpty", "addOrUpdateBusinessAttributes", "toAtlasEntityHeaderWithClassifications", "findByGuid", "get", "setBusinessMetadata", "getBusinessAttributes", "add", "getEntityTypeByName", "debug", "getTypeName", "setBusinessAttributes", "equals", "getBusinessMetadata", "build", "verifyAccess", "keySet" ]
+    }, {
+      "name" : "getLineageInfo",
+      "visibility" : "public",
+      "methodCalls" : [ "callAPI", "add", "toString", "valueOf", "getLinfo" ]
+    }, {
+      "name" : "getGlossaryTermHeaders",
+      "visibility" : "public",
+      "methodCalls" : [ "getGlossaryTermsHeaders", "parseInt", "validateQueryParamLength", "getPerfTracer", "isPerfTraceEnabled", "log", "callAPI", "add", "valueOf", "formatPathParameters" ]
+    }, {
+      "name" : "getGlossaryByGuid",
+      "visibility" : "public",
+      "methodCalls" : [ "formatPathParameters", "callAPI" ]
+    }, {
+      "name" : "deleteEntityByAttribute",
+      "visibility" : "public",
+      "methodCalls" : [ "callAPI" ]
+    }, {
+      "name" : "updateSavedSearch",
+      "visibility" : "public",
+      "methodCalls" : [ "getCurrentUserName", "getSearchType", "isPerfTraceEnabled", "log", "getPerfTracer", "callAPI", "isEmpty", "setOwnerName", "updateSavedSearch", "error", "save", "getOwnerName", "isBlank", "getName", "getGuid", "getSavedSearches", "getUserProfile", "equals", "getSavedSearch" ]
+    }, {
+      "name" : "getAtlasAuditByOperation",
+      "visibility" : "public",
+      "methodCalls" : [ "fromV1Json", "toString", "callAPI" ]
+    }, {
+      "name" : "getRelationshipDefByGuid",
+      "visibility" : "public",
+      "methodCalls" : [ "validateQueryParamLength", "getTypeDefByGuid", "getRelationshipDefByGuid", "verifyAccess" ]
+    }, {
+      "name" : "bulkUpdateBusinessAttributes",
+      "visibility" : "public",
+      "methodCalls" : [ "callAPI" ]
+    }, {
+      "name" : "getStructDefByGuid",
+      "visibility" : "public",
+      "methodCalls" : [ "validateQueryParamLength", "getTypeDefByGuid", "verifyAccess", "getStructDefByGuid" ]
+    }, {
+      "name" : "getAllTypeDefHeaders",
+      "visibility" : "public",
+      "methodCalls" : [ "getParams", "callAPI" ]
+    }, {
+      "name" : "createGlossaryCategory",
+      "visibility" : "public",
+      "methodCalls" : [ "isPerfTraceEnabled", "createCategory", "getPerfTracer", "getAnchor", "isNull", "callAPI", "createGlossaryCategory", "setName", "getGuid", "getName", "setGlossaryGuid", "log", "setAnchor", "setDisplayText" ]
+    }, {
+      "name" : "deleteClassification",
+      "visibility" : "public",
+      "methodCalls" : [ "validateQueryParamLength", "formatPathParameters", "callAPI", "isNotEmpty", "add", "getClassificationVertex", "getHandler", "getIdForDisplay", "deleteEdgeReference", "getTraitNames", "getPendingTasks", "isPropagationEnabled", "toAtlasClassification", "updateModificationMetadata", "isDebugEnabled", "anyMatch", "size", "setProperty", "stream", "removePropertyValue", "findByGuid", "getClassificationEdge", "singletonList", "isPerfTraceEnabled", "removeProperty", "error", "log", "getPerfTracer", "removeTagPropagation", "onClassificationsDeletedFromEntities", "remove", "getTypeName", "contains", "toAtlasEntityHeaderWithClassifications", "debug", "isEmpty", "lockObjectAndReleasePostCommit", "equals", "verifyAccess", "deleteClassification" ]
+    }, {
+      "name" : "basicSearch",
+      "visibility" : "public",
+      "methodCalls" : [ "setClassification", "callAPI", "setOffset", "setQuery", "setTypeName", "setLimit", "setExcludeDeletedEntities", "setEntityFilters", "getEntities", "printStackTrace", "size", "get", "basicSearch", "log" ]
+    }, {
+      "name" : "getGlossaryTerm",
+      "visibility" : "public",
+      "methodCalls" : [ "validateQueryParamLength", "log", "isPerfTraceEnabled", "getTerm", "getPerfTracer", "callAPI" ]
+    }, {
+      "name" : "createRelationship",
+      "visibility" : "public",
+      "methodCalls" : [ "callAPI", "isDebugEnabled", "getRelationshipEdge", "getAllAttributes", "getHandler", "getRelationshipTypeByName", "setEncodedProperty", "addEdge", "isNotEmpty", "verifyAccess", "getIdFromVertex", "hasLegacyAttributeEnd", "getTypeName", "createRelationship", "getAttribute", "getGuid", "toAtlasEntityHeaderWithClassifications", "getBlockedPropagatedClassifications", "name", "randomUUID", "getOrCreateEdge", "debug", "toString", "getName", "getHomeId", "handleBlockedClassifications", "mapEdgeToAtlasRelationship", "getVertexPropertyName", "values", "addTagPropagation", "getProvenanceType", "isAssignedGuid" ]
+    }, {
+      "name" : "createEntities",
+      "visibility" : "public",
+      "methodCalls" : [ "callAPI", "getGuid", "getTypeName", "log", "getAttribute" ]
+    }, {
+      "name" : "createEntityDef",
+      "visibility" : "public",
+      "methodCalls" : [ "getEntityDefs", "add", "get", "createAtlasTypeDefs" ]
+    }, {
+      "name" : "deleteRelationshipByGuid",
+      "visibility" : "public",
+      "methodCalls" : [ "callAPI" ]
+    }, {
+      "name" : "attributeSearch",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "callAPI", "valueOf" ]
+    }, {
+      "name" : "createAtlasTypeDefs",
+      "visibility" : "public",
+      "methodCalls" : [ "createTypesDef", "log", "isPerfTraceEnabled", "getPerfTracer", "toDebugString", "callAPI", "toJson" ]
+    }, {
+      "name" : "setLabels",
+      "visibility" : "public",
+      "methodCalls" : [ "validateQueryParamLength", "getPerfTracer", "getGuidByUniqueAttributes", "toString", "isPerfTraceEnabled", "log", "formatPathParameters", "callAPI", "onLabelsUpdatedFromEntity", "updateModificationMetadata", "setLabels", "setLabel", "emptySet", "subtract", "toAtlasEntityHeaderWithClassifications", "getLabels", "isEmpty", "findByGuid", "build", "verifyAccess", "validateLabels", "debug" ]
+    }, {
+      "name" : "typeWithGuidExists",
+      "visibility" : "public",
+      "methodCalls" : [ "callAPI" ]
+    }, {
+      "name" : "deleteGlossaryCategoryByGuid",
+      "visibility" : "public",
+      "methodCalls" : [ "formatPathParameters", "callAPI" ]
+    }, {
+      "name" : "purgeEntitiesByGuids",
+      "visibility" : "public",
+      "methodCalls" : [ "callAPI" ]
+    }, {
+      "name" : "addClassifications",
+      "visibility" : "public",
+      "methodCalls" : [ "formatPathParameters", "getPerfTracer", "isPerfTraceEnabled", "validateQueryParamLength", "log", "findByGuid", "verifyAccess", "lockObjectAndReleasePostCommit", "debug", "isEmpty", "getTypeName", "getEntityTypeByName", "cacheEntity", "addClassifications", "toAtlasEntityHeaderWithClassifications", "isInNotificationProcessing", "getHandler", "getImpactedVerticesV2", "updateModificationMetadata", "keySet", "add", "setEntityStatus", "isNotEmpty", "size", "setEntityGuid", "getDefaultRemovePropagations", "isDebugEnabled", "startMetricRecord", "singletonList", "getIdForDisplay", "addTagPropagation", "addAll", "put", "getTraitLabel", "getRemovePropagationsOnEntityDelete", "equals", "get", "getEntityGuid", "isImportInProgress", "getVertex", "setRemovePropagationsOnEntityDelete", "string", "isPropagate", "getEntityStatus", "setPropagate", "getTypeNames", "onClassificationsAddedToEntities", "getType", "endMetricRecord", "callAPI" ]
+    }, {
+      "name" : "deleteGlossaryByGuid",
+      "visibility" : "public",
+      "methodCalls" : [ "formatPathParameters", "callAPI" ]
+    }, {
+      "name" : "relationshipSearch",
+      "visibility" : "public",
+      "methodCalls" : [ "valueOf", "add", "callAPI" ]
+    }, {
+      "name" : "getEntityDefByName",
+      "visibility" : "public",
+      "methodCalls" : [ "validateQueryParamLength", "getTypeDefByName", "equals", "getEntityDefByName", "getEntityRoot", "verifyAccess", "getEntityDef" ]
+    }, {
+      "name" : "partialUpdateTermByGuid",
+      "visibility" : "public",
+      "methodCalls" : [ "callAPI", "formatPathParameters" ]
+    }, {
+      "name" : "getEntityClassifications",
+      "visibility" : "public",
+      "methodCalls" : [ "callAPI", "formatPathParameters" ]
+    }, {
+      "name" : "getBusinessMetadataDefGuid",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTemplateForBulkUpdateBusinessAttributes",
+      "visibility" : "public",
+      "methodCalls" : [ "callAPI" ]
+    }, {
+      "name" : "getIndexRecoveryData",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "getPropertyKeyByRemovingPrefix", "getPerfTracer", "toString", "log", "ofEpochMilli", "findVertex", "isPerfTraceEnabled", "getProperty", "callAPI" ]
+    }, {
+      "name" : "addClassification",
+      "visibility" : "public",
+      "methodCalls" : [ "getClassification", "getEntitiesUniqueAttributes", "isNotEmpty", "isPerfTraceEnabled", "getEntityTypeName", "log", "getPerfTracer", "getEntityGuids", "getGuidByUniqueAttributes", "isDebugEnabled", "addClassification", "callAPI", "setClassifications", "getAtlasErrorCode", "addClassifications", "get", "debug", "verifyAccess", "add", "lockObjectAndReleasePostCommit", "getTypeName", "isEmpty", "getEntityTypeByName", "toAtlasEntityHeaderWithClassifications", "findByGuid", "getMessage", "singletonList", "isSkipFailedEntities", "cacheEntity" ]
+    }, {
+      "name" : "partialUpdateCategoryByGuid",
+      "visibility" : "public",
+      "methodCalls" : [ "callAPI", "formatPathParameters" ]
+    }, {
+      "name" : "updateRelationship",
+      "visibility" : "public",
+      "methodCalls" : [ "callAPI" ]
+    }, {
+      "name" : "formatPathWithParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "formatPathParameters" ]
+    }, {
+      "name" : "setClassifications",
+      "visibility" : "public",
+      "methodCalls" : [ "isPerfTraceEnabled", "getPerfTracer", "log", "callAPI", "setClassifications", "getGuidHeaderMap", "getGuid", "getAttributes", "warn", "values", "isEmpty", "getTypeName", "getByUniqueAttributes", "getEntityTypeByName" ]
+    }, {
+      "name" : "getSuggestions",
+      "visibility" : "public",
+      "methodCalls" : [ "log", "isPerfTraceEnabled", "getPerfTracer", "query", "setRequestHandler", "getTopTerms", "addFreq", "values", "getFrequency", "getTermMap", "setParam", "getSolrClient", "info", "put", "getTerm", "warn", "getTermsResponse", "releaseSolrClient", "get", "callAPI", "add", "isNotEmpty", "setSuggestions", "error", "getSuggestions", "getGraphIndexClient", "getIndexFieldName", "emptyList" ]
+    }, {
+      "name" : "deleteGlossaryTermByGuid",
+      "visibility" : "public",
+      "methodCalls" : [ "formatPathParameters", "callAPI" ]
+    }, {
+      "name" : "getEntitiesByGuids",
+      "visibility" : "public",
+      "methodCalls" : [ "getEntitiesByGuids", "valueOf", "add", "put", "callAPI" ]
+    }, {
+      "name" : "getEntityHeaderByAttribute",
+      "visibility" : "public",
+      "methodCalls" : [ "formatPathParameters", "callAPI" ]
+    }, {
+      "name" : "startIndexRecovery",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "callAPI", "valueOf", "ofEpochMilli", "getGraph", "startTransactionRecovery" ]
+    }, {
+      "name" : "createClassificationDef",
+      "visibility" : "public",
+      "methodCalls" : [ "getClassificationDefs", "get", "createAtlasTypeDefs", "add" ]
+    }, {
+      "name" : "removeClassification",
+      "visibility" : "public",
+      "methodCalls" : [ "callAPI", "formatPathParameters", "remove", "isNotEmpty" ]
+    }, {
+      "name" : "getBusinessMetadataDefByName",
+      "visibility" : "public",
+      "methodCalls" : [ "validateQueryParamLength", "getTypeDefByName", "verifyAccess", "getBusinessMetadataDefByName" ]
+    }, {
+      "name" : "getEnumDefByGuid",
+      "visibility" : "public",
+      "methodCalls" : [ "validateQueryParamLength", "getTypeDefByGuid", "verifyAccess", "getEnumDefByGuid" ]
+    }, {
+      "name" : "getClassifications",
+      "visibility" : "public",
+      "methodCalls" : [ "log", "getPerfTracer", "validateQueryParamLength", "isPerfTraceEnabled", "isEmpty", "callAPI", "formatPathParameters", "getClassifications", "debug", "verifyAccess", "toAtlasEntityHeaderWithClassifications" ]
+    }, {
+      "name" : "ageoutAtlasAudits",
+      "visibility" : "public",
+      "methodCalls" : [ "valueOf", "callAPI", "add" ]
+    }, {
+      "name" : "createGlossaryTerm",
+      "visibility" : "public",
+      "methodCalls" : [ "isNull", "getAnchor", "createTerm", "getPerfTracer", "isPerfTraceEnabled", "callAPI", "createGlossaryTerm", "getGuid", "getName", "setGlossaryGuid", "setDisplayText", "setName", "log", "setAnchor" ]
+    }, {
+      "name" : "deleteAtlasTypeDefs",
+      "visibility" : "public",
+      "methodCalls" : [ "deleteTypesDef", "isPerfTraceEnabled", "toDebugString", "log", "getPerfTracer", "toJson", "callAPI" ]
+    }, {
+      "name" : "getGlossaryImportTemplate",
+      "visibility" : "public",
+      "methodCalls" : [ "callAPI" ]
+    }, {
+      "name" : "updateClassifications",
+      "visibility" : "public",
+      "methodCalls" : [ "addTagPropagation", "validateQueryParamLength", "callAPI", "formatPathParameters", "getValidityPeriods", "setEntityGuid", "setProperty", "isEmpty", "verifyAccess", "findByGuid", "log", "cacheEntity", "lockObjectAndReleasePostCommit", "toAtlasEntityHeaderWithClassifications", "debug", "getEntityTypeByName", "getPerfTracer", "getTypeName", "updateClassifications", "isPerfTraceEnabled", "keySet", "onClassificationUpdatedToEntity", "string", "setAttribute", "updateModificationMetadata", "getAttributes", "getClassificationTextForEntity", "onClassificationsDeletedFromEntities", "put", "validateAndNormalizeForUpdate", "getAndCacheEntity", "equalsIgnoreCase", "isActive", "getEntityGuid", "addAll", "toAtlasClassification", "getAllPropagatedEntityVertices", "getImpactedVerticesV2", "isNotEmpty", "add", "getRemovePropagationsOnEntityDelete", "singleton", "equals", "size", "getClassificationVertex", "getHandler", "getIdForDisplay", "removeTagPropagation", "setValidityPeriods", "get", "singletonList", "isDebugEnabled", "setEncodedProperty", "isPropagate" ]
+    }, {
+      "name" : "removeLabels",
+      "visibility" : "public",
+      "methodCalls" : [ "log", "isPerfTraceEnabled", "validateQueryParamLength", "getGuidByUniqueAttributes", "getPerfTracer", "toString", "formatPathParameters", "callAPI", "getLabels", "updateModificationMetadata", "equals", "removeAll", "onLabelsUpdatedFromEntity", "isNotEmpty", "debug", "findByGuid", "validateLabels", "verifyAccess", "removeLabels", "toAtlasEntityHeaderWithClassifications", "setLabel", "isEmpty", "build" ]
+    }, {
+      "name" : "partialUpdateEntityByGuid",
+      "visibility" : "public",
+      "methodCalls" : [ "callAPI", "formatPathParameters", "add" ]
+    }, {
+      "name" : "getAllTypeDefs",
+      "visibility" : "public",
+      "methodCalls" : [ "searchTypesDef", "getParams", "callAPI" ]
+    }, {
+      "name" : "updateGlossaryCategoryByGuid",
+      "visibility" : "public",
+      "methodCalls" : [ "formatPathParameters", "callAPI" ]
+    } ],
+    "imports" : [ "org.apache.atlas.model.glossary.AtlasGlossary", "org.apache.atlas.model.instance.AtlasEntityHeader", "com.sun.jersey.multipart.FormDataMultiPart", "org.apache.atlas.model.typedef.AtlasRelationshipDef", "org.apache.atlas.model.instance.AtlasRelatedObjectId", "com.sun.jersey.multipart.FormDataBodyPart", "org.apache.atlas.model.typedef.AtlasEntityDef", "com.sun.jersey.core.util.MultivaluedMapImpl", "com.sun.jersey.multipart.file.StreamDataBodyPart", "org.apache.atlas.bulkimport.BulkImportResponse", "javax.ws.rs.HttpMethod", "org.apache.atlas.model.discovery.SearchParameters", "org.apache.atlas.model.lineage.AtlasLineageInfo.LineageDirection", "org.apache.atlas.model.glossary.AtlasGlossaryCategory", "com.sun.jersey.core.header.FormDataContentDisposition", "java.io.FileNotFoundException", "org.apache.atlas.model.profile.AtlasUserSavedSearch", "org.apache.atlas.model.lineage.AtlasLineageInfo", "javax.ws.rs.core.Cookie", "org.apache.atlas.model.glossary.relations.AtlasRelatedTermHeader", "java.io.BufferedReader", "java.io.FileInputStream", "org.apache.atlas.model.instance.AtlasClassification", "java.util.Map", "com.sun.jersey.api.client.WebResource", "org.apache.atlas.model.instance.AtlasEntity.AtlasEntityWithExtInfo", "org.apache.atlas.model.instance.AtlasEntity.AtlasEntitiesWithExtInfo", "javax.ws.rs.core.MediaType", "org.apache.hadoop.security.UserGroupInformation", "java.util.Set", "java.io.File", "org.apache.commons.configuration.Configuration", "java.io.InputStream", "javax.ws.rs.core.Response", "org.apache.atlas.model.instance.AtlasRelationship.AtlasRelationshipWithExtInfo", "com.fasterxml.jackson.databind.node.ArrayNode", "javax.ws.rs.core.MultivaluedMap", "org.apache.atlas.model.audit.AuditReductionCriteria", "org.apache.atlas.model.instance.ClassificationAssociateRequest", "org.apache.atlas.model.instance.AtlasRelationship", "java.util.List", "org.apache.atlas.model.audit.AuditSearchParameters", "org.apache.atlas.model.audit.EntityAuditEventV2", "org.apache.atlas.model.instance.EntityMutationResponse", "org.apache.atlas.model.typedef.AtlasTypeDefHeader", "org.apache.atlas.model.discovery.QuickSearchParameters", "java.time.Instant", "org.apache.atlas.model.discovery.AtlasSuggestionsResult", "org.apache.atlas.model.typedef.AtlasEnumDef", "org.apache.atlas.model.glossary.relations.AtlasRelatedCategoryHeader", "org.apache.atlas.type.AtlasType", "com.google.common.annotations.VisibleForTesting", "org.apache.atlas.model.discovery.AtlasSearchResult", "com.sun.jersey.multipart.MultiPart", "org.apache.commons.lang.StringUtils", "java.util.ArrayList", "org.apache.atlas.model.typedef.AtlasClassificationDef", "java.io.InputStreamReader", "org.apache.commons.collections.MapUtils", "org.apache.atlas.model.glossary.AtlasGlossaryTerm", "org.apache.atlas.model.instance.AtlasClassification.AtlasClassifications", "org.apache.atlas.model.discovery.AtlasQuickSearchResult", "com.fasterxml.jackson.databind.node.ObjectNode", "org.apache.atlas.model.lineage.LineageOnDemandConstraints", "org.apache.atlas.model.typedef.AtlasTypesDef", "org.apache.atlas.model.SearchFilter", "org.apache.atlas.model.typedef.AtlasStructDef", "org.apache.atlas.model.audit.AtlasAuditEntry", "org.apache.atlas.model.instance.AtlasEntityHeaders", "org.apache.atlas.model.typedef.AtlasBusinessMetadataDef" ]
+  }, {
+    "name" : "GraphHelper",
+    "packageName" : "org.apache.atlas.repository.graph",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "isPropagationEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "getEncodedProperty" ]
+    }, {
+      "name" : "getVersion",
+      "visibility" : "public",
+      "methodCalls" : [ "toV1Json", "getErrorResponse", "debug", "getString", "build", "ok", "put", "getProperty" ]
+    }, {
+      "name" : "getArrayElementsProperty",
+      "visibility" : "public",
+      "methodCalls" : [ "getCollectionElementsUsingRelationship", "getListProperty", "getVertexPropertyName", "isReference" ]
+    }, {
+      "name" : "isPropagatedClassificationEdge",
+      "visibility" : "public",
+      "methodCalls" : [ "getProperty" ]
+    }, {
+      "name" : "getAtlasObjectIdForInVertex",
+      "visibility" : "public",
+      "methodCalls" : [ "getInVertex", "getGuid", "getTypeName" ]
+    }, {
+      "name" : "getOutGoingEdgesCountByLabel",
+      "visibility" : "public",
+      "methodCalls" : [ "getAdjacentEdgesCountByLabel" ]
+    }, {
+      "name" : "getBlockedClassificationIds",
+      "visibility" : "public",
+      "methodCalls" : [ "emptyList", "isNotEmpty", "getEncodedProperty" ]
+    }, {
+      "name" : "getAllPropagatedEntityVertices",
+      "visibility" : "public",
+      "methodCalls" : [ "getPropagatedEdges", "getOutVertex", "isNotEmpty", "add" ]
+    }, {
+      "name" : "setListPropertyFromElementIds",
+      "visibility" : "public",
+      "methodCalls" : [ "encodePropertyKey", "setPropertyFromElementsIds" ]
+    }, {
+      "name" : "getPropagatableClassifications",
+      "visibility" : "public",
+      "methodCalls" : [ "getPropagateTags", "getPropagationEnabledClassificationVertices", "addAll", "getOutVertex", "getStatus", "getInVertex" ]
+    }, {
+      "name" : "getDefaultRemovePropagations",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getPropagatedClassificationEdges",
+      "visibility" : "public",
+      "methodCalls" : [ "getClassificationEdges" ]
+    }, {
+      "name" : "dumpToLog",
+      "visibility" : "public",
+      "methodCalls" : [ "debug", "vertexString", "edgeString", "getVertices", "getEdges" ]
+    }, {
+      "name" : "getModifiedTime",
+      "visibility" : "public",
+      "methodCalls" : [ "getProperty" ]
+    }, {
+      "name" : "string",
+      "visibility" : "public",
+      "methodCalls" : [ "getId", "_getId", "isDebugEnabled", "getEdgeDetails", "getVertexDetails", "format", "getTypeName", "getIdForDisplay" ]
+    }, {
+      "name" : "getClassificationName",
+      "visibility" : "public",
+      "methodCalls" : [ "getEncodedProperty" ]
+    }, {
+      "name" : "getProvenanceType",
+      "visibility" : "public",
+      "methodCalls" : [ "getProperty" ]
+    }, {
+      "name" : "getInComingEdgesCountByLabel",
+      "visibility" : "public",
+      "methodCalls" : [ "getAdjacentEdgesCountByLabel" ]
+    }, {
+      "name" : "getAdjacentEdgesByLabel",
+      "visibility" : "public",
+      "methodCalls" : [ "startMetricRecord", "endMetricRecord", "get", "iterator", "getEdges", "isDebugEnabled", "debug" ]
+    }, {
+      "name" : "getEdgesForLabel",
+      "visibility" : "public",
+      "methodCalls" : [ "getAdjacentEdgesByLabel", "getIncomingEdgesByLabel", "getOutGoingEdgesByLabel" ]
+    }, {
+      "name" : "decodePropertyKey",
+      "visibility" : "public",
+      "methodCalls" : [ "replace", "inverse", "isBlank", "get", "values" ]
+    }, {
+      "name" : "getCollectionElementsUsingRelationship",
+      "visibility" : "public",
+      "methodCalls" : [ "getEdgesForLabel", "getRelationshipEdgeLabel", "getRelationshipEdgeDirection", "toList" ]
+    }, {
+      "name" : "getModifiedByAsString",
+      "visibility" : "public",
+      "methodCalls" : [ "getProperty" ]
+    }, {
+      "name" : "isTermEntityEdge",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "getLabel" ]
+    }, {
+      "name" : "getAllTraitNames",
+      "visibility" : "public",
+      "methodCalls" : [ "getTraitNames" ]
+    }, {
+      "name" : "getEdgeForLabel",
+      "visibility" : "public",
+      "methodCalls" : [ "getAdjacentEdgesByLabel", "getState", "getProperty", "debug", "next", "getEdgeForLabel", "hasNext", "isDebugEnabled" ]
+    }, {
+      "name" : "getReferencedEntityTypeName",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "getTypeName", "getInVertex", "hasNext", "getIdForDisplay", "getOutVertex", "next", "getAdjacentEdgesByLabel" ]
+    }, {
+      "name" : "getPropagatedClassificationEdge",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "hasNext", "getTypeName", "edges", "next", "has", "direction", "iterator", "label", "getInVertex", "getEncodedProperty", "query" ]
+    }, {
+      "name" : "getCreatedTime",
+      "visibility" : "public",
+      "methodCalls" : [ "getProperty" ]
+    }, {
+      "name" : "getPropagateTags",
+      "visibility" : "public",
+      "methodCalls" : [ "valueOf", "getProperty" ]
+    }, {
+      "name" : "getReferenceMap",
+      "visibility" : "public",
+      "methodCalls" : [ "getCollectionElementsUsingRelationship", "put", "isNotEmpty", "getProperty" ]
+    }, {
+      "name" : "getTraitNames",
+      "visibility" : "public",
+      "methodCalls" : [ "getRequestId", "getClassifications", "getPerfTracer", "size", "getErrorResponse", "isPerfTraceEnabled", "build", "toWebApplicationException", "put", "toV1Json", "debug", "log", "error", "ok", "getTypeName", "label", "add", "edges", "has", "getEncodedProperty", "query", "getTraitNames", "direction" ]
+    }, {
+      "name" : "getSuperTypeNames",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "isNotEmpty", "getPropertyValues" ]
+    }, {
+      "name" : "getListProperty",
+      "visibility" : "public",
+      "methodCalls" : [ "transform", "getVertex", "getProperty", "isEmpty", "getEdge", "isAssignableFrom", "encodePropertyKey", "getListProperty" ]
+    }, {
+      "name" : "isProxy",
+      "visibility" : "public",
+      "methodCalls" : [ "getProperty" ]
+    }, {
+      "name" : "getRemovePropagations",
+      "visibility" : "public",
+      "methodCalls" : [ "getEncodedProperty" ]
+    }, {
+      "name" : "getCustomAttributes",
+      "visibility" : "public",
+      "methodCalls" : [ "getProperty", "fromJson" ]
+    }, {
+      "name" : "getRelationshipGuid",
+      "visibility" : "public",
+      "methodCalls" : [ "getProperty" ]
+    }, {
+      "name" : "findVertex",
+      "visibility" : "public",
+      "methodCalls" : [ "next", "vertices", "hasNext", "has", "query", "iterator" ]
+    }, {
+      "name" : "getGuid",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "get", "getEntity", "getId", "getVertexGuidFromCache", "getProperty", "addToVertexGuidCache", "getGuid" ]
+    }, {
+      "name" : "isRelationshipEdge",
+      "visibility" : "public",
+      "methodCalls" : [ "getOutVertex", "getInVertex", "getPropertyKeys", "getTypeName", "isRelationshipEdge", "contains", "getEntityTypeByName", "getLabel", "isNotEmpty", "startsWith" ]
+    }, {
+      "name" : "hasEntityReferences",
+      "visibility" : "public",
+      "methodCalls" : [ "hasEdges" ]
+    }, {
+      "name" : "getAtlasObjectIdForOutVertex",
+      "visibility" : "public",
+      "methodCalls" : [ "getOutVertex", "getGuid", "getTypeName" ]
+    }, {
+      "name" : "getTypeNames",
+      "visibility" : "public",
+      "methodCalls" : [ "getTypeName", "isNotEmpty", "add", "getProperty" ]
+    }, {
+      "name" : "getVerticesForPropertyValues",
+      "visibility" : "public",
+      "methodCalls" : [ "size", "query", "in", "vertices", "exists", "getProperty", "debug", "emptyMap", "isEmpty", "isDebugEnabled", "put", "add" ]
+    }, {
+      "name" : "setListProperty",
+      "visibility" : "public",
+      "methodCalls" : [ "setProperty", "setListProperty", "encodePropertyKey" ]
+    }, {
+      "name" : "getCreatedByAsString",
+      "visibility" : "public",
+      "methodCalls" : [ "getProperty" ]
+    }, {
+      "name" : "getPropagatedTraitNames",
+      "visibility" : "public",
+      "methodCalls" : [ "getTraitNames" ]
+    }, {
+      "name" : "getVertexForGUID",
+      "visibility" : "public",
+      "methodCalls" : [ "findVertex" ]
+    }, {
+      "name" : "addEdge",
+      "visibility" : "public",
+      "methodCalls" : [ "getWrappedElement", "getV", "createEdge", "name", "getUser", "get", "getRequestTime", "debug", "addEdge", "isDebugEnabled", "setEncodedProperty" ]
+    }, {
+      "name" : "getAllClassificationEdges",
+      "visibility" : "public",
+      "methodCalls" : [ "getClassificationEdges" ]
+    }, {
+      "name" : "setPropertyFromElementId",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "setProperty", "getId", "encodePropertyKey", "setPropertyFromElementId" ]
+    }, {
+      "name" : "getClassificationEntityGuid",
+      "visibility" : "public",
+      "methodCalls" : [ "getEncodedProperty" ]
+    }, {
+      "name" : "removeVertex",
+      "visibility" : "public",
+      "methodCalls" : [ "getV", "getWrappedElement", "remove", "debug", "removeVertex" ]
+    }, {
+      "name" : "getStatus",
+      "visibility" : "public",
+      "methodCalls" : [ "toV1Json", "isInstanceInMigration", "ok", "debug", "put", "toString", "build", "getStatus", "getState", "getEdgeStateFromCache", "addToVertexStateCache", "getVertexStateFromCache", "getId", "addToEdgeStateCache", "getCreate", "get", "exists", "getFileHash" ]
+    }, {
+      "name" : "getAssociatedEntityVertex",
+      "visibility" : "public",
+      "methodCalls" : [ "query", "has", "getTypeName", "direction", "next", "edges", "getOutVertex", "iterator", "hasNext", "label" ]
+    }, {
+      "name" : "getEdgeByEdgeId",
+      "visibility" : "public",
+      "methodCalls" : [ "getEdge" ]
+    }, {
+      "name" : "getTypeName",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "get", "getEntity", "getProperty", "getTypeName" ]
+    }, {
+      "name" : "getEdgeForGUID",
+      "visibility" : "public",
+      "methodCalls" : [ "findEdge" ]
+    }, {
+      "name" : "getClassificationVertex",
+      "visibility" : "public",
+      "methodCalls" : [ "getInVertex", "hasNext", "query", "next", "has", "iterator", "edges", "label", "direction" ]
+    }, {
+      "name" : "getIncomingEdgesByLabel",
+      "visibility" : "public",
+      "methodCalls" : [ "getAdjacentEdgesByLabel" ]
+    }, {
+      "name" : "removeEdge",
+      "visibility" : "public",
+      "methodCalls" : [ "remove", "getWrappedElement", "getE", "debug", "removeEdge" ]
+    }, {
+      "name" : "getDelimitedClassificationNames",
+      "visibility" : "public",
+      "methodCalls" : [ "join", "isNotEmpty" ]
+    }, {
+      "name" : "getTraitLabel",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getEdgeStatus",
+      "visibility" : "public",
+      "methodCalls" : [ "getState" ]
+    }, {
+      "name" : "getPrimitiveMap",
+      "visibility" : "public",
+      "methodCalls" : [ "encodePropertyKey", "getProperty" ]
+    }, {
+      "name" : "getVertexDetails",
+      "visibility" : "public",
+      "methodCalls" : [ "getGuid", "format", "getTypeName", "getIdForDisplay" ]
+    }, {
+      "name" : "isEntityIncomplete",
+      "visibility" : "public",
+      "methodCalls" : [ "getProperty", "equals" ]
+    }, {
+      "name" : "getVertexId",
+      "visibility" : "public",
+      "methodCalls" : [ "getId", "getVertexForGUID" ]
+    }, {
+      "name" : "edgeString",
+      "visibility" : "public",
+      "methodCalls" : [ "getLabel", "getOutVertex", "getInVertex" ]
+    }, {
+      "name" : "getIdFromVertex",
+      "visibility" : "public",
+      "methodCalls" : [ "getIdFromVertex", "getStateAsString", "getGuid", "intValue", "getTypeName", "getVersion" ]
+    }, {
+      "name" : "getIndexValue",
+      "visibility" : "public",
+      "methodCalls" : [ "getProperty" ]
+    }, {
+      "name" : "updateModificationMetadata",
+      "visibility" : "public",
+      "methodCalls" : [ "setEncodedProperty", "get", "getUser", "getRequestTime" ]
+    }, {
+      "name" : "getMapValuesUsingRelationship",
+      "visibility" : "public",
+      "methodCalls" : [ "getEdgesForLabel", "getRelationshipEdgeLabel", "getRelationshipEdgeDirection", "toList" ]
+    }, {
+      "name" : "getLabels",
+      "visibility" : "public",
+      "methodCalls" : [ "getProperty" ]
+    }, {
+      "name" : "getQualifiedNameForMapKey",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMapElementsProperty",
+      "visibility" : "public",
+      "methodCalls" : [ "getValueType", "getReferenceMap", "getProperty", "isReference" ]
+    }, {
+      "name" : "getClassificationEdges",
+      "visibility" : "public",
+      "methodCalls" : [ "query", "getClassificationEdges", "add", "has", "hasNext", "edges", "direction", "iterator", "label", "next" ]
+    }, {
+      "name" : "getEdgeLabel",
+      "visibility" : "public",
+      "methodCalls" : [ "getEdgeLabel", "createEdgeLabel", "format", "getRelationshipEdgeLabel" ]
+    }, {
+      "name" : "getPropagationEnabledClassificationVertices",
+      "visibility" : "public",
+      "methodCalls" : [ "direction", "getInVertex", "query", "edges", "label", "hasEdges", "isPropagationEnabled", "add" ]
+    }, {
+      "name" : "getStateAsString",
+      "visibility" : "public",
+      "methodCalls" : [ "getProperty" ]
+    }, {
+      "name" : "vertexString",
+      "visibility" : "public",
+      "methodCalls" : [ "getPropertyValues", "getIdForDisplay", "append", "toString", "getPropertyKeys" ]
+    }, {
+      "name" : "getVerticesForGUIDs",
+      "visibility" : "public",
+      "methodCalls" : [ "getVerticesForPropertyValues" ]
+    }, {
+      "name" : "getOutGoingEdgesByLabel",
+      "visibility" : "public",
+      "methodCalls" : [ "getAdjacentEdgesByLabel" ]
+    }, {
+      "name" : "isActive",
+      "visibility" : "public",
+      "methodCalls" : [ "getStatus" ]
+    }, {
+      "name" : "isClassificationEdge",
+      "visibility" : "public",
+      "methodCalls" : [ "getLabel", "getProperty", "equals" ]
+    }, {
+      "name" : "getAdjacentEdgesCountByLabel",
+      "visibility" : "public",
+      "methodCalls" : [ "endMetricRecord", "get", "getEdgesCount", "startMetricRecord", "debug", "isDebugEnabled" ]
+    }, {
+      "name" : "getClassificationEdge",
+      "visibility" : "public",
+      "methodCalls" : [ "hasNext", "iterator", "next", "query", "edges", "equals", "has", "direction", "label", "getInVertex", "getTypeName" ]
+    }, {
+      "name" : "getVertexForInstanceByUniqueAttribute",
+      "visibility" : "public",
+      "methodCalls" : [ "getTypeName", "getQualifiedName", "get", "name", "isDebugEnabled", "findVertex", "getName", "debug", "toShortString", "getUniqAttributes", "values" ]
+    }, {
+      "name" : "getPropagatedEdges",
+      "visibility" : "public",
+      "methodCalls" : [ "has", "query", "label", "getTypeName", "add", "edges", "direction" ]
+    }, {
+      "name" : "getClassificationEntityStatus",
+      "visibility" : "public",
+      "methodCalls" : [ "getProperty", "valueOf" ]
+    }, {
+      "name" : "elementExists",
+      "visibility" : "public",
+      "methodCalls" : [ "exists" ]
+    }, {
+      "name" : "getHomeId",
+      "visibility" : "public",
+      "methodCalls" : [ "getProperty" ]
+    }, {
+      "name" : "findEdge",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getState",
+      "visibility" : "public",
+      "methodCalls" : [ "getStateAsString", "valueOf" ]
+    }, {
+      "name" : "getReferenceObjectId",
+      "visibility" : "public",
+      "methodCalls" : [ "getAtlasObjectIdForOutVertex", "getOutVertex", "getAtlasObjectIdForInVertex" ]
+    }, {
+      "name" : "getOrCreateEdge",
+      "visibility" : "public",
+      "methodCalls" : [ "isDebugEnabled", "addEdge", "sleep", "warn", "debug", "vertexString", "startMetricRecord", "get", "error", "getEdgeBetweenVertices", "info", "endMetricRecord" ]
+    }, {
+      "name" : "getEdgeDetails",
+      "visibility" : "public",
+      "methodCalls" : [ "getInVertex", "getIdForDisplay", "format", "getLabel", "getOutVertex" ]
+    }, {
+      "name" : "getGraph",
+      "visibility" : "public",
+      "methodCalls" : [ "getGraphInstance" ]
+    }, {
+      "name" : "addClassificationEdge",
+      "visibility" : "public",
+      "methodCalls" : [ "addEdge", "getTypeName", "setEncodedProperty" ]
+    }, {
+      "name" : "isInternalType",
+      "visibility" : "public",
+      "methodCalls" : [ "getTypeName", "isInternalType", "startsWith" ]
+    }, {
+      "name" : "getVerticesForInstancesByUniqueAttribute",
+      "visibility" : "public",
+      "methodCalls" : [ "getTypeName", "getUniqAttributes", "getName", "get", "put", "query", "next", "createChildQuery", "isEmpty", "or", "getKey", "getIndex", "entrySet", "size", "addConditionsFrom", "vertices", "in", "asList", "getAttributeValues", "getQualifiedName", "getValue", "has", "iterator", "name", "add", "values" ]
+    }, {
+      "name" : "getRelationshipTypeName",
+      "visibility" : "public",
+      "methodCalls" : [ "isNotEmpty", "contains", "getEdges", "size", "getTypeName", "iterator", "next", "getAttributeRelationshipTypes", "hasNext" ]
+    } ],
+    "imports" : [ "org.apache.atlas.repository.graphdb.AtlasElement", "java.util.Collections", "org.apache.atlas.v1.model.instance.Id", "org.apache.atlas.model.instance.AtlasEntity.Status.ACTIVE", "org.apache.atlas.repository.store.graph.v2.AtlasGraphUtilsV2.isReference", "org.apache.atlas.model.instance.AtlasEntityHeader", "org.apache.atlas.type.AtlasStructType.AtlasAttribute.AtlasRelationshipEdgeDirection.OUT", "org.apache.atlas.repository.Constants.LABELS_PROPERTY_KEY", "org.apache.atlas.repository.Constants.CLASSIFICATION_VERTEX_REMOVE_PROPAGATIONS_KEY", "org.apache.atlas.exception.AtlasBaseException", "org.apache.atlas.repository.RepositoryException", "org.apache.atlas.repository.Constants.ENTITY_TYPE_PROPERTY_KEY", "org.apache.atlas.repository.Constants.SUPER_TYPES_PROPERTY_KEY", "org.apache.atlas.exception.EntityNotFoundException", "com.google.common.collect.HashBiMap", "org.apache.atlas.ApplicationProperties", "org.apache.atlas.repository.graphdb.AtlasGraphQuery", "java.util.Objects", "java.util.Map", "org.apache.atlas.repository.Constants.CLASSIFICATION_VERTEX_NAME_KEY", "org.apache.atlas.repository.Constants", "org.apache.atlas.repository.Constants.STATE_PROPERTY_KEY", "java.util.Collection", "org.apache.atlas.repository.graphdb.AtlasEdge", "org.apache.atlas.AtlasErrorCode", "com.google.common.collect.BiMap", "org.apache.atlas.repository.Constants.MODIFIED_BY_KEY", "java.util.HashSet", "org.apache.atlas.RequestContext", "org.apache.atlas.model.instance.AtlasEntity.Status.DELETED", "org.apache.atlas.type.AtlasType", "org.apache.atlas.type.AtlasMapType", "org.apache.atlas.repository.Constants.TIMESTAMP_PROPERTY_KEY", "org.apache.commons.lang.StringUtils", "org.apache.atlas.repository.graphdb.AtlasVertex", "org.apache.atlas.model.typedef.AtlasRelationshipDef.PropagateTags", "org.apache.commons.collections.IteratorUtils", "java.util.ArrayList", "org.apache.atlas.type.AtlasStructType.AtlasAttribute.AtlasRelationshipEdgeDirection.IN", "java.util.Iterator", "org.apache.atlas.type.AtlasStructType.AtlasAttribute.AtlasRelationshipEdgeDirection", "org.apache.atlas.type.AtlasArrayType", "org.apache.atlas.AtlasException", "org.apache.atlas.repository.graphdb.AtlasEdgeDirection", "org.apache.atlas.type.AtlasStructType.AtlasAttribute.AtlasRelationshipEdgeDirection.BOTH", "org.apache.atlas.type.AtlasStructType.AtlasAttribute", "org.slf4j.Logger", "org.apache.atlas.GraphTransactionInterceptor", "org.apache.atlas.repository.Constants.CLASSIFICATION_LABEL", "org.apache.commons.collections.CollectionUtils", "java.util.HashMap", "com.google.common.annotations.VisibleForTesting", "org.apache.atlas.model.instance.AtlasRelationship", "java.util.Set", "org.apache.atlas.repository.Constants.CLASSIFICATION_EDGE_IS_PROPAGATED_PROPERTY_KEY", "org.apache.atlas.repository.Constants.ATTRIBUTE_KEY_PROPERTY_KEY", "org.apache.atlas.repository.Constants.RELATIONSHIPTYPE_TAG_PROPAGATION_KEY", "java.util.Arrays", "org.apache.atlas.utils.AtlasPerfMetrics", "org.apache.atlas.repository.Constants.CLASSIFICATION_VERTEX_PROPAGATE_KEY", "org.apache.atlas.type.AtlasEntityType", "org.apache.atlas.repository.Constants.CLASSIFICATION_EDGE_NAME_PROPERTY_KEY", "org.apache.atlas.v1.model.instance.Referenceable", "org.apache.atlas.repository.Constants.INCOMPLETE_ENTITY_VALUE", "org.apache.atlas.repository.Constants.CLASSIFICATION_ENTITY_STATUS", "org.apache.atlas.repository.Constants.CLASSIFICATION_ENTITY_GUID", "org.apache.atlas.repository.Constants.LABEL_NAME_DELIMITER", "org.apache.atlas.repository.graphdb.AtlasGraph", "java.util.List", "org.apache.atlas.repository.Constants.CUSTOM_ATTRIBUTES_PROPERTY_KEY", "org.apache.atlas.repository.Constants.MODIFICATION_TIMESTAMP_PROPERTY_KEY", "org.apache.atlas.model.instance.AtlasEntity", "org.apache.atlas.repository.Constants.CREATED_BY_KEY", "org.apache.atlas.repository.Constants.ATTRIBUTE_INDEX_PROPERTY_KEY", "org.apache.atlas.repository.store.graph.v2.AtlasGraphUtilsV2", "org.apache.atlas.util.IndexedInstance", "org.apache.atlas.model.instance.AtlasObjectId", "org.apache.atlas.util.AttributeValueMap", "org.apache.atlas.repository.graphdb.AtlasVertexQuery", "org.apache.atlas.repository.Constants.CLASSIFICATION_NAME_DELIMITER", "org.apache.atlas.repository.Constants.RELATIONSHIPTYPE_BLOCKED_PROPAGATED_CLASSIFICATIONS_KEY", "org.slf4j.LoggerFactory", "org.apache.atlas.repository.Constants.TERM_ASSIGNMENT_LABEL", "org.apache.atlas.model.instance.AtlasEntity.Status" ]
+  }, {
+    "name" : "EntityGraphMapper",
+    "packageName" : "org.apache.atlas.repository.store.graph.v2",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "updateSystemAttributes",
+      "visibility" : "public",
+      "methodCalls" : [ "getCustomAttributes", "getLabels", "getHomeId", "getCreateTime", "setLabels", "isNotEmpty", "getProvenanceType", "getCreatedBy", "getUpdateTime", "getTime", "getVersion", "setEncodedProperty", "setCustomAttributes", "isProxy", "getUpdatedBy" ]
+    }, {
+      "name" : "setTasksUseFlag",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createVertexWithGuid",
+      "visibility" : "public",
+      "methodCalls" : [ "setCustomAttributes", "debug", "getTypeName", "addEncodedProperty", "getLabels", "setLabels", "isNotEmpty", "getEntityTypeByName", "setEncodedProperty", "getAllSuperTypes", "addToVertexCache" ]
+    }, {
+      "name" : "updateTagPropagations",
+      "visibility" : "public",
+      "methodCalls" : [ "getEdge", "notifyPropagatedEntities", "getHandler", "updateTagPropagations", "subtract", "getBlockedPropagatedClassifications", "union", "get", "handleBlockedClassifications", "removeTagPropagation", "putAll", "getPropagatableClassifications", "getOrDefault", "getClassificationPropagatedEntitiesMapping", "isEmpty", "name", "keySet", "isNotEmpty", "emptyList", "setEncodedProperty", "getPropagateTags", "put" ]
+    }, {
+      "name" : "getArrayElementsProperty",
+      "visibility" : "public",
+      "methodCalls" : [ "getCollectionElementsUsingRelationship", "getListProperty", "getVertexPropertyName", "isReference" ]
+    }, {
+      "name" : "addClassifications",
+      "visibility" : "public",
+      "methodCalls" : [ "formatPathParameters", "getPerfTracer", "isPerfTraceEnabled", "validateQueryParamLength", "log", "findByGuid", "verifyAccess", "lockObjectAndReleasePostCommit", "debug", "isEmpty", "getTypeName", "getEntityTypeByName", "cacheEntity", "addClassifications", "toAtlasEntityHeaderWithClassifications", "isInNotificationProcessing", "getHandler", "getImpactedVerticesV2", "updateModificationMetadata", "keySet", "add", "setEntityStatus", "isNotEmpty", "size", "setEntityGuid", "getDefaultRemovePropagations", "isDebugEnabled", "startMetricRecord", "singletonList", "getIdForDisplay", "addTagPropagation", "addAll", "put", "getTraitLabel", "getRemovePropagationsOnEntityDelete", "equals", "get", "getEntityGuid", "isImportInProgress", "getVertex", "setRemovePropagationsOnEntityDelete", "string", "isPropagate", "getEntityStatus", "setPropagate", "getTypeNames", "onClassificationsAddedToEntities", "getType", "endMetricRecord", "callAPI" ]
+    }, {
+      "name" : "deleteClassifications",
+      "visibility" : "public",
+      "methodCalls" : [ "getTypeName", "callAPI", "formatPathParameters", "isNotEmpty", "findByGuid", "getTraitNames", "deleteClassification" ]
+    }, {
+      "name" : "removePendingTaskFromEdge",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "removeItemFromListProperty", "warn", "getEdge" ]
+    }, {
+      "name" : "updateClassificationTextAndNames",
+      "visibility" : "public",
+      "methodCalls" : [ "getDelimitedClassificationNames", "getClassificationTextForEntity", "add", "getTypeName", "getPropertyValues", "isEmpty", "getAndCacheEntity", "getClassifications", "setProperty" ]
+    }, {
+      "name" : "importActivateEntity",
+      "visibility" : "public",
+      "methodCalls" : [ "isNotEmpty", "setEncodedProperty" ]
+    }, {
+      "name" : "validateAndNormalizeForUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "getClassificationTypeByName", "name", "getLabels", "validateLabels", "validateValueForUpdate", "isEmpty", "getTypeName", "getGuid", "getNormalizedValueForUpdate", "validateCustomAttributes", "isValidGuid", "getEntityTypeByName" ]
+    }, {
+      "name" : "mapAttributesAndClassifications",
+      "visibility" : "public",
+      "methodCalls" : [ "getClassifications", "isPurgeRequested", "getBusinessAttributes", "getDeletedEntities", "getCreatedEntities", "deleteClassifications", "cache", "addOrUpdateBusinessAttributes", "setCustomAttributes", "getUpdatedEntities", "endMetricRecord", "startMetricRecord", "addClassifications", "setBusinessAttributes", "getHandler", "get", "getVertex", "getEntitiesToDelete", "deleteEntities", "addEntity", "isNotEmpty", "getType" ]
+    }, {
+      "name" : "validateCustomAttributes",
+      "visibility" : "public",
+      "methodCalls" : [ "getCustomAttributes", "getKey", "entrySet", "isNotEmpty", "length", "startsWith", "valueOf", "matches", "matcher", "getValue" ]
+    }, {
+      "name" : "propagateClassification",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "addTagPropagation", "singletonList", "getIncludedImpactedVerticesV2", "stream", "toAtlasClassification", "warn", "getVertex", "getVertexForGUID", "getHandler", "map", "lockObjectAndReleasePostCommit", "debug", "toList", "collect", "onClassificationsAddedToEntities", "error" ]
+    }, {
+      "name" : "getSoftRefFormattedValue",
+      "visibility" : "public",
+      "methodCalls" : [ "getTypeName" ]
+    }, {
+      "name" : "deleteClassificationPropagation",
+      "visibility" : "public",
+      "methodCalls" : [ "removeTagPropagation", "stream", "toList", "deleteClassificationVertex", "map", "lockObjectAndReleasePostCommit", "singletonList", "warn", "isEmpty", "getHandler", "onClassificationsDeletedFromEntities", "toAtlasClassification", "collect", "getVertex" ]
+    }, {
+      "name" : "deleteClassification",
+      "visibility" : "public",
+      "methodCalls" : [ "validateQueryParamLength", "formatPathParameters", "callAPI", "isNotEmpty", "add", "getClassificationVertex", "getHandler", "getIdForDisplay", "deleteEdgeReference", "getTraitNames", "getPendingTasks", "isPropagationEnabled", "toAtlasClassification", "updateModificationMetadata", "isDebugEnabled", "anyMatch", "size", "setProperty", "stream", "removePropertyValue", "findByGuid", "getClassificationEdge", "singletonList", "isPerfTraceEnabled", "removeProperty", "error", "log", "getPerfTracer", "removeTagPropagation", "onClassificationsDeletedFromEntities", "remove", "getTypeName", "contains", "toAtlasEntityHeaderWithClassifications", "debug", "isEmpty", "lockObjectAndReleasePostCommit", "equals", "verifyAccess", "deleteClassification" ]
+    }, {
+      "name" : "addLabels",
+      "visibility" : "public",
+      "methodCalls" : [ "getGuidByUniqueAttributes", "getPerfTracer", "isPerfTraceEnabled", "log", "toString", "validateQueryParamLength", "formatPathParameters", "callAPI", "isNotEmpty", "equals", "addAll", "removeAll", "updateModificationMetadata", "onLabelsUpdatedFromEntity", "getLabels", "verifyAccess", "findByGuid", "addLabels", "isEmpty", "build", "toAtlasEntityHeaderWithClassifications", "debug", "setLabel", "validateLabels" ]
+    }, {
+      "name" : "addOrUpdateBusinessAttributes",
+      "visibility" : "public",
+      "methodCalls" : [ "getPerfTracer", "singletonMap", "log", "isPerfTraceEnabled", "callAPI", "valueOf", "formatPathParameters", "getIdFromVertex", "getValue", "values", "getKey", "getVertexPropertyName", "updateModificationMetadata", "isNotEmpty", "entrySet", "containsKey", "getName", "getEncodedProperty", "onBusinessAttributesUpdated", "isEmpty", "addOrUpdateBusinessAttributes", "toAtlasEntityHeaderWithClassifications", "findByGuid", "get", "setBusinessMetadata", "getBusinessAttributes", "add", "getEntityTypeByName", "debug", "getTypeName", "setBusinessAttributes", "equals", "getBusinessMetadata", "build", "verifyAccess", "keySet" ]
+    }, {
+      "name" : "removeLabels",
+      "visibility" : "public",
+      "methodCalls" : [ "log", "isPerfTraceEnabled", "validateQueryParamLength", "getGuidByUniqueAttributes", "getPerfTracer", "toString", "formatPathParameters", "callAPI", "getLabels", "updateModificationMetadata", "equals", "removeAll", "onLabelsUpdatedFromEntity", "isNotEmpty", "debug", "findByGuid", "validateLabels", "verifyAccess", "removeLabels", "toAtlasEntityHeaderWithClassifications", "setLabel", "isEmpty", "build" ]
+    }, {
+      "name" : "createVertex",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "createVertexWithGuid", "randomUUID" ]
+    }, {
+      "name" : "mapArrayValue",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll", "getCollectionElementsUsingRelationship", "getInverseRefAttribute", "isReference", "stream", "isAppendOnPartialUpdate", "getAttributeType", "getAttribute", "getOp", "getEdgeStatus", "collect", "getElementType", "getVertexProperty", "add", "isSoftReferenced", "getName", "isEmpty", "setEncodedProperty", "size", "equals", "getArrayElementsProperty", "debug", "getAttributeDef", "getReferringVertex", "getCardinality", "toList", "isMigrationInProgress", "isNotEmpty", "getValue", "get", "distinct" ]
+    }, {
+      "name" : "updateClassifications",
+      "visibility" : "public",
+      "methodCalls" : [ "addTagPropagation", "validateQueryParamLength", "callAPI", "formatPathParameters", "getValidityPeriods", "setEntityGuid", "setProperty", "isEmpty", "verifyAccess", "findByGuid", "log", "cacheEntity", "lockObjectAndReleasePostCommit", "toAtlasEntityHeaderWithClassifications", "debug", "getEntityTypeByName", "getPerfTracer", "getTypeName", "updateClassifications", "isPerfTraceEnabled", "keySet", "onClassificationUpdatedToEntity", "string", "setAttribute", "updateModificationMetadata", "getAttributes", "getClassificationTextForEntity", "onClassificationsDeletedFromEntities", "put", "validateAndNormalizeForUpdate", "getAndCacheEntity", "equalsIgnoreCase", "isActive", "getEntityGuid", "addAll", "toAtlasClassification", "getAllPropagatedEntityVertices", "getImpactedVerticesV2", "isNotEmpty", "add", "getRemovePropagationsOnEntityDelete", "singleton", "equals", "size", "getClassificationVertex", "getHandler", "getIdForDisplay", "removeTagPropagation", "setValidityPeriods", "get", "singletonList", "isDebugEnabled", "setEncodedProperty", "isPropagate" ]
+    }, {
+      "name" : "setCustomAttributes",
+      "visibility" : "public",
+      "methodCalls" : [ "setEncodedProperty" ]
+    }, {
+      "name" : "removePendingTaskFromEntity",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "getVertexForGUID", "warn", "removePropertyValue" ]
+    }, {
+      "name" : "createShellEntityVertex",
+      "visibility" : "public",
+      "methodCalls" : [ "getAttributeType", "addEncodedProperty", "debug", "getUniqAttributes", "addToVertexCache", "createShellEntityVertex", "getUniqueAttributes", "getEntityTypeByName", "containsKey", "randomUUID", "getAttributes", "toString", "isAssignedGuid", "getName", "setEncodedProperty", "getAllSuperTypes", "values", "getNormalizedValue", "get", "getTypeName" ]
+    }, {
+      "name" : "setLabels",
+      "visibility" : "public",
+      "methodCalls" : [ "validateQueryParamLength", "getPerfTracer", "getGuidByUniqueAttributes", "toString", "isPerfTraceEnabled", "log", "formatPathParameters", "callAPI", "onLabelsUpdatedFromEntity", "updateModificationMetadata", "setLabels", "setLabel", "emptySet", "subtract", "toAtlasEntityHeaderWithClassifications", "getLabels", "isEmpty", "findByGuid", "build", "verifyAccess", "validateLabels", "debug" ]
+    }, {
+      "name" : "removeBusinessAttributes",
+      "visibility" : "public",
+      "methodCalls" : [ "singletonMap", "log", "isPerfTraceEnabled", "getPerfTracer", "formatPathParameters", "callAPI", "isNotEmpty", "getKey", "updateModificationMetadata", "get", "getIdFromVertex", "containsKey", "getName", "getValue", "getVertexPropertyName", "getBusinessAttributes", "onBusinessAttributesUpdated", "removeProperty", "values", "entrySet", "removeBusinessAttributes", "verifyAccess", "getTypeName", "keySet", "findByGuid", "toAtlasEntityHeaderWithClassifications", "debug", "getEntityTypeByName", "isEmpty", "setBusinessMetadata", "build" ]
+    }, {
+      "name" : "validateLabels",
+      "visibility" : "public",
+      "methodCalls" : [ "isNotEmpty", "valueOf", "matcher", "length", "getInt", "matches" ]
+    }, {
+      "name" : "setBusinessAttributes",
+      "visibility" : "public",
+      "methodCalls" : [ "updateModificationMetadata", "getKey", "getTypeName", "getValue", "debug", "getBusinessAttributes", "isNotEmpty", "getIdFromVertex", "getName", "removeProperty", "onBusinessAttributesUpdated", "getProperty", "get", "entrySet", "equals", "getVertexPropertyName", "isEmpty", "values" ]
+    } ],
+    "imports" : [ "org.apache.atlas.repository.Constants.CLASSIFICATION_NAMES_KEY", "org.apache.atlas.type.AtlasMapType", "org.apache.atlas.repository.Constants.PROPAGATED_CLASSIFICATION_NAMES_KEY", "org.apache.atlas.repository.graphdb.AtlasGraph", "org.apache.atlas.repository.graph.GraphHelper.isPropagationEnabled", "org.apache.atlas.repository.Constants.TIMESTAMP_PROPERTY_KEY", "org.apache.atlas.repository.graph.GraphHelper.updateModificationMetadata", "org.springframework.stereotype.Component", "org.apache.atlas.repository.graph.GraphHelper.getDelimitedClassificationNames", "org.apache.atlas.model.typedef.AtlasEntityDef.AtlasRelationshipAttributeDef", "org.apache.atlas.type.AtlasStructType.AtlasAttribute.AtlasRelationshipEdgeDirection.OUT", "org.apache.atlas.repository.Constants.IS_INCOMPLETE_PROPERTY_KEY", "org.apache.atlas.repository.graph.GraphHelper.getClassificationEdge", "java.util.Collections", "org.apache.atlas.repository.Constants.MODIFIED_BY_KEY", "org.apache.atlas.repository.Constants.RELATIONSHIP_GUID_PROPERTY_KEY", "org.apache.atlas.repository.Constants.VERSION_PROPERTY_KEY", "org.apache.atlas.type.AtlasArrayType", "org.apache.atlas.utils.AtlasJson", "org.apache.atlas.annotation.GraphTransaction", "org.apache.atlas.model.TypeCategory", "org.apache.atlas.repository.Constants.HOME_ID_KEY", "org.apache.atlas.repository.converters.AtlasInstanceConverter", "org.apache.atlas.repository.store.graph.v2.tasks.ClassificationTask", "org.apache.atlas.utils.AtlasPerfMetrics.MetricRecorder", "org.apache.atlas.model.instance.EntityMutationResponse", "org.apache.atlas.model.instance.AtlasRelationship", "org.apache.atlas.repository.graph.GraphHelper.getTypeNames", "org.apache.atlas.AtlasConfiguration.LABEL_MAX_LENGTH", "java.util.Set", "java.util.regex.Pattern", "org.apache.commons.lang3.StringUtils", "org.apache.atlas.repository.graphdb.AtlasEdgeDirection", "org.apache.atlas.model.instance.AtlasEntityHeader", "org.apache.atlas.model.instance.AtlasEntity.Status.ACTIVE", "org.apache.atlas.repository.Constants.CLASSIFICATION_VALIDITY_PERIODS_KEY", "org.apache.atlas.exception.AtlasBaseException", "org.apache.atlas.repository.store.graph.v2.tasks.ClassificationPropagateTaskFactory.CLASSIFICATION_PROPAGATION_ADD", "org.apache.atlas.repository.graph.GraphHelper", "org.apache.atlas.type.AtlasStructType.AtlasAttribute.AtlasRelationshipEdgeDirection", "org.apache.atlas.repository.graph.GraphHelper.getTypeName", "org.apache.atlas.repository.store.graph.v2.AtlasGraphUtilsV2.isReference", "org.apache.atlas.repository.graph.GraphHelper.getLabels", "org.apache.atlas.repository.Constants.ENTITY_TYPE_PROPERTY_KEY", "org.apache.atlas.model.instance.EntityMutations.EntityOperation.UPDATE", "org.apache.atlas.repository.Constants.STATE_PROPERTY_KEY", "org.apache.atlas.repository.Constants.EDGE_PENDING_TASKS_PROPERTY_KEY", "org.apache.atlas.repository.Constants.CLASSIFICATION_ENTITY_STATUS", "org.apache.atlas.GraphTransactionInterceptor", "org.apache.atlas.repository.graph.GraphHelper.getMapElementsProperty", "javax.inject.Inject", "java.util.UUID", "org.apache.atlas.model.TypeCategory.CLASSIFICATION", "org.apache.atlas.repository.Constants.LABEL_NAME_DELIMITER", "org.apache.atlas.model.instance.AtlasClassification", "org.apache.atlas.repository.store.graph.v2.tasks.ClassificationPropagateTaskFactory.CLASSIFICATION_PROPAGATION_DELETE", "org.apache.atlas.repository.Constants.PROVENANCE_TYPE_KEY", "org.apache.atlas.repository.Constants.CLASSIFICATION_VERTEX_REMOVE_PROPAGATIONS_KEY", "org.apache.atlas.repository.Constants", "org.apache.atlas.AtlasConfiguration", "org.apache.atlas.repository.graphdb.AtlasVertex", "java.util.ArrayList", "org.apache.atlas.repository.graph.GraphHelper.string", "org.apache.atlas.repository.Constants.ATTRIBUTE_KEY_PROPERTY_KEY", "org.apache.atlas.model.instance.EntityMutations.EntityOperation", "org.apache.atlas.repository.Constants.CLASSIFICATION_ENTITY_GUID", "org.apache.atlas.repository.graph.GraphHelper.getClassificationVertex", "java.util.stream.Collectors", "org.apache.atlas.repository.RepositoryException", "org.apache.atlas.utils.AtlasPerfTracer", "org.apache.atlas.RequestContext", "org.apache.commons.collections.MapUtils", "org.apache.atlas.model.typedef.AtlasStructDef.AtlasAttributeDef.Cardinality.SET", "org.apache.atlas.type.AtlasTypeUtil", "org.apache.atlas.repository.graph.GraphHelper.getTraitNames", "org.apache.atlas.model.instance.AtlasEntity", "org.apache.atlas.type.AtlasClassificationType", "org.apache.atlas.exception.EntityNotFoundException", "org.apache.atlas.repository.Constants.CLASSIFICATION_LABEL", "org.apache.atlas.repository.graph.IFullTextMapper", "org.apache.atlas.model.instance.AtlasRelatedObjectId", "org.apache.atlas.type.AtlasStructType.AtlasAttribute.AtlasRelationshipEdgeDirection.IN", "org.apache.atlas.model.typedef.AtlasStructDef.AtlasAttributeDef", "org.apache.atlas.repository.store.graph.v2.AtlasGraphUtilsV2.getIdFromVertex", "org.apache.atlas.repository.graph.GraphHelper.isActive", "org.apache.atlas.repository.graph.GraphHelper.getStatus", "org.apache.atlas.type.AtlasBuiltInTypes", "java.util.List", "org.apache.atlas.repository.store.graph.AtlasRelationshipStore", "org.apache.atlas.model.instance.EntityMutations.EntityOperation.DELETE", "org.apache.atlas.type.AtlasBusinessMetadataType.AtlasBusinessAttribute", "org.apache.atlas.model.instance.EntityMutations.EntityOperation.CREATE", "org.apache.atlas.repository.graph.GraphHelper.isRelationshipEdge", "org.apache.atlas.repository.store.graph.EntityGraphDiscoveryContext", "org.apache.atlas.repository.Constants.IS_PROXY_KEY", "org.apache.atlas.repository.Constants.CUSTOM_ATTRIBUTES_PROPERTY_KEY", "org.apache.atlas.repository.graphdb.AtlasEdge", "org.apache.atlas.type.AtlasEntityType", "java.util.Collection", "org.apache.atlas.type.AtlasStructType.AtlasAttribute", "org.apache.atlas.utils.AtlasEntityUtil", "org.apache.atlas.repository.graph.GraphHelper.getCollectionElementsUsingRelationship", "org.apache.atlas.type.Constants.PENDING_TASKS_PROPERTY_KEY", "org.apache.commons.codec.digest.DigestUtils", "org.apache.atlas.model.instance.AtlasEntity.Status.DELETED", "org.apache.atlas.repository.Constants.SUPER_TYPES_PROPERTY_KEY", "org.apache.atlas.type.AtlasTypeRegistry", "com.google.common.annotations.VisibleForTesting", "org.apache.atlas.repository.Constants.GUID_PROPERTY_KEY", "org.apache.atlas.model.instance.AtlasObjectId", "org.apache.atlas.repository.store.graph.v1.DeleteHandlerDelegate", "org.apache.atlas.model.tasks.AtlasTask", "java.util.HashSet", "org.slf4j.Logger", "org.apache.atlas.repository.Constants.INCOMPLETE_ENTITY_VALUE", "org.apache.atlas.tasks.TaskManagement", "org.apache.atlas.model.typedef.AtlasEntityDef", "org.apache.atlas.repository.graph.GraphHelper.getTraitLabel", "org.apache.atlas.type.AtlasType", "org.apache.atlas.model.instance.EntityMutations.EntityOperation.PARTIAL_UPDATE", "org.apache.atlas.repository.Constants.CLASSIFICATION_TEXT_KEY", "org.apache.atlas.repository.Constants.TRAIT_NAMES_PROPERTY_KEY", "java.util.Objects", "org.apache.commons.collections.CollectionUtils", "org.apache.atlas.model.TimeBoundary", "org.apache.atlas.repository.Constants.CLASSIFICATION_VERTEX_PROPAGATE_KEY", "org.apache.atlas.repository.Constants.ATTRIBUTE_INDEX_PROPERTY_KEY", "org.apache.atlas.AtlasErrorCode", "org.apache.atlas.model.typedef.AtlasStructDef.AtlasAttributeDef.Cardinality", "org.slf4j.LoggerFactory", "java.util.regex.Matcher", "org.apache.atlas.repository.Constants.MODIFICATION_TIMESTAMP_PROPERTY_KEY", "org.apache.atlas.model.instance.AtlasRelatedObjectId.KEY_RELATIONSHIP_ATTRIBUTES", "org.apache.atlas.type.AtlasStructType", "java.util.HashMap", "java.util.Map", "org.apache.atlas.model.instance.AtlasStruct", "org.apache.atlas.repository.Constants.CREATED_BY_KEY", "org.apache.atlas.repository.Constants.LABELS_PROPERTY_KEY" ]
+  } ]
+}

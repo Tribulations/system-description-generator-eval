@@ -1,0 +1,793 @@
+{
+  "systemName" : "debezium",
+  "classes" : [ {
+    "name" : "Builder",
+    "packageName" : "io.debezium.transforms.scripting.wasm",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "threadId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withMaxMemory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withWasmModule",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withAot",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withTransaction",
+      "visibility" : "public",
+      "methodCalls" : [ "withSchema" ]
+    }, {
+      "name" : "withSource",
+      "visibility" : "public",
+      "methodCalls" : [ "withSchema" ]
+    }, {
+      "name" : "withName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withDoc",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withRecord",
+      "visibility" : "public",
+      "methodCalls" : [ "withSchema" ]
+    }, {
+      "name" : "mappedTableColumnDatatype",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "typeName" ]
+    }, {
+      "name" : "fullyQualifiedColumnName",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "name" ]
+    }, {
+      "name" : "map",
+      "visibility" : "public",
+      "methodCalls" : [ "getMessage", "getClass", "map", "getClassLoader", "loadClass", "add", "includes", "instantiateMapper" ]
+    }, {
+      "name" : "truncateStrings",
+      "visibility" : "public",
+      "methodCalls" : [ "map" ]
+    }, {
+      "name" : "mapByDatatype",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "includes" ]
+    }, {
+      "name" : "maskStrings",
+      "visibility" : "public",
+      "methodCalls" : [ "maskStrings", "createString", "map" ]
+    }, {
+      "name" : "maskStringsByHashing",
+      "visibility" : "public",
+      "methodCalls" : [ "map", "getBytes" ]
+    }, {
+      "name" : "propagateSourceTypeToSchemaParameterByDatatype",
+      "visibility" : "public",
+      "methodCalls" : [ "mapByDatatype" ]
+    }, {
+      "name" : "propagateSourceTypeToSchemaParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "map" ]
+    }, {
+      "name" : "fullyQualifiedColumnDatatype",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "typeName" ]
+    }, {
+      "name" : "mappedTableColumnName",
+      "visibility" : "public",
+      "methodCalls" : [ "name", "toString" ]
+    }, {
+      "name" : "maskStringsByHashingV2",
+      "visibility" : "public",
+      "methodCalls" : [ "map", "getBytes" ]
+    }, {
+      "name" : "customKeyMapper",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "maxQueueSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "maxBatchSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "buffering",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "loggingContextSupplier",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "pollInterval",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "maxQueueSizeInBytes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withType",
+      "visibility" : "public",
+      "methodCalls" : [ "position", "endIndex", "startIndex", "type" ]
+    }, {
+      "name" : "withAdditionalData",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "builder",
+      "visibility" : "public",
+      "methodCalls" : [ "datatypeVariableScaleDecimalSchema", "float64", "parameter", "valueOf", "datatypeUuidSchema", "join", "datatypeEnumSetSchema", "builder", "datatypeJsonSchema", "datatypeBitsSchema", "get", "datatypeLtreeSchema", "version", "int32", "string", "name", "int64", "struct", "datatypeXmlSchema", "doc", "field", "dataTypeSparseDoubleVectorSchema", "datatypeDoubleVectorSchema", "datatypeFloatVectorSchema", "optional", "datatypeEnumSchema" ]
+    }, {
+      "name" : "withTimestamp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withAggregateType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "registerDataTypes",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "unmodifiableList" ]
+    }, {
+      "name" : "jdbcType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "primarykey",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "scale",
+      "visibility" : "public",
+      "methodCalls" : [ "ofNullable", "getDefaultScale", "getScale" ]
+    }, {
+      "name" : "columnName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "typeName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "autoIncrement",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "nullable",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "precision",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "type",
+      "visibility" : "public",
+      "methodCalls" : [ "type" ]
+    }, {
+      "name" : "catalogName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "columns",
+      "visibility" : "public",
+      "methodCalls" : [ "values", "unmodifiableList", "emptyList", "addAll" ]
+    }, {
+      "name" : "schemaName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "tableName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "column",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "keyColumn",
+      "visibility" : "public",
+      "methodCalls" : [ "keyColumn", "getColumnName", "add" ]
+    }, {
+      "name" : "snapshot",
+      "visibility" : "public",
+      "methodCalls" : [ "isSnapshotRunning" ]
+    }, {
+      "name" : "transactionSequence",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "snapshotScn",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "scnIndex",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "snapshotCompleted",
+      "visibility" : "public",
+      "methodCalls" : [ "set", "currentTimeInMillis", "snapshotCompleted", "onPartitionEvent" ]
+    }, {
+      "name" : "commitScn",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "logicalName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "transactionContext",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "incrementalSnapshotContext",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "scn",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "transactionId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "lcrPosition",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "snapshotPendingTransactions",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "currentSequenceNumber",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "lastRedoSequenceNumber",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "openTime",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "disabledScn",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "lastRedoBlock",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "thread",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "disabledTime",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "conId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "status",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "enabledScn",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "lastRedoTime",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "instanceName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "enabledTime",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "lastRedoScn",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "logGroups",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "currentGroupNumber",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "checkpointScn",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "enabled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withTableFilter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withPlugin",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withSlot",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "streamParams",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "setProperty", "warn", "split" ]
+    }, {
+      "name" : "withPublicationAutocreateMode",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createFailOverSlot",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withTypeRegistry",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "build",
+      "visibility" : "public",
+      "methodCalls" : [ "headerConverter", "toFormat", "tracingEnabled", "unremovableOf", "produce", "isPresent", "getConfig", "generateHbmMapping", "requireNonNull", "negate", "caseInsensitive", "hasNext", "withField", "min", "subList", "equals", "toArray", "size", "builder", "addAll", "build", "isEmpty", "toString", "withValues", "append", "next", "asList", "iterator", "add", "get", "hasParentType", "parseIntoParts" ]
+    }, {
+      "name" : "withSchema",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withPublication",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "statusUpdateInterval",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "dropSlotOnClose",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "jdbcMetadataConnection",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "parentType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "enumValues",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "elementType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "hasParentType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "using",
+      "visibility" : "public",
+      "methodCalls" : [ "using", "from", "getKeyFormat", "getValueFormat", "getHeaderFormat" ]
+    }, {
+      "name" : "notifying",
+      "visibility" : "public",
+      "methodCalls" : [ "buildDefaultChangeConsumer", "put", "name", "getProperty", "contains", "info", "equalsIgnoreCase", "supportsTombstoneEvents", "buildConvertingChangeConsumer" ]
+    }, {
+      "name" : "checkpointTime",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    } ],
+    "imports" : [ "java.util.Collections", "com.dylibso.chicory.runtime.ByteArrayMemory", "com.dylibso.chicory.wasm.types.MemoryLimits", "com.dylibso.chicory.runtime.Instance", "com.dylibso.chicory.experimental.hostmodule.annotations.WasmExport", "com.dylibso.chicory.runtime.ImportValues", "com.dylibso.chicory.experimental.aot.AotMachine", "com.dylibso.chicory.wasm.ChicoryException", "io.debezium.transforms.scripting.RecordHeader", "com.dylibso.chicory.runtime.ImportMemory", "com.dylibso.chicory.wasm.WasmModule", "com.dylibso.chicory.experimental.hostmodule.annotations.HostModule", "org.apache.kafka.connect.data.Struct", "io.debezium.schema.SchemaFactory", "java.util.stream.Stream", "java.util.HashSet", "org.apache.kafka.connect.data.Field", "org.apache.kafka.connect.source.SourceRecord", "io.debezium.relational.Selectors", "io.debezium.relational.ValueConverter", "java.util.function.BiPredicate", "io.debezium.util.Strings", "io.debezium.relational.Table", "org.apache.kafka.connect.errors.ConnectException", "java.util.regex.Matcher", "io.debezium.relational.ColumnId", "io.debezium.config.Configuration", "io.debezium.relational.RelationalDatabaseConnectorConfig", "java.util.regex.Pattern", "io.debezium.function.Predicates", "io.debezium.relational.Selectors.TableIdToStringMapper", "java.util.function.Predicate", "io.debezium.time.Temporals", "java.util.concurrent.TimeUnit", "io.debezium.config.ConfigurationDefaults", "io.debezium.util.LoggingContext", "io.debezium.pipeline.Sizeable", "java.util.ArrayDeque", "io.debezium.util.Loggings.maybeRedactSensitiveData", "java.util.function.Supplier", "io.debezium.util.Threads", "io.debezium.annotation.SingleThreadAccess", "io.debezium.util.Clock", "java.util.concurrent.locks.Lock", "java.util.concurrent.locks.Condition", "java.util.function.Function", "java.util.concurrent.locks.ReentrantLock", "io.debezium.util.LoggingContext.PreviousContext", "io.debezium.util.Threads.Timer", "java.util.concurrent.atomic.AtomicReference", "java.util.Queue", "org.slf4j.Logger", "com.fasterxml.jackson.core.JsonProcessingException", "com.fasterxml.jackson.annotation.JsonIgnore", "org.slf4j.LoggerFactory", "com.fasterxml.jackson.databind.ObjectMapper", "io.debezium.pipeline.notification.channels.jmx.JmxNotificationChannel", "java.beans.ConstructorProperties", "org.antlr.v4.runtime.tree.TerminalNode", "io.debezium.text.ParsingException", "io.debezium.annotation.ThreadSafe", "io.debezium.relational.ddl.DataTypeBuilder", "org.antlr.v4.runtime.ParserRuleContext", "io.debezium.relational.Column", "io.debezium.relational.ddl.DataType", "io.debezium.metadata.CollectionId", "java.util.Collection", "io.debezium.connector.jdbc.JdbcSinkConnectorConfig", "java.util.LinkedHashMap", "io.debezium.pipeline.CommonOffsetContext", "java.util.Arrays", "org.apache.kafka.connect.data.Schema", "io.debezium.connector.AbstractSourceInfo", "java.util.stream.Collectors", "io.debezium.spi.schema.DataCollectionId", "io.debezium.pipeline.txmetadata.TransactionContext", "java.util.Set", "io.debezium.connector.SnapshotRecord", "io.debezium.connector.SnapshotType", "io.debezium.relational.TableId", "java.util.HashMap", "io.debezium.pipeline.source.snapshot.incremental.IncrementalSnapshotContext", "io.debezium.annotation.Immutable", "java.util.ArrayList", "java.time.Instant", "java.util.Optional", "io.debezium.annotation.NotThreadSafe", "io.debezium.connector.postgresql.PostgresConnectorConfig", "org.postgresql.replication.PGReplicationStream", "java.time.Duration", "io.debezium.connector.postgresql.spi.SlotCreationResult", "io.debezium.connector.postgresql.TypeRegistry", "io.debezium.connector.postgresql.PostgresSchema", "java.sql.SQLException", "io.debezium.relational.RelationalTableFilters", "org.postgresql.core.TypeInfo", "java.util.Objects", "org.postgresql.core.Oid", "java.util.List", "java.util.ServiceLoader", "io.debezium.engine.format.KeyValueHeaderChangeEventFormat", "java.util.Iterator", "io.debezium.common.annotation.Incubating", "java.time.Clock", "io.debezium.DebeziumException", "java.util.concurrent.ExecutorService", "java.util.Map", "java.util.concurrent.Executor", "io.debezium.engine.format.SerializationFormat", "java.io.Closeable", "io.debezium.engine.spi.OffsetCommitPolicy", "io.debezium.engine.format.KeyValueChangeEventFormat", "java.util.Properties", "io.debezium.engine.format.ChangeEventFormat", "java.util.function.Consumer" ]
+  }, {
+    "name" : "JdbcConnection",
+    "packageName" : "io.debezium.jdbc",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ "AutoCloseable" ],
+    "methods" : [ {
+      "name" : "connect",
+      "visibility" : "public",
+      "methodCalls" : [ "connection", "getInstance", "getConnectionFactoryClassName", "isNullOrEmpty", "isNull", "open", "connect", "configureBlocking", "edit", "build", "setAutoCommit", "adapt", "parseInt", "info", "with", "isNullOrBlank" ]
+    }, {
+      "name" : "readAllTableNames",
+      "visibility" : "public",
+      "methodCalls" : [ "readTableNames" ]
+    }, {
+      "name" : "reconnect",
+      "visibility" : "public",
+      "methodCalls" : [ "close", "connection" ]
+    }, {
+      "name" : "createTableId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "readTableNames",
+      "visibility" : "public",
+      "methodCalls" : [ "getMetaData", "getTables", "add", "connection", "getString", "next", "table", "map", "stream", "toSet", "schema", "readTableNames", "collect" ]
+    }, {
+      "name" : "config",
+      "visibility" : "public",
+      "methodCalls" : [ "expressionField", "config", "name", "description", "define", "defaultValue", "group", "asArray", "configDef" ]
+    }, {
+      "name" : "readPrimaryKeyNames",
+      "visibility" : "public",
+      "methodCalls" : [ "getPrimaryKeys", "getInt", "catalog", "set", "schema", "table", "next", "getString" ]
+    }, {
+      "name" : "loadKeyStore",
+      "visibility" : "public",
+      "methodCalls" : [ "newInputStream", "error", "load", "getInstance" ]
+    }, {
+      "name" : "isValid",
+      "visibility" : "public",
+      "methodCalls" : [ "source", "position", "isConnected", "isValid" ]
+    }, {
+      "name" : "quotedColumnIdString",
+      "visibility" : "public",
+      "methodCalls" : [ "contains", "quotedColumnIdString", "replace" ]
+    }, {
+      "name" : "call",
+      "visibility" : "public",
+      "methodCalls" : [ "connection", "prepareCall", "executeQuery", "apply", "transform", "accept", "valueOf", "doCall", "delayStrategy", "sleepWhen", "currentThread", "info", "isInterrupted" ]
+    }, {
+      "name" : "queryAndMap",
+      "visibility" : "public",
+      "methodCalls" : [ "apply", "queryAndMap", "createStatement", "connection", "executeQuery", "requireNonNull", "isTraceEnabled", "trace", "setQueryTimeout" ]
+    }, {
+      "name" : "tableTypes",
+      "visibility" : "public",
+      "methodCalls" : [ "getString", "getMetaData", "next", "toArray", "add", "getTableTypes", "size", "connection" ]
+    }, {
+      "name" : "prepareQuery",
+      "visibility" : "public",
+      "methodCalls" : [ "close", "prepareQuery", "executeQuery", "trace", "fill", "setObject", "isTraceEnabled", "accept" ]
+    }, {
+      "name" : "database",
+      "visibility" : "public",
+      "methodCalls" : [ "getString" ]
+    }, {
+      "name" : "prepareUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "trace", "setQueryTimeout", "isTraceEnabled", "execute", "accept" ]
+    }, {
+      "name" : "readTableUniqueIndices",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "contains", "table", "add", "set", "getIndexInfo", "isTableUniqueIndexIncluded", "getInt", "schema", "catalog", "getString", "next", "clear", "readTableUniqueIndices", "toDoubleQuoted" ]
+    }, {
+      "name" : "readAllCatalogNames",
+      "visibility" : "public",
+      "methodCalls" : [ "getString", "add", "next", "getMetaData", "getCatalogs", "connection" ]
+    }, {
+      "name" : "rowToArray",
+      "visibility" : "public",
+      "methodCalls" : [ "getColumnValue", "getGreatestColumnPosition", "position", "getColumns" ]
+    }, {
+      "name" : "readAllSchemaNames",
+      "visibility" : "public",
+      "methodCalls" : [ "test", "next", "getMetaData", "connection", "add", "getString", "getSchemas" ]
+    }, {
+      "name" : "commit",
+      "visibility" : "public",
+      "methodCalls" : [ "getAutoCommit", "connection", "commit", "remove", "keySet", "next", "get", "iterator", "info", "hasNext", "forEach", "getPreviousOffsets", "entrySet", "commitOffset", "getValue", "warn", "debug", "getOffset", "tryLock", "getKey", "getSourcePartition", "unlock", "getOffsets", "filter", "stream" ]
+    }, {
+      "name" : "rollback",
+      "visibility" : "public",
+      "methodCalls" : [ "connection", "getAutoCommit", "isConnected", "rollback" ]
+    }, {
+      "name" : "getQualifiedTableName",
+      "visibility" : "public",
+      "methodCalls" : [ "schema", "catalog", "table" ]
+    }, {
+      "name" : "readSchema",
+      "visibility" : "public",
+      "methodCalls" : [ "getTables", "connection", "overwriteTable", "removeAll", "isTableType", "supportedTableTypes", "readPrimaryKeyOrUniqueIndexNames", "forEach", "getAttributeDetails", "getKey", "add", "getOrDefault", "entrySet", "emptyList", "resolveCatalogName", "getString", "sort", "getBoolean", "getColumnsDetails", "getMetaData", "putAll", "next", "isIncluded", "size", "table", "tableIds", "getValue", "keySet", "debug" ]
+    }, {
+      "name" : "username",
+      "visibility" : "public",
+      "methodCalls" : [ "getString" ]
+    }, {
+      "name" : "close",
+      "visibility" : "public",
+      "methodCalls" : [ "administration", "forEach", "stop", "listIterator", "hasPrevious", "previous", "size", "getServiceClass", "getStatement", "cancel", "isAfterLast", "isClosed", "isOpenTelemetryAvailable", "compareAndSet", "heartbeatsEnabled", "commitSync", "unregisterMXBean", "trace", "remove", "containsKey", "sort", "reset", "getName", "getPdbName", "resetSessionToCdb", "isNullOrBlank", "getHost", "incrementWarningCount", "close", "set", "warn", "isOpen", "info", "awaitTermination", "shutdown", "dropReplicationSlot", "getJdbcConfig", "debug", "error", "values", "endMiningSession", "clear", "removeCache" ]
+    }, {
+      "name" : "getCurrentTimestamp",
+      "visibility" : "public",
+      "methodCalls" : [ "getTimestamp", "getObject", "of", "toInstant", "empty", "queryAndMap", "next" ]
+    }, {
+      "name" : "connectionString",
+      "visibility" : "public",
+      "methodCalls" : [ "asProperties", "getConnectionUrl", "parse", "getString", "getJdbcConfig", "createUrlPattern", "getUrlPattern", "connectionString" ]
+    }, {
+      "name" : "setQueryColumnValue",
+      "visibility" : "public",
+      "methodCalls" : [ "typeUsesCharset", "setNClob", "jdbcType", "setNString", "setNCharacterStream", "setQueryColumnValue", "setObject", "get", "nativeType", "isEnumType" ]
+    }, {
+      "name" : "queryWithBlockingConsumer",
+      "visibility" : "public",
+      "methodCalls" : [ "accept", "setQueryTimeout", "isTraceEnabled", "createStatement", "trace", "connection", "executeQuery" ]
+    }, {
+      "name" : "readTablePreparedStatement",
+      "visibility" : "public",
+      "methodCalls" : [ "connection", "setQueryTimeout", "setFetchSize", "getSnapshotFetchSize", "isTraceEnabled", "prepareStatement", "trace" ]
+    }, {
+      "name" : "isConnected",
+      "visibility" : "public",
+      "methodCalls" : [ "isClosed", "get", "isConnected" ]
+    }, {
+      "name" : "prepareQueryAndMap",
+      "visibility" : "public",
+      "methodCalls" : [ "accept", "requireNonNull", "apply", "executeQuery" ]
+    }, {
+      "name" : "querySingleValue",
+      "visibility" : "public",
+      "methodCalls" : [ "next", "apply", "prepareStatement", "executeQuery", "accept" ]
+    }, {
+      "name" : "executeWithoutCommitting",
+      "visibility" : "public",
+      "methodCalls" : [ "createStatement", "isTraceEnabled", "connection", "setQueryTimeout", "getAutoCommit", "execute", "trace" ]
+    }, {
+      "name" : "print",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "getColumnLabel", "append", "accept", "getMetaData", "print", "getColumnCount", "next", "setLength", "getString" ]
+    }, {
+      "name" : "prepareQueryWithBlockingConsumer",
+      "visibility" : "public",
+      "methodCalls" : [ "setQueryTimeout", "isTraceEnabled", "trace", "executeQuery", "accept" ]
+    }, {
+      "name" : "reselectColumns",
+      "visibility" : "public",
+      "methodCalls" : [ "table", "isNullOrEmpty", "schema", "size", "addAll", "getMessage", "startsWith", "getString", "add", "getErrorCode", "warn", "joining", "typeName", "collect", "id", "quotedTableIdString", "stream", "map", "columnWithName", "reselectColumns", "format" ]
+    }, {
+      "name" : "execute",
+      "visibility" : "public",
+      "methodCalls" : [ "binlogFilename", "connection", "setQueryTimeout", "isTraceEnabled", "createStatement", "postSnapshotCompletion", "notifyCompleted", "skipped", "getOffsets", "getBeanRegistry", "snapshotCompleted", "isOnDemand", "doExecute", "snapshotAborted", "notifyAborted", "getTheOnlyPartition", "shouldSkipSnapshot", "aborted", "delaySnapshotIfNeeded", "close", "notifyStarted", "prepare", "snapshotStarted", "initialSnapshotNotificationService", "completed", "notifySkipped", "getTheOnlyOffset", "asList", "getLog", "getAbsolutePath", "emptyList", "valueOf", "getMetrics", "compareTo", "executeLogMiningStreaming", "isArchiveLogOnlyModeAndScnIsNotAvailable", "getOffsetContext", "prepareJdbcConnection", "subtract", "setScn", "getSnapshotScn", "getScn", "incrementErrorCount", "getPrimaryKeyFields", "getPrimaryKeyMode", "isDeleteEnabled", "getFieldFilter", "isDelete", "getCollectionIdFromRecord", "offset", "isTruncateEnabled", "getTruncateStatement", "isTombstone", "isTruncate", "partition", "topicName", "getOffsetScn", "readEvent", "setAutoCommit", "getScnIndex", "warn", "isConnected", "dispatchHeartbeatEvent", "waitSnapshotCompletion", "receiveLCRCallback", "equals", "getTableNameCaseSensitivity", "isPaused", "getAdapter", "detach", "config", "streamingPaused", "trace", "initializeGtidSet", "getGtidEventType", "values", "currentTimeInMillis", "connect", "getSchema", "knownGtidSet", "handleRotateLogsEvent", "onEvent", "prepareTransaction", "filterGtidSet", "handleInsert", "logEvent", "handleGtidEvent", "getIncludeQueryEventType", "viewChange", "contains", "format", "getGtidSourceFilter", "isDebugEnabled", "setGtidSet", "assureNonEmptySchema", "eventsToSkipUponRestart", "add", "isSqlQueryIncluded", "handleQueryEvent", "isAlive", "getUserName", "startsWith", "handleTransactionPayload", "getMessage", "gtidSet", "getBufferSizeForStreamingChangeEventSource", "handleServerIncident", "handleUpdate", "setBinlogFilename", "registerEventListener", "getPort", "purgedGtidSet", "handleDelete", "handleServerStop", "isKeepAlive", "ofMillis", "toString", "getConnectionTimeout", "binlogPosition", "toMillis", "registerLifecycleListener", "put", "handleUpdateTableMetadata", "getName", "disconnect", "handleServerHeartbeat", "sleep", "setIsGtidModeEnabled", "getSource", "setCompletedGtidSet", "debug", "orderedGroupByTopicAndNamespace", "isEmpty", "execute", "accept", "apply", "pause", "getMaskedConnectionString", "onError", "getMongoClient", "sleeper", "getSnapshotter", "error", "setProducerThrowable", "getConnection", "info", "shouldStream", "compareAndSet", "lastProcessedMessageType", "lastCompletelyProcessedLsn", "enableFiltering", "newSingleThreadExecutor", "lastCommitLsn", "startStreaming", "reconnect", "hasCompletelyProcessedPosition", "getLogicalName", "searchingEnabled", "stopKeepAlive", "lsn", "set", "get", "startLsn", "commit", "getLastEventStoredLsn", "startKeepAlive", "rowsToSkipUponRestart", "getHostName", "parker", "handleRecordingQuery", "handleEvent", "getSkippedOperations", "toSeconds", "isRunning", "setBinlogPosition" ]
+    }, {
+      "name" : "connection",
+      "visibility" : "public",
+      "methodCalls" : [ "parseSqlStatementString", "execute", "getString", "toArray", "size", "connection", "isConnected", "setAutoCommit" ]
+    }, {
+      "name" : "query",
+      "visibility" : "public",
+      "methodCalls" : [ "isTraceEnabled", "trace", "executeQuery", "createStatement", "accept", "connection", "query", "setQueryTimeout" ]
+    }, {
+      "name" : "buildSelectWithRowLimits",
+      "visibility" : "public",
+      "methodCalls" : [ "schema", "getMajor", "table", "getOracleVersion", "insert", "isPresent", "quotedTableIdString", "get", "toString", "append" ]
+    }, {
+      "name" : "chunkQueryBuilder",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "singleResultMapper",
+      "visibility" : "public",
+      "methodCalls" : [ "apply", "next" ]
+    }, {
+      "name" : "setAutoCommit",
+      "visibility" : "public",
+      "methodCalls" : [ "setAutoCommit", "connection" ]
+    }, {
+      "name" : "nullsSortLast",
+      "visibility" : "public",
+      "methodCalls" : [ "empty", "of" ]
+    }, {
+      "name" : "readTableStatement",
+      "visibility" : "public",
+      "methodCalls" : [ "setFetchSize", "setQueryTimeout", "createStatement", "isTraceEnabled", "trace", "getSnapshotFetchSize", "connection" ]
+    }, {
+      "name" : "patternBasedFactory",
+      "visibility" : "public",
+      "methodCalls" : [ "getConnection", "getDeclaredConstructor", "isTraceEnabled", "connect", "newInstance", "isDebugEnabled", "debug", "getClassLoader", "trace", "asProperties", "forName" ]
+    }, {
+      "name" : "getColumnValue",
+      "visibility" : "public",
+      "methodCalls" : [ "getTimestamp", "getColumnType", "getObject", "toSpecialValue", "trace", "getBigDecimal", "get", "getClass", "getMetaData", "getColumnTypeName", "getString", "isPresent", "getOid", "startsWith", "getArray", "isArrayType", "getTypeRegistry", "getColumnValue", "substring", "readField" ]
+    }, {
+      "name" : "quotedTableIdString",
+      "visibility" : "public",
+      "methodCalls" : [ "toDoubleQuotedString", "catalog", "schema", "table", "toQuotedString" ]
+    } ],
+    "imports" : [ "io.debezium.util.ColumnUtils", "java.sql.PreparedStatement", "io.debezium.pipeline.source.snapshot.incremental.ChunkQueryBuilder", "org.slf4j.Logger", "java.util.Map.Entry", "io.debezium.relational.Attribute", "io.debezium.relational.Tables", "java.util.concurrent.Future", "io.debezium.relational.Column", "io.debezium.pipeline.source.snapshot.incremental.DefaultChunkQueryBuilder", "java.util.HashSet", "java.sql.CallableStatement", "java.util.concurrent.Executors", "io.debezium.spi.schema.DataCollectionId", "java.util.concurrent.TimeUnit", "org.apache.kafka.connect.data.Struct", "io.debezium.relational.Tables.TableFilter", "io.debezium.config.Field", "java.util.OptionalLong", "java.security.KeyStoreException", "java.sql.DatabaseMetaData", "io.debezium.util.BoundedConcurrentHashMap.Eviction", "java.io.InputStream", "io.debezium.relational.TableId", "java.sql.Connection", "java.util.concurrent.ExecutionException", "java.util.function.Consumer", "java.util.concurrent.ExecutorService", "io.debezium.relational.Table", "java.security.cert.CertificateException", "io.debezium.relational.Tables.ColumnNameFilter", "io.debezium.annotation.NotThreadSafe", "io.debezium.util.Collect", "java.util.concurrent.TimeoutException", "java.io.FileInputStream", "io.debezium.config.CommonConnectorConfig", "java.sql.Statement", "java.io.IOException", "java.util.stream.Collectors", "java.util.Objects", "java.util.List", "org.slf4j.LoggerFactory", "io.debezium.annotation.ThreadSafe", "java.sql.ResultSet", "io.debezium.relational.RelationalDatabaseConnectorConfig", "java.sql.SQLException", "io.debezium.DebeziumException", "java.util.function.Predicate", "java.util.ArrayList", "java.sql.ResultSetMetaData", "java.util.Set", "io.debezium.util.BoundedConcurrentHashMap.EvictionListener", "java.security.KeyStore", "java.util.Optional", "java.util.Map", "io.debezium.util.BoundedConcurrentHashMap", "io.debezium.util.Strings", "java.security.NoSuchAlgorithmException", "java.sql.DriverManager", "java.lang.reflect.InvocationTargetException", "java.time.Instant", "java.util.Properties", "java.util.Arrays", "java.util.Collections", "io.debezium.relational.ColumnEditor", "java.util.HashMap", "org.apache.kafka.connect.errors.ConnectException" ]
+  }, {
+    "name" : "GeneralDatabaseDialect",
+    "packageName" : "io.debezium.connector.jdbc.dialect",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ "DatabaseDialect" ],
+    "methods" : [ {
+      "name" : "getMaxNVarcharLengthInKey",
+      "visibility" : "public",
+      "methodCalls" : [ "getMaxVarcharLengthInKey" ]
+    }, {
+      "name" : "getDefaultDecimalPrecision",
+      "visibility" : "public",
+      "methodCalls" : [ "getDefaultDecimalPrecision" ]
+    }, {
+      "name" : "getByteArrayFormat",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getFormattedTimestampWithTimeZone",
+      "visibility" : "public",
+      "methodCalls" : [ "parse", "format" ]
+    }, {
+      "name" : "getFormattedDate",
+      "visibility" : "public",
+      "methodCalls" : [ "format", "getFormattedDate" ]
+    }, {
+      "name" : "getVersion",
+      "visibility" : "public",
+      "methodCalls" : [ "getVersion" ]
+    }, {
+      "name" : "getFormattedTimestamp",
+      "visibility" : "public",
+      "methodCalls" : [ "format" ]
+    }, {
+      "name" : "getAlterTableSuffix",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCollectionId",
+      "visibility" : "public",
+      "methodCalls" : [ "supportsCatalogs", "parseParts", "supportsSchemas", "getNameQualifierSupport", "getCollectionId", "of" ]
+    }, {
+      "name" : "getAlterTablePrefix",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "resolveMissingFields",
+      "visibility" : "public",
+      "methodCalls" : [ "allFields", "resolveColumnName", "add", "hasColumn", "values", "getName" ]
+    }, {
+      "name" : "tableExists",
+      "visibility" : "public",
+      "methodCalls" : [ "isIdentifierUppercaseWhenNotQuoted", "next", "name", "getTables", "getMetaData", "realm", "toUpperCase", "namespace", "toLowerCase", "tableExists", "isQuoteIdentifiers", "getConfig" ]
+    }, {
+      "name" : "getCreateTableStatement",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "isEmpty", "getQualifiedTableName", "allFields", "isOptional", "keyFieldNames", "append", "getTypeName", "toIdentifier", "build", "resolveColumnName", "getColumnName", "isKey", "appendList", "toString", "appendLists", "addColumnDefaultValue", "getNonKeyFieldNames", "getSchema" ]
+    }, {
+      "name" : "getMaxVarbinaryLength",
+      "visibility" : "public",
+      "methodCalls" : [ "getMaxVarbinaryLength" ]
+    }, {
+      "name" : "getCommunicationExceptions",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "isConnectionRestartOnErrors", "of", "unmodifiableSet", "addAll", "getCommunicationExceptions" ]
+    }, {
+      "name" : "getAlterTableColumnPrefix",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "shouldBindTimeWithTimeZoneAsDatabaseTimeZone",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getFormattedBoolean",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTimestampPositiveInfinityValue",
+      "visibility" : "public",
+      "methodCalls" : [ "from", "toString" ]
+    }, {
+      "name" : "getTimestampNegativeInfinityValue",
+      "visibility" : "public",
+      "methodCalls" : [ "from", "toString" ]
+    }, {
+      "name" : "getFormattedDateTime",
+      "visibility" : "public",
+      "methodCalls" : [ "format" ]
+    }, {
+      "name" : "getFormattedTime",
+      "visibility" : "public",
+      "methodCalls" : [ "format", "atDate" ]
+    }, {
+      "name" : "getMaxVarcharLengthInKey",
+      "visibility" : "public",
+      "methodCalls" : [ "getMaxVarcharLength" ]
+    }, {
+      "name" : "bindValue",
+      "visibility" : "public",
+      "methodCalls" : [ "trace", "getClass", "getName", "getType", "bind" ]
+    }, {
+      "name" : "readTable",
+      "visibility" : "public",
+      "methodCalls" : [ "precision", "contains", "schemaName", "keyColumn", "scale", "namespace", "catalogName", "getColumns", "typeName", "toUpperCase", "build", "getPrimaryKeys", "builder", "primarykey", "getInt", "name", "type", "isIdentifierUppercaseWhenNotQuoted", "autoIncrement", "realm", "getMetaData", "column", "add", "jdbcType", "equalsIgnoreCase", "toFullIdentiferString", "tableName", "next", "isNullOrBlank", "columnName", "getColumnCount", "nullable", "getTables", "getString", "getConfig", "isQuoteIdentifiers", "toLowerCase", "readTable" ]
+    }, {
+      "name" : "isTimeZoneSet",
+      "visibility" : "public",
+      "methodCalls" : [ "isTimeZoneSet" ]
+    }, {
+      "name" : "getDeleteStatement",
+      "visibility" : "public",
+      "methodCalls" : [ "append", "getId", "appendList", "build", "keyFieldNames", "isEmpty", "getQualifiedTableName" ]
+    }, {
+      "name" : "getAlterTableStatement",
+      "visibility" : "public",
+      "methodCalls" : [ "allFields", "getAlterTableColumnPrefix", "getColumnName", "resolveColumnName", "toIdentifier", "toString", "getAlterTableColumnSuffix", "isOptional", "getQualifiedTableName", "get", "getAlterTableColumnDelimiter", "getAlterTableSuffix", "appendList", "addColumnDefaultValue", "append", "getAlterTablePrefix", "build", "getId", "getSchema", "getTypeName" ]
+    }, {
+      "name" : "getSchemaType",
+      "visibility" : "public",
+      "methodCalls" : [ "getSimpleName", "writeCString", "getName", "memory", "length", "getClass", "trace", "type", "format", "name", "isNull", "get", "parameters" ]
+    }, {
+      "name" : "getTruncateStatement",
+      "visibility" : "public",
+      "methodCalls" : [ "append", "build", "getId", "getQualifiedTableName" ]
+    }, {
+      "name" : "getDefaultTimestampPrecision",
+      "visibility" : "public",
+      "methodCalls" : [ "getDefaultTimestampPrecision" ]
+    }, {
+      "name" : "getUpsertStatement",
+      "visibility" : "public",
+      "methodCalls" : [ "isSameOrAfter", "getDatabaseVersion", "build", "isEmpty", "getQualifiedTableName", "keyFieldNames", "append", "appendList", "getId", "appendLists", "columnQueryBindingFromField", "getNonKeyFieldNames", "columnNameFromField" ]
+    }, {
+      "name" : "getUpdateStatement",
+      "visibility" : "public",
+      "methodCalls" : [ "getNonKeyFieldNames", "build", "keyFieldNames", "appendList", "append", "getId", "isEmpty", "getQualifiedTableName" ]
+    }, {
+      "name" : "getAlterTableColumnSuffix",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getFormattedDateTimeWithNanos",
+      "visibility" : "public",
+      "methodCalls" : [ "getFormattedDateTime", "format" ]
+    }, {
+      "name" : "getInsertStatement",
+      "visibility" : "public",
+      "methodCalls" : [ "keyFieldNames", "columnQueryBindingFromField", "getQualifiedTableName", "getNonKeyFieldNames", "append", "build", "getId", "appendLists", "columnNameFromField", "getInsertStatement" ]
+    }, {
+      "name" : "getQueryBindingWithValueCast",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "toLowerCase", "getQueryBindingWithValueCast", "getTypeName", "type" ]
+    }, {
+      "name" : "getTypeName",
+      "visibility" : "public",
+      "methodCalls" : [ "isAfter", "isNegativeScaleAllowed", "getDefaultDecimalPrecision", "getMaxTimestampPrecision", "getDefaultTimestampPrecision", "min", "equals", "name", "parameters", "getSourceColumnType", "orElseThrow", "getSourceColumnSize", "map", "getJdbcType", "format", "getTimePrecision", "getMaxTimePrecision", "getTypeName", "orElse", "precision", "parseInt", "isPresent", "warn", "get", "joining", "split", "getSchemaParameter", "stream", "collect", "length", "getVersion" ]
+    }, {
+      "name" : "getFormattedTimeWithTimeZone",
+      "visibility" : "public",
+      "methodCalls" : [ "format" ]
+    }, {
+      "name" : "isNegativeScaleAllowed",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getAlterTableColumnDelimiter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    } ],
+    "imports" : [ "java.util.Set", "io.debezium.connector.jdbc.type.debezium.ZonedTimeType", "org.hibernate.boot.model.naming.Identifier", "io.debezium.connector.jdbc.naming.ColumnNamingStrategy", "io.debezium.connector.jdbc.type.connect.ConnectTimeType", "io.debezium.connector.jdbc.type.connect.ConnectInt32Type", "org.hibernate.cfg.AvailableSettings", "io.debezium.connector.jdbc.type.debezium.MicroTimestampType", "io.debezium.connector.jdbc.type.connect.ConnectDateType", "io.debezium.connector.jdbc.type.debezium.VariableScaleDecimalType", "io.debezium.connector.jdbc.type.connect.ConnectStringType", "io.debezium.connector.jdbc.type.debezium.DateType", "io.debezium.connector.jdbc.JdbcSinkConnectorConfig", "io.debezium.metadata.CollectionId", "io.debezium.connector.jdbc.type.connect.ConnectMapToConnectStringType", "io.debezium.connector.jdbc.type.connect.ConnectInt8Type", "java.time.ZoneOffset", "org.slf4j.LoggerFactory", "java.util.ArrayList", "org.hibernate.engine.jdbc.Size", "io.debezium.DebeziumException", "io.debezium.connector.jdbc.type.debezium.TimeType", "java.sql.Statement", "io.debezium.connector.jdbc.type.connect.ConnectInt16Type", "org.apache.kafka.connect.data.Schema", "java.util.HashSet", "java.sql.Timestamp", "java.time.temporal.TemporalAccessor", "io.debezium.connector.jdbc.type.debezium.NanoTimestampType", "java.sql.Connection", "java.sql.Types", "java.util.Collection", "java.time.Instant", "java.sql.DatabaseMetaData", "io.debezium.connector.jdbc.relational.TableDescriptor", "org.hibernate.dialect.Dialect", "io.debezium.connector.jdbc.type.connect.ConnectInt64Type", "io.debezium.connector.jdbc.ValueBindDescriptor", "java.util.Optional", "io.debezium.data.vector.SparseDoubleVector", "org.apache.kafka.connect.data.Struct", "io.debezium.connector.jdbc.JdbcSinkRecord", "io.debezium.connector.jdbc.type.debezium.NanoTimeType", "java.sql.ResultSet", "org.hibernate.dialect.DatabaseVersion", "org.slf4j.Logger", "org.hibernate.SessionFactory", "io.debezium.connector.jdbc.type.connect.ConnectFloat32Type", "io.debezium.connector.jdbc.type.debezium.DebeziumZonedTimestampType", "org.hibernate.engine.spi.SessionFactoryImplementor", "io.debezium.data.vector.FloatVector", "java.util.List", "io.debezium.connector.jdbc.relational.ColumnDescriptor", "org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry", "io.debezium.connector.jdbc.type.connect.ConnectFloat64Type", "io.debezium.connector.jdbc.JdbcSinkRecord.FieldDescriptor", "org.apache.kafka.connect.errors.ConnectException", "io.debezium.connector.jdbc.type.debezium.TimestampType", "java.util.HashMap", "io.debezium.data.vector.DoubleVector", "io.debezium.connector.jdbc.type.debezium.MicroTimeType", "io.debezium.connector.jdbc.type.connect.AbstractConnectSchemaType", "io.debezium.connector.jdbc.type.connect.ConnectBooleanType", "java.util.Objects", "io.debezium.connector.jdbc.type.connect.ConnectDecimalType", "io.debezium.util.Strings", "org.hibernate.engine.jdbc.env.spi.IdentifierHelper", "java.util.Map", "io.debezium.connector.jdbc.type.Type", "org.hibernate.StatelessSession", "org.hibernate.engine.jdbc.env.spi.NameQualifierSupport", "org.hibernate.exception.JDBCConnectionException", "java.time.format.DateTimeFormatter", "io.debezium.connector.jdbc.type.connect.ConnectTimestampType", "io.debezium.connector.jdbc.type.connect.ConnectBytesType", "java.sql.SQLException" ]
+  } ]
+}

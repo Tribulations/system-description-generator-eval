@@ -1,0 +1,793 @@
+{
+  "systemName" : "gocd",
+  "classes" : [ {
+    "name" : "PipelineInstanceModel",
+    "packageName" : "com.thoughtworks.go.presentation.pipelinehistory",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ "PipelineInfo" ],
+    "methods" : [ {
+      "name" : "getUri",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "hasHistoricalData",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTrackingTool",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPreviousPipelineCounter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isBisect",
+      "visibility" : "public",
+      "methodCalls" : [ "valueOf", "longValue", "isBisect" ]
+    }, {
+      "name" : "getLatestMaterialRevision",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "canUnlock",
+      "visibility" : "public",
+      "methodCalls" : [ "hasPipelineNamed", "general", "forPipeline", "format", "hasOperatePermissionForPipeline", "getUsername", "forbidden", "notFound" ]
+    }, {
+      "name" : "getPipelineBefore",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBuildCause",
+      "visibility" : "public",
+      "methodCalls" : [ "createWithModifications" ]
+    }, {
+      "name" : "setCanUnlock",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createEmptyModel",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCounter",
+      "visibility" : "public",
+      "methodCalls" : [ "getCounter" ]
+    }, {
+      "name" : "createEmptyPipelineInstanceModel",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getScheduledDate",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "first", "currentTimeMillis", "isScheduled", "before", "getScheduledDate" ]
+    }, {
+      "name" : "getCurrentRevisions",
+      "visibility" : "public",
+      "methodCalls" : [ "getMaterialRevisions" ]
+    }, {
+      "name" : "setPreviousPipelineLabel",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isRunning",
+      "visibility" : "public",
+      "methodCalls" : [ "anyMatch", "of", "isRunning" ]
+    }, {
+      "name" : "setCanRun",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setComment",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setBuildCause",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isPreparingToSchedule",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "hasStageBeenRun",
+      "visibility" : "public",
+      "methodCalls" : [ "hasStage" ]
+    }, {
+      "name" : "isLatestStage",
+      "visibility" : "public",
+      "methodCalls" : [ "isLatestStage", "equals", "latestStage" ]
+    }, {
+      "name" : "getPipelineIdentifier",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getComment",
+      "visibility" : "public",
+      "methodCalls" : [ "getComment" ]
+    }, {
+      "name" : "setMaterialConfigs",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "selectStage",
+      "visibility" : "public",
+      "methodCalls" : [ "setSelected", "byName", "isScheduled" ]
+    }, {
+      "name" : "getTrackingTool",
+      "visibility" : "public",
+      "methodCalls" : [ "ofNullable" ]
+    }, {
+      "name" : "getMaterials",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "getMaterial", "materials" ]
+    }, {
+      "name" : "getBuildCauseBy",
+      "visibility" : "public",
+      "methodCalls" : [ "getBuildCauseMessage" ]
+    }, {
+      "name" : "isLatestStageUnsuccessful",
+      "visibility" : "public",
+      "methodCalls" : [ "isLatestStageUnsuccessful", "latestStage", "hasUnsuccessfullyCompleted" ]
+    }, {
+      "name" : "isAnyStageActive",
+      "visibility" : "public",
+      "methodCalls" : [ "stageState", "isAnyStageActive", "getState", "stream", "anyMatch", "isActive" ]
+    }, {
+      "name" : "isScheduled",
+      "visibility" : "public",
+      "methodCalls" : [ "anyMatch", "stream" ]
+    }, {
+      "name" : "setLatestRevisions",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setLabel",
+      "visibility" : "public",
+      "methodCalls" : [ "setLabel" ]
+    }, {
+      "name" : "setMaterialRevisionsOnBuildCause",
+      "visibility" : "public",
+      "methodCalls" : [ "setMaterialRevisions" ]
+    }, {
+      "name" : "isLatestStageSuccessful",
+      "visibility" : "public",
+      "methodCalls" : [ "isLatestStageSuccessful", "latestStage", "hasPassed" ]
+    }, {
+      "name" : "indexOf",
+      "visibility" : "public",
+      "methodCalls" : [ "indexOf" ]
+    }, {
+      "name" : "getId",
+      "visibility" : "public",
+      "methodCalls" : [ "getBuildId", "getId" ]
+    }, {
+      "name" : "hasStage",
+      "visibility" : "public",
+      "methodCalls" : [ "equalsIgnoreCase", "getName", "equals", "getIdentifier", "byName" ]
+    }, {
+      "name" : "getCurrentRevision",
+      "visibility" : "public",
+      "methodCalls" : [ "getMaterialRevisions", "getMaterial", "getRevision", "equals", "getName", "str", "getCurrentRevisions" ]
+    }, {
+      "name" : "hasNeverCheckedForRevisions",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "getLatestPipelineInstance", "hasNeverCheckedForRevisions" ]
+    }, {
+      "name" : "createPipeline",
+      "visibility" : "public",
+      "methodCalls" : [ "execute", "save", "name", "info", "finishSchedule", "createPipelineInstance", "getOrigin", "getBuildCause", "cancelSchedule", "debug" ]
+    }, {
+      "name" : "numberOfStages",
+      "visibility" : "public",
+      "methodCalls" : [ "size" ]
+    }, {
+      "name" : "isCurrentlyLocked",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCounter",
+      "visibility" : "public",
+      "methodCalls" : [ "valueOf", "getIdentifier", "setStageCounter" ]
+    }, {
+      "name" : "getApprovedBy",
+      "visibility" : "public",
+      "methodCalls" : [ "first", "getStageHistory", "getApprovedBy" ]
+    }, {
+      "name" : "getName",
+      "visibility" : "public",
+      "methodCalls" : [ "trimToNull", "getBuildName", "getName", "name", "str" ]
+    }, {
+      "name" : "nextStageName",
+      "visibility" : "public",
+      "methodCalls" : [ "sort", "nextStageName", "getName", "size", "indexOf", "get", "byName" ]
+    }, {
+      "name" : "getStageHistory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCanRun",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getApprovedByForDisplay",
+      "visibility" : "public",
+      "methodCalls" : [ "getApprovedBy" ]
+    }, {
+      "name" : "activeStage",
+      "visibility" : "public",
+      "methodCalls" : [ "getState", "isActive" ]
+    }, {
+      "name" : "getLatestRevisions",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createPreparingToSchedule",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "hasModificationsFor",
+      "visibility" : "public",
+      "methodCalls" : [ "getLatestRevision", "isRealRevision" ]
+    }, {
+      "name" : "findCurrentMaterialRevisionForUI",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setStageHistory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPipelineBefore",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getRevisionOfLatestModification",
+      "visibility" : "public",
+      "methodCalls" : [ "getMaterialRevisions", "latestRevision" ]
+    }, {
+      "name" : "getLatestRevision",
+      "visibility" : "public",
+      "methodCalls" : [ "getLatestMaterialRevision", "messageConverter", "responseMessageForLatestRevision", "requestMessageForLatestRevision", "submitRequest", "get" ]
+    }, {
+      "name" : "setPipelineAfter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBuildCauseMessage",
+      "visibility" : "public",
+      "methodCalls" : [ "getMessage", "getBuildCause", "getBuildCauseMessage" ]
+    }, {
+      "name" : "stage",
+      "visibility" : "public",
+      "methodCalls" : [ "getStageHistory", "byName" ]
+    }, {
+      "name" : "setIsLockable",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getNaturalOrder",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "findDependencyMaterial",
+      "visibility" : "public",
+      "methodCalls" : [ "findDependencyMaterial", "getMaterials" ]
+    }, {
+      "name" : "getLabel",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "getLabel" ]
+    }, {
+      "name" : "latestStage",
+      "visibility" : "public",
+      "methodCalls" : [ "latestStage", "after", "size", "get", "first", "getScheduledDate" ]
+    }, {
+      "name" : "getPreviousLabel",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "hasNewRevisions",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "getLatestRevision", "anyMatch", "stream", "getCurrentRevision", "getLatestPipelineInstance", "hasNewRevisions" ]
+    }, {
+      "name" : "setCurrentlyLocked",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setBuildCauseMessage",
+      "visibility" : "public",
+      "methodCalls" : [ "setMessage", "createManualForced" ]
+    }, {
+      "name" : "isLockable",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setNaturalOrder",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getPipelineStatusMessage",
+      "visibility" : "public",
+      "methodCalls" : [ "latestStage", "getState", "getName", "format", "numberOfStages" ]
+    }, {
+      "name" : "getPipelineAfter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setName",
+      "visibility" : "public",
+      "methodCalls" : [ "trimToNull", "trim" ]
+    }, {
+      "name" : "getPreviousCounter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "hasPreviousStageBeenScheduled",
+      "visibility" : "public",
+      "methodCalls" : [ "byName", "get", "indexOf", "isScheduled" ]
+    }, {
+      "name" : "getCreatedTimeForDisplay",
+      "visibility" : "public",
+      "methodCalls" : [ "getScheduledDate", "convertHandleNull" ]
+    } ],
+    "imports" : [ "org.jetbrains.annotations.TestOnly", "com.thoughtworks.go.config.CaseInsensitiveString", "com.thoughtworks.go.config.materials.dependency.DependencyMaterialConfig", "com.thoughtworks.go.domain.materials.MaterialConfig", "com.thoughtworks.go.domain.materials.Revision", "com.thoughtworks.go.util.TimeConverter", "com.thoughtworks.go.domain.buildcause.BuildCause", "com.thoughtworks.go.config.materials.MaterialConfigs", "com.thoughtworks.go.domain", "java.util.Date", "com.thoughtworks.go.config.TrackingTool" ]
+  }, {
+    "name" : "PipelineSqlMapDao",
+    "packageName" : "com.thoughtworks.go.server.dao",
+    "extendedClasses" : [ "SqlMapClientDaoSupport" ],
+    "implementedInterfaces" : [ "Initializer", "PipelineDao", "StageStatusListener" ],
+    "methods" : [ {
+      "name" : "pipelineByIdWithMods",
+      "visibility" : "public",
+      "methodCalls" : [ "getSqlMapClientTemplate", "queryForObject" ]
+    }, {
+      "name" : "startDaemon",
+      "visibility" : "public",
+      "methodCalls" : [ "start" ]
+    }, {
+      "name" : "deleteOldPipelineLabelCountForPipelineInConfig",
+      "visibility" : "public",
+      "methodCalls" : [ "delete", "getSqlMapClientTemplate", "arguments", "asMap" ]
+    }, {
+      "name" : "getPipelineInstancesTriggeredWithDependencyMaterial",
+      "visibility" : "public",
+      "methodCalls" : [ "queryForList", "getSqlMapClientTemplate", "cacheKeyForPipelineInstancesTriggeredWithDependencyMaterial", "getId", "put", "getName", "and", "asMap", "getCounter", "getFingerprint", "get", "arguments" ]
+    }, {
+      "name" : "loadHistoryForDashboard",
+      "visibility" : "public",
+      "methodCalls" : [ "getSqlMapClientTemplate", "arguments", "isEmpty", "asMap", "createPipelineInstanceModels", "size", "get", "queryForList" ]
+    }, {
+      "name" : "cacheActivePipelines",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "info" ]
+    }, {
+      "name" : "count",
+      "visibility" : "public",
+      "methodCalls" : [ "getSqlMapClientTemplate", "queryForObject" ]
+    }, {
+      "name" : "findPipelineByNameAndCounter",
+      "visibility" : "public",
+      "methodCalls" : [ "arguments", "asMap", "getSqlMapClientTemplate", "queryForObject", "and", "findPipelineByNameAndCounter" ]
+    }, {
+      "name" : "mostRecentPipelineIdentifier",
+      "visibility" : "public",
+      "methodCalls" : [ "queryForObject", "getSqlMapClientTemplate", "mostRecentPipelineIdentifier" ]
+    }, {
+      "name" : "latestPassedStageIdentifier",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "arguments", "cacheKeyForLatestPassedStage", "put", "getSqlMapClientTemplate", "and", "queryForObject", "asMap" ]
+    }, {
+      "name" : "deleteOldPipelineLabelCountForPipelineCurrentlyNotInConfig",
+      "visibility" : "public",
+      "methodCalls" : [ "asMap", "delete", "getSqlMapClientTemplate", "arguments" ]
+    }, {
+      "name" : "getOldestAndLatestPipelineId",
+      "visibility" : "public",
+      "methodCalls" : [ "getSqlMapClientTemplate", "arguments", "asMap", "queryForObject", "getOldestAndLatestPipelineId" ]
+    }, {
+      "name" : "loadHistoryByIdWithBuildCause",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getPageNumberForCounter",
+      "visibility" : "public",
+      "methodCalls" : [ "pageStartingAt", "getCurrentPage", "getCounterForPipeline", "getPageNumberForCounter" ]
+    }, {
+      "name" : "findMatchingPipelineInstances",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll", "getSqlMapClientTemplate", "toLowerCase", "arguments", "currentTimeMillis", "and", "debug", "asMap", "queryForList", "forbiddenToViewPipeline", "forbidden", "findMatchingPipelineInstances", "createPipelineInstanceModels", "general", "hasViewPermissionForPipeline", "trim", "forPipeline" ]
+    }, {
+      "name" : "save",
+      "visibility" : "public",
+      "methodCalls" : [ "setPipelineId", "getElasticProfile", "saveCopyOf", "updateStateAndResult", "getResources", "getVariables", "getPlan", "setStageId", "getArtifactPlans", "requiresElasticAgent", "getClusterProfile", "asMap", "getIdentifier", "clearCachedAllStages", "clearCachedStage", "arguments", "getMaxStageCounter", "getCounter", "setCounter", "cacheKeyForStageCountForGraph", "and", "save", "getHibernateTemplate", "saveMaterialRevision", "disable", "isFalse", "setMatcher", "setEmailMe", "badRequest", "setEmail", "enable", "isTrue", "saveOrUpdate", "getMessage", "execute", "building", "saveSelectedPipelines", "update", "currentTime", "getName", "getStages", "lockIfNeeded", "mutexForPausePipeline", "setIdentifier", "getValue", "cacheKeyForLatestPipelineIdByPipelineName", "toString", "setEntityType", "getCurrentSession", "isSecure", "remove", "registerSynchronization", "getSqlMapClientTemplate", "setEntityId", "getId", "flushOnCommit", "scheduleTimeVariables", "insert" ]
+    }, {
+      "name" : "findEarlierPipelineThatPassedForStage",
+      "visibility" : "public",
+      "methodCalls" : [ "and", "getSqlMapClientTemplate", "asMap", "arguments", "queryForObject" ]
+    }, {
+      "name" : "pipelineWithMaterialsAndModsByBuildId",
+      "visibility" : "public",
+      "methodCalls" : [ "generate", "get", "queryForObject", "getSqlMapClientTemplate" ]
+    }, {
+      "name" : "mostRecentPipeline",
+      "visibility" : "public",
+      "methodCalls" : [ "queryForObject", "loadAssociations", "getSqlMapClientTemplate" ]
+    }, {
+      "name" : "findPipelineHistoryByNameAndCounter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "unpause",
+      "visibility" : "public",
+      "methodCalls" : [ "renderHTTPOperationResult", "params", "arguments", "and", "cacheKeyForPauseState", "update", "getSqlMapClientTemplate", "asMap", "remove", "setMessage", "error", "toString", "getUsername", "currentUsername", "conflict", "unpause", "join", "internalServerError" ]
+    }, {
+      "name" : "pause",
+      "visibility" : "public",
+      "methodCalls" : [ "params", "body", "getInstance", "currentUsername", "jsonReaderFrom", "optString", "renderHTTPOperationResult", "orElse", "getSqlMapClientTemplate", "update", "insert", "queryForObject", "cacheKeyForPauseState", "currentTime", "arguments", "remove", "asMap", "and", "error", "toString", "pause", "isBlank", "internalServerError", "join", "conflict", "getUsername", "setMessage" ]
+    }, {
+      "name" : "findPipelineByNameAndLabel",
+      "visibility" : "public",
+      "methodCalls" : [ "queryForObject", "and", "asMap", "arguments", "getSqlMapClientTemplate" ]
+    }, {
+      "name" : "loadActivePipelineInstancesFor",
+      "visibility" : "public",
+      "methodCalls" : [ "containsKey", "get", "put" ]
+    }, {
+      "name" : "loadHistory",
+      "visibility" : "public",
+      "methodCalls" : [ "deepClone", "arguments", "pipelineHistoryCacheKey", "queryForObject", "put", "get", "getSqlMapClientTemplate", "createPipelineInstanceModels", "asMap", "size", "queryForList", "loadHistoryByIdWithBuildCause", "setProperties", "addEntity", "loadModificationQuery", "list", "execute", "createSQLQuery", "getHibernateTemplate", "of" ]
+    }, {
+      "name" : "getCounterForPipeline",
+      "visibility" : "public",
+      "methodCalls" : [ "getSqlMapClientTemplate", "queryForObject" ]
+    }, {
+      "name" : "initialize",
+      "visibility" : "public",
+      "methodCalls" : [ "listFiles", "securityConfigChangeListener", "addStageStatusListener", "templateConfigChangedListener", "pipelineGroupsChangedListener", "registerListener", "getMessage", "cacheActivePipelines", "markInProgressBackupsAsAborted", "useCompressedJs", "getName", "fromJson", "getRealPath", "addListener", "format", "isEmpty", "getInitParameter", "readFileToString", "getAbsolutePath", "exists", "next", "configRepoConfigChangedListener", "iterator", "validateBundledPluginDirectory", "registerMaterialUpdateCompleteListener", "register", "pipelineConfigChangedListener", "registerMaterialSources", "get", "unzip", "cleanDirectory", "getPluginsZipStream", "startInfrastructure", "error", "info", "isGOUpdateCheckEnabled", "getServerVersionInfo", "cruiseConfig", "server", "getArtifactsDir", "getBackupConfig", "add", "forEach", "security", "securityAuthConfigs", "getAuthConfigId", "contains", "findAllTokensForAllUsers", "getConfigForEditing", "getPipelineName", "getAllPipelineConfigs", "instanceCount", "artifactsDir", "registerDatabaseAgentEntityChangeListener" ]
+    }, {
+      "name" : "updateComment",
+      "visibility" : "public",
+      "methodCalls" : [ "and", "pipelineHistoryCacheKey", "getSqlMapClientTemplate", "remove", "asMap", "update", "arguments", "getId", "updateComment", "format", "getUsername", "findPipelineByNameAndCounter", "hasOperatePermissionForPipeline" ]
+    }, {
+      "name" : "loadAssociations",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "saveWithStages",
+      "visibility" : "public",
+      "methodCalls" : [ "getStages", "save", "saveWithJobs" ]
+    }, {
+      "name" : "setStageDao",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "findBuildCauseOfPipelineByNameAndCounter",
+      "visibility" : "public",
+      "methodCalls" : [ "getBuildCause", "put", "format", "get", "findPipelineByNameAndCounter", "cacheKeyForBuildCauseByNameAndCounter" ]
+    }, {
+      "name" : "loadPipeline",
+      "visibility" : "public",
+      "methodCalls" : [ "getName", "queryForObject", "getSqlMapClientTemplate", "loadAssociations" ]
+    }, {
+      "name" : "insertOrUpdatePipelineCounter",
+      "visibility" : "public",
+      "methodCalls" : [ "asMap", "execute", "update", "insert", "queryForObject", "getSqlMapClientTemplate", "getName", "arguments", "flushOnCommit", "and" ]
+    }, {
+      "name" : "getPipelineNamesWithMultipleEntriesForLabelCount",
+      "visibility" : "public",
+      "methodCalls" : [ "queryForList", "isEmpty", "getSqlMapClientTemplate", "isBlank", "get" ]
+    }, {
+      "name" : "loadActivePipelines",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "pauseState",
+      "visibility" : "public",
+      "methodCalls" : [ "getSqlMapClientTemplate", "put", "queryForObject", "cacheKeyForPauseState", "get" ]
+    }, {
+      "name" : "stageStatusChanged",
+      "visibility" : "public",
+      "methodCalls" : [ "debug", "add", "call", "put", "stageConfigIdentifier", "getId", "cacheKeyForPipelineAndStage", "cacheKeyForLatestStageInstances", "cacheKeyForPipelineAndCounter", "cacheKeyForStageById", "cacheKeyForMostRecentId", "getPipelineCounter", "updateCachedLatestSuccessfulStage", "notifyStageStatus", "getPipelineName", "getIdentifier", "getResult", "getName", "get" ]
+    } ],
+    "imports" : [ "com.thoughtworks.go.util.IBatisUtil.arguments", "com.thoughtworks.go.domain.buildcause.BuildCause", "net.sf.ehcache.Ehcache", "net.sf.ehcache.config.Configuration", "org.slf4j.LoggerFactory", "com.thoughtworks.go.util.Clock", "com.thoughtworks.go.server.database.Database", "java.util.concurrent.locks.ReadWriteLock", "org.slf4j.Marker", "net.sf.ehcache.CacheManager", "org.apache.ibatis.session.SqlSessionFactory", "com.thoughtworks.go.config.materials.dependency.DependencyMaterial", "org.springframework.beans.factory.annotation.Autowired", "net.sf.ehcache.config.PersistenceConfiguration", "com.thoughtworks.go.domain", "com.thoughtworks.go.server.cache.GoCache", "com.thoughtworks.go.presentation.pipelinehistory.PipelineInstanceModels", "com.thoughtworks.go.util.TimeProvider", "java.util.concurrent.locks.ReentrantReadWriteLock", "org.slf4j.Logger", "com.thoughtworks.go.presentation.pipelinehistory.PipelineInstanceModel", "com.thoughtworks.go.config.CaseInsensitiveString", "com.thoughtworks.go.server.util.Pagination", "com.thoughtworks.go.server.transaction.TransactionSynchronizationManager", "com.thoughtworks.go.server.transaction.TransactionTemplate", "com.thoughtworks.go.server.cache.LazyCache", "net.sf.ehcache.Cache", "org.apache.commons.lang3.StringUtils", "java.util.concurrent.locks.Lock", "org.jetbrains.annotations.TestOnly", "com.thoughtworks.go.server.persistence.MaterialRepository", "net.sf.ehcache.store.MemoryStoreEvictionPolicy", "com.thoughtworks.go.config.GoConfigDao", "org.slf4j.MarkerFactory", "org.springframework.transaction.support.TransactionSynchronizationAdapter", "com.thoughtworks.go.util.SystemEnvironment", "com.thoughtworks.go.server.cache.CacheKeyGenerator", "org.apache.commons.lang3.StringUtils.isBlank", "com.thoughtworks.go.server.domain.StageStatusListener", "com.thoughtworks.go.config.exceptions.RecordNotFoundException", "com.thoughtworks.go.domain.materials.dependency.DependencyMaterialRevision", "net.sf.ehcache.config.CacheConfiguration", "com.thoughtworks.go.server.initializers.Initializer", "com.thoughtworks.go.domain.materials.Modification", "com.thoughtworks.go.server.transaction.SqlMapClientDaoSupport", "org.springframework.dao.DataRetrievalFailureException", "org.springframework.stereotype.Component", "java.util", "com.rits.cloning.Cloner", "com.thoughtworks.go.util.ClonerFactory" ]
+  }, {
+    "name" : "Stage",
+    "packageName" : "com.thoughtworks.go.domain",
+    "extendedClasses" : [ "PersistentObject" ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "setCancelledBy",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setApprovedBy",
+      "visibility" : "public",
+      "methodCalls" : [ "setApprover" ]
+    }, {
+      "name" : "getLastTransitionedTime",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPreviousStage",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getPreviousStage",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setRerunOfCounter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createClone",
+      "visibility" : "public",
+      "methodCalls" : [ "deepClone" ]
+    }, {
+      "name" : "hashCode",
+      "visibility" : "public",
+      "methodCalls" : [ "hashCode", "getRevision", "getUserName", "getComment", "valueOf", "doubleToLongBits", "getMaterial", "getModifications", "name", "isAutoApproved", "getName", "getFingerprint", "hash", "toHashCode", "append", "reflectionHashCode" ]
+    }, {
+      "name" : "setIdentifier",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDuration",
+      "visibility" : "public",
+      "methodCalls" : [ "getStartedDateFor", "isCompleted", "getCompletedDate", "completed", "getTime", "getDuration", "duration" ]
+    }, {
+      "name" : "hasRerunJobs",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getState",
+      "visibility" : "public",
+      "methodCalls" : [ "findByBuilds", "getState", "stageState" ]
+    }, {
+      "name" : "setCompletedByTransitionId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getIdentifier",
+      "visibility" : "public",
+      "methodCalls" : [ "getLabel", "getIdentifier" ]
+    }, {
+      "name" : "isReRun",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isArtifactsDeleted",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isActive",
+      "visibility" : "public",
+      "methodCalls" : [ "stageState", "isActive" ]
+    }, {
+      "name" : "status",
+      "visibility" : "public",
+      "methodCalls" : [ "status", "stageState" ]
+    }, {
+      "name" : "passed",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "stageState" ]
+    }, {
+      "name" : "failed",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "stageState" ]
+    }, {
+      "name" : "setLastTransitionedTime",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getJobInstances",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isLatestRun",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPipelineId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCounter",
+      "visibility" : "public",
+      "methodCalls" : [ "getCounter" ]
+    }, {
+      "name" : "setApprovalType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "prepareForRerunOf",
+      "visibility" : "public",
+      "methodCalls" : [ "getApprovedBy", "setApprovedBy", "resetJobsIds", "setRerunOfCounter", "setCreatedTime", "currentTimeMillis", "setLatestRun", "setId" ]
+    }, {
+      "name" : "setJobInstances",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isApproved",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "scheduledDate",
+      "visibility" : "public",
+      "methodCalls" : [ "getTime" ]
+    }, {
+      "name" : "getCancelledBy",
+      "visibility" : "public",
+      "methodCalls" : [ "getCancelledBy" ]
+    }, {
+      "name" : "getCreatedTime",
+      "visibility" : "public",
+      "methodCalls" : [ "getTime", "getCreatedTime" ]
+    }, {
+      "name" : "stageState",
+      "visibility" : "public",
+      "methodCalls" : [ "findByBuilds", "stageState" ]
+    }, {
+      "name" : "stageDetailTab",
+      "visibility" : "public",
+      "methodCalls" : [ "of", "replace" ]
+    }, {
+      "name" : "self",
+      "visibility" : "public",
+      "methodCalls" : [ "of", "encodeQueryParam", "replace" ]
+    }, {
+      "name" : "next",
+      "visibility" : "public",
+      "methodCalls" : [ "replaceAll", "get" ]
+    }, {
+      "name" : "previous",
+      "visibility" : "public",
+      "methodCalls" : [ "insertedAfter", "replaceAll" ]
+    }, {
+      "name" : "getCompletedByTransitionId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isCompletedAndPassed",
+      "visibility" : "public",
+      "methodCalls" : [ "stageState", "completed", "passed" ]
+    }, {
+      "name" : "isScheduled",
+      "visibility" : "public",
+      "methodCalls" : [ "anyMatch", "stream" ]
+    }, {
+      "name" : "building",
+      "visibility" : "public",
+      "methodCalls" : [ "findAgentAndRefreshStatus", "busy", "building" ]
+    }, {
+      "name" : "setArtifactsDeleted",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getOrderId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "completedDate",
+      "visibility" : "public",
+      "methodCalls" : [ "getTime", "stateTransitions", "after", "getStateChangeTime", "getCurrentState" ]
+    }, {
+      "name" : "findJob",
+      "visibility" : "public",
+      "methodCalls" : [ "getByName", "actualJobIdentifier", "getIdentifier", "format", "getJobName", "getPipelineName", "getStageName", "equalsIgnoreCase", "findPipelineByNameAndCounter", "translateToActualCase", "parseInt", "isEmpty", "findJob", "translateStageCounter", "isNumeric", "mostRecentPipelineIdentifier" ]
+    }, {
+      "name" : "getFirstJob",
+      "visibility" : "public",
+      "methodCalls" : [ "first" ]
+    }, {
+      "name" : "setLatestRun",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "stageLocator",
+      "visibility" : "public",
+      "methodCalls" : [ "format", "pipelineIdentifier", "pipelineLocator", "stageLocator" ]
+    }, {
+      "name" : "getApprovalType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getApprovedBy",
+      "visibility" : "public",
+      "methodCalls" : [ "first", "getStageHistory", "getApprovedBy" ]
+    }, {
+      "name" : "getPipelineId",
+      "visibility" : "public",
+      "methodCalls" : [ "getPipelineId", "getStageId" ]
+    }, {
+      "name" : "shouldFetchMaterials",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getResult",
+      "visibility" : "public",
+      "methodCalls" : [ "name", "toString", "getResult", "toLowerCase" ]
+    }, {
+      "name" : "shouldCleanWorkingDir",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getRerunOfCounter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getConfigVersion",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "latestTransitionDate",
+      "visibility" : "public",
+      "methodCalls" : [ "after", "getStateChangeTime", "latestTransitionDate" ]
+    }, {
+      "name" : "isCompleted",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "stageState", "completed", "isCompleted", "getState" ]
+    }, {
+      "name" : "setConfigVersion",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "fail",
+      "visibility" : "public",
+      "methodCalls" : [ "completing", "completed", "currentTime", "getJobInstances", "fail" ]
+    }, {
+      "name" : "toString",
+      "visibility" : "public",
+      "methodCalls" : [ "getTime", "getName", "getDbName", "getBuildCauseMessage", "getPipelineLabel", "duration", "toJson", "getRevision", "description", "byteCountToDisplaySize", "getSimpleName", "getClass", "getAbsolutePath", "revisions", "toList", "collect", "join", "getId", "stream", "orElse", "ofNullable", "map", "format", "append", "toString", "reflectionToString", "name", "allNodes", "formatISO8601" ]
+    }, {
+      "name" : "calculateResult",
+      "visibility" : "public",
+      "methodCalls" : [ "warn", "info", "completed", "latestTransitionId", "stageState", "stageResult" ]
+    }, {
+      "name" : "jobsWithResult",
+      "visibility" : "public",
+      "methodCalls" : [ "filterByResult" ]
+    }, {
+      "name" : "getName",
+      "visibility" : "public",
+      "methodCalls" : [ "trimToNull", "getBuildName", "getName", "name", "str" ]
+    }, {
+      "name" : "stageLocatorForDisplay",
+      "visibility" : "public",
+      "methodCalls" : [ "pipelineLocatorForDisplay", "format", "pipelineIdentifier", "stageLocatorForDisplay", "stageLocator" ]
+    }, {
+      "name" : "setCreatedTime",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOrderId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCounter",
+      "visibility" : "public",
+      "methodCalls" : [ "valueOf", "getIdentifier", "setStageCounter" ]
+    }, {
+      "name" : "cancelled",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "stageState" ]
+    }, {
+      "name" : "mostRecent",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "equals",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "equalsIgnoreCase", "getComment", "getUserName", "getRevision", "compare", "compareTo", "getModifications", "getMaterial", "name", "isAutoApproved", "getName", "getFingerprint", "getClass", "isEquals", "append", "reflectionEquals" ]
+    }, {
+      "name" : "setName",
+      "visibility" : "public",
+      "methodCalls" : [ "trimToNull", "trim" ]
+    } ],
+    "imports" : [ "org.joda.time.Duration", "com.thoughtworks.go.config.StageConfig", "com.thoughtworks.go.util.Clock", "com.rits.cloning.Cloner", "org.joda.time.DateTimeUtils", "org.slf4j.Logger", "org.jetbrains.annotations.TestOnly", "java.util.Map", "org.apache.commons.lang3.StringUtils.isNotBlank", "org.apache.commons.text.StringSubstitutor", "java.io.UnsupportedEncodingException", "org.springframework.web.util.UriUtils", "com.thoughtworks.go.CurrentGoCDVersion.apiDocsUrl", "org.slf4j.LoggerFactory", "com.thoughtworks.go.util.ClonerFactory", "java.sql.Timestamp", "java.util.Date" ]
+  } ]
+}

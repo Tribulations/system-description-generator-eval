@@ -1,0 +1,3569 @@
+{
+  "systemName" : "druid",
+  "classes" : [ {
+    "name" : "FilterChainImpl",
+    "packageName" : "com.alibaba.druid.filter",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ "FilterChain" ],
+    "methods" : [ {
+      "name" : "resultSet_isFirst",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "isFirst", "resultSet_isFirst" ]
+    }, {
+      "name" : "callableStatement_setShort",
+      "visibility" : "public",
+      "methodCalls" : [ "setShort", "getRawObject", "callableStatement_setShort" ]
+    }, {
+      "name" : "resultSet_getURL",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getURL", "getResultSetRaw", "resultSet_getURL" ]
+    }, {
+      "name" : "resultSet_getNClob",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getConnectionProxy", "getNClob", "getStatementProxy", "wrap", "resultSet_getNClob" ]
+    }, {
+      "name" : "resultSetMetaData_isSigned",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetProxy", "getPhysicalColumn", "getResultSetMetaDataRaw", "isSigned", "resultSetMetaData_isSigned" ]
+    }, {
+      "name" : "callableStatement_getTime",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getTime", "callableStatement_getTime" ]
+    }, {
+      "name" : "resultSet_updateInt",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateInt", "getResultSetRaw", "resultSet_updateInt" ]
+    }, {
+      "name" : "resultSet_getBoolean",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getBoolean", "resultSet_getBoolean" ]
+    }, {
+      "name" : "preparedStatement_setDouble",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setDouble", "preparedStatement_setDouble" ]
+    }, {
+      "name" : "resultSet_updateFloat",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateFloat", "resultSet_updateFloat" ]
+    }, {
+      "name" : "resultSet_isLast",
+      "visibility" : "public",
+      "methodCalls" : [ "isLast", "getResultSetRaw", "resultSet_isLast" ]
+    }, {
+      "name" : "connection_setSchema",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setSchema", "connection_setSchema" ]
+    }, {
+      "name" : "resultSetMetaData_isReadOnly",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetProxy", "getResultSetMetaDataRaw", "isReadOnly", "resultSetMetaData_isReadOnly" ]
+    }, {
+      "name" : "connection_releaseSavepoint",
+      "visibility" : "public",
+      "methodCalls" : [ "releaseSavepoint", "getRawObject", "connection_releaseSavepoint" ]
+    }, {
+      "name" : "resultSet_updateTime",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateTime", "resultSet_updateTime" ]
+    }, {
+      "name" : "preparedStatement_executeUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "addUpdateCount", "getAttribute", "incrementExecuteErrorCount", "executeUpdate", "getRawObject", "preparedStatement_executeUpdate", "statementExecuteUpdateBefore", "statementExecuteUpdateAfter", "getSql", "statement_executeErrorAfter" ]
+    }, {
+      "name" : "preparedStatement_executeQuery",
+      "visibility" : "public",
+      "methodCalls" : [ "incrementExecuteErrorCount", "createResultSetId", "executeQuery", "getRawObject", "getLastExecuteSql", "statementExecuteQueryAfter", "statement_executeErrorAfter", "getSql", "statementExecuteQueryBefore", "preparedStatement_executeQuery", "resultSetOpenAfter" ]
+    }, {
+      "name" : "connection_setClientInfo",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setClientInfo", "connection_setClientInfo" ]
+    }, {
+      "name" : "resultSet_getRow",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "getRow", "resultSet_getRow" ]
+    }, {
+      "name" : "resultSet_setFetchDirection",
+      "visibility" : "public",
+      "methodCalls" : [ "setFetchDirection", "getResultSetRaw", "resultSet_setFetchDirection" ]
+    }, {
+      "name" : "callableStatement_setTime",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setTime", "callableStatement_setTime" ]
+    }, {
+      "name" : "resultSetMetaData_getColumnTypeName",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetProxy", "getPhysicalColumn", "getResultSetMetaDataRaw", "getColumnTypeName", "resultSetMetaData_getColumnTypeName" ]
+    }, {
+      "name" : "resultSet_next",
+      "visibility" : "public",
+      "methodCalls" : [ "size", "get", "filterResultsetTenantColumn", "getTenantCallBack", "getConfig", "next", "getResultSetRaw", "isResultSetLogEnabled", "resultSetLogError", "getStatementProxy", "toString", "getColumnCount", "getConnectionProxy", "getMetaData", "resultSetLog", "resultSet_next", "getObject", "append", "getTimestamp", "getColumnType", "getId" ]
+    }, {
+      "name" : "resultSetMetaData_isCaseSensitive",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetProxy", "getResultSetMetaDataRaw", "isCaseSensitive", "resultSetMetaData_isCaseSensitive" ]
+    }, {
+      "name" : "callableStatement_getInt",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getInt", "callableStatement_getInt" ]
+    }, {
+      "name" : "preparedStatement_setNull",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setNull", "preparedStatement_setNull" ]
+    }, {
+      "name" : "preparedStatement_setBlob",
+      "visibility" : "public",
+      "methodCalls" : [ "setBlob", "getRawObject", "preparedStatement_setBlob" ]
+    }, {
+      "name" : "statement_getResultSetHoldability",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetHoldability", "getRawObject", "statement_getResultSetHoldability" ]
+    }, {
+      "name" : "callableStatement_getCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getCharacterStream", "callableStatement_getCharacterStream" ]
+    }, {
+      "name" : "callableStatement_setURL",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setURL", "callableStatement_setURL" ]
+    }, {
+      "name" : "callableStatement_setAsciiStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setAsciiStream", "callableStatement_setAsciiStream" ]
+    }, {
+      "name" : "preparedStatement_setShort",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setShort", "preparedStatement_setShort" ]
+    }, {
+      "name" : "preparedStatement_setRef",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setRef", "preparedStatement_setRef" ]
+    }, {
+      "name" : "resultSet_updateLong",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateLong", "resultSet_updateLong" ]
+    }, {
+      "name" : "dataSource_recycle",
+      "visibility" : "public",
+      "methodCalls" : [ "dataSource_releaseConnection", "recycle" ]
+    }, {
+      "name" : "resultSet_getBigDecimal",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getBigDecimal", "resultSet_getBigDecimal" ]
+    }, {
+      "name" : "preparedStatement_setURL",
+      "visibility" : "public",
+      "methodCalls" : [ "setURL", "getRawObject", "preparedStatement_setURL" ]
+    }, {
+      "name" : "resultSet_getByte",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getByte", "resultSet_getByte" ]
+    }, {
+      "name" : "statement_getQueryTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ "getQueryTimeout", "getRawObject", "statement_getQueryTimeout" ]
+    }, {
+      "name" : "resultSet_beforeFirst",
+      "visibility" : "public",
+      "methodCalls" : [ "beforeFirst", "getResultSetRaw", "resultSet_beforeFirst" ]
+    }, {
+      "name" : "callableStatement_setRowId",
+      "visibility" : "public",
+      "methodCalls" : [ "setRowId", "getRawObject", "callableStatement_setRowId" ]
+    }, {
+      "name" : "callableStatement_getSQLXML",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getSQLXML", "callableStatement_getSQLXML" ]
+    }, {
+      "name" : "callableStatement_getLong",
+      "visibility" : "public",
+      "methodCalls" : [ "getLong", "getRawObject", "callableStatement_getLong" ]
+    }, {
+      "name" : "connection_setAutoCommit",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setAutoCommit", "getId", "connection_setAutoCommit", "connectionLog" ]
+    }, {
+      "name" : "callableStatement_wasNull",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "wasNull", "callableStatement_wasNull" ]
+    }, {
+      "name" : "resultSet_updateRowId",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateRowId", "getResultSetRaw", "resultSet_updateRowId" ]
+    }, {
+      "name" : "statement_getMaxFieldSize",
+      "visibility" : "public",
+      "methodCalls" : [ "getMaxFieldSize", "getRawObject", "statement_getMaxFieldSize" ]
+    }, {
+      "name" : "connection_getTransactionIsolation",
+      "visibility" : "public",
+      "methodCalls" : [ "getTransactionIsolation", "getRawObject", "connection_getTransactionIsolation" ]
+    }, {
+      "name" : "resultSet_getFetchSize",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "getFetchSize", "resultSet_getFetchSize" ]
+    }, {
+      "name" : "resultSet_getStatement",
+      "visibility" : "public",
+      "methodCalls" : [ "getStatement", "getResultSetRaw", "resultSet_getStatement" ]
+    }, {
+      "name" : "callableStatement_setNCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "setNCharacterStream", "getRawObject", "callableStatement_setNCharacterStream" ]
+    }, {
+      "name" : "clob_free",
+      "visibility" : "public",
+      "methodCalls" : [ "free", "getRawClob", "clob_free" ]
+    }, {
+      "name" : "statement_setFetchDirection",
+      "visibility" : "public",
+      "methodCalls" : [ "setFetchDirection", "getRawObject", "statement_setFetchDirection" ]
+    }, {
+      "name" : "preparedStatement_setBinaryStream",
+      "visibility" : "public",
+      "methodCalls" : [ "setBinaryStream", "getRawObject", "preparedStatement_setBinaryStream" ]
+    }, {
+      "name" : "resultSet_moveToCurrentRow",
+      "visibility" : "public",
+      "methodCalls" : [ "moveToCurrentRow", "getResultSetRaw", "resultSet_moveToCurrentRow" ]
+    }, {
+      "name" : "preparedStatement_setInt",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setInt", "preparedStatement_setInt" ]
+    }, {
+      "name" : "callableStatement_setBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setBytes", "callableStatement_setBytes" ]
+    }, {
+      "name" : "resultSet_getFetchDirection",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "getFetchDirection", "resultSet_getFetchDirection" ]
+    }, {
+      "name" : "connection_createStatement",
+      "visibility" : "public",
+      "methodCalls" : [ "createStatement", "getRawObject", "createStatementId", "connection_createStatement", "statementCreateAfter" ]
+    }, {
+      "name" : "connection_clearWarnings",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "clearWarnings", "connection_clearWarnings" ]
+    }, {
+      "name" : "resultSet_rowUpdated",
+      "visibility" : "public",
+      "methodCalls" : [ "rowUpdated", "getResultSetRaw", "resultSet_rowUpdated" ]
+    }, {
+      "name" : "getFilters",
+      "visibility" : "public",
+      "methodCalls" : [ "getProxyFilters" ]
+    }, {
+      "name" : "resultSet_rowInserted",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "rowInserted", "resultSet_rowInserted" ]
+    }, {
+      "name" : "getPos",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "resultSet_updateNString",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateNString", "getResultSetRaw", "resultSet_updateNString" ]
+    }, {
+      "name" : "connection_createNClob",
+      "visibility" : "public",
+      "methodCalls" : [ "wrap", "getRawObject", "createNClob", "connection_createNClob" ]
+    }, {
+      "name" : "resultSet_relative",
+      "visibility" : "public",
+      "methodCalls" : [ "relative", "getResultSetRaw", "resultSet_relative" ]
+    }, {
+      "name" : "preparedStatement_setClob",
+      "visibility" : "public",
+      "methodCalls" : [ "setClob", "getRawObject", "getRawClob", "preparedStatement_setClob" ]
+    }, {
+      "name" : "connection_commit",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "commit", "getConnectionStat", "getDataSourceStat", "incrementConnectionCommitCount", "getDataSource", "getInstance", "isConnectionLogEnabled", "getId", "connection_commit", "connectionLog" ]
+    }, {
+      "name" : "callableStatement_setDate",
+      "visibility" : "public",
+      "methodCalls" : [ "setDate", "getRawObject", "callableStatement_setDate" ]
+    }, {
+      "name" : "statement_getResultSetConcurrency",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getResultSetConcurrency", "statement_getResultSetConcurrency" ]
+    }, {
+      "name" : "connection_prepareStatement",
+      "visibility" : "public",
+      "methodCalls" : [ "create", "getSql", "getUpdateCheckItems", "setSqlStatAttribute", "getDbType", "getDirectDataSource", "clearContext", "setWallUpdateCheckItems", "createStatementId", "prepareStatement", "getRawObject", "statementPrepareAfter", "connection_prepareStatement", "encode" ]
+    }, {
+      "name" : "callableStatement_getString",
+      "visibility" : "public",
+      "methodCalls" : [ "getString", "getRawObject", "callableStatement_getString", "getConnectionProxy", "decode" ]
+    }, {
+      "name" : "statement_setQueryTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ "setQueryTimeout", "getRawObject", "statement_setQueryTimeout" ]
+    }, {
+      "name" : "callableStatement_getObject",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "wrap", "getLastExecuteSql", "createResultSetId", "getObject", "getDataSource", "getDataSourceStat", "resultSetOpenAfter", "decodeObject", "callableStatement_getObject" ]
+    }, {
+      "name" : "connection_isClosed",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "isClosed", "connection_isClosed" ]
+    }, {
+      "name" : "getFilterSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "resultSet_updateBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateBytes", "resultSet_updateBytes" ]
+    }, {
+      "name" : "resultSetMetaData_isSearchable",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetProxy", "isSearchable", "getResultSetMetaDataRaw", "resultSetMetaData_isSearchable" ]
+    }, {
+      "name" : "connection_getWarnings",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getWarnings", "connection_getWarnings" ]
+    }, {
+      "name" : "callableStatement_setLong",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setLong", "callableStatement_setLong" ]
+    }, {
+      "name" : "preparedStatement_setAsciiStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setAsciiStream", "preparedStatement_setAsciiStream" ]
+    }, {
+      "name" : "preparedStatement_getMetaData",
+      "visibility" : "public",
+      "methodCalls" : [ "getMetaData", "getRawObject", "preparedStatement_getMetaData" ]
+    }, {
+      "name" : "resultSet_previous",
+      "visibility" : "public",
+      "methodCalls" : [ "previous", "getResultSetRaw", "resultSet_previous" ]
+    }, {
+      "name" : "callableStatement_setBigDecimal",
+      "visibility" : "public",
+      "methodCalls" : [ "setBigDecimal", "getRawObject", "callableStatement_setBigDecimal" ]
+    }, {
+      "name" : "statement_setCursorName",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setCursorName", "statement_setCursorName" ]
+    }, {
+      "name" : "statement_executeUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "check", "statExecuteUpdate", "incrementExecuteErrorCount", "clearContext", "executeUpdate", "getRawObject", "statementExecuteUpdateAfter", "statement_executeErrorAfter", "statementExecuteUpdateBefore", "getConnectionProxy", "encode", "statement_executeUpdate" ]
+    }, {
+      "name" : "resultSet_isBeforeFirst",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "isBeforeFirst", "resultSet_isBeforeFirst" ]
+    }, {
+      "name" : "connection_getHoldability",
+      "visibility" : "public",
+      "methodCalls" : [ "getHoldability", "getRawObject", "connection_getHoldability" ]
+    }, {
+      "name" : "resultSet_updateCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateCharacterStream", "getResultSetRaw", "resultSet_updateCharacterStream" ]
+    }, {
+      "name" : "statement_setMaxFieldSize",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setMaxFieldSize", "statement_setMaxFieldSize" ]
+    }, {
+      "name" : "clob_getAsciiStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawClob", "getAsciiStream", "clob_getAsciiStream" ]
+    }, {
+      "name" : "resultSet_getDouble",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getDouble", "getResultSetRaw", "resultSet_getDouble" ]
+    }, {
+      "name" : "resultSet_deleteRow",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "deleteRow", "resultSet_deleteRow" ]
+    }, {
+      "name" : "clob_length",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawClob", "length", "clob_length" ]
+    }, {
+      "name" : "preparedStatement_setArray",
+      "visibility" : "public",
+      "methodCalls" : [ "setArray", "getRawObject", "preparedStatement_setArray" ]
+    }, {
+      "name" : "statement_setPoolable",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setPoolable", "statement_setPoolable" ]
+    }, {
+      "name" : "preparedStatement_clearParameters",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "clearParameters", "getConnectionProxy", "preparedStatement_clearParameters", "getId", "statementLog", "isStatementParameterClearLogEnable" ]
+    }, {
+      "name" : "connection_createBlob",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "createBlob", "connection_createBlob" ]
+    }, {
+      "name" : "resultSet_getArray",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getArray", "resultSet_getArray" ]
+    }, {
+      "name" : "callableStatement_setDouble",
+      "visibility" : "public",
+      "methodCalls" : [ "setDouble", "getRawObject", "callableStatement_setDouble" ]
+    }, {
+      "name" : "preparedStatement_setFloat",
+      "visibility" : "public",
+      "methodCalls" : [ "setFloat", "getRawObject", "preparedStatement_setFloat" ]
+    }, {
+      "name" : "resultSet_updateAsciiStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateAsciiStream", "getResultSetRaw", "resultSet_updateAsciiStream" ]
+    }, {
+      "name" : "callableStatement_getBlob",
+      "visibility" : "public",
+      "methodCalls" : [ "getBlob", "getRawObject", "getDataSource", "getDataSourceStat", "callableStatement_getBlob" ]
+    }, {
+      "name" : "resultSet_getRef",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getRef", "resultSet_getRef" ]
+    }, {
+      "name" : "statement_isClosed",
+      "visibility" : "public",
+      "methodCalls" : [ "isClosed", "getRawObject", "statement_isClosed" ]
+    }, {
+      "name" : "resultSetMetaData_getColumnName",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetProxy", "getPhysicalColumn", "getColumnName", "getResultSetMetaDataRaw", "resultSetMetaData_getColumnName" ]
+    }, {
+      "name" : "resultSet_updateBinaryStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateBinaryStream", "resultSet_updateBinaryStream" ]
+    }, {
+      "name" : "preparedStatement_setBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "setBytes", "getRawObject", "preparedStatement_setBytes" ]
+    }, {
+      "name" : "preparedStatement_setLong",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setLong", "preparedStatement_setLong" ]
+    }, {
+      "name" : "resultSet_rowDeleted",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "rowDeleted", "resultSet_rowDeleted" ]
+    }, {
+      "name" : "resultSet_updateByte",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateByte", "getResultSetRaw", "resultSet_updateByte" ]
+    }, {
+      "name" : "statement_clearBatch",
+      "visibility" : "public",
+      "methodCalls" : [ "clearBatch", "getRawObject", "getConnectionProxy", "isStatementParameterClearLogEnable", "getId", "statementLog", "statement_clearBatch" ]
+    }, {
+      "name" : "statement_setFetchSize",
+      "visibility" : "public",
+      "methodCalls" : [ "setFetchSize", "getRawObject", "statement_setFetchSize" ]
+    }, {
+      "name" : "statement_getUpdateCount",
+      "visibility" : "public",
+      "methodCalls" : [ "getUpdateCount", "getRawObject", "statement_getUpdateCount" ]
+    }, {
+      "name" : "resultSet_getBlob",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getBlob", "getResultSetRaw", "getDataSource", "resultSet_getBlob", "getDataSourceStat" ]
+    }, {
+      "name" : "connection_getTypeMap",
+      "visibility" : "public",
+      "methodCalls" : [ "getTypeMap", "getRawObject", "connection_getTypeMap" ]
+    }, {
+      "name" : "resultSet_last",
+      "visibility" : "public",
+      "methodCalls" : [ "last", "getResultSetRaw", "resultSet_last" ]
+    }, {
+      "name" : "callableStatement_setClob",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawClob", "setClob", "getRawObject", "callableStatement_setClob" ]
+    }, {
+      "name" : "callableStatement_setNull",
+      "visibility" : "public",
+      "methodCalls" : [ "setNull", "getRawObject", "callableStatement_setNull" ]
+    }, {
+      "name" : "resultSet_updateDouble",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateDouble", "resultSet_updateDouble" ]
+    }, {
+      "name" : "connection_setCatalog",
+      "visibility" : "public",
+      "methodCalls" : [ "setCatalog", "getRawObject", "connection_setCatalog" ]
+    }, {
+      "name" : "resultSet_getClob",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "wrap", "getResultSetRaw", "getStatementProxy", "getClob", "getDataSource", "resultSet_getClob", "getDataSourceStat" ]
+    }, {
+      "name" : "statement_getMoreResults",
+      "visibility" : "public",
+      "methodCalls" : [ "getMoreResults", "getRawObject", "statement_getMoreResults" ]
+    }, {
+      "name" : "statement_addBatch",
+      "visibility" : "public",
+      "methodCalls" : [ "check", "clearContext", "addBatch", "getRawObject", "getConnectionProxy", "encode", "statement_addBatch" ]
+    }, {
+      "name" : "resultSet_close",
+      "visibility" : "public",
+      "methodCalls" : [ "incrementJdbcResultSetCloseCount", "current", "get", "resultSet_close", "size", "getStatementProxy", "append", "isResultSetCloseAfterLogEnabled", "getId", "getConnectionProxy", "toString", "resultSetLog", "getCloseCount", "addResultSetHoldTimeNano", "addReaderOpenCount", "addStringReadLength", "getReadStringLength", "getLastExecuteTimeNano", "getSql", "getOpenInputStreamCount", "getReadBytesLength", "getConstructNano", "addReadBytesLength", "getInstance", "nanoTime", "getDataSourceStat", "addInputStreamOpenCount", "getOpenReaderCount", "getResultSetStat", "incrementCloseCounter", "getDataSource", "afterClose", "getSqlStat", "getFetchRowCount", "addFetchRowCount", "getResultSetRaw", "clearAttributes", "close", "getAttribute" ]
+    }, {
+      "name" : "resultSet_getObject",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "wrap", "getObject", "createResultSetId", "getLastExecuteSql", "getDataSource", "length", "addReadStringLength", "getDataSourceStat", "getColumnType", "findColumn", "resultSet_getString", "getConnectionProxy", "getMetaData", "getResultSetRaw", "decodeObject", "getStatementProxy", "getObjectReplaceLocalDateTime", "resultSet_getObject" ]
+    }, {
+      "name" : "connection_isValid",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "isValid", "connection_isValid" ]
+    }, {
+      "name" : "preparedStatement_setNCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setNCharacterStream", "preparedStatement_setNCharacterStream" ]
+    }, {
+      "name" : "resultSet_getSQLXML",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getSQLXML", "resultSet_getSQLXML" ]
+    }, {
+      "name" : "resultSetMetaData_getColumnType",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetProxy", "getPhysicalColumn", "getResultSetMetaDataRaw", "getColumnType", "resultSetMetaData_getColumnType" ]
+    }, {
+      "name" : "resultSetMetaData_isNullable",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetProxy", "getPhysicalColumn", "isNullable", "getResultSetMetaDataRaw", "resultSetMetaData_isNullable" ]
+    }, {
+      "name" : "resultSet_updateObject",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateObject", "resultSet_updateObject" ]
+    }, {
+      "name" : "resultSet_isAfterLast",
+      "visibility" : "public",
+      "methodCalls" : [ "isAfterLast", "getResultSetRaw", "resultSet_isAfterLast" ]
+    }, {
+      "name" : "statement_executeQuery",
+      "visibility" : "public",
+      "methodCalls" : [ "clearContext", "check", "incrementExecuteErrorCount", "createResultSetId", "getLastExecuteSql", "getRawObject", "executeQuery", "statement_executeErrorAfter", "statementExecuteQueryBefore", "statementExecuteQueryAfter", "resultSetOpenAfter", "encode", "statement_executeQuery", "getConnectionProxy" ]
+    }, {
+      "name" : "connection_getCatalog",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getCatalog", "connection_getCatalog" ]
+    }, {
+      "name" : "callableStatement_setFloat",
+      "visibility" : "public",
+      "methodCalls" : [ "setFloat", "getRawObject", "callableStatement_setFloat" ]
+    }, {
+      "name" : "resultSetMetaData_getPrecision",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetProxy", "getPhysicalColumn", "getResultSetMetaDataRaw", "getPrecision", "resultSetMetaData_getPrecision" ]
+    }, {
+      "name" : "cloneChain",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "callableStatement_getNCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getNCharacterStream", "callableStatement_getNCharacterStream" ]
+    }, {
+      "name" : "statement_getConnection",
+      "visibility" : "public",
+      "methodCalls" : [ "getConnection", "getRawObject", "statement_getConnection" ]
+    }, {
+      "name" : "resultSet_moveToInsertRow",
+      "visibility" : "public",
+      "methodCalls" : [ "moveToInsertRow", "getResultSetRaw", "resultSet_moveToInsertRow" ]
+    }, {
+      "name" : "dataSource_connect",
+      "visibility" : "public",
+      "methodCalls" : [ "getConnectionDirect", "dataSource_getConnection" ]
+    }, {
+      "name" : "resultSet_isClosed",
+      "visibility" : "public",
+      "methodCalls" : [ "isClosed", "getResultSetRaw", "resultSet_isClosed" ]
+    }, {
+      "name" : "resultSetMetaData_getColumnLabel",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetProxy", "getResultSetMetaDataRaw", "getColumnLabel", "resultSetMetaData_getColumnLabel" ]
+    }, {
+      "name" : "resultSet_getAsciiStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getAsciiStream", "getResultSetRaw", "incrementOpenInputStreamCount", "resultSet_getAsciiStream" ]
+    }, {
+      "name" : "isWrapperFor",
+      "visibility" : "public",
+      "methodCalls" : [ "ispPrivileged", "isWrapAllow", "isDoPrivilegedAllow", "getConfig", "createChain", "getConnection", "isWrapperFor", "getClass", "isInstance" ]
+    }, {
+      "name" : "resultSet_getUnicodeStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getUnicodeStream", "getResultSetRaw", "resultSet_getUnicodeStream" ]
+    }, {
+      "name" : "resultSet_getBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getBytes", "getResultSetRaw", "resultSet_getBytes", "addReadBytesLength" ]
+    }, {
+      "name" : "connection_setReadOnly",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setReadOnly", "connection_setReadOnly" ]
+    }, {
+      "name" : "preparedStatement_setNString",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setNString", "preparedStatement_setNString" ]
+    }, {
+      "name" : "preparedStatement_getParameterMetaData",
+      "visibility" : "public",
+      "methodCalls" : [ "getParameterMetaData", "getRawObject", "preparedStatement_getParameterMetaData" ]
+    }, {
+      "name" : "connection_prepareCall",
+      "visibility" : "public",
+      "methodCalls" : [ "getUpdateCheckItems", "getDbType", "create", "clearContext", "getSql", "setSqlStatAttribute", "getDirectDataSource", "setWallUpdateCheckItems", "getRawObject", "createStatementId", "prepareCall", "statementPrepareCallAfter", "connection_prepareCall", "encode" ]
+    }, {
+      "name" : "preparedStatement_addBatch",
+      "visibility" : "public",
+      "methodCalls" : [ "addBatch", "getRawObject", "preparedStatement_addBatch" ]
+    }, {
+      "name" : "preparedStatement_setTime",
+      "visibility" : "public",
+      "methodCalls" : [ "setTime", "getRawObject", "preparedStatement_setTime" ]
+    }, {
+      "name" : "connection_getAutoCommit",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getAutoCommit", "connection_getAutoCommit" ]
+    }, {
+      "name" : "callableStatement_getRef",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getRef", "callableStatement_getRef" ]
+    }, {
+      "name" : "callableStatement_getArray",
+      "visibility" : "public",
+      "methodCalls" : [ "getArray", "getRawObject", "callableStatement_getArray" ]
+    }, {
+      "name" : "resultSet_insertRow",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "insertRow", "resultSet_insertRow" ]
+    }, {
+      "name" : "resultSet_wasNull",
+      "visibility" : "public",
+      "methodCalls" : [ "wasNull", "getResultSetRaw", "resultSet_wasNull" ]
+    }, {
+      "name" : "callableStatement_setSQLXML",
+      "visibility" : "public",
+      "methodCalls" : [ "setSQLXML", "getRawObject", "callableStatement_setSQLXML" ]
+    }, {
+      "name" : "resultSetMetaData_getColumnDisplaySize",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetProxy", "getPhysicalColumn", "getColumnDisplaySize", "getResultSetMetaDataRaw", "resultSetMetaData_getColumnDisplaySize" ]
+    }, {
+      "name" : "resultSet_updateRow",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "updateRow", "resultSet_updateRow" ]
+    }, {
+      "name" : "resultSet_getNString",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getNString", "resultSet_getNString" ]
+    }, {
+      "name" : "resultSetMetaData_getCatalogName",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetProxy", "getCatalogName", "getResultSetMetaDataRaw", "resultSetMetaData_getCatalogName" ]
+    }, {
+      "name" : "resultSetMetaData_getColumnCount",
+      "visibility" : "public",
+      "methodCalls" : [ "getHiddenColumnCount", "getResultSetProxy", "getResultSetMetaDataRaw", "getColumnCount", "resultSetMetaData_getColumnCount" ]
+    }, {
+      "name" : "resultSetMetaData_getScale",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetProxy", "getPhysicalColumn", "getResultSetMetaDataRaw", "getScale", "resultSetMetaData_getScale" ]
+    }, {
+      "name" : "callableStatement_getBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getBytes", "callableStatement_getBytes" ]
+    }, {
+      "name" : "preparedStatement_setObject",
+      "visibility" : "public",
+      "methodCalls" : [ "setObject", "getRawObject", "encode", "preparedStatement_setObject", "getConnectionProxy", "read" ]
+    }, {
+      "name" : "resultSet_getRowId",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getRowId", "resultSet_getRowId" ]
+    }, {
+      "name" : "connection_getMetaData",
+      "visibility" : "public",
+      "methodCalls" : [ "isDoPrivilegedAllow", "isLogViolation", "getConfig", "ispPrivileged", "isMetadataAllow", "error", "getRawObject", "getMetaData", "connection_getMetaData" ]
+    }, {
+      "name" : "connection_abort",
+      "visibility" : "public",
+      "methodCalls" : [ "abort", "getRawObject", "connection_abort" ]
+    }, {
+      "name" : "connection_isReadOnly",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "isReadOnly", "connection_isReadOnly" ]
+    }, {
+      "name" : "callableStatement_setString",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setString", "callableStatement_setString", "encode", "getConnectionProxy" ]
+    }, {
+      "name" : "resultSet_getDate",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getDate", "getResultSetRaw", "resultSet_getDate" ]
+    }, {
+      "name" : "callableStatement_setNString",
+      "visibility" : "public",
+      "methodCalls" : [ "setNString", "getRawObject", "callableStatement_setNString" ]
+    }, {
+      "name" : "resultSet_first",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "first", "resultSet_first" ]
+    }, {
+      "name" : "resultSet_refreshRow",
+      "visibility" : "public",
+      "methodCalls" : [ "refreshRow", "getResultSetRaw", "resultSet_refreshRow" ]
+    }, {
+      "name" : "resultSet_getTimestamp",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getTimestamp", "resultSet_getTimestamp" ]
+    }, {
+      "name" : "connection_setHoldability",
+      "visibility" : "public",
+      "methodCalls" : [ "setHoldability", "getRawObject", "connection_setHoldability" ]
+    }, {
+      "name" : "callableStatement_getTimestamp",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getTimestamp", "callableStatement_getTimestamp" ]
+    }, {
+      "name" : "callableStatement_getURL",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getURL", "callableStatement_getURL" ]
+    }, {
+      "name" : "callableStatement_getDouble",
+      "visibility" : "public",
+      "methodCalls" : [ "getDouble", "getRawObject", "callableStatement_getDouble" ]
+    }, {
+      "name" : "statement_getMaxRows",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getMaxRows", "statement_getMaxRows" ]
+    }, {
+      "name" : "connection_getClientInfo",
+      "visibility" : "public",
+      "methodCalls" : [ "getClientInfo", "getRawObject", "connection_getClientInfo" ]
+    }, {
+      "name" : "unwrap",
+      "visibility" : "public",
+      "methodCalls" : [ "isDoPrivilegedAllow", "ispPrivileged", "getConfig", "isWrapAllow", "createChain", "isWrapperFor", "isAssignableFrom", "unwrap", "getConnection", "isInstance", "getClass" ]
+    }, {
+      "name" : "connection_getSchema",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getSchema", "connection_getSchema" ]
+    }, {
+      "name" : "connection_createArrayOf",
+      "visibility" : "public",
+      "methodCalls" : [ "createArrayOf", "getRawObject", "connection_createArrayOf" ]
+    }, {
+      "name" : "callableStatement_setBinaryStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setBinaryStream", "callableStatement_setBinaryStream" ]
+    }, {
+      "name" : "preparedStatement_setByte",
+      "visibility" : "public",
+      "methodCalls" : [ "setByte", "getRawObject", "preparedStatement_setByte" ]
+    }, {
+      "name" : "callableStatement_setBlob",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setBlob", "callableStatement_setBlob" ]
+    }, {
+      "name" : "connection_setNetworkTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ "setNetworkTimeout", "getRawObject", "connection_setNetworkTimeout" ]
+    }, {
+      "name" : "connection_createStruct",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "createStruct", "connection_createStruct" ]
+    }, {
+      "name" : "preparedStatement_setCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setCharacterStream", "preparedStatement_setCharacterStream", "length", "read", "getConnectionProxy", "encode" ]
+    }, {
+      "name" : "resultSet_updateArray",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateArray", "resultSet_updateArray" ]
+    }, {
+      "name" : "resultSet_afterLast",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "afterLast", "resultSet_afterLast" ]
+    }, {
+      "name" : "clob_getCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawClob", "getCharacterStream", "clob_getCharacterStream", "getConnectionWrapper", "read", "decode" ]
+    }, {
+      "name" : "statement_getResultSetType",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getResultSetType", "statement_getResultSetType" ]
+    }, {
+      "name" : "resultSet_getCursorName",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "getCursorName", "resultSet_getCursorName" ]
+    }, {
+      "name" : "resultSet_getBinaryStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getBinaryStream", "getResultSetRaw", "resultSet_getBinaryStream", "incrementOpenInputStreamCount" ]
+    }, {
+      "name" : "callableStatement_getFloat",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getFloat", "callableStatement_getFloat" ]
+    }, {
+      "name" : "resultSetMetaData_getColumnClassName",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetProxy", "getColumnClassName", "getResultSetMetaDataRaw", "resultSetMetaData_getColumnClassName" ]
+    }, {
+      "name" : "clob_getSubString",
+      "visibility" : "public",
+      "methodCalls" : [ "getSubString", "getRawClob", "clob_getSubString", "getConnectionWrapper", "decode" ]
+    }, {
+      "name" : "callableStatement_getRowId",
+      "visibility" : "public",
+      "methodCalls" : [ "getRowId", "getRawObject", "callableStatement_getRowId" ]
+    }, {
+      "name" : "statement_getGeneratedKeys",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getLastExecuteSql", "getGeneratedKeys", "createResultSetId", "resultSetOpenAfter", "statement_getGeneratedKeys" ]
+    }, {
+      "name" : "resultSetMetaData_getSchemaName",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetProxy", "getResultSetMetaDataRaw", "getSchemaName", "resultSetMetaData_getSchemaName" ]
+    }, {
+      "name" : "preparedStatement_execute",
+      "visibility" : "public",
+      "methodCalls" : [ "incrementExecuteErrorCount", "getAttribute", "addUpdateCount", "getUpdateCount", "execute", "getRawObject", "preparedStatement_execute", "getSql", "statementExecuteAfter", "statement_executeErrorAfter", "statementExecuteBefore" ]
+    }, {
+      "name" : "preparedStatement_setSQLXML",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setSQLXML", "preparedStatement_setSQLXML" ]
+    }, {
+      "name" : "resultSet_absolute",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "absolute", "resultSet_absolute" ]
+    }, {
+      "name" : "resultSet_updateShort",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateShort", "getResultSetRaw", "resultSet_updateShort" ]
+    }, {
+      "name" : "clob_setCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "setCharacterStream", "getRawClob", "clob_setCharacterStream" ]
+    }, {
+      "name" : "resultSetMetaData_isAutoIncrement",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetProxy", "getPhysicalColumn", "getResultSetMetaDataRaw", "isAutoIncrement", "resultSetMetaData_isAutoIncrement" ]
+    }, {
+      "name" : "resultSet_getMetaData",
+      "visibility" : "public",
+      "methodCalls" : [ "createMetaDataId", "getMetaData", "getResultSetRaw", "resultSet_getMetaData" ]
+    }, {
+      "name" : "statement_setEscapeProcessing",
+      "visibility" : "public",
+      "methodCalls" : [ "setEscapeProcessing", "getRawObject", "statement_setEscapeProcessing" ]
+    }, {
+      "name" : "resultSet_updateBigDecimal",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateBigDecimal", "getResultSetRaw", "resultSet_updateBigDecimal" ]
+    }, {
+      "name" : "connection_getNetworkTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ "getNetworkTimeout", "getRawObject", "connection_getNetworkTimeout" ]
+    }, {
+      "name" : "preparedStatement_setString",
+      "visibility" : "public",
+      "methodCalls" : [ "setString", "getRawObject", "getConnectionProxy", "preparedStatement_setString", "encode" ]
+    }, {
+      "name" : "callableStatement_getBoolean",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean", "getRawObject", "callableStatement_getBoolean" ]
+    }, {
+      "name" : "resultSet_updateBoolean",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateBoolean", "resultSet_updateBoolean" ]
+    }, {
+      "name" : "clob_setAsciiStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawClob", "setAsciiStream", "clob_setAsciiStream" ]
+    }, {
+      "name" : "preparedStatement_setBigDecimal",
+      "visibility" : "public",
+      "methodCalls" : [ "setBigDecimal", "getRawObject", "preparedStatement_setBigDecimal" ]
+    }, {
+      "name" : "resultSet_getCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getCharacterStream", "getResultSetRaw", "incrementOpenReaderCount", "resultSet_getCharacterStream" ]
+    }, {
+      "name" : "connection_setTypeMap",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setTypeMap", "connection_setTypeMap" ]
+    }, {
+      "name" : "reset",
+      "visibility" : "public",
+      "methodCalls" : [ "setTransactionIsolation", "clearBlackList", "clearWhiteList", "charAt", "readLock", "setReadOnly", "clearWarnings", "unlock", "toArray", "setHoldability", "setAutoCommit", "lock", "clear", "isKeepConnectionUnderlyingTransactionIsolation", "close", "isEmpty", "set", "reset", "values", "incrementAndGet", "getDataSourceStat", "getDruidDataSourceInstances", "getProxyDataSources", "keySet", "getInstances", "invoke", "getClass", "error", "getMethod", "next", "isResetStatEnable", "setRemoved", "iterator", "getExecuteCount", "getRunningCount", "hasNext", "writeLock", "entrySet", "remove", "getValue" ]
+    }, {
+      "name" : "preparedStatement_setDate",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setDate", "preparedStatement_setDate" ]
+    }, {
+      "name" : "statement_getFetchSize",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getFetchSize", "statement_getFetchSize" ]
+    }, {
+      "name" : "resultSetMetaData_isDefinitelyWritable",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetProxy", "getPhysicalColumn", "getResultSetMetaDataRaw", "isDefinitelyWritable", "resultSetMetaData_isDefinitelyWritable" ]
+    }, {
+      "name" : "connection_createSQLXML",
+      "visibility" : "public",
+      "methodCalls" : [ "createSQLXML", "getRawObject", "connection_createSQLXML" ]
+    }, {
+      "name" : "statement_cancel",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "cancel", "statement_cancel" ]
+    }, {
+      "name" : "wrap",
+      "visibility" : "public",
+      "methodCalls" : [ "wrap", "getConnectionProxy" ]
+    }, {
+      "name" : "resultSet_updateRef",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateRef", "resultSet_updateRef" ]
+    }, {
+      "name" : "statement_executeBatch",
+      "visibility" : "public",
+      "methodCalls" : [ "getAttribute", "incrementExecuteErrorCount", "clearContext", "addUpdateCount", "getRawObject", "executeBatch", "getBatchSql", "statement_executeBatch", "statement_executeErrorAfter", "statementExecuteBatchAfter", "statementExecuteBatchBefore" ]
+    }, {
+      "name" : "clob_truncate",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawClob", "truncate", "clob_truncate" ]
+    }, {
+      "name" : "callableStatement_getClob",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getClob", "wrap", "getDataSourceStat", "getDataSource", "callableStatement_getClob" ]
+    }, {
+      "name" : "statement_clearWarnings",
+      "visibility" : "public",
+      "methodCalls" : [ "clearWarnings", "getRawObject", "statement_clearWarnings" ]
+    }, {
+      "name" : "callableStatement_getByte",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getByte", "callableStatement_getByte" ]
+    }, {
+      "name" : "preparedStatement_setRowId",
+      "visibility" : "public",
+      "methodCalls" : [ "setRowId", "getRawObject", "preparedStatement_setRowId" ]
+    }, {
+      "name" : "callableStatement_setInt",
+      "visibility" : "public",
+      "methodCalls" : [ "setInt", "getRawObject", "callableStatement_setInt" ]
+    }, {
+      "name" : "statement_setMaxRows",
+      "visibility" : "public",
+      "methodCalls" : [ "setMaxRows", "getRawObject", "statement_setMaxRows" ]
+    }, {
+      "name" : "getDataSource",
+      "visibility" : "public",
+      "methodCalls" : [ "split", "init", "isJmxOption", "putIfAbsent", "parseConfig", "length", "createDriver", "loadFilter", "getProperty", "getInstance", "getRawDriverClassName", "setId", "getFilters", "createDataSourceId", "get", "register", "getDataSource" ]
+    }, {
+      "name" : "callableStatement_setTimestamp",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setTimestamp", "callableStatement_setTimestamp" ]
+    }, {
+      "name" : "resultSet_getWarnings",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "getWarnings", "resultSet_getWarnings" ]
+    }, {
+      "name" : "statement_isPoolable",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "isPoolable", "statement_isPoolable" ]
+    }, {
+      "name" : "resultSet_cancelRowUpdates",
+      "visibility" : "public",
+      "methodCalls" : [ "cancelRowUpdates", "getResultSetRaw", "resultSet_cancelRowUpdates" ]
+    }, {
+      "name" : "clob_setString",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawClob", "setString", "getConnectionWrapper", "clob_setString", "encode" ]
+    }, {
+      "name" : "callableStatement_getBigDecimal",
+      "visibility" : "public",
+      "methodCalls" : [ "getBigDecimal", "getRawObject", "callableStatement_getBigDecimal" ]
+    }, {
+      "name" : "resultSet_getHoldability",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "getHoldability", "resultSet_getHoldability" ]
+    }, {
+      "name" : "resultSet_updateNull",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateNull", "resultSet_updateNull" ]
+    }, {
+      "name" : "connection_setTransactionIsolation",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setTransactionIsolation", "connection_setTransactionIsolation" ]
+    }, {
+      "name" : "resultSet_setFetchSize",
+      "visibility" : "public",
+      "methodCalls" : [ "setFetchSize", "getResultSetRaw", "resultSet_setFetchSize" ]
+    }, {
+      "name" : "callableStatement_setObject",
+      "visibility" : "public",
+      "methodCalls" : [ "setObject", "getRawObject", "getConnectionProxy", "callableStatement_setObject", "read", "encode" ]
+    }, {
+      "name" : "statement_execute",
+      "visibility" : "public",
+      "methodCalls" : [ "clearContext", "statExecuteUpdate", "incrementExecuteErrorCount", "setContext", "setSqlStatAttribute", "current", "getUpdateCount", "check", "getRawObject", "execute", "statement_executeErrorAfter", "statementExecuteAfter", "statementExecuteBefore", "getConnectionProxy", "statement_execute", "encode" ]
+    }, {
+      "name" : "callableStatement_getNString",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getNString", "callableStatement_getNString" ]
+    }, {
+      "name" : "callableStatement_registerOutParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "registerOutParameter", "getRawObject", "callableStatement_registerOutParameter" ]
+    }, {
+      "name" : "connection_rollback",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getDirectDataSource", "getConnectionStat", "incrementConnectionRollbackCount", "getDataSource", "getDataSourceStat", "getInstance", "rollback", "getId", "connection_rollback", "connectionLog", "savepointToString", "isConnectionLogEnabled" ]
+    }, {
+      "name" : "resultSet_updateClob",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateClob", "getResultSetRaw", "resultSet_updateClob" ]
+    }, {
+      "name" : "resultSet_getFloat",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getFloat", "getResultSetRaw", "resultSet_getFloat" ]
+    }, {
+      "name" : "resultSet_getInt",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getInt", "getResultSetRaw", "resultSet_getInt" ]
+    }, {
+      "name" : "preparedStatement_setNClob",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawNClob", "getRawObject", "setNClob", "preparedStatement_setNClob" ]
+    }, {
+      "name" : "callableStatement_setByte",
+      "visibility" : "public",
+      "methodCalls" : [ "setByte", "getRawObject", "callableStatement_setByte" ]
+    }, {
+      "name" : "resultSet_updateSQLXML",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateSQLXML", "getResultSetRaw", "resultSet_updateSQLXML" ]
+    }, {
+      "name" : "callableStatement_getShort",
+      "visibility" : "public",
+      "methodCalls" : [ "getShort", "getRawObject", "callableStatement_getShort" ]
+    }, {
+      "name" : "resultSet_updateTimestamp",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateTimestamp", "getResultSetRaw", "resultSet_updateTimestamp" ]
+    }, {
+      "name" : "resultSetMetaData_getTableName",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetProxy", "getResultSetMetaDataRaw", "getTableName", "resultSetMetaData_getTableName" ]
+    }, {
+      "name" : "connection_nativeSQL",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "nativeSQL", "encode", "connection_nativeSQL" ]
+    }, {
+      "name" : "resultSet_updateBlob",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateBlob", "resultSet_updateBlob" ]
+    }, {
+      "name" : "resultSet_findColumn",
+      "visibility" : "public",
+      "methodCalls" : [ "getLogicColumn", "findColumn", "getResultSetRaw", "resultSet_findColumn" ]
+    }, {
+      "name" : "callableStatement_getNClob",
+      "visibility" : "public",
+      "methodCalls" : [ "wrap", "getNClob", "getRawObject", "getConnectionProxy", "callableStatement_getNClob" ]
+    }, {
+      "name" : "resultSet_clearWarnings",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "clearWarnings", "resultSet_clearWarnings" ]
+    }, {
+      "name" : "callableStatement_getDate",
+      "visibility" : "public",
+      "methodCalls" : [ "getDate", "getRawObject", "callableStatement_getDate" ]
+    }, {
+      "name" : "statement_getResultSet",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSet", "createResultSetId", "getLastExecuteSql", "getRawObject", "resultSetOpenAfter", "statement_getResultSet" ]
+    }, {
+      "name" : "callableStatement_setCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "setCharacterStream", "getRawObject", "length", "callableStatement_setCharacterStream", "getConnectionProxy", "read", "encode" ]
+    }, {
+      "name" : "callableStatement_setNClob",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawNClob", "setNClob", "getRawObject", "callableStatement_setNClob" ]
+    }, {
+      "name" : "statement_getFetchDirection",
+      "visibility" : "public",
+      "methodCalls" : [ "getFetchDirection", "getRawObject", "statement_getFetchDirection" ]
+    }, {
+      "name" : "resultSet_getConcurrency",
+      "visibility" : "public",
+      "methodCalls" : [ "getConcurrency", "getResultSetRaw", "resultSet_getConcurrency" ]
+    }, {
+      "name" : "connection_close",
+      "visibility" : "public",
+      "methodCalls" : [ "close", "clearAttributes", "getRawObject", "getCloseCount", "getConnectionInfo", "getConnections", "incrementConnectionCloseCount", "getDataSource", "nanoTime", "getConnectionStat", "getEstablishNano", "afterClose", "remove", "getDataSourceStat", "connection_close", "connectionLog", "isConnectionLogEnabled", "getId" ]
+    }, {
+      "name" : "preparedStatement_setUnicodeStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setUnicodeStream", "preparedStatement_setUnicodeStream" ]
+    }, {
+      "name" : "preparedStatement_setTimestamp",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setTimestamp", "preparedStatement_setTimestamp" ]
+    }, {
+      "name" : "resultSet_updateString",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateString", "getResultSetRaw", "resultSet_updateString" ]
+    }, {
+      "name" : "resultSet_getString",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getString", "getResultSetRaw", "addReadStringLength", "length", "resultSet_getString", "getConnectionProxy", "getStatementProxy", "decode" ]
+    }, {
+      "name" : "resultSet_getNCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getNCharacterStream", "resultSet_getNCharacterStream" ]
+    }, {
+      "name" : "connection_connect",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawDriver", "createStatement", "getRawJdbcUrl", "createConnectionId", "connect", "getId", "connectError", "setEstablishNano", "beforeConnect", "getConnectionStat", "getDataSource", "getConnectionInfo", "setConnectStackTrace", "nanoTime", "setConnectTimespanNano", "size", "afterConnected", "setConnectTime", "getDataSourceStat", "setEstablishTime", "put", "getConnections", "setActiveCount", "currentTimeMillis", "connection_connectBefore", "connection_connectAfter", "connection_connect", "putAttribute", "getProperty" ]
+    }, {
+      "name" : "resultSet_getShort",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getShort", "getResultSetRaw", "resultSet_getShort" ]
+    }, {
+      "name" : "statement_close",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "close", "getStatContext", "incrementStatementCloseCounter", "setName", "getDataSource", "getInstance", "getDataSourceStat", "setFile", "setSql", "getStatementStat", "getId", "statement_close", "isStatementLogEnabled", "statementLog", "getConnectionProxy" ]
+    }, {
+      "name" : "resultSet_getTime",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getTime", "getResultSetRaw", "resultSet_getTime" ]
+    }, {
+      "name" : "resultSet_updateNClob",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateNClob", "resultSet_updateNClob" ]
+    }, {
+      "name" : "resultSet_getType",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "getType", "resultSet_getType" ]
+    }, {
+      "name" : "resultSet_updateNCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateNCharacterStream", "getResultSetRaw", "resultSet_updateNCharacterStream" ]
+    }, {
+      "name" : "resultSetMetaData_isWritable",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetProxy", "isWritable", "getResultSetMetaDataRaw", "resultSetMetaData_isWritable" ]
+    }, {
+      "name" : "resultSet_updateDate",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateDate", "getResultSetRaw", "resultSet_updateDate" ]
+    }, {
+      "name" : "preparedStatement_setBoolean",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setBoolean", "preparedStatement_setBoolean" ]
+    }, {
+      "name" : "callableStatement_setBoolean",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setBoolean", "callableStatement_setBoolean" ]
+    }, {
+      "name" : "resultSet_getLong",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getLong", "resultSet_getLong" ]
+    }, {
+      "name" : "resultSetMetaData_isCurrency",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetProxy", "getResultSetMetaDataRaw", "isCurrency", "resultSetMetaData_isCurrency" ]
+    }, {
+      "name" : "connection_setSavepoint",
+      "visibility" : "public",
+      "methodCalls" : [ "setSavepoint", "getRawObject", "connection_setSavepoint", "connectionLog", "getId", "savepointToString", "isConnectionLogEnabled" ]
+    }, {
+      "name" : "connection_createClob",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "createClob", "wrap", "connection_createClob" ]
+    }, {
+      "name" : "clob_position",
+      "visibility" : "public",
+      "methodCalls" : [ "position", "getRawClob", "clob_position", "getConnectionWrapper", "encode" ]
+    }, {
+      "name" : "statement_getWarnings",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getWarnings", "statement_getWarnings" ]
+    } ],
+    "imports" : [ "java.util.concurrent.Executor", "com.alibaba.druid.pool.DruidStatementConnection", "com.alibaba.druid.proxy.jdbc", "java.io.InputStream", "java.util.Calendar", "java.util.List", "java.math.BigDecimal", "java.io.Reader", "com.alibaba.druid.pool.DruidDataSource", "java.sql", "java.util.Properties", "com.alibaba.druid.pool.DruidPooledConnection", "java.util.Map" ]
+  }, {
+    "name" : "FilterAdapter",
+    "packageName" : "com.alibaba.druid.filter",
+    "extendedClasses" : [ "NotificationBroadcasterSupport" ],
+    "implementedInterfaces" : [ "Filter" ],
+    "methods" : [ {
+      "name" : "connection_close",
+      "visibility" : "public",
+      "methodCalls" : [ "close", "clearAttributes", "getRawObject", "getCloseCount", "getConnectionInfo", "getConnections", "incrementConnectionCloseCount", "getDataSource", "nanoTime", "getConnectionStat", "getEstablishNano", "afterClose", "remove", "getDataSourceStat", "connection_close", "connectionLog", "isConnectionLogEnabled", "getId" ]
+    }, {
+      "name" : "statement_setFetchSize",
+      "visibility" : "public",
+      "methodCalls" : [ "setFetchSize", "getRawObject", "statement_setFetchSize" ]
+    }, {
+      "name" : "callableStatement_getFloat",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getFloat", "callableStatement_getFloat" ]
+    }, {
+      "name" : "resultSet_getShort",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getShort", "getResultSetRaw", "resultSet_getShort" ]
+    }, {
+      "name" : "resultSetMetaData_isDefinitelyWritable",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetProxy", "getPhysicalColumn", "getResultSetMetaDataRaw", "isDefinitelyWritable", "resultSetMetaData_isDefinitelyWritable" ]
+    }, {
+      "name" : "resultSetMetaData_getCatalogName",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetProxy", "getCatalogName", "getResultSetMetaDataRaw", "resultSetMetaData_getCatalogName" ]
+    }, {
+      "name" : "callableStatement_setSQLXML",
+      "visibility" : "public",
+      "methodCalls" : [ "setSQLXML", "getRawObject", "callableStatement_setSQLXML" ]
+    }, {
+      "name" : "resultSet_getWarnings",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "getWarnings", "resultSet_getWarnings" ]
+    }, {
+      "name" : "statement_executeBatch",
+      "visibility" : "public",
+      "methodCalls" : [ "getAttribute", "incrementExecuteErrorCount", "clearContext", "addUpdateCount", "getRawObject", "executeBatch", "getBatchSql", "statement_executeBatch", "statement_executeErrorAfter", "statementExecuteBatchAfter", "statementExecuteBatchBefore" ]
+    }, {
+      "name" : "preparedStatement_setURL",
+      "visibility" : "public",
+      "methodCalls" : [ "setURL", "getRawObject", "preparedStatement_setURL" ]
+    }, {
+      "name" : "resultSetMetaData_isAutoIncrement",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetProxy", "getPhysicalColumn", "getResultSetMetaDataRaw", "isAutoIncrement", "resultSetMetaData_isAutoIncrement" ]
+    }, {
+      "name" : "resultSet_insertRow",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "insertRow", "resultSet_insertRow" ]
+    }, {
+      "name" : "preparedStatement_setInt",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setInt", "preparedStatement_setInt" ]
+    }, {
+      "name" : "callableStatement_getCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getCharacterStream", "callableStatement_getCharacterStream" ]
+    }, {
+      "name" : "connection_setTransactionIsolation",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setTransactionIsolation", "connection_setTransactionIsolation" ]
+    }, {
+      "name" : "callableStatement_setNull",
+      "visibility" : "public",
+      "methodCalls" : [ "setNull", "getRawObject", "callableStatement_setNull" ]
+    }, {
+      "name" : "callableStatement_getObject",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "wrap", "getLastExecuteSql", "createResultSetId", "getObject", "getDataSource", "getDataSourceStat", "resultSetOpenAfter", "decodeObject", "callableStatement_getObject" ]
+    }, {
+      "name" : "connection_isClosed",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "isClosed", "connection_isClosed" ]
+    }, {
+      "name" : "preparedStatement_setObject",
+      "visibility" : "public",
+      "methodCalls" : [ "setObject", "getRawObject", "encode", "preparedStatement_setObject", "getConnectionProxy", "read" ]
+    }, {
+      "name" : "resultSet_getByte",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getByte", "resultSet_getByte" ]
+    }, {
+      "name" : "resultSet_beforeFirst",
+      "visibility" : "public",
+      "methodCalls" : [ "beforeFirst", "getResultSetRaw", "resultSet_beforeFirst" ]
+    }, {
+      "name" : "preparedStatement_setFloat",
+      "visibility" : "public",
+      "methodCalls" : [ "setFloat", "getRawObject", "preparedStatement_setFloat" ]
+    }, {
+      "name" : "preparedStatement_setArray",
+      "visibility" : "public",
+      "methodCalls" : [ "setArray", "getRawObject", "preparedStatement_setArray" ]
+    }, {
+      "name" : "resultSet_updateTimestamp",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateTimestamp", "getResultSetRaw", "resultSet_updateTimestamp" ]
+    }, {
+      "name" : "resultSet_getRowId",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getRowId", "resultSet_getRowId" ]
+    }, {
+      "name" : "preparedStatement_setString",
+      "visibility" : "public",
+      "methodCalls" : [ "setString", "getRawObject", "getConnectionProxy", "preparedStatement_setString", "encode" ]
+    }, {
+      "name" : "resultSet_updateObject",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateObject", "resultSet_updateObject" ]
+    }, {
+      "name" : "callableStatement_getNCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getNCharacterStream", "callableStatement_getNCharacterStream" ]
+    }, {
+      "name" : "connection_setSavepoint",
+      "visibility" : "public",
+      "methodCalls" : [ "setSavepoint", "getRawObject", "connection_setSavepoint", "connectionLog", "getId", "savepointToString", "isConnectionLogEnabled" ]
+    }, {
+      "name" : "isWrapperFor",
+      "visibility" : "public",
+      "methodCalls" : [ "ispPrivileged", "isWrapAllow", "isDoPrivilegedAllow", "getConfig", "createChain", "getConnection", "isWrapperFor", "getClass", "isInstance" ]
+    }, {
+      "name" : "statement_getUpdateCount",
+      "visibility" : "public",
+      "methodCalls" : [ "getUpdateCount", "getRawObject", "statement_getUpdateCount" ]
+    }, {
+      "name" : "resultSet_updateSQLXML",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateSQLXML", "getResultSetRaw", "resultSet_updateSQLXML" ]
+    }, {
+      "name" : "statement_setCursorName",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setCursorName", "statement_setCursorName" ]
+    }, {
+      "name" : "preparedStatement_setAsciiStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setAsciiStream", "preparedStatement_setAsciiStream" ]
+    }, {
+      "name" : "callableStatement_setDate",
+      "visibility" : "public",
+      "methodCalls" : [ "setDate", "getRawObject", "callableStatement_setDate" ]
+    }, {
+      "name" : "preparedStatement_setBoolean",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setBoolean", "preparedStatement_setBoolean" ]
+    }, {
+      "name" : "statement_getConnection",
+      "visibility" : "public",
+      "methodCalls" : [ "getConnection", "getRawObject", "statement_getConnection" ]
+    }, {
+      "name" : "resultSet_updateBoolean",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateBoolean", "resultSet_updateBoolean" ]
+    }, {
+      "name" : "connection_setReadOnly",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setReadOnly", "connection_setReadOnly" ]
+    }, {
+      "name" : "resultSet_getBigDecimal",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getBigDecimal", "resultSet_getBigDecimal" ]
+    }, {
+      "name" : "connection_connect",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawDriver", "createStatement", "getRawJdbcUrl", "createConnectionId", "connect", "getId", "connectError", "setEstablishNano", "beforeConnect", "getConnectionStat", "getDataSource", "getConnectionInfo", "setConnectStackTrace", "nanoTime", "setConnectTimespanNano", "size", "afterConnected", "setConnectTime", "getDataSourceStat", "setEstablishTime", "put", "getConnections", "setActiveCount", "currentTimeMillis", "connection_connectBefore", "connection_connectAfter", "connection_connect", "putAttribute", "getProperty" ]
+    }, {
+      "name" : "resultSetMetaData_getColumnCount",
+      "visibility" : "public",
+      "methodCalls" : [ "getHiddenColumnCount", "getResultSetProxy", "getResultSetMetaDataRaw", "getColumnCount", "resultSetMetaData_getColumnCount" ]
+    }, {
+      "name" : "statement_addBatch",
+      "visibility" : "public",
+      "methodCalls" : [ "check", "clearContext", "addBatch", "getRawObject", "getConnectionProxy", "encode", "statement_addBatch" ]
+    }, {
+      "name" : "callableStatement_setString",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setString", "callableStatement_setString", "encode", "getConnectionProxy" ]
+    }, {
+      "name" : "connection_getTransactionIsolation",
+      "visibility" : "public",
+      "methodCalls" : [ "getTransactionIsolation", "getRawObject", "connection_getTransactionIsolation" ]
+    }, {
+      "name" : "preparedStatement_setSQLXML",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setSQLXML", "preparedStatement_setSQLXML" ]
+    }, {
+      "name" : "connection_getAutoCommit",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getAutoCommit", "connection_getAutoCommit" ]
+    }, {
+      "name" : "resultSet_updateDate",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateDate", "getResultSetRaw", "resultSet_updateDate" ]
+    }, {
+      "name" : "resultSetMetaData_getColumnClassName",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetProxy", "getColumnClassName", "getResultSetMetaDataRaw", "resultSetMetaData_getColumnClassName" ]
+    }, {
+      "name" : "callableStatement_setNString",
+      "visibility" : "public",
+      "methodCalls" : [ "setNString", "getRawObject", "callableStatement_setNString" ]
+    }, {
+      "name" : "resultSet_findColumn",
+      "visibility" : "public",
+      "methodCalls" : [ "getLogicColumn", "findColumn", "getResultSetRaw", "resultSet_findColumn" ]
+    }, {
+      "name" : "statement_getFetchSize",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getFetchSize", "statement_getFetchSize" ]
+    }, {
+      "name" : "resultSet_getBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getBytes", "getResultSetRaw", "resultSet_getBytes", "addReadBytesLength" ]
+    }, {
+      "name" : "callableStatement_getTimestamp",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getTimestamp", "callableStatement_getTimestamp" ]
+    }, {
+      "name" : "statement_getMaxRows",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getMaxRows", "statement_getMaxRows" ]
+    }, {
+      "name" : "connection_rollback",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getDirectDataSource", "getConnectionStat", "incrementConnectionRollbackCount", "getDataSource", "getDataSourceStat", "getInstance", "rollback", "getId", "connection_rollback", "connectionLog", "savepointToString", "isConnectionLogEnabled" ]
+    }, {
+      "name" : "resultSet_getRef",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getRef", "resultSet_getRef" ]
+    }, {
+      "name" : "callableStatement_setBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setBytes", "callableStatement_setBytes" ]
+    }, {
+      "name" : "connection_getHoldability",
+      "visibility" : "public",
+      "methodCalls" : [ "getHoldability", "getRawObject", "connection_getHoldability" ]
+    }, {
+      "name" : "clob_truncate",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawClob", "truncate", "clob_truncate" ]
+    }, {
+      "name" : "resultSet_getFetchSize",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "getFetchSize", "resultSet_getFetchSize" ]
+    }, {
+      "name" : "resultSet_getUnicodeStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getUnicodeStream", "getResultSetRaw", "resultSet_getUnicodeStream" ]
+    }, {
+      "name" : "resultSetMetaData_getSchemaName",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetProxy", "getResultSetMetaDataRaw", "getSchemaName", "resultSetMetaData_getSchemaName" ]
+    }, {
+      "name" : "resultSet_getTime",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getTime", "getResultSetRaw", "resultSet_getTime" ]
+    }, {
+      "name" : "clob_getCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawClob", "getCharacterStream", "clob_getCharacterStream", "getConnectionWrapper", "read", "decode" ]
+    }, {
+      "name" : "callableStatement_setFloat",
+      "visibility" : "public",
+      "methodCalls" : [ "setFloat", "getRawObject", "callableStatement_setFloat" ]
+    }, {
+      "name" : "connection_getCatalog",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getCatalog", "connection_getCatalog" ]
+    }, {
+      "name" : "preparedStatement_addBatch",
+      "visibility" : "public",
+      "methodCalls" : [ "addBatch", "getRawObject", "preparedStatement_addBatch" ]
+    }, {
+      "name" : "resultSet_isClosed",
+      "visibility" : "public",
+      "methodCalls" : [ "isClosed", "getResultSetRaw", "resultSet_isClosed" ]
+    }, {
+      "name" : "resultSetMetaData_isCurrency",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetProxy", "getResultSetMetaDataRaw", "isCurrency", "resultSetMetaData_isCurrency" ]
+    }, {
+      "name" : "resultSet_updateDouble",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateDouble", "resultSet_updateDouble" ]
+    }, {
+      "name" : "callableStatement_getNString",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getNString", "callableStatement_getNString" ]
+    }, {
+      "name" : "resultSet_relative",
+      "visibility" : "public",
+      "methodCalls" : [ "relative", "getResultSetRaw", "resultSet_relative" ]
+    }, {
+      "name" : "callableStatement_setInt",
+      "visibility" : "public",
+      "methodCalls" : [ "setInt", "getRawObject", "callableStatement_setInt" ]
+    }, {
+      "name" : "resultSet_first",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "first", "resultSet_first" ]
+    }, {
+      "name" : "resultSet_isAfterLast",
+      "visibility" : "public",
+      "methodCalls" : [ "isAfterLast", "getResultSetRaw", "resultSet_isAfterLast" ]
+    }, {
+      "name" : "resultSet_getCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getCharacterStream", "getResultSetRaw", "incrementOpenReaderCount", "resultSet_getCharacterStream" ]
+    }, {
+      "name" : "callableStatement_setLong",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setLong", "callableStatement_setLong" ]
+    }, {
+      "name" : "resultSet_absolute",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "absolute", "resultSet_absolute" ]
+    }, {
+      "name" : "connection_getMetaData",
+      "visibility" : "public",
+      "methodCalls" : [ "isDoPrivilegedAllow", "isLogViolation", "getConfig", "ispPrivileged", "isMetadataAllow", "error", "getRawObject", "getMetaData", "connection_getMetaData" ]
+    }, {
+      "name" : "resultSet_isLast",
+      "visibility" : "public",
+      "methodCalls" : [ "isLast", "getResultSetRaw", "resultSet_isLast" ]
+    }, {
+      "name" : "resultSet_deleteRow",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "deleteRow", "resultSet_deleteRow" ]
+    }, {
+      "name" : "resultSet_getFloat",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getFloat", "getResultSetRaw", "resultSet_getFloat" ]
+    }, {
+      "name" : "callableStatement_setRowId",
+      "visibility" : "public",
+      "methodCalls" : [ "setRowId", "getRawObject", "callableStatement_setRowId" ]
+    }, {
+      "name" : "callableStatement_getDouble",
+      "visibility" : "public",
+      "methodCalls" : [ "getDouble", "getRawObject", "callableStatement_getDouble" ]
+    }, {
+      "name" : "resultSet_getNCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getNCharacterStream", "resultSet_getNCharacterStream" ]
+    }, {
+      "name" : "connection_createArrayOf",
+      "visibility" : "public",
+      "methodCalls" : [ "createArrayOf", "getRawObject", "connection_createArrayOf" ]
+    }, {
+      "name" : "resultSet_getSQLXML",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getSQLXML", "resultSet_getSQLXML" ]
+    }, {
+      "name" : "preparedStatement_setNString",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setNString", "preparedStatement_setNString" ]
+    }, {
+      "name" : "preparedStatement_setNClob",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawNClob", "getRawObject", "setNClob", "preparedStatement_setNClob" ]
+    }, {
+      "name" : "statement_setMaxRows",
+      "visibility" : "public",
+      "methodCalls" : [ "setMaxRows", "getRawObject", "statement_setMaxRows" ]
+    }, {
+      "name" : "callableStatement_setAsciiStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setAsciiStream", "callableStatement_setAsciiStream" ]
+    }, {
+      "name" : "resultSet_updateBigDecimal",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateBigDecimal", "getResultSetRaw", "resultSet_updateBigDecimal" ]
+    }, {
+      "name" : "preparedStatement_setNull",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setNull", "preparedStatement_setNull" ]
+    }, {
+      "name" : "connection_createClob",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "createClob", "wrap", "connection_createClob" ]
+    }, {
+      "name" : "resultSet_getBoolean",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getBoolean", "resultSet_getBoolean" ]
+    }, {
+      "name" : "callableStatement_wasNull",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "wasNull", "callableStatement_wasNull" ]
+    }, {
+      "name" : "connection_getNetworkTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ "getNetworkTimeout", "getRawObject", "connection_getNetworkTimeout" ]
+    }, {
+      "name" : "resultSet_updateNString",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateNString", "getResultSetRaw", "resultSet_updateNString" ]
+    }, {
+      "name" : "connection_setSchema",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setSchema", "connection_setSchema" ]
+    }, {
+      "name" : "resultSet_updateCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateCharacterStream", "getResultSetRaw", "resultSet_updateCharacterStream" ]
+    }, {
+      "name" : "clob_free",
+      "visibility" : "public",
+      "methodCalls" : [ "free", "getRawClob", "clob_free" ]
+    }, {
+      "name" : "resultSet_updateLong",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateLong", "resultSet_updateLong" ]
+    }, {
+      "name" : "resultSet_rowInserted",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "rowInserted", "resultSet_rowInserted" ]
+    }, {
+      "name" : "init",
+      "visibility" : "public",
+      "methodCalls" : [ "getContextPath", "initWallProvider", "getRawJdbcUrl", "getConfig", "setName", "getProperties", "getConnectProperties", "configFromProperties", "resolveDriver", "sleep", "containsKey", "initCheck", "setDbType", "registerMbean", "isUseGlobalDataSourceStat", "createDataSourceId", "getInitedLatch", "isInfoEnabled", "of", "getMessage", "addAndGet", "indexOf", "getGlobal", "getID", "toString", "setResetStatEnable", "signal", "getInitialSize", "getDbType", "createAndStartDestroyThread", "isMysqlDbType", "lockInterruptibly", "await", "getUrl", "createAndStartCreatorThread", "currentTimeMillis", "currentThread", "setGlobal", "createPhysicalConnection", "getStackTrace", "parseBoolean", "setResetEnable", "addContextListener", "equals", "asList", "getServletContext", "isTestOnReturn", "isTestOnBorrow", "addObserver", "warn", "info", "newScheduledThreadPool", "error", "connectionTimeoutMs", "scheduleAtFixedRate", "connectString", "unlock", "sessionTimeoutMs", "init", "builder", "debug", "tryLock", "isDebugEnabled", "update", "retryPolicy", "build", "start", "removeDataSources", "add", "getInitParameter", "split", "getType", "setAllowEmptyPool", "getListenable", "addListener", "trim", "lock", "length", "canBeReadOnly", "setSelector", "getName", "setIntervalSeconds", "isEmpty", "getInstance", "parseInt", "addWebAppStatSet" ]
+    }, {
+      "name" : "callableStatement_setTimestamp",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setTimestamp", "callableStatement_setTimestamp" ]
+    }, {
+      "name" : "connection_createNClob",
+      "visibility" : "public",
+      "methodCalls" : [ "wrap", "getRawObject", "createNClob", "connection_createNClob" ]
+    }, {
+      "name" : "preparedStatement_setCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setCharacterStream", "preparedStatement_setCharacterStream", "length", "read", "getConnectionProxy", "encode" ]
+    }, {
+      "name" : "callableStatement_getBigDecimal",
+      "visibility" : "public",
+      "methodCalls" : [ "getBigDecimal", "getRawObject", "callableStatement_getBigDecimal" ]
+    }, {
+      "name" : "connection_getSchema",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getSchema", "connection_getSchema" ]
+    }, {
+      "name" : "resultSet_updateNClob",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateNClob", "resultSet_updateNClob" ]
+    }, {
+      "name" : "statement_getResultSet",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSet", "createResultSetId", "getLastExecuteSql", "getRawObject", "resultSetOpenAfter", "statement_getResultSet" ]
+    }, {
+      "name" : "callableStatement_setBigDecimal",
+      "visibility" : "public",
+      "methodCalls" : [ "setBigDecimal", "getRawObject", "callableStatement_setBigDecimal" ]
+    }, {
+      "name" : "statement_execute",
+      "visibility" : "public",
+      "methodCalls" : [ "clearContext", "statExecuteUpdate", "incrementExecuteErrorCount", "setContext", "setSqlStatAttribute", "current", "getUpdateCount", "check", "getRawObject", "execute", "statement_executeErrorAfter", "statementExecuteAfter", "statementExecuteBefore", "getConnectionProxy", "statement_execute", "encode" ]
+    }, {
+      "name" : "resultSet_moveToInsertRow",
+      "visibility" : "public",
+      "methodCalls" : [ "moveToInsertRow", "getResultSetRaw", "resultSet_moveToInsertRow" ]
+    }, {
+      "name" : "callableStatement_setClob",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawClob", "setClob", "getRawObject", "callableStatement_setClob" ]
+    }, {
+      "name" : "preparedStatement_setBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "setBytes", "getRawObject", "preparedStatement_setBytes" ]
+    }, {
+      "name" : "callableStatement_getTime",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getTime", "callableStatement_getTime" ]
+    }, {
+      "name" : "callableStatement_setCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "setCharacterStream", "getRawObject", "length", "callableStatement_setCharacterStream", "getConnectionProxy", "read", "encode" ]
+    }, {
+      "name" : "resultSet_updateClob",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateClob", "getResultSetRaw", "resultSet_updateClob" ]
+    }, {
+      "name" : "connection_isReadOnly",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "isReadOnly", "connection_isReadOnly" ]
+    }, {
+      "name" : "resultSetMetaData_isReadOnly",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetProxy", "getResultSetMetaDataRaw", "isReadOnly", "resultSetMetaData_isReadOnly" ]
+    }, {
+      "name" : "connection_getWarnings",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getWarnings", "connection_getWarnings" ]
+    }, {
+      "name" : "clob_getSubString",
+      "visibility" : "public",
+      "methodCalls" : [ "getSubString", "getRawClob", "clob_getSubString", "getConnectionWrapper", "decode" ]
+    }, {
+      "name" : "connection_setHoldability",
+      "visibility" : "public",
+      "methodCalls" : [ "setHoldability", "getRawObject", "connection_setHoldability" ]
+    }, {
+      "name" : "callableStatement_getArray",
+      "visibility" : "public",
+      "methodCalls" : [ "getArray", "getRawObject", "callableStatement_getArray" ]
+    }, {
+      "name" : "resultSet_getTimestamp",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getTimestamp", "resultSet_getTimestamp" ]
+    }, {
+      "name" : "statement_executeQuery",
+      "visibility" : "public",
+      "methodCalls" : [ "clearContext", "check", "incrementExecuteErrorCount", "createResultSetId", "getLastExecuteSql", "getRawObject", "executeQuery", "statement_executeErrorAfter", "statementExecuteQueryBefore", "statementExecuteQueryAfter", "resultSetOpenAfter", "encode", "statement_executeQuery", "getConnectionProxy" ]
+    }, {
+      "name" : "statement_getMaxFieldSize",
+      "visibility" : "public",
+      "methodCalls" : [ "getMaxFieldSize", "getRawObject", "statement_getMaxFieldSize" ]
+    }, {
+      "name" : "connection_getTypeMap",
+      "visibility" : "public",
+      "methodCalls" : [ "getTypeMap", "getRawObject", "connection_getTypeMap" ]
+    }, {
+      "name" : "resultSet_getConcurrency",
+      "visibility" : "public",
+      "methodCalls" : [ "getConcurrency", "getResultSetRaw", "resultSet_getConcurrency" ]
+    }, {
+      "name" : "statement_isClosed",
+      "visibility" : "public",
+      "methodCalls" : [ "isClosed", "getRawObject", "statement_isClosed" ]
+    }, {
+      "name" : "resultSet_getURL",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getURL", "getResultSetRaw", "resultSet_getURL" ]
+    }, {
+      "name" : "preparedStatement_setLong",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setLong", "preparedStatement_setLong" ]
+    }, {
+      "name" : "callableStatement_registerOutParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "registerOutParameter", "getRawObject", "callableStatement_registerOutParameter" ]
+    }, {
+      "name" : "resultSetMetaData_getColumnName",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetProxy", "getPhysicalColumn", "getColumnName", "getResultSetMetaDataRaw", "resultSetMetaData_getColumnName" ]
+    }, {
+      "name" : "resultSet_getString",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getString", "getResultSetRaw", "addReadStringLength", "length", "resultSet_getString", "getConnectionProxy", "getStatementProxy", "decode" ]
+    }, {
+      "name" : "statement_cancel",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "cancel", "statement_cancel" ]
+    }, {
+      "name" : "resultSet_updateByte",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateByte", "getResultSetRaw", "resultSet_updateByte" ]
+    }, {
+      "name" : "callableStatement_getBoolean",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean", "getRawObject", "callableStatement_getBoolean" ]
+    }, {
+      "name" : "resultSet_getClob",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "wrap", "getResultSetRaw", "getStatementProxy", "getClob", "getDataSource", "resultSet_getClob", "getDataSourceStat" ]
+    }, {
+      "name" : "resultSet_cancelRowUpdates",
+      "visibility" : "public",
+      "methodCalls" : [ "cancelRowUpdates", "getResultSetRaw", "resultSet_cancelRowUpdates" ]
+    }, {
+      "name" : "connection_createStatement",
+      "visibility" : "public",
+      "methodCalls" : [ "createStatement", "getRawObject", "createStatementId", "connection_createStatement", "statementCreateAfter" ]
+    }, {
+      "name" : "resultSet_getRow",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "getRow", "resultSet_getRow" ]
+    }, {
+      "name" : "clob_getAsciiStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawClob", "getAsciiStream", "clob_getAsciiStream" ]
+    }, {
+      "name" : "callableStatement_setBoolean",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setBoolean", "callableStatement_setBoolean" ]
+    }, {
+      "name" : "resultSet_getFetchDirection",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "getFetchDirection", "resultSet_getFetchDirection" ]
+    }, {
+      "name" : "callableStatement_getSQLXML",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getSQLXML", "callableStatement_getSQLXML" ]
+    }, {
+      "name" : "connection_commit",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "commit", "getConnectionStat", "getDataSourceStat", "incrementConnectionCommitCount", "getDataSource", "getInstance", "isConnectionLogEnabled", "getId", "connection_commit", "connectionLog" ]
+    }, {
+      "name" : "preparedStatement_setDouble",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setDouble", "preparedStatement_setDouble" ]
+    }, {
+      "name" : "preparedStatement_setUnicodeStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setUnicodeStream", "preparedStatement_setUnicodeStream" ]
+    }, {
+      "name" : "connection_prepareCall",
+      "visibility" : "public",
+      "methodCalls" : [ "getUpdateCheckItems", "getDbType", "create", "clearContext", "getSql", "setSqlStatAttribute", "getDirectDataSource", "setWallUpdateCheckItems", "getRawObject", "createStatementId", "prepareCall", "statementPrepareCallAfter", "connection_prepareCall", "encode" ]
+    }, {
+      "name" : "connection_getClientInfo",
+      "visibility" : "public",
+      "methodCalls" : [ "getClientInfo", "getRawObject", "connection_getClientInfo" ]
+    }, {
+      "name" : "statement_setEscapeProcessing",
+      "visibility" : "public",
+      "methodCalls" : [ "setEscapeProcessing", "getRawObject", "statement_setEscapeProcessing" ]
+    }, {
+      "name" : "connection_createSQLXML",
+      "visibility" : "public",
+      "methodCalls" : [ "createSQLXML", "getRawObject", "connection_createSQLXML" ]
+    }, {
+      "name" : "connection_setClientInfo",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setClientInfo", "connection_setClientInfo" ]
+    }, {
+      "name" : "callableStatement_setBinaryStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setBinaryStream", "callableStatement_setBinaryStream" ]
+    }, {
+      "name" : "resultSet_getObject",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "wrap", "getObject", "createResultSetId", "getLastExecuteSql", "getDataSource", "length", "addReadStringLength", "getDataSourceStat", "getColumnType", "findColumn", "resultSet_getString", "getConnectionProxy", "getMetaData", "getResultSetRaw", "decodeObject", "getStatementProxy", "getObjectReplaceLocalDateTime", "resultSet_getObject" ]
+    }, {
+      "name" : "statement_clearWarnings",
+      "visibility" : "public",
+      "methodCalls" : [ "clearWarnings", "getRawObject", "statement_clearWarnings" ]
+    }, {
+      "name" : "resultSet_updateBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateBytes", "resultSet_updateBytes" ]
+    }, {
+      "name" : "resultSetMetaData_isWritable",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetProxy", "isWritable", "getResultSetMetaDataRaw", "resultSetMetaData_isWritable" ]
+    }, {
+      "name" : "connection_prepareStatement",
+      "visibility" : "public",
+      "methodCalls" : [ "create", "getSql", "getUpdateCheckItems", "setSqlStatAttribute", "getDbType", "getDirectDataSource", "clearContext", "setWallUpdateCheckItems", "createStatementId", "prepareStatement", "getRawObject", "statementPrepareAfter", "connection_prepareStatement", "encode" ]
+    }, {
+      "name" : "preparedStatement_setNCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setNCharacterStream", "preparedStatement_setNCharacterStream" ]
+    }, {
+      "name" : "connection_setAutoCommit",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setAutoCommit", "getId", "connection_setAutoCommit", "connectionLog" ]
+    }, {
+      "name" : "statement_executeUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "check", "statExecuteUpdate", "incrementExecuteErrorCount", "clearContext", "executeUpdate", "getRawObject", "statementExecuteUpdateAfter", "statement_executeErrorAfter", "statementExecuteUpdateBefore", "getConnectionProxy", "encode", "statement_executeUpdate" ]
+    }, {
+      "name" : "resultSet_refreshRow",
+      "visibility" : "public",
+      "methodCalls" : [ "refreshRow", "getResultSetRaw", "resultSet_refreshRow" ]
+    }, {
+      "name" : "resultSetMetaData_isSigned",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetProxy", "getPhysicalColumn", "getResultSetMetaDataRaw", "isSigned", "resultSetMetaData_isSigned" ]
+    }, {
+      "name" : "callableStatement_setNClob",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawNClob", "setNClob", "getRawObject", "callableStatement_setNClob" ]
+    }, {
+      "name" : "resultSet_setFetchDirection",
+      "visibility" : "public",
+      "methodCalls" : [ "setFetchDirection", "getResultSetRaw", "resultSet_setFetchDirection" ]
+    }, {
+      "name" : "preparedStatement_setClob",
+      "visibility" : "public",
+      "methodCalls" : [ "setClob", "getRawObject", "getRawClob", "preparedStatement_setClob" ]
+    }, {
+      "name" : "resultSet_getAsciiStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getAsciiStream", "getResultSetRaw", "incrementOpenInputStreamCount", "resultSet_getAsciiStream" ]
+    }, {
+      "name" : "callableStatement_getURL",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getURL", "callableStatement_getURL" ]
+    }, {
+      "name" : "callableStatement_getBlob",
+      "visibility" : "public",
+      "methodCalls" : [ "getBlob", "getRawObject", "getDataSource", "getDataSourceStat", "callableStatement_getBlob" ]
+    }, {
+      "name" : "resultSet_rowUpdated",
+      "visibility" : "public",
+      "methodCalls" : [ "rowUpdated", "getResultSetRaw", "resultSet_rowUpdated" ]
+    }, {
+      "name" : "resultSetMetaData_getColumnTypeName",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetProxy", "getPhysicalColumn", "getResultSetMetaDataRaw", "getColumnTypeName", "resultSetMetaData_getColumnTypeName" ]
+    }, {
+      "name" : "callableStatement_getByte",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getByte", "callableStatement_getByte" ]
+    }, {
+      "name" : "resultSetMetaData_isNullable",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetProxy", "getPhysicalColumn", "isNullable", "getResultSetMetaDataRaw", "resultSetMetaData_isNullable" ]
+    }, {
+      "name" : "dataSource_getConnection",
+      "visibility" : "public",
+      "methodCalls" : [ "setConnectedTimeNano", "pool_connection_open", "getInstance", "isConnectionLogEnabled", "dataSource_connect", "getConnectionHolder", "connectionLog", "getConnection", "getId" ]
+    }, {
+      "name" : "resultSet_getBinaryStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getBinaryStream", "getResultSetRaw", "resultSet_getBinaryStream", "incrementOpenInputStreamCount" ]
+    }, {
+      "name" : "callableStatement_getDate",
+      "visibility" : "public",
+      "methodCalls" : [ "getDate", "getRawObject", "callableStatement_getDate" ]
+    }, {
+      "name" : "statement_getFetchDirection",
+      "visibility" : "public",
+      "methodCalls" : [ "getFetchDirection", "getRawObject", "statement_getFetchDirection" ]
+    }, {
+      "name" : "clob_setCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "setCharacterStream", "getRawClob", "clob_setCharacterStream" ]
+    }, {
+      "name" : "resultSet_updateNCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateNCharacterStream", "getResultSetRaw", "resultSet_updateNCharacterStream" ]
+    }, {
+      "name" : "resultSet_isBeforeFirst",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "isBeforeFirst", "resultSet_isBeforeFirst" ]
+    }, {
+      "name" : "preparedStatement_setShort",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setShort", "preparedStatement_setShort" ]
+    }, {
+      "name" : "statement_getResultSetHoldability",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetHoldability", "getRawObject", "statement_getResultSetHoldability" ]
+    }, {
+      "name" : "preparedStatement_setBinaryStream",
+      "visibility" : "public",
+      "methodCalls" : [ "setBinaryStream", "getRawObject", "preparedStatement_setBinaryStream" ]
+    }, {
+      "name" : "resultSet_getCursorName",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "getCursorName", "resultSet_getCursorName" ]
+    }, {
+      "name" : "connection_setNetworkTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ "setNetworkTimeout", "getRawObject", "connection_setNetworkTimeout" ]
+    }, {
+      "name" : "statement_setQueryTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ "setQueryTimeout", "getRawObject", "statement_setQueryTimeout" ]
+    }, {
+      "name" : "resultSet_updateTime",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateTime", "resultSet_updateTime" ]
+    }, {
+      "name" : "resultSetMetaData_getColumnLabel",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetProxy", "getResultSetMetaDataRaw", "getColumnLabel", "resultSetMetaData_getColumnLabel" ]
+    }, {
+      "name" : "callableStatement_setTime",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setTime", "callableStatement_setTime" ]
+    }, {
+      "name" : "preparedStatement_setByte",
+      "visibility" : "public",
+      "methodCalls" : [ "setByte", "getRawObject", "preparedStatement_setByte" ]
+    }, {
+      "name" : "callableStatement_getString",
+      "visibility" : "public",
+      "methodCalls" : [ "getString", "getRawObject", "callableStatement_getString", "getConnectionProxy", "decode" ]
+    }, {
+      "name" : "resultSet_getHoldability",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "getHoldability", "resultSet_getHoldability" ]
+    }, {
+      "name" : "dataSource_releaseConnection",
+      "visibility" : "public",
+      "methodCalls" : [ "getConnectionHoldHistogram", "record", "getInstance", "getConnectedTimeNano", "getDataSource", "pool_connection_close", "getDataSourceStat", "nanoTime", "getConnectionHolder", "isConnectionLogEnabled", "getConnection", "getId", "dataSource_recycle", "connectionLog" ]
+    }, {
+      "name" : "connection_createBlob",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "createBlob", "connection_createBlob" ]
+    }, {
+      "name" : "resultSetMetaData_getPrecision",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetProxy", "getPhysicalColumn", "getResultSetMetaDataRaw", "getPrecision", "resultSetMetaData_getPrecision" ]
+    }, {
+      "name" : "connection_releaseSavepoint",
+      "visibility" : "public",
+      "methodCalls" : [ "releaseSavepoint", "getRawObject", "connection_releaseSavepoint" ]
+    }, {
+      "name" : "resultSet_updateNull",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateNull", "resultSet_updateNull" ]
+    }, {
+      "name" : "resultSet_close",
+      "visibility" : "public",
+      "methodCalls" : [ "incrementJdbcResultSetCloseCount", "current", "get", "resultSet_close", "size", "getStatementProxy", "append", "isResultSetCloseAfterLogEnabled", "getId", "getConnectionProxy", "toString", "resultSetLog", "getCloseCount", "addResultSetHoldTimeNano", "addReaderOpenCount", "addStringReadLength", "getReadStringLength", "getLastExecuteTimeNano", "getSql", "getOpenInputStreamCount", "getReadBytesLength", "getConstructNano", "addReadBytesLength", "getInstance", "nanoTime", "getDataSourceStat", "addInputStreamOpenCount", "getOpenReaderCount", "getResultSetStat", "incrementCloseCounter", "getDataSource", "afterClose", "getSqlStat", "getFetchRowCount", "addFetchRowCount", "getResultSetRaw", "clearAttributes", "close", "getAttribute" ]
+    }, {
+      "name" : "resultSet_updateShort",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateShort", "getResultSetRaw", "resultSet_updateShort" ]
+    }, {
+      "name" : "callableStatement_setURL",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setURL", "callableStatement_setURL" ]
+    }, {
+      "name" : "resultSet_getArray",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getArray", "resultSet_getArray" ]
+    }, {
+      "name" : "statement_clearBatch",
+      "visibility" : "public",
+      "methodCalls" : [ "clearBatch", "getRawObject", "getConnectionProxy", "isStatementParameterClearLogEnable", "getId", "statementLog", "statement_clearBatch" ]
+    }, {
+      "name" : "resultSet_getBlob",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getBlob", "getResultSetRaw", "getDataSource", "resultSet_getBlob", "getDataSourceStat" ]
+    }, {
+      "name" : "resultSet_rowDeleted",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "rowDeleted", "resultSet_rowDeleted" ]
+    }, {
+      "name" : "resultSet_updateRef",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateRef", "resultSet_updateRef" ]
+    }, {
+      "name" : "connection_abort",
+      "visibility" : "public",
+      "methodCalls" : [ "abort", "getRawObject", "connection_abort" ]
+    }, {
+      "name" : "configFromProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean", "configFromProperties", "trim", "parseLong", "equalsIgnoreCase", "setLoggerName", "equals", "parseInt", "split", "length", "getProperty", "error", "setTimeout", "add", "setUsePingMethod" ]
+    }, {
+      "name" : "callableStatement_setNCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "setNCharacterStream", "getRawObject", "callableStatement_setNCharacterStream" ]
+    }, {
+      "name" : "callableStatement_setBlob",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setBlob", "callableStatement_setBlob" ]
+    }, {
+      "name" : "unwrap",
+      "visibility" : "public",
+      "methodCalls" : [ "isDoPrivilegedAllow", "ispPrivileged", "getConfig", "isWrapAllow", "createChain", "isWrapperFor", "isAssignableFrom", "unwrap", "getConnection", "isInstance", "getClass" ]
+    }, {
+      "name" : "connection_clearWarnings",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "clearWarnings", "connection_clearWarnings" ]
+    }, {
+      "name" : "preparedStatement_executeUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "addUpdateCount", "getAttribute", "incrementExecuteErrorCount", "executeUpdate", "getRawObject", "preparedStatement_executeUpdate", "statementExecuteUpdateBefore", "statementExecuteUpdateAfter", "getSql", "statement_executeErrorAfter" ]
+    }, {
+      "name" : "statement_getGeneratedKeys",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getLastExecuteSql", "getGeneratedKeys", "createResultSetId", "resultSetOpenAfter", "statement_getGeneratedKeys" ]
+    }, {
+      "name" : "callableStatement_setByte",
+      "visibility" : "public",
+      "methodCalls" : [ "setByte", "getRawObject", "callableStatement_setByte" ]
+    }, {
+      "name" : "resultSet_getInt",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getInt", "getResultSetRaw", "resultSet_getInt" ]
+    }, {
+      "name" : "preparedStatement_executeQuery",
+      "visibility" : "public",
+      "methodCalls" : [ "incrementExecuteErrorCount", "createResultSetId", "executeQuery", "getRawObject", "getLastExecuteSql", "statementExecuteQueryAfter", "statement_executeErrorAfter", "getSql", "statementExecuteQueryBefore", "preparedStatement_executeQuery", "resultSetOpenAfter" ]
+    }, {
+      "name" : "resultSet_getLong",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getLong", "resultSet_getLong" ]
+    }, {
+      "name" : "callableStatement_getInt",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getInt", "callableStatement_getInt" ]
+    }, {
+      "name" : "preparedStatement_getParameterMetaData",
+      "visibility" : "public",
+      "methodCalls" : [ "getParameterMetaData", "getRawObject", "preparedStatement_getParameterMetaData" ]
+    }, {
+      "name" : "resultSet_getStatement",
+      "visibility" : "public",
+      "methodCalls" : [ "getStatement", "getResultSetRaw", "resultSet_getStatement" ]
+    }, {
+      "name" : "resultSet_updateBlob",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateBlob", "resultSet_updateBlob" ]
+    }, {
+      "name" : "resultSet_moveToCurrentRow",
+      "visibility" : "public",
+      "methodCalls" : [ "moveToCurrentRow", "getResultSetRaw", "resultSet_moveToCurrentRow" ]
+    }, {
+      "name" : "resultSet_isFirst",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "isFirst", "resultSet_isFirst" ]
+    }, {
+      "name" : "clob_setAsciiStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawClob", "setAsciiStream", "clob_setAsciiStream" ]
+    }, {
+      "name" : "preparedStatement_setDate",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setDate", "preparedStatement_setDate" ]
+    }, {
+      "name" : "callableStatement_getLong",
+      "visibility" : "public",
+      "methodCalls" : [ "getLong", "getRawObject", "callableStatement_getLong" ]
+    }, {
+      "name" : "preparedStatement_clearParameters",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "clearParameters", "getConnectionProxy", "preparedStatement_clearParameters", "getId", "statementLog", "isStatementParameterClearLogEnable" ]
+    }, {
+      "name" : "resultSet_getDate",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getDate", "getResultSetRaw", "resultSet_getDate" ]
+    }, {
+      "name" : "clob_setString",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawClob", "setString", "getConnectionWrapper", "clob_setString", "encode" ]
+    }, {
+      "name" : "preparedStatement_setTime",
+      "visibility" : "public",
+      "methodCalls" : [ "setTime", "getRawObject", "preparedStatement_setTime" ]
+    }, {
+      "name" : "resultSet_updateRowId",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateRowId", "getResultSetRaw", "resultSet_updateRowId" ]
+    }, {
+      "name" : "resultSet_clearWarnings",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "clearWarnings", "resultSet_clearWarnings" ]
+    }, {
+      "name" : "resultSet_updateBinaryStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateBinaryStream", "resultSet_updateBinaryStream" ]
+    }, {
+      "name" : "preparedStatement_setBlob",
+      "visibility" : "public",
+      "methodCalls" : [ "setBlob", "getRawObject", "preparedStatement_setBlob" ]
+    }, {
+      "name" : "resultSet_updateString",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateString", "getResultSetRaw", "resultSet_updateString" ]
+    }, {
+      "name" : "preparedStatement_setRef",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setRef", "preparedStatement_setRef" ]
+    }, {
+      "name" : "callableStatement_getShort",
+      "visibility" : "public",
+      "methodCalls" : [ "getShort", "getRawObject", "callableStatement_getShort" ]
+    }, {
+      "name" : "resultSet_getNClob",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getConnectionProxy", "getNClob", "getStatementProxy", "wrap", "resultSet_getNClob" ]
+    }, {
+      "name" : "resultSet_getNString",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getNString", "resultSet_getNString" ]
+    }, {
+      "name" : "resultSetMetaData_getScale",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetProxy", "getPhysicalColumn", "getResultSetMetaDataRaw", "getScale", "resultSetMetaData_getScale" ]
+    }, {
+      "name" : "resultSet_updateAsciiStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateAsciiStream", "getResultSetRaw", "resultSet_updateAsciiStream" ]
+    }, {
+      "name" : "resultSetMetaData_isCaseSensitive",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetProxy", "getResultSetMetaDataRaw", "isCaseSensitive", "resultSetMetaData_isCaseSensitive" ]
+    }, {
+      "name" : "resultSet_setFetchSize",
+      "visibility" : "public",
+      "methodCalls" : [ "setFetchSize", "getResultSetRaw", "resultSet_setFetchSize" ]
+    }, {
+      "name" : "callableStatement_setShort",
+      "visibility" : "public",
+      "methodCalls" : [ "setShort", "getRawObject", "callableStatement_setShort" ]
+    }, {
+      "name" : "resultSetMetaData_getColumnDisplaySize",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetProxy", "getPhysicalColumn", "getColumnDisplaySize", "getResultSetMetaDataRaw", "resultSetMetaData_getColumnDisplaySize" ]
+    }, {
+      "name" : "resultSet_getDouble",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getDouble", "getResultSetRaw", "resultSet_getDouble" ]
+    }, {
+      "name" : "statement_getMoreResults",
+      "visibility" : "public",
+      "methodCalls" : [ "getMoreResults", "getRawObject", "statement_getMoreResults" ]
+    }, {
+      "name" : "preparedStatement_execute",
+      "visibility" : "public",
+      "methodCalls" : [ "incrementExecuteErrorCount", "getAttribute", "addUpdateCount", "getUpdateCount", "execute", "getRawObject", "preparedStatement_execute", "getSql", "statementExecuteAfter", "statement_executeErrorAfter", "statementExecuteBefore" ]
+    }, {
+      "name" : "statement_setFetchDirection",
+      "visibility" : "public",
+      "methodCalls" : [ "setFetchDirection", "getRawObject", "statement_setFetchDirection" ]
+    }, {
+      "name" : "resultSet_previous",
+      "visibility" : "public",
+      "methodCalls" : [ "previous", "getResultSetRaw", "resultSet_previous" ]
+    }, {
+      "name" : "callableStatement_getClob",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getClob", "wrap", "getDataSourceStat", "getDataSource", "callableStatement_getClob" ]
+    }, {
+      "name" : "resultSetMetaData_isSearchable",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetProxy", "isSearchable", "getResultSetMetaDataRaw", "resultSetMetaData_isSearchable" ]
+    }, {
+      "name" : "statement_setMaxFieldSize",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setMaxFieldSize", "statement_setMaxFieldSize" ]
+    }, {
+      "name" : "resultSetMetaData_getColumnType",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetProxy", "getPhysicalColumn", "getResultSetMetaDataRaw", "getColumnType", "resultSetMetaData_getColumnType" ]
+    }, {
+      "name" : "resultSet_updateFloat",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateFloat", "resultSet_updateFloat" ]
+    }, {
+      "name" : "statement_setPoolable",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setPoolable", "statement_setPoolable" ]
+    }, {
+      "name" : "resultSet_getType",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "getType", "resultSet_getType" ]
+    }, {
+      "name" : "callableStatement_getNClob",
+      "visibility" : "public",
+      "methodCalls" : [ "wrap", "getNClob", "getRawObject", "getConnectionProxy", "callableStatement_getNClob" ]
+    }, {
+      "name" : "statement_getResultSetConcurrency",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getResultSetConcurrency", "statement_getResultSetConcurrency" ]
+    }, {
+      "name" : "callableStatement_getRowId",
+      "visibility" : "public",
+      "methodCalls" : [ "getRowId", "getRawObject", "callableStatement_getRowId" ]
+    }, {
+      "name" : "destroy",
+      "visibility" : "public",
+      "methodCalls" : [ "removeContextListener", "remove", "getInstance", "destroy", "values", "close", "isEmpty", "isShutdown", "deregister", "error", "shutdown", "interrupt", "setSelector" ]
+    }, {
+      "name" : "preparedStatement_setTimestamp",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setTimestamp", "preparedStatement_setTimestamp" ]
+    }, {
+      "name" : "clob_position",
+      "visibility" : "public",
+      "methodCalls" : [ "position", "getRawClob", "clob_position", "getConnectionWrapper", "encode" ]
+    }, {
+      "name" : "preparedStatement_setRowId",
+      "visibility" : "public",
+      "methodCalls" : [ "setRowId", "getRawObject", "preparedStatement_setRowId" ]
+    }, {
+      "name" : "connection_nativeSQL",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "nativeSQL", "encode", "connection_nativeSQL" ]
+    }, {
+      "name" : "preparedStatement_setBigDecimal",
+      "visibility" : "public",
+      "methodCalls" : [ "setBigDecimal", "getRawObject", "preparedStatement_setBigDecimal" ]
+    }, {
+      "name" : "statement_getQueryTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ "getQueryTimeout", "getRawObject", "statement_getQueryTimeout" ]
+    }, {
+      "name" : "statement_close",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "close", "getStatContext", "incrementStatementCloseCounter", "setName", "getDataSource", "getInstance", "getDataSourceStat", "setFile", "setSql", "getStatementStat", "getId", "statement_close", "isStatementLogEnabled", "statementLog", "getConnectionProxy" ]
+    }, {
+      "name" : "callableStatement_setDouble",
+      "visibility" : "public",
+      "methodCalls" : [ "setDouble", "getRawObject", "callableStatement_setDouble" ]
+    }, {
+      "name" : "resultSetMetaData_getTableName",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetProxy", "getResultSetMetaDataRaw", "getTableName", "resultSetMetaData_getTableName" ]
+    }, {
+      "name" : "resultSet_updateRow",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "updateRow", "resultSet_updateRow" ]
+    }, {
+      "name" : "preparedStatement_getMetaData",
+      "visibility" : "public",
+      "methodCalls" : [ "getMetaData", "getRawObject", "preparedStatement_getMetaData" ]
+    }, {
+      "name" : "resultSet_last",
+      "visibility" : "public",
+      "methodCalls" : [ "last", "getResultSetRaw", "resultSet_last" ]
+    }, {
+      "name" : "resultSet_getMetaData",
+      "visibility" : "public",
+      "methodCalls" : [ "createMetaDataId", "getMetaData", "getResultSetRaw", "resultSet_getMetaData" ]
+    }, {
+      "name" : "statement_getWarnings",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getWarnings", "statement_getWarnings" ]
+    }, {
+      "name" : "connection_createStruct",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "createStruct", "connection_createStruct" ]
+    }, {
+      "name" : "callableStatement_setObject",
+      "visibility" : "public",
+      "methodCalls" : [ "setObject", "getRawObject", "getConnectionProxy", "callableStatement_setObject", "read", "encode" ]
+    }, {
+      "name" : "connection_setCatalog",
+      "visibility" : "public",
+      "methodCalls" : [ "setCatalog", "getRawObject", "connection_setCatalog" ]
+    }, {
+      "name" : "connection_setTypeMap",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setTypeMap", "connection_setTypeMap" ]
+    }, {
+      "name" : "connection_isValid",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "isValid", "connection_isValid" ]
+    }, {
+      "name" : "resultSet_next",
+      "visibility" : "public",
+      "methodCalls" : [ "size", "get", "filterResultsetTenantColumn", "getTenantCallBack", "getConfig", "next", "getResultSetRaw", "isResultSetLogEnabled", "resultSetLogError", "getStatementProxy", "toString", "getColumnCount", "getConnectionProxy", "getMetaData", "resultSetLog", "resultSet_next", "getObject", "append", "getTimestamp", "getColumnType", "getId" ]
+    }, {
+      "name" : "resultSet_updateArray",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateArray", "resultSet_updateArray" ]
+    }, {
+      "name" : "callableStatement_getBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getBytes", "callableStatement_getBytes" ]
+    }, {
+      "name" : "resultSet_wasNull",
+      "visibility" : "public",
+      "methodCalls" : [ "wasNull", "getResultSetRaw", "resultSet_wasNull" ]
+    }, {
+      "name" : "statement_getResultSetType",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getResultSetType", "statement_getResultSetType" ]
+    }, {
+      "name" : "resultSet_updateInt",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateInt", "getResultSetRaw", "resultSet_updateInt" ]
+    }, {
+      "name" : "callableStatement_getRef",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getRef", "callableStatement_getRef" ]
+    }, {
+      "name" : "clob_length",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawClob", "length", "clob_length" ]
+    }, {
+      "name" : "statement_isPoolable",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "isPoolable", "statement_isPoolable" ]
+    }, {
+      "name" : "resultSet_afterLast",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "afterLast", "resultSet_afterLast" ]
+    } ],
+    "imports" : [ "java.sql", "com.alibaba.druid.proxy.jdbc", "java.util.Properties", "java.io.InputStream", "java.math.BigDecimal", "com.alibaba.druid.pool.DruidDataSource", "javax.management.NotificationBroadcasterSupport", "com.alibaba.druid.pool.DruidPooledConnection", "java.util.Map", "java.io.Reader", "java.util.concurrent.Executor", "java.util.Calendar" ]
+  }, {
+    "name" : "Filter",
+    "packageName" : "com.alibaba.druid.filter",
+    "extendedClasses" : [ "Wrapper" ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "preparedStatement_setRef",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setRef", "preparedStatement_setRef" ]
+    }, {
+      "name" : "init",
+      "visibility" : "public",
+      "methodCalls" : [ "getContextPath", "initWallProvider", "getRawJdbcUrl", "getConfig", "setName", "getProperties", "getConnectProperties", "configFromProperties", "resolveDriver", "sleep", "containsKey", "initCheck", "setDbType", "registerMbean", "isUseGlobalDataSourceStat", "createDataSourceId", "getInitedLatch", "isInfoEnabled", "of", "getMessage", "addAndGet", "indexOf", "getGlobal", "getID", "toString", "setResetStatEnable", "signal", "getInitialSize", "getDbType", "createAndStartDestroyThread", "isMysqlDbType", "lockInterruptibly", "await", "getUrl", "createAndStartCreatorThread", "currentTimeMillis", "currentThread", "setGlobal", "createPhysicalConnection", "getStackTrace", "parseBoolean", "setResetEnable", "addContextListener", "equals", "asList", "getServletContext", "isTestOnReturn", "isTestOnBorrow", "addObserver", "warn", "info", "newScheduledThreadPool", "error", "connectionTimeoutMs", "scheduleAtFixedRate", "connectString", "unlock", "sessionTimeoutMs", "init", "builder", "debug", "tryLock", "isDebugEnabled", "update", "retryPolicy", "build", "start", "removeDataSources", "add", "getInitParameter", "split", "getType", "setAllowEmptyPool", "getListenable", "addListener", "trim", "lock", "length", "canBeReadOnly", "setSelector", "getName", "setIntervalSeconds", "isEmpty", "getInstance", "parseInt", "addWebAppStatSet" ]
+    }, {
+      "name" : "resultSetMetaData_isReadOnly",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetProxy", "getResultSetMetaDataRaw", "isReadOnly", "resultSetMetaData_isReadOnly" ]
+    }, {
+      "name" : "preparedStatement_setBigDecimal",
+      "visibility" : "public",
+      "methodCalls" : [ "setBigDecimal", "getRawObject", "preparedStatement_setBigDecimal" ]
+    }, {
+      "name" : "destroy",
+      "visibility" : "public",
+      "methodCalls" : [ "removeContextListener", "remove", "getInstance", "destroy", "values", "close", "isEmpty", "isShutdown", "deregister", "error", "shutdown", "interrupt", "setSelector" ]
+    }, {
+      "name" : "preparedStatement_setObject",
+      "visibility" : "public",
+      "methodCalls" : [ "setObject", "getRawObject", "encode", "preparedStatement_setObject", "getConnectionProxy", "read" ]
+    }, {
+      "name" : "resultSet_updateAsciiStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateAsciiStream", "getResultSetRaw", "resultSet_updateAsciiStream" ]
+    }, {
+      "name" : "preparedStatement_addBatch",
+      "visibility" : "public",
+      "methodCalls" : [ "addBatch", "getRawObject", "preparedStatement_addBatch" ]
+    }, {
+      "name" : "connection_setClientInfo",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setClientInfo", "connection_setClientInfo" ]
+    }, {
+      "name" : "preparedStatement_getMetaData",
+      "visibility" : "public",
+      "methodCalls" : [ "getMetaData", "getRawObject", "preparedStatement_getMetaData" ]
+    }, {
+      "name" : "resultSet_getURL",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getURL", "getResultSetRaw", "resultSet_getURL" ]
+    }, {
+      "name" : "connection_abort",
+      "visibility" : "public",
+      "methodCalls" : [ "abort", "getRawObject", "connection_abort" ]
+    }, {
+      "name" : "callableStatement_getNCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getNCharacterStream", "callableStatement_getNCharacterStream" ]
+    }, {
+      "name" : "callableStatement_getCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getCharacterStream", "callableStatement_getCharacterStream" ]
+    }, {
+      "name" : "callableStatement_getObject",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "wrap", "getLastExecuteSql", "createResultSetId", "getObject", "getDataSource", "getDataSourceStat", "resultSetOpenAfter", "decodeObject", "callableStatement_getObject" ]
+    }, {
+      "name" : "callableStatement_getURL",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getURL", "callableStatement_getURL" ]
+    }, {
+      "name" : "callableStatement_getRowId",
+      "visibility" : "public",
+      "methodCalls" : [ "getRowId", "getRawObject", "callableStatement_getRowId" ]
+    }, {
+      "name" : "preparedStatement_setNull",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setNull", "preparedStatement_setNull" ]
+    }, {
+      "name" : "statement_getWarnings",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getWarnings", "statement_getWarnings" ]
+    }, {
+      "name" : "preparedStatement_setNClob",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawNClob", "getRawObject", "setNClob", "preparedStatement_setNClob" ]
+    }, {
+      "name" : "resultSet_isLast",
+      "visibility" : "public",
+      "methodCalls" : [ "isLast", "getResultSetRaw", "resultSet_isLast" ]
+    }, {
+      "name" : "resultSet_getFloat",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getFloat", "getResultSetRaw", "resultSet_getFloat" ]
+    }, {
+      "name" : "resultSetMetaData_getSchemaName",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetProxy", "getResultSetMetaDataRaw", "getSchemaName", "resultSetMetaData_getSchemaName" ]
+    }, {
+      "name" : "resultSet_getRowId",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getRowId", "resultSet_getRowId" ]
+    }, {
+      "name" : "connection_releaseSavepoint",
+      "visibility" : "public",
+      "methodCalls" : [ "releaseSavepoint", "getRawObject", "connection_releaseSavepoint" ]
+    }, {
+      "name" : "callableStatement_getArray",
+      "visibility" : "public",
+      "methodCalls" : [ "getArray", "getRawObject", "callableStatement_getArray" ]
+    }, {
+      "name" : "dataSource_releaseConnection",
+      "visibility" : "public",
+      "methodCalls" : [ "getConnectionHoldHistogram", "record", "getInstance", "getConnectedTimeNano", "getDataSource", "pool_connection_close", "getDataSourceStat", "nanoTime", "getConnectionHolder", "isConnectionLogEnabled", "getConnection", "getId", "dataSource_recycle", "connectionLog" ]
+    }, {
+      "name" : "preparedStatement_execute",
+      "visibility" : "public",
+      "methodCalls" : [ "incrementExecuteErrorCount", "getAttribute", "addUpdateCount", "getUpdateCount", "execute", "getRawObject", "preparedStatement_execute", "getSql", "statementExecuteAfter", "statement_executeErrorAfter", "statementExecuteBefore" ]
+    }, {
+      "name" : "callableStatement_getSQLXML",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getSQLXML", "callableStatement_getSQLXML" ]
+    }, {
+      "name" : "configFromProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean", "configFromProperties", "trim", "parseLong", "equalsIgnoreCase", "setLoggerName", "equals", "parseInt", "split", "length", "getProperty", "error", "setTimeout", "add", "setUsePingMethod" ]
+    }, {
+      "name" : "preparedStatement_setNString",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setNString", "preparedStatement_setNString" ]
+    }, {
+      "name" : "callableStatement_setCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "setCharacterStream", "getRawObject", "length", "callableStatement_setCharacterStream", "getConnectionProxy", "read", "encode" ]
+    }, {
+      "name" : "callableStatement_setTimestamp",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setTimestamp", "callableStatement_setTimestamp" ]
+    }, {
+      "name" : "resultSet_updateObject",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateObject", "resultSet_updateObject" ]
+    }, {
+      "name" : "resultSet_updateSQLXML",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateSQLXML", "getResultSetRaw", "resultSet_updateSQLXML" ]
+    }, {
+      "name" : "resultSet_getWarnings",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "getWarnings", "resultSet_getWarnings" ]
+    }, {
+      "name" : "statement_getMaxRows",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getMaxRows", "statement_getMaxRows" ]
+    }, {
+      "name" : "resultSet_refreshRow",
+      "visibility" : "public",
+      "methodCalls" : [ "refreshRow", "getResultSetRaw", "resultSet_refreshRow" ]
+    }, {
+      "name" : "callableStatement_getBlob",
+      "visibility" : "public",
+      "methodCalls" : [ "getBlob", "getRawObject", "getDataSource", "getDataSourceStat", "callableStatement_getBlob" ]
+    }, {
+      "name" : "callableStatement_wasNull",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "wasNull", "callableStatement_wasNull" ]
+    }, {
+      "name" : "connection_setSavepoint",
+      "visibility" : "public",
+      "methodCalls" : [ "setSavepoint", "getRawObject", "connection_setSavepoint", "connectionLog", "getId", "savepointToString", "isConnectionLogEnabled" ]
+    }, {
+      "name" : "preparedStatement_setAsciiStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setAsciiStream", "preparedStatement_setAsciiStream" ]
+    }, {
+      "name" : "statement_close",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "close", "getStatContext", "incrementStatementCloseCounter", "setName", "getDataSource", "getInstance", "getDataSourceStat", "setFile", "setSql", "getStatementStat", "getId", "statement_close", "isStatementLogEnabled", "statementLog", "getConnectionProxy" ]
+    }, {
+      "name" : "resultSet_getFetchDirection",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "getFetchDirection", "resultSet_getFetchDirection" ]
+    }, {
+      "name" : "statement_clearBatch",
+      "visibility" : "public",
+      "methodCalls" : [ "clearBatch", "getRawObject", "getConnectionProxy", "isStatementParameterClearLogEnable", "getId", "statementLog", "statement_clearBatch" ]
+    }, {
+      "name" : "preparedStatement_setFloat",
+      "visibility" : "public",
+      "methodCalls" : [ "setFloat", "getRawObject", "preparedStatement_setFloat" ]
+    }, {
+      "name" : "statement_getResultSetType",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getResultSetType", "statement_getResultSetType" ]
+    }, {
+      "name" : "resultSet_isAfterLast",
+      "visibility" : "public",
+      "methodCalls" : [ "isAfterLast", "getResultSetRaw", "resultSet_isAfterLast" ]
+    }, {
+      "name" : "resultSet_updateArray",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateArray", "resultSet_updateArray" ]
+    }, {
+      "name" : "resultSet_getDate",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getDate", "getResultSetRaw", "resultSet_getDate" ]
+    }, {
+      "name" : "callableStatement_setBoolean",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setBoolean", "callableStatement_setBoolean" ]
+    }, {
+      "name" : "resultSet_getBigDecimal",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getBigDecimal", "resultSet_getBigDecimal" ]
+    }, {
+      "name" : "preparedStatement_setBinaryStream",
+      "visibility" : "public",
+      "methodCalls" : [ "setBinaryStream", "getRawObject", "preparedStatement_setBinaryStream" ]
+    }, {
+      "name" : "clob_position",
+      "visibility" : "public",
+      "methodCalls" : [ "position", "getRawClob", "clob_position", "getConnectionWrapper", "encode" ]
+    }, {
+      "name" : "resultSet_getBinaryStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getBinaryStream", "getResultSetRaw", "resultSet_getBinaryStream", "incrementOpenInputStreamCount" ]
+    }, {
+      "name" : "resultSet_updateRow",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "updateRow", "resultSet_updateRow" ]
+    }, {
+      "name" : "connection_prepareStatement",
+      "visibility" : "public",
+      "methodCalls" : [ "create", "getSql", "getUpdateCheckItems", "setSqlStatAttribute", "getDbType", "getDirectDataSource", "clearContext", "setWallUpdateCheckItems", "createStatementId", "prepareStatement", "getRawObject", "statementPrepareAfter", "connection_prepareStatement", "encode" ]
+    }, {
+      "name" : "clob_truncate",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawClob", "truncate", "clob_truncate" ]
+    }, {
+      "name" : "callableStatement_setTime",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setTime", "callableStatement_setTime" ]
+    }, {
+      "name" : "connection_createBlob",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "createBlob", "connection_createBlob" ]
+    }, {
+      "name" : "callableStatement_setNull",
+      "visibility" : "public",
+      "methodCalls" : [ "setNull", "getRawObject", "callableStatement_setNull" ]
+    }, {
+      "name" : "connection_setTypeMap",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setTypeMap", "connection_setTypeMap" ]
+    }, {
+      "name" : "connection_getWarnings",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getWarnings", "connection_getWarnings" ]
+    }, {
+      "name" : "connection_getAutoCommit",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getAutoCommit", "connection_getAutoCommit" ]
+    }, {
+      "name" : "preparedStatement_setArray",
+      "visibility" : "public",
+      "methodCalls" : [ "setArray", "getRawObject", "preparedStatement_setArray" ]
+    }, {
+      "name" : "resultSetMetaData_getColumnType",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetProxy", "getPhysicalColumn", "getResultSetMetaDataRaw", "getColumnType", "resultSetMetaData_getColumnType" ]
+    }, {
+      "name" : "statement_getConnection",
+      "visibility" : "public",
+      "methodCalls" : [ "getConnection", "getRawObject", "statement_getConnection" ]
+    }, {
+      "name" : "resultSet_getLong",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getLong", "resultSet_getLong" ]
+    }, {
+      "name" : "connection_close",
+      "visibility" : "public",
+      "methodCalls" : [ "close", "clearAttributes", "getRawObject", "getCloseCount", "getConnectionInfo", "getConnections", "incrementConnectionCloseCount", "getDataSource", "nanoTime", "getConnectionStat", "getEstablishNano", "afterClose", "remove", "getDataSourceStat", "connection_close", "connectionLog", "isConnectionLogEnabled", "getId" ]
+    }, {
+      "name" : "callableStatement_setBigDecimal",
+      "visibility" : "public",
+      "methodCalls" : [ "setBigDecimal", "getRawObject", "callableStatement_setBigDecimal" ]
+    }, {
+      "name" : "resultSet_updateFloat",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateFloat", "resultSet_updateFloat" ]
+    }, {
+      "name" : "clob_free",
+      "visibility" : "public",
+      "methodCalls" : [ "free", "getRawClob", "clob_free" ]
+    }, {
+      "name" : "callableStatement_setURL",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setURL", "callableStatement_setURL" ]
+    }, {
+      "name" : "resultSet_updateNString",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateNString", "getResultSetRaw", "resultSet_updateNString" ]
+    }, {
+      "name" : "resultSet_relative",
+      "visibility" : "public",
+      "methodCalls" : [ "relative", "getResultSetRaw", "resultSet_relative" ]
+    }, {
+      "name" : "preparedStatement_setInt",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setInt", "preparedStatement_setInt" ]
+    }, {
+      "name" : "unwrap",
+      "visibility" : "public",
+      "methodCalls" : [ "isDoPrivilegedAllow", "ispPrivileged", "getConfig", "isWrapAllow", "createChain", "isWrapperFor", "isAssignableFrom", "unwrap", "getConnection", "isInstance", "getClass" ]
+    }, {
+      "name" : "resultSetMetaData_isWritable",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetProxy", "isWritable", "getResultSetMetaDataRaw", "resultSetMetaData_isWritable" ]
+    }, {
+      "name" : "statement_setFetchDirection",
+      "visibility" : "public",
+      "methodCalls" : [ "setFetchDirection", "getRawObject", "statement_setFetchDirection" ]
+    }, {
+      "name" : "callableStatement_getFloat",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getFloat", "callableStatement_getFloat" ]
+    }, {
+      "name" : "connection_createSQLXML",
+      "visibility" : "public",
+      "methodCalls" : [ "createSQLXML", "getRawObject", "connection_createSQLXML" ]
+    }, {
+      "name" : "statement_execute",
+      "visibility" : "public",
+      "methodCalls" : [ "clearContext", "statExecuteUpdate", "incrementExecuteErrorCount", "setContext", "setSqlStatAttribute", "current", "getUpdateCount", "check", "getRawObject", "execute", "statement_executeErrorAfter", "statementExecuteAfter", "statementExecuteBefore", "getConnectionProxy", "statement_execute", "encode" ]
+    }, {
+      "name" : "statement_setCursorName",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setCursorName", "statement_setCursorName" ]
+    }, {
+      "name" : "callableStatement_setObject",
+      "visibility" : "public",
+      "methodCalls" : [ "setObject", "getRawObject", "getConnectionProxy", "callableStatement_setObject", "read", "encode" ]
+    }, {
+      "name" : "resultSetMetaData_getColumnLabel",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetProxy", "getResultSetMetaDataRaw", "getColumnLabel", "resultSetMetaData_getColumnLabel" ]
+    }, {
+      "name" : "connection_setSchema",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setSchema", "connection_setSchema" ]
+    }, {
+      "name" : "resultSet_isBeforeFirst",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "isBeforeFirst", "resultSet_isBeforeFirst" ]
+    }, {
+      "name" : "callableStatement_getByte",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getByte", "callableStatement_getByte" ]
+    }, {
+      "name" : "resultSet_getCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getCharacterStream", "getResultSetRaw", "incrementOpenReaderCount", "resultSet_getCharacterStream" ]
+    }, {
+      "name" : "resultSetMetaData_getColumnDisplaySize",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetProxy", "getPhysicalColumn", "getColumnDisplaySize", "getResultSetMetaDataRaw", "resultSetMetaData_getColumnDisplaySize" ]
+    }, {
+      "name" : "callableStatement_getLong",
+      "visibility" : "public",
+      "methodCalls" : [ "getLong", "getRawObject", "callableStatement_getLong" ]
+    }, {
+      "name" : "connection_nativeSQL",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "nativeSQL", "encode", "connection_nativeSQL" ]
+    }, {
+      "name" : "callableStatement_getString",
+      "visibility" : "public",
+      "methodCalls" : [ "getString", "getRawObject", "callableStatement_getString", "getConnectionProxy", "decode" ]
+    }, {
+      "name" : "resultSet_first",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "first", "resultSet_first" ]
+    }, {
+      "name" : "connection_setReadOnly",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setReadOnly", "connection_setReadOnly" ]
+    }, {
+      "name" : "resultSet_updateDouble",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateDouble", "resultSet_updateDouble" ]
+    }, {
+      "name" : "statement_setQueryTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ "setQueryTimeout", "getRawObject", "statement_setQueryTimeout" ]
+    }, {
+      "name" : "callableStatement_setClob",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawClob", "setClob", "getRawObject", "callableStatement_setClob" ]
+    }, {
+      "name" : "preparedStatement_setString",
+      "visibility" : "public",
+      "methodCalls" : [ "setString", "getRawObject", "getConnectionProxy", "preparedStatement_setString", "encode" ]
+    }, {
+      "name" : "resultSet_updateTime",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateTime", "resultSet_updateTime" ]
+    }, {
+      "name" : "statement_cancel",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "cancel", "statement_cancel" ]
+    }, {
+      "name" : "clob_getSubString",
+      "visibility" : "public",
+      "methodCalls" : [ "getSubString", "getRawClob", "clob_getSubString", "getConnectionWrapper", "decode" ]
+    }, {
+      "name" : "resultSetMetaData_isSearchable",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetProxy", "isSearchable", "getResultSetMetaDataRaw", "resultSetMetaData_isSearchable" ]
+    }, {
+      "name" : "callableStatement_getBigDecimal",
+      "visibility" : "public",
+      "methodCalls" : [ "getBigDecimal", "getRawObject", "callableStatement_getBigDecimal" ]
+    }, {
+      "name" : "callableStatement_setInt",
+      "visibility" : "public",
+      "methodCalls" : [ "setInt", "getRawObject", "callableStatement_setInt" ]
+    }, {
+      "name" : "resultSet_getDouble",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getDouble", "getResultSetRaw", "resultSet_getDouble" ]
+    }, {
+      "name" : "resultSet_updateString",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateString", "getResultSetRaw", "resultSet_updateString" ]
+    }, {
+      "name" : "resultSet_getStatement",
+      "visibility" : "public",
+      "methodCalls" : [ "getStatement", "getResultSetRaw", "resultSet_getStatement" ]
+    }, {
+      "name" : "resultSet_getConcurrency",
+      "visibility" : "public",
+      "methodCalls" : [ "getConcurrency", "getResultSetRaw", "resultSet_getConcurrency" ]
+    }, {
+      "name" : "preparedStatement_executeUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "addUpdateCount", "getAttribute", "incrementExecuteErrorCount", "executeUpdate", "getRawObject", "preparedStatement_executeUpdate", "statementExecuteUpdateBefore", "statementExecuteUpdateAfter", "getSql", "statement_executeErrorAfter" ]
+    }, {
+      "name" : "resultSet_updateTimestamp",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateTimestamp", "getResultSetRaw", "resultSet_updateTimestamp" ]
+    }, {
+      "name" : "resultSet_beforeFirst",
+      "visibility" : "public",
+      "methodCalls" : [ "beforeFirst", "getResultSetRaw", "resultSet_beforeFirst" ]
+    }, {
+      "name" : "resultSet_isClosed",
+      "visibility" : "public",
+      "methodCalls" : [ "isClosed", "getResultSetRaw", "resultSet_isClosed" ]
+    }, {
+      "name" : "callableStatement_getRef",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getRef", "callableStatement_getRef" ]
+    }, {
+      "name" : "preparedStatement_clearParameters",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "clearParameters", "getConnectionProxy", "preparedStatement_clearParameters", "getId", "statementLog", "isStatementParameterClearLogEnable" ]
+    }, {
+      "name" : "callableStatement_setShort",
+      "visibility" : "public",
+      "methodCalls" : [ "setShort", "getRawObject", "callableStatement_setShort" ]
+    }, {
+      "name" : "resultSet_getInt",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getInt", "getResultSetRaw", "resultSet_getInt" ]
+    }, {
+      "name" : "resultSet_wasNull",
+      "visibility" : "public",
+      "methodCalls" : [ "wasNull", "getResultSetRaw", "resultSet_wasNull" ]
+    }, {
+      "name" : "callableStatement_setAsciiStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setAsciiStream", "callableStatement_setAsciiStream" ]
+    }, {
+      "name" : "preparedStatement_setDouble",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setDouble", "preparedStatement_setDouble" ]
+    }, {
+      "name" : "resultSet_insertRow",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "insertRow", "resultSet_insertRow" ]
+    }, {
+      "name" : "resultSet_updateDate",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateDate", "getResultSetRaw", "resultSet_updateDate" ]
+    }, {
+      "name" : "resultSetMetaData_getColumnTypeName",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetProxy", "getPhysicalColumn", "getResultSetMetaDataRaw", "getColumnTypeName", "resultSetMetaData_getColumnTypeName" ]
+    }, {
+      "name" : "resultSet_clearWarnings",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "clearWarnings", "resultSet_clearWarnings" ]
+    }, {
+      "name" : "resultSet_updateInt",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateInt", "getResultSetRaw", "resultSet_updateInt" ]
+    }, {
+      "name" : "statement_getGeneratedKeys",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getLastExecuteSql", "getGeneratedKeys", "createResultSetId", "resultSetOpenAfter", "statement_getGeneratedKeys" ]
+    }, {
+      "name" : "preparedStatement_setBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "setBytes", "getRawObject", "preparedStatement_setBytes" ]
+    }, {
+      "name" : "connection_createStruct",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "createStruct", "connection_createStruct" ]
+    }, {
+      "name" : "resultSet_getNClob",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getConnectionProxy", "getNClob", "getStatementProxy", "wrap", "resultSet_getNClob" ]
+    }, {
+      "name" : "resultSetMetaData_isNullable",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetProxy", "getPhysicalColumn", "isNullable", "getResultSetMetaDataRaw", "resultSetMetaData_isNullable" ]
+    }, {
+      "name" : "resultSet_updateCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateCharacterStream", "getResultSetRaw", "resultSet_updateCharacterStream" ]
+    }, {
+      "name" : "statement_setFetchSize",
+      "visibility" : "public",
+      "methodCalls" : [ "setFetchSize", "getRawObject", "statement_setFetchSize" ]
+    }, {
+      "name" : "resultSet_previous",
+      "visibility" : "public",
+      "methodCalls" : [ "previous", "getResultSetRaw", "resultSet_previous" ]
+    }, {
+      "name" : "connection_setCatalog",
+      "visibility" : "public",
+      "methodCalls" : [ "setCatalog", "getRawObject", "connection_setCatalog" ]
+    }, {
+      "name" : "connection_getNetworkTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ "getNetworkTimeout", "getRawObject", "connection_getNetworkTimeout" ]
+    }, {
+      "name" : "resultSet_getRow",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "getRow", "resultSet_getRow" ]
+    }, {
+      "name" : "statement_getQueryTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ "getQueryTimeout", "getRawObject", "statement_getQueryTimeout" ]
+    }, {
+      "name" : "preparedStatement_setSQLXML",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setSQLXML", "preparedStatement_setSQLXML" ]
+    }, {
+      "name" : "resultSetMetaData_isCaseSensitive",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetProxy", "getResultSetMetaDataRaw", "isCaseSensitive", "resultSetMetaData_isCaseSensitive" ]
+    }, {
+      "name" : "preparedStatement_setBoolean",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setBoolean", "preparedStatement_setBoolean" ]
+    }, {
+      "name" : "resultSet_getType",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "getType", "resultSet_getType" ]
+    }, {
+      "name" : "dataSource_getConnection",
+      "visibility" : "public",
+      "methodCalls" : [ "setConnectedTimeNano", "pool_connection_open", "getInstance", "isConnectionLogEnabled", "dataSource_connect", "getConnectionHolder", "connectionLog", "getConnection", "getId" ]
+    }, {
+      "name" : "resultSet_deleteRow",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "deleteRow", "resultSet_deleteRow" ]
+    }, {
+      "name" : "resultSetMetaData_getColumnCount",
+      "visibility" : "public",
+      "methodCalls" : [ "getHiddenColumnCount", "getResultSetProxy", "getResultSetMetaDataRaw", "getColumnCount", "resultSetMetaData_getColumnCount" ]
+    }, {
+      "name" : "callableStatement_getClob",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getClob", "wrap", "getDataSourceStat", "getDataSource", "callableStatement_getClob" ]
+    }, {
+      "name" : "connection_rollback",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getDirectDataSource", "getConnectionStat", "incrementConnectionRollbackCount", "getDataSource", "getDataSourceStat", "getInstance", "rollback", "getId", "connection_rollback", "connectionLog", "savepointToString", "isConnectionLogEnabled" ]
+    }, {
+      "name" : "resultSet_updateBlob",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateBlob", "resultSet_updateBlob" ]
+    }, {
+      "name" : "connection_setHoldability",
+      "visibility" : "public",
+      "methodCalls" : [ "setHoldability", "getRawObject", "connection_setHoldability" ]
+    }, {
+      "name" : "callableStatement_getNClob",
+      "visibility" : "public",
+      "methodCalls" : [ "wrap", "getNClob", "getRawObject", "getConnectionProxy", "callableStatement_getNClob" ]
+    }, {
+      "name" : "resultSet_getArray",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getArray", "resultSet_getArray" ]
+    }, {
+      "name" : "resultSet_getMetaData",
+      "visibility" : "public",
+      "methodCalls" : [ "createMetaDataId", "getMetaData", "getResultSetRaw", "resultSet_getMetaData" ]
+    }, {
+      "name" : "statement_addBatch",
+      "visibility" : "public",
+      "methodCalls" : [ "check", "clearContext", "addBatch", "getRawObject", "getConnectionProxy", "encode", "statement_addBatch" ]
+    }, {
+      "name" : "resultSet_last",
+      "visibility" : "public",
+      "methodCalls" : [ "last", "getResultSetRaw", "resultSet_last" ]
+    }, {
+      "name" : "statement_setEscapeProcessing",
+      "visibility" : "public",
+      "methodCalls" : [ "setEscapeProcessing", "getRawObject", "statement_setEscapeProcessing" ]
+    }, {
+      "name" : "statement_isPoolable",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "isPoolable", "statement_isPoolable" ]
+    }, {
+      "name" : "statement_executeUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "check", "statExecuteUpdate", "incrementExecuteErrorCount", "clearContext", "executeUpdate", "getRawObject", "statementExecuteUpdateAfter", "statement_executeErrorAfter", "statementExecuteUpdateBefore", "getConnectionProxy", "encode", "statement_executeUpdate" ]
+    }, {
+      "name" : "callableStatement_getShort",
+      "visibility" : "public",
+      "methodCalls" : [ "getShort", "getRawObject", "callableStatement_getShort" ]
+    }, {
+      "name" : "resultSet_updateLong",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateLong", "resultSet_updateLong" ]
+    }, {
+      "name" : "resultSet_getSQLXML",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getSQLXML", "resultSet_getSQLXML" ]
+    }, {
+      "name" : "connection_prepareCall",
+      "visibility" : "public",
+      "methodCalls" : [ "getUpdateCheckItems", "getDbType", "create", "clearContext", "getSql", "setSqlStatAttribute", "getDirectDataSource", "setWallUpdateCheckItems", "getRawObject", "createStatementId", "prepareCall", "statementPrepareCallAfter", "connection_prepareCall", "encode" ]
+    }, {
+      "name" : "statement_getResultSetConcurrency",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getResultSetConcurrency", "statement_getResultSetConcurrency" ]
+    }, {
+      "name" : "resultSet_getClob",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "wrap", "getResultSetRaw", "getStatementProxy", "getClob", "getDataSource", "resultSet_getClob", "getDataSourceStat" ]
+    }, {
+      "name" : "resultSet_absolute",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "absolute", "resultSet_absolute" ]
+    }, {
+      "name" : "resultSet_getBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getBytes", "getResultSetRaw", "resultSet_getBytes", "addReadBytesLength" ]
+    }, {
+      "name" : "resultSetMetaData_getCatalogName",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetProxy", "getCatalogName", "getResultSetMetaDataRaw", "resultSetMetaData_getCatalogName" ]
+    }, {
+      "name" : "callableStatement_setNClob",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawNClob", "setNClob", "getRawObject", "callableStatement_setNClob" ]
+    }, {
+      "name" : "resultSet_updateNull",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateNull", "resultSet_updateNull" ]
+    }, {
+      "name" : "resultSet_getNString",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getNString", "resultSet_getNString" ]
+    }, {
+      "name" : "resultSet_cancelRowUpdates",
+      "visibility" : "public",
+      "methodCalls" : [ "cancelRowUpdates", "getResultSetRaw", "resultSet_cancelRowUpdates" ]
+    }, {
+      "name" : "callableStatement_getBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getBytes", "callableStatement_getBytes" ]
+    }, {
+      "name" : "preparedStatement_executeQuery",
+      "visibility" : "public",
+      "methodCalls" : [ "incrementExecuteErrorCount", "createResultSetId", "executeQuery", "getRawObject", "getLastExecuteSql", "statementExecuteQueryAfter", "statement_executeErrorAfter", "getSql", "statementExecuteQueryBefore", "preparedStatement_executeQuery", "resultSetOpenAfter" ]
+    }, {
+      "name" : "preparedStatement_setCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setCharacterStream", "preparedStatement_setCharacterStream", "length", "read", "getConnectionProxy", "encode" ]
+    }, {
+      "name" : "preparedStatement_setLong",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setLong", "preparedStatement_setLong" ]
+    }, {
+      "name" : "resultSet_getTimestamp",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getTimestamp", "resultSet_getTimestamp" ]
+    }, {
+      "name" : "clob_setAsciiStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawClob", "setAsciiStream", "clob_setAsciiStream" ]
+    }, {
+      "name" : "resultSetMetaData_isAutoIncrement",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetProxy", "getPhysicalColumn", "getResultSetMetaDataRaw", "isAutoIncrement", "resultSetMetaData_isAutoIncrement" ]
+    }, {
+      "name" : "preparedStatement_setURL",
+      "visibility" : "public",
+      "methodCalls" : [ "setURL", "getRawObject", "preparedStatement_setURL" ]
+    }, {
+      "name" : "callableStatement_setByte",
+      "visibility" : "public",
+      "methodCalls" : [ "setByte", "getRawObject", "callableStatement_setByte" ]
+    }, {
+      "name" : "statement_getResultSet",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSet", "createResultSetId", "getLastExecuteSql", "getRawObject", "resultSetOpenAfter", "statement_getResultSet" ]
+    }, {
+      "name" : "clob_getCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawClob", "getCharacterStream", "clob_getCharacterStream", "getConnectionWrapper", "read", "decode" ]
+    }, {
+      "name" : "statement_clearWarnings",
+      "visibility" : "public",
+      "methodCalls" : [ "clearWarnings", "getRawObject", "statement_clearWarnings" ]
+    }, {
+      "name" : "resultSet_rowInserted",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "rowInserted", "resultSet_rowInserted" ]
+    }, {
+      "name" : "callableStatement_setSQLXML",
+      "visibility" : "public",
+      "methodCalls" : [ "setSQLXML", "getRawObject", "callableStatement_setSQLXML" ]
+    }, {
+      "name" : "resultSet_setFetchSize",
+      "visibility" : "public",
+      "methodCalls" : [ "setFetchSize", "getResultSetRaw", "resultSet_setFetchSize" ]
+    }, {
+      "name" : "callableStatement_setBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setBytes", "callableStatement_setBytes" ]
+    }, {
+      "name" : "statement_isClosed",
+      "visibility" : "public",
+      "methodCalls" : [ "isClosed", "getRawObject", "statement_isClosed" ]
+    }, {
+      "name" : "connection_createStatement",
+      "visibility" : "public",
+      "methodCalls" : [ "createStatement", "getRawObject", "createStatementId", "connection_createStatement", "statementCreateAfter" ]
+    }, {
+      "name" : "statement_setMaxFieldSize",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setMaxFieldSize", "statement_setMaxFieldSize" ]
+    }, {
+      "name" : "preparedStatement_setTimestamp",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setTimestamp", "preparedStatement_setTimestamp" ]
+    }, {
+      "name" : "clob_getAsciiStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawClob", "getAsciiStream", "clob_getAsciiStream" ]
+    }, {
+      "name" : "statement_getMoreResults",
+      "visibility" : "public",
+      "methodCalls" : [ "getMoreResults", "getRawObject", "statement_getMoreResults" ]
+    }, {
+      "name" : "resultSet_getShort",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getShort", "getResultSetRaw", "resultSet_getShort" ]
+    }, {
+      "name" : "resultSet_updateRowId",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateRowId", "getResultSetRaw", "resultSet_updateRowId" ]
+    }, {
+      "name" : "statement_getFetchSize",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getFetchSize", "statement_getFetchSize" ]
+    }, {
+      "name" : "preparedStatement_setUnicodeStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setUnicodeStream", "preparedStatement_setUnicodeStream" ]
+    }, {
+      "name" : "preparedStatement_setShort",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setShort", "preparedStatement_setShort" ]
+    }, {
+      "name" : "preparedStatement_setTime",
+      "visibility" : "public",
+      "methodCalls" : [ "setTime", "getRawObject", "preparedStatement_setTime" ]
+    }, {
+      "name" : "resultSet_updateByte",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateByte", "getResultSetRaw", "resultSet_updateByte" ]
+    }, {
+      "name" : "callableStatement_setDouble",
+      "visibility" : "public",
+      "methodCalls" : [ "setDouble", "getRawObject", "callableStatement_setDouble" ]
+    }, {
+      "name" : "resultSet_updateNClob",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateNClob", "resultSet_updateNClob" ]
+    }, {
+      "name" : "resultSetMetaData_isCurrency",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetProxy", "getResultSetMetaDataRaw", "isCurrency", "resultSetMetaData_isCurrency" ]
+    }, {
+      "name" : "resultSet_getCursorName",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "getCursorName", "resultSet_getCursorName" ]
+    }, {
+      "name" : "callableStatement_setDate",
+      "visibility" : "public",
+      "methodCalls" : [ "setDate", "getRawObject", "callableStatement_setDate" ]
+    }, {
+      "name" : "resultSet_updateBinaryStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateBinaryStream", "resultSet_updateBinaryStream" ]
+    }, {
+      "name" : "resultSet_next",
+      "visibility" : "public",
+      "methodCalls" : [ "size", "get", "filterResultsetTenantColumn", "getTenantCallBack", "getConfig", "next", "getResultSetRaw", "isResultSetLogEnabled", "resultSetLogError", "getStatementProxy", "toString", "getColumnCount", "getConnectionProxy", "getMetaData", "resultSetLog", "resultSet_next", "getObject", "append", "getTimestamp", "getColumnType", "getId" ]
+    }, {
+      "name" : "resultSetMetaData_getColumnClassName",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetProxy", "getColumnClassName", "getResultSetMetaDataRaw", "resultSetMetaData_getColumnClassName" ]
+    }, {
+      "name" : "resultSet_findColumn",
+      "visibility" : "public",
+      "methodCalls" : [ "getLogicColumn", "findColumn", "getResultSetRaw", "resultSet_findColumn" ]
+    }, {
+      "name" : "connection_getCatalog",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getCatalog", "connection_getCatalog" ]
+    }, {
+      "name" : "connection_getTypeMap",
+      "visibility" : "public",
+      "methodCalls" : [ "getTypeMap", "getRawObject", "connection_getTypeMap" ]
+    }, {
+      "name" : "resultSet_setFetchDirection",
+      "visibility" : "public",
+      "methodCalls" : [ "setFetchDirection", "getResultSetRaw", "resultSet_setFetchDirection" ]
+    }, {
+      "name" : "resultSet_updateBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateBytes", "resultSet_updateBytes" ]
+    }, {
+      "name" : "resultSet_getFetchSize",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "getFetchSize", "resultSet_getFetchSize" ]
+    }, {
+      "name" : "connection_setAutoCommit",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setAutoCommit", "getId", "connection_setAutoCommit", "connectionLog" ]
+    }, {
+      "name" : "connection_isReadOnly",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "isReadOnly", "connection_isReadOnly" ]
+    }, {
+      "name" : "connection_commit",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "commit", "getConnectionStat", "getDataSourceStat", "incrementConnectionCommitCount", "getDataSource", "getInstance", "isConnectionLogEnabled", "getId", "connection_commit", "connectionLog" ]
+    }, {
+      "name" : "callableStatement_registerOutParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "registerOutParameter", "getRawObject", "callableStatement_registerOutParameter" ]
+    }, {
+      "name" : "callableStatement_setBinaryStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setBinaryStream", "callableStatement_setBinaryStream" ]
+    }, {
+      "name" : "callableStatement_setFloat",
+      "visibility" : "public",
+      "methodCalls" : [ "setFloat", "getRawObject", "callableStatement_setFloat" ]
+    }, {
+      "name" : "resultSet_rowDeleted",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "rowDeleted", "resultSet_rowDeleted" ]
+    }, {
+      "name" : "connection_setTransactionIsolation",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setTransactionIsolation", "connection_setTransactionIsolation" ]
+    }, {
+      "name" : "resultSet_getTime",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getTime", "getResultSetRaw", "resultSet_getTime" ]
+    }, {
+      "name" : "connection_createNClob",
+      "visibility" : "public",
+      "methodCalls" : [ "wrap", "getRawObject", "createNClob", "connection_createNClob" ]
+    }, {
+      "name" : "preparedStatement_setNCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setNCharacterStream", "preparedStatement_setNCharacterStream" ]
+    }, {
+      "name" : "statement_setMaxRows",
+      "visibility" : "public",
+      "methodCalls" : [ "setMaxRows", "getRawObject", "statement_setMaxRows" ]
+    }, {
+      "name" : "preparedStatement_getParameterMetaData",
+      "visibility" : "public",
+      "methodCalls" : [ "getParameterMetaData", "getRawObject", "preparedStatement_getParameterMetaData" ]
+    }, {
+      "name" : "connection_getTransactionIsolation",
+      "visibility" : "public",
+      "methodCalls" : [ "getTransactionIsolation", "getRawObject", "connection_getTransactionIsolation" ]
+    }, {
+      "name" : "statement_getMaxFieldSize",
+      "visibility" : "public",
+      "methodCalls" : [ "getMaxFieldSize", "getRawObject", "statement_getMaxFieldSize" ]
+    }, {
+      "name" : "resultSetMetaData_isDefinitelyWritable",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetProxy", "getPhysicalColumn", "getResultSetMetaDataRaw", "isDefinitelyWritable", "resultSetMetaData_isDefinitelyWritable" ]
+    }, {
+      "name" : "resultSet_getAsciiStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getAsciiStream", "getResultSetRaw", "incrementOpenInputStreamCount", "resultSet_getAsciiStream" ]
+    }, {
+      "name" : "resultSet_getUnicodeStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getUnicodeStream", "getResultSetRaw", "resultSet_getUnicodeStream" ]
+    }, {
+      "name" : "connection_isValid",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "isValid", "connection_isValid" ]
+    }, {
+      "name" : "resultSet_close",
+      "visibility" : "public",
+      "methodCalls" : [ "incrementJdbcResultSetCloseCount", "current", "get", "resultSet_close", "size", "getStatementProxy", "append", "isResultSetCloseAfterLogEnabled", "getId", "getConnectionProxy", "toString", "resultSetLog", "getCloseCount", "addResultSetHoldTimeNano", "addReaderOpenCount", "addStringReadLength", "getReadStringLength", "getLastExecuteTimeNano", "getSql", "getOpenInputStreamCount", "getReadBytesLength", "getConstructNano", "addReadBytesLength", "getInstance", "nanoTime", "getDataSourceStat", "addInputStreamOpenCount", "getOpenReaderCount", "getResultSetStat", "incrementCloseCounter", "getDataSource", "afterClose", "getSqlStat", "getFetchRowCount", "addFetchRowCount", "getResultSetRaw", "clearAttributes", "close", "getAttribute" ]
+    }, {
+      "name" : "statement_setPoolable",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setPoolable", "statement_setPoolable" ]
+    }, {
+      "name" : "resultSetMetaData_getScale",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetProxy", "getPhysicalColumn", "getResultSetMetaDataRaw", "getScale", "resultSetMetaData_getScale" ]
+    }, {
+      "name" : "resultSet_getBoolean",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getBoolean", "resultSet_getBoolean" ]
+    }, {
+      "name" : "connection_getHoldability",
+      "visibility" : "public",
+      "methodCalls" : [ "getHoldability", "getRawObject", "connection_getHoldability" ]
+    }, {
+      "name" : "resultSet_updateRef",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateRef", "resultSet_updateRef" ]
+    }, {
+      "name" : "preparedStatement_setDate",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setDate", "preparedStatement_setDate" ]
+    }, {
+      "name" : "preparedStatement_setRowId",
+      "visibility" : "public",
+      "methodCalls" : [ "setRowId", "getRawObject", "preparedStatement_setRowId" ]
+    }, {
+      "name" : "resultSet_getHoldability",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "getHoldability", "resultSet_getHoldability" ]
+    }, {
+      "name" : "connection_getMetaData",
+      "visibility" : "public",
+      "methodCalls" : [ "isDoPrivilegedAllow", "isLogViolation", "getConfig", "ispPrivileged", "isMetadataAllow", "error", "getRawObject", "getMetaData", "connection_getMetaData" ]
+    }, {
+      "name" : "callableStatement_getDate",
+      "visibility" : "public",
+      "methodCalls" : [ "getDate", "getRawObject", "callableStatement_getDate" ]
+    }, {
+      "name" : "clob_setCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "setCharacterStream", "getRawClob", "clob_setCharacterStream" ]
+    }, {
+      "name" : "resultSetMetaData_getTableName",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetProxy", "getResultSetMetaDataRaw", "getTableName", "resultSetMetaData_getTableName" ]
+    }, {
+      "name" : "resultSet_updateClob",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateClob", "getResultSetRaw", "resultSet_updateClob" ]
+    }, {
+      "name" : "resultSet_updateBoolean",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "updateBoolean", "resultSet_updateBoolean" ]
+    }, {
+      "name" : "resultSet_updateShort",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateShort", "getResultSetRaw", "resultSet_updateShort" ]
+    }, {
+      "name" : "callableStatement_setString",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setString", "callableStatement_setString", "encode", "getConnectionProxy" ]
+    }, {
+      "name" : "preparedStatement_setClob",
+      "visibility" : "public",
+      "methodCalls" : [ "setClob", "getRawObject", "getRawClob", "preparedStatement_setClob" ]
+    }, {
+      "name" : "resultSet_rowUpdated",
+      "visibility" : "public",
+      "methodCalls" : [ "rowUpdated", "getResultSetRaw", "resultSet_rowUpdated" ]
+    }, {
+      "name" : "preparedStatement_setByte",
+      "visibility" : "public",
+      "methodCalls" : [ "setByte", "getRawObject", "preparedStatement_setByte" ]
+    }, {
+      "name" : "statement_executeQuery",
+      "visibility" : "public",
+      "methodCalls" : [ "clearContext", "check", "incrementExecuteErrorCount", "createResultSetId", "getLastExecuteSql", "getRawObject", "executeQuery", "statement_executeErrorAfter", "statementExecuteQueryBefore", "statementExecuteQueryAfter", "resultSetOpenAfter", "encode", "statement_executeQuery", "getConnectionProxy" ]
+    }, {
+      "name" : "resultSetMetaData_getColumnName",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetProxy", "getPhysicalColumn", "getColumnName", "getResultSetMetaDataRaw", "resultSetMetaData_getColumnName" ]
+    }, {
+      "name" : "callableStatement_getTime",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getTime", "callableStatement_getTime" ]
+    }, {
+      "name" : "clob_length",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawClob", "length", "clob_length" ]
+    }, {
+      "name" : "resultSetMetaData_getPrecision",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetProxy", "getPhysicalColumn", "getResultSetMetaDataRaw", "getPrecision", "resultSetMetaData_getPrecision" ]
+    }, {
+      "name" : "callableStatement_setLong",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setLong", "callableStatement_setLong" ]
+    }, {
+      "name" : "callableStatement_getNString",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getNString", "callableStatement_getNString" ]
+    }, {
+      "name" : "clob_setString",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawClob", "setString", "getConnectionWrapper", "clob_setString", "encode" ]
+    }, {
+      "name" : "connection_isClosed",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "isClosed", "connection_isClosed" ]
+    }, {
+      "name" : "callableStatement_setRowId",
+      "visibility" : "public",
+      "methodCalls" : [ "setRowId", "getRawObject", "callableStatement_setRowId" ]
+    }, {
+      "name" : "callableStatement_setNCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "setNCharacterStream", "getRawObject", "callableStatement_setNCharacterStream" ]
+    }, {
+      "name" : "statement_getResultSetHoldability",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetHoldability", "getRawObject", "statement_getResultSetHoldability" ]
+    }, {
+      "name" : "resultSet_isFirst",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "isFirst", "resultSet_isFirst" ]
+    }, {
+      "name" : "preparedStatement_setBlob",
+      "visibility" : "public",
+      "methodCalls" : [ "setBlob", "getRawObject", "preparedStatement_setBlob" ]
+    }, {
+      "name" : "resultSet_getObject",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "wrap", "getObject", "createResultSetId", "getLastExecuteSql", "getDataSource", "length", "addReadStringLength", "getDataSourceStat", "getColumnType", "findColumn", "resultSet_getString", "getConnectionProxy", "getMetaData", "getResultSetRaw", "decodeObject", "getStatementProxy", "getObjectReplaceLocalDateTime", "resultSet_getObject" ]
+    }, {
+      "name" : "statement_getFetchDirection",
+      "visibility" : "public",
+      "methodCalls" : [ "getFetchDirection", "getRawObject", "statement_getFetchDirection" ]
+    }, {
+      "name" : "callableStatement_setBlob",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "setBlob", "callableStatement_setBlob" ]
+    }, {
+      "name" : "connection_createClob",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "createClob", "wrap", "connection_createClob" ]
+    }, {
+      "name" : "resultSet_getByte",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getByte", "resultSet_getByte" ]
+    }, {
+      "name" : "callableStatement_getTimestamp",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getTimestamp", "callableStatement_getTimestamp" ]
+    }, {
+      "name" : "statement_getUpdateCount",
+      "visibility" : "public",
+      "methodCalls" : [ "getUpdateCount", "getRawObject", "statement_getUpdateCount" ]
+    }, {
+      "name" : "resultSet_moveToInsertRow",
+      "visibility" : "public",
+      "methodCalls" : [ "moveToInsertRow", "getResultSetRaw", "resultSet_moveToInsertRow" ]
+    }, {
+      "name" : "resultSet_getNCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getNCharacterStream", "resultSet_getNCharacterStream" ]
+    }, {
+      "name" : "callableStatement_setNString",
+      "visibility" : "public",
+      "methodCalls" : [ "setNString", "getRawObject", "callableStatement_setNString" ]
+    }, {
+      "name" : "connection_connect",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawDriver", "createStatement", "getRawJdbcUrl", "createConnectionId", "connect", "getId", "connectError", "setEstablishNano", "beforeConnect", "getConnectionStat", "getDataSource", "getConnectionInfo", "setConnectStackTrace", "nanoTime", "setConnectTimespanNano", "size", "afterConnected", "setConnectTime", "getDataSourceStat", "setEstablishTime", "put", "getConnections", "setActiveCount", "currentTimeMillis", "connection_connectBefore", "connection_connectAfter", "connection_connect", "putAttribute", "getProperty" ]
+    }, {
+      "name" : "resultSet_getString",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getString", "getResultSetRaw", "addReadStringLength", "length", "resultSet_getString", "getConnectionProxy", "getStatementProxy", "decode" ]
+    }, {
+      "name" : "callableStatement_getInt",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getInt", "callableStatement_getInt" ]
+    }, {
+      "name" : "resultSet_updateNCharacterStream",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateNCharacterStream", "getResultSetRaw", "resultSet_updateNCharacterStream" ]
+    }, {
+      "name" : "resultSet_updateBigDecimal",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "updateBigDecimal", "getResultSetRaw", "resultSet_updateBigDecimal" ]
+    }, {
+      "name" : "callableStatement_getDouble",
+      "visibility" : "public",
+      "methodCalls" : [ "getDouble", "getRawObject", "callableStatement_getDouble" ]
+    }, {
+      "name" : "resultSet_getRef",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getResultSetRaw", "getRef", "resultSet_getRef" ]
+    }, {
+      "name" : "resultSet_getBlob",
+      "visibility" : "public",
+      "methodCalls" : [ "getPhysicalColumn", "getBlob", "getResultSetRaw", "getDataSource", "resultSet_getBlob", "getDataSourceStat" ]
+    }, {
+      "name" : "statement_executeBatch",
+      "visibility" : "public",
+      "methodCalls" : [ "getAttribute", "incrementExecuteErrorCount", "clearContext", "addUpdateCount", "getRawObject", "executeBatch", "getBatchSql", "statement_executeBatch", "statement_executeErrorAfter", "statementExecuteBatchAfter", "statementExecuteBatchBefore" ]
+    }, {
+      "name" : "connection_getClientInfo",
+      "visibility" : "public",
+      "methodCalls" : [ "getClientInfo", "getRawObject", "connection_getClientInfo" ]
+    }, {
+      "name" : "connection_createArrayOf",
+      "visibility" : "public",
+      "methodCalls" : [ "createArrayOf", "getRawObject", "connection_createArrayOf" ]
+    }, {
+      "name" : "connection_setNetworkTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ "setNetworkTimeout", "getRawObject", "connection_setNetworkTimeout" ]
+    }, {
+      "name" : "connection_clearWarnings",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "clearWarnings", "connection_clearWarnings" ]
+    }, {
+      "name" : "connection_getSchema",
+      "visibility" : "public",
+      "methodCalls" : [ "getRawObject", "getSchema", "connection_getSchema" ]
+    }, {
+      "name" : "resultSet_moveToCurrentRow",
+      "visibility" : "public",
+      "methodCalls" : [ "moveToCurrentRow", "getResultSetRaw", "resultSet_moveToCurrentRow" ]
+    }, {
+      "name" : "isWrapperFor",
+      "visibility" : "public",
+      "methodCalls" : [ "ispPrivileged", "isWrapAllow", "isDoPrivilegedAllow", "getConfig", "createChain", "getConnection", "isWrapperFor", "getClass", "isInstance" ]
+    }, {
+      "name" : "callableStatement_getBoolean",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean", "getRawObject", "callableStatement_getBoolean" ]
+    }, {
+      "name" : "resultSetMetaData_isSigned",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetProxy", "getPhysicalColumn", "getResultSetMetaDataRaw", "isSigned", "resultSetMetaData_isSigned" ]
+    }, {
+      "name" : "resultSet_afterLast",
+      "visibility" : "public",
+      "methodCalls" : [ "getResultSetRaw", "afterLast", "resultSet_afterLast" ]
+    } ],
+    "imports" : [ "java.io.OutputStream", "java.io.Writer", "com.alibaba.druid.proxy.jdbc", "java.sql", "java.io.Reader", "com.alibaba.druid.pool.DruidDataSource", "java.util.Calendar", "java.util.concurrent.Executor", "java.math.BigDecimal", "com.alibaba.druid.pool.DruidPooledConnection", "java.util.Properties", "java.io.InputStream" ]
+  } ]
+}

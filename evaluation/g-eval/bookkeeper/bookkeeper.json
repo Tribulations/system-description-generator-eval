@@ -1,0 +1,393 @@
+{
+  "systemName" : "bookkeeper",
+  "classes" : [ {
+    "name" : "Builder",
+    "packageName" : "org.apache.bookkeeper.zookeeper",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "zkTimeoutSec",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "sessionTimeoutMs",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "operationRetryPolicy",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "watchers",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "connectRetryPolicy",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "connectString",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "allowReadOnlyMode",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "retryThreadCount",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "requestRateLimit",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setBookieId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setLayoutVersion",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setLedgerDirs",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setJournalDirs",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setInstanceId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setIndexDirs",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "requestTimer",
+      "visibility" : "public",
+      "methodCalls" : [ "requestTimer" ]
+    }, {
+      "name" : "setZookeeper",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setEventLoopGroup",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "featureProvider",
+      "visibility" : "public",
+      "methodCalls" : [ "featureProvider" ]
+    }, {
+      "name" : "dnsResolver",
+      "visibility" : "public",
+      "methodCalls" : [ "dnsResolver" ]
+    }, {
+      "name" : "eventLoopGroup",
+      "visibility" : "public",
+      "methodCalls" : [ "eventLoopGroup" ]
+    }, {
+      "name" : "setStatsLogger",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "zk",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "allocator",
+      "visibility" : "public",
+      "methodCalls" : [ "allocator" ]
+    }, {
+      "name" : "ledgerManagerFactory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "uncleanShutdownDetection",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "registrationManager",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "diskChecker",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "metadataDriver",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "statsProvider",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "ledgerDirsManager",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "indexDirsManager",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setServerConfiguration",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setBookieServer",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAutoRecovery",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setLedgerManagerFactory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setStatsProvider",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withConsole",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addCommand",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "withRunFunc",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCommandGroup",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withCategory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withFlags",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withUsage",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withParent",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withArgumentsUsage",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withDescription",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withTailer",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withComponentInfoPublisher",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "withName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addComponent",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "checkNotNull" ]
+    }, {
+      "name" : "setChannelFinder",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addService",
+      "visibility" : "public",
+      "methodCalls" : [ "getServiceDescriptor", "put", "getName" ]
+    }, {
+      "name" : "serverConf",
+      "visibility" : "public",
+      "methodCalls" : [ "of" ]
+    }, {
+      "name" : "zkPort",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "buildReader",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "deserializeRecordSet",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setEntryId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setEntry",
+      "visibility" : "public",
+      "methodCalls" : [ "retainedSlice" ]
+    }, {
+      "name" : "setLogSegmentInfo",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setEnvelopeEntry",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "build",
+      "visibility" : "public",
+      "methodCalls" : [ "failureOps", "interrupt", "currentThread", "waitForConnection", "close", "createRegistrationManager", "createLedgerDirsManager", "getStatsLogger", "createIndexDirsManager", "getServerConf", "systemTicker", "getBookieId", "createAllocator", "storageDirectoriesFromConf", "isHttpServerEnabled", "newLedgerManager", "getBookie", "withName", "getStatsProvider", "withComponentInfoPublisher", "setUncaughtExceptionHandler", "setClientRole", "newBookieImpl", "createDiskChecker", "checkCookies", "join", "setStatsProvider", "setServerConfiguration", "newLegacyCookieValidation", "newFixedThreadPool", "setLedgerManagerFactory", "createMetadataDriver", "getJournalWriteData", "isLocalScrubEnabled", "from", "getExtraServerComponents", "setNameFormat", "error", "getServer", "addComponent", "getMessage", "createLedgerStorage", "getLedgerManagerFactory", "loadServerComponents", "getLedgerStorage", "setBookieServer", "isDataIntegrityCheckingEnabled", "getClientCtx", "runPreBootCheck", "lastShutdownWasUnclean", "isForceReadOnlyBookie", "forConfig", "getBookieClient", "isAutoRecoveryDaemonEnabled", "getName", "getIgnoreExtraServerComponentsStartupFailures", "isEmpty", "copyOf", "checkArgument", "enableServerSideRouting", "validateNamespaceName", "getMethodDescriptor", "unmodifiableMap", "getFullMethodName", "getMethods", "put", "values", "createProxyServerMethodDefinition", "scheduler", "newPlacementPolicy", "compareOps", "successOps", "set", "recycle", "create", "checkNotNull", "info", "name", "normalizeClientId", "build", "initialize", "getEIInjectReadAheadStall", "injectCorruption", "newSchedulerBuilder", "getEIInjectReadAheadDelay", "numThreads", "getEIInjectReadAheadBrokenEntries", "getDriver", "injectErrors", "getNumWorkerThreads", "injectStops", "validate", "toLowerCase", "newBuilder", "injectDelays", "getEIInjectMaxReadAheadDelayMs", "getConstDynConf", "scope", "normalizeURI", "getFeature", "getEIInjectReadAheadDelayPercent", "getPath", "getGlobalOutstandingWriteLimit", "getOutstandingWriteLimitDarkmode", "setAllowLoopback", "clone", "isPresent", "setZkTimeout", "get", "loadConf", "localHandlerRegistry", "statsLogger", "storeServerConf", "endpoint", "localServerName", "storeSupplier" ]
+    }, {
+      "name" : "injectStops",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "injectErrors",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "injectCorruption",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "injectDelays",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "name",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "zkc",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "statsLogger",
+      "visibility" : "public",
+      "methodCalls" : [ "statsLogger" ]
+    }, {
+      "name" : "shouldStartZK",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "zkHost",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addLimiter",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "numBookies",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    } ],
+    "imports" : [ "java.util.concurrent.TimeUnit", "org.apache.zookeeper.AsyncCallback.StatCallback", "org.apache.zookeeper.AsyncCallback.VoidCallback", "org.apache.zookeeper.data.Stat", "java.util.concurrent.RejectedExecutionException", "org.apache.zookeeper.CreateMode", "org.apache.zookeeper.OpResult", "org.apache.bookkeeper.zookeeper.ZooWorker.ZooCallable", "org.apache.zookeeper.AsyncCallback.StringCallback", "java.util.concurrent.atomic.AtomicReference", "com.google.common.util.concurrent.RateLimiter", "java.util.concurrent.Callable", "org.apache.zookeeper.Watcher.Event.EventType", "org.apache.zookeeper.AsyncCallback.ACLCallback", "org.apache.zookeeper.AsyncCallback.ChildrenCallback", "org.apache.zookeeper.AsyncCallback.MultiCallback", "org.apache.zookeeper.AsyncCallback.DataCallback", "org.apache.zookeeper.Op", "org.apache.zookeeper.AsyncCallback.Children2Callback", "java.util.concurrent.atomic.AtomicBoolean", "org.apache.zookeeper.Transaction", "org.apache.zookeeper.data.ACL", "org.apache.zookeeper.Watcher.Event.KeeperState", "com.google.protobuf.TextFormat", "java.util.Objects", "java.io.OutputStreamWriter", "java.io.EOFException", "java.io.BufferedReader", "java.nio.charset.StandardCharsets.UTF_8", "java.io.BufferedWriter", "com.google.common.base.Joiner", "java.io.InputStreamReader", "java.io.FileInputStream", "org.apache.bookkeeper.versioning.LongVersion", "org.apache.bookkeeper.versioning.Version", "org.apache.bookkeeper.proto.DataFormats.CookieFormat", "java.net.UnknownHostException", "org.apache.bookkeeper.bookie.BookieException.UnknownBookieIdException", "org.apache.bookkeeper.util.BookKeeperConstants", "java.io.StringReader", "java.io.FileOutputStream", "java.net.InetSocketAddress", "org.apache.bookkeeper.bookie.BookieException.InvalidCookieException", "java.io.FileNotFoundException", "io.netty.channel.EventLoopGroup", "org.apache.bookkeeper.conf.AbstractConfiguration", "org.apache.bookkeeper.util.EventLoopUtil", "org.apache.bookkeeper.net.DNSToSwitchMapping", "org.apache.bookkeeper.common.allocator.ByteBufAllocatorBuilder", "org.apache.bookkeeper.client.api.BookKeeperBuilder", "org.apache.bookkeeper.client.api.ListLedgersResultBuilder", "org.apache.bookkeeper.client.AsyncCallback.CreateCallback", "org.apache.commons.configuration.ConfigurationException", "org.apache.bookkeeper.feature.FeatureProvider", "org.apache.bookkeeper.client.api.ListLedgersResult", "org.apache.bookkeeper.meta.LedgerManager.LedgerRangeIterator", "org.apache.bookkeeper.client.api.DeleteBuilder", "java.util.concurrent.ExecutionException", "org.apache.bookkeeper.client.api.CreateBuilder", "java.util.concurrent.ScheduledExecutorService", "org.apache.bookkeeper.client.SyncCallbackUtils.SyncCreateCallback", "org.apache.bookkeeper.client.SyncCallbackUtils.SyncDeleteCallback", "org.apache.bookkeeper.client.SyncCallbackUtils.SyncOpenCallback", "org.apache.bookkeeper.client.SyncCallbackUtils.SyncCreateAdvCallback", "org.apache.bookkeeper.common.util.OrderedScheduler", "org.apache.bookkeeper.client.AsyncCallback.OpenCallback", "org.apache.bookkeeper.bookie.BookKeeperServerStats", "java.util.concurrent.locks.ReentrantReadWriteLock", "org.apache.bookkeeper.proto.BookieClient", "org.apache.bookkeeper.bookie.BookKeeperServerStats.WATCHER_SCOPE", "java.util.Iterator", "org.apache.bookkeeper.client.AsyncCallback.DeleteCallback", "org.apache.bookkeeper.common.util.ReflectionUtils", "org.apache.bookkeeper.versioning.Versioned", "org.apache.bookkeeper.proto.BookieClientImpl", "org.apache.bookkeeper.client.api.LedgersIterator", "org.apache.bookkeeper.meta.CleanupLedgerManager", "org.apache.bookkeeper.meta.MetadataDrivers", "org.apache.bookkeeper.feature.SettableFeatureProvider", "org.apache.bookkeeper.client.api.LedgerMetadata", "org.apache.bookkeeper.meta.exceptions.MetadataException", "org.apache.bookkeeper.meta.LedgerIdGenerator", "org.apache.bookkeeper.client.api.WriteFlag", "io.netty.util.HashedWheelTimer", "io.netty.util.concurrent.DefaultThreadFactory", "org.apache.bookkeeper.common.util.OrderedExecutor", "io.netty.buffer.UnpooledByteBufAllocator", "org.apache.bookkeeper.meta.MetadataClientDriver", "org.apache.bookkeeper.proto.BookieAddressResolver", "org.apache.bookkeeper.client.api.OpenBuilder", "org.apache.bookkeeper.client.AsyncCallback.IsClosedCallback", "org.apache.bookkeeper.proto.DataFormats", "org.apache.bookkeeper.client.BookieInfoReader.BookieInfo", "org.apache.bookkeeper.meta.MetadataBookieDriver", "org.apache.bookkeeper.bookie.ScrubberStats", "org.apache.commons.lang3.StringUtils", "org.apache.bookkeeper.server.service.HttpService", "org.apache.bookkeeper.server.service.BookieService", "org.apache.bookkeeper.common.component.ComponentInfoPublisher", "org.apache.bookkeeper.common.component.AutoCloseableLifecycleComponent", "org.apache.bookkeeper.client.BookKeeperClientStats.CLIENT_SCOPE", "org.apache.bookkeeper.bookie.BookKeeperServerStats.LD_LEDGER_SCOPE", "org.apache.bookkeeper.bookie.datainteg.EntryCopierImpl", "org.apache.bookkeeper.bookie.datainteg.DataIntegrityCookieValidation", "org.apache.bookkeeper.server.conf.BookieConfiguration", "org.apache.bookkeeper.bookie.UncleanShutdownDetection", "org.apache.bookkeeper.common.component.LifecycleComponentStack", "org.apache.bookkeeper.util.DiskChecker", "java.util.function.Consumer", "org.apache.bookkeeper.discover.RegistrationManager", "org.apache.bookkeeper.discover.BookieServiceInfo", "io.netty.buffer.CompositeByteBuf", "io.reactivex.rxjava3.core.Scheduler", "io.reactivex.rxjava3.schedulers.Schedulers", "org.apache.bookkeeper.bookie.BookieImpl.newBookieImpl", "org.apache.bookkeeper.bookie.datainteg.EntryCopier", "org.apache.bookkeeper.server.http.BKHttpServiceProvider", "org.apache.bookkeeper.server.service.AutoRecoveryService", "org.apache.bookkeeper.bookie.LedgerStorage", "org.apache.bookkeeper.bookie.datainteg.DataIntegrityCheck", "org.apache.bookkeeper.bookie.BookKeeperServerStats.LD_INDEX_SCOPE", "org.apache.bookkeeper.bookie.UncleanShutdownDetectionImpl", "org.apache.bookkeeper.net.BookieId", "org.apache.bookkeeper.meta.LedgerManager", "org.apache.bookkeeper.bookie.datainteg.DataIntegrityCheckImpl", "io.netty.buffer.ByteBufAllocator", "org.apache.bookkeeper.server.Main.storageDirectoriesFromConf", "org.apache.bookkeeper.bookie.ReadOnlyBookie", "org.apache.bookkeeper.client.BookKeeper", "org.apache.bookkeeper.bookie.CookieValidation", "com.google.common.base.Ticker", "org.apache.bookkeeper.server.component.ServerLifecycleComponent.loadServerComponents", "org.apache.bookkeeper.bookie.BookieResources", "org.apache.bookkeeper.replication.ReplicationStats.REPLICATION_SCOPE", "org.apache.bookkeeper.server.component.ServerLifecycleComponent", "java.util.stream.Collectors", "org.apache.bookkeeper.common.component.RxSchedulerLifecycleComponent", "org.apache.bookkeeper.bookie.LegacyCookieValidation.newLegacyCookieValidation", "org.apache.bookkeeper.bookie.LedgerDirsManager", "org.apache.bookkeeper.server.service.ScrubberService", "java.util.function.Supplier", "org.apache.bookkeeper.common.allocator.ByteBufAllocatorWithOomHandler", "org.apache.bookkeeper.bookie.BookKeeperServerStats.BOOKIE_SCOPE", "org.apache.bookkeeper.bookie.datainteg.DataIntegrityService", "org.apache.bookkeeper.server.service.StatsProviderService", "org.apache.bookkeeper.bookie.BookieImpl", "org.apache.bookkeeper.server.http.service.GetLedgerMetaService", "org.apache.bookkeeper.server.http.service.ListBookieInfoService", "org.apache.bookkeeper.proto.BookieServer", "org.apache.bookkeeper.server.http.service.GetLastLogMarkService", "org.apache.bookkeeper.server.http.service.AutoRecoveryStatusService", "org.apache.bookkeeper.server.http.service.DeleteLedgerService", "org.apache.bookkeeper.server.http.service.ListUnderReplicatedLedgerService", "org.apache.bookkeeper.server.http.service.ResumeCompactionService", "org.apache.bookkeeper.client.BKException", "org.apache.bookkeeper.server.http.service.TriggerGCService", "org.apache.bookkeeper.server.http.service.BookieSanityService", "org.apache.bookkeeper.bookie.Bookie", "java.util.concurrent.Executors", "org.apache.bookkeeper.server.http.service.BookieIsReadyService", "org.apache.bookkeeper.server.http.service.ExpandStorageService", "org.apache.bookkeeper.server.http.service.ListDiskFilesService", "org.apache.bookkeeper.http.service.HeartbeatService", "java.util.concurrent.ExecutorService", "org.apache.bookkeeper.server.http.service.RecoveryBookieService", "org.apache.bookkeeper.meta.LedgerManagerFactory", "org.apache.bookkeeper.http.HttpServer.ApiType", "org.apache.bookkeeper.server.http.service.ListBookiesService", "org.apache.bookkeeper.server.http.service.BookieStateService", "org.apache.bookkeeper.conf.ClientConfiguration", "org.apache.bookkeeper.server.http.service.SuspendCompactionService", "org.apache.bookkeeper.stats.StatsProvider", "org.apache.bookkeeper.server.http.service.ListLedgerService", "org.apache.bookkeeper.server.http.service.WhoIsAuditorService", "org.apache.bookkeeper.server.http.service.BookieStateReadOnlyService", "org.apache.bookkeeper.server.http.service.GCDetailsService", "org.apache.bookkeeper.server.http.service.DecommissionService", "org.apache.bookkeeper.http.HttpServiceProvider", "com.google.common.util.concurrent.ThreadFactoryBuilder", "org.apache.bookkeeper.server.http.service.TriggerAuditService", "org.apache.bookkeeper.server.http.service.TriggerLocationCompactService", "org.apache.bookkeeper.server.http.service.ClusterInfoService", "org.apache.bookkeeper.server.http.service.MetricsService", "org.apache.bookkeeper.server.http.service.LostBookieRecoveryDelayService", "org.apache.bookkeeper.http.service.ErrorHttpService", "org.apache.bookkeeper.client.BookKeeperAdmin", "org.apache.bookkeeper.server.http.service.ReadLedgerEntryService", "org.apache.bookkeeper.http.service.HttpEndpointService", "org.apache.bookkeeper.replication.AutoRecoveryMain", "org.apache.bookkeeper.replication.Auditor", "org.apache.bookkeeper.server.http.service.BookieInfoService", "org.apache.bookkeeper.server.http.service.ConfigurationService", "com.google.common.collect.Sets", "java.io.PrintStream", "lombok.EqualsAndHashCode", "java.util.function.Function", "lombok.ToString", "com.google.common.base.Preconditions.checkArgument", "java.lang.Thread.UncaughtExceptionHandler", "lombok.extern.slf4j.Slf4j", "com.google.common.collect.Lists", "com.google.common.annotations.VisibleForTesting", "java.util.HashMap", "io.grpc.ServerCallHandler", "java.util.Collections", "io.grpc.CallOptions", "io.grpc.HandlerRegistry", "javax.annotation.Nullable", "java.util.LinkedHashMap", "io.grpc.ServerServiceDefinition", "io.grpc.MethodDescriptor", "java.util.Map", "java.io.InputStream", "org.apache.bookkeeper.common.grpc.netty.IdentityInputStreamMarshaller", "io.grpc.ServerMethodDefinition", "org.apache.bookkeeper.util.IOUtils", "java.util.ArrayList", "org.apache.zookeeper.ZooKeeper", "org.apache.distributedlog.metadata.DLMetadata", "java.net.URI", "com.google.common.base.Stopwatch", "org.apache.distributedlog.exceptions.OverCapacityException", "org.apache.zookeeper.KeeperException", "org.apache.bookkeeper.conf.ServerConfiguration", "org.apache.commons.lang3.tuple.Pair", "org.apache.bookkeeper.util.LocalBookKeeper", "org.apache.distributedlog.exceptions.LogRecordTooLongException", "org.apache.distributedlog.exceptions.WriteException", "java.io.IOException", "io.netty.buffer.ByteBuf", "org.apache.distributedlog.io.CompressionCodec", "org.apache.bookkeeper.stats.NullStatsLogger", "java.util.concurrent.CompletableFuture", "com.google.common.base.Preconditions.checkNotNull", "org.apache.distributedlog.util.Utils", "java.util.Random", "java.util.HashSet", "org.apache.bookkeeper.stats.StatsLogger", "org.slf4j.LoggerFactory", "java.util.concurrent.atomic.LongAdder", "org.slf4j.Logger", "org.apache.bookkeeper.stats.Gauge", "java.util.concurrent.ConcurrentMap", "org.apache.distributedlog.ZooKeeperClient", "java.util.Set", "java.util.concurrent.ConcurrentHashMap", "org.apache.zookeeper.Watcher", "org.apache.zookeeper.WatchedEvent", "java.io.File", "org.apache.bookkeeper.stats.OpStatsLogger", "java.util.List", "org.apache.distributedlog.impl.metadata.BKDLConfig", "com.google.common.collect.ImmutableList", "java.util.Optional", "java.net.BindException", "org.apache.bookkeeper.shims.zk.ZooKeeperServerShim", "java.util.concurrent.CountDownLatch", "org.apache.commons.io.FileUtils" ]
+  }, {
+    "name" : "Flags",
+    "packageName" : "org.apache.bookkeeper.tools.cli.commands.cookie",
+    "extendedClasses" : [ "CliFlags" ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "newFlags",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    } ],
+    "imports" : [ "org.apache.bookkeeper.stream.cli.commands.table.PutCommand.Flags", "org.apache.bookkeeper.tools.cli.commands.cookie.GenerateCookieCommand.Flags", "org.apache.bookkeeper.bookie.Cookie.Builder", "org.apache.bookkeeper.tools.cli.commands.cookie.DeleteCookieCommand.Flags", "org.apache.bookkeeper.tools.cli.commands.cookie.UpdateCookieCommand.Flags", "org.apache.bookkeeper.versioning.LongVersion", "java.util.concurrent.ExecutionException", "org.apache.bookkeeper.tools.cli.helpers.BookieCommand", "org.apache.bookkeeper.meta.MetadataDrivers.runFunctionWithRegistrationManager", "org.apache.bookkeeper.meta.exceptions.MetadataException", "org.apache.bookkeeper.bookie.BookieException.CookieNotFoundException", "org.slf4j.LoggerFactory", "org.apache.bookkeeper.tools.cli.helpers.CommandHelpers.getBookieSocketAddrStringRepresentation", "java.util.Set", "org.apache.bookkeeper.discover.RegistrationClient", "org.apache.bookkeeper.tools.cli.helpers.DiscoveryCommand", "org.apache.bookkeeper.proto.BookieAddressResolver", "java.util.Collection", "org.apache.bookkeeper.bookie.Cookie", "org.apache.bookkeeper.client.BookieAddressResolverDisabled", "com.google.common.annotations.VisibleForTesting", "org.apache.bookkeeper.tools.cli.commands.cookie.GetCookieCommand.Flags", "org.slf4j.Logger", "org.apache.bookkeeper.client.DefaultBookieAddressResolver", "org.apache.bookkeeper.tools.cli.commands.bookies.ListBookiesCommand.Flags", "org.apache.bookkeeper.discover.RegistrationManager", "org.apache.bookkeeper.versioning.Version", "org.apache.bookkeeper.tools.cli.commands.cookie.CreateCookieCommand.Flags", "org.apache.bookkeeper.bookie.BookieException.CookieExistException", "java.io.PrintStream", "org.apache.bookkeeper.clients.config.StorageClientSettings", "org.apache.bookkeeper.clients.StorageClientBuilder", "lombok.Cleanup", "java.util.concurrent.CountDownLatch", "org.apache.bookkeeper.bookie.CheckpointSource.Checkpoint", "java.util.stream.Collectors", "org.apache.bookkeeper.stats.prometheus.PrometheusMetricsProvider", "org.apache.bookkeeper.common.concurrent.FutureUtils", "org.apache.bookkeeper.bookie.BookieImpl", "org.apache.bookkeeper.bookie.LedgerDirsManager", "org.apache.bookkeeper.bookie.BookieException", "org.apache.bookkeeper.bookie.Journal", "java.util.concurrent.CompletableFuture", "org.apache.bookkeeper.util.DiskChecker", "java.util.concurrent.ExecutorService", "java.util.concurrent.Semaphore", "io.netty.buffer.ByteBufAllocator", "org.apache.distributedlog.api.DistributedLogManager", "java.io.File", "org.apache.distributedlog.api.AsyncLogWriter", "java.util.concurrent.Executors", "org.apache.bookkeeper.stats.NullStatsLogger", "org.apache.bookkeeper.bookie.BookKeeperServerStats.JOURNAL_SCOPE", "org.apache.distributedlog.LogRecord", "org.apache.bookkeeper.stats.StatsLogger", "org.apache.commons.lang3.tuple.Pair", "org.apache.bookkeeper.stats.Stats", "org.apache.bookkeeper.bookie.BookKeeperServerStats.BOOKIE_SCOPE", "org.apache.bookkeeper.common.allocator.ByteBufAllocatorBuilder", "java.util.Arrays", "java.util.concurrent.ScheduledExecutorService", "java.util.concurrent.ThreadLocalRandom", "java.io.IOException", "org.apache.bookkeeper.stream.cli.commands.namespace.DeleteNamespaceCommand.Flags", "org.apache.commons.configuration.CompositeConfiguration", "org.apache.bookkeeper.stream.cli.Commands.OP_INIT", "com.fasterxml.jackson.databind.ObjectMapper", "org.apache.bookkeeper.stream.cli.commands.cluster.InitClusterCommand.Flags", "java.util.concurrent.atomic.LongAdder", "lombok.extern.slf4j.Slf4j", "java.util.concurrent.atomic.AtomicBoolean", "org.apache.bookkeeper.meta.MetadataDrivers", "java.util.concurrent.TimeUnit", "org.apache.distributedlog.metadata.DLMetadata", "org.apache.bookkeeper.tools.common.BKCommand", "org.apache.distributedlog.api.namespace.Namespace", "org.apache.curator.retry.BoundedExponentialBackoffRetry", "org.apache.bookkeeper.stream.storage.impl.cluster.ZkClusterInitializer", "java.text.DecimalFormat", "org.apache.bookkeeper.conf.ServerConfiguration", "org.HdrHistogram.Histogram", "com.google.common.util.concurrent.UncheckedExecutionException", "org.apache.zookeeper.KeeperException.Code", "java.net.URI", "org.apache.bookkeeper.stream.storage.StorageConstants", "org.apache.distributedlog.api.namespace.NamespaceBuilder", "org.apache.bookkeeper.tools.perf.utils.PaddingDecimalFormat", "org.apache.curator.framework.CuratorFramework", "org.apache.distributedlog.impl.metadata.BKDLConfig", "org.apache.bookkeeper.common.net.ServiceURI", "org.apache.commons.lang3.StringUtils", "org.apache.distributedlog.DistributedLogConfiguration", "com.google.common.base.Strings", "org.apache.zookeeper.KeeperException", "org.apache.distributedlog.exceptions.ZKException", "com.fasterxml.jackson.databind.ObjectWriter", "org.HdrHistogram.Recorder", "org.apache.curator.framework.CuratorFrameworkFactory", "org.apache.bookkeeper.stream.cli.commands.table.GetCommand.Flags", "org.apache.bookkeeper.client.api.LedgerMetadata", "java.util.List", "com.google.common.util.concurrent.RateLimiter", "lombok.experimental.Accessors", "org.apache.bookkeeper.versioning.Versioned", "org.apache.bookkeeper.stream.proto.StorageType", "org.apache.bookkeeper.stream.cli.commands.table.CreateTableCommand.Flags", "org.apache.bookkeeper.tools.framework.CliFlags", "org.apache.bookkeeper.clients.exceptions.NamespaceNotFoundException", "org.apache.bookkeeper.stream.proto.StreamConfiguration", "org.apache.bookkeeper.stream.cli.commands.AdminCommand", "org.apache.bookkeeper.tools.framework.CliSpec", "com.beust.jcommander.Parameter", "org.apache.bookkeeper.stream.cli.Commands.OP_CREATE", "org.apache.bookkeeper.stream.protocol.ProtocolConstants.DEFAULT_STREAM_CONF", "org.apache.bookkeeper.clients.admin.StorageAdminClient", "org.apache.bookkeeper.stream.proto.StreamProperties", "org.apache.bookkeeper.common.concurrent.FutureUtils.result", "org.apache.bookkeeper.tools.common.BKFlags", "org.apache.bookkeeper.clients.exceptions.StreamExistsException", "com.google.common.base.Preconditions.checkArgument", "org.apache.bookkeeper.stream.cli.Commands.OP_GET", "org.apache.bookkeeper.stream.proto.NamespaceProperties", "org.apache.bookkeeper.stream.cli.commands.namespace.GetNamespaceCommand.Flags", "org.apache.bookkeeper.clients.exceptions.StreamNotFoundException", "java.nio.charset.StandardCharsets.UTF_8", "io.netty.util.ReferenceCountUtil", "org.apache.bookkeeper.api.StorageClient", "io.netty.buffer.Unpooled", "org.apache.bookkeeper.stream.cli.Commands.OP_DEL", "org.apache.bookkeeper.stream.cli.commands.table.DelCommand.Flags", "org.apache.bookkeeper.stream.cli.commands.table.DeleteTableCommand.Flags", "io.netty.buffer.ByteBuf", "org.apache.bookkeeper.stream.cli.commands.ClientCommand", "org.apache.bookkeeper.api.kv.Table", "org.apache.bookkeeper.stream.cli.Commands.OP_DELETE", "edu.umd.cs.findbugs.annotations.SuppressFBWarnings", "org.apache.bookkeeper.stream.proto.NamespaceConfiguration", "org.apache.bookkeeper.clients.exceptions.NamespaceExistsException", "org.apache.bookkeeper.stream.cli.commands.namespace.CreateNamespaceCommand.Flags", "org.apache.bookkeeper.stream.cli.commands.table.IncrementCommand.Flags", "org.apache.bookkeeper.stream.cli.Commands.OP_INC", "org.apache.bookkeeper.stream.cli.commands.table.GetTableCommand.Flags", "org.apache.bookkeeper.stream.cli.Commands.OP_PUT", "io.netty.buffer.ByteBufUtil", "org.apache.bookkeeper.net.BookieId", "lombok.Setter", "org.apache.bookkeeper.tools.cli.helpers.ClientCommand", "java.util.ArrayList", "org.apache.bookkeeper.client.LedgerMetadataBuilder", "org.apache.bookkeeper.client.api.BookKeeper", "org.apache.bookkeeper.client.BookKeeperAdmin", "org.apache.bookkeeper.api.kv.result.KeyValue", "org.apache.bookkeeper.meta.LedgerManager" ]
+  }, {
+    "name" : "FailedChannelFutureImpl",
+    "packageName" : "org.apache.bookkeeper.proto",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ "ChannelFuture" ],
+    "methods" : [ {
+      "name" : "removeListeners",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getNow",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isCancelled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "removeListener",
+      "visibility" : "public",
+      "methodCalls" : [ "remove" ]
+    }, {
+      "name" : "addListener",
+      "visibility" : "public",
+      "methodCalls" : [ "onBookiesChanged", "add", "execute" ]
+    }, {
+      "name" : "addListeners",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isVoid",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "cancel",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isDone",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "awaitUninterruptibly",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "sync",
+      "visibility" : "public",
+      "methodCalls" : [ "sync", "run", "processResult", "nextRetryWaitTime", "format", "get", "write" ]
+    }, {
+      "name" : "channel",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isCancellable",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "syncUninterruptibly",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "await",
+      "visibility" : "public",
+      "methodCalls" : [ "debug", "await", "isDebugEnabled" ]
+    }, {
+      "name" : "get",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "toString", "toBookieId", "buildLegacyBookieServiceInfo", "isDebugEnabled", "debug", "writeBytes", "readLock", "lock", "buffer", "size", "unlock", "setLong", "submit", "scheduleGet", "getId", "currentThread", "sum", "warn", "of", "process", "futureUnaryCall", "execute", "getRange", "getCallOptions", "setHeader", "newRangeRequest", "newCall", "endKey", "getRangeMethod", "fromListenableFuture", "release", "exception", "newRangeResult", "limit", "thenCompose", "failWithCode", "getIfPresent", "get", "checkClosedOrInError", "equals", "authenticate", "createStarted", "checkFailPoint", "getState", "elapsed", "closeInternal", "checkNotNull", "build", "close", "count", "retain", "opFactory", "whenComplete", "newRangeOption", "optionFactory", "kvs", "value", "thenApply", "deserialize", "encode", "wrappedBuffer", "executeReadIO", "checkStoreOpen", "range", "code", "getOpFactory", "newRange", "name" ]
+    }, {
+      "name" : "cause",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isSuccess",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    } ],
+    "imports" : [ "com.google.protobuf.ExtensionRegistry", "io.netty.util.ReferenceCountUtil", "org.apache.bookkeeper.proto.BookkeeperProtocol.GetBookieInfoResponse", "javax.net.ssl.SSLException", "io.netty.util.ReferenceCounted", "io.netty.channel.socket.nio.NioSocketChannel", "org.apache.bookkeeper.stats.NullStatsLogger", "org.apache.bookkeeper.proto.BookkeeperInternalCallbacks.ReadEntryCallback", "io.netty.incubator.channel.uring.IOUringSocketChannel", "org.apache.bookkeeper.proto.BookkeeperProtocol.BKPacketHeader", "org.apache.bookkeeper.proto.BookkeeperProtocol.WriteLacRequest", "org.apache.bookkeeper.proto.BookkeeperProtocol.ReadRequest", "org.slf4j.MDC", "io.netty.handler.ssl.SslHandler", "org.apache.bookkeeper.proto.BookkeeperProtocol.GetListOfEntriesOfLedgerResponse", "io.netty.handler.codec.LengthFieldBasedFrameDecoder", "io.netty.util.concurrent.Future", "org.apache.bookkeeper.proto.BookkeeperInternalCallbacks.ReadLacCallback", "io.netty.buffer.Unpooled", "io.netty.channel.local.LocalChannel", "io.netty.handler.codec.CorruptedFrameException", "org.apache.bookkeeper.client.BookKeeperClientStats", "io.netty.channel.ChannelOption", "org.apache.bookkeeper.tls.SecurityHandlerFactory.NodeType", "io.netty.channel.epoll.EpollSocketChannel", "io.netty.buffer.ByteBufAllocator", "java.util.concurrent.atomic.AtomicLong", "org.apache.bookkeeper.client.BKException", "io.netty.handler.flush.FlushConsolidationHandler", "org.apache.bookkeeper.proto.BookkeeperInternalCallbacks.ReadEntryCallbackCtx", "io.netty.util.Recycler", "org.apache.bookkeeper.stats.annotations.StatsDoc", "io.netty.channel.EventLoopGroup", "io.netty.channel.ChannelPipeline", "java.net.InetSocketAddress", "io.netty.incubator.channel.uring.IOUringChannelOption", "org.apache.bookkeeper.proto.BookkeeperInternalCallbacks.ForceLedgerCallback", "io.netty.channel.ChannelInitializer", "org.apache.bookkeeper.conf.ClientConfiguration", "java.util.ArrayDeque", "java.net.UnknownHostException", "org.apache.bookkeeper.util.ByteBufList", "io.netty.bootstrap.Bootstrap", "org.apache.bookkeeper.net.BookieSocketAddress", "java.io.IOException", "org.apache.bookkeeper.proto.BookkeeperProtocol.WriteLacResponse", "org.apache.bookkeeper.common.util.OrderedExecutor", "org.apache.bookkeeper.tls.SecurityException", "org.slf4j.Logger", "org.apache.bookkeeper.client.api.WriteFlag", "java.util.concurrent.TimeoutException", "org.apache.bookkeeper.util.collections.ConcurrentOpenHashMap", "org.apache.bookkeeper.proto.BookkeeperProtocol.StatusCode", "java.util.Arrays", "org.apache.bookkeeper.proto.BookkeeperInternalCallbacks.WriteCallback", "org.apache.bookkeeper.tls.SecurityHandlerFactory", "org.apache.bookkeeper.proto.BookkeeperProtocol.OperationType", "org.apache.bookkeeper.proto.BookkeeperProtocol.ReadLacRequest", "io.netty.channel.WriteBufferWaterMark", "org.apache.bookkeeper.common.util.MathUtils", "org.apache.bookkeeper.proto.BookkeeperInternalCallbacks.GenericCallback", "org.apache.bookkeeper.util.StringUtils", "io.netty.incubator.channel.uring.IOUringEventLoopGroup", "io.netty.channel.ChannelPromise", "org.apache.bookkeeper.proto.BookkeeperProtocol.Response", "java.util.Collection", "io.netty.buffer.ByteBuf", "com.google.common.base.Joiner", "org.apache.bookkeeper.client.BookieInfoReader.BookieInfo", "java.util.concurrent.locks.ReentrantReadWriteLock", "java.util.function.BiPredicate", "io.netty.channel.ChannelFuture", "org.apache.bookkeeper.auth.ClientAuthProvider", "lombok.SneakyThrows", "io.netty.util.concurrent.GenericFutureListener", "org.apache.bookkeeper.proto.BookkeeperInternalCallbacks.WriteLacCallback", "org.apache.bookkeeper.proto.BookkeeperProtocol.ForceLedgerRequest", "org.apache.bookkeeper.stats.OpStatsLogger", "io.netty.channel.ChannelHandler.Sharable", "io.netty.buffer.UnpooledByteBufAllocator", "org.apache.bookkeeper.net.BookieId", "org.apache.bookkeeper.auth.BookKeeperPrincipal", "java.util.Collections", "io.netty.channel.epoll.EpollChannelOption", "io.netty.handler.codec.DecoderException", "org.apache.bookkeeper.proto.BookkeeperInternalCallbacks.BatchedReadEntryCallback", "java.util.Set", "io.netty.channel.DefaultEventLoopGroup", "java.net.SocketAddress", "io.netty.channel.epoll.EpollEventLoopGroup", "org.apache.bookkeeper.stats.StatsLogger", "com.google.protobuf.UnsafeByteOperations", "org.apache.bookkeeper.common.util.MdcUtils", "org.apache.bookkeeper.proto.BookkeeperProtocol.ReadResponse", "org.apache.bookkeeper.proto.BookkeeperInternalCallbacks.GetListOfEntriesOfLedgerCallback", "org.apache.bookkeeper.proto.BookkeeperProtocol.ProtocolVersion", "io.netty.channel.ChannelHandlerContext", "javax.net.ssl.SSLPeerUnverifiedException", "io.netty.channel.Channel", "io.netty.channel.ChannelFutureListener", "java.util.ArrayList", "java.util.Map", "java.util.concurrent.TimeUnit", "org.apache.bookkeeper.proto.BookkeeperProtocol.ForceLedgerResponse", "java.util.NoSuchElementException", "org.apache.bookkeeper.util.collections.SynchronizedHashMultiMap", "com.google.protobuf.ByteString", "org.apache.bookkeeper.proto.BookkeeperProtocol.GetBookieInfoRequest", "io.netty.channel.unix.Errors.NativeIoException", "org.slf4j.LoggerFactory", "java.security.cert.Certificate", "io.netty.channel.ChannelInboundHandlerAdapter", "io.netty.handler.codec.TooLongFrameException", "java.util.EnumSet", "java.util.List", "org.apache.bookkeeper.proto.BookkeeperProtocol.ReadLacResponse", "org.apache.bookkeeper.proto.BookkeeperInternalCallbacks.GetBookieInfoCallback", "org.apache.bookkeeper.client.LedgerHandle.INVALID_ENTRY_ID", "org.apache.bookkeeper.proto.BookkeeperProtocol.AddResponse", "org.apache.bookkeeper.util.AvailabilityOfEntriesOfLedger", "java.util.Queue", "com.google.common.collect.Sets", "org.apache.bookkeeper.proto.BookkeeperInternalCallbacks.StartTLSCallback", "io.netty.channel.local.LocalAddress", "io.netty.util.Recycler.Handle", "org.apache.bookkeeper.stats.Counter", "org.apache.bookkeeper.proto.BookkeeperProtocol.AddRequest", "org.apache.bookkeeper.proto.BookkeeperProtocol.GetListOfEntriesOfLedgerRequest", "java.util.concurrent.ExecutionException", "java.util.Optional", "org.apache.bookkeeper.proto.BookkeeperProtocol.Request" ]
+  } ]
+}

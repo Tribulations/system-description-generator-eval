@@ -1,0 +1,289 @@
+{
+  "systemName" : "gatk",
+  "classes" : [ {
+    "name" : "Serializer",
+    "packageName" : "org.broadinstitute.hellbender.tools.spark.sv.evidence",
+    "extendedClasses" : [ "Serializer" ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "read",
+      "visibility" : "public",
+      "methodCalls" : [ "toPath", "toList", "format", "getVersion", "getFile", "readAndSubset", "canReadFile", "headerlessReadAdapter", "decode", "setReferenceName", "setHeaderStrict", "readString", "getFlags", "setFlags", "setInputStream", "setMateReferenceName" ]
+    }, {
+      "name" : "readStandalone",
+      "visibility" : "public",
+      "methodCalls" : [ "openFile", "read", "equals", "readString" ]
+    }, {
+      "name" : "writeStandalone",
+      "visibility" : "public",
+      "methodCalls" : [ "close", "write", "writeString", "createFile", "hasBlockCompressedExtension" ]
+    }, {
+      "name" : "write",
+      "visibility" : "public",
+      "methodCalls" : [ "filter", "toPath", "writeHeaderIfApplies", "format", "entrySet", "createCustomMafCountFields", "createCustomMafDbSnpFields", "hasNext", "createMafCompliantOutputMap", "getValue", "getMessage", "writeHeader", "getAlleles", "isEmpty", "getLeft", "iterator", "next", "doAllTxAlleleCombinationsHaveTheSameFields", "getFieldValue", "warn", "writeRecord", "validateAbleToWrite", "forEach", "asList", "put", "create", "createColumnNameToValueMap", "keySet", "make", "get", "map", "of", "equals", "genotypes", "setOutputStream", "writeString", "getMateReferenceName", "getFlags", "setHeaderStrict", "setFlags", "encode", "getReferenceName", "getEncapsulatedSamRecord", "serialize", "compareLocatables", "write", "add", "resolveSameLocusFeatures", "nonNull", "getRecords", "writeAllRecords", "getSAMString", "toHeader", "renderSanitizedFuncotationForVcf", "getAltAllele", "joining", "stream", "length", "collect", "attribute", "size", "toString", "concat", "emptyList", "getTranscriptList", "append", "getAlternateAlleles", "getDataSourceName", "getGenotypes", "getFieldNames", "getAttribute", "deleteCharAt", "split" ]
+    } ],
+    "imports" : [ "htsjdk.samtools.SAMRecord", "htsjdk.samtools.Cigar", "org.broadinstitute.hellbender.tools.spark.sv.utils.TextMDCodec", "htsjdk.samtools.TextCigarCodec", "org.broadinstitute.hellbender.tools.spark.sv.discovery.inference.SimpleChimera.DistancesBetweenAlignmentsOnRefAndOnRead", "org.apache.commons.lang3.StringUtils", "java.io.BufferedReader", "org.apache.spark.api.java.JavaRDD", "htsjdk.samtools.util.IOUtil", "htsjdk.samtools.SAMReadGroupRecord", "htsjdk.samtools.util.BlockCompressedOutputStream", "htsjdk.samtools.SAMSequenceRecord", "org.apache.commons.compress.compressors.gzip.GzipCompressorOutputStream", "org.apache.logging.log4j.Logger", "java.io.BufferedWriter", "java.io.BufferedInputStream", "java.io.InputStream", "org.broadinstitute.hellbender.utils.io.IOUtils", "java.io.Writer", "htsjdk.samtools.SAMFileHeader", "java.io.OutputStream", "org.broadinstitute.hellbender.engine.spark.GATKRegistrator", "java.io.InputStreamReader", "org.broadinstitute.hellbender.tools.spark.sv.utils.StrandedInterval", "org.broadinstitute.hellbender.tools.spark.sv.utils.PairedStrandedIntervals", "java.util.Iterator", "org.broadinstitute.hellbender.tools.spark.sv.StructuralVariationDiscoveryArgumentCollection.STRUCTURAL_VARIANT_SIZE_LOWER_BOUND", "org.broadinstitute.hellbender.engine.BasicReference", "java.util.Arrays", "org.broadinstitute.hellbender.utils.fermi.FermiLiteAssembly", "org.broadinstitute.hellbender.utils.IntervalUtils", "org.broadinstitute.hellbender.utils.bwa.BwaMemAlignmentUtils", "org.broadinstitute.hellbender.tools.spark.sv.utils.SVFileUtils", "java.io.BufferedOutputStream", "org.broadinstitute.hellbender.utils.gcs.BucketUtils", "org.broadinstitute.hellbender.utils.fermi.FermiLiteAssembly.Contig", "java.io.IOException", "java.io.OutputStreamWriter", "org.broadinstitute.hellbender.tools.spark.sv.discovery.alignment.AlignedContig", "org.broadinstitute.hellbender.utils.SequenceDictionaryUtils", "org.broadinstitute.hellbender.utils.fermi.FermiLiteAssembly.Connection", "org.broadinstitute.hellbender.tools.spark.sv.discovery.alignment.StrandSwitch", "org.broadinstitute.hellbender.utils.SVIntervalTree", "org.broadinstitute.hellbender.tools.spark.sv.discovery.SvType", "htsjdk.variant.variantcontext.VariantContext", "org.broadinstitute.hellbender.tools.spark.sv.utils.GATKSVVCFConstants", "htsjdk.variant.variantcontext.Allele", "org.broadinstitute.hellbender.tools.spark.sv.StructuralVariationDiscoveryArgumentCollection", "htsjdk.variant.vcf.VCFConstants", "org.broadinstitute.hellbender.tools.spark.sv.discovery.SimpleSVType", "org.broadinstitute.hellbender.tools.spark.sv.discovery.AnnotatedVariantProducer", "com.google.common.collect.ImmutableList", "org.broadinstitute.hellbender.tools.spark.sv.utils.SVKmerLong", "java.io.Serializable", "org.broadinstitute.hellbender.tools.spark.sv.discovery.BreakEndVariantType", "htsjdk.samtools.util.StringUtil", "org.broadinstitute.hellbender.tools.spark.utils.IntHistogram", "htsjdk.variant.variantcontext.VariantContextBuilder", "org.broadinstitute.hellbender.tools.spark.sv.discovery.alignment.AlignmentInterval", "org.broadinstitute.hellbender.tools.spark.sv.discovery.alignment.AssemblyContigWithFineTunedAlignments", "org.broadinstitute.hellbender.tools.spark.sv.utils.SVKmer", "org.broadinstitute.hellbender.tools.spark.sv.utils.SVUtils", "com.esotericsoftware.kryo.DefaultSerializer", "com.esotericsoftware.kryo.Kryo", "com.esotericsoftware.kryo.io.Input", "java.util.HashMap", "com.esotericsoftware.kryo.io.Output", "java.util.Map", "org.broadinstitute.hellbender.utils.Utils", "org.broadinstitute.hellbender.tools.spark.utils.LongBloomFilter", "org.broadinstitute.hellbender.tools.spark.sv.utils.SVKmerShort", "java.util.stream.Collectors", "org.broadinstitute.hellbender.exceptions.GATKException", "org.broadinstitute.hellbender.exceptions.UserException", "java.util", "org.broadinstitute.hellbender.tools.spark.utils.LongIterator", "org.broadinstitute.hellbender.tools.spark.utils.LargeLongHopscotchSet", "java.util.Collection", "java.util.Objects", "java.util.HashSet", "com.google.common.annotations.VisibleForTesting", "java.util.ArrayList", "java.util.List", "org.broadinstitute.hellbender.tools.spark.sv.utils.Strand", "htsjdk.samtools.util.SequenceUtil", "org.broadinstitute.hellbender.utils.SimpleInterval", "org.broadinstitute.hellbender.utils.Tail", "org.broadinstitute.hellbender.tools.spark.sv.discovery.inference.SimpleChimera", "java.util.Set", "org.broadinstitute.hellbender.utils.read.CigarUtils", "java.util.Collections", "org.broadinstitute.hellbender.utils.SVInterval", "org.broadinstitute.hellbender.utils.read.ReadUtils", "htsjdk.samtools", "org.broadinstitute.hellbender.utils.param.ParamUtils", "org.broadinstitute.hellbender.utils.bwa.BwaMemAlignment", "scala.Tuple2", "org.broadinstitute.hellbender.utils.read.GATKRead", "htsjdk.samtools.SAMSequenceDictionary", "com.google.common.collect.Sets", "java.util.stream.IntStream", "javax.annotation.Nonnull", "htsjdk.samtools.CigarOperator", "com.google.common.collect.Lists", "java.util.stream.Stream", "org.broadinstitute.hellbender.tools.spark.sv.StructuralVariationDiscoveryArgumentCollection.DiscoverVariantsFromContigAlignmentsArgumentCollection.GAPPED_ALIGNMENT_BREAK_DEFAULT_SENSITIVITY", "com.google.common.collect.Iterables" ]
+  }, {
+    "name" : "GATKSparkTool",
+    "packageName" : "org.broadinstitute.hellbender.engine.spark",
+    "extendedClasses" : [ "SparkCommandLineProgram" ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "getUnfilteredReads",
+      "visibility" : "public",
+      "methodCalls" : [ "union", "keySet", "getTraversalParameters", "getGatkReadJavaRDD", "getHeaderForReads", "getSequenceDictionary", "getIntervals", "hasUserSuppliedIntervals", "intervalsSpecified", "traverseUnmappedReads" ]
+    }, {
+      "name" : "getDefaultReadFilters",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "newArrayList", "list", "getHeaderForReads", "singletonList", "addAll", "asList", "makeStandardHCReadFilters", "getDefaultReadFilters", "getStandardBQSRReadFilterList", "makeStandardMutect2ReadFilters" ]
+    }, {
+      "name" : "getReference",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getPluginDescriptors",
+      "visibility" : "public",
+      "methodCalls" : [ "emptyList", "asList", "getDefaultVariantAnnotationGroups", "getDefaultVariantAnnotations", "singletonList", "useVariantAnnotations", "getDefaultReadFilters" ]
+    }, {
+      "name" : "useVariantAnnotations",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBestAvailableSequenceDictionary",
+      "visibility" : "public",
+      "methodCalls" : [ "getMetadata", "validateArg", "allMatch", "stream", "equals", "getMasterSequenceDictionary", "map", "size", "hasReference", "get", "hasReads", "getAllSequenceDictionaries", "hasFeatures", "getSequenceDictionaryForDrivingVariants", "getHeaderForVariants", "isSequenceDictionaryFromIndex", "getBestAvailableSequenceDictionary", "getSequenceDictionary" ]
+    }, {
+      "name" : "makeReadFilter",
+      "visibility" : "public",
+      "methodCalls" : [ "makeReadFilter", "getPluginDescriptor", "getMergedCountingReadFilter", "hasReads", "getHeaderForReads", "getCommandLineParser" ]
+    }, {
+      "name" : "requiresReads",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "writeReads",
+      "visibility" : "public",
+      "methodCalls" : [ "hasReference", "writeReads", "getRecommendedNumReducers", "getReferenceSpecifier", "endsWith", "checkCramReference", "convertToSAMRecord", "getDefaultPartsDirectory", "map", "fromBoolean", "makeFilePathAbsolute", "format" ]
+    }, {
+      "name" : "hasReads",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDefaultVariantAnnotationGroups",
+      "visibility" : "public",
+      "methodCalls" : [ "asList", "getStandardMutect2AnnotationGroups", "singletonList", "getStandardHaplotypeCallerAnnotationGroups", "emptyList" ]
+    }, {
+      "name" : "hasReference",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "requiresReference",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getIntervals",
+      "visibility" : "public",
+      "methodCalls" : [ "getRecords", "getStart", "getEnd", "getContig", "getIntervalsForTraversal", "getTraversalParameters", "getInterval", "singletonList", "broadcast", "stream", "getReads", "collect", "getIntervals", "shard", "getBestAvailableSequenceDictionary", "toList", "map" ]
+    }, {
+      "name" : "getReads",
+      "visibility" : "public",
+      "methodCalls" : [ "asList", "addAll", "applyAlignment", "getId", "getEnd", "next", "applyBaseClipping", "getContig", "contains", "add", "getCigar", "hasNext", "hardClipSoftClippedBases", "isEmpty", "getReadGroup", "max", "isUnmapped", "hardClipToRegion", "query", "put", "isValid", "close", "isFlowPlatform", "getStart", "getReadGroupInfo", "getFileHeader", "test", "getUnfilteredReads", "makeReadFilter", "filter", "unmodifiableList", "broadcast", "getReads", "mapPartitions" ]
+    }, {
+      "name" : "getHeaderForReads",
+      "visibility" : "public",
+      "methodCalls" : [ "hasReads", "getHeader" ]
+    }, {
+      "name" : "getRecommendedNumReducers",
+      "visibility" : "public",
+      "methodCalls" : [ "toIntExactOrThrow", "sum", "mapToLong", "keySet", "getTargetPartitionSize", "dirSize", "stream" ]
+    }, {
+      "name" : "getDefaultVariantAnnotations",
+      "visibility" : "public",
+      "methodCalls" : [ "emptyList" ]
+    }, {
+      "name" : "getTargetPartitionSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getReferenceSequenceDictionary",
+      "visibility" : "public",
+      "methodCalls" : [ "getReferenceSequenceDictionary", "getReferenceSequenceFile", "toPath", "getSequenceDictionary", "toString" ]
+    }, {
+      "name" : "makeVariantAnnotations",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "filterReferenceConfidenceAnnotations", "makeVariantAnnotations", "getResolvedInstances", "getPluginDescriptor", "getCommandLineParser", "useVariantAnnotations" ]
+    }, {
+      "name" : "hasUserSuppliedIntervals",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getReadInputMergingPolicy",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "requiresIntervals",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getReferenceWindowFunction",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    } ],
+    "imports" : [ "org.broadinstitute.hellbender.cmdline.argumentcollections", "org.broadinstitute.barclay.argparser.Argument", "java.util.stream.Collectors", "htsjdk.samtools.SamFileHeaderMerger", "java.io.IOException", "org.broadinstitute.hellbender.utils", "htsjdk.samtools.reference.ReferenceSequenceFileFactory", "htsjdk.samtools.util.GZIIndex", "org.broadinstitute.hellbender.utils.io.IOUtils", "htsjdk.samtools.util.FileExtensions", "org.broadinstitute.hellbender.cmdline.GATKPlugin.GATKAnnotationPluginDescriptor", "java.util", "org.broadinstitute.hellbender.utils.read.ReadsWriteFormat", "org.broadinstitute.hellbender.engine.TraversalParameters", "org.broadinstitute.hellbender.engine.GATKTool", "org.apache.spark.api.java.JavaRDD", "htsjdk.samtools.SAMSequenceDictionary", "org.broadinstitute.hellbender.tools.walkers.annotator.Annotation", "org.broadinstitute.hellbender.engine.FeatureDataSource", "org.broadinstitute.hellbender.engine.spark.datasources.ReferenceMultiSparkSource", "org.broadinstitute.hellbender.engine.spark.datasources.ReferenceWindowFunctions", "org.broadinstitute.hellbender.utils.config.ConfigFactory", "org.broadinstitute.barclay.argparser.ArgumentCollection", "org.broadinstitute.hellbender.exceptions.UserException", "org.broadinstitute.hellbender.engine.GATKPath", "htsjdk.samtools.SAMFileHeader", "java.nio.file.Files", "org.broadinstitute.hellbender.engine.FeatureManager", "org.broadinstitute.hellbender.cmdline.GATKPlugin.GATKReadFilterPluginDescriptor", "htsjdk.variant.vcf.VCFHeaderLine", "org.apache.spark.api.java.JavaSparkContext", "org.broadinstitute.hellbender.utils.gcs.BucketUtils", "java.time.ZonedDateTime", "org.broadinstitute.barclay.argparser.CommandLinePluginDescriptor", "org.broadinstitute.hellbender.engine.filters.ReadFilter", "org.broadinstitute.hellbender.utils.variant.GATKVariantContextUtils", "org.broadinstitute.hellbender.cmdline.StandardArgumentDefinitions", "org.broadinstitute.hellbender.engine.spark.datasources.ReadsSparkSource", "java.nio.file.Path", "org.broadinstitute.hellbender.utils.read.GATKRead", "org.broadinstitute.hellbender.engine.filters.WellformedReadFilter", "org.broadinstitute.hellbender.engine.spark.datasources.ReadsSparkSink", "org.broadinstitute.hellbender.exceptions.GATKException", "htsjdk.samtools.SBIIndexWriter" ]
+  }, {
+    "name" : "GATKTool",
+    "packageName" : "org.broadinstitute.hellbender.engine",
+    "extendedClasses" : [ "CommandLineProgram" ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "disableProgressMeter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDefaultCloudPrefetchBufferSize",
+      "visibility" : "public",
+      "methodCalls" : [ "cloudPrefetchBuffer", "getGATKConfig", "getInstance" ]
+    }, {
+      "name" : "getDefaultVariantAnnotations",
+      "visibility" : "public",
+      "methodCalls" : [ "emptyList" ]
+    }, {
+      "name" : "getUserSuppliedIntervals",
+      "visibility" : "public",
+      "methodCalls" : [ "unmodifiableList" ]
+    }, {
+      "name" : "makeReadFilter",
+      "visibility" : "public",
+      "methodCalls" : [ "makeReadFilter", "getPluginDescriptor", "getMergedCountingReadFilter", "hasReads", "getHeaderForReads", "getCommandLineParser" ]
+    }, {
+      "name" : "getPluginDescriptors",
+      "visibility" : "public",
+      "methodCalls" : [ "emptyList", "asList", "getDefaultVariantAnnotationGroups", "getDefaultVariantAnnotations", "singletonList", "useVariantAnnotations", "getDefaultReadFilters" ]
+    }, {
+      "name" : "addFeatureInputsAfterInitialization",
+      "visibility" : "public",
+      "methodCalls" : [ "addToFeatureSources", "getReferencePath" ]
+    }, {
+      "name" : "useVariantAnnotations",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "requiresIntervals",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getProgressMeterRecordLabel",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createSAMWriter",
+      "visibility" : "public",
+      "methodCalls" : [ "setCreateMd5File", "setMaxRecordsInRam", "setCreateIndex", "createCommonSAMWriterFromFactory", "setDefaultCompressionLevel", "toPath", "getReferencePath", "createCommonSAMWriter", "getHeaderForSAMWriter", "hasReference", "isCram" ]
+    }, {
+      "name" : "getVariantOutputFilteringMode",
+      "visibility" : "public",
+      "methodCalls" : [ "getVariantOutputFilteringMode" ]
+    }, {
+      "name" : "hasReference",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBestAvailableSequenceDictionary",
+      "visibility" : "public",
+      "methodCalls" : [ "getMetadata", "validateArg", "allMatch", "stream", "equals", "getMasterSequenceDictionary", "map", "size", "hasReference", "get", "hasReads", "getAllSequenceDictionaries", "hasFeatures", "getSequenceDictionaryForDrivingVariants", "getHeaderForVariants", "isSequenceDictionaryFromIndex", "getBestAvailableSequenceDictionary", "getSequenceDictionary" ]
+    }, {
+      "name" : "onTraversalSuccess",
+      "visibility" : "public",
+      "methodCalls" : [ "getAllIntervalsForReference", "comparingInt", "kmerizeReads", "pathReads", "sort", "traverseAllPaths", "markCycles", "mapToInt", "createScaffolds", "getTraversalIntervals", "fillGaps", "collectTransitPairCounts", "singletonList", "produceAnnotatedVcFromAssemblyEvidence", "addAll", "applyUnpaired", "toVariantContexts", "getAlignments", "writeVCF", "removeDuplicates", "getContigSequence", "getRead", "parseOneContig", "getDefaultToolVCFHeaderLines", "filterMergedVariantList", "filterForConsistency", "getAttributeAsStringList", "extract", "toVariantContext", "containsKey", "getNovelAdjacencyReferenceLocations", "getContigName", "toSimpleOrBNDTypes", "inferSimpleTypeFromNovelAdjacency", "isInInterval", "make", "put", "hasNext", "validate", "cumulativeProbability", "getTable", "getModulesToUse", "filter", "addMetric", "saveMetrics", "getColumnInfo", "indexOf", "mapToObj", "error", "mapping", "getColumnName", "getRow", "equals", "range", "groupingBy", "getNumRows", "reportSummaryStats", "finalizeReport", "finalizeData", "getNumReadsProcessed", "getStrand", "getReadPathSpecifiers", "writeMetadata", "writeOutputIntervalStatistics", "forEach", "calculateCoverageHistogramBinEndpoints", "append", "flush", "writeCumulativeOutputSummaryFiles", "writePerLocusCumulativeCoverageMetrics", "toBedString", "keySet", "getCount", "writeOutputGeneStatistics", "sqrt", "longValue", "toPath", "mapToLong", "getReferenceDictionary", "values", "toList", "getAltFraction", "mapToDouble", "collect", "sum", "writeMixingFractions", "addHistogram", "getWriter", "getOutputStream", "writeRecord", "getMetricsFile", "writeAlleleLikelihoodsAsMatrix", "clear", "writeHistograms", "emitRemaining", "getContig", "naturalOrder", "getStart", "writeExtraOutputs", "max", "createIntermediateVariants", "writeToFile", "getApproximateCommandLine", "evaluateData", "getAnnotationKeys", "dropAggregateData", "getData", "findVQSLODTranches", "writeOutRecalibrationTable", "GMMFromTables", "selectWorstVariants", "calculateWorstPerformingAnnotation", "exec", "findTranches", "countCallsAtTruth", "setData", "printHeader", "getEvaluationData", "normalizeData", "writeModelReport", "generateModel", "getMessage", "toArray", "getAbsoluteFile", "tranchesString", "getTrainingData", "min", "getRandomDataForPlotting", "addScript", "addArgs", "warn", "onlyProducedIGRs", "getAllelicCounts", "getIntervals", "print", "info", "close", "get", "size", "onTraversalSuccess", "add", "isEmpty", "getLengthOnReference", "write", "waitForPreviousBatchCompletion", "comparing", "executeScript", "asList", "println", "getAbsolutePath", "entrySet", "getKey", "toString", "getValue", "sorted", "forEachOrdered", "stream", "count", "getClass", "iterator", "writeHDF5", "format", "getSimpleName", "copyOf", "map", "hasUserSuppliedIntervals", "getBestAvailableSequenceDictionary", "getReferencePath", "of", "printf" ]
+    }, {
+      "name" : "getDefaultReadFilters",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "newArrayList", "list", "getHeaderForReads", "singletonList", "addAll", "asList", "makeStandardHCReadFilters", "getDefaultReadFilters", "getStandardBQSRReadFilterList", "makeStandardMutect2ReadFilters" ]
+    }, {
+      "name" : "getTraversalIntervals",
+      "visibility" : "public",
+      "methodCalls" : [ "unmodifiableList", "hasUserSuppliedIntervals", "getReferenceDictionary", "hasReference", "getAllIntervalsForReference" ]
+    }, {
+      "name" : "getMasterSequenceDictionary",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "requiresFeatures",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "makePreReadFilterTransformer",
+      "visibility" : "public",
+      "methodCalls" : [ "makeStandardHCReadTransformer", "identity" ]
+    }, {
+      "name" : "requiresReads",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "makeVariantAnnotations",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "filterReferenceConfidenceAnnotations", "makeVariantAnnotations", "getResolvedInstances", "getPluginDescriptor", "getCommandLineParser", "useVariantAnnotations" ]
+    }, {
+      "name" : "hasReads",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "hasUserSuppliedIntervals",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getHeaderForFeatures",
+      "visibility" : "public",
+      "methodCalls" : [ "getHeader", "hasFeatures" ]
+    }, {
+      "name" : "getHeaderForReads",
+      "visibility" : "public",
+      "methodCalls" : [ "hasReads", "getHeader" ]
+    }, {
+      "name" : "onTraversalStart",
+      "visibility" : "public",
+      "methodCalls" : [ "getFeatureCodecClass", "max", "floor", "make", "isPositive", "scatter", "getAttribute", "comparingInt", "log10", "getLengthOnReference", "groupingBy", "getSequenceIndex", "flatMap", "newReport", "addall", "mkdir", "getSubTypesOf", "genomicsDBApppendPaths", "loadCNVCalls", "getMetaDataInInputOrder", "getSampleId", "getReferenceDictionary", "hasReads", "getCanonicalChromosomes", "getVCFAnnotationDescriptions", "addExpressions", "buildHaplotypeCallerEngine", "changeTraversalModeToByVariant", "getClass", "loadIntervals", "getReferenceReader", "setupVCFWriter", "setSilent", "initializeMatchExps", "getHeader", "nonEmpty", "directlyAccessEngineReadsDataSource", "hasNext", "next", "setAFScale", "createTempFile", "setUseCompAFStratifier", "getOtherHeaderLine", "assertFileIsWritable", "listModulesAndExit", "createBinnedCNVDefragmenter", "buildIntervalTreeFromBED", "createSampleDBFromPedigreeAndDataSources", "buildIntervalTreesFromGTF", "createCanonical", "logCovariatesUsed", "createCNVDefragmenter", "warnOnNonIlluminaReadGroups", "debug", "getPESRParameters", "getDepthParameters", "getMixedParameters", "initializeWriters", "println", "getDescendents", "reader", "sizeSimilarity", "createPesrParameters", "getContig", "reciprocalOverlap", "setEvidenceParams", "getTraversalIntervals", "getMasterSequenceDictionary", "build", "getFeatures", "name", "sampleOverlap", "createDepthParameters", "getAllIntervalsForReference", "setBasesPerLine", "createMixedParameters", "getType", "getBaseData", "getEnd", "setDepthOnlyParams", "breakendWindow", "validateDictionaries", "hasUserSuppliedIntervals", "getStart", "intersection", "setFastaFile", "setMixedParams", "join", "loadStratificationConfig", "containsKey", "writeCoverageOutputHeaders", "getStrata", "getBaseName", "values", "makeVCFHeader", "getFilterLines", "makeVCFWriter", "singletonList", "getMetaDataLine", "getTruthHeader", "toArray", "addStandardFormatLines", "mapToDouble", "getSampleNamesInOrder", "getEvalHeader", "toMap", "readMixingFractions", "empty", "fileToPath", "getHeaderForFeatures", "nonNull", "getAligner", "getHeaderForSAMWriter", "findFirst", "createLikelihoodCalculationEngine", "anyMatch", "createReadThreadingAssembler", "writeMetadata", "getID", "getSamplesFromHeader", "getFilterLine", "getMaxAltDepthCutoff", "getKey", "getInfoLine", "resetRandomGenerator", "endsWith", "makeVariantAnnotations", "emitReferenceConfidence", "getMessage", "setSequenceDictionary", "getPath", "getNGenotypeSamples", "reverse", "readTranches", "getMetaDataInSortedOrder", "addAlleleSpecificVQSRHeaderLines", "get", "getGenotypeSamples", "unmodifiableSet", "getInputStream", "orderAndValidateAnnotations", "updateHeaderContigLines", "hasReference", "externalExecutableExists", "addTrainingSet", "addVQSRStandardHeaderLines", "getRandomGenerator", "nextDouble", "getTable", "setNormalization", "checkHasTrainingSet", "checkHasTruthSet", "getSortedLabels", "sorted", "getSortedAnnotationNames", "filter", "getValue", "getTagAttributes", "toCollection", "entrySet", "asList", "getInfoString", "copyOf", "afterOnTraversalStart", "validateOutputFiles", "forEach", "constructVCFHeader", "createOutputRenderer", "naturalOrder", "performSequenceDictionaryValidation", "getAndValidateDataSourcesFromPaths", "getDefaultToolVCFHeaderLines", "toURI", "getSequenceDictionaryForDrivingVariants", "getInfoHeaderLine", "checkIfAlreadyAnnotated", "splitAnnotationArgsIntoMap", "getDescription", "extractFuncotatorKeysFromHeaderDescription", "sort", "processTranscriptList", "getInfoHeaderLines", "createDataSourceFuncotationFactoriesForDataSources", "put", "directlyAccessEngineReferenceDataSource", "exists", "mapToObj", "validateArg", "getSequences", "containsAll", "getGenomicsDBOptions", "range", "allMatch", "getShardedCollectionSortOrder", "validate", "toSet", "getRefSeq", "getReferencePath", "length", "getSortOrder", "contains", "getBases", "of", "getReferenceSequenceFile", "nextSequence", "stringToBytes", "getName", "parseInt", "split", "add", "assertDirectoryIsWritable", "getReadPathSpecifiers", "create", "isSameDictionary", "warn", "info", "fromHeader", "getIntervals", "getAbsolutePath", "getBestAvailableSequenceDictionary", "emptyList", "start", "initStreamWriter", "sendSynchronousCommand", "equals", "getFeaturePath", "getDeclaredConstructor", "write", "distinct", "getReadGroups", "urlEncode", "getHeaderForReads", "format", "collect", "toList", "stream", "map", "getSample", "joining", "size", "getOutputStream", "getDrivingFeaturesHeader", "createSAMWriter", "writeHeader", "getHeaderForVariants", "addMetaDataLine", "createVCFWriter", "isAssignableFrom", "find", "toString", "createReferenceReader", "createHeader", "getReferenceSpecifier", "onTraversalStart", "getDictionary", "getSimpleName", "assertSameDictionary", "toPath", "newInstance", "makeSink", "getSamplesForVariants", "getVCFRecordComparator", "getFeatureType", "getSequenceDictionary", "iterator", "makeSortMerger", "addAll", "isEmpty", "getSampleNames" ]
+    }, {
+      "name" : "closeTool",
+      "visibility" : "public",
+      "methodCalls" : [ "closeAndArchiveFiles", "print", "getOutputStream", "newReportTable", "warn", "shutdown", "flush", "getMessage", "close", "closeTool", "cleanup", "terminate", "sendSynchronousCommand", "values", "forEach", "getReferenceSpecifier", "getValue", "getKey", "entrySet", "equals", "format", "info" ]
+    }, {
+      "name" : "requiresReference",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDefaultVariantAnnotationGroups",
+      "visibility" : "public",
+      "methodCalls" : [ "asList", "getStandardMutect2AnnotationGroups", "singletonList", "getStandardHaplotypeCallerAnnotationGroups", "emptyList" ]
+    }, {
+      "name" : "hasFeatures",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDefaultCloudIndexPrefetchBufferSize",
+      "visibility" : "public",
+      "methodCalls" : [ "cloudIndexPrefetchBuffer", "getGATKConfig", "getInstance" ]
+    }, {
+      "name" : "traverse",
+      "visibility" : "public",
+      "methodCalls" : [ "setReadFilter", "getCause", "coalesceContigsIntoNumPartitions", "executeImport", "updateImportProtobufVidMapping", "getNumSamples", "compareReadNames", "addRead", "getUserSuppliedIntervals", "getReadPaths", "createLikelihoodCalculationEngine", "setFullReferenceWithPadding", "values", "getBases", "close", "addAll", "isDebugEnabled", "getGenomeLocation", "getAligner", "queryAndPrefetch", "put", "getAllIntervalsForReference", "setRegionForGenotyping", "needsCollapsing", "getFileHeader", "uncollapseHmersInHaplotypes", "getFullReferenceWithPadding", "hasUserSuppliedIntervals", "getPaddedReferenceLoc", "getSpan", "getHaplotypeToReferenceSWParameters", "computeReadLikelihoods", "getDefaultCloudPrefetchBufferSize", "getSamSequenceDictionary", "asList", "debug", "simplifiedAssignGenotypeLikelihood", "setPaddedReferenceLoc", "forBest", "getReferencePath", "getReads", "getSequences", "listIterator", "getSequenceDictionary", "getReferenceLength", "shiftContig", "writeTableBySequenceName", "compareAllReferences", "println", "size", "getAnnotationKey", "format", "applyAndValidate", "getLengthOnReference", "mapping", "build", "add", "compareAgainstKeyReference", "open", "getReadGroups", "hasReads", "emptyList", "qualifyingOnly", "orElse", "map", "validate", "dictionary", "distinct", "warn", "getEnd", "store", "getKey", "directlyAccessEngineReferenceDataSource", "newInstance", "annotate", "getCommandLine", "getSequenceIndex", "of", "getBestAvailableSequenceDictionary", "getValue", "stop", "entrySet", "getSequence", "getName", "equals", "isPaired", "totalCounts", "updateCountsForPair", "getReadReport", "getHeaderForReads", "getOutputStream", "encode", "getReferenceWindow", "getInterval", "getWindow", "next", "getFeature", "getHeader", "numberOfPasses", "getReadInterval", "afterNthPass", "getTransformedReadStream", "set", "nthPassApply", "shouldExitEarly", "setRecordsBetweenTimeChecks", "makePreReadFilterTransformer", "apply", "update", "stream", "forEach", "makeVariantFilter", "makeReadFilter", "traverseReads", "getTransformedVariantStream", "makeFeatureInterval", "toList", "getContig", "forEachOrdered", "hasNext", "get", "singletonList", "getTraversalIntervals", "spliteratorUnknownSize", "toString", "makePreVariantFilterTransformer", "makePostVariantFilterTransformer", "collect", "query", "getSpliteratorForDrivingVariants", "getStart", "iterator", "getDrivingVariantCacheLookAheadBases", "isEmpty", "onIntervalEnd", "getSummaryLine", "getIntervalObjectsToQueryOver", "forEachRemaining", "getAlignmentContextIterator", "create", "traverse", "info", "makePostReadFilterTransformer", "setPostReadFilterTransformer", "setPreReadFilterTransformer", "setDownsampler", "createDownsampler" ]
+    }, {
+      "name" : "getToolName",
+      "visibility" : "public",
+      "methodCalls" : [ "getSimpleName", "getClass", "getToolkitShortName", "format" ]
+    }, {
+      "name" : "createVCFWriter",
+      "visibility" : "public",
+      "methodCalls" : [ "createVCFWriter", "toArray", "getIntervals", "getVariantOutputFilteringMode", "add", "toPath", "getBestAvailableSequenceDictionary", "nonNull", "warn" ]
+    }, {
+      "name" : "getReferenceDictionary",
+      "visibility" : "public",
+      "methodCalls" : [ "getSequenceDictionary" ]
+    }, {
+      "name" : "makePostReadFilterTransformer",
+      "visibility" : "public",
+      "methodCalls" : [ "getHeaderForReads", "makePostReadFilterTransformer", "makeStandardMutect2PostFilterReadTransformer", "getReferencePath", "andThen", "identity" ]
+    } ],
+    "imports" : [ "org.broadinstitute.hellbender.exceptions.GATKException", "org.broadinstitute.hellbender.transformers.ReadTransformer", "java.util.stream.Stream", "org.broadinstitute.hellbender.cmdline.CommandLineProgram", "org.broadinstitute.hellbender.tools.walkers.annotator.Annotation", "htsjdk.variant.variantcontext.writer.Options", "org.broadinstitute.hellbender.utils.variant.GATKVariantContextUtils", "org.broadinstitute.hellbender.utils.Utils", "org.broadinstitute.hellbender.utils.SequenceDictionaryUtils", "htsjdk.variant.variantcontext.writer.VariantContextWriter", "org.broadinstitute.hellbender.cmdline.argumentcollections", "java.time.ZonedDateTime", "htsjdk.samtools.SamReaderFactory", "org.broadinstitute.hellbender.cmdline.StandardArgumentDefinitions", "org.broadinstitute.hellbender.utils.read.GATKRead", "htsjdk.tribble.Feature", "org.broadinstitute.hellbender.engine.filters.ReadFilterLibrary", "htsjdk.samtools.util.Locatable", "org.broadinstitute.hellbender.utils.read.SAMFileGATKReadWriter", "org.broadinstitute.hellbender.cmdline.GATKPlugin.GATKReadFilterPluginDescriptor", "org.broadinstitute.hellbender.utils.read.ReadUtils", "java.io.File", "org.broadinstitute.hellbender.utils.config.ConfigFactory", "java.util", "org.broadinstitute.hellbender.utils.SimpleInterval", "org.broadinstitute.hellbender.utils.variant.writers.ShardingVCFWriter", "org.broadinstitute.hellbender.cmdline.GATKPlugin.GATKAnnotationPluginDescriptor", "htsjdk.samtools.SAMProgramRecord", "org.broadinstitute.hellbender.exceptions.UserException", "org.broadinstitute.hellbender.tools.genomicsdb.GenomicsDBOptions", "org.broadinstitute.barclay.argparser.Argument", "org.broadinstitute.hellbender.utils.variant.writers.IntervalFilteringVcfWriter", "org.broadinstitute.hellbender.utils.config.GATKConfig", "java.nio.file.Path", "htsjdk.samtools.SAMFileHeader", "org.broadinstitute.barclay.argparser.ArgumentCollection", "org.broadinstitute.barclay.argparser.CommandLinePluginDescriptor", "org.broadinstitute.hellbender.engine.filters.ReadFilter", "org.broadinstitute.hellbender.engine.filters.CountingReadFilter", "htsjdk.samtools.SAMSequenceDictionary", "org.broadinstitute.barclay.argparser.CommandLineException", "org.broadinstitute.hellbender.utils.reference.ReferenceUtils", "htsjdk.variant.vcf.VCFHeaderLine", "org.broadinstitute.hellbender.utils.IntervalUtils", "org.broadinstitute.hellbender.engine.filters.WellformedReadFilter" ]
+  } ]
+}

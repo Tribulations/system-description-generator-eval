@@ -1,0 +1,1917 @@
+{
+  "systemName" : "activemq",
+  "classes" : [ {
+    "name" : "BrokerService",
+    "packageName" : "org.apache.activemq.broker",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ "Service" ],
+    "methods" : [ {
+      "name" : "getDefaultSocketURIString",
+      "visibility" : "public",
+      "methodCalls" : [ "isUpdateClusterClients", "getPublishableConnectString", "get", "isRebalanceClusterClients", "warn" ]
+    }, {
+      "name" : "getBroker",
+      "visibility" : "public",
+      "methodCalls" : [ "getBroker", "createBroker" ]
+    }, {
+      "name" : "setRegionBroker",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAdminView",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPopulateUserNameInMBeans",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAllowTempAutoCreationOnSend",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDestinationInterceptors",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBrokerObjectName",
+      "visibility" : "public",
+      "methodCalls" : [ "createBrokerObjectName" ]
+    }, {
+      "name" : "getTransportConnectors",
+      "visibility" : "public",
+      "methodCalls" : [ "debug", "getTransportConnectors", "getName", "getConnectUri", "put", "toString" ]
+    }, {
+      "name" : "setDestinationFactory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addNetworkConnector",
+      "visibility" : "public",
+      "methodCalls" : [ "setBrokerService", "equals", "hasNext", "getConnectUri", "setConnectionFilter", "getTransportConnectors", "iterator", "add", "getVmConnectorURI", "setLocalUri", "next", "getName", "registerNetworkConnectorMBean", "addNetworkConnector", "start" ]
+    }, {
+      "name" : "isUseVirtualDestSubs",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getProducerSystemUsage",
+      "visibility" : "public",
+      "methodCalls" : [ "addService", "setUsagePortion", "getSystemUsage", "getMemoryUsage" ]
+    }, {
+      "name" : "setBrokerObjectName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setManagementContext",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSchedulePeriodForDestinationPurge",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isUseTempMirroredQueues",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setKeepDurableSubsActive",
+      "visibility" : "public",
+      "methodCalls" : [ "setKeepDurableSubsActive" ]
+    }, {
+      "name" : "setSystemUsage",
+      "visibility" : "public",
+      "methodCalls" : [ "setExecutor", "removeService", "getExecutor", "addService", "setSystemUsage" ]
+    }, {
+      "name" : "getBrokerName",
+      "visibility" : "public",
+      "methodCalls" : [ "getBrokerAdmin", "interrupt", "await", "currentThread", "toLowerCase", "getBrokerInfo", "getLocalHostName", "getNext", "getBrokerName" ]
+    }, {
+      "name" : "setTaskRunnerFactory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSslContext",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "handleIOException",
+      "visibility" : "public",
+      "methodCalls" : [ "info", "handle" ]
+    }, {
+      "name" : "requestRestart",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isStartAsync",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "checkQueueSize",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "entrySet", "info", "matches", "getName", "getKey", "getCount", "getDestinationMap", "getDestinationStatistics", "isQueue", "getMessages" ]
+    }, {
+      "name" : "isWaitForSlave",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCacheTempDestinations",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setWaitForSlaveTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createDuplexNetworkConnectorObjectName",
+      "visibility" : "public",
+      "methodCalls" : [ "createNetworkConnectorName", "getBrokerObjectName" ]
+    }, {
+      "name" : "setDedicatedTaskRunner",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTransportConnectorByScheme",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "getScheme", "getUri" ]
+    }, {
+      "name" : "setUseLocalHostBrokerName",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "get" ]
+    }, {
+      "name" : "getScheduler",
+      "visibility" : "public",
+      "methodCalls" : [ "start", "getBrokerName", "error", "getNext", "getScheduler" ]
+    }, {
+      "name" : "isCacheTempDestinations",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setNetworkConnectorStartAsync",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isShutdownOnSlaveFailure",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSchedulePeriodForDestinationPurge",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getUptime",
+      "visibility" : "public",
+      "methodCalls" : [ "getUptimeMillis", "printDuration", "getUptime" ]
+    }, {
+      "name" : "isRestartAllowed",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isDeleteAllMessagesOnStartup",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getNetworkConnectorByName",
+      "visibility" : "public",
+      "methodCalls" : [ "getName", "equals" ]
+    }, {
+      "name" : "setUseLoggingForShutdownErrors",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setProducerSystemUsage",
+      "visibility" : "public",
+      "methodCalls" : [ "addService", "removeService" ]
+    }, {
+      "name" : "getPersistenceThreadPriority",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setEnableStatistics",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSystemExitOnShutdown",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMaxUncommittedCount",
+      "visibility" : "public",
+      "methodCalls" : [ "getMaxUncommittedCount" ]
+    }, {
+      "name" : "getAdminConnectionContext",
+      "visibility" : "public",
+      "methodCalls" : [ "getConnectionContext", "getBroker", "getNext", "getAdminConnectionContext" ]
+    }, {
+      "name" : "setDiskUsageCheckRegrowThreshold",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getRegionBroker",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "waitUntilStopped",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "await", "isStarted" ]
+    }, {
+      "name" : "setConsumerSystemUsage",
+      "visibility" : "public",
+      "methodCalls" : [ "addService", "removeService" ]
+    }, {
+      "name" : "setSchedulerSupport",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDestinationPolicy",
+      "visibility" : "public",
+      "methodCalls" : [ "getDestinationPolicy" ]
+    }, {
+      "name" : "setMaxUncommittedCount",
+      "visibility" : "public",
+      "methodCalls" : [ "setMaxUncommittedCount" ]
+    }, {
+      "name" : "removeShutdownHook",
+      "visibility" : "public",
+      "methodCalls" : [ "remove" ]
+    }, {
+      "name" : "setDestinationPolicy",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setRollbackOnlyOnAsyncException",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isSplitSystemUsageForProducersConsumers",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMonitorConnectionSplits",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "decrementCurrentConnections",
+      "visibility" : "public",
+      "methodCalls" : [ "decrementAndGet" ]
+    }, {
+      "name" : "setShutdownOnSlaveFailure",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPersistent",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAdvisorySupport",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getConnectorByName",
+      "visibility" : "public",
+      "methodCalls" : [ "getName", "equals" ]
+    }, {
+      "name" : "setAdjustUsageLimits",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMessageAuthorizationPolicy",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isPopulateUserNameInMBeans",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isUseVirtualTopics",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isPersistent",
+      "visibility" : "public",
+      "methodCalls" : [ "isPersistent" ]
+    }, {
+      "name" : "isAnonymousProducerAdvisorySupport",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "stopGracefully",
+      "visibility" : "public",
+      "methodCalls" : [ "isUseJmx", "sleep", "currentTimeMillis", "get", "matches", "info", "checkQueueSize", "stop", "getName", "stopGracefully" ]
+    }, {
+      "name" : "setStartAsync",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isUseJmx",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDeleteAllMessagesOnStartup",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setServices",
+      "visibility" : "public",
+      "methodCalls" : [ "split", "configureServices", "toString", "addAll", "clear" ]
+    }, {
+      "name" : "startNetworkConnector",
+      "visibility" : "public",
+      "methodCalls" : [ "startNetworkConnector", "getBroker", "setBrokerURL", "start", "execute", "debug", "error", "getDefaultSocketURIString", "createNetworkConnectorObjectName", "isAutoStart", "getBrokerName", "isUseJmx", "setBrokerName", "registerNetworkConnectorMBean", "info", "setDurableDestinations", "getManagementContext", "getObjectInstance", "getDurableDestinations" ]
+    }, {
+      "name" : "isAdjustUsageLimits",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTmpDataDirectory",
+      "visibility" : "public",
+      "methodCalls" : [ "getBrokerDataDirectory" ]
+    }, {
+      "name" : "setMaxPurgedDestinationsPerSweep",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setProxyConnectors",
+      "visibility" : "public",
+      "methodCalls" : [ "addProxyConnector" ]
+    }, {
+      "name" : "setPassiveSlave",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "put", "printStackTrace", "propertiesToString" ]
+    }, {
+      "name" : "getSchedulerDirectoryFile",
+      "visibility" : "public",
+      "methodCalls" : [ "getBrokerDataDirectory" ]
+    }, {
+      "name" : "getTransportConnectorURIs",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addService",
+      "visibility" : "public",
+      "methodCalls" : [ "debug", "requestServiceInfo", "onServiceAdd", "add" ]
+    }, {
+      "name" : "getPersistenceFactory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "incrementTotalConnections",
+      "visibility" : "public",
+      "methodCalls" : [ "incrementAndGet" ]
+    }, {
+      "name" : "getTotalConnections",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "getStartException",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBrokerDataDirectory",
+      "visibility" : "public",
+      "methodCalls" : [ "getBrokerName", "getDataDirectoryFile" ]
+    }, {
+      "name" : "getPersistenceTaskRunnerFactory",
+      "visibility" : "public",
+      "methodCalls" : [ "isDedicatedTaskRunner" ]
+    }, {
+      "name" : "getMessageAuthorizationPolicy",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTimeBeforePurgeTempDestinations",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "removeDestination",
+      "visibility" : "public",
+      "methodCalls" : [ "assertAuthorized", "getJMSDestination", "getBrokerAdmin", "removeTopic", "getValidDestination", "removeQueue", "isUseVirtualDestSubs", "getAllDestinationAdvisoryTopics", "getBrokerService", "fireAdvisory", "equals", "copy", "setDestination", "keySet", "setOperationType", "get", "getDestinationAdvisoryTopic", "getAdminConnectionContext", "getBroker", "checkSecurityContext", "getUserName", "checkDestinationAdmin", "removeDestination", "getNext", "getListeners", "getActiveMQDestination", "isTemporary", "removeTopicMessageStore", "isQueue", "isAdvisoryTopic", "removeQueueMessageStore", "unregister", "generateFile", "getBrokerName", "debug", "values", "matches", "next", "updateRegionDestCounts", "unlock", "getDestinationInterceptor", "removeSubscription", "writeLock", "remove", "lock", "iterator", "hasNext", "unsynchronizedRemove", "purge", "dispose", "getRegion", "containsKey", "getAuthorizedWriteDests" ]
+    }, {
+      "name" : "setShutdownHooks",
+      "visibility" : "public",
+      "methodCalls" : [ "addShutdownHook" ]
+    }, {
+      "name" : "isStarted",
+      "visibility" : "public",
+      "methodCalls" : [ "getCount", "get", "isStarted" ]
+    }, {
+      "name" : "setShutdownOnMasterFailure",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDataDirectory",
+      "visibility" : "public",
+      "methodCalls" : [ "setDataDirectoryFile" ]
+    }, {
+      "name" : "registerNetworkConnectorMBean",
+      "visibility" : "public",
+      "methodCalls" : [ "create", "createNetworkConnectorObjectName", "getMessage", "registerMBean", "setObjectName", "getManagementContext" ]
+    }, {
+      "name" : "getDestination",
+      "visibility" : "public",
+      "methodCalls" : [ "getDestination", "isEmpty", "addDestination", "getBroker", "getAdminConnectionContext", "getDestinationInfo", "checkClosed", "createDestination" ]
+    }, {
+      "name" : "setSchedulerDirectory",
+      "visibility" : "public",
+      "methodCalls" : [ "setSchedulerDirectoryFile" ]
+    }, {
+      "name" : "addProxyConnector",
+      "visibility" : "public",
+      "methodCalls" : [ "setRemote", "setBind", "getVmConnectorURI", "add", "setLocalUri", "isUseJmx", "addProxyConnector", "registerProxyConnectorMBean" ]
+    }, {
+      "name" : "isSystemExitOnShutdown",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getProxyConnectors",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOfflineDurableSubscriberTaskSchedule",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPopulateJMSXUserID",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getNetworkConnectorURIs",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isMonitorConnectionSplits",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setUseJmx",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setWaitForSlave",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getConsumerSystemUsagePortion",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isUseLocalHostBrokerName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isEnableStatistics",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMbeanInvocationTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getJmsBridgeConnectors",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getPersistenceAdapter",
+      "visibility" : "public",
+      "methodCalls" : [ "createPersistenceAdapter", "registerPersistenceAdapterMBean", "configureService" ]
+    }, {
+      "name" : "removeService",
+      "visibility" : "public",
+      "methodCalls" : [ "debug", "onServiceRemove", "remove" ]
+    }, {
+      "name" : "getDestinationInterceptors",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setNetworkConnectorURIs",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isRestartRequested",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addConnector",
+      "visibility" : "public",
+      "methodCalls" : [ "createTransportConnector", "add", "getName", "startTransportConnector", "addConnector" ]
+    }, {
+      "name" : "incrementCurrentConnections",
+      "visibility" : "public",
+      "methodCalls" : [ "incrementAndGet" ]
+    }, {
+      "name" : "getUptimeMillis",
+      "visibility" : "public",
+      "methodCalls" : [ "getTime", "getUptimeMillis" ]
+    }, {
+      "name" : "setTmpDataDirectory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getWaitForSlaveTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setRejectDurableConsumers",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMaxPurgedDestinationsPerSweep",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getIoExceptionHandler",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setUseVirtualDestSubs",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "removeNetworkConnector",
+      "visibility" : "public",
+      "methodCalls" : [ "remove", "unregisterNetworkConnectorMBean", "removeNetworkConnector", "getNetworkConnectorByName", "stop" ]
+    }, {
+      "name" : "getSystemUsage",
+      "visibility" : "public",
+      "methodCalls" : [ "getStoreUsage", "getJobSchedulerStore", "getPersistenceAdapter", "getMemoryUsage", "addService", "getMessage", "getTempUsage", "getExecutor", "error", "setLimit", "getTempDataStore", "getJobSchedulerUsage", "setExecutor" ]
+    }, {
+      "name" : "isAdvisorySupport",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isStopped",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "getNext", "isStopped" ]
+    }, {
+      "name" : "setPersistenceFactory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMaxSchedulerRepeatAllowed",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getStoreOpenWireVersion",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "waitUntilStarted",
+      "visibility" : "public",
+      "methodCalls" : [ "max", "currentTimeMillis", "getStartException", "isStarted", "get", "await", "waitUntilStarted" ]
+    }, {
+      "name" : "getProducerBrokerExchange",
+      "visibility" : "public",
+      "methodCalls" : [ "getProducerBrokerExchangeIfExists", "getConnections" ]
+    }, {
+      "name" : "getDiskUsageCheckRegrowThreshold",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "shouldRecordVirtualDestination",
+      "visibility" : "public",
+      "methodCalls" : [ "isUseVirtualTopics", "isQueue", "matches" ]
+    }, {
+      "name" : "isRollbackOnlyOnAsyncException",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTransportConnectorURIs",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDataDirectoryFile",
+      "visibility" : "public",
+      "methodCalls" : [ "getDefaultDataDirectory", "getDataDirectory" ]
+    }, {
+      "name" : "isUseVirtualDestSubsOnCreation",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isSlave",
+      "visibility" : "public",
+      "methodCalls" : [ "isSlave" ]
+    }, {
+      "name" : "setTempDataStore",
+      "visibility" : "public",
+      "methodCalls" : [ "setDirectory", "getDirectory", "configureService" ]
+    }, {
+      "name" : "isKeepDurableSubsActive",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "deleteAllMessages",
+      "visibility" : "public",
+      "methodCalls" : [ "asMemoryMessageStore", "values", "iterator", "hasNext", "delete", "next", "deleteAllMessages", "getPersistenceAdapter", "deleteChildren", "getIndexDirectory", "getDirectory", "get", "doDropTables", "getExclusiveConnection", "getTransactionContext", "setUseExternalMessageReferences", "close", "info", "log", "create", "getAdapter", "doCreateTables", "isUseExternalMessageReferences" ]
+    }, {
+      "name" : "getProducerSystemUsagePortion",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTransportConnectorURIsAsMap",
+      "visibility" : "public",
+      "methodCalls" : [ "getScheme", "getConnectUri", "put", "toString", "toLowerCase", "debug" ]
+    }, {
+      "name" : "setNetworkConnectors",
+      "visibility" : "public",
+      "methodCalls" : [ "addNetworkConnector" ]
+    }, {
+      "name" : "setUseVirtualTopics",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setIoExceptionHandler",
+      "visibility" : "public",
+      "methodCalls" : [ "configureService" ]
+    }, {
+      "name" : "isPopulateJMSXUserID",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setEnableMessageExpirationOnActiveDurableSubs",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "toString",
+      "visibility" : "public",
+      "methodCalls" : [ "getPageId", "getDestination", "keySet", "getFormattedTime", "getRemoteUrl", "format", "getSessionId", "startsWith", "getFirstNakNumber", "getObject", "getLastNakNumber", "getProperties", "getBrokerId", "getContent", "truncate64", "put", "getTransactionKey", "getLimit", "retrieveUsage", "getProducerId", "getConsumers", "getProducers", "appendFieldDescription", "getSessions", "getLocalPort", "isConnected", "getCommandId", "getPort", "getInetAddress", "getBindLocation", "getProtocolUriScheme", "encodeString", "getExpressionSymbol", "getText", "getMessages", "getQualifiedName", "getTransactionId", "discarded", "getDequeueCounter", "matched", "isUsePrefetchExtension", "getDispatchedQueueSize", "getConnectionId", "getClientId", "getRemoteAddress", "getSubscriptionName", "getFutureOrSequenceLong", "getActiveMQDestination", "hasSpace", "getConsumerInfo", "isHeadNode", "getNext", "getPrefetchSize", "getSubscriptionStatistics", "getDispatched", "getPrefetchExtension", "getEnqueues", "getCount", "getSubscriptionKey", "isActive", "getPercentUsage", "getMemoryUsage", "entrySet", "getKey", "getValue", "getMessageId", "getPendingQueueSize", "asList", "getIndexDirectory", "availablePermits", "getBrokerService", "key", "getRemoteBrokerName", "getBrokerName", "getAbsolutePath", "getType", "getDirectory", "getClass", "getPhysicalName", "getHeadPageId", "size", "getTailPageId", "getJobId", "isLetter", "get", "append", "toString", "length", "getConsumerId", "getParts", "getSession", "deepToString", "getName", "identityHashCode" ]
+    }, {
+      "name" : "isAllowTempAutoCreationOnSend",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setBrokerContext",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setProducerSystemUsagePortion",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isNetworkConnectorStartAsync",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBrokerContext",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "removePreShutdownHook",
+      "visibility" : "public",
+      "methodCalls" : [ "remove" ]
+    }, {
+      "name" : "getNetworkConnectors",
+      "visibility" : "public",
+      "methodCalls" : [ "queryNames", "getBrokerName", "toArray", "size", "getManagedObjects" ]
+    }, {
+      "name" : "stop",
+      "visibility" : "public",
+      "methodCalls" : [ "request", "stopReadChecker", "stopConnectChecker", "setCommandContext", "asList", "setFormatter", "decrementAndGet", "resume", "isStopped", "printStackTrace", "waitFor", "getRuntime", "notify", "waitUntilStopped", "removeChild", "signalAll", "getLocalhost", "currentThread", "onClose", "isDebugEnabled", "add", "disposeTransport", "setDisposed", "getAndSet", "unregisterService", "getTransport", "setDaemon", "getLocalAddress", "stopMonitorThreads", "convertToJMSRuntimeException", "checkContextState", "unregister", "onCommand", "getInstance", "start", "exit", "remove", "run", "getTempUsage", "onException", "clearCache", "stopAllConnectors", "getUptime", "unbind", "removeShutdownHook", "decrementReferenceCount", "getPersistenceAdapter", "getStoreUsage", "put", "stopped", "getCount", "countDown", "shutdownNow", "getBrokerName", "networkBridgeStopped", "awaitTermination", "onStop", "removeBroker", "getTaskRunnerFactory", "execute", "getBroker", "isRegistered", "getValue", "getMBeanServer", "entrySet", "isEmpty", "releaseMBeanServer", "invoke", "contains", "warn", "unexportObject", "findMBeanServer", "getRemoteAddress", "await", "stopAsync", "doStop", "getDestinations", "lock", "readLock", "getAllDestinations", "reset", "getAdvisoryDestinations", "hasNext", "writeLock", "unlock", "resetBatch", "getMessageAudit", "isKeepDurableSubsActive", "gc", "removeUsageListener", "isStarted", "destroy", "getMemoryUsage", "getListeners", "removeListener", "get", "shutdown", "getNext", "getSweepInterval", "join", "trace", "stopDispatching", "getName", "oneway", "throwFirstException", "createRemoveCommand", "setTransportListener", "unload", "stopKeepAliveTask", "stop", "stopConnectionTimeoutChecker", "endpointDeactivation", "keySet", "getMessageEndpointFactory", "isAlive", "getInfo", "dispose", "compareAndSet", "getActivationSpec", "debug", "interrupt", "close", "getConnection", "iterator", "next", "size", "clearClassLoader", "getClassLoader", "info", "getClass", "notifyAll", "getNumActive", "clear", "isUseJmx", "getMessage", "getManagementContext", "error", "values", "cancel", "unregisterMBean", "set" ]
+    }, {
+      "name" : "isPassiveSlave",
+      "visibility" : "public",
+      "methodCalls" : [ "getProperties", "parseBoolean", "getProperty" ]
+    }, {
+      "name" : "setMaxSchedulerRepeatAllowed",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setBrokerName",
+      "visibility" : "public",
+      "methodCalls" : [ "trim", "error", "replaceAll", "equals", "setBrokerName" ]
+    }, {
+      "name" : "stopAllConnectors",
+      "visibility" : "public",
+      "methodCalls" : [ "stop", "getProxyConnectors", "next", "unregisterNetworkConnectorMBean", "iterator", "unregisterConnectorMBean", "getTransportConnectors", "hasNext", "getNetworkConnectors" ]
+    }, {
+      "name" : "createNetworkConnectorObjectName",
+      "visibility" : "public",
+      "methodCalls" : [ "getName", "createNetworkConnectorName", "getBrokerObjectName" ]
+    }, {
+      "name" : "getVmConnectorURI",
+      "visibility" : "public",
+      "methodCalls" : [ "getBrokerName", "error", "getVmConnectorURI", "getNext" ]
+    }, {
+      "name" : "getCurrentConnections",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "addPreShutdownHook",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "setPersistenceThreadPriority",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMbeanInvocationTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "startTransportConnector",
+      "visibility" : "public",
+      "methodCalls" : [ "setBrokerService", "start", "getMessageAuthorizationPolicy", "registerConnectorMBean", "setTaskRunnerFactory", "getStatistics", "isAutoStart", "getTaskRunnerFactory", "setEnabled", "setMessageAuthorizationPolicy", "isUseJmx" ]
+    }, {
+      "name" : "startAllConnectors",
+      "visibility" : "public",
+      "methodCalls" : [ "isNetworkConnectorStartAsync", "getProxyConnectors", "size", "clear", "getNetworkConnectors", "next", "getTransportConnectors", "setTransportConnectors", "startNetworkConnector", "getVmConnectorURI", "iterator", "getBroker", "startTransportConnector", "setLocalUri", "shutdown", "start", "getDurableDestinations", "get", "hasNext", "add", "configureService", "setDaemon" ]
+    }, {
+      "name" : "getJobSchedulerStore",
+      "visibility" : "public",
+      "methodCalls" : [ "getClassLoader", "getClass", "createJobSchedulerStore", "getDeclaredConstructor", "loadClass", "getPersistenceAdapter", "getSchedulerDirectoryFile", "setDirectory", "info", "isSchedulerSupport", "newInstance", "configureService", "isPersistent" ]
+    }, {
+      "name" : "getPlugins",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "removeJmsConnector",
+      "visibility" : "public",
+      "methodCalls" : [ "remove" ]
+    }, {
+      "name" : "getTaskRunnerPriority",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTransportConnectors",
+      "visibility" : "public",
+      "methodCalls" : [ "addConnector" ]
+    }, {
+      "name" : "setUseVirtualDestSubsOnCreation",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getConsumerSystemUsage",
+      "visibility" : "public",
+      "methodCalls" : [ "addService", "getMemoryUsage", "getSystemUsage", "setUsagePortion" ]
+    }, {
+      "name" : "addJmsConnector",
+      "visibility" : "public",
+      "methodCalls" : [ "registerJmsConnectorMBean", "setBrokerService", "isUseJmx", "add" ]
+    }, {
+      "name" : "isDedicatedTaskRunner",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setUseAuthenticatedPrincipalForJMSXUserID",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setUseShutdownHook",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPersistenceAdapter",
+      "visibility" : "public",
+      "methodCalls" : [ "configureService", "warn", "registerPersistenceAdapterMBean", "isPersistent" ]
+    }, {
+      "name" : "setRestartAllowed",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setUseTempMirroredQueues",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setStoreOpenWireVersion",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isUseShutdownHook",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDestinations",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isUseMirroredQueues",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isEnableMessageExpirationOnActiveDurableSubs",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addShutdownHook",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "getOfflineDurableSubscriberTaskSchedule",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPlugins",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "masterFailed",
+      "visibility" : "public",
+      "methodCalls" : [ "stop", "startAllConnectors", "warn", "error", "nowMasterBroker" ]
+    }, {
+      "name" : "getTempDataStore",
+      "visibility" : "public",
+      "methodCalls" : [ "getTmpDataDirectory", "getClassLoader", "configureService", "isPersistent", "newInstance", "getPersistenceAdapter", "getDeclaredConstructor", "loadClass", "getClass", "setDirectory", "getTempDataStore", "getNext" ]
+    }, {
+      "name" : "isShutdownOnMasterFailure",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setJmsBridgeConnectors",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isRejectDurableConsumers",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPersistenceTaskRunnerFactory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTransportConnectorByName",
+      "visibility" : "public",
+      "methodCalls" : [ "getName", "equals" ]
+    }, {
+      "name" : "getManagementContext",
+      "visibility" : "public",
+      "methodCalls" : [ "getManagementContext" ]
+    }, {
+      "name" : "setConsumerSystemUsagePortion",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOfflineDurableSubscriberTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getAdminView",
+      "visibility" : "public",
+      "methodCalls" : [ "getBroker" ]
+    }, {
+      "name" : "isUseAuthenticatedPrincipalForJMSXUserID",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSplitSystemUsageForProducersConsumers",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isSchedulerSupport",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setVmConnectorURI",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSystemExitOnShutdownExitCode",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSchedulerDirectoryFile",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "start",
+      "visibility" : "public",
+      "methodCalls" : [ "createConnection", "startConnectChecker", "getProperty", "setProperty", "setFormatter", "setCommandContext", "getRegistryURL", "wait", "setContextPath", "setServlet", "addServlet", "setProperties", "setHandler", "waitUntilStarted", "configure", "createClient", "getBrokerURL", "getClientId", "setClientID", "getSimpleName", "waitForShutdown", "printStackTrace", "setRollbackOnly", "isInLocalTransaction", "getLimit", "addChild", "setSoTimeout", "getPort", "getTimeToLive", "getHost", "startConnectCheckTask", "isTraceEnabled", "setLoopbackMode", "joinGroup", "isMonitorStarted", "setTimeToLive", "setNetworkInterface", "setInterface", "getByName", "getJmdns", "setMaxCacheSize", "getType", "reconnect", "isClosed", "addServiceListener", "setTrackMessages", "setTrackTransactionProducers", "isTrackTransactionProducers", "isTrackMessages", "restore", "getMaxCacheSize", "sendWireFormat", "restoreTransport", "setDiscoveryListener", "onServiceAdd", "startMonitorThreads", "getReplayBuffer", "setReplayBuffer", "ensureConnectionInfoSent", "checkClosedOrFailed", "setDefaultSize", "borrowBuffer", "getConsumerAdvisoryTopic", "getProducerAdvisoryTopic", "createSession", "notifyAll", "setMessageListener", "convertToJMSRuntimeException", "checkContextState", "wakeup", "poll", "doDispatch", "getMessageQueue", "oneway", "onFailure", "getInstance", "isUseJmx", "bind", "registerNetworkConnectorMBean", "startManagementContext", "getTempUsage", "getStoreUsage", "getNetworkConnectors", "checkMemorySystemUsageLimits", "processHelperProperties", "buildExistingSubscriptions", "recoverMessageStoreStatistics", "triggerStartAsyncNetworkBridgeCreation", "setEnabled", "createLocalAsyncTransport", "isEnableStatistics", "getVmConnectorURI", "cancel", "isDone", "isDuplex", "isRegistered", "countDown", "getAddress", "isAdvisoryTopic", "getActiveMQDestination", "toStub", "invoke", "remove", "getMBeanServer", "getExpireMessagesPeriod", "createTaskRunner", "getBrokerInfo", "stop", "dispatchAsync", "isUpdateClusterClients", "copy", "onStarted", "getSchedulePeriodForDestinationPurge", "addDestination", "getInactiveDestinations", "iterator", "readLock", "hasNext", "setSecurityContext", "unlock", "lock", "resetSize", "setCacheEnabled", "resetBatch", "isEnableAudit", "getMaxAuditDepth", "size", "getStoreOpenWireVersion", "isPersistent", "getMemoryUsage", "getMessageAudit", "setEnableAudit", "getMaxProducersToAudit", "isStarted", "addUsageListener", "setMaxAuditDepth", "getMaxBatchSize", "setMaxBatchSize", "setVersion", "setSystemUsage", "setMessageAudit", "setMaxProducersToAudit", "createMessageList", "getRemoteAddress", "getPeerBrokerInfos", "getLocalizedMessage", "isCheckForCorruptionOnStartup", "setBrokerURL", "getListeners", "execute", "getBrokerService", "getInternalScheduler", "create", "setTransactions", "isEmpty", "endsWith", "getOffset", "onAcceptError", "dispose", "getPublishableConnectString", "setBrokerId", "isStopping", "getDefaultSocketURIString", "setBrokerName", "setProducerState", "getTransactionId", "setAcceptListener", "getTaskRunnerFactory", "scheduleAtFixedRate", "setConnectionContext", "setInRecoveryMode", "setMutable", "isFaultTolerantConfiguration", "setProducerFlowControl", "rotateWriteFile", "getBroker", "getTransaction", "setPeerBrokerInfos", "getDestination", "setBroker", "getMaxFileLength", "setBrokerInfo", "beginTransaction", "newScheduledThreadPool", "setName", "getCause", "registerService", "recover", "setState", "isUnusedPreallocated", "getBrokerId", "getRootCause", "getDiscoveryAgent", "currentTimeMillis", "getTail", "getLast", "setFaultTolerantConfiguration", "recoveryCheck", "getServer", "init", "getNext", "setPriority", "next", "toString", "startDispatching", "getSearchScope", "addConnector", "get", "lookup", "getUri", "min", "hasMore", "error", "sleep", "addNamingListener", "search", "setCheckForCorruptionOnStartup", "setMaxFileLength", "mkdirs", "setCleanupInterval", "setChecksum", "setWriteBatchSize", "setDirectory", "cleanup", "setTransportListener", "serviceLocalCommand", "serviceRemoteCommand", "load", "serviceLocalException", "serviceRemoteException", "createProducer", "createConsumer", "getGcSweepTime", "executePeriodically", "isGcDestinationViews", "parseInt", "getFile", "equals", "startsWith", "listFiles", "values", "addAndGet", "getDataFileId", "put", "addLast", "substring", "add", "getName", "sort", "getLength", "startConnectionTimeoutChecker", "setAmqpTransport", "start", "getConnectAttemptTimeout", "compareAndSet", "setInManagedTx", "set", "trace", "warn", "debug", "initCause", "scheduleWork", "getServerUrl", "setContextClassLoader", "getClassLoader", "interrupt", "getBrokerName", "join", "length", "createBroker", "setDaemon", "getMessage", "currentThread", "trim", "setServerUrl", "ensureConnection", "getClass", "getContextClassLoader", "getInfo", "assertNotClosed", "close", "isReconnectOnException", "getMaxSessionsIntValue", "info", "getActivationSpec", "isCreateConnectionOnStartup" ]
+    }, {
+      "name" : "setSchedulePeriodForDiskUsageCheck",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSystemExitOnShutdownExitCode",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "removeConnector",
+      "visibility" : "public",
+      "methodCalls" : [ "unregisterConnectorMBean", "remove", "getConnectorByName", "stop", "removeConnector" ]
+    }, {
+      "name" : "setAnonymousProducerAdvisorySupport",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDataDirectoryFile",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setBrokerId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getOfflineDurableSubscriberTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setUseMirroredQueues",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTaskRunnerFactory",
+      "visibility" : "public",
+      "methodCalls" : [ "setThreadClassLoader", "getClassLoader", "getTaskRunnerPriority", "isDedicatedTaskRunner", "getClass", "getBrokerName" ]
+    }, {
+      "name" : "isStopping",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "isStopping" ]
+    }, {
+      "name" : "getServices",
+      "visibility" : "public",
+      "methodCalls" : [ "toArray" ]
+    }, {
+      "name" : "setTaskRunnerPriority",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "autoStart",
+      "visibility" : "public",
+      "methodCalls" : [ "shouldAutostart", "start" ]
+    }, {
+      "name" : "setJobSchedulerStore",
+      "visibility" : "public",
+      "methodCalls" : [ "configureService" ]
+    }, {
+      "name" : "setTimeBeforePurgeTempDestinations",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSslContext",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDestinations",
+      "visibility" : "public",
+      "methodCalls" : [ "getDestinationMap", "toArray", "size", "getRegion", "keySet", "getBroker", "unsynchronizedGet", "readLock", "emptySet", "getNext", "writeLock", "unlock", "lock", "convert", "execute", "iterator", "hasNext", "add", "tx", "next", "getKey", "getDestinations", "addAll", "getAdapter", "getTransactionContext", "close", "log", "doGetDestinations" ]
+    }, {
+      "name" : "isUseLoggingForShutdownErrors",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    } ],
+    "imports" : [ "java.io.InputStreamReader", "org.apache.activemq.util.DefaultIOExceptionHandler", "javax.management.InstanceNotFoundException", "java.security.Security", "org.apache.activemq.ConfigurationException", "org.apache.activemq.broker.jmx.Log4JConfigView", "java.net.UnknownHostException", "java.util.concurrent.atomic.AtomicLong", "java.io.InputStream", "org.apache.activemq.broker.jmx.AnnotatedMBean", "java.util.concurrent.LinkedBlockingQueue", "java.util.concurrent.atomic.AtomicInteger", "org.apache.activemq.broker.region.Destination", "org.apache.activemq.thread.TaskRunnerFactory", "org.apache.activemq.broker.region.virtual.VirtualDestinationInterceptor", "org.apache.activemq.broker.region.virtual.VirtualDestination", "org.apache.activemq.broker.region.virtual.MirroredQueue", "java.util.concurrent.ThreadFactory", "org.apache.activemq.broker.region.DestinationFactoryImpl", "org.apache.activemq.Service", "org.apache.activemq.util.IOExceptionSupport", "org.apache.activemq.broker.jmx.JobSchedulerViewMBean", "org.apache.activemq.broker.region.DestinationInterceptor", "java.util.concurrent.RejectedExecutionHandler", "java.io.File", "org.apache.activemq.transport.TransportServer", "org.apache.activemq.command.ActiveMQQueue", "java.net.URISyntaxException", "org.apache.activemq.store.JournaledStore", "org.apache.activemq.usage.StoreUsage", "org.apache.activemq.util.TimeUtils", "org.apache.activemq.util.InetAddressUtil", "org.apache.activemq.broker.region.RegionBroker", "org.apache.activemq.util.IOHelper", "java.util.concurrent.RejectedExecutionException", "java.util.concurrent.CountDownLatch", "org.apache.activemq.network.jms.JmsConnector", "org.apache.activemq.broker.region.policy.PolicyMap", "java.util.concurrent.ThreadPoolExecutor", "org.apache.activemq.broker.jmx.ManagementContext", "org.apache.activemq.broker.jmx.ConnectorViewMBean", "org.apache.activemq.command.BrokerId", "org.apache.activemq.store.PListStore", "java.util", "org.apache.activemq.broker.jmx.BrokerMBeanSupport", "org.apache.activemq.network.NetworkConnector", "org.apache.activemq.broker.jmx.ProxyConnectorView", "org.apache.activemq.broker.region.CompositeDestinationInterceptor", "org.slf4j.MDC", "org.apache.activemq.command.ProducerInfo", "java.util.concurrent.atomic.AtomicBoolean", "org.slf4j.Logger", "org.apache.activemq.selector.SelectorParser", "org.apache.activemq.util.BrokerSupport", "org.apache.activemq.broker.scheduler.SchedulerBroker", "org.apache.activemq.transport.TransportFactorySupport", "org.apache.activemq.proxy.ProxyConnector", "org.apache.activemq.ActiveMQConnectionMetaData", "org.apache.activemq.store.PersistenceAdapter", "org.apache.activemq.network.DiscoveryNetworkConnector", "org.apache.activemq.broker.scheduler.memory.InMemoryJobSchedulerStore", "org.apache.activemq.advisory.AdvisoryBroker", "org.apache.activemq.usage.SystemUsage", "org.apache.activemq.usage.PercentLimitUsage", "javax.management.ObjectName", "org.apache.activemq.broker.jmx.ConnectorView", "javax.management.MalformedObjectNameException", "org.apache.activemq.store.memory.MemoryPersistenceAdapter", "java.util.concurrent.CopyOnWriteArrayList", "org.apache.activemq.util.IOExceptionHandler", "org.apache.activemq.broker.jmx.JmsConnectorView", "java.util.concurrent.SynchronousQueue", "org.apache.activemq.util.StoreUtil", "org.apache.activemq.store.PersistenceAdapterFactory", "jakarta.annotation.PreDestroy", "org.apache.activemq.broker.region.DestinationFactory", "org.apache.activemq.broker.cluster.ConnectionSplitBroker", "java.security.Provider", "java.io.IOException", "java.net.URI", "org.apache.activemq.util.ThreadPoolUtils", "org.apache.activemq.filter.DestinationFilter", "org.apache.activemq.broker.jmx.ManagedRegionBroker", "org.apache.activemq.command.ActiveMQDestination", "org.apache.activemq.openwire.OpenWireFormat", "org.apache.activemq.broker.jmx.HealthView", "org.apache.activemq.security.MessageAuthorizationPolicy", "jakarta.annotation.PostConstruct", "org.apache.activemq.broker.scheduler.JobSchedulerStore", "org.apache.activemq.broker.jmx.NetworkConnectorViewMBean", "org.apache.activemq.broker.jmx.JobSchedulerView", "org.slf4j.LoggerFactory", "org.apache.activemq.thread.Scheduler", "java.io.BufferedReader", "org.apache.activemq.broker.jmx.HealthViewMBean", "org.apache.activemq.broker.jmx.BrokerView", "org.apache.activemq.broker.region.virtual.VirtualTopic", "org.apache.activemq.transport.vm.VMTransportFactory", "java.util.concurrent.TimeUnit", "org.apache.activemq.broker.jmx.NetworkConnectorView", "org.apache.activemq.util.ServiceStopper" ]
+  }, {
+    "name" : "ActiveMQConnection",
+    "packageName" : "org.apache.activemq",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ "TopicConnection", "EnhancedConnection", "StatsCapable", "TransportListener", "Closeable", "QueueConnection", "Connection" ],
+    "methods" : [ {
+      "name" : "isRmIdFromConnectionId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setClientID",
+      "visibility" : "public",
+      "methodCalls" : [ "setClientId", "ensureConnectionInfoSent", "checkClosedOrFailed", "convertToJMSRuntimeException", "getConnection", "setClientID", "getClientID", "equals", "createNotSupported" ]
+    }, {
+      "name" : "isNestedMapAndListEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setConsumerExpiryCheckEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCopyMessageOnSend",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "makeConnection",
+      "visibility" : "public",
+      "methodCalls" : [ "length", "getPassword", "getClientid", "getUserName", "getClientId", "defaultValue", "createConnectionFactory", "isDurableSubscription", "redeliveryPolicy", "setRedeliveryPolicy", "createConnection", "makeConnection", "setClientID", "warn", "getConnectionFactory", "getInfo" ]
+    }, {
+      "name" : "setWatchTopicAdvisories",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "hasDispatcher",
+      "visibility" : "public",
+      "methodCalls" : [ "containsKey" ]
+    }, {
+      "name" : "getMetaData",
+      "visibility" : "public",
+      "methodCalls" : [ "checkClosedOrFailed", "checkContextState", "convertToJMSRuntimeException", "getProviderVersion", "getClientID", "getJMSProviderName", "getMetaData", "getConnection" ]
+    }, {
+      "name" : "doCleanup",
+      "visibility" : "public",
+      "methodCalls" : [ "hasNext", "get", "dispose", "next", "isTransportFailed", "set", "iterator", "createRemoveCommand", "syncSendPacket", "getOfflineTimestamp", "info", "removeSubscription", "getBrokerService", "setClientId", "getSubscriptionName", "setBroker", "isActive", "error", "getKey", "getClientId", "entrySet", "getValue", "getOfflineDurableSubscriberTimeout", "setSubscriptionName", "currentTimeMillis" ]
+    }, {
+      "name" : "setDisableTimeStampsByDefault",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "checkClientIDWasManuallySpecified",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isTransportFailed",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "setSessionTaskRunner",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getRejectedTaskHandler",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAuditMaximumProducerNumber",
+      "visibility" : "public",
+      "methodCalls" : [ "setAuditMaximumProducerNumber" ]
+    }, {
+      "name" : "isWatchTopicAdvisories",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isOptimizeAcknowledge",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBrokerName",
+      "visibility" : "public",
+      "methodCalls" : [ "getBrokerAdmin", "interrupt", "await", "currentThread", "toLowerCase", "getBrokerInfo", "getLocalHostName", "getNext", "getBrokerName" ]
+    }, {
+      "name" : "getOptimizedAckScheduledAckInterval",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCheckForDuplicates",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getRedeliveryPolicy",
+      "visibility" : "public",
+      "methodCalls" : [ "getDefaultEntry" ]
+    }, {
+      "name" : "getOptimizeAcknowledgeTimeOut",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createSharedConnectionConsumer",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getFirstFailureError",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isAlwaysSyncSend",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setNonBlockingRedelivery",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "cleanup",
+      "visibility" : "public",
+      "methodCalls" : [ "disposeUnused", "debug", "log", "doDeleteOldMessages", "getAdapter", "getExclusiveConnection", "getTransactionContext", "warn", "isUserSpecifiedClientID", "doCleanup", "clear", "close", "cleanup" ]
+    }, {
+      "name" : "setStatsEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "setEnabled" ]
+    }, {
+      "name" : "isNonBlockingRedelivery",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "toString",
+      "visibility" : "public",
+      "methodCalls" : [ "getPageId", "getDestination", "keySet", "getFormattedTime", "getRemoteUrl", "format", "getSessionId", "startsWith", "getFirstNakNumber", "getObject", "getLastNakNumber", "getProperties", "getBrokerId", "getContent", "truncate64", "put", "getTransactionKey", "getLimit", "retrieveUsage", "getProducerId", "getConsumers", "getProducers", "appendFieldDescription", "getSessions", "getLocalPort", "isConnected", "getCommandId", "getPort", "getInetAddress", "getBindLocation", "getProtocolUriScheme", "encodeString", "getExpressionSymbol", "getText", "getMessages", "getQualifiedName", "getTransactionId", "discarded", "getDequeueCounter", "matched", "isUsePrefetchExtension", "getDispatchedQueueSize", "getConnectionId", "getClientId", "getRemoteAddress", "getSubscriptionName", "getFutureOrSequenceLong", "getActiveMQDestination", "hasSpace", "getConsumerInfo", "isHeadNode", "getNext", "getPrefetchSize", "getSubscriptionStatistics", "getDispatched", "getPrefetchExtension", "getEnqueues", "getCount", "getSubscriptionKey", "isActive", "getPercentUsage", "getMemoryUsage", "entrySet", "getKey", "getValue", "getMessageId", "getPendingQueueSize", "asList", "getIndexDirectory", "availablePermits", "getBrokerService", "key", "getRemoteBrokerName", "getBrokerName", "getAbsolutePath", "getType", "getDirectory", "getClass", "getPhysicalName", "getHeadPageId", "size", "getTailPageId", "getJobId", "isLetter", "get", "append", "toString", "length", "getConsumerId", "getParts", "getSession", "deepToString", "getName", "identityHashCode" ]
+    }, {
+      "name" : "setExclusiveConsumer",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setConsumerFailoverRedeliveryWaitPeriod",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setExceptionListener",
+      "visibility" : "public",
+      "methodCalls" : [ "checkClosedOrFailed", "setExceptionListener", "convertToJMSRuntimeException", "checkContextState", "setParentExceptionListener", "createNotSupported" ]
+    }, {
+      "name" : "setSendAcksAsync",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMessagePrioritySupported",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isUseDedicatedTaskRunner",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getInitializedClientID",
+      "visibility" : "public",
+      "methodCalls" : [ "getClientId", "ensureConnectionInfoSent" ]
+    }, {
+      "name" : "getTransport",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "stop",
+      "visibility" : "public",
+      "methodCalls" : [ "request", "stopReadChecker", "stopConnectChecker", "setCommandContext", "asList", "setFormatter", "decrementAndGet", "resume", "isStopped", "printStackTrace", "waitFor", "getRuntime", "notify", "waitUntilStopped", "removeChild", "signalAll", "getLocalhost", "currentThread", "onClose", "isDebugEnabled", "add", "disposeTransport", "setDisposed", "getAndSet", "unregisterService", "getTransport", "setDaemon", "getLocalAddress", "stopMonitorThreads", "convertToJMSRuntimeException", "checkContextState", "unregister", "onCommand", "getInstance", "start", "exit", "remove", "run", "getTempUsage", "onException", "clearCache", "stopAllConnectors", "getUptime", "unbind", "removeShutdownHook", "decrementReferenceCount", "getPersistenceAdapter", "getStoreUsage", "put", "stopped", "getCount", "countDown", "shutdownNow", "getBrokerName", "networkBridgeStopped", "awaitTermination", "onStop", "removeBroker", "getTaskRunnerFactory", "execute", "getBroker", "isRegistered", "getValue", "getMBeanServer", "entrySet", "isEmpty", "releaseMBeanServer", "invoke", "contains", "warn", "unexportObject", "findMBeanServer", "getRemoteAddress", "await", "stopAsync", "doStop", "getDestinations", "lock", "readLock", "getAllDestinations", "reset", "getAdvisoryDestinations", "hasNext", "writeLock", "unlock", "resetBatch", "getMessageAudit", "isKeepDurableSubsActive", "gc", "removeUsageListener", "isStarted", "destroy", "getMemoryUsage", "getListeners", "removeListener", "get", "shutdown", "getNext", "getSweepInterval", "join", "trace", "stopDispatching", "getName", "oneway", "throwFirstException", "createRemoveCommand", "setTransportListener", "unload", "stopKeepAliveTask", "stop", "stopConnectionTimeoutChecker", "endpointDeactivation", "keySet", "getMessageEndpointFactory", "isAlive", "getInfo", "dispose", "compareAndSet", "getActivationSpec", "debug", "interrupt", "close", "getConnection", "iterator", "next", "size", "clearClassLoader", "getClassLoader", "info", "getClass", "notifyAll", "getNumActive", "clear", "isUseJmx", "getMessage", "getManagementContext", "error", "values", "cancel", "unregisterMBean", "set" ]
+    }, {
+      "name" : "setTransactedIndividualAck",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getConnectionInfo",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSendTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMaxThreadPoolSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAuditDepth",
+      "visibility" : "public",
+      "methodCalls" : [ "setAuditDepth" ]
+    }, {
+      "name" : "setOptimizeAcknowledgeTimeOut",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createConnectionConsumer",
+      "visibility" : "public",
+      "methodCalls" : [ "getOptions", "getDestination", "isDispatchAsync", "setPrefetchSize", "setDestination", "setSelector", "setDispatchAsync", "ensureConnectionInfoSent", "checkClosedOrFailed", "setProperties", "setNoLocal", "transformDestination", "getConnection", "createConnectionConsumer", "createNotSupported" ]
+    }, {
+      "name" : "getTransportChannel",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCloseTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getClientID",
+      "visibility" : "public",
+      "methodCalls" : [ "getClientId", "checkClosedOrFailed", "convertToJMSRuntimeException", "getConnection", "getClientID", "createNotSupported" ]
+    }, {
+      "name" : "isCopyMessageOnSend",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOptimizedAckScheduledAckInterval",
+      "visibility" : "public",
+      "methodCalls" : [ "debug", "cancel", "executePeriodically", "info", "deliverAcks", "getConsumerId", "getScheduler", "isClosed" ]
+    }, {
+      "name" : "isClosed",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "isClosed" ]
+    }, {
+      "name" : "isDisableTimeStampsByDefault",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getProtocolVersion",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "getRedeliveryPolicyMap",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "onCommand",
+      "visibility" : "public",
+      "methodCalls" : [ "next", "onMQTTCommand", "onStompCommand", "marshal", "negociate", "transportListenerOnCommand", "decrementAndGet", "isResponse", "getCorrelationId", "write", "unmarshal", "configure", "getData", "warn", "reset", "toByteArray", "set", "onReceivedPacket", "getClass", "readLock", "setResponseRequired", "isEmpty", "onDroppedPackets", "processInboundWireFormatInfo", "add", "getDataStructureType", "isWireFormatInfo", "getCommandId", "replayCommands", "remove", "oneway", "first", "isResponseRequired", "getMessage", "onAMQPData", "onException", "unlock", "handleException", "create", "trace", "lock", "logReceivedCommand", "onCommand", "isDebugEnabled", "getTransportListener", "isFaultTolerantConfiguration", "setRedeliveryCounter", "setMessage", "getException", "setMemoryUsage", "execute", "onConsumerControl", "onProducerAck", "visit", "getConsumerId", "setReadOnlyProperties", "waitForTransportInterruptionProcessingToComplete", "getRedeliveryCounter", "getFrom", "iterator", "onAsyncException", "get", "debug", "onConnectionControl", "getBlobTransferPolicy", "getBrokerUploadUrl", "onClientInternalException", "countDown", "dispatch", "copy", "getProducerId", "setConnection", "setTargetEndpoint", "onWireFormatInfo", "hasNext", "setReadOnlyBody", "setBrokerUploadUrl" ]
+    }, {
+      "name" : "onClientInternalException",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "onException", "debug", "execute" ]
+    }, {
+      "name" : "getDestinationSource",
+      "visibility" : "public",
+      "methodCalls" : [ "start", "getDestinationSource", "getConnection" ]
+    }, {
+      "name" : "setAlwaysSyncSend",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setRejectedTaskHandler",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "syncSendPacket",
+      "visibility" : "public",
+      "methodCalls" : [ "error", "isClosed", "asyncRequest", "get", "onSuccess", "request", "onException", "debug", "getResult", "create", "isException", "getException", "syncSendPacket" ]
+    }, {
+      "name" : "isUserSpecifiedClientID",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setUseRetroactiveConsumer",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMaxThreadPoolSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTrustedPackages",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isExclusiveConsumer",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getResourceManagerId",
+      "visibility" : "public",
+      "methodCalls" : [ "isRmIdFromConnectionId", "getBrokerId", "getConnectionId", "getValue" ]
+    }, {
+      "name" : "createDurableConnectionConsumer",
+      "visibility" : "public",
+      "methodCalls" : [ "getOptions", "transformDestination", "getConnectionId", "setProperties", "getDestination", "checkClosedOrFailed", "setSelector", "ensureConnectionInfoSent", "setPrefetchSize", "setDispatchAsync", "getNextSequenceId", "isDispatchAsync", "setSubscriptionName", "setDestination", "createDurableConnectionConsumer", "getConnection", "createNotSupported" ]
+    }, {
+      "name" : "setNestedMapAndListEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTimeCreated",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isClosing",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "isStarted",
+      "visibility" : "public",
+      "methodCalls" : [ "getCount", "get", "isStarted" ]
+    }, {
+      "name" : "transportResumed",
+      "visibility" : "public",
+      "methodCalls" : [ "warn", "suspend", "next", "transportResumed", "hasNext", "iterator" ]
+    }, {
+      "name" : "destroyDestination",
+      "visibility" : "public",
+      "methodCalls" : [ "checkClosedOrFailed", "setTimeout", "setConnectionId", "getConnectionId", "setOperationType", "ensureConnectionInfoSent", "setDestination", "syncSendPacket" ]
+    }, {
+      "name" : "deleteTempDestination",
+      "visibility" : "public",
+      "methodCalls" : [ "isInUse", "setTimeout", "getConnectionId", "remove", "checkClosedOrFailed", "setConnectionId", "setDestination", "syncSendPacket", "setOperationType" ]
+    }, {
+      "name" : "setProducerWindowSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getClientInternalExceptionListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setUseAsyncSend",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isAlwaysSessionAsync",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setUseCompression",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "onAsyncException",
+      "visibility" : "public",
+      "methodCalls" : [ "onException", "get", "create", "debug", "execute" ]
+    }, {
+      "name" : "createQueueSession",
+      "visibility" : "public",
+      "methodCalls" : [ "createSession" ]
+    }, {
+      "name" : "getCloseTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTrustedPackages",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getWarnAboutUnstartedConnectionTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isUseCompression",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTransformer",
+      "visibility" : "public",
+      "methodCalls" : [ "setTransformer" ]
+    }, {
+      "name" : "isStatsEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "isEnabled" ]
+    }, {
+      "name" : "setBlobTransferPolicy",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOptimizeAcknowledge",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSessionTaskRunner",
+      "visibility" : "public",
+      "methodCalls" : [ "setRejectedTaskHandler", "isUseDedicatedTaskRunner" ]
+    }, {
+      "name" : "isMessagePrioritySupported",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isCheckForDuplicates",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addTransportListener",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "onException",
+      "visibility" : "public",
+      "methodCalls" : [ "unlock", "stopConnectChecker", "onTransportError", "stopReadChecker", "onAMQPException", "lock", "compareAndSet", "onException", "stopConnectionTimeoutChecker", "warn", "close", "debug", "isReconnectOnException", "getTransportListener", "isDebugEnabled", "logReceivedException", "reconnect", "next", "hasNext", "onAsyncException", "iterator", "get", "countDown", "dispose", "execute", "transportFailed", "doCleanup", "isHeldByCurrentThread", "writeLock", "stopMonitorThreads", "isConnected", "wakeup", "interrupt", "currentThread" ]
+    }, {
+      "name" : "setPrefetchPolicy",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isUseAsyncSend",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "close",
+      "visibility" : "public",
+      "methodCalls" : [ "setPriority", "closeConsumers", "finish", "println", "flushBlock", "isInXATransaction", "asyncSendPacket", "closeOutbound", "socket", "isOpen", "shutdownInput", "addIoTask", "doClose", "isInTransaction", "isEmpty", "getTransactionContext", "addSynchronization", "syncSendPacket", "getLastDeliveredSequenceId", "stop", "createRemoveCommand", "doStop", "removeConnection", "getCause", "max", "shutdown", "convertToJMSRuntimeException", "decrementAndGet", "decreaseUsage", "get", "removeNetworkDestinationView", "writeLock", "lock", "getCleanupOnStop", "cancel", "shutdownGraceful", "unload", "notifyAll", "countDown", "await", "create", "handleIOException", "commit", "getAutoCommit", "unlock", "log", "getBrokerService", "values", "dispose", "proxyClosedEvent", "decrementReferenceCount", "cleanupAllLoanedSessions", "sessionClosed", "cleanup", "cleanupConnectionTemporaryDestinations", "iterator", "hasNext", "invalidateObject", "onSessionClosed", "next", "rollback", "getInternalSession", "initCause", "warn", "returnObject", "trace", "compareAndSet", "toString", "setMessageListener", "run", "getEndpoint", "free", "setTarget", "clear", "setCondition", "setContext", "close", "setSource", "sendToActiveMQ", "debug", "getSessionId", "unregisterSender", "getConnectionId", "isClosed", "isDurable", "getName", "setSubscriptionName", "getConnection", "getConsumerId", "setClientId", "isOpened", "setConnectionId", "getProducerId", "setLastDeliveredSequenceId", "getClientId", "getMessage", "release", "isDebugEnabled", "interrupt", "currentThread", "setTimeToLive", "set", "setDisableMessageTimestamp", "onConsumerClose", "closeSessions", "setDeliveryMode", "wait", "setDisableMessageID" ]
+    }, {
+      "name" : "changeUserInfo",
+      "visibility" : "public",
+      "methodCalls" : [ "setPassword", "setUserName" ]
+    }, {
+      "name" : "setWarnAboutUnstartedConnectionTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getProducerWindowSize",
+      "visibility" : "public",
+      "methodCalls" : [ "getWindowSize" ]
+    }, {
+      "name" : "addProducer",
+      "visibility" : "public",
+      "methodCalls" : [ "isAdvisoryTopic", "getBrokerService", "fireProducerAdvisory", "getProducerAdvisoryTopic", "isAnonymousProducerAdvisorySupport", "assertAuthorized", "getDestination", "addProducer", "getNext", "getListeners", "increment", "getProducers", "getCompositeDestinations", "setDestination", "isComposite", "copy", "readLock", "unsynchronizedGet", "lock", "unlock", "addDestination", "getRegion", "getBroker", "isAllowTempAutoCreationOnSend", "getProducerId", "put", "generateFile", "isInOneOf", "getWriteACLs", "registerProducer", "isBrokerContext", "isPopulateUserNameInMBeans", "checkSecurityContext", "getClientId", "getUserName", "createProducerName", "getAuthorizedWriteDests", "getTempDestinationWriteACLs", "isTemporary" ]
+    }, {
+      "name" : "isDeleted",
+      "visibility" : "public",
+      "methodCalls" : [ "containsValue" ]
+    }, {
+      "name" : "isObjectMessageSerializationDefered",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "cleanUpTempDestinations",
+      "visibility" : "public",
+      "methodCalls" : [ "next", "equals", "iterator", "getValue", "getConnectionId", "isEmpty", "hasNext", "entrySet", "deleteTempDestination", "toString" ]
+    }, {
+      "name" : "setConnectResponseTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTrustAllPackages",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isConsumerExpiryCheckEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getLocalTransactionIdGenerator",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setObjectMessageSerializationDefered",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "removeDispatcher",
+      "visibility" : "public",
+      "methodCalls" : [ "remove" ]
+    }, {
+      "name" : "getExceptionListener",
+      "visibility" : "public",
+      "methodCalls" : [ "checkClosedOrFailed", "convertToJMSRuntimeException", "checkContextState", "getExceptionListener", "getParentExceptionListener", "createNotSupported" ]
+    }, {
+      "name" : "isTransactedIndividualAck",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getPrefetchPolicy",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSendTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getStats",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getConnectResponseTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createTopicSession",
+      "visibility" : "public",
+      "methodCalls" : [ "createSession" ]
+    }, {
+      "name" : "setRmIdFromConnectionId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setUseDedicatedTaskRunner",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTransformer",
+      "visibility" : "public",
+      "methodCalls" : [ "getTransformer" ]
+    }, {
+      "name" : "getBrokerInfo",
+      "visibility" : "public",
+      "methodCalls" : [ "getBrokerInfo" ]
+    }, {
+      "name" : "getBlobTransferPolicy",
+      "visibility" : "public",
+      "methodCalls" : [ "createBlobTransferPolicy" ]
+    }, {
+      "name" : "getConsumerFailoverRedeliveryWaitPeriod",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createSharedDurableConnectionConsumer",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addDispatcher",
+      "visibility" : "public",
+      "methodCalls" : [ "put" ]
+    }, {
+      "name" : "isSendAcksAsync",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOptimizedMessageDispatch",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createSession",
+      "visibility" : "public",
+      "methodCalls" : [ "getNextSessionId", "checkClosedOrFailed", "isAlwaysSessionAsync", "ensureConnectionInfoSent", "isDispatchAsync", "remove", "toString", "isTransacted", "borrowObject", "addSessionEventListener", "add", "getStatus", "initCause", "setIgnoreClose", "incrementReferenceCount", "setIsXa", "createSession", "createXaResource", "registerSynchronization", "getTransaction", "enlistResource" ]
+    }, {
+      "name" : "setRedeliveryPolicyMap",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setRedeliveryPolicy",
+      "visibility" : "public",
+      "methodCalls" : [ "setDefaultEntry" ]
+    }, {
+      "name" : "getConnectionStats",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setClientInternalExceptionListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "start",
+      "visibility" : "public",
+      "methodCalls" : [ "createConnection", "startConnectChecker", "getProperty", "setProperty", "setFormatter", "setCommandContext", "getRegistryURL", "wait", "setContextPath", "setServlet", "addServlet", "setProperties", "setHandler", "waitUntilStarted", "configure", "createClient", "getBrokerURL", "getClientId", "setClientID", "getSimpleName", "waitForShutdown", "printStackTrace", "setRollbackOnly", "isInLocalTransaction", "getLimit", "addChild", "setSoTimeout", "getPort", "getTimeToLive", "getHost", "startConnectCheckTask", "isTraceEnabled", "setLoopbackMode", "joinGroup", "isMonitorStarted", "setTimeToLive", "setNetworkInterface", "setInterface", "getByName", "getJmdns", "setMaxCacheSize", "getType", "reconnect", "isClosed", "addServiceListener", "setTrackMessages", "setTrackTransactionProducers", "isTrackTransactionProducers", "isTrackMessages", "restore", "getMaxCacheSize", "sendWireFormat", "restoreTransport", "setDiscoveryListener", "onServiceAdd", "startMonitorThreads", "getReplayBuffer", "setReplayBuffer", "ensureConnectionInfoSent", "checkClosedOrFailed", "setDefaultSize", "borrowBuffer", "getConsumerAdvisoryTopic", "getProducerAdvisoryTopic", "createSession", "notifyAll", "setMessageListener", "convertToJMSRuntimeException", "checkContextState", "wakeup", "poll", "doDispatch", "getMessageQueue", "oneway", "onFailure", "getInstance", "isUseJmx", "bind", "registerNetworkConnectorMBean", "startManagementContext", "getTempUsage", "getStoreUsage", "getNetworkConnectors", "checkMemorySystemUsageLimits", "processHelperProperties", "buildExistingSubscriptions", "recoverMessageStoreStatistics", "triggerStartAsyncNetworkBridgeCreation", "setEnabled", "createLocalAsyncTransport", "isEnableStatistics", "getVmConnectorURI", "cancel", "isDone", "isDuplex", "isRegistered", "countDown", "getAddress", "isAdvisoryTopic", "getActiveMQDestination", "toStub", "invoke", "remove", "getMBeanServer", "getExpireMessagesPeriod", "createTaskRunner", "getBrokerInfo", "stop", "dispatchAsync", "isUpdateClusterClients", "copy", "onStarted", "getSchedulePeriodForDestinationPurge", "addDestination", "getInactiveDestinations", "iterator", "readLock", "hasNext", "setSecurityContext", "unlock", "lock", "resetSize", "setCacheEnabled", "resetBatch", "isEnableAudit", "getMaxAuditDepth", "size", "getStoreOpenWireVersion", "isPersistent", "getMemoryUsage", "getMessageAudit", "setEnableAudit", "getMaxProducersToAudit", "isStarted", "addUsageListener", "setMaxAuditDepth", "getMaxBatchSize", "setMaxBatchSize", "setVersion", "setSystemUsage", "setMessageAudit", "setMaxProducersToAudit", "createMessageList", "getRemoteAddress", "getPeerBrokerInfos", "getLocalizedMessage", "isCheckForCorruptionOnStartup", "setBrokerURL", "getListeners", "execute", "getBrokerService", "getInternalScheduler", "create", "setTransactions", "isEmpty", "endsWith", "getOffset", "onAcceptError", "dispose", "getPublishableConnectString", "setBrokerId", "isStopping", "getDefaultSocketURIString", "setBrokerName", "setProducerState", "getTransactionId", "setAcceptListener", "getTaskRunnerFactory", "scheduleAtFixedRate", "setConnectionContext", "setInRecoveryMode", "setMutable", "isFaultTolerantConfiguration", "setProducerFlowControl", "rotateWriteFile", "getBroker", "getTransaction", "setPeerBrokerInfos", "getDestination", "setBroker", "getMaxFileLength", "setBrokerInfo", "beginTransaction", "newScheduledThreadPool", "setName", "getCause", "registerService", "recover", "setState", "isUnusedPreallocated", "getBrokerId", "getRootCause", "getDiscoveryAgent", "currentTimeMillis", "getTail", "getLast", "setFaultTolerantConfiguration", "recoveryCheck", "getServer", "init", "getNext", "setPriority", "next", "toString", "startDispatching", "getSearchScope", "addConnector", "get", "lookup", "getUri", "min", "hasMore", "error", "sleep", "addNamingListener", "search", "setCheckForCorruptionOnStartup", "setMaxFileLength", "mkdirs", "setCleanupInterval", "setChecksum", "setWriteBatchSize", "setDirectory", "cleanup", "setTransportListener", "serviceLocalCommand", "serviceRemoteCommand", "load", "serviceLocalException", "serviceRemoteException", "createProducer", "createConsumer", "getGcSweepTime", "executePeriodically", "isGcDestinationViews", "parseInt", "getFile", "equals", "startsWith", "listFiles", "values", "addAndGet", "getDataFileId", "put", "addLast", "substring", "add", "getName", "sort", "getLength", "startConnectionTimeoutChecker", "setAmqpTransport", "start", "getConnectAttemptTimeout", "compareAndSet", "setInManagedTx", "set", "trace", "warn", "debug", "initCause", "scheduleWork", "getServerUrl", "setContextClassLoader", "getClassLoader", "interrupt", "getBrokerName", "join", "length", "createBroker", "setDaemon", "getMessage", "currentThread", "trim", "setServerUrl", "ensureConnection", "getClass", "getContextClassLoader", "getInfo", "assertNotClosed", "close", "isReconnectOnException", "getMaxSessionsIntValue", "info", "getActivationSpec", "isCreateConnectionOnStartup" ]
+    }, {
+      "name" : "setDefaultClientID",
+      "visibility" : "public",
+      "methodCalls" : [ "setClientId" ]
+    }, {
+      "name" : "isDispatchAsync",
+      "visibility" : "public",
+      "methodCalls" : [ "getConsumerInfo", "isDispatchAsync" ]
+    }, {
+      "name" : "isTrustAllPackages",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "unsubscribe",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "sendFrame", "format", "checkClosed", "getClientId", "setSubscriptionName", "checkClosedOrFailed", "setClientId", "setConnectionId", "getConnectionId", "syncSendPacket", "getConnectionInfo", "convertToJMSRuntimeException", "checkContextState", "getSession", "getInternalSession", "unsubscribe" ]
+    }, {
+      "name" : "removeProducer",
+      "visibility" : "public",
+      "methodCalls" : [ "getTransactionState", "addProducerState", "isTemporary", "isAdvisoryTopic", "createRemoveCommand", "getBrokerService", "getProducerAdvisoryTopic", "fireProducerAdvisory", "isAnonymousProducerAdvisorySupport", "containsKey", "getClientId", "unregisterProducer", "createProducerName", "generateFile", "remove", "getProducerId", "getRegion", "unsynchronizedGet", "readLock", "unlock", "lock", "setDestination", "getCompositeDestinations", "getDestination", "isComposite", "copy", "getProducers", "decrement", "getListeners", "getNext", "removeProducer" ]
+    }, {
+      "name" : "asyncSendPacket",
+      "visibility" : "public",
+      "methodCalls" : [ "asyncSendPacket", "isClosed" ]
+    }, {
+      "name" : "setAlwaysSessionAsync",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "transportInterupted",
+      "visibility" : "public",
+      "methodCalls" : [ "resume", "warn", "next", "clearMessagesInProgress", "hasNext", "transportInterupted", "set", "iterator", "debug", "get", "isDebugEnabled", "decrementAndGet" ]
+    }, {
+      "name" : "isUseRetroactiveConsumer",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isOptimizedMessageDispatch",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDispatchAsync",
+      "visibility" : "public",
+      "methodCalls" : [ "setDispatchAsync" ]
+    }, {
+      "name" : "removeTransportListener",
+      "visibility" : "public",
+      "methodCalls" : [ "remove" ]
+    } ],
+    "imports" : [ "org.apache.activemq.command.ConsumerId", "java.util.concurrent.ThreadPoolExecutor", "org.apache.activemq.command.ActiveMQDestination", "jakarta.jms.JMSException", "org.apache.activemq.command.ConnectionId", "org.apache.activemq.command.ControlCommand", "org.apache.activemq.command.Message", "org.apache.activemq.command.ActiveMQMessage", "java.util.Iterator", "org.apache.activemq.util.LongSequenceGenerator", "org.apache.activemq.transport.failover.FailoverTransport", "org.apache.activemq.command.RemoveInfo", "org.apache.activemq.util.ServiceSupport", "java.util.concurrent.RejectedExecutionHandler", "org.apache.activemq.command.ConnectionInfo", "org.apache.activemq.thread.Scheduler", "org.apache.activemq.util.ThreadPoolUtils", "org.apache.activemq.command.MessageId", "java.net.URI", "jakarta.jms.ServerSessionPool", "java.util.concurrent.ConcurrentMap", "org.apache.activemq.command.ExceptionResponse", "java.util.concurrent.atomic.AtomicBoolean", "org.apache.activemq.command.ConnectionError", "java.util.concurrent.atomic.AtomicLong", "jakarta.jms.XAConnection", "jakarta.jms.QueueConnection", "org.apache.activemq.util.JMSExceptionSupport", "org.apache.activemq.command.ActiveMQTempQueue", "jakarta.jms.Queue", "org.apache.activemq.management.JMSStatsImpl", "jakarta.jms.ConnectionConsumer", "java.net.URISyntaxException", "java.util.concurrent.ConcurrentHashMap", "org.apache.activemq.broker.region.policy.RedeliveryPolicyMap", "jakarta.jms.TopicConnection", "java.util.Map", "org.apache.activemq.command.MessageDispatch", "org.apache.activemq.command.ConsumerControl", "jakarta.jms.ConnectionMetaData", "org.apache.activemq.command.ConnectionControl", "java.util.List", "org.apache.activemq.transport.ResponseCallback", "org.slf4j.LoggerFactory", "org.apache.activemq.transport.TransportListener", "org.apache.activemq.transport.Transport", "org.apache.activemq.advisory.DestinationSource", "java.util.concurrent.TimeUnit", "java.util.ArrayList", "org.apache.activemq.command.CommandTypes", "org.apache.activemq.command.ActiveMQTempTopic", "jakarta.jms.TopicSession", "org.apache.activemq.command.ActiveMQTempDestination", "org.apache.activemq.command.WireFormatInfo", "org.apache.activemq.command.ProducerAck", "org.apache.activemq.command.SessionId", "org.apache.activemq.management.StatsCapable", "java.util.concurrent.ThreadFactory", "org.apache.activemq.util.IdGenerator", "jakarta.jms.Session", "jakarta.jms.IllegalStateException", "org.apache.activemq.command.BrokerInfo", "org.apache.activemq.command.ConsumerInfo", "jakarta.jms.QueueSession", "org.apache.activemq.command.RemoveSubscriptionInfo", "org.apache.activemq.management.StatsImpl", "jakarta.jms.ExceptionListener", "org.apache.activemq.command.Response", "org.apache.activemq.command.ShutdownInfo", "org.apache.activemq.blob.BlobTransferPolicy", "java.util.HashMap", "jakarta.jms.Connection", "org.apache.activemq.command.DestinationInfo", "org.apache.activemq.command.Command", "java.util.concurrent.atomic.AtomicInteger", "org.apache.activemq.thread.TaskRunnerFactory", "java.util.concurrent.CopyOnWriteArrayList", "jakarta.jms.InvalidDestinationException", "org.apache.activemq.util.IntrospectionSupport", "java.util.concurrent.LinkedBlockingQueue", "org.apache.activemq.command.ProducerId", "org.apache.activemq.state.CommandVisitorAdapter", "org.slf4j.Logger", "jakarta.jms.Topic", "org.apache.activemq.transport.FutureResponse", "java.io.IOException", "jakarta.jms.Destination", "java.util.concurrent.CountDownLatch", "org.apache.activemq.management.JMSConnectionStatsImpl", "org.apache.activemq.transport.RequestTimedOutIOException" ]
+  }, {
+    "name" : "MessageDatabase",
+    "packageName" : "org.apache.activemq.store.kahadb",
+    "extendedClasses" : [ "ServiceSupport" ],
+    "implementedInterfaces" : [ "BrokerServiceAware" ],
+    "methods" : [ {
+      "name" : "setDeleteAllMessages",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCheckForCorruptJournalFiles",
+      "visibility" : "public",
+      "methodCalls" : [ "setCheckForCorruptJournalFiles" ]
+    }, {
+      "name" : "setDirectory",
+      "visibility" : "public",
+      "methodCalls" : [ "setDirectory" ]
+    }, {
+      "name" : "getPreparedTransaction",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "track", "toString" ]
+    }, {
+      "name" : "getMaxFailoverProducersToTrack",
+      "visibility" : "public",
+      "methodCalls" : [ "getMaximumNumberOfProducersToTrack", "getMaxFailoverProducersToTrack" ]
+    }, {
+      "name" : "getPurgeRecoveredXATransactionStrategy",
+      "visibility" : "public",
+      "methodCalls" : [ "name", "getPurgeRecoveredXATransactionStrategy" ]
+    }, {
+      "name" : "getJournalDiskSyncStrategyEnum",
+      "visibility" : "public",
+      "methodCalls" : [ "getJournalDiskSyncStrategyEnum" ]
+    }, {
+      "name" : "getLastUpdatePosition",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCleanupOnStop",
+      "visibility" : "public",
+      "methodCalls" : [ "getCleanupOnStop" ]
+    }, {
+      "name" : "isEnableIndexPageCaching",
+      "visibility" : "public",
+      "methodCalls" : [ "isEnableIndexPageCaching" ]
+    }, {
+      "name" : "setPurgeRecoveredXATransactionStrategy",
+      "visibility" : "public",
+      "methodCalls" : [ "trim", "valueOf", "toUpperCase", "setPurgeRecoveredXATransactionStrategy" ]
+    }, {
+      "name" : "setCleanupOnStop",
+      "visibility" : "public",
+      "methodCalls" : [ "setCleanupOnStop" ]
+    }, {
+      "name" : "getJournalMaxWriteBatchSize",
+      "visibility" : "public",
+      "methodCalls" : [ "getJournalMaxWriteBatchSize" ]
+    }, {
+      "name" : "getPreallocationStrategy",
+      "visibility" : "public",
+      "methodCalls" : [ "getPreallocationStrategy" ]
+    }, {
+      "name" : "setArchiveDataLogs",
+      "visibility" : "public",
+      "methodCalls" : [ "setArchiveDataLogs" ]
+    }, {
+      "name" : "setEnableIndexRecoveryFile",
+      "visibility" : "public",
+      "methodCalls" : [ "setEnableIndexRecoveryFile" ]
+    }, {
+      "name" : "getJournalFilesBeingReplicated",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setJournalMaxWriteBatchSize",
+      "visibility" : "public",
+      "methodCalls" : [ "setJournalMaxWriteBatchSize" ]
+    }, {
+      "name" : "getCompactAcksAfterNoGC",
+      "visibility" : "public",
+      "methodCalls" : [ "getCompactAcksAfterNoGC" ]
+    }, {
+      "name" : "getJournalMaxFileLength",
+      "visibility" : "public",
+      "methodCalls" : [ "getJournalMaxFileLength" ]
+    }, {
+      "name" : "setIndexDirectory",
+      "visibility" : "public",
+      "methodCalls" : [ "setIndexDirectory" ]
+    }, {
+      "name" : "isCheckForCorruptJournalFiles",
+      "visibility" : "public",
+      "methodCalls" : [ "isCheckForCorruptJournalFiles" ]
+    }, {
+      "name" : "getLastAck",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "isEnableIndexDiskSyncs",
+      "visibility" : "public",
+      "methodCalls" : [ "isEnableIndexDiskSyncs" ]
+    }, {
+      "name" : "getIndexDirectory",
+      "visibility" : "public",
+      "methodCalls" : [ "getIndexDirectory" ]
+    }, {
+      "name" : "getPageFile",
+      "visibility" : "public",
+      "methodCalls" : [ "createPageFile" ]
+    }, {
+      "name" : "getPersistenceAdapterStatistics",
+      "visibility" : "public",
+      "methodCalls" : [ "getPersistenceAdapterStatistics" ]
+    }, {
+      "name" : "isEnableIndexRecoveryFile",
+      "visibility" : "public",
+      "methodCalls" : [ "isEnableIndexRecoveryFile" ]
+    }, {
+      "name" : "incrementalRecover",
+      "visibility" : "public",
+      "methodCalls" : [ "lock", "process", "getNextLocation", "writeLock", "load", "unlock" ]
+    }, {
+      "name" : "isCompactAcksIgnoresStoreGrowth",
+      "visibility" : "public",
+      "methodCalls" : [ "isCompactAcksIgnoresStoreGrowth" ]
+    }, {
+      "name" : "setIndexLFUEvictionFactor",
+      "visibility" : "public",
+      "methodCalls" : [ "setIndexLFUEvictionFactor" ]
+    }, {
+      "name" : "setBrokerService",
+      "visibility" : "public",
+      "methodCalls" : [ "getBrokerContext", "getBrokerId", "getRegionBroker", "compareAndSet", "executePeriodically", "getCheckPeriod", "getVmConnectorURI", "getScheduler", "getBrokerService", "setBrokerService" ]
+    }, {
+      "name" : "setChecksumJournalFiles",
+      "visibility" : "public",
+      "methodCalls" : [ "setChecksumJournalFiles" ]
+    }, {
+      "name" : "isFailIfDatabaseIsLocked",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isEnableAckCompaction",
+      "visibility" : "public",
+      "methodCalls" : [ "isEnableAckCompaction" ]
+    }, {
+      "name" : "store",
+      "visibility" : "public",
+      "methodCalls" : [ "addWriteTime", "set", "addSlowWriteTime", "type", "isJournalDiskSyncPeriodic", "isInfoEnabled", "readLock", "unlock", "error", "isEnableIndexDiskSyncs", "write", "toByteSequence", "lock", "currentTimeMillis", "process", "handleIOException", "info", "startCheckpoint", "isAlive", "run", "close", "get", "openOutputStream", "writePayload", "getPage", "store" ]
+    }, {
+      "name" : "setIndexCacheSize",
+      "visibility" : "public",
+      "methodCalls" : [ "setIndexCacheSize" ]
+    }, {
+      "name" : "getJournalDiskSyncStrategy",
+      "visibility" : "public",
+      "methodCalls" : [ "name", "getJournalDiskSyncStrategy" ]
+    }, {
+      "name" : "load",
+      "visibility" : "public",
+      "methodCalls" : [ "isCleanShutdown", "computeIfAbsent", "obtained", "setDebug", "writeLock", "setMessage", "isInfoEnabled", "currentTimeMillis", "lock", "setCheckForCorruptionOnStartup", "unlock", "addSlowReadTime", "getPageFile", "addReadTime", "archive", "info", "isArchiveCorruptedIndex", "getJournal", "startCheckpoint", "copy", "assertLoaded", "addToCache", "readByte", "valueOf", "openInputStream", "getPage", "read", "getRawData", "createMessage", "readPage", "mergeFramed", "close", "getFromCache", "readPayload", "unload", "open", "delete", "getStoreOpenWireVersion", "setVersion", "getParentFile", "setFileTypeVersion", "getFreePages", "compareAndSet", "load", "storeNode", "createNode", "getType", "debug", "set", "get", "getPageId", "store", "setFailIfDatabaseIsLocked", "setDirectory", "allocate", "clear", "start", "warn", "setValueMarshaller", "setKeyMarshaller", "setTailPageId", "setHeadPageId", "onLoad", "loadNode", "getNext", "size", "getHeadPageId", "addAndGet", "getPageSize", "getLFUEvictionFactor", "getFreeFile", "setFileType", "mkdirs", "getLastTxId", "setCleanShutdown", "setFreePages", "setLastTxId", "getRecoveryFile", "isUseLFRUEviction", "setPageSize", "getName", "length", "toString", "synchronizedMap" ]
+    }, {
+      "name" : "setArchiveCorruptedIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "setArchiveCorruptedIndex" ]
+    }, {
+      "name" : "open",
+      "visibility" : "public",
+      "methodCalls" : [ "warn", "delete", "configureMetadata", "archive", "getJournal", "start", "info", "isDebugEnabled", "unload", "compareAndSet", "getConsumerId", "isClosed", "getConnection", "registerSender", "getPrefetchExtension", "lookupPrefetchSubscription", "getSessionId", "sendToActiveMQ", "debug", "setIncomingCapacity", "open", "getEndpoint", "setContext" ]
+    }, {
+      "name" : "setCleanupInterval",
+      "visibility" : "public",
+      "methodCalls" : [ "setCleanupInterval" ]
+    }, {
+      "name" : "isChecksumJournalFiles",
+      "visibility" : "public",
+      "methodCalls" : [ "isChecksumJournalFiles" ]
+    }, {
+      "name" : "setMaxFailoverProducersToTrack",
+      "visibility" : "public",
+      "methodCalls" : [ "setMaximumNumberOfProducersToTrack", "setMaxFailoverProducersToTrack" ]
+    }, {
+      "name" : "setJournalDiskSyncStrategy",
+      "visibility" : "public",
+      "methodCalls" : [ "valueOf", "trim", "toUpperCase", "setJournalDiskSyncStrategy" ]
+    }, {
+      "name" : "setJournalDiskSyncInterval",
+      "visibility" : "public",
+      "methodCalls" : [ "setJournalDiskSyncInterval" ]
+    }, {
+      "name" : "getFailoverProducersAuditDepth",
+      "visibility" : "public",
+      "methodCalls" : [ "getAuditDepth", "getFailoverProducersAuditDepth" ]
+    }, {
+      "name" : "setEnableIndexWriteAsync",
+      "visibility" : "public",
+      "methodCalls" : [ "setEnableIndexWriteAsync" ]
+    }, {
+      "name" : "setEnableIndexPageCaching",
+      "visibility" : "public",
+      "methodCalls" : [ "setEnableIndexPageCaching" ]
+    }, {
+      "name" : "setJournalMaxFileLength",
+      "visibility" : "public",
+      "methodCalls" : [ "setJournalMaxFileLength" ]
+    }, {
+      "name" : "isEnableSubscriptionStatistics",
+      "visibility" : "public",
+      "methodCalls" : [ "isEnableSubscriptionStatistics" ]
+    }, {
+      "name" : "setUseIndexLFRUEviction",
+      "visibility" : "public",
+      "methodCalls" : [ "setUseIndexLFRUEviction" ]
+    }, {
+      "name" : "getCleanupInterval",
+      "visibility" : "public",
+      "methodCalls" : [ "getCleanupInterval" ]
+    }, {
+      "name" : "setEnableSubscriptionStatistics",
+      "visibility" : "public",
+      "methodCalls" : [ "setEnableSubscriptionStatistics" ]
+    }, {
+      "name" : "isIgnoreMissingJournalfiles",
+      "visibility" : "public",
+      "methodCalls" : [ "isIgnoreMissingJournalfiles" ]
+    }, {
+      "name" : "getCheckpointInterval",
+      "visibility" : "public",
+      "methodCalls" : [ "getCheckpointInterval" ]
+    }, {
+      "name" : "doStop",
+      "visibility" : "public",
+      "methodCalls" : [ "unlock", "unload", "toString", "stop", "getBrokerObjectName", "createPersistenceAdapterName", "isUseJmx", "unregisterMBean", "getManagementContext", "clear", "tryAcquire", "shutdownNow", "values", "drainPermits", "info", "doStop", "closeDataSource", "getDataSource", "cancel", "rollback", "isRestartRequested", "getBrokerService", "close", "debug", "warn" ]
+    }, {
+      "name" : "setCompactAcksAfterNoGC",
+      "visibility" : "public",
+      "methodCalls" : [ "setCompactAcksAfterNoGC" ]
+    }, {
+      "name" : "setDirectoryArchive",
+      "visibility" : "public",
+      "methodCalls" : [ "setDirectoryArchive" ]
+    }, {
+      "name" : "doStart",
+      "visibility" : "public",
+      "methodCalls" : [ "configureMetadata", "connect", "isStopped", "lock", "load", "createPersistenceAdapterName", "getFileMap", "setPersistenceAdapterStatistics", "isUseJmx", "setDataViewCallable", "getTransactions", "getBrokerObjectName", "setInflightTransactionViewCallable", "getJournal", "registerMBean", "getManagementContext", "toString", "keySet", "debug", "handle", "info", "getStatements", "initTimeDiff", "close", "sleep", "executeUpdate", "getLockKeepAlivePeriod", "prepareStatement", "execute", "setQueryTimeout", "getLeaseHolderId", "setLong", "next", "executeQuery", "error", "currentTimeMillis", "getLockCreateStatement", "setAutoCommit", "rollback", "getLeaseObtainStatement", "keepAlive", "getClass", "setString", "warn", "getCanonicalName", "isStopping", "getMetaData", "getConnection", "cleanup", "createMessageAudit", "getStoreOpenWireVersion", "scheduleWithFixedDelay", "setVersion", "getScheduledThreadPoolExecutor", "getDestination", "start", "chooseValue", "isPerDestination", "doStart", "setDaemon", "getMaxAsyncJobs", "setStoreOpenWireVersion" ]
+    }, {
+      "name" : "setEnableAckCompaction",
+      "visibility" : "public",
+      "methodCalls" : [ "setEnableAckCompaction" ]
+    }, {
+      "name" : "setPreallocationScope",
+      "visibility" : "public",
+      "methodCalls" : [ "setPreallocationScope" ]
+    }, {
+      "name" : "unload",
+      "visibility" : "public",
+      "methodCalls" : [ "getInProgressTxLocationRange", "writeLock", "setState", "join", "lock", "execute", "unload", "tx", "info", "checkpointUpdate", "getCleanupOnStop", "getPage", "values", "unlock", "isLoaded", "setLastTxId", "setCleanShutdown", "clear", "flush", "isEmpty", "setFreePages", "size", "close", "get", "warn", "stop", "store", "compareAndSet" ]
+    }, {
+      "name" : "setPreallocationStrategy",
+      "visibility" : "public",
+      "methodCalls" : [ "setPreallocationStrategy" ]
+    }, {
+      "name" : "close",
+      "visibility" : "public",
+      "methodCalls" : [ "setPriority", "closeConsumers", "finish", "println", "flushBlock", "isInXATransaction", "asyncSendPacket", "closeOutbound", "socket", "isOpen", "shutdownInput", "addIoTask", "doClose", "isInTransaction", "isEmpty", "getTransactionContext", "addSynchronization", "syncSendPacket", "getLastDeliveredSequenceId", "stop", "createRemoveCommand", "doStop", "removeConnection", "getCause", "max", "shutdown", "convertToJMSRuntimeException", "decrementAndGet", "decreaseUsage", "get", "removeNetworkDestinationView", "writeLock", "lock", "getCleanupOnStop", "cancel", "shutdownGraceful", "unload", "notifyAll", "countDown", "await", "create", "handleIOException", "commit", "getAutoCommit", "unlock", "log", "getBrokerService", "values", "dispose", "proxyClosedEvent", "decrementReferenceCount", "cleanupAllLoanedSessions", "sessionClosed", "cleanup", "cleanupConnectionTemporaryDestinations", "iterator", "hasNext", "invalidateObject", "onSessionClosed", "next", "rollback", "getInternalSession", "initCause", "warn", "returnObject", "trace", "compareAndSet", "toString", "setMessageListener", "run", "getEndpoint", "free", "setTarget", "clear", "setCondition", "setContext", "close", "setSource", "sendToActiveMQ", "debug", "getSessionId", "unregisterSender", "getConnectionId", "isClosed", "isDurable", "getName", "setSubscriptionName", "getConnection", "getConsumerId", "setClientId", "isOpened", "setConnectionId", "getProducerId", "setLastDeliveredSequenceId", "getClientId", "getMessage", "release", "isDebugEnabled", "interrupt", "currentThread", "setTimeToLive", "set", "setDisableMessageTimestamp", "onConsumerClose", "closeSessions", "setDeliveryMode", "wait", "setDisableMessageID" ]
+    }, {
+      "name" : "getIndexLFUEvictionFactor",
+      "visibility" : "public",
+      "methodCalls" : [ "getIndexLFUEvictionFactor" ]
+    }, {
+      "name" : "setEnableIndexDiskSyncs",
+      "visibility" : "public",
+      "methodCalls" : [ "setEnableIndexDiskSyncs" ]
+    }, {
+      "name" : "setEnableJournalDiskSyncs",
+      "visibility" : "public",
+      "methodCalls" : [ "setEnableJournalDiskSyncs" ]
+    }, {
+      "name" : "isArchiveDataLogs",
+      "visibility" : "public",
+      "methodCalls" : [ "isArchiveDataLogs" ]
+    }, {
+      "name" : "getDirectoryArchive",
+      "visibility" : "public",
+      "methodCalls" : [ "getAbsolutePath", "getDirectoryArchive" ]
+    }, {
+      "name" : "getInProgressTxLocationRange",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "values" ]
+    }, {
+      "name" : "getIndexCacheSize",
+      "visibility" : "public",
+      "methodCalls" : [ "getIndexCacheSize" ]
+    }, {
+      "name" : "setCompactAcksIgnoresStoreGrowth",
+      "visibility" : "public",
+      "methodCalls" : [ "setCompactAcksIgnoresStoreGrowth" ]
+    }, {
+      "name" : "isUseIndexLFRUEviction",
+      "visibility" : "public",
+      "methodCalls" : [ "isUseIndexLFRUEviction" ]
+    }, {
+      "name" : "getIndexWriteBatchSize",
+      "visibility" : "public",
+      "methodCalls" : [ "getIndexWriteBatchSize" ]
+    }, {
+      "name" : "getDirectory",
+      "visibility" : "public",
+      "methodCalls" : [ "getDirectory", "getBrokerDataDirectory" ]
+    }, {
+      "name" : "isEnableJournalDiskSyncs",
+      "visibility" : "public",
+      "methodCalls" : [ "isEnableJournalDiskSyncs" ]
+    }, {
+      "name" : "getJournalDiskSyncInterval",
+      "visibility" : "public",
+      "methodCalls" : [ "getJournalDiskSyncInterval" ]
+    }, {
+      "name" : "getPurgeRecoveredXATransactionStrategyEnum",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "toByteSequence",
+      "visibility" : "public",
+      "methodCalls" : [ "writeFramed", "writeByte", "toByteSequence", "type", "getNumber", "serializedSizeFramed" ]
+    }, {
+      "name" : "isArchiveCorruptedIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "isArchiveCorruptedIndex" ]
+    }, {
+      "name" : "getPreallocationScope",
+      "visibility" : "public",
+      "methodCalls" : [ "getPreallocationScope" ]
+    }, {
+      "name" : "setFailoverProducersAuditDepth",
+      "visibility" : "public",
+      "methodCalls" : [ "setAuditDepth", "setFailoverProducersAuditDepth" ]
+    }, {
+      "name" : "getTransactions",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "add", "entrySet", "track", "isEmpty", "getValue", "getKey" ]
+    }, {
+      "name" : "setFailIfDatabaseIsLocked",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCheckpointInterval",
+      "visibility" : "public",
+      "methodCalls" : [ "setCheckpointInterval" ]
+    }, {
+      "name" : "setIndexWriteBatchSize",
+      "visibility" : "public",
+      "methodCalls" : [ "setIndexWriteBatchSize" ]
+    }, {
+      "name" : "allowIOResumption",
+      "visibility" : "public",
+      "methodCalls" : [ "allowIOResumption", "set" ]
+    }, {
+      "name" : "getJournal",
+      "visibility" : "public",
+      "methodCalls" : [ "createJournal" ]
+    }, {
+      "name" : "setIgnoreMissingJournalfiles",
+      "visibility" : "public",
+      "methodCalls" : [ "setIgnoreMissingJournalfiles" ]
+    }, {
+      "name" : "isDeleteAllMessages",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    } ],
+    "imports" : [ "org.apache.activemq.store.kahadb.data.KahaTransactionInfo", "org.apache.activemq.store.TopicMessageStore", "java.util.concurrent.atomic.AtomicLong", "java.util.Map.Entry", "org.apache.activemq.protobuf.Buffer", "java.io.InputStream", "java.util.concurrent.ThreadFactory", "org.apache.activemq.store.kahadb.disk.page.Page", "org.apache.activemq.util.IOHelper", "org.apache.activemq.store.kahadb.data.KahaDestination", "java.util.Set", "org.apache.activemq.store.kahadb.disk.journal.DataFile", "org.apache.activemq.util.ServiceStopper", "java.io.DataOutput", "org.apache.activemq.store.kahadb.data.KahaSubscriptionCommand", "org.slf4j.LoggerFactory", "org.apache.activemq.command.TransactionId", "java.io.ByteArrayInputStream", "org.apache.activemq.store.kahadb.disk.journal.Location.NOT_SET", "org.apache.activemq.util.IOExceptionSupport", "org.apache.activemq.store.kahadb.data.KahaRewrittenDataFileCommand", "java.io.ObjectOutputStream", "java.util.LinkedHashSet", "org.apache.activemq.store.MessageStoreStatistics", "java.util.HashMap", "org.apache.activemq.store.kahadb.disk.journal.Journal", "org.apache.activemq.store.kahadb.data.KahaProducerAuditCommand", "org.apache.activemq.store.kahadb.data.KahaRemoveMessageCommand", "java.io.InvalidClassException", "java.util.concurrent.atomic.AtomicReference", "org.apache.activemq.store.kahadb.disk.journal.Location", "org.slf4j.Logger", "java.io.ObjectInputStream", "java.util.LinkedHashMap", "org.apache.activemq.openwire.OpenWireFormat", "org.apache.activemq.store.kahadb.disk.util.Marshaller", "org.apache.activemq.store.kahadb.data.KahaAckMessageFileMapCommand", "org.apache.activemq.util.ByteSequence", "org.apache.activemq.broker.BrokerServiceAware", "org.apache.activemq.store.kahadb.disk.journal.Journal.JournalDiskSyncStrategy", "org.apache.activemq.util.ThreadPoolUtils", "java.util.concurrent.ConcurrentMap", "org.apache.activemq.store.kahadb.data.KahaUpdateMessageCommand", "java.util.Collections", "org.apache.activemq.util.DataByteArrayInputStream", "java.util.List", "org.apache.activemq.store.kahadb.data.KahaRemoveDestinationCommand", "org.apache.activemq.store.kahadb.data.KahaTraceCommand", "java.util.HashSet", "java.io.File", "java.io.DataInput", "java.util.ArrayList", "java.io.OutputStream", "org.apache.activemq.store.kahadb.disk.journal.TargetedDataFileAppender", "org.apache.activemq.store.PersistenceAdapterStatistics", "org.apache.activemq.store.kahadb.disk.index.BTreeIndex", "org.apache.activemq.store.kahadb.disk.index.BTreeVisitor", "java.util.SortedSet", "org.apache.activemq.store.kahadb.disk.util.SequenceSet", "org.apache.activemq.store.kahadb.disk.util.VariableMarshaller", "java.util.Arrays", "java.util.concurrent.TimeUnit", "java.util.concurrent.ScheduledExecutorService", "org.apache.activemq.broker.BrokerService", "org.apache.activemq.store.kahadb.disk.page.PageFile", "java.util.concurrent.ConcurrentHashMap", "org.apache.activemq.store.kahadb.disk.util.LocationMarshaller", "org.apache.activemq.broker.region.Topic", "org.apache.activemq.store.kahadb.disk.util.Sequence", "org.apache.activemq.store.kahadb.disk.index.ListIndex", "org.apache.activemq.util.DataByteArrayOutputStream", "java.util.concurrent.atomic.AtomicBoolean", "org.apache.activemq.broker.region.Destination", "java.util.concurrent.Executors", "org.apache.activemq.store.kahadb.data.KahaAddMessageCommand", "org.apache.activemq.store.MessageStore", "java.util.Iterator", "org.apache.activemq.ActiveMQMessageAuditNoSync", "org.apache.activemq.store.kahadb.data.KahaCommitCommand", "java.util.Date", "java.util.Map", "org.apache.activemq.store.kahadb.data.KahaPrepareCommand", "org.apache.activemq.store.kahadb.data.KahaEntryType", "java.util.TreeSet", "java.io.ByteArrayOutputStream", "org.apache.activemq.broker.region.Queue", "java.io.InterruptedIOException", "org.slf4j.MDC", "org.apache.activemq.store.kahadb.disk.page.Transaction", "org.apache.activemq.store.kahadb.data.KahaRollbackCommand", "org.apache.activemq.store.MessageStoreSubscriptionStatistics", "java.io.EOFException", "org.apache.activemq.store.kahadb.disk.util.StringMarshaller", "java.util.LinkedList", "java.util.concurrent.locks.ReentrantReadWriteLock", "org.apache.activemq.store.kahadb.disk.util.LongMarshaller", "java.io.IOException", "java.io.ObjectStreamClass", "java.util.Collection", "org.apache.activemq.util.ServiceSupport" ]
+  } ]
+}

@@ -1,0 +1,1057 @@
+{
+  "systemName" : "rewrite",
+  "classes" : [ {
+    "name" : "Builder",
+    "packageName" : "org.openrewrite.properties",
+    "extendedClasses" : [ "Builder" ],
+    "implementedInterfaces" : [ "Cloneable" ],
+    "methods" : [ {
+      "name" : "username",
+      "visibility" : "public",
+      "methodCalls" : [ "startsWith" ]
+    }, {
+      "name" : "settingsClasspathFromResources",
+      "visibility" : "public",
+      "methodCalls" : [ "dependenciesFromResources" ]
+    }, {
+      "name" : "buildscriptClasspath",
+      "visibility" : "public",
+      "methodCalls" : [ "dependenciesFromClasspath" ]
+    }, {
+      "name" : "buildscriptClasspathFromResources",
+      "visibility" : "public",
+      "methodCalls" : [ "dependenciesFromResources" ]
+    }, {
+      "name" : "groovyParser",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "settingsClasspath",
+      "visibility" : "public",
+      "methodCalls" : [ "dependenciesFromClasspath" ]
+    }, {
+      "name" : "kotlinParser",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "loggingSink",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "meterIdPrinter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "baseTimeUnit",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitor",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withConnectTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withJsonContent",
+      "visibility" : "public",
+      "methodCalls" : [ "withContent" ]
+    }, {
+      "name" : "withContent",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "randomId", "contains", "substring", "getPrefix", "withClosing", "max", "isEmpty", "lastIndexOf", "getBytes", "withContent", "withHeader" ]
+    }, {
+      "name" : "withPlainText",
+      "visibility" : "public",
+      "methodCalls" : [ "withContent" ]
+    }, {
+      "name" : "compressWhen",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "compress" ]
+    }, {
+      "name" : "withAuthentication",
+      "visibility" : "public",
+      "methodCalls" : [ "withHeader", "isNotBlank" ]
+    }, {
+      "name" : "accept",
+      "visibility" : "public",
+      "methodCalls" : [ "visitDotOperator", "visitDeclSep", "visitElement", "visitString", "visitChardata", "visitXmldecl", "visitComment", "visitMisc", "visitInteger", "visitCommentOrNl", "visitExternalid", "visitContent", "visitTable", "visitProlog", "visitUnquotedKey", "visitArrayTable", "visitDocument", "visitIntsubset", "visitSimpleKey", "visitInlineTable", "visitReference", "visitProcessinginstruction", "visitKeyValue", "visitBool", "visitDottedKey", "visitDoctypedecl", "visitMarkupdecl", "visitStandardTable", "visitQuotedKey", "visitArray", "visitFloatingPoint", "visitJspdirective", "visitDateTime", "acceptProperties", "acceptToml", "acceptXml", "substring", "length", "lastIndexOf", "contains", "addCompilationCustomizers", "addStarImports", "visitTopLevelDef", "visitEnumDefinition", "visitService", "visitRpc", "visitIdent", "visitConstant", "visitFullyQualifiedType", "visitEmptyStatement", "visitMessageField", "visitKeyType", "visitMessage", "visitFieldNames", "visitExtend", "visitMapField", "visitServiceBody", "visitSyntax", "visitRanges", "visitRpcBody", "visitPackageStatement", "visitIdentOrReserved", "visitField", "visitImportStatement", "visitProto", "visitMessageBody", "visitPrimitiveType", "visitOptionList", "visitEnumField", "visitOption", "visitOneOf", "visitOptionDef", "visitReservedWord", "visitRpcInOut", "visitReserved", "visitEnumBody", "visitFullIdent", "visitOptionName", "visitObj", "visitJson5", "acceptProto", "visitMember", "visitKey", "visitNumber", "visitArr", "visitValue", "acceptJson", "sneakyThrow", "accept0", "withHeader", "getPath", "defaultValue", "visitParseError", "isSynthetic", "visitText", "visitSnippet", "visitQuark", "visitRemote", "visitBinary", "visitPrimary", "visitAnnotationName", "visitElementValuePairs", "visitElementValuePair", "visitElementValue", "visitClassOrInterfaceType", "visitLiteral", "visitAnnotation", "visitQualifiedName", "visitFormalsPattern", "visitFormalsPatternAfterDotDot", "visitMethodPattern", "visitFormalTypePattern", "visitOptionalParensTypePattern", "visitTargetTypePattern", "visitClassNameOrInterface", "visitFormalParametersPattern", "visitSimpleNamePattern", "visitDotDot", "visitTypedPattern", "visitTypeName", "visitGenericPattern", "visitMatcherName", "visitParameterName", "visitGenericName", "visitTypeParameter", "visitMatcherPattern", "visitTypeArray", "visitType", "visitVariance", "visitPatternType", "acceptJava", "isStatic", "acceptJavadoc", "startsWith", "getName", "toFile", "acceptGroovy", "acceptYaml", "visitCollectionValueExpression", "visitVariableExpr", "visitFunctionCall", "visitOperation", "visitArguments", "visitLegacyIndexAttributeExpression", "visitHeredocLiteral", "visitLogicOperator", "visitQuotedTemplatePart", "visitArithmeticOperator", "visitBlockExpr", "visitAttribute", "visitForTupleExpr", "visitHeredoc", "visitSplat", "visitSplatExpression", "visitForExpression", "visitStringLiteral", "visitForExpr", "visitForIntro", "visitExpressionTerm", "visitIndex", "visitCompareOperator", "visitForObjectExpr", "visitHeredocTemplatePart", "visitIndexAccessExpression", "visitConditionalExpression", "visitBlockLabel", "visitObject", "visitAttrSplat", "visitFullSplat", "visitConfigFile", "visitBinaryOperator", "visitCollectionValue", "visitVariableExpression", "visitTuple", "visitFunctionCallExpression", "visitGetAttr", "visitForCond", "visitBodyContent", "visitLegacyIndexAttr", "visitLiteralValue", "visitParentheticalExpression", "visitTemplateExpression", "visitBlock", "visitUnaryOp", "visitBody", "visitBinaryOp", "visitOperationExpression", "visitObjectelem", "visitAttributeAccessExpression", "visitQuotedTemplate", "visitTemplateInterpolation", "acceptHcl", "visitContainsExpression", "visitJsonPath", "visitProperty", "visitFilterExpression", "visitRegexExpression", "visitEnd", "visitRecursiveDecent", "visitBinaryExpression", "visitSlice", "visitLiteralExpression", "equals", "toString", "endsWith", "accept", "visitVersionRequirement", "visitVersion", "visitRange", "visitUnboundedLower", "visitExactly", "visitBoundedLower", "visitBounds", "visitChildren", "getAlias", "matches", "getElement", "getQualid", "matcher", "printTrimmed", "acceptKotlin", "adapt", "visitUnaryExpression", "visitBracketOperator", "visitFilter", "visitIndexes", "visitStart", "visitWildcard", "visitExpression" ]
+    }, {
+      "name" : "withMultipartContent",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "getBytes", "append" ]
+    }, {
+      "name" : "withMultipartFile",
+      "visibility" : "public",
+      "methodCalls" : [ "withMultipartFile", "toPath" ]
+    }, {
+      "name" : "compress",
+      "visibility" : "public",
+      "methodCalls" : [ "withHeader" ]
+    }, {
+      "name" : "url",
+      "visibility" : "public",
+      "methodCalls" : [ "create", "toURL" ]
+    }, {
+      "name" : "withBasicAuthentication",
+      "visibility" : "public",
+      "methodCalls" : [ "withAuthentication", "trim", "isNotBlank", "getEncoder", "encodeToString", "getBytes" ]
+    }, {
+      "name" : "acceptJson",
+      "visibility" : "public",
+      "methodCalls" : [ "visitObject", "visitMember", "visitEmpty", "visitIdentifier", "defaultValue", "visitDocument", "visitArray", "visitLiteral", "accept" ]
+    }, {
+      "name" : "send",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "getUrl", "getReadTimeout", "getConnectTimeout", "write", "build", "getRequestHeaders", "setRequestMethod", "setDoOutput", "name", "getResponseCode", "disconnect", "setRequestProperty", "getEntity", "setConnectTimeout", "getMethod", "getInputStream", "getOutputStream", "entrySet", "getErrorStream", "openConnection", "toMillis", "getValue", "setReadTimeout", "send", "flush", "getKey" ]
+    }, {
+      "name" : "withReadTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withHeader",
+      "visibility" : "public",
+      "methodCalls" : [ "put" ]
+    }, {
+      "name" : "withMethod",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "plainTextMasks",
+      "visibility" : "public",
+      "methodCalls" : [ "collect", "spliterator", "map", "getFileSystem", "plainTextMasks", "toList", "getPathMatcher", "stream" ]
+    }, {
+      "name" : "fileAttributes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "charsetBomMarked",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "checksum",
+      "visibility" : "public",
+      "methodCalls" : [ "getInstance", "withChecksum", "getSourcePath", "digest", "newInputStream", "getInputStream", "read" ]
+    }, {
+      "name" : "description",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "importStaticAllOthers",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "nameCountToUseStarImport",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "staticImportPackage",
+      "visibility" : "public",
+      "methodCalls" : [ "staticImportPackage", "add" ]
+    }, {
+      "name" : "charset",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "classCountToUseStarImport",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "staticPackageToFold",
+      "visibility" : "public",
+      "methodCalls" : [ "staticPackageToFold", "add" ]
+    }, {
+      "name" : "genericTypes",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll" ]
+    }, {
+      "name" : "staticImports",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "javaParser",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "classpathFromResource",
+      "visibility" : "public",
+      "methodCalls" : [ "dependenciesFromResources" ]
+    }, {
+      "name" : "compilerCustomizers",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "asList", "compilerCustomizers" ]
+    }, {
+      "name" : "dependsOn",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "resolveSourcePathFromSourceText", "toList", "map", "stream", "determinePath", "collect", "fromString" ]
+    }, {
+      "name" : "addClasspathEntry",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "singletonList", "contains", "add" ]
+    }, {
+      "name" : "logCompilationWarningsAndErrors",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "classpathFromResources",
+      "visibility" : "public",
+      "methodCalls" : [ "emptyList", "dependenciesFromResources" ]
+    }, {
+      "name" : "clone",
+      "visibility" : "public",
+      "methodCalls" : [ "getMessages", "computeIfPresent", "copy", "clone" ]
+    }, {
+      "name" : "languageLevel",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "typeCache",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "moduleName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "styles",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "isKotlinScript",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "classpath",
+      "visibility" : "public",
+      "methodCalls" : [ "emptyList", "asList" ]
+    }, {
+      "name" : "blankLine",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "add", "isEmpty", "size" ]
+    }, {
+      "name" : "importAliasesSeparately",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "importAllOthers",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "importAllAliases",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "importPackage",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "importPackage" ]
+    }, {
+      "name" : "javaStaticsAndEnumsToUseStarImport",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "topLevelSymbolsToUseStarImport",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "packageToFold",
+      "visibility" : "public",
+      "methodCalls" : [ "packageToFold", "add" ]
+    }, {
+      "name" : "contextSensitive",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "doAfterVariableSubstitution",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "doBeforeParseTemplate",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "imports",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "timeout",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "snapshots",
+      "visibility" : "public",
+      "methodCalls" : [ "toString" ]
+    }, {
+      "name" : "build",
+      "visibility" : "public",
+      "methodCalls" : [ "boundedLower", "getRoot", "findFirst", "orElseThrow", "parse", "getSourceFile", "getValue", "group", "matcher", "validate", "parseInt", "isInvalid", "indexOf", "invalid", "valid", "readFully", "name", "getCharset", "isCharsetBomMarked", "singletonList", "getSource", "getRelativePath", "getFileAttributes", "startsWith", "isAbsolute", "matches", "accept", "hostname", "apply", "getAllResults", "insertRow", "noop", "getTimeSavings", "getRecipeDescriptorsThatMadeChanges", "replace", "getRecipeList", "split", "getSourcePath", "getSeconds", "getAfter", "getBefore", "pop", "size", "push", "get", "sanitizeStackTrace", "getSimpleName", "getName", "isBlank", "getUsedMethods", "getVariables", "getDeclaredMethods", "getTypes", "getMarkers", "anyMatch", "isStatic", "addIfAbsent", "append", "substring", "setLength", "emptyList", "toString", "isWhitespace", "format", "isUpperCase", "charAt", "aggregate", "overrideClasspath", "put", "acceptPackages", "ignoreClassVisibility", "enableClassInfo", "add", "addAll", "scan", "gavFromPath", "enableSystemJarsAndModules", "emptyMap", "length", "computeIfAbsent", "next", "hasNext", "CLOSED_RANGE_OPEN", "getText", "equals", "toVersion", "collect", "map", "contains", "versionRequirement", "removeErrorListeners", "stream", "visit", "exactly", "CLOSED_RANGE_CLOSE", "toList", "unboundedLower", "range", "bounds", "resolvedClasspath", "iterator", "Version", "addErrorListener", "fromString", "forName", "setAccessible", "lazyInitClassLoaders", "newInstance", "getDeclaredConstructor", "clone", "getClass", "filter", "setPackageImports", "randomId", "getFormatStyle", "getSpacesStyle", "getWrappingAndBracesStyle", "getTabsAndIndentsStyle", "getImportLayoutStyle", "asList", "getOtherStyle", "build", "empty", "isEmpty" ]
+    }, {
+      "name" : "password",
+      "visibility" : "public",
+      "methodCalls" : [ "startsWith" ]
+    }, {
+      "name" : "releases",
+      "visibility" : "public",
+      "methodCalls" : [ "toString" ]
+    }, {
+      "name" : "getDslName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "property",
+      "visibility" : "public",
+      "methodCalls" : [ "setState", "enterOuterAlt", "getRuleContext", "LA", "recover", "reportError", "recoverInline", "getState", "exitRule", "consume", "reportMatch", "enterRule", "getRuleContexts", "put" ]
+    }, {
+      "name" : "skipDependencyResolution",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "activeProfiles",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll" ]
+    } ],
+    "imports" : [ "org.jspecify.annotations.NullMarked", "org.openrewrite.properties.tree.Properties", "org.openrewrite.toml.internal.TomlParserVisitor", "org.openrewrite.toml.internal.grammar.TomlLexer", "org.openrewrite.toml.tree.Toml", "io.micrometer.core.instrument.Timer", "org.openrewrite.internal.MetricsHelper", "com.sun.tools.javac.comp", "org.openrewrite.xml.internal.XmlParserVisitor", "io.micrometer.core.instrument.Metrics", "org.openrewrite.xml.internal.grammar.XMLParser", "org.openrewrite.xml.internal.grammar.XMLLexer", "org.openrewrite.gradle.internal.DefaultImportsCustomizer", "org.openrewrite.kotlin.KotlinParser", "org.openrewrite.groovy.GroovyParser", "org.openrewrite.json.tree.Json", "org.openrewrite.json.internal.grammar.JSON5Lexer", "org.openrewrite.json.internal.JsonParserVisitor", "org.openrewrite.json.internal.grammar.JSON5Parser", "org.openrewrite.protobuf.internal.grammar.Protobuf2Parser", "org.openrewrite.text.PlainText", "org.openrewrite.protobuf.internal.grammar.Protobuf2Lexer", "org.openrewrite.protobuf.tree.Proto", "org.openrewrite.protobuf.internal.ProtoParserVisitor", "io.micrometer.core.instrument.cumulative.CumulativeFunctionTimer", "io.micrometer.core.instrument", "io.micrometer.core.instrument.binder.BaseUnits", "io.micrometer.core.instrument.distribution.DistributionStatisticConfig", "io.micrometer.core.instrument.cumulative.CumulativeCounter", "java.util.concurrent.TimeUnit", "java.util.function.ToLongFunction", "io.micrometer.core.instrument.distribution.HistogramSnapshot", "io.micrometer.core.instrument.util.DoubleFormat.decimalOrNan", "io.micrometer.core.instrument.cumulative.CumulativeTimer", "io.micrometer.core.instrument.distribution.pause.PauseDetector", "io.micrometer.core.instrument.config.NamingConvention", "java.util.function.ToDoubleFunction", "io.micrometer.core.instrument.internal.DefaultGauge", "io.micrometer.core.instrument.cumulative.CumulativeDistributionSummary", "io.micrometer.core.instrument.util.TimeUtils", "io.micrometer.core.instrument.internal.DefaultLongTaskTimer", "lombok.Setter", "java.lang.reflect.Field", "org.openrewrite.internal.RecipeIntrospectionUtils", "org.openrewrite.config", "java.net.URISyntaxException", "com.fasterxml.jackson.annotation.JsonTypeInfo", "org.openrewrite.table.RecipeRunStats", "org.openrewrite.table.SourcesFileResults", "java.lang.reflect.Method", "org.openrewrite.internal.lang.NullUtils", "com.fasterxml.jackson.annotation.JsonPropertyOrder", "org.openrewrite.table.SourcesFileErrors", "org.openrewrite.internal.RecipeIntrospectionUtils.dataTableDescriptorFromDataTable", "java.lang.reflect.Parameter", "io.micrometer.core.instrument.util.StringUtils", "java.util.zip.GZIPOutputStream", "java.util.Objects", "java.util.function.Supplier", "io.micrometer.core.lang.Nullable", "java.nio.file.PathMatcher", "java.nio.file", "java.nio.file.attribute.BasicFileAttributes", "java.util.Arrays", "java.util.UUID", "org.openrewrite.java.search.UsesMethod", "java.util.Arrays.asList", "java.util.Objects.requireNonNull", "com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder", "org.openrewrite.java.search.DeclaresMethod", "org.openrewrite.java.JavaStyle", "org.openrewrite.java.internal.parser.JavaParserClasspathLoader", "org.openrewrite.java.internal.parser.RewriteClasspathJarClasspathLoader", "java.util.stream.Collectors.joining", "org.openrewrite.java.internal.parser.TypeTable", "org.openrewrite.java.JavaPrinter", "io.github.classgraph.ClassGraph", "org.openrewrite.groovy.internal.template.GroovySubstitutions", "org.openrewrite.groovy.internal.template.GroovyTemplateParser", "org.openrewrite.java.internal.template.JavaTemplateParser", "java.io.InputStream", "org.openrewrite.java.tree.Expression", "org.openrewrite.Incubating", "org.openrewrite.java.internal.template.JavaTemplateJavaExtension", "java.nio.file.Files", "java.io.StringWriter", "java.io.PrintWriter", "org.codehaus.groovy.ast.ClassNode", "org.codehaus.groovy.control", "org.openrewrite.groovy.tree.G", "org.codehaus.groovy.ast.ModuleNode", "org.codehaus.groovy.transform.stc.StaticTypeCheckingVisitor", "groovy.lang.GroovyClassLoader", "org.codehaus.groovy.control.messages.WarningMessage", "org.codehaus.groovy.control.io.InputStreamReaderSource", "org.yaml.snakeyaml.reader.StreamReader", "org.openrewrite.yaml.tree.Yaml", "org.yaml.snakeyaml.scanner.Scanner", "lombok.Value", "org.yaml.snakeyaml.parser.ParserImpl", "org.yaml.snakeyaml.scanner.ScannerImpl", "org.openrewrite.FileAttributes", "org.yaml.snakeyaml.events", "org.yaml.snakeyaml.LoaderOptions", "org.yaml.snakeyaml.parser.Parser", "org.openrewrite.yaml.tree.YamlKey", "org.openrewrite.hcl.tree", "org.openrewrite.hcl.format.AttributeSpaceVisitor", "org.openrewrite.hcl.style.SpacesStyle", "java.util.Optional", "org.openrewrite.style.Style", "org.openrewrite.Tree", "org.openrewrite.hcl.internal.template.HclTemplateParser", "org.openrewrite.hcl.internal.template.Substitutions", "org.openrewrite.template.SourceTemplate", "org.openrewrite.hcl.tree.Hcl", "org.openrewrite.Parser", "org.openrewrite.hcl.internal.grammar.HCLLexer", "org.openrewrite.hcl.internal.grammar.HCLParser", "org.openrewrite.internal.EncodingDetectingInputStream", "java.util.ArrayList", "org.antlr.v4.runtime", "org.openrewrite.hcl.internal.HclParserVisitor", "java.util.List", "org.openrewrite.kotlin.KotlinParser.SourcePathFromSourceTextResolver.determinePath", "org.jetbrains.kotlin.com.intellij.psi.search.GlobalSearchScope", "org.jetbrains.kotlin.com.intellij.psi.PsiManager", "org.openrewrite.java.marker.JavaSourceSet", "org.jetbrains.kotlin.resolve.jvm.platform.JvmPlatformAnalyzerServices", "org.jetbrains.kotlin.com.intellij.openapi.Disposable", "org.jetbrains.kotlin.cli.common.messages.MessageCollector", "org.jetbrains.kotlin.incremental.IncrementalFirJvmCompilerRunnerKt.configureBaseRoots", "java.util.function.Function", "org.openrewrite.kotlin.internal.KotlinTreeParserVisitor", "org.jetbrains.kotlin.fir.session.FirSessionFactoryHelper", "java.nio.charset.StandardCharsets", "org.jetbrains.kotlin.fir.FirSession", "org.jetbrains.kotlin.fir.java.FirProjectSessionProvider", "org.openrewrite.kotlin.internal.PsiElementAssociations", "org.openrewrite.kotlin.tree.K", "org.jetbrains.kotlin.modules.Module", "org.jetbrains.kotlin.idea.KotlinLanguage", "java.util.regex.Matcher", "org.jetbrains.kotlin.cli.jvm.JvmArgumentsKt", "org.jetbrains.kotlin.com.intellij.openapi.util.Disposer", "org.jetbrains.kotlin.fir.resolve.ScopeSession", "org.jetbrains.kotlin.com.intellij.testFramework.LightVirtualFile", "org.openrewrite.kotlin.internal.KotlinSource", "org.jetbrains.kotlin.com.intellij.openapi.vfs.VirtualFileManager", "kotlin.Unit", "org.jetbrains.kotlin.load.kotlin.PackagePartProvider", "org.jetbrains.kotlin.config.JVMConfigurationKeys.DO_NOT_CLEAR_BINDING_CONTEXT", "kotlin.annotation.AnnotationTarget", "java.io.ByteArrayInputStream", "org.jetbrains.kotlin.fir.DependencyListForCliModule", "org.jetbrains.kotlin.fir.session.FirSessionConfigurator", "org.jetbrains.kotlin.cli.jvm.K2JVMCompilerKt.configureModuleChunk", "org.jetbrains.kotlin.cli.common.messages.MessageRenderer.PLAIN_FULL_PATHS", "kotlin.jvm.functions.Function1", "org.jetbrains.kotlin.com.intellij.psi.SingleRootFileViewProvider", "org.jetbrains.kotlin.fir.declarations.FirFile", "org.jetbrains.kotlin.cli.common.messages.AnalyzerWithCompilerReport", "org.jetbrains.kotlin.fir.pipeline.AnalyseKt", "org.jetbrains.kotlin.cli.jvm.compiler.EnvironmentConfigFiles", "org.jetbrains.kotlin.config", "org.jetbrains.kotlin.cli.jvm.compiler.VfsBasedProjectEnvironment", "org.jetbrains.kotlin.com.intellij.openapi.vfs.StandardFileSystems", "org.jetbrains.kotlin.cli.common.arguments.K2JVMCompilerArguments", "org.jetbrains.kotlin.cli.common.messages.PrintingMessageCollector", "org.jetbrains.kotlin.config.CommonConfigurationKeys", "org.jetbrains.kotlin.KtRealPsiSourceElement", "org.jetbrains.kotlin.fir.session.environment.AbstractProjectFileSearchScope", "org.jetbrains.kotlin.fir.pipeline.FirUtilsKt", "org.jetbrains.kotlin.idea.KotlinFileType", "lombok.AccessLevel", "org.jetbrains.kotlin.utils.PathUtil", "org.jetbrains.kotlin.com.intellij.openapi.vfs.VirtualFile", "org.jetbrains.kotlin.config.JVMConfigurationKeys.LINK_VIA_SIGNATURES", "org.jetbrains.kotlin.cli.common.CLIConfigurationKeys.MESSAGE_COLLECTOR_KEY", "org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment", "kotlin.Pair", "org.jetbrains.kotlin.platform.jvm.JvmPlatforms", "org.jetbrains.kotlin.com.intellij.openapi.util.text.StringUtilRt", "org.jetbrains.kotlin.com.intellij.psi.FileViewProvider", "org.jetbrains.kotlin.cli.jvm.config.JvmContentRootsKt", "org.jetbrains.kotlin.psi.KtFile", "org.jetbrains.kotlin.com.intellij.psi.PsiElement", "org.jetbrains.kotlin.name.Name", "org.openrewrite.kotlin.internal.CompiledSource", "java.net.MalformedURLException", "java.net.URLClassLoader", "java.net.URL", "java.util.regex.Pattern", "java.util.Collections.singletonList", "org.openrewrite.kotlin.internal.KotlinPrinter", "com.fasterxml.jackson.databind.jsontype.TypeSerializer", "org.openrewrite.kotlin.KotlinStyle", "com.fasterxml.jackson.databind.SerializerProvider", "com.fasterxml.jackson.databind.annotation.JsonSerialize", "java.io.IOException", "com.fasterxml.jackson.databind.annotation.JsonDeserialize", "org.openrewrite.internal.StreamUtils.distinctBy", "java.util.concurrent.atomic.AtomicInteger", "com.fasterxml.jackson.core.type.WritableTypeId", "org.openrewrite.java.tree", "org.openrewrite.marker.Markers", "org.openrewrite.internal.ListUtils", "com.fasterxml.jackson.databind.JsonSerializer", "com.fasterxml.jackson.core.JsonParser", "com.fasterxml.jackson.databind.JsonDeserializer", "java.util.function.Predicate", "com.fasterxml.jackson.core.JsonToken", "com.fasterxml.jackson.core.JsonGenerator", "java.util.concurrent.atomic.AtomicBoolean", "lombok.EqualsAndHashCode", "java.util.stream.Collectors.groupingBy", "com.fasterxml.jackson.databind.DeserializationContext", "org.openrewrite.kotlin.internal.template.KotlinSubstitutions", "org.openrewrite.java.tree.JavaCoordinates", "org.openrewrite.java.JavaTemplate", "java.util.Set", "java.util.function.Consumer", "org.openrewrite.Cursor", "java.util.HashSet", "org.openrewrite.java.internal.template.Substitutions", "org.openrewrite.kotlin.internal.template.KotlinTemplateParser", "org.openrewrite.internal.StringUtils", "java.util.Collection", "java.lang.reflect.Constructor", "org.openrewrite.style.NamedStyles", "java.nio.charset.Charset", "javax.annotation.processing.Processor", "com.sun.tools.javac.util.Options", "org.openrewrite.tree.ParsingEventListener", "com.sun.tools.javac.main.Option", "com.sun.tools.javac.tree.JCTree", "com.sun.tools.javac.util.Context", "com.sun.tools.javac.main.JavaCompiler", "org.openrewrite.java.tree.J", "java.util.concurrent.atomic.AtomicReference", "javax.tools", "com.sun.tools.javac.util.Log", "org.objectweb.asm.ClassReader", "org.openrewrite.java.internal.JavaTypeCache", "com.sun.tools.javac.comp.Modules", "java.util.stream.StreamSupport", "lombok.Getter", "com.sun.tools.javac.comp.Enter", "org.openrewrite.tree.ParsingExecutionContextView", "org.objectweb.asm.ClassVisitor", "org.openrewrite.InMemoryExecutionContext", "org.slf4j.LoggerFactory", "java.io", "java.util.Collections.emptyList", "org.openrewrite.java.tree.Space", "com.sun.tools.javac.comp.Check", "org.openrewrite.java.JavaParsingException", "org.openrewrite.java.JavaParser", "org.openrewrite.ExecutionContext", "java.time.Duration", "org.jspecify.annotations.Nullable", "lombok.experimental.NonFinal", "com.fasterxml.jackson.annotation.ObjectIdGenerators", "java.nio.file.Paths", "java.io.Serializable", "com.fasterxml.jackson.annotation.JsonIgnore", "com.fasterxml.jackson.annotation.JsonIdentityInfo", "java.net.URI", "lombok", "lombok.experimental.FieldDefaults", "lombok.experimental.Accessors", "java.io.File", "com.fasterxml.jackson.annotation.JsonProperty", "java.io.UncheckedIOException", "org.openrewrite.Tree.randomId", "java.util", "java.util.Collections", "org.openrewrite.maven.tree.Parent", "org.openrewrite.maven.internal.RawPom", "org.openrewrite.xml.tree.Xml", "java.util.stream.Collectors", "java.nio.file.Path", "org.openrewrite.maven.tree.Pom", "org.openrewrite.xml.XmlParser", "lombok.RequiredArgsConstructor", "org.openrewrite.maven.internal.MavenPomDownloader", "org.openrewrite.maven.tree.ResolvedPom", "org.openrewrite.tree.ParseError", "java.util.stream.Stream", "org.openrewrite", "org.intellij.lang.annotations.Language", "org.openrewrite.maven.tree.MavenResolutionResult", "org.openrewrite.SourceFile", "org.openrewrite.java.lombok.LombokSupport", "com.sun.tools.javac.comp.Annotate", "com.sun.tools.javac.file.JavacFileManager", "org.objectweb.asm.Opcodes", "java.util.stream.Collectors.toList" ]
+  }, {
+    "name" : "Recipe",
+    "packageName" : "org.openrewrite",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ "Cloneable" ],
+    "methods" : [ {
+      "name" : "buildRecipeList",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "onComplete",
+      "visibility" : "public",
+      "methodCalls" : [ "onComplete", "getDelegate", "getObject", "getMessage" ]
+    }, {
+      "name" : "getContributors",
+      "visibility" : "public",
+      "methodCalls" : [ "getContributors" ]
+    }, {
+      "name" : "validate",
+      "visibility" : "public",
+      "methodCalls" : [ "and", "getRecipeList", "findNonNullFields", "getName", "getClass", "getSimpleName", "build", "buildLatestRelease", "testNone", "isEmpty", "parse", "compile", "validate", "format", "none", "split", "invalid", "size", "test", "get", "notBlank", "or", "matches", "isNullOrEmpty", "fromName", "equals", "required", "isBlank", "ifPresent" ]
+    }, {
+      "name" : "getDataTableDescriptors",
+      "visibility" : "public",
+      "methodCalls" : [ "concatAll", "emptyList" ]
+    }, {
+      "name" : "getMaintainers",
+      "visibility" : "public",
+      "methodCalls" : [ "getMaintainers" ]
+    }, {
+      "name" : "getInstanceNameSuffix",
+      "visibility" : "public",
+      "methodCalls" : [ "format", "equals", "getDisplayName", "getInstanceNameSuffix", "lastIndexOf", "substring" ]
+    }, {
+      "name" : "getJacksonPolymorphicTypeTag",
+      "visibility" : "public",
+      "methodCalls" : [ "getName", "getClass" ]
+    }, {
+      "name" : "getDescriptor",
+      "visibility" : "public",
+      "methodCalls" : [ "createRecipeDescriptor" ]
+    }, {
+      "name" : "maxCycles",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "clone",
+      "visibility" : "public",
+      "methodCalls" : [ "getMessages", "computeIfPresent", "copy", "clone" ]
+    }, {
+      "name" : "getRecipeList",
+      "visibility" : "public",
+      "methodCalls" : [ "buildRecipeList", "getRecipes", "filter", "prepareRecipe", "toList", "getName", "toMap", "collect", "getOptions", "getValue", "map", "getRecipeList", "stream", "isEmpty", "asList" ]
+    }, {
+      "name" : "getEstimatedEffortPerOccurrence",
+      "visibility" : "public",
+      "methodCalls" : [ "getEstimatedEffortPerOccurrence", "ofMinutes" ]
+    }, {
+      "name" : "getName",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "empty", "getKey", "of", "getName", "getClass", "getIdentifier", "getElement", "toString" ]
+    }, {
+      "name" : "getInstanceName",
+      "visibility" : "public",
+      "methodCalls" : [ "isRequired", "setAccessible", "getClass", "get", "getName", "removeIf", "getDeclaredField", "isBlank", "isEmpty", "isArray", "isAssignableFrom", "getInstanceNameSuffix", "size", "getInstanceName", "getDisplayName", "format" ]
+    }, {
+      "name" : "getDisplayName",
+      "visibility" : "public",
+      "methodCalls" : [ "getDisplayName" ]
+    }, {
+      "name" : "getTags",
+      "visibility" : "public",
+      "methodCalls" : [ "emptySet", "getTags", "asList", "singleton" ]
+    }, {
+      "name" : "getDescription",
+      "visibility" : "public",
+      "methodCalls" : [ "getDescription" ]
+    }, {
+      "name" : "builder",
+      "visibility" : "public",
+      "methodCalls" : [ "randomId", "getId", "getMarkers", "getSourcePath" ]
+    }, {
+      "name" : "causesAnotherCycle",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "hashCode",
+      "visibility" : "public",
+      "methodCalls" : [ "getName", "toLowerCase", "hash", "hashCode" ]
+    }, {
+      "name" : "getVisitor",
+      "visibility" : "public",
+      "methodCalls" : [ "getText", "lastStatement", "missingVisitorMethods", "println", "doBeforeParseTemplate", "toUpperCase", "isMatch", "getTypeParameters", "visitEntry", "isNotEmpty", "matchesElementName", "addSchemaLocation", "maybeGetSchemaLocation", "replaceFirst", "getAttributeNameForPrefix", "withNamespaces", "isXmlnsAttribute", "isVersionAttribute", "maybeAddNamespace", "addOrUpdateSchemaLocation", "updateSchemaLocation", "toMap", "isOldValue", "containsValue", "isVersionMatch", "getNamespaces", "extractNamespacePrefix", "visitIdent", "visitXmlDecl", "withAfterText", "prefix", "visitAttribute", "visitElement", "visitProlog", "visitComment", "getAfterText", "getQuote", "visitCharData", "visitProcessingInstruction", "visitDocTypeDecl", "xPath", "sample", "isPastDueSuppression", "now", "getUseTabCharacter", "visitAndCast", "overallProjectStyle", "getContinuationIndentSize", "isBefore", "minusDays", "withAttributes", "getTabSize", "getIndentSize", "plusDays", "getAttributes", "getProlog", "getKeyAsString", "withProlog", "getValueAsString", "withClassifier", "getFullyQualifiedClassName", "isTransitive", "removeIf", "shouldUpdateVersion", "merge", "getCurrentStyle", "shouldUpdateStyle", "updatedModel", "changeExpression", "constraintConfiguration", "getExtendsFrom", "parseInt", "putAll", "singletonMap", "parseDouble", "visitAssignment", "replaceVersion", "keySet", "isDeprecatedPath", "isMatchingJVMTestSuite", "getFieldName", "toLiteral", "purgeSourceSet", "forBasicString", "forGString", "replaceDeprecations", "coerceToStringNotation", "attachMarkers", "updateTypeForMapArgument", "getConfigurations", "findRequestedDependency", "purgeConfigurationSuffix", "isPartOfDeprecatedPath", "targetsCustomJVMTestSuite", "withParameterTypes", "getResolved", "hasBuildCache", "withGav", "updateDependency", "getDelimiter", "withArtifactId", "withGroupId", "equalIgnoringSeparators", "withExt", "visitFile", "isLiteralValue", "maybeUpdateApplySyntax", "withStrings", "maybeUpdatePluginSyntax", "configuration", "withNameToConfiguration", "extractRepository", "getDirectResolved", "fixupLiteralIfNeeded", "withDirectResolved", "fromString", "maybeUpdateVersion", "groupArtifactMatches", "withBody", "generatePluginManagementBlock", "withStatements", "getStrings", "parseInputs", "updateGradleModel", "select", "getNameToConfiguration", "withStringValue", "maybeRemoveVersion", "groupId", "withElements", "toStringNotation", "configurationsExtendingFrom", "findResolvedDependency", "distinct", "getElements", "computeIfAbsent", "artifactId", "shouldRemoveRedundantConstraint", "visitReturn", "getMavenRepositories", "withVersion", "allExtendsFrom", "getExt", "getResolvedDependency", "getSource", "keyMatches", "withSource", "rightPaddedKey", "objectDoesNotContainKey", "visitObject", "parsedValue", "getMembers", "withMembers", "visitMember", "getRepositoryName", "distinctValuesStartingReversed", "sortRules", "getErroneous", "emptySet", "getMetadata", "getRules", "addFirst", "forEach", "hasPrevious", "equalsIgnoreCase", "previous", "getDiff", "listIterator", "getAccumulator", "delegate", "getDuplicates", "resolveSibling", "normalize", "atStartOfDay", "toEpochMilli", "toInstant", "report", "getTreeType", "getParserType", "getExceptionType", "getDetail", "atZone", "withCharset", "isTrue", "sourcePath", "charsetBomMarked", "start", "reset", "convert", "truncateContext", "text", "min", "getCharset", "id", "withSnippets", "end", "fileAttributes", "isCharsetBomMarked", "getFileSystem", "getFileAttributes", "withExecutable", "withFileAttributes", "withReadable", "withWritable", "getPathMatcher", "getClass", "orElseGet", "toArray", "containsClassDefinition", "getExtends", "getLeadingAnnotations", "methodAccess", "isMultiline", "withVariables", "visitVariableDeclarations", "getTypeAsFullyQualified", "visitNewClass", "getParameterTypes", "withTypeExpression", "withReturnType", "buildType", "isEmptyMethod", "isConstructor", "hasModifier", "hasSinglePublicNoArgsConstructor", "isRepeatable", "isAssignableTo", "isInterfaceMethod", "getKind", "toSet", "matchesAnnotationOrMetaAnnotation", "aspectjNameToPattern", "computeByType", "getTypeName", "match", "getJavadocVisitor", "getMajorReleaseVersion", "matchesPackage", "doesNotHaveComment", "getMajorVersion", "visitDocComment", "visitImport", "getTypeExpression", "getPathAsCursors", "visitSpace", "isDeprecated", "getAnnotations", "hasNext", "getModifiers", "reduce", "next", "getUsedMethods", "getAfterVisit", "info", "getSupertype", "debug", "getClassName", "error", "getOwningClass", "substringBeforeLast", "dependsOn", "imports", "substringAfterLast", "makeNewMethod", "useNewMethod", "maybeAddImport", "getClasspath", "importLayout", "orderImports", "withImports", "postVisit", "spaces", "withClasses", "withSourcePath", "isStatic", "getQualid", "and", "getSpace", "getLastWhitespace", "withUpdate", "getStyle", "withSuffix", "getInit", "visitForLoop", "withControl", "getControl", "withInit", "chars", "getUpdate", "getEof", "count", "autodetectGeneralFormatStyle", "withEof", "isUseCRLFNewLines", "getPackageDeclaration", "getTypesInUse", "visitLiteral", "getImports", "getPackageName", "withVariable", "createRenamer", "stopAfterPreVisit", "findMatches", "getReferences", "withImplements", "withInterfaces", "visitClassDeclaration", "getInterfaces", "getDeclaringType", "isOverride", "getImplements", "updateCursor", "service", "withDeclaringType", "shortenFullyQualifiedTypeReferencesIn", "withComments", "getProperty", "getComments", "getInstance", "withSelect", "reverse", "getValueSource", "visitAnnotation", "getMethods", "getVariable", "javaParser", "classpathFromResources", "withWhitespace", "classpath", "runtimeClasspath", "replaceArguments", "contextSensitive", "withAssignment", "getAnnotationType", "getWhitespace", "getAssignment", "withInitializer", "buildLiteral", "maybeRemoveImport", "getInitializer", "firstEnclosing", "visitMethodDeclaration", "getFieldType", "getStatements", "isConstant", "fromJavaVersion", "isFullyQualifiedClassReference", "getVariables", "getReference", "isAcceptable", "isVariableDeclaration", "getFullyQualifiedName", "visitFieldAccess", "printTrimmed", "withMethodType", "getTarget", "asFullyQualified", "getVariableType", "test", "withType", "withReference", "getBody", "withId", "visitIdentifier", "getClasses", "visitMemberReference", "getOwner", "getLiteralValue", "lastIndexOf", "withEnclosedInBraces", "isNull", "matchesGlobRelaxedBinding", "withKey", "withBlock", "visitMapping", "getMessage", "visitSequence", "removeUnused", "withEntries", "putMessageOnFirstEnclosing", "maybeKeyFromJsonPath", "visitSequenceEntry", "addBockCommentIfNecessary", "withEnd", "calculateCurrentKeyPath", "getBlock", "getEnd", "isPropertyExistsInSequence", "print", "getEntries", "group", "getAnchor", "getParentKey", "getIndentLevel", "getParts", "createNestedEntry", "getOpeningBracketPrefix", "countOccurrences", "singletonList", "substringOfAfterFirstLineBreak", "getTag", "join", "indexOf", "copyOfRange", "insert", "abs", "visitScalar", "shouldShift", "subList", "hasLineBreak", "printAll", "parse", "withDocuments", "getDocuments", "descendingIterator", "equalsRelaxedBinding", "visitMappingEntry", "visitDocuments", "spliteratorUnknownSize", "maybeCoalesceProperties", "getPathAsStream", "replaceAll", "getReplace", "withValueSource", "getFind", "quote", "findAll", "visitLegacyIndexAttribute", "getBase", "getIndex", "getElement", "visitBodyContent", "getParenthesizedType", "getParameters", "withParameters", "visitLambda", "getCoordinates", "visitParenthesizedTypeTree", "withBefore", "withArguments", "getPadding", "getArguments", "getSourceFileType", "getOperator", "visitMethodInvocation", "visitParentheses", "getExpression", "visitUnary", "getReturnType", "getMethodType", "withOperator", "getSelect", "endsWith", "pollMessage", "visitMarker", "visitCompilationUnit", "isOfClassType", "getSimpleName", "withSimpleName", "upgradeManagedDependency", "upgradeDependency", "upgradePluginDependency", "isManagedDependencyImportTag", "getRepository", "upgradeVersion", "resolveVersion", "getBomGav", "plan", "retainVersions", "getOrDefault", "compareTo", "compute", "replacePlaceholders", "compareVersions", "getPlugins", "or", "valueOf", "writeValueAsString", "textValue", "parentPomIsProjectPom", "getConfiguration", "parseFloat", "randomId", "writerWithDefaultPrettyPrinter", "not", "isSubprojectOfParentInRepository", "isAggregatorNotUsedAsParent", "getSubprojects", "getModules", "mapTagChildren", "getUrl", "effectiveSettings", "getDatedSnapshotVersion", "getMirrors", "uri", "builder", "areEqual", "getProjectsWithDependency", "separatorsToUnix", "getActiveRepositories", "apply", "addToTag", "getDependencies", "mapFirst", "isManagedDependenciesTag", "pattern", "getNearestMessage", "putIfAbsent", "isKnownToExist", "getDepth", "view", "joining", "filterChildren", "from", "getManagedDependencyKey", "getDependencyKey", "isDependenciesTag", "spliterator", "putMessage", "toCollection", "visit", "addOrUpdateChild", "isInClasspathOf", "withName", "withPom", "filterTagChildren", "anyMatch", "resolveSemverVersion", "isPluginDependencyTag", "findNewerDependencyVersion", "withRequested", "downloadPluginMetadata", "withPackaging", "isDependencyManaged", "ifPresent", "getParentTreeCursor", "isProjectTag", "checkIfNewDependencyPresents", "ofNullable", "findAny", "fromName", "findNewerVersion", "getRequestedBom", "existingManagedDependencyVersion", "hasPlaceholders", "getParentOrThrow", "findDependencies", "getMatchingExtensionsXmlFile", "compile", "withPluginManagement", "isMavenProject", "withDependencies", "isMavenBuiltinProperty", "emptyMap", "isAncestor", "getFilteredResourceUsages", "matcher", "withProperties", "isPropertyTag", "withPlugins", "withDependencyManagement", "parentHasProperty", "isPlugInVersionInRange", "withValue", "dropParentUntil", "startsWith", "matches", "concat", "mavenPlugin", "asVisitor", "length", "withChildValue", "append", "isRepositoryUrlTag", "getTree", "maybeAutoFormat", "substring", "buildCacheConfig", "format", "check", "getVersioning", "matchesVersion", "remove", "isValid", "findAcceptableVersion", "getMavenSettings", "toLowerCase", "containsKey", "max", "isParentTag", "getRepositoryResponses", "entrySet", "filter", "getRepositories", "autoFormat", "findPlugin", "withPrefix", "add", "firstEnclosingOrThrow", "size", "getSnapshots", "orderGav", "resolve", "downloadMetadata", "getReleases", "isVersion", "insertRow", "found", "getVersions", "toList", "getChildren", "split", "matchesGroup", "download", "getParent", "upgrade", "collect", "isNullOrEmpty", "insertRows", "allMatch", "getProjectPoms", "withRoot", "getCursor", "mismatches", "asList", "set", "matchesManagedVersion", "getActiveProfiles", "findManagedPlugin", "toString", "isNotExcepted", "build", "matchesComparator", "getManagedVersion", "getId", "getUri", "isExact", "put", "getDependencyManagement", "isManagedPluginTag", "values", "emptyList", "getScope", "getKey", "getPrefix", "getPluginManagement", "matchesArtifact", "getGav", "addAll", "warn", "getClassifier", "getName", "getRequested", "isDependencyTag", "visitNonNull", "getPom", "of", "orElseThrow", "replace", "noop", "orElse", "getVersion", "getValues", "maybeUpdateModel", "getEffectiveExclusions", "findManagedDependency", "find", "visitDocument", "doAfterVisit", "getChild", "getGroupId", "setByType", "empty", "matchesGlob", "flatMap", "changeChildTagValue", "getProperties", "withMarkers", "getMarkers", "getWrapperDistributionType", "getRoot", "isEmpty", "groupArtifact", "getChildValue", "withText", "getSourcePath", "isPresent", "findDependency", "getType", "findFirst", "visitTag", "compare", "isEffectiveExclusion", "getVisitor", "getResolutionResult", "map", "isBlank", "isManagedDependencyTag", "requireNonNull", "getArtifactId", "noneMatch", "get", "getContent", "contains", "wrapperDownloader", "wrapperJar", "validate", "trim", "stream", "equals", "withContent", "getValue", "isPluginTag" ]
+    }, {
+      "name" : "validateAll",
+      "visibility" : "public",
+      "methodCalls" : [ "validate", "getRecipeList", "validateAll", "add" ]
+    }, {
+      "name" : "noop",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getExamples",
+      "visibility" : "public",
+      "methodCalls" : [ "getExamples" ]
+    }, {
+      "name" : "equals",
+      "visibility" : "public",
+      "methodCalls" : [ "getName", "equalsIgnoreCase", "equals", "fullyQualifiedNamesAreEqual", "getClass", "compareTo" ]
+    }, {
+      "name" : "run",
+      "visibility" : "public",
+      "methodCalls" : [ "run", "scheduleRun" ]
+    }, {
+      "name" : "addDataTable",
+      "visibility" : "public",
+      "methodCalls" : [ "dataTableDescriptorFromDataTable", "add" ]
+    } ],
+    "imports" : [ "java.net.URISyntaxException", "org.intellij.lang.annotations.Language", "java.util.Collections.emptyList", "java.lang.reflect.Method", "java.net.URI", "org.openrewrite.table.RecipeRunStats", "org.openrewrite.config", "org.openrewrite.internal.RecipeIntrospectionUtils.dataTableDescriptorFromDataTable", "lombok.RequiredArgsConstructor", "org.jspecify.annotations.Nullable", "lombok.Setter", "org.openrewrite.internal.RecipeIntrospectionUtils", "com.fasterxml.jackson.annotation.JsonTypeInfo", "java.time.Duration", "org.openrewrite.internal.StringUtils", "java.lang.reflect.Field", "java.util", "java.lang.reflect.Constructor", "org.openrewrite.internal.ListUtils", "org.openrewrite.table.SourcesFileErrors", "lombok.AccessLevel", "org.openrewrite.internal.lang.NullUtils", "com.fasterxml.jackson.annotation.JsonPropertyOrder", "java.lang.reflect.Parameter", "lombok.experimental.FieldDefaults", "org.openrewrite.table.SourcesFileResults", "com.fasterxml.jackson.annotation.JsonProperty" ]
+  }, {
+    "name" : "Padding",
+    "packageName" : "org.openrewrite.toml.tree",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ "Padding" ],
+    "methods" : [ {
+      "name" : "withClasses",
+      "visibility" : "public",
+      "methodCalls" : [ "size", "get", "getElement", "toList", "collect", "map", "addAll", "filter", "getPadding", "stream", "withClasses", "getClasses", "withElements" ]
+    }, {
+      "name" : "withValueType",
+      "visibility" : "public",
+      "methodCalls" : [ "getValueType", "withElement", "getPadding", "withValueType" ]
+    }, {
+      "name" : "withReservations",
+      "visibility" : "public",
+      "methodCalls" : [ "getPadding", "withElementsNullable", "withReservations" ]
+    }, {
+      "name" : "getValueType",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "getExtension",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "withExtension",
+      "visibility" : "public",
+      "methodCalls" : [ "getPadding", "withExtension", "withElement" ]
+    }, {
+      "name" : "withFrom",
+      "visibility" : "public",
+      "methodCalls" : [ "withElement", "withFrom", "getPadding" ]
+    }, {
+      "name" : "getFrom",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "getReservations",
+      "visibility" : "public",
+      "methodCalls" : [ "getElements" ]
+    }, {
+      "name" : "getTarget",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "getLevel",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "withMap",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getKeyType",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "withLevel",
+      "visibility" : "public",
+      "methodCalls" : [ "getPadding", "withElement", "withLevel" ]
+    }, {
+      "name" : "withKeyType",
+      "visibility" : "public",
+      "methodCalls" : [ "withElement", "withKeyType", "getKeyType", "getPadding" ]
+    }, {
+      "name" : "getOptions",
+      "visibility" : "public",
+      "methodCalls" : [ "getElements" ]
+    }, {
+      "name" : "withTarget",
+      "visibility" : "public",
+      "methodCalls" : [ "build", "getPadding", "withTarget", "withElement" ]
+    }, {
+      "name" : "getMap",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withOptions",
+      "visibility" : "public",
+      "methodCalls" : [ "withOptions", "getPadding", "withElementsNullable" ]
+    }, {
+      "name" : "getMembers",
+      "visibility" : "public",
+      "methodCalls" : [ "getElements", "emptyList", "asList", "getMembers" ]
+    }, {
+      "name" : "withMembers",
+      "visibility" : "public",
+      "methodCalls" : [ "withElements", "withMembers", "getPadding", "equals", "arrayOrNullIfEmpty" ]
+    }, {
+      "name" : "getInit",
+      "visibility" : "public",
+      "methodCalls" : [ "getElements" ]
+    }, {
+      "name" : "withBound",
+      "visibility" : "public",
+      "methodCalls" : [ "withElement", "getPadding", "withBound" ]
+    }, {
+      "name" : "withSelect",
+      "visibility" : "public",
+      "methodCalls" : [ "withSelect", "withElement", "getPadding" ]
+    }, {
+      "name" : "getDefaultValue",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "getThrows",
+      "visibility" : "public",
+      "methodCalls" : [ "getElements" ]
+    }, {
+      "name" : "withTree",
+      "visibility" : "public",
+      "methodCalls" : [ "getPadding", "withElement", "withTree" ]
+    }, {
+      "name" : "getCaseLabels",
+      "visibility" : "public",
+      "methodCalls" : [ "getElements" ]
+    }, {
+      "name" : "getSelect",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "getEnums",
+      "visibility" : "public",
+      "methodCalls" : [ "getElements" ]
+    }, {
+      "name" : "getLabel",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "getVariable",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "getTypeTree",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "getFinally",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "withKind",
+      "visibility" : "public",
+      "methodCalls" : [ "getKind", "withType", "getPadding", "withKind" ]
+    }, {
+      "name" : "withFinally",
+      "visibility" : "public",
+      "methodCalls" : [ "getPadding", "withFinally", "withElement" ]
+    }, {
+      "name" : "withBounds",
+      "visibility" : "public",
+      "methodCalls" : [ "withElementsNullable", "getPadding", "withBounds", "equals", "arrayOrNullIfEmpty" ]
+    }, {
+      "name" : "withLabel",
+      "visibility" : "public",
+      "methodCalls" : [ "getPadding", "withElement", "withLabel" ]
+    }, {
+      "name" : "withContaining",
+      "visibility" : "public",
+      "methodCalls" : [ "getPadding", "withContaining", "withElement" ]
+    }, {
+      "name" : "withParams",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBounds",
+      "visibility" : "public",
+      "methodCalls" : [ "getElements", "emptyList", "asList" ]
+    }, {
+      "name" : "getResources",
+      "visibility" : "public",
+      "methodCalls" : [ "getElements", "startsWith", "findResources", "requireNonNull", "getParent", "getResources" ]
+    }, {
+      "name" : "withInit",
+      "visibility" : "public",
+      "methodCalls" : [ "withElements", "getPadding", "withInit" ]
+    }, {
+      "name" : "getThenPart",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "getKind",
+      "visibility" : "public",
+      "methodCalls" : [ "getType", "getKind" ]
+    }, {
+      "name" : "getIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "withThrows",
+      "visibility" : "public",
+      "methodCalls" : [ "withThrows", "getPadding", "withElementsNullable" ]
+    }, {
+      "name" : "withStatic",
+      "visibility" : "public",
+      "methodCalls" : [ "getPadding", "withStatic", "withElement" ]
+    }, {
+      "name" : "withIterable",
+      "visibility" : "public",
+      "methodCalls" : [ "withIterable", "getPadding", "withElement" ]
+    }, {
+      "name" : "getStatic",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withReference",
+      "visibility" : "public",
+      "methodCalls" : [ "withElement", "withReference", "getPadding" ]
+    }, {
+      "name" : "withAlternatives",
+      "visibility" : "public",
+      "methodCalls" : [ "withElements", "withAlternatives", "getPadding" ]
+    }, {
+      "name" : "withIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "getPadding", "withIndex", "withElement" ]
+    }, {
+      "name" : "getReference",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "withCaseLabels",
+      "visibility" : "public",
+      "methodCalls" : [ "withCaseLabels", "withElementsNullable", "getPadding", "requireNonNull" ]
+    }, {
+      "name" : "withWhileCondition",
+      "visibility" : "public",
+      "methodCalls" : [ "withWhileCondition", "getPadding", "withElement" ]
+    }, {
+      "name" : "getParams",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withImplements",
+      "visibility" : "public",
+      "methodCalls" : [ "withElementsNullable", "withImplements", "getPadding" ]
+    }, {
+      "name" : "getExtends",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "withDefaultValue",
+      "visibility" : "public",
+      "methodCalls" : [ "withDefaultValue", "withElement", "getPadding" ]
+    }, {
+      "name" : "getIterable",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "getImplements",
+      "visibility" : "public",
+      "methodCalls" : [ "getElements" ]
+    }, {
+      "name" : "withVariable",
+      "visibility" : "public",
+      "methodCalls" : [ "withVariable", "withElement", "getPadding" ]
+    }, {
+      "name" : "withPermits",
+      "visibility" : "public",
+      "methodCalls" : [ "withPermits", "getPadding", "withElementsNullable" ]
+    }, {
+      "name" : "withNested",
+      "visibility" : "public",
+      "methodCalls" : [ "withElements", "getPadding", "withNested" ]
+    }, {
+      "name" : "getBound",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "withPrimaryConstructor",
+      "visibility" : "public",
+      "methodCalls" : [ "withElementsNullable", "getPadding", "withPrimaryConstructor" ]
+    }, {
+      "name" : "withEnums",
+      "visibility" : "public",
+      "methodCalls" : [ "getPadding", "withElements", "withEnums" ]
+    }, {
+      "name" : "getAlias",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "withTypeTree",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getWhileCondition",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "getExpr",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTree",
+      "visibility" : "public",
+      "methodCalls" : [ "getTree", "getCursor", "getValue", "getElement" ]
+    }, {
+      "name" : "getPermits",
+      "visibility" : "public",
+      "methodCalls" : [ "getElements" ]
+    }, {
+      "name" : "withExtends",
+      "visibility" : "public",
+      "methodCalls" : [ "withExtends", "withElement", "getPadding" ]
+    }, {
+      "name" : "withThenPart",
+      "visibility" : "public",
+      "methodCalls" : [ "withElement", "withThenPart", "getPadding" ]
+    }, {
+      "name" : "getNested",
+      "visibility" : "public",
+      "methodCalls" : [ "getElements" ]
+    }, {
+      "name" : "withResources",
+      "visibility" : "public",
+      "methodCalls" : [ "withElementsNullable", "withResources", "getPadding" ]
+    }, {
+      "name" : "getPrimaryConstructor",
+      "visibility" : "public",
+      "methodCalls" : [ "getElements" ]
+    }, {
+      "name" : "withEnclosing",
+      "visibility" : "public",
+      "methodCalls" : [ "withElement", "getPadding", "withEnclosing" ]
+    }, {
+      "name" : "withExpr",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withAssignment",
+      "visibility" : "public",
+      "methodCalls" : [ "withAssignment", "getPadding", "withElement" ]
+    }, {
+      "name" : "getEnclosing",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "withAlias",
+      "visibility" : "public",
+      "methodCalls" : [ "format", "withElement", "build", "withBefore", "withAlias", "getPadding" ]
+    }, {
+      "name" : "getContaining",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "getAlternatives",
+      "visibility" : "public",
+      "methodCalls" : [ "getElements" ]
+    }, {
+      "name" : "getAssignment",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "getInclusive",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "getKey",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement", "getValue", "getKey", "getTree" ]
+    }, {
+      "name" : "withKey",
+      "visibility" : "public",
+      "methodCalls" : [ "withElement", "getPadding", "getTree", "getParent", "withKey", "withValue", "getKeyAsScalar" ]
+    }, {
+      "name" : "withInclusive",
+      "visibility" : "public",
+      "methodCalls" : [ "withInclusive", "withElement", "getPadding" ]
+    }, {
+      "name" : "withUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "withUpdate", "getPadding", "withElements" ]
+    }, {
+      "name" : "getValues",
+      "visibility" : "public",
+      "methodCalls" : [ "asList", "emptyList", "getElements", "getArtifactId", "withVersion", "withArtifactId", "getValue", "getGroupId", "withGroupId", "getVersion" ]
+    }, {
+      "name" : "getUpdateValue",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "withName",
+      "visibility" : "public",
+      "methodCalls" : [ "trim", "withType", "getName", "withIdentifier", "getAnnotations", "withName", "equals", "getPadding", "getSimpleName", "withElement", "getType" ]
+    }, {
+      "name" : "withUpdateValue",
+      "visibility" : "public",
+      "methodCalls" : [ "withElement", "withUpdateValue", "getPadding" ]
+    }, {
+      "name" : "getAttributes",
+      "visibility" : "public",
+      "methodCalls" : [ "singletonList", "getValue", "getAttributes", "emptyList", "getElements" ]
+    }, {
+      "name" : "getBase",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getFalsePart",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "getType",
+      "visibility" : "public",
+      "methodCalls" : [ "getInstance", "getClass", "getActualTypeArguments", "getGenericSuperclass", "filter", "type", "getElement", "getExpression", "getType", "getElements", "stream", "toList", "collect", "map", "getPadding", "getReturnType" ]
+    }, {
+      "name" : "getPosition",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "withUpdateName",
+      "visibility" : "public",
+      "methodCalls" : [ "withUpdate", "getPadding", "withElement", "withUpdateName" ]
+    }, {
+      "name" : "withCondition",
+      "visibility" : "public",
+      "methodCalls" : [ "withCondition", "getPadding", "withElement" ]
+    }, {
+      "name" : "withBase",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTruePart",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "withPosition",
+      "visibility" : "public",
+      "methodCalls" : [ "withPosition", "withElement", "getPadding" ]
+    }, {
+      "name" : "withExpression",
+      "visibility" : "public",
+      "methodCalls" : [ "withExpression", "withElement", "getPadding" ]
+    }, {
+      "name" : "getUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "getElements" ]
+    }, {
+      "name" : "withValues",
+      "visibility" : "public",
+      "methodCalls" : [ "arrayOrNullIfEmpty", "equals", "getPadding", "withValues", "withElements" ]
+    }, {
+      "name" : "getCondition",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "withTruePart",
+      "visibility" : "public",
+      "methodCalls" : [ "withTruePart", "withElement", "getPadding" ]
+    }, {
+      "name" : "withType",
+      "visibility" : "public",
+      "methodCalls" : [ "withTree", "withVariableType", "withClazz", "withAnnotationType", "getTypeTree", "withElement", "withExpression", "withClassDeclaration", "withTypeTree", "withType", "withReturnType", "getElement", "withMethodDeclaration", "withCallee", "withName", "getPadding", "getFrom", "withTo", "getTo", "withMethodType", "withFrom", "withParenthesizedType", "withTypeExpression" ]
+    }, {
+      "name" : "withAttributes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withFalsePart",
+      "visibility" : "public",
+      "methodCalls" : [ "getPadding", "withElement", "withFalsePart" ]
+    }, {
+      "name" : "getUpdateName",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "getName",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "empty", "getKey", "of", "getName", "getClass", "getIdentifier", "getElement", "toString" ]
+    }, {
+      "name" : "getExpression",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "getVariables",
+      "visibility" : "public",
+      "methodCalls" : [ "getElements" ]
+    }, {
+      "name" : "withVariables",
+      "visibility" : "public",
+      "methodCalls" : [ "withVariables", "withElements", "getPadding" ]
+    }, {
+      "name" : "withPackageDeclaration",
+      "visibility" : "public",
+      "methodCalls" : [ "getPadding", "withElement", "withPackageDeclaration" ]
+    }, {
+      "name" : "withVariableDeclarations",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getPackageDeclaration",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "withParameters",
+      "visibility" : "public",
+      "methodCalls" : [ "withElements", "getPadding", "withElementsNullable", "withParameters" ]
+    }, {
+      "name" : "getImports",
+      "visibility" : "public",
+      "methodCalls" : [ "toList", "stream", "filter", "collect", "getElement", "map", "getElements", "getOrDefault", "emptyList" ]
+    }, {
+      "name" : "getVariableDeclarations",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "withUseSite",
+      "visibility" : "public",
+      "methodCalls" : [ "getPadding", "withUseSite", "withElement" ]
+    }, {
+      "name" : "withStatements",
+      "visibility" : "public",
+      "methodCalls" : [ "getPadding", "withStatements", "withElements" ]
+    }, {
+      "name" : "withTypeParameters",
+      "visibility" : "public",
+      "methodCalls" : [ "getAnnotations", "getTypeParameters", "map", "stream", "toList", "randomId", "withElements", "collect", "equals", "arrayOrNullIfEmpty", "withTypeParameters", "withElementsNullable", "getPadding" ]
+    }, {
+      "name" : "getParameters",
+      "visibility" : "public",
+      "methodCalls" : [ "getElements", "emptyList" ]
+    }, {
+      "name" : "getExpressions",
+      "visibility" : "public",
+      "methodCalls" : [ "collect", "toList", "build", "getMarkers", "filter", "map", "getBefore", "stream", "getElements" ]
+    }, {
+      "name" : "getInitializer",
+      "visibility" : "public",
+      "methodCalls" : [ "getElements", "getElement" ]
+    }, {
+      "name" : "getClasses",
+      "visibility" : "public",
+      "methodCalls" : [ "filter", "getElement", "map", "toList", "collect", "stream" ]
+    }, {
+      "name" : "getTypeParameters",
+      "visibility" : "public",
+      "methodCalls" : [ "asList", "getTypeParameters", "emptyList", "getElements" ]
+    }, {
+      "name" : "getReceiver",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "withElements",
+      "visibility" : "public",
+      "methodCalls" : [ "getWhitespace", "withAfter", "getAfter", "isEmpty", "ceil", "put", "withElement", "size", "get", "collect", "emptyList", "getId", "stream", "add", "identity", "toMap", "getElement", "build", "withElements", "getPadding" ]
+    }, {
+      "name" : "getBody",
+      "visibility" : "public",
+      "methodCalls" : [ "getElements", "run", "close", "read", "getElement" ]
+    }, {
+      "name" : "withConstraints",
+      "visibility" : "public",
+      "methodCalls" : [ "getPadding", "requireNonNull", "withElementsNullable", "withConstraints" ]
+    }, {
+      "name" : "withExpressions",
+      "visibility" : "public",
+      "methodCalls" : [ "getExpressions", "stream", "allMatch", "withCaseLabels", "getElements", "getPadding", "withExpressions", "withElementsNullable", "requireNonNull" ]
+    }, {
+      "name" : "getArguments",
+      "visibility" : "public",
+      "methodCalls" : [ "emptyList", "getElements" ]
+    }, {
+      "name" : "withArguments",
+      "visibility" : "public",
+      "methodCalls" : [ "withElementsNullable", "withAttributes", "withElements", "getPadding", "withArguments" ]
+    }, {
+      "name" : "getOperator",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "withOperator",
+      "visibility" : "public",
+      "methodCalls" : [ "withElement", "withOperator", "getPadding" ]
+    }, {
+      "name" : "getUseSite",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "getConstraints",
+      "visibility" : "public",
+      "methodCalls" : [ "getElements" ]
+    }, {
+      "name" : "getElements",
+      "visibility" : "public",
+      "methodCalls" : [ "emptyList", "size", "getElement", "add", "getElements" ]
+    }, {
+      "name" : "withImports",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "collect", "getElement", "toList", "stream", "map", "filter", "getImports", "addAll", "size", "getPadding", "withImports", "withElements" ]
+    }, {
+      "name" : "getStatements",
+      "visibility" : "public",
+      "methodCalls" : [ "getElements" ]
+    }, {
+      "name" : "withReceiver",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withInitializer",
+      "visibility" : "public",
+      "methodCalls" : [ "withElementsNullable", "withElement", "getPadding", "withInitializer" ]
+    }, {
+      "name" : "withDestructAssignments",
+      "visibility" : "public",
+      "methodCalls" : [ "withElementsNullable", "requireNonNull", "withDestructAssignments", "getPadding" ]
+    }, {
+      "name" : "getDestructAssignments",
+      "visibility" : "public",
+      "methodCalls" : [ "getElements" ]
+    }, {
+      "name" : "getInvocation",
+      "visibility" : "public",
+      "methodCalls" : [ "getElement" ]
+    }, {
+      "name" : "withInvocation",
+      "visibility" : "public",
+      "methodCalls" : [ "withInvocation", "withElement", "getPadding" ]
+    }, {
+      "name" : "withBody",
+      "visibility" : "public",
+      "methodCalls" : [ "withElements", "getPadding", "withBody", "withElement" ]
+    } ],
+    "imports" : [ "java.util.Objects.requireNonNull", "org.openrewrite.toml.TomlVisitor", "org.openrewrite.toml.internal.TomlPrinter", "org.openrewrite.internal.lang.Nullable", "org.openrewrite.protobuf.ProtoVisitor", "org.openrewrite.protobuf.internal.ProtoPrinter", "org.openrewrite.rpc.RpcReceiveQueue", "org.openrewrite.json.internal.rpc.JsonReceiver", "org.openrewrite.rpc.RpcCodec", "org.openrewrite.json.JsonVisitor", "org.openrewrite.json.internal.rpc.JsonSender", "org.openrewrite.rpc.RpcSendQueue", "org.openrewrite.json.internal.JsonPrinter", "java.util.stream.Collectors.toList", "org.openrewrite.java.search.FindTypes", "org.openrewrite.java.JavadocVisitor", "org.openrewrite.internal.StringUtils", "org.openrewrite.internal.LoathingOfOthers", "org.jspecify.annotations.NonNull", "org.openrewrite.java.JavaVisitor", "java.util", "org.openrewrite.internal.SelfLoathing", "java.lang.reflect.InvocationTargetException", "org.openrewrite.internal.NamingService", "org.openrewrite.SourceFile", "org.openrewrite.Incubating", "org.openrewrite.java.service.JavaNamingService", "org.openrewrite.java.service.AnnotationService", "org.openrewrite.java.internal.JavaWhitespaceValidationService", "org.openrewrite.groovy.GroovyPrinter", "org.openrewrite.groovy.GroovyVisitor", "org.openrewrite.groovy.service.GroovyAutoFormatService", "org.openrewrite.internal.WhitespaceValidationService", "org.openrewrite.groovy.internal.GroovyWhitespaceValidationService", "com.fasterxml.jackson.annotation.JsonIgnore", "org.openrewrite.hcl.internal.HclPrinter", "org.openrewrite.hcl.HclVisitor", "org.openrewrite.hcl.HclParser", "java.util.function.UnaryOperator", "lombok.RequiredArgsConstructor", "com.fasterxml.jackson.annotation.JsonCreator", "java.beans.Transient", "org.openrewrite.java.service.AutoFormatService", "java.nio.file.Path", "java.util.Collections.emptyList", "org.openrewrite.internal.ListUtils", "org.jspecify.annotations.Nullable", "org.openrewrite.java.tree", "org.openrewrite", "java.util.UUID", "java.util.stream.Collectors", "java.nio.charset.StandardCharsets", "lombok.experimental.NonFinal", "java.util.Collections.singletonList", "lombok", "java.util.function.Predicate", "java.lang.ref.SoftReference", "org.openrewrite.kotlin.service.KotlinAutoFormatService", "java.nio.charset.Charset", "org.openrewrite.kotlin.service.KotlinImportService", "org.openrewrite.kotlin.KotlinVisitor", "org.openrewrite.java.service.ImportService", "org.openrewrite.java.JavaTypeVisitor", "org.openrewrite.kotlin.internal.KotlinPrinter", "java.util.concurrent.atomic.AtomicInteger", "java.util.Collections", "org.openrewrite.java.JavaPrinter", "java.lang.ref.WeakReference", "org.openrewrite.marker.Markers", "java.util.List", "java.util.ArrayList", "org.openrewrite.java.internal.TypesInUse", "lombok.experimental.FieldDefaults" ]
+  } ]
+}

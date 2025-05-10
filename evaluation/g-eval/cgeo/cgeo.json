@@ -1,0 +1,2305 @@
+{
+  "systemName" : "cgeo",
+  "classes" : [ {
+    "name" : "Settings",
+    "packageName" : "cgeo.geocaching.settings",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "getVersion",
+      "visibility" : "public",
+      "methodCalls" : [ "getInt" ]
+    }, {
+      "name" : "setLastUsedDate",
+      "visibility" : "public",
+      "methodCalls" : [ "getTimeInMillis" ]
+    }, {
+      "name" : "isBigSmileysEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "hasGCCredentials",
+      "visibility" : "public",
+      "methodCalls" : [ "getGcCredentials", "isValid" ]
+    }, {
+      "name" : "enableFeatureWherigoDebugCartridge",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isALCAdvanced",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "setAutotargetIndividualRoute",
+      "visibility" : "public",
+      "methodCalls" : [ "putBoolean" ]
+    }, {
+      "name" : "setLogTrackableWithoutGeocodeShowCount",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTrackableComparator",
+      "visibility" : "public",
+      "methodCalls" : [ "name", "putString" ]
+    }, {
+      "name" : "getMapDownloaderAutoRename",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "getMapBackgroundMapLayer",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "getUserDefinedTileProviderUri",
+      "visibility" : "public",
+      "methodCalls" : [ "getString" ]
+    }, {
+      "name" : "getTokenSecret",
+      "visibility" : "public",
+      "methodCalls" : [ "getString" ]
+    }, {
+      "name" : "setCacheFilterConfig",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getFieldNoteExportOnlyNew",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "isProximityNotificationMasterToggleOn",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "isOCConnectorActive",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "enableVtmMarkerAtlasUsage",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "mapAutoDownloadsNeedUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "setMapAutoDownloadsLastCheck" ]
+    }, {
+      "name" : "setLastCacheLog",
+      "visibility" : "public",
+      "methodCalls" : [ "putString" ]
+    }, {
+      "name" : "getSimpleListModelConfig",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setExcludeWpOriginal",
+      "visibility" : "public",
+      "methodCalls" : [ "putBoolean" ]
+    }, {
+      "name" : "getExternalPrivateCgeoDirectory",
+      "visibility" : "public",
+      "methodCalls" : [ "getAvailableExternalPrivateCgeoDirectories", "getExternalPrivateCgeoDirectory", "equals", "setExternalPrivateCgeoDirectory", "getFirstExternalPrivateCgeoDirectory", "getAbsolutePath", "w", "getString" ]
+    }, {
+      "name" : "legacyFolderNeedsToBeMigrated",
+      "visibility" : "public",
+      "methodCalls" : [ "startsWith" ]
+    }, {
+      "name" : "getCompactIconMode",
+      "visibility" : "public",
+      "methodCalls" : [ "getString", "equals" ]
+    }, {
+      "name" : "getHistoryList",
+      "visibility" : "public",
+      "methodCalls" : [ "min", "toArray", "subList", "size" ]
+    }, {
+      "name" : "isLiveMap",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "getMapLanguageId",
+      "visibility" : "public",
+      "methodCalls" : [ "getMapLanguage", "isBlank", "hashCode" ]
+    }, {
+      "name" : "setCompactIconMode",
+      "visibility" : "public",
+      "methodCalls" : [ "putString" ]
+    }, {
+      "name" : "setVersion",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setShowCircles",
+      "visibility" : "public",
+      "methodCalls" : [ "putBoolean" ]
+    }, {
+      "name" : "getCustomBNitem",
+      "visibility" : "public",
+      "methodCalls" : [ "getId", "getString", "getById", "parseInt" ]
+    }, {
+      "name" : "clearRecentlyViewedHistory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMapLanguage",
+      "visibility" : "public",
+      "methodCalls" : [ "putString", "isBlank" ]
+    }, {
+      "name" : "isDbOnSDCard",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "isLiveList",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "putIntDirect",
+      "visibility" : "public",
+      "methodCalls" : [ "edit", "apply" ]
+    }, {
+      "name" : "getPlainLogs",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "getActualVersion",
+      "visibility" : "public",
+      "methodCalls" : [ "getInt" ]
+    }, {
+      "name" : "putBooleanDirect",
+      "visibility" : "public",
+      "methodCalls" : [ "edit", "apply", "putBoolean" ]
+    }, {
+      "name" : "getKeyInt",
+      "visibility" : "public",
+      "methodCalls" : [ "getResources", "getInstance", "getInteger" ]
+    }, {
+      "name" : "getTrackableAction",
+      "visibility" : "public",
+      "methodCalls" : [ "getInt" ]
+    }, {
+      "name" : "setAttributeFilterSources",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setUseInternalRouting",
+      "visibility" : "public",
+      "methodCalls" : [ "putBoolean" ]
+    }, {
+      "name" : "showElevation",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "getSelectedGoogleMapTheme",
+      "visibility" : "public",
+      "methodCalls" : [ "getString" ]
+    }, {
+      "name" : "getBackupLoginData",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "getTranslationTargetLanguage",
+      "visibility" : "public",
+      "methodCalls" : [ "contains", "getString", "isEmpty", "getApplicationLocale", "getLanguage", "getSupportedLanguages" ]
+    }, {
+      "name" : "setMapRotation",
+      "visibility" : "public",
+      "methodCalls" : [ "enableRotation", "getEventLayer", "getTouchGestureHandler", "setRotationEnabled", "putString", "getUiSettings", "setMapRotation", "setRotateGesturesEnabled", "setBearing", "getCurrentBearing", "repaintRotationIndicator" ]
+    }, {
+      "name" : "getBrouterThreshold",
+      "visibility" : "public",
+      "methodCalls" : [ "getKeyInt", "getInt" ]
+    }, {
+      "name" : "getLogImageCaptionDefaultPraefix",
+      "visibility" : "public",
+      "methodCalls" : [ "getLogImageCaptionDefaultPraefixFor", "getString" ]
+    }, {
+      "name" : "isALConnectorActive",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "getMaximumMapTrailLength",
+      "visibility" : "public",
+      "methodCalls" : [ "getKeyInt", "getInt" ]
+    }, {
+      "name" : "isGCVoteLoginValid",
+      "visibility" : "public",
+      "methodCalls" : [ "getGCVoteLogin", "isValid" ]
+    }, {
+      "name" : "getInfoItems",
+      "visibility" : "public",
+      "methodCalls" : [ "getStringSet", "parseInt", "getBoolean", "equals", "join", "emptySet", "i", "putString", "name", "getString", "add", "values", "split" ]
+    }, {
+      "name" : "getSyncMapRenderThemeFolder",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "setLastLoginErrorGC",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isStoreLogImages",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "setBookmarklistsShowNewOnly",
+      "visibility" : "public",
+      "methodCalls" : [ "putBoolean" ]
+    }, {
+      "name" : "getLastLoginErrorGC",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "putBoolean",
+      "visibility" : "public",
+      "methodCalls" : [ "putBooleanDirect" ]
+    }, {
+      "name" : "getAvatarUrl",
+      "visibility" : "public",
+      "methodCalls" : [ "getString", "getAvatarPreferenceKey" ]
+    }, {
+      "name" : "putUserLanguage",
+      "visibility" : "public",
+      "methodCalls" : [ "putString" ]
+    }, {
+      "name" : "getGCVoteLogin",
+      "visibility" : "public",
+      "methodCalls" : [ "getString", "trimToNull" ]
+    }, {
+      "name" : "setMapShadingShowLayer",
+      "visibility" : "public",
+      "methodCalls" : [ "putBoolean" ]
+    }, {
+      "name" : "isDebug",
+      "visibility" : "public",
+      "methodCalls" : [ "isDebug" ]
+    }, {
+      "name" : "getSupersizeDistance",
+      "visibility" : "public",
+      "methodCalls" : [ "getInt" ]
+    }, {
+      "name" : "setSupersizeDistance",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTokenSecret",
+      "visibility" : "public",
+      "methodCalls" : [ "putString" ]
+    }, {
+      "name" : "getGeokretySecId",
+      "visibility" : "public",
+      "methodCalls" : [ "getString" ]
+    }, {
+      "name" : "isBrouterShowBothDistances",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "getPqShowDownloadableOnly",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "getGCMemberStatus",
+      "visibility" : "public",
+      "methodCalls" : [ "getString", "fromString" ]
+    }, {
+      "name" : "isPersonalCacheNoteMergeDisabled",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "isSpecificProximityNotificationActive",
+      "visibility" : "public",
+      "methodCalls" : [ "isProximityNotificationMasterToggleOn", "getBoolean" ]
+    }, {
+      "name" : "getMapCenter",
+      "visibility" : "public",
+      "methodCalls" : [ "getMapItemFactory", "getMapProvider", "getInt", "getGeoPointBase" ]
+    }, {
+      "name" : "getSelectedMapRenderTheme",
+      "visibility" : "public",
+      "methodCalls" : [ "e", "getString", "getId", "getInstance", "isNotBlank", "getSelectedMapRenderTheme" ]
+    }, {
+      "name" : "getClearTrailAfterExportStatus",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "setGoogleMapOptionEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "putBooleanDirect" ]
+    }, {
+      "name" : "enableFeatureWherigoDebug",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "getSortConfig",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getLogTemplate",
+      "visibility" : "public",
+      "methodCalls" : [ "getLogTemplates", "equals" ]
+    }, {
+      "name" : "isShowCircles",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "getLastChangelogChecksum",
+      "visibility" : "public",
+      "methodCalls" : [ "getLong" ]
+    }, {
+      "name" : "setFieldNoteExportOnlyNew",
+      "visibility" : "public",
+      "methodCalls" : [ "putBoolean" ]
+    }, {
+      "name" : "setBrouterAutoTileDownloads",
+      "visibility" : "public",
+      "methodCalls" : [ "putBoolean" ]
+    }, {
+      "name" : "hasOSMMultiThreading",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "setFieldnoteExportDate",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMapProvider",
+      "visibility" : "public",
+      "methodCalls" : [ "getMapSource", "getMapProvider" ]
+    }, {
+      "name" : "getString",
+      "visibility" : "public",
+      "methodCalls" : [ "getString", "length", "substring" ]
+    }, {
+      "name" : "removeFromRouteOnLog",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "setLastChangelogChecksum",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getIconScaleEverywhere",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "getUniqueNotificationId",
+      "visibility" : "public",
+      "methodCalls" : [ "getInt" ]
+    }, {
+      "name" : "setMapZoom",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMapActionbarAutohide",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "isGeneralProximityNotificationActive",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean", "isProximityNotificationMasterToggleOn" ]
+    }, {
+      "name" : "dbNeedsReindex",
+      "visibility" : "public",
+      "methodCalls" : [ "setDbReindexLastCheck" ]
+    }, {
+      "name" : "setHomeLocation",
+      "visibility" : "public",
+      "methodCalls" : [ "putString" ]
+    }, {
+      "name" : "setPqShowDownloadableOnly",
+      "visibility" : "public",
+      "methodCalls" : [ "putBoolean" ]
+    }, {
+      "name" : "setDbReindexLastCheck",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isProximityNotificationTypeText",
+      "visibility" : "public",
+      "methodCalls" : [ "getString", "equals" ]
+    }, {
+      "name" : "getVtmDefaultVariantName",
+      "visibility" : "public",
+      "methodCalls" : [ "getString" ]
+    }, {
+      "name" : "getTrackableComparator",
+      "visibility" : "public",
+      "methodCalls" : [ "getString", "findByName" ]
+    }, {
+      "name" : "setPersistableUri",
+      "visibility" : "public",
+      "methodCalls" : [ "getPrefKeyId", "putString" ]
+    }, {
+      "name" : "getStartscreenIntent",
+      "visibility" : "public",
+      "methodCalls" : [ "getBottomNavigationIntent", "equals", "getString" ]
+    }, {
+      "name" : "allowedBackupsNumber",
+      "visibility" : "public",
+      "methodCalls" : [ "getKeyInt", "getInt" ]
+    }, {
+      "name" : "hasOAuthAuthorization",
+      "visibility" : "public",
+      "methodCalls" : [ "isNotBlank", "getString" ]
+    }, {
+      "name" : "isRatingWanted",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "setMapBackgroundMapLayer",
+      "visibility" : "public",
+      "methodCalls" : [ "putBoolean" ]
+    }, {
+      "name" : "setSimpleListModelConfig",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTokens",
+      "visibility" : "public",
+      "methodCalls" : [ "putString" ]
+    }, {
+      "name" : "getLogTemplates",
+      "visibility" : "public",
+      "methodCalls" : [ "readValue", "getString", "getMessage", "e" ]
+    }, {
+      "name" : "setIncludeTravelBugs",
+      "visibility" : "public",
+      "methodCalls" : [ "putBoolean" ]
+    }, {
+      "name" : "setExcludeWpVisited",
+      "visibility" : "public",
+      "methodCalls" : [ "putBoolean" ]
+    }, {
+      "name" : "getPersistableFolder",
+      "visibility" : "public",
+      "methodCalls" : [ "getString", "getPrefKeyId" ]
+    }, {
+      "name" : "isALCfoundStateManual",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "setFollowMyLocation",
+      "visibility" : "public",
+      "methodCalls" : [ "putBoolean" ]
+    }, {
+      "name" : "getExpectedVersion",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCoordinateSearchLimit",
+      "visibility" : "public",
+      "methodCalls" : [ "getInt" ]
+    }, {
+      "name" : "getCoordInputFormat",
+      "visibility" : "public",
+      "methodCalls" : [ "fromInt", "getInt" ]
+    }, {
+      "name" : "setInfoItems",
+      "visibility" : "public",
+      "methodCalls" : [ "putString", "toString", "append", "length" ]
+    }, {
+      "name" : "checkAndSetLegacyFilterConfigMigrated",
+      "visibility" : "public",
+      "methodCalls" : [ "putBoolean", "getBoolean" ]
+    }, {
+      "name" : "getInt",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSortConfig",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCredentials",
+      "visibility" : "public",
+      "methodCalls" : [ "getUsernameRaw", "getUsernamePreferenceKey", "getPasswordPreferenceKey", "putString", "getPasswordRaw" ]
+    }, {
+      "name" : "setLastDetailsPage",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getLastTrackableLog",
+      "visibility" : "public",
+      "methodCalls" : [ "getString" ]
+    }, {
+      "name" : "setExternalPrivateCgeoDirectory",
+      "visibility" : "public",
+      "methodCalls" : [ "putString" ]
+    }, {
+      "name" : "dbNeedsCleanup",
+      "visibility" : "public",
+      "methodCalls" : [ "setDbCleanupLastCheck" ]
+    }, {
+      "name" : "putString",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getLogImageCaptionDefaultPraefixFor",
+      "visibility" : "public",
+      "methodCalls" : [ "getString", "trim", "isBlank" ]
+    }, {
+      "name" : "setLogImageScale",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMapDownloaderSource",
+      "visibility" : "public",
+      "methodCalls" : [ "getInt" ]
+    }, {
+      "name" : "getHomeLocation",
+      "visibility" : "public",
+      "methodCalls" : [ "getString" ]
+    }, {
+      "name" : "setSelectedGoogleMapTheme",
+      "visibility" : "public",
+      "methodCalls" : [ "putString" ]
+    }, {
+      "name" : "useInternalRouting",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "setBrouterAutoTileDownloadsLastCheck",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getProximityNotificationThreshold",
+      "visibility" : "public",
+      "methodCalls" : [ "getKeyInt", "getInt" ]
+    }, {
+      "name" : "isShowAddress",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "useImperialUnits",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "getHideVisitedWaypoints",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "useLowPowerMode",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "setLastDisplayedList",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getPersistableUriRaw",
+      "visibility" : "public",
+      "methodCalls" : [ "getString", "getPrefKeyId" ]
+    }, {
+      "name" : "isFeatureEnabledDefaultFalse",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "getDeviceOrientationMode",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSelectedMapRenderThemeStyle",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDefaultNavigationTool",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getUserName",
+      "visibility" : "public",
+      "methodCalls" : [ "getInstance", "getActualUserName", "getName", "trim", "getString" ]
+    }, {
+      "name" : "getFieldnoteExportDate",
+      "visibility" : "public",
+      "methodCalls" : [ "getLong" ]
+    }, {
+      "name" : "setAppThemeAutomatically",
+      "visibility" : "public",
+      "methodCalls" : [ "setAppTheme" ]
+    }, {
+      "name" : "getLastSelectedLists",
+      "visibility" : "public",
+      "methodCalls" : [ "valueOf", "add" ]
+    }, {
+      "name" : "getLastUsedDate",
+      "visibility" : "public",
+      "methodCalls" : [ "getInstance", "getTimeInMillis", "setTimeInMillis", "getLong" ]
+    }, {
+      "name" : "showProximityNotificationMasterToggle",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "setCreateUDCuseGivenList",
+      "visibility" : "public",
+      "methodCalls" : [ "putBoolean" ]
+    }, {
+      "name" : "getTileProvider",
+      "visibility" : "public",
+      "methodCalls" : [ "getTileProvider", "getAnyTileProvider", "getString", "getNumericalId", "values", "buildTileProviderList", "get" ]
+    }, {
+      "name" : "setAppTheme",
+      "visibility" : "public",
+      "methodCalls" : [ "getModeId", "setDefaultNightMode" ]
+    }, {
+      "name" : "setDebug",
+      "visibility" : "public",
+      "methodCalls" : [ "setDebug", "putBoolean" ]
+    }, {
+      "name" : "getListInitialLoadLimit",
+      "visibility" : "public",
+      "methodCalls" : [ "getKeyInt", "getInt" ]
+    }, {
+      "name" : "getMapSource",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "values", "getNumericalId", "getAnyMapSource", "getString", "isAvailable", "getMapSource" ]
+    }, {
+      "name" : "setUseGooglePlayServices",
+      "visibility" : "public",
+      "methodCalls" : [ "putBoolean" ]
+    }, {
+      "name" : "getRoutingMode",
+      "visibility" : "public",
+      "methodCalls" : [ "fromString", "getString" ]
+    }, {
+      "name" : "isWallpaper",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "isECConnectorActive",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "getMapZoom",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setIncludeFoundStatus",
+      "visibility" : "public",
+      "methodCalls" : [ "putBoolean" ]
+    }, {
+      "name" : "isProximityNotificationTypeTone",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "getString" ]
+    }, {
+      "name" : "getLogTrackableWithoutGeocodeShowCount",
+      "visibility" : "public",
+      "methodCalls" : [ "getInt" ]
+    }, {
+      "name" : "isSUConnectorActive",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "setRoutingMode",
+      "visibility" : "public",
+      "methodCalls" : [ "invalidateRouting", "putString" ]
+    }, {
+      "name" : "setCoordInputFormat",
+      "visibility" : "public",
+      "methodCalls" : [ "ordinal" ]
+    }, {
+      "name" : "isBetterCacherConnectorActive",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "getIncludeFoundStatus",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "getZoomIncludingWaypoints",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "getMapDownloadsKeepTemporaryFiles",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "setLastLoginSuccessGC",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMapAutoDownloadsLastCheck",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "provideClipboardCopyAction",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "getApplicationLocale",
+      "visibility" : "public",
+      "methodCalls" : [ "getUserLanguage", "isNotBlank", "getDefault" ]
+    }, {
+      "name" : "isGeokretyConnectorActive",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "getHideTileproviders",
+      "visibility" : "public",
+      "methodCalls" : [ "getStringSet", "emptySet" ]
+    }, {
+      "name" : "setDbOnSDCard",
+      "visibility" : "public",
+      "methodCalls" : [ "putBoolean" ]
+    }, {
+      "name" : "getLong",
+      "visibility" : "public",
+      "methodCalls" : [ "getLong" ]
+    }, {
+      "name" : "getGcCredentials",
+      "visibility" : "public",
+      "methodCalls" : [ "getInstance", "getCredentials" ]
+    }, {
+      "name" : "getDefaultNavigationTool2",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMapSource",
+      "visibility" : "public",
+      "methodCalls" : [ "getMapSource", "setMapType", "setIndoorEnabled", "getId", "putString", "isAvailable" ]
+    }, {
+      "name" : "setPlainLogs",
+      "visibility" : "public",
+      "methodCalls" : [ "putBoolean" ]
+    }, {
+      "name" : "isMapTrail",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "setLocalStorageVersion",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMapDownloaderSource",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "enableFeatureUnifiedGeoItemLayer",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "showVTMInUnifiedMap",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isLongTapOnMapActivated",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "setUseCompass",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMapRenderScalePreferenceKey",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isTrackableAutoVisit",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "getBuildings3D",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "getSignature",
+      "visibility" : "public",
+      "methodCalls" : [ "getString", "defaultString" ]
+    }, {
+      "name" : "useLegacyMaps",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "isFeatureEnabledDefaultTrue",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "enableProximityNotifications",
+      "visibility" : "public",
+      "methodCalls" : [ "putBoolean" ]
+    }, {
+      "name" : "getMapShadingShowLayer",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "getCreateUDCuseGivenList",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "isExcludeWpOriginal",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "getLoadDirImg",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean", "isGCPremiumMember" ]
+    }, {
+      "name" : "setGCUserName",
+      "visibility" : "public",
+      "methodCalls" : [ "putString", "isNotBlank" ]
+    }, {
+      "name" : "isShowRouteMenu",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "setSelectedMapRenderTheme",
+      "visibility" : "public",
+      "methodCalls" : [ "setSelectedMapRenderTheme", "putString", "getString", "getInstance", "e" ]
+    }, {
+      "name" : "addCacheToHistory",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "getLastOpenedCaches" ]
+    }, {
+      "name" : "getUseCustomTabs",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "getVisitedWaypointsSemiTransparent",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "getGcCustomDate",
+      "visibility" : "public",
+      "methodCalls" : [ "defaultString", "getString" ]
+    }, {
+      "name" : "setIncludeLogs",
+      "visibility" : "public",
+      "methodCalls" : [ "putBoolean" ]
+    }, {
+      "name" : "useGooglePlayServices",
+      "visibility" : "public",
+      "methodCalls" : [ "isAvailable", "getBoolean" ]
+    }, {
+      "name" : "automaticBackupDue",
+      "visibility" : "public",
+      "methodCalls" : [ "currentTimeMillis", "getLong", "setAutomaticBackupLastCheck" ]
+    }, {
+      "name" : "getHintAsRot13",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "getUserLanguage",
+      "visibility" : "public",
+      "methodCalls" : [ "getString", "getBoolean" ]
+    }, {
+      "name" : "setLiveMap",
+      "visibility" : "public",
+      "methodCalls" : [ "putBoolean" ]
+    }, {
+      "name" : "setExcludeWpParking",
+      "visibility" : "public",
+      "methodCalls" : [ "putBoolean" ]
+    }, {
+      "name" : "getPreviousTileProvider",
+      "visibility" : "public",
+      "methodCalls" : [ "getAnyTileProvider", "getString", "getTileProvider" ]
+    }, {
+      "name" : "setClearTrailAfterExportStatus",
+      "visibility" : "public",
+      "methodCalls" : [ "putBoolean" ]
+    }, {
+      "name" : "getTokenPair",
+      "visibility" : "public",
+      "methodCalls" : [ "getString" ]
+    }, {
+      "name" : "useOrientationSensor",
+      "visibility" : "public",
+      "methodCalls" : [ "hasOrientationSensor", "hasMagnetometerAndAccelerometerSensors", "hasRotationSensor", "getBoolean" ]
+    }, {
+      "name" : "setDbCleanupLastCheck",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMapLanguage",
+      "visibility" : "public",
+      "methodCalls" : [ "isBlank", "getString" ]
+    }, {
+      "name" : "isAutotargetIndividualRoute",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "getRoutingProfile",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "getString", "getRoutingMode", "getRoutingProfile" ]
+    }, {
+      "name" : "setPendingDownloadsLastCheck",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getLogOffline",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "getMapShadingHq",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "setActualVersion",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isGCPremiumMember",
+      "visibility" : "public",
+      "methodCalls" : [ "getGCMemberStatus", "isPremium" ]
+    }, {
+      "name" : "getMapRenderScale",
+      "visibility" : "public",
+      "methodCalls" : [ "min", "max", "getMapRenderScalePreferenceKey" ]
+    }, {
+      "name" : "enableVtmSingleMarkerSymbol",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "getMapOsmThreads",
+      "visibility" : "public",
+      "methodCalls" : [ "availableProcessors", "min", "getRuntime", "hasOSMMultiThreading", "max", "getInt" ]
+    }, {
+      "name" : "setLastTrackableLog",
+      "visibility" : "public",
+      "methodCalls" : [ "putString" ]
+    }, {
+      "name" : "setTileProvider",
+      "visibility" : "public",
+      "methodCalls" : [ "putString", "getId" ]
+    }, {
+      "name" : "getChooseList",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "isGlobalWpExtractionDisabled",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "isGCConnectorActive",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "hasGeokretyAuthorization",
+      "visibility" : "public",
+      "methodCalls" : [ "isNotBlank", "getGeokretySecId" ]
+    }, {
+      "name" : "getBookmarklistsShowNewOnly",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "setGeokretySecId",
+      "visibility" : "public",
+      "methodCalls" : [ "putString" ]
+    }, {
+      "name" : "getSensitivePreferenceKeys",
+      "visibility" : "public",
+      "methodCalls" : [ "getString", "addAll" ]
+    }, {
+      "name" : "getMapLineValue",
+      "visibility" : "public",
+      "methodCalls" : [ "getKeyInt", "getInt" ]
+    }, {
+      "name" : "isDisplayOfflineLogsHomescreen",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "isLightSkin",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "showMapsforgeInUnifiedMap",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isExcludeWpParking",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "enableFeatureUnifiedDebug",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "isGoogleMapOptionEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMapTrail",
+      "visibility" : "public",
+      "methodCalls" : [ "putBoolean" ]
+    }, {
+      "name" : "isRegisteredForSend2cgeo",
+      "visibility" : "public",
+      "methodCalls" : [ "getWebDeviceCode" ]
+    }, {
+      "name" : "getLastOpenedCaches",
+      "visibility" : "public",
+      "methodCalls" : [ "loadCaches", "compare", "sort", "indexOf", "getGeocode", "getLastOpenedCaches", "subList", "size", "min" ]
+    }, {
+      "name" : "getPersistentCookies",
+      "visibility" : "public",
+      "methodCalls" : [ "getString" ]
+    }, {
+      "name" : "isBrouterAutoTileDownloads",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "isExcludeWpVisited",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "setGcCustomDate",
+      "visibility" : "public",
+      "methodCalls" : [ "putString" ]
+    }, {
+      "name" : "setTrackableAction",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isMapDirection",
+      "visibility" : "public",
+      "methodCalls" : [ "getRoutingMode" ]
+    }, {
+      "name" : "addToHistoryList",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "asList", "getHistoryList" ]
+    }, {
+      "name" : "getAttributeFilterSources",
+      "visibility" : "public",
+      "methodCalls" : [ "getActiveConnectors", "getNameAbbreviated", "equals", "getInt" ]
+    }, {
+      "name" : "setDeviceOrientationMode",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isUseCompass",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getALCLauncher",
+      "visibility" : "public",
+      "methodCalls" : [ "getString" ]
+    }, {
+      "name" : "getWayPointsThreshold",
+      "visibility" : "public",
+      "methodCalls" : [ "getKeyInt", "getInt" ]
+    }, {
+      "name" : "isDefaultMapRenderTheme",
+      "visibility" : "public",
+      "methodCalls" : [ "getSelectedMapRenderTheme", "isBlank" ]
+    }, {
+      "name" : "isUseNavigationApp",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "setPreviousTileProvider",
+      "visibility" : "public",
+      "methodCalls" : [ "getId", "putString" ]
+    }, {
+      "name" : "isAutoInsertSignature",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "setAvatarUrl",
+      "visibility" : "public",
+      "methodCalls" : [ "putString", "getAvatarPreferenceKey" ]
+    }, {
+      "name" : "setPersistentCookies",
+      "visibility" : "public",
+      "methodCalls" : [ "putString" ]
+    }, {
+      "name" : "getECIconSet",
+      "visibility" : "public",
+      "methodCalls" : [ "getString" ]
+    }, {
+      "name" : "getIncludeLogs",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "getMapRotation",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "getString" ]
+    }, {
+      "name" : "getPreferencesCount",
+      "visibility" : "public",
+      "methodCalls" : [ "getAll", "size" ]
+    }, {
+      "name" : "getWebDeviceCode",
+      "visibility" : "public",
+      "methodCalls" : [ "getString" ]
+    }, {
+      "name" : "getLastDetailsPage",
+      "visibility" : "public",
+      "methodCalls" : [ "getInt" ]
+    }, {
+      "name" : "getLastDisplayedList",
+      "visibility" : "public",
+      "methodCalls" : [ "getInt" ]
+    }, {
+      "name" : "isOpenLastDetailsPage",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "setMapCenter",
+      "visibility" : "public",
+      "methodCalls" : [ "getLatitudeE6", "getLongitudeE6" ]
+    }, {
+      "name" : "getNearbySearchLimit",
+      "visibility" : "public",
+      "methodCalls" : [ "getInt" ]
+    }, {
+      "name" : "setGCMemberStatus",
+      "visibility" : "public",
+      "methodCalls" : [ "putString" ]
+    }, {
+      "name" : "setPersistableFolder",
+      "visibility" : "public",
+      "methodCalls" : [ "putString", "getPrefKeyId" ]
+    }, {
+      "name" : "getLogImageScale",
+      "visibility" : "public",
+      "methodCalls" : [ "getInt", "max" ]
+    }, {
+      "name" : "getPersistableUri",
+      "visibility" : "public",
+      "methodCalls" : [ "getPrefKeyId", "getString" ]
+    }, {
+      "name" : "pendingDownloadsNeedCheck",
+      "visibility" : "public",
+      "methodCalls" : [ "setPendingDownloadsLastCheck" ]
+    }, {
+      "name" : "isRegisteredForGeokretyLogging",
+      "visibility" : "public",
+      "methodCalls" : [ "getGeokretySecId" ]
+    }, {
+      "name" : "getFollowMyLocation",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "getIncludeTravelBugs",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "setGCConnectorActive",
+      "visibility" : "public",
+      "methodCalls" : [ "putBoolean" ]
+    }, {
+      "name" : "getCredentials",
+      "visibility" : "public",
+      "methodCalls" : [ "getCredentials", "trim", "getString", "getPasswordPreferenceKey", "getUsernamePreferenceKey" ]
+    }, {
+      "name" : "extendedSettingsAreEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "setWebNameCode",
+      "visibility" : "public",
+      "methodCalls" : [ "putString" ]
+    }, {
+      "name" : "setAutomaticBackupLastCheck",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isDTMarkerEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "isFriendLogsWanted",
+      "visibility" : "public",
+      "methodCalls" : [ "hasGCCredentials", "getBoolean" ]
+    }, {
+      "name" : "getUMMapCenter",
+      "visibility" : "public",
+      "methodCalls" : [ "getInt" ]
+    }, {
+      "name" : "getLastLoginSuccessGC",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getLocalStorageVersion",
+      "visibility" : "public",
+      "methodCalls" : [ "getInt" ]
+    }, {
+      "name" : "getFieldNoteExportUpload",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "brouterAutoTileDownloadsNeedUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "setBrouterAutoTileDownloadsLastCheck" ]
+    }, {
+      "name" : "putLogTemplate",
+      "visibility" : "public",
+      "methodCalls" : [ "e", "putString", "getText", "writeValueAsString", "getMessage", "add", "getLogTemplates", "indexOf", "set" ]
+    }, {
+      "name" : "getCacheFilterConfig",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getLanguagesToNotTranslate",
+      "visibility" : "public",
+      "methodCalls" : [ "getStringSet", "getTranslationTargetLanguage", "getCode", "add", "addAll" ]
+    }, {
+      "name" : "setFieldNoteExportUpload",
+      "visibility" : "public",
+      "methodCalls" : [ "putBoolean" ]
+    }, {
+      "name" : "getPersistableFolderRaw",
+      "visibility" : "public",
+      "methodCalls" : [ "getPrefKeyId", "getString" ]
+    }, {
+      "name" : "getLastCacheLog",
+      "visibility" : "public",
+      "methodCalls" : [ "getString" ]
+    }, {
+      "name" : "getShortDateFormat",
+      "visibility" : "public",
+      "methodCalls" : [ "getString" ]
+    }, {
+      "name" : "getBoolean",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setLastSelectedLists",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setHideVisitedWaypoints",
+      "visibility" : "public",
+      "methodCalls" : [ "putBoolean" ]
+    } ],
+    "imports" : [ "org.apache.commons.lang3.tuple.ImmutablePair", "androidx.annotation.Nullable", "cgeo.geocaching.location.ProximityNotification", "java.io.File", "cgeo.geocaching.models.InfoItem", "cgeo.geocaching.connector.capability.ICredentials", "java.util.Set", "cgeo.geocaching.connector.gc.GCConnector", "java.util.Locale", "java.io.FileFilter", "cgeo.geocaching.models.Download", "cgeo.geocaching.unifiedmap.tileproviders.AbstractTileProvider", "com.fasterxml.jackson.core.JsonProcessingException", "com.fasterxml.jackson.annotation.JsonCreator", "cgeo.geocaching.apps.navi.NavigationAppFactory.NavigationAppsEnum", "cgeo.geocaching.storage.DataStore", "com.fasterxml.jackson.annotation.JsonProperty", "cgeo.geocaching.ui.AvatarUtils", "androidx.annotation.NonNull", "cgeo.geocaching.connector.gc.GCConstants", "android.os.Build", "androidx.annotation.StringRes", "cgeo.geocaching.filters.core.GeocacheFilterContext", "cgeo.geocaching.sensors.OrientationProvider", "cgeo.geocaching.utils.LocalizationUtils", "cgeo.geocaching.connector.capability.IAvatar", "cgeo.geocaching.brouter.BRouterConstants", "cgeo.geocaching.unifiedmap.tileproviders.TileProviderFactory", "cgeo.geocaching.CgeoApplication", "cgeo.geocaching.sensors.DirectionData", "cgeo.geocaching.storage.PersistableUri", "java.util.Map", "cgeo.geocaching.maps.routing.Routing", "cgeo.geocaching.storage.PersistableFolder", "android.app.Activity", "cgeo.geocaching.utils.FileUtils", "cgeo.geocaching.activity.AbstractNavigationBarActivity", "android.content.res.Configuration", "android.content.SharedPreferences", "cgeo.geocaching.maps.routing.RoutingMode", "cgeo.geocaching.utils.OfflineTranslateUtils", "cgeo.geocaching.maps.MapMode", "java.util.Calendar", "cgeo.geocaching.sensors.MagnetometerAndAccelerometerProvider", "java.util.HashSet", "java.util.ArrayList", "cgeo.geocaching.maps.MapProviderFactory", "java.util.HashMap", "org.apache.commons.lang3.StringUtils", "java.util.Collections", "cgeo.geocaching.enumerations.CacheListInfoItem", "java.util.List", "androidx.core.util.Pair", "cgeo.geocaching.R", "cgeo.geocaching.maps.MapProviderFactory.MAP_LANGUAGE_DEFAULT_ID", "cgeo.geocaching.log.TrackableComparator", "cgeo.geocaching.connector.ConnectorFactory", "cgeo.geocaching.enumerations.QuickLaunchItem", "cgeo.geocaching.connector.gc.GCMemberState", "android.content.Intent", "cgeo.geocaching.maps.interfaces.MapSource", "android.content.SharedPreferences.Editor", "cgeo.geocaching.network.HtmlImage", "com.fasterxml.jackson.core.type.TypeReference", "cgeo.geocaching.list.StoredList", "cgeo.geocaching.maps.interfaces.MapProvider", "cgeo.geocaching.location.Geopoint", "cgeo.geocaching.filters.core.GeocacheFilter", "com.fasterxml.jackson.databind.ObjectMapper", "cgeo.geocaching.maps.interfaces.GeoPointImpl", "cgeo.geocaching.ui.notifications.Notifications", "cgeo.geocaching.maps.google.v2.GoogleMapProvider", "cgeo.geocaching.storage.LocalStorage", "cgeo.geocaching.log.LogTypeTrackable", "cgeo.geocaching.playservices.GooglePlayServices", "android.content.Context", "androidx.appcompat.app.AppCompatDelegate", "cgeo.geocaching.sensors.RotationProvider", "java.util.Arrays", "cgeo.geocaching.utils.Log", "cgeo.geocaching.connector.IConnector", "androidx.preference.PreferenceManager" ]
+  }, {
+    "name" : "Geocache",
+    "packageName" : "cgeo.geocaching.connector.gc",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ "INamedGeoCoordinate" ],
+    "methods" : [ {
+      "name" : "getWaypointGpxId",
+      "visibility" : "public",
+      "methodCalls" : [ "length", "isNotBlank", "substring", "getWaypointGpxId" ]
+    }, {
+      "name" : "setSearchData",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDifficulty",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setVisitedDate",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getFirstMatchingWaypoint",
+      "visibility" : "public",
+      "methodCalls" : [ "call" ]
+    }, {
+      "name" : "drop",
+      "visibility" : "public",
+      "methodCalls" : [ "io", "sendMessage", "scheduleDirect", "e", "dropSynchronous", "obtain" ]
+    }, {
+      "name" : "setAttributes",
+      "visibility" : "public",
+      "methodCalls" : [ "getKey", "add", "getValue", "entrySet", "put", "clear", "addAll" ]
+    }, {
+      "name" : "setDirectionImg",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isFavorite",
+      "visibility" : "public",
+      "methodCalls" : [ "isTrue" ]
+    }, {
+      "name" : "isVirtual",
+      "visibility" : "public",
+      "methodCalls" : [ "isVirtual" ]
+    }, {
+      "name" : "getAssignedEmoji",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getAlternativeListingText",
+      "visibility" : "public",
+      "methodCalls" : [ "getInstance", "getName", "getString", "getResources" ]
+    }, {
+      "name" : "getGeoitemRef",
+      "visibility" : "public",
+      "methodCalls" : [ "getType", "getCoordType", "getId", "getGeocode", "getWaypointType", "getName", "getFullGpxId" ]
+    }, {
+      "name" : "getHint",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "refresh",
+      "visibility" : "public",
+      "methodCalls" : [ "notifyListeners", "refreshSynchronous", "scheduleDirect" ]
+    }, {
+      "name" : "setHint",
+      "visibility" : "public",
+      "methodCalls" : [ "setHint" ]
+    }, {
+      "name" : "isDisabled",
+      "visibility" : "public",
+      "methodCalls" : [ "isTrue", "isArchived" ]
+    }, {
+      "name" : "logVisit",
+      "visibility" : "public",
+      "methodCalls" : [ "canLog", "getGeocodeForGuid", "showToast", "startForCreate", "isBlank", "getString" ]
+    }, {
+      "name" : "setDetailed",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDNF",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDistance",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPersonalNote",
+      "visibility" : "public",
+      "methodCalls" : [ "setFromProvider", "setPersonalNote", "setNote" ]
+    }, {
+      "name" : "getFindsCount",
+      "visibility" : "public",
+      "methodCalls" : [ "entrySet", "getKey", "isFoundLog", "getValue", "getLogCounts" ]
+    }, {
+      "name" : "getWaypointPrefix",
+      "visibility" : "public",
+      "methodCalls" : [ "isNotBlank", "length", "substring", "getWaypointPrefix" ]
+    }, {
+      "name" : "getInventory",
+      "visibility" : "public",
+      "methodCalls" : [ "getItem", "getGeocode", "getCount", "put", "getPlayer", "getListFromContainer", "unmodifiableList", "emptyList" ]
+    }, {
+      "name" : "getCacheId",
+      "visibility" : "public",
+      "methodCalls" : [ "valueOf", "isBlank", "geocodeToId", "gcLikeCodeToGcLikeId" ]
+    }, {
+      "name" : "setCoords",
+      "visibility" : "public",
+      "methodCalls" : [ "getDefaultUnit", "setCoordsPure", "setProjection", "setPreprojectedCoords" ]
+    }, {
+      "name" : "setLists",
+      "visibility" : "public",
+      "methodCalls" : [ "clear", "addAll", "equals" ]
+    }, {
+      "name" : "getDirectionImg",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getInventoryItems",
+      "visibility" : "public",
+      "methodCalls" : [ "max" ]
+    }, {
+      "name" : "setCategories",
+      "visibility" : "public",
+      "methodCalls" : [ "of", "addAll", "filter", "clear", "toList" ]
+    }, {
+      "name" : "getWaypointByPrefix",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "getPrefix" ]
+    }, {
+      "name" : "getGeocodes",
+      "visibility" : "public",
+      "methodCalls" : [ "keySet", "unmodifiableSet", "size", "add", "getGeocode", "isNotBlank" ]
+    }, {
+      "name" : "getCoords",
+      "visibility" : "public",
+      "methodCalls" : [ "getLatitudeE6", "getLongitudeE6" ]
+    }, {
+      "name" : "isPremiumMembersOnly",
+      "visibility" : "public",
+      "methodCalls" : [ "isTrue" ]
+    }, {
+      "name" : "showSize",
+      "visibility" : "public",
+      "methodCalls" : [ "isEventCache", "isVirtual" ]
+    }, {
+      "name" : "hasGeneratedWaypoints",
+      "visibility" : "public",
+      "methodCalls" : [ "getWaypointType" ]
+    }, {
+      "name" : "setType",
+      "visibility" : "public",
+      "methodCalls" : [ "setType", "createEmpty", "set", "refreshGui", "reset" ]
+    }, {
+      "name" : "supportsEditLog",
+      "visibility" : "public",
+      "methodCalls" : [ "canEditLog" ]
+    }, {
+      "name" : "setHidden",
+      "visibility" : "public",
+      "methodCalls" : [ "removeAll", "add", "get", "getTime" ]
+    }, {
+      "name" : "setFavorite",
+      "visibility" : "public",
+      "methodCalls" : [ "self" ]
+    }, {
+      "name" : "getCategories",
+      "visibility" : "public",
+      "methodCalls" : [ "isValid", "add", "getDefaultValue", "isEnabled", "getCategories", "getOverlays", "getString", "w", "getId", "getBoolean", "getLayer", "addAll", "getUnderlyingSet" ]
+    }, {
+      "name" : "hashCode",
+      "visibility" : "public",
+      "methodCalls" : [ "getName", "getItem", "getLongitudeE6", "getLatitudeE6", "hash", "identityHashCode", "defaultString", "toRootLowerCase", "build", "append", "doubleToLongBits", "hashCode" ]
+    }, {
+      "name" : "applyDistanceRule",
+      "visibility" : "public",
+      "methodCalls" : [ "getType", "hasUserModifiedCoords", "getParentGeocache", "getWaypointType", "mayApplyDistanceRule", "applyDistanceRule" ]
+    }, {
+      "name" : "setLastFound",
+      "visibility" : "public",
+      "methodCalls" : [ "getTime" ]
+    }, {
+      "name" : "addCacheArtefactsFromNotes",
+      "visibility" : "public",
+      "methodCalls" : [ "getInstance", "getString", "addCacheArtefactsFromText", "addCacheArtefactsFromNotes", "getAllUserNotes" ]
+    }, {
+      "name" : "setGeocode",
+      "visibility" : "public",
+      "methodCalls" : [ "upperCase" ]
+    }, {
+      "name" : "getWaypointComparator",
+      "visibility" : "public",
+      "methodCalls" : [ "isGotoHistoryUDC" ]
+    }, {
+      "name" : "dropSynchronous",
+      "visibility" : "public",
+      "methodCalls" : [ "of", "removeCache", "markDropped", "singletonList", "getGeocode" ]
+    }, {
+      "name" : "setOwnerDisplayName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getEventEndTimeInMinutes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setUserModifiedCoords",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isPreventWaypointsFromNote",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getUpdated",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "hasDifficulty",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getOwnerGuid",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getLists",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setWaypoints",
+      "visibility" : "public",
+      "methodCalls" : [ "setGeocode", "clear", "saveWaypoints", "addAll" ]
+    }, {
+      "name" : "isArchived",
+      "visibility" : "public",
+      "methodCalls" : [ "isTrue" ]
+    }, {
+      "name" : "setPremiumMembersOnly",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getOfflineLog",
+      "visibility" : "public",
+      "methodCalls" : [ "loadLogOffline", "isFalse", "setHasLogOffline" ]
+    }, {
+      "name" : "mayApplyDistanceRule",
+      "visibility" : "public",
+      "methodCalls" : [ "isArchived", "getInstance" ]
+    }, {
+      "name" : "getDistance",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCreateNewLogUrl",
+      "visibility" : "public",
+      "methodCalls" : [ "getCacheCreateNewLogUrl" ]
+    }, {
+      "name" : "getShortGeocode",
+      "visibility" : "public",
+      "methodCalls" : [ "generateShortGeocode" ]
+    }, {
+      "name" : "isFavoriteRaw",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getFilteredSpoilers",
+      "visibility" : "public",
+      "methodCalls" : [ "imageUrlForSpoilerCompare", "getDescription", "getSpoilers", "isEmpty", "contains", "getUrl", "add", "getTitle", "forEachImageUrlInHtml", "emptyList", "getShortDescription", "toLowerCase" ]
+    }, {
+      "name" : "addStorageLocation",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "logOffline",
+      "visibility" : "public",
+      "methodCalls" : [ "setMessage", "build", "isNotBlank", "isAutoInsertSignature", "storeLogOffline", "setTitle", "confirm", "equals", "setReportProblem", "getTimeInMillis", "getL10n", "setLog", "setDate", "applyTemplates", "setLogType", "isEmpty", "of", "getSignature", "getInstance", "getOfflineLog", "hasLogOffline", "logOffline" ]
+    }, {
+      "name" : "setRating",
+      "visibility" : "public",
+      "methodCalls" : [ "getDescription", "onRatingChanged", "setRating", "abs", "setText", "getGuid", "format", "getPassword", "equalsIgnoreCase", "getUserName", "supportsVoting", "getResponseData", "isInvalid", "getGeocode", "e", "getGCVoteLogin", "getConnector", "getRequest", "trim", "isValidRating", "self" ]
+    }, {
+      "name" : "getDefaultLogType",
+      "visibility" : "public",
+      "methodCalls" : [ "daysSince", "getTime", "getType", "isEventCache", "getHiddenDate", "isFound", "hasOwnLog", "isPastEvent" ]
+    }, {
+      "name" : "getTier",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "supportsLogging",
+      "visibility" : "public",
+      "methodCalls" : [ "supportsLogging" ]
+    }, {
+      "name" : "isFound",
+      "visibility" : "public",
+      "methodCalls" : [ "isTrue" ]
+    }, {
+      "name" : "getOriginalWaypoint",
+      "visibility" : "public",
+      "methodCalls" : [ "getWaypointType", "getFirstMatchingWaypoint" ]
+    }, {
+      "name" : "inDatabase",
+      "visibility" : "public",
+      "methodCalls" : [ "contains" ]
+    }, {
+      "name" : "getVariableDifferencesFromUserNotes",
+      "visibility" : "public",
+      "methodCalls" : [ "compare", "iterator", "getValue", "isBlank", "parse", "remove", "entrySet", "hasNext", "getVariables", "toMap", "next", "getAllUserNotes" ]
+    }, {
+      "name" : "setShortDescription",
+      "visibility" : "public",
+      "methodCalls" : [ "reset" ]
+    }, {
+      "name" : "mergeInventory",
+      "visibility" : "public",
+      "methodCalls" : [ "contains", "equals", "listIterator", "emptyIfNull", "setInventory", "next", "getUniqueID", "hasNext", "add", "getBrand", "set", "mergeTrackable" ]
+    }, {
+      "name" : "getWatchlistCount",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getName",
+      "visibility" : "public",
+      "methodCalls" : [ "getDepth", "getFileInfo", "isBlank", "getCartridgeFile" ]
+    }, {
+      "name" : "hasOwnLog",
+      "visibility" : "public",
+      "methodCalls" : [ "isOwn", "getLogs" ]
+    }, {
+      "name" : "isLinearAlc",
+      "visibility" : "public",
+      "methodCalls" : [ "d" ]
+    }, {
+      "name" : "getTerrain",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setInventory",
+      "visibility" : "public",
+      "methodCalls" : [ "size" ]
+    }, {
+      "name" : "getFavoritePoints",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setWatchlistCount",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setChangeNotificationHandler",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isDetailed",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isOwner",
+      "visibility" : "public",
+      "methodCalls" : [ "getOwnerUserId", "equalsIgnoreCase", "isNotEmpty", "getOwnerDisplayName", "getUserName", "equals", "isOwner" ]
+    }, {
+      "name" : "supportsDifficultyTerrain",
+      "visibility" : "public",
+      "methodCalls" : [ "supportsDifficultyTerrain" ]
+    }, {
+      "name" : "toString",
+      "visibility" : "public",
+      "methodCalls" : [ "valueOf", "getTitleAndCount", "getGroup", "getText", "toUserDisplayableString", "getBaseUri", "getSubdirsToBase", "getRootPersistableFolder", "name", "getPseudoUriString", "join", "keySet", "getSql", "format", "getDefault", "round", "getCartridgeName", "getContextGeocacheName", "getCGuid", "getWidth", "getRotation", "getHeight", "hashCode", "luaTableToString", "getViewport", "isValid", "getPoints", "isNaN", "toString", "append", "newBuilder", "getStatusCode", "defaultString", "encodedQuery", "percentEncode", "parse", "isSuccessful", "build", "getName", "isEmpty", "getClass", "addQueryParameter", "substring", "toConfig", "stripHtml", "getString", "getInstance", "getL10n", "getType", "getItems", "getIcon", "getCenter", "getRadius", "size" ]
+    }, {
+      "name" : "getType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "hasTrackables",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAssignedEmoji",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDescription",
+      "visibility" : "public",
+      "methodCalls" : [ "reset" ]
+    }, {
+      "name" : "getServiceSpecificLogId",
+      "visibility" : "public",
+      "methodCalls" : [ "lastIndexOf", "substring", "isBlank", "getServiceSpecificLogId" ]
+    }, {
+      "name" : "isOnWatchlistRaw",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isDNF",
+      "visibility" : "public",
+      "methodCalls" : [ "isTrue" ]
+    }, {
+      "name" : "addOrChangeWaypoint",
+      "visibility" : "public",
+      "methodCalls" : [ "equalsIgnoreCase", "add", "isFinalWithCoords", "saveWaypoint", "remove", "getId", "isBlank", "getPrefix", "setGeocode", "isNewWaypoint", "setPrefix" ]
+    }, {
+      "name" : "duplicateWaypoint",
+      "visibility" : "public",
+      "methodCalls" : [ "getName", "add", "getString", "setUserDefined", "setPrefix", "equals", "saveWaypoint", "getInstance", "getPrefix", "setName" ]
+    }, {
+      "name" : "getOfflineLogType",
+      "visibility" : "public",
+      "methodCalls" : [ "getOfflineLog" ]
+    }, {
+      "name" : "getAttributes",
+      "visibility" : "public",
+      "methodCalls" : [ "trimAttributeName", "put", "isEnabled", "keySet", "getByRawName", "getUnderlyingList" ]
+    }, {
+      "name" : "setLogPasswordRequired",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOwnerGuid",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCacheId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "recalculateWaypoints",
+      "visibility" : "public",
+      "methodCalls" : [ "getWaypoints", "recalculateWaypoints", "recalculateVariableDependentValues", "getVariables", "saveWaypoints" ]
+    }, {
+      "name" : "setTier",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "supportsOwnCoordinates",
+      "visibility" : "public",
+      "methodCalls" : [ "supportsOwnCoordinates" ]
+    }, {
+      "name" : "setAlcMode",
+      "visibility" : "public",
+      "methodCalls" : [ "d" ]
+    }, {
+      "name" : "getWaypointById",
+      "visibility" : "public",
+      "methodCalls" : [ "getId" ]
+    }, {
+      "name" : "getWaypoints",
+      "visibility" : "public",
+      "methodCalls" : [ "getUnderlyingList" ]
+    }, {
+      "name" : "setStatusChecked",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDescription",
+      "visibility" : "public",
+      "methodCalls" : [ "getDefaultFiveStarsDescription" ]
+    }, {
+      "name" : "getTrackableCount",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setFound",
+      "visibility" : "public",
+      "methodCalls" : [ "self" ]
+    }, {
+      "name" : "setVotes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setFavoritePoints",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getPossibleLogTypes",
+      "visibility" : "public",
+      "methodCalls" : [ "asList", "isFound", "removeAll", "getType", "isOwner", "isDisabled", "isArchived", "isEventCache", "getPossibleLogTypes", "add" ]
+    }, {
+      "name" : "setLocation",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "searchByGeocode",
+      "visibility" : "public",
+      "methodCalls" : [ "i", "setError", "isEmpty", "getGeocodes", "requestHtmlPage", "w", "contains", "d", "sendLoadProgressDetail", "getConnector", "substring", "toString", "get", "parseCache", "getCache", "e", "getGeocodeForGuid", "isThere", "addGeocode", "amendCaches", "isNotBlank", "isBlank", "getInstance", "searchByGeocode", "isOffline" ]
+    }, {
+      "name" : "deleteWaypointForce",
+      "visibility" : "public",
+      "methodCalls" : [ "deleteWaypoint", "getId", "remove", "of", "removeCache" ]
+    }, {
+      "name" : "getLogCounts",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "isNotEmpty", "inDatabase", "getGeocode", "loadLogCounts" ]
+    }, {
+      "name" : "supportsDescriptionchange",
+      "visibility" : "public",
+      "methodCalls" : [ "supportsDescriptionchange" ]
+    }, {
+      "name" : "supportsWatchList",
+      "visibility" : "public",
+      "methodCalls" : [ "canAddToWatchList" ]
+    }, {
+      "name" : "getUserModifiedCoordsRaw",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getLastFound",
+      "visibility" : "public",
+      "methodCalls" : [ "getTime", "inDatabase", "isFoundLog", "getLogs" ]
+    }, {
+      "name" : "hasLogOffline",
+      "visibility" : "public",
+      "methodCalls" : [ "isTrue" ]
+    }, {
+      "name" : "setSpoilers",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "hasFinalDefined",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getVisitedDate",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getNameForSorting",
+      "visibility" : "public",
+      "methodCalls" : [ "start", "group", "leftPad", "length", "find", "max", "substring" ]
+    }, {
+      "name" : "setArchived",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "storeCache",
+      "visibility" : "public",
+      "methodCalls" : [ "promptForMultiListSelection", "getLists", "getChooseList", "singleton", "waitForEndCompletable", "saveCache", "setLists", "isDisposed", "isStoreLogImages", "getDrawable", "getErrorStringId", "getLogs", "searchByGeocode", "isOffline", "blockingAwait", "isBlank", "hasLogImages", "fromHtml", "obtain", "isNotBlank", "e", "sendEmptyMessage", "getGeocode", "getDescription", "getError", "sendShowStatusToast", "of", "getSpoilers", "sendMessage", "getFirstCacheFromResult", "isNotEmpty", "getUrl" ]
+    }, {
+      "name" : "getLogUrl",
+      "visibility" : "public",
+      "methodCalls" : [ "isNotBlank", "getCacheLogUrl" ]
+    }, {
+      "name" : "hasSpoilersSet",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getFullWaypointGpxId",
+      "visibility" : "public",
+      "methodCalls" : [ "getWaypointGpxId", "getFullWaypointGpxId" ]
+    }, {
+      "name" : "getMapMarkerBackgroundId",
+      "visibility" : "public",
+      "methodCalls" : [ "getCacheMapMarkerBackgroundId" ]
+    }, {
+      "name" : "setUpdated",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "hasWaypoints",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty" ]
+    }, {
+      "name" : "setPreventWaypointsFromNote",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getShareSubject",
+      "visibility" : "public",
+      "methodCalls" : [ "isNotBlank", "toString", "append" ]
+    }, {
+      "name" : "isPremiumMembersOnlyRaw",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getFriendsLogs",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "unmodifiableList", "getLogs" ]
+    }, {
+      "name" : "canBeAddedToCalendar",
+      "visibility" : "public",
+      "methodCalls" : [ "isEventCache" ]
+    }, {
+      "name" : "addInventoryItem",
+      "visibility" : "public",
+      "methodCalls" : [ "size", "getUniqueID", "equals", "mergeTrackable", "add" ]
+    }, {
+      "name" : "setDirection",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getNonStaticImages",
+      "visibility" : "public",
+      "methodCalls" : [ "getUrl", "add", "contains", "getImages" ]
+    }, {
+      "name" : "equals",
+      "visibility" : "public",
+      "methodCalls" : [ "getName", "getItem", "equalsOptions", "getLongitudeE6", "getLatitudeE6", "compareTo", "getKey", "getDatabaseRenderer", "isNotEmpty", "equalsIgnoreCase", "getClass", "equals", "doubleToLongBits" ]
+    }, {
+      "name" : "addCalculatedWaypoints",
+      "visibility" : "public",
+      "methodCalls" : [ "setLongitudePattern", "setLatitudePattern", "getValue", "setCalculated" ]
+    }, {
+      "name" : "getOwnerUserId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "hasInventoryItemsSet",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "storeLogOffline",
+      "visibility" : "public",
+      "methodCalls" : [ "saveCache", "saveLogOffline", "removeFromRouteOnLog", "getString", "getLists", "removeFirstMatchingIdFromIndividualRoute", "showToast", "add", "getResources", "isOffline", "saveVisitDate" ]
+    }, {
+      "name" : "getShortDescription",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "hasUserdefinedWaypoints",
+      "visibility" : "public",
+      "methodCalls" : [ "isUserDefined" ]
+    }, {
+      "name" : "getLoggingManager",
+      "visibility" : "public",
+      "methodCalls" : [ "getLoggingManager" ]
+    }, {
+      "name" : "setDifficulty",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOwnerUserId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "changeVariables",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "entrySet", "addVariable", "saveState", "recalculateWaypoints", "getVariables", "getKey" ]
+    }, {
+      "name" : "getEventStartTimeInMinutes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isEventCache",
+      "visibility" : "public",
+      "methodCalls" : [ "isEvent" ]
+    }, {
+      "name" : "getGeocode",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "notifyChange",
+      "visibility" : "public",
+      "methodCalls" : [ "getApplicationContext", "getInstance" ]
+    }, {
+      "name" : "getImages",
+      "visibility" : "public",
+      "methodCalls" : [ "getItems", "getImagesFromText", "getShortDescription", "getPersonalNote", "getDescription", "getSpoilers", "addAll", "setUrl", "getLogs", "deduplicateImageList", "defaultIfBlank", "setCategory", "getImagesFromHtml", "build", "setTitle", "isNotBlank", "add", "getDetails" ]
+    }, {
+      "name" : "setMyVote",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "resetUserModifiedCoords",
+      "visibility" : "public",
+      "methodCalls" : [ "saveUserModifiedCoords", "setCoords", "getCoords", "deleteWaypointForce", "setUserModifiedCoords" ]
+    }, {
+      "name" : "getVotes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getAlcMode",
+      "visibility" : "public",
+      "methodCalls" : [ "d" ]
+    }, {
+      "name" : "getDirection",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getLongUrl",
+      "visibility" : "public",
+      "methodCalls" : [ "getLongCacheUrl" ]
+    }, {
+      "name" : "getMapDotMarkerBackgroundId",
+      "visibility" : "public",
+      "methodCalls" : [ "getCacheMapDotMarkerBackgroundId", "getConnector" ]
+    }, {
+      "name" : "getSearchData",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setInventoryItems",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getRating",
+      "visibility" : "public",
+      "methodCalls" : [ "values", "get", "containsKey", "iterator", "next", "isNotEmpty", "isNotBlank" ]
+    }, {
+      "name" : "supportsFavoritePoints",
+      "visibility" : "public",
+      "methodCalls" : [ "isEvent", "getType", "isOwner", "isGCPremiumMember", "supportsFavoritePoints" ]
+    }, {
+      "name" : "getCoordType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "hasTerrain",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getLocation",
+      "visibility" : "public",
+      "methodCalls" : [ "getLongitude", "getLatitude", "hasFixedLocation" ]
+    }, {
+      "name" : "setDetailedUpdatedNow",
+      "visibility" : "public",
+      "methodCalls" : [ "setDetailedUpdate", "setDetailed", "currentTimeMillis", "setUpdated" ]
+    }, {
+      "name" : "setOnWatchlist",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getVariables",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isOffline",
+      "visibility" : "public",
+      "methodCalls" : [ "bindString", "e", "isBlank", "isNotBlank", "getStatement", "simpleQueryForLong", "next", "isEmpty", "size", "iterator" ]
+    }, {
+      "name" : "gatherMissingFrom",
+      "visibility" : "public",
+      "methodCalls" : [ "getCoords", "getOriginalWaypoint", "setCoords", "mergeWaypoints", "addAll", "isBlank", "getHint", "getShortDescription", "gatherMissingDataFrom", "hasUserModifiedCoords", "isEmpty", "setCategories", "getDescription", "getLocation", "currentTimeMillis", "setInventory", "getCategories", "reset" ]
+    }, {
+      "name" : "hasUserModifiedCoords",
+      "visibility" : "public",
+      "methodCalls" : [ "isTrue" ]
+    }, {
+      "name" : "getDetailedUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTerrain",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "store",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "isEmpty", "storeCache", "addAll", "run", "clear", "create", "close", "writeUTF", "openDataOutputStream", "exists", "truncate", "resetObjectStore", "log", "storeValue" ]
+    }, {
+      "name" : "setDisabled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "mergeWaypoints",
+      "visibility" : "public",
+      "methodCalls" : [ "setWaypoints", "isEmpty", "mergeWayPoints" ]
+    }, {
+      "name" : "getMapMarkerId",
+      "visibility" : "public",
+      "methodCalls" : [ "getCacheMapMarkerId", "getConnector" ]
+    }, {
+      "name" : "checkFields",
+      "visibility" : "public",
+      "methodCalls" : [ "getOwnerUserId", "getHiddenDate", "getLocation", "getDifficulty", "getName", "getGeocode", "getSize", "getFavoritePoints", "getTerrain", "getType", "getGuid", "getCoords", "getOwnerDisplayName" ]
+    }, {
+      "name" : "getOwnerDisplayName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createOriginalWaypoint",
+      "visibility" : "public",
+      "methodCalls" : [ "setUserModifiedCoords", "getString", "addOrChangeWaypoint", "getInstance", "setCoords" ]
+    }, {
+      "name" : "setName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDetailedUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getUrl",
+      "visibility" : "public",
+      "methodCalls" : [ "getId", "getHostUrl", "getGeocode", "getString", "join", "getCacheUrl", "isEmpty", "getGCFullScaleImageUrl", "toString", "getUrl" ]
+    }, {
+      "name" : "refreshSynchronous",
+      "visibility" : "public",
+      "methodCalls" : [ "storeCache", "refreshSynchronous", "addAll" ]
+    }, {
+      "name" : "isLogPasswordRequired",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "supportsDeleteLog",
+      "visibility" : "public",
+      "methodCalls" : [ "canDeleteLog" ]
+    }, {
+      "name" : "setGuid",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "supportsSettingFoundState",
+      "visibility" : "public",
+      "methodCalls" : [ "isALCfoundStateManual", "supportsSettingFoundState" ]
+    }, {
+      "name" : "getHiddenDate",
+      "visibility" : "public",
+      "methodCalls" : [ "getTime" ]
+    }, {
+      "name" : "supportsNamechange",
+      "visibility" : "public",
+      "methodCalls" : [ "supportsNamechange" ]
+    }, {
+      "name" : "getMyVote",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setFinalDefined",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "hasWillAttendForFutureEvent",
+      "visibility" : "public",
+      "methodCalls" : [ "getHiddenDate", "isEventCache", "getLogs", "isOwn", "isPastEvent" ]
+    }, {
+      "name" : "clearOfflineLog",
+      "visibility" : "public",
+      "methodCalls" : [ "clearLogOffline", "setHasLogOffline" ]
+    }, {
+      "name" : "isGotoHistoryUDC",
+      "visibility" : "public",
+      "methodCalls" : [ "equals" ]
+    }, {
+      "name" : "isStatusChecked",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addCacheArtefactsFromText",
+      "visibility" : "public",
+      "methodCalls" : [ "parse", "get", "getValue", "getWaypoints", "put", "getKey", "defaultString", "changeVariables", "getVariables", "entrySet", "isWorthAddingWithoutLoss" ]
+    }, {
+      "name" : "getLogs",
+      "visibility" : "public",
+      "methodCalls" : [ "loadLogs" ]
+    }, {
+      "name" : "getSpoilers",
+      "visibility" : "public",
+      "methodCalls" : [ "unmodifiableList", "emptyIfNull" ]
+    }, {
+      "name" : "getSize",
+      "visibility" : "public",
+      "methodCalls" : [ "size" ]
+    }, {
+      "name" : "setLogCounts",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMapDotMarkerId",
+      "visibility" : "public",
+      "methodCalls" : [ "getConnector", "getCacheMapDotMarkerId" ]
+    }, {
+      "name" : "getAllUserNotes",
+      "visibility" : "public",
+      "methodCalls" : [ "isBlank", "getPersonalNote", "getWaypoints", "defaultString", "append", "getUserNote", "toString" ]
+    }, {
+      "name" : "showHintToast",
+      "visibility" : "public",
+      "methodCalls" : [ "defaultIfBlank", "getHint", "showToast", "getString" ]
+    }, {
+      "name" : "getGuid",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "deleteWaypoint",
+      "visibility" : "public",
+      "methodCalls" : [ "delete", "belongsToUserDefinedCache", "removeCache", "isNewWaypoint", "getWaypointType", "remove", "of", "deleteWaypoint", "getId", "isFinalWithCoords" ]
+    }, {
+      "name" : "supportsRefresh",
+      "visibility" : "public",
+      "methodCalls" : [ "getInstance", "equals" ]
+    }, {
+      "name" : "getPersonalNote",
+      "visibility" : "public",
+      "methodCalls" : [ "getNote" ]
+    }, {
+      "name" : "setHasLogOffline",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isOnWatchlist",
+      "visibility" : "public",
+      "methodCalls" : [ "isTrue" ]
+    } ],
+    "imports" : [ "cgeo.geocaching.SearchCacheData", "cgeo.geocaching.utils.EnumValueMapper", "org.apache.commons.lang3.exception.ExceptionUtils", "com.fasterxml.jackson.annotation.JsonProperty", "cgeo.geocaching.enumerations.CacheAttribute", "cgeo.geocaching.location.Viewport", "cgeo.geocaching.network.Parameters", "com.fasterxml.jackson.annotation.JsonIgnoreProperties", "cgeo.geocaching.models.Geocache", "io.reactivex.rxjava3.core.Single", "cgeo.geocaching.location.Units", "cgeo.geocaching.sorting.GeocacheSort", "cgeo.geocaching.network.HttpRequest", "cgeo.geocaching.sensors.LocationDataProvider", "java.util.Arrays", "org.apache.commons.lang3.tuple.ImmutablePair", "java.text.SimpleDateFormat", "java.text.DateFormat", "cgeo.geocaching.gcvote.GCVote", "org.apache.commons.lang3.ArrayUtils", "cgeo.geocaching.connector.gc.GCAuthAPI.apiProxyReq", "cgeo.geocaching.maps.mapsforge.v6.caches.GeoitemRef", "cgeo.geocaching.log.LogCacheActivity", "cgeo.geocaching.storage.DataStore", "java.util.HashSet", "cgeo.geocaching.connector.capability.ISearchByGeocode", "cgeo.geocaching.log.LogTemplateProvider", "cgeo.geocaching.connector.ILoggingManager", "org.apache.commons.lang3.BooleanUtils", "io.reactivex.rxjava3.core.Scheduler", "cgeo.geocaching.connector.AmendmentUtils", "cgeo.geocaching.utils.LazyInitializedSet", "android.content.Context", "java.util.Collection", "cgeo.geocaching.list.StoredList", "org.apache.commons.collections4.ListUtils", "java.util.ListIterator", "org.apache.commons.lang3.StringUtils", "cgeo.geocaching.activity.ActivityMixin", "cgeo.geocaching.utils.LazyInitializedList", "cgeo.geocaching.connector.su.SuConnector", "java.util.Locale", "cgeo.geocaching.utils.functions.Func1", "cgeo.geocaching.utils.DisposableHandler", "cgeo.geocaching.utils.MatcherWrapper", "cgeo.geocaching.enumerations.StatusCode", "cgeo.geocaching.enumerations.CacheSize", "java.util.Iterator", "cgeo.geocaching.storage.Folder", "java.util.EnumSet", "io.reactivex.rxjava3.schedulers.Schedulers", "cgeo.geocaching.utils.EventTimeParser", "java.util.Map", "android.os.Handler", "androidx.annotation.WorkerThread", "cgeo.geocaching.connector.gc.GCConnector", "java.util.Date", "cgeo.geocaching.utils.Log", "cgeo.geocaching.models.bettercacher.Category", "cgeo.geocaching.utils.CalendarUtils", "androidx.annotation.DrawableRes", "cgeo.geocaching.connector.capability.IFavoriteCapability", "androidx.annotation.Nullable", "cgeo.geocaching.storage.PersistableFolder", "cgeo.geocaching.CgeoApplication", "cgeo.geocaching.connector.ConnectorFactory", "cgeo.geocaching.utils.Formatter.generateShortGeocode", "java.util.Calendar", "org.apache.commons.collections4.MapUtils", "cgeo.geocaching.storage.ContentStorage", "java.util.HashMap", "cgeo.geocaching.connector.IConnector", "cgeo.geocaching.log.OfflineLogEntry", "io.reactivex.rxjava3.disposables.Disposable", "java.util.EnumMap", "cgeo.geocaching.utils.CommonUtils", "cgeo.geocaching.connector.internal.InternalConnector", "cgeo.geocaching.location.Geopoint", "cgeo.geocaching.settings.Settings", "android.content.res.Resources", "java.util.LinkedList", "cgeo.geocaching.ui.dialog.SimpleDialog", "java.util.Set", "androidx.core.text.HtmlCompat", "cgeo.geocaching.enumerations.WaypointType", "java.util.List", "java.util.Comparator", "cgeo.geocaching.models.bettercacher.Tier", "cgeo.geocaching.enumerations.CoordinateType", "cgeo.geocaching.SearchResult", "edu.umd.cs.findbugs.annotations.SuppressFBWarnings", "cgeo.geocaching.utils.ImageUtils", "java.util.Objects", "cgeo.geocaching.enumerations.CacheType", "android.app.Activity", "cgeo.geocaching.network.HtmlImage", "cgeo.geocaching.connector.capability.WatchListCapability", "android.util.Pair", "cgeo.geocaching.log.LogTemplateProvider.LogContext", "androidx.annotation.NonNull", "cgeo.geocaching.log.LogType", "cgeo.geocaching.connector.trackable.TrackableBrand", "cgeo.geocaching.log.LogEntry", "cgeo.geocaching.service.GeocacheChangedBroadcastReceiver", "cgeo.geocaching.connector.gc.GCUtils", "java.util.Collections", "java.util.regex.Pattern", "cgeo.geocaching.R", "cgeo.geocaching.enumerations.LoadFlags.RemoveFlag", "cgeo.geocaching.enumerations.LoadFlags.SaveFlag", "cgeo.geocaching.utils.CollectionStream", "java.util.Map.Entry", "cgeo.geocaching.enumerations.LoadFlags", "android.os.Message", "cgeo.geocaching.log.ReportProblemType", "org.apache.commons.collections4.CollectionUtils", "cgeo.geocaching.storage.DataStore.StorageLocation", "java.util.ArrayList" ]
+  }, {
+    "name" : "CacheDetailActivity",
+    "packageName" : "cgeo.geocaching",
+    "extendedClasses" : [ "TabbedViewPagerActivity" ],
+    "implementedInterfaces" : [ "ActivityInterface", "CoordinateUpdate", "IContactCardProvider", "INavigationSource", "EditNoteDialogListener" ],
+    "methods" : [ {
+      "name" : "onSaveInstanceState",
+      "visibility" : "public",
+      "methodCalls" : [ "setGeopoint", "toConfig", "putLong", "getCurrentPageId", "isRunning", "putBoolean", "putParcelableArrayList", "getItems", "ordinal", "enumToInt", "getSourceLanguage", "putString", "getCode", "isTranslated", "putBundle", "getState", "putCharSequence", "putInt", "onSaveInstanceState", "putParcelable" ]
+    }, {
+      "name" : "startDefaultNavigation2",
+      "visibility" : "public",
+      "methodCalls" : [ "showToast", "getString", "getCoords", "startDefaultNavigationApplication", "getActivity" ]
+    }, {
+      "name" : "onContextItemSelected",
+      "visibility" : "public",
+      "methodCalls" : [ "startActivity", "getTag", "singletonList", "w", "showNavigationMenu", "setVisited", "reformatForClipboard", "supportsOwnCoordinates", "execute", "andThenOnUi", "startActivityCoordinates", "getName", "getGeofence", "getConnector", "showProgress", "setGeofence", "setTitle", "addToCalendar", "startActivityEditWaypoint", "indexOfWaypoint", "setMessage", "input", "copyToClipboard", "parseFloat", "ensureSaved", "valueOf", "show", "sendBroadcast", "startDefaultNavigationApplication", "saveAndNotify", "getId", "of", "get", "toString", "getItemId", "duplicateWaypoint", "getString", "getCoords", "getCheckerData", "deleteWaypoint", "allowsCoordinate", "id", "getGeocode", "setInitialValue", "showToast", "setNeedsRefresh", "setInputType", "createSortedWaypointList", "openUrl", "getMenuInfo", "refreshCache", "updateViewHolder", "onMenuItemSelected" ]
+    }, {
+      "name" : "setNeedsRefresh",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "showNavigationMenu",
+      "visibility" : "public",
+      "methodCalls" : [ "getActivity", "requireView", "add", "setAdapter", "get", "show", "create", "findViewById", "setTitle", "isEnabled", "getItem", "setEnabled", "getDefaultNavigationTool", "showNavigationMenu", "getActiveNavigationApps", "size", "setOnDismissListener", "newBuilder" ]
+    }, {
+      "name" : "supportsNullCoordinates",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "showContactCard",
+      "visibility" : "public",
+      "methodCalls" : [ "launch" ]
+    }, {
+      "name" : "onOptionsItemSelected",
+      "visibility" : "public",
+      "methodCalls" : [ "downloadCaches", "selectNextCaches", "invertSelection", "promptForListCreation", "showAttributes", "updateSelectSwitchMenuItem", "askAndUploadCachesToBookmarkList", "getConcreteList", "invalidateOptionsMenuCompatible", "removeFromHistoryCheck", "getGeocodes", "goMap", "switchSelectMode", "promptForListPrefixRename", "interactiveCreateCache", "getCheckedOrAllCaches", "startListSelection", "setVisibility", "startActivityCoords", "setText", "startActivityGeoCode", "getVisibility", "getHint", "getActivity", "getBoundingBox", "invalidate", "getVisibleCacheGeocodes", "handleStoredLayers", "handleLiveLayers", "requestRedraw", "setFilterContext", "selectMapThemeOptions", "getCoords", "toggleMenuItem", "loadCache", "isPreventWaypointsFromNote", "getWaypoints", "setPreventWaypointsFromNote", "editPersonalNote", "toggleService", "extractWaypoints", "selectEmojiPopup", "isRunning", "singletonList", "export", "getShortDescription", "getDescription", "getAssignedEmoji", "scanForCalculatedWaypoints", "setNeedsRefresh", "appendToIndividualRoute", "getSingleModeCache", "getMapActivity", "getLatitude", "getRouteTrackUtils", "getLongitude", "getMapSource", "refreshMapData", "repaintRequired", "selectMapTheme", "onMenuItemSelected", "execute", "setTarget", "superOnOptionsItemSelected", "io", "onBackPressed", "showShortToast", "andThenOnUi", "saveIndividualRoute", "getItems", "finishEdit", "downloadLanguageModels", "assertHistoryCacheExists", "deleteOfflineData", "askUserToReportProblem", "getHistoryIntent", "checkForUpdatesAndDownloadAll", "putExtra", "setAction", "overrideTransitionToFade", "isGCPremiumMember", "setIntentHideBottomNavigation", "needsFolderMigration", "startActivity", "getText", "length", "trim", "getEditableText", "checkFinish", "startActivityForResult", "getIntent", "getGeocode", "openUrl", "getName", "defaultIfBlank", "getUrl", "isRegistered", "getPreferenceActivity", "getString", "showToast", "setButtons", "getServiceTitle", "getLabel", "openForScreen", "getBrand", "setMapShadingShowLayer", "invalidateOptionsMenu", "filter", "getLongitudeMin", "isLiveMap", "setPreferredLanguage", "notifyDataChanged", "selectThemeOptions", "findViewById", "checkRoutingData", "showFilterMenu", "getLanguage", "equals", "getMapBackgroundMapLayer", "collect", "setMapBackgroundMapLayer", "setMapRotation", "getMapShadingShowLayer", "getLatitudeMin", "setValue", "updateSelectedBottomNavItemId", "inflate", "tintToolbarAndOverflowIcons", "showPopup", "getTileProvider", "setPreviousTileProvider", "navigateUp", "getItemId", "onOptionsItemSelected", "v", "getTitle", "show", "of", "id", "get", "setTitle", "displayDirect", "setMessage", "getCartridgeInfo", "notifyDataSetChanged", "confirm", "getSupportFragmentManager", "popBackStackImmediate", "finish", "insertIntoLog", "getTemplate", "getLogContext", "getValue", "getLastLog", "setChecked", "checkHillshadingData", "toSet", "enableLiveMap", "setForceShowIcon", "updateFilterBar", "getLatitudeMax", "getViewportNonNull", "selectTheme", "setMapLanguage", "setLiveMap", "map", "setOnMenuItemClickListener", "getViewport", "readWithResult", "startActivityMap", "stream", "getLongitudeMax", "reset", "addMapviewMenuItems" ]
+    }, {
+      "name" : "cachesAround",
+      "visibility" : "public",
+      "methodCalls" : [ "getCoords", "showToast", "getTargetInfo", "getString", "getActivity", "getName", "startActivityCoordinates" ]
+    }, {
+      "name" : "goDefaultNavigation",
+      "visibility" : "public",
+      "methodCalls" : [ "startDefaultNavigation" ]
+    }, {
+      "name" : "onCreate",
+      "visibility" : "public",
+      "methodCalls" : [ "createSimpleWatcher", "startActivityCoordinates", "setFlags", "removeFlags", "getFlags", "getBooleanExtra", "getAction", "hideKeyboard", "getContentResolver", "startForGuid", "getFileType", "getInfoItems", "getDeclaredField", "forName", "getGeopoint", "setStyle", "save", "execSQL", "createNotification", "openMarket", "getFor", "setElement", "setTargetCoords", "getOfflineListInitialLoadLimit", "ordinal", "currentGeo", "getFilteredList", "rememberTerm", "matchesAny", "getListType", "putAll", "getSort", "copyToClipboard", "setComponent", "getOfflineMapTypes", "availableOfflineMaps", "getPosition", "fromTypeId", "getFromId", "getMapDownloaderSource", "availableOfflineMapRelatedFiles", "setDropDownViewResource", "setSelection", "triggerDownload", "parse", "loadWaypoint", "defaultIfBlank", "setTextClickThrough", "setCheckedMapper", "setVolumeControlStream", "getDecorView", "createInitialNotification", "newWakeLock", "w", "getSystemService", "setOnlyAlertOnce", "getForegroundNotificationId", "getNotificationManager", "acquire", "registerReceiver", "addCheckboxItem", "removeAllViews", "toConfig", "addView", "createCheckboxItem", "getArguments", "getOverdrawFactor", "setCenter", "getMapsforgeSvgCacheDir", "round", "zoomIn", "getZoomIncludingWaypoints", "toLatLong", "getMapOsmThreads", "getDisplayMetrics", "setVisible", "getCoords", "isNotEmpty", "getModel", "zoomOut", "getMapScaleBar", "isLiveEnabled", "setMapZoomLevel", "setOnMapDragListener", "isStoredEnabled", "invalidate", "setCoordsMarker", "getBounds", "createTileCache", "setSvgCacheDir", "getApplication", "addRef", "getMapCenter", "getGeocodes", "setMarginHorizontal", "singleton", "getZoomLevel", "setBuiltInZoomControls", "setClickable", "followsMyLocation", "createInstance", "getCenter", "setOnCheckedChangeListener", "setCustomView", "getFiltersetting", "setDisplayShowCustomEnabled", "setChecked", "getGeocodeFromURL", "substring", "getLastDetailsPage", "substringBefore", "getBrand", "searchByGeocode", "disposeMessage", "setLastDetailsPage", "isOpenLastDetailsPage", "sendMessage", "searchTrackables", "startsWith", "obtain", "editPersonalNote", "getGeocode", "subscribeOn", "fromIterable", "getCacheFromMapsWithMe", "setOnDismissListener", "getQuery", "toList", "bindActivity", "getPath", "scheduleDirect", "defer", "flatMap", "subscribe", "getGenericTrackablesConnectors", "onMapReady", "setListId", "showSettingsPopup", "setTarget", "getMapItemFactory", "getLastNavTarget", "getMapViewId", "getTargetGeocode", "initializeMap", "getContext", "getNumericalId", "updateOfflineMaps", "getMapSource", "getRouteTrackUtils", "execute", "showPopup", "setHasOptionsMenu", "superOnCreate", "invalidateOptionsMenu", "getApplicationContext", "setItems", "loadIndividualRoute", "asList", "requestFocus", "putExtra", "getStartscreenIntent", "isLocalUri", "clone", "getTitle", "toObject", "hasDescription", "moveCursorToEnd", "set", "getLogImageScale", "hasTitle", "setSpinner", "putExtras", "getIntArray", "createNormal", "nextStatus", "getImageOrientation", "getDescription", "needsFolderMigration", "getLastChangelogChecksum", "confirm", "finishAfterTransition", "openForScreen", "getUri", "enableViewTransitions", "openUrl", "checkAndMigrate", "setDefaultKeyMode", "setOffscreenPageLimit", "getCount", "max", "setCode", "setCurrentItem", "post", "setMessage", "hide", "launch", "getCurrentBinding", "isImageOrUnknownUri", "checkForMapUpdates", "size", "checkForRoutingTileUpdates", "isWallpaper", "postponeEnterTransition", "shareImage", "of", "getUrl", "setEnterSharedElementCallback", "getNotGrantedPermissions", "viewImageInStandardApp", "isEnabled", "displayActionItem", "setPermissionRequestCallback", "setButtons", "openContentForView", "min", "put", "getConnector", "getLogOverlay", "getSignature", "setImage", "setFavorite", "getMaxImageUploadSize", "refreshGui", "applyTemplates", "updateCoordinates", "findFragmentById", "intToEnum", "requestKeyboardForLogging", "putActions", "id", "setTextDisplayMapperPure", "setDisplayMapperPure", "isAutoInsertSignature", "getL10n", "invalidateOptionsMenuCompatible", "baseFolderIsSet", "initLoader", "contains", "initialize", "insertIntoLog", "getIntExtra", "getLoggingManager", "supportRequestWindowFeature", "getNameForNewWaypoint", "convertLogTextToEditableText", "setLog", "buildUpon", "getDataString", "assertHistoryCacheExists", "fromUri", "getLongitude", "startActivity", "getLatitude", "i", "getName", "isSpecificProximityNotificationActive", "getPort", "remove", "endsWith", "setNeedsRetranslation", "stripHtml", "toUpperCase", "getOrderedPages", "getTrackableFromURL", "toLowerCase", "containsKey", "isValid", "setSourceLanguage", "getTrackableTrackingCodeFromURL", "getHost", "isNotBlank", "loadCache", "setDisplayMapper", "text", "setValues", "getPossibleLogTypes", "getLabel", "showToast", "bind", "setChangeListener", "updateForNewType", "setTextView", "getInt", "getById", "observeForNotification", "getTileProvider", "isLiveMap", "setOnTouchListener", "configureProximityNotification", "mutate", "setLayer", "enableLiveMap", "setLiveEnabled", "setCompactIconModeThreshold", "refreshWaypoints", "init", "setValue", "getResources", "clear", "add429observer", "reloadIndividualRoute", "updateFilterBar", "acquireUnifiedMap", "getBackground", "initforUnifiedMap", "showMapOneTimeMessages", "setViewport", "zoomInOut", "getParcelable", "observe", "initializeFilterBar", "setTextNotifications", "restoreCookies", "getLists", "createNotificationChannels", "setRequested", "configureMessageCenterPolling", "startLogging", "initApplicationLocale", "installUncaughtExceptionHandler", "setAppThemeAutomatically", "getMainLooper", "addHelper", "getSearchColumnSelection", "setOnItemSelectedListener", "getId", "getSearchTerm", "dpToPixel", "input", "getTablenames", "prepareBlankTable", "setMultiChoiceItems", "getAvailableSearchColumns", "trim", "getPreferencesName", "setPositiveButton", "copyOf", "getDatabase", "setOnLongClickListener", "getStringExtra", "show", "setCancelable", "provideRecyclerView", "setDisplayHomeAsUpEnabled", "addSelectActionCallback", "getFragments", "equals", "getBackStackEntryCount", "updateNotificationAudioInfo", "getSupportActionBar", "setResult", "initPublicFolders", "resynchronizeOrDeleteMapThemeFolder", "addOnBackStackChangedListener", "getSupportFragmentManager", "requireActivity", "enableCheckButtonIfReady", "getAuthCheck", "comparing", "entrySet", "getValue", "sort", "getKey", "createViewPager", "setAdapter", "getInstance", "values", "setOnScrollListener", "addAll", "getBaseContext", "getDefaultSharedPreferences", "getType", "getAll", "connect", "reset", "get", "displayThing", "resume", "setFixedLocation", "setContextGeocode", "getData", "unpauseDialog", "setBadge", "getContextGeocode", "getQueryParameter", "pause", "showErrorDialog", "addListener", "getAudioManager", "createThingTypeTable", "setMute", "basicOneTimeMessage", "setContentText", "setContentIntent", "getFlagImmutable", "setContentTitle", "add", "setSilent", "getActivity", "setOngoing", "setSmallIcon", "start", "build", "setPriority", "iForce", "startForeground", "newBuilder", "getLong", "getLongArray", "setReceiver", "getAuthStart", "enableStartButtonIfReady", "getBundle", "addTextChangedListener", "getAuthAuthorize", "getAuthExplainLong", "getAuthExplainShort", "getSimpleName", "onCreate", "getClass", "d", "setThemeAndContentView", "getString", "getExtras", "finish", "addObserver", "getIntent", "getLifecycle", "v", "e", "setLocale", "initializeImageGallery", "setCacheTitleBar", "findViewById", "toString", "getParcelableArrayList", "isEmpty", "setEnabled", "setUpNavigationEnabled", "getRoot", "getAuthRegisterExplain", "setText", "setVisibility", "inflate", "setOnClickListener", "getLayoutInflater", "getAuthRegister", "getWindow", "getAuthTitle", "setContentView", "getTempTokens", "getBoolean", "addFlags", "isBlank", "setTitle", "setTheme", "getCreateAccountUrl", "getToken", "updateHomeBadge", "getAuthAgain" ]
+    }, {
+      "name" : "onResume",
+      "visibility" : "public",
+      "methodCalls" : [ "showShortToast", "setSelectMode", "refreshListAtLastPosition", "updateFilterBar", "isEmpty", "clear", "execute", "reloadIndividualRoute", "addAll", "loadCache", "remove", "getTracks", "scheduleDirect", "removeFromRouteOnLog", "resumeAllTracks", "init", "superOnResume", "isEnabled", "subscribe", "mainThread", "gpsStatusObservable", "post", "getRoot", "observeOn", "resumeDisposables", "add", "start", "getModel", "addObserver", "isNotBlank", "setIcon", "getInstance", "setAuthTitle", "getUsernameRaw", "initBasicMemberPreferences", "isValid", "showVTMInUnifiedMap", "setVisible", "getUserName", "setSummary", "hasGeokretyAuthorization", "getCredentials", "updateNotificationAudioInfo", "extendedSettingsAreEnabled", "checkExtendedSettingsVisibility", "getBoolean", "clearCachedItems", "parseInt", "isRatingWanted", "isRegisteredForSend2cgeo", "createLogcat", "isGCConnectorActive", "isSUConnectorActive", "setPrefClick", "isECConnectorActive", "setIconSpaceReserved", "isGeokretyConnectorActive", "confirm", "id", "setDebug", "openUrl", "setKey", "getLogImageCaptionDefaultPraefixFor", "getSignature", "sendEmptyMessage", "getQueryParameter", "getIntent", "onResume", "equals", "getData", "isBlank", "setContent", "getName", "getClass", "d", "requireActivity", "setTitle", "updateOpenCachingAuthPreference", "getString", "initPublicFolders", "updateOAuthPreference", "getDefaultNavigationTool2", "getLogImageCaptionDefaultPraefix", "isBetterCacherConnectorActive", "isDeveloperBuild", "createMemoryDump", "of", "setPrefSummaryActiveStatus", "setMessage", "setPrefSummary", "addPreference", "setOnPreferenceChangeListener", "isOCConnectorActive", "resetAll", "getDefaultNavigationTool", "getActivity", "isALConnectorActive", "findPreference", "hasOAuthAuthorization", "getCsah", "startActivity", "valueOf" ]
+    }, {
+      "name" : "updateCoordinates",
+      "visibility" : "public",
+      "methodCalls" : [ "getString", "startActivityCoordinates", "showToast", "overrideTransitionToFade", "getLists", "isOffline", "equals", "getCalculatedCoordinate", "setIconResource", "getGeopoint", "toConfig", "updateCoordinates", "isValidConfig", "getNotes", "getUserNotes", "setText", "toString", "setCoords" ]
+    }, {
+      "name" : "onPrepareOptionsMenu",
+      "visibility" : "public",
+      "methodCalls" : [ "superOnPrepareOptionsMenu", "updateSelectSwitchMenuItem", "setVisibleEnabled", "getCheckedOrAllCaches", "getListHierarchy", "getActiveApps", "removeWillDeleteFromDevice", "getCheckedCount", "isSelectMode", "getHint", "getVisibleCacheGeocodes", "getVisibleCachesCount", "isDownloading", "enableIconsInOverflowMenu", "isRunning", "canIgnoreCache", "isRatingWanted", "supportsVoting", "hasUserdefinedWaypoints", "isPreventWaypointsFromNote", "setEnabled", "isGotoHistoryUDC", "isGCVoteLoginValid", "isOffline", "isChallengeCache", "hasGeneratedWaypoints", "getMapSource", "isNotEmpty", "getSingleModeCache", "e", "getNumericalId", "getMapSources", "getActivity", "size", "isAvailable", "getCreateNewLogUrl", "initialize", "getCoords", "getDefaultNavigationApplication", "setVisible", "getName", "getLogOffline", "isDNF", "hasFinalDefined", "supportsLogging", "supportsSettingFoundState", "hasUserModifiedCoords", "canBeAddedToCalendar", "isGCConnectorActive", "isGCPremiumMember", "isFound", "getPersonalNote", "setTitle", "canHandle", "getGeocode", "getConnector", "getUrl", "getInstance", "findItem", "isEmpty", "findViewById", "addMapViewLanguageMenuItems", "getMapRotation", "onPrepareOptionsMenu", "extendMenuActionBarDisplayItemCount", "setChecked", "supportsThemeOptions", "equals", "setOnLongClickListener", "tintToolbarAndOverflowIcons", "setLiveMap", "supportsThemes", "setValue", "getValue", "toggleMenuItem", "hasUrl", "isLoggable", "isNotBlank" ]
+    }, {
+      "name" : "addShareAction",
+      "visibility" : "public",
+      "methodCalls" : [ "addShareAction", "apply", "sharePlainText", "toString", "setOnLongClickListener", "getText" ]
+    }, {
+      "name" : "startDefaultNavigation",
+      "visibility" : "public",
+      "methodCalls" : [ "startDefaultNavigationApplication", "getActivity" ]
+    }, {
+      "name" : "onDestroy",
+      "visibility" : "public",
+      "methodCalls" : [ "getString", "stop", "shutdown", "destroyDrawingCache", "isEmpty", "v", "size", "getClass", "getSimpleName", "onDestroy", "d", "clear", "iForce", "getAudioManager", "get", "removeListener", "disconnect", "superOnDestroy", "dispose", "remove", "getLayers", "getLayerManager", "clearLayers", "format", "removeChangeListener", "getVariables", "setChangeNotificationHandler", "getInstance", "unregisterReceiver", "w", "getResources", "release", "getQuantityString" ]
+    }, {
+      "name" : "onActivityReenter",
+      "visibility" : "public",
+      "methodCalls" : [ "postponeEnterTransition", "getInt", "getExtras", "initializeToPosition", "onActivityReenter" ]
+    }, {
+      "name" : "getCache",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "getConnector" ]
+    }, {
+      "name" : "supportsCalculatedCoordinates",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "pullToRefreshActionTrigger",
+      "visibility" : "public",
+      "methodCalls" : [ "getGeocode", "defaultIfBlank", "getName" ]
+    }, {
+      "name" : "navigateTo",
+      "visibility" : "public",
+      "methodCalls" : [ "startDefaultNavigation" ]
+    }, {
+      "name" : "onCreateContextMenu",
+      "visibility" : "public",
+      "methodCalls" : [ "onPrepareOptionsMenu", "w", "defaultIfBlank", "getShortGeocode", "getGeocode", "isOffline", "getCount", "getItem", "inflate", "onCreateContextMenu", "findItem", "setVisible", "getDefaultNavigationApplication", "setHeaderTitle", "getString", "canChangeGeofence", "getMenuInflater", "belongsToUserDefinedCache", "getCoords", "setTitle", "getCheckerUrl", "isUserDefined", "getWaypointType", "getName", "getId", "isOriginalCoordsEmpty" ]
+    }, {
+      "name" : "onDismissEditNoteDialog",
+      "visibility" : "public",
+      "methodCalls" : [ "finish" ]
+    }, {
+      "name" : "startActivityGuid",
+      "visibility" : "public",
+      "methodCalls" : [ "startActivity", "putExtra" ]
+    }, {
+      "name" : "storeWaypointsInPersonalNote",
+      "visibility" : "public",
+      "methodCalls" : [ "getVariables", "showShortToast", "getWaypoints", "isEmpty", "getString", "putParseableWaypointsInText", "isUserModified", "getPersonalNote", "add" ]
+    }, {
+      "name" : "onFinishEditNoteDialog",
+      "visibility" : "public",
+      "methodCalls" : [ "scrollToBottom", "getConnectorAs" ]
+    }, {
+      "name" : "startActivity",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "e", "getCanonicalName", "putParcelableArrayListExtra", "putExtra", "getInfoItems", "startActivity" ]
+    }, {
+      "name" : "removeWaypointsFromPersonalNote",
+      "visibility" : "public",
+      "methodCalls" : [ "removeParseableWaypointsFromText", "getPersonalNote", "showShortToast", "equals" ]
+    }, {
+      "name" : "onPause",
+      "visibility" : "public",
+      "methodCalls" : [ "requireActivity", "hide", "d", "clearCachedItems", "destroyDrawingCache", "superOnPause", "get", "destroyMapFragment", "isFeatureEnabledDefaultTrue", "removeListener", "removeObserver", "getModel", "dataChanged", "getPackageName", "i", "unregisterReceiver", "v", "clear", "onPause" ]
+    }, {
+      "name" : "editPersonalNote",
+      "visibility" : "public",
+      "methodCalls" : [ "isPreventWaypointsFromNote", "getPersonalNote", "canAddPersonalNote", "saveState", "wasModified", "ensureSaved", "newInstance", "getVariables", "show", "getSupportFragmentManager", "getConnectorAs" ]
+    }, {
+      "name" : "startActivityForEditNote",
+      "visibility" : "public",
+      "methodCalls" : [ "putExtra", "startActivity" ]
+    }, {
+      "name" : "onCreateOptionsMenu",
+      "visibility" : "public",
+      "methodCalls" : [ "getRoot", "showNext", "setOnActionExpandListener", "setBackground", "setInputType", "setImeOptions", "createSimpleWatcher", "addTextChangedListener", "showPrevious", "getDrawable", "getArguments", "getBoolean", "requireActivity", "getSort", "filterCoords", "tintToolbarAndOverflowIcons", "findViewById", "getType", "getList", "invoke", "setForParentAndChildren", "initialize", "addMapViewLanguageMenuItems", "addMenuItems", "initDefaultNavigationMenuItem", "addMapviewMenuItems", "superOnCreateOptionsMenu", "getActivity", "isGCPremiumMember", "useInternalRouting", "d", "onCreateOptionsMenu", "getMenuInflater", "inflate", "getCurrentPageId", "getActionView", "getFilter", "setOnQueryTextListener", "filter", "getSearchableInfo", "getSystemService", "hideActionIconsWhenSearchIsActive", "getComponentName", "handleDropDownVisibility", "setSuggestionsAdapter", "findItem", "hideKeyboardOnSearchClick", "setSearchableInfo", "add", "getSubMenu", "setVisible", "getItemId", "getResourceId", "getTemplatesWithSignature", "getString", "getName", "initializeFilterMenu", "enableIconsInOverflowMenu", "getTemplatesWithoutSignature", "equals", "getTemplateString", "removeItem", "getTrackableComparator", "setChecked", "isConfigurationOk", "isGCConnectorActive", "post", "setGroupDividerEnabled", "setEnabled", "isEnabled" ]
+    } ],
+    "imports" : [ "cgeo.geocaching.ui.SimpleItemListModel", "android.graphics.Typeface", "cgeo.geocaching.connector.capability.PersonalNoteCapability", "cgeo.geocaching.activity.TabbedViewPagerActivity", "androidx.appcompat.widget.TooltipCompat", "android.annotation.SuppressLint", "cgeo.geocaching.enumerations.CacheType", "cgeo.geocaching.models.CoordinateInputData", "android.widget.ListView", "cgeo.geocaching.ui.dialog.EditNoteDialog", "cgeo.geocaching.apps.cache.WhereYouGoApp", "cgeo.geocaching.utils.CacheUtils", "android.view.LayoutInflater", "cgeo.geocaching.connector.IConnector", "org.apache.commons.text.StringEscapeUtils", "android.text.Spannable", "cgeo.geocaching.ui.dialog.Dialogs", "cgeo.geocaching.enumerations.CacheAttributeCategory", "cgeo.geocaching.connector.capability.IFavoriteCapability", "java.util.function.Consumer", "cgeo.geocaching.models.Waypoint", "cgeo.geocaching.databinding.CachedetailWaypointsHeaderBinding", "androidx.annotation.MainThread", "cgeo.geocaching.utils.Log", "cgeo.geocaching.connector.capability.WatchListCapability", "cgeo.geocaching.utils.CalendarUtils", "cgeo.geocaching.ui.FastScrollListener", "cgeo.geocaching.connector.capability.IVotingCapability", "cgeo.geocaching.models.CacheArtefactParser", "cgeo.geocaching.utils.DisposableHandler", "android.text.style.ClickableSpan", "android.util.Pair", "cgeo.geocaching.utils.ProgressBarDisposableHandler", "cgeo.geocaching.ui.ViewUtils", "cgeo.geocaching.enumerations.CacheAttribute", "androidx.annotation.Nullable", "cgeo.geocaching.enumerations.WaypointType", "android.widget.TextView", "cgeo.geocaching.settings.SettingsActivity", "androidx.annotation.WorkerThread", "cgeo.geocaching.ui.recyclerview.RecyclerViewProvider", "cgeo.geocaching.utils.html.HtmlStyle", "cgeo.geocaching.activity.AbstractActivity", "org.apache.commons.lang3.tuple.ImmutableTriple", "android.content.res.Resources", "cgeo.geocaching.location.Geopoint", "cgeo.geocaching.utils.ProgressButtonDisposableHandler", "cgeo.geocaching.utils.CryptUtils", "androidx.appcompat.app.AlertDialog", "cgeo.geocaching.ui.TrackableListAdapter", "cgeo.geocaching.utils.CollectionStream", "android.text.style.StyleSpan", "cgeo.geocaching.sensors.GeoDirHandler", "cgeo.geocaching.ui.UserClickListener", "cgeo.geocaching.utils.TextUtils", "cgeo.geocaching.ui.ToggleItemType", "cgeo.geocaching.apps.cachelist.MapsMeCacheListApp", "cgeo.geocaching.export.PersonalNoteExport", "cgeo.geocaching.utils.ProcessUtils", "android.text.method.LinkMovementMethod", "cgeo.geocaching.log.CacheLogsViewCreator", "android.text.InputType", "cgeo.geocaching.models.CalculatedCoordinate", "cgeo.geocaching.storage.DataStore", "cgeo.geocaching.permission.PermissionContext", "cgeo.geocaching.export.FieldNoteExport", "java.util.Collections", "cgeo.geocaching.utils.html.HtmlUtils", "cgeo.geocaching.export.GpxExport", "com.google.android.material.button.MaterialButton", "androidx.core.text.HtmlCompat", "cgeo.geocaching.enumerations.StatusCode", "cgeo.geocaching.gcvote.VoteDialog", "cgeo.geocaching.service.GeocacheChangedBroadcastReceiver", "cgeo.geocaching.settings.Settings", "cgeo.geocaching.ui.dialog.SimpleDialog", "android.os.Handler", "cgeo.geocaching.list.StoredList", "cgeo.geocaching.connector.al.ALConnector", "cgeo.geocaching.utils.ImageUtils", "cgeo.geocaching.utils.EmojiUtils", "cgeo.geocaching.ui.dialog.EditNoteDialog.EditNoteDialogListener", "cgeo.geocaching.utils.functions.Action1", "android.view.View.OnClickListener", "android.net.Uri", "android.view.Menu", "cgeo.geocaching.log.LogCacheActivity", "com.google.mlkit.nl.translate.Translator", "java.util.ArrayList", "android.content.Context", "cgeo.geocaching.permission.PermissionAction", "cgeo.geocaching.ui.TextParam", "android.view.ContextMenu", "android.text.Spanned", "cgeo.geocaching.connector.internal.InternalConnector", "cgeo.geocaching.models.Image", "cgeo.geocaching.databinding.CachedetailDescriptionPageBinding", "cgeo.geocaching.sensors.GeoData", "cgeo.geocaching.location.GeopointFormatter", "cgeo.geocaching.models.Trackable", "cgeo.geocaching.wherigo.WherigoUtils", "cgeo.geocaching.network.HtmlImage", "cgeo.geocaching.ui.CoordinatesFormatSwitcher", "cgeo.geocaching.utils.ShareUtils", "cgeo.geocaching.connector.capability.IIgnoreCapability", "cgeo.geocaching.utils.html.UnknownTagsHandler", "cgeo.geocaching.utils.LocalizationUtils", "cgeo.geocaching.databinding.CachedetailDetailsPageBinding", "cgeo.geocaching.utils.SimpleDisposableHandler", "cgeo.geocaching.connector.trackable.TrackableConnector", "java.util.Locale", "android.content.Intent", "cgeo.geocaching.speech.SpeechService", "cgeo.geocaching.activity.TabbedViewPagerFragment", "android.os.Bundle", "cgeo.geocaching.utils.Formatter", "android.os.Message", "cgeo.geocaching.utils.MenuUtils", "androidx.annotation.NonNull", "io.reactivex.rxjava3.schedulers.Schedulers", "cgeo.geocaching.databinding.CachedetailInventoryPageBinding", "cgeo.geocaching.connector.capability.PgcChallengeCheckerCapability", "cgeo.geocaching.log.LoggingUI", "org.apache.commons.collections4.CollectionUtils", "io.reactivex.rxjava3.functions.Function", "cgeo.geocaching.wherigo.WherigoActivity", "android.widget.Button", "cgeo.geocaching.ui.CacheDetailsCreator", "cgeo.geocaching.activity.Progress", "android.content.ClipboardManager", "cgeo.geocaching.ui.AnchorAwareLinkMovementMethod", "cgeo.geocaching.apps.navi.NavigationAppFactory", "cgeo.geocaching.utils.AndroidRxUtils", "cgeo.geocaching.databinding.CachedetailImagegalleryPageBinding", "android.view.ViewGroup", "cgeo.geocaching.calendar.CalendarAdder", "cgeo.geocaching.utils.CheckerUtils", "cgeo.geocaching.contacts.IContactCardProvider", "android.text.SpannableStringBuilder", "java.util.Iterator", "io.reactivex.rxjava3.core.Observable", "cgeo.geocaching.enumerations.LoadFlags.RemoveFlag", "cgeo.geocaching.activity.ActivityMixin", "android.app.Activity", "java.util.EnumSet", "org.apache.commons.lang3.StringUtils", "cgeo.geocaching.activity.INavigationSource", "cgeo.geocaching.command.MoveToListAndRemoveFromOthersCommand", "cgeo.geocaching.storage.extension.OneTimeDialogs", "cgeo.geocaching.utils.ClipboardUtils", "cgeo.geocaching.ui.DecryptTextClickListener", "cgeo.geocaching.utils.MapMarkerUtils", "android.view.MenuItem", "java.util.Set", "cgeo.geocaching.databinding.CachedetailWaypointsPageBinding", "android.text.util.Linkify", "java.util.Arrays", "cgeo.geocaching.connector.ConnectorFactory", "java.lang.ref.WeakReference", "cgeo.geocaching.wherigo.WherigoViewUtils", "cgeo.geocaching.connector.trackable.TrackableBrand", "cgeo.geocaching.location.Units", "java.util.Map", "java.util.HashMap", "cgeo.geocaching.command.AbstractCommand", "cgeo.geocaching.models.Geocache", "androidx.fragment.app.FragmentManager", "cgeo.geocaching.enumerations.LoadFlags.SaveFlag", "cgeo.geocaching.ui.ImageGalleryView", "java.util.List", "android.view.View", "io.reactivex.rxjava3.disposables.CompositeDisposable", "java.util.LinkedList", "cgeo.geocaching.ui.dialog.CoordinatesInputDialog", "android.widget.ArrayAdapter", "cgeo.geocaching.apps.cache.WhereYouGoApp.isWhereYouGoInstalled", "android.widget.TextView.BufferType", "cgeo.geocaching.utils.CommonUtils", "cgeo.geocaching.utils.OfflineTranslateUtils", "android.view.View.OnLongClickListener", "org.apache.commons.collections4.IterableUtils", "cgeo.geocaching.enumerations.LoadFlags", "cgeo.geocaching.contacts.ContactsHelper", "cgeo.geocaching.sensors.LocationDataProvider", "cgeo.geocaching.network.Network" ]
+  } ]
+}

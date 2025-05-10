@@ -1,0 +1,1129 @@
+{
+  "systemName" : "SmartTube",
+  "classes" : [ {
+    "name" : "PlaybackFragment",
+    "packageName" : "androidx.leanback.app",
+    "extendedClasses" : [ "SeekModePlaybackFragment", "Fragment" ],
+    "implementedInterfaces" : [ "PlaybackView" ],
+    "methods" : [ {
+      "name" : "setPitch",
+      "visibility" : "public",
+      "methodCalls" : [ "getPitch", "floatEquals", "getPlaybackParameters", "setPlaybackParameters", "setPitch", "constrainValue", "flush" ]
+    }, {
+      "name" : "isControlsOverlayVisible",
+      "visibility" : "public",
+      "methodCalls" : [ "isControlsOverlayVisible" ]
+    }, {
+      "name" : "setPlaybackSeekUiClient",
+      "visibility" : "public",
+      "methodCalls" : [ "setPlaybackSeekUiClient" ]
+    }, {
+      "name" : "setBackgroundType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "tickle",
+      "visibility" : "public",
+      "methodCalls" : [ "v", "showControlsOverlay", "isResumed" ]
+    }, {
+      "name" : "onViewCreated",
+      "visibility" : "public",
+      "methodCalls" : [ "setJavaScriptEnabled", "onLogoAnimationFinished", "setOnChildViewHolderSelectedListener", "startLogoAnimation", "onPageSelected", "getViewTreeObserver", "setAdapterAndSelection", "getView", "getInt", "removeOnPreDrawListener", "addOnPreDrawListener", "showControlsOverlay", "findViewById", "setCacheMode", "onViewCreated", "getSettings", "setBackgroundColor", "onCreateViewHolder", "createScene", "setOnChildLaidOutListener", "getGridView", "setEntranceTransitionState", "getFragmentHost", "d", "setOnChildSelectedListener", "notifyViewCreated", "setAdapter", "getMainFragmentAdapter", "addView", "setClipToRoundedOutline", "addDynamicShadow", "needsWrapper", "setTag", "getBoolean", "showTitle", "v", "setSaveChildrenPolicy", "fireEvent", "setAlignment", "getColor", "setItemAlignmentViewId", "getVerticalGridView", "getBackground" ]
+    }, {
+      "name" : "getProgressBarManager",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "onDestroyView",
+      "visibility" : "public",
+      "methodCalls" : [ "clear", "setMainFragmentRowsAdapter", "cleanup", "onDismiss", "setOnDismissListener", "dismiss", "onDestroyView", "removeCallbacks" ]
+    }, {
+      "name" : "getAdapter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setFadingEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "getHost", "setControlsOverlayAutoHideEnabled" ]
+    }, {
+      "name" : "setOnItemViewClickedListener",
+      "visibility" : "public",
+      "methodCalls" : [ "getFragment", "setOnItemViewClickedListener" ]
+    }, {
+      "name" : "notifyPlaybackRowChanged",
+      "visibility" : "public",
+      "methodCalls" : [ "notifyItemRangeChanged", "notifyPlaybackRowChanged" ]
+    }, {
+      "name" : "isFadingEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "isControlsOverlayAutoHideEnabled" ]
+    }, {
+      "name" : "setPlaybackRowPresenter",
+      "visibility" : "public",
+      "methodCalls" : [ "setPlaybackRowPresenterAlignment", "setPlaybackRowPresenter" ]
+    }, {
+      "name" : "getFadeCompleteListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setHostCallback",
+      "visibility" : "public",
+      "methodCalls" : [ "setHostCallback" ]
+    }, {
+      "name" : "setControlsOverlayAutoHideEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "isResumed", "hasFocus", "showControlsOverlay", "getView", "v", "setFadingEnabled", "getHost", "setControlsOverlayAutoHideEnabled" ]
+    }, {
+      "name" : "resetFocus",
+      "visibility" : "public",
+      "methodCalls" : [ "getViewHolder", "getVerticalGridView", "onReappear", "findViewHolderForAdapterPosition", "getPresenter", "requestFocus" ]
+    }, {
+      "name" : "setOnPlaybackItemViewClickedListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setFadeCompleteListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOnItemViewSelectedListener",
+      "visibility" : "public",
+      "methodCalls" : [ "getFragment", "getChildViewHolder", "getChildCount", "getRowViewHolder", "setOnItemViewSelectedListener", "getChildAt", "getVerticalGridView" ]
+    }, {
+      "name" : "fadeOut",
+      "visibility" : "public",
+      "methodCalls" : [ "showControlsOverlay", "fadeOut" ]
+    }, {
+      "name" : "setAdapter",
+      "visibility" : "public",
+      "methodCalls" : [ "updateAdapter", "setPlaybackRowPresenterAlignment", "updateMainFragmentRowsAdapter", "getView", "getPresenterSelector", "setupPresenter", "getPresenters", "e", "getFragment", "unregisterObserver", "setHasStableIds", "notifyDataSetChanged", "hasStableIds", "registerObserver", "getAdapter", "unregisterAdapterDataObserver", "registerAdapterDataObserver", "addOnScrollListener", "setAdapter", "setLayoutManager", "setItemAnimator", "setSupportsChangeAnimations", "setStyle", "getContext" ]
+    }, {
+      "name" : "getBackgroundType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isControlsOverlayAutoHideEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "isControlsOverlayAutoHideEnabled" ]
+    }, {
+      "name" : "setOnKeyInterceptListener",
+      "visibility" : "public",
+      "methodCalls" : [ "setOnKeyInterceptListener" ]
+    }, {
+      "name" : "setSelectedPosition",
+      "visibility" : "public",
+      "methodCalls" : [ "startHeadersTransition", "getView", "getHandler", "getVerticalGridView", "getFragment", "post", "getRowViewHolder", "setSelectedPositionSmooth", "run", "hasPendingAdapterUpdates", "addOnChildViewHolderSelectedListener", "setSelection", "findViewHolderForPosition", "removeOnChildViewHolderSelectedListener", "setSelectedPosition", "getGridView", "getAdapter" ]
+    }, {
+      "name" : "setPlaybackRow",
+      "visibility" : "public",
+      "methodCalls" : [ "setPlaybackRow" ]
+    }, {
+      "name" : "openHlsUrl",
+      "visibility" : "public",
+      "methodCalls" : [ "fromHlsPlaylist", "openHlsUrl" ]
+    }, {
+      "name" : "isPlaying",
+      "visibility" : "public",
+      "methodCalls" : [ "getState", "isMediaPlaying", "getView", "isPlaying", "getPlayState", "checkNotNull", "getPlaybackSuppressionReason", "getPlayWhenReady", "getPlaybackState" ]
+    }, {
+      "name" : "setSpeed",
+      "visibility" : "public",
+      "methodCalls" : [ "setLastSpeed", "isSpeedPerChannelEnabled", "put", "remove", "setPlaybackParameters", "onSpeedChanged", "getQualityLabel", "getSpeed", "getPlaybackParameters", "floatEquals", "setSpeedButtonState", "setSpeed", "getCurrX", "flush", "constrainValue" ]
+    }, {
+      "name" : "setChannelIcon",
+      "visibility" : "public",
+      "methodCalls" : [ "getIntrinsicWidth", "setPadding", "getIntrinsicHeight", "load", "getDrawable", "get", "getContext", "getIcon", "circleCrop", "setChannelIcon", "apply", "with", "into", "setIcon", "glideOptions" ]
+    }, {
+      "name" : "getPlayWhenReady",
+      "visibility" : "public",
+      "methodCalls" : [ "getPlayWhenReady" ]
+    }, {
+      "name" : "hideControlsOverlay",
+      "visibility" : "public",
+      "methodCalls" : [ "showControlsOverlay", "setControlsVisibility", "onControlsShown", "hideControlsOverlay" ]
+    }, {
+      "name" : "containsMedia",
+      "visibility" : "public",
+      "methodCalls" : [ "getPlaybackState", "containsMedia" ]
+    }, {
+      "name" : "setVolume",
+      "visibility" : "public",
+      "methodCalls" : [ "min", "setVolume", "constrainValue", "onVolumeChanged", "i" ]
+    }, {
+      "name" : "isLoading",
+      "visibility" : "public",
+      "methodCalls" : [ "setVisibility", "isLoading" ]
+    }, {
+      "name" : "setResizeMode",
+      "visibility" : "public",
+      "methodCalls" : [ "setResize", "checkState", "setResizeMode", "requestLayout" ]
+    }, {
+      "name" : "showBackground",
+      "visibility" : "public",
+      "methodCalls" : [ "showBackground", "glideOptions", "setVisibility", "removeBackground", "load", "centerCrop", "setBitmap", "findViewById", "asBitmap", "into", "with", "error", "apply" ]
+    }, {
+      "name" : "showControls",
+      "visibility" : "public",
+      "methodCalls" : [ "showOverlay" ]
+    }, {
+      "name" : "setPlayWhenReady",
+      "visibility" : "public",
+      "methodCalls" : [ "obtainMessage", "sendToTarget", "getPlaybackState", "handleSetPlayWhenReady", "play", "setPlayWhenReady", "onPlaybackSuppressionReasonChanged", "onPlayerStateChanged", "onIsPlayingChanged", "isPlaying", "pause" ]
+    }, {
+      "name" : "onDispatchTouchEvent",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "showSuggestions",
+      "visibility" : "public",
+      "methodCalls" : [ "showOverlay", "isSuggestionsEmpty", "isSuggestionsShown" ]
+    }, {
+      "name" : "setPositionMs",
+      "visibility" : "public",
+      "methodCalls" : [ "getDurationMs", "seekTo", "setPositionMs" ]
+    }, {
+      "name" : "setChatReceiver",
+      "visibility" : "public",
+      "methodCalls" : [ "getActivity", "setChatReceiver", "findViewById", "load", "setMaxItemsCount", "glideOptions", "apply", "addToStart", "clear", "setAdapter", "getContext", "into", "circleCrop", "with", "setCallback", "from", "setVisibility" ]
+    }, {
+      "name" : "onResume",
+      "visibility" : "public",
+      "methodCalls" : [ "startRecognition", "getView", "findViewById", "setOnTouchInterceptListener", "onHostResume", "getVerticalGridView", "setOnKeyInterceptListener", "setAnimationEnabled", "blockEngine", "requestFocus", "setSpeechRecognizer", "getContext", "d", "stopRecognition", "createSpeechRecognizer", "onViewResumed", "init", "registerListener", "getCastOptions", "getReceiverApplicationId", "onResume", "setAdapter" ]
+    }, {
+      "name" : "setSeekBarSegments",
+      "visibility" : "public",
+      "methodCalls" : [ "setSeekBarSegments" ]
+    }, {
+      "name" : "isInPIPMode",
+      "visibility" : "public",
+      "methodCalls" : [ "getActivity", "isInPipMode" ]
+    }, {
+      "name" : "setButtonState",
+      "visibility" : "public",
+      "methodCalls" : [ "setButtonState", "get" ]
+    }, {
+      "name" : "blockEngine",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "onStart",
+      "visibility" : "public",
+      "methodCalls" : [ "onHostStart", "onActivityStart", "setAdapter", "onStart", "onResume", "addListener", "notifyDataSetChanged", "show", "setFocusableInTouchMode", "setWindowAlignment", "getDimensionPixelSize", "setWindowAlignmentOffset", "setWindowAlignmentOffsetPercent", "setItemAlignmentOffsetPercent", "getVerticalGridView", "getResources", "setFocusable", "setItemAlignmentOffset", "setDefaultBackground", "showBackground", "setBackgroundColor", "toString", "hideControlsOverlay", "requestFocus", "showTitle", "setAnimationEnabled", "fireEvent", "slideOutGridView", "getView", "hasFocus", "setRecyclerView", "commitMainFragment", "showHeaders", "setAlignment", "start" ]
+    }, {
+      "name" : "onDispatchKeyEvent",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSuggestionsIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "e", "getId", "get" ]
+    }, {
+      "name" : "getPitch",
+      "visibility" : "public",
+      "methodCalls" : [ "getPlaybackParameters", "getPitch" ]
+    }, {
+      "name" : "getVolume",
+      "visibility" : "public",
+      "methodCalls" : [ "getAudioComponent", "getRendererType", "getRendererCount", "get", "getCurrentTrackSelections", "getVolume" ]
+    }, {
+      "name" : "openDashUrl",
+      "visibility" : "public",
+      "methodCalls" : [ "fromDashManifestUrl", "openDashUrl" ]
+    }, {
+      "name" : "resetSuggestedPosition",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDebugButtonState",
+      "visibility" : "public",
+      "methodCalls" : [ "setDebugInfoActionState" ]
+    }, {
+      "name" : "onDestroy",
+      "visibility" : "public",
+      "methodCalls" : [ "detach", "onHostDestroy", "removeOnBackStackChangedListener", "getFragmentManager", "removeCallbacks", "releaseAdapter", "d", "getView", "onViewDestroyed", "onFinish", "release", "onDestroy", "isWaitingForRequirements", "getClass", "get", "stopPeriodicUpdates", "detachService" ]
+    }, {
+      "name" : "getVideoFormats",
+      "visibility" : "public",
+      "methodCalls" : [ "from", "getVideoTracks", "getVideoFormats" ]
+    }, {
+      "name" : "skipToNext",
+      "visibility" : "public",
+      "methodCalls" : [ "next" ]
+    }, {
+      "name" : "openUrlList",
+      "visibility" : "public",
+      "methodCalls" : [ "fromUrlList", "openUrlList" ]
+    }, {
+      "name" : "showSubtitles",
+      "visibility" : "public",
+      "methodCalls" : [ "show" ]
+    }, {
+      "name" : "setAspectRatio",
+      "visibility" : "public",
+      "methodCalls" : [ "setAspect", "requestLayout" ]
+    }, {
+      "name" : "restartEngine",
+      "visibility" : "public",
+      "methodCalls" : [ "isDetached", "gc", "e", "getRuntime", "getContext" ]
+    }, {
+      "name" : "onStop",
+      "visibility" : "public",
+      "methodCalls" : [ "onHostStop", "stop", "maybeReleasePlayer", "release", "hide", "removeListener", "onPause", "onStop", "dispatchStop", "canDispatchPlaybackAction" ]
+    }, {
+      "name" : "isOverlayShown",
+      "visibility" : "public",
+      "methodCalls" : [ "isOverlayShown", "getView", "isControlsOverlayVisible" ]
+    }, {
+      "name" : "updateSuggestions",
+      "visibility" : "public",
+      "methodCalls" : [ "getId", "getTitle", "sync", "get", "getAction", "put", "clear", "getPosition", "isShorts", "size", "e", "isEmpty", "add" ]
+    }, {
+      "name" : "finishReally",
+      "visibility" : "public",
+      "methodCalls" : [ "finish", "getActivity", "getViewManager", "startParentView", "finishReally", "onFinish" ]
+    }, {
+      "name" : "getVideo",
+      "visibility" : "public",
+      "methodCalls" : [ "getView", "getVideo" ]
+    }, {
+      "name" : "isControlsShown",
+      "visibility" : "public",
+      "methodCalls" : [ "isControlsOverlayVisible" ]
+    }, {
+      "name" : "isEngineBlocked",
+      "visibility" : "public",
+      "methodCalls" : [ "getView", "isEngineBlocked" ]
+    }, {
+      "name" : "setPlaylistAddButtonState",
+      "visibility" : "public",
+      "methodCalls" : [ "setPlaylistAddButtonState", "setIndex" ]
+    }, {
+      "name" : "setRotationAngle",
+      "visibility" : "public",
+      "methodCalls" : [ "setRotation" ]
+    }, {
+      "name" : "loadStoryboard",
+      "visibility" : "public",
+      "methodCalls" : [ "init", "getDurationMs", "getVideo", "getSeekProvider" ]
+    }, {
+      "name" : "isEngineInitialized",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDurationMs",
+      "visibility" : "public",
+      "methodCalls" : [ "getDuration", "getLiveDurationMs", "getDurationMs", "getVideo", "usToMs" ]
+    }, {
+      "name" : "getResizeMode",
+      "visibility" : "public",
+      "methodCalls" : [ "getResize", "getResizeMode", "checkState" ]
+    }, {
+      "name" : "setNextTitle",
+      "visibility" : "public",
+      "methodCalls" : [ "getString", "setNextTitle", "setLabel1", "getContext" ]
+    }, {
+      "name" : "setFormat",
+      "visibility" : "public",
+      "methodCalls" : [ "getType", "setAudioFormat", "isAudio", "isVideo", "setVideoFormat", "selectFormat" ]
+    }, {
+      "name" : "setTitle",
+      "visibility" : "public",
+      "methodCalls" : [ "setLabel1", "isEmpty", "setVisibility", "setText", "setTitle", "equals", "notifyPlaybackRowChanged", "getHost" ]
+    }, {
+      "name" : "setSpeedButtonState",
+      "visibility" : "public",
+      "methodCalls" : [ "setSpeedButtonState", "setIndex" ]
+    }, {
+      "name" : "setZoomPercents",
+      "visibility" : "public",
+      "methodCalls" : [ "setZoom" ]
+    }, {
+      "name" : "onPause",
+      "visibility" : "public",
+      "methodCalls" : [ "hasMessages", "onHostPause", "removeMessages", "setAnimationEnabled", "setPlayEnabled", "postDelayed", "maybeReleasePlayer", "onViewPaused", "onPauseClicked", "d", "reset", "unregisterListener", "onPause", "setAdapter", "getItemCount", "notifyItemRangeRemoved", "release", "canDispatchPlaybackAction", "dispatchSetPlayWhenReady" ]
+    }, {
+      "name" : "onActivityCreated",
+      "visibility" : "public",
+      "methodCalls" : [ "getLastState", "getContext", "getPlayer", "selectSectionItem", "getByVideoId", "prepareEntranceTransition", "selectSection", "instance", "openVideo", "setOnDismissListener", "setOwnerActivity", "setOnCancelListener", "getBundle", "getView", "setCancelable", "onRestoreInstanceState", "setContentView", "getParent", "setRootView", "findViewById", "getRootView", "getActivity", "setPosition", "onActivityCreated", "onViewInitialized" ]
+    }, {
+      "name" : "getSpeed",
+      "visibility" : "public",
+      "methodCalls" : [ "isSpeedPerChannelEnabled", "get", "getPlaybackParameters", "getSpeed" ]
+    }, {
+      "name" : "setDislikeButtonState",
+      "visibility" : "public",
+      "methodCalls" : [ "setThumbsDownActionState" ]
+    }, {
+      "name" : "onPIPChanged",
+      "visibility" : "public",
+      "methodCalls" : [ "notifyPlaybackRowChanged" ]
+    }, {
+      "name" : "onDispatchGenericMotionEvent",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "showBackgroundColor",
+      "visibility" : "public",
+      "methodCalls" : [ "showBackgroundColor", "findViewById", "removeBackground", "getColor", "setColor", "setVisibility" ]
+    }, {
+      "name" : "reloadPlayback",
+      "visibility" : "public",
+      "methodCalls" : [ "onEngineReleased", "onEngineInitialized" ]
+    }, {
+      "name" : "removeSuggestions",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "getSuggestionsIndex", "getId", "isEmpty", "removeItems", "remove" ]
+    }, {
+      "name" : "getSubtitleFormats",
+      "visibility" : "public",
+      "methodCalls" : [ "from", "getSubtitleTracks", "getSubtitleFormats" ]
+    }, {
+      "name" : "setLikeButtonState",
+      "visibility" : "public",
+      "methodCalls" : [ "setThumbsUpActionState" ]
+    }, {
+      "name" : "setVideoFlipEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "setFlipEnabled" ]
+    }, {
+      "name" : "onCreate",
+      "visibility" : "public",
+      "methodCalls" : [ "setAdapter", "setButtonActions", "onRestoreActions", "onCreateActions", "setActions", "resolveAttribute", "onRestoreButtonActions", "onCreateButtonActions", "getTheme", "onProvideFragmentTransitions", "v", "recycle", "getDimension", "getFraction", "load", "getFragmentManager", "getArguments", "addOnBackStackChangedListener", "obtainStyledAttributes", "getWindow", "getEnterTransition", "getDimensionPixelSize", "getReturnTransition", "addTransitionListener", "getInteger", "createStateMachineTransitions", "getResources", "createStateMachineStates", "fireEvent", "setContentTitle", "getSystemService", "setContentText", "isShorts", "getMainPresenter", "getVideoGridScale", "enableMainFragmentScaling", "fromString", "setSearchResultProvider", "enableKeyboardFix", "notifyDataReady", "getFragmentHost", "isKeyboardFixEnabled", "isKeyboardAutoShowEnabled", "getMainFragmentAdapter", "enableKeyboardAutoShow", "getBackgroundManager", "restoreChildFragmentState", "isStateAtLeast", "setBackgroundColor", "hasPendingVideo", "dispatchCreate", "getColor", "setField", "findFragmentByTag", "getField", "getString", "addAll", "getEntryValues", "getCharSequenceArray", "getEntries", "getStringArray", "getCharSequence", "getValues", "getValue", "getDialogMessage", "getDialogLayoutResource", "getActivity", "getTitle", "getChannel", "addHeader", "getAuthor", "createInfo", "firstNonNull", "isChannelSearchBarEnabled", "onSearchSettingsClicked", "startsWith", "toString", "getChannelId", "onSearchSubmit", "getPreference", "findFragmentById", "getDialogTitle", "getSupportFragmentManager", "addAsRoot", "instance", "setView", "getContext", "endsWith", "toArray", "add", "list", "execute", "size", "startForeground", "getDownloadTracker", "getAssets", "getApplication", "getClass", "put", "resumeDownloads", "getDownloadManager", "createNotificationChannel", "getApplicationContext", "get", "attachService", "getScheduler", "getUserAgent", "onCreate", "getIntent", "getParcelable", "setLayoutManager", "getDefault", "getBoolean", "getVideoSurfaceView", "setOnClickListener", "requestFocus", "getInt", "setContentView", "finish", "setControllerVisibilityListener", "equals", "getLong", "setDefaultStereoMode", "build", "getCause", "getStringExtra", "setErrorMessageProvider", "setTheme", "findViewById", "attachToRecyclerView", "getSharedInstance", "setDefault", "register", "setHasFixedSize", "useExtensionRenderers", "getDataString", "makeText", "start", "show", "sort", "setOnChildClickListener" ]
+    }, {
+      "name" : "fastForward",
+      "visibility" : "public",
+      "methodCalls" : [ "getTransportControls", "getDuration", "min", "seekTo", "fastForward", "getPlayerAdapter", "getCurrentPosition" ]
+    }, {
+      "name" : "getSuggestionsByIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "hasVideo", "size", "get", "getVideo", "getAll", "from", "getAdapter" ]
+    }, {
+      "name" : "focusSuggestedItem",
+      "visibility" : "public",
+      "methodCalls" : [ "getGroup", "getGridView", "getRowViewHolder", "setSelectedPosition", "focusPendingSuggestedItem" ]
+    }, {
+      "name" : "onCreateView",
+      "visibility" : "public",
+      "methodCalls" : [ "getNextCommentsKey", "queryComplete", "setDotBackgroundColor", "onTransitionPrepare", "setOnKeyListener", "getLayoutResourceId", "onCreateHeadersSupportFragment", "setArrowColor", "setTextColor", "findGridViewFromRoot", "getConfiguration", "startHeadersTransitionInternal", "getDisplayMetrics", "getLayoutDirection", "addAdpter", "onGuidedActionClicked", "expandAction", "onGuidedActionEditedAndProceed", "isExpanded", "collapseSubActions", "isFocusOutEndAllowed", "setFocusableViewAvailableFixEnabled", "resolveAttribute", "isFocusOutStartAllowed", "isInExpandTransition", "onGuidedActionEditCanceled", "runImeAnimations", "onCreateGuidance", "onSubGuidedActionClicked", "getFloat", "setEditListener", "getActionsGridView", "getSubActionsGridView", "setFocusOutEnd", "getLayoutParams", "onCreateBackgroundView", "setFocusOutStart", "setOnHeaderViewSelectedListener", "setBackgroundColor", "setPivotY", "setFragmentHost", "setOnFocusSearchListener", "setHeadersGone", "setPivotX", "setOnHeaderClickedListener", "getInt", "setEntranceTransitionEndState", "setOnChildFocusListener", "getBoolean", "setPresenterSelector", "showHeaders", "setMainFragmentAdapter", "onCreateHeadersFragment", "getGridView", "addCallback", "surfaceDestroyed", "setBackground", "setExternalAdapterListener", "surfaceCreated", "setupDpadNavigation", "onCreateViewHolder", "getHolder", "createScene", "commit", "getViewHolder", "setOnChildLaidOutListener", "setEntranceTransitionState", "surfaceChanged", "getOverviewView", "hasSubActions", "getKeyCode", "isBackKeyToCollapseActivatorView", "getKeyLinePercent", "isBackKeyToCollapseSubActions", "getTheme", "collapseAction", "getHeight", "setFocusableInTouchMode", "getAction", "hasEditableActivatorView", "getSystemService", "setWindowAlignmentOffsetPercent", "setInterceptKeyEventListener", "getDefaultDisplay", "onProvideLayoutId", "getBreadcrumb", "getTitle", "setImageDrawable", "append", "setContentDescription", "getContentDescription", "getIconDrawable", "getDescription", "setRootView", "getString", "getId", "recycle", "setAspectRatioListener", "moveToState", "setBackgroundType", "onInflate", "instantiate", "getProgressBarManager", "getClassLoader", "getFragmentFactory", "getTag", "getPositionDescription", "isTextureViewEnabled", "setTag", "getRotationAngle", "equals", "isFragmentClass", "getSurfaceView", "setup", "getResourceId", "findFragmentByTag", "getAttributeValue", "toHexString", "obtainStyledAttributes", "addFragment", "getField", "getParent", "parse", "onCreateAdapter", "setField", "setWindowAlignment", "setFocusScrollStrategy", "setFocusable", "setPosition", "openUrlInternally", "addLinks", "removeView", "setSearchBarListener", "setSelectAllOnFocus", "onItemSelected", "setPermissionListener", "onSearchSettingsClicked", "enableScreensaver", "setSpeechRecognitionCallback", "commitAllowingStateLoss", "addTextChangedListener", "hideKeyboard", "showKeyboardAlt", "stopSpeechService", "getSearchBarText", "getSelectedPosition", "setExpand", "retrieveResults", "setOnFocusChangeListener", "submitQuery", "findFragmentById", "fixEnterKey", "setTitle", "getOnFocusChangeListener", "format", "getArguments", "setBadgeDrawable", "onFocusChange", "updateSearchBarVisibility", "replace", "v", "disposeActions", "setOnItemViewSelectedListener", "beginTransaction", "setOnOrbClickedListener", "setOnItemViewClickedListener", "d", "addToStart", "dispatchFragmentsOnCreateView", "getResources", "getDimensionPixelSize", "installTitleView", "setLoadingMessage", "setLoadMoreListener", "glideOptions", "setCallback", "getCommentItem", "fromSplit", "onCommentClicked", "setOnMessageViewLongClickListener", "into", "onLoadMore", "onStart", "enableStackFromEnd", "getErrorMessage", "circleCrop", "getComments", "setOnMessageViewClickListener", "getItemCount", "from", "getContext", "setFocusedMessage", "getLoadingMessage", "isEmpty", "getMessagesCount", "setAllowAdaptiveSelections", "dismiss", "setVisibility", "setShowDisableOption", "setAllowMultipleOverrides", "setupWithViewPager", "init", "findViewById", "getDialog", "setOnClickListener", "onClick", "inflate", "setAdapter", "size", "getChildFragmentManager", "onCreateView", "printStackTrace", "addView", "getActivity", "scrollToPosition", "setLayoutParams", "setOrientation", "enableTransparentDialog", "requireContext", "setId", "setDrawSelectorOnTop", "setGravity", "setOnMessageViewFocusListener", "addToEnd", "scrollToTop", "isCommentsPlacedLeft", "requestFocus", "apply", "onCommentLongClicked", "setText", "getView", "enableLeftDialog", "load", "getParentFragment", "getMessagePosition", "with", "instance", "shouldSplit" ]
+    }, {
+      "name" : "skipToPrevious",
+      "visibility" : "public",
+      "methodCalls" : [ "previous" ]
+    }, {
+      "name" : "maybeReleasePlayer",
+      "visibility" : "public",
+      "methodCalls" : [ "isEngineBlocked", "d" ]
+    }, {
+      "name" : "updateEndingTime",
+      "visibility" : "public",
+      "methodCalls" : [ "update", "getActivity", "findViewById" ]
+    }, {
+      "name" : "rewind",
+      "visibility" : "public",
+      "methodCalls" : [ "getTransportControls", "getPlayerAdapter", "seekTo", "getCurrentPosition", "rewind", "onRewindSucceeded" ]
+    }, {
+      "name" : "finish",
+      "visibility" : "public",
+      "methodCalls" : [ "enableDoubleBackExit", "getGeneralData", "getPlayerExitShortcut", "hasParentView", "getSearchExitShortcut", "getAppExitShortcut", "blockEngine", "isKeepFinishedActivityEnabled", "getPlayerTweaksData", "blockTop", "startParentView", "maybeReleasePlayer", "getViewManager", "getActivity", "finish", "d", "finishReally", "onFinish" ]
+    }, {
+      "name" : "isSuggestionsEmpty",
+      "visibility" : "public",
+      "methodCalls" : [ "size" ]
+    }, {
+      "name" : "isDebugInfoShown",
+      "visibility" : "public",
+      "methodCalls" : [ "isShown" ]
+    }, {
+      "name" : "resetPlayerState",
+      "visibility" : "public",
+      "methodCalls" : [ "containsMedia", "stop", "setChatReceiver", "setSeekPreviewTitle", "resetPlayerState", "setSeekBarSegments", "showBackgroundColor" ]
+    }, {
+      "name" : "showControlsOverlay",
+      "visibility" : "public",
+      "methodCalls" : [ "showControlsOverlay", "onControlsShown", "setControlsVisibility" ]
+    }, {
+      "name" : "openDash",
+      "visibility" : "public",
+      "methodCalls" : [ "fromDashManifest", "openDash" ]
+    }, {
+      "name" : "getVideoFormat",
+      "visibility" : "public",
+      "methodCalls" : [ "from", "getVideoTrack", "getVideoFormat" ]
+    }, {
+      "name" : "showOverlay",
+      "visibility" : "public",
+      "methodCalls" : [ "showControlsOverlay", "hideControlsOverlay" ]
+    }, {
+      "name" : "focusPendingSuggestedItem",
+      "visibility" : "public",
+      "methodCalls" : [ "getGroup", "getGridView", "get", "indexOf", "getId", "setSelectedPosition", "getRowViewHolder" ]
+    }, {
+      "name" : "onSaveInstanceState",
+      "visibility" : "public",
+      "methodCalls" : [ "putParcelable", "getChildCount", "saveOnScreenView", "getSelection", "v", "getChildAt", "saveAsBundle", "getTag", "onSaveInstanceState", "putLong", "putInt", "putBoolean", "getPosition", "putBundle", "toArray", "putStringArray", "size", "putCharSequenceArray", "putCharSequence", "putString", "getVideo", "isPlayerInForeground", "toString", "getContext", "getCurrentVideo", "instance", "getSelectedPosition", "putSerializable", "isChecked", "getDescription", "needAutoSaveDescription", "getTitle", "getCheckSetId", "needAutoSaveTitle", "getDate", "save", "onSaveActions", "onSaveButtonActions" ]
+    }, {
+      "name" : "getAudioFormats",
+      "visibility" : "public",
+      "methodCalls" : [ "from", "getAudioTracks", "getAudioFormats" ]
+    }, {
+      "name" : "onFinish",
+      "visibility" : "public",
+      "methodCalls" : [ "getClass", "getTempBackgroundModeClass", "getPlaybackPresenter", "getViewManager", "getSearchData", "startView", "isRunningInBackground", "run", "clear", "maybeReleasePlayer", "onFinish" ]
+    }, {
+      "name" : "isSuggestionsShown",
+      "visibility" : "public",
+      "methodCalls" : [ "isControlsOverlayVisible" ]
+    }, {
+      "name" : "setSubtitleButtonState",
+      "visibility" : "public",
+      "methodCalls" : [ "setClosedCaptionsButtonState" ]
+    }, {
+      "name" : "clearSuggestions",
+      "visibility" : "public",
+      "methodCalls" : [ "size", "clear", "removeItems" ]
+    }, {
+      "name" : "openMerged",
+      "visibility" : "public",
+      "methodCalls" : [ "fromDashManifest", "fromHlsPlaylist", "openMerged" ]
+    }, {
+      "name" : "getPositionMs",
+      "visibility" : "public",
+      "methodCalls" : [ "getCurrentPosition", "getPositionMs" ]
+    }, {
+      "name" : "getAudioFormat",
+      "visibility" : "public",
+      "methodCalls" : [ "from", "getAudioTrack", "getAudioFormat" ]
+    }, {
+      "name" : "showDebugInfo",
+      "visibility" : "public",
+      "methodCalls" : [ "show" ]
+    }, {
+      "name" : "setSeekPreviewTitle",
+      "visibility" : "public",
+      "methodCalls" : [ "getBody", "setSeekPreviewTitle", "setText", "setVisibility" ]
+    }, {
+      "name" : "setVideo",
+      "visibility" : "public",
+      "methodCalls" : [ "setVideo", "getPlayerSubtitle", "setSubtitle", "getPlayerTitle", "setTitle" ]
+    }, {
+      "name" : "showProgressBar",
+      "visibility" : "public",
+      "methodCalls" : [ "post", "getMainLooper", "getProgressBarManager", "currentTimeMillis", "hide", "show" ]
+    } ],
+    "imports" : [ "androidx.leanback.widget.ObjectAdapter", "androidx.leanback.animation.LogDecelerateInterpolator", "android.os.Handler", "androidx.leanback.widget.BaseOnItemViewClickedListener", "androidx.leanback.media.PlaybackGlueHost", "android.os.Message", "androidx.leanback.widget.PlaybackSeekDataProvider", "androidx.leanback.widget.SparseArrayObjectAdapter", "android.animation.ValueAnimator.AnimatorUpdateListener", "android.util.Log", "androidx.leanback.widget.PlaybackSeekUi", "android.graphics.drawable.ColorDrawable", "android.view.animation.AccelerateInterpolator", "android.animation.ValueAnimator", "android.util.TypedValue", "android.animation.Animator", "android.app.Fragment", "android.view.InputEvent", "android.graphics.Color", "androidx.leanback.widget.BaseOnItemViewSelectedListener", "androidx.leanback.animation.LogAccelerateInterpolator", "androidx.recyclerview.widget.RecyclerView", "android.animation.TimeInterpolator", "androidx.leanback.widget.PlaybackRowPresenter", "androidx.annotation.RestrictTo", "androidx.leanback.widget.ItemAlignmentFacet", "androidx.leanback.R", "android.content.Context", "androidx.leanback.widget.VerticalGridView", "androidx.leanback.widget.ItemBridgeAdapter", "android.animation.AnimatorInflater", "androidx.leanback.widget.PresenterSelector", "com.liskovsoft.smartyoutubetv2.common.exoplayer.controller.ExoPlayerController", "com.liskovsoft.smartyoutubetv2.tv.presenter.VideoCardPresenter", "androidx.leanback.widget.HeaderItem", "com.liskovsoft.smartyoutubetv2.common.prefs.PlayerData", "com.google.android.exoplayer2.SimpleExoPlayer", "com.liskovsoft.smartyoutubetv2.common.exoplayer.selector.FormatItem", "com.liskovsoft.smartyoutubetv2.tv.ui.common.UriBackgroundManager", "com.liskovsoft.smartyoutubetv2.tv.ui.playback.mod.SeekModePlaybackFragment", "com.liskovsoft.smartyoutubetv2.common.exoplayer.other.DebugInfoManager", "android.os.Build.VERSION", "com.liskovsoft.smartyoutubetv2.tv.adapter.VideoGroupObjectAdapter", "androidx.leanback.widget.Presenter", "com.liskovsoft.smartyoutubetv2.common.app.models.data.Video", "android.view.View", "com.liskovsoft.smartyoutubetv2.tv.ui.widgets.time.DateTimeView", "com.liskovsoft.smartyoutubetv2.tv.ui.playback.mod.surface.SurfacePlaybackFragmentGlueHost", "com.liskovsoft.sharedutils.helpers.Helpers", "com.google.android.exoplayer2.ext.mediasession.MediaSessionConnector", "androidx.leanback.widget.RowPresenter.ViewHolder", "com.liskovsoft.smartyoutubetv2.common.app.models.data.VideoGroup", "androidx.leanback.app.RowsSupportFragment", "com.google.android.exoplayer2.DefaultControlDispatcher", "com.liskovsoft.smartyoutubetv2.tv.ui.playback.previewtimebar.StoryboardSeekDataProvider", "android.os.Bundle", "java.io.InputStream", "android.support.v4.media.MediaMetadataCompat", "com.liskovsoft.smartyoutubetv2.tv.ui.widgets.time.EndingTimeView", "androidx.leanback.widget.OnItemViewSelectedListener", "androidx.annotation.NonNull", "com.liskovsoft.smartyoutubetv2.tv.ui.widgets.chat.LiveChatView", "com.liskovsoft.smartyoutubetv2.tv.R", "com.liskovsoft.smartyoutubetv2.tv.presenter.base.OnItemLongPressedListener", "com.liskovsoft.smartyoutubetv2.tv.ui.playback.other.VideoPlayerGlue", "android.view.ViewGroup", "androidx.leanback.media.PlayerAdapter", "android.support.v4.media.session.MediaSessionCompat", "com.liskovsoft.smartyoutubetv2.tv.ui.common.LeanbackActivity", "com.liskovsoft.smartyoutubetv2.common.app.models.playback.ui.ChatReceiver", "androidx.leanback.widget.ListRowPresenter", "com.google.android.exoplayer2.DefaultRenderersFactory", "com.liskovsoft.smartyoutubetv2.tv.ui.playback.other.VideoPlayerGlue.OnActionClickedListener", "com.google.android.exoplayer2.Player", "com.liskovsoft.smartyoutubetv2.common.utils.Utils", "com.liskovsoft.smartyoutubetv2.common.exoplayer.other.ExoPlayerInitializer", "com.liskovsoft.smartyoutubetv2.common.exoplayer.versions.renderer.CustomOverridesRenderersFactory", "com.google.android.exoplayer2.SeekParameters", "androidx.leanback.widget.ArrayObjectAdapter", "android.view.KeyEvent", "com.liskovsoft.sharedutils.mylogger.Log", "com.liskovsoft.smartyoutubetv2.tv.ui.mod.leanback.misc.ProgressBarManager", "java.util.Map", "android.view.LayoutInflater", "android.view.MotionEvent", "androidx.leanback.widget.RowPresenter", "android.support.v4.media.session.PlaybackStateCompat", "androidx.core.content.ContextCompat", "com.liskovsoft.youtubeapi.common.helpers.YouTubeHelper", "com.google.android.exoplayer2.ext.leanback.LeanbackPlayerAdapter", "android.app.Activity", "androidx.leanback.widget.Row", "com.liskovsoft.smartyoutubetv2.tv.ui.playback.other.BackboneQueueNavigator", "java.util.List", "android.text.TextUtils", "com.liskovsoft.smartyoutubetv2.tv.presenter.ShortsCardPresenter", "androidx.leanback.widget.ClassPresenterSelector", "com.liskovsoft.smartyoutubetv2.common.exoplayer.controller.PlayerController", "com.liskovsoft.smartyoutubetv2.common.app.models.playback.ui.SeekBarSegment", "com.liskovsoft.smartyoutubetv2.common.app.presenters.PlaybackPresenter", "com.liskovsoft.smartyoutubetv2.tv.presenter.CustomListRowPresenter", "com.google.android.exoplayer2.util.Util", "com.google.android.exoplayer2.trackselection.AdaptiveTrackSelection", "com.liskovsoft.smartyoutubetv2.common.exoplayer.versions.selector.RestoreTrackSelector", "android.util.DisplayMetrics", "java.util.HashMap", "com.liskovsoft.smartyoutubetv2.common.prefs.PlayerTweaksData", "androidx.annotation.Nullable", "com.liskovsoft.smartyoutubetv2.common.app.views.PlaybackView", "androidx.leanback.widget.ListRow", "com.liskovsoft.smartyoutubetv2.common.exoplayer.other.SubtitleManager", "com.google.android.exoplayer2.trackselection.DefaultTrackSelector", "com.google.android.exoplayer2.ControlDispatcher" ]
+  }, {
+    "name" : "ViewHolder",
+    "packageName" : "androidx.leanback.widget",
+    "extendedClasses" : [ "ViewHolder" ],
+    "implementedInterfaces" : [ "OnClickListener", "FacetProvider", "PlaybackSeekUi" ],
+    "methods" : [ {
+      "name" : "getTitleView",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMediaItemDurationView",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSelectorView",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "notifyPlayStateChanged",
+      "visibility" : "public",
+      "methodCalls" : [ "onBindMediaPlayState" ]
+    }, {
+      "name" : "getMediaItemNumberView",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMediaItemActionsContainer",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "onBindRowActions",
+      "visibility" : "public",
+      "methodCalls" : [ "getOnItemViewClickedListener", "size", "getActions", "remove", "onBindViewHolder", "getRowObject", "onItemClicked", "setOnClickListener", "getChildCount", "getMediaItemActionsContainer", "addView", "onCreateViewHolder", "onUnbindViewHolder", "updateSelector", "add", "removeViewAt", "getActionPresenter", "get", "setOnFocusChangeListener" ]
+    }, {
+      "name" : "notifyDetailsChanged",
+      "visibility" : "public",
+      "methodCalls" : [ "onBindMediaDetails", "getRowObject", "onUnbindMediaDetails" ]
+    }, {
+      "name" : "getMediaItemRowSeparator",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSelectedMediaItemNumberView",
+      "visibility" : "public",
+      "methodCalls" : [ "setDisplayedChild", "getChildCount" ]
+    }, {
+      "name" : "getMediaItemRowActions",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMediaItemPausedView",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMediaItemPlayingView",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMediaItemNameView",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "notifyActionChanged",
+      "visibility" : "public",
+      "methodCalls" : [ "notifyItemChanged", "onBindViewHolder", "onUnbindViewHolder", "findActionIndex", "get", "getActionPresenter" ]
+    }, {
+      "name" : "getMediaItemDetailsView",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMediaItemNumberViewFlipper",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getIcon",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isInEditing",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getContentView",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isInEditingText",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isInEditingDescription",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCheckmarkView",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getIconView",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isSubAction",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isInEditingActivatorView",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getEditableTitleView",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getChevronView",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getEditableDescriptionView",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getEditingView",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getAction",
+      "visibility" : "public",
+      "methodCalls" : [ "equals" ]
+    }, {
+      "name" : "getDescriptionView",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isInEditingTitle",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBody",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTitle",
+      "visibility" : "public",
+      "methodCalls" : [ "getLabel1", "getText", "getTitle" ]
+    }, {
+      "name" : "setSizeFromDrawableIntrinsic",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isSizeFromDrawableIntrinsic",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getParentViewHolder",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setFacet",
+      "visibility" : "public",
+      "methodCalls" : [ "put" ]
+    }, {
+      "name" : "getSubtitle",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getParentPresenter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getExtraObject",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setExtraObject",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getItem",
+      "visibility" : "public",
+      "methodCalls" : [ "valueAt", "get", "getIndexOfPeriod", "getItemById" ]
+    }, {
+      "name" : "getFacet",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "getFacet" ]
+    }, {
+      "name" : "getViewHolder",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getPresenter",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "getLabel2", "getClass", "getSuperclass", "get", "getPresenter" ]
+    }, {
+      "name" : "setOnItemViewClickedListener",
+      "visibility" : "public",
+      "methodCalls" : [ "getFragment", "setOnItemViewClickedListener" ]
+    }, {
+      "name" : "getRowObject",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getOnItemViewSelectedListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOnItemViewSelectedListener",
+      "visibility" : "public",
+      "methodCalls" : [ "getFragment", "getChildViewHolder", "getChildCount", "getRowViewHolder", "setOnItemViewSelectedListener", "getChildAt", "getVerticalGridView" ]
+    }, {
+      "name" : "syncActivatedStatus",
+      "visibility" : "public",
+      "methodCalls" : [ "setActivated" ]
+    }, {
+      "name" : "isSelected",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getOnItemViewClickedListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isExpanded",
+      "visibility" : "public",
+      "methodCalls" : [ "isExpanded" ]
+    }, {
+      "name" : "getSelectLevel",
+      "visibility" : "public",
+      "methodCalls" : [ "getRowViewHolder" ]
+    }, {
+      "name" : "getRow",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getHeaderViewHolder",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOnKeyListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setActivated",
+      "visibility" : "public",
+      "methodCalls" : [ "setFocusable", "isFocusable", "get", "setDescendantFocusability", "getColumnsCount", "getSelectedColumn", "hasFocus", "requestFocus", "isActivated", "setActivated" ]
+    }, {
+      "name" : "getOnKeyListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getHeaderView",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getItemViewHolder",
+      "visibility" : "public",
+      "methodCalls" : [ "findViewHolderForAdapterPosition", "getViewHolder" ]
+    }, {
+      "name" : "getSelectedItem",
+      "visibility" : "public",
+      "methodCalls" : [ "findViewHolderForAdapterPosition", "getSelectedPosition", "getItem", "get" ]
+    }, {
+      "name" : "getSelectedPosition",
+      "visibility" : "public",
+      "methodCalls" : [ "getFragment", "getSelection", "getSelectedPosition" ]
+    }, {
+      "name" : "getBridgeAdapter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getListRowPresenter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSelectedItemViewHolder",
+      "visibility" : "public",
+      "methodCalls" : [ "getItemViewHolder", "getSelectedPosition" ]
+    }, {
+      "name" : "getGridView",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDetailsDescriptionViewHolder",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getState",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getLogoViewHolder",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getOverviewView",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDetailsDescriptionFrame",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getActionsRow",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPlaybackSeekUiClient",
+      "visibility" : "public",
+      "methodCalls" : [ "setPlaybackSeekUiClient" ]
+    }, {
+      "name" : "getDescriptionViewHolder",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "onClick",
+      "visibility" : "public",
+      "methodCalls" : [ "getTag", "onLongClick", "isOkButtonLongPressDisabled", "onItemClick", "getContext", "instance", "post", "uptimeMillis", "get", "removeCallbacks", "onDebouncedClick", "abs", "getId", "put", "setText", "fastForward", "dispatchSetShuffleModeEnabled", "next", "getPlaybackState", "previous", "seekTo", "dispatchSetRepeatMode", "getRepeatMode", "getNextRepeatMode", "preparePlayback", "onClick", "getShuffleModeEnabled", "dispatchSetPlayWhenReady", "getCurrentWindowIndex", "rewind", "setPositiveButton", "getIsDisabled", "isEmpty", "create", "addTrackSelectionForSingleRenderer", "setTitle", "getSupportFragmentManager", "clearTrackSelections", "show", "getPeriodCount", "selectQueueItem", "getAdapterPosition", "getRendererCount", "getOverrides", "willHaveContent", "createForTrackSelector", "setView", "onSampleDownloadButtonClicked" ]
+    }, {
+      "name" : "getCurrentPositionView",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getWidgetView",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getContainer",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDurationView",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "onBind",
+      "visibility" : "public",
+      "methodCalls" : [ "onActionClicked", "getChildViewHolder", "getViewHolder", "getOnItemViewClickedListener", "getDialogPhoto", "getUser", "loadImage", "isSelected", "onDialogViewLongClick", "getLastMessage", "onDialogClick", "setVisibility", "setSelected", "isDialogUnreadBubbleEnabled", "getText", "onDialogLongClick", "valueOf", "size", "getImageUrl", "getAvatar", "isEmpty", "setOnClickListener", "getPayloadForImageLoader", "onBind", "getDateString", "isDialogMessageAvatarEnabled", "format", "setText", "getCreatedAt", "getDialogName", "getUsers", "getUnreadCount", "setOnLongClickListener", "onDialogViewClick", "d", "toString", "getRow", "onItemClicked", "getItem", "getPresenter" ]
+    } ],
+    "imports" : [ "com.liskovsoft.smartyoutubetv2.tv.ui.mod.leanback.misc.SeekBar", "android.animation.ValueAnimator", "android.widget.ViewFlipper", "android.view.View.AccessibilityDelegate", "android.view.accessibility.AccessibilityEvent", "android.widget.EditText", "androidx.leanback.transition.TransitionEpicenterCallback", "androidx.annotation.CallSuper", "android.view.accessibility.AccessibilityNodeInfo", "androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP", "androidx.leanback.widget.GuidedAction.EDITING_NONE", "androidx.leanback.widget.GuidedActionAdapter.EditListener", "androidx.leanback.widget.GuidedAction.EDITING_TITLE", "androidx.leanback.transition.TransitionListener", "android.animation.AnimatorListenerAdapter", "androidx.annotation.RestrictTo", "java.util.Calendar", "androidx.leanback.widget.GuidedAction.EDITING_DESCRIPTION", "androidx.leanback.widget.GuidedAction.EDITING_ACTIVATOR_VIEW", "android.animation.AnimatorInflater", "android.view.WindowManager", "android.text.InputType", "android.os.Build.VERSION", "androidx.core.content.ContextCompat", "androidx.leanback.widget.picker.DatePicker", "android.view.inputmethod.EditorInfo", "android.animation.Animator", "android.view.ViewTreeObserver", "java.util.Map", "android.graphics.Paint.FontMetricsInt", "android.graphics.Paint", "androidx.core.view.ViewCompat", "android.widget.LinearLayout", "android.view.ViewGroup.LayoutParams", "androidx.leanback.widget.ControlBarPresenter.OnControlSelectedListener", "androidx.leanback.widget.ControlBarPresenter.OnControlClickedListener", "android.app.Activity", "androidx.leanback.graphics.ColorOverlayDimmer", "android.view.ContextThemeWrapper", "androidx.leanback.app.HeadersFragment", "android.view.animation.Interpolator", "android.view.animation.AccelerateInterpolator", "android.util.AttributeSet", "java.util.ArrayList", "android.view.animation.DecelerateInterpolator", "android.content.res.TypedArray", "android.view.MotionEvent", "android.annotation.SuppressLint", "java.util.HashMap", "android.view.View.OnTouchListener", "androidx.leanback.system.Settings", "android.graphics.Rect", "android.content.res.Resources", "android.os.Handler", "androidx.leanback.util.MathUtil", "android.widget.Checkable", "android.text.Spanned", "com.liskovsoft.smartyoutubetv2.tv.ui.mod.leanback.playerglue.tweaks.ControlBarPresenter.OnControlSelectedListener", "androidx.leanback.widget.OnActionClickedListener", "android.text.SpannableStringBuilder", "android.graphics.Color", "android.os.Build", "androidx.leanback.widget.PlaybackSeekUi", "com.liskovsoft.smartyoutubetv2.tv.ui.mod.clickable.LinkifyCompat", "com.liskovsoft.smartyoutubetv2.common.utils.Utils", "android.graphics.Bitmap", "com.liskovsoft.smartyoutubetv2.tv.ui.mod.clickable.LinkifyCompat.LinkifyClickHandler", "com.liskovsoft.smartyoutubetv2.tv.ui.mod.leanback.widget.OnActionLongClickedListener", "com.liskovsoft.smartyoutubetv2.common.app.models.playback.ui.SeekBarSegment", "androidx.leanback.widget.PlaybackRowPresenter", "androidx.preference.MultiSelectListPreference", "android.widget.ImageView", "java.util.Set", "androidx.leanback.widget.PlaybackSeekDataProvider", "java.util.HashSet", "android.text.style.ClickableSpan", "java.util.Collections", "com.liskovsoft.sharedutils.helpers.MessageHelpers", "androidx.preference.DialogPreference", "android.text.TextUtils", "com.liskovsoft.smartyoutubetv2.common.prefs.PlayerTweaksData", "com.liskovsoft.smartyoutubetv2.tv.ui.mod.leanback.playerglue.seekpreview.ThumbsBar", "android.net.Uri", "com.liskovsoft.smartyoutubetv2.common.app.presenters.PlaybackPresenter", "androidx.leanback.widget.AbstractDetailsDescriptionPresenter", "com.liskovsoft.smartyoutubetv2.common.prefs.PlayerData", "com.liskovsoft.smartyoutubetv2.tv.ui.mod.leanback.playerglue.tweaks.ControlBarPresenter.OnControlClickedListener", "java.util.Arrays", "androidx.annotation.Nullable", "androidx.collection.ArraySet", "com.liskovsoft.smartyoutubetv2.tv.ui.mod.leanback.playerglue.tweaks.ControlBarPresenter.OnControlLongClickedListener", "com.liskovsoft.sharedutils.helpers.DateHelper", "java.lang.ref.WeakReference", "java.util.List", "android.util.TypedValue", "android.text.style.URLSpan", "android.view.KeyEvent", "androidx.recyclerview.widget.RecyclerView", "android.view.View", "android.os.Bundle", "androidx.leanback.widget.Presenter", "androidx.leanback.widget.HorizontalGridView", "android.view.LayoutInflater", "androidx.leanback.widget.OnItemViewClickedListener", "androidx.leanback.widget.VerticalGridView", "androidx.leanback.widget.VerticalGridPresenter", "androidx.leanback.transition.TransitionHelper", "androidx.leanback.widget.OnChildSelectedListener", "androidx.leanback.widget.ObjectAdapter", "androidx.annotation.NonNull", "androidx.leanback.app.BrowseSupportFragment", "androidx.leanback.widget.OnChildViewHolderSelectedListener", "androidx.leanback.widget.RowPresenter", "androidx.recyclerview.widget.RecyclerView.Adapter", "androidx.leanback.widget.OnChildLaidOutListener", "androidx.fragment.app.Fragment", "android.view.ViewGroup", "androidx.leanback.widget.OnItemViewSelectedListener", "android.util.Log", "com.liskovsoft.smartyoutubetv2.tv.R", "android.widget.FrameLayout", "androidx.leanback.widget.Row", "com.liskovsoft.smartyoutubetv2.tv.ui.mod.leanback.playerglue.tooltips.ControlButtonPresenterSelector", "androidx.leanback.widget.PlaybackControlsRow", "androidx.leanback.R", "android.widget.ProgressBar", "android.graphics.drawable.LayerDrawable", "androidx.leanback.widget.Action", "android.widget.TextView", "android.graphics.drawable.ColorDrawable", "com.liskovsoft.smartyoutubetv2.tv.ui.mod.leanback.playerglue.MathUtil", "android.view.ViewGroup.MarginLayoutParams", "android.content.Context", "android.graphics.drawable.ClipDrawable", "android.view.Gravity", "androidx.annotation.ColorInt", "android.graphics.drawable.Drawable", "android.util.SparseArray", "androidx.preference.ListPreference" ]
+  }, {
+    "name" : "ComponentListener",
+    "packageName" : "com.google.android.exoplayer2.ui",
+    "extendedClasses" : [ "Callback" ],
+    "implementedInterfaces" : [ "Callback", "SingleTapListener", "OnLayoutChangeListener", "OnScrubListener", "OnClickListener", "PlayerControl", "VideoRendererEventListener", "AudioRendererEventListener", "TextOutput", "SurfaceTextureListener", "MetadataOutput", "EventListener", "VideoListener" ],
+    "methods" : [ {
+      "name" : "onPrepareFromUri",
+      "visibility" : "public",
+      "methodCalls" : [ "onPrepareFromUri", "canDispatchToPlaybackPreparer" ]
+    }, {
+      "name" : "onTracksChanged",
+      "visibility" : "public",
+      "methodCalls" : [ "getFormat", "d", "getAll", "setFormat", "onTrackChanged", "from", "getQualityLabel", "i", "updateForCurrentTrackSelections", "getCurrentMappedTrackInfo", "getTypeSupport", "updateButtonVisibility", "showToast", "onTracksChanged" ]
+    }, {
+      "name" : "onSingleTapUp",
+      "visibility" : "public",
+      "methodCalls" : [ "toggleControllerVisibility", "onSingleTapUp" ]
+    }, {
+      "name" : "onLayoutChange",
+      "visibility" : "public",
+      "methodCalls" : [ "applyTextureViewRotation" ]
+    }, {
+      "name" : "onScrubStop",
+      "visibility" : "public",
+      "methodCalls" : [ "seekToTimeBarPosition" ]
+    }, {
+      "name" : "onScrubStart",
+      "visibility" : "public",
+      "methodCalls" : [ "setText", "getStringForTime" ]
+    }, {
+      "name" : "onClick",
+      "visibility" : "public",
+      "methodCalls" : [ "getTag", "onLongClick", "isOkButtonLongPressDisabled", "onItemClick", "getContext", "instance", "post", "uptimeMillis", "get", "removeCallbacks", "onDebouncedClick", "abs", "getId", "put", "setText", "fastForward", "dispatchSetShuffleModeEnabled", "next", "getPlaybackState", "previous", "seekTo", "dispatchSetRepeatMode", "getRepeatMode", "getNextRepeatMode", "preparePlayback", "onClick", "getShuffleModeEnabled", "dispatchSetPlayWhenReady", "getCurrentWindowIndex", "rewind", "setPositiveButton", "getIsDisabled", "isEmpty", "create", "addTrackSelectionForSingleRenderer", "setTitle", "getSupportFragmentManager", "clearTrackSelections", "show", "getPeriodCount", "selectQueueItem", "getAdapterPosition", "getRendererCount", "getOverrides", "willHaveContent", "createForTrackSelector", "setView", "onSampleDownloadButtonClicked" ]
+    }, {
+      "name" : "onScrubMove",
+      "visibility" : "public",
+      "methodCalls" : [ "getStringForTime", "setText" ]
+    }, {
+      "name" : "onAdLoadError",
+      "visibility" : "public",
+      "methodCalls" : [ "loadError", "createEventDispatcher", "emptyMap" ]
+    }, {
+      "name" : "onAdPlaybackState",
+      "visibility" : "public",
+      "methodCalls" : [ "post", "onAdPlaybackState" ]
+    }, {
+      "name" : "release",
+      "visibility" : "public",
+      "methodCalls" : [ "release", "isStarted", "clearDrawable", "v", "removeCallbacks", "changeToUnitialized", "setOnTrackSelectCallback", "invalidate", "reset", "setPlayer", "setSessionAvailabilityListener", "dismiss", "checkState", "cancel", "execute", "shutdown", "copyOf", "notifyAll", "max", "store", "e", "sendEmptyMessage", "wait", "add", "removeEventListener", "emptyList", "handleStop", "remove", "checkNotNull", "notify", "join", "interrupt", "currentThread", "dispatch", "closeSession", "releaseOutputBuffer", "removeAdsLoadedListener", "removeListener", "removeAdErrorListener", "destroy", "mediaPeriodReleased", "clear", "removeCallbacksAndMessages", "endCurrentSession", "toHexString", "identityHashCode", "registeredModules", "discardToEnd", "removeSessionManagerListener", "i", "getSessionManager", "obtainMessage", "close", "block", "quit", "sendMessage", "d", "allowDebug" ]
+    }, {
+      "name" : "onAudioDecoderInitialized",
+      "visibility" : "public",
+      "methodCalls" : [ "onDecoderInitialized", "onAudioDecoderInitialized" ]
+    }, {
+      "name" : "onVideoDecoderInitialized",
+      "visibility" : "public",
+      "methodCalls" : [ "onDecoderInitialized", "onVideoDecoderInitialized" ]
+    }, {
+      "name" : "onVideoEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "onDecoderEnabled", "onVideoEnabled" ]
+    }, {
+      "name" : "onAudioDisabled",
+      "visibility" : "public",
+      "methodCalls" : [ "onDecoderDisabled", "onAudioDisabled" ]
+    }, {
+      "name" : "onMetadata",
+      "visibility" : "public",
+      "methodCalls" : [ "saveState", "getChannelId", "isSponsorBlockEnabled", "isLiveChatEnabled", "getContentBlockData", "getVideo", "getPlayerData", "getAuthorImageUrl", "isSubscribed", "getPlayer", "getSeekPreviewMode", "setButtonState", "loadStoryboard", "getRotationAngle", "getLikeStatus", "isAfrEnabled", "setDislikeButtonState", "setChannelIcon", "isRealChannelIconEnabled", "getPlayerTweaksData", "setLikeButtonState", "getLiveChatKey", "getCommentsKey", "getTitle", "equals", "onMetadata" ]
+    }, {
+      "name" : "onAudioSessionId",
+      "visibility" : "public",
+      "methodCalls" : [ "setEnabled", "d", "printStackTrace", "setTargetGain", "release", "contains", "audioSessionId", "onAudioSessionId" ]
+    }, {
+      "name" : "setVolumeMultiplier",
+      "visibility" : "public",
+      "methodCalls" : [ "sendVolumeToRenderers" ]
+    }, {
+      "name" : "onSurfaceTextureUpdated",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "onSurfaceTextureSizeChanged",
+      "visibility" : "public",
+      "methodCalls" : [ "maybeNotifySurfaceSizeChanged" ]
+    }, {
+      "name" : "onSurfaceTextureAvailable",
+      "visibility" : "public",
+      "methodCalls" : [ "setVideoSurfaceInternal", "maybeNotifySurfaceSizeChanged" ]
+    }, {
+      "name" : "onAudioEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "onDecoderEnabled", "onAudioEnabled" ]
+    }, {
+      "name" : "onLoadingChanged",
+      "visibility" : "public",
+      "methodCalls" : [ "onLoadingChanged", "remove", "add" ]
+    }, {
+      "name" : "onDroppedFrames",
+      "visibility" : "public",
+      "methodCalls" : [ "onDroppedVideoFrames", "onDroppedFrames" ]
+    }, {
+      "name" : "executePlayerCommand",
+      "visibility" : "public",
+      "methodCalls" : [ "getPlayWhenReady", "updatePlayWhenReady" ]
+    }, {
+      "name" : "onAudioInputFormatChanged",
+      "visibility" : "public",
+      "methodCalls" : [ "onDecoderInputFormatChanged", "onAudioInputFormatChanged" ]
+    }, {
+      "name" : "onVideoInputFormatChanged",
+      "visibility" : "public",
+      "methodCalls" : [ "onDecoderInputFormatChanged", "onVideoInputFormatChanged" ]
+    }, {
+      "name" : "onVideoDisabled",
+      "visibility" : "public",
+      "methodCalls" : [ "onDecoderDisabled", "onVideoDisabled" ]
+    }, {
+      "name" : "onCues",
+      "visibility" : "public",
+      "methodCalls" : [ "setCues", "onCues" ]
+    }, {
+      "name" : "onSurfaceTextureDestroyed",
+      "visibility" : "public",
+      "methodCalls" : [ "maybeNotifySurfaceSizeChanged", "setVideoSurfaceInternal" ]
+    }, {
+      "name" : "onAudioSinkUnderrun",
+      "visibility" : "public",
+      "methodCalls" : [ "onAudioUnderrun", "onAudioSinkUnderrun" ]
+    }, {
+      "name" : "onSkipToNext",
+      "visibility" : "public",
+      "methodCalls" : [ "onSkipToNext", "canDispatchToQueueNavigator", "getWindow", "dispatchSeekTo", "isEmpty", "getCurrentWindowIndex", "isPlayingAd", "getCurrentTimeline", "getNextWindowIndex" ]
+    }, {
+      "name" : "onRepeatModeChanged",
+      "visibility" : "public",
+      "methodCalls" : [ "startOrUpdateNotification", "updateNavigation", "updateRepeatModeButton", "onRepeatModeChanged", "invalidateMediaSessionPlaybackState", "setRepeatMode" ]
+    }, {
+      "name" : "onPlay",
+      "visibility" : "public",
+      "methodCalls" : [ "setPlayEnabled", "removeCallbacks", "onPlayClicked", "canDispatchPlaybackAction", "getPlaybackState", "checkNotNull", "seekTo", "onPrepare", "dispatchSetPlayWhenReady", "getCurrentWindowIndex" ]
+    }, {
+      "name" : "onPlayFromMediaId",
+      "visibility" : "public",
+      "methodCalls" : [ "canDispatchToPlaybackPreparer", "onPrepareFromMediaId" ]
+    }, {
+      "name" : "onPause",
+      "visibility" : "public",
+      "methodCalls" : [ "hasMessages", "onHostPause", "removeMessages", "setAnimationEnabled", "setPlayEnabled", "postDelayed", "maybeReleasePlayer", "onViewPaused", "onPauseClicked", "d", "reset", "unregisterListener", "onPause", "setAdapter", "getItemCount", "notifyItemRangeRemoved", "release", "canDispatchPlaybackAction", "dispatchSetPlayWhenReady" ]
+    }, {
+      "name" : "onSkipToQueueItem",
+      "visibility" : "public",
+      "methodCalls" : [ "onSkipToQueueItem", "canDispatchToQueueNavigator", "getCurrentTimeline", "dispatchSeekTo", "isPlayingAd", "isEmpty", "getWindowCount" ]
+    }, {
+      "name" : "onSkipToPrevious",
+      "visibility" : "public",
+      "methodCalls" : [ "canDispatchToQueueNavigator", "onSkipToPrevious", "isEmpty", "isPlayingAd", "dispatchSeekTo", "getPreviousWindowIndex", "getCurrentWindowIndex", "getCurrentPosition", "getCurrentTimeline", "getWindow" ]
+    }, {
+      "name" : "onIsPlayingChanged",
+      "visibility" : "public",
+      "methodCalls" : [ "startOrUpdateNotification", "updateProgress", "onIsPlayingChanged", "invalidateMediaSessionPlaybackState" ]
+    }, {
+      "name" : "onPrepare",
+      "visibility" : "public",
+      "methodCalls" : [ "onPrepare", "canDispatchToPlaybackPreparer" ]
+    }, {
+      "name" : "onCustomAction",
+      "visibility" : "public",
+      "methodCalls" : [ "containsKey", "onCustomAction", "get", "invalidateMediaSessionPlaybackState", "getRepeatMode", "getNextRepeatMode", "dispatchSetRepeatMode" ]
+    }, {
+      "name" : "onSetShuffleMode",
+      "visibility" : "public",
+      "methodCalls" : [ "dispatchSetShuffleModeEnabled", "canDispatchPlaybackAction" ]
+    }, {
+      "name" : "onShuffleModeEnabledChanged",
+      "visibility" : "public",
+      "methodCalls" : [ "updateShuffleButton", "updateNavigation", "onShuffleModeChanged", "invalidateMediaSessionPlaybackState", "invalidateMediaSessionQueue", "setShuffleMode" ]
+    }, {
+      "name" : "onSeekTo",
+      "visibility" : "public",
+      "methodCalls" : [ "seekTo", "getCurrentWindowIndex", "canDispatchPlaybackAction" ]
+    }, {
+      "name" : "onAddQueueItem",
+      "visibility" : "public",
+      "methodCalls" : [ "canDispatchQueueEdit", "onAddQueueItem", "addMediaSource", "add", "createMediaSource", "getCurrentTimeline", "getWindowCount" ]
+    }, {
+      "name" : "onStop",
+      "visibility" : "public",
+      "methodCalls" : [ "onHostStop", "stop", "maybeReleasePlayer", "release", "hide", "removeListener", "onPause", "onStop", "dispatchStop", "canDispatchPlaybackAction" ]
+    }, {
+      "name" : "onRemoveQueueItem",
+      "visibility" : "public",
+      "methodCalls" : [ "canDispatchQueueEdit", "onRemoveQueueItem", "getDescription", "get", "removeMediaSource", "equals", "size", "remove", "getQueue" ]
+    }, {
+      "name" : "onFastForward",
+      "visibility" : "public",
+      "methodCalls" : [ "canDispatchPlaybackAction", "fastForward" ]
+    }, {
+      "name" : "surfaceDestroyed",
+      "visibility" : "public",
+      "methodCalls" : [ "setDisplay", "setVideoSurfaceInternal", "maybeNotifySurfaceSizeChanged", "setVideoSurface" ]
+    }, {
+      "name" : "surfaceCreated",
+      "visibility" : "public",
+      "methodCalls" : [ "setDisplay", "setVideoSurfaceInternal", "getSurface", "setVideoSurface" ]
+    }, {
+      "name" : "onTimelineChanged",
+      "visibility" : "public",
+      "methodCalls" : [ "startOrUpdateNotification", "updateTimeline", "updateNavigation", "size", "set", "put", "get", "onPositionDiscontinuity", "getPeriodCount", "getCurrentWindowIndex", "invalidateMediaSessionPlaybackState", "invalidateMediaSessionMetadata", "withContentDurationUs", "isEmpty", "getCurrentTimeline", "getWindowCount", "usToMs", "getPeriod", "onTimelineChanged", "checkArgument", "onDurationChanged", "onBufferedPositionChanged", "getCallback", "onCurrentPositionChanged" ]
+    }, {
+      "name" : "onVideoSizeChanged",
+      "visibility" : "public",
+      "methodCalls" : [ "removeOnLayoutChangeListener", "addOnLayoutChangeListener", "onContentAspectRatioChanged", "applyTextureViewRotation", "contains", "onVideoSizeChanged", "getCallback" ]
+    }, {
+      "name" : "onPlayerError",
+      "visibility" : "public",
+      "methodCalls" : [ "getCause", "onEngineError", "e", "initializePlayer", "getApplicationContext", "isBehindLiveWindow", "makeText", "show", "clearStartPosition", "updateButtonVisibility", "showControls", "onPlayerError", "get", "size", "onError", "getCallback", "getErrorMessage", "getString" ]
+    }, {
+      "name" : "onPlayerStateChanged",
+      "visibility" : "public",
+      "methodCalls" : [ "onPlay", "onPause", "getDurationMs", "getPositionMs", "onBuffering", "onPlayEnd", "stateToString", "updateErrorMessage", "updateBuffering", "isPlayingAd", "maybeShowController", "hideController", "startOrUpdateNotification", "showControls", "updateButtonVisibility", "updateProgress", "updatePlayPauseButton", "updateAndPost", "onPlayerStateChanged", "invalidateMediaSessionPlaybackState", "resume", "d", "pause", "get", "onEnded", "size", "notifyStateChanged" ]
+    }, {
+      "name" : "onPositionDiscontinuity",
+      "visibility" : "public",
+      "methodCalls" : [ "stop", "onPlayEnd", "e", "hideController", "startOrUpdateNotification", "updateTimeline", "updateNavigation", "updateAndPost", "onPositionDiscontinuity", "onAudioTrackPositionDiscontinuity", "isPlayingAd", "getAdGroupIndexForPositionUs", "isEmpty", "withSkippedAdGroup", "msToUs", "invalidateMediaSessionPlaybackState", "getPeriod", "invalidateMediaSessionMetadata", "getCurrentWindowIndex", "getCurrentPosition", "onCurrentWindowIndexChanged", "getCallback", "onBufferedPositionChanged", "onCurrentPositionChanged" ]
+    }, {
+      "name" : "surfaceChanged",
+      "visibility" : "public",
+      "methodCalls" : [ "maybeNotifySurfaceSizeChanged" ]
+    }, {
+      "name" : "onRenderedFirstFrame",
+      "visibility" : "public",
+      "methodCalls" : [ "setVisibility", "onRenderedFirstFrame" ]
+    }, {
+      "name" : "onPlaybackParametersChanged",
+      "visibility" : "public",
+      "methodCalls" : [ "startOrUpdateNotification", "onPlaybackParametersChanged", "sendToTarget", "obtainMessage", "invalidateMediaSessionPlaybackState" ]
+    }, {
+      "name" : "onMediaButtonEvent",
+      "visibility" : "public",
+      "methodCalls" : [ "onMediaButtonEvent", "canDispatchMediaButtonEvent" ]
+    }, {
+      "name" : "onSetRating",
+      "visibility" : "public",
+      "methodCalls" : [ "canDispatchSetRating", "onSetRating" ]
+    }, {
+      "name" : "onPrepareFromSearch",
+      "visibility" : "public",
+      "methodCalls" : [ "canDispatchToPlaybackPreparer", "onPrepareFromSearch" ]
+    }, {
+      "name" : "onPrepareFromMediaId",
+      "visibility" : "public",
+      "methodCalls" : [ "canDispatchToPlaybackPreparer", "onPrepareFromMediaId" ]
+    }, {
+      "name" : "onCommand",
+      "visibility" : "public",
+      "methodCalls" : [ "onCommand", "size", "get", "move", "equals", "getInt", "moveMediaSource" ]
+    }, {
+      "name" : "onPlayFromSearch",
+      "visibility" : "public",
+      "methodCalls" : [ "canDispatchToPlaybackPreparer", "onPrepareFromSearch" ]
+    }, {
+      "name" : "onPlayFromUri",
+      "visibility" : "public",
+      "methodCalls" : [ "onPrepareFromUri", "canDispatchToPlaybackPreparer" ]
+    }, {
+      "name" : "onSetRepeatMode",
+      "visibility" : "public",
+      "methodCalls" : [ "dispatchSetRepeatMode", "canDispatchPlaybackAction" ]
+    }, {
+      "name" : "onRewind",
+      "visibility" : "public",
+      "methodCalls" : [ "canDispatchPlaybackAction", "rewind" ]
+    } ],
+    "imports" : [ "android.graphics.Bitmap", "android.graphics.drawable.BitmapDrawable", "com.google.android.exoplayer2.ui.spherical.SphericalSurfaceView", "android.graphics.Matrix", "com.google.android.exoplayer2.metadata.id3.ApicFrame", "android.graphics.RectF", "com.google.android.exoplayer2.ui.AspectRatioFrameLayout.ResizeMode", "androidx.core.content.ContextCompat", "com.google.android.exoplayer2.ui.spherical.SingleTapListener", "com.google.android.exoplayer2.metadata.flac.PictureFrame", "android.app.Activity", "com.google.android.exoplayer2.source.ads.AdsLoader", "android.graphics.BitmapFactory", "com.google.android.exoplayer2.trackselection.TrackSelection", "android.view.ViewGroup", "android.view.LayoutInflater", "androidx.annotation.AttrRes", "android.view.KeyEvent", "android.util.AttributeSet", "android.widget.LinearLayout", "com.google.android.exoplayer2.trackselection.DefaultTrackSelector.SelectionOverride", "org.checkerframework.checker.nullness.qual.RequiresNonNull", "com.google.android.exoplayer2.trackselection.MappingTrackSelector.MappedTrackInfo", "android.widget.CheckedTextView", "android.view.MotionEvent", "android.util.SparseArray", "org.checkerframework.checker.nullness.qual.MonotonicNonNull", "android.widget.ImageView", "com.google.android.exoplayer2.trackselection.DefaultTrackSelector", "com.google.android.exoplayer2.RendererCapabilities", "java.util.Formatter", "android.content.res.Resources", "java.util.Locale", "android.content.res.TypedArray", "android.graphics.drawable.Drawable", "android.widget.TextView", "android.view.View", "android.annotation.SuppressLint", "com.google.android.exoplayer2.source.TrackGroup", "android.widget.FrameLayout", "com.google.android.exoplayer2.source.DeferredMediaPeriod", "com.google.android.exoplayer2.source.MediaSourceEventListener", "com.google.android.exoplayer2.source.CompositeMediaSource", "com.google.android.exoplayer2.source.MediaSourceEventListener.LoadEventInfo", "java.io.IOException", "com.google.android.exoplayer2.source.MediaPeriod", "java.lang.annotation.Documented", "com.google.android.exoplayer2.upstream.DataSpec", "androidx.annotation.IntDef", "com.google.android.exoplayer2.upstream.DataSource", "com.google.android.exoplayer2.source.MediaSourceEventListener.MediaLoadData", "com.google.android.exoplayer2.source.MediaSource.MediaPeriodId", "com.google.android.exoplayer2.upstream.TransferListener", "com.google.android.exoplayer2.source.ProgressiveMediaSource", "java.util.Arrays", "com.google.android.exoplayer2.upstream.Allocator", "com.google.android.exoplayer2.text.TextOutput", "com.google.android.exoplayer2.audio.AudioAttributes", "android.annotation.TargetApi", "com.google.android.exoplayer2.drm.DrmSessionManager", "java.util.concurrent.CopyOnWriteArraySet", "com.google.android.exoplayer2.source.TrackGroupArray", "com.google.android.exoplayer2.analytics.AnalyticsCollector", "com.google.android.exoplayer2.audio.AudioListener", "com.google.android.exoplayer2.util.Log", "com.google.android.exoplayer2.audio.AudioFocusManager", "com.google.android.exoplayer2.trackselection.TrackSelector", "com.google.android.exoplayer2.video.VideoFrameMetadataListener", "com.google.android.exoplayer2.metadata.MetadataOutput", "com.google.android.exoplayer2.video.VideoRendererEventListener", "android.media.MediaCodec", "com.google.android.exoplayer2.analytics.AnalyticsListener", "com.google.android.exoplayer2.trackselection.TrackSelectionArray", "com.google.android.exoplayer2.decoder.DecoderCounters", "com.google.android.exoplayer2.text.Cue", "com.google.android.exoplayer2.source.MediaSource", "android.media.PlaybackParams", "android.view.SurfaceView", "android.graphics.Rect", "android.graphics.SurfaceTexture", "com.google.android.exoplayer2.audio.AudioRendererEventListener", "com.google.android.exoplayer2.drm.DefaultDrmSessionManager", "com.google.android.exoplayer2.metadata.Metadata", "com.google.android.exoplayer2.video.spherical.CameraMotionListener", "com.google.android.exoplayer2.drm.FrameworkMediaCrypto", "com.google.android.exoplayer2.util.PriorityTaskManager", "com.google.android.exoplayer2.util.Clock", "android.view.TextureView", "com.google.android.exoplayer2.upstream.BandwidthMeter", "com.google.android.exoplayer2.audio.AuxEffectInfo", "android.support.v4.media.session.MediaSessionCompat", "android.support.v4.media.RatingCompat", "android.os.Looper", "android.os.ResultReceiver", "android.support.v4.media.MediaDescriptionCompat", "android.os.Bundle", "java.lang.annotation.RetentionPolicy", "java.util.HashMap", "java.lang.annotation.Retention", "android.net.Uri", "android.support.v4.media.session.MediaControllerCompat", "java.util.List", "com.google.android.exoplayer2.util.Util", "android.os.SystemClock", "android.support.v4.media.session.PlaybackStateCompat", "com.google.android.exoplayer2.PlaybackParameters", "com.google.android.exoplayer2.util.RepeatModeUtil", "androidx.annotation.NonNull", "java.util.ArrayList", "com.google.android.exoplayer2.util.ErrorMessageProvider", "androidx.leanback.media.SurfaceHolderGlueHost", "android.view.SurfaceHolder", "com.google.android.exoplayer2.Player", "com.google.android.exoplayer2.ExoPlaybackException", "android.os.Handler", "com.google.android.exoplayer2.Player.TimelineChangeReason", "com.google.android.exoplayer2.ExoPlayerLibraryInfo", "com.google.android.exoplayer2.video.VideoListener", "androidx.leanback.media.PlaybackGlueHost", "android.util.Pair", "android.view.Surface", "com.google.android.exoplayer2.C", "com.google.android.exoplayer2.PlaybackPreparer", "com.google.android.exoplayer2.ControlDispatcher", "android.content.Context", "androidx.leanback.R", "androidx.annotation.Nullable", "com.google.android.exoplayer2.Timeline", "com.google.android.exoplayer2.Player.DiscontinuityReason", "com.google.android.exoplayer2.DefaultControlDispatcher", "androidx.leanback.media.PlayerAdapter", "java.util.Collections", "androidx.annotation.LongDef", "android.content.Intent", "java.util.Map", "com.google.android.exoplayer2.util.Assertions", "android.support.v4.media.MediaMetadataCompat" ]
+  } ]
+}

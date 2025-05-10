@@ -1,0 +1,2445 @@
+{
+  "systemName" : "lawnchair",
+  "classes" : [ {
+    "name" : "Launcher",
+    "packageName" : "com.android.launcher3",
+    "extendedClasses" : [ "StatefulActivity" ],
+    "implementedInterfaces" : [ "PluginListener", "OnIDPChangeListener", "Callbacks" ],
+    "methods" : [ {
+      "name" : "onStateSetEnd",
+      "visibility" : "public",
+      "methodCalls" : [ "setClipChildren", "getWindow", "setStateIsNormal", "logger", "getAllAppsExitEvent", "getStatsLogManager", "sendAccessibilityEvent", "setTitle", "reset", "getAppWidgetHolder", "getAppsView", "getRotationHelper", "ifPresent", "equals", "resumeModelPush", "removeActivityFlags", "get", "setCurrentStateRequest", "finishAutoCancelActionMode", "getDecorView", "hasFlag", "getTitle", "getDragLayer", "getPageAt", "getCurrentPage", "goToState", "post", "launchTask", "getStateManager", "getOverviewPanel", "getCurrentPageTaskView", "getWorkspace", "performHapticFeedback", "sendCustomAccessibilityEvent", "moveToRestState", "getNextPage", "sendStateEventToTest", "onStateSetEnd", "getBaseContext" ]
+    }, {
+      "name" : "onKeyShortcut",
+      "visibility" : "public",
+      "methodCalls" : [ "onKeyShortcut" ]
+    }, {
+      "name" : "isWorkspaceLocked",
+      "visibility" : "public",
+      "methodCalls" : [ "isWorkspaceLoading" ]
+    }, {
+      "name" : "setWaitingForResult",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "toggleAllAppsSearch",
+      "visibility" : "public",
+      "methodCalls" : [ "toggleAllAppsSearch", "toggleSearch" ]
+    }, {
+      "name" : "getWorkspace",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getScrimView",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getStateManager",
+      "visibility" : "public",
+      "methodCalls" : [ "getStateManager" ]
+    }, {
+      "name" : "onCreateView",
+      "visibility" : "public",
+      "methodCalls" : [ "addView", "startListening", "getContext", "createWrapper", "isQsbEnabled", "setId", "instantiate", "obtainStyledAttributes", "onInit", "enterPreviewMode", "getInt", "getString", "showDotPagination", "equals", "getName", "from", "setOnTouchListener", "setInsets", "getInsets", "systemBars", "onCreateView", "get", "setOnApplyWindowInsetsListener", "findViewById", "setOnClickListener", "close", "inflate" ]
+    }, {
+      "name" : "getPopupDataProvider",
+      "visibility" : "public",
+      "methodCalls" : [ "getPopupDataProvider" ]
+    }, {
+      "name" : "refreshAndBindWidgetsForPackageUser",
+      "visibility" : "public",
+      "methodCalls" : [ "refreshAndBindWidgetsAndShortcuts" ]
+    }, {
+      "name" : "dispatchDeviceProfileChanged",
+      "visibility" : "public",
+      "methodCalls" : [ "onDeviceProvideChanged", "onDeviceProfileChanged", "size", "getOnDeviceProfileChangeListeners", "getDeviceProfile", "get", "debugWhyTaskbarNotDestroyed", "getTaskbarManager", "setLauncherAppIconSize", "dispatchDeviceProfileChanged" ]
+    }, {
+      "name" : "bindItems",
+      "visibility" : "public",
+      "methodCalls" : [ "arrangeChildren", "unbindItems", "map", "stream", "inflateItem", "toList", "create", "getItemInflater", "collect", "getModelWriter", "bindInflatedItems" ]
+    }, {
+      "name" : "setIsFirstPagePinnedItemEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "setIsFirstPagePinnedItemEnabled" ]
+    }, {
+      "name" : "setPagesToBindSynchronously",
+      "visibility" : "public",
+      "methodCalls" : [ "setPagesToBindSynchronously" ]
+    }, {
+      "name" : "enableHotseatEdu",
+      "visibility" : "public",
+      "methodCalls" : [ "enableHotseatEdu" ]
+    }, {
+      "name" : "dump",
+      "visibility" : "public",
+      "methodCalls" : [ "dump", "getOverviewActionsClaimedSpaceBelow", "getCellLayoutSpringLoadShrunkBottom", "getCellSize", "getWorkspaceSpringLoadScale", "getCellLayoutSpringLoadShrunkTop", "getCellLayoutHeight", "getHotseatLayoutPadding", "getCellLayoutWidth", "isInTransition", "getModel", "executeIfCreated", "isModelLoaded", "values", "getChildAt", "flushAll", "equals", "getChildCount", "getShortcutsAndWidgets", "dumpState", "getAppsStore", "getPageCount", "getTag", "getPageAt", "isListening", "getWorkspaceLoading", "taskListenerTypeToString", "getTaskInfo", "getConfiguration", "getActiveSessionsCount", "getCurrentUser", "getDisplayBounds", "isShortcutEnabled", "getContentResolver", "isLeftRightSplit", "getMainStagePosition", "isSplitActive", "getSideStagePosition", "splitPositionToString", "isSplitScreenVisible", "handleDump", "executeBlocking", "accept", "valueAt", "getTaskId", "getExpandedBubble", "getTaskView", "isShowing", "getAlpha", "formatBubblesString", "getBubblesOnScreen", "getKey", "getAnimationMatrix", "getVisibility", "asBinder", "getTransitionState", "getSelectedBubbleKey", "isActiveController", "getRestingPosition", "showFlyout", "getLastActivity", "showInShade", "getDesiredHeightString", "shouldAutoExpand", "showDot", "keyAt", "getWindowingMode", "toShortString", "flagsToString", "toHexString", "sideToString", "findFixedRowByType", "getSplitSelectController", "getFloatingHeaderView", "getOverviewPanel", "getAppsView", "getPagedViewOrientedState", "isActive", "actionToString", "getValue", "getPluginActions", "isEnabled", "queryIntentServices", "add", "getPackageManager", "isValid", "getSurfaceControl", "println", "getViewRootImpl", "isAttachedToWindow", "get", "keySet", "format", "size", "print", "canStartSystemGesture", "isAssistantGestureDisabled", "getBounds", "getSystemUiStateString", "toString", "dumpMisc", "append", "getCurrentActiveRotation", "getDisplayRotation", "enableHandleDelayedGestureCallbacks", "isEmpty", "isRecentsAnimationRunning", "getTaskInfo1", "getPackageName", "getTaskInfo2", "getIdentifier", "myUserHandle", "getTopComponent", "getRecentTasks" ]
+    }, {
+      "name" : "bindWorkspaceItemsChanged",
+      "visibility" : "public",
+      "methodCalls" : [ "bindWorkspaceItemsChanged", "updateWorkspaceItems" ]
+    }, {
+      "name" : "launchAppPair",
+      "visibility" : "public",
+      "methodCalls" : [ "launchAppPair", "getAppPairsController" ]
+    }, {
+      "name" : "onRestoreInstanceState",
+      "visibility" : "public",
+      "methodCalls" : [ "getSynchronouslyBoundPages", "forEach", "getPageIndexForScreenId", "onRestoreInstanceState", "restoreInstanceStateForChild" ]
+    }, {
+      "name" : "canUseMultipleShadesForPopup",
+      "visibility" : "public",
+      "methodCalls" : [ "getState", "getStateManager", "getTopOpenViewWithType" ]
+    }, {
+      "name" : "dispatchTouchEvent",
+      "visibility" : "public",
+      "methodCalls" : [ "uptimeMillis", "getTranslationX", "offsetLocation", "setAction", "isEventWithinSystemGestureRegion", "getAction", "getActionIndex", "onTouch", "getBubbles", "dispatchTouchEvent", "recordMotionEvent" ]
+    }, {
+      "name" : "invalidateParent",
+      "visibility" : "public",
+      "methodCalls" : [ "getDeviceProfile", "getContents", "getIconDrawableArea", "getTag", "isItemInPreview", "getWorkspace", "invalidate", "redraw", "setFolderInfo", "createFolderGridOrganizer", "contains", "getHomescreenIconByItemId" ]
+    }, {
+      "name" : "getCellPosMapper",
+      "visibility" : "public",
+      "methodCalls" : [ "getCellPosMapper", "isVerticalBarLayout", "getDeviceProfile" ]
+    }, {
+      "name" : "createTouchControllers",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "getNavigationMode", "isVerticalBarLayout", "getDragController", "getDeviceProfile", "play", "createPlaceholderDismissAnim", "toArray", "getSplitAnimationController", "size" ]
+    }, {
+      "name" : "getCellLayout",
+      "visibility" : "public",
+      "methodCalls" : [ "getScreenWithId" ]
+    }, {
+      "name" : "bindScreens",
+      "visibility" : "public",
+      "methodCalls" : [ "bindScreens" ]
+    }, {
+      "name" : "getFocusHandler",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "onProvideKeyboardShortcuts",
+      "visibility" : "public",
+      "methodCalls" : [ "onProvideKeyboardShortcuts" ]
+    }, {
+      "name" : "setOnDeferredActivityLaunchCallback",
+      "visibility" : "public",
+      "methodCalls" : [ "setOnDeferredActivityLaunchCallback", "getCreatedContainer" ]
+    }, {
+      "name" : "getOptionsPopup",
+      "visibility" : "public",
+      "methodCalls" : [ "findViewById" ]
+    }, {
+      "name" : "onBackPressed",
+      "visibility" : "public",
+      "methodCalls" : [ "getStateManager", "goToState", "getLastState", "cancelDrag", "canHandleBack", "isDragging", "getTopOpenView", "finishAutoCancelActionMode", "showAppDrawer", "getOnBackPressedHandler", "onBackInvoked", "close", "hide", "setExpanded", "showManageMenu", "isManageEduVisible", "w", "onBackPressed", "startHome" ]
+    }, {
+      "name" : "getIsFirstPagePinnedItemEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "getIsFirstPagePinnedItemEnabled" ]
+    }, {
+      "name" : "getDragController",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "onStateTransitionCompletedAfterSwipeToHome",
+      "visibility" : "public",
+      "methodCalls" : [ "hasBeenResumed", "updateStateForFlag", "applyState", "onStateTransitionCompletedAfterSwipeToHome" ]
+    }, {
+      "name" : "isSplitSelectionActive",
+      "visibility" : "public",
+      "methodCalls" : [ "isSplitSelectActive" ]
+    }, {
+      "name" : "isTouchInProgress",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "handleHomeTap",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDragLayer",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getNormalOverviewScaleAndOffset",
+      "visibility" : "public",
+      "methodCalls" : [ "getNavigationMode" ]
+    }, {
+      "name" : "bindDeepShortcutMap",
+      "visibility" : "public",
+      "methodCalls" : [ "bindDeepShortcutMap", "setDeepShortcutMap" ]
+    }, {
+      "name" : "cast",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getItemInflater",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSupportedShortcuts",
+      "visibility" : "public",
+      "methodCalls" : [ "getSupportedShortcuts", "concat", "of", "asList", "enablePrivateSpaceInstallShortcut", "enableShortcutDontSuggestApp", "stream", "add", "addAll", "enablePrivateSpace" ]
+    }, {
+      "name" : "updateOpenFolderPosition",
+      "visibility" : "public",
+      "methodCalls" : [ "max", "getWorkspace", "width", "getDeviceProfile", "height", "min", "getPaddingLeft", "getAbsoluteOpenFolderBounds" ]
+    }, {
+      "name" : "areDesktopTasksVisible",
+      "visibility" : "public",
+      "methodCalls" : [ "areDesktopTasksVisible", "d" ]
+    }, {
+      "name" : "addFolder",
+      "visibility" : "public",
+      "methodCalls" : [ "getShortcutsAndWidgets", "getModelWriter", "addInScreen", "addItemToDatabase", "measureChild", "inflateFolderAndIcon", "getParentCellLayoutForView" ]
+    }, {
+      "name" : "returnToHomescreen",
+      "visibility" : "public",
+      "methodCalls" : [ "goToState", "getStateManager", "returnToHomescreen" ]
+    }, {
+      "name" : "getModel",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "bindWidgetsRestored",
+      "visibility" : "public",
+      "methodCalls" : [ "bindWidgetsRestored" ]
+    }, {
+      "name" : "getOrientation",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getStringCache",
+      "visibility" : "public",
+      "methodCalls" : [ "getStringCache" ]
+    }, {
+      "name" : "processActivityResult",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "startIntentSenderForResult",
+      "visibility" : "public",
+      "methodCalls" : [ "startIntentSenderForResult", "getLaunchIntent", "startActivity" ]
+    }, {
+      "name" : "getModelWriter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "onDetachedFromWindow",
+      "visibility" : "public",
+      "methodCalls" : [ "removeDragListener", "getDragController", "closeContextMenu", "setLayoutParams", "onDetachedFromWindow" ]
+    }, {
+      "name" : "dismissSplitSelection",
+      "visibility" : "public",
+      "methodCalls" : [ "getSplitAnimationController", "playPlaceholderDismissAnim", "dismissSplitSelection" ]
+    }, {
+      "name" : "isBindingItems",
+      "visibility" : "public",
+      "methodCalls" : [ "isWorkspaceLoading", "isBindingItems" ]
+    }, {
+      "name" : "isNaturalScrollingEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "bindIncrementalDownloadProgressUpdated",
+      "visibility" : "public",
+      "methodCalls" : [ "updateProgressBar", "getAppsStore", "bindIncrementalDownloadProgressUpdated" ]
+    }, {
+      "name" : "bindRestoreItemsChange",
+      "visibility" : "public",
+      "methodCalls" : [ "bindRestoreItemsChange", "updateRestoreItems" ]
+    }, {
+      "name" : "deferOverlayCallbacksUntilNextResumeOrStop",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "onStateSetStart",
+      "visibility" : "public",
+      "methodCalls" : [ "closeAllOpenViews", "withContainerInfo", "getPageIndicator", "pauseModelPush", "getCurrentStableState", "newBuilder", "setWorkspace", "getStatsLogManager", "log", "get", "build", "setCurrentStateRequest", "equals", "getRotationHelper", "getCurrentPage", "onStateSetStart", "setPageIndex", "setShouldAutoHide", "setClipChildren", "showPageIndicatorAtCurrentScroll", "getAllAppsEntryEvent", "logger", "isPresent", "getWorkspace", "hasFlag", "newInstanceId", "addActivityFlags" ]
+    }, {
+      "name" : "bindStringCache",
+      "visibility" : "public",
+      "methodCalls" : [ "bindStringCache" ]
+    }, {
+      "name" : "resumeExpensiveViewUpdates",
+      "visibility" : "public",
+      "methodCalls" : [ "getPageIndicator", "mapOverItems", "endDeferringUpdates", "getWorkspace", "skipAnimationsToEnd" ]
+    }, {
+      "name" : "showDefaultOptions",
+      "visibility" : "public",
+      "methodCalls" : [ "getOptions", "getPopupTarget", "show" ]
+    }, {
+      "name" : "getSharedPrefs",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "dispatchKeyEvent",
+      "visibility" : "public",
+      "methodCalls" : [ "preDispatchKeyEvent", "requestFocus", "onBackPress", "onExitCurrentMenuMode", "onUserInteracting", "onPipMovement", "isEnabled", "isShiftPressed", "isHandlingTouch", "isAltPressed", "recordKeyEvent", "getAction", "canHandleBack", "getKeyCode", "onBackInvoked", "getTopOpenView", "dispatchKeyEvent", "close", "hasNoModifiers" ]
+    }, {
+      "name" : "getOverviewPanel",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "bindComplete",
+      "visibility" : "public",
+      "methodCalls" : [ "postAtFrontOfQueue", "getViewTreeObserver", "logEnd", "reset", "getHandler", "log", "endAsyncSection", "removeOnPreDrawListener", "logCardinality", "getRootView" ]
+    }, {
+      "name" : "onPageEndTransition",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "bindAllApplications",
+      "visibility" : "public",
+      "methodCalls" : [ "getAppsStore", "dismissInvalidPopup", "endAsyncSection", "bindAllApplications", "assertUIThread", "setApps" ]
+    }, {
+      "name" : "getDotInfoForItem",
+      "visibility" : "public",
+      "methodCalls" : [ "fromItemInfo", "supportsShortcuts", "getShortcutIdIfPinnedShortcut", "anyMatch", "getNotificationKeys", "getPersonKeysIfPinnedShortcut", "equals", "stream", "get", "getPopupDataProvider", "getDotInfoForItem" ]
+    }, {
+      "name" : "startBinding",
+      "visibility" : "public",
+      "methodCalls" : [ "cancelDrag", "verifyUIUpdateNotPaused", "startBinding", "setBindingItems", "emptyList", "clear" ]
+    }, {
+      "name" : "closeOpenViews",
+      "visibility" : "public",
+      "methodCalls" : [ "closeOpenViews" ]
+    }, {
+      "name" : "onMultiWindowModeChanged",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "size", "dispatchDeviceProfileChanged", "initDeviceProfile", "start", "ofFloat", "addListener", "setAutoCancel", "getState", "getDepth", "setDuration", "getStateManager", "onMultiWindowModeChanged", "onHandleConfigurationChanged" ]
+    }, {
+      "name" : "onAllAppsTransition",
+      "visibility" : "public",
+      "methodCalls" : [ "onAllAppsTransition" ]
+    }, {
+      "name" : "onTrimMemory",
+      "visibility" : "public",
+      "methodCalls" : [ "releaseMemory", "getHighResLoadingState", "onTrimMemory", "clearCache", "clear", "setVisible", "get", "getContext", "unregisterComponentCallbacks", "detachFromRoot" ]
+    }, {
+      "name" : "setLauncherOverlay",
+      "visibility" : "public",
+      "methodCalls" : [ "onOverlayScrollChanged", "getContext", "setOverlayCallbacks", "setLauncherOverlay" ]
+    }, {
+      "name" : "getDropTargetBar",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "onOverlayVisibilityChanged",
+      "visibility" : "public",
+      "methodCalls" : [ "logger", "build", "withContainerInfo", "newBuilder", "setWorkspace", "log", "withDstState", "withSrcState", "setPageIndex", "getStatsLogManager" ]
+    }, {
+      "name" : "getStatsLogManager",
+      "visibility" : "public",
+      "methodCalls" : [ "withDefaultInstanceId", "newInstance", "getStatsLogManager" ]
+    }, {
+      "name" : "getPagesToBindSynchronously",
+      "visibility" : "public",
+      "methodCalls" : [ "getPagesToBindSynchronously" ]
+    }, {
+      "name" : "bindAppWidget",
+      "visibility" : "public",
+      "methodCalls" : [ "inflateItem", "getModelWriter", "requestLayout", "addInScreen" ]
+    }, {
+      "name" : "onAssistantVisibilityChanged",
+      "visibility" : "public",
+      "methodCalls" : [ "setAlpha", "getQsb", "execute", "setAssistantVisibility", "onAssistantVisibilityChanged", "getCreatedContainer" ]
+    }, {
+      "name" : "isDraggingEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "isWorkspaceLoading" ]
+    }, {
+      "name" : "pauseExpensiveViewUpdates",
+      "visibility" : "public",
+      "methodCalls" : [ "getPageIndicator", "pauseAnimations", "beginDeferringUpdates", "getWorkspace", "mapOverItems" ]
+    }, {
+      "name" : "bindAppsAdded",
+      "visibility" : "public",
+      "methodCalls" : [ "bindAppsAdded" ]
+    }, {
+      "name" : "finishBindingItems",
+      "visibility" : "public",
+      "methodCalls" : [ "finishBindingItems", "get", "updateRegisteredViewsIfNeeded", "setBindingItems" ]
+    }, {
+      "name" : "onWidgetsTransition",
+      "visibility" : "public",
+      "methodCalls" : [ "getWorkspace", "set", "getHotseat", "getDeviceProfile", "onWidgetsTransition", "getDepthController", "mapToRange", "setValue" ]
+    }, {
+      "name" : "addPendingItem",
+      "visibility" : "public",
+      "methodCalls" : [ "getCellPosMapper", "mapPresenterToModel" ]
+    }, {
+      "name" : "removeItem",
+      "visibility" : "public",
+      "methodCalls" : [ "removeView", "getPageAt", "getChildCount", "forEach", "updateShortcutPinnedState", "e", "add", "asList", "getInfo", "getTag", "deleteCollectionAndContentsFromDatabase", "getHomescreenIconByItemId", "removeListeners", "getModelWriter", "remove", "deleteItemFromDatabase", "getAppWidgetHolder", "removeWorkspaceItem", "deleteWidgetInfo", "removeItem" ]
+    }, {
+      "name" : "preAddApps",
+      "visibility" : "public",
+      "methodCalls" : [ "preAddApps" ]
+    }, {
+      "name" : "getDropTargetHandler",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "findFolderIcon",
+      "visibility" : "public",
+      "methodCalls" : [ "getHomescreenIconByItemId" ]
+    }, {
+      "name" : "bindAllWidgets",
+      "visibility" : "public",
+      "methodCalls" : [ "bindAllWidgets" ]
+    }, {
+      "name" : "onDestroy",
+      "visibility" : "public",
+      "methodCalls" : [ "ofNullable", "removePluginListener", "getIDP", "removeOnChangeListener", "removeFolderListeners", "release", "getRootView", "getViewTreeObserver", "removeOnPreDrawListener", "clearPendingBinds", "stopListening", "getContext", "unregister", "getUriFor", "execute", "unregisterSystemAction", "setIconsAlpha", "removeStateListener", "getStateManager", "removeAllViews", "hide", "getHotseat", "finishAnimation", "moveNavButtonsBackToTaskbarWindow", "removeNotificationsChangedListener", "removeBackAnimationCallback", "close", "setUnfoldAnimationListener", "getSplitBackHandler", "unregisterSystemUiListener", "onActivityDestroyed", "setUIController", "enableTaskbarNoRecreate", "setBubblesListener", "unloadPlugin", "onPluginDetached", "unregisterListeners", "unregisterNavBarGestureAttemptCallback", "unregisterBackGestureAttemptCallback", "onDestroy", "unregisterReceiver", "removeListener", "isUserUnlocked", "unregisterInputConsumer", "clearProxy", "clear", "getUserId", "destroy", "d", "get", "unregisterInputDeviceListener", "removeCallback", "setReadyToHandleTransition", "stopAndDestroy", "setHomeButtonAccessibilityDelegate", "setBackButtonAccessibilityDelegate", "ifPresent", "notifyTaskbarAutohideSuspend", "getModel", "enableTaskbarPinning", "getInstance", "removeOnDeviceProfileChangeListener", "getDragLayer", "removeOnLayoutChangeListener", "getSystemService", "removeCallbacks", "removeViewImmediate", "unregisterTaskStackListener", "map" ]
+    }, {
+      "name" : "onInitialBindComplete",
+      "visibility" : "public",
+      "methodCalls" : [ "executeAllAndDestroy", "onInitialBindComplete" ]
+    }, {
+      "name" : "onKeyUp",
+      "visibility" : "public",
+      "methodCalls" : [ "refreshDrawableState", "onPerformActionForVirtualView", "performClick", "size", "getFocusables", "remove", "get", "requestFocus", "isTracking", "shouldAllowDirectClick", "hideMenu", "onKeyUp" ]
+    }, {
+      "name" : "getAppWidgetHolder",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "onRetainCustomNonConfigurationInstance",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getFolderBoundingBox",
+      "visibility" : "public",
+      "methodCalls" : [ "getWorkspace", "getPageAreaRelativeToDragLayer", "getAbsoluteOpenFolderBounds", "getFolderBoundingBox", "getWidth", "getHeight", "getDeviceProfile", "inset" ]
+    }, {
+      "name" : "onIdpChanged",
+      "visibility" : "public",
+      "methodCalls" : [ "onHandleConfigurationChanged" ]
+    }, {
+      "name" : "dispatchPopulateAccessibilityEvent",
+      "visibility" : "public",
+      "methodCalls" : [ "clear", "dispatchPopulateAccessibilityEvent", "getState", "getText", "getDescription", "add", "getString" ]
+    }, {
+      "name" : "onKeyDown",
+      "visibility" : "public",
+      "methodCalls" : [ "startTracking", "onKeyDown" ]
+    }, {
+      "name" : "onDragLayerHierarchyChanged",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "onAttachedToWindow",
+      "visibility" : "public",
+      "methodCalls" : [ "getAttributes", "getWindow", "setLayoutParams", "shouldDisableSystemGestures", "onAttachedToWindow" ]
+    }, {
+      "name" : "bindInflatedItems",
+      "visibility" : "public",
+      "methodCalls" : [ "getCellPosMapper", "mapModelToPresenter", "setAlpha", "deleteItemFromDatabase", "postDelayed", "bindInflatedItems", "enableWorkspaceInflation", "setScaleY", "getScreenIdForPageIndex", "snapToPage", "getNextPage", "addInScreenFromBind", "attachViewToHostAndGetAttachedView", "closeOpenViews", "getAppWidgetHolder", "isOccupied", "requestLayout", "getTag", "getModelWriter", "getChildAt", "getPageIndexForScreenId", "play", "setScaleX", "getScreenWithId" ]
+    }, {
+      "name" : "bindSmartspaceWidget",
+      "visibility" : "public",
+      "methodCalls" : [ "executeCallbacksTask", "bindSmartspaceWidget" ]
+    }, {
+      "name" : "bindWorkspaceComponentsRemoved",
+      "visibility" : "public",
+      "methodCalls" : [ "bindWorkspaceComponentsRemoved", "onModelItemsRemoved" ]
+    }, {
+      "name" : "startActivitySafely",
+      "visibility" : "public",
+      "methodCalls" : [ "run", "hasBeenResumed", "resetIconScale", "addEventCallback", "executeAllAndDestroy", "setStayPressed", "isAppBlockedForSafeMode", "getViewBounds", "startMainActivity", "e", "getComponent", "equals", "getSystemService", "assertUIThread", "setSourceBounds", "getStatsLogManager", "logAppLaunch", "startActivity", "makeDefaultActivityOptions", "show", "newInstanceId", "getActivityLaunchOptions", "isPromise", "getDeepShortcutId", "startShortcut", "myUserHandle", "getSourceBounds", "getPackage", "addFlags", "makeText", "toBundle", "isSystemApp", "startActivitySafely", "getTaskbarUIController", "findFixedRowByType", "setPauseUIUpdate", "setPredictionUiUpdatePaused", "getAppsView", "getFloatingHeaderView", "add" ]
+    }, {
+      "name" : "startActivityForResult",
+      "visibility" : "public",
+      "methodCalls" : [ "startActivityForResult", "startActivity", "getLaunchIntent" ]
+    }, {
+      "name" : "onEnterAnimationComplete",
+      "visibility" : "public",
+      "methodCalls" : [ "setCurrentTransitionRequest", "closeOpenViews", "getHighResLoadingState", "setVisible", "getThumbnailCache", "get", "onEnterAnimationComplete" ]
+    }, {
+      "name" : "getLauncher",
+      "visibility" : "public",
+      "methodCalls" : [ "fromContext" ]
+    }, {
+      "name" : "getAllAppsController",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getHotseat",
+      "visibility" : "public",
+      "methodCalls" : [ "getHotseat" ]
+    }, {
+      "name" : "getAnimationCoordinator",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "onPluginDisconnected",
+      "visibility" : "public",
+      "methodCalls" : [ "onHeightUpdated", "removeView", "get", "remove", "getComponent", "equals", "removeIf" ]
+    }, {
+      "name" : "getOverlayManager",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "collectStateHandlers",
+      "visibility" : "public",
+      "methodCalls" : [ "getAllAppsController", "getWorkspace", "collectStateHandlers", "getDepthController", "add" ]
+    }, {
+      "name" : "getFirstMatchForAppClose",
+      "visibility" : "public",
+      "methodCalls" : [ "forEachVisiblePage", "getContent", "isInState", "getTargetComponent", "close", "equals", "getLocationBoundsForView", "getShortcutsAndWidgets", "computeVerticalScrollOffset", "getHotseat", "getPanelCount", "isForceInvisible", "getCurrentCellLayout", "forFolderMatch", "getOpen", "getPackageName", "add", "getActiveRecyclerView", "isStarted", "getHeaderBottom", "singletonList" ]
+    }, {
+      "name" : "isWorkspaceLoading",
+      "visibility" : "public",
+      "methodCalls" : [ "getWorkspaceLoading" ]
+    }, {
+      "name" : "getRotationHelper",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getAllAppsItemLongClickListener",
+      "visibility" : "public",
+      "methodCalls" : [ "onIconLongClicked", "setResult", "getWidgetItem", "getDragAndDropView", "getDrawable", "getWidgetView", "getProfile", "startDragAndDrop", "putExtra", "getAppWidgetHostViewPreview" ]
+    }, {
+      "name" : "getAccessibilityDelegate",
+      "visibility" : "public",
+      "methodCalls" : [ "getAccessibilityDelegate" ]
+    }, {
+      "name" : "getAppsView",
+      "visibility" : "public",
+      "methodCalls" : [ "findViewById" ]
+    }, {
+      "name" : "onActivityResult",
+      "visibility" : "public",
+      "methodCalls" : [ "deleteHost", "getIntExtra", "deleteAppWidgetId", "onActivityResult" ]
+    }, {
+      "name" : "onPluginConnected",
+      "visibility" : "public",
+      "methodCalls" : [ "setOnHeightUpdatedListener", "indexOfChild", "addView", "put", "getInstalledProvidersForProfile", "myUserHandle", "recycle", "add", "writeToParcel", "get", "isEmpty", "setDataPosition", "getInstance", "obtain", "createOverlayManager" ]
+    }, {
+      "name" : "supportsAdaptiveIconAnimation",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    } ],
+    "imports" : [ "com.android.launcher3.LauncherState.NO_SCALE", "com.android.launcher3.util.CannedAnimationCoordinator", "com.android.launcher3.pm.PinRequestHelper", "com.android.launcher3.logger.LauncherAtom", "com.android.launcher3.logging.StatsLogManager.LauncherEvent.LAUNCHER_ALLAPPS_ENTRY_WITH_DEVICE_SEARCH", "app.lawnchair.LawnchairApp", "androidx.annotation.NonNull", "com.android.launcher3.LauncherConstants.TraceEvents.ON_NEW_INTENT_EVT", "com.android.launcher3.model.data.AppPairInfo", "com.android.launcher3.widget.PendingAddWidgetInfo", "android.content.res.Configuration", "com.android.app.animation.Interpolators.EMPHASIZED", "android.graphics.Color", "com.android.launcher3.util.Themes", "android.app.PendingIntent", "com.android.launcher3.icons.IconCache", "androidx.window.embedding.RuleController", "com.android.launcher3.LauncherConstants.ActivityCodes.REQUEST_CREATE_SHORTCUT", "com.android.launcher3.touch.AllAppsSwipeController", "com.android.launcher3.logging.StatsLogManager.LauncherEvent.LAUNCHER_SWIPELEFT", "com.android.launcher3.dragndrop.DragView", "android.view.accessibility.AccessibilityEvent", "com.android.launcher3.LauncherConstants.TraceEvents.DISPLAY_WORKSPACE_TRACE_METHOD_NAME", "com.android.launcher3.LauncherConstants.TraceEvents.COLD_STARTUP_TRACE_METHOD_NAME", "android.graphics.Bitmap", "com.android.launcher3.util.Executors.MAIN_EXECUTOR", "android.util.SparseArray", "com.android.systemui.plugins.PluginListener", "com.android.launcher3.dragndrop.LauncherDragController", "com.android.launcher3.LauncherSettings.Favorites.ITEM_TYPE_APPLICATION", "com.android.launcher3.logging.InstanceIdSequence", "com.android.launcher3.widget.PendingAppWidgetHostView", "com.android.launcher3.popup.ArrowPopup", "com.android.launcher3.logging.StatsLogManager.LauncherEvent.LAUNCHER_WIDGET_RECONFIGURED", "com.android.launcher3.Utilities.postAsyncCallback", "com.android.launcher3.popup.SystemShortcut", "com.android.launcher3.LauncherConstants.TraceEvents.ON_RESUME_EVT", "com.android.launcher3.util.SettingsCache", "com.android.launcher3.config.FeatureFlags", "com.android.launcher3.accessibility.LauncherAccessibilityDelegate", "com.android.launcher3.model.data.CollectionInfo", "com.android.launcher3.logging.StatsLogManager.LAUNCHER_STATE_BACKGROUND", "com.android.launcher3.Flags.enableSmartspaceRemovalToggle", "com.android.launcher3.util.ScreenOnTracker.ScreenOnListener", "android.annotation.TargetApi", "com.android.launcher3.model.ItemInstallQueue.FLAG_ACTIVITY_PAUSED", "com.android.launcher3.states.RotationHelper", "com.android.launcher3.util.IntArray", "android.content.ActivityNotFoundException", "com.android.launcher3.logging.StatsLogManager", "com.android.launcher3.logging.StatsLogManager.LauncherEvent.LAUNCHER_ONRESUME", "com.android.launcher3.util.Thunk", "android.window.OnBackAnimationCallback", "com.android.launcher3.logging.StatsLogManager.LauncherEvent.LAUNCHER_ONSTOP", "com.android.launcher3.testing.TestLogging", "com.android.launcher3.widget.LauncherWidgetHolder", "com.android.launcher3.pageindicators.WorkspacePageIndicator", "androidx.annotation.CallSuper", "android.view.MotionEvent", "com.android.launcher3.widget.LauncherAppWidgetProviderInfo", "com.android.systemui.plugins.shared.LauncherOverlayManager", "com.android.launcher3.logging.StartupLatencyLogger", "com.android.launcher3.logging.StatsLogManager.StatsLatencyLogger.LatencyType.COLD", "android.util.AttributeSet", "java.util.ArrayList", "com.android.launcher3.anim.AnimationSuccessListener", "java.util.HashMap", "com.android.launcher3.LauncherConstants.SavedInstanceKeys.RUNTIME_STATE", "com.android.launcher3.states.RotationHelper.REQUEST_NONE", "com.android.launcher3.dragndrop.DragLayer", "java.io.FileDescriptor", "com.android.launcher3.logging.StatsLogManager.LauncherLatencyEvent", "androidx.core.os.BuildCompat", "com.android.launcher3.folder.Folder", "com.android.launcher3.testing.shared.TestProtocol.LAUNCHER_ACTIVITY_STOPPED_MESSAGE", "com.android.launcher3.logging.FileLog", "com.android.launcher3.util.BackPressHandler", "com.android.launcher3.logging.StatsLogManager.LauncherEvent.LAUNCHER_ALLAPPS_EXIT", "java.util.function.Supplier", "com.android.launcher3.celllayout.CellPosMapper.TwoPanelCellPosMapper", "com.android.launcher3.views.OptionsPopupView", "com.android.launcher3.util.ItemInflater", "com.android.launcher3.logging.StatsLogManager.LauncherLatencyEvent.LAUNCHER_LATENCY_STARTUP_VIEW_INFLATION", "android.appwidget.AppWidgetManager", "com.android.launcher3.AbstractFloatingView.getTopOpenViewWithType", "com.android.launcher3.logging.KeyboardStateManager.KeyboardState.SHOW", "com.android.launcher3.LauncherSettings.Favorites.CONTAINER_DESKTOP", "com.android.launcher3.allapps.DiscoveryBounce", "java.util.Optional", "com.android.launcher3.LauncherConstants.ActivityCodes.REQUEST_CREATE_APPWIDGET", "java.util.stream.Stream", "com.android.launcher3.LauncherConstants.SavedInstanceKeys.RUNTIME_STATE_WIDGET_PANEL", "java.io.PrintWriter", "android.content.ComponentCallbacks2", "com.android.launcher3.AbstractFloatingView.TYPE_ICON_SURFACE", "com.android.launcher3.folder.FolderGridOrganizer", "com.android.launcher3.allapps.ActivityAllAppsContainerView", "android.graphics.Rect", "com.android.launcher3.LauncherConstants.TraceEvents.COLD_STARTUP_TRACE_COOKIE", "com.android.launcher3.LauncherAnimUtils.HOTSEAT_SCALE_PROPERTY_FACTORY", "com.android.launcher3.folder.FolderGridOrganizer.createFolderGridOrganizer", "com.android.launcher3.widget.PendingAddShortcutInfo", "com.android.launcher3.apppairs.AppPairIcon", "com.android.launcher3.util.ItemInfoMatcher.forFolderMatch", "com.android.launcher3.model.data.FolderInfo", "java.util.stream.Collectors", "com.android.launcher3.statemanager.StateManager.StateHandler", "android.content.pm.ActivityInfo.CONFIG_UI_MODE", "com.android.launcher3.dot.DotInfo", "com.android.launcher3.LauncherConstants.TraceEvents.ON_CREATE_EVT", "android.graphics.Canvas", "com.android.launcher3.logging.StatsLogManager.LauncherEvent.LAUNCHER_SPLIT_SELECTION_EXIT_HOME", "com.android.launcher3.Flags.enableAddAppWidgetViaConfigActivityV2", "com.android.launcher3.popup.SystemShortcut.INSTALL", "com.android.launcher3.LauncherState.EDIT_MODE", "com.android.launcher3.widget.util.WidgetSizes", "com.android.launcher3.celllayout.CellPosMapper", "com.android.launcher3.LauncherConstants.ActivityCodes.REQUEST_RECONFIGURE_APPWIDGET", "com.android.launcher3.Flags.enableWorkspaceInflation", "com.android.launcher3.util.ScreenOnTracker", "com.android.launcher3.util.TouchController", "com.android.launcher3.util.ActivityTracker", "android.animation.Animator", "com.android.launcher3.statemanager.StateManager", "android.view.ViewGroup", "com.android.systemui.plugins.LauncherOverlayPlugin", "android.os.Build", "com.android.launcher3.logging.StatsLogManager.LauncherLatencyEvent.LAUNCHER_LATENCY_STARTUP_TOTAL_DURATION", "android.text.method.TextKeyListener", "android.app.PendingIntent.FLAG_UPDATE_CURRENT", "android.graphics.RectF", "com.android.launcher3.LauncherConstants.TraceEvents.DISPLAY_ALL_APPS_TRACE_METHOD_NAME", "android.database.sqlite.SQLiteDatabase", "android.text.TextUtils", "com.android.launcher3.model.StringCache", "android.view.WindowInsetsAnimation", "com.android.launcher3.util.LockedUserState", "com.android.launcher3.views.FloatingSurfaceView", "android.app.NotificationChannel", "com.android.launcher3.LauncherState.NORMAL", "com.android.window.flags2.Flags", "android.appwidget.AppWidgetHostView", "com.android.launcher3.util.PluginManagerWrapper", "android.app.NotificationManager", "androidx.annotation.StringRes", "android.view.KeyboardShortcutGroup", "android.widget.Toast", "com.android.launcher3.widget.picker.WidgetsFullSheet", "com.android.launcher3.notification.NotificationListener", "com.android.launcher3.LauncherConstants.TraceEvents.DISPLAY_WORKSPACE_TRACE_COOKIE", "com.android.launcher3.util.SystemUiController", "android.view.accessibility.AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED", "com.android.launcher3.popup.PopupDataProvider", "android.os.Bundle", "android.util.Log", "java.util.List", "com.android.launcher3.views.ActivityContext", "com.android.launcher3.widget.custom.CustomWidgetManager", "android.os.Parcelable", "com.android.launcher3.LauncherState.NO_OFFSET", "com.android.launcher3.logging.StatsLogManager.LauncherEvent.LAUNCHER_SWIPERIGHT", "com.android.launcher3.util.PendingRequestArgs", "android.content.Intent", "android.view.ViewTreeObserver.OnPreDrawListener", "com.android.launcher3.model.data.AppInfo", "com.android.launcher3.logging.StatsLogManager.LauncherEvent.LAUNCHER_ALLAPPS_ENTRY", "com.android.launcher3.keyboard.ViewGroupFocusHelper", "android.view.KeyEvent", "androidx.annotation.VisibleForTesting", "com.android.launcher3.model.data.WorkspaceItemInfo", "com.android.launcher3.logger.LauncherAtom.WorkspaceContainer", "com.android.launcher3.util.RunnableList", "com.android.launcher3.popup.SystemShortcut.APP_INFO", "android.os.SystemClock", "com.android.launcher3.util.IntSet", "android.view.WindowInsets", "android.view.WindowInsetsAnimation.Callback.DISPATCH_MODE_CONTINUE_ON_SUBTREE", "java.util.Map", "androidx.annotation.UiThread", "com.android.launcher3.model.ModelWriter", "com.android.launcher3.model.data.ItemInfo", "android.app.Notification", "com.android.launcher3.widget.WidgetAddFlowHandler", "com.android.launcher3.LauncherAnimUtils.SCALE_INDEX_WIDGET_TRANSITION", "com.android.launcher3.logging.StatsLogManager.EventEnum", "com.android.launcher3.widget.WidgetManagerHelper", "com.android.launcher3.LauncherConstants.ActivityCodes.REQUEST_BIND_APPWIDGET", "android.app.PendingIntent.FLAG_IMMUTABLE", "com.android.launcher3.AbstractFloatingView.TYPE_REBIND_SAFE", "android.content.IntentSender", "com.android.launcher3.popup.SystemShortcut.WIDGETS", "com.android.launcher3.model.ItemInstallQueue.FLAG_DRAG_AND_DROP", "com.android.launcher3.LauncherConstants.SavedInstanceKeys.RUNTIME_STATE_PENDING_ACTIVITY_RESULT", "com.android.launcher3.util.ComponentKey", "com.android.launcher3.anim.PropertyListBuilder", "android.animation.ValueAnimator", "com.android.launcher3.dragndrop.DragController", "com.android.launcher3.LauncherConstants.SavedInstanceKeys.RUNTIME_STATE_CURRENT_SCREEN_IDS", "com.android.launcher3.LauncherConstants.SavedInstanceKeys.RUNTIME_STATE_PENDING_REQUEST_ARGS", "com.android.launcher3.logging.StatsLogManager.StatsLatencyLogger.LatencyType.WARM", "java.util.HashSet", "com.android.launcher3.util.SettingsCache.TOUCHPAD_NATURAL_SCROLLING", "com.android.launcher3.celllayout.CellPosMapper.CellPos", "com.android.launcher3.config.FeatureFlags.MULTI_SELECT_EDIT_MODE", "com.android.launcher3.logging.StatsLogManager.LauncherLatencyEvent.LAUNCHER_LATENCY_STARTUP_ACTIVITY_ON_CREATE", "com.android.systemui.plugins.shared.LauncherOverlayManager.LauncherOverlayTouchProxy", "com.android.launcher3.config.FeatureFlags.FOLDABLE_SINGLE_PAGE", "com.android.launcher3.logger.LauncherAtom.ContainerInfo", "java.util.Collections", "com.android.launcher3.views.ScrimView", "android.view.animation.OvershootInterpolator", "com.android.launcher3.logging.InstanceId", "com.android.launcher3.model.BgDataModel.Callbacks", "com.android.launcher3.LauncherAnimUtils.WORKSPACE_SCALE_PROPERTY_FACTORY", "com.android.launcher3.LauncherState.ALL_APPS", "com.android.launcher3.widget.model.WidgetsListBaseEntry", "com.android.launcher3.testing.shared.TestProtocol", "com.android.launcher3.LauncherAnimUtils.SPRING_LOADED_EXIT_DELAY", "com.android.launcher3.DropTarget.DragObject", "android.view.WindowManager.LayoutParams", "com.android.launcher3.LauncherConstants.ActivityCodes.REQUEST_BIND_PENDING_APPWIDGET", "android.os.StrictMode", "com.android.launcher3.LauncherConstants.TraceEvents.ON_START_EVT", "androidx.annotation.Nullable", "com.android.launcher3.util.ActivityResultInfo", "com.android.launcher3.widget.LauncherAppWidgetHostView", "com.android.launcher3.allapps.AllAppsRecyclerView", "com.android.launcher3.statemanager.StatefulActivity", "com.android.launcher3.util.StableViewInfo", "com.android.launcher3.logging.StatsLogManager.LAUNCHER_STATE_HOME", "com.android.launcher3.touch.ItemLongClickListener", "android.animation.AnimatorSet", "androidx.annotation.FloatRange", "com.android.launcher3.LauncherState.SPRING_LOADED", "com.android.launcher3.LauncherState.FLAG_NON_INTERACTIVE", "android.content.Context", "android.os.UserHandle", "com.android.launcher3.model.data.LauncherAppWidgetInfo", "android.util.FloatProperty", "com.android.launcher3.logging.KeyboardStateManager.KeyboardState.HIDE", "android.os.Trace", "android.util.Pair", "com.android.launcher3.util.PackageUserKey", "com.android.launcher3.LauncherState.FLAG_MULTI_PAGE", "com.android.launcher3.util.TraceHelper", "android.content.SharedPreferences", "com.android.launcher3.LauncherConstants.TraceEvents.DISPLAY_ALL_APPS_TRACE_COOKIE", "com.android.launcher3.LauncherConstants.SavedInstanceKeys.RUNTIME_STATE_PENDING_REQUEST_CODE", "com.android.launcher3.folder.FolderIcon", "com.android.launcher3.util.KeyboardShortcutsDelegate", "com.android.launcher3.AbstractFloatingView.TYPE_FOLDER", "java.util.function.Predicate", "com.android.launcher3.compat.AccessibilityManagerCompat", "com.android.launcher3.logging.StatsLogManager.StatsLatencyLogger.LatencyType.COLD_DEVICE_REBOOTING", "com.android.launcher3.states.RotationHelper.REQUEST_LOCK", "com.android.launcher3.logging.ColdRebootStartupLatencyLogger", "com.android.launcher3.LauncherConstants.ActivityCodes.REQUEST_PICK_APPWIDGET", "com.android.launcher3.LauncherConstants.ActivityCodes.REQUEST_HOME_ROLE", "android.view.Menu", "android.view.LayoutInflater", "com.android.launcher3.model.ItemInstallQueue", "com.android.launcher3.allapps.AllAppsTransitionController", "com.android.launcher3.views.FloatingIconView", "android.view.View" ]
+  }, {
+    "name" : "RecentsView",
+    "packageName" : "com.android.quickstep.views",
+    "extendedClasses" : [ "PagedView" ],
+    "implementedInterfaces" : [ "TaskVisualsChangeListener", "Insettable", "HighResLoadingStateChangedCallback" ],
+    "methods" : [ {
+      "name" : "dismissTask",
+      "visibility" : "public",
+      "methodCalls" : [ "createTaskDismissAnimation" ]
+    }, {
+      "name" : "reloadIfNeeded",
+      "visibility" : "public",
+      "methodCalls" : [ "enableRefactorTaskThumbnail", "getFilter", "isTaskListValid", "getTasks", "getAllTaskData", "getPackageNameToFilter" ]
+    }, {
+      "name" : "setFullscreenProgress",
+      "visibility" : "public",
+      "methodCalls" : [ "getFullscreenProgress", "mapToRange", "enableRefactorTaskThumbnail", "updateValue", "setValue", "setFullscreenProgress", "getFullscreenAlpha", "getTaskViewCount" ]
+    }, {
+      "name" : "confirmSplitSelect",
+      "visibility" : "public",
+      "methodCalls" : [ "begin", "start", "splitFailureMessage", "add", "getDeviceProfile", "getResources", "clampToProgress", "end", "show", "canLaunchFullscreenTask", "getInstructionsFadeEndOffset", "w", "getSplitAnimationController", "getSplitInstructionsView", "getBoundsOnScreen", "isBothSplitAppsConfirmed", "setSecondTask", "ofFloat", "enableSplitContextually", "getPagedOrientationHandler", "getContext", "getFloatingTaskView", "getInstructionsFadeStartOffset", "getFinalSplitPlaceholderBounds", "getActiveSplitStagePosition", "addEndListener", "addConfirmAnimation", "setAlpha", "buildAnim", "getFirstFloatingTaskView", "getDimensionPixelSize", "resetFromSplitSelectionState", "getSecondTaskId", "getDeviceSplitToConfirmTimings", "getDuration", "launchSplitTasks", "setThumbnailVisibility", "getPackageName", "setViewAlpha", "resetState", "addScrimBehindAnim" ]
+    }, {
+      "name" : "setSwipeDownShouldLaunchApp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "onTaskThumbnailChanged",
+      "visibility" : "public",
+      "methodCalls" : [ "getTask", "setThumbnail", "getTaskContainers", "getTaskViewByTaskId", "getThumbnailViewDeprecated" ]
+    }, {
+      "name" : "getClearAllButton",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "resetTaskVisuals",
+      "visibility" : "public",
+      "methodCalls" : [ "getTaskViewSimulator", "resetViewTransforms", "loadVisibleTaskData", "getTaskViewCount", "runActionOnRemoteHandles", "setModalness", "setFullscreenProgress", "getTaskIds", "noneMatch", "updateCurveProperties", "stream", "setIconScaleAndDim", "setRunningTaskHidden", "setStableAlpha" ]
+    }, {
+      "name" : "setRecentsChangedOrientation",
+      "visibility" : "public",
+      "methodCalls" : [ "play", "ofFloat" ]
+    }, {
+      "name" : "switchToScreenshot",
+      "visibility" : "public",
+      "methodCalls" : [ "postFrameDrawn", "refreshThumbnails", "getRunningTaskView", "setShouldShowScreenshot", "run" ]
+    }, {
+      "name" : "isSplitSelectionActive",
+      "visibility" : "public",
+      "methodCalls" : [ "isSplitSelectActive" ]
+    }, {
+      "name" : "onInitializeAccessibilityNodeInfo",
+      "visibility" : "public",
+      "methodCalls" : [ "isLayoutSuppressed", "getClass", "getName", "setClassName", "getCurrentPage", "getScrollForPage", "getPageCount", "isPageOrderFlipped", "getPrimaryScroll", "setScrollable", "getPanelCount", "removeAction", "addAction", "getSupportedActions", "forEach", "getTag", "setLongClickable", "getTaskViewCount", "obtain", "setCollectionInfo", "onInitializeAccessibilityNodeInfo" ]
+    }, {
+      "name" : "setOffsetMidpointIndexOverride",
+      "visibility" : "public",
+      "methodCalls" : [ "enableAdditionalHomeAnimations" ]
+    }, {
+      "name" : "getTopRowTaskCountForTablet",
+      "visibility" : "public",
+      "methodCalls" : [ "size" ]
+    }, {
+      "name" : "setOverviewSelectEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "setSelectedTask" ]
+    }, {
+      "name" : "setDisallowScrollToClearAll",
+      "visibility" : "public",
+      "methodCalls" : [ "updateMinAndMaxScrollX" ]
+    }, {
+      "name" : "isRtl",
+      "visibility" : "public",
+      "methodCalls" : [ "isRtl", "getResources" ]
+    }, {
+      "name" : "requestChildRectangleOnScreen",
+      "visibility" : "public",
+      "methodCalls" : [ "indexOfChild", "snapToPage", "setCurrentPage", "isFinished", "requestChildRectangleOnScreen" ]
+    }, {
+      "name" : "onViewRemoved",
+      "visibility" : "public",
+      "methodCalls" : [ "runOnPageScrollsInitialized", "close", "getContext", "getSingleFrameMs", "onDragLayerHierarchyChanged", "isOpen", "postDelayed", "getTaskViewCount", "getTaskIds", "recycle", "delete", "updateHiddenFlags", "onDragLayerViewRemoved", "getOverlayController", "onViewRemoved", "maybeCloseWindow" ]
+    }, {
+      "name" : "setTaskLaunchListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOverlayEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOverviewStateEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "clearAllActiveState", "setRotationWatcherEnabled", "updateLocusId", "getVisibleElements", "getStateManager", "getState", "setOverviewStateEnabled", "hasClearAllButton", "setDisallowScrollToClearAll" ]
+    }, {
+      "name" : "getTaskOverlayFactory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTaskBorderEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "setBorderEnabled", "getTaskViewCount" ]
+    }, {
+      "name" : "onGestureAnimationEnd",
+      "visibility" : "public",
+      "methodCalls" : [ "setGestureActive", "d", "animateUpTaskIconScale", "setRunningTaskHidden", "setEnableFreeScroll", "setEnableDrawingLiveTile", "areDesktopTasksVisible", "getDisplayId", "showDesktopApps", "getDisplay", "enableDesktopWindowingWallpaperActivity", "setRecentsGestureEnd", "getDesktopVisibilityController", "get", "onGestureAnimationEnd", "reset" ]
+    }, {
+      "name" : "launchSideTaskInLiveTileMode",
+      "visibility" : "public",
+      "methodCalls" : [ "isTaskViewVisible", "setDuration", "setInterpolator", "getDepthController", "getTransaction", "scheduleApply", "play", "getStateManager", "finishRecentsAnimation", "setLayer", "forSurface", "addListener", "addUpdateListener", "show", "ofFloat", "start", "getTaskViewByTaskId", "setAlpha", "postTranslate", "getDeviceProfile", "setScale", "composeRecentsLaunchAnimator", "getAnimatedFraction", "onAnimationStart", "getDragLayer", "setMatrix" ]
+    }, {
+      "name" : "getLastComputedCarouselTaskSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getNextPageTaskView",
+      "visibility" : "public",
+      "methodCalls" : [ "getNextPage", "getTaskViewAt" ]
+    }, {
+      "name" : "setModalStateEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "isInState", "setSelectedTask", "goToState", "getStateManager" ]
+    }, {
+      "name" : "addOnScrollChangedListener",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "createAdjacentPageAnimForTaskLaunch",
+      "visibility" : "public",
+      "methodCalls" : [ "ofPropertyValuesHolder", "indexOfChild", "play", "getCurrentPage", "getWidth", "isFocusedTask", "getMaxScaleForFullScreen", "getTaskViewSimulator", "isTaskViewFullyVisible", "getPagedOrientationHandler", "getPrimaryViewTranslate", "getRunningTaskIndex", "getRemoteTargetHandles", "ofFloat", "showAsGrid", "getPageAt", "getPageCount" ]
+    }, {
+      "name" : "setInsets",
+      "visibility" : "public",
+      "methodCalls" : [ "getWidgetListHorizontalMargin", "shouldFadeAdjacentWorkspaceScreens", "getPaddingBottom", "equals", "onInsetsChanged", "enableResponsiveWorkspace", "getAppsView", "updateTranslationY", "lookupContext", "isSearchBarFloating", "setToolTipLocation", "getDimensionPixelSize", "setTextSize", "requestLayout", "get", "max", "setupNavBarColor", "onContentHorizontalMarginChanged", "clearNavBarColor", "getNavigationMode", "set", "updateVerticalMargin", "getContext", "getOrientation", "getLayoutParams", "getPaddingRight", "getPaddingTop", "setText", "getDimension", "getPaddingLeft", "setPadding", "getDeviceProfile", "findViewById", "getResources", "setInsets", "getStateManager", "enableGridOnlyOverview", "updateHiddenFlags", "updateDimension", "setDp", "getTaskViewSimulator", "displayOverviewTasksAsGrid", "setOverviewGridEnabled", "setPageSpacing", "runActionOnRemoteHandles", "setDeviceProfile", "getState", "recalcInsets", "getChildAt", "getChildCount", "setFrameLayoutChildInsets", "getHotseatLayoutPadding", "isSeascape", "dispatchInsets", "setLayoutParams", "setVisibility", "isVerticalBarLayout" ]
+    }, {
+      "name" : "getLastComputedGridTaskSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setKeyboardTaskFocusIndex",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getFilterState",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "onInterceptTouchEvent",
+      "visibility" : "public",
+      "methodCalls" : [ "squaredTouchSlop", "isTrackpadMultiFingerSwipe", "offsetLocation", "getAlpha", "onTouch", "isInAllApps", "getScrollbar", "getActiveRecyclerView", "isHitInParent", "onInterceptTouch", "findFragment", "onInterceptTouchEvent", "onBubbleBarTouchedWhileAnimating", "d", "getActionMasked", "finishAutoCancelActionMode", "getMeasuredHeight", "getPaddingBottom", "findActiveController", "getY", "onTouchComplete", "getAction", "updateIsBeingDraggedOnTouchDown", "determineScrollingStart", "getChildCount", "getPrimaryDirection", "getPointerId", "resetTouchState", "getX", "accept", "onDriverDragEnd", "onDriverDragCancel", "isHitOnScrollBar", "handleTouchEvent", "onTouchEvent", "getDragLayer", "hasPerformedLongPress", "requestDisallowInterceptTouchEvent", "setTouchCompleteListener", "getContext", "set", "squaredHypot" ]
+    }, {
+      "name" : "setSelectedTask",
+      "visibility" : "public",
+      "methodCalls" : [ "getTaskViewByTaskId" ]
+    }, {
+      "name" : "showAsGrid",
+      "visibility" : "public",
+      "methodCalls" : [ "displayOverviewTasksAsGrid", "getDeviceProfile", "stateFromGestureEndTarget" ]
+    }, {
+      "name" : "createTaskDismissAnimation",
+      "visibility" : "public",
+      "methodCalls" : [ "isClearAllHidden", "getTaskViewSimulator", "getTaskViewCount", "isRunningTask", "onEnd", "startHome", "addEndListener", "animateIconScaleAndDimIntoView", "getLayoutParams", "logger", "removeViewInLayout", "removeValue", "announceForAccessibility", "boundToRange", "getChildStart", "addOnFrameCallback", "isSplitSelectionActive", "getPrimaryDismissTranslationProperty", "getPrimaryValue", "onDismissAnimationEnds", "getScrollForPage", "pageBeginTransition", "getTranslationY", "abs", "indexOf", "log", "isVisibleToUser", "getOffsetAdjustment", "add", "max", "contains", "getGridSlideStaggerOffset", "dispatchOnCancel", "getResources", "getChildAt", "getTaskViewAt", "resetTaskVisuals", "showAsGrid", "onAnimationEnd", "getPageCount", "getPrimaryScroll", "dispatchOnEnd", "setCurrentPage", "getSizeAdjustment", "getFirstItemInfo", "setTranslationZ", "getHomeTaskView", "getMeasuredSize", "getStatsLogManager", "getTaskViewId", "finishRecentsAnimation", "runActionOnRemoteHandles", "getPrimaryViewTranslate", "getPageScrolls", "size", "setDismissAlpha", "updateEmptyMessage", "get", "width", "redrawLiveTile", "ceil", "updateScrollSynchronously", "enableGridOnlyOverview", "remove", "setFloat", "getGridSlideDurationOffset", "getGridSlidePrimaryInterpolator", "clampToProgress", "indexOfChild", "withItemInfo", "getPagedOrientationHandler", "getString", "updateDisabledFlags", "isSplitSelectActive", "getSecondaryDismissTranslationProperty", "getGridSlideStartOffset", "getTranslationX", "getDeviceProfile", "getDeviceOverviewToSplitTimings", "getVisibility", "addListener", "createPlaybackController", "getFocusTransitionScaleAndDimOutAnimator" ]
+    }, {
+      "name" : "dispatchKeyEvent",
+      "visibility" : "public",
+      "methodCalls" : [ "preDispatchKeyEvent", "requestFocus", "onBackPress", "onExitCurrentMenuMode", "onUserInteracting", "onPipMovement", "isEnabled", "isShiftPressed", "isHandlingTouch", "isAltPressed", "recordKeyEvent", "getAction", "canHandleBack", "getKeyCode", "onBackInvoked", "getTopOpenView", "dispatchKeyEvent", "close", "hasNoModifiers" ]
+    }, {
+      "name" : "updateEmptyMessage",
+      "visibility" : "public",
+      "methodCalls" : [ "onEmptyMessageUpdated", "setContentDescription", "getHeight", "invalidate", "getWidth", "getTaskViewCount" ]
+    }, {
+      "name" : "getRemoteTargetHandles",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "updateScrollSynchronously",
+      "visibility" : "public",
+      "methodCalls" : [ "getMeasuredWidth", "onMeasure", "onLayout", "getMeasuredHeight", "getTop", "updateMinAndMaxScrollX", "makeMeasureSpec", "getLeft", "getBottom", "getRight" ]
+    }, {
+      "name" : "getSplitSelectController",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createSplitSelectInitAnimation",
+      "visibility" : "public",
+      "methodCalls" : [ "getInitialTaskId", "getSplitAnimationController", "getThumbnailViewDeprecated", "createTaskDismissAnimation", "get", "getTaskContainers", "addOnFrameCallback", "getDeviceProfile", "getWidth", "addInitialSplitFromPair", "getHeight", "refreshSplashView", "isDismissingFromSplitPair", "updateSnapshotRadius", "isAnimateCurrentTaskDismissal", "getTaskIds" ]
+    }, {
+      "name" : "getAccessibilityClassName",
+      "visibility" : "public",
+      "methodCalls" : [ "getName" ]
+    }, {
+      "name" : "setTaskIconScaledDown",
+      "visibility" : "public",
+      "methodCalls" : [ "getTaskViewCount", "setIconScaleAndDim" ]
+    }, {
+      "name" : "runActionOnRemoteHandles",
+      "visibility" : "public",
+      "methodCalls" : [ "accept" ]
+    }, {
+      "name" : "isKeyboardTaskFocusPending",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createTaskLaunchAnimation",
+      "visibility" : "public",
+      "methodCalls" : [ "createSplitAuxiliarySurfacesAnimator", "play", "runActionOnRemoteHandles", "getSystemUiController", "getTargetSet", "end", "getStatsLogManager", "log", "getTaskViewSimulator", "addOnFrameCallback", "getTaskViewCount", "ofFloat", "isRunningTask", "performHapticFeedback", "addUpdateListener", "launchTask", "getFirstThumbnailViewDeprecated", "logger", "withItemInfo", "createAdjacentPageAnimForTaskLaunch", "getTransformParams", "onTaskLaunchAnimationEnd", "updateScrollSynchronously", "getDepth", "finishRecentsAnimation", "setWillFinishToHome", "start", "updateUiState", "getAnimatedFraction", "getTaskIds", "setInterpolator", "getSysUiStatusNavFlags", "getFirstItemInfo", "add", "addEndListener", "getDepthController", "addOverviewToAppAnim" ]
+    }, {
+      "name" : "getLastComputedTaskSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "removeOnScrollChangedListener",
+      "visibility" : "public",
+      "methodCalls" : [ "remove" ]
+    }, {
+      "name" : "onInitializeAccessibilityEvent",
+      "visibility" : "public",
+      "methodCalls" : [ "getToIndex", "asRecord", "getFromIndex", "max", "getNumFilteredApps", "getPageCount", "getEventType", "setToIndex", "setFromIndex", "onInitializeAccessibilityEvent", "getVisibleChildrenRange", "getTaskViewCount", "setItemCount", "setScrollable" ]
+    }, {
+      "name" : "getClearAllScroll",
+      "visibility" : "public",
+      "methodCalls" : [ "getScrollForPage", "indexOfChild" ]
+    }, {
+      "name" : "init",
+      "visibility" : "public",
+      "methodCalls" : [ "getBubbleBarScale", "onSharedPreferenceChanged", "registerOnSharedPreferenceChangeListener", "isQuietModeEnabled", "w", "hashCode", "getUserProfiles", "put", "format", "getSerialNumberForUser", "getDragLayer", "getRotationHelper", "goToState", "closeAllOpenViews", "setOnDragListener", "getDragController", "setStateHandlerRequest", "addPositionProcessor", "size", "uptimeMillis", "v", "setDebugUsageAfterRelease", "getRealSize", "showDismissTargetMaybe", "executeDelayed", "log", "animateDismiss", "notifyDismissalPending", "setup", "getCircle", "setAnimateStuckToTarget", "setMagnetListener", "equals", "getBoolean", "addTarget", "updateMagneticTargetSize", "clearAllTargets", "setOnApplyWindowInsetsListener", "setSpringingToTouch", "flingToSnapTarget", "animateIntoDismissTarget", "cleanUpDismissTarget", "hideDismissTargetMaybe", "getMagnetizedPip", "getMotionBoundsState", "getBoundsInMotion", "addConfigurationChangeListener", "addInsetsChangedListener", "getBackgroundRendererAlphaForStash", "getTaskbarIconTranslationYForStash", "getTaskbarIconScaleForStash", "getStashedHandleHintScale", "tryStartTaskbarTimeout", "updateStateForFlag", "getTaskbarBackgroundOffset", "isStashedInApp", "getImeBgTaskbar", "getTaskbarWasPinned", "setController", "onBoundsChanged", "setupBubbleBarView", "onTaskbarOrBubblebarWindowHeightOrInsetsChanged", "setOnClickListener", "resetIconAlignment", "getTaskbarAlpha", "applyState", "getTaskbarIconAlpha", "setupController", "addStateListener", "getStateManager", "getTaskbarBackgroundAlpha", "getTaskbarCornerRoundness", "getState", "setPivotY", "isTinyTaskbar", "updateFor3pLauncher", "setClearAllClickListener", "supportsAppPairs", "addNotificationsChangedListener", "isPhoneGestureNavMode", "getTaskViewCount", "updateHiddenFlags", "setPivotX", "onIsStashedChanged", "updateSampledRegion", "getWidth", "set", "addView", "updateStashedHandleWidth", "updateSysuiStateFlags", "getOnTaskbarBackgroundNavButtonColorOverride", "getBoolByName", "onNavButtonsDarkIntensityChanged", "enableTaskbarNoRecreate", "onNavigationBarLumaSamplingEnabled", "onSystemBarAttributesChanged", "getDefaultTaskbarWindowSize", "notifyUpdateLayoutParams", "recreateControllers", "disableNavBarElements", "onNavigationModeChanged", "setUpdateSelectedBubbleAfterCollapse", "setHiddenForBubbles", "isEmpty", "runAfterInit", "setBoundsChangeListener", "isTransientTaskbar", "animateToValue", "getTaskbarNavButtonTranslationYForInAppDisplay", "getInstance", "newInstance", "getDeviceProfile", "enableTaskbarPinning", "addCallbacksAndLoad", "getModel", "getTaskbarNavButtonTranslationY", "start", "create", "addOnDeviceProfileChangeListener", "isPhoneMode", "isPhoneButtonNavMode", "isUserSetupComplete", "getCanShowRunningApps", "ifPresent", "setListener", "getDesktopVisibilityController", "clear", "registerDesktopVisibilityListener", "onStuckToDismissTarget", "updateValue", "run", "registerRunningTasksListener", "getStashedHeight", "init", "setOverlayEnabled", "setOverviewStateEnabled", "getDisplayId", "registerListeners", "getDisplay", "onDisable2FlagChanged", "getInfo", "get", "getWindowCornerRadius", "addChangeListener", "removeChangeListener", "getResources", "getNavigationMode", "getRotationForUserDegreesRotated", "setContentAlpha", "getTaskbarActivityContext", "getStatsLogManager", "executeAllAndDestroy", "addCallback", "setReadyToHandleTransition", "addOneTimePreDrawListener", "updateHandleColor", "addOnLayoutChangeListener", "getHeight", "getLayoutParams", "getSampledRegion", "getDimensionPixelSize", "setValue", "setRoundRect", "getBubbleBarLocation", "setOutlineProvider", "getBubbleBarTranslationY", "getUnstashedHeight", "getBubbleBarAlpha", "getStashedHandleAlpha" ]
+    }, {
+      "name" : "onRecentsAnimationComplete",
+      "visibility" : "public",
+      "methodCalls" : [ "d", "setRecentsAnimationRunning", "setCurrentTask" ]
+    }, {
+      "name" : "onTaskIconChanged",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "getIdentifier", "getDrawable", "getTaskViewCount", "onTaskListVisibilityChanged", "refreshTaskThumbnailSplash", "getTaskContainers", "getIconView", "anyMatch", "getPackageName", "stream", "getFirstTask", "getStagePosition", "hasPendingSplitSelectInfo", "finishSplitSelectRecovery", "getSource", "getPendingSplitSelectInfo", "getStagedTaskId", "initiateSplitSelect", "getTaskViewByTaskId", "onTaskIconChanged" ]
+    }, {
+      "name" : "isTaskInExpectedScrollPosition",
+      "visibility" : "public",
+      "methodCalls" : [ "getPagedOrientationHandler", "getScrollForPage", "getPrimaryScroll" ]
+    }, {
+      "name" : "onGestureAnimationStart",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "setGestureActive", "setEnableFreeScroll", "setRunningTaskHidden", "setLayoutRotation", "getDisplayRotation", "getCurrentActiveRotation", "setEnableDrawingLiveTile", "d", "setTaskIconScaledDown", "setRecentsGestureStart", "onGestureAnimationStart", "enableDesktopWindowingWallpaperActivity", "getDesktopVisibilityController" ]
+    }, {
+      "name" : "addSideTaskLaunchCallback",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "updateClearAllFunction",
+      "visibility" : "public",
+      "methodCalls" : [ "setText", "setOnClickListener", "isFiltered", "setAndApplyFilter" ]
+    }, {
+      "name" : "isLoadingTasks",
+      "visibility" : "public",
+      "methodCalls" : [ "isLoadingTasksInBackground" ]
+    }, {
+      "name" : "cleanupRemoteTargets",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "d" ]
+    }, {
+      "name" : "moveTaskToDesktop",
+      "visibility" : "public",
+      "methodCalls" : [ "finishRecentsAnimation", "switchToScreenshot", "canEnterDesktopMode", "getContext" ]
+    }, {
+      "name" : "getTaskViewNearestToCenterOfScreen",
+      "visibility" : "public",
+      "methodCalls" : [ "getPageNearestToCenterOfScreen", "getTaskViewAt" ]
+    }, {
+      "name" : "moveRunningTaskToFront",
+      "visibility" : "public",
+      "methodCalls" : [ "getPagedOrientationHandler", "removeView", "getPrimaryScroll", "resetPersistentViewTransforms", "indexOfChild", "getScrollForPage", "setCurrentPage", "getRunningTaskView", "getDeviceProfile", "addView" ]
+    }, {
+      "name" : "getForegroundScrimDimColor",
+      "visibility" : "public",
+      "methodCalls" : [ "getColor" ]
+    }, {
+      "name" : "loadVisibleTaskData",
+      "visibility" : "public",
+      "methodCalls" : [ "min", "enableGridOnlyOverview", "getPageNearestToCenterOfScreen", "addAll", "put", "setVisibleTasks", "toCollection", "removeIf", "getPageSpacing", "delete", "getPrimaryScroll", "getRunningTaskView", "getChildCount", "width", "collect", "enableRefactorTaskThumbnail", "getPagedOrientationHandler", "getTaskContainers", "getTask", "max", "isEmpty", "map", "showAsGrid", "getTaskViewCount", "getMeasuredSize", "indexOfChild", "get", "stream", "isFinished", "onTaskListVisibilityChanged", "toList", "getLastComputedTaskSize" ]
+    }, {
+      "name" : "getEventDispatcher",
+      "visibility" : "public",
+      "methodCalls" : [ "getOrientationHandler", "flipVertical", "isMultipleOrientationSupportedByDevice", "isLayoutNaturalToLauncher", "onTouchEvent", "getPagedOrientationHandler", "getDegreesRotated", "transformEvent" ]
+    }, {
+      "name" : "startHome",
+      "visibility" : "public",
+      "methodCalls" : [ "startHome", "isStarted", "canStartHomeSafely", "handleStartHome", "finishRecentsAnimation", "getOverviewPanel", "switchToScreenshot" ]
+    }, {
+      "name" : "getOverScrollShift",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "onPrepareGestureEndAnimation",
+      "visibility" : "public",
+      "methodCalls" : [ "showTaskThumbnailSplash", "getGridTranslationY", "getRunningTaskView", "animateToValue", "getNonGridTranslationX", "getDeviceProfile", "displayOverviewTasksAsGrid", "getGridTranslationX", "stateFromGestureEndTarget", "ofFloat", "d", "createPlaybackController", "getTaskViewByTaskId", "onPrepareGestureEndAnimation", "setCurrentTask", "dispatchOnStart", "addEndListener", "getAnimationPlayer", "play", "createTaskDismissAnimation" ]
+    }, {
+      "name" : "draw",
+      "visibility" : "public",
+      "methodCalls" : [ "setSize", "getFolderBackground", "drawParams", "getSaveCount", "getClipPath", "drawRoundRect", "set", "inset", "enableFocusOutline", "getStrokeWidth", "getColor", "setTint", "getStandardIconPadding", "getOuterPadding", "getBackgroundSize", "getInnerPadding", "isLeftRightSplit", "getMemberIconSize", "animateToValue", "start", "getTransitionBackgroundFadeDuration", "getWindow", "setStartDelay", "setDuration", "setColorAlphaBound", "drawEdgeEffect", "pageEndTransition", "drawStretchEdgeEffect", "isFinished", "rotate", "isHardwareAccelerated", "getMainLooper", "min", "draw", "post", "drawOval", "getWidth", "getHeight", "setColorMatrix", "exactCenterX", "mapRange", "getArray", "getBounds", "setLocalMatrix", "length", "drawColor", "mapBoundToRange", "postScale", "drawPaint", "height", "setTranslate", "drawBorder", "maybeDrawEmptyMessage", "save", "translate", "restore", "clipPath", "drawBitmap", "invalidateSelf", "drawPath", "accept", "scale", "restoreToCount", "saveLayerAlpha", "postInvalidateOnAnimation" ]
+    }, {
+      "name" : "setTaskLaunchCancelledRunnable",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMaxScaleForFullScreen",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "getTaskSize", "getDeviceProfile", "set", "getFullScreenScaleAndPivot", "calculateCarouselTaskSize", "getPagedViewOrientedState", "getPagedOrientationHandler", "enableGridOnlyOverview" ]
+    }, {
+      "name" : "setClampScrollOffset",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "initiateSplitSelect",
+      "visibility" : "public",
+      "methodCalls" : [ "getTaskViewByTaskId", "getPagedOrientationHandler", "getFirstTask", "recordEvent", "setDismissingFromSplitPair", "getDeviceProfile", "setAnimateCurrentTaskDismissal", "setInitialTaskSelect", "indexOfChild", "getFirstItemInfo", "getDefaultSplitPosition", "goToState", "getStateManager", "initiateSplitSelect" ]
+    }, {
+      "name" : "getSplitInstructionsView",
+      "visibility" : "public",
+      "methodCalls" : [ "getSplitInstructionsView", "forceHasOverlappingRendering", "addView", "getLayoutInflater", "getDragLayer", "inflate" ]
+    }, {
+      "name" : "requestChildFocus",
+      "visibility" : "public",
+      "methodCalls" : [ "requestRectangleOnScreen", "getDrawingRect", "setFocusableInTouchMode", "shouldHandleRequestChildFocus", "snapToPage", "getNextPage", "setCurrentPage", "isInTouchMode", "indexOfChild", "updateScrollSynchronously", "requestChildFocus" ]
+    }, {
+      "name" : "getPipShadowRadius",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSelectedTaskBounds",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setFreezeViewVisibility",
+      "visibility" : "public",
+      "methodCalls" : [ "setVisibility" ]
+    }, {
+      "name" : "updateCurveProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "getMeasuredWidth", "getPageCount", "onRecentsViewScroll", "getPageAt", "getPrimaryScroll", "getPagedOrientationHandler", "getScrollAlpha", "updateValue", "getIndexScrollAlpha" ]
+    }, {
+      "name" : "getScroller",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "onHighResLoadingStateChanged",
+      "visibility" : "public",
+      "methodCalls" : [ "valueAt", "size", "keyAt", "onTaskListVisibilityChanged", "preloadCacheIfNeeded", "getTaskViewByTaskId" ]
+    }, {
+      "name" : "getScrollOffsetForKeyboardTaskFocus",
+      "visibility" : "public",
+      "methodCalls" : [ "getPrimaryScroll", "getPagedOrientationHandler", "getRunningTaskIndex", "getScrollOffset", "getScrollForPage", "isKeyboardTaskFocusPending" ]
+    }, {
+      "name" : "getGroupedTaskViewCount",
+      "visibility" : "public",
+      "methodCalls" : [ "getChildAt", "getChildCount" ]
+    }, {
+      "name" : "getNextTaskView",
+      "visibility" : "public",
+      "methodCalls" : [ "getTaskViewAt", "getRunningTaskIndex" ]
+    }, {
+      "name" : "getTaskViewCount",
+      "visibility" : "public",
+      "methodCalls" : [ "indexOfChild", "getChildCount" ]
+    }, {
+      "name" : "getBottomRowTaskCountForTablet",
+      "visibility" : "public",
+      "methodCalls" : [ "getTaskViewCount", "enableGridOnlyOverview", "size" ]
+    }, {
+      "name" : "getSizeStrategy",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setIgnoreResetTask",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createAllTasksDismissAnimation",
+      "visibility" : "public",
+      "methodCalls" : [ "post", "getHandler", "getTaskViewCount", "startHome", "getInstance", "addEndListener", "finishRecentsAnimation" ]
+    }, {
+      "name" : "setVisibility",
+      "visibility" : "public",
+      "methodCalls" : [ "getVisibility", "notifyVisibilityChanged", "updateDisabledFlags", "updateHiddenFlags", "setVisibility" ]
+    }, {
+      "name" : "getPagedViewOrientedState",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getPagedOrientationHandler",
+      "visibility" : "public",
+      "methodCalls" : [ "getPagedOrientationHandler" ]
+    }, {
+      "name" : "getRunningTaskViewId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setEnableDrawingLiveTile",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTaskViewByTaskId",
+      "visibility" : "public",
+      "methodCalls" : [ "getTaskViewCount", "containsTaskId" ]
+    }, {
+      "name" : "animateUpTaskIconScale",
+      "visibility" : "public",
+      "methodCalls" : [ "getTaskViewCount", "animateIconScaleAndDimIntoView" ]
+    }, {
+      "name" : "setOnEmptyMessageUpdatedListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "updateThumbnail",
+      "visibility" : "public",
+      "methodCalls" : [ "getThumbnailViewDeprecated", "getValue", "getKey", "entrySet", "getTaskContainerById", "getTask", "getTaskViewByTaskId", "setThumbnail" ]
+    }, {
+      "name" : "onTaskLaunchedInLiveTileMode",
+      "visibility" : "public",
+      "methodCalls" : [ "onTaskLaunched" ]
+    }, {
+      "name" : "setOverviewGridEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "requestLayout" ]
+    }, {
+      "name" : "getFocusedTaskView",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAndApplyFilter",
+      "visibility" : "public",
+      "methodCalls" : [ "setFilterBy" ]
+    }, {
+      "name" : "getRecentsAnimationController",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "supportsAppPairs",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTaskIndexForId",
+      "visibility" : "public",
+      "methodCalls" : [ "indexOfChild", "getTaskViewByTaskId" ]
+    }, {
+      "name" : "getRunningTaskView",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setRecentsAnimationTargets",
+      "visibility" : "public",
+      "methodCalls" : [ "setDp", "assignTargetsForSplitScreen", "getRunningTaskView", "updateSplitBoundsConfig", "getTransformParams", "getContext", "d", "setRecentsAnimationRunning", "getSplitBounds", "hasDesktopTasks", "getTaskViewSimulator", "addReleaseCheck", "getDeviceProfile", "getSizeStrategy", "getTargetSet", "setOrientationState", "setSyncTransactionApplier", "runActionOnRemoteHandles", "assignTargetsForDesktop" ]
+    }, {
+      "name" : "redrawLiveTile",
+      "visibility" : "public",
+      "methodCalls" : [ "apply", "getTaskViewSimulator", "getTargetSet", "getTransformParams", "runActionOnRemoteHandles" ]
+    }, {
+      "name" : "setContentAlpha",
+      "visibility" : "public",
+      "methodCalls" : [ "getRunningTaskView", "setContentAlpha", "getContentAlpha", "getTaskViewCount", "setAlpha", "boundToRange", "updateValue", "setStableAlpha", "round", "setVisibility", "setValue", "get" ]
+    }, {
+      "name" : "scrollLeft",
+      "visibility" : "public",
+      "methodCalls" : [ "completeDragExit", "getOpen", "getPanelCount", "getScrollForPage", "isTaskViewFullyVisible", "scrollLeft", "snapToPage", "getNextPage", "getTaskViewAt", "showAsGrid" ]
+    }, {
+      "name" : "setLayoutRotation",
+      "visibility" : "public",
+      "methodCalls" : [ "update" ]
+    }, {
+      "name" : "scrollRight",
+      "visibility" : "public",
+      "methodCalls" : [ "completeDragExit", "getOpen", "getPanelCount", "getNextPage", "getChildCount", "scrollRight", "showAsGrid", "snapToPage", "isTaskViewFullyVisible", "getTaskViewAt" ]
+    }, {
+      "name" : "getTaskViewAt",
+      "visibility" : "public",
+      "methodCalls" : [ "getChildAt" ]
+    }, {
+      "name" : "shouldSwipeDownLaunchApp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTaskViewByTaskIds",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "getTaskIds", "copyOf", "sort", "getTaskViewCount" ]
+    }, {
+      "name" : "getStateManager",
+      "visibility" : "public",
+      "methodCalls" : [ "getStateManager" ]
+    }, {
+      "name" : "clearIgnoreResetTask",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTaskSize",
+      "visibility" : "public",
+      "methodCalls" : [ "calculateTaskSize", "getDeviceProfile", "getPagedOrientationHandler" ]
+    }, {
+      "name" : "getCurrentPageTaskView",
+      "visibility" : "public",
+      "methodCalls" : [ "getTaskViewAt", "getCurrentPage" ]
+    }, {
+      "name" : "updateRecentsRotation",
+      "visibility" : "public",
+      "methodCalls" : [ "getRotation", "setRecentsRotation", "getDisplay", "allowIpcs" ]
+    }, {
+      "name" : "launchSideTaskInLiveTileModeForRestartedApp",
+      "visibility" : "public",
+      "methodCalls" : [ "findTask", "launchSideTaskInLiveTileMode", "getTransformParams", "getTargetSet" ]
+    }, {
+      "name" : "isOnGridBottomRow",
+      "visibility" : "public",
+      "methodCalls" : [ "showAsGrid", "getTaskViewId", "contains" ]
+    }, {
+      "name" : "onViewAdded",
+      "visibility" : "public",
+      "methodCalls" : [ "setOnInterceptTouchListener", "setImportantForAccessibility", "onDragLayerHierarchyChanged", "isAttachedToWindow", "setFrameLayoutChildInsets", "onViewAdded", "updateEmptyMessage", "setAlpha", "updateHiddenFlags", "setLayoutDirection" ]
+    }, {
+      "name" : "onSwipeUpAnimationSuccess",
+      "visibility" : "public",
+      "methodCalls" : [ "setSwipeDownShouldLaunchApp", "animateUpTaskIconScale" ]
+    }, {
+      "name" : "isClearAllHidden",
+      "visibility" : "public",
+      "methodCalls" : [ "getAlpha" ]
+    }, {
+      "name" : "finishRecentsAnimation",
+      "visibility" : "public",
+      "methodCalls" : [ "setAlpha", "setShouldDisableCanAffectSystemUiFlags", "d", "setFinishTaskTransaction", "get", "setShelfHeight", "finishRecentsAnimation", "build", "getRunningSplitTaskIds", "cleanupRemoteTargets", "onRecentsAnimationComplete", "run", "finish", "getDeviceProfile", "getContext", "setPipAnimationTypeToAlpha" ]
+    }, {
+      "name" : "onTaskLaunchedInLiveTileModeCancelled",
+      "visibility" : "public",
+      "methodCalls" : [ "run" ]
+    }, {
+      "name" : "getModalTaskSize",
+      "visibility" : "public",
+      "methodCalls" : [ "getPagedOrientationHandler", "calculateModalTaskSize", "getDeviceProfile" ]
+    }, {
+      "name" : "reset",
+      "visibility" : "public",
+      "methodCalls" : [ "removeOnFocusChangeListener", "getCurrentGridName", "executeLock", "getCurrentState", "setScaleY", "addPrivateSpaceDecorator", "hideKeyboard", "requestFocus", "getMainRecyclerView", "twoLineAllApps", "privateSpaceAddFloatingMaskView", "setAlpha", "setTranslationY", "setChildAttachedConsumer", "setTag", "setCurrentState", "isFocused", "setPivotY", "setMaxLines", "focusSearch", "postUnlock", "setVisibility", "getContext", "setBackground", "callListenerCommandRecursively", "copyTo", "dispatchOnEnd", "dispatchOnCancel", "getAnimationPlayer", "setDuration", "setIntValues", "applyVerticalMove", "addUpdateListener", "isStarted", "setText", "isEmpty", "getText", "hasModelFlag", "getImeInsets", "enablePrivateSpace", "setEmpty", "getAppsStore", "updateTranslationY", "updateHeaderScroll", "getRememberPosition", "forceBottomSheetVisible", "get", "size", "clearFocus", "getVisibility", "getHandler", "reset", "getRecentsActivityRotation", "setLayoutRotation", "getPagedViewOrientedState", "post", "finishRecentsAnimation", "getTaskViewSimulator", "setCurrentPage", "getTransformParams", "resetFromSplitSelectionState", "setViewEnabled", "setGestureActive", "setTargetSet", "d", "setCurrentTask", "setEnableDrawingLiveTile", "runActionOnRemoteHandles", "setDrawsBelowRecents", "enableSplitContextually", "setManageButtonAlpha", "cancel", "setBottomClip", "setBackgroundAlpha", "setAnimating", "setContentAlpha", "movePointerBy", "isShowing", "dismiss", "forEndCallback", "start", "ofFloat", "addListener", "setInterpolator", "clearSearchResult", "scrollToTop", "isSearching", "endFastScrolling", "firstBlocking" ]
+    }, {
+      "name" : "resetModalVisuals",
+      "visibility" : "public",
+      "methodCalls" : [ "forEach", "getOverlay", "resetModalVisuals" ]
+    }, {
+      "name" : "isTaskViewVisible",
+      "visibility" : "public",
+      "methodCalls" : [ "getPagedOrientationHandler", "indexOfChild", "getPrimaryScroll", "showAsGrid", "abs", "getNextPage", "getMeasuredSize" ]
+    }, {
+      "name" : "showForegroundScrim",
+      "visibility" : "public",
+      "methodCalls" : [ "ofFloat", "start", "setAutoCancel", "cancel" ]
+    }, {
+      "name" : "setOverviewFullscreenEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "requestLayout" ]
+    }, {
+      "name" : "updateLocusId",
+      "visibility" : "public",
+      "methodCalls" : [ "setLocusContext", "isStarted", "post" ]
+    }, {
+      "name" : "isTaskViewFullyVisible",
+      "visibility" : "public",
+      "methodCalls" : [ "indexOfChild", "getPagedOrientationHandler", "getNextPage", "getMeasuredSize", "getPrimaryScroll", "showAsGrid" ]
+    }, {
+      "name" : "getContentAlpha",
+      "visibility" : "public",
+      "methodCalls" : [ "getAlpha" ]
+    }, {
+      "name" : "getScrollOffset",
+      "visibility" : "public",
+      "methodCalls" : [ "getScrollOffset", "getRunningTaskIndex", "round", "abs", "signum" ]
+    }, {
+      "name" : "getSplitSelectTranslation",
+      "visibility" : "public",
+      "methodCalls" : [ "getSplitSelectController", "getActiveSplitStagePosition", "getResources", "getDeviceProfile", "getSplitTranslationDirectionFactor", "getDimensionPixelSize", "getPagedOrientationHandler", "isSplitSelectionActive", "enableSplitContextual", "getSplitSelectTranslation", "getOverviewPanel" ]
+    }, {
+      "name" : "setCurrentTask",
+      "visibility" : "public",
+      "methodCalls" : [ "setTaskIconScaledDown", "setCurrentTask", "stream", "setRunningTaskHidden", "getTaskIdsForRunningTaskView", "noneMatch" ]
+    }, {
+      "name" : "getPipCornerRadius",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setRunningTaskHidden",
+      "visibility" : "public",
+      "methodCalls" : [ "setStableAlpha", "sendCustomAccessibilityEvent", "getRunningTaskView", "setRunningTaskHidden" ]
+    }, {
+      "name" : "addChildrenForAccessibility",
+      "visibility" : "public",
+      "methodCalls" : [ "getDropTargetBar", "addChildrenForAccessibility", "getTopOpenViewWithType", "addAccessibleChildToList", "getChildCount", "getChildAt", "add" ]
+    }, {
+      "name" : "getRunningTaskIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "getRunningTaskView", "indexOfChild" ]
+    }, {
+      "name" : "onTouchEvent",
+      "visibility" : "public",
+      "methodCalls" : [ "findPointerIndex", "isTrackpadMultiFingerSwipe", "isLongClickable", "firstBlocking", "getLockHomeScreen", "onTouch", "shouldIgnoreTouchDown", "isEventOverView", "getActiveRecyclerView", "addMovement", "isHitInParent", "getVisibleContainerView", "isInAllApps", "getScrollbar", "getDragLayer", "isSearching", "shouldScrollStart", "clear", "pointInView", "postAtFrontOfQueue", "setAction", "getHandler", "getRootView", "isMouseRightClickDownOrMove", "cancelLongPress", "recycle", "obtain", "handleTouchEvent", "onDriverDragEnd", "accept", "onDriverDragCancel", "onDriverDragMove", "setPrimary", "postInvalidateOnAnimation", "pageBeginTransition", "onFlingVelocity", "d", "springBack", "getPrimaryDirection", "getPanelCount", "getPrimaryScale", "runOnPageScrollsInitialized", "getPageAt", "awakenScrollBars", "signum", "getFinalX", "resetTouchState", "round", "determineScrollingStart", "isSignificantMove", "invalidate", "fling", "snapToPageWithVelocity", "shouldFlingForVelocity", "onPullDistance", "getChildCount", "getMeasuredSize", "abs", "getPrimaryScroll", "getSecondaryValue", "getPrimaryVelocity", "isFinished", "updateIsBeingDraggedOnTouchDown", "getPrimaryValue", "getDestinationPage", "getDistance", "onRelease", "onTouchComplete", "onControllerTouchEvent", "findActiveController", "getRawX", "getActionMasked", "isRecentsViewVisible", "onTouchEvent", "getState", "getStateManager", "getX", "offerTouchToChildren", "startHome", "getY", "getCurrentPageTaskView", "contains", "getTaskViewCount", "getScrollX", "isTaskViewVisible", "getAlpha", "showAsGrid", "squaredHypot", "isHandlingTouch", "getAction", "getEdgeFlags", "stream", "get", "filter", "findFirst", "getWidth", "getVisibility", "offsetLocation", "getHeight", "dispatchTouchEvent", "orElse", "getEventTime", "e", "getYVelocity", "set", "addMovementToVelocityTracker", "getXVelocity", "getPointerId", "getDisplayId", "computeCurrentVelocity", "removeHoverExitTimeoutCallback", "getRawY", "getActionIndex", "getScaledTouchSlop", "getScaledMaximumFlingVelocity", "removeCallbacks", "length" ]
+    } ],
+    "imports" : [ "android.widget.ListView", "com.android.launcher3.util.SplitConfigurationOptions.SplitBounds", "android.view.accessibility.AccessibilityNodeInfo", "com.android.launcher3.AbstractFloatingView", "com.android.launcher3.anim.AnimatorPlaybackController", "android.content.Intent", "android.text.Layout", "android.util.FloatProperty", "android.widget.Toast", "com.android.quickstep.util.TaskGridNavHelper.DIRECTION_UP", "java.util.stream.Collectors", "kotlin.Unit", "com.android.quickstep.util.LogUtils.splitFailureMessage", "com.android.app.animation.Interpolators.ACCELERATE", "com.android.launcher3.util.SplitConfigurationOptions.SplitSelectSource", "com.android.app.animation.Interpolators.FINAL_FRAME", "com.android.systemui.shared.recents.model.Task", "com.android.quickstep.recents.data.TasksRepository", "com.android.quickstep.util.TaskGridNavHelper.DIRECTION_LEFT", "android.util.Pair", "android.graphics.BlendMode", "android.text.TextPaint", "android.view.ViewGroup", "com.android.quickstep.util.SplitAnimationController.Companion.SplitAnimInitProps", "android.graphics.Bitmap", "android.graphics.drawable.Drawable", "android.animation.ObjectAnimator", "com.android.quickstep.RecentsFilterState", "com.android.app.animation.Interpolators.ACCELERATE_0_75", "com.android.quickstep.TaskOverlayFactory", "com.android.launcher3.util.CancellableTask", "java.util.Map", "android.view.View.MeasureSpec.EXACTLY", "com.android.launcher3.AbstractFloatingView.TYPE_TASK_MENU", "java.util.Optional", "com.android.systemui.shared.recents.model.ThumbnailData", "com.android.launcher3.PagedView", "android.animation.LayoutTransition.TransitionListener", "com.android.app.animation.Interpolators.EMPHASIZED_DECELERATE", "java.util.Objects", "com.android.quickstep.util.TaskGridNavHelper.DIRECTION_RIGHT", "com.android.internal.jank.Cuj", "com.android.quickstep.orientation.RecentsPagedOrientationHandler", "com.android.systemui.plugins.ResourceProvider", "com.android.quickstep.RemoteAnimationTargets", "com.android.quickstep.views.OverviewActionsView.HIDDEN_NO_RECENTS", "com.android.launcher3.AbstractFloatingView.TYPE_REBIND_SAFE", "com.android.launcher3.util.RunnableList", "android.animation.ValueAnimator", "com.android.app.animation.Interpolators.ACCELERATE_DECELERATE", "com.android.launcher3.testing.TestLogging", "com.android.launcher3.Utilities.EDGE_NAV_BAR", "com.android.launcher3.Flags.enableGridOnlyOverview", "android.animation.Animator", "com.android.quickstep.util.ActiveGestureErrorDetector", "com.android.launcher3.logging.StatsLogManager", "com.android.quickstep.util.TaskGridNavHelper", "com.android.launcher3.util.IntSet", "android.view.MotionEvent", "android.os.VibrationEffect", "com.android.quickstep.RecentsModel", "android.app.WindowConfiguration", "com.android.launcher3.util.MultiPropertyFactory.MULTI_PROPERTY_VALUE", "com.android.quickstep.util.AnimUtils", "com.android.quickstep.RecentsAnimationTargets", "com.android.launcher3.desktop.DesktopRecentsTransitionController", "android.util.SparseBooleanArray", "com.android.quickstep.RecentsAnimationController", "com.android.quickstep.util.TaskGridNavHelper.DIRECTION_DOWN", "android.animation.LayoutTransition", "com.android.app.animation.Interpolators.FAST_OUT_SLOW_IN", "com.android.launcher3.Utilities.mapToRange", "android.view.HapticFeedbackConstants", "com.android.systemui.shared.system.TaskStackChangeListeners", "com.android.quickstep.util.ActiveGestureLog", "com.android.launcher3.LauncherAnimUtils.SUCCESS_TRANSITION_PROGRESS", "com.android.quickstep.SplitSelectionListener", "com.android.quickstep.util.TransformParams", "com.android.launcher3.Utilities.squaredTouchSlop", "android.graphics.Canvas", "com.android.quickstep.RemoteTargetGluer.RemoteTargetHandle", "com.android.systemui.shared.system.TaskStackChangeListener", "android.view.accessibility.AccessibilityEvent", "com.android.launcher3.QuickstepTransitionManager.RECENTS_LAUNCH_DURATION", "java.util.Arrays", "com.android.app.animation.Interpolators.LINEAR", "com.android.quickstep.views.OverviewActionsView.HIDDEN_SPLIT_SCREEN", "com.android.launcher3.config.FeatureFlags", "android.os.UserHandle", "android.util.Log", "android.os.Bundle", "com.android.launcher3.Utilities", "android.content.LocusId", "com.android.systemui.shared.system.PackageManagerWrapper", "com.android.quickstep.util.SplitAnimationTimings", "com.android.quickstep.views.OverviewActionsView.HIDDEN_NON_ZERO_ROTATION", "com.android.launcher3.statemanager.StatefulContainer", "com.android.launcher3.R", "com.android.app.animation.Interpolators.clampToProgress", "android.view.View", "com.android.quickstep.TopTaskTracker", "com.android.launcher3.anim.AnimatorListeners", "com.android.quickstep.SystemUiProxy", "com.android.app.animation.Interpolators.OVERSHOOT_0_75", "com.android.wm.shell.common.pip.IPipAnimationListener", "com.android.wm.shell.shared.DesktopModeStatus", "com.android.launcher3.util.TraceHelper", "android.window.PictureInPictureSurfaceTransaction", "androidx.core.graphics.ColorUtils", "android.graphics.Rect", "androidx.annotation.Nullable", "java.util.List", "com.android.quickstep.TaskViewUtils", "com.android.launcher3.compat.AccessibilityManagerCompat", "com.android.launcher3.Utilities.squaredHypot", "com.android.launcher3.util.Executors.UI_HELPER_EXECUTOR", "com.android.quickstep.views.OverviewActionsView.HIDDEN_SPLIT_SELECT_ACTIVE", "com.android.launcher3.anim.SpringProperty", "androidx.annotation.UiThread", "com.android.quickstep.util.SurfaceTransaction", "android.app.ActivityTaskManager.INVALID_TASK_ID", "java.util.function.Consumer", "android.view.ViewDebug", "com.android.quickstep.RemoteTargetGluer", "com.android.quickstep.util.DesktopTask", "com.android.launcher3.BaseActivity.STATE_HANDLER_INVISIBILITY_FLAGS", "com.android.launcher3.LauncherState.BACKGROUND_APP", "com.android.quickstep.views.OverviewActionsView.HIDDEN_NO_TASKS", "android.view.ViewTreeObserver.OnScrollChangedListener", "com.android.launcher3.logging.StatsLogManager.LauncherEvent.LAUNCHER_OVERVIEW_ORIENTATION_CHANGED", "android.view.Surface.ROTATION_0", "com.android.quickstep.util.RecentsAtomicAnimationFactory", "android.graphics.PointF", "com.android.quickstep.util.LayoutUtils", "com.android.launcher3.logging.StatsLogManager.LauncherEvent.LAUNCHER_TASK_CLEAR_ALL", "com.android.launcher3.util.Executors.MAIN_EXECUTOR", "com.android.launcher3.Insettable", "android.os.SystemClock", "android.annotation.SuppressLint", "android.view.animation.Interpolator", "android.view.KeyEvent", "com.android.launcher3.util.SystemUiController.UI_STATE_FULLSCREEN_TASK", "android.graphics.Point", "android.graphics.Matrix", "com.android.launcher3.logging.StatsLogManager.LauncherEvent.LAUNCHER_TASK_LAUNCH_SWIPE_DOWN", "com.android.launcher3.util.Themes", "com.android.quickstep.util.SurfaceTransactionApplier", "com.android.launcher3.anim.PendingAnimation", "android.animation.AnimatorListenerAdapter", "com.android.quickstep.util.TaskGridNavHelper.DIRECTION_TAB", "com.android.systemui.shared.system.ActivityManagerWrapper", "com.android.launcher3.Flags.enableRefactorTaskThumbnail", "android.view.View.MeasureSpec.makeMeasureSpec", "android.content.res.Configuration", "com.android.app.animation.Interpolators.DECELERATE_2", "java.util.HashMap", "com.android.launcher3.statemanager.StateManager", "com.android.quickstep.util.VibrationConstants", "com.android.launcher3.logger.LauncherAtom", "android.animation.PropertyValuesHolder", "com.android.quickstep.ViewUtils", "com.android.launcher3.logging.StatsLogManager.LauncherEvent.LAUNCHER_OVERVIEW_ACTIONS_SPLIT", "com.android.quickstep.views.TaskView.TaskContainer", "com.android.quickstep.views.ClearAllButton.DISMISS_ALPHA", "com.android.launcher3.LauncherAnimUtils.VIEW_ALPHA", "com.android.wm.shell.common.desktopmode.DesktopModeTransitionSource", "com.android.launcher3.DeviceProfile", "com.android.quickstep.util.TaskVisualsChangeListener", "com.android.quickstep.util.SplitSelectStateController", "com.android.quickstep.util.GroupTask", "com.android.launcher3.util.IntArray", "com.android.launcher3.util.ResourceBasedOverride.Overrides", "com.android.launcher3.util.VibratorWrapper", "com.android.quickstep.util.RecentsOrientedState", "com.android.launcher3.testing.shared.TestProtocol", "com.android.launcher3.util.TranslateEdgeEffect", "com.android.quickstep.recents.viewmodel.RecentsViewData", "com.android.quickstep.util.TaskViewSimulator", "com.android.launcher3.BaseActivity.MultiWindowModeChangedListener", "android.widget.OverScroller", "com.android.launcher3.Flags.enableAdditionalHomeAnimations", "com.android.launcher3.statemanager.BaseState", "com.android.launcher3.util.SplitConfigurationOptions.StagePosition", "com.android.quickstep.RotationTouchHelper", "com.android.quickstep.BaseContainerInterface", "com.android.launcher3.testing.shared.TestProtocol.DISMISS_ANIMATION_ENDS_MESSAGE", "android.graphics.Typeface", "com.android.launcher3.statehandlers.DepthController", "com.android.quickstep.OverviewCommandHelper", "com.android.quickstep.GestureState", "android.util.AttributeSet", "android.graphics.PorterDuff", "android.view.RemoteAnimationTarget", "com.android.launcher3.touch.OverScroll", "android.animation.AnimatorSet", "com.android.launcher3.util.DynamicResource", "com.android.quickstep.views.OverviewActionsView.HIDDEN_DESKTOP", "com.android.launcher3.AbstractFloatingView.getTopOpenViewWithType", "com.android.quickstep.TaskUtils.checkCurrentOrManagedUserId", "com.android.launcher3.logging.StatsLogManager.LauncherEvent.LAUNCHER_TASK_DISMISS_SWIPE_UP", "android.graphics.RectF", "com.android.launcher3.InvariantDeviceProfile", "android.view.LayoutInflater", "android.content.Context", "com.android.launcher3.touch.PagedOrientationHandler.CANVAS_TRANSLATE", "android.text.StaticLayout", "com.android.launcher3.Flags", "com.android.quickstep.views.OverviewActionsView.HIDDEN_ACTIONS_IN_MENU", "com.android.launcher3.model.data.ItemInfo", "com.android.launcher3.anim.AnimatedFloat", "com.android.systemui.shared.system.InteractionJankMonitorWrapper", "java.util.ArrayList", "com.android.quickstep.TaskThumbnailCache", "com.android.launcher3.util.ViewPool", "androidx.annotation.NonNull" ]
+  }, {
+    "name" : "CustomFeatureFlags",
+    "packageName" : "com.android.systemui",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ "FeatureFlags" ],
+    "methods" : [ {
+      "name" : "privateSpaceSysAppsSeparation",
+      "visibility" : "public",
+      "methodCalls" : [ "privateSpaceSysAppsSeparation", "getValue" ]
+    }, {
+      "name" : "truncatedStatusBarIconsFix",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "truncatedStatusBarIconsFix" ]
+    }, {
+      "name" : "notificationAsyncGroupHeaderInflation",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "notificationAsyncGroupHeaderInflation" ]
+    }, {
+      "name" : "notificationContentAlphaOptimization",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "notificationContentAlphaOptimization" ]
+    }, {
+      "name" : "priorityPeopleSection",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "priorityPeopleSection" ]
+    }, {
+      "name" : "qsUiRefactor",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "qsUiRefactor" ]
+    }, {
+      "name" : "edgeBackGestureHandlerThread",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "edgeBackGestureHandlerThread" ]
+    }, {
+      "name" : "enableLayoutTracing",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableLayoutTracing" ]
+    }, {
+      "name" : "enableViewCaptureTracing",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableViewCaptureTracing" ]
+    }, {
+      "name" : "mediaControlsUserInitiatedDeleteintent",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "mediaControlsUserInitiatedDeleteintent" ]
+    }, {
+      "name" : "enableContextualTipForTakeScreenshot",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableContextualTipForTakeScreenshot" ]
+    }, {
+      "name" : "clockReactiveVariants",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "clockReactiveVariants" ]
+    }, {
+      "name" : "glanceableHubGestureHandle",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "glanceableHubGestureHandle" ]
+    }, {
+      "name" : "dedicatedNotifInflationThread",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "dedicatedNotifInflationThread" ]
+    }, {
+      "name" : "statusBarScreenSharingChips",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "statusBarScreenSharingChips" ]
+    }, {
+      "name" : "hearingAidsQsTileDialog",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "hearingAidsQsTileDialog" ]
+    }, {
+      "name" : "smartspaceRemoteviewsRendering",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "smartspaceRemoteviewsRendering" ]
+    }, {
+      "name" : "floatingMenuDragToHide",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "floatingMenuDragToHide" ]
+    }, {
+      "name" : "screenshotPrivateProfileBehaviorFix",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "screenshotPrivateProfileBehaviorFix" ]
+    }, {
+      "name" : "hapticVolumeSlider",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "hapticVolumeSlider" ]
+    }, {
+      "name" : "smartspaceRelocateToBottom",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "smartspaceRelocateToBottom" ]
+    }, {
+      "name" : "qsNewPipeline",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "qsNewPipeline" ]
+    }, {
+      "name" : "notificationViewFlipperPausingV2",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "notificationViewFlipperPausingV2" ]
+    }, {
+      "name" : "enableContextualTipForMuteVolume",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableContextualTipForMuteVolume" ]
+    }, {
+      "name" : "composeBouncer",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "composeBouncer" ]
+    }, {
+      "name" : "statusBarMonochromeIconsFix",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "statusBarMonochromeIconsFix" ]
+    }, {
+      "name" : "registerZenModeContentObserverBackground",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "registerZenModeContentObserverBackground" ]
+    }, {
+      "name" : "unfoldAnimationBackgroundProgress",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "unfoldAnimationBackgroundProgress" ]
+    }, {
+      "name" : "visualInterruptionsRefactor",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "visualInterruptionsRefactor" ]
+    }, {
+      "name" : "lightRevealMigration",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "lightRevealMigration" ]
+    }, {
+      "name" : "glanceableHubShortcutButton",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "glanceableHubShortcutButton" ]
+    }, {
+      "name" : "notificationsLiveDataStoreRefactor",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "notificationsLiveDataStoreRefactor" ]
+    }, {
+      "name" : "revampedBouncerMessages",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "revampedBouncerMessages" ]
+    }, {
+      "name" : "enableEfficientDisplayRepository",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableEfficientDisplayRepository" ]
+    }, {
+      "name" : "sysuiTeamfood",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "sysuiTeamfood" ]
+    }, {
+      "name" : "registerBatteryControllerReceiversInCorestartable",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "registerBatteryControllerReceiversInCorestartable" ]
+    }, {
+      "name" : "mediaControlsRefactor",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "mediaControlsRefactor" ]
+    }, {
+      "name" : "bindKeyguardMediaVisibility",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "bindKeyguardMediaVisibility" ]
+    }, {
+      "name" : "bpTalkback",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "bpTalkback" ]
+    }, {
+      "name" : "createWindowlessWindowMagnifier",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "createWindowlessWindowMagnifier" ]
+    }, {
+      "name" : "floatingMenuDragToEdit",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "floatingMenuDragToEdit" ]
+    }, {
+      "name" : "clipboardNoninteractiveOnLockscreen",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "clipboardNoninteractiveOnLockscreen" ]
+    }, {
+      "name" : "dualShade",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "dualShade" ]
+    }, {
+      "name" : "notificationRowUserContext",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "notificationRowUserContext" ]
+    }, {
+      "name" : "runFingerprintDetectOnDismissibleKeyguard",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "runFingerprintDetectOnDismissibleKeyguard" ]
+    }, {
+      "name" : "communalBouncerDoNotModifyPluginOpen",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "communalBouncerDoNotModifyPluginOpen" ]
+    }, {
+      "name" : "screenshotScrollCropViewCrashFix",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "screenshotScrollCropViewCrashFix" ]
+    }, {
+      "name" : "qsCustomTileClickGuaranteedBugFix",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "qsCustomTileClickGuaranteedBugFix" ]
+    }, {
+      "name" : "floatingMenuRadiiAnimation",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "floatingMenuRadiiAnimation" ]
+    }, {
+      "name" : "switchUserOnBg",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "switchUserOnBg" ]
+    }, {
+      "name" : "confineNotificationTouchToViewWidth",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "confineNotificationTouchToViewWidth" ]
+    }, {
+      "name" : "exampleFlag",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "exampleFlag" ]
+    }, {
+      "name" : "enableContextualTipForPowerOff",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableContextualTipForPowerOff" ]
+    }, {
+      "name" : "notificationPulsingFix",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "notificationPulsingFix" ]
+    }, {
+      "name" : "notificationAsyncHybridViewInflation",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "notificationAsyncHybridViewInflation" ]
+    }, {
+      "name" : "newVolumePanel",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "newVolumePanel" ]
+    }, {
+      "name" : "notificationAvalancheSuppression",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "notificationAvalancheSuppression" ]
+    }, {
+      "name" : "notificationAvalancheThrottleHun",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "notificationAvalancheThrottleHun" ]
+    }, {
+      "name" : "edgebackGestureHandlerGetRunningTasksBackground",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "edgebackGestureHandlerGetRunningTasksBackground" ]
+    }, {
+      "name" : "fixScreenshotActionDismissSystemWindows",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "fixScreenshotActionDismissSystemWindows" ]
+    }, {
+      "name" : "disableContextualTipsFrequencyCheck",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "disableContextualTipsFrequencyCheck" ]
+    }, {
+      "name" : "notificationMinimalismPrototype",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "notificationMinimalismPrototype" ]
+    }, {
+      "name" : "qsTileFocusState",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "qsTileFocusState" ]
+    }, {
+      "name" : "removeDreamOverlayHideOnTouch",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "removeDreamOverlayHideOnTouch" ]
+    }, {
+      "name" : "deviceEntryUdfpsRefactor",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "deviceEntryUdfpsRefactor" ]
+    }, {
+      "name" : "pssAppSelectorRecentsSplitScreen",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "pssAppSelectorRecentsSplitScreen" ]
+    }, {
+      "name" : "privacyDotUnfoldWrongCornerFix",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "privacyDotUnfoldWrongCornerFix" ]
+    }, {
+      "name" : "sliceBroadcastRelayInBackground",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "sliceBroadcastRelayInBackground" ]
+    }, {
+      "name" : "newAodTransition",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "newAodTransition" ]
+    }, {
+      "name" : "keyboardShortcutHelperRewrite",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "keyboardShortcutHelperRewrite" ]
+    }, {
+      "name" : "screenshotShelfUi2",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "screenshotShelfUi2" ]
+    }, {
+      "name" : "enforceBrightnessBaseUserRestriction",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enforceBrightnessBaseUserRestriction" ]
+    }, {
+      "name" : "pssAppSelectorAbruptExitFix",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "pssAppSelectorAbruptExitFix" ]
+    }, {
+      "name" : "notifyPowerManagerUserActivityBackground",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "notifyPowerManagerUserActivityBackground" ]
+    }, {
+      "name" : "udfpsViewPerformance",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "udfpsViewPerformance" ]
+    }, {
+      "name" : "dreamInputSessionPilferOnce",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "dreamInputSessionPilferOnce" ]
+    }, {
+      "name" : "mediaControlsLockscreenShadeBugFix",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "mediaControlsLockscreenShadeBugFix" ]
+    }, {
+      "name" : "notificationsBackgroundIcons",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "notificationsBackgroundIcons" ]
+    }, {
+      "name" : "ambientTouchMonitorListenToDisplayChanges",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "ambientTouchMonitorListenToDisplayChanges" ]
+    }, {
+      "name" : "appClipsBacklinks",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "appClipsBacklinks" ]
+    }, {
+      "name" : "shaderlibLoadingEffectRefactor",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "shaderlibLoadingEffectRefactor" ]
+    }, {
+      "name" : "dozeuiSchedulingAlarmsBackgroundExecution",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "dozeuiSchedulingAlarmsBackgroundExecution" ]
+    }, {
+      "name" : "coroutineTracing",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "coroutineTracing" ]
+    }, {
+      "name" : "newTouchpadGesturesTutorial",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "newTouchpadGesturesTutorial" ]
+    }, {
+      "name" : "registerWallpaperNotifierBackground",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "registerWallpaperNotifierBackground" ]
+    }, {
+      "name" : "notificationsImprovedHunAnimation",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "notificationsImprovedHunAnimation" ]
+    }, {
+      "name" : "validateKeyboardShortcutHelperIconUri",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "validateKeyboardShortcutHelperIconUri" ]
+    }, {
+      "name" : "restToUnlock",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "restToUnlock" ]
+    }, {
+      "name" : "constraintBp",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "constraintBp" ]
+    }, {
+      "name" : "enableBackgroundKeyguardOndrawnCallback",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableBackgroundKeyguardOndrawnCallback" ]
+    }, {
+      "name" : "notificationsHideOnDisplaySwitch",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "notificationsHideOnDisplaySwitch" ]
+    }, {
+      "name" : "brightnessSliderFocusState",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "brightnessSliderFocusState" ]
+    }, {
+      "name" : "notificationsIconContainerRefactor",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "notificationsIconContainerRefactor" ]
+    }, {
+      "name" : "fastUnlockTransition",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "fastUnlockTransition" ]
+    }, {
+      "name" : "floatingMenuImeDisplacementAnimation",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "floatingMenuImeDisplacementAnimation" ]
+    }, {
+      "name" : "floatingMenuNarrowTargetContentObserver",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "floatingMenuNarrowTargetContentObserver" ]
+    }, {
+      "name" : "refactorGetCurrentUser",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "refactorGetCurrentUser" ]
+    }, {
+      "name" : "predictiveBackAnimateBouncer",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "predictiveBackAnimateBouncer" ]
+    }, {
+      "name" : "statusBarStaticInoutIndicators",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "statusBarStaticInoutIndicators" ]
+    }, {
+      "name" : "notificationMediaManagerBackgroundExecution",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "notificationMediaManagerBackgroundExecution" ]
+    }, {
+      "name" : "quickSettingsVisualHapticsLongpress",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "quickSettingsVisualHapticsLongpress" ]
+    }, {
+      "name" : "predictiveBackAnimateShade",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "predictiveBackAnimateShade" ]
+    }, {
+      "name" : "pinInputFieldStyledFocusState",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "pinInputFieldStyledFocusState" ]
+    }, {
+      "name" : "restartDreamOnUnocclude",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "restartDreamOnUnocclude" ]
+    }, {
+      "name" : "keyguardWmStateRefactor",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "keyguardWmStateRefactor" ]
+    }, {
+      "name" : "hearingDevicesDialogRelatedTools",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "hearingDevicesDialogRelatedTools" ]
+    }, {
+      "name" : "keyguardBottomAreaRefactor",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "keyguardBottomAreaRefactor" ]
+    }, {
+      "name" : "themeOverlayControllerWakefulnessDeprecation",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "themeOverlayControllerWakefulnessDeprecation" ]
+    }, {
+      "name" : "smartspaceLockscreenViewmodel",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "smartspaceLockscreenViewmodel" ]
+    }, {
+      "name" : "delayShowMagnificationButton",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "delayShowMagnificationButton" ]
+    }, {
+      "name" : "enableWidgetPickerSizeFilter",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableWidgetPickerSizeFilter" ]
+    }, {
+      "name" : "enableContextualTips",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableContextualTips" ]
+    }, {
+      "name" : "communalHub",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "communalHub" ]
+    }, {
+      "name" : "predictiveBackSysui",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "predictiveBackSysui" ]
+    }, {
+      "name" : "disableContextualTipsIosSwitcherCheck",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "disableContextualTipsIosSwitcherCheck" ]
+    }, {
+      "name" : "shadeCollapseActivityLaunchFix",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "shadeCollapseActivityLaunchFix" ]
+    }, {
+      "name" : "notificationsFooterViewRefactor",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "notificationsFooterViewRefactor" ]
+    }, {
+      "name" : "keyboardDockingIndicator",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "keyboardDockingIndicator" ]
+    }, {
+      "name" : "notificationRowContentBinderRefactor",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "notificationRowContentBinderRefactor" ]
+    }, {
+      "name" : "screenshareNotificationHidingBugFix",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "screenshareNotificationHidingBugFix" ]
+    }, {
+      "name" : "updateUserSwitcherBackground",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "updateUserSwitcherBackground" ]
+    }, {
+      "name" : "composeLockscreen",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "composeLockscreen" ]
+    }, {
+      "name" : "pssTaskSwitcher",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "pssTaskSwitcher" ]
+    }, {
+      "name" : "fixImageWallpaperCrashSurfaceAlreadyReleased",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "fixImageWallpaperCrashSurfaceAlreadyReleased" ]
+    }, {
+      "name" : "contextualTipsAssistantDismissFix",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "contextualTipsAssistantDismissFix" ]
+    }, {
+      "name" : "notificationFooterBackgroundTintOptimization",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "notificationFooterBackgroundTintOptimization" ]
+    }, {
+      "name" : "qsNewTilesFuture",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "qsNewTilesFuture" ]
+    }, {
+      "name" : "hapticBrightnessSlider",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "hapticBrightnessSlider" ]
+    }, {
+      "name" : "recordIssueQsTile",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "recordIssueQsTile" ]
+    }, {
+      "name" : "screenshotPrivateProfileAccessibilityAnnouncementFix",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "screenshotPrivateProfileAccessibilityAnnouncementFix" ]
+    }, {
+      "name" : "floatingMenuAnimatedTuck",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "floatingMenuAnimatedTuck" ]
+    }, {
+      "name" : "notificationOverExpansionClippingFix",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "notificationOverExpansionClippingFix" ]
+    }, {
+      "name" : "getConnectedDeviceNameUnsynchronized",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "getConnectedDeviceNameUnsynchronized" ]
+    }, {
+      "name" : "notificationsHeadsUpRefactor",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "notificationsHeadsUpRefactor" ]
+    }, {
+      "name" : "delayedWakelockReleaseOnBackgroundThread",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "delayedWakelockReleaseOnBackgroundThread" ]
+    }, {
+      "name" : "sliceManagerBinderCallBackground",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "sliceManagerBinderCallBackground" ]
+    }, {
+      "name" : "notificationBackgroundTintOptimization",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "notificationBackgroundTintOptimization" ]
+    }, {
+      "name" : "predictiveBackAnimateDialogs",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "predictiveBackAnimateDialogs" ]
+    }, {
+      "name" : "glanceableHubFullscreenSwipe",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "glanceableHubFullscreenSwipe" ]
+    }, {
+      "name" : "migrateClocksToBlueprint",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "migrateClocksToBlueprint" ]
+    }, {
+      "name" : "glanceableHubAllowKeyguardWhenDreaming",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "glanceableHubAllowKeyguardWhenDreaming" ]
+    }, {
+      "name" : "centralizedStatusBarHeightFix",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "centralizedStatusBarHeightFix" ]
+    }, {
+      "name" : "saveAndRestoreMagnificationSettingsButtons",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "saveAndRestoreMagnificationSettingsButtons" ]
+    }, {
+      "name" : "sceneContainer",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "sceneContainer" ]
+    }, {
+      "name" : "translucentOccludingActivityFix",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "translucentOccludingActivityFix" ]
+    }, {
+      "name" : "qsNewTiles",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "qsNewTiles" ]
+    }, {
+      "name" : "registerNewWalletCardInBackground",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "registerNewWalletCardInBackground" ]
+    }, {
+      "name" : "activityTransitionUseLargestWindow",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "activityTransitionUseLargestWindow" ]
+    }, {
+      "name" : "notificationColorUpdateLogger",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "notificationColorUpdateLogger" ]
+    }, {
+      "name" : "dreamOverlayBouncerSwipeDirectionFiltering",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "dreamOverlayBouncerSwipeDirectionFiltering" ]
+    }, {
+      "name" : "screenshotActionDismissSystemWindows",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "screenshotActionDismissSystemWindows" ]
+    }, {
+      "name" : "floatingMenuOverlapsNavBarsFlag",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "floatingMenuOverlapsNavBarsFlag" ]
+    }, {
+      "name" : "ensureWallpaperInTransitions",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "ensureWallpaperInTransitions" ]
+    }, {
+      "name" : "multiCrop",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "multiCrop" ]
+    }, {
+      "name" : "insetsDecoupledConfiguration",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "insetsDecoupledConfiguration" ]
+    }, {
+      "name" : "enableDesktopWindowingSizeConstraints",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableDesktopWindowingSizeConstraints" ]
+    }, {
+      "name" : "activityEmbeddingAnimationCustomizationFlag",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "activityEmbeddingAnimationCustomizationFlag" ]
+    }, {
+      "name" : "enableDesktopWindowingTaskLimit",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableDesktopWindowingTaskLimit" ]
+    }, {
+      "name" : "enforceEdgeToEdge",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enforceEdgeToEdge" ]
+    }, {
+      "name" : "noVisibilityEventOnDisplayStateChange",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "noVisibilityEventOnDisplayStateChange" ]
+    }, {
+      "name" : "transitReadyTracking",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "transitReadyTracking" ]
+    }, {
+      "name" : "configurableFontScaleDefault",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "configurableFontScaleDefault" ]
+    }, {
+      "name" : "enableAppHeaderWithTaskDensity",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableAppHeaderWithTaskDensity" ]
+    }, {
+      "name" : "untrustedEmbeddingStateSharing",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "untrustedEmbeddingStateSharing" ]
+    }, {
+      "name" : "drawSnapshotAspectRatioMatch",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "drawSnapshotAspectRatioMatch" ]
+    }, {
+      "name" : "enableAdditionalWindowsAboveStatusBar",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableAdditionalWindowsAboveStatusBar" ]
+    }, {
+      "name" : "appCompatRefactoring",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "appCompatRefactoring" ]
+    }, {
+      "name" : "windowTokenConfigThreadSafe",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "windowTokenConfigThreadSafe" ]
+    }, {
+      "name" : "activityEmbeddingInteractiveDividerFlag",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "activityEmbeddingInteractiveDividerFlag" ]
+    }, {
+      "name" : "enableCompatuiSysuiLauncher",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableCompatuiSysuiLauncher" ]
+    }, {
+      "name" : "density390Api",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "density390Api" ]
+    }, {
+      "name" : "balRequireOptInByPendingIntentCreator",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "balRequireOptInByPendingIntentCreator" ]
+    }, {
+      "name" : "useWindowOriginalTouchableRegionWhenMagnificationRecomputeBounds",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "useWindowOriginalTouchableRegionWhenMagnificationRecomputeBounds" ]
+    }, {
+      "name" : "noConsecutiveVisibilityEvents",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "noConsecutiveVisibilityEvents" ]
+    }, {
+      "name" : "enableCameraCompatForDesktopWindowing",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableCameraCompatForDesktopWindowing" ]
+    }, {
+      "name" : "enableDesktopWindowingTaskbarRunningApps",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableDesktopWindowingTaskbarRunningApps" ]
+    }, {
+      "name" : "delayNotificationToMagnificationWhenRecentsWindowToFrontTransition",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "delayNotificationToMagnificationWhenRecentsWindowToFrontTransition" ]
+    }, {
+      "name" : "enableTaskStackObserverInShell",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableTaskStackObserverInShell" ]
+    }, {
+      "name" : "fullscreenDimFlag",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "fullscreenDimFlag" ]
+    }, {
+      "name" : "closeToSquareConfigIncludesStatusBar",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "closeToSquareConfigIncludesStatusBar" ]
+    }, {
+      "name" : "wallpaperOffsetAsync",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "wallpaperOffsetAsync" ]
+    }, {
+      "name" : "supportsMultiInstanceSystemUi",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "supportsMultiInstanceSystemUi" ]
+    }, {
+      "name" : "surfaceControlInputReceiver",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "surfaceControlInputReceiver" ]
+    }, {
+      "name" : "enableBufferTransformHintFromDisplay",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableBufferTransformHintFromDisplay" ]
+    }, {
+      "name" : "enableWmExtensionsForAllFlag",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableWmExtensionsForAllFlag" ]
+    }, {
+      "name" : "immersiveAppRepositioning",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "immersiveAppRepositioning" ]
+    }, {
+      "name" : "movableCutoutConfiguration",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "movableCutoutConfiguration" ]
+    }, {
+      "name" : "waitForTransitionOnDisplaySwitch",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "waitForTransitionOnDisplaySwitch" ]
+    }, {
+      "name" : "enableDesktopWindowingScvhCache",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableDesktopWindowingScvhCache" ]
+    }, {
+      "name" : "taskFragmentSystemOrganizerFlag",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "taskFragmentSystemOrganizerFlag" ]
+    }, {
+      "name" : "userMinAspectRatioAppDefault",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "userMinAspectRatioAppDefault" ]
+    }, {
+      "name" : "skipSleepingWhenSwitchingDisplay",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "skipSleepingWhenSwitchingDisplay" ]
+    }, {
+      "name" : "balImproveRealCallerVisibilityCheck",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "balImproveRealCallerVisibilityCheck" ]
+    }, {
+      "name" : "allowsScreenSizeDecoupledFromStatusBarAndCutout",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "allowsScreenSizeDecoupledFromStatusBarAndCutout" ]
+    }, {
+      "name" : "balDontBringExistingBackgroundTaskStackToFg",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "balDontBringExistingBackgroundTaskStackToFg" ]
+    }, {
+      "name" : "balShowToastsBlocked",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "balShowToastsBlocked" ]
+    }, {
+      "name" : "balImprovedMetrics",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "balImprovedMetrics" ]
+    }, {
+      "name" : "deferDisplayUpdates",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "deferDisplayUpdates" ]
+    }, {
+      "name" : "sdkDesiredPresentTime",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "sdkDesiredPresentTime" ]
+    }, {
+      "name" : "fifoPriorityForMajorUiProcesses",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "fifoPriorityForMajorUiProcesses" ]
+    }, {
+      "name" : "bundleClientTransactionFlag",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "bundleClientTransactionFlag" ]
+    }, {
+      "name" : "insetsControlSeq",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "insetsControlSeq" ]
+    }, {
+      "name" : "moveAnimationOptionsToChange",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "moveAnimationOptionsToChange" ]
+    }, {
+      "name" : "introduceSmootherDimmer",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "introduceSmootherDimmer" ]
+    }, {
+      "name" : "rearDisplayDisableForceDesktopSystemDecorations",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "rearDisplayDisableForceDesktopSystemDecorations" ]
+    }, {
+      "name" : "offloadColorExtraction",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "offloadColorExtraction" ]
+    }, {
+      "name" : "deleteCaptureDisplay",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "deleteCaptureDisplay" ]
+    }, {
+      "name" : "blastSyncNotificationShadeOnDisplaySwitch",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "blastSyncNotificationShadeOnDisplaySwitch" ]
+    }, {
+      "name" : "balRespectAppSwitchStateWhenCheckBoundByForegroundUid",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "balRespectAppSwitchStateWhenCheckBoundByForegroundUid" ]
+    }, {
+      "name" : "enableWindowingEdgeDragResize",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableWindowingEdgeDragResize" ]
+    }, {
+      "name" : "navBarTransparentByDefault",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "navBarTransparentByDefault" ]
+    }, {
+      "name" : "activityWindowInfoFlag",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "activityWindowInfoFlag" ]
+    }, {
+      "name" : "releaseSnapshotAggressively",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "releaseSnapshotAggressively" ]
+    }, {
+      "name" : "alwaysDrawMagnificationFullscreenBorder",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "alwaysDrawMagnificationFullscreenBorder" ]
+    }, {
+      "name" : "activityEmbeddingOverlayPresentationFlag",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "activityEmbeddingOverlayPresentationFlag" ]
+    }, {
+      "name" : "embeddedActivityBackNavFlag",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "embeddedActivityBackNavFlag" ]
+    }, {
+      "name" : "enableWindowingDynamicInitialBounds",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableWindowingDynamicInitialBounds" ]
+    }, {
+      "name" : "alwaysUpdateWallpaperPermission",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "alwaysUpdateWallpaperPermission" ]
+    }, {
+      "name" : "windowSessionRelayoutInfo",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "windowSessionRelayoutInfo" ]
+    }, {
+      "name" : "secureWindowState",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "secureWindowState" ]
+    }, {
+      "name" : "surfaceTrustedOverlay",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "surfaceTrustedOverlay" ]
+    }, {
+      "name" : "balRequireOptInSameUid",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "balRequireOptInSameUid" ]
+    }, {
+      "name" : "letterboxBackgroundWallpaper",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "letterboxBackgroundWallpaper" ]
+    }, {
+      "name" : "disableObjectPool",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "disableObjectPool" ]
+    }, {
+      "name" : "explicitRefreshRateHints",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "explicitRefreshRateHints" ]
+    }, {
+      "name" : "enableThemedAppHeaders",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableThemedAppHeaders" ]
+    }, {
+      "name" : "enableDesktopWindowingWallpaperActivity",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableDesktopWindowingWallpaperActivity" ]
+    }, {
+      "name" : "predictiveBackSystemAnims",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "predictiveBackSystemAnims" ]
+    }, {
+      "name" : "balShowToasts",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "balShowToasts" ]
+    }, {
+      "name" : "allowHideScmButton",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "allowHideScmButton" ]
+    }, {
+      "name" : "setScPropertiesInClient",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "setScPropertiesInClient" ]
+    }, {
+      "name" : "cameraCompatForFreeform",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "cameraCompatForFreeform" ]
+    }, {
+      "name" : "removePrepareSurfaceInPlacement",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "removePrepareSurfaceInPlacement" ]
+    }, {
+      "name" : "enableDesktopWindowingImmersiveHandleHiding",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableDesktopWindowingImmersiveHandleHiding" ]
+    }, {
+      "name" : "delegateUnhandledDrags",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "delegateUnhandledDrags" ]
+    }, {
+      "name" : "fixNoContainerUpdateWithoutResize",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "fixNoContainerUpdateWithoutResize" ]
+    }, {
+      "name" : "enableDesktopWindowingModalsPolicy",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableDesktopWindowingModalsPolicy" ]
+    }, {
+      "name" : "insetsControlChangedItem",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "insetsControlChangedItem" ]
+    }, {
+      "name" : "edgeToEdgeByDefault",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "edgeToEdgeByDefault" ]
+    }, {
+      "name" : "allowDisableActivityRecordInputSink",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "allowDisableActivityRecordInputSink" ]
+    }, {
+      "name" : "fixPipRestoreToOverlay",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "fixPipRestoreToOverlay" ]
+    }, {
+      "name" : "coverDisplayOptIn",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "coverDisplayOptIn" ]
+    }, {
+      "name" : "syncScreenCapture",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "syncScreenCapture" ]
+    }, {
+      "name" : "activitySnapshotByDefault",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "activitySnapshotByDefault" ]
+    }, {
+      "name" : "trustedPresentationListenerForWindow",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "trustedPresentationListenerForWindow" ]
+    }, {
+      "name" : "enableScaledResizing",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableScaledResizing" ]
+    }, {
+      "name" : "untrustedEmbeddingAnyAppPermission",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "untrustedEmbeddingAnyAppPermission" ]
+    }, {
+      "name" : "getDimmerOnClosing",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "getDimmerOnClosing" ]
+    }, {
+      "name" : "screenRecordingCallbacks",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "screenRecordingCallbacks" ]
+    }, {
+      "name" : "enableDesktopWindowingQuickSwitch",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableDesktopWindowingQuickSwitch" ]
+    }, {
+      "name" : "enableDesktopWindowingMode",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableDesktopWindowingMode" ]
+    }, {
+      "name" : "appCompatPropertiesApi",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "appCompatPropertiesApi" ]
+    }, {
+      "name" : "keyguardAppearTransition",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "keyguardAppearTransition" ]
+    }, {
+      "name" : "disableThinLetterboxingPolicy",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "disableThinLetterboxingPolicy" ]
+    }, {
+      "name" : "alwaysDeferTransitionWhenApplyWct",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "alwaysDeferTransitionWhenApplyWct" ]
+    }, {
+      "name" : "doNotCheckIntersectionWhenNonMagnifiableWindowTransitions",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "doNotCheckIntersectionWhenNonMagnifiableWindowTransitions" ]
+    }, {
+      "name" : "enableHomeTransitionListener",
+      "visibility" : "public",
+      "methodCalls" : [ "enableHomeTransitionListener", "getValue" ]
+    }, {
+      "name" : "enableOverviewIconMenu",
+      "visibility" : "public",
+      "methodCalls" : [ "enableOverviewIconMenu", "getValue" ]
+    }, {
+      "name" : "privateSpaceAnimation",
+      "visibility" : "public",
+      "methodCalls" : [ "privateSpaceAnimation", "getValue" ]
+    }, {
+      "name" : "enableResponsiveWorkspace",
+      "visibility" : "public",
+      "methodCalls" : [ "enableResponsiveWorkspace", "getValue" ]
+    }, {
+      "name" : "enableWidgetTapToAdd",
+      "visibility" : "public",
+      "methodCalls" : [ "enableWidgetTapToAdd", "getValue" ]
+    }, {
+      "name" : "enableAdditionalHomeAnimations",
+      "visibility" : "public",
+      "methodCalls" : [ "enableAdditionalHomeAnimations", "getValue" ]
+    }, {
+      "name" : "enablePredictiveBackGesture",
+      "visibility" : "public",
+      "methodCalls" : [ "enablePredictiveBackGesture", "getValue" ]
+    }, {
+      "name" : "enableTabletTwoPanePickerV2",
+      "visibility" : "public",
+      "methodCalls" : [ "enableTabletTwoPanePickerV2", "getValue" ]
+    }, {
+      "name" : "enableFallbackOverviewInWindow",
+      "visibility" : "public",
+      "methodCalls" : [ "enableFallbackOverviewInWindow", "getValue" ]
+    }, {
+      "name" : "enabledFoldersInAllApps",
+      "visibility" : "public",
+      "methodCalls" : [ "enabledFoldersInAllApps", "getValue" ]
+    }, {
+      "name" : "enableFirstScreenBroadcastArchivingExtras",
+      "visibility" : "public",
+      "methodCalls" : [ "enableFirstScreenBroadcastArchivingExtras", "getValue" ]
+    }, {
+      "name" : "enableGridOnlyOverview",
+      "visibility" : "public",
+      "methodCalls" : [ "enableGridOnlyOverview", "getValue" ]
+    }, {
+      "name" : "enableRecentsInTaskbar",
+      "visibility" : "public",
+      "methodCalls" : [ "enableRecentsInTaskbar", "getValue" ]
+    }, {
+      "name" : "enableTaskbarNoRecreate",
+      "visibility" : "public",
+      "methodCalls" : [ "enableTaskbarNoRecreate", "getValue" ]
+    }, {
+      "name" : "privateSpaceAppInstallerButton",
+      "visibility" : "public",
+      "methodCalls" : [ "privateSpaceAppInstallerButton", "getValue" ]
+    }, {
+      "name" : "enableCategorizedWidgetSuggestions",
+      "visibility" : "public",
+      "methodCalls" : [ "enableCategorizedWidgetSuggestions", "getValue" ]
+    }, {
+      "name" : "floatingSearchBar",
+      "visibility" : "public",
+      "methodCalls" : [ "floatingSearchBar", "getValue" ]
+    }, {
+      "name" : "enableUnfoldedTwoPanePicker",
+      "visibility" : "public",
+      "methodCalls" : [ "enableUnfoldedTwoPanePicker", "getValue" ]
+    }, {
+      "name" : "enableTaskbarCustomization",
+      "visibility" : "public",
+      "methodCalls" : [ "enableTaskbarCustomization", "getValue" ]
+    }, {
+      "name" : "enableSmartspaceRemovalToggle",
+      "visibility" : "public",
+      "methodCalls" : [ "enableSmartspaceRemovalToggle", "getValue" ]
+    }, {
+      "name" : "enableHandleDelayedGestureCallbacks",
+      "visibility" : "public",
+      "methodCalls" : [ "enableHandleDelayedGestureCallbacks", "getValue" ]
+    }, {
+      "name" : "privateSpaceAddFloatingMaskView",
+      "visibility" : "public",
+      "methodCalls" : [ "privateSpaceAddFloatingMaskView", "getValue" ]
+    }, {
+      "name" : "enableSupportForArchiving",
+      "visibility" : "public",
+      "methodCalls" : [ "enableSupportForArchiving", "getValue" ]
+    }, {
+      "name" : "enablePrivateSpace",
+      "visibility" : "public",
+      "methodCalls" : [ "enablePrivateSpace", "getValue" ]
+    }, {
+      "name" : "enableGridMigrationFix",
+      "visibility" : "public",
+      "methodCalls" : [ "enableGridMigrationFix", "getValue" ]
+    }, {
+      "name" : "enableCursorHoverStates",
+      "visibility" : "public",
+      "methodCalls" : [ "enableCursorHoverStates", "getValue" ]
+    }, {
+      "name" : "enableRebootUnlockAnimation",
+      "visibility" : "public",
+      "methodCalls" : [ "enableRebootUnlockAnimation", "getValue" ]
+    }, {
+      "name" : "useActivityOverlay",
+      "visibility" : "public",
+      "methodCalls" : [ "useActivityOverlay", "getValue" ]
+    }, {
+      "name" : "enableShortcutDontSuggestApp",
+      "visibility" : "public",
+      "methodCalls" : [ "enableShortcutDontSuggestApp", "getValue" ]
+    }, {
+      "name" : "enableExpandingPauseWorkButton",
+      "visibility" : "public",
+      "methodCalls" : [ "enableExpandingPauseWorkButton", "getValue" ]
+    }, {
+      "name" : "returnAnimationFrameworkLibrary",
+      "visibility" : "public",
+      "methodCalls" : [ "returnAnimationFrameworkLibrary", "getValue" ]
+    }, {
+      "name" : "exampleSharedFlag",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "exampleSharedFlag" ]
+    }, {
+      "name" : "bouncerAreaExclusion",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "bouncerAreaExclusion" ]
+    }, {
+      "name" : "getFlagNames",
+      "visibility" : "public",
+      "methodCalls" : [ "asList" ]
+    }, {
+      "name" : "shadeAllowBackGesture",
+      "visibility" : "public",
+      "methodCalls" : [ "shadeAllowBackGesture", "getValue" ]
+    }, {
+      "name" : "sidefpsControllerRefactor",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "sidefpsControllerRefactor" ]
+    }, {
+      "name" : "enableHomeDelay",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableHomeDelay" ]
+    }, {
+      "name" : "isFlagReadOnlyOptimized",
+      "visibility" : "public",
+      "methodCalls" : [ "contains" ]
+    }, {
+      "name" : "enableAppPairs",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableAppPairs" ]
+    }, {
+      "name" : "enableBubblesLongPressNavHandle",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableBubblesLongPressNavHandle" ]
+    }, {
+      "name" : "enableBubbleAnything",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableBubbleAnything" ]
+    }, {
+      "name" : "onlyReuseBubbledTaskWhenLaunchedFromBubble",
+      "visibility" : "public",
+      "methodCalls" : [ "onlyReuseBubbledTaskWhenLaunchedFromBubble", "getValue" ]
+    }, {
+      "name" : "animateBubbleSizeChange",
+      "visibility" : "public",
+      "methodCalls" : [ "animateBubbleSizeChange", "getValue" ]
+    }, {
+      "name" : "enableBubbleBar",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableBubbleBar" ]
+    }, {
+      "name" : "enableTaskbarNavbarUnification",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableTaskbarNavbarUnification" ]
+    }, {
+      "name" : "enableBubbleStashing",
+      "visibility" : "public",
+      "methodCalls" : [ "enableBubbleStashing", "getValue" ]
+    }, {
+      "name" : "enableRetrievableBubbles",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableRetrievableBubbles" ]
+    }, {
+      "name" : "enablePipUmoExperience",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enablePipUmoExperience" ]
+    }, {
+      "name" : "enableLeftRightSplitInPortrait",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableLeftRightSplitInPortrait" ]
+    }, {
+      "name" : "enableNewBubbleAnimations",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableNewBubbleAnimations" ]
+    }, {
+      "name" : "enableOptionalBubbleOverflow",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableOptionalBubbleOverflow" ]
+    }, {
+      "name" : "enablePip2Implementation",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enablePip2Implementation" ]
+    }, {
+      "name" : "enableTinyTaskbar",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "enableTinyTaskbar" ]
+    }, {
+      "name" : "enableSplitContextual",
+      "visibility" : "public",
+      "methodCalls" : [ "enableSplitContextual", "getValue" ]
+    }, {
+      "name" : "privateSpaceRestrictAccessibilityDrag",
+      "visibility" : "public",
+      "methodCalls" : [ "privateSpaceRestrictAccessibilityDrag", "getValue" ]
+    }, {
+      "name" : "privateSpaceRestrictItemDrag",
+      "visibility" : "public",
+      "methodCalls" : [ "privateSpaceRestrictItemDrag", "getValue" ]
+    }, {
+      "name" : "enableScalingRevealHomeAnimation",
+      "visibility" : "public",
+      "methodCalls" : [ "enableScalingRevealHomeAnimation", "getValue" ]
+    }, {
+      "name" : "enableTwoPaneLauncherSettings",
+      "visibility" : "public",
+      "methodCalls" : [ "enableTwoPaneLauncherSettings", "getValue" ]
+    }, {
+      "name" : "enableTwolineToggle",
+      "visibility" : "public",
+      "methodCalls" : [ "enableTwolineToggle", "getValue" ]
+    }, {
+      "name" : "enableRefactorTaskThumbnail",
+      "visibility" : "public",
+      "methodCalls" : [ "enableRefactorTaskThumbnail", "getValue" ]
+    }, {
+      "name" : "forceMonochromeAppIcons",
+      "visibility" : "public",
+      "methodCalls" : [ "forceMonochromeAppIcons", "getValue" ]
+    }, {
+      "name" : "enableNarrowGridRestore",
+      "visibility" : "public",
+      "methodCalls" : [ "enableNarrowGridRestore", "getValue" ]
+    }, {
+      "name" : "enablePrivateSpaceInstallShortcut",
+      "visibility" : "public",
+      "methodCalls" : [ "enablePrivateSpaceInstallShortcut", "getValue" ]
+    }, {
+      "name" : "enableWorkspaceInflation",
+      "visibility" : "public",
+      "methodCalls" : [ "enableWorkspaceInflation", "getValue" ]
+    }, {
+      "name" : "enableUnfoldStateAnimation",
+      "visibility" : "public",
+      "methodCalls" : [ "enableUnfoldStateAnimation", "getValue" ]
+    }, {
+      "name" : "enableTaskbarPinning",
+      "visibility" : "public",
+      "methodCalls" : [ "enableTaskbarPinning", "getValue" ]
+    }, {
+      "name" : "enableTwolineAllapps",
+      "visibility" : "public",
+      "methodCalls" : [ "enableTwolineAllapps", "getValue" ]
+    }, {
+      "name" : "enableSmartspaceAsAWidget",
+      "visibility" : "public",
+      "methodCalls" : [ "enableSmartspaceAsAWidget", "getValue" ]
+    }, {
+      "name" : "enableGeneratedPreviews",
+      "visibility" : "public",
+      "methodCalls" : [ "enableGeneratedPreviews", "getValue" ]
+    }, {
+      "name" : "enableLauncherBrMetricsFixed",
+      "visibility" : "public",
+      "methodCalls" : [ "enableLauncherBrMetricsFixed", "getValue" ]
+    }, {
+      "name" : "enableFocusOutline",
+      "visibility" : "public",
+      "methodCalls" : [ "enableFocusOutline", "getValue" ]
+    }, {
+      "name" : "enableAddAppWidgetViaConfigActivityV2",
+      "visibility" : "public",
+      "methodCalls" : [ "enableAddAppWidgetViaConfigActivityV2", "getValue" ]
+    } ],
+    "imports" : [ "java.util.function.Predicate", "java.util.Arrays", "java.util.List", "java.util.function.BiPredicate", "java.util.Set", "java.util.HashSet" ]
+  } ]
+}

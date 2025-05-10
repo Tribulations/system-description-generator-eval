@@ -1,0 +1,849 @@
+{
+  "systemName" : "ambari",
+  "classes" : [ {
+    "name" : "AmbariManagementControllerImpl",
+    "packageName" : "org.apache.ambari.server.controller",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ "AmbariManagementController" ],
+    "methods" : [ {
+      "name" : "getPackagesForServiceHost",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll", "getPackages", "getOsSpecifics", "containsKey", "get", "populateServicePackagesInfo" ]
+    }, {
+      "name" : "deleteCluster",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "getHostNames", "deleteCluster", "createClusterResource", "handleRequest", "delete", "remove", "getClusterName", "canBeRemoved", "values", "getCluster", "info" ]
+    }, {
+      "name" : "getBlueprintProvisioningStates",
+      "visibility" : "public",
+      "methodCalls" : [ "getServiceComponentHosts", "getDesiredStateEntity", "getHostName", "getBlueprintProvisioningState", "getCluster", "put", "getHostById", "isClientComponent", "getServiceComponentName" ]
+    }, {
+      "name" : "getAuthName",
+      "visibility" : "public",
+      "methodCalls" : [ "getAuthenticatedName", "getAnonymousAuditName" ]
+    }, {
+      "name" : "getServiceComponentFactory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getLoggingSearchPropertyProvider",
+      "visibility" : "public",
+      "methodCalls" : [ "getInstance" ]
+    }, {
+      "name" : "validateClusterName",
+      "visibility" : "public",
+      "methodCalls" : [ "matcher", "isEmpty", "matches" ]
+    }, {
+      "name" : "getConfigGroupFactory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "deleteHostComponents",
+      "visibility" : "public",
+      "methodCalls" : [ "getExceptionForKeys", "getService", "values", "getServiceComponentHosts", "validateServiceComponentHostRequest", "getServiceComponent", "getServiceName", "next", "of", "containsKey", "keySet", "put", "iterator", "containsValue", "add", "getValue", "getHostname", "getHostName", "getCluster", "equals", "addException", "setServiceName", "getMessage", "getClusterName", "getResourceId", "isAuthorized", "size", "info", "entrySet", "getServiceComponentHost", "isEmpty", "getServiceComponentName", "getKey", "getDeletedKeys", "getComponentName", "singletonList", "get", "findServiceName", "putIfAbsent", "processDeleteByMetaData", "deleteServiceComponentHosts", "createHostComponentResource", "handleRequest" ]
+    }, {
+      "name" : "findConfigurationTagsWithOverrides",
+      "visibility" : "public",
+      "methodCalls" : [ "getEffectiveDesiredTags" ]
+    }, {
+      "name" : "createAndPersistStages",
+      "visibility" : "public",
+      "methodCalls" : [ "getRequestStatusResponse", "addStages", "persist" ]
+    }, {
+      "name" : "getConfigGroupUpdateResults",
+      "visibility" : "public",
+      "methodCalls" : [ "getIfPresent" ]
+    }, {
+      "name" : "getMetricsCollectorHAManager",
+      "visibility" : "public",
+      "methodCalls" : [ "getInstance" ]
+    }, {
+      "name" : "getStackServices",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll", "getStackVersion", "setStackName", "getStackName", "setStackVersion", "size", "createStackServiceResource", "handleRequest", "getServices", "singleton", "put", "getComment", "getName", "add", "get", "containsKey", "getDisplayName", "getVersion" ]
+    }, {
+      "name" : "getClusterMetadataOnConfigsUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "getMetadataAgentConfigs", "getDesiredStackVersion", "getMetadataClusterLevelParams", "getClusterId", "clusterLevelParamsMetadataCluster", "put" ]
+    }, {
+      "name" : "getMetricPropertyProviderFactory",
+      "visibility" : "public",
+      "methodCalls" : [ "getInstance" ]
+    }, {
+      "name" : "getServerDB",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMysqljdbcUrl",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "initializeWidgetsAndLayouts",
+      "visibility" : "public",
+      "methodCalls" : [ "error", "add", "getType", "fromJson", "getService", "values", "warn", "getCommonWidgetsDescriptorFile", "getWidgetsDescriptorFile", "exists", "createWidgetsAndLayouts" ]
+    }, {
+      "name" : "getHealthyHost",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "isEmpty", "shuffle", "selectHealthyHosts" ]
+    }, {
+      "name" : "getGroups",
+      "visibility" : "public",
+      "methodCalls" : [ "isUpgrade", "size", "getGroupName", "getGroupType", "getAllGroups", "add", "isLdapGroup", "debug", "getGroup", "handleRequest" ]
+    }, {
+      "name" : "updateMembers",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "add", "removeMemberFromGroup", "getGroupName", "addMemberToGroup", "subtract", "getAllMembers", "getUserName", "handleRequest" ]
+    }, {
+      "name" : "selectHealthyHosts",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "getHost", "getState" ]
+    }, {
+      "name" : "getActionManager",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "updateExtensionLink",
+      "visibility" : "public",
+      "methodCalls" : [ "getStackName", "findById", "getExtensionName", "updateExtensionLink", "getLinkId", "getExtension", "getStackVersion", "getStack", "format", "parseLong", "getExtensionVersion", "getStackManager", "equals", "getVersion", "merge", "setExtension", "warn", "validateUpdateLink", "getName", "find", "debug", "handleRequest", "createExtensionLinkResource" ]
+    }, {
+      "name" : "getServiceConfigVersions",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll", "put", "unlock", "getCreateTime", "equals", "readLock", "convertToServiceConfigVersionResponse", "getServiceConfigs", "getClusterId", "add", "getVersion", "lock", "get", "containsKey", "getServiceName", "values", "getGroupName", "setIsCurrent", "getGroupId" ]
+    }, {
+      "name" : "saveConfigGroupUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "put" ]
+    }, {
+      "name" : "getHostComponents",
+      "visibility" : "public",
+      "methodCalls" : [ "emptySet", "get", "isInstance", "debug", "getCause", "addAll", "size", "getHostname", "handleRequest", "createHostComponentResource", "equals" ]
+    }, {
+      "name" : "getAmbariEventPublisher",
+      "visibility" : "public",
+      "methodCalls" : [ "getInstance" ]
+    }, {
+      "name" : "getRoleGraphFactory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getRootServices",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll", "size", "getServiceName", "add", "singleton", "toString", "valueOf", "values", "createServiceResource", "handleRequest" ]
+    }, {
+      "name" : "getClusters",
+      "visibility" : "public",
+      "methodCalls" : [ "size", "addAll", "handleRequest", "createClusterResource", "unmodifiableMap" ]
+    }, {
+      "name" : "getClusterMetadata",
+      "visibility" : "public",
+      "methodCalls" : [ "getDesiredStackVersion", "getMetadataServiceLevelParams", "toString", "getMetadataClusterLevelParams", "getSecurityType", "getClusterId", "getMetadataAgentConfigs", "put" ]
+    }, {
+      "name" : "createCluster",
+      "visibility" : "public",
+      "methodCalls" : [ "mapAndPublishHostsToCluster", "getHostNames", "getStackName", "getClusterId", "initializeWidgetsAndLayouts", "addCluster", "toString", "getCluster", "getSecurityType", "getHost", "debug", "isEmpty", "getClusterName", "append", "getStackVersion", "getStack", "isDebugEnabled", "createClusterResource", "handleRequest" ]
+    }, {
+      "name" : "getClusterMetadataOnServiceCredentialStoreUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "getMetadataAgentConfigs", "serviceLevelParamsMetadataCluster", "getClusterId", "put", "getMetadataServiceLevelParams", "toString" ]
+    }, {
+      "name" : "getJavaHome",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMetadataClusterLevelParams",
+      "visibility" : "public",
+      "methodCalls" : [ "getStackName", "putAll", "getClusterName", "getStackVersion", "put", "getProperty" ]
+    }, {
+      "name" : "registerMpack",
+      "visibility" : "public",
+      "methodCalls" : [ "setResourceId", "populateDB", "getRegistryId", "put", "getMpackUri", "getMpackVersion", "setMpackUri", "getDefinition", "getVersion", "validateMpackInfo", "setRegistryId", "info", "getMpackName", "getName", "populateStackDB", "downloadMpack", "updateStacks", "clear", "registerMpack" ]
+    }, {
+      "name" : "getStackLevelConfigurations",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll", "getStackName", "setStackVersion", "getStackVersion", "setStackName", "handleRequest", "createStackLevelConfigurationsResource" ]
+    }, {
+      "name" : "getExtensions",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "getName", "add", "values", "addAll", "size", "isEmpty", "handleRequest", "createExtensionResource", "getExtensions" ]
+    }, {
+      "name" : "getMetadataAgentConfigs",
+      "visibility" : "public",
+      "methodCalls" : [ "keySet", "put", "get", "getAgentConfigsMap" ]
+    }, {
+      "name" : "createHostComponents",
+      "visibility" : "public",
+      "methodCalls" : [ "getComponentName", "validateServiceComponentHostRequest", "getKey", "entrySet", "getValue", "info", "collect", "newServices", "map", "toSet", "flatMap", "stream", "createHostComponentResource", "handleRequest", "getServiceComponent", "getCluster", "getAddedComponentsTopologyEvent", "setServiceName", "size", "add", "getClustersForHost", "getService", "getDesiredState", "findServiceName", "getResourceId", "getServiceName", "of", "getHost", "contains", "put", "updateData", "isAuthorized", "containsKey", "persistServiceComponentHosts", "isDebugEnabled", "getHostname", "getServiceComponentHost", "getHostName", "get", "valueOf", "join", "isEmpty", "isValidDesiredState", "getClusterName", "createHostComponents", "debug", "equals", "warn" ]
+    }, {
+      "name" : "getKerberosHelper",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getExtensionVersions",
+      "visibility" : "public",
+      "methodCalls" : [ "getExtensionName", "size", "addAll", "setExtensionName", "handleRequest", "createExtensionVersionResource" ]
+    }, {
+      "name" : "getOjdbcUrl",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getExecutionScheduleManager",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCredentialStoreService",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getJDKName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "findServiceName",
+      "visibility" : "public",
+      "methodCalls" : [ "getServiceByComponentName", "getName" ]
+    }, {
+      "name" : "getRootServiceResponseFactory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTimelineMetricCacheProvider",
+      "visibility" : "public",
+      "methodCalls" : [ "getInstance" ]
+    }, {
+      "name" : "saveClusterUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "put" ]
+    }, {
+      "name" : "createGroups",
+      "visibility" : "public",
+      "methodCalls" : [ "create", "size", "add", "publish", "createGroup", "isBlank", "getGroup", "getGroupName" ]
+    }, {
+      "name" : "getLoggingService",
+      "visibility" : "public",
+      "methodCalls" : [ "injectMembers" ]
+    }, {
+      "name" : "getMetadataAmbariLevelParams",
+      "visibility" : "public",
+      "methodCalls" : [ "valueOf", "putAll", "getClientSSLApiPort", "areHostsSysPrepped", "getValue", "getJDKName", "getAmbariJavaHome", "toString", "getApiSSLAuthentication", "getDatabaseConnectorNames", "getKey", "getPreviousDatabaseConnectorNames", "put", "getJavaHome", "getClientApiPort", "getJavaVersion", "entrySet", "getServerDB", "getRcaParameters", "getJCEName", "isAgentStackRetryOnInstallEnabled", "getOjdbcUrl", "getGplLicenseAccepted", "getJdkResourceUrl", "getHostName", "getMysqljdbcUrl", "getMySQLJarName", "getAgentStackRetryOnInstallCount" ]
+    }, {
+      "name" : "getRoleCommandOrder",
+      "visibility" : "public",
+      "methodCalls" : [ "size", "getClusterId", "getInstance", "append", "getServiceComponent", "toHashCode", "get", "add", "put", "getService", "initialize", "getServiceComponentHosts", "getCluster", "getRoleCommandOrder" ]
+    }, {
+      "name" : "createServiceConfigVersion",
+      "visibility" : "public",
+      "methodCalls" : [ "getClusterId", "getDesiredStack", "getCreateTimestamp", "setClusterEntity", "getVersion", "values", "getValue", "getDesiredStackId", "unlock", "merge", "writeLock", "getHostName", "map", "lock", "getName", "getHosts", "isNotEmpty", "getChangedConfigTypes", "size", "getClusterEntity", "find", "stream", "getType", "publish", "setVersion", "collect", "info", "setNote", "findConfig", "add", "setClusterConfigEntities", "setGroupId", "create", "setServiceName", "getNote", "entrySet", "findNextServiceConfigVersion", "toList", "setUser", "setHostIds", "getClusterName", "keySet", "get", "setStack", "getTag", "getConfigurations", "getId" ]
+    }, {
+      "name" : "getMetadataServiceLevelParams",
+      "visibility" : "public",
+      "methodCalls" : [ "putAll", "getStackId", "getDesiredRepositoryVersion", "getStatusCommandTimeout", "getCommandScript", "getValue", "getService", "isCredentialStoreEnabled", "getCredentialStoreEnabledProperties", "getVersion", "entrySet", "getName", "getMetadataServiceLevelParams", "getStackName", "get", "put", "getServicePackageFolder", "getStackVersion", "getServices" ]
+    }, {
+      "name" : "getTopologyCommandParams",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "getScript", "getVersion", "getComponent", "getDefaultAgentTaskTimeout", "getStackName", "getStackId", "getScriptType", "valueOf", "getServicePackageFolder", "equals", "getService", "getCommandScript", "getSchemaVersion", "put", "getStackVersion", "getTimeout", "format" ]
+    }, {
+      "name" : "getAmbariJavaHome",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "updateStacks",
+      "visibility" : "public",
+      "methodCalls" : [ "init" ]
+    }, {
+      "name" : "getStackComponents",
+      "visibility" : "public",
+      "methodCalls" : [ "setStackVersion", "getServiceName", "setServiceName", "getStackName", "setStackName", "addAll", "getStackVersion", "size" ]
+    }, {
+      "name" : "getAmbariServerURI",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "setHost", "setPath", "setQuery", "setScheme", "setPort", "split" ]
+    }, {
+      "name" : "getRcaParameters",
+      "visibility" : "public",
+      "methodCalls" : [ "contains", "getRcaDatabaseDriver", "getRcaDatabasePassword", "getHostName", "put", "getRcaDatabaseUrl", "getHostMap", "replace", "getRcaDatabaseUser" ]
+    }, {
+      "name" : "getAmbariMetaInfo",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTopologyComponentLevelParams",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "toString", "getStackName", "getComponent", "getStackId", "getStackVersion" ]
+    }, {
+      "name" : "createMembers",
+      "visibility" : "public",
+      "methodCalls" : [ "getGroupName", "addMemberToGroup", "getUserName", "isBlank" ]
+    }, {
+      "name" : "createExtensionLink",
+      "visibility" : "public",
+      "methodCalls" : [ "isBlank", "createExtensionLink", "getStackVersion", "getExtension", "getExtensionName", "getStackName", "getExtensionVersion", "getStack", "getStackManager", "getName", "warn", "getVersion", "linkStackToExtension", "create", "debug", "validateCreateLink", "createExtensionLinkResource", "handleRequest" ]
+    }, {
+      "name" : "getModules",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "getModules" ]
+    }, {
+      "name" : "createConfiguration",
+      "visibility" : "public",
+      "methodCalls" : [ "validateAuthorizationToUpdateServiceUsersAndGroups", "info", "getConfigsByType", "singletonMap", "getDesiredStackVersion", "validateAuthorizationToManageServiceAutoStartConfiguration", "getCluster", "entrySet", "getConfigPropertiesTypes", "put", "getVersionTag", "contains", "containsKey", "getType", "getDefaultConfigAttributesForConfigType", "getServiceByConfigType", "getValue", "mergeConfigAttributes", "warn", "get", "add", "equals", "getKey", "getService", "createConfig", "values", "getServices", "getDesiredStackId", "getPropertiesAttributes", "isEmpty", "getClusterName", "getStack", "getProperties", "singleton", "format", "isSecret", "createConfiguration" ]
+    }, {
+      "name" : "synchronizeLdapUsersAndGroups",
+      "visibility" : "public",
+      "methodCalls" : [ "synchronizeLdapGroups", "warn", "getUserName", "synchronizeExistingLdapUsers", "emptySet", "executeUserHook", "processLdapSync", "synchronizeAllLdapUsers", "getUsersIgnored", "getPrincipalNames", "isUserHookEnabled", "getType", "put", "synchronizeExistingLdapGroups", "synchronizeAllLdapGroups", "isNotEmpty", "getPostProcessExistingUsers", "synchronizeLdapUsers" ]
+    }, {
+      "name" : "getStacks",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "values", "getName", "equals", "size", "addAll", "isEmpty", "handleRequest", "createStackResource", "getStacks" ]
+    }, {
+      "name" : "removeMpack",
+      "visibility" : "public",
+      "methodCalls" : [ "exists", "get", "toPath", "delete", "getMpackVersion", "getId", "info", "deleteDirectory", "getStackName", "getMpackName", "isDirectory", "getStackVersion", "list", "remove", "removeStack", "clear", "removeMpack" ]
+    }, {
+      "name" : "deleteGroups",
+      "visibility" : "public",
+      "methodCalls" : [ "getGroup", "removeGroup", "getGroupName", "debug" ]
+    }, {
+      "name" : "validateServiceComponentHostRequest",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "getAdminState", "getComponentName", "getClusterName", "getHostname" ]
+    }, {
+      "name" : "getClusterMetadataOnServiceInstall",
+      "visibility" : "public",
+      "methodCalls" : [ "getClusterMetadataOnServiceCredentialStoreUpdate" ]
+    }, {
+      "name" : "getEffectiveMaintenanceState",
+      "visibility" : "public",
+      "methodCalls" : [ "getEffectiveState" ]
+    }, {
+      "name" : "addStages",
+      "visibility" : "public",
+      "methodCalls" : [ "addStages", "doStageCreation", "updateServiceStates", "getNextRequestId", "addAll" ]
+    }, {
+      "name" : "getMembers",
+      "visibility" : "public",
+      "methodCalls" : [ "getGroupMembers", "add", "getGroup", "size", "getUserName", "debug", "getGroupName", "handleRequest" ]
+    }, {
+      "name" : "getJobTrackerHost",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "keySet", "toString", "iterator", "next", "getService", "getServiceComponent", "getServiceComponentHosts" ]
+    }, {
+      "name" : "isLdapSyncInProgress",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getQuicklinkVisibilityController",
+      "visibility" : "public",
+      "methodCalls" : [ "getContent", "get", "findByName" ]
+    }, {
+      "name" : "getClusterMetadataOnRepoUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "getMetadataAgentConfigs", "put", "getMetadataServiceLevelParams", "serviceLevelParamsMetadataCluster", "getClusterId", "toString" ]
+    }, {
+      "name" : "getAddedComponentsTopologyEvent",
+      "visibility" : "public",
+      "methodCalls" : [ "map", "setComponentLevelParams", "put", "getServiceName", "getHostName", "getHostname", "setDisplayName", "setPublicHostNames", "getComponentName", "getDisplayName", "updateData", "update", "collect", "getServiceComponent", "toSet", "getServiceComponentHost", "getHostId", "setCommandParams", "contains", "getTopologyComponentLevelParams", "setComponentName", "stream", "equals", "containsKey", "add", "setServiceName", "newBuilder", "getTopologyComponents", "getService", "emptySet", "toString", "getCluster", "getTopologyCommandParams", "getSecurityType", "getCurrentData", "addTopologyComponent", "getClusterName", "getServiceComponentName", "getPublicHostName", "filter", "getHosts", "build", "get", "getHost", "setHostIdentifiers", "getClusterId" ]
+    }, {
+      "name" : "getClusterUpdateResults",
+      "visibility" : "public",
+      "methodCalls" : [ "getIfPresent" ]
+    }, {
+      "name" : "checkLdapConfigured",
+      "visibility" : "public",
+      "methodCalls" : [ "isLdapEnabled" ]
+    }, {
+      "name" : "updateGroups",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "registerRackChange",
+      "visibility" : "public",
+      "methodCalls" : [ "getService", "getServices", "setRestartRequired", "entrySet", "getServiceComponents", "isRestartRequiredAfterRackChange", "getCluster", "values", "getServiceComponentHosts", "toBoolean", "getValue" ]
+    }, {
+      "name" : "getClustersMetadata",
+      "visibility" : "public",
+      "methodCalls" : [ "getMetadataAgentConfigs", "getClusterId", "getSecurityType", "values", "getMetadataAmbariLevelParams", "put", "getMetadataServiceLevelParams", "getMetadataClusterLevelParams", "toString", "getDesiredStackVersion" ]
+    }, {
+      "name" : "isAttributeMapsEqual",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "get", "getKey", "getValue", "keySet", "entrySet" ]
+    }, {
+      "name" : "getOperatingSystems",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll", "setStackName", "setStackVersion", "getStackName", "size", "getStackVersion", "getRepositories", "getOsType", "add", "getStack", "handleRequest" ]
+    }, {
+      "name" : "deleteExtensionLink",
+      "visibility" : "public",
+      "methodCalls" : [ "getStackName", "parseLong", "getStack", "getStackManager", "getExtensionVersion", "unlinkStackAndExtension", "findById", "getExtensionName", "remove", "validateDeleteLink", "getExtension", "getStackVersion", "getLinkId", "createExtensionLinkResource", "handleRequest" ]
+    }, {
+      "name" : "getRootServiceComponents",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll", "size", "getServiceName", "contains", "singleton", "getComponentName", "valueOf", "name", "toString", "add", "getComponents", "handleRequest", "createServiceComponentResource" ]
+    }, {
+      "name" : "getRepositories",
+      "visibility" : "public",
+      "methodCalls" : [ "setClusterVersionId", "getStackName", "getStackVersion", "setStackName", "setStackVersion", "getClusterVersionId", "addAll", "size", "equals", "getStack", "getOsType", "handleRequest", "isNullOrEmpty", "setDefaultBaseUrl", "getRepos", "split", "setOsType", "trim", "setRepoName", "isUnique", "setDistribution", "getComponents", "setComponents", "getRepoName", "setTags", "setBaseUrl", "getOses", "setUnique", "setMirrorsList", "replaceAll", "getDistribution", "getRepoId", "add", "getBaseUrl", "getFamily", "getRepositories", "setRepoId", "getMirrorsList", "matcher" ]
+    }, {
+      "name" : "createAction",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "validateAction", "persist", "isCommand", "info", "setRequestContext", "addStages", "escapeHtml4", "build", "getCommandParamsForStage", "getLastStageId", "getClusterName", "getRequestStatusResponse", "getMessage", "deleteTestIdentity", "getNextRequestId", "getCommandName", "getHostParamsForStage", "createTestIdentity", "replaceReferencesWithPasswords", "getStages", "getCluster", "name", "fromJson", "getCommandJson", "addExecutionCommandsToStage", "getDesiredStackVersion", "get", "toJson", "getType", "getRoleCommandOrder", "createNew", "equals" ]
+    }, {
+      "name" : "createConfig",
+      "visibility" : "public",
+      "methodCalls" : [ "addConfig", "createConfig", "createNew", "get", "persist" ]
+    }, {
+      "name" : "getCredentialStoreServiceProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "isInitialized", "valueOf" ]
+    }, {
+      "name" : "getJCEName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getStackVersions",
+      "visibility" : "public",
+      "methodCalls" : [ "size", "addAll", "getStackName", "setStackName", "handleRequest", "createStackVersionResource" ]
+    }, {
+      "name" : "getStackConfigurationDependencies",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll", "setServiceName", "setStackName", "getServiceName", "setPropertyName", "getPropertyName", "getStackName", "getStackVersion", "setStackVersion", "createStackConfigurationDependencyResource", "handleRequest" ]
+    }, {
+      "name" : "getConfigurations",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll", "isContainer", "put", "entrySet", "reverse", "get", "getKey", "toMap", "getValue", "getParent", "getConfigurations", "update", "add" ]
+    }, {
+      "name" : "getExecutionCommand",
+      "visibility" : "public",
+      "methodCalls" : [ "getServiceComponent", "getServiceComponentHosts", "get", "isUpgradeSuspended", "createDefaultHostParams", "getDesiredConfigs", "getHostLevelParams", "getDesiredRepositoryVersion", "add", "getLocalComponents", "getHostName", "putAll", "getDatabaseType", "getServiceComponentName", "getExecutionCommand", "getServiceName", "getExecutionCommands", "getService", "getDesiredStackId", "getHost", "setRepositoryFile", "getUpgradeSummary", "getClusterById", "getClusterId", "getHostname", "warn", "getMessage", "getComponentName", "getEffectiveDesiredTags", "setUpgradeSummary", "getConfigurations", "fromJson", "getStage", "findByPK", "getClusterName", "debug", "getUpgradeInProgress", "isOverrideConfigs", "setVersions", "setConfigurations", "getCommandRepository", "getRepositoryFile", "create", "getEffectiveConfigProperties", "getTaskId" ]
+    }, {
+      "name" : "verifyRepositories",
+      "visibility" : "public",
+      "methodCalls" : [ "getBaseUrl" ]
+    }, {
+      "name" : "getLdapSyncInfo",
+      "visibility" : "public",
+      "methodCalls" : [ "getLdapSyncInfo", "getInternalUsers", "isLdapGroup", "getExternalLdapGroupInfo", "isLdapUser", "setUsers", "getExternalLdapUserInfo", "setGroups", "get", "containsKey", "getInternalGroups", "getGroupName", "getUserName", "setSynced" ]
+    }, {
+      "name" : "getConfigHelper",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "getJdkResourceUrl",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getStackConfigurations",
+      "visibility" : "public",
+      "methodCalls" : [ "setServiceName", "getServiceName", "getStackVersion", "setStackVersion", "addAll", "getStackName", "setStackName", "createStackConfigurationResource", "handleRequest" ]
+    }, {
+      "name" : "getMpack",
+      "visibility" : "public",
+      "methodCalls" : [ "getMpack", "getMpackMap", "containsKey", "get", "handleRequest" ]
+    }, {
+      "name" : "updateClusters",
+      "visibility" : "public",
+      "methodCalls" : [ "updateClusters" ]
+    }, {
+      "name" : "getAuthId",
+      "visibility" : "public",
+      "methodCalls" : [ "getAuthenticatedId" ]
+    }, {
+      "name" : "getMpacks",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "getMpacks", "values", "getMpackMap", "emptySet", "handleRequest" ]
+    }, {
+      "name" : "getRequestExecutionFactory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "deleteMembers",
+      "visibility" : "public",
+      "methodCalls" : [ "getUserName", "debug", "removeMemberFromGroup", "getGroupName" ]
+    } ],
+    "imports" : [ "org.apache.ambari.server.state.Host", "org.apache.ambari.server.serveraction.kerberos.KerberosOperationException", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.MAX_DURATION_OF_RETRIES", "org.apache.ambari.server.state.scheduler.RequestExecutionFactory", "org.apache.ambari.server.controller.internal.RequestResourceProvider", "org.apache.ambari.server.orm.entities.WidgetEntity", "com.google.gson.Gson", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.JDK_NAME", "org.apache.ambari.server.security.ldap.AmbariLdapDataPopulator", "org.apache.ambari.server.orm.entities.StackEntity", "java.io.FileReader", "org.apache.ambari.server.controller.internal.DeleteHostComponentStatusMetaData", "com.google.inject.Inject", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.CLIENTS_TO_UPDATE_CONFIGS", "org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper.masterToSlaveMappingForDecom", "org.apache.ambari.server.state.Module", "org.apache.ambari.server.orm.entities.RepositoryVersionEntity", "org.apache.ambari.server.state.configgroup.ConfigGroupFactory", "java.util.HashSet", "org.apache.ambari.server.state.Clusters", "org.apache.ambari.server.state.Mpack", "org.apache.ambari.server.controller.internal.HostComponentResourceProvider", "org.apache.ambari.server.api.services.LoggingService", "java.util.Set", "org.apache.ambari.server.state.stack.RepositoryXml", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.COMMAND_TIMEOUT", "org.apache.ambari.server.state.Cluster", "org.apache.ambari.annotations.ExperimentalFeature", "org.apache.ambari.server.orm.entities.RepoOsEntity", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.JDK_LOCATION", "org.apache.ambari.server.orm.entities.SettingEntity", "java.util.regex.Matcher", "org.apache.ambari.server.stack.upgrade.RepositoryVersionHelper", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.JAVA_HOME", "com.google.common.collect.ListMultimap", "java.util.Map.Entry", "org.apache.ambari.server.agent.stomp.dto.TopologyComponent", "org.apache.ambari.server.state.MaintenanceState", "org.apache.ambari.server.utils.StageUtils", "org.apache.ambari.server.topology.STOMPComponentsDeleteHandler", "java.util.Iterator", "org.apache.ambari.server.orm.entities.WidgetLayoutUserWidgetEntity", "org.apache.ambari.server.ServiceNotFoundException", "java.util.EnumSet", "org.apache.commons.collections4.MapUtils", "org.slf4j.Logger", "java.util.UUID", "org.apache.ambari.server.state.quicklinksprofile.QuickLinkVisibilityControllerFactory", "org.apache.ambari.server.actionmanager.CommandExecutionType", "org.apache.ambari.server.state.StackInfo", "javax.annotation.Nullable", "org.apache.ambari.server.state.svccomphost.ServiceComponentHostUpgradeEvent", "java.util.EnumMap", "java.io.FileNotFoundException", "org.apache.ambari.server.controller.internal.DeleteStatusMetaData", "org.apache.ambari.server.controller.spi.Resource", "org.apache.ambari.server.state.CommandScriptDefinition", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.ORACLE_JDBC_URL", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.AGENT_STACK_RETRY_COUNT", "org.apache.ambari.server.state.svccomphost.ServiceComponentHostInstallEvent", "org.apache.ambari.server.orm.dao.WidgetDAO", "java.util.Collection", "org.apache.ambari.server.agent.CommandRepository", "org.apache.ambari.server.controller.internal.RequestStageContainer", "org.apache.ambari.server.state.UnlimitedKeyJCERequirement", "org.apache.ambari.server.agent.stomp.TopologyHolder", "org.apache.ambari.server.agent.stomp.dto.MetadataCluster", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.AMBARI_DB_RCA_DRIVER", "org.apache.ambari.server.state.ServiceOsSpecific", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.SCRIPT", "org.apache.ambari.server.orm.entities.ServiceComponentDesiredStateEntity", "jakarta.persistence.RollbackException", "org.apache.ambari.server.orm.entities.ClusterEntity", "org.apache.ambari.server.controller.spi.ResourceAlreadyExistsException", "org.apache.ambari.server.controller.internal.WidgetLayoutResourceProvider", "java.text.MessageFormat", "org.apache.ambari.server.agent.stomp.HostLevelParamsHolder", "org.apache.ambari.server.orm.dao.ExtensionLinkDAO", "java.util.regex.Pattern", "org.apache.ambari.server.configuration.Configuration", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.HOST_SYS_PREPPED", "org.apache.ambari.server.controller.internal.RequestOperationLevel", "java.util.Collections", "org.apache.ambari.server.controller.spi.SystemException", "org.apache.ambari.server.ServiceComponentNotFoundException", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.SERVICE_REPO_INFO", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.USER_GROUPS", "java.util.ArrayList", "org.apache.ambari.server.controller.internal.URLRedirectProvider", "org.apache.commons.lang.BooleanUtils", "org.apache.ambari.server.security.ldap.LdapBatchDto", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.VERSION", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.STACK_NAME", "com.google.inject.Injector", "com.google.common.cache.Cache", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.MYSQL_JDBC_URL", "org.apache.ambari.server.orm.dao.WidgetLayoutDAO", "org.apache.ambari.server.ParentObjectNotFoundException", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.SCRIPT_TYPE", "org.apache.ambari.server.state.svccomphost.ServiceComponentHostOpInProgressEvent", "org.apache.ambari.server.orm.entities.RepoDefinitionEntity", "org.apache.ambari.server.state.ServiceInfo", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.GPL_LICENSE_ACCEPTED", "org.apache.ambari.server.state.stack.OsFamily", "org.apache.ambari.server.orm.entities.HostEntity", "org.apache.commons.lang.StringUtils", "org.apache.ambari.server.state.stack.WidgetLayout", "org.apache.ambari.server.metadata.ActionMetadata", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.SERVICE_PACKAGE_FOLDER", "org.apache.ambari.server.orm.dao.RepositoryVersionDAO", "org.apache.ambari.server.api.services.AmbariMetaInfo", "org.apache.ambari.server.controller.metrics.MetricPropertyProviderFactory", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.DB_DRIVER_FILENAME", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.AGENT_STACK_RETRY_ON_UNAVAILABILITY", "org.apache.ambari.server.actionmanager.Stage", "org.apache.ambari.server.security.authorization.ResourceType", "org.apache.ambari.server.security.ldap.LdapUserDto", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.STACK_VERSION", "org.apache.ambari.server.Role", "com.google.common.collect.ArrayListMultimap", "org.apache.ambari.server.stack.ExtensionHelper", "org.apache.ambari.server.state.PropertyDependencyInfo", "org.apache.ambari.server.agent.stomp.dto.MetadataServiceInfo", "org.apache.ambari.server.security.authorization.Users", "org.apache.ambari.server.state.Service", "org.apache.ambari.server.events.TopologyUpdateEvent", "org.apache.ambari.server.customactions.ActionDefinition", "org.apache.commons.text.StringEscapeUtils", "org.apache.ambari.server.state.fsm.InvalidStateTransitionException", "org.apache.ambari.server.security.authorization.RoleAuthorization", "org.apache.ambari.server.controller.metrics.timeline.cache.TimelineMetricCacheProvider", "org.apache.ambari.server.orm.dao.HostComponentDesiredStateDAO", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.PACKAGE_LIST", "java.util.stream.Collectors", "org.apache.ambari.server.controller.internal.WidgetResourceProvider", "org.apache.ambari.server.state.ServiceComponent", "com.google.inject.Singleton", "org.apache.ambari.server.stack.RepoUtil", "org.apache.ambari.server.state.ServiceComponentFactory", "java.util.HashMap", "org.apache.ambari.server.controller.logging.LoggingSearchPropertyProvider", "org.apache.ambari.server.state.BlueprintProvisioningState", "java.util.SortedMap", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.AMBARI_DB_RCA_PASSWORD", "org.apache.ambari.server.agent.ExecutionCommand", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.COMMAND_RETRY_ENABLED", "org.apache.ambari.server.actionmanager.HostRoleCommand", "org.apache.ambari.server.agent.stomp.dto.TopologyUpdateHandlingReport", "org.apache.ambari.server.controller.metrics.MetricsCollectorHAManager", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.DFS_TYPE", "org.apache.ambari.server.security.authorization.User", "org.apache.ambari.server.utils.SecretReference", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.NOT_MANAGED_HDFS_PATH_LIST", "org.apache.ambari.server.ServiceComponentHostNotFoundException", "org.apache.ambari.server.actionmanager.ExecutionCommandWrapper", "org.apache.ambari.server.state.ConfigHelper", "org.apache.ambari.server.scheduler.ExecutionScheduleManager", "org.apache.ambari.server.actionmanager.StageFactory", "org.apache.ambari.server.state.svccomphost.ServiceComponentHostOpSucceededEvent", "org.apache.ambari.server.HostNotFoundException", "org.apache.ambari.server.events.UpdateEventType", "java.util.Map", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.DB_NAME", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.CUSTOM_FOLDER", "org.apache.ambari.server.state.DesiredConfig", "org.apache.ambari.server.orm.entities.MpackEntity", "org.apache.ambari.server.state.OperatingSystemInfo", "org.apache.ambari.server.state.Config", "org.apache.ambari.server.state.repository.VersionDefinitionXml", "org.apache.ambari.server.state.PropertyInfo", "org.apache.ambari.server.StackAccessException", "java.util.List", "org.apache.ambari.annotations.Experimental", "org.apache.ambari.server.stageplanner.RoleGraphFactory", "org.apache.ambari.server.state.ConfigFactory", "org.apache.ambari.server.state.RepositoryInfo", "org.apache.ambari.server.orm.entities.HostComponentDesiredStateEntity", "com.google.gson.reflect.TypeToken", "org.apache.http.client.utils.URIBuilder", "org.apache.ambari.server.state.ExtensionInfo", "org.apache.ambari.server.events.MetadataUpdateEvent", "java.util.concurrent.TimeUnit", "java.util.TreeMap", "org.apache.ambari.server.security.encryption.CredentialStoreService", "java.lang.reflect.Type", "org.apache.ambari.server.metadata.RoleCommandOrderProvider", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.AMBARI_DB_RCA_URL", "org.apache.ambari.server.orm.dao.SettingDAO", "org.apache.ambari.server.RoleCommand", "org.apache.ambari.server.configuration.Configuration.DatabaseType", "com.google.common.cache.CacheBuilder", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.AMBARI_DB_RCA_USERNAME", "org.apache.ambari.server.state.PropertyInfo.PropertyType", "org.apache.ambari.server.security.encryption.CredentialStoreType", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.CLUSTER_NAME", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.JAVA_VERSION", "org.apache.ambari.server.state.ComponentInfo", "org.apache.ambari.server.state.ServiceComponentHostEvent", "org.apache.ambari.server.security.authorization.AuthorizationException", "com.google.common.collect.Multimap", "org.apache.ambari.server.metadata.RoleCommandOrder", "org.apache.ambari.server.security.ldap.LdapSyncDto", "org.apache.ambari.server.actionmanager.RequestFactory", "org.apache.ambari.server.controller.internal.RequestResourceFilter", "org.slf4j.LoggerFactory", "org.apache.ambari.server.orm.dao.ClusterDAO", "org.apache.ambari.server.orm.dao.ServiceComponentDesiredStateDAO", "java.util.LinkedHashSet", "org.apache.ambari.server.AmbariException", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.JCE_NAME", "java.util.LinkedList", "org.apache.ambari.server.state.quicklinksprofile.QuickLinkVisibilityController", "org.apache.ambari.server.security.authorization.AuthorizationHelper", "org.apache.ambari.server.security.authorization.Group", "org.apache.ambari.server.state.SecurityType", "org.apache.ambari.server.events.publishers.AmbariEventPublisher", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.AMBARI_JAVA_HOME", "org.apache.ambari.server.orm.entities.WidgetLayoutEntity", "org.apache.ambari.server.orm.entities.ExtensionLinkEntity", "org.apache.ambari.server.state.svccomphost.ServiceComponentHostStopEvent", "org.apache.ambari.server.stageplanner.RoleGraph", "org.apache.ambari.server.state.svccomphost.ServiceComponentHostStartEvent", "org.apache.ambari.server.ObjectNotFoundException", "org.apache.ambari.server.state.ServiceComponentHost", "org.apache.ambari.server.state.stack.WidgetLayoutInfo", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.HOOKS_FOLDER", "org.apache.ambari.server.DuplicateResourceException", "org.apache.commons.lang.math.NumberUtils", "java.net.InetAddress", "org.apache.ambari.server.orm.dao.ExtensionDAO", "org.apache.ambari.server.ClusterNotFoundException", "org.apache.ambari.server.agent.stomp.dto.TopologyCluster", "org.apache.ambari.server.state.quicklinksprofile.QuickLinksProfile", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.USER_LIST", "java.io.File", "org.apache.ambari.server.state.ServiceComponentHostFactory", "java.io.IOException", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames.GROUP_LIST", "org.apache.ambari.server.state.State", "org.apache.ambari.server.state.HostState", "org.apache.ambari.server.security.authorization.GroupType", "org.apache.ambari.server.actionmanager.ActionManager", "com.google.inject.persist.Transactional", "org.apache.ambari.server.topology.Setting", "org.apache.ambari.server.state.StackId", "org.apache.http.HttpStatus", "org.apache.ambari.server.state.DependencyInfo", "org.apache.ambari.server.serveraction.kerberos.KerberosInvalidConfigurationException", "org.apache.commons.collections4.CollectionUtils", "org.apache.ambari.server.utils.URLCredentialsHider", "com.google.inject.Provider", "org.apache.ambari.server.orm.dao.StackDAO" ]
+  }, {
+    "name" : "ClusterImpl",
+    "packageName" : "org.apache.ambari.server.view",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ "Cluster" ],
+    "methods" : [ {
+      "name" : "getClusterSize",
+      "visibility" : "public",
+      "methodCalls" : [ "getClusterSize", "size", "get" ]
+    }, {
+      "name" : "getConfigByType",
+      "visibility" : "public",
+      "methodCalls" : [ "fromJson", "getType", "getAsJsonArray", "isJsonArray", "getAsJsonObject", "format", "get", "isJsonObject", "getDesiredConfigByType", "copyOf", "getProperties" ]
+    }, {
+      "name" : "getHostsForServiceComponent",
+      "visibility" : "public",
+      "methodCalls" : [ "isJsonArray", "format", "getAsString", "isJsonObject", "getAsJsonObject", "getAsJsonArray", "get", "getHostName", "getServiceComponentHosts", "add" ]
+    }, {
+      "name" : "getName",
+      "visibility" : "public",
+      "methodCalls" : [ "getUsername", "getName", "getClusterName" ]
+    }, {
+      "name" : "getConfigurationValue",
+      "visibility" : "public",
+      "methodCalls" : [ "isJsonPrimitive", "isJsonObject", "getAsJsonPrimitive", "isJsonArray", "getAsJsonArray", "getAsJsonObject", "format", "getAsString", "get", "getProperties", "getDesiredConfigByType", "getProperty" ]
+    }, {
+      "name" : "getServiceByComponentName",
+      "visibility" : "public",
+      "methodCalls" : [ "getClusterName", "equals", "getServiceComponents", "getName", "values" ]
+    }, {
+      "name" : "setServiceConfigVersion",
+      "visibility" : "public",
+      "methodCalls" : [ "lock", "applyServiceConfigVersion", "unlock", "writeLock" ]
+    }, {
+      "name" : "getAllConfigs",
+      "visibility" : "public",
+      "methodCalls" : [ "entrySet", "getValue", "values", "readLock", "addAll", "lock", "unlock", "unmodifiableList" ]
+    }, {
+      "name" : "getConfigGroupsByHostname",
+      "visibility" : "public",
+      "methodCalls" : [ "getHosts", "getKey", "getValue", "entrySet", "put", "equals", "values", "getHostName" ]
+    }, {
+      "name" : "getRoleCommandOrder",
+      "visibility" : "public",
+      "methodCalls" : [ "size", "getClusterId", "getInstance", "append", "getServiceComponent", "toHashCode", "get", "add", "put", "getService", "initialize", "getServiceComponentHosts", "getCluster", "getRoleCommandOrder" ]
+    }, {
+      "name" : "addConfig",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "put", "unlock", "getType", "getTag", "get", "writeLock", "lock", "containsKey" ]
+    }, {
+      "name" : "getConfigByVersion",
+      "visibility" : "public",
+      "methodCalls" : [ "unlock", "readLock", "getValue", "lock", "getVersion", "equals", "entrySet", "get", "containsKey" ]
+    }, {
+      "name" : "removeConfigurations",
+      "visibility" : "public",
+      "methodCalls" : [ "lock", "writeLock", "unlock", "removeAllConfigsForStack" ]
+    }, {
+      "name" : "addRequestExecution",
+      "visibility" : "public",
+      "methodCalls" : [ "debug", "getId", "put", "getClusterName", "getDescription", "info", "containsKey" ]
+    }, {
+      "name" : "removeSessionAttribute",
+      "visibility" : "public",
+      "methodCalls" : [ "getSessionAttributes", "isEmpty", "remove" ]
+    }, {
+      "name" : "getServiceComponentHost",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "containsKey", "getName", "getServiceName", "getClusterName" ]
+    }, {
+      "name" : "setSessionAttribute",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "put", "getSessionAttributes" ]
+    }, {
+      "name" : "isConfigTypeExists",
+      "visibility" : "public",
+      "methodCalls" : [ "getClusterId", "findEnabledConfigByType" ]
+    }, {
+      "name" : "canBeRemoved",
+      "visibility" : "public",
+      "methodCalls" : [ "unlock", "readLock", "lock", "isRemovableState", "getName", "getState", "getHostName", "getServiceName", "canBeRemoved", "values", "warn", "getClusterName" ]
+    }, {
+      "name" : "deleteConfigGroup",
+      "visibility" : "public",
+      "methodCalls" : [ "getId", "getName", "getTag", "get", "getClusterName", "singleton", "remove", "delete", "debug", "toString", "updateAgentConfigs" ]
+    }, {
+      "name" : "addConfigGroup",
+      "visibility" : "public",
+      "methodCalls" : [ "getHosts", "getClusterName", "put", "values", "getName", "getId", "getHostName", "debug", "containsKey", "isDebugEnabled", "getTag" ]
+    }, {
+      "name" : "addSuspendedUpgradeParameters",
+      "visibility" : "public",
+      "methodCalls" : [ "putAll", "put", "toLowerCase", "toString", "getInitializedCommandParameters", "getUpgradeInProgress", "create", "warn" ]
+    }, {
+      "name" : "getActiveServiceConfigVersionResponse",
+      "visibility" : "public",
+      "methodCalls" : [ "getLastServiceConfigsForService", "setIsCurrent", "addAll", "unlock", "convertToServiceConfigVersionResponse", "readLock", "lock", "add", "getClusterId" ]
+    }, {
+      "name" : "serviceNameByConfigType",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "toList", "map", "entries", "stream", "getKey", "filter", "getValue", "collect" ]
+    }, {
+      "name" : "deleteService",
+      "visibility" : "public",
+      "methodCalls" : [ "createServiceResource", "handleRequest", "getService", "remove", "canBeRemoved", "writeLock", "setAmbariException", "info", "getName", "unlock", "getClusterName", "lock" ]
+    }, {
+      "name" : "getSessionAttributes",
+      "visibility" : "public",
+      "methodCalls" : [ "getSessionManager", "getAttribute", "emptyMap", "getSessionAttributes", "findCluster" ]
+    }, {
+      "name" : "getClusterProperty",
+      "visibility" : "public",
+      "methodCalls" : [ "getDesiredConfigByType", "containsKey", "put", "get", "getProperties" ]
+    }, {
+      "name" : "getClusterId",
+      "visibility" : "public",
+      "methodCalls" : [ "getClusterId", "valueOf", "getCluster", "getClusters", "getController" ]
+    }, {
+      "name" : "getComponentVersionMap",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "getServiceComponents", "values", "getDesiredRepositoryVersion", "getName", "isResolved", "getDesiredVersion", "isVersionAdvertised", "getServices", "put" ]
+    }, {
+      "name" : "getAllRequestExecutions",
+      "visibility" : "public",
+      "methodCalls" : [ "unmodifiableMap" ]
+    }, {
+      "name" : "getServiceComponentHosts",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "values", "unmodifiableList", "addAll", "isEmpty", "containsKey" ]
+    }, {
+      "name" : "getConfig",
+      "visibility" : "public",
+      "methodCalls" : [ "containsKey", "lock", "get", "unlock", "readLock" ]
+    }, {
+      "name" : "deleteRequestExecution",
+      "visibility" : "public",
+      "methodCalls" : [ "remove", "getDescription", "getId", "delete", "info", "getClusterName", "get" ]
+    }, {
+      "name" : "getDesiredConfigByType",
+      "visibility" : "public",
+      "methodCalls" : [ "findEnabledConfigByType", "get", "getDesiredConfigByType", "getClusterId", "getTag", "getConfig" ]
+    }, {
+      "name" : "getLatestConfigsWithTypes",
+      "visibility" : "public",
+      "methodCalls" : [ "createExisting", "map", "getLatestConfigurationsWithTypes", "toList", "stream", "collect", "getDesiredStackVersion" ]
+    }, {
+      "name" : "checkPermission",
+      "visibility" : "public",
+      "methodCalls" : [ "checkPermission", "getInstanceDefinition", "getResource", "getId", "getClusterEntity", "getPermission", "equals", "findCluster" ]
+    }, {
+      "name" : "applyLatestConfigurations",
+      "visibility" : "public",
+      "methodCalls" : [ "getTimestamp", "info", "unlock", "getClusterEntity", "getLatestConfigurations", "uniqueIndex", "getTag", "publish", "contains", "identity", "getLastServiceConfigsForService", "setSelected", "getType", "getClusterId", "add", "lock", "getClusterConfigEntities", "merge", "join", "get", "writeLock", "debug" ]
+    }, {
+      "name" : "setSecurityType",
+      "visibility" : "public",
+      "methodCalls" : [ "getClusterEntity", "merge", "setSecurityType" ]
+    }, {
+      "name" : "isUpgradeSuspended",
+      "visibility" : "public",
+      "methodCalls" : [ "getUpgradeInProgress", "isSuspended" ]
+    }, {
+      "name" : "addSessionAttributes",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "putAll", "getSessionAttributes", "addSessionAttributes", "findCluster" ]
+    }, {
+      "name" : "getActiveServiceConfigVersions",
+      "visibility" : "public",
+      "methodCalls" : [ "unlock", "lock", "get", "add", "put", "getServiceName", "readLock" ]
+    }, {
+      "name" : "onClusterProvisioned",
+      "visibility" : "public",
+      "methodCalls" : [ "info", "emptyMap", "entrySet", "updateConfigType", "getKey", "getValue", "getClusterName", "getClusterId", "getCurrentStackVersion", "warn" ]
+    }, {
+      "name" : "getHostsDesiredConfigs",
+      "visibility" : "public",
+      "methodCalls" : [ "setTag", "get", "getServiceName", "getType", "getHostId", "setServiceName", "put", "emptyMap", "findSelectedByHosts", "getVersion", "isEmpty" ]
+    }, {
+      "name" : "setUpgradeEntity",
+      "visibility" : "public",
+      "methodCalls" : [ "setUpgradeEntity", "getClusterEntity", "merge" ]
+    }, {
+      "name" : "handleClusterEnvConfigChangedEvent",
+      "visibility" : "public",
+      "methodCalls" : [ "getConfigType", "equals", "clear" ]
+    }, {
+      "name" : "getServiceByConfigType",
+      "visibility" : "public",
+      "methodCalls" : [ "stream", "filter", "serviceNameByConfigType", "findFirst", "orElse" ]
+    }, {
+      "name" : "refresh",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "getClusterEntity", "findById", "writeLock", "lock", "getScheduleId", "unlock", "refresh" ]
+    }, {
+      "name" : "deleteAllClusterConfigs",
+      "visibility" : "public",
+      "methodCalls" : [ "removeConfig", "unlock", "getClusterEntity", "getClusterConfigEntities", "writeLock", "lock" ]
+    }, {
+      "name" : "isBluePrintDeployed",
+      "visibility" : "public",
+      "methodCalls" : [ "getClusterId", "findByClusterId", "getAction", "valueOf" ]
+    }, {
+      "name" : "deleteAllServices",
+      "visibility" : "public",
+      "methodCalls" : [ "processDeleteCluster", "canBeRemoved", "processDeleteByMetaDataException", "getClusterId", "unlock", "info", "lock", "getClusterName", "getName", "writeLock", "clear", "values" ]
+    }, {
+      "name" : "getService",
+      "visibility" : "public",
+      "methodCalls" : [ "getParentFile", "format", "getAbsolutePath", "getStackVersion", "getService", "getStackName", "getDesiredStackId", "getStack", "createServiceResource", "createResource", "handleRequest", "get", "getClusterName", "getServices", "getName", "equals" ]
+    }, {
+      "name" : "getDesiredStackVersion",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getServices",
+      "visibility" : "public",
+      "methodCalls" : [ "getAsJsonObject", "getAsString", "getAsJsonArray", "isJsonObject", "getUnchecked", "isJsonArray", "add", "get", "getStack", "put", "getName", "createServiceResource", "createResource", "handleRequest", "emptyList", "addAll", "getHostGroups", "keySet", "values", "getServices" ]
+    }, {
+      "name" : "getAllHostsDesiredConfigs",
+      "visibility" : "public",
+      "methodCalls" : [ "emptyMap", "keySet", "getHostsDesiredConfigs", "getHostIdsForCluster" ]
+    }, {
+      "name" : "getServiceForConfigTypes",
+      "visibility" : "public",
+      "methodCalls" : [ "size", "isEmpty", "map", "filter", "format", "toList", "stream", "collect", "get" ]
+    }, {
+      "name" : "getProvisioningState",
+      "visibility" : "public",
+      "methodCalls" : [ "getClusterEntity", "getProvisioningState" ]
+    }, {
+      "name" : "setDesiredStackVersion",
+      "visibility" : "public",
+      "methodCalls" : [ "getClusterEntity", "debug", "getStackName", "setDesiredStack", "writeLock", "getClusterName", "find", "getClusterId", "unlock", "isDebugEnabled", "merge", "getStackVersion", "lock" ]
+    }, {
+      "name" : "getConfigGroups",
+      "visibility" : "public",
+      "methodCalls" : [ "unmodifiableMap" ]
+    }, {
+      "name" : "getConfigPropertiesTypes",
+      "visibility" : "public",
+      "methodCalls" : [ "getConfigPropertiesTypes", "getCurrentStackVersion", "getStack", "getStackVersion", "getStackName", "contains", "isEmpty", "put", "getFilename", "getServices", "add", "getPropertyTypes", "containsKey", "getName", "getProperties", "get" ]
+    }, {
+      "name" : "getServiceComponentHostMap",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "add", "getServiceComponentName", "get", "getServiceName", "contains", "getServiceComponentHosts", "getHostName", "getHosts" ]
+    }, {
+      "name" : "getConfigsByType",
+      "visibility" : "public",
+      "methodCalls" : [ "unmodifiableMap", "unlock", "get", "readLock", "lock", "containsKey" ]
+    }, {
+      "name" : "delete",
+      "visibility" : "public",
+      "methodCalls" : [ "getResponse", "getUriBuilder", "info", "put", "fromJson", "deleteAsset", "getMessage", "ok", "setStatus", "build", "getRawQuery", "getOwner", "equals", "queryParams", "getUsername", "readFrom", "getAsset", "load", "debug", "format", "getDataStore", "parseInt", "getPigStorage", "exists", "get", "flush", "delete", "getId", "deleteResources", "getType", "createControllerRequest", "getQuery", "isAuthorized", "of", "getResourceDefinition", "getPredicate", "removeByScheduleId", "getScheduleId", "remove", "lock", "refresh", "writeLock", "unlock", "findById", "getAmbariException", "deleteAllServiceComponentHosts", "getClusterId", "error", "publish", "removeEntities", "getStackName", "getStackVersion", "getServiceName", "getHostName", "addDeletedHostComponent", "getHostId", "getClusterName", "getHost", "getCluster", "removeServiceComponentHost", "getDesiredStackId", "isMasterComponent", "isRecoveryEnabled", "toString", "getVersion", "getServiceComponentName", "getState", "deleteAllServices", "deleteAllClusterConfigs", "clear", "deleteAllServiceConfigs", "deleteAllComponents", "setAmbariException", "getName", "deleteAllServiceConfigGroups" ]
+    }, {
+      "name" : "convertToResponse",
+      "visibility" : "public",
+      "methodCalls" : [ "getApplicableServices", "getInputs", "getTargetService", "getActionType", "getDefaultTimeout", "getTargetType", "getActionName", "getTargetComponent", "isCredentialStoreSupported", "name", "emptyMap", "getMaintenanceState", "warn", "isCredentialStoreEnabled", "setDesiredRepositoryVersionId", "calculateExistingConfigurations", "isKerberosEnabled", "setMaintenanceState", "getParentExtensionVersion", "getHostsForCluster", "size", "getProvisioningState", "getDesiredStackVersion", "getSecurityType", "setUpgradeState", "setReloadConfig", "getServiceName", "getDesiredStateEntity", "error", "getServiceComponentHost", "getService", "getRefreshConfigsCommand", "getDesiredStackId", "getStackVersion", "getStackName", "getServiceComponent", "isStaleConfigs", "setActualConfigs", "setStaleConfig", "getUpgradeState", "getComponent", "getType", "setLastHeartbeatTime", "getHealthStatus", "getDesiredState", "isRecoveryEnabled", "setRecoveryReport", "setOsType", "getHostEntity", "getPhCpuCount", "getSummary", "setDisksInfo", "getLastHeartbeatTime", "setPhCpuCount", "setRackInfo", "getHostName", "getCluster", "setAgentVersion", "getClusterId", "getPublicHostName", "getRepositoryState", "setTotalMemBytes", "getAgentVersion", "setOsArch", "setOsFamily", "setLastAgentEnv", "getOsArch", "getDesiredRepositoryVersion", "setHealthStatus", "setHostAttributes", "setLastRegistrationTime", "setPublicHostName", "getStackId", "getDisksInfo", "getHostAttributes", "getHostStateEntity", "getRackInfo", "getLastRegistrationTime", "toString", "getTotalMem", "setIpv4", "getCpuCount", "setHostState", "setRecoverySummary", "getOsFamily", "setCpuCount", "getRecoveryReport", "setStatus", "getIpv4", "getState", "getMirrorsList", "getTags", "getDistribution", "getComponents", "getDefaultBaseUrl", "getDisplayName", "getDescription", "getPropertyValueAttributes", "getAttributesMap", "getPropertyTypes", "getValue", "getDependsOnProperties", "getName", "getFilename", "isRequireInput", "getOsType", "getUpdateTimestamp", "getCreateTimestamp", "getUpdateUser", "getCreateUser", "unlock", "getBatch", "getStatus", "readLock", "getSchedule", "getLastExecutionStatus", "getClusterName", "getAuthenticatedUserId", "getId", "convertToReadableTime", "lock", "isActive", "getErrors", "isValid", "getVersion", "getConfigTypeAttributes", "keySet", "getServices", "getKerberosDescriptorFile", "getParentStackVersion", "getMinJdk", "getMaxJdk", "add", "emptySet", "getBaseUrl", "getRepoId", "getRepoName" ]
+    }, {
+      "name" : "getDesiredConfigs",
+      "visibility" : "public",
+      "methodCalls" : [ "transformEntries", "next", "iterator", "getType", "getHostId", "setServiceName", "getServiceName", "setTag", "getVersion", "put", "findSelected" ]
+    }, {
+      "name" : "getClusterName",
+      "visibility" : "public",
+      "methodCalls" : [ "getClusterName", "getClusters", "getClusterById", "getController", "getCluster" ]
+    }, {
+      "name" : "hashCode",
+      "visibility" : "public",
+      "methodCalls" : [ "hashCode", "toLowerCase", "valueOf", "toString", "concat", "length", "charAt", "getHostId", "getExtensionName", "getStackName", "asList", "getId", "getClass", "getAuditMessage", "getTimestamp", "getIdentities", "getConfigurations", "getAuthToLocalProperties", "getName", "getProperties", "getServices", "reflectionHashCode", "getType", "getWhen", "getPrincipalDescriptor", "getKeytabDescriptor", "getConfiguration", "getGroupAccess", "getReference", "getOwnerAccess", "getOwnerName", "getGroupName", "isVisible", "hash", "toHashCode", "append", "intValue", "booleanValue", "appendSuper", "getHostName" ]
+    }, {
+      "name" : "equals",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "equalsIgnoreCase", "contains", "getJson", "getHostId", "getExtensionName", "getStackName", "getId", "asList", "getTimelineMetrics", "array", "getPrecision", "getHostNames", "readObject", "getMetricNames", "getEndTime", "getAppId", "getStartTime", "hashCode", "getUserName", "getAuditMessage", "getTimestamp", "getIdentities", "getAuthToLocalProperties", "getConfigurations", "getServices", "getProperties", "getGroupName", "getKeytabDescriptor", "reflectionEquals", "getType", "getWhen", "getReference", "getConfiguration", "getOwnerName", "getGroupAccess", "getPrincipalDescriptor", "getOwnerAccess", "isVisible", "getClass", "isEquals", "append", "intValue", "getVersion", "getName", "equal", "isInstance", "appendSuper", "getHostName" ]
+    }, {
+      "name" : "getClusterEntity",
+      "visibility" : "public",
+      "methodCalls" : [ "findById" ]
+    }, {
+      "name" : "createServiceConfigVersion",
+      "visibility" : "public",
+      "methodCalls" : [ "getClusterId", "getDesiredStack", "getCreateTimestamp", "setClusterEntity", "getVersion", "values", "getValue", "getDesiredStackId", "unlock", "merge", "writeLock", "getHostName", "map", "lock", "getName", "getHosts", "isNotEmpty", "getChangedConfigTypes", "size", "getClusterEntity", "find", "stream", "getType", "publish", "setVersion", "collect", "info", "setNote", "findConfig", "add", "setClusterConfigEntities", "setGroupId", "create", "setServiceName", "getNote", "entrySet", "findNextServiceConfigVersion", "toList", "setUser", "setHostIds", "getClusterName", "keySet", "get", "setStack", "getTag", "getConfigurations", "getId" ]
+    }, {
+      "name" : "setClusterName",
+      "visibility" : "public",
+      "methodCalls" : [ "setClusterName", "getClusterEntity", "merge", "publish", "getClusterName", "equals", "updateClusterName" ]
+    }, {
+      "name" : "transitionHostsToInstalling",
+      "visibility" : "public",
+      "methodCalls" : [ "getHostName", "getType", "getAvailableServiceNames", "getHostEntities", "getServiceName", "getServiceComponentHosts", "add", "getHostVersionEntities", "getClusterName", "lock", "writeLock", "unlock", "getMaintenanceState", "info", "getId", "create", "size", "setState", "getRepositoryVersion", "merge", "getState", "getVersion", "getClusterEntity", "getHostsForCluster", "equals", "get", "getClusterSummary", "hasComponentsAdvertisingVersions", "contains" ]
+    }, {
+      "name" : "getCurrentStackVersion",
+      "visibility" : "public",
+      "methodCalls" : [ "getCurrentStack", "getClusterEntity", "getClusterStateEntity" ]
+    }, {
+      "name" : "processServiceComponentHostEvents",
+      "visibility" : "public",
+      "methodCalls" : [ "unlock", "readLock", "processServiceComponentHostEventsInSingleTransaction", "lock" ]
+    }, {
+      "name" : "getResourceId",
+      "visibility" : "public",
+      "methodCalls" : [ "warn", "getClusterId", "getResource", "getId", "getClusterEntity", "getClusterName" ]
+    }, {
+      "name" : "debugDump",
+      "visibility" : "public",
+      "methodCalls" : [ "getTimeSpentWaitingForLock", "getTimeSpentLocked", "getLockCount", "getLabel", "isEmpty", "getStackId", "getVersion", "getHostName", "getState", "getServiceName", "getName", "getDesiredStackId", "getClusterId", "getClusterName", "getCluster", "getDesiredState", "isRecoveryEnabled", "debugDump", "values", "append" ]
+    }, {
+      "name" : "getUpgradeInProgress",
+      "visibility" : "public",
+      "methodCalls" : [ "getClusterEntity", "getUpgradeEntity" ]
+    }, {
+      "name" : "getHost",
+      "visibility" : "public",
+      "methodCalls" : [ "toLowerCase", "getPropertyValue", "forSessionId", "checkNotNull", "handleRequest", "createHostResource", "getHosts", "getHostId", "equalsIgnoreCase", "getHostName", "isEmpty", "equals", "get" ]
+    }, {
+      "name" : "removeServiceComponentHost",
+      "visibility" : "public",
+      "methodCalls" : [ "iterator", "containsKey", "getClusterId", "getServiceComponentName", "next", "equals", "getHostName", "getClustersForHost", "getServiceName", "getClusterName", "isDebugEnabled", "hasNext", "debug", "get", "warn", "remove" ]
+    }, {
+      "name" : "getSecurityType",
+      "visibility" : "public",
+      "methodCalls" : [ "getClusterEntity", "getSecurityType" ]
+    }, {
+      "name" : "getHosts",
+      "visibility" : "public",
+      "methodCalls" : [ "getHosts", "addAll", "handleRequest", "createHostResource", "getHostsForCluster", "emptySet", "getServiceComponents", "size", "keySet", "get", "containsKey", "getServiceComponentHosts", "getServices", "values", "getHostsFromHostGroups" ]
+    }, {
+      "name" : "setCurrentStackVersion",
+      "visibility" : "public",
+      "methodCalls" : [ "getClusterEntity", "lock", "merge", "getStackVersion", "setClusterEntity", "create", "getStackName", "setClusterId", "findByPK", "getClusterName", "setCurrentStack", "find", "warn", "setClusterStateEntity", "unlock", "writeLock", "getClusterId" ]
+    }, {
+      "name" : "getConfigGroupsByServiceName",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "getValue", "entrySet", "getServiceName", "put", "getKey" ]
+    }, {
+      "name" : "getNextConfigVersion",
+      "visibility" : "public",
+      "methodCalls" : [ "findNextConfigVersion" ]
+    }, {
+      "name" : "getServiceConfigVersions",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll", "put", "unlock", "getCreateTime", "equals", "readLock", "convertToServiceConfigVersionResponse", "getServiceConfigs", "getClusterId", "add", "getVersion", "lock", "get", "containsKey", "getServiceName", "values", "getGroupName", "setIsCurrent", "getGroupId" ]
+    }, {
+      "name" : "getAllDesiredConfigVersions",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addDesiredConfig",
+      "visibility" : "public",
+      "methodCalls" : [ "writeLock", "iterator", "addDesiredConfig", "remove", "getDesiredConfigByType", "hasNext", "applyConfigs", "next", "create", "setType", "setSelected", "getTag", "getHostEntity", "getVersion", "lock", "getHostId", "getType", "setCreateTimestamp", "setUser", "findByType", "unlock", "setClusterId", "setVersion", "equals", "merge", "setHostId", "currentTimeMillis" ]
+    }, {
+      "name" : "addService",
+      "visibility" : "public",
+      "methodCalls" : [ "debug", "isDebugEnabled", "getName", "format", "containsKey", "put", "getClusterName", "createNew", "getClusterId", "addService" ]
+    }, {
+      "name" : "addServiceComponentHosts",
+      "visibility" : "public",
+      "methodCalls" : [ "getService", "getServiceComponent", "getServiceComponentName", "getServiceName", "getHostName", "getKey", "entrySet", "getValue", "addServiceComponentHost", "values", "equals" ]
+    }, {
+      "name" : "addServiceComponentHost",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "getClustersForHost", "iterator", "getServiceComponentName", "get", "getServiceName", "hasNext", "next", "put", "containsKey", "lock", "getClusterName", "getHostName", "writeLock", "unlock", "debug", "getCluster", "addServiceComponentHost", "createNew", "isRecoveryEnabled", "getName", "isDebugEnabled", "getClusterId" ]
+    }, {
+      "name" : "getConfigGroupsById",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "setProvisioningState",
+      "visibility" : "public",
+      "methodCalls" : [ "getClusterEntity", "merge", "setProvisioningState" ]
+    }, {
+      "name" : "buildClusterInformation",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "getKey", "getServiceComponentName", "getSecurityType", "getValue", "newTreeSet", "getRepositoryVersion", "getServices", "getDesiredRepositoryVersion", "getHostName", "getServiceName", "put", "getProperties", "entrySet", "get", "getConfig", "getServiceComponentHosts", "getTag", "getClusterName" ]
+    } ],
+    "imports" : [ "org.apache.ambari.server.RoleCommand", "org.apache.ambari.view.cluster.Cluster", "org.apache.ambari.server.orm.dao.ServiceConfigDAO", "com.google.inject.Inject", "org.apache.ambari.server.AmbariException", "java.util.Map", "org.apache.ambari.annotations.ExperimentalFeature", "java.util.TreeSet", "org.apache.ambari.server.state.ClusterHealthReport", "org.apache.ambari.server.state.ServiceFactory", "org.apache.ambari.spi.RepositoryVersion", "org.apache.ambari.server.state.fsm.InvalidStateTransitionException", "java.util.stream.Collectors", "org.apache.ambari.server.state.Cluster", "org.apache.ambari.server.ConfigGroupNotFoundException", "org.apache.ambari.server.orm.entities.PrivilegeEntity", "org.apache.ambari.server.controller.AmbariSessionManager", "org.apache.ambari.server.state.Service", "java.util.concurrent.ConcurrentMap", "org.apache.ambari.server.events.jpa.EntityManagerCacheInvalidationEvent", "org.apache.ambari.server.state.ServiceInfo", "java.util.Set", "org.apache.ambari.server.orm.dao.ClusterStateDAO", "org.apache.ambari.server.state.ConfigFactory", "com.google.common.base.Functions", "org.apache.ambari.server.state.StackInfo", "org.apache.ambari.server.orm.entities.ServiceConfigEntity", "org.apache.ambari.server.orm.dao.UpgradeDAO", "org.apache.ambari.server.stack.upgrade.orchestrate.UpgradeContextFactory", "com.google.common.collect.Multimap", "org.apache.ambari.server.state.ConfigHelper", "org.apache.ambari.server.orm.RequiresSession", "org.apache.ambari.server.orm.dao.ClusterDAO", "org.slf4j.LoggerFactory", "org.apache.ambari.server.controller.MaintenanceStateHelper", "org.apache.ambari.server.events.publishers.AmbariEventPublisher", "com.google.common.collect.Iterables", "org.apache.ambari.server.events.ConfigsUpdateEvent", "org.apache.ambari.server.metadata.RoleCommandOrder", "org.apache.ambari.server.state.HostHealthStatus", "org.slf4j.Logger", "org.apache.ambari.server.state.configgroup.ConfigGroupFactory", "org.apache.ambari.server.state.repository.VersionDefinitionXml", "org.apache.ambari.server.state.Host", "org.apache.ambari.server.topology.TopologyRequest", "org.apache.ambari.server.state.SecurityType", "java.util.Collection", "java.util.concurrent.ConcurrentHashMap", "org.apache.ambari.server.topology.STOMPComponentsDeleteHandler", "org.apache.ambari.server.state.Clusters", "org.apache.ambari.server.ServiceComponentNotFoundException", "com.google.inject.persist.Transactional", "javax.annotation.Nullable", "com.google.common.collect.ListMultimap", "com.google.common.collect.HashMultimap", "org.apache.ambari.spi.RepositoryType", "java.util.Iterator", "org.apache.ambari.server.orm.dao.HostDAO", "org.apache.ambari.server.controller.internal.DeleteHostComponentStatusMetaData", "org.apache.ambari.server.state.repository.ClusterVersionSummary", "java.util.ArrayList", "org.apache.ambari.server.events.publishers.JPAEventPublisher", "org.apache.ambari.server.orm.cache.HostConfigMapping", "org.apache.ambari.server.orm.entities.ResourceEntity", "org.apache.ambari.server.orm.dao.StackDAO", "com.google.common.base.Predicate", "org.apache.ambari.server.controller.AmbariManagementController", "java.util.HashSet", "java.text.MessageFormat", "com.google.inject.Injector", "java.util.HashMap", "java.util.List", "java.util.stream.Collectors.toList", "java.util.concurrent.ConcurrentSkipListMap", "org.apache.ambari.server.controller.RootService", "jakarta.persistence.RollbackException", "com.google.common.collect.Sets", "java.util.function.Function", "org.apache.ambari.server.controller.ServiceConfigVersionResponse", "org.apache.ambari.server.state.configgroup.ConfigGroup", "com.google.common.eventbus.Subscribe", "org.apache.ambari.server.state.BlueprintProvisioningState", "java.util.concurrent.locks.ReadWriteLock", "org.apache.ambari.server.events.publishers.STOMPUpdatePublisher", "com.google.common.collect.Maps", "org.apache.ambari.server.state.PropertyInfo", "org.apache.commons.collections4.CollectionUtils", "org.apache.ambari.server.controller.internal.BlueprintConfigurationProcessor", "java.util.TreeMap", "java.util.Collections", "org.apache.ambari.server.orm.entities.ConfigGroupEntity", "org.apache.ambari.server.orm.entities.ClusterEntity", "java.util.Objects", "org.apache.ambari.server.orm.entities.HostVersionEntity", "org.apache.ambari.server.state.State", "java.util.Date", "org.apache.ambari.server.ServiceComponentHostNotFoundException", "org.apache.ambari.server.orm.entities.PermissionEntity", "org.apache.ambari.server.state.StackId", "org.apache.ambari.server.agent.ExecutionCommand.KeyNames", "org.apache.ambari.server.state.scheduler.RequestExecutionFactory", "java.util.concurrent.CopyOnWriteArrayList", "jakarta.persistence.EntityManager", "org.apache.ambari.server.events.AmbariEvent.AmbariEventType", "org.apache.ambari.server.orm.dao.HostVersionDAO", "org.apache.ambari.server.events.ClusterEvent", "org.apache.ambari.server.api.services.AmbariMetaInfo", "org.apache.ambari.server.orm.dao.AlertDispatchDAO", "org.apache.ambari.spi.ClusterInformation", "org.apache.ambari.server.orm.dao.AlertDefinitionDAO", "org.apache.ambari.server.state.MaintenanceState", "org.apache.ambari.server.ParentObjectNotFoundException", "org.apache.ambari.annotations.Experimental", "com.google.common.collect.ImmutableMap", "org.apache.ambari.server.orm.dao.HostComponentDesiredStateDAO", "java.util.Map.Entry", "org.apache.ambari.server.state.RepositoryVersionState", "org.apache.ambari.server.metadata.RoleCommandOrderProvider", "org.apache.ambari.server.state.ServiceComponentHost", "org.apache.ambari.server.orm.dao.TopologyRequestDAO", "org.apache.ambari.server.orm.entities.RepositoryVersionEntity", "org.apache.ambari.server.ServiceNotFoundException", "org.apache.ambari.server.events.ClusterConfigChangedEvent", "org.apache.ambari.server.controller.ConfigurationResponse", "org.apache.ambari.server.orm.entities.ClusterConfigEntity", "org.apache.ambari.server.state.Config", "org.apache.ambari.server.orm.entities.HostEntity", "org.apache.commons.collections4.MapUtils", "org.apache.ambari.server.orm.dao.HostConfigMappingDAO", "org.apache.ambari.server.orm.entities.RequestScheduleEntity", "org.apache.ambari.server.orm.entities.TopologyRequestEntity", "org.apache.ambari.server.orm.entities.ClusterServiceEntity", "org.apache.ambari.server.orm.entities.UpgradeEntity", "org.apache.ambari.server.agent.stomp.HostLevelParamsHolder", "org.apache.ambari.server.orm.entities.ClusterStateEntity", "org.apache.commons.lang.StringUtils", "org.apache.ambari.server.state.ServiceComponentHostEventType", "org.apache.ambari.server.events.jpa.JPAEvent", "org.apache.ambari.server.state.scheduler.RequestExecution", "org.apache.ambari.server.state.ServiceComponent", "com.google.inject.assistedinject.Assisted", "org.apache.ambari.server.logging.LockFactory", "org.apache.ambari.server.state.ServiceComponentHostEvent", "org.apache.ambari.server.events.ClusterProvisionedEvent", "org.apache.ambari.server.ObjectNotFoundException", "org.apache.ambari.server.state.DesiredConfig", "org.apache.ambari.server.stack.upgrade.orchestrate.UpgradeContext", "org.apache.ambari.server.controller.ClusterResponse", "org.apache.ambari.server.orm.entities.StackEntity", "org.apache.ambari.server.orm.entities.HostComponentDesiredStateEntity" ]
+  }, {
+    "name" : "ControllerModule",
+    "packageName" : "org.apache.ambari.scom",
+    "extendedClasses" : [ "AbstractModule" ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "getPersistenceProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "getLocalDatabaseUrl", "getConnectionPoolAcquisitionRetryDelay", "setAcquireRetryAttempts", "put", "getDatabaseDriver", "setMaxIdleTime", "setInitialPoolSize", "setPassword", "getConnectionPoolMinimumSize", "setMinPoolSize", "getConnectionPoolMaximumSize", "getDatabaseType", "setMaxIdleTimeExcessConnections", "getPersistenceCustomProperties", "setJdbcUrl", "setAcquireIncrement", "putAll", "getDatabaseUser", "getPersistenceType", "getDatabaseUrl", "setProperty", "getConnectionPoolAcquisitionRetryAttempts", "getConnectionPoolMaximumExcessIdle", "getSimpleName", "getConnectionPoolMaximumIdle", "getConnectionPoolType", "getConnectionPoolMaximumAge", "setPreferredTestQuery", "getDatabaseCustomProperties", "warn", "setMaxConnectionAge", "setIdleConnectionTestPeriod", "setUser", "getDefaultValue", "setMaxPoolSize", "getDatabasePassword", "info", "setAcquireRetryDelay", "setDriverClass", "getConnectionPoolIdleTestInternval", "getConnectionPoolAcquisitionSize" ]
+    } ],
+    "imports" : [ "org.apache.ambari.server.notifications.NotificationDispatcher", "java.net.BindException", "org.apache.ambari.server.security.authorization.AmbariLocalUserDetailsService", "org.springframework.beans.factory.config.ConfigurableListableBeanFactory", "org.apache.ambari.server.security.authorization.Users", "com.google.inject.Guice", "java.util.Map", "org.apache.ambari.server.AmbariException", "org.apache.ambari.server.security.authorization.AmbariLdapAuthenticationProvider", "org.eclipse.jetty.server.ssl.SslSelectChannelConnector", "com.sun.jersey.spi.container.servlet.ServletContainer", "org.springframework.web.context.support.GenericWebApplicationContext", "org.eclipse.jetty.servlet.ServletHolder", "org.eclipse.jetty.util.thread.QueuedThreadPool", "org.eclipse.jetty.util.ssl.SslContextFactory", "org.apache.ambari.server.controller.HostsMap", "java.io.File", "org.apache.ambari.server.orm.GuiceJpaInitializer", "org.apache.ambari.server.api.AmbariPersistFilter", "org.apache.ambari.server.configuration.ComponentSSLConfiguration", "com.google.inject.persist.jpa.JpaPersistModule", "com.google.inject.persist.Transactional", "org.eclipse.jetty.servlet.FilterHolder", "org.springframework.web.context.WebApplicationContext", "javax.crypto.BadPaddingException", "com.google.inject.Injector", "org.eclipse.jetty.server.nio.SelectChannelConnector", "com.google.inject.Inject", "org.eclipse.jetty.servlet.DefaultServlet", "org.springframework.context.support.ClassPathXmlApplicationContext", "org.eclipse.jetty.servlet.ServletContextHandler", "org.eclipse.jetty.server.Server", "org.apache.ambari.server.security.authorization.internal.InternalAuthenticationInterceptor", "org.apache.ambari.server.controller.internal.HostKerberosIdentityResourceProvider", "org.springframework.beans.factory.config.BeanDefinition", "org.apache.ambari.server.controller.internal.ServiceResourceProvider", "org.apache.ambari.server.state.host.HostImpl", "org.eclipse.persistence.config.PersistenceUnitProperties.JDBC_PASSWORD", "org.eclipse.persistence.config.PersistenceUnitProperties.DROP_JDBC_DDL_FILE", "org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandlerFactory", "org.apache.ambari.server.controller.internal.KerberosDescriptorResourceProvider", "org.apache.ambari.server.security.encryption.CredentialStoreService", "org.apache.ambari.server.configuration.Configuration.ConnectionPoolType", "org.apache.ambari.server.state.ServiceComponentHost", "org.apache.ambari.server.EagerSingleton", "org.apache.ambari.server.StaticallyInject", "org.apache.ambari.server.metadata.RoleCommandOrderProvider", "java.util.Properties", "org.apache.ambari.server.checks.UpgradeCheckRegistry", "org.apache.ambari.server.security.authorization.internal.RunWithInternalSecurityContext", "org.apache.ambari.server.topology.PersistedState", "org.apache.ambari.server.state.Host", "java.util.ArrayList", "org.springframework.core.type.filter.AssignableTypeFilter", "org.apache.ambari.server.utils.ThreadPools", "org.apache.ambari.server.state.Config", "org.apache.ambari.server.stack.StackManagerFactory", "org.apache.ambari.server.notifications.DispatchFactory", "org.apache.ambari.server.state.scheduler.RequestExecutionFactory", "java.util.HashSet", "org.apache.ambari.server.state.configgroup.ConfigGroup", "org.apache.ambari.server.events.AmbariEvent", "org.apache.ambari.server.hooks.HookContextFactory", "org.apache.ambari.server.security.authorization.AuthorizationHelper", "org.eclipse.persistence.config.PersistenceUnitProperties.DDL_GENERATION_MODE", "org.apache.ambari.server.controller.spi.ResourceProvider", "org.apache.ambari.server.AmbariService", "com.google.inject.matcher.Matchers.any", "org.apache.ambari.server.controller.metrics.MetricPropertyProviderFactory", "org.apache.ambari.server.controller.internal.RepositoryVersionResourceProvider", "org.apache.ambari.server.state.ServiceFactory", "org.apache.ambari.server.cleanup.ClasspathScannerUtils", "org.apache.ambari.server.controller.metrics.timeline.cache.TimelineMetricCacheProvider", "com.google.common.reflect.ClassPath", "org.apache.ambari.server.metadata.CachedRoleCommandOrderProvider", "com.google.gson.GsonBuilder", "org.apache.ambari.server.events.AgentConfigsUpdateEvent", "org.eclipse.persistence.config.PersistenceUnitProperties.THROW_EXCEPTIONS", "org.apache.ambari.server.controller.internal.UserResourceProvider", "org.apache.ambari.server.security.encryption.Encryptor", "org.apache.ambari.server.controller.internal.ViewInstanceResourceProvider", "org.apache.ambari.server.controller.internal.UpgradeResourceProvider", "org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider", "org.apache.ambari.server.notifications.dispatchers.AlertScriptDispatcher", "org.apache.ambari.server.state.scheduler.RequestExecutionImpl", "org.slf4j.Logger", "org.apache.ambari.server.actionmanager.ExecutionCommandWrapperFactory", "org.eclipse.persistence.config.PersistenceUnitProperties.CREATE_OR_EXTEND", "org.apache.ambari.server.state.svccomphost.ServiceComponentHostImpl", "org.apache.ambari.server.hooks.users.UserHookService", "org.apache.ambari.server.scheduler.ExecutionSchedulerImpl", "org.apache.ambari.server.topology.BlueprintFactory", "org.apache.ambari.server.orm.PersistenceType", "org.apache.ambari.server.configuration.AmbariServerConfiguration", "org.apache.ambari.server.hooks.HookService", "java.security.SecureRandom", "org.apache.ambari.server.hooks.users.PostUserCreationHookContext", "org.apache.ambari.server.state.host.HostFactory", "org.apache.ambari.server.orm.dao.HostRoleCommandDAO", "org.apache.ambari.server.state.ServiceComponentImpl", "org.apache.ambari.server.state.ServiceComponent", "org.apache.ambari.server.controller.internal.UserAuthenticationSourceResourceProvider", "com.google.inject.persist.jpa.AmbariJpaPersistModule", "com.google.inject.assistedinject.FactoryModuleBuilder", "org.apache.ambari.server.controller.logging.LoggingRequestHelperFactoryImpl", "org.eclipse.persistence.config.PersistenceUnitProperties.DDL_GENERATION", "org.eclipse.persistence.config.PersistenceUnitProperties.JDBC_DRIVER", "org.apache.ambari.server.state.ServiceComponentHostFactory", "com.google.inject.matcher.Matchers.annotatedWith", "org.apache.ambari.server.hooks.users.UserCreatedEvent", "com.google.inject.name.Names", "org.apache.ambari.server.metrics.system.impl.MetricsServiceImpl", "org.apache.ambari.server.state.scheduler.RequestExecution", "org.apache.ambari.server.state.Clusters", "org.apache.ambari.server.actionmanager.StageFactoryImpl", "org.apache.ambari.server.notifications.dispatchers.AmbariSNMPDispatcher", "org.apache.ambari.server.controller.internal.AuthResourceProvider", "org.springframework.security.crypto.password.PasswordEncoder", "org.apache.ambari.server.state.configgroup.ConfigGroupFactory", "org.apache.ambari.server.state.ServiceComponentFactory", "org.apache.ambari.server.controller.internal.AlertTargetResourceProvider", "org.apache.ambari.server.controller.internal.HostResourceProvider", "org.apache.ambari.server.orm.DBAccessor", "org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper", "com.google.inject.persist.PersistModule", "org.apache.ambari.server.topology.SecurityConfigurationFactory", "org.apache.ambari.server.security.encryption.EncryptionService", "org.apache.ambari.server.hooks.HookContext", "org.apache.ambari.server.serveraction.users.CollectionPersisterService", "org.apache.ambari.server.controller.metrics.timeline.cache.TimelineMetricCacheEntryFactory", "org.springframework.security.crypto.password.StandardPasswordEncoder", "org.apache.ambari.server.mpack.MpackManagerFactory", "org.eclipse.jetty.server.session.SessionHandler", "org.apache.ambari.server.stageplanner.RoleGraphFactory", "org.apache.ambari.server.serveraction.users.CollectionPersisterServiceFactory", "org.eclipse.persistence.config.PersistenceUnitProperties.DROP_AND_CREATE", "org.apache.ambari.server.notifications.dispatchers.SNMPDispatcher", "org.apache.ambari.server.controller.internal.RootServiceComponentConfigurationResourceProvider", "org.apache.ambari.server.controller.internal.MemberResourceProvider", "com.google.gson.Gson", "org.apache.ambari.server.stack.upgrade.orchestrate.UpgradeContextFactory", "org.apache.ambari.server.actionmanager.StageFactory", "org.apache.ambari.server.state.cluster.ClusterFactory", "org.apache.ambari.server.configuration.Configuration", "org.apache.ambari.server.state.kerberos.KerberosDescriptorFactory", "org.apache.ambari.server.state.ConfigFactory", "com.google.common.util.concurrent.ServiceManager", "org.apache.ambari.server.security.encryption.CredentialStoreServiceImpl", "org.eclipse.persistence.config.PersistenceUnitProperties.JDBC_URL", "org.apache.ambari.server.security.encryption.AmbariServerConfigurationEncryptor", "org.apache.ambari.server.state.Cluster", "org.apache.ambari.server.actionmanager.ActionDBAccessor", "org.apache.ambari.server.orm.DBAccessorImpl", "org.apache.ambari.server.controller.utilities.KerberosChecker", "org.apache.ambari.server.metrics.system.MetricsService", "org.apache.ambari.server.checks.UpgradeCheckRegistryProvider", "org.apache.ambari.server.actionmanager.HostRoleCommandFactoryImpl", "org.apache.ambari.server.controller.logging.LoggingRequestHelperFactory", "com.google.inject.TypeLiteral", "org.apache.ambari.server.controller.internal.CredentialResourceProvider", "org.apache.ambari.server.state.kerberos.KerberosServiceDescriptorFactory", "org.apache.ambari.server.configuration.Configuration.DatabaseType", "org.apache.ambari.server.state.stack.OsFamily", "org.eclipse.persistence.config.PersistenceUnitProperties.CREATE_JDBC_DDL_FILE", "org.eclipse.persistence.config.PersistenceUnitProperties.NON_JTA_DATASOURCE", "org.apache.ambari.server.state.Service", "org.springframework.web.filter.DelegatingFilterProxy", "org.apache.ambari.server.controller.internal.HostComponentResourceProvider", "org.apache.ambari.server.state.ServiceImpl", "org.apache.ambari.server.security.encryption.ConfigPropertiesEncryptor", "org.apache.ambari.server.controller.internal.ComponentResourceProvider", "org.apache.ambari.server.topology.tasks.ConfigureClusterTaskFactory", "org.apache.ambari.server.security.encryption.AESEncryptionService", "org.apache.ambari.server.security.encryption.AgentConfigUpdateEncryptor", "org.apache.ambari.server.state.cluster.ClustersImpl", "java.beans.PropertyVetoException", "com.mchange.v2.c3p0.ComboPooledDataSource", "java.util.Set", "org.apache.ambari.server.state.ConfigImpl", "com.google.inject.AbstractModule", "com.google.inject.Scopes", "org.apache.ambari.server.topology.PersistedStateImpl", "org.apache.ambari.server.security.SecurityHelperImpl", "org.apache.ambari.server.actionmanager.ActionDBAccessorImpl", "org.apache.ambari.server.utils.PasswordUtils", "org.apache.ambari.server.actionmanager.RequestFactory", "org.slf4j.LoggerFactory", "org.springframework.util.ClassUtils", "org.apache.ambari.server.actionmanager.HostRoleCommandFactory", "org.apache.ambari.server.view.ViewInstanceHandlerList", "org.eclipse.persistence.config.PersistenceUnitProperties.DDL_BOTH_GENERATION", "org.apache.ambari.server.security.SecurityHelper", "org.eclipse.persistence.config.PersistenceUnitProperties.JDBC_USER", "com.google.inject.Singleton", "org.apache.ambari.server.hooks.AmbariEventFactory", "org.apache.ambari.server.controller.internal.ClusterStackVersionResourceProvider", "java.util.List", "org.apache.ambari.server.state.cluster.ClusterImpl", "java.text.MessageFormat", "org.apache.ambari.server.serveraction.users.CsvFilePersisterService", "org.apache.ambari.server.scheduler.ExecutionScheduler", "org.apache.ambari.server.state.configgroup.ConfigGroupImpl", "org.eclipse.persistence.config.PersistenceUnitProperties.CREATE_ONLY" ]
+  } ]
+}

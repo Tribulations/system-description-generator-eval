@@ -1,0 +1,1693 @@
+{
+  "systemName" : "netty",
+  "classes" : [ {
+    "name" : "WrappedCompositeByteBuf",
+    "packageName" : "io.netty.buffer",
+    "extendedClasses" : [ "CompositeByteBuf" ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "retain",
+      "visibility" : "public",
+      "methodCalls" : [ "retain", "content", "retain0", "record" ]
+    }, {
+      "name" : "equals",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "dnsClass", "hashCode", "type", "intValue", "id", "getId", "contentEqualsIgnoreCase", "command", "parameters", "details", "sender", "getValue", "getAll", "getKey", "get", "names", "recipient", "size", "isEmpty", "ack", "frameType", "flags", "stream", "settings", "ops", "code", "majorVersion", "protocolName", "minorVersion", "getName", "getClass", "isReadable", "equalsIgnoreCase", "sessionId", "headers", "protocolVersion", "trailingHeaders", "content", "decoderResult", "name", "port", "domain", "path", "status", "uri", "method" ]
+    }, {
+      "name" : "writeCharSequence",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "writeCharSequence" ]
+    }, {
+      "name" : "getBoolean",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "convertToBoolean", "recordLeakNonRefCountingOperation", "getByte", "getBoolean" ]
+    }, {
+      "name" : "getByte",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "convertToByte", "recordLeakNonRefCountingOperation", "idx", "checkIndex", "ensureAccessible", "_getByte", "checkIndex0", "getByte", "unwrap" ]
+    }, {
+      "name" : "addComponent",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "checkNotNull", "addComponent" ]
+    }, {
+      "name" : "setInt",
+      "visibility" : "public",
+      "methodCalls" : [ "set", "idx", "recordLeakNonRefCountingOperation", "reverseBytes", "checkIndex", "_setInt", "ensureAccessible", "checkIndex0", "swapInt", "setInt", "unwrap" ]
+    }, {
+      "name" : "setIntLE",
+      "visibility" : "public",
+      "methodCalls" : [ "idx", "recordLeakNonRefCountingOperation", "checkIndex", "_setIntLE", "ensureAccessible", "checkIndex0", "setIntLE", "unwrap" ]
+    }, {
+      "name" : "isWritable",
+      "visibility" : "public",
+      "methodCalls" : [ "outboundBuffer", "unsafe", "capacity", "isWritable" ]
+    }, {
+      "name" : "readMedium",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readUnsignedMedium", "swapMedium", "readMedium" ]
+    }, {
+      "name" : "indexOf",
+      "visibility" : "public",
+      "methodCalls" : [ "max", "writerIndex", "recordLeakNonRefCountingOperation", "firstIndexOf", "lastIndexOf", "indexOf" ]
+    }, {
+      "name" : "refCnt",
+      "visibility" : "public",
+      "methodCalls" : [ "content", "refCnt0", "refCnt" ]
+    }, {
+      "name" : "alloc",
+      "visibility" : "public",
+      "methodCalls" : [ "getAllocator", "config", "channel", "unwrap", "alloc" ]
+    }, {
+      "name" : "capacity",
+      "visibility" : "public",
+      "methodCalls" : [ "capacity", "unwrap", "maxCapacity", "trimIndicesToCapacity", "reallocateDirect", "setByteBuffer", "checkNewCapacity", "arraycopy", "allocateArray", "freeArray", "ensureAccessible", "reallocate", "slice", "readerIndex", "setIndex", "setIndex0", "free", "length", "clear", "put", "limit", "position", "allocateDirect", "allocate", "getBytes", "writerIndex", "min", "release", "recordLeakNonRefCountingOperation" ]
+    }, {
+      "name" : "setShort",
+      "visibility" : "public",
+      "methodCalls" : [ "set", "idx", "recordLeakNonRefCountingOperation", "reverseBytes", "checkIndex", "_setShort", "ensureAccessible", "checkIndex0", "swapShort", "setShort", "unwrap" ]
+    }, {
+      "name" : "readLong",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_getLong", "swapLong", "readLong" ]
+    }, {
+      "name" : "isDirect",
+      "visibility" : "public",
+      "methodCalls" : [ "unwrap", "isDirect" ]
+    }, {
+      "name" : "writeLong",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_setLong", "ensureWritable0", "reverseBytes", "swapLong", "writeLong" ]
+    }, {
+      "name" : "readableBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "readerIndex", "readableBytes" ]
+    }, {
+      "name" : "forEachByteDesc",
+      "visibility" : "public",
+      "methodCalls" : [ "writerIndex", "idx", "recordLeakNonRefCountingOperation", "ensureAccessible", "throwException", "forEachByteDesc0", "checkIndex", "checkIndex0", "forEachByteDesc", "unwrap" ]
+    }, {
+      "name" : "removeComponents",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "free", "length", "removeComponents" ]
+    }, {
+      "name" : "setLongLE",
+      "visibility" : "public",
+      "methodCalls" : [ "idx", "recordLeakNonRefCountingOperation", "checkIndex", "ensureAccessible", "_setLongLE", "checkIndex0", "setLongLE", "unwrap" ]
+    }, {
+      "name" : "component",
+      "visibility" : "public",
+      "methodCalls" : [ "duplicate", "component" ]
+    }, {
+      "name" : "getLongLE",
+      "visibility" : "public",
+      "methodCalls" : [ "idx", "recordLeakNonRefCountingOperation", "checkIndex", "_getLongLE", "ensureAccessible", "checkIndex0", "unwrap", "getLongLE" ]
+    }, {
+      "name" : "touch",
+      "visibility" : "public",
+      "methodCalls" : [ "touch", "position", "content", "touch0", "record" ]
+    }, {
+      "name" : "nioBuffers",
+      "visibility" : "public",
+      "methodCalls" : [ "writerIndex", "get", "set", "internalNioBuffer", "recordLeakNonRefCountingOperation", "idx", "readerIndex", "recycle", "toArray", "addAll", "nioBufferCount", "min", "checkIndex", "add", "readableBytes", "newInstance", "isReadOnly", "nioBuffer", "asReadOnlyBuffer", "checkIndex0", "order", "nioBuffers", "unwrap" ]
+    }, {
+      "name" : "readUnsignedMediumLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_getUnsignedMediumLE", "readMediumLE", "readUnsignedMediumLE" ]
+    }, {
+      "name" : "compareTo",
+      "visibility" : "public",
+      "methodCalls" : [ "compareTo", "intValue", "compare", "isReadable", "code", "compareToIgnoreCase", "domain", "path", "name", "getHttpDataType", "getName", "majorVersion", "protocolName", "minorVersion", "identityHashCode", "asLongText", "min", "id" ]
+    }, {
+      "name" : "internalNioBuffer",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "ensureAccessible", "_internalNioBuffer", "position", "checkIndex", "clear", "limit", "internalNioBuffer", "nioBuffer" ]
+    }, {
+      "name" : "setDouble",
+      "visibility" : "public",
+      "methodCalls" : [ "set", "recordLeakNonRefCountingOperation", "setLong", "doubleToRawLongBits", "setDouble" ]
+    }, {
+      "name" : "discardReadBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "ensureAccessible", "setBytes", "adjustMarkers", "length", "readerIndex", "setIndex", "writerIndex", "capacity", "free", "slice", "discardReadBytes" ]
+    }, {
+      "name" : "readBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "writerIndex", "writeBytes", "buffer", "getBytes", "format", "alloc", "writableBytes", "put", "get", "checkDstIndex", "remaining", "readerIndex", "_internalNioBuffer", "write", "checkReadableBytes", "order", "readBytes" ]
+    }, {
+      "name" : "deallocate",
+      "visibility" : "public",
+      "methodCalls" : [ "deallocate" ]
+    }, {
+      "name" : "maxWritableBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "maxCapacity", "maxWritableBytes" ]
+    }, {
+      "name" : "setBoolean",
+      "visibility" : "public",
+      "methodCalls" : [ "set", "recordLeakNonRefCountingOperation", "setByte", "setBoolean" ]
+    }, {
+      "name" : "setByte",
+      "visibility" : "public",
+      "methodCalls" : [ "set", "recordLeakNonRefCountingOperation", "idx", "checkIndex", "_setByte", "ensureAccessible", "checkIndex0", "setByte", "unwrap" ]
+    }, {
+      "name" : "setIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "capacity", "setIndex0", "setIndex" ]
+    }, {
+      "name" : "readInt",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_getInt", "readInt", "swapInt" ]
+    }, {
+      "name" : "getShort",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "convertToShort", "idx", "recordLeakNonRefCountingOperation", "reverseBytes", "checkIndex", "ensureAccessible", "_getShort", "checkIndex0", "swapShort", "unwrap", "getShort" ]
+    }, {
+      "name" : "readByte",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "recordLeakNonRefCountingOperation", "_getByte", "available", "readByte" ]
+    }, {
+      "name" : "setZero",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_setLong", "_setInt", "_setByte", "idx", "addr", "checkIndex", "setZero" ]
+    }, {
+      "name" : "writeMediumLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_setMediumLE", "ensureWritable0", "writeMediumLE" ]
+    }, {
+      "name" : "getLong",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "convertToLong", "idx", "recordLeakNonRefCountingOperation", "reverseBytes", "checkIndex", "ensureAccessible", "_getLong", "checkIndex0", "swapLong", "unwrap", "getLong" ]
+    }, {
+      "name" : "writeIntLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "ensureWritable0", "_setIntLE", "writeIntLE" ]
+    }, {
+      "name" : "setMediumLE",
+      "visibility" : "public",
+      "methodCalls" : [ "idx", "recordLeakNonRefCountingOperation", "checkIndex", "_setMediumLE", "ensureAccessible", "checkIndex0", "unwrap", "setMediumLE" ]
+    }, {
+      "name" : "resetReaderIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "readerIndex", "resetReaderIndex" ]
+    }, {
+      "name" : "order",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "newSwappedByteBuf", "alloc", "unwrap", "order", "checkNotNull" ]
+    }, {
+      "name" : "internalComponentAtOffset",
+      "visibility" : "public",
+      "methodCalls" : [ "slice", "internalComponentAtOffset" ]
+    }, {
+      "name" : "getShortLE",
+      "visibility" : "public",
+      "methodCalls" : [ "idx", "recordLeakNonRefCountingOperation", "checkIndex", "_getShortLE", "ensureAccessible", "checkIndex0", "unwrap", "getShortLE" ]
+    }, {
+      "name" : "writeBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "ensureWritable0", "setBytes", "readerIndex", "ensureWritable", "readableBytes", "remaining", "writeCharSequence", "writeBytes" ]
+    }, {
+      "name" : "discardReadComponents",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "setIndex", "capacity", "writerIndex", "readerIndex", "adjustMarkers", "free", "discardReadComponents" ]
+    }, {
+      "name" : "readShortLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_getShortLE", "readShortLE" ]
+    }, {
+      "name" : "setShortLE",
+      "visibility" : "public",
+      "methodCalls" : [ "idx", "recordLeakNonRefCountingOperation", "checkIndex", "ensureAccessible", "_setShortLE", "checkIndex0", "setShortLE", "unwrap" ]
+    }, {
+      "name" : "arrayOffset",
+      "visibility" : "public",
+      "methodCalls" : [ "idx", "unwrap", "arrayOffset" ]
+    }, {
+      "name" : "hasArray",
+      "visibility" : "public",
+      "methodCalls" : [ "unwrap", "hasArray" ]
+    }, {
+      "name" : "retainedDuplicate",
+      "visibility" : "public",
+      "methodCalls" : [ "retainedDuplicate", "segmentSize", "sender", "recipient", "release", "copy", "replace", "content", "readerIndex", "unwrap", "writerIndex", "newInstance", "order", "setIndex", "retainedSlice", "capacity", "duplicate", "idx", "retain", "recordLeakNonRefCountingOperation" ]
+    }, {
+      "name" : "slice",
+      "visibility" : "public",
+      "methodCalls" : [ "readerIndex", "recordLeakNonRefCountingOperation", "readableBytes", "checkIndex", "ensureAccessible", "idx", "unwrap", "checkIndex0", "slice", "order" ]
+    }, {
+      "name" : "removeComponent",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "length", "free", "removeComponent" ]
+    }, {
+      "name" : "resetWriterIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "writerIndex", "resetWriterIndex" ]
+    }, {
+      "name" : "maxNumComponents",
+      "visibility" : "public",
+      "methodCalls" : [ "maxNumComponents" ]
+    }, {
+      "name" : "bytesBefore",
+      "visibility" : "public",
+      "methodCalls" : [ "writerIndex", "recordLeakNonRefCountingOperation", "readableBytes", "checkReadableBytes", "indexOf", "readerIndex", "bytesBefore" ]
+    }, {
+      "name" : "clear",
+      "visibility" : "public",
+      "methodCalls" : [ "fill", "max", "checkNotNull", "emptyList", "clear" ]
+    }, {
+      "name" : "getBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "unwrap", "recordLeakNonRefCountingOperation", "readBytes", "alloc", "duplicate", "getBytes", "checkIndex0", "remaining", "hasMemoryAddress", "arrayOffset", "put", "arraycopy", "array", "setBytes", "hasArray", "memoryAddress", "checkIndex", "write", "idx", "checkDstIndex", "copyMemory", "capacity", "ensureAccessible", "duplicateInternalNioBuffer", "min", "limit", "addr", "nioBuffers", "nioBufferCount", "position", "readableBytes", "internalNioBuffer", "_internalNioBuffer", "get", "writableBytes", "writerIndex" ]
+    }, {
+      "name" : "array",
+      "visibility" : "public",
+      "methodCalls" : [ "unwrap", "ensureAccessible", "array" ]
+    }, {
+      "name" : "readSlice",
+      "visibility" : "public",
+      "methodCalls" : [ "readerIndex", "skipBytes", "recordLeakNonRefCountingOperation", "slice", "checkReadableBytes", "order", "readSlice" ]
+    }, {
+      "name" : "forEachByte",
+      "visibility" : "public",
+      "methodCalls" : [ "forEachByteDesc", "setIndex", "capacity", "writerIndex", "idx", "recordLeakNonRefCountingOperation", "ensureAccessible", "throwException", "checkIndex", "forEachByteAsc0", "checkIndex0", "unwrap", "forEachByte" ]
+    }, {
+      "name" : "unwrap",
+      "visibility" : "public",
+      "methodCalls" : [ "bioLengthByteBuffer", "checkNotNullArrayParam", "remaining", "isReadOnly", "isInboundDone", "getLastErrorNumber", "getShutdown", "getEncryptedPacketLength", "position", "isOutboundDone", "release", "min", "bioClearByteBuffer", "checkNotNullWithIAE", "tryExpandApplicationBufferSize", "hasRemaining", "getApplicationBufferSize", "getError", "unwrap" ]
+    }, {
+      "name" : "hasMemoryAddress",
+      "visibility" : "public",
+      "methodCalls" : [ "unwrap", "hasMemoryAddress" ]
+    }, {
+      "name" : "readRetainedSlice",
+      "visibility" : "public",
+      "methodCalls" : [ "readerIndex", "release", "skipBytes", "recordLeakNonRefCountingOperation", "checkReadableBytes", "retainedSlice", "readSlice", "readRetainedSlice", "order" ]
+    }, {
+      "name" : "setCharSequence",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "setCharSequence" ]
+    }, {
+      "name" : "isReadable",
+      "visibility" : "public",
+      "methodCalls" : [ "isReadable" ]
+    }, {
+      "name" : "setChar",
+      "visibility" : "public",
+      "methodCalls" : [ "set", "recordLeakNonRefCountingOperation", "setChar", "setShort" ]
+    }, {
+      "name" : "skipBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "checkReadableBytes", "min", "available", "skipBytes" ]
+    }, {
+      "name" : "getCharSequence",
+      "visibility" : "public",
+      "methodCalls" : [ "readerIndex", "unwrap", "checkIndex0", "idx", "recordLeakNonRefCountingOperation", "toString", "getBytes", "equals", "getCharSequence" ]
+    }, {
+      "name" : "writeBoolean",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "writeByte", "writeBoolean" ]
+    }, {
+      "name" : "readUnsignedInt",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readInt", "readUnsignedInt" ]
+    }, {
+      "name" : "writerIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "capacity", "writerIndex" ]
+    }, {
+      "name" : "readUnsignedMedium",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_getUnsignedMedium", "readMedium", "readUnsignedMedium" ]
+    }, {
+      "name" : "readBoolean",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readByte", "read", "readBoolean" ]
+    }, {
+      "name" : "writableBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "capacity", "writableBytes" ]
+    }, {
+      "name" : "writeShortLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_setShortLE", "ensureWritable0", "writeShortLE" ]
+    }, {
+      "name" : "asReadOnly",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "isReadOnly", "unmodifiableBuffer", "asReadOnly" ]
+    }, {
+      "name" : "getUnsignedMedium",
+      "visibility" : "public",
+      "methodCalls" : [ "idx", "recordLeakNonRefCountingOperation", "checkIndex", "_getUnsignedMedium", "ensureAccessible", "checkIndex0", "getMedium", "unwrap", "getUnsignedMedium" ]
+    }, {
+      "name" : "discardSomeReadBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "capacity", "setBytes", "adjustMarkers", "ensureAccessible", "discardReadComponents", "discardSomeReadBytes" ]
+    }, {
+      "name" : "getUnsignedIntLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "getUnsignedIntLE", "getIntLE" ]
+    }, {
+      "name" : "readLongLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_getLongLE", "readLongLE" ]
+    }, {
+      "name" : "setMedium",
+      "visibility" : "public",
+      "methodCalls" : [ "idx", "recordLeakNonRefCountingOperation", "checkIndex", "ensureAccessible", "_setMedium", "checkIndex0", "swapMedium", "unwrap", "setMedium" ]
+    }, {
+      "name" : "internalComponent",
+      "visibility" : "public",
+      "methodCalls" : [ "slice", "internalComponent" ]
+    }, {
+      "name" : "readShort",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_getShort", "swapShort", "readShort" ]
+    }, {
+      "name" : "retainedSlice",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "retain", "idx", "capacity", "readerIndex", "writerIndex", "slice", "checkIndex0", "retainedSlice", "order", "newInstance", "unwrap" ]
+    }, {
+      "name" : "release",
+      "visibility" : "public",
+      "methodCalls" : [ "release", "refCnt", "freeDirectBuffer", "content", "release0", "unwrap", "record", "stop", "cause", "setFailure", "newPromise", "isSuccess", "checkNotNull", "tryFailure", "inEventLoop", "close", "addListener", "setSuccess", "execute", "eventLoop" ]
+    }, {
+      "name" : "writeMedium",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_setMedium", "ensureWritable0", "swapMedium", "writeMedium" ]
+    }, {
+      "name" : "hashCode",
+      "visibility" : "public",
+      "methodCalls" : [ "code", "dnsClass", "type", "intValue", "getId", "hash", "names", "sender", "getAll", "size", "recipient", "get", "id", "identityHashCode", "ops", "hashCode", "trailingHeaders", "isAccessible", "content", "name", "sessionId", "getName", "protocolName", "minorVersion", "majorVersion" ]
+    }, {
+      "name" : "readChar",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readShort", "readChar" ]
+    }, {
+      "name" : "readMediumLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readUnsignedMediumLE", "readMediumLE" ]
+    }, {
+      "name" : "getMediumLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "getUnsignedMediumLE", "getMediumLE" ]
+    }, {
+      "name" : "writeLongLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "ensureWritable0", "_setLongLE", "writeLongLE" ]
+    }, {
+      "name" : "writeChar",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "writeChar", "writeShort" ]
+    }, {
+      "name" : "maxCapacity",
+      "visibility" : "public",
+      "methodCalls" : [ "capacity", "maxCapacity" ]
+    }, {
+      "name" : "addComponents",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "checkNotNull", "addComponents" ]
+    }, {
+      "name" : "numComponents",
+      "visibility" : "public",
+      "methodCalls" : [ "numComponents" ]
+    }, {
+      "name" : "readUnsignedByte",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readByte", "readUnsignedByte" ]
+    }, {
+      "name" : "getUnsignedShortLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "getShortLE", "getUnsignedShortLE" ]
+    }, {
+      "name" : "readerIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "capacity", "readerIndex" ]
+    }, {
+      "name" : "readUnsignedShort",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readShort", "readUnsignedShort" ]
+    }, {
+      "name" : "setBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "setBytes", "setByte", "recordLeakNonRefCountingOperation", "nioBuffer", "unwrap", "checkIndex0", "remaining", "get", "checkIndex", "idx", "arraycopy", "capacity", "getBytes", "read", "arrayOffset", "hasArray", "copyMemory", "array", "checkSrcIndex", "hasMemoryAddress", "memoryAddress", "limit", "clear", "position", "ensureAccessible", "internalNioBuffer", "addr", "nioBuffers", "threadLocalTempArray", "duplicate", "put", "nioBufferCount", "_internalNioBuffer", "readableBytes", "min", "checkNotNull", "readerIndex" ]
+    }, {
+      "name" : "setLong",
+      "visibility" : "public",
+      "methodCalls" : [ "nextInt", "putLong", "set", "idx", "recordLeakNonRefCountingOperation", "reverseBytes", "checkIndex", "_setLong", "ensureAccessible", "checkIndex0", "swapLong", "unwrap", "setLong" ]
+    }, {
+      "name" : "markWriterIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "markWriterIndex" ]
+    }, {
+      "name" : "nioBufferCount",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "unwrap", "nioBufferCount" ]
+    }, {
+      "name" : "copy",
+      "visibility" : "public",
+      "methodCalls" : [ "copyMemory", "addImpl", "recursionDesired", "socketChannelFactory", "datagramChannelFactory", "maxQueriesPerResolve", "searchDomains", "decodeIdn", "hostsFileEntriesResolver", "cnameCache", "queryTimeoutMillis", "authoritativeDnsServerCache", "traceEnabled", "ndots", "negativeTtl", "localAddress", "resolveCache", "maxPayloadSize", "datagramChannelStrategy", "asList", "optResourceEnabled", "queryServerAddressStream", "nameServerProvider", "consolidateCacheSize", "completeOncePreferredResolved", "eventLoop", "dnsQueryLifecycleObserverFactory", "resolvedAddressTypes", "ttl", "segmentSize", "sender", "recipient", "trailingHeaders", "set", "recordLeakNonRefCountingOperation", "readableBytes", "directBuffer", "copy", "key", "extras", "content", "replace", "unwrap", "order", "checkIndex0", "idx", "maxCapacity", "checkIndex", "writeBytes", "alloc", "heapBuffer", "addr", "release", "isDirect", "limit", "position", "duplicate", "ensureAccessible", "hasMemoryAddress", "memoryAddress", "clear", "setIndex" ]
+    }, {
+      "name" : "toComponentIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "checkIndex", "toComponentIndex" ]
+    }, {
+      "name" : "maxFastWritableBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "writableBytes", "maxCapacity", "min", "maxFastWritableBytes" ]
+    }, {
+      "name" : "ensureWritable",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "maxCapacity", "alloc", "maxFastWritableBytes", "ensureWritable0", "ensureAccessible", "writableBytes", "capacity", "calculateNewCapacity", "writerIndex", "checkPositiveOrZero", "ensureWritable" ]
+    }, {
+      "name" : "getFloat",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "convertToFloat", "recordLeakNonRefCountingOperation", "getInt", "intBitsToFloat", "getFloat" ]
+    }, {
+      "name" : "readUnsignedShortLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readShortLE", "readUnsignedShortLE" ]
+    }, {
+      "name" : "getUnsignedShort",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "getShort", "getUnsignedShort" ]
+    }, {
+      "name" : "writeFloat",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "floatToRawIntBits", "writeFloat", "writeInt" ]
+    }, {
+      "name" : "readDouble",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readDouble", "readLong", "longBitsToDouble" ]
+    }, {
+      "name" : "readFloat",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readFloat", "readInt", "intBitsToFloat" ]
+    }, {
+      "name" : "componentAtOffset",
+      "visibility" : "public",
+      "methodCalls" : [ "duplicate", "componentAtOffset" ]
+    }, {
+      "name" : "toByteIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "toByteIndex" ]
+    }, {
+      "name" : "writeDouble",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "writeLong", "writeDouble", "doubleToRawLongBits" ]
+    }, {
+      "name" : "setFloat",
+      "visibility" : "public",
+      "methodCalls" : [ "set", "recordLeakNonRefCountingOperation", "floatToRawIntBits", "setInt", "setFloat" ]
+    }, {
+      "name" : "getMedium",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "getUnsignedMedium", "getMedium", "swapMedium" ]
+    }, {
+      "name" : "writeByte",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_setByte", "ensureWritable0", "writeByte" ]
+    }, {
+      "name" : "writeShort",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "reverseBytes", "ensureWritable0", "_setShort", "swapShort", "writeShort" ]
+    }, {
+      "name" : "writeZero",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_setLong", "_setByte", "_setInt", "checkIndex0", "idx", "addr", "setZero", "ensureWritable", "writeZero" ]
+    }, {
+      "name" : "toString",
+      "visibility" : "public",
+      "methodCalls" : [ "substring", "sourcePrefixLength", "appendQuery", "scopePrefixLength", "intValue", "timeToLive", "appendRecordClass", "remote", "dnsClass", "toStringBuilder", "local", "deliveryRate", "pmtu", "cwnd", "active", "peerAddress", "rtt", "validationState", "maxIdleTimeout", "maxDatagramFrameSize", "maxAckDelay", "activeConnIdLimit", "disableActiveMigration", "maxUdpPayloadSize", "initialMaxData", "ackDelayExponent", "initialMaxStreamsBidi", "initialMaxStreamDataBidiLocal", "initialMaxStreamDataUni", "initialMaxStreamDataBidiRemote", "initialMaxStreamsUni", "recvBytes", "lostBytes", "retrans", "sentBytes", "streamRetransBytes", "pathsCount", "lost", "recv", "sent", "getVolatile", "getLong", "getInt", "opToStr", "add", "userId", "authMethod", "username", "authMethods", "dstAddrType", "dstAddr", "dstPort", "bndAddr", "bndAddrType", "bndPort", "getBytes", "hexDump", "iterator", "writerIndex", "readerIndex", "isFinished", "isSuccess", "messageId", "payload", "variableHeader", "fixedHeader", "valueOf", "priorityPresent", "endOfStream", "endOfHeaders", "ack", "paddingPresent", "parent", "getKey", "stream", "remoteAddress", "localAddress", "isActive", "config", "handler", "asShortText", "channel", "getDeclaringClass", "iteratorCharSequence", "isUnidirectional", "priority", "associatedStreamId", "statusPhrase", "id", "deltaWindowSize", "appendHeaders", "isLast", "text", "lastGoodStreamId", "status", "streamId", "getValue", "getName", "isCompleted", "isInMemory", "getAbsolutePath", "getCharset", "getFile", "appendRequest", "appendResponse", "uri", "appendFullRequest", "value", "maxAge", "isSecure", "domain", "isHttpOnly", "sameSite", "stringBuilder", "name", "path", "isPartitioned", "code", "reasonText", "appendFullResponse", "get", "recordLeakNonRefCountingOperation", "identityHashCode", "toHexString", "capacity", "readableBytes", "isEmpty", "setLength", "decodeString", "refCnt", "unwrap", "getSimpleName", "cause", "getClass", "toString", "decoderResult", "content", "simpleClassName", "append", "size", "typeByteValue", "client", "verify", "type", "contentToString", "smallCacheSize", "numHeapArenas", "numDirectArenas", "chunkSize", "usedDirectMemory", "normalCacheSize", "numThreadLocalCaches", "usedHeapMemory", "unlock", "lock", "length" ]
+    }, {
+      "name" : "consolidate",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "consolidate" ]
+    }, {
+      "name" : "memoryAddress",
+      "visibility" : "public",
+      "methodCalls" : [ "isDirect", "hasUnsafe", "directBufferAddress", "hasMemoryAddress", "ensureAccessible", "memoryAddress", "unwrap" ]
+    }, {
+      "name" : "getDouble",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "convertToDouble", "recordLeakNonRefCountingOperation", "getDouble", "getLong", "longBitsToDouble" ]
+    }, {
+      "name" : "readUnsignedIntLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readUnsignedIntLE", "readIntLE" ]
+    }, {
+      "name" : "isReadOnly",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "unwrap", "isReadOnly" ]
+    }, {
+      "name" : "getUnsignedByte",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "getByte", "getUnsignedByte" ]
+    }, {
+      "name" : "addFlattenedComponents",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "checkNotNull", "srcIdx", "free", "min", "retain", "readerIndex", "capacity", "checkIndex", "writerIndex", "unwrap", "idx", "max", "release", "addFlattenedComponents" ]
+    }, {
+      "name" : "getChar",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "convertToChar", "recordLeakNonRefCountingOperation", "getChar", "getShort" ]
+    }, {
+      "name" : "readCharSequence",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "getCharSequence", "readCharSequence" ]
+    }, {
+      "name" : "decompose",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "singletonList", "add", "readableBytes", "slice", "min", "srcIdx", "checkIndex", "emptyList", "length", "decompose" ]
+    }, {
+      "name" : "iterator",
+      "visibility" : "public",
+      "methodCalls" : [ "emptyList", "duplicate", "size", "next", "toMap", "hasNext", "values", "entrySet", "entries", "iteratorAsString", "recordLeakNonRefCountingOperation", "lock", "add", "unlock", "iterator" ]
+    }, {
+      "name" : "getInt",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "convertToInt", "idx", "recordLeakNonRefCountingOperation", "reverseBytes", "checkIndex", "ensureAccessible", "_getInt", "checkIndex0", "swapInt", "unwrap", "getInt" ]
+    }, {
+      "name" : "nioBuffer",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readableBytes", "idx", "limit", "position", "duplicate", "checkIndex", "put", "nioBufferCount", "flip", "nioBuffers", "allocate", "duplicateInternalNioBuffer", "wrap", "slice", "asReadOnlyBuffer", "ensureAccessible", "checkIndex0", "order", "unwrap", "nioBuffer" ]
+    }, {
+      "name" : "markReaderIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "markReaderIndex" ]
+    }, {
+      "name" : "getUnsignedMediumLE",
+      "visibility" : "public",
+      "methodCalls" : [ "idx", "recordLeakNonRefCountingOperation", "checkIndex", "_getUnsignedMediumLE", "ensureAccessible", "checkIndex0", "getMediumLE", "getUnsignedMediumLE", "unwrap" ]
+    }, {
+      "name" : "getUnsignedInt",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "getUnsignedInt", "getInt" ]
+    }, {
+      "name" : "writeInt",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "reverseBytes", "_setInt", "ensureWritable0", "writeInt", "swapInt" ]
+    }, {
+      "name" : "readIntLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_getIntLE", "readIntLE" ]
+    }, {
+      "name" : "getIntLE",
+      "visibility" : "public",
+      "methodCalls" : [ "idx", "recordLeakNonRefCountingOperation", "checkIndex", "_getIntLE", "ensureAccessible", "checkIndex0", "unwrap", "getIntLE" ]
+    }, {
+      "name" : "duplicate",
+      "visibility" : "public",
+      "methodCalls" : [ "duplicate", "segmentSize", "recipient", "sender", "copy", "key", "extras", "content", "replace", "writerIndex", "duplicate0", "setIndex", "readerIndex", "order", "capacity", "slice", "unwrap", "ensureAccessible", "idx", "recordLeakNonRefCountingOperation" ]
+    } ],
+    "imports" : [ "java.io.OutputStream", "java.nio.channels.ScatteringByteChannel", "java.nio.charset.Charset", "java.io.InputStream", "java.nio.channels.FileChannel", "java.io.IOException", "java.nio.ByteBuffer", "io.netty.util.ByteProcessor", "java.util.Iterator", "java.nio.ByteOrder", "java.util.List", "java.nio.channels.GatheringByteChannel" ]
+  }, {
+    "name" : "ByteBuf",
+    "packageName" : "io.netty.buffer",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ "Comparable", "ReferenceCounted", "ByteBufConvertible" ],
+    "methods" : [ {
+      "name" : "order",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "newSwappedByteBuf", "alloc", "unwrap", "order", "checkNotNull" ]
+    }, {
+      "name" : "getFloat",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "convertToFloat", "recordLeakNonRefCountingOperation", "getInt", "intBitsToFloat", "getFloat" ]
+    }, {
+      "name" : "alloc",
+      "visibility" : "public",
+      "methodCalls" : [ "getAllocator", "config", "channel", "unwrap", "alloc" ]
+    }, {
+      "name" : "discardReadBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "ensureAccessible", "setBytes", "adjustMarkers", "length", "readerIndex", "setIndex", "writerIndex", "capacity", "free", "slice", "discardReadBytes" ]
+    }, {
+      "name" : "getMedium",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "getUnsignedMedium", "getMedium", "swapMedium" ]
+    }, {
+      "name" : "getUnsignedIntLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "getUnsignedIntLE", "getIntLE" ]
+    }, {
+      "name" : "readLongLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_getLongLE", "readLongLE" ]
+    }, {
+      "name" : "setChar",
+      "visibility" : "public",
+      "methodCalls" : [ "set", "recordLeakNonRefCountingOperation", "setChar", "setShort" ]
+    }, {
+      "name" : "setByte",
+      "visibility" : "public",
+      "methodCalls" : [ "set", "recordLeakNonRefCountingOperation", "idx", "checkIndex", "_setByte", "ensureAccessible", "checkIndex0", "setByte", "unwrap" ]
+    }, {
+      "name" : "asByteBuf",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "writeMedium",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_setMedium", "ensureWritable0", "swapMedium", "writeMedium" ]
+    }, {
+      "name" : "isWritable",
+      "visibility" : "public",
+      "methodCalls" : [ "outboundBuffer", "unsafe", "capacity", "isWritable" ]
+    }, {
+      "name" : "setIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "capacity", "setIndex0", "setIndex" ]
+    }, {
+      "name" : "readIntLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_getIntLE", "readIntLE" ]
+    }, {
+      "name" : "forEachByte",
+      "visibility" : "public",
+      "methodCalls" : [ "forEachByteDesc", "setIndex", "capacity", "writerIndex", "idx", "recordLeakNonRefCountingOperation", "ensureAccessible", "throwException", "checkIndex", "forEachByteAsc0", "checkIndex0", "unwrap", "forEachByte" ]
+    }, {
+      "name" : "readShort",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_getShort", "swapShort", "readShort" ]
+    }, {
+      "name" : "setBoolean",
+      "visibility" : "public",
+      "methodCalls" : [ "set", "recordLeakNonRefCountingOperation", "setByte", "setBoolean" ]
+    }, {
+      "name" : "getUnsignedShort",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "getShort", "getUnsignedShort" ]
+    }, {
+      "name" : "maxCapacity",
+      "visibility" : "public",
+      "methodCalls" : [ "capacity", "maxCapacity" ]
+    }, {
+      "name" : "getIntLE",
+      "visibility" : "public",
+      "methodCalls" : [ "idx", "recordLeakNonRefCountingOperation", "checkIndex", "_getIntLE", "ensureAccessible", "checkIndex0", "unwrap", "getIntLE" ]
+    }, {
+      "name" : "bytesBefore",
+      "visibility" : "public",
+      "methodCalls" : [ "writerIndex", "recordLeakNonRefCountingOperation", "readableBytes", "checkReadableBytes", "indexOf", "readerIndex", "bytesBefore" ]
+    }, {
+      "name" : "readFloatLE",
+      "visibility" : "public",
+      "methodCalls" : [ "intBitsToFloat", "readIntLE" ]
+    }, {
+      "name" : "getUnsignedMediumLE",
+      "visibility" : "public",
+      "methodCalls" : [ "idx", "recordLeakNonRefCountingOperation", "checkIndex", "_getUnsignedMediumLE", "ensureAccessible", "checkIndex0", "getMediumLE", "getUnsignedMediumLE", "unwrap" ]
+    }, {
+      "name" : "writeBoolean",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "writeByte", "writeBoolean" ]
+    }, {
+      "name" : "readSlice",
+      "visibility" : "public",
+      "methodCalls" : [ "readerIndex", "skipBytes", "recordLeakNonRefCountingOperation", "slice", "checkReadableBytes", "order", "readSlice" ]
+    }, {
+      "name" : "getUnsignedByte",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "getByte", "getUnsignedByte" ]
+    }, {
+      "name" : "clear",
+      "visibility" : "public",
+      "methodCalls" : [ "fill", "max", "checkNotNull", "emptyList", "clear" ]
+    }, {
+      "name" : "readShortLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_getShortLE", "readShortLE" ]
+    }, {
+      "name" : "setDoubleLE",
+      "visibility" : "public",
+      "methodCalls" : [ "doubleToRawLongBits", "setLongLE" ]
+    }, {
+      "name" : "readUnsignedMediumLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_getUnsignedMediumLE", "readMediumLE", "readUnsignedMediumLE" ]
+    }, {
+      "name" : "getCharSequence",
+      "visibility" : "public",
+      "methodCalls" : [ "readerIndex", "unwrap", "checkIndex0", "idx", "recordLeakNonRefCountingOperation", "toString", "getBytes", "equals", "getCharSequence" ]
+    }, {
+      "name" : "writeFloatLE",
+      "visibility" : "public",
+      "methodCalls" : [ "floatToRawIntBits", "writeIntLE" ]
+    }, {
+      "name" : "setMediumLE",
+      "visibility" : "public",
+      "methodCalls" : [ "idx", "recordLeakNonRefCountingOperation", "checkIndex", "_setMediumLE", "ensureAccessible", "checkIndex0", "unwrap", "setMediumLE" ]
+    }, {
+      "name" : "array",
+      "visibility" : "public",
+      "methodCalls" : [ "unwrap", "ensureAccessible", "array" ]
+    }, {
+      "name" : "readUnsignedIntLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readUnsignedIntLE", "readIntLE" ]
+    }, {
+      "name" : "setFloatLE",
+      "visibility" : "public",
+      "methodCalls" : [ "setIntLE", "floatToRawIntBits" ]
+    }, {
+      "name" : "isReadable",
+      "visibility" : "public",
+      "methodCalls" : [ "isReadable" ]
+    }, {
+      "name" : "compareTo",
+      "visibility" : "public",
+      "methodCalls" : [ "compareTo", "intValue", "compare", "isReadable", "code", "compareToIgnoreCase", "domain", "path", "name", "getHttpDataType", "getName", "majorVersion", "protocolName", "minorVersion", "identityHashCode", "asLongText", "min", "id" ]
+    }, {
+      "name" : "nioBuffer",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readableBytes", "idx", "limit", "position", "duplicate", "checkIndex", "put", "nioBufferCount", "flip", "nioBuffers", "allocate", "duplicateInternalNioBuffer", "wrap", "slice", "asReadOnlyBuffer", "ensureAccessible", "checkIndex0", "order", "unwrap", "nioBuffer" ]
+    }, {
+      "name" : "readMediumLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readUnsignedMediumLE", "readMediumLE" ]
+    }, {
+      "name" : "setBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "setBytes", "setByte", "recordLeakNonRefCountingOperation", "nioBuffer", "unwrap", "checkIndex0", "remaining", "get", "checkIndex", "idx", "arraycopy", "capacity", "getBytes", "read", "arrayOffset", "hasArray", "copyMemory", "array", "checkSrcIndex", "hasMemoryAddress", "memoryAddress", "limit", "clear", "position", "ensureAccessible", "internalNioBuffer", "addr", "nioBuffers", "threadLocalTempArray", "duplicate", "put", "nioBufferCount", "_internalNioBuffer", "readableBytes", "min", "checkNotNull", "readerIndex" ]
+    }, {
+      "name" : "setMedium",
+      "visibility" : "public",
+      "methodCalls" : [ "idx", "recordLeakNonRefCountingOperation", "checkIndex", "ensureAccessible", "_setMedium", "checkIndex0", "swapMedium", "unwrap", "setMedium" ]
+    }, {
+      "name" : "readUnsignedInt",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readInt", "readUnsignedInt" ]
+    }, {
+      "name" : "writableBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "capacity", "writableBytes" ]
+    }, {
+      "name" : "slice",
+      "visibility" : "public",
+      "methodCalls" : [ "readerIndex", "recordLeakNonRefCountingOperation", "readableBytes", "checkIndex", "ensureAccessible", "idx", "unwrap", "checkIndex0", "slice", "order" ]
+    }, {
+      "name" : "setDouble",
+      "visibility" : "public",
+      "methodCalls" : [ "set", "recordLeakNonRefCountingOperation", "setLong", "doubleToRawLongBits", "setDouble" ]
+    }, {
+      "name" : "writeIntLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "ensureWritable0", "_setIntLE", "writeIntLE" ]
+    }, {
+      "name" : "getBoolean",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "convertToBoolean", "recordLeakNonRefCountingOperation", "getByte", "getBoolean" ]
+    }, {
+      "name" : "readByte",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "recordLeakNonRefCountingOperation", "_getByte", "available", "readByte" ]
+    }, {
+      "name" : "readUnsignedByte",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readByte", "readUnsignedByte" ]
+    }, {
+      "name" : "getUnsignedShortLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "getShortLE", "getUnsignedShortLE" ]
+    }, {
+      "name" : "readUnsignedShortLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readShortLE", "readUnsignedShortLE" ]
+    }, {
+      "name" : "readInt",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_getInt", "readInt", "swapInt" ]
+    }, {
+      "name" : "writeBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "ensureWritable0", "setBytes", "readerIndex", "ensureWritable", "readableBytes", "remaining", "writeCharSequence", "writeBytes" ]
+    }, {
+      "name" : "resetWriterIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "writerIndex", "resetWriterIndex" ]
+    }, {
+      "name" : "isDirect",
+      "visibility" : "public",
+      "methodCalls" : [ "unwrap", "isDirect" ]
+    }, {
+      "name" : "readBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "writerIndex", "writeBytes", "buffer", "getBytes", "format", "alloc", "writableBytes", "put", "get", "checkDstIndex", "remaining", "readerIndex", "_internalNioBuffer", "write", "checkReadableBytes", "order", "readBytes" ]
+    }, {
+      "name" : "getFloatLE",
+      "visibility" : "public",
+      "methodCalls" : [ "getIntLE", "intBitsToFloat" ]
+    }, {
+      "name" : "internalNioBuffer",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "ensureAccessible", "_internalNioBuffer", "position", "checkIndex", "clear", "limit", "internalNioBuffer", "nioBuffer" ]
+    }, {
+      "name" : "readLong",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_getLong", "swapLong", "readLong" ]
+    }, {
+      "name" : "writeDoubleLE",
+      "visibility" : "public",
+      "methodCalls" : [ "writeLongLE", "doubleToRawLongBits" ]
+    }, {
+      "name" : "isReadOnly",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "unwrap", "isReadOnly" ]
+    }, {
+      "name" : "writeFloat",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "floatToRawIntBits", "writeFloat", "writeInt" ]
+    }, {
+      "name" : "writeDouble",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "writeLong", "writeDouble", "doubleToRawLongBits" ]
+    }, {
+      "name" : "setLongLE",
+      "visibility" : "public",
+      "methodCalls" : [ "idx", "recordLeakNonRefCountingOperation", "checkIndex", "ensureAccessible", "_setLongLE", "checkIndex0", "setLongLE", "unwrap" ]
+    }, {
+      "name" : "ensureWritable",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "maxCapacity", "alloc", "maxFastWritableBytes", "ensureWritable0", "ensureAccessible", "writableBytes", "capacity", "calculateNewCapacity", "writerIndex", "checkPositiveOrZero", "ensureWritable" ]
+    }, {
+      "name" : "getDoubleLE",
+      "visibility" : "public",
+      "methodCalls" : [ "longBitsToDouble", "getLongLE" ]
+    }, {
+      "name" : "writeLong",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_setLong", "ensureWritable0", "reverseBytes", "swapLong", "writeLong" ]
+    }, {
+      "name" : "writerIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "capacity", "writerIndex" ]
+    }, {
+      "name" : "setShort",
+      "visibility" : "public",
+      "methodCalls" : [ "set", "idx", "recordLeakNonRefCountingOperation", "reverseBytes", "checkIndex", "_setShort", "ensureAccessible", "checkIndex0", "swapShort", "setShort", "unwrap" ]
+    }, {
+      "name" : "setShortLE",
+      "visibility" : "public",
+      "methodCalls" : [ "idx", "recordLeakNonRefCountingOperation", "checkIndex", "ensureAccessible", "_setShortLE", "checkIndex0", "setShortLE", "unwrap" ]
+    }, {
+      "name" : "retainedDuplicate",
+      "visibility" : "public",
+      "methodCalls" : [ "retainedDuplicate", "segmentSize", "sender", "recipient", "release", "copy", "replace", "content", "readerIndex", "unwrap", "writerIndex", "newInstance", "order", "setIndex", "retainedSlice", "capacity", "duplicate", "idx", "retain", "recordLeakNonRefCountingOperation" ]
+    }, {
+      "name" : "getInt",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "convertToInt", "idx", "recordLeakNonRefCountingOperation", "reverseBytes", "checkIndex", "ensureAccessible", "_getInt", "checkIndex0", "swapInt", "unwrap", "getInt" ]
+    }, {
+      "name" : "hashCode",
+      "visibility" : "public",
+      "methodCalls" : [ "code", "dnsClass", "type", "intValue", "getId", "hash", "names", "sender", "getAll", "size", "recipient", "get", "id", "identityHashCode", "ops", "hashCode", "trailingHeaders", "isAccessible", "content", "name", "sessionId", "getName", "protocolName", "minorVersion", "majorVersion" ]
+    }, {
+      "name" : "retainedSlice",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "retain", "idx", "capacity", "readerIndex", "writerIndex", "slice", "checkIndex0", "retainedSlice", "order", "newInstance", "unwrap" ]
+    }, {
+      "name" : "getDouble",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "convertToDouble", "recordLeakNonRefCountingOperation", "getDouble", "getLong", "longBitsToDouble" ]
+    }, {
+      "name" : "getByte",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "convertToByte", "recordLeakNonRefCountingOperation", "idx", "checkIndex", "ensureAccessible", "_getByte", "checkIndex0", "getByte", "unwrap" ]
+    }, {
+      "name" : "readDouble",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readDouble", "readLong", "longBitsToDouble" ]
+    }, {
+      "name" : "equals",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "dnsClass", "hashCode", "type", "intValue", "id", "getId", "contentEqualsIgnoreCase", "command", "parameters", "details", "sender", "getValue", "getAll", "getKey", "get", "names", "recipient", "size", "isEmpty", "ack", "frameType", "flags", "stream", "settings", "ops", "code", "majorVersion", "protocolName", "minorVersion", "getName", "getClass", "isReadable", "equalsIgnoreCase", "sessionId", "headers", "protocolVersion", "trailingHeaders", "content", "decoderResult", "name", "port", "domain", "path", "status", "uri", "method" ]
+    }, {
+      "name" : "readChar",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readShort", "readChar" ]
+    }, {
+      "name" : "readerIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "capacity", "readerIndex" ]
+    }, {
+      "name" : "markWriterIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "markWriterIndex" ]
+    }, {
+      "name" : "nioBufferCount",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "unwrap", "nioBufferCount" ]
+    }, {
+      "name" : "getChar",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "convertToChar", "recordLeakNonRefCountingOperation", "getChar", "getShort" ]
+    }, {
+      "name" : "getUnsignedMedium",
+      "visibility" : "public",
+      "methodCalls" : [ "idx", "recordLeakNonRefCountingOperation", "checkIndex", "_getUnsignedMedium", "ensureAccessible", "checkIndex0", "getMedium", "unwrap", "getUnsignedMedium" ]
+    }, {
+      "name" : "readUnsignedShort",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readShort", "readUnsignedShort" ]
+    }, {
+      "name" : "asReadOnly",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "isReadOnly", "unmodifiableBuffer", "asReadOnly" ]
+    }, {
+      "name" : "retain",
+      "visibility" : "public",
+      "methodCalls" : [ "retain", "content", "retain0", "record" ]
+    }, {
+      "name" : "discardSomeReadBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "capacity", "setBytes", "adjustMarkers", "ensureAccessible", "discardReadComponents", "discardSomeReadBytes" ]
+    }, {
+      "name" : "getUnsignedInt",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "getUnsignedInt", "getInt" ]
+    }, {
+      "name" : "hasMemoryAddress",
+      "visibility" : "public",
+      "methodCalls" : [ "unwrap", "hasMemoryAddress" ]
+    }, {
+      "name" : "readBoolean",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readByte", "read", "readBoolean" ]
+    }, {
+      "name" : "writeInt",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "reverseBytes", "_setInt", "ensureWritable0", "writeInt", "swapInt" ]
+    }, {
+      "name" : "duplicate",
+      "visibility" : "public",
+      "methodCalls" : [ "duplicate", "segmentSize", "recipient", "sender", "copy", "key", "extras", "content", "replace", "writerIndex", "duplicate0", "setIndex", "readerIndex", "order", "capacity", "slice", "unwrap", "ensureAccessible", "idx", "recordLeakNonRefCountingOperation" ]
+    }, {
+      "name" : "readMedium",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readUnsignedMedium", "swapMedium", "readMedium" ]
+    }, {
+      "name" : "resetReaderIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "readerIndex", "resetReaderIndex" ]
+    }, {
+      "name" : "arrayOffset",
+      "visibility" : "public",
+      "methodCalls" : [ "idx", "unwrap", "arrayOffset" ]
+    }, {
+      "name" : "indexOf",
+      "visibility" : "public",
+      "methodCalls" : [ "max", "writerIndex", "recordLeakNonRefCountingOperation", "firstIndexOf", "lastIndexOf", "indexOf" ]
+    }, {
+      "name" : "getShort",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "convertToShort", "idx", "recordLeakNonRefCountingOperation", "reverseBytes", "checkIndex", "ensureAccessible", "_getShort", "checkIndex0", "swapShort", "unwrap", "getShort" ]
+    }, {
+      "name" : "setZero",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_setLong", "_setInt", "_setByte", "idx", "addr", "checkIndex", "setZero" ]
+    }, {
+      "name" : "writeLongLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "ensureWritable0", "_setLongLE", "writeLongLE" ]
+    }, {
+      "name" : "readUnsignedMedium",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_getUnsignedMedium", "readMedium", "readUnsignedMedium" ]
+    }, {
+      "name" : "writeChar",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "writeChar", "writeShort" ]
+    }, {
+      "name" : "forEachByteDesc",
+      "visibility" : "public",
+      "methodCalls" : [ "writerIndex", "idx", "recordLeakNonRefCountingOperation", "ensureAccessible", "throwException", "forEachByteDesc0", "checkIndex", "checkIndex0", "forEachByteDesc", "unwrap" ]
+    }, {
+      "name" : "hasArray",
+      "visibility" : "public",
+      "methodCalls" : [ "unwrap", "hasArray" ]
+    }, {
+      "name" : "writeShort",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "reverseBytes", "ensureWritable0", "_setShort", "swapShort", "writeShort" ]
+    }, {
+      "name" : "unwrap",
+      "visibility" : "public",
+      "methodCalls" : [ "bioLengthByteBuffer", "checkNotNullArrayParam", "remaining", "isReadOnly", "isInboundDone", "getLastErrorNumber", "getShutdown", "getEncryptedPacketLength", "position", "isOutboundDone", "release", "min", "bioClearByteBuffer", "checkNotNullWithIAE", "tryExpandApplicationBufferSize", "hasRemaining", "getApplicationBufferSize", "getError", "unwrap" ]
+    }, {
+      "name" : "writeZero",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_setLong", "_setByte", "_setInt", "checkIndex0", "idx", "addr", "setZero", "ensureWritable", "writeZero" ]
+    }, {
+      "name" : "maxWritableBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "maxCapacity", "maxWritableBytes" ]
+    }, {
+      "name" : "getMediumLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "getUnsignedMediumLE", "getMediumLE" ]
+    }, {
+      "name" : "maxFastWritableBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "writableBytes", "maxCapacity", "min", "maxFastWritableBytes" ]
+    }, {
+      "name" : "readFloat",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readFloat", "readInt", "intBitsToFloat" ]
+    }, {
+      "name" : "getLongLE",
+      "visibility" : "public",
+      "methodCalls" : [ "idx", "recordLeakNonRefCountingOperation", "checkIndex", "_getLongLE", "ensureAccessible", "checkIndex0", "unwrap", "getLongLE" ]
+    }, {
+      "name" : "toString",
+      "visibility" : "public",
+      "methodCalls" : [ "substring", "sourcePrefixLength", "appendQuery", "scopePrefixLength", "intValue", "timeToLive", "appendRecordClass", "remote", "dnsClass", "toStringBuilder", "local", "deliveryRate", "pmtu", "cwnd", "active", "peerAddress", "rtt", "validationState", "maxIdleTimeout", "maxDatagramFrameSize", "maxAckDelay", "activeConnIdLimit", "disableActiveMigration", "maxUdpPayloadSize", "initialMaxData", "ackDelayExponent", "initialMaxStreamsBidi", "initialMaxStreamDataBidiLocal", "initialMaxStreamDataUni", "initialMaxStreamDataBidiRemote", "initialMaxStreamsUni", "recvBytes", "lostBytes", "retrans", "sentBytes", "streamRetransBytes", "pathsCount", "lost", "recv", "sent", "getVolatile", "getLong", "getInt", "opToStr", "add", "userId", "authMethod", "username", "authMethods", "dstAddrType", "dstAddr", "dstPort", "bndAddr", "bndAddrType", "bndPort", "getBytes", "hexDump", "iterator", "writerIndex", "readerIndex", "isFinished", "isSuccess", "messageId", "payload", "variableHeader", "fixedHeader", "valueOf", "priorityPresent", "endOfStream", "endOfHeaders", "ack", "paddingPresent", "parent", "getKey", "stream", "remoteAddress", "localAddress", "isActive", "config", "handler", "asShortText", "channel", "getDeclaringClass", "iteratorCharSequence", "isUnidirectional", "priority", "associatedStreamId", "statusPhrase", "id", "deltaWindowSize", "appendHeaders", "isLast", "text", "lastGoodStreamId", "status", "streamId", "getValue", "getName", "isCompleted", "isInMemory", "getAbsolutePath", "getCharset", "getFile", "appendRequest", "appendResponse", "uri", "appendFullRequest", "value", "maxAge", "isSecure", "domain", "isHttpOnly", "sameSite", "stringBuilder", "name", "path", "isPartitioned", "code", "reasonText", "appendFullResponse", "get", "recordLeakNonRefCountingOperation", "identityHashCode", "toHexString", "capacity", "readableBytes", "isEmpty", "setLength", "decodeString", "refCnt", "unwrap", "getSimpleName", "cause", "getClass", "toString", "decoderResult", "content", "simpleClassName", "append", "size", "typeByteValue", "client", "verify", "type", "contentToString", "smallCacheSize", "numHeapArenas", "numDirectArenas", "chunkSize", "usedDirectMemory", "normalCacheSize", "numThreadLocalCaches", "usedHeapMemory", "unlock", "lock", "length" ]
+    }, {
+      "name" : "writeShortLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_setShortLE", "ensureWritable0", "writeShortLE" ]
+    }, {
+      "name" : "setIntLE",
+      "visibility" : "public",
+      "methodCalls" : [ "idx", "recordLeakNonRefCountingOperation", "checkIndex", "_setIntLE", "ensureAccessible", "checkIndex0", "setIntLE", "unwrap" ]
+    }, {
+      "name" : "capacity",
+      "visibility" : "public",
+      "methodCalls" : [ "capacity", "unwrap", "maxCapacity", "trimIndicesToCapacity", "reallocateDirect", "setByteBuffer", "checkNewCapacity", "arraycopy", "allocateArray", "freeArray", "ensureAccessible", "reallocate", "slice", "readerIndex", "setIndex", "setIndex0", "free", "length", "clear", "put", "limit", "position", "allocateDirect", "allocate", "getBytes", "writerIndex", "min", "release", "recordLeakNonRefCountingOperation" ]
+    }, {
+      "name" : "getLong",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "convertToLong", "idx", "recordLeakNonRefCountingOperation", "reverseBytes", "checkIndex", "ensureAccessible", "_getLong", "checkIndex0", "swapLong", "unwrap", "getLong" ]
+    }, {
+      "name" : "setFloat",
+      "visibility" : "public",
+      "methodCalls" : [ "set", "recordLeakNonRefCountingOperation", "floatToRawIntBits", "setInt", "setFloat" ]
+    }, {
+      "name" : "readRetainedSlice",
+      "visibility" : "public",
+      "methodCalls" : [ "readerIndex", "release", "skipBytes", "recordLeakNonRefCountingOperation", "checkReadableBytes", "retainedSlice", "readSlice", "readRetainedSlice", "order" ]
+    }, {
+      "name" : "readableBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "readerIndex", "readableBytes" ]
+    }, {
+      "name" : "setLong",
+      "visibility" : "public",
+      "methodCalls" : [ "nextInt", "putLong", "set", "idx", "recordLeakNonRefCountingOperation", "reverseBytes", "checkIndex", "_setLong", "ensureAccessible", "checkIndex0", "swapLong", "unwrap", "setLong" ]
+    }, {
+      "name" : "readDoubleLE",
+      "visibility" : "public",
+      "methodCalls" : [ "readLongLE", "longBitsToDouble" ]
+    }, {
+      "name" : "markReaderIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "markReaderIndex" ]
+    }, {
+      "name" : "skipBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "checkReadableBytes", "min", "available", "skipBytes" ]
+    }, {
+      "name" : "writeCharSequence",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "writeCharSequence" ]
+    }, {
+      "name" : "isContiguous",
+      "visibility" : "public",
+      "methodCalls" : [ "unwrap", "isContiguous" ]
+    }, {
+      "name" : "writeMediumLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_setMediumLE", "ensureWritable0", "writeMediumLE" ]
+    }, {
+      "name" : "getShortLE",
+      "visibility" : "public",
+      "methodCalls" : [ "idx", "recordLeakNonRefCountingOperation", "checkIndex", "_getShortLE", "ensureAccessible", "checkIndex0", "unwrap", "getShortLE" ]
+    }, {
+      "name" : "setInt",
+      "visibility" : "public",
+      "methodCalls" : [ "set", "idx", "recordLeakNonRefCountingOperation", "reverseBytes", "checkIndex", "_setInt", "ensureAccessible", "checkIndex0", "swapInt", "setInt", "unwrap" ]
+    }, {
+      "name" : "setCharSequence",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "setCharSequence" ]
+    }, {
+      "name" : "writeByte",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_setByte", "ensureWritable0", "writeByte" ]
+    }, {
+      "name" : "memoryAddress",
+      "visibility" : "public",
+      "methodCalls" : [ "isDirect", "hasUnsafe", "directBufferAddress", "hasMemoryAddress", "ensureAccessible", "memoryAddress", "unwrap" ]
+    }, {
+      "name" : "getBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "unwrap", "recordLeakNonRefCountingOperation", "readBytes", "alloc", "duplicate", "getBytes", "checkIndex0", "remaining", "hasMemoryAddress", "arrayOffset", "put", "arraycopy", "array", "setBytes", "hasArray", "memoryAddress", "checkIndex", "write", "idx", "checkDstIndex", "copyMemory", "capacity", "ensureAccessible", "duplicateInternalNioBuffer", "min", "limit", "addr", "nioBuffers", "nioBufferCount", "position", "readableBytes", "internalNioBuffer", "_internalNioBuffer", "get", "writableBytes", "writerIndex" ]
+    }, {
+      "name" : "readCharSequence",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "getCharSequence", "readCharSequence" ]
+    }, {
+      "name" : "copy",
+      "visibility" : "public",
+      "methodCalls" : [ "copyMemory", "addImpl", "recursionDesired", "socketChannelFactory", "datagramChannelFactory", "maxQueriesPerResolve", "searchDomains", "decodeIdn", "hostsFileEntriesResolver", "cnameCache", "queryTimeoutMillis", "authoritativeDnsServerCache", "traceEnabled", "ndots", "negativeTtl", "localAddress", "resolveCache", "maxPayloadSize", "datagramChannelStrategy", "asList", "optResourceEnabled", "queryServerAddressStream", "nameServerProvider", "consolidateCacheSize", "completeOncePreferredResolved", "eventLoop", "dnsQueryLifecycleObserverFactory", "resolvedAddressTypes", "ttl", "segmentSize", "sender", "recipient", "trailingHeaders", "set", "recordLeakNonRefCountingOperation", "readableBytes", "directBuffer", "copy", "key", "extras", "content", "replace", "unwrap", "order", "checkIndex0", "idx", "maxCapacity", "checkIndex", "writeBytes", "alloc", "heapBuffer", "addr", "release", "isDirect", "limit", "position", "duplicate", "ensureAccessible", "hasMemoryAddress", "memoryAddress", "clear", "setIndex" ]
+    }, {
+      "name" : "nioBuffers",
+      "visibility" : "public",
+      "methodCalls" : [ "writerIndex", "get", "set", "internalNioBuffer", "recordLeakNonRefCountingOperation", "idx", "readerIndex", "recycle", "toArray", "addAll", "nioBufferCount", "min", "checkIndex", "add", "readableBytes", "newInstance", "isReadOnly", "nioBuffer", "asReadOnlyBuffer", "checkIndex0", "order", "nioBuffers", "unwrap" ]
+    }, {
+      "name" : "touch",
+      "visibility" : "public",
+      "methodCalls" : [ "touch", "position", "content", "touch0", "record" ]
+    } ],
+    "imports" : [ "java.nio.ByteOrder", "java.nio.charset.UnsupportedCharsetException", "java.nio.channels.ScatteringByteChannel", "java.nio.ByteBuffer", "java.io.InputStream", "java.nio.channels.GatheringByteChannel", "java.io.IOException", "java.nio.charset.Charset", "java.nio.channels.FileChannel", "java.io.OutputStream", "io.netty.util.ReferenceCounted", "io.netty.util.ByteProcessor" ]
+  }, {
+    "name" : "WrappedByteBuf",
+    "packageName" : "io.netty.buffer",
+    "extendedClasses" : [ "ByteBuf" ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "getUnsignedShortLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "getShortLE", "getUnsignedShortLE" ]
+    }, {
+      "name" : "capacity",
+      "visibility" : "public",
+      "methodCalls" : [ "capacity", "unwrap", "maxCapacity", "trimIndicesToCapacity", "reallocateDirect", "setByteBuffer", "checkNewCapacity", "arraycopy", "allocateArray", "freeArray", "ensureAccessible", "reallocate", "slice", "readerIndex", "setIndex", "setIndex0", "free", "length", "clear", "put", "limit", "position", "allocateDirect", "allocate", "getBytes", "writerIndex", "min", "release", "recordLeakNonRefCountingOperation" ]
+    }, {
+      "name" : "writeShortLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_setShortLE", "ensureWritable0", "writeShortLE" ]
+    }, {
+      "name" : "equals",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "dnsClass", "hashCode", "type", "intValue", "id", "getId", "contentEqualsIgnoreCase", "command", "parameters", "details", "sender", "getValue", "getAll", "getKey", "get", "names", "recipient", "size", "isEmpty", "ack", "frameType", "flags", "stream", "settings", "ops", "code", "majorVersion", "protocolName", "minorVersion", "getName", "getClass", "isReadable", "equalsIgnoreCase", "sessionId", "headers", "protocolVersion", "trailingHeaders", "content", "decoderResult", "name", "port", "domain", "path", "status", "uri", "method" ]
+    }, {
+      "name" : "getBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "unwrap", "recordLeakNonRefCountingOperation", "readBytes", "alloc", "duplicate", "getBytes", "checkIndex0", "remaining", "hasMemoryAddress", "arrayOffset", "put", "arraycopy", "array", "setBytes", "hasArray", "memoryAddress", "checkIndex", "write", "idx", "checkDstIndex", "copyMemory", "capacity", "ensureAccessible", "duplicateInternalNioBuffer", "min", "limit", "addr", "nioBuffers", "nioBufferCount", "position", "readableBytes", "internalNioBuffer", "_internalNioBuffer", "get", "writableBytes", "writerIndex" ]
+    }, {
+      "name" : "getShortLE",
+      "visibility" : "public",
+      "methodCalls" : [ "idx", "recordLeakNonRefCountingOperation", "checkIndex", "_getShortLE", "ensureAccessible", "checkIndex0", "unwrap", "getShortLE" ]
+    }, {
+      "name" : "getFloat",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "convertToFloat", "recordLeakNonRefCountingOperation", "getInt", "intBitsToFloat", "getFloat" ]
+    }, {
+      "name" : "writeLongLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "ensureWritable0", "_setLongLE", "writeLongLE" ]
+    }, {
+      "name" : "markReaderIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "markReaderIndex" ]
+    }, {
+      "name" : "ensureWritable",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "maxCapacity", "alloc", "maxFastWritableBytes", "ensureWritable0", "ensureAccessible", "writableBytes", "capacity", "calculateNewCapacity", "writerIndex", "checkPositiveOrZero", "ensureWritable" ]
+    }, {
+      "name" : "readUnsignedMediumLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_getUnsignedMediumLE", "readMediumLE", "readUnsignedMediumLE" ]
+    }, {
+      "name" : "retain",
+      "visibility" : "public",
+      "methodCalls" : [ "retain", "content", "retain0", "record" ]
+    }, {
+      "name" : "writeShort",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "reverseBytes", "ensureWritable0", "_setShort", "swapShort", "writeShort" ]
+    }, {
+      "name" : "writeZero",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_setLong", "_setByte", "_setInt", "checkIndex0", "idx", "addr", "setZero", "ensureWritable", "writeZero" ]
+    }, {
+      "name" : "indexOf",
+      "visibility" : "public",
+      "methodCalls" : [ "max", "writerIndex", "recordLeakNonRefCountingOperation", "firstIndexOf", "lastIndexOf", "indexOf" ]
+    }, {
+      "name" : "setDouble",
+      "visibility" : "public",
+      "methodCalls" : [ "set", "recordLeakNonRefCountingOperation", "setLong", "doubleToRawLongBits", "setDouble" ]
+    }, {
+      "name" : "resetReaderIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "readerIndex", "resetReaderIndex" ]
+    }, {
+      "name" : "readerIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "capacity", "readerIndex" ]
+    }, {
+      "name" : "retainedDuplicate",
+      "visibility" : "public",
+      "methodCalls" : [ "retainedDuplicate", "segmentSize", "sender", "recipient", "release", "copy", "replace", "content", "readerIndex", "unwrap", "writerIndex", "newInstance", "order", "setIndex", "retainedSlice", "capacity", "duplicate", "idx", "retain", "recordLeakNonRefCountingOperation" ]
+    }, {
+      "name" : "nioBuffers",
+      "visibility" : "public",
+      "methodCalls" : [ "writerIndex", "get", "set", "internalNioBuffer", "recordLeakNonRefCountingOperation", "idx", "readerIndex", "recycle", "toArray", "addAll", "nioBufferCount", "min", "checkIndex", "add", "readableBytes", "newInstance", "isReadOnly", "nioBuffer", "asReadOnlyBuffer", "checkIndex0", "order", "nioBuffers", "unwrap" ]
+    }, {
+      "name" : "markWriterIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "markWriterIndex" ]
+    }, {
+      "name" : "writeBoolean",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "writeByte", "writeBoolean" ]
+    }, {
+      "name" : "getDouble",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "convertToDouble", "recordLeakNonRefCountingOperation", "getDouble", "getLong", "longBitsToDouble" ]
+    }, {
+      "name" : "writableBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "capacity", "writableBytes" ]
+    }, {
+      "name" : "maxFastWritableBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "writableBytes", "maxCapacity", "min", "maxFastWritableBytes" ]
+    }, {
+      "name" : "readCharSequence",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "getCharSequence", "readCharSequence" ]
+    }, {
+      "name" : "readUnsignedShortLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readShortLE", "readUnsignedShortLE" ]
+    }, {
+      "name" : "hashCode",
+      "visibility" : "public",
+      "methodCalls" : [ "code", "dnsClass", "type", "intValue", "getId", "hash", "names", "sender", "getAll", "size", "recipient", "get", "id", "identityHashCode", "ops", "hashCode", "trailingHeaders", "isAccessible", "content", "name", "sessionId", "getName", "protocolName", "minorVersion", "majorVersion" ]
+    }, {
+      "name" : "writeBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "ensureWritable0", "setBytes", "readerIndex", "ensureWritable", "readableBytes", "remaining", "writeCharSequence", "writeBytes" ]
+    }, {
+      "name" : "readInt",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_getInt", "readInt", "swapInt" ]
+    }, {
+      "name" : "discardSomeReadBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "capacity", "setBytes", "adjustMarkers", "ensureAccessible", "discardReadComponents", "discardSomeReadBytes" ]
+    }, {
+      "name" : "setIntLE",
+      "visibility" : "public",
+      "methodCalls" : [ "idx", "recordLeakNonRefCountingOperation", "checkIndex", "_setIntLE", "ensureAccessible", "checkIndex0", "setIntLE", "unwrap" ]
+    }, {
+      "name" : "setShort",
+      "visibility" : "public",
+      "methodCalls" : [ "set", "idx", "recordLeakNonRefCountingOperation", "reverseBytes", "checkIndex", "_setShort", "ensureAccessible", "checkIndex0", "swapShort", "setShort", "unwrap" ]
+    }, {
+      "name" : "getBoolean",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "convertToBoolean", "recordLeakNonRefCountingOperation", "getByte", "getBoolean" ]
+    }, {
+      "name" : "readUnsignedIntLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readUnsignedIntLE", "readIntLE" ]
+    }, {
+      "name" : "isWritable",
+      "visibility" : "public",
+      "methodCalls" : [ "outboundBuffer", "unsafe", "capacity", "isWritable" ]
+    }, {
+      "name" : "readBoolean",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readByte", "read", "readBoolean" ]
+    }, {
+      "name" : "maxCapacity",
+      "visibility" : "public",
+      "methodCalls" : [ "capacity", "maxCapacity" ]
+    }, {
+      "name" : "readLongLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_getLongLE", "readLongLE" ]
+    }, {
+      "name" : "discardReadBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "ensureAccessible", "setBytes", "adjustMarkers", "length", "readerIndex", "setIndex", "writerIndex", "capacity", "free", "slice", "discardReadBytes" ]
+    }, {
+      "name" : "setInt",
+      "visibility" : "public",
+      "methodCalls" : [ "set", "idx", "recordLeakNonRefCountingOperation", "reverseBytes", "checkIndex", "_setInt", "ensureAccessible", "checkIndex0", "swapInt", "setInt", "unwrap" ]
+    }, {
+      "name" : "release",
+      "visibility" : "public",
+      "methodCalls" : [ "release", "refCnt", "freeDirectBuffer", "content", "release0", "unwrap", "record", "stop", "cause", "setFailure", "newPromise", "isSuccess", "checkNotNull", "tryFailure", "inEventLoop", "close", "addListener", "setSuccess", "execute", "eventLoop" ]
+    }, {
+      "name" : "setZero",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_setLong", "_setInt", "_setByte", "idx", "addr", "checkIndex", "setZero" ]
+    }, {
+      "name" : "setLong",
+      "visibility" : "public",
+      "methodCalls" : [ "nextInt", "putLong", "set", "idx", "recordLeakNonRefCountingOperation", "reverseBytes", "checkIndex", "_setLong", "ensureAccessible", "checkIndex0", "swapLong", "unwrap", "setLong" ]
+    }, {
+      "name" : "memoryAddress",
+      "visibility" : "public",
+      "methodCalls" : [ "isDirect", "hasUnsafe", "directBufferAddress", "hasMemoryAddress", "ensureAccessible", "memoryAddress", "unwrap" ]
+    }, {
+      "name" : "setByte",
+      "visibility" : "public",
+      "methodCalls" : [ "set", "recordLeakNonRefCountingOperation", "idx", "checkIndex", "_setByte", "ensureAccessible", "checkIndex0", "setByte", "unwrap" ]
+    }, {
+      "name" : "hasMemoryAddress",
+      "visibility" : "public",
+      "methodCalls" : [ "unwrap", "hasMemoryAddress" ]
+    }, {
+      "name" : "forEachByte",
+      "visibility" : "public",
+      "methodCalls" : [ "forEachByteDesc", "setIndex", "capacity", "writerIndex", "idx", "recordLeakNonRefCountingOperation", "ensureAccessible", "throwException", "checkIndex", "forEachByteAsc0", "checkIndex0", "unwrap", "forEachByte" ]
+    }, {
+      "name" : "setLongLE",
+      "visibility" : "public",
+      "methodCalls" : [ "idx", "recordLeakNonRefCountingOperation", "checkIndex", "ensureAccessible", "_setLongLE", "checkIndex0", "setLongLE", "unwrap" ]
+    }, {
+      "name" : "setFloat",
+      "visibility" : "public",
+      "methodCalls" : [ "set", "recordLeakNonRefCountingOperation", "floatToRawIntBits", "setInt", "setFloat" ]
+    }, {
+      "name" : "getMedium",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "getUnsignedMedium", "getMedium", "swapMedium" ]
+    }, {
+      "name" : "readableBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "readerIndex", "readableBytes" ]
+    }, {
+      "name" : "writeFloat",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "floatToRawIntBits", "writeFloat", "writeInt" ]
+    }, {
+      "name" : "getLong",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "convertToLong", "idx", "recordLeakNonRefCountingOperation", "reverseBytes", "checkIndex", "ensureAccessible", "_getLong", "checkIndex0", "swapLong", "unwrap", "getLong" ]
+    }, {
+      "name" : "compareTo",
+      "visibility" : "public",
+      "methodCalls" : [ "compareTo", "intValue", "compare", "isReadable", "code", "compareToIgnoreCase", "domain", "path", "name", "getHttpDataType", "getName", "majorVersion", "protocolName", "minorVersion", "identityHashCode", "asLongText", "min", "id" ]
+    }, {
+      "name" : "array",
+      "visibility" : "public",
+      "methodCalls" : [ "unwrap", "ensureAccessible", "array" ]
+    }, {
+      "name" : "retainedSlice",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "retain", "idx", "capacity", "readerIndex", "writerIndex", "slice", "checkIndex0", "retainedSlice", "order", "newInstance", "unwrap" ]
+    }, {
+      "name" : "readShortLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_getShortLE", "readShortLE" ]
+    }, {
+      "name" : "readSlice",
+      "visibility" : "public",
+      "methodCalls" : [ "readerIndex", "skipBytes", "recordLeakNonRefCountingOperation", "slice", "checkReadableBytes", "order", "readSlice" ]
+    }, {
+      "name" : "writeChar",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "writeChar", "writeShort" ]
+    }, {
+      "name" : "getUnsignedByte",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "getByte", "getUnsignedByte" ]
+    }, {
+      "name" : "internalNioBuffer",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "ensureAccessible", "_internalNioBuffer", "position", "checkIndex", "clear", "limit", "internalNioBuffer", "nioBuffer" ]
+    }, {
+      "name" : "readMedium",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readUnsignedMedium", "swapMedium", "readMedium" ]
+    }, {
+      "name" : "readChar",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readShort", "readChar" ]
+    }, {
+      "name" : "isReadOnly",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "unwrap", "isReadOnly" ]
+    }, {
+      "name" : "nioBufferCount",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "unwrap", "nioBufferCount" ]
+    }, {
+      "name" : "getLongLE",
+      "visibility" : "public",
+      "methodCalls" : [ "idx", "recordLeakNonRefCountingOperation", "checkIndex", "_getLongLE", "ensureAccessible", "checkIndex0", "unwrap", "getLongLE" ]
+    }, {
+      "name" : "setCharSequence",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "setCharSequence" ]
+    }, {
+      "name" : "skipBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "checkReadableBytes", "min", "available", "skipBytes" ]
+    }, {
+      "name" : "asReadOnly",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "isReadOnly", "unmodifiableBuffer", "asReadOnly" ]
+    }, {
+      "name" : "setShortLE",
+      "visibility" : "public",
+      "methodCalls" : [ "idx", "recordLeakNonRefCountingOperation", "checkIndex", "ensureAccessible", "_setShortLE", "checkIndex0", "setShortLE", "unwrap" ]
+    }, {
+      "name" : "readUnsignedInt",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readInt", "readUnsignedInt" ]
+    }, {
+      "name" : "getUnsignedIntLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "getUnsignedIntLE", "getIntLE" ]
+    }, {
+      "name" : "arrayOffset",
+      "visibility" : "public",
+      "methodCalls" : [ "idx", "unwrap", "arrayOffset" ]
+    }, {
+      "name" : "getInt",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "convertToInt", "idx", "recordLeakNonRefCountingOperation", "reverseBytes", "checkIndex", "ensureAccessible", "_getInt", "checkIndex0", "swapInt", "unwrap", "getInt" ]
+    }, {
+      "name" : "alloc",
+      "visibility" : "public",
+      "methodCalls" : [ "getAllocator", "config", "channel", "unwrap", "alloc" ]
+    }, {
+      "name" : "setMedium",
+      "visibility" : "public",
+      "methodCalls" : [ "idx", "recordLeakNonRefCountingOperation", "checkIndex", "ensureAccessible", "_setMedium", "checkIndex0", "swapMedium", "unwrap", "setMedium" ]
+    }, {
+      "name" : "order",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "newSwappedByteBuf", "alloc", "unwrap", "order", "checkNotNull" ]
+    }, {
+      "name" : "setBoolean",
+      "visibility" : "public",
+      "methodCalls" : [ "set", "recordLeakNonRefCountingOperation", "setByte", "setBoolean" ]
+    }, {
+      "name" : "touch",
+      "visibility" : "public",
+      "methodCalls" : [ "touch", "position", "content", "touch0", "record" ]
+    }, {
+      "name" : "readUnsignedMedium",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_getUnsignedMedium", "readMedium", "readUnsignedMedium" ]
+    }, {
+      "name" : "copy",
+      "visibility" : "public",
+      "methodCalls" : [ "copyMemory", "addImpl", "recursionDesired", "socketChannelFactory", "datagramChannelFactory", "maxQueriesPerResolve", "searchDomains", "decodeIdn", "hostsFileEntriesResolver", "cnameCache", "queryTimeoutMillis", "authoritativeDnsServerCache", "traceEnabled", "ndots", "negativeTtl", "localAddress", "resolveCache", "maxPayloadSize", "datagramChannelStrategy", "asList", "optResourceEnabled", "queryServerAddressStream", "nameServerProvider", "consolidateCacheSize", "completeOncePreferredResolved", "eventLoop", "dnsQueryLifecycleObserverFactory", "resolvedAddressTypes", "ttl", "segmentSize", "sender", "recipient", "trailingHeaders", "set", "recordLeakNonRefCountingOperation", "readableBytes", "directBuffer", "copy", "key", "extras", "content", "replace", "unwrap", "order", "checkIndex0", "idx", "maxCapacity", "checkIndex", "writeBytes", "alloc", "heapBuffer", "addr", "release", "isDirect", "limit", "position", "duplicate", "ensureAccessible", "hasMemoryAddress", "memoryAddress", "clear", "setIndex" ]
+    }, {
+      "name" : "writeMedium",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_setMedium", "ensureWritable0", "swapMedium", "writeMedium" ]
+    }, {
+      "name" : "setIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "capacity", "setIndex0", "setIndex" ]
+    }, {
+      "name" : "isContiguous",
+      "visibility" : "public",
+      "methodCalls" : [ "unwrap", "isContiguous" ]
+    }, {
+      "name" : "getByte",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "convertToByte", "recordLeakNonRefCountingOperation", "idx", "checkIndex", "ensureAccessible", "_getByte", "checkIndex0", "getByte", "unwrap" ]
+    }, {
+      "name" : "isReadable",
+      "visibility" : "public",
+      "methodCalls" : [ "isReadable" ]
+    }, {
+      "name" : "slice",
+      "visibility" : "public",
+      "methodCalls" : [ "readerIndex", "recordLeakNonRefCountingOperation", "readableBytes", "checkIndex", "ensureAccessible", "idx", "unwrap", "checkIndex0", "slice", "order" ]
+    }, {
+      "name" : "readByte",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "recordLeakNonRefCountingOperation", "_getByte", "available", "readByte" ]
+    }, {
+      "name" : "getMediumLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "getUnsignedMediumLE", "getMediumLE" ]
+    }, {
+      "name" : "writeLong",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_setLong", "ensureWritable0", "reverseBytes", "swapLong", "writeLong" ]
+    }, {
+      "name" : "writeInt",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "reverseBytes", "_setInt", "ensureWritable0", "writeInt", "swapInt" ]
+    }, {
+      "name" : "getCharSequence",
+      "visibility" : "public",
+      "methodCalls" : [ "readerIndex", "unwrap", "checkIndex0", "idx", "recordLeakNonRefCountingOperation", "toString", "getBytes", "equals", "getCharSequence" ]
+    }, {
+      "name" : "bytesBefore",
+      "visibility" : "public",
+      "methodCalls" : [ "writerIndex", "recordLeakNonRefCountingOperation", "readableBytes", "checkReadableBytes", "indexOf", "readerIndex", "bytesBefore" ]
+    }, {
+      "name" : "readIntLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_getIntLE", "readIntLE" ]
+    }, {
+      "name" : "getUnsignedMedium",
+      "visibility" : "public",
+      "methodCalls" : [ "idx", "recordLeakNonRefCountingOperation", "checkIndex", "_getUnsignedMedium", "ensureAccessible", "checkIndex0", "getMedium", "unwrap", "getUnsignedMedium" ]
+    }, {
+      "name" : "getUnsignedMediumLE",
+      "visibility" : "public",
+      "methodCalls" : [ "idx", "recordLeakNonRefCountingOperation", "checkIndex", "_getUnsignedMediumLE", "ensureAccessible", "checkIndex0", "getMediumLE", "getUnsignedMediumLE", "unwrap" ]
+    }, {
+      "name" : "readMediumLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readUnsignedMediumLE", "readMediumLE" ]
+    }, {
+      "name" : "getShort",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "convertToShort", "idx", "recordLeakNonRefCountingOperation", "reverseBytes", "checkIndex", "ensureAccessible", "_getShort", "checkIndex0", "swapShort", "unwrap", "getShort" ]
+    }, {
+      "name" : "readRetainedSlice",
+      "visibility" : "public",
+      "methodCalls" : [ "readerIndex", "release", "skipBytes", "recordLeakNonRefCountingOperation", "checkReadableBytes", "retainedSlice", "readSlice", "readRetainedSlice", "order" ]
+    }, {
+      "name" : "isDirect",
+      "visibility" : "public",
+      "methodCalls" : [ "unwrap", "isDirect" ]
+    }, {
+      "name" : "maxWritableBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "maxCapacity", "maxWritableBytes" ]
+    }, {
+      "name" : "readUnsignedByte",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readByte", "readUnsignedByte" ]
+    }, {
+      "name" : "getChar",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "convertToChar", "recordLeakNonRefCountingOperation", "getChar", "getShort" ]
+    }, {
+      "name" : "toString",
+      "visibility" : "public",
+      "methodCalls" : [ "substring", "sourcePrefixLength", "appendQuery", "scopePrefixLength", "intValue", "timeToLive", "appendRecordClass", "remote", "dnsClass", "toStringBuilder", "local", "deliveryRate", "pmtu", "cwnd", "active", "peerAddress", "rtt", "validationState", "maxIdleTimeout", "maxDatagramFrameSize", "maxAckDelay", "activeConnIdLimit", "disableActiveMigration", "maxUdpPayloadSize", "initialMaxData", "ackDelayExponent", "initialMaxStreamsBidi", "initialMaxStreamDataBidiLocal", "initialMaxStreamDataUni", "initialMaxStreamDataBidiRemote", "initialMaxStreamsUni", "recvBytes", "lostBytes", "retrans", "sentBytes", "streamRetransBytes", "pathsCount", "lost", "recv", "sent", "getVolatile", "getLong", "getInt", "opToStr", "add", "userId", "authMethod", "username", "authMethods", "dstAddrType", "dstAddr", "dstPort", "bndAddr", "bndAddrType", "bndPort", "getBytes", "hexDump", "iterator", "writerIndex", "readerIndex", "isFinished", "isSuccess", "messageId", "payload", "variableHeader", "fixedHeader", "valueOf", "priorityPresent", "endOfStream", "endOfHeaders", "ack", "paddingPresent", "parent", "getKey", "stream", "remoteAddress", "localAddress", "isActive", "config", "handler", "asShortText", "channel", "getDeclaringClass", "iteratorCharSequence", "isUnidirectional", "priority", "associatedStreamId", "statusPhrase", "id", "deltaWindowSize", "appendHeaders", "isLast", "text", "lastGoodStreamId", "status", "streamId", "getValue", "getName", "isCompleted", "isInMemory", "getAbsolutePath", "getCharset", "getFile", "appendRequest", "appendResponse", "uri", "appendFullRequest", "value", "maxAge", "isSecure", "domain", "isHttpOnly", "sameSite", "stringBuilder", "name", "path", "isPartitioned", "code", "reasonText", "appendFullResponse", "get", "recordLeakNonRefCountingOperation", "identityHashCode", "toHexString", "capacity", "readableBytes", "isEmpty", "setLength", "decodeString", "refCnt", "unwrap", "getSimpleName", "cause", "getClass", "toString", "decoderResult", "content", "simpleClassName", "append", "size", "typeByteValue", "client", "verify", "type", "contentToString", "smallCacheSize", "numHeapArenas", "numDirectArenas", "chunkSize", "usedDirectMemory", "normalCacheSize", "numThreadLocalCaches", "usedHeapMemory", "unlock", "lock", "length" ]
+    }, {
+      "name" : "writerIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "capacity", "writerIndex" ]
+    }, {
+      "name" : "nioBuffer",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readableBytes", "idx", "limit", "position", "duplicate", "checkIndex", "put", "nioBufferCount", "flip", "nioBuffers", "allocate", "duplicateInternalNioBuffer", "wrap", "slice", "asReadOnlyBuffer", "ensureAccessible", "checkIndex0", "order", "unwrap", "nioBuffer" ]
+    }, {
+      "name" : "resetWriterIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "writerIndex", "resetWriterIndex" ]
+    }, {
+      "name" : "writeCharSequence",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "writeCharSequence" ]
+    }, {
+      "name" : "writeMediumLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_setMediumLE", "ensureWritable0", "writeMediumLE" ]
+    }, {
+      "name" : "hasArray",
+      "visibility" : "public",
+      "methodCalls" : [ "unwrap", "hasArray" ]
+    }, {
+      "name" : "writeDouble",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "writeLong", "writeDouble", "doubleToRawLongBits" ]
+    }, {
+      "name" : "readShort",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_getShort", "swapShort", "readShort" ]
+    }, {
+      "name" : "readBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "writerIndex", "writeBytes", "buffer", "getBytes", "format", "alloc", "writableBytes", "put", "get", "checkDstIndex", "remaining", "readerIndex", "_internalNioBuffer", "write", "checkReadableBytes", "order", "readBytes" ]
+    }, {
+      "name" : "getIntLE",
+      "visibility" : "public",
+      "methodCalls" : [ "idx", "recordLeakNonRefCountingOperation", "checkIndex", "_getIntLE", "ensureAccessible", "checkIndex0", "unwrap", "getIntLE" ]
+    }, {
+      "name" : "setChar",
+      "visibility" : "public",
+      "methodCalls" : [ "set", "recordLeakNonRefCountingOperation", "setChar", "setShort" ]
+    }, {
+      "name" : "unwrap",
+      "visibility" : "public",
+      "methodCalls" : [ "bioLengthByteBuffer", "checkNotNullArrayParam", "remaining", "isReadOnly", "isInboundDone", "getLastErrorNumber", "getShutdown", "getEncryptedPacketLength", "position", "isOutboundDone", "release", "min", "bioClearByteBuffer", "checkNotNullWithIAE", "tryExpandApplicationBufferSize", "hasRemaining", "getApplicationBufferSize", "getError", "unwrap" ]
+    }, {
+      "name" : "readUnsignedShort",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readShort", "readUnsignedShort" ]
+    }, {
+      "name" : "writeByte",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_setByte", "ensureWritable0", "writeByte" ]
+    }, {
+      "name" : "writeIntLE",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "ensureWritable0", "_setIntLE", "writeIntLE" ]
+    }, {
+      "name" : "clear",
+      "visibility" : "public",
+      "methodCalls" : [ "fill", "max", "checkNotNull", "emptyList", "clear" ]
+    }, {
+      "name" : "readFloat",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readFloat", "readInt", "intBitsToFloat" ]
+    }, {
+      "name" : "duplicate",
+      "visibility" : "public",
+      "methodCalls" : [ "duplicate", "segmentSize", "recipient", "sender", "copy", "key", "extras", "content", "replace", "writerIndex", "duplicate0", "setIndex", "readerIndex", "order", "capacity", "slice", "unwrap", "ensureAccessible", "idx", "recordLeakNonRefCountingOperation" ]
+    }, {
+      "name" : "forEachByteDesc",
+      "visibility" : "public",
+      "methodCalls" : [ "writerIndex", "idx", "recordLeakNonRefCountingOperation", "ensureAccessible", "throwException", "forEachByteDesc0", "checkIndex", "checkIndex0", "forEachByteDesc", "unwrap" ]
+    }, {
+      "name" : "getUnsignedShort",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "getShort", "getUnsignedShort" ]
+    }, {
+      "name" : "readDouble",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "readDouble", "readLong", "longBitsToDouble" ]
+    }, {
+      "name" : "readLong",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "_getLong", "swapLong", "readLong" ]
+    }, {
+      "name" : "getUnsignedInt",
+      "visibility" : "public",
+      "methodCalls" : [ "recordLeakNonRefCountingOperation", "getUnsignedInt", "getInt" ]
+    }, {
+      "name" : "refCnt",
+      "visibility" : "public",
+      "methodCalls" : [ "content", "refCnt0", "refCnt" ]
+    }, {
+      "name" : "setBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "setBytes", "setByte", "recordLeakNonRefCountingOperation", "nioBuffer", "unwrap", "checkIndex0", "remaining", "get", "checkIndex", "idx", "arraycopy", "capacity", "getBytes", "read", "arrayOffset", "hasArray", "copyMemory", "array", "checkSrcIndex", "hasMemoryAddress", "memoryAddress", "limit", "clear", "position", "ensureAccessible", "internalNioBuffer", "addr", "nioBuffers", "threadLocalTempArray", "duplicate", "put", "nioBufferCount", "_internalNioBuffer", "readableBytes", "min", "checkNotNull", "readerIndex" ]
+    }, {
+      "name" : "setMediumLE",
+      "visibility" : "public",
+      "methodCalls" : [ "idx", "recordLeakNonRefCountingOperation", "checkIndex", "_setMediumLE", "ensureAccessible", "checkIndex0", "unwrap", "setMediumLE" ]
+    } ],
+    "imports" : [ "java.io.OutputStream", "java.nio.ByteOrder", "io.netty.util.internal.StringUtil", "java.nio.channels.GatheringByteChannel", "io.netty.util.internal.ObjectUtil", "java.io.IOException", "java.io.InputStream", "java.nio.channels.ScatteringByteChannel", "java.nio.ByteBuffer", "io.netty.util.ByteProcessor", "java.nio.channels.FileChannel", "java.nio.charset.Charset" ]
+  } ]
+}

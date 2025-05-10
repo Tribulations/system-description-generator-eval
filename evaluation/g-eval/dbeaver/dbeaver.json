@@ -1,0 +1,1361 @@
+{
+  "systemName" : "dbeaver",
+  "classes" : [ {
+    "name" : "ResultSetViewer",
+    "packageName" : "org.jkiss.dbeaver.ui.controls.resultset",
+    "extendedClasses" : [ "Viewer" ],
+    "implementedInterfaces" : [ "DBPAdaptable", "DBPContextProvider", "ISaveablePart2", "IResultSetController", "DBPEventListener" ],
+    "methods" : [ {
+      "name" : "getActivePanels",
+      "visibility" : "public",
+      "methodCalls" : [ "toArray", "values" ]
+    }, {
+      "name" : "isSaveOnCloseNeeded",
+      "visibility" : "public",
+      "methodCalls" : [ "isSaveOnCloseNeeded", "isDirty", "isOK", "getStatus" ]
+    }, {
+      "name" : "refreshMetaData",
+      "visibility" : "public",
+      "methodCalls" : [ "getDataSource", "getRowData", "redrawData", "add", "updateDataFilter", "error", "getRealAttributes", "updateMetaData", "getDataContainer", "getRowCount", "injectAndFilterAttributeBindings", "openMetaSession", "updatePanelsContent", "lateBinding" ]
+    }, {
+      "name" : "toggleMode",
+      "visibility" : "public",
+      "methodCalls" : [ "updateEditControls", "redraw" ]
+    }, {
+      "name" : "hasColorOverrides",
+      "visibility" : "public",
+      "methodCalls" : [ "getColorOverrides", "getDataContainer", "isEmpty", "getVirtualEntity" ]
+    }, {
+      "name" : "getVirtualEntityIdentifier",
+      "visibility" : "public",
+      "methodCalls" : [ "getVisibleAttribute", "getUniqueKey", "getVisibleAttributeCount", "getRowIdentifier" ]
+    }, {
+      "name" : "setSelection",
+      "visibility" : "public",
+      "methodCalls" : [ "getViewer", "notifyListeners", "getChildren", "getProvider", "getTarget", "selectionChanged", "setSelection", "size", "toArray", "getFirstElement", "isEmpty", "isDisposed", "updateSelection", "redraw", "redrawTextAreas", "select", "ensureCaretIsVisible", "showSelection", "warn", "getController", "selectCells", "deselectAll", "add", "fireSelectionChanged", "getColumnCount", "getSpreadsheet", "getItemCount", "clear", "checkWidget", "getGraphicalViewer" ]
+    }, {
+      "name" : "resetHistory",
+      "visibility" : "public",
+      "methodCalls" : [ "clear" ]
+    }, {
+      "name" : "clearDataFilter",
+      "visibility" : "public",
+      "methodCalls" : [ "getConstraints", "createDataFilter", "get", "put", "setDataFilter", "isEmpty", "getDataFilter", "getFullAttributeName" ]
+    }, {
+      "name" : "lockActionsByControl",
+      "visibility" : "public",
+      "methodCalls" : [ "addDisposeListener" ]
+    }, {
+      "name" : "updateFiltersText",
+      "visibility" : "public",
+      "methodCalls" : [ "isFeatureSupported", "trim", "setFilterValue", "addFiltersHistory", "getAutoRefresh", "setRedraw", "isReadyToRun", "setEnabled", "getExecutionContext", "appendConditionString", "getDataSource", "error", "getDataFilter", "getDataContainer", "enableControls", "isDisposed", "enableFilters", "isEmpty", "isUpdateInProgress", "isForceFilterSubQuery", "toString" ]
+    }, {
+      "name" : "getDefaultBackground",
+      "visibility" : "public",
+      "methodCalls" : [ "getDefaultTextBackground", "getDefaultWidgetBackground" ]
+    }, {
+      "name" : "getContainer",
+      "visibility" : "public",
+      "methodCalls" : [ "addContainer", "get", "getContainerId", "getAllObjects", "getParentObject", "getAdditionalInfo", "getContainer", "getTable" ]
+    }, {
+      "name" : "isPresentationInFocus",
+      "visibility" : "public",
+      "methodCalls" : [ "getControl", "getActivePresentation", "isDisposed", "isFocusControl" ]
+    }, {
+      "name" : "resetDataFilter",
+      "visibility" : "public",
+      "methodCalls" : [ "setDataFilter", "createDataFilter" ]
+    }, {
+      "name" : "getSegmentMaxRows",
+      "visibility" : "public",
+      "methodCalls" : [ "getInt", "getPreferenceStore", "getDataContainer" ]
+    }, {
+      "name" : "toggleVerticalLayout",
+      "visibility" : "public",
+      "methodCalls" : [ "setOrientation" ]
+    }, {
+      "name" : "updateEditControls",
+      "visibility" : "public",
+      "methodCalls" : [ "setVisible", "fireResultSetChange", "getData", "updateToolbar", "getItems", "supportsRecordMode" ]
+    }, {
+      "name" : "refresh",
+      "visibility" : "public",
+      "methodCalls" : [ "refresh", "getParent", "setImage", "getImage", "setText", "getData", "setToolTipText", "reloadGeometryData", "remove", "getId", "getContainer", "createService", "adapt", "getExecutionContext", "getDataSource", "createVisualizer", "updateChildren", "put", "clear", "getScriptItems", "getSyntaxContext", "refreshDiagram", "toUpperCase", "getModel", "asList", "get", "clearListData", "toList", "isLoading", "getName", "getText", "size", "filter", "contains", "loadData", "getController", "isNotEmpty", "collect", "getAttributes", "stream", "setRedraw", "removeAll", "getSelection", "packColumns", "refreshReferences", "getVisiblePanel", "layout", "isMetadataChanged", "clearGrouping", "getPlatformUI", "showError", "rebuildGrouping", "isDisposed", "checkForChanges", "enableAutoRefresh", "getDataContainer", "setNextSegmentRead", "getSegmentMaxRows", "formatData", "getControl", "schedule" ]
+    }, {
+      "name" : "updatePanelActions",
+      "visibility" : "public",
+      "methodCalls" : [ "update", "contributeActions", "getParent", "removeAll", "computeSize", "getVisiblePanel", "getControl", "setTabHeight", "setRedraw" ]
+    }, {
+      "name" : "getSite",
+      "visibility" : "public",
+      "methodCalls" : [ "getSite" ]
+    }, {
+      "name" : "updateRowCount",
+      "visibility" : "public",
+      "methodCalls" : [ "executeAction" ]
+    }, {
+      "name" : "showColumnMenu",
+      "visibility" : "public",
+      "methodCalls" : [ "getCurrent", "addMenuListener", "getCurrentRow", "getCursorLocation", "getActivePresentation", "createContextMenu", "setLocation", "setVisible", "getControl", "asyncExec", "menuHiddenAdapter" ]
+    }, {
+      "name" : "isRecordMode",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "supportsDataFilter",
+      "visibility" : "public",
+      "methodCalls" : [ "getDataContainer", "isFeatureSupported" ]
+    }, {
+      "name" : "saveDataFilter",
+      "visibility" : "public",
+      "methodCalls" : [ "getDataFilter", "error", "saveDataFilter", "getInstance", "getExecutionContext", "getFilterText", "getDataContainer", "showNotification" ]
+    }, {
+      "name" : "readAllData",
+      "visibility" : "public",
+      "methodCalls" : [ "getRowCount", "isUpdateInProgress", "getDataContainer", "setHasMoreData", "isHasMoreData", "confirmAction", "getShell", "setNextSegmentRead", "checkForChanges", "getDataFilter", "getRowNumber" ]
+    }, {
+      "name" : "showFiltersMenu",
+      "visibility" : "public",
+      "methodCalls" : [ "addDisposeListener", "getActivePresentation", "getCurrentAttribute", "getCurrentRow" ]
+    }, {
+      "name" : "isActionsDisabled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "doSave",
+      "visibility" : "public",
+      "methodCalls" : [ "setContents", "getStatus", "extractStatusLineManager", "log", "getMessage", "setErrorMessage", "getDatabaseObject", "showChanges", "isCanceled", "getNavigatorNode", "getPlatform", "firePropertyChange", "isReadOnly", "getOwnerProject", "getBoolean", "getPreferenceStore", "runPostSaveCommands", "showNotification", "values", "hasRealmPermission", "getWorkspace", "getObjectFullName", "setDirty", "beginTask", "schedule", "done", "waitJobCompletion", "isNonPersistentEditor", "isInAutoSaveJob", "confirmAction", "subTask", "saveAsNewScript", "getPartName", "makeMonitor", "getFileFromInput", "getEditorInput", "error", "toFile", "get", "getPath", "makeAbsolute", "syncFile", "getContent", "getLocation", "getPlatformUI", "showError", "doSave", "isDirty", "applyChanges", "setCanceled", "syncExec", "size", "updateValue", "getShell", "getSite", "add", "isEmpty", "selectContentPart", "asyncExec", "updateContentFromFile", "getValue", "getValueController", "updateToolbarActions", "getDiagramPart", "persistConfiguration", "put", "markSaveLocation", "getDiagram", "getCommandStack", "setProperty", "serializeDiagram", "getBytes", "getURI", "toPath", "write" ]
+    }, {
+      "name" : "getCurrentRow",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "showEmptyPresentation",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "refreshHintCache",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "getCellHintProviders", "of", "debug", "cacheRequiredData", "getCellHints", "getHintText", "getCellValue", "redrawData", "schedule", "syncExec", "getHintContext" ]
+    }, {
+      "name" : "togglePanelsMaximize",
+      "visibility" : "public",
+      "methodCalls" : [ "setMaximizedControl", "getMaximizedControl" ]
+    }, {
+      "name" : "addListener",
+      "visibility" : "public",
+      "methodCalls" : [ "contains", "warn", "toArray", "addListener", "add" ]
+    }, {
+      "name" : "supportsStatusBar",
+      "visibility" : "public",
+      "methodCalls" : [ "getDecoratorFeatures" ]
+    }, {
+      "name" : "updateDirtyFlag",
+      "visibility" : "public",
+      "methodCalls" : [ "firePropertyChange", "handleResultSetChange" ]
+    }, {
+      "name" : "showReferencesMenu",
+      "visibility" : "public",
+      "methodCalls" : [ "runInProgressService", "addDisposeListener", "error", "getTargetException" ]
+    }, {
+      "name" : "removeListener",
+      "visibility" : "public",
+      "methodCalls" : [ "warn", "toArray", "remove" ]
+    }, {
+      "name" : "togglePanelsFocus",
+      "visibility" : "public",
+      "methodCalls" : [ "hasFocus", "getControl", "getSelection", "setFocus" ]
+    }, {
+      "name" : "showPanels",
+      "visibility" : "public",
+      "methodCalls" : [ "showAttribute", "hasFocus", "isPanelsVisible", "updatePanelsContent", "getCurrentAttribute", "getChildren", "setMaximizedControl", "updatePanelActions", "getSelection", "isDisposed", "getActivePresentation", "updateValueView", "getControl", "setFocus" ]
+    }, {
+      "name" : "navigateHistory",
+      "visibility" : "public",
+      "methodCalls" : [ "changeCurrentNode", "getNodeByPath", "getNavigatorModel", "showError", "getPlatformUI", "error", "showMessageBox", "getPlatform", "size", "getSegmentMaxRows", "debug", "get" ]
+    }, {
+      "name" : "closePanel",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addNewRow",
+      "visibility" : "public",
+      "methodCalls" : [ "isAutoGenerated", "openSession", "stream", "isEmpty", "warn", "mapToInt", "getSelectedRows", "getValueFromObject", "getAttributes", "getDocumentAttribute", "createNewValueObject", "redrawData", "scrollToRow", "getAttribute", "toArray", "updateEditControls", "getRowData", "getRowCount", "getExecutionContext", "add", "isPseudoAttribute", "getValueHandler", "getSelection", "addNewRow" ]
+    }, {
+      "name" : "generateChangesScript",
+      "visibility" : "public",
+      "methodCalls" : [ "applyChanges", "getScript", "showError", "getPlatformUI", "emptyList" ]
+    }, {
+      "name" : "isAllAttributesReadOnly",
+      "visibility" : "public",
+      "methodCalls" : [ "getContainer", "isReadOnlyData", "getInfo", "isConnectionReadOnly", "getExecutionContext", "getDataSource", "isUniqueKeyUndefinedButRequired", "isValidIdentifier", "getRowIdentifier", "getAttributes" ]
+    }, {
+      "name" : "getHistoryPosition",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "persistConfig",
+      "visibility" : "public",
+      "methodCalls" : [ "persistConfiguration", "getContainer", "getDataSource", "getExecutionContext" ]
+    }, {
+      "name" : "copyRowValues",
+      "visibility" : "public",
+      "methodCalls" : [ "getExecutionContext", "toArray", "updateEditControls", "openSession", "mapToInt", "stream", "getAttribute", "getSelectedRows", "redrawData", "getValueFromObject", "error", "getSelection", "updateValue", "getDocumentAttribute", "getCellValue", "getValueHandler", "getSelectedAttributes", "isAutoGenerated", "getRow", "getRowCount", "isPseudoAttribute" ]
+    }, {
+      "name" : "setSegmentFetchSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "redrawData",
+      "visibility" : "public",
+      "methodCalls" : [ "refreshValueHandlersConfiguration", "refreshData", "getRow", "getRowCount", "getVisualNumber", "isDisposed" ]
+    }, {
+      "name" : "refreshWithFilter",
+      "visibility" : "public",
+      "methodCalls" : [ "getSegmentMaxRows", "checkForChanges", "getDataContainer", "setNextSegmentRead", "getRowNumber" ]
+    }, {
+      "name" : "fillContextMenu",
+      "visibility" : "public",
+      "methodCalls" : [ "getDataSource", "isPolicyEnabled", "getNavigatorSettings", "add", "setRemoveAllWhenShown", "supportsHints", "getDecoratorFeatures", "getImageDescriptor", "getDecorator", "addMenuListener", "setActionDefinitionId", "fillOpenWithMenu", "getName", "singletonMap", "getContainer", "fillMenu", "findCommandName", "fillCopyAsMenu", "getVisibleAttributeCount", "isUpdateInProgress", "getDataContainer", "getInstance", "isHideVirtualModel", "makeCommandContribution", "fillContributions" ]
+    }, {
+      "name" : "activatePanel",
+      "visibility" : "public",
+      "methodCalls" : [ "setSelection", "showPanels", "setImage", "isPanelsVisible", "setRedraw", "showError", "createContents", "setFocus", "add", "getImage", "setToolTipText", "debug", "getDescription", "createInstance", "setData", "setText", "get", "getIcon", "getItemCount", "setControl", "put", "getLabel", "disposeControlOnItemDispose", "getPlatformUI", "layout", "refresh" ]
+    }, {
+      "name" : "applyChanges",
+      "visibility" : "public",
+      "methodCalls" : [ "getSaveSettings", "getConnectionConfiguration", "generateChangesReport", "isHasReferences", "isConfirmDataChange", "getConnectionType", "open", "getPreferenceStore", "run", "getContainer", "getBoolean", "getDeletes", "getDataSource", "setFocus", "extractEditorValue", "getControl", "updateValue", "getData", "applyChanges", "cancelInlineEditor", "showError", "isDisposed", "getPlatformUI" ]
+    }, {
+      "name" : "isPanelVisible",
+      "visibility" : "public",
+      "methodCalls" : [ "contains" ]
+    }, {
+      "name" : "refreshData",
+      "visibility" : "public",
+      "methodCalls" : [ "getFocusPos", "getPlatformUI", "getCellValue", "getController", "showError", "getAllRows", "getValueHandler", "setGeometryProperties", "extractGeometryAttributes", "setGeometryData", "getGeometryValueFromObject", "updateEditControls", "toArray", "getSRID", "dispose", "isMaximizeSingleColumn", "recalculateSizes", "setFocusItem", "min", "setPinIndex", "setSelection", "pack", "getParent", "getSelection", "getGridController", "isEmpty", "updateScrollbars", "put", "getVerticalBar", "setFocusColumn", "isPinned", "setWidth", "iterator", "getItemCount", "add", "computeHeaderWidth", "deselectAll", "next", "getWidth", "getContentProvider", "getPinIndex", "getClientArea", "hasNext", "getElement", "getMaximum", "getChildren", "getBorderWidth", "isValid", "selectCell", "sort", "getElements", "getSize", "remove", "getColumnPinIndex", "getColumnCount", "refreshRowsData", "cancelInlineEditor", "redraw", "refreshData", "setRedraw", "getDecoratorFeatures", "isHighContrastTheme", "getBoolean", "isDisposed", "getDataContainer", "getDecorator", "setColumnScrolling", "getPreferenceStore", "getString", "isFeatureSupported", "valueOf", "getDefaultStyles", "getInt", "isRecordMode", "removeAll", "getRowCount", "getVisibleAttributes", "isEmptyTrimmed", "setData", "getName", "getRow", "setText", "size", "get", "getDefaultValueDisplayString", "split", "getValues", "packColumns", "getModel", "replace", "use", "getRowNumber", "getVisualNumber", "scheduleAutoRefresh", "getSegmentMaxRows", "setNextSegmentRead", "checkForChanges" ]
+    }, {
+      "name" : "rejectChanges",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "getSelection", "fireResultSetSelectionChange", "syncExec", "isDirty", "rejectChanges", "refreshHintsInfo", "updatePanelsContent", "error", "runInProgressService", "setState", "cleanupRows", "updateValueView", "refreshChangeCount", "updateEditControls", "getActivePresentation", "getValue", "debug", "entrySet", "releaseValue", "getCellValue", "getAllRows", "redrawData", "updateCellValue", "getKey" ]
+    }, {
+      "name" : "promptToSaveOnClose",
+      "visibility" : "public",
+      "methodCalls" : [ "getEntityEditor", "add", "getEditorInput", "values", "getSite", "getNavigatorNode", "join", "isEmpty", "getCommandContext", "getNodeDisplayName", "getInstance", "getName", "getActivePreferenceStore", "warn", "getBoolean", "updateDirtyFlag", "getService", "checkAndCloseActiveTransaction", "updateAndGet", "promptToSaveOnClose", "getResultSetController", "isNonPersistentEditor", "getResultContainers", "cancelJob", "confirmAction", "isDirty", "getShell", "rejectChanges" ]
+    }, {
+      "name" : "getInput",
+      "visibility" : "public",
+      "methodCalls" : [ "getInput", "getRootNode", "getContents", "getGraphicalViewer" ]
+    }, {
+      "name" : "setDataFilter",
+      "visibility" : "public",
+      "methodCalls" : [ "refreshWithFilter", "setDataFilter", "refreshData" ]
+    }, {
+      "name" : "getSelectedRecords",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isRefreshInProgress",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "hasData",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "hasData" ]
+    }, {
+      "name" : "isInsertable",
+      "visibility" : "public",
+      "methodCalls" : [ "getVisibleAttributeCount", "getReadOnlyStatus", "getSingleSource" ]
+    }, {
+      "name" : "getDecorator",
+      "visibility" : "public",
+      "methodCalls" : [ "createDecorator" ]
+    }, {
+      "name" : "setInput",
+      "visibility" : "public",
+      "methodCalls" : [ "close", "suppressPropertyChanges", "setBreakpoint", "getObjects", "setInfo", "addListener", "getLabel", "populateObjects", "removeListener", "clearObjects", "clear", "isDisposed", "setInput" ]
+    }, {
+      "name" : "getVisiblePanel",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "isPanelsVisible" ]
+    }, {
+      "name" : "getDataContainer",
+      "visibility" : "public",
+      "methodCalls" : [ "getParentObject", "getDataContainer", "get", "getEditorInput", "getDatabaseObject" ]
+    }, {
+      "name" : "isReadOnly",
+      "visibility" : "public",
+      "methodCalls" : [ "isReadOnly", "getMetaAttribute", "getStorageFromInput", "isFile", "getLocalFileFromInput", "isBitSet", "getHintOptions", "getValue", "getBinding", "getValueType", "getAttributeReadOnlyStatus", "getDataKind", "getEditorInput", "getValueController", "isReadOnlyType", "getParent", "getExecutionContext", "isResultSetReadOnly", "getContainer", "getDecoratorFeatures", "isUniqueKeyUndefinedButRequired", "isUpdateInProgress", "getDataSource", "canWrite", "getDiagramProject", "hasRealmPermission", "getOriginal" ]
+    }, {
+      "name" : "generateChangesReport",
+      "visibility" : "public",
+      "methodCalls" : [ "generateReport", "showError", "getPlatformUI" ]
+    }, {
+      "name" : "getExecutionContext",
+      "visibility" : "public",
+      "methodCalls" : [ "error", "getObject", "isConnected", "getSettings", "isEmpty", "getDefaultContext", "get", "getObjectList", "getDefaultInstance", "getDataSource", "getDataSourceContainer", "getExecutionContext", "getController", "getEditorInput", "isOpenSeparateConnection", "getOrOpenDefaultContext" ]
+    }, {
+      "name" : "getDataReceiver",
+      "visibility" : "public",
+      "methodCalls" : [ "bind", "getName", "getDataReceiver", "getText", "isEmpty", "indexOf", "updateResultsName", "format", "getData", "getDefaultLineSeparator", "isDisposed", "getResultSetController", "truncateString", "getDataSourceContainer", "size", "asyncExec", "get", "syncExec" ]
+    }, {
+      "name" : "showFiltersDistinctMenu",
+      "visibility" : "public",
+      "methodCalls" : [ "getEntityAttribute", "isEmpty", "getCursorLocation", "getSite", "toArray", "setModeless", "getSelectedRows", "setLocation", "getDisplay", "setOperator", "getEnumerableConstraint", "getDataFilter", "getWorkbench", "getValue", "getName", "open", "getWorkbenchWindow", "getDataSource", "getValueHandler", "setValue", "setDataFilter", "contains", "confirmAction", "getSelection", "getConstraint", "getShell", "getSupportedOperators" ]
+    }, {
+      "name" : "getControl",
+      "visibility" : "public",
+      "methodCalls" : [ "getBrowser", "getParent", "getGraphicalControl", "getGraphicalViewer", "isDisposed", "getShell", "getContainer", "getControl" ]
+    }, {
+      "name" : "getPreferenceStore",
+      "visibility" : "public",
+      "methodCalls" : [ "getApplication", "getBundle", "getContainer", "getDataSource", "getPlatform", "getExecutionContext", "getPreferenceStore", "getInstance", "getPreferences" ]
+    }, {
+      "name" : "getActivePresentation",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "editEntityIdentifier",
+      "visibility" : "public",
+      "methodCalls" : [ "error", "getVirtualEntity", "getAttributes", "getVirtualEntityIdentifier", "open", "reloadAttributes", "getSingleSource", "getModel", "persistConfig", "setInitPage" ]
+    }, {
+      "name" : "getViewerPanel",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "cancelJobs",
+      "visibility" : "public",
+      "methodCalls" : [ "getUpdateJob", "cancel", "isActiveTask", "clear" ]
+    }, {
+      "name" : "deleteSelectedRows",
+      "visibility" : "public",
+      "methodCalls" : [ "getSelectedRows", "getSelection", "deleteRow", "scrollToRow", "getRowCount", "add", "redrawData", "isEmpty", "addAll", "getVisualNumber" ]
+    }, {
+      "name" : "doSaveAs",
+      "visibility" : "public",
+      "methodCalls" : [ "isSaveAsAllowed", "getActiveEditor", "saveDiagramAs", "getEditorInput", "showError", "selectFileForSave", "run", "getWorkbenchWindow", "getShell", "getAbsolutePath", "saveToExternalFile", "getPartName", "getTargetException", "getSite", "getPlatformUI", "doSaveAs" ]
+    }, {
+      "name" : "getReadOnlyStatus",
+      "visibility" : "public",
+      "methodCalls" : [ "getDataSource", "getDecoratorFeatures", "getExecutionContext", "getContainer", "getReadOnlyStatus", "getResultSetReadOnlyStatus", "isUniqueKeyUndefinedButRequired", "isUpdateInProgress" ]
+    }, {
+      "name" : "getModel",
+      "visibility" : "public",
+      "methodCalls" : [ "getModel", "getContainer", "getParentObject", "getRootNode", "getInput" ]
+    }, {
+      "name" : "updatePanelsContent",
+      "visibility" : "public",
+      "methodCalls" : [ "updateEditControls", "refresh", "getVisiblePanel" ]
+    }, {
+      "name" : "getSelection",
+      "visibility" : "public",
+      "methodCalls" : [ "getSelection", "getProvider", "getTarget", "getStructuredSelection", "getRowSelection", "stream", "orElse", "getSpreadsheet", "max", "mapToInt", "min", "debug", "isEmpty", "emptyList", "isDisposed", "unmodifiableCollection", "getSelectionIndex", "getGraphicalViewer", "getViewer", "length", "getLength", "getOffset", "getItem", "getData" ]
+    }, {
+      "name" : "supportsEdit",
+      "visibility" : "public",
+      "methodCalls" : [ "supportsEdit" ]
+    }, {
+      "name" : "supportsNavigation",
+      "visibility" : "public",
+      "methodCalls" : [ "supportsNavigation" ]
+    }, {
+      "name" : "showFilterSettingsDialog",
+      "visibility" : "public",
+      "methodCalls" : [ "open" ]
+    }, {
+      "name" : "getAttributeReadOnlyStatus",
+      "visibility" : "public",
+      "methodCalls" : [ "getAttributeReadOnlyStatus", "getState", "getReadOnlyStatus" ]
+    }, {
+      "name" : "checkForChanges",
+      "visibility" : "public",
+      "methodCalls" : [ "refreshData", "asyncExec", "updatePanelsContent", "isDirty", "promptToSaveOnClose", "execute" ]
+    }, {
+      "name" : "getDataFilter",
+      "visibility" : "public",
+      "methodCalls" : [ "getDataFilter" ]
+    }, {
+      "name" : "isSaveAsAllowed",
+      "visibility" : "public",
+      "methodCalls" : [ "isSaveAsAllowed" ]
+    }, {
+      "name" : "getAvailablePresentations",
+      "visibility" : "public",
+      "methodCalls" : [ "emptyList", "supportedBy", "add" ]
+    }, {
+      "name" : "switchFilterFocus",
+      "visibility" : "public",
+      "methodCalls" : [ "getControl", "isFocusControl", "setFocus", "getEditControl" ]
+    }, {
+      "name" : "lockActionsByFocus",
+      "visibility" : "public",
+      "methodCalls" : [ "addDisposeListener", "addFocusListener" ]
+    }, {
+      "name" : "updateStatusMessage",
+      "visibility" : "public",
+      "methodCalls" : [ "getTotalRowCount", "updateActionState", "getMessage", "setMessage", "format", "getRowCount", "hasData", "layout", "isHasMoreData", "equalObjects", "isDisposed" ]
+    }, {
+      "name" : "clearEntityIdentifier",
+      "visibility" : "public",
+      "methodCalls" : [ "getVisibleAttribute", "getRowIdentifier", "getUniqueKey", "clearAttributes", "getBestIdentifier", "setAttributes", "getVirtualEntity", "persistConfig", "emptyList" ]
+    }, {
+      "name" : "getHistorySize",
+      "visibility" : "public",
+      "methodCalls" : [ "size" ]
+    }, {
+      "name" : "getActiveQueryText",
+      "visibility" : "public",
+      "methodCalls" : [ "getQueryText", "isEmpty", "getStatistics", "getText", "getQuery", "getName", "getDataContainer", "getModel" ]
+    }, {
+      "name" : "switchPresentation",
+      "visibility" : "public",
+      "methodCalls" : [ "canShowPresentation", "showError", "getPlatformUI", "getPreferenceStore", "isPersistent", "createInstance", "size", "getPlatform", "setValue", "getData", "indexOf", "getPresentationType", "refreshData", "getItems", "switchPresentation", "setSelection", "getId", "get" ]
+    }, {
+      "name" : "setSelectionStatistics",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmptyTrimmed", "getText", "setText", "layout", "isDisposed", "equals" ]
+    }, {
+      "name" : "isPanelsVisible",
+      "visibility" : "public",
+      "methodCalls" : [ "getMaximizedControl" ]
+    }, {
+      "name" : "isHasMoreData",
+      "visibility" : "public",
+      "methodCalls" : [ "isHasMoreData", "getExecutionContext" ]
+    }, {
+      "name" : "readNextSegment",
+      "visibility" : "public",
+      "methodCalls" : [ "checkForChanges", "setNextSegmentRead", "getSegmentMaxRows", "use", "getDataFilter", "setHasMoreData", "getDataContainer", "asyncExec", "isUpdateInProgress", "isRefreshInProgress", "getRowCount", "isHasMoreData" ]
+    }, {
+      "name" : "getAdapter",
+      "visibility" : "public",
+      "methodCalls" : [ "collect", "getSourceObject", "getFirstElement", "getSelection", "getNavigatorViewer", "adaptResource", "getOwnerProject", "getPath", "getRoot", "supportsCopyFromStdIn", "supportsAlterUserChangePassword", "getServerType", "getQueryPlanner", "getDescription", "getContainer", "getNodeDisplayName", "getPublicObject", "getFromObject", "getNestedAdapter", "getDefaultInstance", "getDefaultContext", "getDatabaseObject", "getNodeIconDefault", "getImageDescriptor", "getName", "getEditorInput", "getInputDataSource", "getDataSourceContainer", "getNavigatorNode", "getStorage", "getTemplatesPage", "getSourceViewer", "getFirstResults", "isDisposed", "getData", "getEditDomain", "getOverviewOutlinePage", "getGraphicalViewer", "toString", "getActionRegistry", "getCommandStack", "getProperty", "getNote", "getEditor", "getActiveEditor", "getDefault", "getCommandContext", "isEditEnabled", "getBoolean", "getPreferences", "toURI", "getContextName", "getContextId", "getURLs", "getAvailableInstances", "addProperty", "getAllContexts", "getDefaultDriverLoader", "valueOf", "getClassLoader", "getParentObject", "getParentNode", "getNodeByObject", "getRootObjectContainer", "get", "getModel", "isEmpty", "getEntities", "toPath", "getContents", "getLocation", "getObjectId", "getDataSourceProvider", "getDriver", "getProviderId", "getVisiblePanel", "isUIThread", "hasFocus", "stream", "getContent", "cast", "getAdapter", "isAssignableFrom", "error", "getResultSetController", "isInstance", "getSelectedPage", "getDataSource", "getSession", "getClass", "getValueManager", "getInstance", "contributeProperties", "setPropertySourceProvider", "getAttribute", "owned", "collectProperties", "getBinding", "getDecorator", "adapt", "getUndoManager", "getTextEditor", "getTextViewer", "equals", "toCollection", "filter", "getType", "getObject", "getAllObjects" ]
+    }, {
+      "name" : "setSelectedRecords",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "clearData",
+      "visibility" : "public",
+      "methodCalls" : [ "releaseAllData", "resetMetaData", "clearData", "clearMetaData" ]
+    }, {
+      "name" : "updateCellValue",
+      "visibility" : "public",
+      "methodCalls" : [ "refreshHintCache", "updateCellValue", "singletonList" ]
+    }, {
+      "name" : "hasColumnTransformers",
+      "visibility" : "public",
+      "methodCalls" : [ "getEntityAttributes", "hasValuableData", "getTransformSettings", "getVirtualEntity", "getDataContainer" ]
+    }, {
+      "name" : "navigateAssociation",
+      "visibility" : "public",
+      "methodCalls" : [ "getRealEntity", "getName", "getObjectFullName", "getAttribute", "getDataFilter", "safeList", "add", "size", "getExecutionContext", "getPlatformUI", "setVisible", "get", "showError", "getParentObject", "getAttributeReferences", "getAttributeBinding", "getReferencedConstraint" ]
+    }, {
+      "name" : "fireResultSetSelectionChange",
+      "visibility" : "public",
+      "methodCalls" : [ "handleResultSetSelectionChange" ]
+    }, {
+      "name" : "updateToolbar",
+      "visibility" : "public",
+      "methodCalls" : [ "setRedraw", "updateContributionItems", "isDisposed", "layout" ]
+    }, {
+      "name" : "navigateReference",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "setVisible", "size", "getAttribute", "getExecutionContext", "get", "getQuotedIdentifier", "getReferencedConstraint", "safeList", "getAttributeBinding", "getParentObject", "add", "getRealEntity", "error", "getObjectFullName", "getAttributeReferences", "getName", "getAssociatedEntity" ]
+    }, {
+      "name" : "isDirty",
+      "visibility" : "public",
+      "methodCalls" : [ "isDirty", "hasFilter", "values", "isDisposed", "getControl", "getCurrentAttribute", "isAttributeReadOnly", "getGroupAttributes", "isEmpty", "isReadOnly", "isNonPersistentEditor", "getPersistedState", "getResultSetController", "get", "isTransactionActive", "getEditorInput", "getCommandContext" ]
+    }, {
+      "name" : "resetCellValue",
+      "visibility" : "public",
+      "methodCalls" : [ "refreshHintCache", "resetCellValue", "singletonList" ]
+    }, {
+      "name" : "setDataContainer",
+      "visibility" : "public",
+      "methodCalls" : [ "getDataFilter", "getSegmentMaxRows" ]
+    }, {
+      "name" : "getDataSource",
+      "visibility" : "public",
+      "methodCalls" : [ "getDataSource", "getContext", "getId", "equals", "getObject", "getParentObject", "getCause", "getDataSourceContainer", "values", "get", "getTable", "getDataContainer", "getExecutionContext", "getSchema" ]
+    }, {
+      "name" : "setStatus",
+      "visibility" : "public",
+      "methodCalls" : [ "release", "getDataSource", "getSegmentMaxRows", "getMessage", "getLayoutData", "getMessageType", "getDataContainer", "equalObjects", "computeSize", "updateActionState", "valueOf", "getSingleLineString", "setImage", "setToolTipText", "isDisposed", "setText", "setStatus", "getImage" ]
+    }, {
+      "name" : "getHintContext",
+      "visibility" : "public",
+      "methodCalls" : [ "getHintContext" ]
+    }, {
+      "name" : "handleDataSourceEvent",
+      "visibility" : "public",
+      "methodCalls" : [ "getFigure", "getType", "getChildNodes", "fireNodeEvent", "addChildItem", "setUser", "getModel", "hasChildItem", "updateChildrenOrder", "removeChildItem", "hasChildren", "makeExceptionStatus", "join", "getParentNode", "getNodeByObject", "getMeta", "getChildren", "schedule", "clearNode", "getClass", "removeDataSource", "fireNodeUpdate", "handleEntityRename", "isDisposed", "getDatabaseObject", "setDataSourceContainer", "getEditorName", "onDataSourceChange", "getDataSourceContainer", "setPartName", "getReferenceAssociation", "reloadAttributes", "getMultiPageEditor", "getControl", "getName", "makeEntityFromObject", "getOptions", "getObject", "getAction", "asyncExec", "refreshPart", "getData", "getVirtualEntity", "refreshData", "getContainer", "updateActionBars", "isClosing", "getWorkbench", "equals", "getEnabled", "getCurrentDataSource", "getRegistry", "getDiagram", "getCursorLocation", "emptyList", "getPlatform", "removeEntity", "getEditor", "getEntity", "setDirty", "addEntity", "getDataSource", "getSite", "containsKey", "getPreferredSize", "getTargetEntity", "get", "isShuttingDown", "resolveAttributes", "isEditEnabled", "getEntityPart", "modifyBounds", "getDiagramPart", "firePropertyChange", "getAssociatedEntity", "getAssociation", "getParentObject", "getAttribute", "toDisplay", "removeReferenceAssociation", "getCurrent", "removeAssociation", "removeAttribute" ]
+    }, {
+      "name" : "toggleSortOrder",
+      "visibility" : "public",
+      "methodCalls" : [ "setOrderDescending", "getConstraints", "supportsDataFilter", "getOrder", "supportsResultSetOrdering", "refreshData", "getOrderPosition", "setOrderPosition", "checkForChanges", "isNotEmpty", "get", "getConstraint", "setOrder", "confirmAction", "getInfo", "getDataSource", "getName", "isHasMoreData", "getMaxOrderingPosition", "getControl", "getShell", "getModel", "getDataFilter", "isOrderDescending" ]
+    }, {
+      "name" : "setCurrentRow",
+      "visibility" : "public",
+      "methodCalls" : [ "getVisualNumber", "contains", "getRowCount" ]
+    }, {
+      "name" : "getDefaultForeground",
+      "visibility" : "public",
+      "methodCalls" : [ "getDefaultTextForeground" ]
+    } ],
+    "imports" : [ "org.eclipse.jface.util.IPropertyChangeListener", "org.jkiss.dbeaver.ui.controls.resultset.colors.CustomizeColorsAction", "org.jkiss.dbeaver.model.sql.parser.SQLSemanticProcessor", "org.jkiss.dbeaver.tools.transfer.ui.internal.DTUIMessages", "java.time.format.DateTimeFormatter", "java.util.concurrent.atomic.AtomicBoolean", "org.jkiss.dbeaver.runtime.DBWorkbench", "org.jkiss.dbeaver.ui.controls.resultset.ResultSetUtils.OrderingStrategy", "org.eclipse.core.runtime.IStatus", "org.jkiss.dbeaver.model.struct", "org.jkiss.code.NotNull", "org.eclipse.jface.action", "org.jkiss.dbeaver.model.virtual", "org.eclipse.jface.text.IFindReplaceTarget", "org.jkiss.dbeaver.ui.controls.resultset.actions", "org.eclipse.swt.custom", "java.time.LocalDateTime", "org.jkiss.dbeaver.ui.navigator.NavigatorCommands", "org.jkiss.dbeaver.model.data.hints.DBDValueHint", "org.jkiss.utils.ArrayUtils", "org.jkiss.code.Nullable", "org.eclipse.ui.menus.CommandContributionItemParameter", "org.jkiss.dbeaver.ui.dialogs.ConfirmationDialog", "java.time.Instant", "java.text.DecimalFormat", "org.jkiss.dbeaver.model.preferences.DBPPreferenceStore", "org.eclipse.osgi.util.NLS", "org.jkiss.dbeaver.ui", "org.jkiss.dbeaver.ui.data.IValueController", "org.jkiss.dbeaver.ui.controls.resultset.virtual", "org.jkiss.dbeaver.model.runtime.DBRProgressMonitor", "org.jkiss.dbeaver.ui.controls.ToolbarSeparatorContribution", "org.eclipse.core.runtime.Status", "org.jkiss.dbeaver.Log", "org.jkiss.dbeaver.model.runtime.load.ILoadService", "org.jkiss.dbeaver.ui.css.DBStyles", "org.jkiss.dbeaver.registry.configurator.UIPropertyConfiguratorRegistry", "org.jkiss.dbeaver.ui.controls.TabFolderReorder", "org.eclipse.swt.events", "org.jkiss.dbeaver.model.exec", "org.jkiss.dbeaver.ui.editors.data.internal.DataEditorsMessages", "org.jkiss.dbeaver.ui.controls.resultset.internal.ResultSetMessages", "org.jkiss.dbeaver.registry.data.hints.ValueHintProviderDescriptor", "org.eclipse.swt.SWT", "org.jkiss.dbeaver.runtime.DBeaverNotifications", "org.jkiss.dbeaver.model.runtime.AbstractJob", "org.jkiss.dbeaver.ui.controls.resultset.view.EmptyPresentation", "org.eclipse.swt.layout", "java.util.stream.Collectors", "org.eclipse.ui", "org.jkiss.dbeaver.ui.controls.VerticalButton", "org.jkiss.dbeaver.ui.controls.VerticalFolder", "org.jkiss.dbeaver.model.runtime.DBRRunnableWithProgress", "org.jkiss.dbeaver.model.sql", "org.jkiss.dbeaver.ui.actions.DisabledLabelAction", "java.time.temporal.ChronoUnit", "org.eclipse.core.runtime.jobs.Job", "org.jkiss.dbeaver.ui.controls.resultset.ResultSetUtils.OrderingPolicy", "org.jkiss.dbeaver.registry.ApplicationPolicyProvider", "org.eclipse.swt.widgets", "org.jkiss.dbeaver.utils.GeneralUtils", "org.jkiss.dbeaver.model.data.hints.DBDCellHintProvider", "org.jkiss.dbeaver.registry.data.hints.ValueHintRegistry", "org.jkiss.dbeaver.ui.controls.resultset.panel.ResultSetPanelDescriptor", "org.eclipse.ui.themes.ITheme", "java.util.List", "java.util", "org.jkiss.dbeaver.ui.controls.resultset.view.ErrorPresentation", "org.eclipse.jface.viewers", "org.jkiss.dbeaver.ui.editors.data.preferences.PrefPageResultSetMain", "org.jkiss.dbeaver.ui.css.CSSUtils", "org.jkiss.dbeaver.model.messages.ModelMessages", "org.jkiss.dbeaver.runtime.jobs.DataSourceJob", "org.jkiss.dbeaver.ui.controls.resultset.view.StatisticsPresentation", "org.jkiss.dbeaver.model.data.hints.DBDValueHintContext", "org.jkiss.dbeaver.utils.PrefUtils", "org.jkiss.dbeaver.ui.controls.resultset.valuefilter.FilterValueEditPopup", "org.eclipse.ui.menus.IMenuService", "org.jkiss.dbeaver.registry.configurator.UIPropertyConfiguratorDescriptor", "org.jkiss.dbeaver.model.preferences.DBPPreferenceListener", "org.eclipse.core.runtime.IProgressMonitor", "org.eclipse.ui.internal.WorkbenchImages", "org.jkiss.dbeaver.model.data", "org.eclipse.swt.graphics.Color", "org.jkiss.dbeaver.model", "org.jkiss.dbeaver.ModelPreferences", "org.jkiss.dbeaver.ui.controls.resultset.colors.ResetRowColorAction", "org.jkiss.dbeaver.ui.controls.autorefresh.AutoRefreshControl", "org.jkiss.dbeaver.utils.RuntimeUtils", "org.eclipse.core.runtime.IAdaptable", "org.jkiss.utils.CommonUtils", "org.jkiss.dbeaver.ui.controls.resultset.colors.ResetAllColorAction", "org.eclipse.jface.resource.JFaceResources", "org.eclipse.ui.internal.IWorkbenchGraphicConstants", "org.eclipse.jface.dialogs.IDialogConstants", "org.eclipse.ui.menus.CommandContributionItem", "org.jkiss.dbeaver.DBException", "org.eclipse.swt.graphics.Point", "org.jkiss.dbeaver.model.runtime.load.DatabaseLoadService", "org.jkiss.dbeaver.model.impl.local.StatResultSet", "org.jkiss.dbeaver.ui.controls.resultset.handler", "org.eclipse.swt.graphics.Rectangle", "java.lang.reflect.InvocationTargetException", "org.eclipse.jface.dialogs.IDialogSettings", "org.jkiss.dbeaver.model.data.hints.DBDValueHintProvider", "org.eclipse.ui.actions.CompoundContributionItem", "org.jkiss.dbeaver.model.edit.DBEPersistAction", "org.jkiss.dbeaver.model.runtime.VoidProgressMonitor", "org.jkiss.dbeaver.model.app.DBPProject" ]
+  }, {
+    "name" : "SQLEditor",
+    "packageName" : "org.jkiss.dbeaver.ui.editors.sql",
+    "extendedClasses" : [ "SQLEditorBase" ],
+    "implementedInterfaces" : [ "DBPDataSourceTask", "IResultSetProvider", "DBPEventListener", "ISmartTransactionManager", "ISaveablePart2", "DBPDataSourceAcquirer", "IDataSourceContainerUpdate", "IStatefulEditor" ],
+    "methods" : [ {
+      "name" : "isActiveTask",
+      "visibility" : "public",
+      "methodCalls" : [ "getState", "isRefreshInProgress" ]
+    }, {
+      "name" : "showExecutionLogPanel",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "init",
+      "visibility" : "public",
+      "methodCalls" : [ "addResourceChangeListener", "isMacOS", "printStackTrace", "beginTask", "isOSVersionAtLeast", "getBundleProgressMonitor", "setMinimumIntegerDigits", "getNumberInstance", "setGroupingUsed", "setMinimumFractionDigits", "getGroupingSize", "isBitSet", "setMaximumIntegerDigits", "setMaximumFractionDigits", "getPrecision", "setRoundingMode", "getScale", "getTypeModifiers", "setGroupingSize", "isEmptyTrimmed", "replaceAll", "ofPattern", "setLenient", "getIdentifierQuoteStrings", "hasMoreTokens", "getStringQuoteStrings", "toArray", "getScriptDelimiters", "nextToken", "getCatalogSeparator", "fromPreferences", "addAll", "getStructSeparator", "getParametersPrefixes", "contains", "getStringEscapeCharacter", "toLowerCase", "getOrDefault", "min", "max", "equalsIgnoreCase", "charAt", "getDelimiterString", "getSite", "getArrayFormat", "trim", "replace", "getDialectFromObject", "toBoolean", "getDefaultLineSeparator", "fromValue", "containsKey", "getSource", "setFont", "setItalic", "setBorderBottom", "setBold", "setBorderRight", "createDataFormat", "getBoolean", "toString", "setBorderLeft", "setUnderline", "createFont", "setDataFormat", "equals", "setStrikeout", "of", "name", "setBorderTop", "valueOf", "getProperties", "toInt", "createCellStyle", "getFormat", "getCreationHelper", "firePropertyChange", "createImage", "isAutoDownloadWizard", "setHelpAvailable", "saveVariables", "getDataSourceContainer", "getExecutionContext", "getDriver", "isReuseExecutionContext", "addListener", "getEditorContext", "schedule", "getAddIns", "createInstance", "saveContextVariables", "getContainer", "error", "getScriptContext", "getDataSource", "getPathFromInput", "setTitleToolTip", "getToolTipText", "setEditDomain", "getActiveDescriptor", "getActiveRouter", "addPropertyChangeListener", "getDefault", "getPreferenceStore", "getDiagramsFolder", "getString", "setSelectionProvider", "getWorkspace", "setSite", "setInput", "getEditorInput", "getAdapter", "getDashboardsFolder", "getMessage", "getAdapterManager", "getInstance", "getPlatform", "getFirstElement", "getActiveProject", "setWindowTitle", "setNeedsProgressMonitor", "getProject", "isEmpty", "init", "checkDefaultDashboardExistence", "endsWith", "substring", "getFileFromInput", "getDashboards", "get", "getImage", "setTitleImage", "setPartName", "getName", "length", "addTaskListener", "getDefaultEditor", "add", "getEditors", "setDefaultPageImageDescriptor", "getImageDescriptor" ]
+    }, {
+      "name" : "isActiveTabPinned",
+      "visibility" : "public",
+      "methodCalls" : [ "getData" ]
+    }, {
+      "name" : "createPartControl",
+      "visibility" : "public",
+      "methodCalls" : [ "addProjectListener", "plus", "getDisplayName", "toString", "range", "getFirstDayOfWeek", "boxed", "getDefault", "ordinal", "values", "minLength", "toArray", "setRootEditPart", "getKillAction", "getGraphicalViewer", "setEditPartFactory", "setEditDomain", "setContextMenu", "setGraphicalViewer", "setLabelDecorator", "getNavigatorViewer", "createColumns", "getTree", "getInput", "setVisible", "setAlignment", "createComposite", "createLabel", "getService", "getNavigatorTree", "setFilterObjectType", "getNodeFromSecondaryId", "activateContext", "setItemRenderer", "getSecondaryId", "error", "setInput", "getDefaultFolderId", "createPropertyRefreshAction", "fillCustomActions", "contributeStandardEditorActions", "setPartName", "layout", "setTitleImage", "getNodeDisplayName", "getNavigatorNode", "setDefaultSelection", "getNodeIconDefault", "getNodeUri", "setRootNode", "getRootNode", "add", "loadData", "addFilter", "isAssignableFrom", "getType", "getNavigatorModel", "setLabelProvider", "createPushButton", "forName", "getPart", "getQuotedIdentifier", "getMeta", "getObject", "addSelectionChangedListener", "getRoot", "startsWith", "keySet", "getProjectionAnnotationModel", "isNotEmpty", "getConnectionConfiguration", "getLineHeight", "contains", "getDescription", "asList", "activatePart", "createControlLabel", "toUpperCase", "getBoolean", "getExecutionContext", "setPartBackground", "createEditorControl", "setKeyBinding", "getTextViewer", "getLength", "getLineOffset", "getAnnotationAccess", "getOffset", "widgetOffset2ModelOffset", "trackControlContext", "getLineOfOffset", "getDocument", "getRegions", "installOccurrencesFinder", "getSelectedRange", "install", "addSummarizableAnnotationType", "getLineCount", "getOffsetAtPoint", "prependVerifyKeyListener", "min", "addControlListener", "within", "addMouseListener", "getOffsetAtLine", "getCharCount", "getNumberOfLines", "abs", "getSharedColors", "isEnabled", "getLineIndex", "getSize", "length", "loadActivePreferenceSettings", "getSelectionProvider", "revealRange", "doOperation", "getLineDelimiter", "getBottomIndex", "getSourceViewer", "addModifyListener", "setShowBorders", "addPropertyListener", "accept", "refreshActions", "enable", "addVerifyKeyListener", "setTopRight", "getTextWidget", "setSashWidth", "setRangeIndicator", "isRegistryLoaded", "getSashOrientation", "getCurrentPosition", "setCSSClass", "getItems", "getEditorControlWrapper", "removeHint", "hasContentToShow", "setAction", "getSelection", "setFont", "addCaretListener", "applyHint", "activate", "getEditorControl", "getChildren", "addFocusListener", "createOrSubstituteProgressPanel", "setMaximizedControl", "getCompileCommandId", "setInfo", "setShowDivider", "getPlaceholder", "hasProgressControl", "createContentContainer", "loadDiagram", "getMaxUserConnections", "getMaxQuestions", "createLabelText", "getMaxUpdates", "isPersisted", "getMaxConnections", "setEditable", "createLabelSpinner", "addCommandListener", "getHost", "checkPrivilege", "getUserName", "isDisposed", "addChangeCommand", "getCommandContext", "setData", "makeBoldFont", "setText", "getData", "create", "setSelection", "fillDefaults", "setHeaderVisible", "numColumns", "setImage", "dispose", "setSashBorders", "addSelectionListener", "getCatalogs", "packColumns", "createTableColumn", "getItem", "getSelectionIndex", "createProgressPanel", "getImage", "addDisposeListener", "getFont", "createControlGroup", "setNoHideLeft", "createControl", "hideDown", "isFilterPanelVisible", "adapt", "addCustomSashFormListener", "fireCommandRefresh", "setLayoutData", "createPlaceholder", "setUrl", "setHelp", "getViewSite", "createPartControl", "setSourceViewerConfiguration", "getContainer", "getDataSource", "getProject", "getDatabaseObject", "getVirtualEntity", "createPartDivider", "setWeights", "debug", "getViewer", "setMenuListener", "getEditorSite", "selectionChanged", "getNewValue", "setLayout", "firePropertyChange", "setTextFont", "getPreferenceStore", "getPrefFontData", "getProperty", "getPlatform", "getStorageFromInput", "equals", "updateActionsStatus", "isReadOnly", "addListener", "getDefaultWidth", "createEditorPart", "addLongSelectionListener", "setDefWidth", "getLongSelection", "updateActionBars", "addPropertyChangeListener", "getActionBars", "getEditorInput", "getControl", "setUser", "drawMessageOverControl", "getListData", "setSystem", "getName", "of", "isEmpty", "schedule", "addPaintListener", "appendListData", "queueExec", "getClass", "use", "setSelectionProvider", "getWorkspace", "getSite", "hasRealmPermission", "getInstance", "refresh" ]
+    }, {
+      "name" : "handleDataSourceEvent",
+      "visibility" : "public",
+      "methodCalls" : [ "getFigure", "getType", "getChildNodes", "fireNodeEvent", "addChildItem", "setUser", "getModel", "hasChildItem", "updateChildrenOrder", "removeChildItem", "hasChildren", "makeExceptionStatus", "join", "getParentNode", "getNodeByObject", "getMeta", "getChildren", "schedule", "clearNode", "getClass", "removeDataSource", "fireNodeUpdate", "handleEntityRename", "isDisposed", "getDatabaseObject", "setDataSourceContainer", "getEditorName", "onDataSourceChange", "getDataSourceContainer", "setPartName", "getReferenceAssociation", "reloadAttributes", "getMultiPageEditor", "getControl", "getName", "makeEntityFromObject", "getOptions", "getObject", "getAction", "asyncExec", "refreshPart", "getData", "getVirtualEntity", "refreshData", "getContainer", "updateActionBars", "isClosing", "getWorkbench", "equals", "getEnabled", "getCurrentDataSource", "getRegistry", "getDiagram", "getCursorLocation", "emptyList", "getPlatform", "removeEntity", "getEditor", "getEntity", "setDirty", "addEntity", "getDataSource", "getSite", "containsKey", "getPreferredSize", "getTargetEntity", "get", "isShuttingDown", "resolveAttributes", "isEditEnabled", "getEntityPart", "modifyBounds", "getDiagramPart", "firePropertyChange", "getAssociatedEntity", "getAssociation", "getParentObject", "getAttribute", "toDisplay", "removeReferenceAssociation", "getCurrent", "removeAssociation", "removeAttribute" ]
+    }, {
+      "name" : "getExtraPresentationPanel",
+      "visibility" : "public",
+      "methodCalls" : [ "getData", "getItems", "getClass", "cast" ]
+    }, {
+      "name" : "beforeDisconnect",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "showVariablesPanel",
+      "visibility" : "public",
+      "methodCalls" : [ "asyncExec", "refreshVariables" ]
+    }, {
+      "name" : "beforeConnect",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getAdapter",
+      "visibility" : "public",
+      "methodCalls" : [ "collect", "getSourceObject", "getFirstElement", "getSelection", "getNavigatorViewer", "adaptResource", "getOwnerProject", "getPath", "getRoot", "supportsCopyFromStdIn", "supportsAlterUserChangePassword", "getServerType", "getQueryPlanner", "getDescription", "getContainer", "getNodeDisplayName", "getPublicObject", "getFromObject", "getNestedAdapter", "getDefaultInstance", "getDefaultContext", "getDatabaseObject", "getNodeIconDefault", "getImageDescriptor", "getName", "getEditorInput", "getInputDataSource", "getDataSourceContainer", "getNavigatorNode", "getStorage", "getTemplatesPage", "getSourceViewer", "getFirstResults", "isDisposed", "getData", "getEditDomain", "getOverviewOutlinePage", "getGraphicalViewer", "toString", "getActionRegistry", "getCommandStack", "getProperty", "getNote", "getEditor", "getActiveEditor", "getDefault", "getCommandContext", "isEditEnabled", "getBoolean", "getPreferences", "toURI", "getContextName", "getContextId", "getURLs", "getAvailableInstances", "addProperty", "getAllContexts", "getDefaultDriverLoader", "valueOf", "getClassLoader", "getParentObject", "getParentNode", "getNodeByObject", "getRootObjectContainer", "get", "getModel", "isEmpty", "getEntities", "toPath", "getContents", "getLocation", "getObjectId", "getDataSourceProvider", "getDriver", "getProviderId", "getVisiblePanel", "isUIThread", "hasFocus", "stream", "getContent", "cast", "getAdapter", "isAssignableFrom", "error", "getResultSetController", "isInstance", "getSelectedPage", "getDataSource", "getSession", "getClass", "getValueManager", "getInstance", "contributeProperties", "setPropertySourceProvider", "getAttribute", "owned", "collectProperties", "getBinding", "getDecorator", "adapt", "getUndoManager", "getTextEditor", "getTextViewer", "equals", "toCollection", "filter", "getType", "getObject", "getAllObjects" ]
+    }, {
+      "name" : "doSave",
+      "visibility" : "public",
+      "methodCalls" : [ "setContents", "getStatus", "extractStatusLineManager", "log", "getMessage", "setErrorMessage", "getDatabaseObject", "showChanges", "isCanceled", "getNavigatorNode", "getPlatform", "firePropertyChange", "isReadOnly", "getOwnerProject", "getBoolean", "getPreferenceStore", "runPostSaveCommands", "showNotification", "values", "hasRealmPermission", "getWorkspace", "getObjectFullName", "setDirty", "beginTask", "schedule", "done", "waitJobCompletion", "isNonPersistentEditor", "isInAutoSaveJob", "confirmAction", "subTask", "saveAsNewScript", "getPartName", "makeMonitor", "getFileFromInput", "getEditorInput", "error", "toFile", "get", "getPath", "makeAbsolute", "syncFile", "getContent", "getLocation", "getPlatformUI", "showError", "doSave", "isDirty", "applyChanges", "setCanceled", "syncExec", "size", "updateValue", "getShell", "getSite", "add", "isEmpty", "selectContentPart", "asyncExec", "updateContentFromFile", "getValue", "getValueController", "updateToolbarActions", "getDiagramPart", "persistConfiguration", "put", "markSaveLocation", "getDiagram", "getCommandStack", "setProperty", "serializeDiagram", "getBytes", "getURI", "toPath", "write" ]
+    }, {
+      "name" : "cancelActiveQuery",
+      "visibility" : "public",
+      "methodCalls" : [ "isActiveQueryRunning", "cancelJob" ]
+    }, {
+      "name" : "processSQL",
+      "visibility" : "public",
+      "methodCalls" : [ "getPlatformUI", "getSyntaxManager", "singletonList", "getSelectionProvider", "setParameters", "isEmpty", "add", "parseQueryParameters", "remove", "getDataSource", "size", "getParameters", "getDocument", "transformQuery", "processQueries", "beforeQueryExecute", "processSQL", "getLength", "extractScriptQueries", "showError", "getSelection", "extractActiveQuery", "getOffset" ]
+    }, {
+      "name" : "isMultipleResultsPerTabEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "getPropertyValue", "toBoolean" ]
+    }, {
+      "name" : "isEditable",
+      "visibility" : "public",
+      "methodCalls" : [ "getTarget", "getSource", "getValueObject", "getRootNode", "getPlatform", "getClass", "canEditObject", "getObjectManager", "hasRealmPermission", "getEditorsRegistry", "getWorkspace", "getEditable", "isEditable", "getController", "getReadOnlyStatus" ]
+    }, {
+      "name" : "getSuggestionTextPainter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSQLDialect",
+      "visibility" : "public",
+      "methodCalls" : [ "getSQLDialect", "getId", "createInstance", "format", "getDataSource", "getScriptDialect", "warn", "getLabel" ]
+    }, {
+      "name" : "getActivePresentation",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setResultSetAutoFocusEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setFocus",
+      "visibility" : "public",
+      "methodCalls" : [ "getPlatform", "getChildren", "getGraphicalViewer", "getBoolean", "activate", "getPreferenceStore", "forceFocus", "getString", "getParent", "getScreenReader", "updateInsertModeText", "updatePositionValueText", "getCaretPos", "getSelection", "updateSelectionValueText", "getActualValue", "setFocus", "isSelected", "isOverwriteMode", "getItems", "isEmpty", "get", "getDefaultGroup", "selectItem", "getControl", "redrawCaret", "getViewer", "isDisposed", "getActivePresentation", "getPageControl", "updateActionBars", "getActionBars", "getEditorSite", "update" ]
+    }, {
+      "name" : "processQueries",
+      "visibility" : "public",
+      "methodCalls" : [ "isDirty", "isEmpty", "getBoolean", "getPlatformUI", "getResultsTab", "isOK", "syncExec", "getEntityMetadata", "getResultContainers", "getType", "showError", "clearOutput", "name", "confirmAction", "getShell", "isConnectionReadOnly", "isHideQueryText", "setMaximizedControl", "hasModifyPermission", "stream", "dispose", "doSave", "getDataSourceContainer", "isConnected", "isDeleteUpdateDangerous", "get", "anyMatch", "isMutatingStatement", "getFirstResults", "hasPinnedTabs", "getActivePreferenceStore", "size", "processQueries", "getData", "getRunningJobs", "getMaximizedControl", "getSelection", "hasData", "getSite", "getEntityName", "getMessage", "isDropTableDangerous" ]
+    }, {
+      "name" : "toggleMultipleResultsPerTab",
+      "visibility" : "public",
+      "methodCalls" : [ "setPropertyValue", "isMultipleResultsPerTabEnabled", "toString" ]
+    }, {
+      "name" : "findAddIn",
+      "visibility" : "public",
+      "methodCalls" : [ "isInstance" ]
+    }, {
+      "name" : "getDataSourceContainer",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "getParentNode", "getParentObject", "getProject", "getDataSourceContainer", "getContainer", "getDataSource", "getExecutionContext", "isRegistryLoaded", "getDataSourceRegistry", "getDatabaseObject", "next", "getAssociatedDataSources", "iterator", "size", "getObject", "getTargetObject", "getConsumer", "isNotEmpty", "getNodeSettingsMap", "findDataSourceByObjectId", "toString" ]
+    }, {
+      "name" : "toggleActiveTabPinned",
+      "visibility" : "public",
+      "methodCalls" : [ "hasData", "getData", "indexOf", "swapTabs", "getShowClose", "getItem", "setPinned", "getItemCount" ]
+    }, {
+      "name" : "setEditorMaximized",
+      "visibility" : "public",
+      "methodCalls" : [ "setMaximizedControl", "isHideQueryText" ]
+    }, {
+      "name" : "isSmartAutoCommit",
+      "visibility" : "public",
+      "methodCalls" : [ "isSmartAutoCommit", "getDataSourceContainer", "getContainer", "isSmartCommit", "getPlatform", "getPreferenceStore", "getDatabaseObject", "getBoolean", "getConnectionType", "getConnectionConfiguration", "contains", "getDataSource" ]
+    }, {
+      "name" : "reloadSyntaxRules",
+      "visibility" : "public",
+      "methodCalls" : [ "setup", "getSourceViewerConfiguration", "getLength", "refresh", "getEditorInput", "onDataSourceChange", "loadRules", "connect", "getVerticalRuler", "warn", "init", "setDocumentPartitioner", "getDataSource", "update", "getDataSourceContainerForSyntaxRuleReloading", "getBoolean", "isAdvancedHighlightingEnabled", "dispose", "getDocument", "getAnnotationModel", "getSQLDialect", "isSQLSyntaxParserApplied", "getSourceViewer", "refreshRules", "getActivePreferenceStore", "reinitializeProjection", "refreshStyles", "reloadSyntaxRules" ]
+    }, {
+      "name" : "explainQueryPlan",
+      "visibility" : "public",
+      "methodCalls" : [ "beforeQueryPlanExplain", "extractActiveQuery", "refresh" ]
+    }, {
+      "name" : "closeActiveTab",
+      "visibility" : "public",
+      "methodCalls" : [ "getShowClose", "dispose" ]
+    }, {
+      "name" : "refreshEditorIconAndTitle",
+      "visibility" : "public",
+      "methodCalls" : [ "getDataSourceContainer", "isSQLSyntaxParserApplied", "dispose", "getEditorName", "setPartName", "getCurrent", "getTitleImage", "getImage", "getExecutionContext", "setTitleImage", "getObjectState", "getEditorInput" ]
+    }, {
+      "name" : "getResultSetController",
+      "visibility" : "public",
+      "methodCalls" : [ "getData", "isDisposed", "isUIThread", "getFirstResults" ]
+    }, {
+      "name" : "loadQueryPlan",
+      "visibility" : "public",
+      "methodCalls" : [ "loadQueryPlan", "closeActiveTab", "adapt", "getRootCause", "open", "showError", "setFilterExtensions", "getPlatformUI", "getControl", "getDataSource", "deserialize", "setText", "getFilterPath", "getShell", "getQueryString", "setFilterPath", "getExecutionContext", "refresh" ]
+    }, {
+      "name" : "showExtraPresentation",
+      "visibility" : "public",
+      "methodCalls" : [ "update", "showExtraPresentation", "setData", "setChecked", "setAction", "setRedraw", "setLayoutData", "redraw", "run", "setFocus", "isAutoActivate", "error", "isEnabled", "getParent", "layout", "getControl", "getData", "setSelectionProvider", "getPanels", "getItems", "getChildren", "getInstance", "getSite", "getLayout", "getPresentation", "dispose", "getSelectionProvider", "getActivePresentationControl", "getEditorControlWrapper", "setActivePresentation" ]
+    }, {
+      "name" : "isDirty",
+      "visibility" : "public",
+      "methodCalls" : [ "isDirty", "hasFilter", "values", "isDisposed", "getControl", "getCurrentAttribute", "isAttributeReadOnly", "getGroupAttributes", "isEmpty", "isReadOnly", "isNonPersistentEditor", "getPersistedState", "getResultSetController", "get", "isTransactionActive", "getEditorInput", "getCommandContext" ]
+    }, {
+      "name" : "exportDataFromQuery",
+      "visibility" : "public",
+      "methodCalls" : [ "showError", "isEmpty", "getPlatformUI", "processQueries", "getSelectedQueries" ]
+    }, {
+      "name" : "saveAsNewScript",
+      "visibility" : "public",
+      "methodCalls" : [ "showError", "getExecutionContext", "setInputDataSource", "getDataSourceContainer", "setInput", "getPlatformUI", "setContents", "createNewScript", "getDocument", "getEncoding", "get", "getBytes", "getProject" ]
+    }, {
+      "name" : "hasMaximizedControl",
+      "visibility" : "public",
+      "methodCalls" : [ "getMaximizedControl" ]
+    }, {
+      "name" : "getExtraPresentationDescriptor",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "toggleExtraPanelsLayout",
+      "visibility" : "public",
+      "methodCalls" : [ "setValue", "showVariablesPanel", "showOutputPanel", "showExecutionLogPanel", "getPreferenceStore", "getExtraPanelsLocation", "equals", "dispose" ]
+    }, {
+      "name" : "getActivePresentationDescriptor",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "refreshActions",
+      "visibility" : "public",
+      "methodCalls" : [ "redraw", "getControl", "syncWithEditor" ]
+    }, {
+      "name" : "editorContextMenuAboutToShow",
+      "visibility" : "public",
+      "methodCalls" : [ "insertBefore", "addAction", "isEditable", "isReadOnly", "getSite", "getTextViewer", "getAction", "makeCommandContribution", "getDescription", "insertAfter", "isEmpty", "showExtraPresentation", "getImageDescriptor", "entrySet", "getIcon", "getKey", "add", "editorContextMenuAboutToShow", "contributeEditorCommands" ]
+    }, {
+      "name" : "getCurrentLines",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "getOffset", "getDocument", "isEmpty", "size", "add", "getLength", "getLineOfOffset" ]
+    }, {
+      "name" : "getSelectedQueries",
+      "visibility" : "public",
+      "methodCalls" : [ "getLength", "extractScriptQueries", "getSelection", "getOffset", "getSelectionProvider", "addAll", "extractActiveQuery", "add" ]
+    }, {
+      "name" : "setDataSourceContainer",
+      "visibility" : "public",
+      "methodCalls" : [ "getPlatformUI", "addPropertyChangeListener", "getEditorReferences", "showError", "asyncExec", "getEditorName", "getPage", "checkConnected", "refreshNavigatorResource", "setPartName", "getSite", "getInputExecutionContext", "getProject", "syncExec", "addDataSourceListener", "acquire", "getFileFromInput", "getInputDataSource", "setInputDataSource", "showEditor", "getName", "isWriteEmbeddedBinding", "getDefaultContext", "setFocus", "isOK", "getPreferenceStore", "hideEditor", "getEditorInput", "getEditor", "getRegistry" ]
+    }, {
+      "name" : "getExtraPanelsLocation",
+      "visibility" : "public",
+      "methodCalls" : [ "getPreferenceStore", "getString" ]
+    }, {
+      "name" : "toggleResultPanel",
+      "visibility" : "public",
+      "methodCalls" : [ "getMaximizedControl", "getItemCount", "syncExec", "setMaximizedControl", "isHideQueryText" ]
+    }, {
+      "name" : "validateEditorInputState",
+      "visibility" : "public",
+      "methodCalls" : [ "getTextWidget", "validateEditorInputState", "setFocus", "getViewer", "isDisposed" ]
+    }, {
+      "name" : "promptToSaveOnClose",
+      "visibility" : "public",
+      "methodCalls" : [ "getEntityEditor", "add", "getEditorInput", "values", "getSite", "getNavigatorNode", "join", "isEmpty", "getCommandContext", "getNodeDisplayName", "getInstance", "getName", "getActivePreferenceStore", "warn", "getBoolean", "updateDirtyFlag", "getService", "checkAndCloseActiveTransaction", "updateAndGet", "promptToSaveOnClose", "getResultSetController", "isNonPersistentEditor", "getResultContainers", "cancelJob", "confirmAction", "isDirty", "getShell", "rejectChanges" ]
+    }, {
+      "name" : "getExecutionContext",
+      "visibility" : "public",
+      "methodCalls" : [ "error", "getObject", "isConnected", "getSettings", "isEmpty", "getDefaultContext", "get", "getObjectList", "getDefaultInstance", "getDataSource", "getDataSourceContainer", "getExecutionContext", "getController", "getEditorInput", "isOpenSeparateConnection", "getOrOpenDefaultContext" ]
+    }, {
+      "name" : "toggleEditorMaximize",
+      "visibility" : "public",
+      "methodCalls" : [ "setEditorMaximized", "getMaximizedControl" ]
+    }, {
+      "name" : "getTitleToolTip",
+      "visibility" : "public",
+      "methodCalls" : [ "getUrl", "getExecutionContext", "getAbsolutePath", "equals", "getConnectionConfiguration", "bind", "append", "getEditorInput", "getScheme", "getTitle", "getURI", "getName", "getDataSourceContainer", "getPath", "getFullName", "getPlatform", "get", "toString", "getProject", "isStandalone", "getApplication", "isEmpty", "getDriver", "getFile", "getConnectionError", "getFullPath", "appendProjectToolTip", "getTitleToolTip" ]
+    }, {
+      "name" : "dispose",
+      "visibility" : "public",
+      "methodCalls" : [ "clearMetaData", "removeMouseTrackListener", "unregisterHandler", "add", "isClosed", "checkGlobalCacheIsEmpty", "disposeControl", "remove", "getEditableValue", "entrySet", "getValue", "removeContributor", "getKey", "resetChanges", "getSpreadsheetVersion", "getOutputStream", "createRow", "setCellValue", "getMaxRows", "getSource", "createCell", "write", "split", "getListeners", "unregisterEventHandler", "getBrowser", "sleep", "isBrowserCreating", "syncExec", "schedule", "onSpinWait", "releaseEditorInput", "getViewerConfiguration", "saveFoldingState", "clearProblems", "getThemeManager", "hasPrevious", "previous", "getFileFromInput", "cleanup", "getWorkbench", "isDistributed", "isClosing", "listIterator", "size", "getControl", "getSelectionProvider", "uninstall", "removeViewportListener", "removeDocumentListener", "setStatusField", "removeCaretListener", "removeTextInputListener", "getTextViewer", "refreshCommandState", "getTextWidget", "getSite", "getDefault", "getActionRegistry", "deactivate", "setActiveEditor", "removePaletteListener", "getClass", "collect", "map", "stream", "getName", "fireRegistryChange", "joining", "isMultiUser", "disposeNavigatorModel", "deactivateService", "removeCommandListener", "getCommandContext", "isGlobal", "getEclipseWorkspace", "isEmpty", "isTrackingEnabled", "stopMonitor", "forEach", "removeDataSourceRegistryListener", "removePageListener", "values", "getNavigatorModel", "debug", "println", "unregisterMetaListener", "isStandalone", "exit", "start", "isExclusiveMode", "gc", "pause", "setHeadlessMode", "getApplication", "currentTimeMillis", "error", "save", "endTracking", "deleteFileRecursive", "setClosing", "terminateProcess", "removeLazyListener", "clear", "getEditorInput", "warn", "release", "disposeEditor", "dispose", "getInstance", "updateLock", "getLockFromFile", "equals", "delete", "get", "deleteOnExit", "keySet", "getContents", "emptyClipboardFile", "isDisposed", "removeResourceChangeListener", "removePropertyChangeListener", "close", "getWorkspace", "getPreferenceStore", "isConnected", "removeConfigChangedListener", "getPlatform", "cancel", "getRegistry", "removeDataSourceListener", "removePropertyListener", "removeTaskListener", "removeProjectListener", "getDatabaseObject", "getObjectRegistry", "removeSelectionListener", "getHorizontalScrollBarProxy", "getVerticalScrollBarProxy", "removeListener", "disposeSQLPanel", "getService" ]
+    }, {
+      "name" : "updateDirtyFlag",
+      "visibility" : "public",
+      "methodCalls" : [ "firePropertyChange", "handleResultSetChange" ]
+    }, {
+      "name" : "addListener",
+      "visibility" : "public",
+      "methodCalls" : [ "contains", "warn", "toArray", "addListener", "add" ]
+    }, {
+      "name" : "showPresentationPanel",
+      "visibility" : "public",
+      "methodCalls" : [ "getData", "getItems", "run", "getAction", "getId", "equals" ]
+    }, {
+      "name" : "removeListener",
+      "visibility" : "public",
+      "methodCalls" : [ "warn", "toArray", "remove" ]
+    }, {
+      "name" : "getGlobalScriptContext",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "showOutputPanel",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "getProject",
+      "visibility" : "public",
+      "methodCalls" : [ "getProject", "getObjectOwnerProject", "getDataSourceContainer", "getDataContainer", "getContainer", "getDataSource", "getExecutionContext", "getDataSourceRegistry", "get", "exists", "getRoot", "getSelectedProject", "getInstance", "getEditorInput", "getPlatform", "getFileFromInput", "getWorkspace", "getActiveProject", "getFile" ]
+    }, {
+      "name" : "isSaveAsAllowed",
+      "visibility" : "public",
+      "methodCalls" : [ "isSaveAsAllowed" ]
+    }, {
+      "name" : "getResultTabsContainer",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "preferenceChange",
+      "visibility" : "public",
+      "methodCalls" : [ "equalObjects", "getOldValue", "getViewer", "redraw", "getTree", "equals", "startsWith", "getProjectionAnnotationModel", "setCloseDoubleQuotesEnabled", "removeAllAnnotations", "getEditorInput", "getNewValue", "clearProblems", "setCloseBracketsEnabled", "refresh", "updateInput", "toBoolean", "setCloseSingleQuotesEnabled", "setPartName", "getProperty", "getContainer", "reloadSyntaxRules", "preferenceChange", "setCompletionContext", "isOpenSeparateConnection", "update", "getEditorName", "asyncExec" ]
+    }, {
+      "name" : "isActiveQueryRunning",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "setSmartAutoCommit",
+      "visibility" : "public",
+      "methodCalls" : [ "getActivePreferenceStore", "setSmartAutoCommit", "error", "save", "setValue", "showError", "getPlatformUI" ]
+    }, {
+      "name" : "isFoldingEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "getPlatform", "getPreferenceStore", "isSQLSyntaxParserApplied", "getEditorInput", "isSQLSyntaxParserEnabled", "getActivePreferenceStore", "getBoolean" ]
+    }, {
+      "name" : "toggleActivePanel",
+      "visibility" : "public",
+      "methodCalls" : [ "getMaximizedControl", "hasFocus" ]
+    }, {
+      "name" : "saveToExternalFile",
+      "visibility" : "public",
+      "methodCalls" : [ "afterSaveToFile", "get", "runInProgressService", "getEncoding", "getName", "setCurDialogFolder", "getEditorInput", "getLocalFileFromInput", "getSite", "getTargetException", "getPlatformUI", "isNotEmpty", "getDocument", "selectFileForSave", "saveContentToFile", "showError", "getShell", "saveToExternalFile" ]
+    }, {
+      "name" : "doSaveAs",
+      "visibility" : "public",
+      "methodCalls" : [ "isSaveAsAllowed", "getActiveEditor", "saveDiagramAs", "getEditorInput", "showError", "selectFileForSave", "run", "getWorkbenchWindow", "getShell", "getAbsolutePath", "saveToExternalFile", "getPartName", "getTargetException", "getSite", "getPlatformUI", "doSaveAs" ]
+    }, {
+      "name" : "supportsRename",
+      "visibility" : "public",
+      "methodCalls" : [ "isVirtual", "getFeatures" ]
+    }, {
+      "name" : "transformQueryWithParameters",
+      "visibility" : "public",
+      "methodCalls" : [ "fillQueryParameters" ]
+    }, {
+      "name" : "getDataSource",
+      "visibility" : "public",
+      "methodCalls" : [ "getDataSource", "getContext", "getId", "equals", "getObject", "getParentObject", "getCause", "getDataSourceContainer", "values", "get", "getTable", "getDataContainer", "getExecutionContext", "getSchema" ]
+    } ],
+    "imports" : [ "org.jkiss.dbeaver.ModelPreferences.SeparateConnectionBehavior", "org.jkiss.dbeaver.model.data.DBDDataFilter", "org.jkiss.dbeaver.ui.editors.sql.handlers.SQLEditorVariablesResolver", "org.jkiss.dbeaver.ui.editors.sql.plan.ExplainPlanViewer", "org.eclipse.ui.part.FileEditorInput", "org.eclipse.swt.events", "org.jkiss.dbeaver.runtime.DBWorkbench", "org.jkiss.dbeaver.ui.editors.sql.syntax.SQLEditorCompletionContext", "org.jkiss.dbeaver.ui.editors.sql.variables.AssignVariableAction", "org.eclipse.ui.forms.events.ExpansionAdapter", "org.eclipse.ui.services.IEvaluationService", "org.jkiss.dbeaver.runtime.jobs.DataSourceMonitorJob", "org.eclipse.swt.custom", "org.jkiss.code.Nullable", "org.jkiss.dbeaver.model.impl.DefaultServerOutputReader", "org.eclipse.ui.menus.CommandContributionItem", "org.jkiss.dbeaver.ModelPreferences", "org.eclipse.swt.layout.GridData", "org.jkiss.utils.IOUtils", "org.eclipse.jface.text", "org.eclipse.jface.resource.JFaceResources", "org.jkiss.dbeaver.model.sql", "org.jkiss.dbeaver.runtime.ui.DBPPlatformUI.UserChoiceResponse", "org.jkiss.dbeaver.ui.css.CSSUtils", "java.util.concurrent.atomic.AtomicInteger", "org.eclipse.jface.preference.IPreferenceStore", "org.jkiss.dbeaver.utils.GeneralUtils", "org.jkiss.dbeaver.model.preferences.DBPPreferenceStore", "org.jkiss.dbeaver.ui.editors.sql.scripts.ScriptsHandlerImpl", "org.jkiss.dbeaver.model.qm.QMUtils", "org.jkiss.dbeaver.model.app.DBPProject", "org.jkiss.dbeaver.ui.controls.resultset.spreadsheet.Spreadsheet", "org.jkiss.dbeaver.ui.editors.sql.registry.SQLPresentationRegistry", "org.eclipse.jface.action", "org.jkiss.dbeaver.model.exec.plan.DBCQueryPlanner", "org.eclipse.ui.progress.UIJob", "org.jkiss.dbeaver.ui", "org.jkiss.dbeaver.ui.controls", "org.jkiss.dbeaver.model.exec", "org.eclipse.swt.layout.GridLayout", "org.jkiss.dbeaver.tools.transfer.IDataTransferProducer", "org.jkiss.dbeaver.ui.controls.resultset", "org.eclipse.core.expressions.Expression", "org.jkiss.dbeaver.model.struct.DBSObject", "org.jkiss.dbeaver.ui.editors.sql.commands.MultipleResultsPerTabMenuContribution", "org.eclipse.ui.menus.IMenuService", "org.eclipse.swt.layout.FillLayout", "org.jkiss.dbeaver.model.struct.DBSObjectState", "org.jkiss.dbeaver.runtime.ui.UIServiceSystemAgent", "org.jkiss.dbeaver.model.struct.DBSDataContainer", "org.jkiss.dbeaver.ui.editors.sql.ai.suggestion.AISuggestionTextPainter", "org.jkiss.dbeaver.ui.editors.sql.registry.SQLPresentationDescriptor", "org.jkiss.dbeaver.tools.transfer.database.DatabaseTransferProducer", "org.eclipse.jface.layout.GridDataFactory", "org.jkiss.code.NotNull", "org.jkiss.dbeaver.ui.dialogs.ConfirmationDialog", "org.jkiss.dbeaver.model.exec.output.DBCOutputSeverity", "java.util.regex.Pattern", "org.jkiss.dbeaver.ui.editors.sql.addins.SQLEditorAddInsRegistry", "org.jkiss.dbeaver.ui.editors.sql.internal.SQLEditorMessages", "org.jkiss.dbeaver.model.sql.data.SQLQueryDataContainer", "org.jkiss.dbeaver.model.exec.output.DBCOutputWriter", "org.eclipse.ui.services.IEvaluationReference", "org.jkiss.utils.CommonUtils", "org.jkiss.dbeaver.tools.transfer.ui.wizard.DataTransferWizard", "org.jkiss.dbeaver.ui.editors.sql.variables.SQLVariablesPanel", "org.eclipse.core.runtime.jobs.Job", "org.jkiss.dbeaver.model.qm.QMTransactionState", "org.jkiss.dbeaver.model.exec.output.DBCServerOutputReader", "org.jkiss.dbeaver.model.impl.sql.BasicSQLDialect", "org.jkiss.dbeaver.ui.editors.sql.addins.SQLEditorAddIn", "org.jkiss.dbeaver.ui.editors.sql.addins.SQLEditorAddInDescriptor", "java.net.URI", "org.eclipse.core.filesystem.IFileStore", "org.jkiss.dbeaver.ui.dialogs.EnterNameDialog", "org.jkiss.dbeaver.ui.editors.sql.log.SQLLogPanel", "org.eclipse.ui.texteditor.IStatusField", "org.jkiss.utils.ArrayUtils", "org.jkiss.dbeaver.ui.editors", "org.eclipse.osgi.util.NLS", "org.jkiss.dbeaver.ui.navigator.database.DatabaseNavigatorTree", "org.eclipse.ui.forms.events.ExpansionEvent", "org.eclipse.ui.forms.widgets.Section", "org.eclipse.ui.ide.FileStoreEditorInput", "java.util", "org.jkiss.dbeaver.model.data.DBDDataReceiver", "org.eclipse.jface.dialogs.IDialogConstants", "org.jkiss.dbeaver.ui.css.DBStyles", "org.jkiss.dbeaver.ui.actions.datasource.DataSourceToolbarUtils", "java.time.Duration", "org.jkiss.dbeaver.utils.PrefUtils", "org.jkiss.dbeaver.model.exec.plan.DBCQueryPlannerConfiguration", "java.text.SimpleDateFormat", "java.io", "org.eclipse.ui.texteditor.ITextEditorActionConstants", "org.eclipse.jface.viewers.SelectionChangedEvent", "org.eclipse.core.filesystem.EFS", "org.jkiss.dbeaver.model.navigator.NavigatorResources", "org.jkiss.dbeaver.DBException", "org.eclipse.swt.graphics", "org.jkiss.dbeaver.model.struct.DBSInstance", "org.jkiss.dbeaver.model.data.DBDAttributeBinding", "org.eclipse.swt.widgets", "org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob", "org.jkiss.dbeaver.model.exec.plan.DBCPlanStyle", "org.eclipse.ui.actions.CompoundContributionItem", "org.eclipse.ui.texteditor.rulers.RulerColumnRegistry", "org.jkiss.dbeaver.ui.editors.sql.handlers.SQLNavigatorContext", "org.eclipse.jface.text.source.SourceViewer", "org.eclipse.ui", "org.jkiss.dbeaver.model.runtime", "org.eclipse.swt.SWT", "java.util.function.Consumer", "org.jkiss.utils.Pair", "org.jkiss.dbeaver.registry.DataSourceUtils", "org.jkiss.dbeaver.model.rm.RMConstants", "java.util.List", "org.eclipse.jface.viewers.ISelectionProvider", "org.eclipse.core.resources", "org.jkiss.dbeaver.ui.editors.sql.handlers.SQLEditorHandlerSwitchPresentation", "org.jkiss.dbeaver.ui.editors.text.ScriptPositionColumn", "org.jkiss.dbeaver.runtime.ui.UIServiceConnections", "org.eclipse.jface.viewers.StructuredSelection", "org.eclipse.ui.texteditor.DefaultRangeIndicator", "org.jkiss.dbeaver.utils.RuntimeUtils", "org.jkiss.dbeaver.model.app.DBPPlatformDesktop", "org.jkiss.dbeaver.model.messages.ModelMessages", "org.jkiss.dbeaver.model.exec.plan.DBCPlan", "org.jkiss.dbeaver.ui.editors.sql.registry.SQLPresentationPanelDescriptor", "org.eclipse.ui.texteditor.rulers.RulerColumnDescriptor", "org.jkiss.dbeaver.ui.editors.sql.internal.SQLEditorActivator", "org.eclipse.core.runtime", "java.nio.file.Path", "org.jkiss.dbeaver.model", "org.jkiss.dbeaver.ui.navigator.INavigatorModelView", "org.jkiss.dbeaver.model.sql.transformers.SQLQueryTransformerCount", "org.jkiss.dbeaver.utils.ResourceUtils", "org.eclipse.ui.texteditor.rulers.IColumnSupport", "org.jkiss.dbeaver.model.app.DBPWorkspaceDesktop", "java.util.regex.Matcher", "org.jkiss.dbeaver.ui.controls.resultset.internal.ResultSetMessages" ]
+  }, {
+    "name" : "DataSourceDescriptor",
+    "packageName" : "org.jkiss.dbeaver.registry",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ "DBSSecretObject", "IAdaptable", "DBPRefreshableObject", "DBPStatefulObject", "DBPImageProvider", "DBPDataSourceContainer" ],
+    "methods" : [ {
+      "name" : "setDetachedProcessEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getObjectImage",
+      "visibility" : "public",
+      "methodCalls" : [ "getComponentType", "getImage", "getName", "equals", "isEmpty", "isIndexTable", "getObjectImage", "getType", "getPropertyImage", "isFinal", "isAbstract", "isAssociation", "warn", "getPlainIcon", "getTypeImage", "getOverlayImage", "getKeyType", "startsWith", "endsWith", "isView", "isSystem", "getTableColumn", "getAttribute", "getProcedureType" ]
+    }, {
+      "name" : "getProjectId",
+      "visibility" : "public",
+      "methodCalls" : [ "getProject", "getId" ]
+    }, {
+      "name" : "hasSharedVirtualModel",
+      "visibility" : "public",
+      "methodCalls" : [ "getId", "equalObjects" ]
+    }, {
+      "name" : "getNavigatorSettings",
+      "visibility" : "public",
+      "methodCalls" : [ "getDefaultSettings" ]
+    }, {
+      "name" : "getExtension",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "getAdapter",
+      "visibility" : "public",
+      "methodCalls" : [ "collect", "getSourceObject", "getFirstElement", "getSelection", "getNavigatorViewer", "adaptResource", "getOwnerProject", "getPath", "getRoot", "supportsCopyFromStdIn", "supportsAlterUserChangePassword", "getServerType", "getQueryPlanner", "getDescription", "getContainer", "getNodeDisplayName", "getPublicObject", "getFromObject", "getNestedAdapter", "getDefaultInstance", "getDefaultContext", "getDatabaseObject", "getNodeIconDefault", "getImageDescriptor", "getName", "getEditorInput", "getInputDataSource", "getDataSourceContainer", "getNavigatorNode", "getStorage", "getTemplatesPage", "getSourceViewer", "getFirstResults", "isDisposed", "getData", "getEditDomain", "getOverviewOutlinePage", "getGraphicalViewer", "toString", "getActionRegistry", "getCommandStack", "getProperty", "getNote", "getEditor", "getActiveEditor", "getDefault", "getCommandContext", "isEditEnabled", "getBoolean", "getPreferences", "toURI", "getContextName", "getContextId", "getURLs", "getAvailableInstances", "addProperty", "getAllContexts", "getDefaultDriverLoader", "valueOf", "getClassLoader", "getParentObject", "getParentNode", "getNodeByObject", "getRootObjectContainer", "get", "getModel", "isEmpty", "getEntities", "toPath", "getContents", "getLocation", "getObjectId", "getDataSourceProvider", "getDriver", "getProviderId", "getVisiblePanel", "isUIThread", "hasFocus", "stream", "getContent", "cast", "getAdapter", "isAssignableFrom", "error", "getResultSetController", "isInstance", "getSelectedPage", "getDataSource", "getSession", "getClass", "getValueManager", "getInstance", "contributeProperties", "setPropertySourceProvider", "getAttribute", "owned", "collectProperties", "getBinding", "getDecorator", "adapt", "getUndoManager", "getTextEditor", "getTextViewer", "equals", "toCollection", "filter", "getType", "getObject", "getAllObjects" ]
+    }, {
+      "name" : "setModifyPermissions",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty" ]
+    }, {
+      "name" : "getPropertyConnectTime",
+      "visibility" : "public",
+      "methodCalls" : [ "format", "getDateTimeInstance" ]
+    }, {
+      "name" : "getConnectionError",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getActiveNetworkHandlers",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSelectedSharedCredentials",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDriverSubstitution",
+      "visibility" : "public",
+      "methodCalls" : [ "setDriverSubstitution", "getActiveDataSource" ]
+    }, {
+      "name" : "copyFrom",
+      "visibility" : "public",
+      "methodCalls" : [ "getRefEntityId", "size", "getName", "isEmpty", "debug", "dispose", "add", "getObjectFilters", "putAll", "put", "getVirtualModel", "copyFrom", "getNavigatorSettings", "clear" ]
+    }, {
+      "name" : "getExtensions",
+      "visibility" : "public",
+      "methodCalls" : [ "getAllObjects" ]
+    }, {
+      "name" : "setHidden",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "forceSetSharedCredentials",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getConnectTime",
+      "visibility" : "public",
+      "methodCalls" : [ "toMillis", "debug", "getLastModifiedTime" ]
+    }, {
+      "name" : "getPropertyURL",
+      "visibility" : "public",
+      "methodCalls" : [ "getUrl" ]
+    }, {
+      "name" : "getSecretValueId",
+      "visibility" : "public",
+      "methodCalls" : [ "getProject", "getPlainProjectId", "getId" ]
+    }, {
+      "name" : "setTemporary",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "equalConfiguration",
+      "visibility" : "public",
+      "methodCalls" : [ "equalsContents", "equalObjects" ]
+    }, {
+      "name" : "getActualConnectionConfiguration",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "generateNewId",
+      "visibility" : "public",
+      "methodCalls" : [ "getId", "currentTimeMillis", "toHexString", "nextLong" ]
+    }, {
+      "name" : "isAccessCheckRequired",
+      "visibility" : "public",
+      "methodCalls" : [ "isManageable" ]
+    }, {
+      "name" : "getSecretObjectId",
+      "visibility" : "public",
+      "methodCalls" : [ "getId" ]
+    }, {
+      "name" : "getId",
+      "visibility" : "public",
+      "methodCalls" : [ "valueOf", "getName", "getFileName", "toString", "error", "getSavepointId", "makeId", "getId", "getAttribute" ]
+    }, {
+      "name" : "release",
+      "visibility" : "public",
+      "methodCalls" : [ "deleteTempFile", "warn", "getAbsolutePath", "delete", "error", "close", "release", "releaseObject", "getName", "remove", "isDisposed", "releaseValue", "getDelegateSession", "disconnect", "executeStatement" ]
+    }, {
+      "name" : "getDataFormatterProfile",
+      "visibility" : "public",
+      "methodCalls" : [ "getDataFormatterProfile", "getDataSource", "getContainer", "getGlobalProfile", "getPlatform", "getDataFormatterRegistry", "getId" ]
+    }, {
+      "name" : "isUseNativeDateTimeFormat",
+      "visibility" : "public",
+      "methodCalls" : [ "getContainer", "getDataSource", "isUseNativeDateTimeFormat", "getExecutionContext", "getPlatform", "getBoolean", "getPreferenceStore" ]
+    }, {
+      "name" : "getProject",
+      "visibility" : "public",
+      "methodCalls" : [ "getProject", "getObjectOwnerProject", "getDataSourceContainer", "getDataContainer", "getContainer", "getDataSource", "getExecutionContext", "getDataSourceRegistry", "get", "exists", "getRoot", "getSelectedProject", "getInstance", "getEditorInput", "getPlatform", "getFileFromInput", "getWorkspace", "getActiveProject", "getFile" ]
+    }, {
+      "name" : "getPreferenceStore",
+      "visibility" : "public",
+      "methodCalls" : [ "getApplication", "getBundle", "getContainer", "getDataSource", "getPlatform", "getExecutionContext", "getPreferenceStore", "getInstance", "getPreferences" ]
+    }, {
+      "name" : "getParentObject",
+      "visibility" : "public",
+      "methodCalls" : [ "getDataSource", "getParentNode", "getDatabase", "getObject", "getTable", "getContainer", "getDataContainer", "getParentObject" ]
+    }, {
+      "name" : "setObjectFilter",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "updateObjectFilter", "getName", "getFilterContainerUniqueID" ]
+    }, {
+      "name" : "reconnect",
+      "visibility" : "public",
+      "methodCalls" : [ "close", "connect", "debug", "reconnect", "isConnected" ]
+    }, {
+      "name" : "isManageable",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isTemporary",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "isTemporary" ]
+    }, {
+      "name" : "isSharedCredentials",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getPropertyDriver",
+      "visibility" : "public",
+      "methodCalls" : [ "getDriverName", "getDriverVersion", "getInfo" ]
+    }, {
+      "name" : "isHidden",
+      "visibility" : "public",
+      "methodCalls" : [ "hidden", "isPersisted", "getServerType", "getDataSource", "isHiddenRowidColumn", "getOrdinalPosition" ]
+    }, {
+      "name" : "refreshObjectState",
+      "visibility" : "public",
+      "methodCalls" : [ "getSchemaName", "safeGetInt", "setLong", "queryString", "getObjectId", "getProcedureTypeName", "getResultSet", "executeStatement", "safeGetBoolean", "getExecutionContext", "getViewStatus", "getSchema", "clearCache", "clearObjectCache", "refreshObjectState", "getObjectStatus", "getProcedureType", "getMessage", "next", "getDataSource", "prepareStatement", "openMetaSession", "done", "isCanceled", "setFetchSize", "toString", "beginTask", "getOwner", "getString", "setString", "getName", "subTask", "getSysSchemaPrefix", "append", "executeQuery", "refreshState", "getTableType" ]
+    }, {
+      "name" : "getRequiredExternalAuth",
+      "visibility" : "public",
+      "methodCalls" : [ "getAuthModel", "getRequiredExternalAuth", "getConnectionConfiguration", "getAuthModelDescriptor", "getSubType", "getOrigin", "isEmpty", "getRequiredAuthProviderId" ]
+    }, {
+      "name" : "isPersisted",
+      "visibility" : "public",
+      "methodCalls" : [ "isPersisted", "getParentNode", "getParentObject" ]
+    }, {
+      "name" : "setDriver",
+      "visibility" : "public",
+      "methodCalls" : [ "isSingleConnection" ]
+    }, {
+      "name" : "getPropertyDatabase",
+      "visibility" : "public",
+      "methodCalls" : [ "getDatabaseName" ]
+    }, {
+      "name" : "setSavePassword",
+      "visibility" : "public",
+      "methodCalls" : [ "setSavePassword" ]
+    }, {
+      "name" : "isDefaultAutoCommit",
+      "visibility" : "public",
+      "methodCalls" : [ "isAutocommit", "getDefaultAutoCommit", "getConnectionType", "getBootstrap", "getConnectionConfiguration" ]
+    }, {
+      "name" : "getPropertyServerDetails",
+      "visibility" : "public",
+      "methodCalls" : [ "getDatabaseProductDetails", "getInfo" ]
+    }, {
+      "name" : "resolveSecrets",
+      "visibility" : "public",
+      "methodCalls" : [ "setProperties", "deserializeStringMap", "loadFromMap", "parseMap", "getString", "getConfiguration", "getObjectList", "getSecretKeyId", "get", "isSharedCredentials", "isDistributed", "size", "getSecretValueId", "setSelectedSharedCredentials", "getPrivateSecretValue", "loadFromSecret", "discoverCurrentUserSecrets", "resolveSecrets", "getAllAuthProfiles", "getNetworkProfiles" ]
+    }, {
+      "name" : "setNavigatorSettings",
+      "visibility" : "public",
+      "methodCalls" : [ "setSelection", "isHideVirtualModel" ]
+    }, {
+      "name" : "isSharedCredentialsSelected",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDefaultTransactionsIsolation",
+      "visibility" : "public",
+      "methodCalls" : [ "getBootstrap", "getCode", "setDefaultTransactionIsolation" ]
+    }, {
+      "name" : "getName",
+      "visibility" : "public",
+      "methodCalls" : [ "indexOf", "getObject", "toLowerCase", "command", "name", "getChildrenTypeLabel", "getNodeTypeLabel", "getTypeName", "getLastNodePathSegment", "getConstraintType", "getOwner", "getDisplayString", "getFullObjectName", "getObjectFullName", "getNodeDescription", "notNull", "getLineNumber", "getConfiguredName", "getLaunchConfiguration", "getDefaultName", "getLaunch", "getNodeDisplayName", "getBoolean", "getPlatform", "getPreferenceStore", "getNodeFullName", "getSavepointName", "isVirtual", "get", "getOriginalText", "getDataContainer", "getSingleLineString", "getModel", "getContextName", "getAttribute", "getId", "getValue", "error", "hashCode", "getMessage", "getFullyQualifiedName", "getDataSource", "toUri", "getPath", "getFileName", "getName", "getLabel", "toString", "getUniqueKey", "getValueName", "isReadOnly", "getColumnId", "getRow", "setAccessibilityEnabled", "bind", "equals", "getText", "getColumn", "map", "stream", "joining", "collect", "isEmpty", "valueOf" ]
+    }, {
+      "name" : "getObjectFilters",
+      "visibility" : "public",
+      "methodCalls" : [ "values" ]
+    }, {
+      "name" : "getFolder",
+      "visibility" : "public",
+      "methodCalls" : [ "getParent", "findFolderByPath", "getRoot", "getNioPath", "getFolder", "resolve", "toString" ]
+    }, {
+      "name" : "isConnecting",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getScriptDialect",
+      "visibility" : "public",
+      "methodCalls" : [ "getFullId", "getPlatform", "getScriptDialect", "getDialect", "isEmpty", "debug", "getSQLDialectRegistry" ]
+    }, {
+      "name" : "connect",
+      "visibility" : "public",
+      "methodCalls" : [ "getBreakpoints", "makeExceptionStatus", "describeBreakpoint", "openSession", "getBreakpointManager", "error", "terminate", "addBreakpoint", "getDefault", "port", "localPort", "put", "isEmpty", "hostname", "incrementAndGet", "registerSession", "get", "localHost", "getDataSource", "setupPortForward", "auth", "username", "createDirectSession", "getSession", "connect", "getApplication", "isDetachedProcess", "getPlatform", "getDriver", "isDetachedProcessEnabled", "validateFilesPresence", "debug", "isConnected", "createNewSession" ]
+    }, {
+      "name" : "getDriverSubstitution",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "setSharedCredentials",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getConnectionConfiguration",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "disconnect",
+      "visibility" : "public",
+      "methodCalls" : [ "closeSession", "runTask", "getSession", "isEmpty", "get", "remove", "decrementAndGet", "removePortForward", "getDataSource", "unregisterSession", "debug", "disconnect", "error", "close", "clear" ]
+    }, {
+      "name" : "isDisposed",
+      "visibility" : "public",
+      "methodCalls" : [ "getSourceViewer", "getTextWidget", "getControl", "isDisposed" ]
+    }, {
+      "name" : "getDriver",
+      "visibility" : "public",
+      "methodCalls" : [ "getReplacedBy", "getId", "equals", "getSelectedDriver" ]
+    }, {
+      "name" : "acquire",
+      "visibility" : "public",
+      "methodCalls" : [ "warn", "add", "contains", "getName" ]
+    }, {
+      "name" : "isConnectionReadOnly",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDefaultValueHandler",
+      "visibility" : "public",
+      "methodCalls" : [ "getContainer", "getDataSource", "getDefaultValueHandler" ]
+    }, {
+      "name" : "getTags",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createCopy",
+      "visibility" : "public",
+      "methodCalls" : [ "setId", "generateNewId", "getDriver" ]
+    }, {
+      "name" : "listSharedCredentials",
+      "visibility" : "public",
+      "methodCalls" : [ "of", "isSharedCredentials", "resetAllSecrets" ]
+    }, {
+      "name" : "getLockPasswordHash",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setConnectionInfo",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "persistConfiguration",
+      "visibility" : "public",
+      "methodCalls" : [ "getDataSourceContainer", "persistConfiguration", "updateDataSource", "getLastError", "showError", "getPlatformUI" ]
+    }, {
+      "name" : "getExclusiveLock",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getRegistry",
+      "visibility" : "public",
+      "methodCalls" : [ "getInstance" ]
+    }, {
+      "name" : "isDetached",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "resetPassword",
+      "visibility" : "public",
+      "methodCalls" : [ "forEach", "stream", "getKeyName", "extractAnnotations", "setAuthProperty", "createCredentials", "setUserPassword", "getAuthModel", "filter", "getObjectClass" ]
+    }, {
+      "name" : "isCredentialsSaved",
+      "visibility" : "public",
+      "methodCalls" : [ "getProject", "getConnectionConfiguration", "loadCredentials", "isComplete", "isUseSecretStorage", "isSharedCredentials", "isSharedCredentialsSelected", "getAuthModel" ]
+    }, {
+      "name" : "persistSecrets",
+      "visibility" : "public",
+      "methodCalls" : [ "getUserName", "getUserPassword", "getProperties", "flushChanges", "isEmpty", "getSecretKeyId", "setPrivateSecretValue", "getId", "toJson", "put", "add", "getProfileName", "saveToMap", "getProfileId", "getNetworkProfiles", "getAllAuthProfiles", "persistSecrets" ]
+    }, {
+      "name" : "getModifyPermission",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "emptyList" ]
+    }, {
+      "name" : "setDescription",
+      "visibility" : "public",
+      "methodCalls" : [ "setDescription" ]
+    }, {
+      "name" : "getObjectFilter",
+      "visibility" : "public",
+      "methodCalls" : [ "getFilter" ]
+    }, {
+      "name" : "getOriginalDriver",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "getId" ]
+    }, {
+      "name" : "isLocked",
+      "visibility" : "public",
+      "methodCalls" : [ "getParentNode", "isLocked", "isEmpty" ]
+    }, {
+      "name" : "setTags",
+      "visibility" : "public",
+      "methodCalls" : [ "clear", "putAll" ]
+    }, {
+      "name" : "getOrigin",
+      "visibility" : "public",
+      "methodCalls" : [ "resolveRealOrigin", "debug" ]
+    }, {
+      "name" : "refreshObject",
+      "visibility" : "public",
+      "methodCalls" : [ "clearCache", "getParent", "getCubridIndexCache", "refreshDataTypes", "getExtendedPropertyCache", "resetTableStatistics", "getUniqueConstraintCache", "getForeignKeyCache", "getProcedureCache", "supportsTriggers", "shutdown", "initializeRemoteInstance", "getDefaultInstance", "checkInstanceConnection", "getEnumValueCache", "getStepCache", "readTableStatistics", "cacheDataTypes", "hasStatistics", "debug", "getScheduleCache", "getExternalTableCache", "isRefreshSchemaStatisticsOnTableRefresh", "getEventTriggersCache", "getDatabase", "getConstraintKeysCache", "getForeignKeysCache", "getTableTriggerCache", "isEmpty", "cacheStructure", "getProcedureTypeName", "getReplicationCache", "getTablespace", "getJobCache", "getDirectoryCache", "getDbLinkCache", "getParentObject", "getLibraryCache", "refreshState", "openMetaSession", "getCachedObject", "isQuotedIdentifier", "setName", "reloadObject", "isChildrenCached", "isFullyCached", "deepCopyCachedObject", "loadObjects", "getUnQuotedIdentifier", "removeObject", "getIndexCache", "getTable", "getCachedObjects", "getTriggerCache", "getNicknameCache", "getViewCache", "getReferenceCache", "getMaterializedQueryTableCache", "getRegistry", "notifyDataSourceListeners", "reconnect", "getTableSize", "resetStatistics", "getContainer", "refreshObject", "getDataSource", "supportsCheckConstraints", "clearChildrenOf", "clearObjectCache", "getProceduresCache", "getTableCache", "getCatalog", "initialize", "getAllGrantees", "equals", "getClass", "getSimpleName", "getName", "getSchema", "getAllObjects", "getObject", "getConstraintCache", "clearChildrenCache", "getAssociationCache", "clear" ]
+    }, {
+      "name" : "getPropertyConnectType",
+      "visibility" : "public",
+      "methodCalls" : [ "getName", "getConnectionType" ]
+    }, {
+      "name" : "setVirtualModel",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "dispose", "setDataSourceContainer", "setId", "getId" ]
+    }, {
+      "name" : "isExternallyProvided",
+      "visibility" : "public",
+      "methodCalls" : [ "getOrigin", "isDynamic" ]
+    }, {
+      "name" : "setExtension",
+      "visibility" : "public",
+      "methodCalls" : [ "remove", "put" ]
+    }, {
+      "name" : "getClientHome",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "findObject", "getNativeClientLocations", "getClientHomeId" ]
+    }, {
+      "name" : "setFolder",
+      "visibility" : "public",
+      "methodCalls" : [ "select", "indexOf" ]
+    }, {
+      "name" : "getObjectState",
+      "visibility" : "public",
+      "methodCalls" : [ "getDefaultInstance", "isConnectionRefreshing", "isSharedDatabase", "getState", "isConnected", "valueOf", "equals" ]
+    }, {
+      "name" : "getConfigurationStorage",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isExtraMetadataReadEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean" ]
+    }, {
+      "name" : "setSelectedSharedCredentials",
+      "visibility" : "public",
+      "methodCalls" : [ "loadFromSecret", "getValue" ]
+    }, {
+      "name" : "isProvided",
+      "visibility" : "public",
+      "methodCalls" : [ "isDefault" ]
+    }, {
+      "name" : "hasModifyPermission",
+      "visibility" : "public",
+      "methodCalls" : [ "getConnectionType", "getConnectionConfiguration", "hasModifyPermission", "isEmpty", "contains" ]
+    }, {
+      "name" : "getActiveTransactionsIsolation",
+      "visibility" : "public",
+      "methodCalls" : [ "getTransactionIsolation", "getTransactionManager", "debug", "getDefaultInstance", "getDefaultContext" ]
+    }, {
+      "name" : "getPropertyServerName",
+      "visibility" : "public",
+      "methodCalls" : [ "getDatabaseProductVersion", "getDatabaseProductName", "getInfo" ]
+    }, {
+      "name" : "getPropertyDriverType",
+      "visibility" : "public",
+      "methodCalls" : [ "getName" ]
+    }, {
+      "name" : "openDataSource",
+      "visibility" : "public",
+      "methodCalls" : [ "createDataSourceImpl", "getClass", "of", "getDataSourceRegistry", "getPlatform", "getDataSources", "stream", "getDataSource", "loadDataSources", "getDriverLibraries", "getWorkspace", "getActiveProject", "getBytes", "getId", "findFirst", "orElse", "getContainerConfiguration", "addDriverLibsLocation", "loadDriver", "getDriver", "getDriverLoader", "getFullName", "getTransactionManager", "isAutoCommit", "syncLocalDataSource", "getName", "openMetaSession", "adapt", "initialize", "getSQLDialect", "showError", "getExecutionContext", "afterDataSourceInitialization", "getPlatformUI", "bind", "openDataSource", "done", "debug", "setAutoCommit", "getDataSourceProvider", "subTask", "worked", "isSynchronizationEnabled", "beginTask", "getMessage", "error", "getMetaModel", "getInstance" ]
+    }, {
+      "name" : "getTasks",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "loadFromSecret",
+      "visibility" : "public",
+      "methodCalls" : [ "error", "getObjectList", "getKey", "forEach", "setUserName", "getValue", "contains", "isNotEmpty", "containsKey", "getId", "getString", "getOrDefault", "deserializeStringMapOrNull", "parseMap", "isDistributed", "setUserPassword", "add", "deserializeStringMap", "setSavePassword", "getHandler", "warn", "entrySet", "setPassword", "getHandlers", "isSharedCredentials", "setSecureProperties", "setAuthProperty", "toBoolean", "isEmpty" ]
+    }, {
+      "name" : "setConnectionReadOnly",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "toString",
+      "visibility" : "public",
+      "methodCalls" : [ "length", "getText", "getHeight", "getStyle", "getFontData", "getFullName", "isSentinel", "getSymbolClass", "getFullTypeName", "toListOfStrings", "toIdentifierString", "getRealInterval", "getTextContent", "getExpression", "getCriteria", "isReverseOperator", "getOperator", "getValue", "map", "collect", "stream", "joining", "getPrefix", "getNodeUri", "getChildrenTypeLabel", "getOwnerProject", "getRootId", "getFileSystem", "getFileSystemDisplayName", "getAbsolutePath", "encode", "toHexChars", "getDisplayString", "printStackTrace", "convertToString", "getTypeName", "getOldPosition", "getNewPosition", "getVarName", "getFullObjectName", "getDataSource", "getFullQualifiedName", "getTargetName", "getFullId", "size", "getDatabaseObject", "getPlanString", "getSourceStatement", "getQueryString", "getStringRepresentation", "isNull", "makeArrayString", "getBytes", "equalObjects", "getContextName", "getBaseTypeName", "getSimpleQualifiedName", "isEmpty", "getEditorInput", "getOriginalText", "getImplName", "substring", "getBeginIndex", "getEndIndex", "get", "getAssociation", "getConstraintType", "getAttribute", "getLabelText", "getNote", "trim", "getDiagram", "getObjectFullName", "getObject", "getEntity", "getCode", "getType", "notEmpty", "isRunSuccess", "getClass", "getFolderPath", "toAbsolutePath", "isLowerBoundInclusive", "isUpperBoundInclusive", "getLowerBound", "getUpperBound", "getSimpleName", "getFileName", "getDisplayName", "next", "iterator", "hasNext", "getPath", "getLabel", "toUri", "getId", "getLocationURI", "getTeamId", "getBreakpoints", "getID", "isWaiting", "toMap", "replace", "getParentObject", "getFullyQualifiedName", "format", "toString", "append", "getName", "getItemId", "getItemConfiguration", "name", "getQuotedIdentifier", "getTable", "isNullValue", "getContainer", "valueOf", "getLevel", "getRelativeIndex", "join", "getParent", "getDataContainer", "getController", "getString" ]
+    }, {
+      "name" : "saveToSecret",
+      "visibility" : "public",
+      "methodCalls" : [ "getHandlerDescriptor", "getConfigProfileName", "getDriver", "getUserName", "getName", "getFullId", "saveToSecret", "toJson", "getUserPassword", "getRegistry", "isEnabled", "putAll", "getHandlers", "add", "put", "getAuthProperties", "isEmpty", "isSavePassword", "getConfigProfileSource", "getConfiguration", "isSharedCredentials", "getNetworkProfile", "getId" ]
+    }, {
+      "name" : "getDataSource",
+      "visibility" : "public",
+      "methodCalls" : [ "getDataSource", "getContext", "getId", "equals", "getObject", "getParentObject", "getCause", "getDataSourceContainer", "values", "get", "getTable", "getDataContainer", "getExecutionContext", "getSchema" ]
+    }, {
+      "name" : "setForceUseSingleConnection",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getVirtualModel",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isForceUseSingleConnection",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAccessCheckRequired",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDefaultAutoCommit",
+      "visibility" : "public",
+      "methodCalls" : [ "getConnectionConfiguration", "getConnectionType", "setDefaultAutoCommit", "isAutocommit", "getBootstrap" ]
+    }, {
+      "name" : "dispose",
+      "visibility" : "public",
+      "methodCalls" : [ "clearMetaData", "removeMouseTrackListener", "unregisterHandler", "add", "isClosed", "checkGlobalCacheIsEmpty", "disposeControl", "remove", "getEditableValue", "entrySet", "getValue", "removeContributor", "getKey", "resetChanges", "getSpreadsheetVersion", "getOutputStream", "createRow", "setCellValue", "getMaxRows", "getSource", "createCell", "write", "split", "getListeners", "unregisterEventHandler", "getBrowser", "sleep", "isBrowserCreating", "syncExec", "schedule", "onSpinWait", "releaseEditorInput", "getViewerConfiguration", "saveFoldingState", "clearProblems", "getThemeManager", "hasPrevious", "previous", "getFileFromInput", "cleanup", "getWorkbench", "isDistributed", "isClosing", "listIterator", "size", "getControl", "getSelectionProvider", "uninstall", "removeViewportListener", "removeDocumentListener", "setStatusField", "removeCaretListener", "removeTextInputListener", "getTextViewer", "refreshCommandState", "getTextWidget", "getSite", "getDefault", "getActionRegistry", "deactivate", "setActiveEditor", "removePaletteListener", "getClass", "collect", "map", "stream", "getName", "fireRegistryChange", "joining", "isMultiUser", "disposeNavigatorModel", "deactivateService", "removeCommandListener", "getCommandContext", "isGlobal", "getEclipseWorkspace", "isEmpty", "isTrackingEnabled", "stopMonitor", "forEach", "removeDataSourceRegistryListener", "removePageListener", "values", "getNavigatorModel", "debug", "println", "unregisterMetaListener", "isStandalone", "exit", "start", "isExclusiveMode", "gc", "pause", "setHeadlessMode", "getApplication", "currentTimeMillis", "error", "save", "endTracking", "deleteFileRecursive", "setClosing", "terminateProcess", "removeLazyListener", "clear", "getEditorInput", "warn", "release", "disposeEditor", "dispose", "getInstance", "updateLock", "getLockFromFile", "equals", "delete", "get", "deleteOnExit", "keySet", "getContents", "emptyClipboardFile", "isDisposed", "removeResourceChangeListener", "removePropertyChangeListener", "close", "getWorkspace", "getPreferenceStore", "isConnected", "removeConfigChangedListener", "getPlatform", "cancel", "getRegistry", "removeDataSourceListener", "removePropertyListener", "removeTaskListener", "removeProjectListener", "getDatabaseObject", "getObjectRegistry", "removeSelectionListener", "getHorizontalScrollBarProxy", "getVerticalScrollBarProxy", "removeListener", "disposeSQLPanel", "getService" ]
+    }, {
+      "name" : "setExtensions",
+      "visibility" : "public",
+      "methodCalls" : [ "clear", "putAll" ]
+    }, {
+      "name" : "getTagValue",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "setTagValue",
+      "visibility" : "public",
+      "methodCalls" : [ "put" ]
+    }, {
+      "name" : "getPropertyAddress",
+      "visibility" : "public",
+      "methodCalls" : [ "getHostPort", "toString", "getHostName", "isEmpty", "append" ]
+    }, {
+      "name" : "isSavePassword",
+      "visibility" : "public",
+      "methodCalls" : [ "isSavePassword" ]
+    }, {
+      "name" : "askForPassword",
+      "visibility" : "public",
+      "methodCalls" : [ "isTemporary", "debug", "getName", "isSavePassword", "updateDataSource", "bind", "getUserName", "getPlatformUI", "getConnectionConfiguration", "getTitle", "getRegistry", "getPassword", "showError", "setPassword", "setUserPassword", "getActualConnectionConfiguration", "setSavePassword", "getUserPassword", "updateHandler", "setUserName" ]
+    }, {
+      "name" : "isDetachedProcessEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "equalSettings",
+      "visibility" : "public",
+      "methodCalls" : [ "equalOrEmptyStrings", "equalConfiguration" ]
+    }, {
+      "name" : "isUseNativeNumericFormat",
+      "visibility" : "public",
+      "methodCalls" : [ "isUseNativeNumericFormat", "getExecutionContext", "getContainer", "getDataSource", "getPlatform", "getBoolean", "getPreferenceStore" ]
+    }, {
+      "name" : "getVariablesResolver",
+      "visibility" : "public",
+      "methodCalls" : [ "getActualConnectionConfiguration", "getConnectionConfiguration" ]
+    }, {
+      "name" : "resetAllSecrets",
+      "visibility" : "public",
+      "methodCalls" : [ "setUserPassword", "setUserName" ]
+    }, {
+      "name" : "isUseScientificNumericFormat",
+      "visibility" : "public",
+      "methodCalls" : [ "isUseScientificNumericFormat", "getDataSource", "getContainer", "getExecutionContext", "getPlatform", "getBoolean", "getPreferenceStore" ]
+    }, {
+      "name" : "getDescription",
+      "visibility" : "public",
+      "methodCalls" : [ "getDescription", "isEmpty", "getDefaultContext", "setDescription", "setString", "getQuotedIdentifier", "getContextDefaults", "getDefaultCatalog", "executeQuery", "prepareStatement", "getString", "next", "getCatalog", "description", "getEntityAttribute", "avoidCommentsReading", "readTableAndColumnsDescriptions", "getTable", "getDataSource", "supportsDatabaseDescription", "debug", "openUtilSession", "queryString", "getServerType", "getNodeDescription", "isNotVirtual", "getName", "getAttribute", "getSchema", "getComment", "getParent", "getElement", "toString" ]
+    }, {
+      "name" : "fireEvent",
+      "visibility" : "public",
+      "methodCalls" : [ "error", "getMessage", "handleRMEvent", "handleDebugEvent", "notifyDataSourceListeners" ]
+    }, {
+      "name" : "setClientApplicationName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setName",
+      "visibility" : "public",
+      "methodCalls" : [ "setName", "getName", "makeOverloadedName", "getSchema" ]
+    }, {
+      "name" : "getDefaultTransactionsIsolation",
+      "visibility" : "public",
+      "methodCalls" : [ "getDefaultTransactionIsolation", "getBootstrap" ]
+    }, {
+      "name" : "getClientApplicationName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isConnected",
+      "visibility" : "public",
+      "methodCalls" : [ "error", "isClosed" ]
+    }, {
+      "name" : "getSecretObjectType",
+      "visibility" : "public",
+      "methodCalls" : [ "name" ]
+    } ],
+    "imports" : [ "org.jkiss.dbeaver.model.data.DBDFormatSettings", "org.jkiss.dbeaver.model.connection", "org.jkiss.dbeaver.runtime.DBWorkbench", "org.jkiss.dbeaver.model.access.DBAAuthCredentials", "java.net.URL", "org.jkiss.dbeaver.model.data.DBDValueHandler", "org.jkiss.dbeaver.model.struct.DBSObject", "org.jkiss.dbeaver.registry.formatter.DataFormatterProfile", "org.jkiss.dbeaver.Log", "org.jkiss.code.NotNull", "org.eclipse.core.runtime.IAdaptable", "org.jkiss.dbeaver.model.struct.DBSObjectState", "org.jkiss.dbeaver.model.dpi", "org.jkiss.dbeaver.model.data.json.JSONUtils", "org.jkiss.code.Nullable", "org.jkiss.dbeaver.model.app.DBPProject", "org.jkiss.dbeaver.DBException", "org.jkiss.dbeaver.runtime.properties.PropertyCollector", "org.jkiss.dbeaver.model.impl.data.DefaultValueHandler", "org.jkiss.dbeaver.model.navigator.DBNBrowseSettings", "org.jkiss.dbeaver.model.secret", "org.jkiss.dbeaver.ModelPreferences", "org.eclipse.core.runtime.jobs.Job", "org.jkiss.dbeaver.model.qm.QMUtils", "org.jkiss.dbeaver.model.rm.RMProjectType", "org.jkiss.dbeaver.registry.internal.RegistryMessages", "org.jkiss.dbeaver.model.struct.DBSInstance", "java.net.URLClassLoader", "org.jkiss.dbeaver.model.sql.SQLDialectMetadata", "org.jkiss.dbeaver.runtime.properties.ObjectPropertyDescriptor", "org.jkiss.dbeaver.model.meta.PropertyLength", "java.nio.charset.StandardCharsets", "java.nio.file.Paths", "org.jkiss.dbeaver.model.net", "org.jkiss.dbeaver.model.security.SMObjectType", "org.jkiss.dbeaver.model.data.DBDDataFormatterProfile", "org.jkiss.dbeaver.model.preferences.DBPPropertySource", "org.jkiss.dbeaver.model.exec", "org.jkiss.dbeaver.model.access.DBACredentialsProvider", "org.eclipse.core.runtime.Status", "java.util", "org.jkiss.dbeaver.model.struct.DBSObjectFilter", "org.jkiss.dbeaver.model.runtime", "org.jkiss.dbeaver.utils.GeneralUtils", "org.jkiss.dbeaver.model.app.DBPDataSourceRegistry", "org.jkiss.dbeaver.registry.driver.DriverDescriptor", "java.nio.file.Path", "java.text.DateFormat", "org.jkiss.dbeaver.model.impl.SimpleExclusiveLock", "org.jkiss.dbeaver.model.access.DBAAuthModelExternal", "org.eclipse.osgi.util.NLS", "org.jkiss.utils.CommonUtils", "org.jkiss.dbeaver.runtime.IVariableResolver", "org.jkiss.dbeaver.model.meta.Property", "org.eclipse.core.runtime.IStatus", "org.jkiss.dbeaver.model", "java.io.StringReader", "org.jkiss.dbeaver.model.virtual.DBVModel" ]
+  } ]
+}
