@@ -1,0 +1,1165 @@
+{
+  "systemName" : "dubbo",
+  "classes" : [ {
+    "name" : "Builder",
+    "packageName" : "org.apache.dubbo.common.cache",
+    "extendedClasses" : [ "Builder" ],
+    "implementedInterfaces" : [ "ServiceInfoV2OrBuilder", "MetadataInfoV2OrBuilder", "OpenAPIRequestOrBuilder", "OpenAPIInfoOrBuilder", "MetadataRequestOrBuilder" ],
+    "methods" : [ {
+      "name" : "method",
+      "visibility" : "public",
+      "methodCalls" : [ "getMethod", "getFirst", "value", "method" ]
+    }, {
+      "name" : "directoryLock",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "lockFile",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "cacheFilePath",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "cacheFile",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "putServices",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "getMutableMap" ]
+    }, {
+      "name" : "setAppBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "checkByteStringIsUtf8", "onChanged" ]
+    }, {
+      "name" : "getServicesMap",
+      "visibility" : "public",
+      "methodCalls" : [ "getMap" ]
+    }, {
+      "name" : "removeServices",
+      "visibility" : "public",
+      "methodCalls" : [ "remove", "getMutableMap" ]
+    }, {
+      "name" : "getServicesOrThrow",
+      "visibility" : "public",
+      "methodCalls" : [ "getMap", "containsKey", "get" ]
+    }, {
+      "name" : "clearServices",
+      "visibility" : "public",
+      "methodCalls" : [ "clear", "getMutableMap" ]
+    }, {
+      "name" : "getServicesOrDefault",
+      "visibility" : "public",
+      "methodCalls" : [ "containsKey", "get", "getMap" ]
+    }, {
+      "name" : "getAppBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "copyFromUtf8" ]
+    }, {
+      "name" : "getMutableServices",
+      "visibility" : "public",
+      "methodCalls" : [ "getMutableMap" ]
+    }, {
+      "name" : "setApp",
+      "visibility" : "public",
+      "methodCalls" : [ "onChanged" ]
+    }, {
+      "name" : "putAllServices",
+      "visibility" : "public",
+      "methodCalls" : [ "getMutableMap", "putAll" ]
+    }, {
+      "name" : "containsServices",
+      "visibility" : "public",
+      "methodCalls" : [ "getMap", "containsKey" ]
+    }, {
+      "name" : "getServices",
+      "visibility" : "public",
+      "methodCalls" : [ "queryForNames", "addAll", "getServices", "getServicesOfServer", "getData", "values", "execute", "emptySet", "getServicesMap", "singleton" ]
+    }, {
+      "name" : "clearApp",
+      "visibility" : "public",
+      "methodCalls" : [ "onChanged", "getApp", "getDefaultInstance" ]
+    }, {
+      "name" : "getApp",
+      "visibility" : "public",
+      "methodCalls" : [ "toStringUtf8" ]
+    }, {
+      "name" : "getServicesCount",
+      "visibility" : "public",
+      "methodCalls" : [ "getMap", "size" ]
+    }, {
+      "name" : "setService",
+      "visibility" : "public",
+      "methodCalls" : [ "set", "onChanged" ]
+    }, {
+      "name" : "clearOpenapi",
+      "visibility" : "public",
+      "methodCalls" : [ "getOpenapi", "getDefaultInstance", "onChanged" ]
+    }, {
+      "name" : "getPretty",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getFormat",
+      "visibility" : "public",
+      "methodCalls" : [ "forNumber" ]
+    }, {
+      "name" : "getTagCount",
+      "visibility" : "public",
+      "methodCalls" : [ "size" ]
+    }, {
+      "name" : "getOpenapi",
+      "visibility" : "public",
+      "methodCalls" : [ "toStringUtf8" ]
+    }, {
+      "name" : "getTagList",
+      "visibility" : "public",
+      "methodCalls" : [ "makeImmutable" ]
+    }, {
+      "name" : "getOpenapiBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "copyFromUtf8" ]
+    }, {
+      "name" : "addTagBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "onChanged", "checkByteStringIsUtf8", "add" ]
+    }, {
+      "name" : "getServiceList",
+      "visibility" : "public",
+      "methodCalls" : [ "makeImmutable" ]
+    }, {
+      "name" : "addTag",
+      "visibility" : "public",
+      "methodCalls" : [ "onChanged", "size", "getName", "equals", "get", "add" ]
+    }, {
+      "name" : "setOpenapi",
+      "visibility" : "public",
+      "methodCalls" : [ "onChanged" ]
+    }, {
+      "name" : "clearService",
+      "visibility" : "public",
+      "methodCalls" : [ "emptyList", "onChanged" ]
+    }, {
+      "name" : "setFormat",
+      "visibility" : "public",
+      "methodCalls" : [ "onChanged", "getNumber" ]
+    }, {
+      "name" : "hasPretty",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTag",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "clearPretty",
+      "visibility" : "public",
+      "methodCalls" : [ "onChanged" ]
+    }, {
+      "name" : "getServiceCount",
+      "visibility" : "public",
+      "methodCalls" : [ "size" ]
+    }, {
+      "name" : "getService",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "get", "info", "hasProtobuf", "getServiceMeta" ]
+    }, {
+      "name" : "setPretty",
+      "visibility" : "public",
+      "methodCalls" : [ "onChanged" ]
+    }, {
+      "name" : "setOpenapiBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "checkByteStringIsUtf8", "onChanged" ]
+    }, {
+      "name" : "addAllService",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll", "onChanged" ]
+    }, {
+      "name" : "addAllTag",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll", "onChanged" ]
+    }, {
+      "name" : "clearFormat",
+      "visibility" : "public",
+      "methodCalls" : [ "onChanged" ]
+    }, {
+      "name" : "hasFormat",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "clearTag",
+      "visibility" : "public",
+      "methodCalls" : [ "emptyList", "onChanged" ]
+    }, {
+      "name" : "getServiceBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "getByteString" ]
+    }, {
+      "name" : "getFormatValue",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setFormatValue",
+      "visibility" : "public",
+      "methodCalls" : [ "onChanged" ]
+    }, {
+      "name" : "getTagBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "getByteString" ]
+    }, {
+      "name" : "setTag",
+      "visibility" : "public",
+      "methodCalls" : [ "set", "onChanged" ]
+    }, {
+      "name" : "addServiceBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "checkByteStringIsUtf8", "onChanged" ]
+    }, {
+      "name" : "addService",
+      "visibility" : "public",
+      "methodCalls" : [ "onChanged", "add", "getOrDefaultApplicationModel", "getMatchKey", "getActivateExtension", "put", "getExtensionLoader" ]
+    }, {
+      "name" : "getDefinitionBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "copyFromUtf8" ]
+    }, {
+      "name" : "getDefinition",
+      "visibility" : "public",
+      "methodCalls" : [ "toStringUtf8" ]
+    }, {
+      "name" : "setDefinition",
+      "visibility" : "public",
+      "methodCalls" : [ "onChanged" ]
+    }, {
+      "name" : "setDefinitionBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "checkByteStringIsUtf8", "onChanged" ]
+    }, {
+      "name" : "clearDefinition",
+      "visibility" : "public",
+      "methodCalls" : [ "getDefaultInstance", "getDefinition", "onChanged" ]
+    }, {
+      "name" : "getRevisionBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "copyFromUtf8" ]
+    }, {
+      "name" : "clearRevision",
+      "visibility" : "public",
+      "methodCalls" : [ "getRevision", "getDefaultInstance", "onChanged" ]
+    }, {
+      "name" : "setRevisionBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "checkByteStringIsUtf8", "onChanged" ]
+    }, {
+      "name" : "setRevision",
+      "visibility" : "public",
+      "methodCalls" : [ "onChanged" ]
+    }, {
+      "name" : "getRevision",
+      "visibility" : "public",
+      "methodCalls" : [ "toStringUtf8" ]
+    }, {
+      "name" : "getParamsOrDefault",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "getMap", "containsKey" ]
+    }, {
+      "name" : "getName",
+      "visibility" : "public",
+      "methodCalls" : [ "getName", "getValue", "isEmpty", "findAnnotation", "name", "toStringUtf8", "getCurrentConfig", "defaultModel", "getSimpleName", "getClass" ]
+    }, {
+      "name" : "getNameBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "copyFromUtf8" ]
+    }, {
+      "name" : "getParamsCount",
+      "visibility" : "public",
+      "methodCalls" : [ "getMap", "size" ]
+    }, {
+      "name" : "getVersionBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "copyFromUtf8" ]
+    }, {
+      "name" : "putAllParams",
+      "visibility" : "public",
+      "methodCalls" : [ "putAll", "getMutableMap" ]
+    }, {
+      "name" : "buildPartial",
+      "visibility" : "public",
+      "methodCalls" : [ "onBuilt" ]
+    }, {
+      "name" : "getPath",
+      "visibility" : "public",
+      "methodCalls" : [ "getServiceInterface", "isNotEmpty", "getProtocolServiceKey", "toStringUtf8", "get", "getPath" ]
+    }, {
+      "name" : "mergeFrom",
+      "visibility" : "public",
+      "methodCalls" : [ "getApp", "setFormat", "add", "getFormat", "hasPretty", "getOpenapi", "readBool", "addAll", "setPretty", "getPretty", "hasFormat", "readEnum", "getDefinition", "getRevision", "mergeFrom", "put", "getDefaultInstance", "parseUnknownField", "getVersion", "mergeUnknownFields", "getKey", "getName", "readInt32", "onChanged", "getPort", "setPort", "readTag", "isEmpty", "getUnknownFields", "readMessage", "getParserForType", "getProtocol", "unwrapIOException", "readStringRequireUtf8", "getMutableMap", "getValue", "getPath", "getGroup" ]
+    }, {
+      "name" : "setProtocolBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "onChanged", "checkByteStringIsUtf8" ]
+    }, {
+      "name" : "setVersion",
+      "visibility" : "public",
+      "methodCalls" : [ "onChanged" ]
+    }, {
+      "name" : "clearPath",
+      "visibility" : "public",
+      "methodCalls" : [ "onChanged", "getPath", "getDefaultInstance" ]
+    }, {
+      "name" : "getPathBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "copyFromUtf8" ]
+    }, {
+      "name" : "setField",
+      "visibility" : "public",
+      "methodCalls" : [ "setField" ]
+    }, {
+      "name" : "addRepeatedField",
+      "visibility" : "public",
+      "methodCalls" : [ "addRepeatedField" ]
+    }, {
+      "name" : "getVersion",
+      "visibility" : "public",
+      "methodCalls" : [ "split", "getVersion", "get", "toStringUtf8", "getServiceContext", "getParameter", "isNotEmpty", "isEmpty", "getName", "info", "getCodeSource", "getMessage", "getPackage", "getSpecificationVersion", "getImplementationVersion", "getProtectionDomain", "getFile", "error", "endsWith", "getLocation", "getServiceMetadata", "getServiceModel", "getTargetServiceUniqueName" ]
+    }, {
+      "name" : "putParams",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "isBlank", "getMutableMap", "put" ]
+    }, {
+      "name" : "setGroupBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "checkByteStringIsUtf8", "onChanged" ]
+    }, {
+      "name" : "setNameBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "onChanged", "checkByteStringIsUtf8" ]
+    }, {
+      "name" : "clear",
+      "visibility" : "public",
+      "methodCalls" : [ "signal", "sumThenReset", "clearParameters", "isNotEmpty", "emptyList", "stopExpiring", "clearAttachments", "clear" ]
+    }, {
+      "name" : "getProtocol",
+      "visibility" : "public",
+      "methodCalls" : [ "toStringUtf8", "isHttp2", "get", "getProtocol" ]
+    }, {
+      "name" : "clearGroup",
+      "visibility" : "public",
+      "methodCalls" : [ "getGroup", "getDefaultInstance", "onChanged" ]
+    }, {
+      "name" : "getDescriptor",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGroupBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "copyFromUtf8" ]
+    }, {
+      "name" : "setPort",
+      "visibility" : "public",
+      "methodCalls" : [ "onChanged", "setPort", "getPassword", "getPath", "getParameters", "getProtocol", "getUsername", "getHost" ]
+    }, {
+      "name" : "clearOneof",
+      "visibility" : "public",
+      "methodCalls" : [ "clearOneof" ]
+    }, {
+      "name" : "setProtocol",
+      "visibility" : "public",
+      "methodCalls" : [ "onChanged", "setProtocol", "getPath", "getHost", "getUsername", "getPassword", "getParameters", "getPort" ]
+    }, {
+      "name" : "clearName",
+      "visibility" : "public",
+      "methodCalls" : [ "getName", "getDefaultInstance", "onChanged" ]
+    }, {
+      "name" : "getPort",
+      "visibility" : "public",
+      "methodCalls" : [ "getPort" ]
+    }, {
+      "name" : "getParams",
+      "visibility" : "public",
+      "methodCalls" : [ "getParamsMap", "emptyMap" ]
+    }, {
+      "name" : "getParamsOrThrow",
+      "visibility" : "public",
+      "methodCalls" : [ "containsKey", "get", "getMap" ]
+    }, {
+      "name" : "clearProtocol",
+      "visibility" : "public",
+      "methodCalls" : [ "getProtocol", "getDefaultInstance", "onChanged" ]
+    }, {
+      "name" : "getMutableParams",
+      "visibility" : "public",
+      "methodCalls" : [ "getMutableMap" ]
+    }, {
+      "name" : "setVersionBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "checkByteStringIsUtf8", "onChanged" ]
+    }, {
+      "name" : "setPathBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "checkByteStringIsUtf8", "onChanged" ]
+    }, {
+      "name" : "setRepeatedField",
+      "visibility" : "public",
+      "methodCalls" : [ "setRepeatedField" ]
+    }, {
+      "name" : "clearPort",
+      "visibility" : "public",
+      "methodCalls" : [ "onChanged" ]
+    }, {
+      "name" : "setName",
+      "visibility" : "public",
+      "methodCalls" : [ "onChanged" ]
+    }, {
+      "name" : "setPath",
+      "visibility" : "public",
+      "methodCalls" : [ "onChanged", "setPath", "getPort", "getPassword", "getParameters", "getHost", "getUsername", "getProtocol" ]
+    }, {
+      "name" : "getGroup",
+      "visibility" : "public",
+      "methodCalls" : [ "split", "getServiceModel", "getServiceMetadata", "getTargetServiceUniqueName", "isEmpty", "getParameter", "getServiceContext", "toStringUtf8", "get", "getGroup" ]
+    }, {
+      "name" : "clearParams",
+      "visibility" : "public",
+      "methodCalls" : [ "clear", "getMutableMap" ]
+    }, {
+      "name" : "getParamsMap",
+      "visibility" : "public",
+      "methodCalls" : [ "getMap" ]
+    }, {
+      "name" : "containsParams",
+      "visibility" : "public",
+      "methodCalls" : [ "getMap", "containsKey" ]
+    }, {
+      "name" : "getDefaultInstanceForType",
+      "visibility" : "public",
+      "methodCalls" : [ "getDefaultInstance" ]
+    }, {
+      "name" : "setUnknownFields",
+      "visibility" : "public",
+      "methodCalls" : [ "setUnknownFields" ]
+    }, {
+      "name" : "clone",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "setMapping", "setExtensions", "getKey", "entrySet", "newMap", "size", "add", "put", "getValue", "clone" ]
+    }, {
+      "name" : "clearField",
+      "visibility" : "public",
+      "methodCalls" : [ "clearField" ]
+    }, {
+      "name" : "removeParams",
+      "visibility" : "public",
+      "methodCalls" : [ "remove", "getMutableMap" ]
+    }, {
+      "name" : "clearVersion",
+      "visibility" : "public",
+      "methodCalls" : [ "getVersion", "getDefaultInstance", "onChanged" ]
+    }, {
+      "name" : "setGroup",
+      "visibility" : "public",
+      "methodCalls" : [ "onChanged" ]
+    }, {
+      "name" : "mergeUnknownFields",
+      "visibility" : "public",
+      "methodCalls" : [ "mergeUnknownFields" ]
+    }, {
+      "name" : "getProtocolBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "copyFromUtf8" ]
+    }, {
+      "name" : "isInitialized",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "getDescriptorForType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "from",
+      "visibility" : "public",
+      "methodCalls" : [ "getPath", "getAttributes", "getPassword", "getUsername", "getParameters", "getHost", "getProtocol", "getPort", "getBody", "getStatus", "getHeaders" ]
+    }, {
+      "name" : "contentType",
+      "visibility" : "public",
+      "methodCalls" : [ "getFirst", "headerIf", "mediaType", "header", "isEmpty", "trim", "getKey", "getName", "name", "contentType" ]
+    }, {
+      "name" : "ok",
+      "visibility" : "public",
+      "methodCalls" : [ "build", "getCode", "status" ]
+    }, {
+      "name" : "moved",
+      "visibility" : "public",
+      "methodCalls" : [ "moved", "build", "getName", "status", "header" ]
+    }, {
+      "name" : "status",
+      "visibility" : "public",
+      "methodCalls" : [ "status", "build", "getCode" ]
+    }, {
+      "name" : "body",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "headers",
+      "visibility" : "public",
+      "methodCalls" : [ "value", "getHeaderNames", "getProtocol", "getScheme", "getServerName", "hasMoreElements", "getHeaders", "nextElement", "method", "headers", "size", "toString", "getValue", "singletonList", "getKey", "putAll", "put", "isEmpty", "add", "equals", "computeIfAbsent", "create" ]
+    }, {
+      "name" : "found",
+      "visibility" : "public",
+      "methodCalls" : [ "build", "found", "getName", "header", "status" ]
+    }, {
+      "name" : "error",
+      "visibility" : "public",
+      "methodCalls" : [ "tryInvoke", "publishErrorEvent", "getArgArray", "getDisabled", "isErrorEnabled", "getLogger", "log", "get", "getThrowable", "arrayFormat", "getMessage", "build", "body", "error", "status" ]
+    }, {
+      "name" : "addHeader",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "computeIfAbsent", "addHeader", "format", "add", "headers" ]
+    }, {
+      "name" : "headerIf",
+      "visibility" : "public",
+      "methodCalls" : [ "header", "isEmpty" ]
+    }, {
+      "name" : "path",
+      "visibility" : "public",
+      "methodCalls" : [ "getQueryString", "getRequestURI", "value", "getFirst", "path" ]
+    }, {
+      "name" : "sig",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "custom",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "name",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "build",
+      "visibility" : "public",
+      "methodCalls" : [ "getMethodName", "addConstructor", "addMethod", "makeClass", "make", "addField", "addInterface", "insertClassPath", "max", "length", "charAt", "substring", "isNotEmpty", "getProperties", "isSimpleType", "getGenericType", "getNonStaticFields", "isPrimitive", "needAnalyzing", "format", "isParameterizedType", "isClass", "getActualTypeArguments", "getRawType", "getCanonicalNameForParameterizedType", "getRawClass", "getAnnotations", "getCodeSource", "setAnnotations", "getTypeDefinitions", "getGenericParameterTypes", "getGenericReturnType", "getParameterTypes", "getDeclaredMethod", "error", "setAccessible", "invoke", "isBlank", "toJavaList", "collect", "toList", "getEnums", "getMetadata", "getDeclaredFields", "getInternalModule", "setScopeModel", "getServiceName", "getApplicationModel", "singletonList", "getHost", "getPort", "buildPartial", "isInitialized", "newUninitializedMessageException", "getTypeArguments", "getCanonicalName", "info", "buildProperties", "filter", "getExtensionLoader", "orElse", "setReturnType", "defaultModel", "findFirst", "accept", "setParameterTypes", "getSupportedExtensionInstances", "setName", "put", "getMethodParameters", "notNull", "toArray", "add", "equals", "size", "wrap", "isEmpty", "setStatus", "setBody", "setHeaders", "getDestinationRuleList", "isNotEmptyMap", "keySet", "emptyMap", "getRemoteApplication", "computeIfAbsent", "emptyList", "get", "getSpec", "getUrl", "unmodifiableMap", "getName", "getLabels", "isLabelMatch", "getSubsets", "getOriginList", "getItems", "build", "toString", "getComponentType", "getType", "getResourceName", "setTypes", "getMethods", "forEach", "values", "asType", "stream", "getPublicNonStaticMethods", "getHierarchicalTypes", "map", "setCanonicalName", "setCodeSource", "getMethodParameterTypes", "setParameters", "getReturnType" ]
+    }, {
+      "name" : "newBuilder",
+      "visibility" : "public",
+      "methodCalls" : [ "toBuilder", "mergeFrom" ]
+    }, {
+      "name" : "setSerializeType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setData",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addArgs",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "setType",
+      "visibility" : "public",
+      "methodCalls" : [ "formatType" ]
+    }, {
+      "name" : "addArgTypes",
+      "visibility" : "public",
+      "methodCalls" : [ "notEmptyString", "add" ]
+    }, {
+      "name" : "allowedHeaders",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "exposedHeaders",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "allowCredentials",
+      "visibility" : "public",
+      "methodCalls" : [ "equals" ]
+    }, {
+      "name" : "allowedOrigins",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "allowedMethods",
+      "visibility" : "public",
+      "methodCalls" : [ "toUpperCase", "trim" ]
+    }, {
+      "name" : "maxAge",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "produce",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "header",
+      "visibility" : "public",
+      "methodCalls" : [ "headers", "set", "put", "singletonList", "formatHeader", "header", "asList", "valueOf", "getFirst" ]
+    }, {
+      "name" : "contextPath",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "param",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "responseReason",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "service",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "cors",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "consume",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "responseStatus",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    } ],
+    "imports" : [ "org.apache.dubbo.rpc.protocol.tri.rest.mapping.condition.ParamsCondition", "java.nio.channels.FileLock", "org.apache.dubbo.common.logger.LoggerFactory", "java.io.IOException", "org.apache.dubbo.common.constants.LoggerCodeConstants.COMMON_CACHE_MAX_ENTRY_COUNT_LIMIT_EXCEED", "java.io.BufferedWriter", "java.util.HashMap", "java.io.OutputStreamWriter", "java.io.BufferedReader", "java.io.File", "java.io.FileOutputStream", "org.apache.dubbo.common.constants.LoggerCodeConstants.COMMON_CACHE_MAX_FILE_SIZE_LIMIT_EXCEED", "java.io.Writer", "java.nio.file.Path", "org.apache.dubbo.common.constants.LoggerCodeConstants.COMMON_CACHE_PATH_INACCESSIBLE", "java.io.FileReader", "java.nio.file.Files", "org.apache.dubbo.common.logger.ErrorTypeAwareLogger", "java.util.Map", "org.apache.dubbo.remoting.http12.HttpHeaderNames", "org.apache.dubbo.remoting.http12.HttpResult", "java.util.Date", "java.util.LinkedHashMap", "org.apache.dubbo.remoting.http12.HttpHeaders", "org.apache.dubbo.remoting.http12.HttpStatus", "java.util.Map.Entry", "org.apache.dubbo.common.utils.DateUtils", "org.apache.dubbo.common.utils.ArrayUtils.isEmpty", "org.apache.dubbo.rpc.protocol.tri.rest.RestConstants", "org.apache.dubbo.rpc.protocol.tri.rest.mapping.condition.MethodsCondition", "org.apache.dubbo.rpc.protocol.tri.rest.mapping.meta.ResponseMeta", "org.apache.dubbo.rpc.protocol.tri.rest.mapping.condition.ConsumesCondition", "java.nio.charset.StandardCharsets", "org.apache.dubbo.common.utils.CollectionUtils", "java.nio.ByteBuffer", "org.apache.dubbo.common.utils.Assert", "java.util.List", "java.util.ArrayList", "java.util.Objects", "org.apache.dubbo.common.constants.CommonConstants.ANY_VALUE", "java.util.LinkedHashSet", "java.util.regex.Pattern", "java.util.function.Function", "org.apache.dubbo.common.utils.StringUtils", "java.util.Arrays", "java.util.regex.Matcher", "org.apache.dubbo.common.utils.StringUtils.EMPTY_STRING_ARRAY", "java.util.Set", "org.apache.dubbo.remoting.http12.HttpMethods", "org.apache.dubbo.rpc.protocol.tri.rest.cors.CorsUtils", "java.util.Collections", "org.apache.dubbo.rpc.protocol.tri.rest.mapping.condition.PathExpression", "org.apache.dubbo.rpc.protocol.tri.rest.mapping.condition.ProducesCondition", "org.apache.dubbo.rpc.protocol.tri.rest.mapping.condition.PathCondition", "org.apache.dubbo.rpc.protocol.tri.rest.mapping.condition.ServiceGroupVersionCondition", "org.apache.dubbo.rpc.protocol.tri.rest.mapping.meta.CorsMeta", "org.apache.dubbo.remoting.http12.HttpRequest", "org.apache.dubbo.rpc.protocol.tri.rest.mapping.condition.ConditionWrapper", "org.apache.dubbo.rpc.protocol.tri.rest.mapping.condition.Condition", "org.apache.dubbo.rpc.protocol.tri.rest.mapping.condition.HeadersCondition" ]
+  }, {
+    "name" : "URL",
+    "packageName" : "org.apache.dubbo.common",
+    "extendedClasses" : [ "URL" ],
+    "implementedInterfaces" : [ "Serializable" ],
+    "methods" : [ {
+      "name" : "setServiceInterface",
+      "visibility" : "public",
+      "methodCalls" : [ "addParameter", "setServiceInterface" ]
+    }, {
+      "name" : "getServiceName",
+      "visibility" : "public",
+      "methodCalls" : [ "getServiceInterface", "getServiceKey", "toString", "getServiceName" ]
+    }, {
+      "name" : "getServiceParameters",
+      "visibility" : "public",
+      "methodCalls" : [ "getAllParams", "getServiceContext", "getConsumerUrl", "getInstance", "size", "isNotEmpty", "putAll", "forEach", "getParameters", "getServiceParameters" ]
+    }, {
+      "name" : "getIntParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "getParameter", "parseInt", "getIntParameter" ]
+    }, {
+      "name" : "getOrDefaultFrameworkModel",
+      "visibility" : "public",
+      "methodCalls" : [ "getScopeModel", "getFrameworkModel", "getOrDefaultApplicationModel", "getOrDefaultFrameworkModel" ]
+    }, {
+      "name" : "getProtocolServiceKey",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "isEquals", "getServiceContext", "getServiceKey", "getProtocol", "getConsumerUrl", "get", "getProtocolServiceKey" ]
+    }, {
+      "name" : "getMethodBooleanParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "getMethodParameter", "parseBoolean", "getMethodBooleanParameter" ]
+    }, {
+      "name" : "getMethodPositiveIntParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "getMethodPositiveParameter", "getMethodParameter", "parseInt", "isEmpty", "getMethodPositiveIntParameter" ]
+    }, {
+      "name" : "getMethodParameterStrict",
+      "visibility" : "public",
+      "methodCalls" : [ "getParameter", "get", "contains", "isNotEmptyMap", "isNotEmpty", "getMethodParameterStrict" ]
+    }, {
+      "name" : "getServiceMethodParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "parseByte", "parseInt", "parseLong", "parseDouble", "parseShort", "isEmpty", "parseFloat", "isNotEmpty", "getConsumerUrl", "getServiceContext", "getParameter", "getMethodParameter", "getServiceMethodParameter" ]
+    }, {
+      "name" : "getOrDefaultModuleModel",
+      "visibility" : "public",
+      "methodCalls" : [ "getScopeModel", "getModuleModel", "getOrDefaultModuleModel" ]
+    }, {
+      "name" : "getServiceMethodParameterAndDecoded",
+      "visibility" : "public",
+      "methodCalls" : [ "getServiceMethodParameter", "decode", "getServiceMethodParameterAndDecoded" ]
+    }, {
+      "name" : "getAttributes",
+      "visibility" : "public",
+      "methodCalls" : [ "annotationType", "getMergedAnnotationAttributes", "entrySet", "newHashMap", "size", "getValue", "emptyMap", "resolvePlaceholders", "getKey", "put", "isEmptyMap", "getAttributes" ]
+    }, {
+      "name" : "getCompatibleColonSeparatedKey",
+      "visibility" : "public",
+      "methodCalls" : [ "getServiceInterface", "toString" ]
+    }, {
+      "name" : "getDisplayServiceKey",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "getServiceInterface", "getVersion", "append", "toString", "getDisplayServiceKey" ]
+    }, {
+      "name" : "getServiceModel",
+      "visibility" : "public",
+      "methodCalls" : [ "getAttribute", "getConsumerUrl", "getServiceContext", "getServiceModel" ]
+    }, {
+      "name" : "getScopeModel",
+      "visibility" : "public",
+      "methodCalls" : [ "getAttribute", "map", "getServiceContext", "orElse", "getConsumerUrl", "ofNullable", "getScopeModel" ]
+    }, {
+      "name" : "getServiceMethodParameterStrict",
+      "visibility" : "public",
+      "methodCalls" : [ "getMethodParameterStrict", "getServiceMethodParameterStrict" ]
+    }, {
+      "name" : "getServiceParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "parseBoolean", "parseByte", "parseFloat", "parseLong", "isEmpty", "parseDouble", "parseShort", "charAt", "getServiceContext", "isNotEmpty", "getParameter", "getConsumerUrl", "getServiceParameter" ]
+    }, {
+      "name" : "getOriginalServiceParameters",
+      "visibility" : "public",
+      "methodCalls" : [ "getServiceParameters", "getParameters", "putAll", "getInstance", "size", "getAllParams", "getOriginalServiceParameters" ]
+    }, {
+      "name" : "getBackupUrls",
+      "visibility" : "public",
+      "methodCalls" : [ "isNotEmpty", "add", "setAddress", "getParameter", "getBackupUrls" ]
+    }, {
+      "name" : "getAnyMethodParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "isNotEmptyMap", "get", "values", "split", "iterator", "isEmpty", "next", "getAllParams", "getServiceContext", "getParameter", "getConsumerUrl", "endsWith", "getProtocolServiceKey", "keySet", "isNotEmpty", "getAnyMethodParameter" ]
+    }, {
+      "name" : "getConcatenatedParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "getParameter", "length", "put", "isNotEmpty", "getConcatenatedParameter" ]
+    }, {
+      "name" : "getUrlAddress",
+      "visibility" : "public",
+      "methodCalls" : [ "getUrlAddress" ]
+    }, {
+      "name" : "getOrDefaultApplicationModel",
+      "visibility" : "public",
+      "methodCalls" : [ "getScopeModel", "getApplicationModel", "getOrDefaultApplicationModel" ]
+    }, {
+      "name" : "getVersion",
+      "visibility" : "public",
+      "methodCalls" : [ "split", "getVersion", "get", "toStringUtf8", "getServiceContext", "getParameter", "isNotEmpty", "isEmpty", "getName", "info", "getCodeSource", "getMessage", "getPackage", "getSpecificationVersion", "getImplementationVersion", "getProtectionDomain", "getFile", "error", "endsWith", "getLocation", "getServiceMetadata", "getServiceModel", "getTargetServiceUniqueName" ]
+    }, {
+      "name" : "getOriginalParameters",
+      "visibility" : "public",
+      "methodCalls" : [ "getParameters", "getProtocolServiceKey", "getInstance", "getAllParams", "isEmpty", "getOriginalServiceParameters", "getOriginalParameters" ]
+    }, {
+      "name" : "removeAttribute",
+      "visibility" : "public",
+      "methodCalls" : [ "getChannel", "remove", "removeAttribute" ]
+    }, {
+      "name" : "getPathKey",
+      "visibility" : "public",
+      "methodCalls" : [ "getPath", "getServiceInterface", "getVersion", "getGroup", "buildKey", "isNotEmpty", "getPathKey" ]
+    }, {
+      "name" : "toOriginalMap",
+      "visibility" : "public",
+      "methodCalls" : [ "getOriginalParameters", "toOriginalMap" ]
+    }, {
+      "name" : "hashCode",
+      "visibility" : "public",
+      "methodCalls" : [ "getProtocol", "getServiceKey", "getApplicationModel", "getApplicationName", "getProperties", "getEnums", "getItems", "getReturnType", "toString", "getParameterTypes", "getCanonicalName", "getMethods", "getCodeSource", "getTypes", "getClass", "getServiceNames", "getApp", "equals", "getMetadata", "entrySet", "getHost", "getValue", "getServiceName", "getKey", "getServiceList", "getTagCount", "getInstance", "getTagList", "hasFormat", "getOpenapi", "hashBoolean", "getServiceCount", "hasPretty", "getPretty", "getDefinition", "getRevision", "getUnknownFields", "isEmpty", "getMap", "getPath", "getDescriptor", "getVersion", "getParams", "hashCode", "hash", "ordinal", "getMethod", "hasCode", "getType", "getGroup", "getName", "getPort" ]
+    }, {
+      "name" : "hasServiceParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "isNotEmpty", "getServiceParameter", "hasServiceParameter" ]
+    }, {
+      "name" : "cacheableValueOf",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "valueOf", "get" ]
+    }, {
+      "name" : "getCategory",
+      "visibility" : "public",
+      "methodCalls" : [ "getParameter", "split", "isEmpty", "getCategory" ]
+    }, {
+      "name" : "getSide",
+      "visibility" : "public",
+      "methodCalls" : [ "isPresent", "getUrl", "getInvoker", "get", "ofNullable", "isEmpty", "getParameter", "getSide" ]
+    }, {
+      "name" : "putAttribute",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "putAttribute" ]
+    }, {
+      "name" : "hasAttribute",
+      "visibility" : "public",
+      "methodCalls" : [ "getChannel", "containsKey", "getAttributes", "hasAttribute" ]
+    }, {
+      "name" : "addAttributes",
+      "visibility" : "public",
+      "methodCalls" : [ "putAll", "addAttributes" ]
+    }, {
+      "name" : "getMethodIntParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "getMethodParameter", "isEmpty", "parseInt", "getMethodIntParameter" ]
+    }, {
+      "name" : "getOriginalParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "getRemoteApplication", "getCategory", "getParameter", "getServiceParameter", "getServiceInterface", "getProtocolServiceKey", "getGroup", "getServiceName", "equals", "getVersion", "isEmpty", "getSide", "getOriginalParameter" ]
+    }, {
+      "name" : "getPositiveServiceParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "getServiceParameter", "getPositiveServiceParameter" ]
+    }, {
+      "name" : "getGroup",
+      "visibility" : "public",
+      "methodCalls" : [ "split", "getServiceModel", "getServiceMetadata", "getTargetServiceUniqueName", "isEmpty", "getParameter", "getServiceContext", "toStringUtf8", "get", "getGroup" ]
+    }, {
+      "name" : "equals",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "getServiceKey", "getApplicationModel", "getApplicationName", "getUrlAddress", "getParameters", "getUrlParam", "getParameter", "containsKey", "isNotEmptyMap", "getOverrideURL", "isEmptyMap", "size", "getUsername", "getPassword", "getItems", "getProperties", "getEnums", "getParameterTypes", "getReturnType", "getCodeSource", "getTypes", "getCanonicalName", "getMethods", "getServiceNames", "getKey", "getValue", "getMetadata", "getHost", "getServiceName", "entrySet", "get", "getOpenapi", "hasFormat", "hasPretty", "getServiceList", "getPretty", "getTagList", "getInstance", "getDefinition", "getRevision", "getUnknownFields", "getPath", "getGroup", "getApp", "getVersion", "getParams", "getName", "getProtocol", "getPort", "getClass", "compare", "getMethod", "getNettyChannel", "readerIndex", "getByte", "readableBytes", "getType" ]
+    }, {
+      "name" : "hasServiceMethodParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "isNotEmpty", "getMethodParameter", "getParameters", "isEmpty", "getConsumerUrl", "startsWith", "endsWith", "keySet", "hasMethodParameter", "getServiceContext", "hasServiceMethodParameter" ]
+    }, {
+      "name" : "getApplication",
+      "visibility" : "public",
+      "methodCalls" : [ "getParameter", "isEmpty", "getName", "getApplication" ]
+    }, {
+      "name" : "getRemoteApplication",
+      "visibility" : "public",
+      "methodCalls" : [ "getParameter", "getServiceName", "getRemoteApplication" ]
+    }, {
+      "name" : "getUserInformation",
+      "visibility" : "public",
+      "methodCalls" : [ "isNotEmpty", "length", "getPassword", "toString", "getUsername", "isEmpty", "getUserInformation" ]
+    }, {
+      "name" : "toSerializableURL",
+      "visibility" : "public",
+      "methodCalls" : [ "toURLPlainParam", "toSerializableURL" ]
+    }, {
+      "name" : "getAllParameters",
+      "visibility" : "public",
+      "methodCalls" : [ "getParameters", "putAll", "size", "unmodifiableMap", "getAllParameters" ]
+    }, {
+      "name" : "getPositiveIntParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "getPositiveParameter", "isEmpty", "parseInt", "getParameter", "getPositiveIntParameter" ]
+    }, {
+      "name" : "getOriginalServiceParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "getServiceParameter", "getParameter", "isNotEmpty", "getOriginalServiceParameter" ]
+    }, {
+      "name" : "getAttribute",
+      "visibility" : "public",
+      "methodCalls" : [ "getProperty", "attribute", "getChannel", "get", "getAttribute" ]
+    }, {
+      "name" : "putMethodParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "computeIfAbsent", "putMethodParameter" ]
+    }, {
+      "name" : "buildKey",
+      "visibility" : "public",
+      "methodCalls" : [ "buildServiceKey", "buildKey" ]
+    }, {
+      "name" : "getBooleanParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "getParameter", "isEmpty", "parseBoolean", "getBooleanParameter" ]
+    }, {
+      "name" : "setServiceModel",
+      "visibility" : "public",
+      "methodCalls" : [ "putAttribute", "setServiceModel" ]
+    }, {
+      "name" : "toConfiguration",
+      "visibility" : "public",
+      "methodCalls" : [ "addProperties", "getParameters", "toConfiguration" ]
+    }, {
+      "name" : "setScopeModel",
+      "visibility" : "public",
+      "methodCalls" : [ "putAttribute", "put", "getBeanFactory", "setScopeModel" ]
+    }, {
+      "name" : "getUrlParam",
+      "visibility" : "public",
+      "methodCalls" : [ "getUrlParam" ]
+    }, {
+      "name" : "getColonSeparatedKey",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "getServiceInterface", "getColonSeparatedKey" ]
+    }, {
+      "name" : "getApplicationModel",
+      "visibility" : "public",
+      "methodCalls" : [ "getOrNullApplicationModel", "getScopeModel", "getApplicationModel" ]
+    }, {
+      "name" : "toParameterString",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "buildParameters", "toParameterString" ]
+    }, {
+      "name" : "valueOf",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "put", "entrySet", "getHost", "isEmpty", "get", "clearParameters", "getUsername", "getPort", "setScopeModel", "addParameters", "parseDecodedStr", "getPath", "getAttributes", "getProtocol", "getPassword", "getParameters", "parseEncodedStr", "isNotEmpty", "startsWith", "getKey", "getUrlAddress", "getUrlParam", "valueOf" ]
+    }, {
+      "name" : "addParameterString",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "addParameters", "parseQueryString", "addParameterString" ]
+    }, {
+      "name" : "toIdentityString",
+      "visibility" : "public",
+      "methodCalls" : [ "toIdentityString" ]
+    }, {
+      "name" : "toFullString",
+      "visibility" : "public",
+      "methodCalls" : [ "toFullString" ]
+    }, {
+      "name" : "getPath",
+      "visibility" : "public",
+      "methodCalls" : [ "getServiceInterface", "isNotEmpty", "getProtocolServiceKey", "toStringUtf8", "get", "getPath" ]
+    }, {
+      "name" : "addParameterAndEncoded",
+      "visibility" : "public",
+      "methodCalls" : [ "addParameterAndEncoded", "addParameter", "isEmpty", "encode" ]
+    }, {
+      "name" : "getParameterAndDecoded",
+      "visibility" : "public",
+      "methodCalls" : [ "getParameterAndDecoded", "getParameter", "decode" ]
+    }, {
+      "name" : "hasMethodParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "getMethodParameterStrict", "getParameters", "length", "endsWith", "startsWith", "keySet", "getValue", "entrySet", "getParameter", "contains", "getMethodParameter", "hasServiceMethodParameter", "getServiceContext", "getProtocolServiceKey", "getConsumerUrl", "isEmpty", "isNotEmpty", "containsKey", "hasMethodParameter" ]
+    }, {
+      "name" : "addParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "addParameters", "singletonMap", "isEmpty", "putExtendParam", "getInstance", "initMethodParameters", "put", "equals", "add", "get", "size", "getName", "addParameter", "valueOf", "length" ]
+    }, {
+      "name" : "toJavaURL",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "getMessage", "toJavaURL" ]
+    }, {
+      "name" : "getIp",
+      "visibility" : "public",
+      "methodCalls" : [ "getIpByHost", "getHost", "getIp" ]
+    }, {
+      "name" : "toMap",
+      "visibility" : "public",
+      "methodCalls" : [ "getParameters", "computeIfAbsent", "getKey", "newLinkedHashMap", "toString", "getValue", "size", "add", "toMap" ]
+    }, {
+      "name" : "getPort",
+      "visibility" : "public",
+      "methodCalls" : [ "getPort" ]
+    }, {
+      "name" : "encode",
+      "visibility" : "public",
+      "methodCalls" : [ "writeBytes", "isEmpty", "getMessage", "encodeRequest", "encodeResponse", "isClientSide", "name", "toLowerCase", "toPrettyJson", "getPretty", "equals", "getFormat", "encode", "getClass", "orElse", "isPureText", "write", "convert", "copy", "mediaType", "writeTo", "decorate", "packResponse", "getBytes", "toJson", "toString", "first", "print", "marshal", "omittingInsignificantWhitespace", "createMarshaller", "newInstance", "printer", "dump", "getSerialization", "serialize", "cleanup", "encodeData", "toByteArray", "flushBuffer", "getUrl" ]
+    }, {
+      "name" : "addParameters",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "putAll", "isEmpty", "equals", "get", "getKey", "isEmptyMap", "entrySet", "getValue", "getParameters", "addParameters" ]
+    }, {
+      "name" : "getServiceKey",
+      "visibility" : "public",
+      "methodCalls" : [ "getAttachmentValue", "buildKey", "getVersion", "getServiceInterface", "getGroup", "putIfAbsent", "put", "getServiceContext", "get", "getServiceKey" ]
+    }, {
+      "name" : "getPassword",
+      "visibility" : "public",
+      "methodCalls" : [ "getPassword" ]
+    }, {
+      "name" : "getRawParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "getUsername", "getParameter", "getProtocol", "getHost", "getPort", "equals", "valueOf", "getPassword", "getPath", "getRawParameter" ]
+    }, {
+      "name" : "isAnyHost",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "getParameter", "getHost", "isAnyHost" ]
+    }, {
+      "name" : "getUsername",
+      "visibility" : "public",
+      "methodCalls" : [ "getUsername" ]
+    }, {
+      "name" : "setUsername",
+      "visibility" : "public",
+      "methodCalls" : [ "setUsername", "getProtocol", "getPort", "getPassword", "getHost", "getParameters", "getPath" ]
+    }, {
+      "name" : "getMethodParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "parseFloat", "parseInt", "parseByte", "parseShort", "parseLong", "charAt", "parseDouble", "parseBoolean", "get", "getParameter", "getMethodParameterStrict", "isNotEmpty", "getServiceMethodParameter", "isEmpty", "getProtocolServiceKey", "getConsumerUrl", "getServiceContext", "getMethodParameter" ]
+    }, {
+      "name" : "setPath",
+      "visibility" : "public",
+      "methodCalls" : [ "onChanged", "setPath", "getPort", "getPassword", "getParameters", "getHost", "getUsername", "getProtocol" ]
+    }, {
+      "name" : "setProtocol",
+      "visibility" : "public",
+      "methodCalls" : [ "onChanged", "setProtocol", "getPath", "getHost", "getUsername", "getPassword", "getParameters", "getPort" ]
+    }, {
+      "name" : "removeParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "removeParameters", "isEmpty", "remove", "removeParameter" ]
+    }, {
+      "name" : "isLocalHost",
+      "visibility" : "public",
+      "methodCalls" : [ "getParameter", "getHost", "isLocalHost" ]
+    }, {
+      "name" : "getAbsolutePath",
+      "visibility" : "public",
+      "methodCalls" : [ "getPath", "startsWith", "getAbsolutePath" ]
+    }, {
+      "name" : "getMethodPositiveParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "getMethodParameter", "getMethodPositiveParameter" ]
+    }, {
+      "name" : "getPositiveParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "getParameter", "getPositiveParameter" ]
+    }, {
+      "name" : "getProtocol",
+      "visibility" : "public",
+      "methodCalls" : [ "toStringUtf8", "isHttp2", "get", "getProtocol" ]
+    }, {
+      "name" : "setHost",
+      "visibility" : "public",
+      "methodCalls" : [ "setHost", "getUsername", "getParameters", "getPort", "getProtocol", "getPath", "getPassword" ]
+    }, {
+      "name" : "toInetSocketAddress",
+      "visibility" : "public",
+      "methodCalls" : [ "getPort", "getHost", "toInetSocketAddress" ]
+    }, {
+      "name" : "getOriginalURL",
+      "visibility" : "public",
+      "methodCalls" : [ "getUsername", "getHost", "getPassword", "getProtocol", "getPort", "getParameters", "getPath" ]
+    }, {
+      "name" : "getParameters",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "getKey", "test", "unmodifiableMap", "entrySet", "put", "size", "putAll", "getInstance", "isEmpty", "getProtocolServiceKey", "getServiceParameters", "getAllParams", "emptyMap", "getValidServiceInfo", "getParameters" ]
+    }, {
+      "name" : "clearParameters",
+      "visibility" : "public",
+      "methodCalls" : [ "clear", "clearParameters" ]
+    }, {
+      "name" : "getBackupAddress",
+      "visibility" : "public",
+      "methodCalls" : [ "getAddress", "toString", "appendDefaultPort", "isNotEmpty", "getParameter", "getBackupAddress" ]
+    }, {
+      "name" : "getServiceInterface",
+      "visibility" : "public",
+      "methodCalls" : [ "getParameter", "getPath", "getServiceContext", "getInterfaceName", "getServiceInterface" ]
+    }, {
+      "name" : "decode",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoolean", "min", "method", "parameters", "uri", "values", "getHttpDataType", "path", "add", "getValue", "addAll", "setHttp", "toArray", "getBodyHttpDatas", "isBlank", "arraycopy", "trim", "setOriginRequest", "equals", "split", "position", "decodeData", "readableBytes", "isFinalFragment", "loadAs", "load", "hasNext", "next", "dump", "iterator", "loadAll", "isInstance", "build", "setBroken", "put", "setParameterTypesDesc", "length", "getAttribute", "unmarshal", "setAttachment", "findMethod", "getXMLReader", "createUnmarshaller", "isGenericCall", "setEncoding", "drawPts", "getMethodName", "newInstance", "getAttributes", "drawArgs", "keyWithoutGroup", "getBeanFactory", "setVersion", "invoke", "merge", "name", "getContextClassLoader", "isEcho", "ignoringUnknownFields", "checkSerializationPermitted", "addObjectAttachments", "setData", "readUTF", "setParameterTypes", "parser", "isNotEmptyMap", "setMethodName", "getBean", "readAttachments", "decodeArgument", "getRawType", "currentThread", "decode", "setInputStream", "resolve", "isEmpty", "parseRequest", "readBytes", "size", "create", "readerIndex", "get", "addMessage", "addInputStream", "toString", "toJavaObject", "convertObject", "cleanup", "available", "setErrorMessage", "getUrl", "warn", "debug", "getSystemConfiguration", "setAttribute", "getName", "isWarnEnabled", "deserialize", "isDebugEnabled", "onMessage", "getMessage", "readByte", "getServiceModel", "getId", "setStatus", "getClassLoader", "setContextClassLoader", "getSerialization", "getScopeModel" ]
+    }, {
+      "name" : "setAddress",
+      "visibility" : "public",
+      "methodCalls" : [ "getParameters", "getPath", "getPort", "getProtocol", "substring", "lastIndexOf", "parseInt", "setAddress" ]
+    }, {
+      "name" : "toServiceStringWithoutResolving",
+      "visibility" : "public",
+      "methodCalls" : [ "toServiceStringWithoutResolving" ]
+    }, {
+      "name" : "setPassword",
+      "visibility" : "public",
+      "methodCalls" : [ "setPassword", "getHost", "getParameters", "getPort", "getUsername", "getPath", "getProtocol" ]
+    }, {
+      "name" : "getParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "split", "parseLong", "parseFloat", "getOrDefaultFrameworkModel", "parseBoolean", "getBean", "getParameter", "from", "get", "getComment", "getIn", "size", "equals", "getName", "parameter", "getValidServiceInfo", "isEmpty", "getServiceContext", "getConsumerUrl", "getServiceParameter", "getSide", "getServiceName", "getVersion", "isNotEmpty", "getProtocolServiceKey", "getServiceInterface", "getGroup", "getKeyIndex", "getValue", "getCategory", "getRemoteApplication", "isBlank", "parseByte", "asList", "parseShort", "parseDouble", "convertIfPossible", "charAt", "parseInt", "getBeanFactory" ]
+    }, {
+      "name" : "getUrlParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "getParameterAndDecoded", "valueOf", "isEmpty", "getUrlParameter" ]
+    }, {
+      "name" : "toServiceString",
+      "visibility" : "public",
+      "methodCalls" : [ "toServiceString" ]
+    }, {
+      "name" : "addParametersIfAbsent",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "putIfAbsent", "entrySet", "getKey", "isEmptyMap", "addParametersIfAbsent" ]
+    }, {
+      "name" : "getAddress",
+      "visibility" : "public",
+      "methodCalls" : [ "getHost", "getPort", "isNotEmpty", "getUrl", "getAddress" ]
+    }, {
+      "name" : "getAuthority",
+      "visibility" : "public",
+      "methodCalls" : [ "getPort", "length", "getUsername", "toString", "isNotEmpty", "getPassword", "getHost", "getAuthority", "getUserInformation" ]
+    }, {
+      "name" : "getMethodParameterAndDecoded",
+      "visibility" : "public",
+      "methodCalls" : [ "decode", "getMethodParameter", "getMethodParameterAndDecoded" ]
+    }, {
+      "name" : "addParameterIfAbsent",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "hasParameter", "addParametersIfAbsent", "singletonMap", "putExtendParamIfAbsent", "getInstance", "isEmpty", "putIfAbsent", "initMethodParameters", "addParameterIfAbsent" ]
+    }, {
+      "name" : "hasParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "length", "getParameter", "isNotEmpty", "getKeyIndex", "getHttpDataType", "get", "getBodyHttpDatas", "size", "parameters", "containsKey", "hasParameter" ]
+    }, {
+      "name" : "setPort",
+      "visibility" : "public",
+      "methodCalls" : [ "onChanged", "setPort", "getPassword", "getPath", "getParameters", "getProtocol", "getUsername", "getHost" ]
+    }, {
+      "name" : "getHost",
+      "visibility" : "public",
+      "methodCalls" : [ "getHost" ]
+    }, {
+      "name" : "removeParameters",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "toArray", "size", "get", "split", "containsKey", "remove", "cardinality", "arraycopy", "isNotEmptyMap", "getKeyIndex", "clear", "clone", "removeParameters" ]
+    }, {
+      "name" : "toString",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "getScaleFunction", "getApplicationName", "getCanonicalPath", "toQueryString", "nanoTime", "simpleClassName", "isCancelled", "task", "getUrlParam", "getParameters", "getUrlAddress", "addParametersIfAbsent", "trim", "nextSetBit", "format", "cardinality", "add", "buildServiceKey", "getDesc", "getServiceNames", "getConsumerUrl", "getServiceKey", "toFullString", "getProtocolServiceKey", "getServiceString", "getMatchKey", "min", "subList", "entrySet", "collect", "getKey", "size", "limit", "stream", "joining", "getSubtype", "capacity", "getLocalAddress", "map", "getCounter", "ofNullable", "orElse", "getRemoteAddress", "getChannel", "getSimpleName", "getAddress", "path", "contentType", "method", "printToString", "fieldToString", "getInvoker", "getUrl", "getInterface", "timeRemaining", "convert", "isNotEmpty", "append", "getPriority", "getPatterns", "length", "getValue", "isDirect", "isEmpty", "get", "getType", "getVariables", "getMethod", "getServiceVersion", "getServiceGroup", "toShortString", "getServiceInterface", "getClass", "getMessage", "getStatusCode", "getErrorCode", "getName" ]
+    } ],
+    "imports" : [ "org.apache.dubbo.common.utils.CollectionUtils", "org.apache.dubbo.common.constants.RemotingConstants", "org.apache.dubbo.common.constants.CommonConstants.ANYHOST_KEY", "org.apache.dubbo.common.utils.NetUtils", "org.apache.dubbo.common.utils.StringUtils.isBlank", "org.apache.dubbo.common.constants.CommonConstants.HOST_KEY", "org.apache.dubbo.common.constants.CommonConstants.SIDE_KEY", "org.apache.dubbo.rpc.model.ModuleModel", "java.net.URLDecoder", "org.apache.dubbo.common.constants.CommonConstants.ANYHOST_VALUE", "org.apache.dubbo.common.constants.CommonConstants.LOCALHOST_KEY", "org.apache.dubbo.common.constants.CommonConstants.PASSWORD_KEY", "org.apache.dubbo.rpc.model.ScopeModelUtil", "org.apache.dubbo.common.constants.CommonConstants.APPLICATION_KEY", "java.net.URLEncoder", "org.apache.dubbo.common.constants.CommonConstants.GROUP_KEY", "org.apache.dubbo.common.constants.CommonConstants.INTERFACE_KEY", "java.util.List", "java.util.ArrayList", "java.net.MalformedURLException", "org.apache.dubbo.common.constants.CommonConstants.ADDRESS_KEY", "org.apache.dubbo.common.constants.CommonConstants.GROUP_CHAR_SEPARATOR", "org.apache.dubbo.common.constants.CommonConstants", "java.util.HashMap", "org.apache.dubbo.rpc.model.ApplicationModel", "java.util.Objects", "org.apache.dubbo.common.constants.RegistryConstants.CATEGORY_KEY", "java.util.LinkedHashMap", "org.apache.dubbo.common.url.component.ServiceConfigURL", "java.util.Collections", "org.apache.dubbo.common.url.component.URLAddress", "org.apache.dubbo.common.BaseServiceMetadata.COLON_SEPARATOR", "org.apache.dubbo.common.url.component.URLParam", "org.apache.dubbo.rpc.model.FrameworkModel", "org.apache.dubbo.common.url.component.PathURLAddress", "org.apache.dubbo.common.constants.CommonConstants.PROTOCOL_KEY", "java.util.Arrays", "org.apache.dubbo.common.constants.CommonConstants.CONSUMER", "org.apache.dubbo.rpc.model.ScopeModel", "org.apache.dubbo.common.url.component.URLPlainParam", "org.apache.dubbo.common.constants.CommonConstants.PORT_KEY", "org.apache.dubbo.common.convert.ConverterUtil", "org.apache.dubbo.common.config.Configuration", "java.io.Serializable", "java.io.UnsupportedEncodingException", "org.apache.dubbo.common.utils.ArrayUtils", "org.apache.dubbo.common.constants.CommonConstants.REMOTE_APPLICATION_KEY", "org.apache.dubbo.rpc.model.ServiceModel", "java.util.TreeMap", "org.apache.dubbo.common.config.InmemoryConfiguration", "org.apache.dubbo.common.utils.LRUCache", "org.apache.dubbo.common.constants.CommonConstants.COMMA_SPLIT_PATTERN", "org.apache.dubbo.common.constants.CommonConstants.PATH_KEY", "org.apache.dubbo.common.constants.CommonConstants.USERNAME_KEY", "java.util.function.Predicate", "org.apache.dubbo.common.constants.CommonConstants.VERSION_KEY", "java.util.Map", "java.util.Collection", "java.net.InetSocketAddress", "org.apache.dubbo.common.utils.StringUtils" ]
+  }, {
+    "name" : "RegistryProtocol",
+    "packageName" : "org.apache.dubbo.registry.integration",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ "Protocol", "ScopeModelAware" ],
+    "methods" : [ {
+      "name" : "toSubscribeUrl",
+      "visibility" : "public",
+      "methodCalls" : [ "addParameter" ]
+    }, {
+      "name" : "getInvoker",
+      "visibility" : "public",
+      "methodCalls" : [ "getInvoker", "indexOf", "getName", "getClass", "invokeMethod", "error", "getWrapper", "invoke", "getMethod", "doGetInvoker", "getSimpleName", "get", "getOrDefaultFrameworkModel", "addNativeStub", "put", "getExtensionLoader", "getMethodName", "getDefaultExtension", "doCreateInvoker" ]
+    }, {
+      "name" : "export",
+      "visibility" : "public",
+      "methodCalls" : [ "export", "targetDesc", "targetKey", "getValueSupplier", "addAll", "getSampleType", "getMetricsKeyWrapper", "apply", "values", "getTags", "keySet", "getRegistryUrl", "subscribe", "computeIfAbsent", "isServiceDiscovery", "getApplicationModel", "getConfiguration", "setRegistered", "getOverrideListeners", "setRegisterUrl", "modelEnvironment", "setSubscribeUrl", "setNotifyListener", "convert", "getRegistry", "buildInvokerChain", "internalWarn", "hasExtensions", "cancel", "schedule", "getMetadataRetryExecutor", "length", "getParameter", "isWarnEnabled", "getServiceKey", "getUrl", "unregister", "register", "put", "setThreadName", "serviceKey", "remove", "add", "optimizeSerialization", "getOrDefaultApplicationModel", "getInstance", "createExecutorIfAbsent", "getOrDefaultFrameworkModel", "getBeanFactory", "getBean", "getProtocol", "getActivateExtension", "equals", "getScopeModel", "isRegistry", "getExtensionLoader", "unmodifiableList", "registerService", "getFrameworkModel", "refreshStatus", "refreshCheck", "ofNullable", "ifPresent", "getModuleModel", "getInterface", "getServiceModel", "map", "error", "getProxy", "warn", "getInvoker", "get", "getMessage", "run", "doExport" ]
+    }, {
+      "name" : "getServiceDiscoveryInvoker",
+      "visibility" : "public",
+      "methodCalls" : [ "getRegistry", "getRegistryUrl", "doCreateInvoker" ]
+    }, {
+      "name" : "reExport",
+      "visibility" : "public",
+      "methodCalls" : [ "getRegisterUrl", "setExporter", "getOriginInvoker", "putIfAbsent", "get", "getParameter", "reExport", "export", "equals", "warn", "newTimeout", "getRegistryUrl" ]
+    }, {
+      "name" : "getServers",
+      "visibility" : "public",
+      "methodCalls" : [ "unmodifiableList", "values", "getServers", "emptyList" ]
+    }, {
+      "name" : "getDefaultPort",
+      "visibility" : "public",
+      "methodCalls" : [ "getDefaultPort" ]
+    }, {
+      "name" : "setFrameworkModel",
+      "visibility" : "public",
+      "methodCalls" : [ "getBean", "getBeanFactory" ]
+    }, {
+      "name" : "setProxyFactory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setProtocol",
+      "visibility" : "public",
+      "methodCalls" : [ "onChanged", "setProtocol", "getPath", "getHost", "getUsername", "getPassword", "getParameters", "getPort" ]
+    }, {
+      "name" : "getOverrideListeners",
+      "visibility" : "public",
+      "methodCalls" : [ "putAll", "get", "getApplicationModels", "getOverrideListeners", "getBean", "getBeanFactory", "size" ]
+    }, {
+      "name" : "reRefer",
+      "visibility" : "public",
+      "methodCalls" : [ "reRefer", "getClass", "error", "toQueryString", "getParameters", "isDestroyed", "addParameter" ]
+    }, {
+      "name" : "destroy",
+      "visibility" : "public",
+      "methodCalls" : [ "forEach", "listItems", "removeCache", "unregisterProvider", "removeClassLoader", "addAll", "acquireDestroyLock", "getPubModuleModels", "onDestroy", "getExportedServices", "flatMap", "getDefaultExtension", "removeListener", "toList", "collect", "getLoadedExtensionInstances", "getModuleModels", "getServiceRepository", "getApplicationModels", "tryGetApplicationName", "execute", "isEmptyMap", "stream", "isDone", "removeChildListener", "getServiceNames", "equals", "getServiceInterface", "get", "removeServiceInstancesChangedListener", "getServiceMetadata", "getServiceContext", "getAttribute", "removeMigrationInvoker", "getAttributeMap", "setConsumerUrl", "removeNotifyListener", "convert", "getConfiguration", "modelEnvironment", "getParameter", "isNotEmpty", "getActivateExtension", "getSubscribeUrl", "isEmpty", "getRegisteredConsumerUrl", "getConsumerUrl", "isAvailable", "getExtensionLoader", "getOrDefaultModuleModel", "getSubscribed", "unsubscribe", "destroyAllInvokers", "getValue", "removeDestroyedRegistry", "unregister", "entrySet", "doDestroy", "getRegistered", "getKey", "leaveGroup", "gracefulShutdown", "shutdownNow", "cancelScheduledFuture", "awaitTermination", "getInstance", "shutdown", "error", "emptyList", "destroyInvokers", "getInvokers", "stop", "getServiceKey", "removeExporterChangeListener", "getDirectory", "stopServer", "values", "keySet", "getRemotingServer", "compareAndSet", "getLocalAddress", "forceClose", "setAvailable", "destroy", "clear", "remove", "isDestroyed", "getMessage", "warn", "release", "lock", "unlock", "writeLock", "isInfoEnabled", "info", "getSimpleName", "getClass", "close", "destroyed", "cancel", "reCalShutdownTime", "getScopeModel", "set", "getUrl", "currentThread", "getServerShutdownTimeout", "tryLock", "interrupt", "unexport", "getInvoker" ]
+    }, {
+      "name" : "refer",
+      "visibility" : "public",
+      "methodCalls" : [ "isNotEmpty", "doRefer", "getInvoker", "getCluster", "equals", "getRegistryUrl", "getRegistry", "get", "split", "getAttribute", "buildInvokerChain", "protocolBindingRefer", "getModuleModel", "registerInterface", "getServiceModel", "ofNullable", "map", "getBeanFactory", "refreshStatus", "ifPresent", "getBean", "refreshCheck", "error", "getScopeModel", "getParameter", "getExtensionLoader", "getUrl", "unmodifiableList", "getActivateExtension", "isRegistry", "isEmpty", "isEnabled", "getOrDefaultApplicationModel", "connect", "add", "optimizeSerialization", "refer" ]
+    } ],
+    "imports" : [ "org.apache.dubbo.common.constants.CommonConstants.VERSION_KEY", "org.apache.dubbo.rpc.support.ProtocolUtils", "org.apache.dubbo.remoting.Constants.CODEC_KEY", "java.util.Collections", "org.apache.dubbo.registry.Constants.REGISTER_IP_KEY", "org.apache.dubbo.common.timer.HashedWheelTimer", "org.apache.dubbo.registry.Constants.CONFIGURATORS_SUFFIX", "org.apache.dubbo.common.constants.RegistryConstants.ALL_CATEGORIES", "org.apache.dubbo.common.constants.CommonConstants.EXTRA_KEYS_KEY", "org.apache.dubbo.rpc.cluster.Constants.REFER_KEY", "org.apache.dubbo.common.constants.LoggerCodeConstants.INTERNAL_ERROR", "org.apache.dubbo.rpc.ProtocolServer", "org.apache.dubbo.registry.Constants.DEFAULT_REGISTRY_RETRY_PERIOD", "org.apache.dubbo.common.constants.CommonConstants.GROUP_KEY", "org.apache.dubbo.registry.Constants.PROVIDER_PROTOCOL", "org.apache.dubbo.common.constants.CommonConstants.CLUSTER_KEY", "org.apache.dubbo.common.constants.CommonConstants.IPV6_KEY", "org.apache.dubbo.rpc.cluster.ClusterInvoker", "org.apache.dubbo.common.constants.CommonConstants.PASSWORD_KEY", "org.apache.dubbo.rpc.Protocol", "org.apache.dubbo.rpc.Constants.GENERIC_KEY", "org.apache.dubbo.registry.Constants.ENABLE_26X_CONFIGURATION_LISTEN", "org.apache.dubbo.rpc.cluster.Constants.WARMUP_KEY", "org.apache.dubbo.rpc.Constants.AUTH_KEY", "java.util.List", "org.apache.dubbo.registry.NotifyListener", "org.apache.dubbo.common.deploy.ApplicationDeployer", "org.apache.dubbo.remoting.Constants.EXCHANGER_KEY", "org.apache.dubbo.rpc.RpcException", "org.apache.dubbo.common.constants.CommonConstants.SIDE_KEY", "org.apache.dubbo.rpc.cluster.Constants.WEIGHT_KEY", "org.apache.dubbo.rpc.ProxyFactory", "org.apache.dubbo.common.constants.RegistryConstants.REGISTRY_KEY", "org.apache.dubbo.registry.client.migration.MigrationClusterInvoker", "org.apache.dubbo.common.constants.RegistryConstants.CATEGORY_KEY", "org.apache.dubbo.common.URL", "java.util.HashMap", "org.apache.dubbo.common.constants.CommonConstants.PACKABLE_METHOD_FACTORY_KEY", "java.util.Map", "java.util.ArrayList", "org.apache.dubbo.common.constants.CommonConstants.INTERFACE_KEY", "org.apache.dubbo.registry.Constants.REGISTER_KEY", "java.util.stream.Collectors", "org.apache.dubbo.common.threadpool.manager.FrameworkExecutorRepository", "org.apache.dubbo.rpc.model.ModuleModel", "org.apache.dubbo.registry.Constants.ENABLE_CONFIGURATION_LISTEN", "org.apache.dubbo.remoting.Constants.PREFER_SERIALIZATION_KEY", "org.apache.dubbo.common.utils.UrlUtils.classifyUrls", "org.apache.dubbo.common.constants.CommonConstants.DUBBO_VERSION_KEY", "org.apache.dubbo.common.constants.CommonConstants.TIMEOUT_KEY", "org.apache.dubbo.common.constants.CommonConstants.APPLICATION_KEY", "org.apache.dubbo.common.utils.NamedThreadFactory", "org.apache.dubbo.rpc.cluster.Constants.EXPORT_KEY", "org.apache.dubbo.remoting.Constants.CHECK_KEY", "org.apache.dubbo.registry.Constants.REGISTRY_RETRY_PERIOD_KEY", "org.apache.dubbo.registry.client.migration.ServiceDiscoveryMigrationInvoker", "org.apache.dubbo.common.constants.CommonConstants.ENABLED_KEY", "org.apache.dubbo.registry.client.ServiceDiscoveryRegistryDirectory", "org.apache.dubbo.rpc.Constants.TOKEN_KEY", "org.apache.dubbo.common.constants.RegistryConstants.DYNAMIC_KEY", "org.apache.dubbo.common.utils.ConcurrentHashSet", "org.apache.dubbo.common.constants.LoggerCodeConstants.REGISTRY_UNSUPPORTED_CATEGORY", "org.apache.dubbo.registry.retry.ReExportTask", "org.apache.dubbo.rpc.model.FrameworkModel", "org.apache.dubbo.rpc.model.ScopeModel", "org.apache.dubbo.metrics.event.MetricsEventBus", "org.apache.dubbo.common.constants.RegistryConstants.CONFIGURATORS_CATEGORY", "org.apache.dubbo.common.constants.CommonConstants.LOADBALANCE_KEY", "org.apache.dubbo.common.constants.RegistryConstants.SERVICE_REGISTRY_PROTOCOL", "java.util.concurrent.ScheduledExecutorService", "java.util.Set", "org.apache.dubbo.rpc.Constants.DEPRECATED_KEY", "org.apache.dubbo.common.utils.StringUtils", "org.apache.dubbo.common.logger.LoggerFactory", "java.util.concurrent.atomic.AtomicBoolean", "org.apache.dubbo.common.constants.CommonConstants.COMMA_SPLIT_PATTERN", "org.apache.dubbo.rpc.Exporter", "org.apache.dubbo.rpc.model.ScopeModelAware", "org.apache.dubbo.rpc.Invoker", "org.apache.dubbo.common.utils.UrlUtils", "org.apache.dubbo.common.logger.ErrorTypeAwareLogger", "org.apache.dubbo.rpc.cluster.Constants", "org.apache.dubbo.common.constants.CommonConstants.CONSUMER", "org.apache.dubbo.common.config.configcenter.DynamicConfiguration", "org.apache.dubbo.common.url.component.ServiceConfigURL", "org.apache.dubbo.common.constants.CommonConstants.USERNAME_KEY", "org.apache.dubbo.remoting.Constants.SERIALIZATION_KEY", "org.apache.dubbo.rpc.model.ScopeModelUtil.getApplicationModel", "java.util.concurrent.TimeUnit", "org.apache.dubbo.common.constants.RegistryConstants", "org.apache.dubbo.rpc.Constants.AUTHENTICATOR_KEY", "org.apache.dubbo.remoting.Constants.CONNECTIONS_KEY", "org.apache.dubbo.common.utils.CollectionUtils", "org.apache.dubbo.common.constants.CommonConstants.PATH_KEY", "org.apache.dubbo.registry.Constants.SIMPLIFIED_KEY", "org.apache.dubbo.common.constants.CommonConstants.REGISTRY_PROTOCOL_LISTENER_KEY", "org.apache.dubbo.rpc.cluster.Cluster", "org.apache.dubbo.rpc.model.ApplicationModel", "java.util.Optional", "org.apache.dubbo.common.extension.ExtensionLoader", "java.util.concurrent.ConcurrentHashMap", "org.apache.dubbo.rpc.cluster.Constants.CONSUMER_URL_KEY", "org.apache.dubbo.common.constants.CommonConstants.PROTOCOL_KEY", "org.apache.dubbo.rpc.cluster.governance.GovernanceRuleRepository", "org.apache.dubbo.common.constants.RegistryConstants.OVERRIDE_PROTOCOL", "org.apache.dubbo.registry.Registry", "org.apache.dubbo.metrics.registry.event.RegistryEvent", "org.apache.dubbo.rpc.model.ScopeModelUtil", "java.util.concurrent.ConcurrentMap", "org.apache.dubbo.common.utils.StringUtils.isEmpty", "org.apache.dubbo.rpc.cluster.Configurator", "org.apache.dubbo.rpc.protocol.InvokerWrapper", "org.apache.dubbo.rpc.model.ProviderModel", "org.apache.dubbo.common.constants.CommonConstants.RELEASE_KEY", "org.apache.dubbo.registry.RegistryFactory", "org.apache.dubbo.registry.RegistryService", "org.apache.dubbo.rpc.Constants.MOCK_KEY", "org.apache.dubbo.registry.support.SkipFailbackWrapperException", "org.apache.dubbo.common.constants.CommonConstants.MERGEABLE_CLUSTER_NAME" ]
+  } ]
+}

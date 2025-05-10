@@ -1,0 +1,1081 @@
+{
+  "systemName" : "paimon",
+  "classes" : [ {
+    "name" : "CoreOptions",
+    "packageName" : "org.apache.paimon",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ "Serializable" ],
+    "methods" : [ {
+      "name" : "scanBoundedWatermark",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "tagCreationMode",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "getFieldDefaultValues",
+      "visibility" : "public",
+      "methodCalls" : [ "startsWith", "entrySet", "getKey", "toMap", "replace", "put", "getValue", "endsWith" ]
+    }, {
+      "name" : "dynamicBucketInitialBuckets",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "tagBatchCustomizedName",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "createFileFormat",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "fromIdentifier" ]
+    }, {
+      "name" : "partitionExpireTime",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "snapshotNumRetainMin",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "lookupCompactMaxInterval",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "max", "multiplySafely", "numSortedRunCompactionTrigger" ]
+    }, {
+      "name" : "manifestFormat",
+      "visibility" : "public",
+      "methodCalls" : [ "createFileFormat" ]
+    }, {
+      "name" : "type",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "sortEngine",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "scanManifestParallelism",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "commitMaxRetries",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "compactionForceUpLevel0",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "dynamicBucketMaxBuckets",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "scanFileCreationTimeMills",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "ignoreDelete",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "expireConfig",
+      "visibility" : "public",
+      "methodCalls" : [ "build", "changelogRetainMax", "snapshotRetainMax", "getOptional", "snapshotExpireLimit", "changelogMaxDeletes", "snapshotMaxDeletes", "snapshotRetainMin", "snapshotTimeRetain", "changelogTimeRetain", "builder", "orElse", "changelogRetainMin", "snapshotNumRetainMin", "snapshotNumRetainMax" ]
+    }, {
+      "name" : "tagCallbacks",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "httpReportMarkDoneActionParams",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "sequenceField",
+      "visibility" : "public",
+      "methodCalls" : [ "emptyList", "orElse", "getOptional", "map", "split", "asList" ]
+    }, {
+      "name" : "snapshotNumRetainMax",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "tagToPartitionField",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "fileReaderAsyncThreshold",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "writeManifestCache",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "consumerIgnoreProgress",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "tagNumRetainedMax",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "createCommitUser",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "randomUUID", "createCommitUser", "get" ]
+    }, {
+      "name" : "numLevels",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "numSortedRunCompactionTrigger", "incrementSafely" ]
+    }, {
+      "name" : "statsModePerLevel",
+      "visibility" : "public",
+      "methodCalls" : [ "entrySet", "stream", "toMap", "collect", "getKey", "get", "valueOf" ]
+    }, {
+      "name" : "dynamicBucketAssignerParallelism",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "fileFormatString",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "recordLevelExpireTime",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "tagCreateSuccessFile",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "partitionSinkStrategy",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "fileFormatPerLevel",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "toMap", "getKey", "collect", "valueOf", "entrySet", "get", "stream" ]
+    }, {
+      "name" : "lookupCompact",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "fieldListAggDelimiter",
+      "visibility" : "public",
+      "methodCalls" : [ "key", "get", "stringType", "defaultValue" ]
+    }, {
+      "name" : "localMergeEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "dynamicBucketTargetRowNum",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "consumerExpireTime",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "partitionMarkDoneActions",
+      "visibility" : "public",
+      "methodCalls" : [ "stream", "get", "toUpperCase", "map", "valueOf", "split", "replace", "collect", "toCollection" ]
+    }, {
+      "name" : "httpReportMarkDoneActionUrl",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "bucket",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "abs", "bucketKeyHashCode", "projectAsInsert", "apply", "bucket" ]
+    }, {
+      "name" : "lookupStrategy",
+      "visibility" : "public",
+      "methodCalls" : [ "mergeEngine", "changelogProducer", "get", "from", "deletionVectorsEnabled", "equals" ]
+    }, {
+      "name" : "recordLevelTimeField",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "getLocalSampleMagnification",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "spillCompressOptions",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "streamingReadDelay",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "fieldsDefaultFunc",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "partitionExpireMaxNum",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "streamReadType",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "tagPeriodFormatter",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "changelogProducer",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "tagAutomaticCompletion",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "scanTagName",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "branch",
+      "visibility" : "public",
+      "methodCalls" : [ "join", "encodeString", "toMap", "branch", "defaultValue", "key", "containsKey", "get" ]
+    }, {
+      "name" : "cachePageSize",
+      "visibility" : "public",
+      "methodCalls" : [ "getBytes", "get" ]
+    }, {
+      "name" : "snapshotTimeRetain",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "tagToPartitionPreview",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "pageSize",
+      "visibility" : "public",
+      "methodCalls" : [ "pageSize", "getBytes", "get" ]
+    }, {
+      "name" : "dataFileExternalPaths",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "snapshotWatermarkIdleTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "lookupCacheMaxMemory",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "changelogFileFormat",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "writeBufferSpillable",
+      "visibility" : "public",
+      "methodCalls" : [ "writeBufferSize", "orElse", "getOptional", "targetFileSize" ]
+    }, {
+      "name" : "varTypeSize",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "snapshotExpireLimit",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "externalPathStrategy",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "sortSpillThreshold",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "numSortedRunStopTrigger", "checkArgument", "incrementSafely" ]
+    }, {
+      "name" : "manifestDeleteFileDropStats",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "numSortedRunCompactionTrigger",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "fieldAggIgnoreRetract",
+      "visibility" : "public",
+      "methodCalls" : [ "key", "booleanType", "get", "defaultValue" ]
+    }, {
+      "name" : "fileCompressionPerLevel",
+      "visibility" : "public",
+      "methodCalls" : [ "toMap", "collect", "valueOf", "get", "entrySet", "stream", "getKey" ]
+    }, {
+      "name" : "formatType",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "httpReportMarkDoneActionTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "sortBySize",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "fromMap",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "definedAggFunc",
+      "visibility" : "public",
+      "methodCalls" : [ "toMap", "contains", "endsWith", "keySet", "startsWith" ]
+    }, {
+      "name" : "objectLocation",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument", "get", "type", "objectLocation" ]
+    }, {
+      "name" : "deleteFileThreadNum",
+      "visibility" : "public",
+      "methodCalls" : [ "getOptional", "getRuntime", "orElseGet", "availableProcessors" ]
+    }, {
+      "name" : "changelogLifecycleDecoupled",
+      "visibility" : "public",
+      "methodCalls" : [ "snapshotTimeRetain", "compareTo", "snapshotNumRetainMax", "changelogNumRetainMax", "changelogTimeRetain", "changelogNumRetainMin", "snapshotNumRetainMin" ]
+    }, {
+      "name" : "deleteForceProduceChangelog",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "scanVersion",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "scanTimestampMills",
+      "visibility" : "public",
+      "methodCalls" : [ "scanTimestamp", "getMillisecond", "parseTimestampData", "getDefault", "get" ]
+    }, {
+      "name" : "fieldNestedUpdateAggNestedKey",
+      "visibility" : "public",
+      "methodCalls" : [ "stringType", "toList", "map", "get", "emptyList", "split", "noDefaultValue", "key", "stream", "collect" ]
+    }, {
+      "name" : "changelogTimeRetain",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "orElse", "getOptional" ]
+    }, {
+      "name" : "setDefaultValues",
+      "visibility" : "public",
+      "methodCalls" : [ "set", "contains" ]
+    }, {
+      "name" : "indexColumnsOptions",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "changelogNumRetainMax",
+      "visibility" : "public",
+      "methodCalls" : [ "orElse", "get", "getOptional" ]
+    }, {
+      "name" : "fileIndexReadEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "consumerId",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "get" ]
+    }, {
+      "name" : "startupMode",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "isPresent", "startupMode", "getOptional" ]
+    }, {
+      "name" : "deletionVectorsEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "numSortedRunStopTrigger",
+      "visibility" : "public",
+      "methodCalls" : [ "addSafely", "get", "max", "numSortedRunCompactionTrigger" ]
+    }, {
+      "name" : "mergeEngine",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "scanTimestamp",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "tagCreationDelay",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "maxSizeAmplificationPercent",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "writeMaxWritersToSpill",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "commitCallbacks",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "partitionExpireStrategy",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "toMap",
+      "visibility" : "public",
+      "methodCalls" : [ "toMap" ]
+    }, {
+      "name" : "compactionDeleteRatioThreshold",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "sortedRunSizeRatio",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "splitOpenFileCost",
+      "visibility" : "public",
+      "methodCalls" : [ "getBytes", "get" ]
+    }, {
+      "name" : "snapshotExpireExecutionMode",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "partitionDefaultName",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "scanSnapshotId",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "rowkindField",
+      "visibility" : "public",
+      "methodCalls" : [ "getOptional" ]
+    }, {
+      "name" : "lookupCompressOptions",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "partitionTimestampFormatter",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "writeOnly",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "cleanEmptyDirectories",
+      "visibility" : "public",
+      "methodCalls" : [ "getKey", "add", "isEmpty", "clear", "getHierarchicalPartitionPath", "getValue", "forEach", "size", "deleteFiles", "entrySet", "bucketPath", "computeIfAbsent", "get" ]
+    }, {
+      "name" : "targetFileSize",
+      "visibility" : "public",
+      "methodCalls" : [ "getOptional", "orElse", "getBytes" ]
+    }, {
+      "name" : "crossPartitionUpsertIndexTtl",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "path",
+      "visibility" : "public",
+      "methodCalls" : [ "toPath", "path", "toMap", "get", "key" ]
+    }, {
+      "name" : "writeBufferSpillDiskSize",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "manifestCompression",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "dataFileThinMode",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "manifestMergeMinCount",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "incrementalToAutoTag",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "deletionVectorIndexFileTargetSize",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "tagPeriodDuration",
+      "visibility" : "public",
+      "methodCalls" : [ "getOptional" ]
+    }, {
+      "name" : "sinkWatermarkTimeZone",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "legacyPartitionName",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "manifestTargetSize",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "changelogFileCompression",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "writeBufferSize",
+      "visibility" : "public",
+      "methodCalls" : [ "getBytes", "get" ]
+    }, {
+      "name" : "changelogRowDeduplicate",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "fileCompression",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "optimizedCompactionInterval",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "fileFormat",
+      "visibility" : "public",
+      "methodCalls" : [ "fileName", "split", "createFileFormat" ]
+    }, {
+      "name" : "forceCreatingSnapshot",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "nextTagTime", "ofEpochMilli", "watermark", "minus", "latestSnapshot", "now", "ofInstant", "systemDefault", "getTagAutoCreation", "forceCreatingSnapshot" ]
+    }, {
+      "name" : "getOptions",
+      "visibility" : "public",
+      "methodCalls" : [ "getFields", "add", "isAssignableFrom", "getType", "emptyMap", "key", "location", "containsKey", "get", "forEach", "options", "toLowerCase", "startsWith", "put", "format", "name" ]
+    }, {
+      "name" : "dataFilePathDirectory",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "partitionedTableInMetastore",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "needLookup",
+      "visibility" : "public",
+      "methodCalls" : [ "lookupStrategy" ]
+    }, {
+      "name" : "asyncFileWrite",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "changelogFileStatsMode",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "prepareCommitWaitCompaction",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "needLookup" ]
+    }, {
+      "name" : "commitTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ "toMillis", "get" ]
+    }, {
+      "name" : "deletionVectorBitmap64",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "laziedLookup",
+      "visibility" : "public",
+      "methodCalls" : [ "lookupCompact", "get", "equals", "needLookup" ]
+    }, {
+      "name" : "streamingReadOverwrite",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "lookupCacheHighPrioPoolRatio",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "incrementalBetweenTimestamp",
+      "visibility" : "public",
+      "methodCalls" : [ "split", "getMillisecond", "of", "parseLong", "parseTimestampData", "get", "getDefault" ]
+    }, {
+      "name" : "statsDenseStore",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "manifestFullCompactionThresholdSize",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "statsMode",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "endInputCheckPartitionExpire",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "sequenceFieldSortOrderIsAscending",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "incrementalBetweenScanMode",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "lookupLocalFileType",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "toConfiguration",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "tagCreationPeriod",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "changelogFilePrefix",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "changelogNumRetainMin",
+      "visibility" : "public",
+      "methodCalls" : [ "getOptional", "orElse", "get" ]
+    }, {
+      "name" : "externalSpecificFS",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "compactionMinFileNum",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "changelogRowDeduplicateIgnoreFields",
+      "visibility" : "public",
+      "methodCalls" : [ "split", "orElse", "getOptional", "map", "asList", "emptyList" ]
+    }, {
+      "name" : "fieldAggFunc",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "stringType", "key", "noDefaultValue" ]
+    }, {
+      "name" : "aggregationRemoveRecordOnDelete",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "fileIndexInManifestThreshold",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "getBytes" ]
+    }, {
+      "name" : "partitionExpireCheckInterval",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "tagDefaultTimeRetained",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "scanWatermark",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "scanPlanSortPartition",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "queryAuthEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "partitionTimestampPattern",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "incrementalBetween",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "of", "split" ]
+    }, {
+      "name" : "commitForceCompact",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "crossPartitionUpsertBootstrapParallelism",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "splitTargetSize",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "getBytes" ]
+    }, {
+      "name" : "fileSuffixIncludeCompression",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "continuousDiscoveryInterval",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "dataFilePrefix",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "useWriteBufferForAppend",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "compactionFileSize",
+      "visibility" : "public",
+      "methodCalls" : [ "targetFileSize" ]
+    }, {
+      "name" : "localSortMaxNumFileHandles",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "localMergeBufferSize",
+      "visibility" : "public",
+      "methodCalls" : [ "getBytes", "get" ]
+    }, {
+      "name" : "sortSpillBufferSize",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "getBytes" ]
+    }, {
+      "name" : "fieldCollectAggDistinct",
+      "visibility" : "public",
+      "methodCalls" : [ "defaultValue", "key", "get", "booleanType" ]
+    }, {
+      "name" : "scanSplitMaxPerTask",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "dynamicPartitionOverwrite",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "partitionMarkDoneCustomClass",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    } ],
+    "imports" : [ "org.apache.paimon.lookup.LookupStrategy", "java.util.Set", "org.apache.paimon.options.MemorySize.VALUE_256_MB", "java.util.TimeZone", "org.apache.paimon.fs.Path", "java.util.UUID", "org.apache.paimon.options.Options", "java.lang.reflect.Field", "org.apache.paimon.annotation.VisibleForTesting", "org.apache.paimon.options.ConfigOptions", "java.util.Map", "org.apache.paimon.options.description.DescribedEnum", "java.util.Arrays", "org.apache.paimon.fileindex.FileIndexOptions", "org.apache.paimon.compression.CompressOptions", "java.time.Duration", "org.apache.paimon.options.description.TextElement.text", "org.apache.paimon.options.description.InlineElement", "org.apache.paimon.options.description.Description", "java.util.ArrayList", "org.apache.paimon.utils.Preconditions.checkArgument", "java.util.List", "org.apache.paimon.options.ConfigOptions.key", "org.apache.paimon.utils.DateTimeUtils", "org.apache.paimon.options.ExpireConfig", "java.util.stream.Collectors", "java.util.Optional", "org.apache.paimon.options.MemorySize", "java.util.Locale", "java.io.Serializable", "org.apache.paimon.utils.StringUtils", "org.apache.paimon.annotation.Documentation.ExcludeFromDocumentation", "org.apache.paimon.format.FileFormat", "java.util.HashMap", "org.apache.paimon.options.ConfigOption", "org.apache.paimon.annotation.Documentation", "org.apache.paimon.utils.MathUtils", "org.apache.paimon.utils.Pair", "java.util.HashSet", "java.util.Collections", "org.apache.paimon.annotation.Documentation.Immutable", "org.apache.paimon.options.MemorySize.VALUE_128_MB", "javax.annotation.Nullable" ]
+  }, {
+    "name" : "Factory",
+    "packageName" : "org.apache.paimon.mergetree.compact",
+    "extendedClasses" : [ "AbstractStreamOperatorFactory", "Serializable", "Factory" ],
+    "implementedInterfaces" : [ "OneInputStreamOperatorFactory", "MergeFunctionFactory", "Factory" ],
+    "methods" : [ {
+      "name" : "createStreamOperator",
+      "visibility" : "public",
+      "methodCalls" : [ "createStreamOperator" ]
+    }, {
+      "name" : "adjustProjection",
+      "visibility" : "public",
+      "methodCalls" : [ "toSet", "toTopLevelIndexes", "isEmpty", "collect", "of", "contains", "toArray", "toNestedIndexes", "boxed", "concat", "stream", "mapToInt", "add", "compareFields", "range", "get", "adjustProjection" ]
+    }, {
+      "name" : "lockContext",
+      "visibility" : "public",
+      "methodCalls" : [ "fromOptions", "of" ]
+    }, {
+      "name" : "lockFactory",
+      "visibility" : "public",
+      "methodCalls" : [ "discoverFactory", "of", "empty", "getClassLoader", "lockEnabled", "defaultLockFactory", "get" ]
+    }, {
+      "name" : "isCacheEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createOrRestore",
+      "visibility" : "public",
+      "methodCalls" : [ "emptyList", "toList", "map", "stream", "collect", "createOrRestore", "readAllDeletionVectors", "scan", "scanEntries" ]
+    }, {
+      "name" : "identifier",
+      "visibility" : "public",
+      "methodCalls" : [ "getIdentifier", "extraFiles", "embeddedIndex", "externalPath", "level", "fileName", "currentBranch", "identifier", "identifierFromPath", "toUri", "location", "toString" ]
+    }, {
+      "name" : "create",
+      "visibility" : "public",
+      "methodCalls" : [ "withPartition", "hasNext", "getFirstRowIndex", "previousValue", "nextInt", "getLastRowIndex", "intersects", "nextValue", "compareAndSet", "getWriterOptions", "physicalWriter", "getAttribute", "randomUUID", "valueOf", "addElement", "getPos", "createWriter", "compareFields", "toTopLevelIndexes", "forEach", "builder", "getOrDefault", "sequenceField", "toPrimitiveBoolean", "asList", "createFieldGetters", "project", "aggregationRemoveRecordOnDelete", "checkState", "fieldAggIgnoreRetract", "discoverFactory", "fieldNestedUpdateAggNestedKey", "lookup", "getFamilies", "fieldCollectAggDistinct", "identifier", "createLock", "ofNullable", "getSimpleName", "fromCatalog", "function", "literals", "splitAnd", "createDLFTokenLoader", "getOptional", "parseRegionFromUri", "assembleRows", "add", "addAll", "hash", "equals", "orElseGet", "index", "splitOr", "fromAccessKey", "mapToInt", "fromTokenLoader", "filter", "indexManifestFileFactory", "newNormalizedKeyComputer", "pageSize", "versionType", "newRecordComparator", "createBuffer", "getFieldDefaultValues", "getField", "recordLevelExpireTime", "getSeconds", "recordLevelTimeField", "getFieldIndex", "type", "info", "manifestListFactory", "createWriterFactory", "createReaderFactory", "manifestTargetSize", "fileIO", "fromMap", "manifestFileFactory", "dataType", "name", "toByteBuffer", "minValues", "nullCounts", "array", "id", "getLong", "createFieldGetter", "maxValues", "createOrRestore", "tagToPartitionPreview", "comment", "fields", "currentHighestFieldId", "tagDefaultTimeRetained", "tagCreationMode", "tagCreationDelay", "tagAutomaticCompletion", "sinkWatermarkTimeZone", "snapshotWatermarkIdleTimeout", "tagNumRetainedMax", "createForAutoTag", "tagCreationPeriod", "tagPeriodFormatter", "tagPeriodDuration", "orElseThrow", "createWithoutFallbackBranch", "path", "isNullOrWhitespaceOnly", "toMap", "error", "latest", "options", "branch", "isPresent", "createPartitions", "dropPartitions", "close", "alterPartitions", "markDonePartitions", "orElse", "rowkindField", "logicalRowType", "timeToTimestampWithLocalZone", "toZoneId", "intValue", "castToIntegral", "systemDefault", "formatDate", "dateToTimestampWithLocalZone", "fromEpochMillis", "fromBigDecimal", "formatTimestamp", "timestampWithLocalZoneToDate", "castToDecimal", "toTimestamp", "castFrom", "doubleValue", "valueArray", "size", "timestampToTimestampWithLocalZone", "timestampWithLocalZoneToTimestamp", "keyArray", "createElementGetter", "fromLocalDateTime", "unixTimestamp", "getElementOrNull", "apply", "toLocalDateTime", "truncate", "getDefault", "formatTimestampMillis", "toBinaryString", "is", "timestampWithLocalZoneToTime", "getMillisecond", "toCharacterString", "toBytes", "createNullCheckingFieldGetter", "longValue", "cast", "fromString", "getFieldOrNull", "getTypeAt", "resolve", "getFieldCount", "append", "compress", "toUpperCase", "zstdLevel", "toString", "toUri", "set", "cachePageSize", "lookupCompressOptions", "lookupLocalFileType", "load", "getTypeRoot", "getFieldTypes", "toTypeInfo", "getValueType", "asSQLString", "getScale", "getLength", "getFields", "getPrecision", "getFieldNames", "getElementType", "getKeyType", "getPrimitiveJavaObjectInspector", "createHiveCatalog", "toLowerCase", "keySet", "join", "creator", "format", "cdcConfigIdentifier", "createAction", "withParams", "withTableConfig", "logOffsets", "snapshot", "createSource", "getPreviousEnumerator", "map", "withMergeCondition", "withSourceSqls", "withNotMatchedInsert", "stream", "validate", "withNotMatchedBySourceDelete", "toList", "withMatchedDelete", "withMatchedUpsert", "contains", "withNotMatchedBySourceUpsert", "withTargetAlias", "getMultiParameter", "withSourceTable", "collect", "withDatabaseCompactMode", "withTableOptions", "build", "execute", "excludingTables", "includingTables", "includingDatabases", "copy", "withIncludingConsumers", "withExcludingConsumers", "createOrReplaceTagAction", "put", "containsKey", "parseDuration", "withWhereSql", "withOrderColumns", "split", "withOrderStrategy", "withPartitions", "withPartitionIdleTime", "trim", "checkArgument", "equalsIgnoreCase", "withFullCompaction", "optionalConfigMap", "checkCompactStrategy", "withParallelism", "withScanParallelism", "withSinkParallelism", "parseBoolean", "dryRun", "getIdentifier", "fromIdentifier", "isEmpty", "coreOptions", "create", "partitionTimestampPattern", "partitionDefaultName", "deletionVectorsEnabled", "isRestored", "toArray", "getClassLoader", "logicalPartitionType", "partitionKeys", "mergeEngine", "get", "empty", "primaryKeys", "createActions", "streamingCheckpointEnabled", "schema", "partitionTimestampFormatter", "ifPresent", "of", "getClass", "toConfiguration", "legacyPartitionName", "stateStore", "partitionedTableInMetastore", "toMillis", "catalogEnvironment", "partitionHandler", "has", "catalogConfigMap", "parseLong", "getRequired", "withNextSnapshotIds", "withBucketNum", "parseInt", "getPartitions", "olderThan" ]
+    }, {
+      "name" : "getStreamOperatorClass",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    } ],
+    "imports" : [ "org.apache.paimon.crosspartition.KeyPartOrRow", "org.apache.paimon.CoreOptions.PARTIAL_UPDATE_REMOVE_RECORD_ON_DELETE", "org.apache.paimon.CoreOptions.FIELDS_PREFIX", "java.util.stream.IntStream", "org.apache.paimon.CoreOptions.FIELDS_SEPARATOR", "java.util.function.Supplier", "org.apache.paimon.CoreOptions.PARTIAL_UPDATE_REMOVE_RECORD_ON_SEQUENCE_GROUP", "java.util.stream.Stream", "org.apache.paimon.utils.FieldsComparator", "java.util.HashSet", "org.apache.paimon.mergetree.compact.aggregate.FieldAggregator", "org.apache.paimon.utils.Preconditions.checkArgument", "java.util.Iterator", "org.apache.paimon.mergetree.compact.MergeFunctionFactory", "org.apache.paimon.utils.ArrayUtils", "org.apache.paimon.utils.InternalRowUtils.createFieldGetters", "org.apache.paimon.mergetree.compact.aggregate.factory.FieldLastNonNullValueAggFactory", "org.apache.paimon.mergetree.compact.aggregate.factory.FieldPrimaryKeyAggFactory", "org.apache.paimon.utils.Projection", "org.apache.paimon.utils.Preconditions.checkNotNull", "org.apache.paimon.mergetree.compact.aggregate.factory.FieldAggregatorFactory", "org.apache.paimon.mergetree.compact.aggregate.factory.FieldLastValueAggFactory", "org.apache.paimon.types.DataType", "org.apache.paimon.utils.SnapshotManager", "java.util.concurrent.Callable", "org.apache.paimon.partition.PartitionStatistics", "org.apache.paimon.operation.Lock", "java.io.EOFException", "org.apache.paimon.utils.IntHashSet", "org.apache.paimon.utils.IntIterator", "java.io.UncheckedIOException", "org.apache.paimon.stats.SimpleStatsConverter", "org.apache.paimon.format.SimpleStatsCollector", "org.apache.paimon.io.RollingFileWriter", "org.apache.paimon.schema.SchemaManager", "org.apache.paimon.io.SingleFileWriter", "org.apache.paimon.utils.ObjectsFile", "org.apache.paimon.utils.SegmentsCache", "org.apache.paimon.format.FormatWriterFactory", "org.apache.paimon.utils.PathFactory", "org.apache.paimon.utils.VersionedObjectSerializer", "org.apache.paimon.utils.ObjectSerializer", "org.apache.paimon.format.FormatReaderFactory", "org.apache.paimon.utils.FileStorePathFactory", "org.apache.paimon.format.FileFormat", "java.nio.ByteBuffer", "java.io.DataInputStream", "org.apache.paimon.fs.Path", "org.apache.paimon.fs.SeekableInputStream", "org.apache.paimon.deletionvectors.Bitmap64DeletionVector.toLittleEndianInt", "java.io.ByteArrayOutputStream", "org.apache.paimon.table.source.DeletionFile", "java.io.ByteArrayInputStream", "org.apache.paimon.fs.FileIO", "java.io.DataOutputStream", "org.apache.paimon.index.IndexFileHandler", "java.util.Collections", "org.apache.paimon.index.IndexFileMeta", "org.apache.paimon.manifest.IndexManifestEntry", "org.apache.paimon.Snapshot", "org.apache.paimon.deletionvectors.DeletionVectorsIndexFile.DELETION_VECTORS_INDEX", "org.apache.paimon.io.DataOutputView", "org.apache.paimon.utils.FunctionWithIOException", "org.apache.paimon.io.DataInputView", "org.apache.paimon.annotation.Public", "java.util.Arrays", "org.apache.paimon.format.SimpleColStats", "org.apache.paimon.statistics.TruncateSimpleColStatsCollector.TRUNCATE_PATTERN", "org.apache.paimon.data.serializer.Serializer", "java.util.regex.Matcher", "org.apache.paimon.schema.Schema", "org.apache.paimon.annotation.Experimental", "org.apache.paimon.flink.sink.StoreSinkWriteImpl", "org.apache.paimon.memory.MemoryPoolFactory", "org.apache.paimon.flink.sink.MultiTableCommittable", "org.apache.paimon.flink.sink.StoreSinkWriteStateImpl", "org.apache.paimon.flink.sink.StateUtils", "org.apache.paimon.flink.sink.StoreSinkWriteState", "org.apache.paimon.table.BucketMode", "org.apache.paimon.options.ConfigOptions", "org.apache.paimon.options.ConfigOption", "java.time.Duration", "org.apache.paimon.flink.sink.cdc.CdcRecordStoreWriteOperator.SKIP_CORRUPT_RECORD", "org.apache.paimon.flink.sink.cdc.CdcRecordStoreWriteOperator.MAX_RETRY_NUM_TIMES", "java.util.Optional", "org.apache.paimon.flink.sink.TableWriteOperator", "org.apache.paimon.flink.sink.cdc.CdcRecordStoreWriteOperator.RETRY_SLEEP_TIME", "org.apache.paimon.data.GenericRow", "org.apache.paimon.flink.sink.cdc.CdcRecordUtils.toGenericRow", "org.apache.paimon.flink.sink.Committable", "org.apache.paimon.flink.sink.PrepareCommitOperator", "org.apache.paimon.flink.sink.StoreSinkWrite", "org.apache.paimon.flink.sink.cdc.CdcRecordStoreWriteOperator.LOG_CORRUPT_RECORD", "org.apache.paimon.utils.Pair", "java.util.LinkedHashSet", "java.util.Set", "org.apache.flink.streaming.api.graph.StreamConfig", "org.apache.flink.streaming.runtime.tasks.StreamTask", "org.apache.paimon.flink.FlinkConnectorOptions.SINK_USE_MANAGED_MEMORY", "org.apache.flink.runtime.memory.MemoryManager", "org.apache.paimon.flink.memory.MemorySegmentAllocator", "org.apache.paimon.flink.utils.ManagedMemoryUtils.computeManagedMemory", "org.apache.paimon.memory.MemorySegmentPool", "org.apache.paimon.flink.memory.FlinkMemorySegmentPool", "org.apache.flink.api.common.functions.RichFunction", "org.apache.paimon.flink.log.LogWriteCallback", "org.apache.flink.api.common.functions.OpenContext", "org.apache.flink.types.Either", "org.apache.flink.streaming.util.functions.StreamingFunctionUtils", "org.apache.paimon.table.sink.SinkRecord", "org.apache.paimon.CoreOptions.LOG_IGNORE_DELETE", "org.apache.flink.streaming.runtime.tasks.ProcessingTimeService", "java.util.Objects", "org.apache.flink.api.common.functions.Function", "org.apache.flink.streaming.api.functions.sink.legacy.SinkFunction", "org.apache.flink.api.common.functions.util.FunctionUtils", "org.apache.flink.streaming.api.operators.InternalTimerService", "java.lang.reflect.InvocationTargetException", "org.apache.flink.configuration.Configuration", "org.apache.flink.api.common.state.CheckpointListener", "java.lang.reflect.Method", "org.apache.paimon.utils.SerializationUtils.deserializeBinaryRow", "org.apache.paimon.table.PrimaryKeyTableUtils.addKeyNamePrefix", "org.apache.paimon.mergetree.compact.MergeFunction", "org.apache.paimon.utils.KeyComparatorSupplier", "org.apache.paimon.CoreOptions.FULL_COMPACTION_DELTA_COMMITS", "org.apache.paimon.codegen.Projection", "org.apache.paimon.codegen.CodeGenUtils", "org.apache.paimon.utils.Preconditions", "java.util.LinkedList", "org.apache.flink.streaming.api.environment.CheckpointConfig", "org.apache.paimon.flink.FlinkConnectorOptions.CHANGELOG_PRODUCER_FULL_COMPACTION_TRIGGER_INTERVAL", "java.util.stream.Collectors", "org.apache.paimon.table.sink.RowKindGenerator", "org.apache.flink.streaming.api.watermark.Watermark", "org.apache.paimon.KeyValue", "org.apache.paimon.types.RowType", "org.apache.paimon.mergetree.localmerge.LocalMerger", "org.apache.paimon.mergetree.SortBufferWriteBuffer", "org.apache.paimon.schema.KeyValueFieldsExtractor", "org.apache.paimon.mergetree.localmerge.SortBufferLocalMerger", "org.apache.paimon.io.DataFileMetaSerializer", "org.apache.paimon.types.RowKind", "org.apache.paimon.io.DataFileMeta", "org.apache.flink.streaming.api.operators.BoundedOneInput", "org.apache.paimon.options.MemorySize", "org.apache.flink.streaming.api.operators.Output", "org.apache.paimon.schema.TableSchema", "org.apache.paimon.mergetree.localmerge.HashMapLocalMerger", "org.apache.paimon.CoreOptions", "org.apache.flink.table.data.RowData", "org.apache.paimon.memory.HeapMemorySegmentPool", "org.apache.paimon.utils.UserDefinedSeqComparator", "org.apache.paimon.data.BinaryRow", "org.apache.paimon.types.DataField", "org.apache.paimon.table.PrimaryKeyTableUtils", "org.apache.flink.streaming.api.operators.ChainingStrategy", "org.apache.flink.streaming.api.operators.StreamOperator", "java.util.HashMap", "org.apache.paimon.append.MultiTableAppendCompactTask", "org.apache.flink.streaming.api.operators.AbstractStreamOperator", "javax.annotation.Nullable", "java.util.List", "java.io.Serializable", "java.util.Collection", "java.io.IOException", "java.util.Map", "org.apache.flink.api.common.state.OperatorStateStore", "org.apache.flink.metrics.groups.OperatorMetricGroup", "org.apache.paimon.annotation.VisibleForTesting", "org.apache.paimon.table.FileStoreTable", "org.slf4j.LoggerFactory", "org.apache.flink.streaming.api.operators.StreamOperatorParameters", "org.apache.paimon.flink.source.AppendTableCompactSource", "java.util.concurrent.ExecutorService", "org.apache.paimon.append.AppendCompactTask", "java.util.concurrent.Future", "org.apache.paimon.table.sink.CommitMessage", "org.apache.paimon.options.Options", "java.util.concurrent.Executors", "org.slf4j.Logger", "java.util.concurrent.TimeUnit", "org.apache.paimon.flink.compact.AppendTableCompactor", "org.apache.paimon.utils.ExecutorThreadFactory", "org.apache.flink.streaming.api.operators.StreamOperatorFactory", "org.apache.flink.runtime.state.StateInitializationContext", "org.apache.paimon.flink.utils.RuntimeContextUtils", "org.apache.paimon.table.sink.ChannelComputer", "org.apache.flink.runtime.state.StateSnapshotContext", "org.apache.paimon.flink.ProcessRecordAttributesUtil", "org.apache.flink.streaming.runtime.streamrecord.RecordAttributes", "org.apache.paimon.flink.sink.StoreSinkWriteState.StateValueFilter", "org.apache.paimon.catalog.Identifier", "org.apache.flink.streaming.runtime.streamrecord.StreamRecord", "org.apache.paimon.catalog.CatalogLoader", "java.util.ArrayList", "org.apache.paimon.utils.ExceptionUtils", "org.apache.flink.streaming.api.operators.OneInputStreamOperator", "org.apache.paimon.utils.SerializableFunction", "org.apache.flink.api.java.tuple.Tuple2", "org.apache.paimon.crosspartition.IndexBootstrap", "org.apache.flink.streaming.api.operators.OneInputStreamOperatorFactory", "org.apache.paimon.catalog.Catalog", "org.apache.flink.streaming.api.operators.AbstractStreamOperatorFactory", "org.apache.paimon.data.InternalRow" ]
+  }, {
+    "name" : "Builder",
+    "packageName" : "org.apache.paimon.spark.procedure",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ "ProcedureBuilder" ],
+    "methods" : [ {
+      "name" : "fields",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "size", "field", "getFields" ]
+    }, {
+      "name" : "withTableCatalog",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withConf",
+      "visibility" : "public",
+      "methodCalls" : [ "self" ]
+    }, {
+      "name" : "config",
+      "visibility" : "public",
+      "methodCalls" : [ "set", "self", "format" ]
+    }, {
+      "name" : "withByteStreamSplitEncoding",
+      "visibility" : "public",
+      "methodCalls" : [ "self", "withByteStreamSplitEncoding" ]
+    }, {
+      "name" : "withColumnIndexTruncateLength",
+      "visibility" : "public",
+      "methodCalls" : [ "withColumnIndexTruncateLength", "self" ]
+    }, {
+      "name" : "withMaxPaddingSize",
+      "visibility" : "public",
+      "methodCalls" : [ "self" ]
+    }, {
+      "name" : "withBloomFilterNDV",
+      "visibility" : "public",
+      "methodCalls" : [ "withBloomFilterNDV", "self" ]
+    }, {
+      "name" : "withStatisticsTruncateLength",
+      "visibility" : "public",
+      "methodCalls" : [ "withStatisticsTruncateLength", "self" ]
+    }, {
+      "name" : "enableDictionaryEncoding",
+      "visibility" : "public",
+      "methodCalls" : [ "withDictionaryEncoding", "self" ]
+    }, {
+      "name" : "withWriterVersion",
+      "visibility" : "public",
+      "methodCalls" : [ "withWriterVersion", "self" ]
+    }, {
+      "name" : "withPageSize",
+      "visibility" : "public",
+      "methodCalls" : [ "self", "withPageSize" ]
+    }, {
+      "name" : "withDictionaryEncoding",
+      "visibility" : "public",
+      "methodCalls" : [ "self", "withDictionaryEncoding" ]
+    }, {
+      "name" : "enablePageWriteChecksum",
+      "visibility" : "public",
+      "methodCalls" : [ "self", "withPageWriteChecksumEnabled" ]
+    }, {
+      "name" : "withPageWriteChecksumEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "withPageWriteChecksumEnabled", "self" ]
+    }, {
+      "name" : "withCompressionCodec",
+      "visibility" : "public",
+      "methodCalls" : [ "self" ]
+    }, {
+      "name" : "withValidation",
+      "visibility" : "public",
+      "methodCalls" : [ "self" ]
+    }, {
+      "name" : "withMaxRowCountForPageSizeCheck",
+      "visibility" : "public",
+      "methodCalls" : [ "self", "withMaxRowCountForPageSizeCheck" ]
+    }, {
+      "name" : "enableValidation",
+      "visibility" : "public",
+      "methodCalls" : [ "self" ]
+    }, {
+      "name" : "withDictionaryPageSize",
+      "visibility" : "public",
+      "methodCalls" : [ "withDictionaryPageSize", "self" ]
+    }, {
+      "name" : "withWriteMode",
+      "visibility" : "public",
+      "methodCalls" : [ "self" ]
+    }, {
+      "name" : "withPageRowCountLimit",
+      "visibility" : "public",
+      "methodCalls" : [ "withPageRowCountLimit", "self" ]
+    }, {
+      "name" : "withBloomFilterEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "self", "withBloomFilterEnabled" ]
+    }, {
+      "name" : "withRowGroupSize",
+      "visibility" : "public",
+      "methodCalls" : [ "self", "withRowGroupSize" ]
+    }, {
+      "name" : "withBloomFilterFPP",
+      "visibility" : "public",
+      "methodCalls" : [ "withBloomFilterFPP", "self" ]
+    }, {
+      "name" : "withMinRowCountForPageSizeCheck",
+      "visibility" : "public",
+      "methodCalls" : [ "withMinRowCountForPageSizeCheck", "self" ]
+    }, {
+      "name" : "keyType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "copyWithoutProjection",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withReadValueType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "readValueType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withReadKeyType",
+      "visibility" : "public",
+      "methodCalls" : [ "withReadKeyType" ]
+    }, {
+      "name" : "option",
+      "visibility" : "public",
+      "methodCalls" : [ "put" ]
+    }, {
+      "name" : "withTotalBuckets",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withPartition",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withBucket",
+      "visibility" : "public",
+      "methodCalls" : [ "withBucket" ]
+    }, {
+      "name" : "withBucketPath",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withSnapshot",
+      "visibility" : "public",
+      "methodCalls" : [ "snapshot", "withSnapshot" ]
+    }, {
+      "name" : "withDataFiles",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withBeforeDeletionFiles",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "rawConvertible",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withBeforeFiles",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isStreaming",
+      "visibility" : "public",
+      "methodCalls" : [ "getConfiguration", "get", "isStreaming", "getExecutionEnvironment" ]
+    }, {
+      "name" : "withDataDeletionFiles",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "identifier",
+      "visibility" : "public",
+      "methodCalls" : [ "getIdentifier", "extraFiles", "embeddedIndex", "externalPath", "level", "fileName", "currentBranch", "identifier", "identifierFromPath", "toUri", "location", "toString" ]
+    }, {
+      "name" : "options",
+      "visibility" : "public",
+      "methodCalls" : [ "toMap", "putAll", "emptyMap", "schema", "options" ]
+    }, {
+      "name" : "location",
+      "visibility" : "public",
+      "methodCalls" : [ "location", "getFullName", "joining", "map", "collect", "stream", "format", "join" ]
+    }, {
+      "name" : "format",
+      "visibility" : "public",
+      "methodCalls" : [ "getElements", "stream", "getBlocks", "formatLink", "formatLineBreak", "getText", "toArray", "getStyles", "getEntries", "formatList", "newInstance", "getLink", "getFormat", "map", "formatText", "format" ]
+    }, {
+      "name" : "fileIO",
+      "visibility" : "public",
+      "methodCalls" : [ "fileIO", "get", "getScheme", "computeIfAbsent", "toUri", "getAuthority" ]
+    }, {
+      "name" : "rowType",
+      "visibility" : "public",
+      "methodCalls" : [ "getStructFieldsDataAsList", "checkNotNull", "sourceInspector", "get", "size", "setField", "value", "nullable", "add", "rowType", "newType", "type", "getFields", "addAll", "schema", "logicalRowType", "fields" ]
+    }, {
+      "name" : "partitionKeys",
+      "visibility" : "public",
+      "methodCalls" : [ "asList", "schema", "emptyList", "partitionKeys" ]
+    }, {
+      "name" : "objectLocation",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument", "get", "type", "objectLocation" ]
+    }, {
+      "name" : "objectFileIO",
+      "visibility" : "public",
+      "methodCalls" : [ "objectFileIO" ]
+    }, {
+      "name" : "underlyingTable",
+      "visibility" : "public",
+      "methodCalls" : [ "underlyingTable", "checkArgument", "getFields", "containsAll", "rowType" ]
+    }, {
+      "name" : "target",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "input",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "build",
+      "visibility" : "public",
+      "methodCalls" : [ "setGlobalSampleSize", "doBuild", "getWriteSupport", "toArray", "getFields", "fileReaderAsyncThreshold", "createDataFilePathFactory", "valueFields", "keyFields", "createKeyValueFields", "assign", "unmodifiableSet", "newBuilder", "getBytes", "concurrencyLevel", "maximumWeight", "removalListener", "weigher", "executor", "buildEventParserFactory", "recordParse", "checkRequiredOption", "buildSink", "flatMap", "createDatabase", "beforeBuildingSourceSink", "withParserFactory", "withTable", "withParallelism", "withInput", "withCatalogLoader", "withIdentifier", "tableName", "fileIO", "buildSchema", "location", "cdcRecordConvert", "buildPaimonSchema", "emptyList", "getSideOutput", "getName", "getClass", "createSource", "preCreateSource", "startupMode", "builder", "streamReadType", "streamingReadingValidate", "addSource", "buildHybridFirstSource", "contains", "getBinary", "deserializeBinaryRow", "toLogicalType", "createPaimonCatalog", "fromMap", "fromSource", "getRowType", "checkNotNull", "noWatermarks", "getTransformation", "createChannelComputer", "isEmpty", "fromRowType", "setMaxParallelism", "outputType", "buildDataStream", "buildSource", "rowType", "partitionDefaultName", "copy", "createPartitionPredicate", "mapToInternalRow", "logicalPartitionType", "rebalance", "size", "buildForFixedBucket", "process", "localMergeEnabled", "put", "convertSpecToInternal", "configure", "parallelism", "valueOf", "forward", "bucket", "set", "buildDynamicBucketSink", "sinkTo", "setSinkParallelism", "sourceBounded", "forCompact", "of", "setSortColumns", "setSortStrategy", "setRangeNumber", "sourceName", "sourceParallelism", "warn", "getLocalSampleMagnification", "setRuntimeMode", "env", "getDatabaseName", "sort", "parseInt", "build", "format", "getSorter", "getPredicate", "atZone", "filter", "minus", "get", "systemDefault", "toEpochMilli", "partition", "now", "toInstant", "checkArgument", "getType", "forRowData", "createCommitUser", "coreOptions", "setParallelism", "transform", "toConfiguration", "dynamicBucketInitialBuckets", "declareManagedMemory", "schema", "primaryKeys", "getParallelism", "bootstrapType", "max", "dynamicBucketAssignerParallelism", "sinkFrom", "logicalRowType", "name", "options", "assignerChannelComputer", "uid", "extractorFunction", "channelComputer2", "createHashBucketAssignerOperator", "key", "isNullOrWhitespaceOnly", "generateCustomUid", "forwardParallelism", "bucketMode", "getObjectName", "predicate", "setLocalSampleSize", "overwrite", "getConfiguration", "asSummaryString" ]
+    }, {
+      "name" : "setSortColumns",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSinkParallelism",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSortInCluster",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setLocalSampleSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setRangeNumber",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSortStrategy",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGlobalSampleSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "field",
+      "visibility" : "public",
+      "methodCalls" : [ "incrementAndGet", "add", "field", "column", "put" ]
+    }, {
+      "name" : "column",
+      "visibility" : "public",
+      "methodCalls" : [ "reassign", "column", "add", "type", "name", "incrementAndGet", "checkNotNull" ]
+    }, {
+      "name" : "primaryKey",
+      "visibility" : "public",
+      "methodCalls" : [ "primaryKey", "asList" ]
+    }, {
+      "name" : "comment",
+      "visibility" : "public",
+      "methodCalls" : [ "schema", "ofNullable", "empty", "comment" ]
+    }, {
+      "name" : "getHighestFieldId",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    } ],
+    "imports" : [ "java.util.HashSet", "org.apache.spark.sql.connector.catalog.Table", "org.apache.spark.sql.catalyst.analysis.NoSuchTableException", "org.apache.spark.sql.connector.catalog.CatalogPlugin", "org.apache.spark.sql.execution.datasources.v2.DataSourceV2Relation", "org.apache.spark.sql.connector.catalog.Identifier", "org.apache.spark.sql.catalyst.InternalRow", "org.apache.spark.sql.SparkSession", "org.apache.spark.sql.catalyst.expressions.GenericInternalRow", "org.apache.spark.sql.connector.catalog.TableCatalog", "org.apache.spark.sql.execution.CacheManager", "scala.Option", "org.apache.paimon.spark.SparkUtils", "org.apache.paimon.spark.SparkTable", "org.apache.parquet.schema.MessageType", "org.apache.parquet.hadoop.metadata.CompressionCodecName", "org.apache.parquet.crypto.FileEncryptionProperties", "org.apache.parquet.io.OutputFile", "org.apache.parquet.column.ParquetProperties", "org.apache.parquet.hadoop.metadata.ParquetMetadata", "org.apache.parquet.hadoop.api.WriteSupport", "org.apache.parquet.column.ParquetProperties.WriterVersion", "java.io.Closeable", "org.apache.hadoop.conf.Configuration", "org.apache.paimon.deletionvectors.ApplyDeletionVectorReader", "org.apache.paimon.utils.AsyncRecordReader", "org.apache.paimon.utils.FormatReaderMapping", "org.apache.paimon.deletionvectors.DeletionVector", "java.util.function.Supplier", "org.apache.paimon.reader.FileRecordReader", "org.apache.paimon.format.FileFormatDiscover", "org.apache.paimon.schema.SchemaManager", "org.apache.paimon.schema.KeyValueFieldsExtractor", "org.apache.paimon.partition.PartitionUtils", "org.apache.paimon.reader.RecordReader", "org.apache.paimon.predicate.Predicate", "org.apache.paimon.format.OrcFormatReaderContext", "org.apache.paimon.format.FormatKey", "org.apache.paimon.format.FormatReaderContext", "org.apache.paimon.manifest.FileSource", "org.apache.paimon.KeyValueThinSerializer", "org.apache.paimon.annotation.VisibleForTesting", "org.apache.paimon.utils.StatsCollectorFactories", "org.apache.paimon.fs.Path", "org.apache.paimon.format.FileFormat", "org.apache.paimon.utils.FileStorePathFactory", "org.apache.paimon.fileindex.FileIndexOptions", "org.apache.paimon.statistics.SimpleColStatsCollector", "java.util.function.Function", "org.apache.paimon.format.SimpleStatsCollector", "org.apache.paimon.KeyValueSerializer", "org.apache.paimon.format.SimpleStatsExtractor", "org.apache.paimon.statistics.NoneSimpleColStatsCollector", "org.apache.paimon.format.FormatWriterFactory", "org.apache.paimon.utils.Pair", "org.apache.paimon.KeyValue", "org.apache.paimon.shade.jackson2.com.fasterxml.jackson.annotation.JsonGetter", "org.apache.paimon.shade.jackson2.com.fasterxml.jackson.annotation.JsonInclude", "org.apache.paimon.CoreOptions", "org.apache.paimon.shade.jackson2.com.fasterxml.jackson.annotation.JsonIgnoreProperties", "org.apache.paimon.io.DataFilePathFactory.INDEX_PATH_SUFFIX", "org.apache.paimon.predicate.CompareUtils", "org.apache.paimon.io.DataInputViewStreamWrapper", "org.apache.paimon.io.DataFileMeta09Serializer", "java.io.ObjectInputStream", "org.apache.paimon.io.DataOutputViewStreamWrapper", "org.apache.paimon.io.DataFileMeta", "org.apache.paimon.io.DataFileMeta10LegacySerializer", "org.apache.paimon.io.DataFileMeta08Serializer", "java.util.OptionalLong", "org.apache.paimon.data.BinaryRow", "org.apache.paimon.stats.SimpleStatsEvolution", "org.apache.paimon.io.DataOutputView", "org.apache.paimon.utils.InternalRowUtils", "java.io.ObjectOutputStream", "org.apache.paimon.utils.FunctionWithIOException", "org.apache.paimon.utils.Preconditions.checkState", "org.apache.paimon.io.DataInputView", "org.apache.paimon.stats.SimpleStatsEvolutions", "org.apache.paimon.io.DataFileMetaSerializer", "org.apache.paimon.utils.SerializationUtils", "org.apache.paimon.table.source.ReadBuilder", "org.apache.paimon.manifest.IndexManifestEntry", "org.apache.paimon.utils.SimpleFileReader", "org.apache.paimon.catalog.Identifier", "org.apache.paimon.Snapshot", "java.util.Optional", "org.apache.paimon.manifest.ManifestFileMeta", "org.apache.paimon.manifest.ManifestEntry", "java.time.Duration", "org.apache.paimon.stats.Statistics", "org.apache.paimon.types.DataTypeRoot", "org.apache.paimon.types.DataTypeFamily", "org.apache.paimon.table.DelegatedFileStoreTable", "org.apache.paimon.table.FileStoreTable", "org.apache.paimon.types.DataTypes", "org.apache.paimon.table.sink.BatchWriteBuilder", "org.apache.paimon.table.sink.TableWriteImpl", "org.apache.paimon.manifest.ManifestCacheFilter", "org.apache.paimon.table.sink.StreamWriteBuilder", "org.apache.paimon.table.sink.TableCommitImpl", "org.apache.paimon.fs.FileIO", "org.apache.paimon.schema.TableSchema", "java.util.stream.Collectors", "org.apache.paimon.annotation.Public", "java.util.stream.IntStream", "org.apache.paimon.table.SpecialFields", "org.apache.paimon.shade.jackson2.com.fasterxml.jackson.annotation.JsonProperty", "org.apache.paimon.shade.jackson2.com.fasterxml.jackson.annotation.JsonCreator", "java.util.Set", "java.io.IOException", "org.apache.paimon.utils.StringUtils", "org.apache.paimon.shade.jackson2.com.fasterxml.jackson.core.JsonGenerator", "org.apache.paimon.flink.FlinkConnectorOptions", "java.util.Collections", "org.apache.paimon.utils.Preconditions.checkArgument", "org.apache.paimon.utils.Preconditions.checkNotNull", "java.util.List", "org.apache.paimon.CoreOptions.OrderType", "java.util.Map", "org.apache.paimon.annotation.Experimental", "java.util.HashMap", "org.apache.paimon.types.RowKind", "org.apache.paimon.types.DataType", "javax.annotation.Nullable", "java.io.Serializable", "java.util.Objects", "org.apache.paimon.types.ReassignFieldId", "org.apache.paimon.utils.Preconditions", "java.util.concurrent.atomic.AtomicInteger", "org.apache.paimon.types.DataField", "java.util.Arrays", "java.util.ArrayList", "org.apache.paimon.data.InternalRow", "org.apache.paimon.types.MapType", "org.apache.hadoop.hive.serde2.objectinspector.ListObjectInspector", "org.apache.paimon.hive.objectinspector.WriteableObjectInspector", "org.apache.paimon.types.RowType", "org.apache.paimon.types.ArrayType", "org.apache.hadoop.hive.serde2.objectinspector.MapObjectInspector", "org.apache.hadoop.hive.serde2.objectinspector.StructObjectInspector", "org.apache.hadoop.hive.serde2.objectinspector.ObjectInspector", "org.apache.hadoop.hive.serde2.objectinspector.StructField", "org.apache.paimon.data.GenericRow", "org.apache.paimon.data.InternalArray", "org.apache.paimon.shade.guava30.com.google.common.collect.Maps", "org.apache.paimon.data.InternalMap", "org.apache.paimon.shade.guava30.com.google.common.collect.Lists", "org.apache.hadoop.hive.serde2.objectinspector.PrimitiveObjectInspector", "org.apache.paimon.hive.objectinspector.HivePaimonArray" ]
+  } ]
+}

@@ -1,0 +1,2173 @@
+{
+  "systemName" : "RxJava",
+  "classes" : [ {
+    "name" : "Flowable",
+    "packageName" : "io.reactivex.rxjava3.core",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ "Publisher" ],
+    "methods" : [ {
+      "name" : "takeLast",
+      "visibility" : "public",
+      "methodCalls" : [ "computation", "onAssembly", "takeLast", "requireNonNull", "bufferSize", "trampoline", "verifyPositive" ]
+    }, {
+      "name" : "combineLatestArray",
+      "visibility" : "public",
+      "methodCalls" : [ "combineLatestArray", "empty", "onAssembly", "verifyPositive", "bufferSize", "requireNonNull" ]
+    }, {
+      "name" : "debounce",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "debounce", "computation", "onAssembly" ]
+    }, {
+      "name" : "mergeArrayDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "flatMap", "flatMapMaybe", "identity", "max", "flatMapSingle", "fromArray", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "error",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "lazySet", "cancel", "onError", "dispose", "justSupplier", "enterTransform", "error", "truncateFinal", "add", "addLast", "trimHead", "trimFinal", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "bufferSize",
+      "visibility" : "public",
+      "methodCalls" : [ "bufferSize" ]
+    }, {
+      "name" : "fromSingle",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "subscribe",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribe", "onComplete", "onNext", "manageRequests", "cancel", "verifyPositive", "boundedConsumer", "verifyNonBlocking", "hasNext", "isCancelled", "complete", "wrapOrThrow", "take", "dispose", "poll", "acceptFull", "awaitForComplete", "subscribeWith", "initCause", "drain", "error", "validate", "throwIfFatal", "add", "emptyConsumer", "subscribeActual", "requireNonNull", "onSubscribe", "onError", "get", "reportError", "createWorker", "createSubscriber", "createWorkers", "lazySet", "call", "compareAndSet", "replay", "remove", "isDisposed" ]
+    }, {
+      "name" : "repeatUntil",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull", "fromPublisher", "toFlowable", "repeatUntil" ]
+    }, {
+      "name" : "amb",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "parallel",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribe", "from" ]
+    }, {
+      "name" : "publish",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "publish", "bufferSize", "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "onErrorComplete",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onErrorComplete", "alwaysTrue", "onAssembly" ]
+    }, {
+      "name" : "mergeWith",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "merge", "requireNonNull", "mergeArray" ]
+    }, {
+      "name" : "switchMapSingle",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "onBackpressureLatest",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "count",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly" ]
+    }, {
+      "name" : "throttleLatest",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly", "throttleLatest", "computation" ]
+    }, {
+      "name" : "toMap",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "toMapKeySelector", "toMapKeyValueSelector", "collect", "asSupplier" ]
+    }, {
+      "name" : "forEachWhile",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribe", "forEachWhile", "requireNonNull" ]
+    }, {
+      "name" : "switchMapDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "switchMap0", "empty", "requireNonNull", "onAssembly", "get", "switchMapDelayError", "scalarXMap", "verifyPositive", "bufferSize" ]
+    }, {
+      "name" : "startWithArray",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "concatArray", "empty", "fromArray" ]
+    }, {
+      "name" : "flatMapSingle",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "flatMapSingle", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "doOnEach",
+      "visibility" : "public",
+      "methodCalls" : [ "subscriberOnComplete", "subscriberOnError", "subscriberOnNext", "observerOnNext", "observerOnError", "requireNonNull", "observerOnComplete", "notificationOnComplete", "notificationOnError", "notificationOnNext" ]
+    }, {
+      "name" : "concatEagerDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "onAssembly", "requireNonNull", "wrap", "bufferSize", "concatEagerDelayError", "identity", "instance", "concatMapEagerDelayError", "fromIterable", "fromPublisher", "toFlowable" ]
+    }, {
+      "name" : "share",
+      "visibility" : "public",
+      "methodCalls" : [ "refCount", "publish" ]
+    }, {
+      "name" : "lastOrError",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly" ]
+    }, {
+      "name" : "doOnRequest",
+      "visibility" : "public",
+      "methodCalls" : [ "doOnLifecycle", "requireNonNull", "onAssembly", "emptyConsumer" ]
+    }, {
+      "name" : "singleOrError",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly" ]
+    }, {
+      "name" : "lastOrErrorStage",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribeWith" ]
+    }, {
+      "name" : "take",
+      "visibility" : "public",
+      "methodCalls" : [ "takeUntil", "onAssembly", "timer" ]
+    }, {
+      "name" : "timeout",
+      "visibility" : "public",
+      "methodCalls" : [ "timeout", "timer", "onAssembly", "computation", "requireNonNull" ]
+    }, {
+      "name" : "blockingSubscribe",
+      "visibility" : "public",
+      "methodCalls" : [ "onSubscribe", "subscribe", "blockingConsume", "emptyConsumer", "requireNonNull", "blockingSubscribe" ]
+    }, {
+      "name" : "mergeDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "fromPublisher", "bufferSize", "flatMap", "flatMapMaybe", "verifyPositive", "mergeArrayDelayError", "mergeDelayError", "flatMapSingle", "fromArray", "fromIterable", "identity", "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "switchMapMaybeDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "first",
+      "visibility" : "public",
+      "methodCalls" : [ "elementAt" ]
+    }, {
+      "name" : "toSortedList",
+      "visibility" : "public",
+      "methodCalls" : [ "listSorter", "naturalComparator", "toList", "createArrayList", "requireNonNull", "instance", "map", "reduce", "toSortedList", "verifyPositive", "parallelism", "onAssembly" ]
+    }, {
+      "name" : "forEach",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribe" ]
+    }, {
+      "name" : "startWith",
+      "visibility" : "public",
+      "methodCalls" : [ "concatWith", "requireNonNull", "concatArray", "concat", "toFlowable", "wrap", "toObservable", "startWith" ]
+    }, {
+      "name" : "firstElement",
+      "visibility" : "public",
+      "methodCalls" : [ "elementAt" ]
+    }, {
+      "name" : "sequenceEqual",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "bufferSize", "sequenceEqual", "equalsPredicate", "onAssembly", "andThen", "mergeArrayDelayError", "requireNonNull", "just" ]
+    }, {
+      "name" : "flatMapIterable",
+      "visibility" : "public",
+      "methodCalls" : [ "flatMapIntoIterable", "flatMap", "onAssembly", "requireNonNull", "verifyPositive", "bufferSize", "flatMapIterable" ]
+    }, {
+      "name" : "subscribeWith",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribe" ]
+    }, {
+      "name" : "zip",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "bufferSize", "zipArray", "onAssembly", "requireNonNull", "toFunction" ]
+    }, {
+      "name" : "cache",
+      "visibility" : "public",
+      "methodCalls" : [ "cacheWithInitialCapacity", "onAssembly" ]
+    }, {
+      "name" : "doOnLifecycle",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull", "emptyConsumer" ]
+    }, {
+      "name" : "contains",
+      "visibility" : "public",
+      "methodCalls" : [ "equalsWith", "any", "equalsPredicate", "requireNonNull", "contains", "onAssembly" ]
+    }, {
+      "name" : "onErrorReturn",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "retryUntil",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "retry", "predicateReverseFor" ]
+    }, {
+      "name" : "toFuture",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribeWith" ]
+    }, {
+      "name" : "switchMapCompletable",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "defer",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "singleElement",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly" ]
+    }, {
+      "name" : "concatDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "concatMapDelayError", "requireNonNull", "bufferSize", "verifyPositive", "onAssembly", "concatMapMaybeDelayError", "concatMapSingleDelayError", "concatDelayError", "fromIterable", "fromPublisher", "concatMapCompletableDelayError", "identity" ]
+    }, {
+      "name" : "fromArray",
+      "visibility" : "public",
+      "methodCalls" : [ "just", "empty", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "buffer",
+      "visibility" : "public",
+      "methodCalls" : [ "computation", "buffer", "verifyPositive", "onAssembly", "requireNonNull", "createArrayList", "asSupplier" ]
+    }, {
+      "name" : "throttleFirst",
+      "visibility" : "public",
+      "methodCalls" : [ "computation", "requireNonNull", "onAssembly", "throttleFirst" ]
+    }, {
+      "name" : "reduce",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "create",
+      "visibility" : "public",
+      "methodCalls" : [ "setRemoveOnCancelPolicy", "createFrom", "onAssembly", "requireNonNull", "verifyPositive", "create", "bufferSize" ]
+    }, {
+      "name" : "materialize",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly" ]
+    }, {
+      "name" : "switchMapCompletableDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "observeOn",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "observeOn", "bufferSize", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "ignoreElements",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly" ]
+    }, {
+      "name" : "fromAction",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "singleStage",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribeWith" ]
+    }, {
+      "name" : "defaultIfEmpty",
+      "visibility" : "public",
+      "methodCalls" : [ "just", "switchIfEmpty", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "interval",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "interval", "computation", "max", "requireNonNull" ]
+    }, {
+      "name" : "groupJoin",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "ambArray",
+      "visibility" : "public",
+      "methodCalls" : [ "fromPublisher", "empty", "emptyThrower", "error", "requireNonNull", "complete", "onAssembly", "wrap" ]
+    }, {
+      "name" : "mergeArray",
+      "visibility" : "public",
+      "methodCalls" : [ "flatMap", "empty", "fromArray", "identity", "flatMapSingle", "max", "complete", "onAssembly", "wrap", "requireNonNull" ]
+    }, {
+      "name" : "singleOrErrorStage",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribeWith" ]
+    }, {
+      "name" : "blockingSingle",
+      "visibility" : "public",
+      "methodCalls" : [ "singleOrError", "singleElement", "blockingGet", "single" ]
+    }, {
+      "name" : "repeat",
+      "visibility" : "public",
+      "methodCalls" : [ "empty", "onAssembly", "repeat", "toFlowable", "fromPublisher" ]
+    }, {
+      "name" : "single",
+      "visibility" : "public",
+      "methodCalls" : [ "blockingGet", "requireNonNull", "onAssembly", "onSingleScheduler" ]
+    }, {
+      "name" : "fromStream",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "concatMapEager",
+      "visibility" : "public",
+      "methodCalls" : [ "concatMapEager", "requireNonNull", "verifyPositive", "onAssembly", "bufferSize" ]
+    }, {
+      "name" : "fromCompletable",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "blockingIterable",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "bufferSize", "blockingIterable" ]
+    }, {
+      "name" : "timer",
+      "visibility" : "public",
+      "methodCalls" : [ "max", "onAssembly", "computation", "timer", "requireNonNull" ]
+    }, {
+      "name" : "reduceWith",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "doOnCancel",
+      "visibility" : "public",
+      "methodCalls" : [ "doOnLifecycle", "requireNonNull", "onAssembly", "emptyConsumer" ]
+    }, {
+      "name" : "firstStage",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribeWith" ]
+    }, {
+      "name" : "scan",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "justSupplier", "requireNonNull", "scanWith" ]
+    }, {
+      "name" : "ofType",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "filter", "cast", "isInstanceOf" ]
+    }, {
+      "name" : "concat",
+      "visibility" : "public",
+      "methodCalls" : [ "concatMap", "fromPublisher", "concatMapDelayError", "bufferSize", "concatArray", "fromArray", "identity", "fromIterable", "concatMapSingleDelayError", "verifyPositive", "requireNonNull", "onAssembly", "concat" ]
+    }, {
+      "name" : "serialize",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly" ]
+    }, {
+      "name" : "onBackpressureBuffer",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull", "verifyPositive", "bufferSize", "emptyConsumer", "onBackpressureBuffer" ]
+    }, {
+      "name" : "never",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly" ]
+    }, {
+      "name" : "onErrorResumeWith",
+      "visibility" : "public",
+      "methodCalls" : [ "justFunction", "requireNonNull", "onErrorResumeNext" ]
+    }, {
+      "name" : "hide",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly" ]
+    }, {
+      "name" : "collectInto",
+      "visibility" : "public",
+      "methodCalls" : [ "collect", "justSupplier", "requireNonNull" ]
+    }, {
+      "name" : "replay",
+      "visibility" : "public",
+      "methodCalls" : [ "throwIfFatal", "isError", "dispose", "produced", "add", "computation", "requireNonNull", "replaySupplier", "verifyPositive", "createFrom", "multicastSelector", "create", "replay", "index", "leaveTransform", "accept", "isDisposed", "isComplete", "getError", "get", "addAndGet", "onNext", "getHead", "onError", "getAndIncrement", "onComplete" ]
+    }, {
+      "name" : "doAfterTerminate",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly", "emptyConsumer" ]
+    }, {
+      "name" : "filter",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "blockingStream",
+      "visibility" : "public",
+      "methodCalls" : [ "stream", "blockingIterable", "iterator", "onClose", "blockingStream", "spliteratorUnknownSize", "bufferSize" ]
+    }, {
+      "name" : "safeSubscribe",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribe", "requireNonNull" ]
+    }, {
+      "name" : "retryWhen",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull", "singleElement", "retryWhen", "fromPublisher", "toFlowable" ]
+    }, {
+      "name" : "join",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "blockingForEach",
+      "visibility" : "public",
+      "methodCalls" : [ "next", "hasNext", "dispose", "blockingIterable", "iterator", "throwIfFatal", "bufferSize", "wrapOrThrow", "requireNonNull", "accept", "blockingForEach" ]
+    }, {
+      "name" : "withLatestFrom",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "withLatestFrom", "requireNonNull", "toFunction" ]
+    }, {
+      "name" : "combineLatest",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "verifyPositive", "combineLatest", "bufferSize", "combineLatestArray", "requireNonNull", "toFunction" ]
+    }, {
+      "name" : "skipLast",
+      "visibility" : "public",
+      "methodCalls" : [ "computation", "verifyPositive", "skipLast", "trampoline", "bufferSize", "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "intervalRange",
+      "visibility" : "public",
+      "methodCalls" : [ "intervalRange", "max", "onAssembly", "delay", "empty", "computation", "requireNonNull" ]
+    }, {
+      "name" : "concatMapMaybeDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly", "concatMapMaybeDelayError", "verifyPositive" ]
+    }, {
+      "name" : "mapOptional",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "firstOrErrorStage",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribeWith" ]
+    }, {
+      "name" : "flatMapCompletable",
+      "visibility" : "public",
+      "methodCalls" : [ "await", "subscribeWith", "verifyPositive", "flatMapCompletable", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "subscribeOn",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribeOn", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "lastStage",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribeWith" ]
+    }, {
+      "name" : "window",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "bufferSize", "verifyPositive", "computation", "requireNonNull", "window" ]
+    }, {
+      "name" : "startWithItem",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "concatArray", "just" ]
+    }, {
+      "name" : "flatMapStream",
+      "visibility" : "public",
+      "methodCalls" : [ "flatMapStream", "bufferSize", "onAssembly", "verifyPositive", "requireNonNull" ]
+    }, {
+      "name" : "concatMapDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "empty", "bufferSize", "get", "scalarXMap", "verifyPositive", "requireNonNull", "concatMapDelayError", "onAssembly" ]
+    }, {
+      "name" : "fromSupplier",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "skip",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "timer", "skipUntil" ]
+    }, {
+      "name" : "fromRunnable",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "blockingMostRecent",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull" ]
+    }, {
+      "name" : "delay",
+      "visibility" : "public",
+      "methodCalls" : [ "delaySubscription", "itemDelay", "flatMap", "max", "onAssembly", "computation", "requireNonNull", "delay" ]
+    }, {
+      "name" : "elementAtOrError",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly" ]
+    }, {
+      "name" : "unsafeCreate",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "concatMapEagerDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "concatMapEagerDelayError", "requireNonNull", "onAssembly", "bufferSize" ]
+    }, {
+      "name" : "doOnError",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly", "emptyConsumer" ]
+    }, {
+      "name" : "rangeLong",
+      "visibility" : "public",
+      "methodCalls" : [ "empty", "onAssembly", "just" ]
+    }, {
+      "name" : "just",
+      "visibility" : "public",
+      "methodCalls" : [ "fromArray", "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "concatMap",
+      "visibility" : "public",
+      "methodCalls" : [ "empty", "get", "scalarXMap", "flatMap", "verifyPositive", "requireNonNull", "concatMap", "onAssembly" ]
+    }, {
+      "name" : "isEmpty",
+      "visibility" : "public",
+      "methodCalls" : [ "lvConsumerNode", "lvProducerNode", "producerIndex", "tryReplenish", "alwaysFalse", "all", "onAssembly", "hasNext", "clear", "isEmpty", "get" ]
+    }, {
+      "name" : "switchOnNextDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "fromPublisher", "switchMapDelayError", "switchOnNextDelayError", "verifyPositive", "bufferSize", "identity", "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "retry",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly", "alwaysTrue", "singleElement", "toFlowable", "retry", "fromPublisher" ]
+    }, {
+      "name" : "to",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "apply" ]
+    }, {
+      "name" : "timestamp",
+      "visibility" : "public",
+      "methodCalls" : [ "timestampWith", "map", "timestamp", "computation", "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "groupBy",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribe", "bufferSize", "identity", "verifyPositive", "groupBy", "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "doAfterNext",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull", "emptyConsumer" ]
+    }, {
+      "name" : "doOnNext",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly", "emptyConsumer" ]
+    }, {
+      "name" : "switchMapMaybe",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "merge",
+      "visibility" : "public",
+      "methodCalls" : [ "fromPublisher", "flatMap", "bufferSize", "verifyPositive", "merge", "flatMapMaybe", "mergeArray", "flatMapSingle", "identity", "fromArray", "fromIterable", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "onErrorReturnItem",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "onErrorReturn", "justFunction", "requireNonNull" ]
+    }, {
+      "name" : "distinctUntilChanged",
+      "visibility" : "public",
+      "methodCalls" : [ "identity", "requireNonNull", "onAssembly", "equalsPredicate", "distinctUntilChanged" ]
+    }, {
+      "name" : "distinct",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull", "identity", "createHashSet", "distinct" ]
+    }, {
+      "name" : "concatMapStream",
+      "visibility" : "public",
+      "methodCalls" : [ "bufferSize", "onAssembly", "verifyPositive", "requireNonNull", "flatMapStream" ]
+    }, {
+      "name" : "onBackpressureReduce",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "concatMapMaybe",
+      "visibility" : "public",
+      "methodCalls" : [ "concatMapMaybe", "onAssembly", "requireNonNull", "verifyPositive", "flatMapMaybe" ]
+    }, {
+      "name" : "skipUntil",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "toObservable",
+      "visibility" : "public",
+      "methodCalls" : [ "fuseToObservable", "onAssembly" ]
+    }, {
+      "name" : "fromPublisher",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "firstOrError",
+      "visibility" : "public",
+      "methodCalls" : [ "elementAtOrError" ]
+    }, {
+      "name" : "throttleWithTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ "debounce" ]
+    }, {
+      "name" : "switchMap",
+      "visibility" : "public",
+      "methodCalls" : [ "switchMap0", "requireNonNull", "scalarXMap", "bufferSize", "empty", "verifyPositive", "switchMap", "onAssembly", "get" ]
+    }, {
+      "name" : "unsubscribeOn",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "last",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "onTerminateDetach",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly" ]
+    }, {
+      "name" : "blockingLast",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "subscribe", "blockingGet" ]
+    }, {
+      "name" : "fromIterable",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "zipWith",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull", "zip" ]
+    }, {
+      "name" : "switchMapSingleDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "lift",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "doOnTerminate",
+      "visibility" : "public",
+      "methodCalls" : [ "actionConsumer", "requireNonNull", "onAssembly", "emptyConsumer" ]
+    }, {
+      "name" : "any",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "map",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "lastElement",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly" ]
+    }, {
+      "name" : "elementAt",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "toList",
+      "visibility" : "public",
+      "methodCalls" : [ "createArrayList", "onAssembly", "toList", "verifyPositive", "requireNonNull" ]
+    }, {
+      "name" : "range",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribe", "just", "onAssembly", "empty" ]
+    }, {
+      "name" : "delaySubscription",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly", "computation", "delaySubscription", "timer", "andThen" ]
+    }, {
+      "name" : "zipArray",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "empty", "error", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "combineLatestDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "combineLatestDelayError", "requireNonNull", "onAssembly", "bufferSize" ]
+    }, {
+      "name" : "flatMap",
+      "visibility" : "public",
+      "methodCalls" : [ "await", "subscribeWith", "subscribe", "get", "merge", "scalarXMap", "empty", "flatMapWithCombiner", "bufferSize", "verifyPositive", "flatMap", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "ambWith",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "ambArray" ]
+    }, {
+      "name" : "concatArrayEagerDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "bufferSize", "identity", "concatArrayEagerDelayError", "instance", "concatMapEagerDelayError", "fromArray", "toFlowable" ]
+    }, {
+      "name" : "skipWhile",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "concatMapCompletable",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "requireNonNull", "concatMapCompletable", "onAssembly", "flatMapCompletable" ]
+    }, {
+      "name" : "concatArrayEager",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "verifyPositive", "requireNonNull", "bufferSize", "concatMapEagerDelayError", "concatArrayEager", "identity", "instance", "toFlowable", "fromArray", "concatMapEager" ]
+    }, {
+      "name" : "cast",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "castFunction", "map" ]
+    }, {
+      "name" : "onBackpressureDrop",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "combineLatestArrayDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "empty", "combineLatestArrayDelayError", "verifyPositive", "requireNonNull", "bufferSize", "onAssembly" ]
+    }, {
+      "name" : "timeInterval",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly", "timeInterval", "computation" ]
+    }, {
+      "name" : "test",
+      "visibility" : "public",
+      "methodCalls" : [ "getAsBoolean", "equals", "isInstance", "dispose", "subscribe", "isError", "onNext", "onError", "get", "getError", "cancel", "isComplete", "decrementAndGet", "accept", "getValue", "onComplete", "createDefault", "acceptFull" ]
+    }, {
+      "name" : "startWithIterable",
+      "visibility" : "public",
+      "methodCalls" : [ "fromIterable", "concatArray" ]
+    }, {
+      "name" : "sample",
+      "visibility" : "public",
+      "methodCalls" : [ "computation", "requireNonNull", "onAssembly", "sample" ]
+    }, {
+      "name" : "flatMapMaybe",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "flatMapMaybe", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "blockingFirst",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribe", "requireNonNull", "blockingGet" ]
+    }, {
+      "name" : "cacheWithInitialCapacity",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "onAssembly" ]
+    }, {
+      "name" : "collect",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "blockingLatest",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "throttleLast",
+      "visibility" : "public",
+      "methodCalls" : [ "sample" ]
+    }, {
+      "name" : "concatArrayDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "fromPublisher", "concatDelayError", "wrap", "empty", "onAssembly", "requireNonNull", "concatMapSingleDelayError", "concatMapCompletableDelayError", "identity", "fromArray" ]
+    }, {
+      "name" : "sorted",
+      "visibility" : "public",
+      "methodCalls" : [ "toFlowable", "flatMapIterable", "listSorter", "toObservable", "naturalComparator", "toList", "identity", "createArrayList", "instance", "sorted", "requireNonNull", "reduce", "parallelism", "onAssembly", "verifyPositive", "map" ]
+    }, {
+      "name" : "fromFuture",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "fromFuture", "fromAction", "requireNonNull", "futureAction" ]
+    }, {
+      "name" : "switchIfEmpty",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "fromCompletionStage",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "doOnComplete",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull", "emptyConsumer" ]
+    }, {
+      "name" : "fromCallable",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "takeWhile",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "generate",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "emptyConsumer", "requireNonNull", "nullSupplier", "simpleGenerator", "simpleBiGenerator", "generate" ]
+    }, {
+      "name" : "doFinally",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "concatMapSingleDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "onAssembly", "concatMapSingleDelayError", "requireNonNull" ]
+    }, {
+      "name" : "rebatchRequests",
+      "visibility" : "public",
+      "methodCalls" : [ "observeOn" ]
+    }, {
+      "name" : "all",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "fromMaybe",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "using",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly", "using" ]
+    }, {
+      "name" : "takeUntil",
+      "visibility" : "public",
+      "methodCalls" : [ "takeUntil", "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "toMultimap",
+      "visibility" : "public",
+      "methodCalls" : [ "asSupplier", "toMultimap", "identity", "toMultimapKeyValueSelector", "collect", "asFunction", "requireNonNull" ]
+    }, {
+      "name" : "concatWith",
+      "visibility" : "public",
+      "methodCalls" : [ "concat", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "scanWith",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "onErrorResumeNext",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "concatEager",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "verifyPositive", "onAssembly", "identity", "wrap", "bufferSize", "concatEager", "instance", "fromIterable", "concatMapEager", "toFlowable", "concatMapEagerDelayError", "fromPublisher" ]
+    }, {
+      "name" : "switchOnNext",
+      "visibility" : "public",
+      "methodCalls" : [ "switchMap", "fromPublisher", "bufferSize", "verifyPositive", "switchOnNext", "requireNonNull", "onAssembly", "identity" ]
+    }, {
+      "name" : "concatMapIterable",
+      "visibility" : "public",
+      "methodCalls" : [ "concatMapIterable", "verifyPositive", "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "concatArray",
+      "visibility" : "public",
+      "methodCalls" : [ "fromPublisher", "bufferSize", "empty", "concatMapSingleDelayError", "identity", "fromArray", "onAssembly", "requireNonNull", "wrap", "complete" ]
+    }, {
+      "name" : "repeatWhen",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull", "repeatWhen", "toFlowable", "fromPublisher" ]
+    }, {
+      "name" : "fromOptional",
+      "visibility" : "public",
+      "methodCalls" : [ "map", "orElseGet", "requireNonNull" ]
+    }, {
+      "name" : "empty",
+      "visibility" : "public",
+      "methodCalls" : [ "fromRunnable", "onAssembly" ]
+    }, {
+      "name" : "concatMapCompletableDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "onAssembly", "requireNonNull", "concatMapCompletableDelayError" ]
+    }, {
+      "name" : "doOnSubscribe",
+      "visibility" : "public",
+      "methodCalls" : [ "doOnLifecycle", "onAssembly", "emptyConsumer", "requireNonNull" ]
+    }, {
+      "name" : "blockingNext",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "dematerialize",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "concatMapSingle",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "onAssembly", "concatMapSingle", "requireNonNull", "flatMapSingle" ]
+    }, {
+      "name" : "compose",
+      "visibility" : "public",
+      "methodCalls" : [ "fromPublisher", "wrap", "apply", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "fromObservable",
+      "visibility" : "public",
+      "methodCalls" : [ "onBackpressureDrop", "onBackpressureLatest", "onBackpressureBuffer", "onAssembly", "requireNonNull" ]
+    } ],
+    "imports" : [ "io.reactivex.rxjava3.flowables", "org.reactivestreams", "io.reactivex.rxjava3.internal.operators.maybe.MaybeToFlowable", "io.reactivex.rxjava3.functions", "io.reactivex.rxjava3.exceptions", "io.reactivex.rxjava3.plugins.RxJavaPlugins", "io.reactivex.rxjava3.disposables", "io.reactivex.rxjava3.internal.operators.flowable", "java.util", "io.reactivex.rxjava3.internal.operators.mixed", "io.reactivex.rxjava3.parallel.ParallelFlowable", "io.reactivex.rxjava3.schedulers", "java.util.stream", "io.reactivex.rxjava3.subscribers", "io.reactivex.rxjava3.internal.functions", "io.reactivex.rxjava3.internal.schedulers.ImmediateThinScheduler", "io.reactivex.rxjava3.annotations", "io.reactivex.rxjava3.internal.jdk8", "io.reactivex.rxjava3.operators.ScalarSupplier", "io.reactivex.rxjava3.internal.util", "io.reactivex.rxjava3.internal.operators.observable.ObservableFromPublisher", "io.reactivex.rxjava3.internal.subscribers", "java.util.concurrent", "io.reactivex.rxjava3.internal.operators.single.SingleToFlowable" ]
+  }, {
+    "name" : "Observable",
+    "packageName" : "io.reactivex.rxjava3.core",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ "ObservableSource" ],
+    "methods" : [ {
+      "name" : "mergeArrayDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "flatMap", "flatMapMaybe", "identity", "max", "flatMapSingle", "fromArray", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "concatWith",
+      "visibility" : "public",
+      "methodCalls" : [ "concat", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "concatMapDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "empty", "bufferSize", "get", "scalarXMap", "verifyPositive", "requireNonNull", "concatMapDelayError", "onAssembly" ]
+    }, {
+      "name" : "forEach",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribe" ]
+    }, {
+      "name" : "isEmpty",
+      "visibility" : "public",
+      "methodCalls" : [ "lvConsumerNode", "lvProducerNode", "producerIndex", "tryReplenish", "alwaysFalse", "all", "onAssembly", "hasNext", "clear", "isEmpty", "get" ]
+    }, {
+      "name" : "timeInterval",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly", "timeInterval", "computation" ]
+    }, {
+      "name" : "mergeDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "fromPublisher", "bufferSize", "flatMap", "flatMapMaybe", "verifyPositive", "mergeArrayDelayError", "mergeDelayError", "flatMapSingle", "fromArray", "fromIterable", "identity", "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "wrap",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "publish",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "publish", "bufferSize", "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "takeWhile",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "blockingMostRecent",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull" ]
+    }, {
+      "name" : "combineLatestArrayDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "empty", "combineLatestArrayDelayError", "verifyPositive", "requireNonNull", "bufferSize", "onAssembly" ]
+    }, {
+      "name" : "flatMap",
+      "visibility" : "public",
+      "methodCalls" : [ "await", "subscribeWith", "subscribe", "get", "merge", "scalarXMap", "empty", "flatMapWithCombiner", "bufferSize", "verifyPositive", "flatMap", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "combineLatestArray",
+      "visibility" : "public",
+      "methodCalls" : [ "combineLatestArray", "empty", "onAssembly", "verifyPositive", "bufferSize", "requireNonNull" ]
+    }, {
+      "name" : "retry",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly", "alwaysTrue", "singleElement", "toFlowable", "retry", "fromPublisher" ]
+    }, {
+      "name" : "concatArrayEager",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "verifyPositive", "requireNonNull", "bufferSize", "concatMapEagerDelayError", "concatArrayEager", "identity", "instance", "toFlowable", "fromArray", "concatMapEager" ]
+    }, {
+      "name" : "doAfterNext",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull", "emptyConsumer" ]
+    }, {
+      "name" : "blockingForEach",
+      "visibility" : "public",
+      "methodCalls" : [ "next", "hasNext", "dispose", "blockingIterable", "iterator", "throwIfFatal", "bufferSize", "wrapOrThrow", "requireNonNull", "accept", "blockingForEach" ]
+    }, {
+      "name" : "flatMapIterable",
+      "visibility" : "public",
+      "methodCalls" : [ "flatMapIntoIterable", "flatMap", "onAssembly", "requireNonNull", "verifyPositive", "bufferSize", "flatMapIterable" ]
+    }, {
+      "name" : "throttleLast",
+      "visibility" : "public",
+      "methodCalls" : [ "sample" ]
+    }, {
+      "name" : "all",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "throttleWithTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ "debounce" ]
+    }, {
+      "name" : "doFinally",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "firstElement",
+      "visibility" : "public",
+      "methodCalls" : [ "elementAt" ]
+    }, {
+      "name" : "fromSingle",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "merge",
+      "visibility" : "public",
+      "methodCalls" : [ "fromPublisher", "flatMap", "bufferSize", "verifyPositive", "merge", "flatMapMaybe", "mergeArray", "flatMapSingle", "identity", "fromArray", "fromIterable", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "contains",
+      "visibility" : "public",
+      "methodCalls" : [ "equalsWith", "any", "equalsPredicate", "requireNonNull", "contains", "onAssembly" ]
+    }, {
+      "name" : "concatMapCompletableDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "onAssembly", "requireNonNull", "concatMapCompletableDelayError" ]
+    }, {
+      "name" : "fromFuture",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "fromFuture", "fromAction", "requireNonNull", "futureAction" ]
+    }, {
+      "name" : "debounce",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "debounce", "computation", "onAssembly" ]
+    }, {
+      "name" : "zipArray",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "empty", "error", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "fromIterable",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "doOnSubscribe",
+      "visibility" : "public",
+      "methodCalls" : [ "doOnLifecycle", "onAssembly", "emptyConsumer", "requireNonNull" ]
+    }, {
+      "name" : "any",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "collectInto",
+      "visibility" : "public",
+      "methodCalls" : [ "collect", "justSupplier", "requireNonNull" ]
+    }, {
+      "name" : "groupJoin",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "unsubscribeOn",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "blockingIterable",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "bufferSize", "blockingIterable" ]
+    }, {
+      "name" : "onErrorReturnItem",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "onErrorReturn", "justFunction", "requireNonNull" ]
+    }, {
+      "name" : "take",
+      "visibility" : "public",
+      "methodCalls" : [ "takeUntil", "onAssembly", "timer" ]
+    }, {
+      "name" : "repeatWhen",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull", "repeatWhen", "toFlowable", "fromPublisher" ]
+    }, {
+      "name" : "materialize",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly" ]
+    }, {
+      "name" : "fromPublisher",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "flatMapSingle",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "flatMapSingle", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "onErrorReturn",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "repeatUntil",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull", "fromPublisher", "toFlowable", "repeatUntil" ]
+    }, {
+      "name" : "switchMapSingle",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "fromCallable",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "lastOrError",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly" ]
+    }, {
+      "name" : "concatMapIterable",
+      "visibility" : "public",
+      "methodCalls" : [ "concatMapIterable", "verifyPositive", "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "observeOn",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "observeOn", "bufferSize", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "startWithIterable",
+      "visibility" : "public",
+      "methodCalls" : [ "fromIterable", "concatArray" ]
+    }, {
+      "name" : "flatMapStream",
+      "visibility" : "public",
+      "methodCalls" : [ "flatMapStream", "bufferSize", "onAssembly", "verifyPositive", "requireNonNull" ]
+    }, {
+      "name" : "singleElement",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly" ]
+    }, {
+      "name" : "blockingStream",
+      "visibility" : "public",
+      "methodCalls" : [ "stream", "blockingIterable", "iterator", "onClose", "blockingStream", "spliteratorUnknownSize", "bufferSize" ]
+    }, {
+      "name" : "concatMapMaybeDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly", "concatMapMaybeDelayError", "verifyPositive" ]
+    }, {
+      "name" : "concatMapStream",
+      "visibility" : "public",
+      "methodCalls" : [ "bufferSize", "onAssembly", "verifyPositive", "requireNonNull", "flatMapStream" ]
+    }, {
+      "name" : "fromMaybe",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "toList",
+      "visibility" : "public",
+      "methodCalls" : [ "createArrayList", "onAssembly", "toList", "verifyPositive", "requireNonNull" ]
+    }, {
+      "name" : "toMultimap",
+      "visibility" : "public",
+      "methodCalls" : [ "asSupplier", "toMultimap", "identity", "toMultimapKeyValueSelector", "collect", "asFunction", "requireNonNull" ]
+    }, {
+      "name" : "doAfterTerminate",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly", "emptyConsumer" ]
+    }, {
+      "name" : "concatMapSingle",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "onAssembly", "concatMapSingle", "requireNonNull", "flatMapSingle" ]
+    }, {
+      "name" : "throttleFirst",
+      "visibility" : "public",
+      "methodCalls" : [ "computation", "requireNonNull", "onAssembly", "throttleFirst" ]
+    }, {
+      "name" : "buffer",
+      "visibility" : "public",
+      "methodCalls" : [ "computation", "buffer", "verifyPositive", "onAssembly", "requireNonNull", "createArrayList", "asSupplier" ]
+    }, {
+      "name" : "map",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "ignoreElements",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly" ]
+    }, {
+      "name" : "concatMapEagerDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "concatMapEagerDelayError", "requireNonNull", "onAssembly", "bufferSize" ]
+    }, {
+      "name" : "groupBy",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribe", "bufferSize", "identity", "verifyPositive", "groupBy", "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "scanWith",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "ambArray",
+      "visibility" : "public",
+      "methodCalls" : [ "fromPublisher", "empty", "emptyThrower", "error", "requireNonNull", "complete", "onAssembly", "wrap" ]
+    }, {
+      "name" : "firstStage",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribeWith" ]
+    }, {
+      "name" : "lastStage",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribeWith" ]
+    }, {
+      "name" : "compose",
+      "visibility" : "public",
+      "methodCalls" : [ "fromPublisher", "wrap", "apply", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "concatEagerDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "onAssembly", "requireNonNull", "wrap", "bufferSize", "concatEagerDelayError", "identity", "instance", "concatMapEagerDelayError", "fromIterable", "fromPublisher", "toFlowable" ]
+    }, {
+      "name" : "cast",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "castFunction", "map" ]
+    }, {
+      "name" : "concatDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "concatMapDelayError", "requireNonNull", "bufferSize", "verifyPositive", "onAssembly", "concatMapMaybeDelayError", "concatMapSingleDelayError", "concatDelayError", "fromIterable", "fromPublisher", "concatMapCompletableDelayError", "identity" ]
+    }, {
+      "name" : "flatMapMaybe",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "flatMapMaybe", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "toFlowable",
+      "visibility" : "public",
+      "methodCalls" : [ "onBackpressureDrop", "onBackpressureLatest", "requireNonNull", "onBackpressureBuffer", "fuseToFlowable", "onAssembly" ]
+    }, {
+      "name" : "concatArray",
+      "visibility" : "public",
+      "methodCalls" : [ "fromPublisher", "bufferSize", "empty", "concatMapSingleDelayError", "identity", "fromArray", "onAssembly", "requireNonNull", "wrap", "complete" ]
+    }, {
+      "name" : "blockingNext",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "onTerminateDetach",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly" ]
+    }, {
+      "name" : "fromRunnable",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "throttleLatest",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly", "throttleLatest", "computation" ]
+    }, {
+      "name" : "doOnNext",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly", "emptyConsumer" ]
+    }, {
+      "name" : "onErrorResumeWith",
+      "visibility" : "public",
+      "methodCalls" : [ "justFunction", "requireNonNull", "onErrorResumeNext" ]
+    }, {
+      "name" : "fromCompletable",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "switchMapDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "switchMap0", "empty", "requireNonNull", "onAssembly", "get", "switchMapDelayError", "scalarXMap", "verifyPositive", "bufferSize" ]
+    }, {
+      "name" : "switchMapMaybeDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "fromSupplier",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "onErrorComplete",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onErrorComplete", "alwaysTrue", "onAssembly" ]
+    }, {
+      "name" : "repeat",
+      "visibility" : "public",
+      "methodCalls" : [ "empty", "onAssembly", "repeat", "toFlowable", "fromPublisher" ]
+    }, {
+      "name" : "lastOrErrorStage",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribeWith" ]
+    }, {
+      "name" : "filter",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "doOnComplete",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull", "emptyConsumer" ]
+    }, {
+      "name" : "bufferSize",
+      "visibility" : "public",
+      "methodCalls" : [ "bufferSize" ]
+    }, {
+      "name" : "to",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "apply" ]
+    }, {
+      "name" : "timer",
+      "visibility" : "public",
+      "methodCalls" : [ "max", "onAssembly", "computation", "timer", "requireNonNull" ]
+    }, {
+      "name" : "zip",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "bufferSize", "zipArray", "onAssembly", "requireNonNull", "toFunction" ]
+    }, {
+      "name" : "skipUntil",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "using",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly", "using" ]
+    }, {
+      "name" : "switchOnNextDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "fromPublisher", "switchMapDelayError", "switchOnNextDelayError", "verifyPositive", "bufferSize", "identity", "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "concatArrayEagerDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "bufferSize", "identity", "concatArrayEagerDelayError", "instance", "concatMapEagerDelayError", "fromArray", "toFlowable" ]
+    }, {
+      "name" : "sample",
+      "visibility" : "public",
+      "methodCalls" : [ "computation", "requireNonNull", "onAssembly", "sample" ]
+    }, {
+      "name" : "mergeArray",
+      "visibility" : "public",
+      "methodCalls" : [ "flatMap", "empty", "fromArray", "identity", "flatMapSingle", "max", "complete", "onAssembly", "wrap", "requireNonNull" ]
+    }, {
+      "name" : "firstOrError",
+      "visibility" : "public",
+      "methodCalls" : [ "elementAtOrError" ]
+    }, {
+      "name" : "doOnTerminate",
+      "visibility" : "public",
+      "methodCalls" : [ "actionConsumer", "requireNonNull", "onAssembly", "emptyConsumer" ]
+    }, {
+      "name" : "range",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribe", "just", "onAssembly", "empty" ]
+    }, {
+      "name" : "takeLast",
+      "visibility" : "public",
+      "methodCalls" : [ "computation", "onAssembly", "takeLast", "requireNonNull", "bufferSize", "trampoline", "verifyPositive" ]
+    }, {
+      "name" : "rangeLong",
+      "visibility" : "public",
+      "methodCalls" : [ "empty", "onAssembly", "just" ]
+    }, {
+      "name" : "subscribeOn",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribeOn", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "switchMapSingleDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "scan",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "justSupplier", "requireNonNull", "scanWith" ]
+    }, {
+      "name" : "switchMapMaybe",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "skipWhile",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "startWith",
+      "visibility" : "public",
+      "methodCalls" : [ "concatWith", "requireNonNull", "concatArray", "concat", "toFlowable", "wrap", "toObservable", "startWith" ]
+    }, {
+      "name" : "blockingSingle",
+      "visibility" : "public",
+      "methodCalls" : [ "singleOrError", "singleElement", "blockingGet", "single" ]
+    }, {
+      "name" : "intervalRange",
+      "visibility" : "public",
+      "methodCalls" : [ "intervalRange", "max", "onAssembly", "delay", "empty", "computation", "requireNonNull" ]
+    }, {
+      "name" : "blockingLast",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "subscribe", "blockingGet" ]
+    }, {
+      "name" : "reduceWith",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "skip",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "timer", "skipUntil" ]
+    }, {
+      "name" : "reduce",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "retryWhen",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull", "singleElement", "retryWhen", "fromPublisher", "toFlowable" ]
+    }, {
+      "name" : "onErrorResumeNext",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "fromArray",
+      "visibility" : "public",
+      "methodCalls" : [ "just", "empty", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "fromStream",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "toFuture",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribeWith" ]
+    }, {
+      "name" : "retryUntil",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "retry", "predicateReverseFor" ]
+    }, {
+      "name" : "amb",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "interval",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "interval", "computation", "max", "requireNonNull" ]
+    }, {
+      "name" : "last",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "single",
+      "visibility" : "public",
+      "methodCalls" : [ "blockingGet", "requireNonNull", "onAssembly", "onSingleScheduler" ]
+    }, {
+      "name" : "fromOptional",
+      "visibility" : "public",
+      "methodCalls" : [ "map", "orElseGet", "requireNonNull" ]
+    }, {
+      "name" : "hide",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly" ]
+    }, {
+      "name" : "withLatestFrom",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "withLatestFrom", "requireNonNull", "toFunction" ]
+    }, {
+      "name" : "elementAtOrError",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly" ]
+    }, {
+      "name" : "concat",
+      "visibility" : "public",
+      "methodCalls" : [ "concatMap", "fromPublisher", "concatMapDelayError", "bufferSize", "concatArray", "fromArray", "identity", "fromIterable", "concatMapSingleDelayError", "verifyPositive", "requireNonNull", "onAssembly", "concat" ]
+    }, {
+      "name" : "switchMap",
+      "visibility" : "public",
+      "methodCalls" : [ "switchMap0", "requireNonNull", "scalarXMap", "bufferSize", "empty", "verifyPositive", "switchMap", "onAssembly", "get" ]
+    }, {
+      "name" : "singleOrError",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly" ]
+    }, {
+      "name" : "toSortedList",
+      "visibility" : "public",
+      "methodCalls" : [ "listSorter", "naturalComparator", "toList", "createArrayList", "requireNonNull", "instance", "map", "reduce", "toSortedList", "verifyPositive", "parallelism", "onAssembly" ]
+    }, {
+      "name" : "mapOptional",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "concatMap",
+      "visibility" : "public",
+      "methodCalls" : [ "empty", "get", "scalarXMap", "flatMap", "verifyPositive", "requireNonNull", "concatMap", "onAssembly" ]
+    }, {
+      "name" : "ambWith",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "ambArray" ]
+    }, {
+      "name" : "singleOrErrorStage",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribeWith" ]
+    }, {
+      "name" : "blockingLatest",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "sequenceEqual",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "bufferSize", "sequenceEqual", "equalsPredicate", "onAssembly", "andThen", "mergeArrayDelayError", "requireNonNull", "just" ]
+    }, {
+      "name" : "concatMapEager",
+      "visibility" : "public",
+      "methodCalls" : [ "concatMapEager", "requireNonNull", "verifyPositive", "onAssembly", "bufferSize" ]
+    }, {
+      "name" : "generate",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "emptyConsumer", "requireNonNull", "nullSupplier", "simpleGenerator", "simpleBiGenerator", "generate" ]
+    }, {
+      "name" : "never",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly" ]
+    }, {
+      "name" : "dematerialize",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "doOnEach",
+      "visibility" : "public",
+      "methodCalls" : [ "subscriberOnComplete", "subscriberOnError", "subscriberOnNext", "observerOnNext", "observerOnError", "requireNonNull", "observerOnComplete", "notificationOnComplete", "notificationOnError", "notificationOnNext" ]
+    }, {
+      "name" : "blockingFirst",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribe", "requireNonNull", "blockingGet" ]
+    }, {
+      "name" : "concatMapMaybe",
+      "visibility" : "public",
+      "methodCalls" : [ "concatMapMaybe", "onAssembly", "requireNonNull", "verifyPositive", "flatMapMaybe" ]
+    }, {
+      "name" : "distinctUntilChanged",
+      "visibility" : "public",
+      "methodCalls" : [ "identity", "requireNonNull", "onAssembly", "equalsPredicate", "distinctUntilChanged" ]
+    }, {
+      "name" : "timestamp",
+      "visibility" : "public",
+      "methodCalls" : [ "timestampWith", "map", "timestamp", "computation", "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "cache",
+      "visibility" : "public",
+      "methodCalls" : [ "cacheWithInitialCapacity", "onAssembly" ]
+    }, {
+      "name" : "doOnError",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly", "emptyConsumer" ]
+    }, {
+      "name" : "ofType",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "filter", "cast", "isInstanceOf" ]
+    }, {
+      "name" : "defer",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "switchIfEmpty",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "combineLatestDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "combineLatestDelayError", "requireNonNull", "onAssembly", "bufferSize" ]
+    }, {
+      "name" : "concatEager",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "verifyPositive", "onAssembly", "identity", "wrap", "bufferSize", "concatEager", "instance", "fromIterable", "concatMapEager", "toFlowable", "concatMapEagerDelayError", "fromPublisher" ]
+    }, {
+      "name" : "skipLast",
+      "visibility" : "public",
+      "methodCalls" : [ "computation", "verifyPositive", "skipLast", "trampoline", "bufferSize", "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "sorted",
+      "visibility" : "public",
+      "methodCalls" : [ "toFlowable", "flatMapIterable", "listSorter", "toObservable", "naturalComparator", "toList", "identity", "createArrayList", "instance", "sorted", "requireNonNull", "reduce", "parallelism", "onAssembly", "verifyPositive", "map" ]
+    }, {
+      "name" : "singleStage",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribeWith" ]
+    }, {
+      "name" : "firstOrErrorStage",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribeWith" ]
+    }, {
+      "name" : "subscribe",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribe", "onComplete", "onNext", "manageRequests", "cancel", "verifyPositive", "boundedConsumer", "verifyNonBlocking", "hasNext", "isCancelled", "complete", "wrapOrThrow", "take", "dispose", "poll", "acceptFull", "awaitForComplete", "subscribeWith", "initCause", "drain", "error", "validate", "throwIfFatal", "add", "emptyConsumer", "subscribeActual", "requireNonNull", "onSubscribe", "onError", "get", "reportError", "createWorker", "createSubscriber", "createWorkers", "lazySet", "call", "compareAndSet", "replay", "remove", "isDisposed" ]
+    }, {
+      "name" : "delaySubscription",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly", "computation", "delaySubscription", "timer", "andThen" ]
+    }, {
+      "name" : "combineLatest",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "verifyPositive", "combineLatest", "bufferSize", "combineLatestArray", "requireNonNull", "toFunction" ]
+    }, {
+      "name" : "share",
+      "visibility" : "public",
+      "methodCalls" : [ "refCount", "publish" ]
+    }, {
+      "name" : "join",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "doOnDispose",
+      "visibility" : "public",
+      "methodCalls" : [ "doOnLifecycle", "requireNonNull", "onAssembly", "emptyConsumer" ]
+    }, {
+      "name" : "first",
+      "visibility" : "public",
+      "methodCalls" : [ "elementAt" ]
+    }, {
+      "name" : "window",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "bufferSize", "verifyPositive", "computation", "requireNonNull", "window" ]
+    }, {
+      "name" : "blockingSubscribe",
+      "visibility" : "public",
+      "methodCalls" : [ "onSubscribe", "subscribe", "blockingConsume", "emptyConsumer", "requireNonNull", "blockingSubscribe" ]
+    }, {
+      "name" : "lift",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "timeout",
+      "visibility" : "public",
+      "methodCalls" : [ "timeout", "timer", "onAssembly", "computation", "requireNonNull" ]
+    }, {
+      "name" : "toMap",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "toMapKeySelector", "toMapKeyValueSelector", "collect", "asSupplier" ]
+    }, {
+      "name" : "unsafeCreate",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "create",
+      "visibility" : "public",
+      "methodCalls" : [ "setRemoveOnCancelPolicy", "createFrom", "onAssembly", "requireNonNull", "verifyPositive", "create", "bufferSize" ]
+    }, {
+      "name" : "flatMapCompletable",
+      "visibility" : "public",
+      "methodCalls" : [ "await", "subscribeWith", "verifyPositive", "flatMapCompletable", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "just",
+      "visibility" : "public",
+      "methodCalls" : [ "fromArray", "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "zipWith",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull", "zip" ]
+    }, {
+      "name" : "replay",
+      "visibility" : "public",
+      "methodCalls" : [ "throwIfFatal", "isError", "dispose", "produced", "add", "computation", "requireNonNull", "replaySupplier", "verifyPositive", "createFrom", "multicastSelector", "create", "replay", "index", "leaveTransform", "accept", "isDisposed", "isComplete", "getError", "get", "addAndGet", "onNext", "getHead", "onError", "getAndIncrement", "onComplete" ]
+    }, {
+      "name" : "elementAt",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "mergeWith",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "merge", "requireNonNull", "mergeArray" ]
+    }, {
+      "name" : "concatArrayDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "fromPublisher", "concatDelayError", "wrap", "empty", "onAssembly", "requireNonNull", "concatMapSingleDelayError", "concatMapCompletableDelayError", "identity", "fromArray" ]
+    }, {
+      "name" : "count",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly" ]
+    }, {
+      "name" : "switchMapCompletable",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "switchMapCompletableDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "serialize",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly" ]
+    }, {
+      "name" : "collect",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "lastElement",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly" ]
+    }, {
+      "name" : "takeUntil",
+      "visibility" : "public",
+      "methodCalls" : [ "takeUntil", "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "delay",
+      "visibility" : "public",
+      "methodCalls" : [ "delaySubscription", "itemDelay", "flatMap", "max", "onAssembly", "computation", "requireNonNull", "delay" ]
+    }, {
+      "name" : "defaultIfEmpty",
+      "visibility" : "public",
+      "methodCalls" : [ "just", "switchIfEmpty", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "error",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "lazySet", "cancel", "onError", "dispose", "justSupplier", "enterTransform", "error", "truncateFinal", "add", "addLast", "trimHead", "trimFinal", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "forEachWhile",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribe", "forEachWhile", "requireNonNull" ]
+    }, {
+      "name" : "empty",
+      "visibility" : "public",
+      "methodCalls" : [ "fromRunnable", "onAssembly" ]
+    }, {
+      "name" : "switchOnNext",
+      "visibility" : "public",
+      "methodCalls" : [ "switchMap", "fromPublisher", "bufferSize", "verifyPositive", "switchOnNext", "requireNonNull", "onAssembly", "identity" ]
+    }, {
+      "name" : "concatMapCompletable",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "requireNonNull", "concatMapCompletable", "onAssembly", "flatMapCompletable" ]
+    }, {
+      "name" : "subscribeWith",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribe" ]
+    }, {
+      "name" : "doOnLifecycle",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull", "emptyConsumer" ]
+    }, {
+      "name" : "distinct",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull", "identity", "createHashSet", "distinct" ]
+    }, {
+      "name" : "fromCompletionStage",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "fromAction",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "safeSubscribe",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribe", "requireNonNull" ]
+    }, {
+      "name" : "startWithArray",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "concatArray", "empty", "fromArray" ]
+    }, {
+      "name" : "startWithItem",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "concatArray", "just" ]
+    }, {
+      "name" : "concatMapSingleDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "onAssembly", "concatMapSingleDelayError", "requireNonNull" ]
+    }, {
+      "name" : "test",
+      "visibility" : "public",
+      "methodCalls" : [ "getAsBoolean", "equals", "isInstance", "dispose", "subscribe", "isError", "onNext", "onError", "get", "getError", "cancel", "isComplete", "decrementAndGet", "accept", "getValue", "onComplete", "createDefault", "acceptFull" ]
+    }, {
+      "name" : "cacheWithInitialCapacity",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "onAssembly" ]
+    } ],
+    "imports" : [ "io.reactivex.rxjava3.internal.operators.mixed", "io.reactivex.rxjava3.internal.operators.observable", "io.reactivex.rxjava3.internal.operators.flowable", "java.util.concurrent", "io.reactivex.rxjava3.disposables", "io.reactivex.rxjava3.operators.ScalarSupplier", "io.reactivex.rxjava3.internal.observers", "java.util", "io.reactivex.rxjava3.internal.operators.single.SingleToObservable", "io.reactivex.rxjava3.functions", "io.reactivex.rxjava3.observables", "io.reactivex.rxjava3.plugins.RxJavaPlugins", "io.reactivex.rxjava3.schedulers", "java.util.stream", "io.reactivex.rxjava3.internal.util", "io.reactivex.rxjava3.internal.functions", "io.reactivex.rxjava3.annotations", "io.reactivex.rxjava3.exceptions", "org.reactivestreams.Publisher", "io.reactivex.rxjava3.observers", "io.reactivex.rxjava3.internal.operators.maybe.MaybeToObservable", "io.reactivex.rxjava3.internal.jdk8" ]
+  }, {
+    "name" : "Single",
+    "packageName" : "io.reactivex.rxjava3.core",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ "SingleSource" ],
+    "methods" : [ {
+      "name" : "never",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly" ]
+    }, {
+      "name" : "create",
+      "visibility" : "public",
+      "methodCalls" : [ "setRemoveOnCancelPolicy", "createFrom", "onAssembly", "requireNonNull", "verifyPositive", "create", "bufferSize" ]
+    }, {
+      "name" : "retry",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly", "alwaysTrue", "singleElement", "toFlowable", "retry", "fromPublisher" ]
+    }, {
+      "name" : "sequenceEqual",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "bufferSize", "sequenceEqual", "equalsPredicate", "onAssembly", "andThen", "mergeArrayDelayError", "requireNonNull", "just" ]
+    }, {
+      "name" : "timeInterval",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly", "timeInterval", "computation" ]
+    }, {
+      "name" : "flatMapObservable",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "doOnSubscribe",
+      "visibility" : "public",
+      "methodCalls" : [ "doOnLifecycle", "onAssembly", "emptyConsumer", "requireNonNull" ]
+    }, {
+      "name" : "wrap",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "fromPublisher",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "fromSupplier",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "takeUntil",
+      "visibility" : "public",
+      "methodCalls" : [ "takeUntil", "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "ambWith",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "ambArray" ]
+    }, {
+      "name" : "mergeDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "fromPublisher", "bufferSize", "flatMap", "flatMapMaybe", "verifyPositive", "mergeArrayDelayError", "mergeDelayError", "flatMapSingle", "fromArray", "fromIterable", "identity", "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "mergeArrayDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "flatMap", "flatMapMaybe", "identity", "max", "flatMapSingle", "fromArray", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "concatEager",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "verifyPositive", "onAssembly", "identity", "wrap", "bufferSize", "concatEager", "instance", "fromIterable", "concatMapEager", "toFlowable", "concatMapEagerDelayError", "fromPublisher" ]
+    }, {
+      "name" : "fromCallable",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "retryWhen",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull", "singleElement", "retryWhen", "fromPublisher", "toFlowable" ]
+    }, {
+      "name" : "flattenAsFlowable",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "toCompletionStage",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribeWith" ]
+    }, {
+      "name" : "mapOptional",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "flattenAsObservable",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "flatMapPublisher",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "doOnError",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly", "emptyConsumer" ]
+    }, {
+      "name" : "concatMap",
+      "visibility" : "public",
+      "methodCalls" : [ "empty", "get", "scalarXMap", "flatMap", "verifyPositive", "requireNonNull", "concatMap", "onAssembly" ]
+    }, {
+      "name" : "unsubscribeOn",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "startWith",
+      "visibility" : "public",
+      "methodCalls" : [ "concatWith", "requireNonNull", "concatArray", "concat", "toFlowable", "wrap", "toObservable", "startWith" ]
+    }, {
+      "name" : "cache",
+      "visibility" : "public",
+      "methodCalls" : [ "cacheWithInitialCapacity", "onAssembly" ]
+    }, {
+      "name" : "flatMap",
+      "visibility" : "public",
+      "methodCalls" : [ "await", "subscribeWith", "subscribe", "get", "merge", "scalarXMap", "empty", "flatMapWithCombiner", "bufferSize", "verifyPositive", "flatMap", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "doAfterSuccess",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "toObservable",
+      "visibility" : "public",
+      "methodCalls" : [ "fuseToObservable", "onAssembly" ]
+    }, {
+      "name" : "merge",
+      "visibility" : "public",
+      "methodCalls" : [ "fromPublisher", "flatMap", "bufferSize", "verifyPositive", "merge", "flatMapMaybe", "mergeArray", "flatMapSingle", "identity", "fromArray", "fromIterable", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "to",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "apply" ]
+    }, {
+      "name" : "fromCompletionStage",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "subscribe",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribe", "onComplete", "onNext", "manageRequests", "cancel", "verifyPositive", "boundedConsumer", "verifyNonBlocking", "hasNext", "isCancelled", "complete", "wrapOrThrow", "take", "dispose", "poll", "acceptFull", "awaitForComplete", "subscribeWith", "initCause", "drain", "error", "validate", "throwIfFatal", "add", "emptyConsumer", "subscribeActual", "requireNonNull", "onSubscribe", "onError", "get", "reportError", "createWorker", "createSubscriber", "createWorkers", "lazySet", "call", "compareAndSet", "replay", "remove", "isDisposed" ]
+    }, {
+      "name" : "doOnLifecycle",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull", "emptyConsumer" ]
+    }, {
+      "name" : "flattenStreamAsFlowable",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "concatMapMaybe",
+      "visibility" : "public",
+      "methodCalls" : [ "concatMapMaybe", "onAssembly", "requireNonNull", "verifyPositive", "flatMapMaybe" ]
+    }, {
+      "name" : "using",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly", "using" ]
+    }, {
+      "name" : "filter",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "just",
+      "visibility" : "public",
+      "methodCalls" : [ "fromArray", "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "fromFuture",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "fromFuture", "fromAction", "requireNonNull", "futureAction" ]
+    }, {
+      "name" : "timestamp",
+      "visibility" : "public",
+      "methodCalls" : [ "timestampWith", "map", "timestamp", "computation", "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "safeSubscribe",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribe", "requireNonNull" ]
+    }, {
+      "name" : "onErrorResumeWith",
+      "visibility" : "public",
+      "methodCalls" : [ "justFunction", "requireNonNull", "onErrorResumeNext" ]
+    }, {
+      "name" : "compose",
+      "visibility" : "public",
+      "methodCalls" : [ "fromPublisher", "wrap", "apply", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "doFinally",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "subscribeOn",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribeOn", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "test",
+      "visibility" : "public",
+      "methodCalls" : [ "getAsBoolean", "equals", "isInstance", "dispose", "subscribe", "isError", "onNext", "onError", "get", "getError", "cancel", "isComplete", "decrementAndGet", "accept", "getValue", "onComplete", "createDefault", "acceptFull" ]
+    }, {
+      "name" : "concatArrayDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "fromPublisher", "concatDelayError", "wrap", "empty", "onAssembly", "requireNonNull", "concatMapSingleDelayError", "concatMapCompletableDelayError", "identity", "fromArray" ]
+    }, {
+      "name" : "doAfterTerminate",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly", "emptyConsumer" ]
+    }, {
+      "name" : "repeat",
+      "visibility" : "public",
+      "methodCalls" : [ "empty", "onAssembly", "repeat", "toFlowable", "fromPublisher" ]
+    }, {
+      "name" : "mergeWith",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "merge", "requireNonNull", "mergeArray" ]
+    }, {
+      "name" : "onErrorReturnItem",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "onErrorReturn", "justFunction", "requireNonNull" ]
+    }, {
+      "name" : "switchOnNext",
+      "visibility" : "public",
+      "methodCalls" : [ "switchMap", "fromPublisher", "bufferSize", "verifyPositive", "switchOnNext", "requireNonNull", "onAssembly", "identity" ]
+    }, {
+      "name" : "concatEagerDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "onAssembly", "requireNonNull", "wrap", "bufferSize", "concatEagerDelayError", "identity", "instance", "concatMapEagerDelayError", "fromIterable", "fromPublisher", "toFlowable" ]
+    }, {
+      "name" : "toMaybe",
+      "visibility" : "public",
+      "methodCalls" : [ "fuseToMaybe", "onAssembly" ]
+    }, {
+      "name" : "delaySubscription",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly", "computation", "delaySubscription", "timer", "andThen" ]
+    }, {
+      "name" : "dematerialize",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "ofType",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "filter", "cast", "isInstanceOf" ]
+    }, {
+      "name" : "mergeArray",
+      "visibility" : "public",
+      "methodCalls" : [ "flatMap", "empty", "fromArray", "identity", "flatMapSingle", "max", "complete", "onAssembly", "wrap", "requireNonNull" ]
+    }, {
+      "name" : "zipWith",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull", "zip" ]
+    }, {
+      "name" : "map",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "materialize",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly" ]
+    }, {
+      "name" : "zipArray",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "empty", "error", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "error",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "lazySet", "cancel", "onError", "dispose", "justSupplier", "enterTransform", "error", "truncateFinal", "add", "addLast", "trimHead", "trimFinal", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "fromObservable",
+      "visibility" : "public",
+      "methodCalls" : [ "onBackpressureDrop", "onBackpressureLatest", "onBackpressureBuffer", "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "flatMapMaybe",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "flatMapMaybe", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "ignoreElement",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly" ]
+    }, {
+      "name" : "concat",
+      "visibility" : "public",
+      "methodCalls" : [ "concatMap", "fromPublisher", "concatMapDelayError", "bufferSize", "concatArray", "fromArray", "identity", "fromIterable", "concatMapSingleDelayError", "verifyPositive", "requireNonNull", "onAssembly", "concat" ]
+    }, {
+      "name" : "flatMapCompletable",
+      "visibility" : "public",
+      "methodCalls" : [ "await", "subscribeWith", "verifyPositive", "flatMapCompletable", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "doOnDispose",
+      "visibility" : "public",
+      "methodCalls" : [ "doOnLifecycle", "requireNonNull", "onAssembly", "emptyConsumer" ]
+    }, {
+      "name" : "concatDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "concatMapDelayError", "requireNonNull", "bufferSize", "verifyPositive", "onAssembly", "concatMapMaybeDelayError", "concatMapSingleDelayError", "concatDelayError", "fromIterable", "fromPublisher", "concatMapCompletableDelayError", "identity" ]
+    }, {
+      "name" : "concatArray",
+      "visibility" : "public",
+      "methodCalls" : [ "fromPublisher", "bufferSize", "empty", "concatMapSingleDelayError", "identity", "fromArray", "onAssembly", "requireNonNull", "wrap", "complete" ]
+    }, {
+      "name" : "retryUntil",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "retry", "predicateReverseFor" ]
+    }, {
+      "name" : "repeatWhen",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull", "repeatWhen", "toFlowable", "fromPublisher" ]
+    }, {
+      "name" : "lift",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "onTerminateDetach",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly" ]
+    }, {
+      "name" : "fromMaybe",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "concatArrayEager",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "verifyPositive", "requireNonNull", "bufferSize", "concatMapEagerDelayError", "concatArrayEager", "identity", "instance", "toFlowable", "fromArray", "concatMapEager" ]
+    }, {
+      "name" : "doOnSuccess",
+      "visibility" : "public",
+      "methodCalls" : [ "emptyConsumer", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "concatWith",
+      "visibility" : "public",
+      "methodCalls" : [ "concat", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "timeout",
+      "visibility" : "public",
+      "methodCalls" : [ "timeout", "timer", "onAssembly", "computation", "requireNonNull" ]
+    }, {
+      "name" : "defer",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "timer",
+      "visibility" : "public",
+      "methodCalls" : [ "max", "onAssembly", "computation", "timer", "requireNonNull" ]
+    }, {
+      "name" : "repeatUntil",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull", "fromPublisher", "toFlowable", "repeatUntil" ]
+    }, {
+      "name" : "doOnEvent",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "observeOn",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "observeOn", "bufferSize", "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "delay",
+      "visibility" : "public",
+      "methodCalls" : [ "delaySubscription", "itemDelay", "flatMap", "max", "onAssembly", "computation", "requireNonNull", "delay" ]
+    }, {
+      "name" : "concatMapCompletable",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "requireNonNull", "concatMapCompletable", "onAssembly", "flatMapCompletable" ]
+    }, {
+      "name" : "doOnTerminate",
+      "visibility" : "public",
+      "methodCalls" : [ "actionConsumer", "requireNonNull", "onAssembly", "emptyConsumer" ]
+    }, {
+      "name" : "flattenStreamAsObservable",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "toFuture",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribeWith" ]
+    }, {
+      "name" : "subscribeWith",
+      "visibility" : "public",
+      "methodCalls" : [ "subscribe" ]
+    }, {
+      "name" : "onErrorResumeNext",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "cast",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "castFunction", "map" ]
+    }, {
+      "name" : "toFlowable",
+      "visibility" : "public",
+      "methodCalls" : [ "onBackpressureDrop", "onBackpressureLatest", "requireNonNull", "onBackpressureBuffer", "fuseToFlowable", "onAssembly" ]
+    }, {
+      "name" : "hide",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly" ]
+    }, {
+      "name" : "contains",
+      "visibility" : "public",
+      "methodCalls" : [ "equalsWith", "any", "equalsPredicate", "requireNonNull", "contains", "onAssembly" ]
+    }, {
+      "name" : "ambArray",
+      "visibility" : "public",
+      "methodCalls" : [ "fromPublisher", "empty", "emptyThrower", "error", "requireNonNull", "complete", "onAssembly", "wrap" ]
+    }, {
+      "name" : "amb",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "zip",
+      "visibility" : "public",
+      "methodCalls" : [ "verifyPositive", "bufferSize", "zipArray", "onAssembly", "requireNonNull", "toFunction" ]
+    }, {
+      "name" : "onErrorReturn",
+      "visibility" : "public",
+      "methodCalls" : [ "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "switchOnNextDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "fromPublisher", "switchMapDelayError", "switchOnNextDelayError", "verifyPositive", "bufferSize", "identity", "onAssembly", "requireNonNull" ]
+    }, {
+      "name" : "unsafeCreate",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onAssembly" ]
+    }, {
+      "name" : "concatArrayEagerDelayError",
+      "visibility" : "public",
+      "methodCalls" : [ "bufferSize", "identity", "concatArrayEagerDelayError", "instance", "concatMapEagerDelayError", "fromArray", "toFlowable" ]
+    }, {
+      "name" : "blockingSubscribe",
+      "visibility" : "public",
+      "methodCalls" : [ "onSubscribe", "subscribe", "blockingConsume", "emptyConsumer", "requireNonNull", "blockingSubscribe" ]
+    }, {
+      "name" : "onErrorComplete",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "onErrorComplete", "alwaysTrue", "onAssembly" ]
+    }, {
+      "name" : "blockingGet",
+      "visibility" : "public",
+      "methodCalls" : [ "dispose", "cancel", "await", "getCount", "wrapOrThrow", "verifyNonBlocking", "requireNonNull", "blockingGet", "subscribe" ]
+    } ],
+    "imports" : [ "io.reactivex.rxjava3.internal.operators.mixed", "java.util", "io.reactivex.rxjava3.internal.operators.observable.ObservableSingleSingle", "io.reactivex.rxjava3.exceptions", "io.reactivex.rxjava3.plugins.RxJavaPlugins", "io.reactivex.rxjava3.internal.operators.completable", "io.reactivex.rxjava3.internal.operators.flowable", "java.util.concurrent", "io.reactivex.rxjava3.internal.observers", "io.reactivex.rxjava3.internal.functions", "java.util.stream", "io.reactivex.rxjava3.internal.util.ErrorMode", "io.reactivex.rxjava3.functions", "io.reactivex.rxjava3.internal.fuseable", "io.reactivex.rxjava3.internal.operators.single", "io.reactivex.rxjava3.observers.TestObserver", "org.reactivestreams", "io.reactivex.rxjava3.internal.jdk8", "io.reactivex.rxjava3.internal.operators.maybe", "io.reactivex.rxjava3.schedulers", "io.reactivex.rxjava3.disposables", "io.reactivex.rxjava3.annotations" ]
+  } ]
+}

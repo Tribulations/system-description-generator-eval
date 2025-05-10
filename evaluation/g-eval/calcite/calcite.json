@@ -1,0 +1,961 @@
+{
+  "systemName" : "calcite",
+  "classes" : [ {
+    "name" : "Builder",
+    "packageName" : "org.apache.calcite.rel.rel2sql",
+    "extendedClasses" : [ "AbstractBuilder" ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "withPassSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSelect",
+      "visibility" : "public",
+      "methodCalls" : [ "setSelectList" ]
+    }, {
+      "name" : "addOrderItem",
+      "visibility" : "public",
+      "methodCalls" : [ "addOrderItem" ]
+    }, {
+      "name" : "setOffset",
+      "visibility" : "public",
+      "methodCalls" : [ "contains", "setOffset" ]
+    }, {
+      "name" : "setGroupBy",
+      "visibility" : "public",
+      "methodCalls" : [ "setGroupBy", "contains" ]
+    }, {
+      "name" : "setHaving",
+      "visibility" : "public",
+      "methodCalls" : [ "contains", "setHaving" ]
+    }, {
+      "name" : "result",
+      "visibility" : "public",
+      "methodCalls" : [ "iterator", "hasImplicitTableAlias", "values", "builder", "getKind", "alias", "build", "equals", "uniquify", "isEmpty", "of", "concat", "withAnon", "union", "toArray", "createGeometryCollection", "size", "result", "equalType", "replace", "contains", "get", "register" ]
+    }, {
+      "name" : "setWhere",
+      "visibility" : "public",
+      "methodCalls" : [ "contains", "setWhere" ]
+    }, {
+      "name" : "setFetch",
+      "visibility" : "public",
+      "methodCalls" : [ "contains", "setFetch" ]
+    }, {
+      "name" : "setOrderBy",
+      "visibility" : "public",
+      "methodCalls" : [ "setOrderBy", "contains" ]
+    }, {
+      "name" : "buildImmutable",
+      "visibility" : "public",
+      "methodCalls" : [ "immutableBackedBy", "castNonNullList" ]
+    }, {
+      "name" : "hintStrategy",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "builder", "put", "of", "build" ]
+    }, {
+      "name" : "errorHandler",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "excludedRules",
+      "visibility" : "public",
+      "methodCalls" : [ "copyOf" ]
+    }, {
+      "name" : "hintOptions",
+      "visibility" : "public",
+      "methodCalls" : [ "copyOf", "checkState", "requireNonNull", "isEmpty" ]
+    }, {
+      "name" : "inheritPath",
+      "visibility" : "public",
+      "methodCalls" : [ "asList", "copyOf" ]
+    }, {
+      "name" : "converterRules",
+      "visibility" : "public",
+      "methodCalls" : [ "copyOf" ]
+    }, {
+      "name" : "hintOption",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "add", "put", "checkState", "isEmpty" ]
+    }, {
+      "name" : "optionChecker",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull" ]
+    }, {
+      "name" : "addMultiple",
+      "visibility" : "public",
+      "methodCalls" : [ "addSub" ]
+    }, {
+      "name" : "addDivision",
+      "visibility" : "public",
+      "methodCalls" : [ "addSub" ]
+    }, {
+      "name" : "addQuotient",
+      "visibility" : "public",
+      "methodCalls" : [ "getFrame" ]
+    }, {
+      "name" : "buildDynamic",
+      "visibility" : "public",
+      "methodCalls" : [ "getFieldList", "build", "addAll" ]
+    }, {
+      "name" : "withEpoch",
+      "visibility" : "public",
+      "methodCalls" : [ "getLast", "entrySet", "requireNonNull", "replicateWithEpoch", "getKey", "remove" ]
+    }, {
+      "name" : "addCore",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getFieldName",
+      "visibility" : "public",
+      "methodCalls" : [ "getRowType", "getName", "getFieldList", "getOnlyElement", "rowType", "get" ]
+    }, {
+      "name" : "getFieldCount",
+      "visibility" : "public",
+      "methodCalls" : [ "getFieldCount", "size" ]
+    }, {
+      "name" : "addAlias",
+      "visibility" : "public",
+      "methodCalls" : [ "getFrame" ]
+    }, {
+      "name" : "addRollup",
+      "visibility" : "public",
+      "methodCalls" : [ "getFrame", "put" ]
+    }, {
+      "name" : "nameExists",
+      "visibility" : "public",
+      "methodCalls" : [ "contains" ]
+    }, {
+      "name" : "kind",
+      "visibility" : "public",
+      "methodCalls" : [ "kind", "getKind" ]
+    }, {
+      "name" : "nullable",
+      "visibility" : "public",
+      "methodCalls" : [ "size", "createTypeWithNullability", "isNullable", "nullable", "get", "set" ]
+    }, {
+      "name" : "add",
+      "visibility" : "public",
+      "methodCalls" : [ "immutableEnumSet", "todo", "makeBinary", "putAll", "return_", "addExpressionForReuse", "getValue", "getKey", "apply", "getType", "createSqlIntervalType", "createSqlType", "getName", "getCorrelVariableGetter", "field", "createJavaType", "getSimpleName", "add", "size", "builder", "build", "of", "addAll", "getCluster", "getOrCreateSubset", "isEnforcer", "simplify", "getTraitSet", "getParserPosition", "getPos", "clear", "update", "get", "nCopies", "toString", "put", "putDouble", "position", "equals", "discard", "putLong", "array", "set", "putInt", "copyOf", "getBytes", "putFloat", "plus" ]
+    }, {
+      "name" : "uniquify",
+      "visibility" : "public",
+      "methodCalls" : [ "uniquify", "addAll", "clear", "isSchemaCaseSensitive", "getTypeSystem" ]
+    }, {
+      "name" : "nullableRecord",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getFieldType",
+      "visibility" : "public",
+      "methodCalls" : [ "equalsIgnoreCase", "getValue", "getKey", "get" ]
+    }, {
+      "name" : "addAll",
+      "visibility" : "public",
+      "methodCalls" : [ "backingList", "getKey", "getValue", "values", "forEach", "replicate", "addAll", "add" ]
+    }, {
+      "name" : "addMeasure",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "resolveColumn",
+      "visibility" : "public",
+      "methodCalls" : [ "size", "checkArgument", "containsKey", "get", "getSelectList", "measureIsCyclic", "map", "getCatalogReader", "joining", "stream", "remove", "newValidationError", "getMeasure", "indexOf", "stripAs", "deriveType", "add", "columnAmbiguous", "collect", "getRowType", "getSelectScope", "field", "resolveColumn", "getType", "nameMatcher", "getNamespaceOrThrow" ]
+    }, {
+      "name" : "expression",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "computeIfAbsent", "size", "first", "getParentSchema", "getExpression", "getName" ]
+    }, {
+      "name" : "resolveMeasure",
+      "visibility" : "public",
+      "methodCalls" : [ "resolveArgs" ]
+    }, {
+      "name" : "algorithm",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addTile",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "use",
+      "visibility" : "public",
+      "methodCalls" : [ "put" ]
+    }, {
+      "name" : "algorithmMaxMillis",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "statisticProvider",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull" ]
+    }, {
+      "name" : "rowCountEstimate",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "auto",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "resolveArgs",
+      "visibility" : "public",
+      "methodCalls" : [ "builder", "of", "build", "add" ]
+    }, {
+      "name" : "column",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "getFieldCount", "getRowType" ]
+    }, {
+      "name" : "withName",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "getKind", "getSqlIdentifier", "getFunctionType", "requiresOrder", "requiresGroupOrder", "getReturnTypeInference", "requiresOver", "getOperandTypeChecker", "getOperandTypeInference" ]
+    }, {
+      "name" : "withExpression",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "build",
+      "visibility" : "public",
+      "methodCalls" : [ "keySet", "newTreeSet", "getOrDefault", "put", "removeAll", "isEmpty", "pop", "size", "collect", "get", "comparingInt", "stream", "toImmutableList", "entrySet", "map", "sorted", "createStructType", "createTypeWithNullability", "newArrayInit", "new_", "stripHep", "accept", "build", "addAll", "immutableSortedCopy", "instantiatePlugin", "natural", "isRoot", "values", "builder", "checkArgument", "copyOf" ]
+    }, {
+      "name" : "withType",
+      "visibility" : "public",
+      "methodCalls" : [ "getDepth" ]
+    }, {
+      "name" : "passColumnsThrough",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "pruneIfEmpty",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withMinimumSurprise",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    } ],
+    "imports" : [ "org.apache.calcite.profile.ProfilerImpl.CompositeCollector.OF", "org.apache.calcite.util.TimeString", "org.apache.calcite.rex.RexBuilder", "org.apache.calcite.plan.hep.HepPlanner", "org.apache.calcite.rel.core.JoinRelType", "org.apache.calcite.sql.JoinType", "org.apache.calcite.rex.RexLocalRef", "org.apache.calcite.sql.SqlLiteral", "org.apache.calcite.plan.hep.HepProgramBuilder", "org.apache.calcite.sql.SqlWindow", "org.apache.calcite.util.NlsString", "com.google.common.collect.RangeSet", "org.apache.calcite.rex.RexSubQuery", "org.apache.calcite.sql.SqlNodeList", "java.util.Iterator", "com.google.common.collect.ImmutableList.toImmutableList", "org.apache.calcite.sql.SqlSetOperator", "org.apache.calcite.rel.type.RelDataTypeSystemImpl", "org.apache.calcite.rel.core.Project", "org.apache.calcite.rel.SingleRel", "org.apache.calcite.rex.RexWindow", "org.apache.calcite.sql.SqlMatchRecognize", "org.apache.calcite.rel.core.CorrelationId", "org.apache.calcite.sql.SqlSelectKeyword", "org.apache.calcite.util.DateString", "org.apache.calcite.sql.SqlNumericLiteral", "org.apache.calcite.sql.SqlBasicCall", "com.google.common.collect.Range", "org.apache.calcite.rex.RexProgram", "org.apache.calcite.rex.RexUtil", "org.apache.calcite.sql.SqlTableRef", "org.apache.calcite.rel.type.RelDataTypeField", "org.apache.calcite.rex.RexWindowBound", "org.apache.calcite.util.RangeSets", "org.apache.calcite.rel.RelFieldCollation", "org.apache.calcite.rex.RexOver", "org.apache.calcite.sql.fun.SqlSumEmptyIsZeroAggFunction", "org.apache.calcite.sql.fun.SqlCountAggFunction", "org.apache.calcite.rex.RexDynamicParam", "org.apache.calcite.rel.core.Aggregate", "org.apache.calcite.adapter.jdbc.JdbcCorrelationDataContext", "org.apache.calcite.sql.SqlOverOperator", "org.apache.calcite.rex.RexLambdaRef", "org.apache.calcite.sql.SqlLambda", "org.apache.calcite.util.Sarg", "org.apache.calcite.rel.RelCollation", "org.apache.calcite.rex.RexLambda", "org.apache.calcite.sql.fun.SqlCase", "org.apache.calcite.sql.SqlCall", "org.apache.calcite.rex.RexFieldAccess", "org.apache.calcite.rex.RexCorrelVariable", "org.apache.calcite.rex.RexUnknownAs", "org.apache.calcite.sql.fun.SqlInternalOperators", "org.apache.calcite.rel.core.Window", "org.apache.calcite.rex.RexShuttle", "java.util.AbstractList", "org.apache.calcite.rel.rules.AggregateProjectConstantToDummyJoinRule", "org.apache.calcite.sql.util.SqlShuttle", "org.apache.calcite.rex.RexFieldCollation", "org.apache.calcite.sql.SqlDynamicParam", "org.apache.calcite.sql.type.SqlTypeFamily", "org.apache.calcite.sql.type.SqlTypeFactoryImpl", "java.util.function.Consumer", "org.apache.calcite.linq4j.MemoryFactory", "java.util.function.BiFunction", "java.util.function.BiPredicate", "java.util.function.BiConsumer", "org.apache.calcite.linq4j.Nullness.castNonNullList", "com.google.common.collect.Lists", "org.slf4j.Logger", "org.apache.calcite.util.trace.CalciteTrace", "org.apache.calcite.plan.RelOptRule", "com.google.common.base.Preconditions.checkState", "org.apache.calcite.rel.convert.ConverterRule", "org.apache.calcite.sql.SqlCollation", "com.google.common.collect.ImmutableMultimap", "java.nio.charset.Charset", "org.apache.calcite.sql.type.SqlTypeMappingRule", "java.math.BigInteger", "org.apache.calcite.util.NameMap", "org.apache.calcite.util.TimestampString", "org.apache.calcite.sql.type.SqlTypeMappingRules", "org.apache.calcite.sql.parser.SqlParserPos", "java.lang.Math.floorDiv", "org.apache.calcite.avatica.util.DateTimeUtils.MILLIS_PER_DAY", "java.util.NavigableMap", "org.apache.commons.math3.fraction.BigFraction", "java.lang.Math.floorMod", "org.apache.calcite.linq4j.tree.ExpressionType.Subtract", "org.apache.calcite.sql.fun.SqlLibraryOperators.TO_BASE32", "org.apache.calcite.sql.fun.SqlStdOperatorTable.TRANSLATE", "org.apache.calcite.sql.fun.SqlLibraryOperators.CSCH", "org.apache.calcite.sql.fun.SqlStdOperatorTable.BIT_AND", "org.apache.calcite.sql.fun.SqlLibraryOperators.CODE_POINTS_TO_BYTES", "org.apache.calcite.sql.fun.SqlStdOperatorTable.BITAND", "org.apache.calcite.sql.fun.SqlLibraryOperators.JSON_LENGTH", "org.apache.calcite.sql.fun.SqlLibraryOperators.REGEXP_REPLACE_4", "org.apache.calcite.sql.fun.SqlStdOperatorTable.MULTISET_INTERSECT_DISTINCT", "org.apache.calcite.util.BuiltInMethod", "org.apache.calcite.sql.fun.SqlLibraryOperators.COSH", "org.apache.calcite.sql.fun.SqlLibraryOperators.SHA1", "org.apache.calcite.sql.fun.SqlLibraryOperators.REGEXP_CONTAINS", "java.lang.reflect.InvocationTargetException", "org.apache.calcite.sql.fun.SqlLibraryOperators.CSC", "org.apache.calcite.sql.fun.SqlLibraryOperators.LOG2", "org.apache.calcite.sql.fun.SqlStdOperatorTable.DIVIDE_INTEGER", "org.apache.calcite.linq4j.tree.ExpressionType.SubtractChecked", "org.apache.calcite.linq4j.tree.ExpressionType.GreaterThan", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ROW", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_NULL", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_INTERSECT", "org.apache.calcite.sql.fun.SqlLibraryOperators.EXTRACT_XML", "org.apache.calcite.sql.fun.SqlLibraryOperators.SORT_ARRAY", "org.apache.calcite.rex.RexWindowExclusion", "org.apache.calcite.sql.fun.SqlStdOperatorTable.FLOOR", "org.apache.calcite.sql.validate.SqlUserDefinedFunction", "org.apache.calcite.sql.fun.SqlLibraryOperators.LOG", "org.apache.calcite.linq4j.tree.Expression", "org.apache.calcite.sql.fun.SqlStdOperatorTable.FUSION", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_REPEAT", "org.apache.calcite.sql.fun.SqlStdOperatorTable.EXP", "org.apache.calcite.sql.fun.SqlStdOperatorTable.REGR_COUNT", "org.apache.calcite.sql.fun.SqlStdOperatorTable.POSIX_REGEX_CASE_SENSITIVE", "org.apache.calcite.sql.fun.SqlLibraryOperators.MAP_CONCAT", "org.apache.calcite.sql.fun.SqlLibraryOperators.REGEXP_REPLACE_2", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SOME_LE", "org.apache.calcite.linq4j.tree.ExpressionType.GreaterThanOrEqual", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_UNION", "org.apache.calcite.sql.fun.SqlLibraryOperators.TANH", "org.apache.calcite.sql.fun.SqlLibraryOperators.MAP_FROM_ENTRIES", "org.apache.calcite.sql.fun.SqlLibraryOperators.SINH", "org.apache.calcite.sql.fun.SqlStdOperatorTable.LEAD", "org.apache.calcite.sql.fun.SqlLibraryOperators.URL_ENCODE", "org.apache.calcite.sql.fun.SqlLibraryOperators.TO_CHAR", "org.apache.calcite.sql.fun.SqlStdOperatorTable.GREATER_THAN_OR_EQUAL", "org.apache.calcite.sql.validate.SqlConformanceEnum", "org.apache.calcite.sql.fun.SqlLibraryOperators.COSD", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CURRENT_ROLE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CHECKED_DIVIDE_INTEGER", "org.apache.calcite.sql.fun.SqlLibraryOperators.DIFFERENCE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CURRENT_CATALOG", "org.apache.calcite.sql.fun.SqlStdOperatorTable.MINUS_DATE", "org.apache.calcite.sql.fun.SqlLibraryOperators.PARSE_DATE", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_REVERSE", "org.apache.calcite.sql.fun.SqlLibraryOperators.SIND", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ROUND", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_PREPEND", "org.apache.calcite.linq4j.tree.ExpressionType.LessThan", "org.apache.calcite.sql.fun.SqlStdOperatorTable.FIRST_VALUE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.LESS_THAN_OR_EQUAL", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ASIN", "org.apache.calcite.sql.fun.SqlStdOperatorTable.OCTET_LENGTH", "org.apache.calcite.sql.fun.SqlStdOperatorTable.AND", "org.apache.calcite.sql.fun.SqlLibraryOperators.REGEXP_EXTRACT", "org.apache.calcite.sql.fun.SqlLibraryOperators.ASINH", "org.apache.calcite.sql.SqlFunction", "org.apache.calcite.sql.fun.SqlLibraryOperators.LPAD", "org.apache.calcite.sql.fun.SqlLibraryOperators.ORDINAL", "org.apache.calcite.sql.fun.SqlLibraryOperators.MAP_KEYS", "org.apache.calcite.sql.fun.SqlLibraryOperators.LEVENSHTEIN", "org.apache.calcite.sql.fun.SqlLibraryOperators.DAYNAME", "org.apache.calcite.avatica.util.ByteString", "org.apache.calcite.sql.fun.SqlLibraryOperators.REPEAT", "org.apache.calcite.sql.SqlOperator", "org.apache.calcite.sql.fun.SqlStdOperatorTable.MULTIPLY", "org.apache.calcite.sql.fun.SqlLibraryOperators.SPACE", "org.apache.calcite.sql.fun.SqlLibraryOperators.REGEXP_REPLACE_5_ORACLE", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY", "org.apache.calcite.sql.fun.SqlStdOperatorTable.POSIX_REGEX_CASE_INSENSITIVE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CARDINALITY", "org.apache.calcite.sql.fun.SqlLibraryOperators.MAP_ENTRIES", "org.apache.calcite.linq4j.tree.Expressions", "org.apache.calcite.sql.fun.SqlLibraryOperators.LOG_MYSQL", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ACOS", "org.apache.calcite.sql.SqlJsonConstructorNullClause", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SOME_GT", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_NOT_DISTINCT_FROM", "org.apache.calcite.sql.validate.SqlUserDefinedTableFunction", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAYS_ZIP", "org.apache.calcite.sql.fun.SqlLibraryOperators.FLOOR_BIG_QUERY", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_REMOVE", "org.apache.calcite.sql.SqlTypeConstructorFunction", "java.lang.reflect.Type", "org.apache.calcite.sql.fun.SqlStdOperatorTable.MIN", "org.apache.calcite.sql.validate.SqlUserDefinedAggFunction", "org.apache.calcite.sql.fun.SqlLibraryOperators.TO_DATE_PG", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ROW_NUMBER", "org.apache.calcite.sql.fun.SqlLibrary", "org.apache.calcite.sql.fun.SqlLibraryOperators.SECH", "org.apache.calcite.sql.fun.SqlStdOperatorTable.MODE", "org.apache.calcite.sql.fun.SqlLibraryOperators.MAX_BY", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_NOT_FALSE", "org.apache.calcite.sql.fun.SqlLibraryOperators.FROM_BASE32", "org.apache.calcite.sql.fun.SqlLibraryOperators.BOOLAND_AGG", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_SLICE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.TIMESTAMP_DIFF", "org.apache.calcite.sql.fun.SqlLibraryOperators.REVERSE_SPARK", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SUBSTRING", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SOME_GE", "org.apache.calcite.util.ReflectUtil.isStatic", "org.apache.calcite.avatica.util.DateTimeUtils", "org.apache.calcite.sql.fun.SqlLibraryOperators.EXISTS_NODE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.JSON_VALUE", "org.apache.calcite.adapter.java.JavaTypeFactory", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CURRENT_TIMESTAMP", "org.apache.calcite.sql.fun.SqlLibraryOperators.MIN_BY", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_TRUE", "org.apache.calcite.sql.fun.SqlLibraryOperators.REGEXP_REPLACE_BIG_QUERY_3", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ARG_MAX", "org.apache.calcite.sql.fun.SqlStdOperatorTable.RANK", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_NOT_NULL", "org.apache.calcite.sql.SqlWindowTableFunction", "org.apache.calcite.sql.fun.SqlLibraryOperators.COTH", "org.apache.calcite.sql.fun.SqlLibraryOperators.ENDS_WITH", "org.apache.calcite.sql.fun.SqlLibraryOperators.MAP_VALUES", "org.apache.calcite.sql.fun.SqlLibraryOperators.DATE", "org.apache.calcite.sql.fun.SqlLibraryOperators.PARSE_TIMESTAMP", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_JSON_VALUE", "org.apache.calcite.sql.fun.SqlLibraryOperators.SAFE_CAST", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CURRENT_DATE", "org.apache.calcite.avatica.util.TimeUnit", "org.apache.calcite.sql.fun.SqlLibraryOperators.FROM_BASE64", "org.apache.calcite.sql.fun.SqlLibraryOperators.BOOL_AND", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_INSERT", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ARG_MIN", "org.apache.calcite.sql.fun.SqlQuantifyOperator", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CHECKED_MULTIPLY", "org.apache.calcite.sql.SqlBinaryOperator", "org.apache.calcite.sql.fun.SqlStdOperatorTable.PLUS", "org.apache.calcite.sql.fun.SqlLibraryOperators.CEIL_BIG_QUERY", "org.apache.calcite.sql.fun.SqlLibraryOperators.STRCMP", "org.apache.calcite.linq4j.tree.ExpressionType.Divide", "org.apache.calcite.sql.fun.SqlLibraryOperators.BITOR_AGG", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CONVERT", "org.apache.calcite.sql.fun.SqlLibraryOperators.SUBSTRING_INDEX", "org.apache.calcite.sql.fun.SqlLibraryOperators.EXTRACT_VALUE", "com.google.common.collect.ImmutableMap", "org.apache.calcite.sql.fun.SqlLibraryOperators.SAFE_OFFSET", "org.apache.calcite.sql.fun.SqlLibraryOperators.JSON_REPLACE", "org.apache.calcite.sql.fun.SqlLibraryOperators.TIME_TRUNC", "org.apache.calcite.sql.fun.SqlStdOperatorTable.TYPEOF", "org.apache.calcite.linq4j.tree.ExpressionType.NotEqual", "org.apache.calcite.sql.fun.SqlStdOperatorTable.MULTISET_UNION_DISTINCT", "org.apache.calcite.sql.fun.SqlLibraryOperators.GETBIT", "org.apache.calcite.sql.fun.SqlStdOperatorTable.EQUALS", "org.apache.calcite.linq4j.tree.ConstantExpression", "org.apache.calcite.sql.fun.SqlLibraryOperators.TO_DATE", "org.apache.calcite.sql.fun.SqlInternalOperators.THROW_UNLESS", "org.apache.calcite.sql.fun.SqlStdOperatorTable.REINTERPRET", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ANY_VALUE", "org.apache.calcite.sql.SqlJsonEmptyOrError", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_AGG", "org.apache.calcite.sql.fun.SqlLibraryOperators.BIT_COUNT_MYSQL", "org.apache.calcite.sql.fun.SqlLibraryOperators.ATAND", "org.apache.calcite.sql.fun.SqlStdOperatorTable.NOT_EQUALS", "org.apache.calcite.sql.fun.SqlStdOperatorTable.LIKE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CAST", "org.apache.calcite.linq4j.tree.ExpressionType.Negate", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_JSON_SCALAR", "java.lang.reflect.Method", "org.apache.calcite.sql.fun.SqlStdOperatorTable.OR", "org.apache.calcite.sql.fun.SqlLibraryOperators.REGEXP_REPLACE_PG_4", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_CONCAT_AGG", "org.apache.calcite.sql.fun.SqlLibraryOperators.ASIND", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CHECKED_DIVIDE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.REPLACE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.DATETIME_PLUS", "org.apache.calcite.sql.fun.SqlStdOperatorTable.BITNOT", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CURRENT_USER", "org.apache.calcite.sql.fun.SqlStdOperatorTable.UPPER", "org.apache.calcite.adapter.enumerable.EnumUtils.generateCollatorExpression", "org.apache.calcite.sql.fun.SqlStdOperatorTable.JSON_OBJECTAGG", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SESSION_USER", "org.apache.calcite.sql.fun.SqlStdOperatorTable.BITOR", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_DISTINCT", "org.apache.calcite.sql.fun.SqlLibraryOperators.RANDOM", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SIN", "org.apache.calcite.sql.fun.SqlLibraryOperators.JSON_TYPE", "org.apache.calcite.sql.fun.SqlLibraryOperators.PARSE_TIME", "org.apache.calcite.sql.fun.SqlStdOperatorTable.JSON_TYPE_OPERATOR", "org.apache.calcite.sql.fun.SqlStdOperatorTable.LISTAGG", "java.math.BigDecimal", "org.apache.calcite.sql.fun.SqlLibraryOperators.MAP_CONTAINS_KEY", "org.apache.calcite.sql.fun.SqlStdOperatorTable.NOT", "org.apache.calcite.sql.fun.SqlLibraryOperators.SYSDATE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ATAN2", "org.apache.calcite.sql.fun.SqlStdOperatorTable.UNARY_PLUS", "org.apache.calcite.sql.fun.SqlLibraryOperators.LOGICAL_OR", "org.apache.calcite.linq4j.tree.FunctionExpression", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CHECKED_MINUS", "org.apache.calcite.sql.fun.SqlStdOperatorTable.LOCALTIMESTAMP", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CONCAT", "org.apache.calcite.sql.fun.SqlLibraryOperators.TIMESTAMP_MILLIS", "org.apache.calcite.sql.fun.SqlStdOperatorTable.BIT_XOR", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SOME_EQ", "org.apache.calcite.sql.fun.SqlStdOperatorTable.GROUPING_ID", "org.apache.calcite.sql.fun.SqlLibraryOperators.CONCAT_WS_POSTGRESQL", "org.apache.calcite.sql.fun.SqlStdOperatorTable.VARIANTNULL", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_JOIN", "org.apache.calcite.sql.fun.SqlLibraryOperators.SAFE_ORDINAL", "org.apache.calcite.schema.ImplementableAggFunction", "org.apache.calcite.sql.fun.SqlStdOperatorTable.HOP", "org.apache.calcite.sql.fun.SqlStdOperatorTable.JSON_ARRAYAGG", "org.apache.calcite.sql.fun.SqlStdOperatorTable.USER", "org.apache.calcite.sql.fun.SqlLibraryOperators.TIMESTAMP_SECONDS", "org.apache.calcite.linq4j.tree.ExpressionType", "org.apache.calcite.sql.fun.SqlStdOperatorTable.NTILE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ALL_EQ", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SUM", "org.apache.calcite.sql.fun.SqlLibraryOperators.CONCAT_WS_MSSQL", "org.apache.calcite.sql.fun.SqlStdOperatorTable.TAN", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_COMPACT", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SOME_LT", "org.apache.calcite.sql.fun.SqlStdOperatorTable.EXTRACT", "org.apache.calcite.sql.fun.SqlLibraryOperators.DATETIME_TRUNC", "org.apache.calcite.sql.fun.SqlJsonObjectAggAggFunction", "org.apache.calcite.linq4j.tree.ExpressionType.Multiply", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SLICE", "org.apache.calcite.sql.fun.SqlLibraryOperators.STR_TO_MAP", "org.apache.calcite.sql.fun.SqlStdOperatorTable.COLLECT", "org.apache.calcite.sql.fun.SqlLibraryOperators.SHA512", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_MAX", "org.apache.calcite.avatica.util.TimeUnitRange", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_CONTAINS", "org.apache.calcite.sql.fun.SqlLibraryOperators.TO_HEX", "org.apache.calcite.schema.impl.AggregateFunctionImpl", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SESSION", "org.apache.calcite.sql.fun.SqlLibraryOperators.POWER_PG", "org.apache.calcite.sql.fun.SqlStdOperatorTable.UNARY_MINUS", "org.apache.calcite.sql.fun.SqlLibraryOperators.CODE_POINTS_TO_STRING", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SOME_NE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CURRENT_VALUE", "org.apache.calcite.sql.fun.SqlLibraryOperators.SEC", "org.apache.calcite.sql.fun.SqlLibraryOperators.UNIX_MILLIS", "org.apache.calcite.sql.fun.SqlStdOperatorTable.LAST_VALUE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.LOCALTIME", "org.apache.calcite.sql.fun.SqlStdOperatorTable.DIVIDE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.GREATER_THAN", "org.apache.calcite.sql.fun.SqlLibraryOperators.CONTAINS_SUBSTR", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_NOT_JSON_VALUE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SIMILAR_TO", "org.apache.calcite.linq4j.tree.BlockStatement", "org.apache.calcite.sql.fun.SqlLibraryOperators.BIN", "org.apache.calcite.sql.fun.SqlLibraryOperators.JSON_PRETTY", "org.apache.calcite.sql.fun.SqlLibraryOperators.BOOL_OR", "org.apache.calcite.linq4j.tree.BinaryExpression", "org.apache.calcite.sql.fun.SqlLibraryOperators.JSON_DEPTH", "org.apache.calcite.sql.fun.SqlLibraryOperators.SAFE_DIVIDE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.NEXT_VALUE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.MINUS", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_EXCEPT", "org.apache.calcite.sql.fun.SqlStdOperatorTable.TRUNCATE", "org.apache.calcite.sql.fun.SqlLibraryOperators.SHA256", "org.apache.calcite.sql.fun.SqlStdOperatorTable.NEGATED_POSIX_REGEX_CASE_INSENSITIVE", "org.apache.calcite.sql.fun.SqlLibraryOperators.BIT_LENGTH", "org.apache.calcite.sql.fun.SqlLibraryOperators.RIGHT", "java.lang.reflect.Modifier", "org.apache.calcite.sql.type.SqlTypeUtil", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CBRT", "org.apache.calcite.sql.fun.SqlLibraryOperators.SPLIT", "org.apache.calcite.sql.fun.SqlStdOperatorTable.STRUCT_ACCESS", "org.apache.calcite.sql.fun.SqlLibraryOperators.REGEXP_REPLACE_3", "org.apache.calcite.sql.fun.SqlLibraryOperators.RPAD", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_NOT_JSON_SCALAR", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_CONCAT", "org.apache.calcite.sql.fun.SqlLibraryOperators.BOOLOR_AGG", "org.apache.calcite.linq4j.tree.ExpressionType.DivideChecked", "org.apache.calcite.schema.ImplementableFunction", "org.apache.calcite.sql.fun.SqlStdOperatorTable.RAND_INTEGER", "org.apache.calcite.sql.fun.SqlLibraryOperators.REGEXP", "org.apache.calcite.sql.fun.SqlLibraryOperators.TRY_CAST", "org.apache.calcite.sql.fun.SqlLibraryOperators.SAFE_NEGATE", "org.apache.calcite.sql.fun.SqlLibraryOperators.ILIKE", "org.apache.calcite.sql.fun.SqlLibraryOperators.ACOSD", "org.apache.calcite.sql.fun.SqlStdOperatorTable.BIT_OR", "org.apache.calcite.sql.SqlJsonValueEmptyOrErrorBehavior", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_SIZE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.BITCOUNT", "org.apache.calcite.sql.fun.SqlLibraryOperators.SAFE_SUBTRACT", "org.apache.calcite.sql.fun.SqlLibraryOperators.CONCAT_WS", "org.apache.calcite.sql.fun.SqlLibraryOperators.FROM_HEX", "org.apache.calcite.sql.fun.SqlLibraryOperators.REGEXP_REPLACE_5", "org.apache.calcite.sql.fun.SqlStdOperatorTable.MULTISET_EXCEPT_DISTINCT", "org.apache.calcite.sql.fun.SqlLibraryOperators.SAFE_ADD", "org.apache.calcite.sql.fun.SqlLibraryOperators.LEFT", "org.apache.calcite.sql.fun.SqlLibraryOperators.REGEXP_LIKE", "org.apache.calcite.sql.fun.SqlLibraryOperators.REGEXP_REPLACE_6", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_NOT_A_SET", "org.apache.calcite.sql.fun.SqlLibraryOperators.JSON_REMOVE", "org.apache.calcite.linq4j.tree.MethodCallExpression", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ASCII", "org.apache.calcite.linq4j.tree.ExpressionType.Add", "org.apache.calcite.sql.fun.SqlLibraryOperators.RLIKE", "org.apache.calcite.sql.fun.SqlLibraryOperators.COMPRESS", "org.apache.calcite.sql.fun.SqlStdOperatorTable.JSON_EXISTS", "org.apache.calcite.sql.fun.SqlLibraryOperators.TO_BASE64", "org.apache.calcite.sql.fun.SqlLibraryOperators.FORMAT_NUMBER", "org.apache.calcite.runtime.PairList", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ARRAY_VALUE_CONSTRUCTOR", "java.util.function.Supplier", "org.apache.calcite.sql.fun.SqlLibraryOperators.TIMESTAMP_MICROS", "org.apache.calcite.sql.fun.SqlLibraryOperators.TRANSLATE3", "org.apache.calcite.sql.fun.SqlLibraryOperators.ACOSH", "org.apache.calcite.runtime.SqlFunctions", "org.apache.calcite.rel.type.RelDataTypeFactoryImpl", "org.apache.calcite.sql.fun.SqlStdOperatorTable.MEMBER_OF", "org.apache.calcite.sql.validate.SqlUserDefinedTableMacro", "org.apache.calcite.sql.fun.SqlStdOperatorTable.RAND", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_FALSE", "org.apache.calcite.sql.fun.SqlItemOperator", "org.apache.calcite.sql.fun.SqlLibraryOperators.PARSE_URL", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ALL_GT", "org.apache.calcite.sql.fun.SqlStdOperatorTable.TRIM", "org.apache.calcite.sql.type.SqlTypeName", "org.apache.calcite.sql.fun.SqlLibraryOperators.FORMAT_TIMESTAMP", "org.apache.calcite.sql.fun.SqlLibraryOperators.TIME", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_NOT_TRUE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ITEM", "org.apache.calcite.sql.fun.SqlLibraryOperators.HEX", "org.apache.calcite.sql.fun.SqlLibraryOperators.BASE64", "org.apache.calcite.DataContext", "org.apache.calcite.sql.fun.SqlLibraryOperators.PARSE_DATETIME", "org.apache.calcite.linq4j.tree.ParameterExpression", "org.apache.calcite.sql.fun.SqlLibraryOperators.CONVERT_ORACLE", "org.apache.calcite.sql.fun.SqlLibraryOperators.CURRENT_DATETIME", "org.apache.calcite.sql.fun.SqlStdOperatorTable.LESS_THAN", "org.apache.calcite.sql.fun.SqlLibraryOperators.UNIX_DATE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.POSITION", "org.apache.calcite.sql.fun.SqlLibraryOperators.IS_INF", "org.apache.calcite.linq4j.tree.OptimizeShuttle", "org.apache.calcite.sql.fun.SqlLibraryOperators.REGEXP_INSTR", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SOME", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CHARACTER_LENGTH", "org.apache.calcite.linq4j.tree.NewExpression", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CURRENT_PATH", "org.apache.calcite.sql.fun.SqlStdOperatorTable.RADIANS", "org.apache.calcite.sql.fun.SqlStdOperatorTable.PI", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CHAR_LENGTH", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CHECKED_UNARY_MINUS", "org.apache.calcite.sql.fun.SqlLibraryOperators.BIT_GET", "org.apache.calcite.rex.RexPatternFieldRef", "org.apache.calcite.sql.fun.SqlLibraryOperators.DATETIME", "org.apache.calcite.sql.fun.SqlStdOperatorTable.MULTISET_EXCEPT", "org.apache.calcite.sql.fun.SqlStdOperatorTable.MAX", "org.apache.calcite.sql.fun.SqlLibraryOperators.FIND_IN_SET", "org.apache.calcite.sql.fun.SqlLibraryOperators.JSON_KEYS", "org.apache.calcite.linq4j.tree.BlockBuilder", "org.apache.calcite.sql.fun.SqlLibraryOperators.BIT_COUNT_BIG_QUERY", "org.apache.calcite.sql.fun.SqlStdOperatorTable.JSON_QUERY", "org.apache.calcite.sql.fun.SqlLibraryOperators.ATANH", "org.apache.calcite.sql.fun.SqlLibraryOperators.CONCAT2", "java.lang.reflect.Constructor", "org.apache.calcite.sql.fun.SqlStdOperatorTable.OVERLAY", "org.apache.calcite.sql.fun.SqlLibraryOperators.UNIX_MICROS", "org.apache.calcite.sql.fun.SqlLibraryOperators.IS_NAN", "org.apache.calcite.sql.fun.SqlStdOperatorTable.JSON_OBJECT", "org.apache.calcite.sql.fun.SqlLibraryOperators.CHAR", "org.apache.calcite.sql.fun.SqlLibraryOperators.XML_TRANSFORM", "org.apache.calcite.sql.fun.SqlStdOperatorTable.COALESCE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SYSTEM_USER", "org.apache.calcite.sql.fun.SqlLibraryOperators.TO_CHAR_PG", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_NOT_JSON_ARRAY", "org.apache.calcite.sql.fun.SqlStdOperatorTable.GROUPING", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CEIL", "org.apache.calcite.sql.fun.SqlLibraryOperators.JSON_STORAGE_SIZE", "org.apache.calcite.sql.fun.SqlLibraryOperators.TO_TIMESTAMP", "org.apache.calcite.sql.fun.SqlStdOperatorTable.COUNT", "org.apache.calcite.sql.fun.SqlLibraryOperators.DATE_FROM_UNIX_DATE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.DEFAULT", "org.apache.calcite.sql.fun.SqlLibraryOperators.TO_CODE_POINTS", "org.apache.calcite.sql.fun.SqlStdOperatorTable.COS", "org.apache.calcite.sql.fun.SqlLibraryOperators.POW", "org.apache.calcite.linq4j.tree.ExpressionType.NegateChecked", "org.apache.calcite.rel.type.RelDataType", "org.apache.calcite.sql.fun.SqlStdOperatorTable.MULTISET_INTERSECT", "org.apache.calcite.sql.fun.SqlStdOperatorTable.INTERSECTION", "org.apache.calcite.schema.FunctionContext", "org.apache.calcite.sql.fun.SqlLibraryOperators.SAFE_MULTIPLY", "org.apache.calcite.sql.fun.SqlStdOperatorTable.JSON_ARRAY", "org.apache.calcite.sql.fun.SqlLibraryOperators.CRC32", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_EMPTY", "org.apache.calcite.sql.fun.SqlLibraryOperators.CONCAT_WS_SPARK", "org.apache.calcite.sql.fun.SqlLibraryOperators.LOGICAL_AND", "org.apache.calcite.sql.fun.SqlLibraryOperators.LOG1P", "org.apache.calcite.sql.fun.SqlStdOperatorTable.TUMBLE", "org.apache.calcite.sql.fun.SqlLibraryOperators.LOG_POSTGRES", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ALL_LE", "org.apache.calcite.sql.fun.SqlLibraryOperators.FORMAT_TIME", "org.apache.calcite.sql.fun.SqlLibraryOperators.URL_DECODE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.MOD", "org.apache.calcite.sql.fun.SqlLibraryOperators.DATE_TRUNC", "org.apache.calcite.rel.type.RelDataTypeFactory", "org.apache.calcite.sql.fun.SqlLibraryOperators.DATE_PART", "org.apache.calcite.sql.fun.SqlLibraryOperators.FORMAT_DATETIME", "org.apache.calcite.sql.fun.SqlLibraryOperators.JSON_INSERT", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_JSON_OBJECT", "org.apache.calcite.sql.fun.SqlLibraryOperators.OFFSET", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ALL_GE", "org.apache.calcite.sql.fun.SqlLibraryOperators.BITAND_AGG", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SUM0", "org.apache.calcite.sql.fun.SqlStdOperatorTable.EVERY", "org.apache.calcite.sql.fun.SqlLibraryOperators.TRUNC_BIG_QUERY", "java.math.RoundingMode", "org.apache.calcite.sql.fun.SqlStdOperatorTable.DEGREES", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_MIN", "org.apache.calcite.sql.fun.SqlStdOperatorTable.LOG10", "org.apache.calcite.sql.fun.SqlLibraryOperators.JSON_SET", "org.apache.calcite.sql.fun.SqlStdOperatorTable.TIMESTAMP_ADD", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_A_SET", "org.apache.calcite.sql.fun.SqlStdOperatorTable.COT", "org.apache.calcite.sql.fun.SqlLibraryOperators.STARTS_WITH", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_TO_STRING", "org.apache.calcite.sql.fun.SqlLibraryOperators.TO_TIMESTAMP_PG", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ALL_NE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.LAST", "org.apache.calcite.sql.fun.SqlJsonArrayAggAggFunction", "org.apache.calcite.sql.fun.SqlLibraryOperators.EXISTS", "org.apache.calcite.linq4j.tree.ExpressionType.LessThanOrEqual", "org.apache.calcite.sql.fun.SqlStdOperatorTable.DENSE_RANK", "org.apache.calcite.sql.fun.SqlStdOperatorTable.LN", "org.apache.calcite.sql.fun.SqlLibraryOperators.MAP", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_LENGTH", "org.apache.calcite.sql.fun.SqlStdOperatorTable.BITXOR", "org.apache.calcite.linq4j.tree.ExpressionType.MultiplyChecked", "org.apache.calcite.sql.fun.SqlStdOperatorTable.NTH_VALUE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ATAN", "org.apache.calcite.sql.SqlMatchFunction", "org.apache.calcite.sql.fun.SqlStdOperatorTable.JSON_VALUE_EXPRESSION", "org.apache.calcite.sql.fun.SqlLibraryOperators.CONCAT_FUNCTION", "org.apache.calcite.sql.fun.SqlStdOperatorTable.LOWER", "org.apache.calcite.linq4j.tree.ExpressionType.UnaryPlus", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_NOT_EMPTY", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_NOT_JSON_OBJECT", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CURRENT_TIME", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_APPEND", "org.apache.calcite.sql.fun.SqlLibraryOperators.FACTORIAL", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_JSON_ARRAY", "org.apache.calcite.sql.fun.SqlInternalOperators.LITERAL_AGG", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SUBMULTISET_OF", "org.apache.calcite.sql.fun.SqlStdOperatorTable.POWER", "org.apache.calcite.sql.fun.SqlLibraryOperators.TIMESTAMP_TRUNC", "org.apache.calcite.sql.fun.SqlLibraryOperators.UN_BASE64", "org.apache.calcite.sql.fun.SqlLibraryOperators.MAP_FROM_ARRAYS", "org.apache.calcite.sql.fun.SqlStdOperatorTable.LAG", "org.apache.calcite.rex.RexLiteral", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CHECKED_PLUS", "org.apache.calcite.sql.fun.SqlStdOperatorTable.NOT_SUBMULTISET_OF", "org.apache.calcite.sql.fun.SqlLibraryOperators.SOUNDEX_SPARK", "org.apache.calcite.sql.fun.SqlStdOperatorTable.MULTISET_UNION", "org.apache.calcite.sql.fun.SqlLibraryOperators.TIMESTAMP", "org.apache.calcite.sql.fun.SqlLibraryOperators.FORMAT_DATE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.LAST_DAY", "org.apache.calcite.sql.fun.SqlLibraryOperators.SPLIT_PART", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAYS_OVERLAP", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ALL_LT", "org.apache.calcite.sql.fun.SqlLibraryOperators.REVERSE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ABS", "org.apache.calcite.sql.fun.SqlLibraryOperators.CONCAT_FUNCTION_WITH_NULL", "org.apache.calcite.sql.SqlIntervalQualifier", "org.apache.calcite.sql.fun.SqlLibraryOperators.TAND", "org.apache.calcite.sql.fun.SqlLibraryOperators.UNIX_SECONDS", "org.apache.calcite.sql.fun.SqlLibraryOperators.MD5", "org.apache.calcite.sql.fun.SqlStdOperatorTable.NEGATED_POSIX_REGEX_CASE_SENSITIVE", "org.apache.calcite.linq4j.tree.MemberExpression", "org.apache.calcite.sql.fun.SqlTrimFunction", "org.apache.calcite.sql.fun.SqlLibraryOperators.MONTHNAME", "org.apache.calcite.linq4j.tree.ExpressionType.Equal", "org.apache.calcite.sql.fun.SqlLibraryOperators.DATEADD", "org.apache.calcite.sql.fun.SqlLibraryOperators.SOUNDEX", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SIGN", "org.apache.calcite.sql.fun.SqlLibraryOperators.CHR", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SINGLE_VALUE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.MAP_VALUE_CONSTRUCTOR", "org.apache.calcite.sql.fun.SqlStdOperatorTable.INITCAP", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ELEMENT", "org.apache.calcite.sql.fun.SqlLibraryOperators.SYSTIMESTAMP", "org.apache.calcite.linq4j.tree.ExpressionType.AddChecked", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_POSITION", "org.apache.calcite.sql.fun.SqlLibraryOperators.REGEXP_EXTRACT_ALL", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CLASSIFIER", "org.apache.calcite.sql.fun.SqlLibraryOperators.REGEXP_REPLACE_PG_3", "org.apache.calcite.sql.SqlIdentifier", "org.apache.calcite.rex.RexCall", "org.checkerframework.checker.nullness.qual.MonotonicNonNull", "org.apache.calcite.jdbc.CalcitePrepare", "org.apache.calcite.schema.Schemas", "org.apache.calcite.rel.rel2sql.SqlImplementor.POS", "org.apache.calcite.sql.SqlNode", "org.apache.calcite.rel.RelNode", "com.google.common.collect.ImmutableListMultimap", "org.apache.calcite.rel.core.TableScan", "java.util.function.IntFunction", "org.apache.calcite.rel.logical.LogicalProject", "com.google.common.collect.LinkedHashMultimap", "org.apache.calcite.sql.SqlSelect", "org.checkerframework.checker.nullness.qual.RequiresNonNull", "org.apache.calcite.sql.SqlDialect", "com.google.common.collect.Multimap", "org.apache.calcite.rex.RexNode", "org.apache.calcite.runtime.Utilities", "org.apache.calcite.schema.impl.MaterializedViewTable", "org.apache.calcite.rel.core.AggregateCall", "org.apache.calcite.rex.RexInputRef", "org.apache.calcite.util.mapping.IntPair", "org.apache.calcite.avatica.AvaticaUtils", "org.apache.calcite.util.graph.DirectedGraph", "java.util.IdentityHashMap", "org.apache.calcite.jdbc.CalciteSchema", "org.apache.calcite.sql.SqlAggFunction", "org.apache.calcite.plan.RelOptUtil", "org.apache.calcite.sql.fun.SqlStdOperatorTable", "org.apache.calcite.util.Litmus", "org.apache.calcite.sql.SqlUtil", "java.util.LinkedHashSet", "org.apache.calcite.util.graph.TopologicalOrderIterator", "org.apache.calcite.statistic.MapSqlStatisticProvider", "org.apache.calcite.schema.impl.StarTable", "org.apache.calcite.util.graph.DefaultEdge", "java.util.LinkedHashMap", "org.apache.calcite.util.graph.DefaultDirectedGraph", "java.util.stream.Collectors", "org.apache.calcite.rel.rel2sql.SqlImplementor", "org.apache.calcite.rel.logical.LogicalJoin", "org.apache.calcite.sql.SqlJoin", "org.apache.calcite.sql.validate.SqlValidatorUtil", "org.apache.calcite.schema.Table", "org.apache.calcite.sql.SqlKind", "org.checkerframework.checker.initialization.qual.UnknownInitialization", "java.util.function.Function", "org.apache.calcite.config.CalciteSystemProperty", "com.yahoo.sketches.hll.HllSketch", "com.google.common.collect.Ordering", "com.google.common.collect.Iterables", "com.google.common.collect.ImmutableList", "java.util.Collections", "org.apache.calcite.runtime.FlatLists", "java.util.BitSet", "com.fasterxml.jackson.core.JsonGenerator", "java.util.Locale", "java.io.IOException", "org.apache.calcite.adapter.druid.DruidQuery.writeFieldIf", "java.util.Objects.requireNonNull", "java.util.Map", "java.util.HashMap", "com.google.common.collect.ImmutableSet", "com.google.common.util.concurrent.UncheckedExecutionException", "java.util.Set", "org.apache.calcite.linq4j.Nullness.castNonNull", "com.google.common.cache.LoadingCache", "com.google.common.cache.CacheLoader", "org.apache.calcite.util.Util", "java.util.concurrent.ExecutionException", "com.google.common.cache.CacheBuilder", "com.google.common.collect.Sets", "java.util.Objects", "org.checkerframework.checker.nullness.qual.Nullable", "org.apache.calcite.rel.metadata.NullSentinel", "java.util.PriorityQueue", "org.apache.calcite.util.ImmutableBitSet", "java.util.Queue", "java.util.ArrayList", "java.util.TreeSet", "java.util.Deque", "java.util.function.Predicate", "com.google.common.base.Preconditions.checkArgument", "java.util.Arrays", "java.nio.charset.StandardCharsets", "org.apache.calcite.materialize.Lattice", "java.nio.ByteBuffer", "org.apache.calcite.util.PartiallyOrderedSet", "java.util.Collection", "java.util.ArrayDeque", "java.util.List", "com.google.common.collect.ImmutableSortedSet", "java.util.NavigableSet", "java.util.HashSet", "org.apache.calcite.linq4j.tree.Primitive", "org.apache.calcite.linq4j.Ord", "java.util.SortedSet", "org.apache.calcite.util.Pair" ]
+  }, {
+    "name" : "Config",
+    "packageName" : "org.apache.calcite.adapter.file",
+    "extendedClasses" : [ "CassandraFilterRuleConfig", "CassandraSortRuleConfig", "CassandraLimitRuleConfig", "Config" ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "relBuilderFactory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "simplify",
+      "visibility" : "public",
+      "methodCalls" : [ "simplifyUnknownAs", "equals", "simplify", "size", "getTraitDef", "getDefault", "replace", "trait" ]
+    }, {
+      "name" : "withSimplify",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withDedupAggregateCalls",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "aggregateUnique",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withRemoveRedundantDistinct",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "simplifyValues",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "simplifyLimit",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withPreventEmptyFieldList",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "dedupAggregateCalls",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withSimplifyValues",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withSimplifyLimit",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "removeRedundantDistinct",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withConvertCorrelateToJoin",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "preventEmptyFieldList",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "pruneInputOfAggregate",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "convertCorrelateToJoin",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withPushJoinCondition",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withAggregateUnique",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withPruneInputOfAggregate",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "pushJoinCondition",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withParserConfig",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "parserConfig",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull" ]
+    }, {
+      "name" : "costFunction",
+      "visibility" : "public",
+      "methodCalls" : [ "getMetadataQuery", "getCumulativeCost" ]
+    }, {
+      "name" : "withCostFunction",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withExtraCondition",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withFunctionsToReduce",
+      "visibility" : "public",
+      "methodCalls" : [ "withFunctionsToReduce" ]
+    }, {
+      "name" : "actualFunctionsToReduce",
+      "visibility" : "public",
+      "methodCalls" : [ "forEach", "first", "functionsToReduce" ]
+    }, {
+      "name" : "extraCondition",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "functionsToReduce",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withUsingGroupingSets",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isUsingGroupingSets",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withIncludeOuter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isIncludeOuter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "matchNullability",
+      "visibility" : "public",
+      "methodCalls" : [ "createTypeWithNullability", "getType", "isNullable" ]
+    }, {
+      "name" : "withMatchNullability",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "treatDynamicCallsAsConstant",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withUnionRewritingPullProgram",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withGenerateUnionRewriting",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withFastBailOut",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withTreatDynamicCallsAsConstant",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "generateUnionRewriting",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "unionRewritingPullProgram",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "fastBailOut",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "throwIfNotUnique",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isWholeProject",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withWholeFilter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withWholeProject",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isWholeFilter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withThrowIfNotUnique",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withRight",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isRight",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isAllowFunctions",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "projectMergeRule",
+      "visibility" : "public",
+      "methodCalls" : [ "withRelBuilderFactory", "relBuilderFactory", "toRule" ]
+    }, {
+      "name" : "withCopyFilter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isCopyFilter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withAggregateProjectPullUpConstantsRule",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withProjectMergeRule",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isCopyProject",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withAllowFunctions",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withPreserveExprCondition",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "aggregateProjectPullUpConstantsRule",
+      "visibility" : "public",
+      "methodCalls" : [ "withRelBuilderFactory", "withDescription", "withOperandFor", "relBuilderFactory", "as", "toRule" ]
+    }, {
+      "name" : "withCopyProject",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withFilterAggregateTransposeRule",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "preserveExprCondition",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "filterProjectTransposeRule",
+      "visibility" : "public",
+      "methodCalls" : [ "withOperandFor", "getCondition", "relBuilderFactory", "as", "withRelBuilderFactory", "toRule", "containsCorrelation", "withCopyProject", "withCopyFilter" ]
+    }, {
+      "name" : "filterAggregateTransposeRule",
+      "visibility" : "public",
+      "methodCalls" : [ "relBuilderFactory", "withRelBuilderFactory", "as", "withOperandFor", "toRule" ]
+    }, {
+      "name" : "withFilterProjectTransposeRule",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "matchNullFetch",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withMatchNullFetch",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isSwapOuter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withSwapOuter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withAllowAlwaysTrueCondition",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isAllowAlwaysTrueCondition",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "bloat",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withForce",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withBloat",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "force",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "create",
+      "visibility" : "public",
+      "methodCalls" : [ "withConversion", "getAbsolutePath", "registerTable", "withKeyspace", "withAuthCredentials", "computeIfAbsent", "withLocalDatacenter", "getKeyspace", "debug", "addContactPoint", "orElse", "isDebugEnabled", "setProperty", "isNotEmpty", "unpack", "withPrepare", "withBloat", "getRelOptSchema", "loadDefaultProperties", "getSortedHost", "toLowerCase", "collect", "warn", "readValue", "toList", "stream", "configure", "map", "getBoolean", "createClientCache", "getPath", "setConsumer", "format", "setConsumerParams", "getOrDefault", "getDeclaredConstructor", "setRowConverter", "setBootstrapServers", "setTopicName", "parseInt", "checkArgument", "toString", "clone", "appendAll", "list", "block", "file", "proto", "getCanonicalName", "isAbsolute", "getTypeName", "applyConnectionString", "credential", "identity", "getContext", "inferReturnType", "getDistinctOptionality", "deriveCollectionQueryComponentType", "deriveRowType", "types", "projectTypes", "instance", "withOperandSupplier", "withFastBailOut", "withGenerateUnionRewriting", "operand", "withDescription", "withRelBuilderFactory", "anyInputs", "withUnionRewritingPullProgram", "oneInput", "snapshot", "canonize", "isDistinct", "eq", "checkIndicator", "ignoreNulls", "asMap", "push", "getFieldList", "getIndex", "entrySet", "getExprList", "getProjectList", "indexOf", "getAggOperator", "visitList", "getOutputRowType", "getFieldCount", "getKey", "getValue", "createStructType", "zip", "accept", "getMethod", "getConstructor", "newInstance", "forName", "invoke", "supportsWindowFunctions", "containsOver", "dataSource", "instantiatePlugin", "getCollations", "filter", "deduceElementType", "collations", "distribution", "subSchemaExpression", "createDialect", "call", "getExpression", "addProject", "getFieldNames", "mergeJoin", "isEnabled", "nCopies", "getProgram", "getRowType", "addCondition", "getExpressionList", "limit", "getTraitSet", "enumerableCorrelate", "enumerableHashJoin", "project", "enumerableBatchNestedLoopJoin", "enumerableNestedLoopJoin", "calc", "traitSet", "getMetadataQuery", "values", "replaceIf", "replaceIfs", "expandList", "traitSetOf", "getOperator", "getOperands", "getType", "getCluster", "isCurrentRow", "isUnboundedFollowing", "isUnboundedPreceding", "execute2", "dummy", "getTimeZone", "getStatementType", "addFunctions", "auto", "contains", "createContext", "getDatabaseProductName", "startsWith", "withJethroInfo", "withDataTypeSystem", "databaseProductName", "asList", "toArray", "createExcludeNoOthers", "getKind", "valueOf", "noneOf", "getParser", "trim", "toUpperCase", "parserFactory", "split", "config", "name", "getTypeFactory", "getParameterName", "firstParameterOfAdd", "copyOf", "getParameterTypes", "isParameterOptional", "toRule", "withRuleFactory", "of", "getTypeFromMetric", "add", "unwrap", "get", "put", "isComplex", "equals", "containsKey", "requireNonNull", "first", "create", "getInstanceUTC", "isEmpty", "replace", "path", "parent", "last", "plus", "left", "getStatistic", "calciteOperator", "getTableExpression", "builder", "size", "getTable", "build", "getRowCount", "isStatic", "ex", "classHasPublicZeroArgsConstructor", "requireDefaultConstructor", "getDeclaringClass", "getName", "getReturnType", "classHasPublicFunctionContextConstructor", "findMethod", "isAssignableFrom" ]
+    }, {
+      "name" : "matchHandler",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withMatchHandler",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getPredicate",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isSmart",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withPredicate",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isCoerceNames",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withCoerceNames",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withConsumerRelClass",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "consumerRelClass",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withSmart",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withRuleFactory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "ruleFactory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withInTrait",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "inTrait",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "outTrait",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withOutTrait",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withConversion",
+      "visibility" : "public",
+      "methodCalls" : [ "as", "withOutTrait", "withInTrait", "operand", "convert", "withOperandSupplier", "createDescription", "withConversion", "predicate", "withDescription" ]
+    }, {
+      "name" : "withTrimUnusedFields",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isCreateValuesRel",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withInSubQueryThreshold",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isRemoveSortInSubQuery",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getRelBuilderConfigTransform",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withRemoveSortInSubQuery",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isExpand",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withDecorrelationEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getInSubQueryThreshold",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withHintStrategyTable",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isAddJsonTypeOperatorEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withExplain",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addRelBuilderConfigTransform",
+      "visibility" : "public",
+      "methodCalls" : [ "andThen", "getRelBuilderConfigTransform", "withRelBuilderConfigTransform" ]
+    }, {
+      "name" : "withCreateValuesRel",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getHintStrategyTable",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withRelBuilderConfigTransform",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isDecorrelationEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withExpand",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isTrimUnusedFields",
+      "visibility" : "public",
+      "methodCalls" : [ "isTrimUnusedFields" ]
+    }, {
+      "name" : "isExplain",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getRelBuilderFactory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withAddJsonTypeOperatorEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withConverterRule",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "converterRule",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withBatchSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "batchSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "nakedMeasuresInNonAggregateQuery",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withTypeCoercionRules",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withDefaultNullCollation",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withNakedMeasuresInNonAggregateQuery",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withTypeCoercionEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withIdentifierExpansion",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withSqlConformance",
+      "visibility" : "public",
+      "methodCalls" : [ "withConformance" ]
+    }, {
+      "name" : "withColumnReferenceExpansion",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "callRewrite",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "embeddedQuery",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "typeCoercionRules",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withCallRewrite",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "typeCoercionEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withNakedMeasuresInAggregateQuery",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withEmbeddedQuery",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "defaultNullCollation",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withNakedMeasures",
+      "visibility" : "public",
+      "methodCalls" : [ "withNakedMeasuresInNonAggregateQuery", "withNakedMeasuresInAggregateQuery" ]
+    }, {
+      "name" : "withLenientOperatorLookup",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withTypeCoercionFactory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "sqlConformance",
+      "visibility" : "public",
+      "methodCalls" : [ "conformance" ]
+    }, {
+      "name" : "nakedMeasuresInAggregateQuery",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "columnReferenceExpansion",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "identifierExpansion",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "lenientOperatorLookup",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "typeCoercionFactory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withTimeUnitCodes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "timeUnitCodes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withLex",
+      "visibility" : "public",
+      "methodCalls" : [ "withQuotedCasing", "withQuoting", "withUnquotedCasing", "withCaseSensitive", "withCharLiteralStyles" ]
+    }, {
+      "name" : "caseSensitive",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "identifierMaxLength",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "parserFactory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withIdentifierMaxLength",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withParserFactory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "unquotedCasing",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "charLiteralStyles",
+      "visibility" : "public",
+      "methodCalls" : [ "of" ]
+    }, {
+      "name" : "withQuoting",
+      "visibility" : "public",
+      "methodCalls" : [ "isQuoted" ]
+    }, {
+      "name" : "allowBangEqual",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withQuotedCasing",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withCaseSensitive",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withUnquotedCasing",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withCharLiteralStyles",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "conformance",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "quotedCasing",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "quoting",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withConformance",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withRelBuilderFactory",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withDescription",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "description",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withOperandSupplier",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "as",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "of", "equals", "build", "builder", "contains", "forEach", "pop", "addAll", "toRex", "push", "as", "getClass", "format", "isAssignableFrom", "cast" ]
+    }, {
+      "name" : "operandSupplier",
+      "visibility" : "public",
+      "methodCalls" : [ "anyInputs", "oneInput", "predicate", "operand" ]
+    }, {
+      "name" : "withId",
+      "visibility" : "public",
+      "methodCalls" : [ "withDescription", "as" ]
+    }, {
+      "name" : "withOperandFor",
+      "visibility" : "public",
+      "methodCalls" : [ "getRowType", "getFieldCount", "getTuples", "getGroupCount", "isEnforcer", "noInputs", "withAllowFunctions", "isAggregateSupported", "containsOver", "isEmpty", "getRight", "getSystemFieldList", "getId", "containsSubQuery", "getLeft", "isBernoulli", "getSamplingParameters", "withDescription", "withConsumerRelClass", "getName", "inputs", "predicate", "getJoinType", "oneInput", "withOperandSupplier", "operand", "as", "anyInputs" ]
+    }, {
+      "name" : "toRule",
+      "visibility" : "public",
+      "methodCalls" : [ "isRelDefinitelyEmpty", "toString", "size", "requireNonNull", "build", "empty", "intValue", "minus", "ruleFactory", "toRule", "apply", "cast", "rel", "onMatch", "push", "getInputs", "distinct", "union", "padWithNulls", "getRowType", "transformTo", "generatesNullsOnRight", "isEmpty", "getMetadataQuery", "generatesNullsOnLeft", "builder", "getJoinType", "getLeft", "convert" ]
+    } ],
+    "imports" : [ "com.google.common.collect.ImmutableList", "org.apache.calcite.adapter.enumerable.EnumerableLimit", "org.apache.calcite.rel.core.RepeatUnion", "org.apache.calcite.runtime.Hook", "org.apache.calcite.rel.rules.AggregateRemoveRule", "org.apache.calcite.rel.core.TableSpool", "org.apache.calcite.rel.rules.AggregateRemoveRule.canFlattenStatic", "org.apache.calcite.sql.fun.SqlLikeOperator", "org.apache.calcite.util.Holder", "java.util.function.Consumer", "com.google.common.collect.Multiset", "org.apache.calcite.rel.core.Spool", "org.apache.calcite.plan.Context", "com.google.common.collect.ImmutableSortedMultiset", "org.apache.calcite.schema.TransientTable", "org.apache.calcite.util.DateString", "org.apache.calcite.schema.impl.ListTransientTable", "org.apache.calcite.util.ImmutableNullableList", "org.apache.calcite.plan.RelOptSamplingParameters", "java.util.AbstractList", "org.apache.calcite.rel.type.RelDataTypeFieldImpl", "org.apache.calcite.rel.core.Snapshot", "org.apache.calcite.sql.SqlKind.UNION", "org.apache.calcite.sql2rel.SqlToRelConverter", "org.apache.calcite.runtime.ImmutablePairList", "org.apache.calcite.rel.logical.LogicalAsofJoin", "org.apache.calcite.rel.core.Uncollect", "org.apache.calcite.piglet.PigTypes.TYPE_FACTORY", "org.apache.calcite.adapter.enumerable.EnumerableConvention", "org.apache.calcite.adapter.enumerable.RexImpTable", "java.util.SortedSet", "org.apache.calcite.adapter.enumerable.AggImplementor", "org.apache.calcite.linq4j.Enumerable", "org.apache.calcite.rel.core.Match", "org.apache.calcite.schema.ScannableTable", "org.apache.calcite.rel.InvalidRelException", "org.apache.calcite.rel.convert.ConverterRule", "org.apache.calcite.DataContext", "org.apache.calcite.rel.metadata.RelMdCollation", "java.sql.PreparedStatement", "org.apache.calcite.sql.util.SqlShuttle", "org.apache.calcite.sql.parser.SqlParserUtil", "org.apache.calcite.sql.parser.SqlParser", "org.apache.calcite.sql.parser.SqlParseException", "org.apache.calcite.rel.metadata.RelColumnOrigin", "org.checkerframework.checker.nullness.qual.KeyFor", "java.util.ListIterator", "org.apache.calcite.util.CompositeList", "java.util.LinkedHashMap", "org.apache.calcite.util.Optionality", "java.util.NavigableSet", "com.google.common.base.Preconditions.checkState", "org.apache.calcite.rex.LogicVisitor", "org.apache.calcite.sql2rel.RelDecorrelator", "org.apache.calcite.rel.core.TableFunctionScan", "org.apache.calcite.plan.RelOptUtil.Exists", "java.util.Optional", "org.apache.calcite.rel.logical.LogicalExchange", "org.apache.calcite.rel.logical.LogicalSortExchange", "org.apache.calcite.schema.FilterableTable", "java.util.concurrent.atomic.AtomicInteger", "org.apache.calcite.rel.core.SortExchange", "org.apache.calcite.rel.core.Exchange", "org.apache.calcite.plan.Strong", "org.apache.calcite.rel.RelReferentialConstraint", "org.apache.calcite.rex.RexExecutor", "com.google.common.collect.HashBiMap", "java.util.regex.Pattern", "java.util.stream.Stream", "com.google.common.collect.Lists", "org.apache.calcite.rex.RexUnknownAs", "com.google.common.collect.Iterables.concat", "org.apache.calcite.util.BitSets", "org.apache.calcite.rel.rules.AggregateExpandDistinctAggregatesRule.groupValue", "java.util.function.IntPredicate", "org.apache.calcite.util.mapping.IntPair", "org.apache.calcite.rel.rules.AggregateExpandDistinctAggregatesRule.remap", "org.apache.calcite.sql.SqlPostfixOperator", "org.apache.calcite.schema.impl.StarTable", "org.apache.calcite.util.graph.DefaultDirectedGraph", "org.apache.calcite.rex.RexBiVisitorImpl", "org.apache.calcite.util.graph.TopologicalOrderIterator", "org.apache.calcite.rel.core.Correlate", "org.apache.calcite.rex.RexLocalRef", "org.apache.calcite.rel.logical.LogicalWindow", "org.apache.calcite.util.graph.DefaultEdge", "org.apache.calcite.rel.core.Window", "org.apache.calcite.util.graph.DirectedGraph", "org.apache.calcite.rex.RexWindow", "org.apache.calcite.rex.RexTableInputRef.RelTableRef", "org.apache.calcite.rel.rules.FilterAggregateTransposeRule", "com.google.common.collect.BiMap", "com.google.common.collect.ImmutableMultimap", "org.apache.calcite.rex.RexSimplify", "org.apache.calcite.rel.RelDistributionTraitDef", "org.apache.calcite.plan.hep.HepProgramBuilder", "java.util.TreeMap", "com.google.common.base.Suppliers", "org.apache.calcite.rel.rules.CoreRules", "org.apache.calcite.plan.volcano.RelSubset", "org.apache.calcite.rel.rules.AggregateProjectPullUpConstantsRule", "org.apache.calcite.plan.RelOptMaterializations", "java.util.NavigableMap", "org.apache.calcite.avatica.util.TimeUnitRange", "org.apache.calcite.sql.SqlSplittableAggFunction", "org.apache.calcite.rel.rules.FilterProjectTransposeRule", "org.apache.calcite.plan.hep.HepRelVertex", "org.apache.calcite.tools.RelBuilder.AggCall", "com.google.common.collect.Multimap", "org.apache.calcite.plan.SubstitutionVisitor", "com.google.common.collect.ImmutableCollection", "org.apache.calcite.rex.RexTableInputRef", "org.apache.calcite.plan.hep.HepPlanner", "org.apache.calcite.plan.RelOptMaterialization", "com.google.common.collect.ArrayListMultimap", "org.apache.calcite.sql.SqlStaticAggFunction", "org.apache.calcite.sql.fun.SqlAnyValueAggFunction", "org.apache.calcite.sql.fun.SqlSumAggFunction", "org.apache.calcite.runtime.SpaceFillingCurve2D", "org.apache.calcite.sql.fun.SqlMinMaxAggFunction", "org.locationtech.jts.geom.Envelope", "org.apache.calcite.sql.fun.SqlCountAggFunction", "org.apache.calcite.sql.fun.SqlSumEmptyIsZeroAggFunction", "org.apache.calcite.sql.fun.SqlBitOpAggFunction", "org.locationtech.jts.geom.Point", "org.apache.calcite.runtime.SqlFunctions", "java.util.IdentityHashMap", "org.apache.calcite.sql.SqlSingletonAggFunction", "org.locationtech.jts.geom.Geometry", "org.apache.calcite.runtime.HilbertCurve2D", "org.apache.calcite.runtime.SpatialTypeFunctions", "org.apache.calcite.rex.RexLiteral.value", "org.apache.calcite.linq4j.function.Experimental", "org.apache.calcite.util.mapping.MappingType", "org.apache.calcite.plan.ConventionTraitDef", "org.apache.calcite.rex.RexCallBinding", "org.apache.calcite.rel.logical.LogicalCalc", "org.checkerframework.checker.nullness.qual.MonotonicNonNull", "org.apache.calcite.sql.type.SqlTypeUtil", "java.math.BigInteger", "org.apache.calcite.util.Bug", "org.apache.calcite.plan.hep.HepProgram", "org.apache.calcite.plan.Contexts", "org.apache.calcite.rel.core.Minus", "org.apache.calcite.rel.core.Calc", "org.apache.calcite.util.Permutation", "org.apache.calcite.rel.core.RelFactories.ProjectFactory", "org.apache.calcite.rex.RexOver", "org.apache.calcite.plan.RelOptPredicateList", "org.apache.calcite.util.mapping.Mappings.TargetMapping", "org.apache.calcite.rel.core.Values", "org.apache.calcite.config.CalciteSystemProperty", "java.util.Comparator", "org.apache.calcite.rel.rules.LoptMultiJoin.Edge", "org.apache.calcite.rel.core.Sample", "java.io.PrintWriter", "org.apache.calcite.rex.RexPermuteInputsShuttle", "org.apache.calcite.rel.core.SetOp", "org.apache.calcite.rex.RexVisitor", "org.apache.calcite.rex.RexVisitorImpl", "java.util.Iterator", "org.apache.calcite.util.mapping.Mapping", "org.apache.calcite.plan.RelOptUtil.conjunctions", "org.apache.calcite.adapter.enumerable.EnumerableInterpreter", "org.apache.calcite.schema.ProjectableFilterableTable", "org.apache.calcite.rel.core.TableScan", "java.util.LinkedHashSet", "com.google.common.collect.Sets", "org.apache.calcite.interpreter.Bindables", "org.apache.calcite.rel.core.Intersect", "org.apache.calcite.rel.core.Aggregate.Group", "org.apache.calcite.util.mapping.Mappings", "java.util.stream.Collectors", "org.apache.calcite.plan.RelOptRule", "org.apache.calcite.prepare.Prepare", "org.apache.calcite.rex.RexFieldCollation", "org.apache.calcite.rel.core.Project", "org.apache.calcite.avatica.util.Spaces", "org.apache.calcite.util.Util", "org.apache.calcite.sql.SqlSetOperator", "org.apache.calcite.sql.validate.MeasureScope", "org.apache.calcite.sql.fun.SqlInOperator", "org.apache.calcite.rex.RexWindowBound", "org.apache.calcite.util.NumberUtil", "org.apache.calcite.sql.util.SqlBasicVisitor", "java.util.Arrays", "org.apache.calcite.rex.RexFieldAccess", "org.apache.calcite.sql.SqlValuesOperator", "org.apache.calcite.rel.metadata.RelColumnMapping", "org.apache.calcite.rel.RelDistributions", "org.apache.calcite.sql.SqlUnpivot", "org.apache.calcite.linq4j.tree.TableExpressionFactory", "org.apache.calcite.sql.validate.SqlValidator", "org.apache.calcite.rel.hint.HintStrategyTable", "org.apache.calcite.rel.logical.LogicalAggregate", "org.apache.calcite.sql.SqlUtil.stripAs", "org.apache.calcite.sql.SqlSnapshot", "org.apache.calcite.rel.hint.RelHint", "java.util.EnumSet", "org.apache.calcite.rel.logical.LogicalValues", "org.apache.calcite.util.Litmus", "org.apache.calcite.rel.logical.LogicalMinus", "org.apache.calcite.rel.RelRoot", "org.apache.calcite.rel.SingleRel", "org.apache.calcite.rel.stream.LogicalDelta", "org.apache.calcite.rex.RexUtil", "org.apache.calcite.sql.SqlPivot", "org.apache.calcite.util.Util.transform", "org.apache.calcite.linq4j.Nullness.castNonNull", "org.apache.calcite.rel.core.Collect", "org.apache.calcite.schema.ModifiableTable", "org.apache.calcite.sql.validate.DelegatingScope", "org.apache.calcite.sql.type.TableFunctionReturnTypeInference", "org.apache.calcite.sql.fun.SqlQuantifyOperator", "org.apache.calcite.sql.parser.SqlParserPos", "org.apache.calcite.rel.RelCollations", "org.apache.calcite.sql.fun.SqlRowOperator", "org.apache.calcite.sql.SqlUnnestOperator", "org.apache.calcite.rel.logical.LogicalTableFunctionScan", "com.google.common.base.Preconditions.checkArgument", "org.apache.calcite.sql.validate.SqlUserDefinedTableFunction", "org.apache.calcite.rex.RexLambdaRef", "org.apache.calcite.sql.SqlSampleSpec", "org.apache.calcite.sql.SqlJoin", "org.apache.calcite.sql.SqlOrderBy", "org.apache.calcite.util.Util.skipLast", "org.apache.calcite.rel.logical.LogicalCorrelate", "org.apache.calcite.sql.SqlExplainFormat", "com.google.common.collect.Iterables", "org.apache.calcite.rex.RexWindowBounds", "java.util.ArrayDeque", "org.apache.calcite.plan.RelOptUtil", "org.apache.calcite.sql.validate.ListScope", "org.apache.calcite.sql.validate.SqlValidatorUtil.addAlias", "java.util.Collection", "org.apache.calcite.rel.RelDistribution", "org.apache.calcite.plan.RelOptTable", "org.apache.calcite.plan.ViewExpanders", "org.apache.calcite.sql.validate.SqlLambdaScope", "org.apache.calcite.sql.validate.SqlValidatorUtil", "org.apache.calcite.sql.type.SqlTypeUtil.isApproximateNumeric", "org.apache.calcite.sql.SqlAsofJoin", "org.apache.calcite.rex.RexDynamicParam", "org.apache.calcite.util.Static.RESOURCE", "org.apache.calcite.sql.validate.SqlQualified", "java.lang.reflect.Type", "org.apache.calcite.sql.type.SqlTypeUtil.hasScale", "java.math.BigDecimal", "java.util.Deque", "org.apache.calcite.rel.RelShuttleImpl", "org.apache.calcite.sql.SqlSelectKeyword", "org.apache.calcite.rel.logical.LogicalTableModify", "org.apache.calcite.linq4j.Ord", "org.apache.calcite.rex.RexPatternFieldRef", "org.apache.calcite.sql.validate.AggregatingSelectScope", "java.util.HashMap", "org.apache.calcite.schema.ColumnStrategy", "org.apache.calcite.rel.metadata.RelMdUtil", "org.apache.calcite.rel.core.Filter", "org.apache.calcite.sql.validate.SqlWithItemTableRef", "org.apache.calcite.sql.JoinConditionType", "org.apache.calcite.sql.SqlUtil", "org.apache.calcite.sql.validate.SqlUserDefinedTableMacro", "java.util.function.Supplier", "org.apache.calcite.sql.SqlUtil.containsIn", "org.apache.calcite.jdbc.CalciteSchema", "org.apache.calcite.sql.SqlAggFunction", "org.apache.calcite.sql.SqlExplainLevel", "org.apache.calcite.util.Pair", "org.apache.calcite.sql.fun.SqlInternalOperators", "org.apache.calcite.rel.logical.LogicalIntersect", "org.apache.calcite.rex.RexRangeRef", "org.apache.calcite.prepare.RelOptTableImpl", "org.apache.calcite.util.Util.last", "org.apache.calcite.sql.SqlNumericLiteral", "org.apache.calcite.sql.validate.SqlValidatorTable", "org.apache.calcite.rex.RexSubQuery", "org.apache.calcite.sql.type.SqlReturnTypeInference", "org.apache.calcite.sql.SqlUtil.containsDefault", "java.util.TreeSet", "org.apache.calcite.rel.hint.Hintable", "org.apache.calcite.sql.validate.SqlMonotonicity", "com.google.common.collect.ImmutableList.toImmutableList", "org.apache.calcite.sql.SqlBasicCall", "java.util.Collections", "org.apache.calcite.sql.JoinType", "org.apache.calcite.rel.RelCollationTraitDef", "org.apache.calcite.sql.util.SqlVisitor", "java.util.BitSet", "org.apache.calcite.sql.validate.ParameterScope", "org.apache.calcite.schema.TranslatableTable", "org.apache.calcite.rel.logical.LogicalTableScan", "org.apache.calcite.schema.ModifiableView", "org.apache.calcite.sql.type.SqlTypeUtil.equalSansNullability", "org.apache.calcite.schema.Wrapper", "org.apache.calcite.schema.Schemas", "org.apache.calcite.rex.RexWindowExclusion", "org.apache.calcite.sql.type.SqlTypeUtil.isExactNumeric", "org.apache.calcite.util.ImmutableIntList", "org.apache.calcite.util.trace.CalciteTrace", "org.apache.calcite.sql.validate.MatchRecognizeScope", "org.apache.calcite.sql.validate.SelectScope", "org.apache.calcite.rel.core.JoinInfo", "org.apache.calcite.sql.validate.SqlValidatorScope", "org.apache.calcite.plan.RelOptSchema", "org.apache.calcite.schema.Table", "java.util.function.BiFunction", "org.apache.calcite.sql.SqlCallBinding", "org.apache.calcite.rel.stream.Delta", "org.apache.calcite.rel.core.AggregateCall", "org.apache.calcite.sql.validate.SqlValidatorImpl", "org.apache.calcite.rel.core.Aggregate", "org.apache.calcite.sql.validate.SqlValidatorNamespace", "org.apache.calcite.sql.fun.SqlCase", "org.apache.calcite.sql.type.SqlTypeUtil.keepSourceTypeAndTargetNullability", "org.apache.calcite.rel.logical.LogicalMatch", "org.apache.calcite.sql.type.SqlTypeUtil.fromMeasure", "org.apache.calcite.util.Util.first", "org.apache.calcite.sql.validate.CollectNamespace", "org.apache.calcite.sql.type.SqlTypeUtil.promoteToRowType", "org.apache.calcite.sql.validate.SqlNameMatcher", "org.apache.calcite.plan.Convention", "org.apache.calcite.plan.RelOptRuleOperandChildPolicy", "org.apache.calcite.rel.rules.ProjectToCalcRule", "org.apache.calcite.rel.RelFieldCollation", "org.apache.calcite.rel.RelCollation", "org.apache.calcite.rel.core.Union", "java.util.Objects", "org.apache.calcite.rel.logical.LogicalUnion", "org.apache.calcite.rex.RexShuttle", "org.apache.calcite.util.ImmutableBitSet", "java.util.HashSet", "org.apache.calcite.rel.core.Join", "org.apache.calcite.rel.core.CorrelationId", "org.apache.calcite.tools.RelBuilder", "org.apache.calcite.rel.logical.LogicalJoin", "org.apache.calcite.rel.core.JoinRelType", "org.apache.calcite.rex.RexCorrelVariable", "org.apache.calcite.rex.RexProgram", "org.apache.calcite.rex.RexProgramBuilder", "org.apache.calcite.rex.RexBuilder", "org.apache.calcite.rel.logical.LogicalSort", "org.apache.calcite.rel.core.Sort", "org.apache.calcite.sql.SqlSelect", "org.apache.calcite.sql.validate.implicit.TypeCoercion", "org.apache.calcite.sql.SqlCall", "org.apache.calcite.config.NullCollation", "org.apache.calcite.sql.SqlUpdate", "org.apache.calcite.runtime.Resources", "org.apache.calcite.sql.SqlLambda", "org.apache.calcite.sql.validate.implicit.TypeCoercions", "org.apache.calcite.sql.SqlDelete", "org.apache.calcite.sql.type.SqlTypeMappingRule", "org.apache.calcite.sql.SqlInsert", "org.apache.calcite.rel.type.RelDataTypeFactory", "org.apache.calcite.sql.SqlDynamicParam", "org.apache.calcite.sql.type.SqlTypeCoercionRule", "org.apache.calcite.sql.SqlWithItem", "org.apache.calcite.sql.SqlLiteral", "org.apache.calcite.sql.SqlOperatorTable", "org.apache.calcite.sql.SqlMerge", "org.apache.calcite.sql.SqlIntervalQualifier", "org.apache.calcite.sql.validate.implicit.TypeCoercionFactory", "org.apache.calcite.sql.SqlDataTypeSpec", "org.apache.calcite.sql.SqlMatchRecognize", "org.apache.calcite.sql.SqlIdentifier", "org.apache.calcite.rel.type.TimeFrame", "java.util.function.UnaryOperator", "org.apache.calcite.sql.SqlFunction", "org.checkerframework.dataflow.qual.Pure", "org.apache.calcite.runtime.CalciteException", "org.apache.calcite.sql.SqlWindow", "org.apache.calcite.sql.SqlWith", "org.apiguardian.api.API", "org.apache.calcite.config.Lex", "org.apache.calcite.sql.SqlNodeList", "org.apache.calcite.sql.validate.SqlConformance", "org.apache.calcite.avatica.util.Quoting", "org.apache.calcite.sql.parser.impl.SqlParserImpl", "java.io.StringReader", "org.apache.calcite.util.SourceStringReader", "org.apache.calcite.rel.type.TimeFrameSet", "java.util.Map", "org.apache.calcite.avatica.util.TimeUnit", "java.io.Reader", "org.apache.calcite.avatica.util.Casing", "org.apache.calcite.sql.SqlNode", "org.apache.calcite.runtime.CalciteContextException", "org.apache.calcite.sql.validate.SqlDelegatingConformance", "org.apache.calcite.config.CharLiteralStyle", "org.apache.calcite.rel.type.RelDataTypeSystem", "com.google.common.collect.ImmutableMap", "org.apache.calcite.sql.validate.SqlConformanceEnum", "org.apache.calcite.rel.core.RelFactories", "java.util.function.Function", "java.util.function.BiConsumer", "java.util.function.Predicate", "java.util.Objects.requireNonNull", "java.util.ArrayList", "org.slf4j.Logger", "org.apache.calcite.tools.RelBuilderFactory", "org.apache.calcite.plan.RelOptRuleOperand", "org.apache.calcite.adapter.splunk.util.StringUtils", "org.apache.calcite.plan.RelRule", "org.apache.calcite.runtime.PairList", "org.apache.calcite.rex.RexInputRef", "org.apache.calcite.rex.RexCall", "org.apache.calcite.rex.RexNode", "java.util.Set", "com.google.common.collect.ImmutableSet", "org.apache.calcite.sql.type.SqlTypeName", "org.apache.calcite.rel.RelNode", "org.apache.calcite.plan.RelOptCluster", "org.apache.calcite.rel.type.RelDataTypeField", "org.apache.calcite.rel.logical.LogicalProject", "org.apache.calcite.util.NlsString", "org.apache.calcite.sql.SqlKind", "org.apache.calcite.rex.RexLiteral", "org.apache.calcite.rel.logical.LogicalFilter", "org.apache.calcite.sql.SqlOperator", "org.apache.calcite.rel.type.RelDataType", "java.util.List", "org.apache.calcite.sql.fun.SqlStdOperatorTable", "org.immutables.value.Value", "org.apache.calcite.rex.RexSlot", "org.apache.calcite.sql.SqlBinaryOperator", "org.apache.calcite.plan.RelOptRuleCall", "org.apache.calcite.plan.RelTraitSet", "org.apache.calcite.rel.RelWriter", "org.apache.calcite.rel.convert.ConverterImpl", "org.checkerframework.checker.nullness.qual.Nullable", "org.apache.calcite.plan.RelTrait", "org.apache.calcite.plan.RelOptCost", "org.apache.calcite.plan.RelOptPlanner", "org.apache.calcite.rel.metadata.RelMetadataQuery", "org.apache.calcite.plan.RelTraitDef", "java.util.Locale" ]
+  }, {
+    "name" : "AbstractRexCallImplementor",
+    "packageName" : "org.apache.calcite.adapter.enumerable",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ "RexCallImplementor" ],
+    "methods" : [ {
+      "name" : "implement",
+      "visibility" : "public",
+      "methodCalls" : [ "newName", "getTable", "getScript", "getFilePath", "noneMatch", "getTableName", "keySet", "isDescending", "allMatch", "getPigRelationAlias", "setAscOrder", "checkState", "addOrder", "getLeft", "addStatement", "getRight", "intValue", "setIndexCondition", "getIndexName", "getRangeQueryLowerOp", "cassandraFieldNames", "getRangeQueryUpperOp", "getRangeQueryUpperKey", "getPointQueryKey", "innodbFieldNames", "getQueryType", "getRangeQueryLowerKey", "matches", "split", "removeIf", "replace", "isSelectAll", "isItem", "join", "filter", "addExpressionItemMapping", "startsWith", "scriptedFieldPrefix", "elasticsearchFieldNames", "fetch", "withObject", "addNullsSort", "createObjectNode", "addAggregation", "addSort", "offset", "addSelectFields", "addPredicates", "singletonList", "longValue", "addFilters", "addAggregateFunctions", "getDirection", "setLimit", "addGroupBy", "equalsIgnoreCase", "addOrderByFields", "geodeFieldNames", "numberValue", "addProjectFields", "getProjects", "getProjectFields", "visitInput", "rightList", "fieldClass", "nth", "cardinality", "quote", "getAggregation", "getFieldIndex", "getValue", "translateMatch", "toString", "maybeQuote", "getNamedProjects", "mongoFieldNames", "checkNull", "foldOr", "translate", "getIndex", "handle", "equal", "map", "tumblingWindowSelector", "collect", "genIsNullStatement", "getOperands", "isNullable", "not", "stream", "getAlpha", "foldAnd", "getBlockBuilder", "toList", "createTypeWithNullability", "getCalendarPolicy", "getConvention", "catch_", "getDynamicParameters", "getSql", "newArrayBounds", "throw_", "tryCatch", "implement", "tableName", "getCall", "dispatch", "orElse", "getKind", "getParameterTypes", "preIncrementAssign", "deduceFormat", "isUnbounded", "getArgList", "getJavaFieldType", "forAggregation", "getOperation", "convertAssignableTypes", "functionInstance", "fieldRowTypes", "ifThenElse", "addAll", "notEqual", "handleMethodCheckedExceptions", "isUnboundedPreceding", "isAlwaysNonEmpty", "subtract", "ignoreNulls", "greaterThanOrEqual", "collation", "lessThanOrEqual", "isStatic", "lessThan", "generatesNullsOnRight", "generateAccessorWithoutNulls", "toClass", "fromInternal", "checkArgument", "getAggregateCalls", "implementReset", "field", "isAssignableFrom", "for_", "assign", "arrayIndex", "sameNamedType", "getCollectionType", "rowType", "getComponentType", "hasOrderedCall", "equals", "condition", "range", "convertTo", "getIterativeRel", "getSeedRel", "unwrap", "generateMergeJoinComparator", "last", "composeConjunction", "getQualifiedName", "getJavaClass", "leastRestrictive", "getComponentTypeOrThrow", "values", "stash", "toArray", "isStruct", "forEach", "getRootExpression", "accept", "getCorrelVariable", "getHistory", "getFuture", "getFieldCount", "nullable", "createAggStateTypes", "getFormat", "project", "generateSelector", "fieldReference", "getGroupCount", "needToImplement", "createAccumulatorAdders", "implementLambdaFactory", "declareParentAccumulator", "asList", "generateComparator", "implementResult", "createSyntheticType", "isSimple", "getGroupType", "asCopy", "enumerator", "current", "send", "moveNext", "is", "get", "clearCorrelVariable", "lambda", "convert_", "size", "registerCorrelVariable", "unbox", "overridingMethodDecl", "generatePredicate", "getCondition", "block", "while_", "getMetadataQuery", "fieldDecl", "requireNonNull", "normalize", "methodDecl", "getPulledUpPredicates", "getName", "joinSelector", "toFunctionBlock", "convert", "translateCondition", "toLinq4jJoinType", "translateProjects", "ifThen", "getRexBuilder", "getOrDefault", "getConformance", "preferArray", "statement", "prefer", "declare", "getId", "new_", "isEmpty", "add", "append", "call", "getInput", "implementSpark", "getTypeFactory", "of", "return_", "result", "getRowType", "toBlock", "preferCustom", "getExpression", "constant", "builder", "put", "println", "build", "first", "value", "run", "bind", "visitChild", "list", "box", "toBindable", "appendIfNotNull", "generateCollationKey", "getFieldCollations", "translateLiteral", "getCluster", "record", "zip", "getJavaRowType", "newArrayInit", "getFieldList", "getType", "getTraitSet", "getCollation", "parameter", "comparer", "toUnsignedString" ]
+    } ],
+    "imports" : [ "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_NOT_TRUE", "org.apache.calcite.sql.fun.SqlLibraryOperators.ILIKE", "org.apache.calcite.sql.fun.SqlLibraryOperators.SUBSTRING_INDEX", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_JSON_ARRAY", "org.apache.calcite.sql.fun.SqlLibraryOperators.BIT_COUNT_MYSQL", "org.apache.calcite.sql.fun.SqlLibraryOperators.BIN", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SOME_GT", "org.apache.calcite.sql.fun.SqlStdOperatorTable.JSON_OBJECTAGG", "org.apache.calcite.sql.SqlWindowTableFunction", "org.apache.calcite.sql.fun.SqlLibraryOperators.SPLIT", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ARG_MAX", "org.apache.calcite.sql.fun.SqlLibraryOperators.FLOOR_BIG_QUERY", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SOME_NE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ROUND", "org.apache.calcite.sql.fun.SqlLibraryOperators.REPEAT", "org.apache.calcite.sql.fun.SqlLibraryOperators.CONCAT_WS_MSSQL", "org.apache.calcite.sql.SqlAggFunction", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_EXCEPT", "org.apache.calcite.sql.fun.SqlLibraryOperators.TO_CODE_POINTS", "org.apache.calcite.sql.fun.SqlLibraryOperators.URL_DECODE", "org.apache.calcite.sql.fun.SqlLibraryOperators.SAFE_ORDINAL", "org.apache.calcite.schema.impl.AggregateFunctionImpl", "org.apache.calcite.sql.fun.SqlStdOperatorTable.LAST_DAY", "org.apache.calcite.sql.fun.SqlStdOperatorTable.MULTIPLY", "org.apache.calcite.sql.fun.SqlLibraryOperators.SPLIT_PART", "org.apache.calcite.sql.fun.SqlLibraryOperators.SHA512", "org.apache.calcite.linq4j.tree.OptimizeShuttle", "java.lang.reflect.Constructor", "org.apache.calcite.sql.fun.SqlLibraryOperators.DATEADD", "org.apache.calcite.sql.SqlJsonValueEmptyOrErrorBehavior", "org.apache.calcite.sql.SqlJsonConstructorNullClause", "org.apache.calcite.sql.fun.SqlLibraryOperators.SHA1", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ALL_LT", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CAST", "org.apache.calcite.rel.type.RelDataTypeFactory", "org.apache.calcite.sql.fun.SqlLibraryOperators.SORT_ARRAY", "org.apache.calcite.sql.fun.SqlLibraryOperators.CURRENT_DATETIME", "org.apache.calcite.sql.fun.SqlLibraryOperators.LOG2", "org.apache.calcite.avatica.util.ByteString", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ACOS", "org.apache.calcite.sql.fun.SqlLibraryOperators.RPAD", "org.apache.calcite.linq4j.tree.ExpressionType.AddChecked", "org.apache.calcite.sql.fun.SqlLibraryOperators.TRUNC_BIG_QUERY", "org.apache.calcite.sql.fun.SqlStdOperatorTable.FLOOR", "org.apache.calcite.sql.fun.SqlLibraryOperators.EXISTS_NODE", "org.apache.calcite.linq4j.tree.ExpressionType.Add", "org.apache.calcite.sql.fun.SqlLibraryOperators.TO_DATE_PG", "org.apache.calcite.sql.fun.SqlLibraryOperators.FORMAT_NUMBER", "org.apache.calcite.sql.fun.SqlLibraryOperators.SINH", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_NOT_A_SET", "org.apache.calcite.linq4j.tree.ExpressionType.LessThanOrEqual", "org.apache.calcite.rex.RexNode", "org.apache.calcite.sql.fun.SqlJsonObjectAggAggFunction", "org.apache.calcite.sql.fun.SqlStdOperatorTable.JSON_VALUE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_JSON_VALUE", "org.apache.calcite.sql.fun.SqlLibraryOperators.MAP_CONTAINS_KEY", "org.apache.calcite.sql.fun.SqlStdOperatorTable.VARIANTNULL", "org.apache.calcite.sql.fun.SqlStdOperatorTable.POSIX_REGEX_CASE_INSENSITIVE", "org.apache.calcite.sql.fun.SqlLibraryOperators.JSON_REMOVE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.UNARY_MINUS", "org.apache.calcite.linq4j.tree.ExpressionType.Negate", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_NULL", "org.apache.calcite.sql.fun.SqlLibraryOperators.MAP_KEYS", "org.apache.calcite.sql.validate.SqlUserDefinedTableMacro", "org.apache.calcite.linq4j.tree.ExpressionType.UnaryPlus", "org.apache.calcite.sql.fun.SqlLibraryOperators.SAFE_CAST", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_NOT_FALSE", "org.apache.calcite.sql.fun.SqlLibraryOperators.SAFE_DIVIDE", "org.apache.calcite.sql.fun.SqlLibraryOperators.DATE", "org.apache.calcite.sql.fun.SqlLibraryOperators.REGEXP_REPLACE_4", "org.apache.calcite.sql.fun.SqlStdOperatorTable.JSON_TYPE_OPERATOR", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SUBSTRING", "org.apache.calcite.linq4j.tree.ExpressionType.GreaterThan", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_JOIN", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CHECKED_MULTIPLY", "org.apache.calcite.sql.fun.SqlLibraryOperators.PARSE_DATETIME", "org.apache.calcite.avatica.util.DateTimeUtils", "org.apache.calcite.sql.fun.SqlStdOperatorTable.PI", "org.apache.calcite.sql.fun.SqlStdOperatorTable.DIVIDE", "org.apache.calcite.rex.RexCall", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ALL_LE", "org.apache.calcite.linq4j.tree.ParameterExpression", "org.apache.calcite.sql.fun.SqlStdOperatorTable.INTERSECTION", "org.apache.calcite.sql.fun.SqlLibraryOperators.REGEXP_REPLACE_2", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CHECKED_MINUS", "org.apache.calcite.avatica.util.TimeUnit", "org.apache.calcite.sql.fun.SqlStdOperatorTable.POSIX_REGEX_CASE_SENSITIVE", "org.apache.calcite.sql.fun.SqlLibraryOperators.STRCMP", "org.apache.calcite.adapter.java.JavaTypeFactory", "org.apache.calcite.sql.fun.SqlLibraryOperators.BIT_COUNT_BIG_QUERY", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SLICE", "org.apache.calcite.sql.fun.SqlLibraryOperators.ATANH", "org.apache.calcite.sql.fun.SqlLibraryOperators.TIMESTAMP", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_TO_STRING", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_REPEAT", "org.apache.calcite.sql.fun.SqlStdOperatorTable.POSITION", "org.apache.calcite.sql.fun.SqlLibraryOperators.CHAR", "org.apache.calcite.sql.fun.SqlLibraryOperators.FIND_IN_SET", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ANY_VALUE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.REINTERPRET", "org.apache.calcite.sql.fun.SqlLibraryOperators.XML_TRANSFORM", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SIGN", "org.apache.calcite.sql.fun.SqlLibraryOperators.DIFFERENCE", "org.apache.calcite.sql.SqlIntervalQualifier", "org.apache.calcite.rex.RexLiteral", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SESSION", "java.lang.reflect.InvocationTargetException", "org.apache.calcite.sql.fun.SqlLibraryOperators.REGEXP_INSTR", "org.apache.calcite.sql.fun.SqlStdOperatorTable.JSON_VALUE_EXPRESSION", "org.apache.calcite.sql.fun.SqlLibraryOperators.JSON_INSERT", "org.apache.calcite.sql.fun.SqlStdOperatorTable.NOT", "org.apache.calcite.sql.fun.SqlLibraryOperators.LPAD", "org.apache.calcite.sql.fun.SqlStdOperatorTable.TIMESTAMP_ADD", "org.apache.calcite.sql.fun.SqlStdOperatorTable.MULTISET_EXCEPT", "org.apache.calcite.sql.fun.SqlLibraryOperators.SECH", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SYSTEM_USER", "org.apache.calcite.sql.fun.SqlLibraryOperators.TIMESTAMP_MICROS", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ELEMENT", "org.apache.calcite.sql.fun.SqlLibraryOperators.CONCAT_WS_SPARK", "org.apache.calcite.sql.fun.SqlLibraryOperators.DAYNAME", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CHECKED_DIVIDE_INTEGER", "org.apache.calcite.sql.fun.SqlLibraryOperators.FROM_BASE64", "java.lang.reflect.Method", "org.apache.calcite.sql.fun.SqlLibraryOperators.EXISTS", "com.google.common.collect.ImmutableMap", "org.apache.calcite.schema.FunctionContext", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SOME", "com.google.common.base.Preconditions.checkArgument", "org.apache.calcite.linq4j.tree.Expression", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CURRENT_USER", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_CONCAT", "org.apache.calcite.sql.fun.SqlLibraryOperators.PARSE_TIMESTAMP", "org.apache.calcite.linq4j.tree.BlockStatement", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_NOT_JSON_ARRAY", "org.apache.calcite.rel.type.RelDataTypeFactoryImpl", "org.apache.calcite.sql.fun.SqlLibraryOperators.URL_ENCODE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_NOT_NULL", "org.apache.calcite.sql.fun.SqlStdOperatorTable.TRANSLATE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.NEGATED_POSIX_REGEX_CASE_INSENSITIVE", "org.apache.calcite.sql.fun.SqlLibraryOperators.UNIX_MICROS", "org.apache.calcite.rex.RexWindowExclusion", "org.apache.calcite.linq4j.tree.BlockBuilder", "org.apache.calcite.sql.fun.SqlLibraryOperators.ORDINAL", "org.apache.calcite.adapter.enumerable.EnumUtils.generateCollatorExpression", "org.apache.calcite.sql.fun.SqlStdOperatorTable.MULTISET_INTERSECT", "org.apache.calcite.sql.fun.SqlLibraryOperators.HEX", "org.apache.calcite.sql.fun.SqlLibraryOperators.TIME", "org.apache.calcite.sql.fun.SqlLibraryOperators.JSON_KEYS", "org.apache.calcite.sql.fun.SqlStdOperatorTable.DENSE_RANK", "org.apache.calcite.sql.fun.SqlLibraryOperators.BIT_GET", "org.apache.calcite.sql.fun.SqlLibraryOperators.TIME_TRUNC", "org.apache.calcite.sql.fun.SqlLibraryOperators.MAP", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ALL_GT", "org.apache.calcite.sql.fun.SqlLibraryOperators.CONTAINS_SUBSTR", "org.apache.calcite.sql.fun.SqlLibraryOperators.PARSE_DATE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.LESS_THAN", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_CONCAT_AGG", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SOME_LE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.TAN", "org.apache.calcite.sql.fun.SqlStdOperatorTable.RADIANS", "org.apache.calcite.sql.fun.SqlLibraryOperators.UNIX_MILLIS", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SOME_EQ", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CURRENT_PATH", "org.apache.calcite.sql.fun.SqlLibraryOperators.SIND", "org.apache.calcite.sql.fun.SqlLibraryOperators.UNIX_SECONDS", "org.apache.calcite.sql.fun.SqlLibraryOperators.RIGHT", "org.apache.calcite.sql.fun.SqlLibraryOperators.SHA256", "org.apache.calcite.sql.fun.SqlLibraryOperators.IS_NAN", "org.apache.calcite.sql.fun.SqlStdOperatorTable.BIT_AND", "org.apache.calcite.sql.validate.SqlConformanceEnum", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ARG_MIN", "org.apache.calcite.rex.RexInputRef", "org.apache.calcite.sql.fun.SqlLibraryOperators.JSON_STORAGE_SIZE", "java.util.Map", "org.apache.calcite.sql.fun.SqlLibraryOperators.CODE_POINTS_TO_BYTES", "org.apache.calcite.sql.fun.SqlStdOperatorTable.MEMBER_OF", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_UNION", "org.apache.calcite.sql.fun.SqlStdOperatorTable.JSON_EXISTS", "org.apache.calcite.sql.fun.SqlLibraryOperators.FACTORIAL", "java.util.Collections", "org.apache.calcite.sql.fun.SqlLibraryOperators.TO_CHAR", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CHARACTER_LENGTH", "org.apache.calcite.linq4j.tree.FunctionExpression", "org.apache.calcite.linq4j.tree.ExpressionType", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CHAR_LENGTH", "org.apache.calcite.sql.fun.SqlStdOperatorTable.TRUNCATE", "org.apache.calcite.sql.fun.SqlLibraryOperators.POWER_PG", "org.apache.calcite.sql.fun.SqlLibraryOperators.MAP_VALUES", "org.apache.calcite.sql.type.SqlTypeName", "org.apache.calcite.sql.fun.SqlLibraryOperators.MD5", "org.apache.calcite.sql.fun.SqlLibraryOperators.SAFE_SUBTRACT", "org.apache.calcite.sql.fun.SqlStdOperatorTable.NOT_SUBMULTISET_OF", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ASIN", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SIN", "org.apache.calcite.sql.SqlMatchFunction", "org.apache.calcite.sql.fun.SqlLibraryOperators.ACOSD", "org.apache.calcite.linq4j.tree.MethodCallExpression", "org.apache.calcite.linq4j.tree.ExpressionType.Equal", "org.apache.calcite.sql.fun.SqlLibraryOperators.REGEXP_LIKE", "java.math.BigDecimal", "org.apache.calcite.sql.fun.SqlLibraryOperators.IS_INF", "org.apache.calcite.sql.fun.SqlLibraryOperators.DATE_PART", "org.apache.calcite.runtime.FlatLists", "org.apache.calcite.linq4j.tree.ExpressionType.Subtract", "org.apache.calcite.sql.fun.SqlStdOperatorTable.GROUPING", "org.apache.calcite.sql.fun.SqlStdOperatorTable.TRIM", "org.apache.calcite.sql.SqlFunction", "org.apache.calcite.sql.validate.SqlUserDefinedAggFunction", "org.apache.calcite.sql.fun.SqlLibraryOperators.SYSDATE", "org.apache.calcite.linq4j.tree.Expressions", "org.apache.calcite.sql.fun.SqlStdOperatorTable.DIVIDE_INTEGER", "org.apache.calcite.sql.fun.SqlStdOperatorTable.COALESCE", "java.util.Objects.requireNonNull", "org.apache.calcite.sql.fun.SqlStdOperatorTable.COS", "org.apache.calcite.sql.fun.SqlStdOperatorTable.MULTISET_INTERSECT_DISTINCT", "org.apache.calcite.sql.fun.SqlStdOperatorTable.JSON_ARRAY", "org.apache.calcite.sql.fun.SqlLibraryOperators.FORMAT_DATE", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_DISTINCT", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_NOT_DISTINCT_FROM", "org.apache.calcite.linq4j.tree.ExpressionType.Divide", "org.apache.calcite.sql.fun.SqlLibraryOperators.TIMESTAMP_TRUNC", "org.apache.calcite.sql.fun.SqlLibraryOperators.LOG_MYSQL", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CURRENT_ROLE", "org.apache.calcite.sql.fun.SqlLibraryOperators.RLIKE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.LOCALTIME", "org.apache.calcite.sql.fun.SqlStdOperatorTable.GROUPING_ID", "org.apache.calcite.sql.fun.SqlStdOperatorTable.RAND", "org.apache.calcite.sql.fun.SqlStdOperatorTable.BITAND", "org.apache.calcite.sql.fun.SqlStdOperatorTable.MULTISET_UNION", "org.apache.calcite.sql.fun.SqlStdOperatorTable.LOCALTIMESTAMP", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_MAX", "org.apache.calcite.sql.fun.SqlLibraryOperators.FORMAT_TIME", "org.apache.calcite.sql.fun.SqlLibraryOperators.TO_DATE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_JSON_SCALAR", "org.apache.calcite.sql.fun.SqlLibraryOperators.CONCAT_WS", "org.apache.calcite.sql.fun.SqlLibraryOperators.MAP_ENTRIES", "org.apache.calcite.linq4j.tree.Primitive", "org.apache.calcite.schema.ImplementableFunction", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CLASSIFIER", "org.apache.calcite.sql.fun.SqlStdOperatorTable.TUMBLE", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_SIZE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.NEGATED_POSIX_REGEX_CASE_SENSITIVE", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAYS_OVERLAP", "org.apache.calcite.sql.fun.SqlStdOperatorTable.MULTISET_EXCEPT_DISTINCT", "org.apache.calcite.sql.fun.SqlStdOperatorTable.DEFAULT", "org.apache.calcite.sql.fun.SqlLibraryOperators.TO_CHAR_PG", "java.lang.reflect.Type", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_EMPTY", "org.apache.calcite.runtime.SqlFunctions", "org.apache.calcite.sql.fun.SqlStdOperatorTable.MULTISET_UNION_DISTINCT", "org.apache.calcite.sql.fun.SqlLibraryOperators.BOOLOR_AGG", "org.apache.calcite.linq4j.tree.ExpressionType.SubtractChecked", "org.apache.calcite.sql.fun.SqlStdOperatorTable.HOP", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ASCII", "org.apache.calcite.sql.fun.SqlStdOperatorTable.MAX", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_SLICE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.OR", "org.apache.calcite.sql.fun.SqlLibraryOperators.REGEXP_CONTAINS", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CHECKED_PLUS", "org.apache.calcite.sql.fun.SqlStdOperatorTable.JSON_ARRAYAGG", "org.apache.calcite.sql.fun.SqlLibraryOperators.CRC32", "org.apache.calcite.sql.fun.SqlLibraryOperators.PARSE_URL", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_CONTAINS", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_TRUE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.EXTRACT", "org.apache.calcite.sql.fun.SqlLibraryOperators.STARTS_WITH", "org.apache.calcite.sql.fun.SqlStdOperatorTable.INITCAP", "org.apache.calcite.sql.fun.SqlLibraryOperators.LOG1P", "org.apache.calcite.sql.fun.SqlLibraryOperators.CHR", "org.apache.calcite.sql.fun.SqlLibraryOperators.LEFT", "org.apache.calcite.linq4j.tree.ExpressionType.LessThan", "org.apache.calcite.sql.fun.SqlLibraryOperators.TAND", "org.apache.calcite.sql.fun.SqlLibraryOperators.BOOL_AND", "org.apache.calcite.sql.fun.SqlLibraryOperators.TANH", "org.apache.calcite.sql.fun.SqlStdOperatorTable.POWER", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_APPEND", "org.apache.calcite.sql.fun.SqlLibraryOperators.MAP_CONCAT", "org.apache.calcite.sql.fun.SqlLibraryOperators.TIMESTAMP_MILLIS", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SOME_GE", "org.apache.calcite.sql.fun.SqlLibraryOperators.UN_BASE64", "org.apache.calcite.sql.fun.SqlLibraryOperators.JSON_LENGTH", "org.apache.calcite.sql.fun.SqlLibraryOperators.ACOSH", "org.apache.calcite.sql.fun.SqlLibraryOperators.LOGICAL_AND", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CURRENT_CATALOG", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CONCAT", "org.apache.calcite.sql.fun.SqlLibraryOperators.ASIND", "org.apache.calcite.sql.fun.SqlStdOperatorTable.REPLACE", "java.util.List", "org.apache.calcite.sql.fun.SqlLibraryOperators.BIT_LENGTH", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_LENGTH", "org.apache.calcite.sql.fun.SqlLibraryOperators.ATAND", "org.apache.calcite.sql.fun.SqlLibraryOperators.LOG", "org.apache.calcite.sql.fun.SqlLibraryOperators.MAX_BY", "org.apache.calcite.runtime.PairList", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_NOT_EMPTY", "org.apache.calcite.sql.fun.SqlInternalOperators.LITERAL_AGG", "org.apache.calcite.sql.fun.SqlStdOperatorTable.MODE", "org.apache.calcite.util.BuiltInMethod", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_POSITION", "org.apache.calcite.sql.fun.SqlStdOperatorTable.MINUS", "org.apache.calcite.sql.fun.SqlLibraryOperators.CONCAT2", "org.apache.calcite.sql.fun.SqlStdOperatorTable.LESS_THAN_OR_EQUAL", "org.apache.calcite.sql.fun.SqlStdOperatorTable.LAST_VALUE", "org.apache.calcite.linq4j.tree.NewExpression", "org.apache.calcite.sql.fun.SqlLibraryOperators.TO_TIMESTAMP_PG", "org.apache.calcite.sql.fun.SqlLibraryOperators.REGEXP", "org.apache.calcite.linq4j.tree.ExpressionType.GreaterThanOrEqual", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ATAN2", "org.apache.calcite.sql.fun.SqlLibraryOperators.REGEXP_REPLACE_PG_4", "org.apache.calcite.sql.fun.SqlStdOperatorTable.FIRST_VALUE", "org.apache.calcite.sql.fun.SqlLibraryOperators.EXTRACT_XML", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_JSON_OBJECT", "org.apache.calcite.sql.fun.SqlLibraryOperators.CSCH", "org.apache.calcite.sql.type.SqlTypeUtil", "org.apache.calcite.sql.fun.SqlStdOperatorTable.LEAD", "org.apache.calcite.sql.fun.SqlLibraryOperators.EXTRACT_VALUE", "org.apache.calcite.avatica.util.TimeUnitRange", "org.apache.calcite.sql.fun.SqlStdOperatorTable.OCTET_LENGTH", "com.google.common.collect.Iterables", "org.apache.calcite.sql.fun.SqlItemOperator", "org.apache.calcite.sql.SqlKind", "org.apache.calcite.sql.validate.SqlUserDefinedFunction", "org.apache.calcite.sql.fun.SqlLibraryOperators.REGEXP_EXTRACT", "org.apache.calcite.sql.fun.SqlStdOperatorTable.MINUS_DATE", "java.util.function.Supplier", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_PREPEND", "org.apache.calcite.rex.RexPatternFieldRef", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SOME_LT", "org.apache.calcite.sql.fun.SqlLibraryOperators.TRY_CAST", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CURRENT_DATE", "org.apache.calcite.linq4j.tree.ExpressionType.NegateChecked", "org.apache.calcite.schema.ImplementableAggFunction", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CHECKED_DIVIDE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.RANK", "java.util.ArrayList", "org.apache.calcite.sql.SqlJsonEmptyOrError", "org.apache.calcite.sql.fun.SqlLibraryOperators.COSH", "org.apache.calcite.sql.SqlBinaryOperator", "org.apache.calcite.sql.fun.SqlTrimFunction", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CBRT", "org.apache.calcite.sql.fun.SqlLibraryOperators.JSON_TYPE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SESSION_USER", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_AGG", "org.apache.calcite.sql.fun.SqlStdOperatorTable.BITNOT", "org.apache.calcite.sql.fun.SqlLibraryOperators.MAP_FROM_ARRAYS", "org.apache.calcite.sql.fun.SqlLibraryOperators.OFFSET", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_REVERSE", "java.util.HashMap", "org.apache.calcite.sql.fun.SqlLibraryOperators.RANDOM", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ALL_GE", "org.apache.calcite.sql.fun.SqlLibraryOperators.DATETIME", "org.apache.calcite.sql.fun.SqlLibraryOperators.REVERSE_SPARK", "org.apache.calcite.sql.fun.SqlStdOperatorTable.EQUALS", "org.apache.calcite.sql.fun.SqlStdOperatorTable.LOWER", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAYS_ZIP", "org.apache.calcite.sql.fun.SqlLibraryOperators.REGEXP_REPLACE_BIG_QUERY_3", "org.apache.calcite.sql.fun.SqlLibraryOperators.TO_TIMESTAMP", "org.apache.calcite.sql.fun.SqlLibraryOperators.JSON_REPLACE", "org.apache.calcite.util.ReflectUtil.isStatic", "org.apache.calcite.sql.fun.SqlStdOperatorTable.BITCOUNT", "org.apache.calcite.sql.SqlTypeConstructorFunction", "org.apache.calcite.sql.fun.SqlLibraryOperators.DATETIME_TRUNC", "org.apache.calcite.sql.fun.SqlLibraryOperators.JSON_DEPTH", "org.apache.calcite.sql.fun.SqlLibraryOperators.JSON_PRETTY", "org.apache.calcite.sql.fun.SqlStdOperatorTable.NEXT_VALUE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.PLUS", "org.apache.calcite.sql.fun.SqlLibraryOperators.FORMAT_TIMESTAMP", "org.apache.calcite.sql.fun.SqlStdOperatorTable.MOD", "org.apache.calcite.sql.fun.SqlLibraryOperators.BITOR_AGG", "org.apache.calcite.sql.fun.SqlStdOperatorTable.FUSION", "org.apache.calcite.sql.fun.SqlLibraryOperators.FORMAT_DATETIME", "org.apache.calcite.util.Util", "org.apache.calcite.sql.fun.SqlLibraryOperators.SOUNDEX_SPARK", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CARDINALITY", "org.apache.calcite.sql.fun.SqlLibraryOperators.TO_HEX", "org.apache.calcite.sql.fun.SqlLibraryOperators.TRANSLATE3", "org.apache.calcite.rel.type.RelDataType", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ALL_EQ", "org.checkerframework.checker.nullness.qual.Nullable", "org.apache.calcite.sql.fun.SqlStdOperatorTable.USER", "org.apache.calcite.sql.fun.SqlLibraryOperators.POW", "org.apache.calcite.sql.fun.SqlStdOperatorTable.JSON_OBJECT", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SUBMULTISET_OF", "org.apache.calcite.sql.fun.SqlLibraryOperators.UNIX_DATE", "org.apache.calcite.sql.fun.SqlLibraryOperators.COSD", "org.apache.calcite.sql.fun.SqlStdOperatorTable.GREATER_THAN_OR_EQUAL", "org.apache.calcite.sql.fun.SqlStdOperatorTable.BIT_XOR", "org.apache.calcite.sql.fun.SqlStdOperatorTable.NTH_VALUE", "org.apache.calcite.linq4j.tree.BinaryExpression", "org.apache.calcite.sql.fun.SqlLibraryOperators.PARSE_TIME", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CONVERT", "org.apache.calcite.sql.fun.SqlLibraryOperators.GETBIT", "org.apache.calcite.sql.fun.SqlStdOperatorTable.LN", "org.apache.calcite.sql.fun.SqlStdOperatorTable.DATETIME_PLUS", "org.apache.calcite.sql.fun.SqlStdOperatorTable.OVERLAY", "org.apache.calcite.sql.fun.SqlStdOperatorTable", "org.apache.calcite.sql.fun.SqlStdOperatorTable.NOT_EQUALS", "org.apache.calcite.sql.fun.SqlStdOperatorTable.REGR_COUNT", "org.apache.calcite.sql.fun.SqlStdOperatorTable.EXP", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_NOT_JSON_OBJECT", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_FALSE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CURRENT_TIME", "org.apache.calcite.sql.fun.SqlLibraryOperators.REGEXP_REPLACE_6", "org.apache.calcite.sql.fun.SqlLibraryOperators.COTH", "org.apache.calcite.linq4j.tree.ExpressionType.DivideChecked", "org.apache.calcite.sql.fun.SqlStdOperatorTable.UNARY_PLUS", "org.apache.calcite.sql.fun.SqlLibraryOperators.REGEXP_REPLACE_PG_3", "org.apache.calcite.sql.fun.SqlLibraryOperators.BITAND_AGG", "org.apache.calcite.sql.fun.SqlLibraryOperators.CODE_POINTS_TO_STRING", "org.apache.calcite.linq4j.tree.ExpressionType.Multiply", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ROW_NUMBER", "org.apache.calcite.sql.fun.SqlLibraryOperators.SYSTIMESTAMP", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ARRAY_VALUE_CONSTRUCTOR", "org.apache.calcite.linq4j.tree.ExpressionType.NotEqual", "org.apache.calcite.sql.fun.SqlLibraryOperators.LOG_POSTGRES", "org.apache.calcite.sql.fun.SqlStdOperatorTable.BIT_OR", "org.apache.calcite.sql.fun.SqlJsonArrayAggAggFunction", "org.apache.calcite.sql.SqlOperator", "org.apache.calcite.sql.fun.SqlStdOperatorTable.AND", "com.google.common.collect.ImmutableList", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ITEM", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CURRENT_TIMESTAMP", "org.apache.calcite.sql.fun.SqlLibraryOperators.DATE_TRUNC", "org.apache.calcite.sql.fun.SqlLibraryOperators.FROM_BASE32", "org.apache.calcite.sql.fun.SqlLibraryOperators.TO_BASE64", "java.util.LinkedHashMap", "java.util.Arrays", "org.apache.calcite.sql.fun.SqlStdOperatorTable.UPPER", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CEIL", "org.apache.calcite.sql.fun.SqlLibraryOperators.TIMESTAMP_SECONDS", "org.apache.calcite.sql.fun.SqlLibraryOperators.CEIL_BIG_QUERY", "org.apache.calcite.sql.fun.SqlLibraryOperators.FROM_HEX", "org.apache.calcite.sql.fun.SqlLibraryOperators.MAP_FROM_ENTRIES", "org.apache.calcite.sql.fun.SqlQuantifyOperator", "org.apache.calcite.sql.fun.SqlInternalOperators.THROW_UNLESS", "org.apache.calcite.sql.fun.SqlLibraryOperators.SAFE_ADD", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ATAN", "java.util.stream.Collectors", "org.apache.calcite.sql.fun.SqlLibraryOperators.CSC", "org.apache.calcite.sql.fun.SqlLibraryOperators.REGEXP_EXTRACT_ALL", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_COMPACT", "org.apache.calcite.sql.fun.SqlLibraryOperators.SPACE", "org.apache.calcite.sql.fun.SqlLibraryOperators.CONCAT_FUNCTION_WITH_NULL", "java.math.RoundingMode", "org.apache.calcite.sql.fun.SqlLibraryOperators.SOUNDEX", "org.apache.calcite.sql.fun.SqlLibraryOperators.MIN_BY", "org.apache.calcite.util.Pair", "org.apache.calcite.sql.fun.SqlStdOperatorTable.JSON_QUERY", "org.apache.calcite.sql.fun.SqlStdOperatorTable.TYPEOF", "org.apache.calcite.sql.fun.SqlLibraryOperators.ENDS_WITH", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SUM0", "org.apache.calcite.linq4j.tree.MemberExpression", "org.apache.calcite.sql.fun.SqlStdOperatorTable.LISTAGG", "org.apache.calcite.sql.fun.SqlStdOperatorTable.COLLECT", "org.apache.calcite.sql.fun.SqlLibraryOperators.SAFE_OFFSET", "org.apache.calcite.sql.fun.SqlStdOperatorTable.LIKE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.EVERY", "org.apache.calcite.sql.fun.SqlLibraryOperators.STR_TO_MAP", "java.lang.reflect.Modifier", "org.apache.calcite.sql.fun.SqlStdOperatorTable.LAST", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SUM", "org.apache.calcite.sql.fun.SqlStdOperatorTable.MIN", "org.apache.calcite.sql.fun.SqlLibraryOperators.REGEXP_REPLACE_5_ORACLE", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_INSERT", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CHECKED_UNARY_MINUS", "org.apache.calcite.sql.fun.SqlStdOperatorTable.LAG", "org.apache.calcite.sql.fun.SqlStdOperatorTable.TIMESTAMP_DIFF", "org.apache.calcite.sql.fun.SqlLibraryOperators.DATE_FROM_UNIX_DATE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.NTILE", "org.apache.calcite.sql.fun.SqlLibraryOperators.ASINH", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_MIN", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ALL_NE", "org.apache.calcite.sql.fun.SqlLibraryOperators.CONCAT_WS_POSTGRESQL", "org.apache.calcite.sql.fun.SqlStdOperatorTable.LOG10", "org.apache.calcite.sql.fun.SqlLibraryOperators.LEVENSHTEIN", "org.apache.calcite.sql.fun.SqlLibraryOperators.TO_BASE32", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_A_SET", "org.apache.calcite.sql.fun.SqlLibraryOperators.JSON_SET", "org.apache.calcite.sql.fun.SqlStdOperatorTable.COUNT", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_INTERSECT", "org.apache.calcite.sql.fun.SqlLibraryOperators.CONVERT_ORACLE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.DEGREES", "org.apache.calcite.linq4j.tree.ConstantExpression", "org.apache.calcite.sql.fun.SqlLibraryOperators.BOOL_OR", "org.apache.calcite.sql.fun.SqlLibraryOperators.SAFE_MULTIPLY", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ABS", "org.apache.calcite.sql.fun.SqlStdOperatorTable.BITXOR", "org.apache.calcite.sql.fun.SqlStdOperatorTable.GREATER_THAN", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SIMILAR_TO", "org.apache.calcite.sql.fun.SqlStdOperatorTable.CURRENT_VALUE", "org.apache.calcite.sql.fun.SqlLibraryOperators.CONCAT_FUNCTION", "org.apache.calcite.sql.fun.SqlLibraryOperators.SAFE_NEGATE", "org.apache.calcite.sql.fun.SqlLibraryOperators.BOOLAND_AGG", "org.apache.calcite.sql.fun.SqlLibraryOperators.BASE64", "org.apache.calcite.sql.fun.SqlLibraryOperators.REGEXP_REPLACE_3", "org.apache.calcite.sql.fun.SqlLibraryOperators.REGEXP_REPLACE_5", "org.apache.calcite.sql.fun.SqlStdOperatorTable.STRUCT_ACCESS", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_NOT_JSON_SCALAR", "org.apache.calcite.sql.fun.SqlStdOperatorTable.RAND_INTEGER", "org.apache.calcite.sql.validate.SqlUserDefinedTableFunction", "org.apache.calcite.sql.fun.SqlLibraryOperators.SEC", "org.apache.calcite.sql.fun.SqlLibraryOperators.MONTHNAME", "org.apache.calcite.sql.fun.SqlLibraryOperators.LOGICAL_OR", "org.apache.calcite.sql.fun.SqlLibraryOperators.ARRAY_REMOVE", "org.apache.calcite.sql.fun.SqlLibrary", "org.apache.calcite.sql.fun.SqlStdOperatorTable.SINGLE_VALUE", "org.apache.calcite.sql.fun.SqlLibraryOperators.REVERSE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.BITOR", "org.apache.calcite.sql.fun.SqlStdOperatorTable.MAP_VALUE_CONSTRUCTOR", "org.apache.calcite.sql.fun.SqlStdOperatorTable.IS_NOT_JSON_VALUE", "org.apache.calcite.sql.fun.SqlStdOperatorTable.ROW", "org.apache.calcite.linq4j.tree.ExpressionType.MultiplyChecked", "org.apache.calcite.sql.fun.SqlLibraryOperators.COMPRESS", "org.apache.calcite.DataContext", "org.apache.calcite.sql.fun.SqlStdOperatorTable.COT" ]
+  } ]
+}
