@@ -1,0 +1,797 @@
+{
+  "systemName" : "assertj",
+  "classes" : [ {
+    "name" : "BasicErrorMessageFactory",
+    "packageName" : "org.assertj.core.error",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ "ErrorMessageFactory" ],
+    "methods" : [ {
+      "name" : "create",
+      "visibility" : "public",
+      "methodCalls" : [ "format", "emptyDescription", "create", "representation" ]
+    }, {
+      "name" : "toString",
+      "visibility" : "public",
+      "methodCalls" : [ "representation", "isPresent", "get", "toStringOf", "formatted", "toList", "entrySet", "map", "collect", "with", "join", "stream", "orElseGet", "getTypeName", "descriptionText", "getClass", "quote", "overridingErrorMessage", "getSimpleName", "description", "value", "toString", "isEmpty" ]
+    }, {
+      "name" : "hashCode",
+      "visibility" : "public",
+      "methodCalls" : [ "hashCodeFor", "toArray", "deepHashCode", "hashCode", "hash" ]
+    }, {
+      "name" : "equals",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "getKey", "compare", "toArray", "deepEquals", "getOwnerType", "getActualTypeArguments", "getRawType", "equals", "getClass" ]
+    } ],
+    "imports" : [ "org.assertj.core.util.Objects.HASH_CODE_PRIME", "org.assertj.core.presentation.Representation", "java.util.Objects.deepEquals", "java.util.Objects.requireNonNull", "org.assertj.core.configuration.ConfigurationProvider.CONFIGURATION_PROVIDER", "java.util.Arrays", "org.assertj.core.description.Description", "java.util.Objects", "org.assertj.core.util.Strings.quote", "org.assertj.core.util.Objects.hashCodeFor" ]
+  }, {
+    "name" : "Assertions",
+    "packageName" : "org.assertj.core.api",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ "InstanceOfAssertFactories" ],
+    "methods" : [ {
+      "name" : "shouldHaveThrown",
+      "visibility" : "public",
+      "methodCalls" : [ "shouldHaveThrown", "collectAssertionError", "instance", "expectedThrowableNotThrown" ]
+    }, {
+      "name" : "contentOf",
+      "visibility" : "public",
+      "methodCalls" : [ "defaultCharset", "contentOf" ]
+    }, {
+      "name" : "catchIllegalStateException",
+      "visibility" : "public",
+      "methodCalls" : [ "catchThrowableOfType" ]
+    }, {
+      "name" : "catchThrowable",
+      "visibility" : "public",
+      "methodCalls" : [ "catchThrowable", "call" ]
+    }, {
+      "name" : "catchThrowableOfType",
+      "visibility" : "public",
+      "methodCalls" : [ "catchThrowableOfType", "formatted", "overridingErrorMessage", "isInstanceOf", "as", "catchThrowable", "create", "getSimpleName", "shouldBeInstance" ]
+    }, {
+      "name" : "byLessThan",
+      "visibility" : "public",
+      "methodCalls" : [ "byLessThan", "toNanos", "strictOffset", "requireNonNull" ]
+    }, {
+      "name" : "assertThatIOException",
+      "visibility" : "public",
+      "methodCalls" : [ "assertThatExceptionOfType" ]
+    }, {
+      "name" : "filter",
+      "visibility" : "public",
+      "methodCalls" : [ "filter", "requireNonNull" ]
+    }, {
+      "name" : "assertThatIterator",
+      "visibility" : "public",
+      "methodCalls" : [ "assertThat" ]
+    }, {
+      "name" : "registerFormatterForType",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "registerFormatterForType" ]
+    }, {
+      "name" : "catchException",
+      "visibility" : "public",
+      "methodCalls" : [ "catchThrowableOfType" ]
+    }, {
+      "name" : "in",
+      "visibility" : "public",
+      "methodCalls" : [ "in", "getValueOf", "collect", "stream", "filter", "toList" ]
+    }, {
+      "name" : "catchIllegalArgumentException",
+      "visibility" : "public",
+      "methodCalls" : [ "catchThrowableOfType" ]
+    }, {
+      "name" : "setDescriptionConsumer",
+      "visibility" : "public",
+      "methodCalls" : [ "setDescriptionConsumer" ]
+    }, {
+      "name" : "withMarginOf",
+      "visibility" : "public",
+      "methodCalls" : [ "withMarginOf" ]
+    }, {
+      "name" : "assertThatList",
+      "visibility" : "public",
+      "methodCalls" : [ "assertThat" ]
+    }, {
+      "name" : "assertThatPredicate",
+      "visibility" : "public",
+      "methodCalls" : [ "assertThat" ]
+    }, {
+      "name" : "catchNullPointerException",
+      "visibility" : "public",
+      "methodCalls" : [ "catchThrowableOfType" ]
+    }, {
+      "name" : "assertThatIterable",
+      "visibility" : "public",
+      "methodCalls" : [ "assertThat" ]
+    }, {
+      "name" : "assertThatCollection",
+      "visibility" : "public",
+      "methodCalls" : [ "assertThat" ]
+    }, {
+      "name" : "setMaxLengthForSingleLineDescription",
+      "visibility" : "public",
+      "methodCalls" : [ "loadRegisteredConfiguration", "checkArgument", "setMaxLengthForSingleLineDescription" ]
+    }, {
+      "name" : "anyOf",
+      "visibility" : "public",
+      "methodCalls" : [ "assertThat", "anyOf", "satisfiesAnyOf" ]
+    }, {
+      "name" : "fail",
+      "visibility" : "public",
+      "methodCalls" : [ "collectAssertionError", "fail", "formatted", "failure", "initCause", "instance" ]
+    }, {
+      "name" : "as",
+      "visibility" : "public",
+      "methodCalls" : [ "describedAs", "as" ]
+    }, {
+      "name" : "registerCustomDateFormat",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "requireNonNull", "get", "loadRegisteredConfiguration", "registerCustomDateFormat" ]
+    }, {
+      "name" : "assertThatNullPointerException",
+      "visibility" : "public",
+      "methodCalls" : [ "assertThatExceptionOfType" ]
+    }, {
+      "name" : "catchIndexOutOfBoundsException",
+      "visibility" : "public",
+      "methodCalls" : [ "catchThrowableOfType" ]
+    }, {
+      "name" : "atIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "atIndex" ]
+    }, {
+      "name" : "assertThatNoException",
+      "visibility" : "public",
+      "methodCalls" : [ "assertThatNoException" ]
+    }, {
+      "name" : "assertThatPath",
+      "visibility" : "public",
+      "methodCalls" : [ "assertThat" ]
+    }, {
+      "name" : "assertThatStream",
+      "visibility" : "public",
+      "methodCalls" : [ "assertThat" ]
+    }, {
+      "name" : "setMaxElementsForPrinting",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument", "loadRegisteredConfiguration", "setMaxElementsForPrinting" ]
+    }, {
+      "name" : "linesOf",
+      "visibility" : "public",
+      "methodCalls" : [ "defaultCharset", "linesOf" ]
+    }, {
+      "name" : "useRepresentation",
+      "visibility" : "public",
+      "methodCalls" : [ "useRepresentation", "setCustomRepresentation", "requireNonNull" ]
+    }, {
+      "name" : "assertThatRuntimeException",
+      "visibility" : "public",
+      "methodCalls" : [ "assertThatExceptionOfType" ]
+    }, {
+      "name" : "from",
+      "visibility" : "public",
+      "methodCalls" : [ "from", "wrap", "propertyValues" ]
+    }, {
+      "name" : "assertThatObject",
+      "visibility" : "public",
+      "methodCalls" : [ "assertThat" ]
+    }, {
+      "name" : "setExtractBareNamePropertyMethods",
+      "visibility" : "public",
+      "methodCalls" : [ "setExtractBareNamePropertyMethods" ]
+    }, {
+      "name" : "catchIOException",
+      "visibility" : "public",
+      "methodCalls" : [ "catchThrowableOfType" ]
+    }, {
+      "name" : "catchRuntimeException",
+      "visibility" : "public",
+      "methodCalls" : [ "catchThrowableOfType" ]
+    }, {
+      "name" : "assertThatException",
+      "visibility" : "public",
+      "methodCalls" : [ "assertThatExceptionOfType" ]
+    }, {
+      "name" : "tuple",
+      "visibility" : "public",
+      "methodCalls" : [ "tuple" ]
+    }, {
+      "name" : "extractProperty",
+      "visibility" : "public",
+      "methodCalls" : [ "extractProperty" ]
+    }, {
+      "name" : "assertThatComparable",
+      "visibility" : "public",
+      "methodCalls" : [ "proxy", "assertThatComparable" ]
+    }, {
+      "name" : "setPrintAssertionsDescription",
+      "visibility" : "public",
+      "methodCalls" : [ "setPrintAssertionsDescription", "loadRegisteredConfiguration" ]
+    }, {
+      "name" : "useDefaultRepresentation",
+      "visibility" : "public",
+      "methodCalls" : [ "useDefaultRepresentation", "representation", "setCustomRepresentation" ]
+    }, {
+      "name" : "allOf",
+      "visibility" : "public",
+      "methodCalls" : [ "satisfies", "allOf", "assertThat" ]
+    }, {
+      "name" : "assertThatIllegalArgumentException",
+      "visibility" : "public",
+      "methodCalls" : [ "assertThatExceptionOfType" ]
+    }, {
+      "name" : "assertThatExceptionOfType",
+      "visibility" : "public",
+      "methodCalls" : [ "assertThatExceptionOfType" ]
+    }, {
+      "name" : "assertThatIllegalStateException",
+      "visibility" : "public",
+      "methodCalls" : [ "assertThatExceptionOfType" ]
+    }, {
+      "name" : "assertThatReflectiveOperationException",
+      "visibility" : "public",
+      "methodCalls" : [ "assertThatExceptionOfType" ]
+    }, {
+      "name" : "not",
+      "visibility" : "public",
+      "methodCalls" : [ "not" ]
+    }, {
+      "name" : "useDefaultDateFormatsOnly",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "clear", "useDefaultDateFormatsOnly" ]
+    }, {
+      "name" : "assertThat",
+      "visibility" : "public",
+      "methodCalls" : [ "proxy", "assertThat", "assertThatIntStream", "assertThatLongStream", "assertThatCompletionStage", "assertThatPredicate", "assertThatMap", "assertThatStream", "assertThatIterator", "assertThatDoublePredicate", "assertThatList", "assertThatDoubleStream", "assertThatPath", "assertThatIterable", "assertThatSpliterator", "assertThatIntPredicate", "assertThatCollection", "assertThatCharSequence", "assertThatLongPredicate" ]
+    }, {
+      "name" : "entry",
+      "visibility" : "public",
+      "methodCalls" : [ "entry" ]
+    }, {
+      "name" : "assertThatThrownBy",
+      "visibility" : "public",
+      "methodCalls" : [ "assertThatThrownBy", "catchThrowable", "hasBeenThrown", "as", "assertThat" ]
+    }, {
+      "name" : "setMaxStackTraceElementsDisplayed",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument", "loadRegisteredConfiguration", "setMaxStackTraceElementsDisplayed" ]
+    }, {
+      "name" : "offset",
+      "visibility" : "public",
+      "methodCalls" : [ "doubleValue", "requireNonNull", "checkArgument", "offset" ]
+    }, {
+      "name" : "assertThatCode",
+      "visibility" : "public",
+      "methodCalls" : [ "catchThrowable", "assertThat", "assertThatCode" ]
+    }, {
+      "name" : "setLenientDateParsing",
+      "visibility" : "public",
+      "methodCalls" : [ "setLenientDateParsing" ]
+    }, {
+      "name" : "failBecauseExceptionWasNotThrown",
+      "visibility" : "public",
+      "methodCalls" : [ "failBecauseExceptionWasNotThrown", "shouldHaveThrown" ]
+    }, {
+      "name" : "doesNotHave",
+      "visibility" : "public",
+      "methodCalls" : [ "assertDoesNotHave", "doesNotHave" ]
+    }, {
+      "name" : "withPrecision",
+      "visibility" : "public",
+      "methodCalls" : [ "offset" ]
+    }, {
+      "name" : "assertThatTemporal",
+      "visibility" : "public",
+      "methodCalls" : [ "assertThatTemporal", "proxy" ]
+    }, {
+      "name" : "catchReflectiveOperationException",
+      "visibility" : "public",
+      "methodCalls" : [ "catchThrowableOfType" ]
+    }, {
+      "name" : "within",
+      "visibility" : "public",
+      "methodCalls" : [ "within", "requireNonNull", "offset", "toNanos" ]
+    }, {
+      "name" : "withinPercentage",
+      "visibility" : "public",
+      "methodCalls" : [ "withinPercentage", "withPercentage" ]
+    }, {
+      "name" : "setAllowComparingPrivateFields",
+      "visibility" : "public",
+      "methodCalls" : [ "setAllowComparingPrivateFields", "comparison", "setAllowUsingPrivateFields" ]
+    }, {
+      "name" : "assertThatCharSequence",
+      "visibility" : "public",
+      "methodCalls" : [ "assertThat" ]
+    }, {
+      "name" : "assertThatIndexOutOfBoundsException",
+      "visibility" : "public",
+      "methodCalls" : [ "assertThatExceptionOfType" ]
+    }, {
+      "name" : "assertWith",
+      "visibility" : "public",
+      "methodCalls" : [ "assertThat", "satisfies" ]
+    }, {
+      "name" : "setRemoveAssertJRelatedElementsFromStackTrace",
+      "visibility" : "public",
+      "methodCalls" : [ "loadRegisteredConfiguration", "instance", "setRemoveAssertJRelatedElementsFromStackTrace" ]
+    }, {
+      "name" : "notIn",
+      "visibility" : "public",
+      "methodCalls" : [ "notIn", "filter", "stream", "collect", "toList", "getValueOf" ]
+    }, {
+      "name" : "setAllowExtractingPrivateFields",
+      "visibility" : "public",
+      "methodCalls" : [ "setAllowExtractingPrivateFields", "setAllowUsingPrivateFields", "extraction" ]
+    } ],
+    "imports" : [ "java.time.YearMonth", "java.time.LocalDate", "org.assertj.core.data.Index", "org.assertj.core.condition.Not", "org.assertj.core.presentation.Representation", "java.time.Instant", "java.util.function.IntPredicate", "java.util.Optional", "java.util.concurrent.atomic.AtomicIntegerFieldUpdater", "java.util.Map", "org.assertj.core.data.Offset", "org.assertj.core.api.filter.InFilter", "org.assertj.core.util.Files", "org.assertj.core.data.TemporalUnitLessThanOffset", "org.assertj.core.presentation.UnicodeRepresentation", "java.util.function.LongPredicate", "java.time.Period", "java.net.URI", "java.util.OptionalLong", "java.util.List", "java.util.concurrent.Future", "java.util.concurrent.CompletableFuture", "java.time.ZonedDateTime", "java.util.concurrent.CompletionStage", "java.io.IOException", "java.util.regex.Matcher", "java.util.concurrent.atomic.AtomicLongArray", "org.assertj.core.util.Paths", "java.net.URL", "java.time.OffsetTime", "java.util.Date", "java.time.temporal.Temporal", "org.assertj.core.condition.DoesNotHave", "java.math.BigInteger", "java.time.Duration", "java.util.concurrent.atomic.AtomicIntegerArray", "org.assertj.core.api.filter.Filters", "java.nio.file.Path", "java.time.OffsetDateTime", "java.util.function.Function", "org.assertj.core.api.filter.NotFilter", "java.util.function.Consumer", "java.util.Objects.requireNonNull", "org.assertj.core.data.TemporalUnitWithinOffset", "java.util.concurrent.atomic.LongAdder", "org.assertj.core.presentation.BinaryRepresentation", "org.assertj.core.util.introspection.Introspection", "org.assertj.core.condition.AnyOf", "java.util.concurrent.atomic.AtomicReferenceFieldUpdater", "org.assertj.core.configuration.ConfigurationProvider.CONFIGURATION_PROVIDER", "org.assertj.core.util.introspection.FieldSupport", "org.assertj.core.util.CheckReturnValue", "java.time.LocalTime", "java.util.stream.IntStream", "java.util.function.Predicate", "java.util.stream.DoubleStream", "java.math.BigDecimal", "java.time.temporal.TemporalUnit", "java.util.OptionalInt", "java.io.File", "java.time.LocalDateTime", "org.assertj.core.configuration.Configuration", "java.util.Iterator", "java.util.OptionalDouble", "java.util.function.DoublePredicate", "java.util.concurrent.atomic.AtomicReference", "java.io.InputStream", "java.util.Spliterator", "org.assertj.core.api.ThrowableAssert.ThrowingCallable", "org.assertj.core.api.filter.FilterOperator", "java.util.Collection", "org.assertj.core.data.Percentage.withPercentage", "java.util.concurrent.atomic.AtomicBoolean", "org.assertj.core.groups.Tuple", "org.assertj.core.groups.Properties", "org.assertj.core.util.URLs", "java.util.concurrent.atomic.AtomicLongFieldUpdater", "java.util.concurrent.atomic.AtomicMarkableReference", "org.assertj.core.data.MapEntry", "com.google.common.base.Optional", "com.google.common.collect.Multimap", "com.google.common.collect.Multiset", "com.google.common.collect.Range", "com.google.common.collect.RangeMap", "com.google.common.collect.RangeSet", "com.google.common.collect.Table", "com.google.common.io.ByteSource", "java.time.temporal.ChronoUnit", "org.assertj.core.presentation.StandardRepresentation", "java.text.DateFormat", "org.assertj.core.data.TemporalUnitOffset", "org.assertj.core.description.Description", "java.io.UncheckedIOException", "java.util.stream.LongStream", "org.assertj.core.data.Percentage", "org.assertj.core.configuration.ConfigurationProvider", "java.util.concurrent.atomic.AtomicInteger", "java.util.stream.Stream", "java.nio.charset.Charset", "org.assertj.core.presentation.HexadecimalRepresentation", "java.util.concurrent.atomic.AtomicReferenceArray", "org.assertj.core.api.filter.NotInFilter", "org.assertj.core.condition.AllOf", "org.assertj.core.util.CanIgnoreReturnValue", "java.util.concurrent.atomic.AtomicLong", "java.util.concurrent.atomic.AtomicStampedReference" ]
+  }, {
+    "name" : "AbstractIterableAssert",
+    "packageName" : "org.assertj.core.api",
+    "extendedClasses" : [ "AbstractAssertWithComparator" ],
+    "implementedInterfaces" : [ "ObjectEnumerableAssert" ],
+    "methods" : [ {
+      "name" : "usingComparator",
+      "visibility" : "public",
+      "methodCalls" : [ "usingComparator" ]
+    }, {
+      "name" : "usingRecursiveComparison",
+      "visibility" : "public",
+      "methodCalls" : [ "withTypeComparators", "usingRecursiveComparison" ]
+    }, {
+      "name" : "usingRecursiveFieldByFieldElementComparatorOnFields",
+      "visibility" : "public",
+      "methodCalls" : [ "withComparedFields", "builder", "usingRecursiveFieldByFieldElementComparator", "build" ]
+    }, {
+      "name" : "hasSize",
+      "visibility" : "public",
+      "methodCalls" : [ "assertHasSizeInBytes", "assertHasSize", "assertionError", "size", "isNotNull", "shouldHaveSize" ]
+    }, {
+      "name" : "doesNotContainSubsequence",
+      "visibility" : "public",
+      "methodCalls" : [ "toArray", "doesNotContainSubsequenceForProxy", "checkSubsequenceIsNotNull", "assertDoesNotContainSubsequence" ]
+    }, {
+      "name" : "hasSizeGreaterThanOrEqualTo",
+      "visibility" : "public",
+      "methodCalls" : [ "assertHasSizeGreaterThanOrEqualTo" ]
+    }, {
+      "name" : "filteredOnAssertions",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "map",
+      "visibility" : "public",
+      "methodCalls" : [ "extractingForProxy", "isNotNull", "assertThat", "map" ]
+    }, {
+      "name" : "isInstanceOf",
+      "visibility" : "public",
+      "methodCalls" : [ "isInstanceOf", "assertIsInstanceOf" ]
+    }, {
+      "name" : "anyMatch",
+      "visibility" : "public",
+      "methodCalls" : [ "newArrayList", "assertAnyMatch" ]
+    }, {
+      "name" : "usingDefaultComparator",
+      "visibility" : "public",
+      "methodCalls" : [ "instance", "usingDefaultComparator" ]
+    }, {
+      "name" : "containsAnyOf",
+      "visibility" : "public",
+      "methodCalls" : [ "containsAnyOfForProxy", "toByteArray", "requireNonNullParameter", "assertContainsAnyOf", "isNotNull" ]
+    }, {
+      "name" : "isSameAs",
+      "visibility" : "public",
+      "methodCalls" : [ "isSameAs", "assertSame" ]
+    }, {
+      "name" : "containsAnyElementsOf",
+      "visibility" : "public",
+      "methodCalls" : [ "containsAnyOf", "toArray" ]
+    }, {
+      "name" : "containsExactlyElementsOf",
+      "visibility" : "public",
+      "methodCalls" : [ "containsExactly", "toArray" ]
+    }, {
+      "name" : "containsSubsequence",
+      "visibility" : "public",
+      "methodCalls" : [ "containsSubsequence", "usingComparatorWithPrecision", "containsSubsequenceForProxy", "checkSubsequenceIsNotNull", "toArray", "assertContainsSubsequence", "requireNonNullParameter" ]
+    }, {
+      "name" : "anySatisfy",
+      "visibility" : "public",
+      "methodCalls" : [ "assertAnySatisfy" ]
+    }, {
+      "name" : "startsWith",
+      "visibility" : "public",
+      "methodCalls" : [ "startsWith", "usingComparatorWithPrecision", "startsWithForProxy", "requireNonNullParameter", "assertStartsWith" ]
+    }, {
+      "name" : "hasSizeGreaterThan",
+      "visibility" : "public",
+      "methodCalls" : [ "assertHasSizeGreaterThan" ]
+    }, {
+      "name" : "size",
+      "visibility" : "public",
+      "methodCalls" : [ "getLength", "sizeOf", "requireNonNull", "size" ]
+    }, {
+      "name" : "contains",
+      "visibility" : "public",
+      "methodCalls" : [ "getComparisonStrategy", "toArray", "usingComparatorWithPrecision", "areEqual", "shouldBePresentWithValue", "get", "isPresent", "isNotNull", "assertionError", "checkArgument", "containsEntry", "add", "count", "throwIllegalArgumentExceptionIfTrue", "newArrayList", "isEmpty", "shouldContainTimes", "shouldContain", "equals", "contains", "assertContains", "requireNonNullParameter", "throwAssertionError", "failure", "instance", "containsForProxy" ]
+    }, {
+      "name" : "hasSameSizeAs",
+      "visibility" : "public",
+      "methodCalls" : [ "assertIsArray", "assertHasSameSizeAs" ]
+    }, {
+      "name" : "isEmpty",
+      "visibility" : "public",
+      "methodCalls" : [ "assertIsEmptyFile", "throwAssertionError", "isPresent", "assertEmpty", "asMapOfRanges", "isNotNull", "assertionError", "isEmpty", "shouldBeEmpty" ]
+    }, {
+      "name" : "isNotInstanceOf",
+      "visibility" : "public",
+      "methodCalls" : [ "assertIsNotInstanceOf", "isNotInstanceOf" ]
+    }, {
+      "name" : "isNotOfAnyClassIn",
+      "visibility" : "public",
+      "methodCalls" : [ "isNotOfAnyClassIn", "assertIsNotOfAnyClassIn" ]
+    }, {
+      "name" : "doesNotHaveSameClassAs",
+      "visibility" : "public",
+      "methodCalls" : [ "assertDoesNotHaveSameClassAs", "doesNotHaveSameClassAs" ]
+    }, {
+      "name" : "haveExactly",
+      "visibility" : "public",
+      "methodCalls" : [ "assertHaveExactly" ]
+    }, {
+      "name" : "isNotEmpty",
+      "visibility" : "public",
+      "methodCalls" : [ "assertIsNotEmptyFile", "isPresent", "assertNotEmpty", "asMapOfRanges", "isNotNull", "assertionError", "shouldNotBeEmpty", "isEmpty" ]
+    }, {
+      "name" : "hasAtLeastOneElementOfType",
+      "visibility" : "public",
+      "methodCalls" : [ "toArray", "instance", "assertHasAtLeastOneElementOfType" ]
+    }, {
+      "name" : "withThreadDumpOnError",
+      "visibility" : "public",
+      "methodCalls" : [ "instance", "enablePrintThreadDump", "withThreadDumpOnError" ]
+    }, {
+      "name" : "element",
+      "visibility" : "public",
+      "methodCalls" : [ "asInstanceOf" ]
+    }, {
+      "name" : "doesNotContainNull",
+      "visibility" : "public",
+      "methodCalls" : [ "assertDoesNotContainNull" ]
+    }, {
+      "name" : "containsExactlyInAnyOrderElementsOf",
+      "visibility" : "public",
+      "methodCalls" : [ "toArray", "containsExactlyInAnyOrder" ]
+    }, {
+      "name" : "hasSizeBetween",
+      "visibility" : "public",
+      "methodCalls" : [ "assertHasSizeBetween" ]
+    }, {
+      "name" : "doesNotHaveAnyElementsOfTypes",
+      "visibility" : "public",
+      "methodCalls" : [ "assertDoesNotHaveAnyElementsOfTypes", "toArray", "instance" ]
+    }, {
+      "name" : "usingElementComparator",
+      "visibility" : "public",
+      "methodCalls" : [ "usingElementComparator" ]
+    }, {
+      "name" : "containsNull",
+      "visibility" : "public",
+      "methodCalls" : [ "assertContainsNull" ]
+    }, {
+      "name" : "doesNotContainSequence",
+      "visibility" : "public",
+      "methodCalls" : [ "toArray", "checkSequenceIsNotNull", "doesNotContainSequenceForProxy", "assertDoesNotContainSequence" ]
+    }, {
+      "name" : "doNotHave",
+      "visibility" : "public",
+      "methodCalls" : [ "assertDoNotHave" ]
+    }, {
+      "name" : "satisfiesExactly",
+      "visibility" : "public",
+      "methodCalls" : [ "satisfiesExactlyForProxy" ]
+    }, {
+      "name" : "describedAs",
+      "visibility" : "public",
+      "methodCalls" : [ "description", "accept", "emptyIfNull", "getDelegate", "describedAs" ]
+    }, {
+      "name" : "hasSizeLessThan",
+      "visibility" : "public",
+      "methodCalls" : [ "assertHasSizeLessThan" ]
+    }, {
+      "name" : "hasExactlyElementsOfTypes",
+      "visibility" : "public",
+      "methodCalls" : [ "assertHasExactlyElementsOfTypes", "toArray", "instance" ]
+    }, {
+      "name" : "isOfAnyClassIn",
+      "visibility" : "public",
+      "methodCalls" : [ "isOfAnyClassIn", "assertIsOfAnyClassIn" ]
+    }, {
+      "name" : "doesNotContain",
+      "visibility" : "public",
+      "methodCalls" : [ "toArray", "usingComparatorWithPrecision", "doesNotContain", "doesNotContainForProxy", "requireNonNullParameter", "assertDoesNotContain", "newArrayList", "assertionError", "shouldNotContain", "isEmpty", "contains", "add", "isNotNull" ]
+    }, {
+      "name" : "isNullOrEmpty",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "assertNullOrEmpty" ]
+    }, {
+      "name" : "hasSameClassAs",
+      "visibility" : "public",
+      "methodCalls" : [ "assertHasSameClassAs", "hasSameClassAs" ]
+    }, {
+      "name" : "areAtMost",
+      "visibility" : "public",
+      "methodCalls" : [ "assertAreAtMost" ]
+    }, {
+      "name" : "doesNotHave",
+      "visibility" : "public",
+      "methodCalls" : [ "assertDoesNotHave", "doesNotHave" ]
+    }, {
+      "name" : "allMatch",
+      "visibility" : "public",
+      "methodCalls" : [ "newArrayList", "assertAllMatch" ]
+    }, {
+      "name" : "areExactly",
+      "visibility" : "public",
+      "methodCalls" : [ "assertAreExactly" ]
+    }, {
+      "name" : "filteredOnNull",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "with", "newAbstractIterableAssert", "withAssertionState", "filter" ]
+    }, {
+      "name" : "have",
+      "visibility" : "public",
+      "methodCalls" : [ "assertHave" ]
+    }, {
+      "name" : "usingRecursiveFieldByFieldElementComparator",
+      "visibility" : "public",
+      "methodCalls" : [ "usingRecursiveFieldByFieldElementComparator", "representation", "usingElementComparator" ]
+    }, {
+      "name" : "containsExactlyInAnyOrder",
+      "visibility" : "public",
+      "methodCalls" : [ "containsExactlyInAnyOrderForProxy", "toByteArray", "requireNonNullParameter", "assertContainsExactlyInAnyOrder" ]
+    }, {
+      "name" : "areAtLeastOne",
+      "visibility" : "public",
+      "methodCalls" : [ "areAtLeast" ]
+    }, {
+      "name" : "containsOnlyNulls",
+      "visibility" : "public",
+      "methodCalls" : [ "assertContainsOnlyNulls" ]
+    }, {
+      "name" : "zipSatisfy",
+      "visibility" : "public",
+      "methodCalls" : [ "newArrayList", "assertZipSatisfy" ]
+    }, {
+      "name" : "usingRecursiveAssertion",
+      "visibility" : "public",
+      "methodCalls" : [ "usingRecursiveAssertion" ]
+    }, {
+      "name" : "has",
+      "visibility" : "public",
+      "methodCalls" : [ "has", "assertHas" ]
+    }, {
+      "name" : "containsOnlyOnce",
+      "visibility" : "public",
+      "methodCalls" : [ "containsOnlyOnce", "usingComparatorWithPrecision", "containsOnlyOnceForProxy", "requireNonNullParameter", "assertContainsOnlyOnce" ]
+    }, {
+      "name" : "usingDefaultElementComparator",
+      "visibility" : "public",
+      "methodCalls" : [ "usingDefaultComparator", "usingDefaultElementComparator", "instance" ]
+    }, {
+      "name" : "singleElement",
+      "visibility" : "public",
+      "methodCalls" : [ "asInstanceOf" ]
+    }, {
+      "name" : "isInstanceOfAny",
+      "visibility" : "public",
+      "methodCalls" : [ "assertIsInstanceOfAny", "isInstanceOfAny" ]
+    }, {
+      "name" : "inHexadecimal",
+      "visibility" : "public",
+      "methodCalls" : [ "inHexadecimal" ]
+    }, {
+      "name" : "usingRecursiveFieldByFieldElementComparatorIgnoringFields",
+      "visibility" : "public",
+      "methodCalls" : [ "withIgnoredFields", "usingRecursiveFieldByFieldElementComparator", "build", "builder" ]
+    }, {
+      "name" : "containsExactly",
+      "visibility" : "public",
+      "methodCalls" : [ "usingComparatorWithPrecision", "containsExactly", "containsExactlyForProxy", "toByteArray", "requireNonNullParameter", "assertEqual", "assertContainsExactly" ]
+    }, {
+      "name" : "areAtLeast",
+      "visibility" : "public",
+      "methodCalls" : [ "assertAreAtLeast" ]
+    }, {
+      "name" : "hasSameElementsAs",
+      "visibility" : "public",
+      "methodCalls" : [ "toArray", "containsOnly" ]
+    }, {
+      "name" : "containsAll",
+      "visibility" : "public",
+      "methodCalls" : [ "assertContainsAll", "isNotNull" ]
+    }, {
+      "name" : "as",
+      "visibility" : "public",
+      "methodCalls" : [ "describedAs", "as" ]
+    }, {
+      "name" : "first",
+      "visibility" : "public",
+      "methodCalls" : [ "asInstanceOf" ]
+    }, {
+      "name" : "endsWith",
+      "visibility" : "public",
+      "methodCalls" : [ "usingComparatorWithPrecision", "endsWith", "endsWithForProxy", "assertEndsWith", "requireNonNullParameter" ]
+    }, {
+      "name" : "withFailMessage",
+      "visibility" : "public",
+      "methodCalls" : [ "overridingErrorMessage", "withFailMessage" ]
+    }, {
+      "name" : "extracting",
+      "visibility" : "public",
+      "methodCalls" : [ "copyOf", "newArrayList", "asList", "extract", "withAssertionState", "newListAssertInstance", "extracting", "asInstanceOf", "description", "toList", "byName", "apply", "extractingForProxy", "mostRelevantDescription", "extractedDescriptionOf", "as" ]
+    }, {
+      "name" : "containsSequence",
+      "visibility" : "public",
+      "methodCalls" : [ "containsSequence", "usingComparatorWithPrecision", "checkSequenceIsNotNull", "containsSequenceForProxy", "toArray", "assertContainsSequence", "requireNonNullParameter" ]
+    }, {
+      "name" : "satisfiesOnlyOnce",
+      "visibility" : "public",
+      "methodCalls" : [ "satisfiesOnlyOnceForProxy" ]
+    }, {
+      "name" : "hasOnlyElementsOfType",
+      "visibility" : "public",
+      "methodCalls" : [ "assertHasOnlyElementsOfType", "instance", "toArray" ]
+    }, {
+      "name" : "haveAtLeast",
+      "visibility" : "public",
+      "methodCalls" : [ "assertHaveAtLeast" ]
+    }, {
+      "name" : "haveAtMost",
+      "visibility" : "public",
+      "methodCalls" : [ "assertHaveAtMost" ]
+    }, {
+      "name" : "satisfiesExactlyInAnyOrder",
+      "visibility" : "public",
+      "methodCalls" : [ "satisfiesExactlyInAnyOrderForProxy" ]
+    }, {
+      "name" : "hasToString",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "formatted", "assertHasToString", "hasToString" ]
+    }, {
+      "name" : "containsOnlyOnceElementsOf",
+      "visibility" : "public",
+      "methodCalls" : [ "containsOnlyOnce", "toArray" ]
+    }, {
+      "name" : "isNotIn",
+      "visibility" : "public",
+      "methodCalls" : [ "assertIsNotIn", "isNotIn" ]
+    }, {
+      "name" : "overridingErrorMessage",
+      "visibility" : "public",
+      "methodCalls" : [ "formatIfArgs", "overridingErrorMessage", "checkState", "get" ]
+    }, {
+      "name" : "inBinary",
+      "visibility" : "public",
+      "methodCalls" : [ "inBinary" ]
+    }, {
+      "name" : "isEqualTo",
+      "visibility" : "public",
+      "methodCalls" : [ "shouldBeEqualByComparingFieldByFieldRecursively", "isEmpty", "assertNull", "getFailures", "assertNotNull", "isEqualTo", "assertEqual", "parse", "toString", "shouldBeEqual", "representation", "valueOf", "failure", "isCloseTo", "instance", "equals", "isNotNull", "requireNonNull", "formatted" ]
+    }, {
+      "name" : "isExactlyInstanceOf",
+      "visibility" : "public",
+      "methodCalls" : [ "isExactlyInstanceOf", "assertIsExactlyInstanceOf" ]
+    }, {
+      "name" : "isNotNull",
+      "visibility" : "public",
+      "methodCalls" : [ "assertNotNull", "isNotNull" ]
+    }, {
+      "name" : "containsOnly",
+      "visibility" : "public",
+      "methodCalls" : [ "containsOnly", "usingComparatorWithPrecision", "containsOnlyForProxy", "assertContainsOnly", "requireNonNullParameter" ]
+    }, {
+      "name" : "isNotExactlyInstanceOf",
+      "visibility" : "public",
+      "methodCalls" : [ "assertIsNotExactlyInstanceOf", "isNotExactlyInstanceOf" ]
+    }, {
+      "name" : "isSubsetOf",
+      "visibility" : "public",
+      "methodCalls" : [ "isSubsetOfForProxy", "assertIsSubsetOf" ]
+    }, {
+      "name" : "last",
+      "visibility" : "public",
+      "methodCalls" : [ "asInstanceOf" ]
+    }, {
+      "name" : "extractingResultOf",
+      "visibility" : "public",
+      "methodCalls" : [ "newListAssertInstance", "newArrayList", "withAssertionState", "as", "extract", "extractedDescriptionOfMethod", "resultOf", "description", "mostRelevantDescription" ]
+    }, {
+      "name" : "isNotEqualTo",
+      "visibility" : "public",
+      "methodCalls" : [ "representation", "isEmpty", "shouldNotBeEqualComparingFieldByFieldRecursively", "getFailures", "doubleValue", "throwAssertionError", "isNotNull", "shouldNotBeEqual", "instance", "failure", "isNotEqualTo", "parse", "assertNotEqual" ]
+    }, {
+      "name" : "haveAtLeastOne",
+      "visibility" : "public",
+      "methodCalls" : [ "haveAtLeast" ]
+    }, {
+      "name" : "hasSizeLessThanOrEqualTo",
+      "visibility" : "public",
+      "methodCalls" : [ "assertHasSizeLessThanOrEqualTo" ]
+    }, {
+      "name" : "is",
+      "visibility" : "public",
+      "methodCalls" : [ "is", "assertIs" ]
+    }, {
+      "name" : "isIn",
+      "visibility" : "public",
+      "methodCalls" : [ "assertIsIn", "isIn" ]
+    }, {
+      "name" : "hasOnlyElementsOfTypes",
+      "visibility" : "public",
+      "methodCalls" : [ "toArray", "assertHasOnlyElementsOfTypes", "instance" ]
+    }, {
+      "name" : "isNotInstanceOfAny",
+      "visibility" : "public",
+      "methodCalls" : [ "assertIsNotInstanceOfAny", "isNotInstanceOfAny" ]
+    }, {
+      "name" : "isNot",
+      "visibility" : "public",
+      "methodCalls" : [ "assertIsNot", "isNot" ]
+    }, {
+      "name" : "areNot",
+      "visibility" : "public",
+      "methodCalls" : [ "assertAreNot" ]
+    }, {
+      "name" : "allSatisfy",
+      "visibility" : "public",
+      "methodCalls" : [ "assertAllSatisfy" ]
+    }, {
+      "name" : "filteredOn",
+      "visibility" : "public",
+      "methodCalls" : [ "toArray", "with", "apply", "checkArgument", "applyOn", "newAbstractIterableAssert", "equals", "withAssertionState", "filter", "checkNotNull", "being", "get" ]
+    }, {
+      "name" : "noneMatch",
+      "visibility" : "public",
+      "methodCalls" : [ "newArrayList", "assertNoneMatch" ]
+    }, {
+      "name" : "flatExtracting",
+      "visibility" : "public",
+      "methodCalls" : [ "toArray", "asList", "withAssertionState", "getLength", "stream", "flatExtractingForProxy", "newArrayList", "isArray", "extract", "get", "flatMap", "wrongElementTypeForFlatExtracting", "collect", "add", "toList", "as", "extractedDescriptionOf", "newListAssertInstance", "byName", "mostRelevantDescription", "description", "apply" ]
+    }, {
+      "name" : "elements",
+      "visibility" : "public",
+      "methodCalls" : [ "toList", "newArrayList", "newAbstractIterableAssertForProxy", "mapToObj", "stream", "collect", "isNotEmpty", "peek" ]
+    }, {
+      "name" : "doesNotHaveDuplicates",
+      "visibility" : "public",
+      "methodCalls" : [ "usingComparatorWithPrecision", "doesNotHaveDuplicates", "assertDoesNotHaveDuplicates" ]
+    }, {
+      "name" : "doesNotContainAnyElementsOf",
+      "visibility" : "public",
+      "methodCalls" : [ "assertDoesNotContainAnyElementsOf" ]
+    }, {
+      "name" : "flatMap",
+      "visibility" : "public",
+      "methodCalls" : [ "flatExtractingForProxy", "assertThat", "flatMap", "isNotNull" ]
+    }, {
+      "name" : "are",
+      "visibility" : "public",
+      "methodCalls" : [ "assertAre" ]
+    }, {
+      "name" : "isNotSameAs",
+      "visibility" : "public",
+      "methodCalls" : [ "assertNotSame", "isNotSameAs" ]
+    }, {
+      "name" : "noneSatisfy",
+      "visibility" : "public",
+      "methodCalls" : [ "assertNoneSatisfy" ]
+    }, {
+      "name" : "usingComparatorForType",
+      "visibility" : "public",
+      "methodCalls" : [ "usingElementComparator", "getComparatorsForElementPropertyOrFieldTypes", "getComparator", "getComparatorsByType", "registerComparator" ]
+    } ],
+    "imports" : [ "org.assertj.core.groups.FieldsOrPropertiesExtractor", "java.util.Comparator", "org.assertj.core.api.comparisonstrategy.ComparisonStrategy", "org.assertj.core.api.iterable.ThrowingExtractor", "org.assertj.core.util.Arrays.isArray", "java.util.Arrays", "org.assertj.core.internal.Objects", "org.assertj.core.internal.Iterables.byPassingAssertions", "org.assertj.core.internal.Iterables", "org.assertj.core.extractor.Extractors.extractedDescriptionOf", "org.assertj.core.api.comparisonstrategy.IterableElementComparisonStrategy", "java.util.SortedSet", "java.lang.reflect.Array", "java.util.function.BiConsumer", "org.assertj.core.api.filter.FilterOperator", "org.assertj.core.extractor.Extractors.resultOf", "org.assertj.core.error.ShouldNotBeNull.shouldNotBeNull", "java.util.stream.Stream", "org.assertj.core.util.introspection.IntrospectionError", "org.assertj.core.description.Description.mostRelevantDescription", "org.assertj.core.api.filter.Filters", "org.assertj.core.util.Preconditions.checkArgument", "org.assertj.core.api.recursive.assertion.RecursiveAssertionConfiguration", "java.util.stream.Collectors.toList", "org.assertj.core.internal.TypeComparators.defaultTypeComparators", "java.util.List", "java.util.Map", "org.assertj.core.util.Lists.newArrayList", "org.assertj.core.util.CheckReturnValue", "org.assertj.core.api.Assertions.assertThat", "org.assertj.core.annotations.Beta", "org.assertj.core.internal.CommonValidations.checkSubsequenceIsNotNull", "org.assertj.core.api.filter.Filters.filter", "org.assertj.core.internal.ObjectArrays", "org.assertj.core.util.Preconditions.checkNotNull", "java.util.stream.StreamSupport.stream", "java.util.function.Consumer", "org.assertj.core.internal.CommonErrors", "java.util.Collection", "org.assertj.core.internal.TypeComparators", "org.assertj.core.util.IterableUtil", "java.util.function.Function", "java.util.HashSet", "org.assertj.core.util.Strings", "java.util.TreeMap", "org.assertj.core.internal.ConfigurableRecursiveFieldByFieldComparator", "java.util.Objects.requireNonNull", "org.assertj.core.internal.ExtendedByTypesComparator", "org.assertj.core.util.IterableUtil.toArray", "org.assertj.core.groups.Tuple", "org.assertj.core.extractor.Extractors.extractedDescriptionOfMethod", "org.assertj.core.presentation.PredicateDescription", "java.util.Iterator", "org.assertj.core.extractor.Extractors.byName", "org.assertj.core.description.Description", "org.assertj.core.internal.CommonValidations.checkSequenceIsNotNull", "org.assertj.core.api.recursive.comparison.RecursiveComparisonConfiguration", "org.assertj.core.api.comparisonstrategy.ComparatorBasedComparisonStrategy", "org.assertj.core.condition.Not", "java.util.function.Predicate" ]
+  } ]
+}
