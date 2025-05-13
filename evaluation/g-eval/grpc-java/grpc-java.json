@@ -1,0 +1,713 @@
+{
+  "systemName" : "grpc-java",
+  "classes" : [ {
+    "name" : "Builder",
+    "packageName" : "io.grpc.s2a",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ "ClientTransportFactoryBuilder" ],
+    "methods" : [ {
+      "name" : "setServerSecurityPolicy",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "setLocalHostname",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull", "checkArgument", "fromHostname" ]
+    }, {
+      "name" : "setLocalUid",
+      "visibility" : "public",
+      "methodCalls" : [ "fromUid", "checkArgument", "checkNotNull" ]
+    }, {
+      "name" : "setLocalSpiffeId",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull", "fromSpiffeId", "checkArgument" ]
+    }, {
+      "name" : "addClientFeatures",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull", "add" ]
+    }, {
+      "name" : "setUserAgentVersion",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "setLocality",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "setCluster",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "setUserAgentName",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "setId",
+      "visibility" : "public",
+      "methodCalls" : [ "checkState", "createTag", "checkArgument", "checkNotNull" ]
+    }, {
+      "name" : "setMetadata",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "setBuildVersion",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "servers",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "certProviders",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "authorities",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "serverListenerResourceNameTemplate",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "node",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "clientDefaultListenerResourceNameTemplate",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "sdk",
+      "visibility" : "public",
+      "methodCalls" : [ "sdk" ]
+    }, {
+      "name" : "disableAllMetrics",
+      "visibility" : "public",
+      "methodCalls" : [ "disableAllMetrics", "clear" ]
+    }, {
+      "name" : "addOptionalLabel",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "equals", "checkNotNull", "addOptionalLabel", "delegate" ]
+    }, {
+      "name" : "disableMetrics",
+      "visibility" : "public",
+      "methodCalls" : [ "disableMetrics", "put" ]
+    }, {
+      "name" : "enableMetrics",
+      "visibility" : "public",
+      "methodCalls" : [ "enableMetrics", "put" ]
+    }, {
+      "name" : "supportsTlsExtensions",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "tlsVersions",
+      "visibility" : "public",
+      "methodCalls" : [ "immutableList", "forJavaName", "clone" ]
+    }, {
+      "name" : "cipherSuites",
+      "visibility" : "public",
+      "methodCalls" : [ "clone", "immutableList", "forJavaName" ]
+    }, {
+      "name" : "scheme",
+      "visibility" : "public",
+      "methodCalls" : [ "scheme", "equalsIgnoreCase" ]
+    }, {
+      "name" : "port",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "host",
+      "visibility" : "public",
+      "methodCalls" : [ "length" ]
+    }, {
+      "name" : "toString",
+      "visibility" : "public",
+      "methodCalls" : [ "isWaitForReady", "getAllAddresses", "getStatus", "content", "id", "getKey", "getValue", "lbPolicyConfig", "lrsServerInfo", "maxRingSize", "minRingSize", "maxConcurrentRequests", "dnsHostName", "choiceCount", "clusterName", "edsServiceName", "clusterType", "prioritizedClusterNames", "cipherSuites", "tlsVersions", "defaultPort", "indexOf", "effectivePort", "value", "size", "utf8", "getId", "name", "getStackTraceAsString", "abs", "toBinaryString", "getPriority", "isAvailable", "getPolicyName", "timeRemaining", "omitNullValues", "encode", "shortName", "append", "toString", "toHexString", "getSimpleName", "getClass", "add", "toStringHelper", "read", "get", "getRouteLookupConfig", "format", "lookupService", "getName", "isOk", "delegate", "deepToString", "endsWith" ]
+    }, {
+      "name" : "url",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "removeAll",
+      "visibility" : "public",
+      "methodCalls" : [ "remove", "get", "size", "equalsIgnoreCase", "add", "asciiName", "fill" ]
+    }, {
+      "name" : "header",
+      "visibility" : "public",
+      "methodCalls" : [ "set" ]
+    }, {
+      "name" : "setLoadBalancingPolicyConfig",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAddressesOrError",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "setSocketOptionTimeoutMillis",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setScheduledExecutorService",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "setEvents",
+      "visibility" : "public",
+      "methodCalls" : [ "unmodifiableList" ]
+    }, {
+      "name" : "setCaState",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAttributes",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "setLastDataRecv",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setReordering",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setArg",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "checkNotNull" ]
+    }, {
+      "name" : "setDescription",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setFackets",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setLastAckSent",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setRcvSsthresh",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSockets",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull", "isEmpty", "checkState", "unmodifiableList" ]
+    }, {
+      "name" : "setCallsSucceeded",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMetricRecorder",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setRetrans",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setProxyDetector",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "setState",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setBackoff",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setLastAckRecv",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setLastCallStartedNanos",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSynchronizationContext",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "setOptions",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setRetransmits",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addOption",
+      "visibility" : "public",
+      "methodCalls" : [ "arraycopy", "equals", "toString", "checkNotNull", "put" ]
+    }, {
+      "name" : "setOverrideAuthority",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setServiceConfigParser",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "setDefaultPort",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTcpInfo",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSubchannelRef",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSocketOptionLingerSeconds",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setChannelTrace",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setRttvar",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setServiceConfig",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCallsFailed",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setRto",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSndSsthresh",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSndCwnd",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setChannelLogger",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "setAdvmss",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSeverity",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setRtt",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setChannelRef",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setProbes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addListenSockets",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "checkNotNull" ]
+    }, {
+      "name" : "setLastDataSent",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAto",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSndMss",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setRcvWscale",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setLost",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSndWscale",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setUnacked",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSacked",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCreationTimeNanos",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setRcvMss",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPmtu",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSubchannels",
+      "visibility" : "public",
+      "methodCalls" : [ "unmodifiableList", "checkNotNull", "checkState", "isEmpty" ]
+    }, {
+      "name" : "setTarget",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCallsStarted",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTimestampNanos",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setNumEventsLogged",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOffloadExecutor",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAddresses",
+      "visibility" : "public",
+      "methodCalls" : [ "singletonList", "unmodifiableList", "isEmpty", "checkArgument", "fromValue", "setAddressesOrError" ]
+    }, {
+      "name" : "setCallOptions",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "setIsTransparentRetry",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPreviousAttempts",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setName",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "addMethod",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "getServiceName", "create", "addMethod", "add", "getFullMethodName", "put", "getMethodDescriptor", "checkArgument", "containsKey", "checkState", "checkNotNull" ]
+    }, {
+      "name" : "setSampledToLocalTracing",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setFullMethodName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setRequestMarshaller",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setIdempotent",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSafe",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSchemaDescriptor",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setResponseMarshaller",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPassword",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setProxyAddress",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "setTargetAddress",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "setUsername",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAll",
+      "visibility" : "public",
+      "methodCalls" : [ "size", "putAll" ]
+    }, {
+      "name" : "discard",
+      "visibility" : "public",
+      "methodCalls" : [ "remove", "containsKey" ]
+    }, {
+      "name" : "set",
+      "visibility" : "public",
+      "methodCalls" : [ "of", "base64", "format", "decode", "equals", "log", "removeAll", "addLenient", "put" ]
+    }, {
+      "name" : "clientAuth",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "trustManager",
+      "visibility" : "public",
+      "methodCalls" : [ "trustManager", "unmodifiableList", "asList", "toByteArray", "close" ]
+    }, {
+      "name" : "requireFakeFeature",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "keyManager",
+      "visibility" : "public",
+      "methodCalls" : [ "unmodifiableList", "close", "toByteArray", "keyManager", "asList" ]
+    }, {
+      "name" : "setTargetServiceAccounts",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setRpcProtocolVersions",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addTargetServiceAccount",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "addTargetServiceAccount" ]
+    }, {
+      "name" : "setTargetName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "enableUntrustedAltsForTesting",
+      "visibility" : "public",
+      "methodCalls" : [ "enableUntrustedAltsForTesting" ]
+    }, {
+      "name" : "setHandshakerAddressForTesting",
+      "visibility" : "public",
+      "methodCalls" : [ "setHandshakerAddressForTesting", "forResource", "getHandshakerChannelForTesting" ]
+    }, {
+      "name" : "callCredentials",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "altsCallCredentials",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setHistorySeconds",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTicker",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "setRequestsPadding",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setRatioForAccepts",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setExecutorServicePool",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "buildClientTransportFactory",
+      "visibility" : "public",
+      "methodCalls" : [ "buildTransportFactory" ]
+    }, {
+      "name" : "setDefaultTargetUserHandle",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setStreamTracerFactories",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setListenAddress",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSourceContext",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "setBinderDecorator",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "setSecurityPolicy",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "setScheduledExecutorPool",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "setExecutorPool",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOffloadExecutorPool",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "setInboundParcelablePolicy",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "setReadyTimeoutMillis",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setChannelCredentials",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "setBindServiceFlags",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull", "setBindServiceFlags" ]
+    }, {
+      "name" : "setMainThreadExecutor",
+      "visibility" : "public",
+      "methodCalls" : [ "checkNotNull" ]
+    }, {
+      "name" : "setAboveClient",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAllowOomManagement",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "build",
+      "visibility" : "public",
+      "methodCalls" : [ "getTracerFactories", "toNanos", "compareAndSet", "set", "eagAttributes", "newBuilder", "buildClientTransportServers", "build", "getExecutorPool", "installAuthInterceptor", "checkState", "setExecutorPool", "getOffloadExecutorPool", "copyOf", "setOffloadExecutorPool", "from", "getApplicationDefault", "create", "withDescription", "withCause", "delegate", "buildProtocolNegotiator", "buildProtocolNegotiatorFactory", "setProtocolNegotiatorFactory", "protocolNegotiator", "getValue", "entrySet", "getKey", "put", "containsKey", "getMethodDescriptor", "add", "iterator", "values", "getMethods", "getFullMethodName", "size", "remove", "next", "checkNotNull", "getEffectiveInterceptors", "toString", "forResource", "getNameResolverProvider", "buildClientTransportFactory", "getSupportedSocketAddressTypes" ]
+    }, {
+      "name" : "setBindIntent",
+      "visibility" : "public",
+      "methodCalls" : [ "cloneFilter" ]
+    }, {
+      "name" : "setMaxParcelableMetadataSize",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument" ]
+    }, {
+      "name" : "setAcceptParcelableMessages",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setImportant",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAdjustWithActivity",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAutoCreate",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setWaivePriority",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setNotForeground",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAllowActivityStarts",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setBindIntentFromComponent",
+      "visibility" : "public",
+      "methodCalls" : [ "setComponent" ]
+    }, {
+      "name" : "setTargetUser",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAcceptParcelableMetadataValues",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setIncludeCapabilities",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setNotPerceptible",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "servicePolicy",
+      "visibility" : "public",
+      "methodCalls" : [ "put" ]
+    } ],
+    "imports" : [ "io.grpc.Internal", "org.checkerframework.checker.nullness.qual.Nullable", "io.grpc.s2a.internal.handshaker.S2AProtocolNegotiatorFactory", "com.google.common.base.Strings.isNullOrEmpty", "io.grpc.s2a.internal.handshaker.S2AStub", "io.grpc.s2a.internal.handshaker.S2AIdentity", "io.grpc.s2a.internal.channel.S2AHandshakerServiceChannel", "java.io.Closeable", "io.grpc.opentelemetry.GrpcOpenTelemetry", "io.grpc.opentelemetry.InternalGrpcOpenTelemetry", "io.grpc.DoubleHistogramMetricInstrument", "io.grpc.xds.client.XdsResourceType", "com.google.common.base.Strings", "io.grpc.SynchronizationContext", "io.grpc.services.MetricReport", "io.grpc.ConnectivityStateInfo", "io.grpc.LoadBalancer", "io.grpc.internal.ServiceConfigUtil.LbConfig", "io.grpc.xds.EnvoyServerProtoData.OutlierDetection", "io.envoyproxy.envoy.config.core.v3.RoutingPriority", "io.grpc.xds.orca.OrcaOobUtil.OrcaOobReportListener", "io.envoyproxy.envoy.extensions.transport_sockets.tls.v3.CommonTlsContext", "io.envoyproxy.envoy.config.core.v3.SocketAddress", "io.envoyproxy.envoy.config.cluster.v3.CircuitBreakers.Thresholds", "io.grpc.NameResolver", "io.grpc.xds.EnvoyServerProtoData.UpstreamTlsContext", "com.google.protobuf.Message", "io.grpc.xds.orca.OrcaPerRequestUtil", "io.envoyproxy.envoy.extensions.transport_sockets.http_11_proxy.v3.Http11ProxyUpstreamTransport", "io.grpc.util.ForwardingSubchannel", "com.google.protobuf.InvalidProtocolBufferException", "java.util.concurrent.atomic.AtomicInteger", "io.grpc.LoadBalancerProvider", "io.grpc.LoadBalancerRegistry", "io.envoyproxy.envoy.config.core.v3.TransportSocket", "io.grpc.xds.orca.OrcaOobUtil", "io.envoyproxy.envoy.extensions.transport_sockets.tls.v3.CertificateValidationContext", "io.grpc.SynchronizationContext.ScheduledHandle", "com.google.common.collect.Lists", "io.grpc.xds.internal.security.CommonTlsContextUtil", "io.grpc.xds.orca.OrcaPerRequestUtil.OrcaPerRequestReportListener", "io.grpc.internal.ServiceConfigUtil", "java.util.Random", "io.grpc.util.MultiChildLoadBalancer", "io.envoyproxy.envoy.config.endpoint.v3.ClusterLoadAssignment", "io.grpc.xds.client.Bootstrapper.ServerInfo", "io.grpc.xds.XdsClusterResource.CdsUpdate", "com.google.protobuf.util.Durations", "io.grpc.Deadline.Ticker", "io.envoyproxy.envoy.config.cluster.v3.Cluster", "com.google.protobuf.Duration", "io.grpc.xds.client.XdsClient.ResourceUpdate", "io.grpc.EquivalentAddressGroup", "com.google.protobuf.Struct", "java.util.Objects", "com.google.protobuf.ListValue", "com.google.errorprone.annotations.CanIgnoreReturnValue", "com.google.protobuf.Value", "com.google.protobuf.NullValue", "io.grpc.xds.client.EnvoyProtoData.Node", "io.grpc.opentelemetry.internal.OpenTelemetryConstants.LATENCY_BUCKETS", "io.grpc.InternalConfiguratorRegistry", "io.opentelemetry.api.trace.Tracer", "io.opentelemetry.api.metrics.MeterProvider", "io.grpc.InternalManagedChannelBuilder", "io.grpc.opentelemetry.internal.OpenTelemetryConstants", "io.opentelemetry.api.metrics.Meter", "io.grpc.MetricSink", "com.google.common.base.Stopwatch", "io.grpc.internal.GrpcUtil.IMPLEMENTATION_VERSION", "io.grpc.InternalConfigurator", "com.google.common.base.Supplier", "io.opentelemetry.api.OpenTelemetry", "io.grpc.ServerBuilder", "io.grpc.opentelemetry.internal.OpenTelemetryConstants.SIZE_BUCKETS", "io.opentelemetry.api.metrics.DoubleHistogram", "io.opentelemetry.api.metrics.LongCounter", "io.opentelemetry.api.metrics.LongHistogram", "javax.net.ssl.SSLSocket", "java.net.UnknownHostException", "okio.Buffer", "java.io.EOFException", "java.net.IDN", "java.net.InetAddress", "io.grpc.okhttp.internal.Headers", "java.util.Locale", "javax.annotation.concurrent.NotThreadSafe", "javax.annotation.Nonnull", "io.grpc.HandlerRegistry", "io.grpc.ServerMethodDefinition", "java.util.LinkedHashMap", "io.grpc.ServerServiceDefinition", "javax.net.ssl.SSLSession", "java.util.concurrent.ConcurrentSkipListMap", "java.security.cert.Certificate", "com.google.errorprone.annotations.InlineMe", "java.util.concurrent.ConcurrentNavigableMap", "java.lang.annotation.Retention", "java.lang.annotation.Documented", "java.util.concurrent.ConcurrentHashMap", "java.util.Iterator", "java.util.concurrent.ConcurrentMap", "java.lang.annotation.RetentionPolicy", "javax.net.ssl.SSLPeerUnverifiedException", "java.util.HashSet", "java.net.InetSocketAddress", "io.grpc.TimeUtils.convertToNanos", "java.time.Duration", "java.util.IdentityHashMap", "javax.net.ssl.KeyManager", "java.util.ArrayList", "java.util.Set", "javax.net.ssl.TrustManager", "com.google.common.io.ByteStreams", "java.io.File", "java.io.FileInputStream", "java.io.InputStream", "java.util.EnumSet", "io.grpc.MetricRecorder.Registration", "io.grpc.lookup.v1.RouteLookupServiceGrpc.RouteLookupServiceStub", "io.grpc.LoadBalancer.PickSubchannelArgs", "io.grpc.LongGaugeMetricInstrument", "com.google.common.util.concurrent.SettableFuture", "com.google.common.base.Converter", "io.grpc.MetricRecorder.BatchRecorder", "io.grpc.ConnectivityState", "io.grpc.rls.RlsProtoData.RouteLookupConfig", "io.grpc.LongCounterMetricInstrument", "io.grpc.rls.RlsProtoConverters.RouteLookupResponseConverter", "java.util.Arrays", "io.grpc.MetricInstrumentRegistry", "io.grpc.rls.LbPolicyConfiguration.RefCountedChildPolicyWrapperFactory", "io.grpc.lookup.v1.RouteLookupServiceGrpc", "com.google.common.util.concurrent.MoreExecutors", "io.grpc.ManagedChannelBuilder", "java.net.URISyntaxException", "io.grpc.MetricRecorder.BatchCallback", "java.net.URI", "io.grpc.rls.LruCache.EvictionListener", "io.grpc.rls.ChildLoadBalancerHelper.ChildLoadBalancerHelperProvider", "java.util.UUID", "com.google.common.base.MoreObjects.ToStringHelper", "io.grpc.util.ForwardingLoadBalancerHelper", "io.grpc.ManagedChannel", "java.util.concurrent.Future", "io.grpc.LoadBalancer.ResolvedAddresses", "io.grpc.Metadata", "io.grpc.LoadBalancer.Helper", "io.grpc.rls.RlsProtoData.RouteLookupResponse", "io.grpc.stub.StreamObserver", "io.grpc.internal.ExponentialBackoffPolicy", "io.grpc.LoadBalancer.SubchannelPicker", "io.grpc.internal.BackoffPolicy", "io.grpc.rls.LbPolicyConfiguration.ChildPolicyWrapper", "io.grpc.ChannelLogger.ChannelLogLevel", "io.grpc.rls.RlsProtoData.RouteLookupRequest", "io.grpc.rls.LruCache.EvictionType", "io.grpc.LoadBalancer.PickResult", "io.grpc.rls.LbPolicyConfiguration.ChildLbStatusListener", "io.grpc.alts.internal.AltsProtocolNegotiator.ClientAltsProtocolNegotiatorFactory", "io.netty.channel.ChannelHandler", "io.netty.channel.ChannelHandlerAdapter", "io.grpc.netty.InternalProtocolNegotiator.ProtocolNegotiator", "io.netty.util.AsciiString", "io.grpc.netty.GrpcHttp2ConnectionHandler", "io.netty.channel.ChannelHandlerContext", "io.grpc.netty.InternalNettyServerCredentials", "io.grpc.Channel", "io.grpc.ServerCredentials", "io.grpc.alts.internal.AltsProtocolNegotiator", "io.grpc.CompositeChannelCredentials", "io.grpc.auth.MoreCallCredentials", "javax.net.ssl.SSLException", "io.grpc.netty.GrpcSslContexts", "io.grpc.netty.InternalProtocolNegotiator", "io.grpc.alts.internal.AltsProtocolNegotiator.GoogleDefaultProtocolNegotiatorFactory", "io.grpc.netty.InternalNettyChannelCredentials", "io.grpc.CallCredentials", "com.google.auth.oauth2.GoogleCredentials", "io.netty.handler.ssl.SslContext", "com.google.auto.value.AutoValue", "java.util.concurrent.atomic.AtomicLongFieldUpdater", "com.google.common.base.MoreObjects", "com.google.common.base.Ticker", "java.util.concurrent.atomic.AtomicReferenceArray", "com.google.common.annotations.VisibleForTesting", "javax.annotation.concurrent.Immutable", "java.util.concurrent.TimeUnit", "java.util.concurrent.ThreadLocalRandom", "io.grpc.Attributes", "io.grpc.binder.AndroidComponentAddress", "com.google.common.base.Preconditions.checkNotNull", "java.util.logging.Logger", "io.grpc.internal.SharedResourcePool", "android.os.RemoteException", "io.grpc.binder.SecurityPolicy", "io.grpc.internal.ManagedChannelImplBuilder.ClientTransportFactoryBuilder", "io.grpc.internal.ServerListener", "androidx.core.content.ContextCompat", "io.grpc.internal.GrpcUtil", "io.grpc.binder.InboundParcelablePolicy", "io.grpc.binder.ServerSecurityPolicy", "io.grpc.InternalChannelz.SocketStats", "java.util.Collection", "io.grpc.ChannelCredentials", "io.grpc.InternalInstrumented", "io.grpc.binder.BinderInternal", "java.util.Collections", "android.os.IBinder", "io.grpc.ChannelLogger", "android.os.Parcel", "java.util.List", "io.grpc.Grpc", "java.util.concurrent.Executor", "io.grpc.binder.internal.BinderTransport.SHUTDOWN_TRANSPORT", "java.util.concurrent.ScheduledExecutorService", "java.io.IOException", "io.grpc.binder.BinderChannelCredentials", "io.grpc.internal.InternalServer", "io.grpc.ServerStreamTracer", "javax.annotation.concurrent.ThreadSafe", "io.grpc.binder.SecurityPolicies", "io.grpc.binder.BindServiceFlags", "com.google.common.collect.ImmutableList", "java.util.logging.Level", "io.grpc.internal.ClientTransportFactory", "com.google.errorprone.annotations.concurrent.GuardedBy", "android.os.IBinder.FLAG_ONEWAY", "android.os.Binder", "io.grpc.internal.ObjectPool", "android.content.Context.BIND_ADJUST_WITH_ACTIVITY", "io.grpc.Status", "android.content.Context.BIND_WAIVE_PRIORITY", "com.google.errorprone.annotations.CheckReturnValue", "android.content.Context.BIND_INCLUDE_CAPABILITIES", "android.content.Context.BIND_ALLOW_OOM_MANAGEMENT", "javax.annotation.Nullable", "com.google.common.base.Preconditions", "android.content.Context.BIND_NOT_PERCEPTIBLE", "android.os.UserHandle", "java.util.Map", "com.google.common.base.Preconditions.checkState", "com.google.common.util.concurrent.Futures", "android.content.Context.BIND_IMPORTANT", "com.google.common.base.Preconditions.checkArgument", "java.util.HashMap", "androidx.annotation.RequiresApi", "java.net.SocketAddress", "android.content.Context.BIND_ABOVE_CLIENT", "com.google.common.collect.ImmutableMap", "android.content.Context.BIND_NOT_FOREGROUND", "android.content.Context.BIND_AUTO_CREATE", "com.google.common.util.concurrent.ListenableFuture", "com.google.common.base.Objects", "io.grpc.ExperimentalApi", "java.lang.Integer.toHexString", "android.content.ComponentName", "android.content.Context", "android.content.Context.BIND_ALLOW_ACTIVITY_STARTS", "android.content.Intent", "android.content.Intent.URI_ANDROID_APP_SCHEME", "android.os.Build" ]
+  }, {
+    "name" : "FakeSslSession",
+    "packageName" : "io.grpc.netty",
+    "extendedClasses" : [ "NoopSslSession" ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "getPeerHost",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    } ],
+    "imports" : [ "io.grpc.internal.Http2Ping", "java.util.Arrays", "io.netty.channel.ChannelHandlerContext", "io.netty.handler.codec.http.HttpVersion", "java.io.ByteArrayInputStream", "io.netty.handler.ssl.SslHandshakeCompletionEvent", "io.grpc.ChannelLogger", "io.netty.handler.ssl.OpenSslEngine", "io.grpc.ChoiceServerCredentials", "io.netty.handler.proxy.HttpProxyHandler", "com.google.errorprone.annotations.ForOverride", "io.netty.handler.ssl.OpenSsl", "java.util.EnumSet", "io.grpc.internal.ObjectPool", "javax.net.ssl.SSLEngine", "io.grpc.TlsServerCredentials", "io.grpc.CallCredentials", "io.grpc.InsecureChannelCredentials", "io.netty.handler.ssl.SslHandler", "io.grpc.ServerCredentials", "io.netty.channel.ChannelHandler", "io.grpc.ChoiceChannelCredentials", "io.grpc.CompositeCallCredentials", "io.netty.handler.codec.http.HttpHeaderNames", "io.netty.handler.ssl.SslProvider", "io.grpc.ChannelLogger.ChannelLogLevel", "com.google.common.base.Optional", "io.netty.handler.codec.http.HttpClientCodec", "io.netty.handler.ssl.SslContext", "io.grpc.InternalChannelz.Security", "io.netty.channel.ChannelFutureListener", "io.netty.handler.ssl.SslContextBuilder", "io.netty.handler.codec.http.DefaultHttpRequest", "org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement", "io.netty.handler.codec.http.HttpMethod", "io.netty.handler.codec.http2.Http2ClientUpgradeCodec", "io.netty.handler.proxy.ProxyConnectionEvent", "java.net.SocketAddress", "io.grpc.InsecureServerCredentials", "javax.net.ssl.SSLException", "io.netty.channel.ChannelInboundHandlerAdapter", "io.netty.handler.codec.http.HttpClientUpgradeHandler", "java.util.Set", "io.grpc.InternalChannelz.Tls", "io.netty.util.AsciiString", "io.grpc.CompositeChannelCredentials", "java.nio.channels.ClosedChannelException", "io.netty.channel.ChannelDuplexHandler", "com.google.common.base.MoreObjects", "com.google.common.util.concurrent.ListenableFuture", "okio.Okio", "io.grpc.okhttp.internal.framed.HeadersMode", "java.util.logging.Logger", "io.grpc.internal.ClientStreamListener.RpcProgress", "java.util.concurrent.CountDownLatch", "java.net.URI", "io.grpc.Status", "io.grpc.StatusException", "javax.net.SocketFactory", "io.grpc.Attributes", "io.grpc.MethodDescriptor.MethodType", "javax.net.ssl.SSLSocketFactory", "io.grpc.okhttp.Utils.DEFAULT_WINDOW_UPDATE_RATIO", "java.util.Iterator", "javax.net.ssl.HostnameVerifier", "javax.annotation.Nullable", "com.google.common.base.Stopwatch", "java.lang.reflect.Method", "io.grpc.okhttp.internal.framed.ErrorCode", "io.grpc.InternalLogId", "io.grpc.Metadata", "java.util.HashMap", "javax.net.ssl.X509TrustManager", "java.util.LinkedHashMap", "java.util.Random", "com.google.common.base.Supplier", "javax.net.ssl.TrustManagerFactory", "io.grpc.MethodDescriptor", "java.util.logging.Level", "java.security.cert.Certificate", "io.grpc.okhttp.internal.Credentials", "io.grpc.ChannelCredentials", "io.grpc.okhttp.internal.framed.FrameWriter", "io.grpc.internal.KeepAliveManager.ClientKeepAlivePinger", "okio.BufferedSink", "io.grpc.okhttp.ExceptionHandlingFrameWriter.TransportExceptionHandler", "io.grpc.okhttp.Utils.DEFAULT_WINDOW_SIZE", "com.google.errorprone.annotations.concurrent.GuardedBy", "javax.net.ssl.SSLSocket", "io.grpc.okhttp.internal.framed.FrameReader", "io.grpc.Grpc", "io.grpc.InternalChannelz", "io.grpc.InternalChannelz.SocketStats", "java.util.Deque", "java.util.List", "java.util.EnumMap", "javax.net.ssl.SSLSession", "io.grpc.okhttp.internal.StatusLine", "io.grpc.internal.InUseStateAggregator", "io.grpc.HttpConnectProxiedSocketAddress", "javax.net.ssl.TrustManager", "java.util.concurrent.ScheduledExecutorService", "io.grpc.ClientStreamTracer", "okio.ByteString", "java.util.LinkedList", "io.grpc.okhttp.internal.framed.Variant", "io.grpc.TlsChannelCredentials", "java.util.concurrent.Executor", "com.google.common.annotations.VisibleForTesting", "java.util.Locale", "io.grpc.SecurityLevel", "io.perfmark.PerfMark", "io.grpc.okhttp.internal.framed.Settings", "java.util.Collections", "okio.BufferedSource", "io.grpc.okhttp.internal.ConnectionSpec", "java.security.KeyStore", "com.google.common.util.concurrent.SettableFuture", "io.grpc.internal.ConnectionClientTransport", "io.grpc.CallOptions", "io.grpc.internal.NoopSslSession", "io.grpc.internal.CertificateUtils", "java.net.Socket", "com.google.common.base.Preconditions.checkState", "okio.Buffer", "okio.Source", "io.grpc.internal.KeepAliveManager", "io.grpc.okhttp.internal.OkHostnameVerifier", "io.grpc.okhttp.internal.framed.Header", "io.grpc.Status.Code", "io.grpc.okhttp.OkHttpChannelBuilder.OkHttpTransportFactory", "io.grpc.okhttp.internal.proxy.Request", "java.security.cert.X509Certificate", "java.io.EOFException", "java.io.IOException", "javax.net.ssl.SSLParameters", "java.lang.reflect.InvocationTargetException", "okio.Timeout", "java.util.concurrent.BrokenBarrierException", "io.grpc.internal.SerializingExecutor", "io.grpc.internal.GrpcUtil", "javax.net.ssl.SSLPeerUnverifiedException", "io.grpc.internal.GrpcAttributes", "io.grpc.okhttp.internal.framed.Http2", "java.util.concurrent.TimeUnit", "java.util.concurrent.CyclicBarrier", "java.net.InetSocketAddress", "java.security.GeneralSecurityException", "com.google.common.base.Preconditions", "java.util.Map", "io.grpc.internal.TransportTracer", "io.grpc.okhttp.internal.proxy.HttpUrl", "java.util.concurrent.TimeoutException", "io.grpc.internal.StatsTraceContext" ]
+  }, {
+    "name" : "NameResolverListener",
+    "packageName" : "io.grpc.xds",
+    "extendedClasses" : [ "Listener2" ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "onResult2",
+      "visibility" : "public",
+      "methodCalls" : [ "setPathFilter", "asList", "priorityName", "add", "localityName", "handleEndpointResourceUpdate", "getAddresses", "generateDnsBasedPriorityChildConfig", "emptyList", "getConfig", "toBuilder", "getAddressesOrError", "log", "onError", "discard", "setAddresses", "tryAcceptResolvedAddresses", "build", "getError", "getLogId", "getAttributes", "getLoadBalancingConfig", "getServiceConfig", "getRetryThrottling", "throwIfNotInThisSynchronizationContext", "set", "updateConfigSelector", "getHealthCheckingConfig", "getDefaultConfigSelector", "setAttributes", "setLoadBalancingPolicyConfig", "get", "hasValue", "getStatus", "equals", "getValue", "newBuilder", "isOk", "schedule", "onResult2", "reset", "onResult" ]
+    }, {
+      "name" : "onResult",
+      "visibility" : "public",
+      "methodCalls" : [ "onResult2", "execute", "resolutionAttempted", "set", "get", "getAttributes", "build", "setAttributes", "toBuilder", "onResult" ]
+    }, {
+      "name" : "onError",
+      "visibility" : "public",
+      "methodCalls" : [ "trailersFromThrowable", "transportState", "getAsyncContext", "getThrowable", "getResponse", "isLoggable", "transportReportStatus", "isCommitted", "runOnTransportThread", "augmentDescription", "add", "createWithThrowable", "close", "merge", "cancel", "compareAndSet", "absent", "offer", "execute", "onError", "schedule", "checkArgument", "isOk", "fromThrowable", "println", "withDescription", "getCode", "toContextString", "getDescription", "format", "setDataAsStatus", "maybePublishConfig", "checkNotNull", "hasDataValue", "withCause", "handleEndpointResolutionError", "log", "getCause", "asException", "node", "getBootstrapInfo", "onNotServing", "containsKey", "getId", "handleClusterDiscoveryError", "onException", "setException" ]
+    } ],
+    "imports" : [ "java.util.LinkedHashSet", "java.util.Locale", "com.google.common.collect.ImmutableMap", "io.grpc.xds.EnvoyServerProtoData.UpstreamTlsContext", "io.grpc.internal.ObjectPool", "io.grpc.xds.ClusterResolverLoadBalancerProvider.ClusterResolverConfig", "java.util.Objects", "io.grpc.util.OutlierDetectionLoadBalancer.OutlierDetectionLoadBalancerConfig", "io.grpc.xds.Endpoints.LocalityLbEndpoints", "io.grpc.LoadBalancerProvider", "io.grpc.xds.XdsLbPolicies.PRIORITY_POLICY_NAME", "io.grpc.xds.client.XdsLogger.XdsLogLevel", "java.util.HashMap", "io.grpc.xds.PriorityLoadBalancerProvider.PriorityLbConfig", "io.grpc.xds.ClusterResolverLoadBalancerProvider.ClusterResolverConfig.DiscoveryMechanism", "io.grpc.LoadBalancerRegistry", "io.grpc.xds.client.Locality", "java.util.Arrays", "java.net.SocketAddress", "io.grpc.xds.EnvoyServerProtoData.OutlierDetection", "java.net.URISyntaxException", "io.grpc.xds.EnvoyServerProtoData.FailurePercentageEjection", "io.grpc.internal.ExponentialBackoffPolicy", "io.grpc.xds.client.Bootstrapper.ServerInfo", "io.grpc.util.ForwardingLoadBalancerHelper", "io.grpc.xds.client.XdsClient.ResourceWatcher", "io.grpc.xds.client.XdsLogger", "io.grpc.internal.BackoffPolicy", "io.grpc.xds.Endpoints.DropOverload", "java.util.TreeMap", "io.grpc.xds.ClusterImplLoadBalancerProvider.ClusterImplConfig", "java.net.InetSocketAddress", "io.grpc.xds.Endpoints.LbEndpoint", "io.grpc.util.GracefulSwitchLoadBalancer", "io.grpc.xds.PriorityLoadBalancerProvider.PriorityLbConfig.PriorityChildConfig", "io.grpc.xds.XdsEndpointResource.EdsUpdate", "io.grpc.HttpConnectProxiedSocketAddress", "io.grpc.xds.client.XdsClient", "io.grpc.xds.EnvoyServerProtoData.SuccessRateEjection", "com.google.protobuf.Struct", "io.grpc.ClientCall", "io.grpc.MethodDescriptor", "io.grpc.ForwardingChannelBuilder2", "java.util.HashSet", "io.grpc.ConnectivityState.SHUTDOWN", "java.util.concurrent.TimeUnit", "io.grpc.LoadBalancer.PickResult", "io.grpc.ConnectivityState.CONNECTING", "io.grpc.ClientTransportFilter", "io.grpc.Status", "io.grpc.NameResolverRegistry", "io.grpc.MetricRecorder", "javax.annotation.concurrent.ThreadSafe", "java.util.concurrent.ScheduledExecutorService", "io.grpc.InternalChannelz.ChannelTrace", "java.util.concurrent.Callable", "io.grpc.SynchronizationContext", "io.grpc.CallCredentials", "io.grpc.SynchronizationContext.ScheduledHandle", "io.grpc.Attributes", "com.google.errorprone.annotations.concurrent.GuardedBy", "java.util.Collection", "com.google.common.base.MoreObjects", "java.net.URI", "io.grpc.internal.RetryingNameResolver.ResolutionResultListener", "io.grpc.LoadBalancer.SubchannelPicker", "com.google.common.annotations.VisibleForTesting", "io.grpc.internal.RetriableStream.ChannelBufferMeter", "com.google.common.util.concurrent.SettableFuture", "java.util.concurrent.Executor", "com.google.common.util.concurrent.ListenableFuture", "io.grpc.internal.ClientCallImpl.ClientStreamProvider", "io.grpc.ManagedChannel", "java.util.concurrent.ExecutionException", "java.util.concurrent.CountDownLatch", "javax.annotation.Nullable", "com.google.common.base.Preconditions.checkNotNull", "java.util.concurrent.atomic.AtomicBoolean", "io.grpc.ConnectivityStateInfo", "io.grpc.LoadBalancer.PickSubchannelArgs", "io.grpc.ForwardingClientCall", "io.grpc.InternalChannelz.ChannelStats", "io.grpc.ChannelCredentials", "io.grpc.ClientStreamTracer", "io.grpc.DecompressorRegistry", "io.grpc.CallOptions", "java.util.Set", "io.grpc.ConnectivityState.IDLE", "io.grpc.Metadata", "io.grpc.InternalLogId", "io.grpc.NameResolverProvider", "java.util.logging.Logger", "com.google.common.base.Preconditions.checkArgument", "io.grpc.internal.ClientTransportFactory.SwapChannelCredentialsResult", "io.grpc.NameResolver.ConfigOrError", "io.grpc.ProxyDetector", "io.grpc.MetricInstrumentRegistry", "io.grpc.LoadBalancer", "io.grpc.EquivalentAddressGroup", "com.google.common.base.Stopwatch", "java.util.concurrent.Future", "java.util.Map", "io.grpc.internal.ManagedChannelImplBuilder.FixedPortProvider", "io.grpc.LoadBalancer.SubchannelStateListener", "io.grpc.internal.ManagedChannelServiceConfig.MethodInfo", "io.grpc.StatusOr", "io.grpc.ManagedChannelBuilder", "io.grpc.InternalConfigSelector", "io.grpc.InternalWithLogId", "com.google.common.base.Preconditions.checkState", "io.grpc.NameResolver.ResolutionResult", "java.util.List", "io.grpc.LoadBalancer.CreateSubchannelArgs", "io.grpc.Grpc", "io.grpc.ClientInterceptor", "io.grpc.internal.ManagedChannelImplBuilder.ClientTransportFactoryBuilder", "io.grpc.ChannelLogger.ChannelLogLevel", "java.util.ArrayList", "io.grpc.InternalChannelz", "io.grpc.CompressorRegistry", "java.util.concurrent.ScheduledFuture", "io.grpc.ChannelLogger", "io.grpc.ClientInterceptors", "java.util.concurrent.atomic.AtomicReference", "io.grpc.Deadline", "io.grpc.EquivalentAddressGroup.ATTR_AUTHORITY_OVERRIDE", "com.google.common.base.Supplier", "io.grpc.Channel", "io.grpc.InternalInstrumented", "io.grpc.ClientStreamTracer.NAME_RESOLUTION_DELAYED", "io.grpc.internal.AutoConfiguredLoadBalancerFactory.AutoConfiguredLoadBalancer", "io.grpc.Context", "io.grpc.internal.RetriableStream.Throttle", "io.grpc.LoadBalancer.ResolvedAddresses", "io.grpc.NameResolver", "io.grpc.ConnectivityState.TRANSIENT_FAILURE", "java.util.logging.Level", "java.util.concurrent.TimeoutException", "io.grpc.internal.ManagedChannelServiceConfig.ServiceConfigConvertedSelector", "io.grpc.ConnectivityState", "java.util.Collections" ]
+  } ]
+}

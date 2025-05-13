@@ -1,0 +1,1845 @@
+{
+  "systemName" : "runelite",
+  "classes" : [ {
+    "name" : "Client",
+    "packageName" : "net.runelite.api",
+    "extendedClasses" : [ "GameEngine", "OAuthApi" ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "isKeyPressed",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "drawOriginalMenu",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMenuX",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isStretchedEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "openWorldHopper",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setVarcStrValue",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isMenuOpen",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getRealSkillLevels",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getAnimationCache",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isMenuScrollable",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getVarcStrValue",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getWorldMap",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createIndexedSprite",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getWidgetRoots",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setStringStackSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getViewportHeight",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCameraX",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getChatLineMap",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCameraFpPitch",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "menuAction",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCameraFocalPointX",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "playSoundEffect",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getItemCount",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getProjectiles",
+      "visibility" : "public",
+      "methodCalls" : [ "getTopLevelWorldView", "getProjectiles" ]
+    }, {
+      "name" : "getFriendContainer",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getItemSpriteCache",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getViewportXOffset",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getStructCompositionCache",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "clearHintArrow",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCameraFocalPointY",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCrossSprites",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCameraFocalPointX",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isFriended",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMouseCurrentButton",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTickCount",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "get3dZoom",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMinimapZoom",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getHintArrowPlayer",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getOculusOrbFocalPointX",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSkyboxColor",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getItemContainer",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMouseCanvasPosition",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "applyTransformations",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createMenuEntry",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGuestClanSettings",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getHintArrowNpc",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getObjectDefinition",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getIndexScripts",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMenuWidth",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setInvertYaw",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCrossWorldMessageIds",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getPlayers",
+      "visibility" : "public",
+      "methodCalls" : [ "players", "toCollection", "stream", "emptyList", "getTopLevelWorldView", "collect" ]
+    }, {
+      "name" : "getWidget",
+      "visibility" : "public",
+      "methodCalls" : [ "getWidget", "getUserObject" ]
+    }, {
+      "name" : "getDraggedWidget",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getLocalDestinationLocation",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setLoginScreen",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCanvasHeight",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getPlayerMenuTypes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setScalingFactor",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getStringStack",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getObjectCompositionCache",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setStretchedEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMenuScroll",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getUsername",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAllWidgetsAreOpTargetable",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getWidgetSpriteCache",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGameState",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDraw2DMask",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getPlayerOptions",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSkyboxColor",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "changeMemoryMode",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDBRowConfig",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCameraY",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "drawInstanceMap",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setModIcons",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMenuScroll",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setVarbitValue",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getVarcMap",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getRealDimensions",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getModIcons",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setHintArrow",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setInvertPitch",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "loadAnimation",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMouseLastPressedMillis",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getIntStack",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDrawCallbacks",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "runScript",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isCameraShakeDisabled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getStretchedDimensions",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createItemSprite",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addChatMessage",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setVarcIntValue",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getStructComposition",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getFPS",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCallbacks",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getServerVarbitValue",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCameraYawTarget",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMapIcons",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getServerVarps",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getItemModelCache",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBufferProvider",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSprites",
+      "visibility" : "public",
+      "methodCalls" : [ "values", "unmodifiableCollection" ]
+    }, {
+      "name" : "setWidgetSelected",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setInventoryDragDelay",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCameraPitchRelaxerEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCameraPitchTarget",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getPreferences",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "checkClickbox",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getWorldView",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getAccountType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getLoginIndex",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOtp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "findIndex", "getNumber" ]
+    }, {
+      "name" : "getDBRowsByValue",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getComponentTable",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCenterY",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isGpu",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMenu",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getEnergy",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDraw2DMask",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getKeyboardIdleTicks",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSkillExperience",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getClanChannel",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setUsername",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getArray",
+      "visibility" : "public",
+      "methodCalls" : [ "array", "hasArray" ]
+    }, {
+      "name" : "getIndexConfig",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMessages",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTopLevelInterfaceId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMusicVolume",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "resetHealthBarCaches",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getWidgetFlags",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "hopToWorld",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGameState",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getWidgetSpriteOverrides",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGeSearchResultCount",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getViewportWidth",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createRuneLiteObject",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getPlane",
+      "visibility" : "public",
+      "methodCalls" : [ "getTopLevelWorldView", "getPlane" ]
+    }, {
+      "name" : "getScriptActiveWidget",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getVarbit",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getIdleTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCameraFocalPointY",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getServerVarpValue",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCameraMode",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBuildID",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSelectedWidget",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDrawCallbacks",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMapAngle",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCameraMouseButtonMask",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "loadModelData",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "stopNow",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getWidgetPositionsX",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "invalidateStretching",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createWorld",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCameraShakeDisabled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTileHeights",
+      "visibility" : "public",
+      "methodCalls" : [ "getTileHeights", "getTopLevelWorldView" ]
+    }, {
+      "name" : "getHintArrowType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getVar",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCameraYaw",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "closeInterface",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCanvasWidth",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "registerRuneLiteObject",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSkillExperiences",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getWorldList",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getArraySizes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isResized",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setUnlockedFps",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "queueChangedVarp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "openInterface",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "draw2010Menu",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBaseX",
+      "visibility" : "public",
+      "methodCalls" : [ "getTopLevelWorldView", "getBaseX" ]
+    }, {
+      "name" : "setAnimationInterpolationFilter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTotalLevel",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getIndexSprites",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOculusOrbState",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setUnlockedFpsTarget",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getIntStackSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTextureProvider",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isMinimapZoom",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setShouldRenderLoginScreenFire",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getRasterizer3D_clipNegativeMidX",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getItemCompositionCache",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getFollower",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setStretchedKeepAspectRatio",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGrandExchangeOffers",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMenuHeight",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTickCount",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBoostedSkillLevel",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOculusOrbNormalSpeed",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCompass",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "removeRuneLiteObject",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getWorldHost",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getXteaKeys",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGuestClanChannel",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMenuEntries",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getExpandedMapLoading",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphicsObjects",
+      "visibility" : "public",
+      "methodCalls" : [ "getTopLevelWorldView", "getGraphicsObjects" ]
+    }, {
+      "name" : "getDBTableField",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getVarcIntValue",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDraggedOnWidget",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getEnum",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getVarbitValue",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCurrentLoginField",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getRasterizer",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getPlayerOptionsPriorities",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSpriteOverrides",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setVarbit",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGpuFlags",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getAnimationInterpolationFilter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getViewportYOffset",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getWeight",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getWorldType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTileSettings",
+      "visibility" : "public",
+      "methodCalls" : [ "getTileSettings", "getTopLevelWorldView" ]
+    }, {
+      "name" : "getCenterX",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getScriptDotWidget",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "changeWorld",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getClanSettings",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCameraPitch",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getScene",
+      "visibility" : "public",
+      "methodCalls" : [ "getScene", "getTopLevelWorldView" ]
+    }, {
+      "name" : "getRasterizer3D_clipMidY2",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getInstanceTemplateChunks",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getHintArrowPoint",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getItemDefinition",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getIgnoreContainer",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "queueChangedSkill",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCameraFpZ",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getNpcDefinition",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setIntStackSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCrossWorldMessageIdsIndex",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createScriptEvent",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setStretchedIntegerScaling",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMapScene",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isRuneLiteObjectRegistered",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMinimapTileDrawer",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCollisionMaps",
+      "visibility" : "public",
+      "methodCalls" : [ "getCollisionMaps", "getTopLevelWorldView" ]
+    }, {
+      "name" : "getWidgetPositionsY",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCameraFpX",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMusicVolume",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getOculusOrbState",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGeSearchResultIndex",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "loadModel",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCameraFpY",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isWidgetSelected",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMenuEntries",
+      "visibility" : "public",
+      "methodCalls" : [ "getMenuEntries", "emptyList", "getInfoBox" ]
+    }, {
+      "name" : "setPassword",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCameraMode",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isDraggingWidget",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMapElementConfig",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGameCycle",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getItemContainers",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBaseY",
+      "visibility" : "public",
+      "methodCalls" : [ "getBaseY", "getTopLevelWorldView" ]
+    }, {
+      "name" : "getNpcs",
+      "visibility" : "public",
+      "methodCalls" : [ "getTopLevelWorldView", "collect", "emptyList", "toCollection", "npcs", "unmodifiableCollection", "values", "debug", "build", "fromJson", "byteStream", "toString", "isSuccessful", "newCall", "url", "newBuilder", "body", "getType", "execute", "addPathSegment", "getName", "getValue", "getNpc", "map", "stream", "toArray", "filter", "getKey" ]
+    }, {
+      "name" : "refreshChat",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTopLevelWorldView",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setIdleTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCameraZ",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getRasterizer3D_clipNegativeMidY",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMinimapZoom",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCameraPitchTarget",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getLocalPlayer",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setExpandedMapLoading",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getOculusOrbFocalPointY",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMapDots",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDraggedOnWidget",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCanvas",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCameraFocalPointZ",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getFriendsChatManager",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMenuY",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMapRegions",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getVarps",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCameraSpeed",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getMouseIdleTicks",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isPrayerActive",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getWorld",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getScale",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getOverallExperience",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isStretchedFast",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCameraFpYaw",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getRenderOverview",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createSpritePixels",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCameraYawTarget",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSelectedSceneTile",
+      "visibility" : "public",
+      "methodCalls" : [ "getTopLevelWorldView", "getSelectedSceneTile" ]
+    }, {
+      "name" : "getVarpValue",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getActiveMidiRequests",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isInInstancedRegion",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getRealSkillLevel",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getLauncherDisplayName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "hasHintArrow",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBoostedSkillLevels",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getStringStackSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDragTime",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGeSearchResultIds",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "mergeModels",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getAmbientSoundEffects",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setStretchedFast",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getRasterizer3D_clipMidX2",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setFreeCameraSpeed",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createProjectile",
+      "visibility" : "public",
+      "methodCalls" : [ "getTopLevelWorldView", "createProjectile" ]
+    }, {
+      "name" : "getRevision",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCameraFocalPointZ",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    } ],
+    "imports" : [ "net.runelite.api.widgets.WidgetConfig", "java.util.ArrayList", "net.runelite.api.clan.ClanID", "net.runelite.api.dbtable.DBRowConfig", "net.runelite.api.worldmap.MapElementConfig", "net.runelite.api.annotations.VisibleForDevtools", "net.runelite.api.coords.LocalPoint", "java.awt.Dimension", "net.runelite.api.annotations.Interface", "net.runelite.api.hooks.DrawCallbacks", "javax.annotation.Nullable", "net.runelite.api.vars.AccountType", "net.runelite.api.widgets.WidgetModalMode", "net.runelite.api.annotations.Varp", "org.intellij.lang.annotations.MagicConstant", "javax.annotation.Nonnull", "java.util.EnumSet", "net.runelite.api.clan.ClanSettings", "com.jagex.oldscape.pub.OAuthApi", "java.awt.Canvas", "net.runelite.api.widgets.WidgetInfo", "net.runelite.api.coords.WorldPoint", "net.runelite.api.annotations.Varbit", "net.runelite.api.widgets.ItemQuantityMode", "net.runelite.api.worldmap.WorldMap", "java.util.function.IntPredicate", "java.util.stream.Collectors", "java.util.List", "net.runelite.api.annotations.Component", "net.runelite.api.widgets.Widget", "net.runelite.api.clan.ClanChannel", "net.runelite.api.annotations.VarCStr", "java.util.Collections", "java.util.Map", "net.runelite.api.hooks.Callbacks", "net.runelite.api.annotations.VarCInt" ]
+  }, {
+    "name" : "Widget",
+    "packageName" : "net.runelite.api.widgets",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "setNoScrollThrough",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSpriteTiling",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setLineHeight",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setModelType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isFilled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAction",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setRotationY",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setRelativeY",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setXPositionMode",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setHasListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getHeightMode",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDragParent",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getWidth",
+      "visibility" : "public",
+      "methodCalls" : [ "getWidth" ]
+    }, {
+      "name" : "getRotationZ",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTextColor",
+      "visibility" : "public",
+      "methodCalls" : [ "getBoundary", "shouldRecolor", "getColorBoundaryType", "getThreshold", "getTextColor", "apply", "getStateColor", "getRealSkillLevel", "getBoostedSkillLevel", "boostThreshold", "getChangeDownTicks", "getChangeUpTicks", "getPlugin", "getColor", "getCount", "now", "getEndTime", "between", "brighter", "getSeconds", "timerLowWarning" ]
+    }, {
+      "name" : "setOpacity",
+      "visibility" : "public",
+      "methodCalls" : [ "warn", "setOpacity" ]
+    }, {
+      "name" : "setFilled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getRotationX",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getChild",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTextShadowed",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getWidthMode",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "findIndex", "getNumber" ]
+    }, {
+      "name" : "setOnOpListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getOriginalX",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getType",
+      "visibility" : "public",
+      "methodCalls" : [ "getId", "getType" ]
+    }, {
+      "name" : "isIf3",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getModelZoom",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getItemQuantity",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setRotationZ",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setClickMask",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setItemQuantity",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDragParent",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOriginalY",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getRotationY",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSpriteId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOnMouseLeaveListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "contains",
+      "visibility" : "public",
+      "methodCalls" : [ "distanceTo", "anyMatch", "stream", "contains", "intersects", "getWidth", "getY", "getHeight", "size", "getX", "getBounds" ]
+    }, {
+      "name" : "setFontId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setRelativeX",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDynamicChildren",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getOriginalWidth",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getLineHeight",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getVarTransmitTrigger",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTextColor",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOnScrollWheelListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOnKeyListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOriginalX",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setModelId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAnimationId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTargetVerb",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getItemQuantityMode",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPos",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getName",
+      "visibility" : "public",
+      "methodCalls" : [ "getSimpleName", "getClass", "getAnnotation", "name", "getDisplayName", "getId", "getItemId", "getName", "getMembersName", "getItemComposition" ]
+    }, {
+      "name" : "setHeight",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setWidthMode",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "revalidate",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBorderType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setBorderType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getNestedChildren",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getScrollY",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getOnVarTransmitListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createChild",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "hasListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setItemQuantityMode",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getNoClickThrough",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getText",
+      "visibility" : "public",
+      "methodCalls" : [ "getText", "formatDuration", "toMillis", "isShouldDisplayCount", "getCballsLeft", "valueOf", "getBoostedSkillLevel", "getRealSkillLevel", "useRelativeBoost", "getChangeUpTicks", "getChangeDownTicks", "getChangeTime", "format", "between", "getHour", "ofPattern", "getSeconds", "ofSecondOfDay", "now", "getCount", "quantityToRSDecimalStack", "toString", "getApproval", "getApprovalPercent" ]
+    }, {
+      "name" : "setYTextAlignment",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDragDeadTime",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTextShadowed",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOriginalWidth",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getChildren",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setType",
+      "visibility" : "public",
+      "methodCalls" : [ "copyOnWrite", "setType" ]
+    }, {
+      "name" : "getScrollHeight",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getOriginalHeight",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "deleteAllChildren",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDragDeadZone",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getYPositionMode",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getOnOpListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSpriteId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setNoClickThrough",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getBounds",
+      "visibility" : "public",
+      "methodCalls" : [ "getBounds", "min", "max" ]
+    }, {
+      "name" : "setScrollX",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getTargetVerb",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setXTextAlignment",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getCanvasLocation",
+      "visibility" : "public",
+      "methodCalls" : [ "getCanvasBounds", "getY", "getX" ]
+    }, {
+      "name" : "getAnimationId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getContentType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getScrollX",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOnVarTransmitListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDragDeadZone",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getModelId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOnMouseOverListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getSpriteTiling",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setContentType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getXTextAlignment",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "revalidateScroll",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOnDragListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOnClickListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getRelativeY",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getParent",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getFont",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "getClickMask",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getXPositionMode",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setChildren",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setScrollY",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setScrollWidth",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOnTargetLeaveListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOnTargetEnterListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setScrollHeight",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOriginalHeight",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getOnLoadListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getFontId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getHeight",
+      "visibility" : "public",
+      "methodCalls" : [ "getHeight" ]
+    }, {
+      "name" : "isHidden",
+      "visibility" : "public",
+      "methodCalls" : [ "getConfiguration", "standardize", "equals" ]
+    }, {
+      "name" : "getId",
+      "visibility" : "public",
+      "methodCalls" : [ "getIdentifier" ]
+    }, {
+      "name" : "getStaticChildren",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getOpacity",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setHidden",
+      "visibility" : "public",
+      "methodCalls" : [ "setConfiguration", "unsetConfiguration", "standardize" ]
+    }, {
+      "name" : "getOnKeyListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOnHoldListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setWidth",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOnReleaseListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getScrollWidth",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOnDragCompleteListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getActions",
+      "visibility" : "public",
+      "methodCalls" : [ "getActionsInSession", "getSkillSnapshot" ]
+    }, {
+      "name" : "getItemId",
+      "visibility" : "public",
+      "methodCalls" : [ "getItemId" ]
+    }, {
+      "name" : "clearActions",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setYPositionMode",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setRotationX",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getYTextAlignment",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOnMouseRepeatListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getOriginalY",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setModelZoom",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getRelativeX",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setVarTransmitTrigger",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setForcedPosition",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOnDialogAbortListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getDragDeadTime",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isSelfHidden",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setText",
+      "visibility" : "public",
+      "methodCalls" : [ "setText", "isEventDispatchThread" ]
+    }, {
+      "name" : "getModelType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setItemId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setHeightMode",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getOnInvTransmitListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOnTimerListener",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getNoScrollThrough",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getParentId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    } ],
+    "imports" : [ "javax.annotation.Nullable", "net.runelite.api.FontTypeFace", "org.jetbrains.annotations.Range", "java.awt.Rectangle", "org.intellij.lang.annotations.MagicConstant", "net.runelite.api.annotations.Component", "net.runelite.api.Point" ]
+  }, {
+    "name" : "Plugin",
+    "packageName" : "net.runelite.client.plugins",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ "Module" ],
+    "methods" : [ {
+      "name" : "hashCode",
+      "visibility" : "public",
+      "methodCalls" : [ "hashCode" ]
+    }, {
+      "name" : "getInjector",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "resetConfiguration",
+      "visibility" : "public",
+      "methodCalls" : [ "debug", "reset", "invokeLater", "newArrayList", "split", "unsetConfiguration", "getConfigurationKeys" ]
+    }, {
+      "name" : "configure",
+      "visibility" : "public",
+      "methodCalls" : [ "toInstance", "bind", "to" ]
+    }, {
+      "name" : "getName",
+      "visibility" : "public",
+      "methodCalls" : [ "getSimpleName", "getClass", "getAnnotation", "name", "getDisplayName", "getId", "getItemId", "getName", "getMembersName", "getItemComposition" ]
+    }, {
+      "name" : "equals",
+      "visibility" : "public",
+      "methodCalls" : [ "equals" ]
+    } ],
+    "imports" : [ "com.google.inject.Module", "com.google.inject.Injector", "com.google.inject.Binder" ]
+  } ]
+}

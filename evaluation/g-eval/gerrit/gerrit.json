@@ -1,0 +1,1561 @@
+{
+  "systemName" : "gerrit",
+  "classes" : [ {
+    "name" : "Factory",
+    "packageName" : "com.google.gerrit.pgm.rules",
+    "extendedClasses" : [ "AbstractFactory", "ExternalIdNotesLoader", "ChangeDraftUpdateFactory", "IndexFactory", "Factory" ],
+    "implementedInterfaces" : [ "NamedFactory", "DelegatingNodeRendererFactory" ],
+    "methods" : [ {
+      "name" : "getName",
+      "visibility" : "public",
+      "methodCalls" : [ "id", "preferredEmail", "fullName", "get", "getNameKey", "substring", "lastIndexOf", "getAccount", "getGroup", "getName" ]
+    }, {
+      "name" : "builder",
+      "visibility" : "public",
+      "methodCalls" : [ "codeReviewLabel", "setRules", "setExclusiveGroup", "postSubmit", "copied", "setPermissions", "setId", "setInactive", "isMergedInTargetBranch", "setRegisteredOn", "setGroup", "setExcludeProjectsRegexes", "setMatchProjectsRegexes", "setAccepted", "build", "setState", "setSubmitType", "values", "put", "setNameKey", "setBooleanConfigs", "stream", "groups", "setOverrideOnly", "of", "project", "checkArgument", "setIgnoreSelfApproval", "setName", "setAllowPostSubmit", "setFunction", "setCanOverride", "setValues", "setDescription", "setMaxPositive", "setMaxNegative", "setDefaultValue", "empty", "getDefaultCodeReviewLabelWithNoBlockFunction", "getDefaultCodeReviewSubmitRequirements", "codeReviewSubmitRequirement", "initDefaultAcls", "initDefaultSubmitRequirements", "firstChangeIdForNoteDb", "forEach", "user", "commandName", "requestType", "callingUser", "traceContext", "builder", "setSubgroupModification", "setMemberModification", "singletonList", "setPrefixes", "setFilterMeta", "magicPush", "toBuilder", "name", "stored", "fieldType", "required" ]
+    }, {
+      "name" : "compute",
+      "visibility" : "public",
+      "methodCalls" : [ "hashKeys", "build", "hashSetValues", "diff", "getBeginA", "asList", "getEndB", "equals", "getEndA", "contains", "set", "getBeginB", "charAt", "isLineStart", "getType", "get", "remove", "size" ]
+    }, {
+      "name" : "load",
+      "visibility" : "public",
+      "methodCalls" : [ "log", "authDomainName", "close", "queryForGroups", "getAttributes", "setProject", "toByteString", "copyFrom", "getCacheable", "setRevision", "setGlobalConfigRevision", "newBuilder", "list", "allProjectsFileProjectConfigHash", "empty", "setNoReindex", "isUserNameCaseInsensitiveMigrationMode", "groupId", "getRevision", "byId", "groupName", "getGroup", "uuid", "emptyMap", "byName", "getUuid", "checkReadEnabled", "buildAllExternalIds", "add", "atInfo", "increment", "setFilter", "keySet", "next", "reset", "getName", "setRecursive", "record", "getPathString", "atSevere", "toSet", "getTree", "withCause", "nanoTime", "markStart", "getLoadedAccount", "asCachedPreferences", "getProjectWatches", "getSnapshot", "call", "toImmutableSet", "hash", "byMember", "groupsRefs", "groupUuid", "getExternalGroups", "groupIndexQuery", "openHandle", "id", "self", "start", "getId", "bCommit", "createWithRetrievingModifiedFilesForTreesFromGitModifiedFilesCache", "toImmutableList", "getTreeId", "stream", "collect", "renameDetectionEnabled", "zeroId", "filter", "aCommit", "comparing", "format", "mergeRewrittenModifiedFiles", "map", "getRevCommit", "sortedCopyOf", "getDefaultPath", "areRelated", "aTree", "withRenameDetection", "renameDetection", "renameScore", "bTree", "newObjectReader", "project", "diffAlgorithm", "name", "filePath", "newFilePath", "equals", "checkArgument", "getRefName", "getObjectReader", "getProjectName", "exactRef", "getObjectId", "getRepository", "getRefDatabase", "onLoad", "getPath", "forEach", "compileTemplates", "getFileNames", "runEach", "change", "size", "copyOf", "atWarning", "values", "byProject", "build", "isPresent", "builder", "username", "valid", "isEmpty", "newTimer", "getKeys", "unmodifiableList", "get", "accountId", "create", "of", "loadAll", "put", "getIfPresent", "load", "execute", "cacheKey", "nowMs", "ofEpochMilli", "toString", "getParentCount", "setReader", "newObjectInserter", "getParent", "getConfig", "orElseThrow", "getResultTreeId", "setBase", "newReader", "merge", "shortDebugString", "getProject", "illegalState", "projectName", "newThreeWayMerger", "nameKey", "parseCommit", "fromByteString", "getClaimedOriginal", "scan", "getClaimedRevert", "openRepository", "reviewers", "open", "containsKey", "virtualId", "setRequestedFields" ]
+    }, {
+      "name" : "get",
+      "visibility" : "public",
+      "methodCalls" : [ "getAlreadyAccepted", "getInt", "getString", "key", "findBindingsByType", "getProvider", "getAnnotation", "unmodifiableList", "getAsMap", "newEnumSet", "noneOf", "complementOf", "decode", "replaceAll", "getId", "requireNonNull", "isExpired", "invalidate", "getWithHeaders", "isIdentifiedUser", "asIdentifiedUser", "membershipsOf", "close", "wrap", "getField", "getter", "toList", "withLimit", "findFirst", "withStart", "keyPredicate", "read", "getSource", "getHostname", "orElseGet", "waitForGeneration", "toMillis", "isDone", "getByName", "getRemotePort", "computeFromRequest", "getRemoteAddr", "registerTypeAdapter", "registerTypeAdapterFactory", "registerTypeHierarchyAdapter", "length", "toImmutableMap", "endsWith", "readNoteData", "newHashSetWithExpectedSize", "toImmutableSet", "contains", "filter", "substring", "parse", "getNoteId", "handles", "orElse", "atFine", "increment", "resourceCount", "getOrDefault", "newLinkedHashSetWithExpectedSize", "singleton", "forCachedAccount", "refsUsers", "newTimer", "entrySet", "getKey", "getValue", "accountId", "stream", "toOptional", "ifPresent", "collect", "size", "isUserNameCaseInsensitiveMigrationMode", "byKey", "scheme", "computeIfAbsent", "getNewId", "getNewName", "parseBody", "getAuthorIdent", "toUserIdentity", "getCommitterIdent", "id", "setSubject", "getShortMessage", "openRepository", "getFullMessage", "setCommitter", "setParents", "setCommitId", "setAuthor", "setMessage", "asTemp", "newInputStream", "getPluginName", "forEach", "getAccountId", "fill", "parseDynamicOptions", "format", "setInherited", "fromDecoded", "isNone", "empty", "setRecursive", "asRestApiException", "execute", "put", "needsRefresh", "getIfPresent", "nowMs", "refresh", "ofEpochMilli", "deserialize", "getBytes", "load", "call", "valueType", "build", "keyType", "loader", "freeze", "checkState", "createValue", "set", "getOrNull", "getUser", "ref", "startsWith", "getProjectState", "createTagInfo", "exactRef", "project", "getNameKey", "getRefDatabase", "user", "isNullOrEmpty", "value", "apply", "getUUID", "getInstance", "getList", "ofNullable", "update", "newMessageDigest", "encode", "valueOf", "random", "digest", "uuid", "getCommaSeparatedChangeAndPatchSetId", "fromRaw", "toEpochMilli", "checkArgument", "getDeclaredConstructor", "getName", "newInstance", "getAll", "map", "branchName", "of", "builder", "autoBuild", "toBuilder", "getQueueType", "create", "getQueue", "get", "intercept", "setPaths", "createQueue", "log", "setAlgorithm", "exists", "atWarning", "setPath", "isEmpty", "toAbsolutePath", "add", "getRemoteAddress", "getMap", "getSession", "requireContext", "isPresent", "run", "getCurrentPatchSet", "parseCommit", "getProjectName", "asList", "zeroId", "equals", "getParents", "fromString", "commitId", "getCause", "name", "newRevWalk", "addAll", "getObjectId", "atSevere", "withCause", "isPureRevert" ]
+    }, {
+      "name" : "controlFor",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "controlFor" ]
+    }, {
+      "name" : "validateFor",
+      "visibility" : "public",
+      "methodCalls" : [ "isVisible", "controlFor" ]
+    }, {
+      "name" : "createForExternalUser",
+      "visibility" : "public",
+      "methodCalls" : [ "create", "setUserName" ]
+    }, {
+      "name" : "createForEmail",
+      "visibility" : "public",
+      "methodCalls" : [ "setEmailAddress", "create" ]
+    }, {
+      "name" : "createForOAuthUser",
+      "visibility" : "public",
+      "methodCalls" : [ "create", "setUserName" ]
+    }, {
+      "name" : "createForUser",
+      "visibility" : "public",
+      "methodCalls" : [ "setUserName", "create" ]
+    }, {
+      "name" : "createForBatchUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "load" ]
+    }, {
+      "name" : "scan",
+      "visibility" : "public",
+      "methodCalls" : [ "filter", "map", "getKey", "stream", "scan", "test", "scanChangeIds", "entrySet", "getAnnotation", "getModifiers", "isAbstract", "withCause", "put", "isNullOrEmpty", "arrayListValues", "get", "atWarning", "getType", "emptySet", "hashKeys", "log", "getName", "builder", "add", "getDescriptor", "firstNonNull", "isConcrete", "accept", "transform", "build" ]
+    }, {
+      "name" : "createChecked",
+      "visibility" : "public",
+      "methodCalls" : [ "createChecked", "newChange", "getId", "getProject", "load" ]
+    }, {
+      "name" : "scanChangeIds",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "endsWith", "getRefDatabase", "getName", "getObjectId", "getRefsByPrefix", "build", "builder", "fromRef" ]
+    }, {
+      "name" : "createFromIndexedChange",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createCheckedUsingIndexLookup",
+      "visibility" : "public",
+      "methodCalls" : [ "byLegacyChangeId", "notes", "isEmpty", "get", "size", "setLimit", "atSevere", "noFields", "log" ]
+    }, {
+      "name" : "createUsingIndexLookup",
+      "visibility" : "public",
+      "methodCalls" : [ "createCheckedUsingIndexLookup", "add" ]
+    }, {
+      "name" : "newChange",
+      "visibility" : "public",
+      "methodCalls" : [ "create", "formatChangeUrl" ]
+    }, {
+      "name" : "getDelegates",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "apply",
+      "visibility" : "public",
+      "methodCalls" : [ "currentUser", "keySet", "replaceExternalIds", "toJson", "checkVisible", "listGpgKeysForUser", "setExpectedUser", "getFingerprint", "getKeyRing", "keyToString", "getPublicKey", "deleteExternalId", "base16", "deletePgpKey", "getProviderId", "getExpiresAt", "getToken", "fromBits", "getRawMode", "setLength", "setLastModified", "getFileMode", "getPathString", "setFileMode", "getProjectName", "getCurrentPatchSet", "isMagic", "newPath", "getCause", "installPluginFromStream", "reload", "setCreated", "disablePlugins", "getPlugin", "printStackTrace", "toPluginInfo", "toLowerCase", "getPlugins", "compile", "skip", "enablePlugins", "checkRemoteAdminEnabled", "getUnchecked", "createLabel", "getValidateOptionsAsMultimap", "isMagicBranch", "getRev", "isValidRefName", "toCommitInfo", "setRefLogMessage", "setExpectedOldObjectId", "getPathName", "setNewObjectId", "copy", "getMagicRefNamePrefix", "getConflictingNames", "validateRefOperation", "joining", "syncIfNeeded", "isDefaultDashboard", "applyChanges", "deleteLabel", "validateChanges", "concat", "setParentName", "getSearchIndex", "projectDefault", "any", "start", "updateLabel", "limit", "createChange", "getLabelSections", "isSymbolic", "configChangeCreator", "reverse", "displayToStream", "getWho", "getReverseEntries", "setCharacterEncoding", "getWhenAsInstant", "isAfter", "isBefore", "subString", "regex", "display", "hasMore", "updateConfig", "getReflogReader", "encodeToken", "isConfigRef", "setParent", "setLimit", "treeInOrder", "filterLabelsThatUserCanVoteOnRef", "withRecursive", "configUpdaterWithoutPermissionsCheck", "byBranchOpen", "validateParentUpdate", "getChild", "isDirectChild", "beginSubTask", "deleteSubmitRequirement", "setName", "throwIfLockFailure", "createTagInfo", "updateFastForward", "setVerboseOut", "getTarget", "verifyConnected", "reindexProject", "setObjectId", "setTagger", "newRefLogIdent", "tag", "nullOutputStream", "systemDefault", "setAnnotated", "submit", "toBranchInfo", "updateRef", "setRefLogIdent", "zeroId", "parseAny", "accepted", "setSigned", "parseBaseRevision", "reset", "updateSubmitRequirement", "createWithPassword", "getAlreadyBannedCommits", "setProjectName", "unlock", "requireNonNull", "getLock", "deleteSingleRef", "generate", "createProject", "startsWith", "createHttpPasswordUpdateEmail", "ban", "validMaxObjectSizeLimit", "lock", "normalizeTagRef", "validateNewProject", "sanitizeProjectName", "updateExternalId", "getNewlyBannedCommits", "updateProjectConfig", "defaultCommitMessage", "getIgnoredObjectIds", "getTagInfo", "createAttributesNodeProvider", "transform", "setAttributesNodeProvider", "isMergedInto", "getUnmergedPaths", "getSubmitRequirement", "newMerger", "getResultTreeId", "getKeys", "merge", "isProjectDefault", "createAddKeyEmail", "getStatistics", "gc", "asCharSource", "setDefaultDashboard", "setLocalDefaultDashboard", "list", "getRepository", "updateProject", "wrap", "setGitwebDescription", "configUpdater", "commitConfigUpdate", "evictAndReindex", "read", "getPermissions", "updateGroupNames", "getAutoVerify", "byEmail", "getFirst", "fire", "statePermitsWrite", "getRules", "externalIds", "empty", "parents", "toBuilder", "set", "getBranchKey", "upsertPermission", "testOrFalse", "activate", "equalsIgnoreCase", "isValidRefSectionName", "getAccessSections", "externalIdsReader", "getFileHistoryLinks", "star", "setGeneralPreferences", "thenComparing", "checkStatePermitsRead", "refPermission", "accountId", "deleteMultipleRefs", "setEditPreferences", "validateMy", "getVirtualId", "addExternalId", "projectWatches", "unstar", "updateProjectWatches", "enableAclLogging", "preferred", "newSshKeyInfo", "createDeleteKeyEmail", "deleteKey", "getRef", "usesDefaultCapabilities", "toMap", "getChangeAvatarUrl", "identity", "seq", "checkAny", "setDiffPreferences", "preferredEmail", "getSshKey", "getLabelType", "setGroupName", "setDisplayName", "validateNewGroup", "createOptions", "displayName", "deleteProjectWatches", "addOptions", "controlFor", "canSeeMember", "getKnownGroups", "isVisible", "sortedCopy", "setMessageId", "hasActive", "more", "getEmail", "getContributorAgreements", "getAction", "defaultQuery", "getUUID", "registeredOn", "createForEmail", "isAllowed", "setUserProvidedLimit", "emptyList", "fromAccountUpdate", "allOf", "containsAnyOf", "getMemberDescription", "createOutgoingEmail", "getConfig", "setStart", "unlink", "fillAccountInfo", "link", "atSevere", "getEffectiveGroups", "getAccepted", "entities", "andActive", "setRegisteredOn", "isDisabled", "send", "query", "createRegisterNewEmail", "atWarning", "getAllProjects", "setFullName", "evict", "checkUsesDefaultCapabilities", "addKey", "insert", "accountBelongsToRealm", "getUrl", "createUsername", "getEmailAddresses", "setStatus", "allowsEdit", "sorted", "setPreferredEmail", "addExternalIds", "deactivate", "nextAccountId", "getDuplicateKey", "update", "PUBLIC", "isValid", "createEmail", "globalOrPluginPermissionName", "redirect", "isValidUsername", "getLastLoginExternalIdKey", "byAccount", "isIdentityTrustable", "key", "isScheme", "email", "singleton", "canAddGroup", "isInternalGroup", "getUserName", "deleteDraftComments", "nameKey", "isDeleteEnabled", "fromUrl", "hasSameAccountId", "clearReviewedBy", "validateFor", "findAccount", "setOwnerGroupUUID", "addMembers", "canDeleteGroup", "canRemoveGroup", "getOwnerGroupUUID", "canAddMember", "createAddUserEvent", "createRemoveUserEvent", "getSubgroupsAudit", "sort", "addedOn", "getMembersAudit", "updateGroup", "reversed", "isActive", "getCustomKeyedValues", "createAddGroupEvent", "addedBy", "removedBy", "includeUuid", "memberId", "isVisibleToAll", "createRemoveGroupEvent", "isOwner", "getDirectMembers", "encode", "removedOn", "comparing", "setVisibleToAll", "canRemoveMember", "revision", "asInternalGroup", "commit", "getDirectSubgroups", "asUnique", "suggestReviewers", "getGroup", "init", "getGroupUUID", "getControl", "changes", "account", "getMember", "toImmutableList", "getDifference", "getProjectState", "getNameKey", "getUpdatedHashtags", "countRebase", "getDescription", "entries", "isOptionEnabled", "spliterator", "getCommit", "getChangeMessageId", "createNewChangeMessage", "getPluginName", "getChangeMessageIndex", "groups", "setValidationOptions", "label", "toArray", "setGroups", "getEmailAddress", "flush", "resolveCommit", "canRead", "setWorkInProgress", "getConflicts", "setCheckAddPatchSetPermission", "forEach", "getBranchOrderSection", "getCommitterIdent", "ifPresent", "getMoreStable", "orElseGet", "getRelated", "byPatchSetUser", "newCommitterIdent", "mergeStrategyName", "isCurrent", "getRevertOf", "getReviewer", "createAttentionSetInfo", "createChecked", "addChangeRevertedNotificationOps", "additionsOnly", "getAttentionSet", "substring", "getOwner", "rebaseEdit", "getLabel", "toImmutableSet", "findFirst", "checkState", "max", "suppressEvent", "containsKey", "includeAuthorInfo", "contains", "natural", "generalPreferences", "newHashMap", "getCreatedOn", "getLabelTypes", "fillOne", "absentUser", "getPatchSets", "validateInput", "isServiceUser", "getReviewers", "createRevertChange", "listComments", "currentPatchSetId", "checkComments", "resolveAccount", "clearReviewed", "state", "suppressEmail", "getReviewersByEmail", "change", "increment", "all", "newArrayList", "markReviewed", "run", "getBytes", "finish", "getChangeMessage", "setTime", "putNextEntry", "index", "write", "getCommitInfo", "getFormattedDiff", "downloadContent", "asString", "parseBody", "getCommitTime", "closeEntry", "getRebasedCommit", "copyOf", "length", "runAs", "getBaseCommit", "applyPatch", "anyMatch", "checkCanRebaseOnBehalfOf", "getRebaseOp", "newRevWalk", "verifyRebasePreconditions", "getResultPatch", "getTreeId", "countRebaseChain", "getCurrentCommittedRevCommit", "getParentCount", "validateChangeCanBeAppended", "exactRef", "entrySet", "branch", "getValue", "currentPatchSet", "getErrors", "lookupTree", "uploader", "data", "getParent", "getUpdatedCustomKeyedValues", "getFilesWithGitConflicts", "parseOrFindBaseRevision", "createPatchSetWithSuppliedTree", "isWorkInProgress", "test", "isNew", "getChangeData", "evaluateRequirement", "toInfo", "applyInfo", "toCommitModification", "disableGzip", "getTree", "lookupFromGitOrMergeInMemory", "getDraftsByChangeAndDraftAuthor", "close", "combineWithModifiedPatchSetTree", "publish", "setFormat", "fullName", "description", "setOutputStream", "setAttachmentName", "setTree", "getEdit", "filesWithGitConflicts", "getObjectId", "getParents", "isIdentifiedUser", "delete", "getAccountId", "findRef", "getMimeType", "created", "cherryPick", "commitMessage", "setFillPatchSet", "isMerged", "trim", "robotCommentsByChange", "bySubmissionId", "newRobotCommentFormatter", "getSubject", "getReviewerByEmail", "getReviewerUser", "validateDraftComment", "isByEmail", "getRevisionResource", "getRobotComment", "status", "notes", "getPublishedHumanComment", "getSubmissionId", "setFillAccounts", "getTopic", "groupingBy", "linkCommentsToChangeMessages", "flatMap", "values", "previewAllFiles", "getAccount", "getFixReplacements", "setRepository", "getPatchKey", "getZoneId", "renameFile", "caching", "matches", "fileName", "emptySet", "getContent", "withStatusCode", "number", "checkStatePermitsWrite", "getPath", "getChangeResource", "firstNonNull", "fill", "asIdentifiedUser", "isCacheable", "refName", "getChangeId", "getChangeEdit", "isPresent", "getDiffLinks", "byChange", "toList", "modifyFile", "getEditCommit", "setNotify", "setDescription", "prepare", "getRevision", "nextPatchSetId", "modifyIdentity", "setMessage", "toByteArray", "toEditInfo", "invalidEmail", "emptyToNull", "getBasePatchSet", "hasEmailAddress", "getOldName", "createEdit", "getFileInfoB", "user", "newReader", "mergeChange", "is", "charAt", "newObjectInserter", "modifyMessage", "orElseThrow", "setContentType", "getInputStream", "restoreFile", "base64", "getFileInfoA", "call", "patchSetId", "gatherResults", "createChangeMessageInfoWithReplacedTemplates", "deleteFile", "toString", "getFullMessage", "parse", "fromDecoded", "ensureChangeIdIsCorrect", "getRefName", "getKey", "getDest", "current", "getFileInfoMap", "group", "nullToEmpty", "ref", "checkAndSanitizeCommitMessage", "PRIVATE", "commitId", "isNullOrEmpty", "getHashtags", "decode", "matcher", "load", "illegalState", "getNewName", "now", "getProject", "publishedHumanCommentsByChange", "getComment", "abandon", "atFine", "portComments", "canDeletePrivate", "withMustRevalidate", "none", "permissions", "withCause", "isUserOwner", "getNotes", "newHumanCommentFormatter", "create", "value", "getPatchSet", "project", "open", "noOptions", "checkPatchSetNotLocked", "resolve", "addOp", "fix", "execute", "getId", "getUser", "getChange", "log", "isPrivate", "builder", "newTimer", "id", "format", "equals", "changeId", "isEmpty", "ok", "add", "getMetric", "getMetricNames", "put", "endsWith", "size", "check", "getAnnotations", "getName", "openRepository", "getSortedRefs", "of", "setRetainBody", "getBranchFilter", "map", "apply", "filter", "newArrayListWithCapacity", "getRefsByPrefix", "getIncludedIn", "orElse", "putAll", "getMergedInto", "parseCommit", "getRefDatabase", "stream", "addAll", "name", "build", "runEach", "fromString", "arrayListValues", "getTagFilter", "toSet", "get", "getMessage", "hashKeys", "naturalOrder", "ofNullable", "toImmutableSortedSet", "asMap", "collect" ]
+    }, {
+      "name" : "forReceiveCommits",
+      "visibility" : "public",
+      "methodCalls" : [ "hasNext", "branch", "skippablePluginValidator", "illegalState", "project", "get", "iterator", "add", "orElseThrow", "next", "ref", "builder", "build" ]
+    }, {
+      "name" : "forMergedCommits",
+      "visibility" : "public",
+      "methodCalls" : [ "builder", "add", "ref", "illegalState", "build", "get", "project", "branch", "orElseThrow" ]
+    }, {
+      "name" : "forGerritCommits",
+      "visibility" : "public",
+      "methodCalls" : [ "orElseThrow", "illegalState", "add", "branch", "build", "hasNext", "builder", "project", "get", "ref", "next", "iterator" ]
+    }, {
+      "name" : "createWithServerIdent",
+      "visibility" : "public",
+      "methodCalls" : [ "empty", "get" ]
+    }, {
+      "name" : "forUser",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createNonPrivate",
+      "visibility" : "public",
+      "methodCalls" : [ "branch", "create", "project" ]
+    }, {
+      "name" : "noOptions",
+      "visibility" : "public",
+      "methodCalls" : [ "create", "of" ]
+    }, {
+      "name" : "create",
+      "visibility" : "public",
+      "methodCalls" : [ "stream", "setGroup", "getFailingAtoms", "status", "getAtomExplanations", "fullName", "getPassingAtoms", "typeAdapter", "addAll", "setAdvertiseRefsHook", "availableTokens", "ifPresent", "canUpload", "getPackSize", "isAllUsers", "user", "throwOnError", "affectsSize", "newRefLogIdent", "requestTokens", "check", "format", "setContext", "setRefLogIdent", "getMaxObjectSizeLimit", "setMaxObjectSizeLimit", "setPostReceiveHook", "createEmail", "nextAccountId", "setDisplayName", "arePasswordsAllowed", "addUserToGroups", "insert", "addExternalIds", "setPreferredEmail", "createUsername", "setFullName", "pageSizeMultiplier", "setStore", "setExpectedUser", "elapsed", "getCause", "setLeaf", "findAny", "getCausalChain", "invoke", "firstNonNull", "subList", "zeroId", "asList", "runEach", "getTimeout", "setTimeout", "getHeader", "setPreUploadHook", "getPackConfig", "newChain", "newArrayList", "init", "wrap", "isIdentifiedUser", "setAttribute", "setPostUploadHook", "getAttribute", "setPackConfig", "getReceivePack", "asIdentifiedUser", "setExtraParameters", "split", "compute", "keySet", "parseTree", "forPath", "setSshPublicKey", "setValid", "isCaseInsensitive", "setSeq", "setAccountId", "emptyToNull", "all", "isPresent", "filter", "emptyList", "getProjectName", "newChange", "test", "error", "forEach", "atWarning", "scan", "put", "load", "checkArgument", "getPatchHeader", "getDiffLinks", "isBinary", "orElse", "hasIntralineFailure", "hasIntralineTimeout", "getEditWebLinks", "atFine", "getChangeType", "renameScore", "aTree", "getTreeId", "bTree", "setFallbackAlgorithm", "startsWith", "endsWith", "setCloseRepository", "setCommitter", "getCommitBuilder", "setAuthor", "getRefDatabase", "permissionName", "getPermission", "describePermission", "toUpperCase", "replaceAll", "groups", "createChecked", "getMessage", "nameKey", "fromString", "value", "getClass", "checkAny", "currentUser", "requireNonNull", "fromAnnotation", "getNameKey", "apply", "fromDecoded", "asRestApiException", "getUser", "orElseThrow", "illegalState", "set", "space", "setSpace", "setDisk", "averageLoadPenalty", "requestCount", "hitCount", "stats", "setMem", "diskStats", "hashString", "murmur3_128", "fromShort", "ofNullable", "now", "id", "changeId", "notes", "maxTerms", "size", "ref", "none", "currentFilePaths", "not", "getDest", "branch", "changeNumber", "path", "and", "add", "project", "toList", "name", "toLowerCase", "collect", "or", "map", "checkNameInternal", "getThreadMXBean", "log", "toOpenSshPublicKey", "atSevere", "parse", "withCause", "create", "checkState", "isEmpty", "copy", "immutableEnumSet", "empty", "of", "createRepository", "openRepository", "open", "updateRef", "get", "link", "blockedUsersGroup", "builder", "copyOf", "getUUID", "administratorsGroup", "build", "serviceUsersGroup", "setAdministrators", "setMetaRevision", "max", "getId", "getChange", "getChangeId", "getProject", "natural", "equals", "min" ]
+    } ],
+    "imports" : [ "org.apache.sshd.common.session.helpers.AbstractSession", "java.util.jar.Manifest", "java.net.URL", "java.io.InputStream", "javax.tools.JavaFileObject", "java.util.jar.JarEntry", "java.util.jar.Attributes", "javax.tools.JavaCompiler", "com.googlecode.prolog_cafe.compiler.Compiler", "java.nio.file.Files", "javax.tools.DiagnosticCollector", "java.net.URLClassLoader", "javax.tools.Diagnostic", "java.io.FileNotFoundException", "javax.tools.StandardJavaFileManager", "javax.tools.ToolProvider", "com.google.gerrit.server.project.ProjectConfig.RULES_PL_FILE", "java.util.jar.JarOutputStream", "com.google.gerrit.server.account.AccountSshKey", "com.google.gerrit.server.account.VersionedAuthorizedKeys", "com.google.gerrit.pgm.init.api.InitFlags", "com.google.gerrit.pgm.init.api.VersionedMetaDataOnInit", "com.google.gerrit.pgm.init.api.AllUsersNameOnInitProvider", "com.google.gerrit.server.account.AuthorizedKeys", "com.google.gerrit.server.securestore.SecureStore", "java.nio.file.Path", "com.google.gerrit.server.config.SitePaths", "com.google.gerrit.server.project.RefPatternMatcher", "com.google.common.collect.Multimap", "com.google.gerrit.entities.RefNames.REFS_USERS", "com.google.gerrit.testing.TestActionRefUpdateContext.testRefAction", "org.eclipse.jgit.junit.TestRepository", "org.eclipse.jgit.revwalk.RevBlob", "org.eclipse.jgit.transport.RemoteRefUpdate.Status", "org.eclipse.jgit.transport.PushResult", "org.eclipse.jgit.api.TagCommand", "org.junit.Assert.assertEquals", "com.google.common.truth.Truth.assertWithMessage", "com.google.gerrit.common.UsedAt.Project", "org.eclipse.jgit.transport.RemoteRefUpdate", "com.google.gerrit.acceptance.GitUtil.pushHead", "com.google.gerrit.server.events.ReviewerDeletedEvent", "com.google.gerrit.server.events.UserScopedEventListener", "com.google.gerrit.server.events.Event", "com.google.gerrit.extensions.registration.RegistrationHandle", "com.google.gerrit.server.events.RefEvent", "com.google.common.truth.Truth.assertThat", "com.google.gerrit.server.events.ChangeMergedEvent", "com.google.gerrit.server.events.ChangeDeletedEvent", "com.google.gerrit.server.events.RefUpdatedEvent", "com.google.gerrit.server.data.RefUpdateAttribute", "com.google.gerrit.gpg.server.GpgKey", "com.google.gerrit.gpg.server.GpgKeys", "com.google.gerrit.gpg.server.DeleteGpgKey", "org.bouncycastle.openpgp.operator.bc.BcPGPContentVerifierBuilderProvider", "com.google.gerrit.server.query.account.InternalAccountQuery", "org.bouncycastle.openpgp.PGPException", "com.google.common.io.BaseEncoding", "com.google.gerrit.server.account.externalids.ExternalId.SCHEME_GPGKEY", "org.eclipse.jgit.transport.PushCertificateIdent", "org.bouncycastle.openpgp.PGPSignature", "org.bouncycastle.openpgp.PGPPublicKey", "com.google.gerrit.gpg.PublicKeyStore.keyIdToString", "com.google.gerrit.server.submit.MergeOp.CommitStatus", "com.google.gerrit.server.change.TestSubmitInput", "com.google.gerrit.server.git.MergeTip", "org.eclipse.jgit.revwalk.RevFlag", "com.google.gerrit.server.change.LabelNormalizer", "com.google.gerrit.server.change.RebaseChangeOp", "com.google.gerrit.server.patch.SubmitWithStickyApprovalDiff", "com.google.gerrit.server.config.CanonicalWebUrl", "com.google.gerrit.server.util.git.SubmoduleSectionParser", "com.google.gerrit.server.config.VerboseSuperprojectUpdate", "org.apache.commons.lang3.StringUtils", "org.eclipse.jgit.dircache.DirCacheEntry", "org.eclipse.jgit.dircache.DirCacheEditor", "org.eclipse.jgit.lib.FileMode", "org.eclipse.jgit.dircache.DirCacheEditor.DeletePath", "org.eclipse.jgit.dircache.DirCacheEditor.PathEdit", "org.eclipse.jgit.dircache.DirCacheBuilder", "com.google.gerrit.entities.BranchOrderSection", "java.util.ArrayDeque", "com.google.gerrit.server.account.CapabilityCollection", "com.google.gerrit.extensions.api.projects.CommentLinkInfo", "com.google.gerrit.entities.SubmoduleSubscription", "java.util.Deque", "com.google.gerrit.entities.PermissionRule.Action.ALLOW", "com.google.gerrit.entities.StoredCommentLinkInfo", "com.google.gerrit.entities.SubscribeSection", "com.google.common.collect.FluentIterable", "com.google.gerrit.server.update.context.RefUpdateContext.RefUpdateType.UPDATE_SUPERPROJECT", "com.google.gerrit.server.submit.MergeOpRepoManager.OpenRepo", "com.google.gerrit.server.rules.SubmitRule", "com.google.gerrit.server.rules.PrologSubmitRuleUtil", "com.google.gerrit.server.rules.DefaultSubmitRule", "com.google.gerrit.server.account.externalids.ExternalIdUpsertPreprocessor", "com.google.gerrit.server.account.externalids.ExternalIdsSameAccountChecker", "com.google.gerrit.metrics.DisabledMetricMaker", "com.google.gerrit.server.account.storage.notedb.AccountsUpdateNoteDbImpl", "com.google.gerrit.server.config.AuthConfig", "com.google.gerrit.git.ObjectIds", "org.eclipse.jgit.lib.BlobBasedConfig", "com.google.gerrit.server.index.account.AccountIndexer", "org.eclipse.jgit.notes.Note", "com.google.gerrit.entities.AccountsSection", "com.google.gerrit.extensions.common.AccountVisibility", "com.google.gerrit.server.account.externalids.ExternalId.SCHEME_USERNAME", "com.google.gerrit.server.account.externalids.DuplicateExternalIdKeyException", "com.google.inject.AbstractModule", "com.google.gerrit.server.account.StoredPreferences", "com.google.gerrit.server.update.RetryableAction.Action", "com.google.gerrit.server.account.externalids.ExternalIdsSameAccountChecker.checkSameAccount", "com.google.gerrit.server.account.AccountsUpdate", "com.google.gerrit.server.account.AccountDelta", "com.google.gerrit.server.account.externalids.storage.notedb.ExternalIdNotes", "javax.inject.Singleton", "com.google.gerrit.server.account.ProjectWatches", "com.google.gerrit.server.account.externalids.storage.notedb.ExternalIdsNoteDbImpl", "com.google.gerrit.server.config.VersionedDefaultPreferences", "com.google.gerrit.server.config.CachedPreferences", "com.google.gerrit.server.update.context.RefUpdateContext.RefUpdateType.ACCOUNTS_UPDATE", "com.google.gerrit.server.account.AccountConfig", "com.google.gerrit.server.index.account.ReindexAccountsAfterRefUpdate", "com.google.gerrit.server.account.externalids.ExternalId.SCHEME_GERRIT", "com.google.gerrit.server.account.externalids.ExternalId.SCHEME_GOOGLE_OAUTH", "com.google.gerrit.server.account.externalids.ExternalIdKeyFactory", "com.google.gerrit.server.account.externalids.ExternalId.SCHEME_MAILTO", "com.google.gerrit.entities.GroupDescription", "com.google.gerrit.server.account.externalids.ExternalId.SCHEME_EXTERNAL", "com.google.gerrit.server.git.QueueProvider", "com.google.gerrit.index.query.QueryProcessor", "com.google.gerrit.exceptions.InvalidSshKeyException", "com.google.gerrit.server.ssh.SshKeyCreator", "com.google.gerrit.server.git.meta.VersionedMetaData", "com.google.gerrit.server.notedb.NoteDbUtil.sanitizeFooter", "com.google.gerrit.server.notedb.ChangeNoteFooters.FOOTER_BRANCH", "com.google.gerrit.server.notedb.ChangeNoteFooters.FOOTER_CURRENT", "com.google.gerrit.server.notedb.ChangeNoteFooters.FOOTER_CONTAINS_CONFLICTS", "com.google.common.collect.TreeBasedTable", "com.google.gerrit.server.notedb.ChangeNoteFooters.FOOTER_LABEL", "com.google.gerrit.server.notedb.ChangeNoteFooters.FOOTER_STATUS", "com.google.gerrit.server.notedb.ChangeNoteFooters.FOOTER_COPIED_LABEL", "com.google.gerrit.server.notedb.ChangeNoteFooters.FOOTER_CUSTOM_KEYED_VALUE", "com.google.gerrit.server.notedb.ChangeNoteFooters.FOOTER_COMMIT", "com.google.gerrit.server.notedb.ChangeNoteFooters.FOOTER_THEIRS", "com.google.gerrit.server.notedb.ChangeNoteFooters.FOOTER_PATCH_SET_DESCRIPTION", "com.google.gerrit.server.notedb.ChangeNoteFooters.FOOTER_HASHTAGS", "com.google.gerrit.server.notedb.ChangeNoteFooters.FOOTER_REAL_USER", "com.google.gerrit.server.notedb.ChangeNoteFooters.FOOTER_REVERT_OF", "com.google.gerrit.server.notedb.ChangeNoteFooters.FOOTER_CHANGE_ID", "com.google.gerrit.server.notedb.ChangeNoteFooters.FOOTER_CHERRY_PICK_OF", "java.util.Comparator.naturalOrder", "com.google.gerrit.server.notedb.ChangeNoteFooters.FOOTER_GROUPS", "com.google.gerrit.server.notedb.ChangeNoteFooters.FOOTER_TAG", "com.google.gerrit.server.notedb.ChangeNoteFooters.FOOTER_OURS", "com.google.gerrit.server.notedb.ChangeNoteFooters.FOOTER_SUBMITTED_WITH", "com.google.gerrit.server.notedb.ChangeNoteFooters.FOOTER_SUBJECT", "com.google.gerrit.server.notedb.ChangeNoteFooters.FOOTER_WORK_IN_PROGRESS", "com.google.gerrit.server.notedb.ChangeNoteFooters.FOOTER_PATCH_SET", "com.google.gerrit.server.notedb.ChangeNoteFooters.FOOTER_TOPIC", "com.google.gerrit.server.approval.PatchSetApprovalUuidGenerator", "com.google.gerrit.server.notedb.ChangeNoteFooters.FOOTER_ATTENTION", "com.google.gerrit.server.notedb.ChangeNoteFooters.FOOTER_SUBMISSION_ID", "java.util.Comparator", "com.google.gerrit.server.notedb.ChangeNoteFooters.FOOTER_PRIVATE", "com.google.gerrit.server.config.AdministrateServerGroups", "com.google.gerrit.common.data.GlobalCapability", "com.google.gerrit.server.data.AccountAttribute", "com.google.gerrit.entities.RefNames.refsDraftComments", "com.google.gerrit.server.query.change.ChangeNumberVirtualIdAlgorithm", "com.google.gerrit.server.git.RefCache", "com.google.gerrit.entities.RefNames.changeMetaRef", "com.google.errorprone.annotations.FormatMethod", "com.google.gerrit.entities.PatchSetApprovals", "java.util.function.Predicate", "com.google.gerrit.server.project.OnStoreSubmitRequirementResultModifier", "com.google.common.primitives.Longs", "org.eclipse.jgit.lib.Constants.OBJ_BLOB", "com.google.gerrit.entities.RefNames.robotCommentsRef", "com.google.gerrit.server.logging.TraceContext.newTimer", "com.google.common.collect.ImmutableListMultimap.flatteningToImmutableListMultimap", "com.google.common.base.Preconditions.checkNotNull", "com.google.gerrit.server.DeleteZombieComments", "org.eclipse.jgit.lib.Constants.EMPTY_TREE_ID", "com.google.gerrit.server.ChangeDraftUpdateExecutor", "com.google.gerrit.server.ChangeDraftUpdate", "com.google.gerrit.server.cancellation.RequestStateContext.NonCancellableOperationContext", "com.google.gerrit.entities.RefNames.REFS_DRAFT_COMMENTS", "com.google.gerrit.server.git.validators.OnSubmitValidators", "com.google.inject.Module", "com.google.gerrit.server.notedb.NoteDbUpdateManager", "com.google.gerrit.common.UsedAt.Project.GOOGLE", "com.google.gerrit.extensions.config.FactoryModule", "java.time.ZoneId", "com.google.gerrit.server.AccessPath", "com.google.gerrit.server.extensions.events.AttentionSetObserver", "java.util.TreeMap", "com.google.common.collect.ImmutableMultimap", "com.google.gerrit.server.RefLogIdentityProvider", "com.google.common.collect.ArrayListMultimap", "com.google.gerrit.entities.ProjectChangeKey", "com.vladsch.flexmark.util.data.DataHolder", "com.vladsch.flexmark.profile.pegdown.Extensions", "com.vladsch.flexmark.html.renderer.NodeRendererContext", "com.vladsch.flexmark.html.HtmlWriter", "com.vladsch.flexmark.html.renderer.DelegatingNodeRendererFactory", "com.vladsch.flexmark.ext.anchorlink.internal.AnchorLinkNodeRenderer", "com.vladsch.flexmark.ast.Heading", "com.vladsch.flexmark.util.ast.Node", "com.vladsch.flexmark.util.data.MutableDataHolder", "com.vladsch.flexmark.ext.anchorlink.AnchorLink", "com.vladsch.flexmark.html.HtmlRenderer.HtmlRendererExtension", "com.vladsch.flexmark.html.renderer.NodeRenderer", "com.vladsch.flexmark.html.renderer.NodeRenderingHandler", "com.vladsch.flexmark.html.HtmlRenderer", "com.vladsch.flexmark.profile.pegdown.PegdownOptionsAdapter", "com.google.gerrit.server.patch.gitdiff.GitModifiedFilesCache", "com.google.gerrit.server.patch.gitdiff.GitModifiedFilesCacheKey", "com.google.gerrit.jgit.diff.ReplaceEdit", "com.google.gerrit.server.patch.gitdiff.GitModifiedFilesLoader", "org.eclipse.jgit.diff.MyersDiff", "com.google.gerrit.metrics.Counter3", "com.google.gerrit.server.git.BanCommit", "com.google.gerrit.server.submit.MergeOp", "com.google.gerrit.server.git.receive.ReceiveConstants.COMMAND_REJECTION_MESSAGE_FOOTER", "com.google.gerrit.server.project.CreateRefControl", "com.google.gerrit.server.git.validators.RefOperationValidators", "com.google.gerrit.server.git.receive.ReceiveConstants.ONLY_USERS_WITH_TOGGLE_WIP_STATE_PERM_CAN_MODIFY_WIP", "com.google.gerrit.server.git.validators.RefOperationValidationException", "com.google.gerrit.server.experiments.ExperimentFeaturesConstants", "com.google.gerrit.server.restapi.change.ReplyAttentionSetUpdates", "com.google.gerrit.server.permissions.PermissionDeniedException", "com.google.gerrit.server.RequestInfo", "com.google.gerrit.server.update.RepoOnlyOp", "org.eclipse.jgit.revwalk.filter.RevFilter", "com.google.gerrit.server.cancellation.RequestStateContext", "com.google.gerrit.server.git.validators.CommitValidators.NEW_PATCHSET_PATTERN", "java.net.URLDecoder", "com.google.gerrit.server.ExceptionHook", "com.google.gerrit.server.git.ReceivePackInitializer", "com.google.gerrit.server.change.SetHashtagsOp", "com.google.gerrit.server.logging.RequestId", "com.google.gerrit.server.update.SuperprojectUpdateOnSubmission", "com.google.gerrit.server.update.context.RefUpdateContext.RefUpdateType.CHANGE_MODIFICATION", "org.eclipse.jgit.transport.ReceiveCommand.Result.OK", "com.google.gerrit.server.logging.PerformanceLogContext", "org.eclipse.jgit.transport.ReceiveCommand.Result.REJECTED_MISSING_OBJECT", "com.google.gerrit.server.InvalidDeadlineException", "com.google.gerrit.server.DeadlineChecker", "com.google.gerrit.server.update.BatchUpdates", "com.google.gerrit.server.change.HashtagsUtil.cleanupHashtag", "java.io.UnsupportedEncodingException", "java.util.stream.StreamSupport", "com.google.common.collect.HashBiMap", "java.util.Queue", "com.google.gerrit.server.update.context.RefUpdateContext.RefUpdateType", "com.google.gerrit.server.change.SetTopicOp", "javax.servlet.http.HttpServletResponse.SC_INTERNAL_SERVER_ERROR", "com.google.gerrit.server.account.AccountResolver.UnresolvableAccountException", "com.google.gerrit.server.index.change.ChangeIndexer", "com.google.common.collect.LinkedListMultimap", "com.google.gerrit.server.logging.PerformanceLogger", "com.google.gerrit.server.git.receive.ReceiveConstants.PUSH_OPTION_SKIP_VALIDATION", "com.google.gerrit.server.git.ChangeReportFormatter", "org.kohsuke.args4j.Option", "com.google.common.collect.ImmutableListMultimap.toImmutableListMultimap", "com.google.gerrit.server.git.validators.CommentCountValidator", "com.google.gerrit.server.update.BatchUpdate", "com.google.gerrit.extensions.api.changes.RecipientType", "com.google.gerrit.server.git.receive.ReceiveConstants.SAME_CHANGE_ID_IN_MULTIPLE_CHANGES", "com.google.gerrit.server.RequestListener", "com.google.gerrit.entities.RefNames.isConfigRef", "com.google.gerrit.server.experiments.ExperimentFeatures", "com.google.gerrit.server.git.validators.CommentSizeValidator", "com.google.gerrit.server.submit.MergeOpRepoManager", "com.google.gerrit.entities.RefNames.isRefsUsersSelf", "com.google.gerrit.server.change.AttentionSetUnchangedOp", "com.google.gerrit.server.change.SetPrivateOp", "com.google.gerrit.server.update.SubmissionListener", "com.google.gerrit.server.git.validators.ValidationMessage", "org.eclipse.jgit.revwalk.RevSort", "org.eclipse.jgit.revwalk.RevObject", "com.google.gerrit.extensions.api.changes.NotifyInfo", "com.google.gerrit.server.Sequences", "com.google.gerrit.server.AclInfoController", "com.google.gerrit.server.git.MultiProgressMonitor.UNKNOWN", "org.eclipse.jgit.transport.ReceiveCommand.Result.NOT_ATTEMPTED", "com.google.gerrit.extensions.validators.CommentForValidation.CommentSource", "com.google.gerrit.server.CreateGroupPermissionSyncer", "com.google.gerrit.server.PluginPushOption", "java.util.logging.Level", "com.google.gerrit.extensions.validators.CommentForValidation.CommentType", "com.google.gerrit.server.update.SubmissionExecutor", "com.google.common.collect.BiMap", "com.google.gerrit.server.change.ChangeInserter", "java.util.concurrent.ConcurrentLinkedQueue", "com.google.gerrit.server.edit.ChangeEdit", "com.google.gerrit.server.patch.PatchScriptBuilder.IntraLineDiffCalculatorResult", "com.google.gerrit.server.edit.ChangeEditUtil", "com.google.gerrit.server.patch.gitfilediff.GitFileDiffCache", "com.google.gerrit.server.patch.gitfilediff.GitFileDiff", "com.google.gerrit.server.patch.gitfilediff.GitFileDiffCacheKey", "com.google.gerrit.server.patch.DiffUtil", "org.eclipse.jgit.lib.ObjectInserter", "com.google.gerrit.entities.RefNames.REFS_CHANGES", "com.google.gerrit.server.patch.gitdiff.ModifiedFile", "com.google.gerrit.server.query.approval.ApprovalQueryBuilder", "java.net.MalformedURLException", "com.google.gerrit.extensions.registration.DynamicItem", "com.google.gerrit.server.config.UrlFormatter", "java.net.URI", "com.google.gerrit.server.git.ValidationError", "com.google.gerrit.metrics.Counter2", "com.google.gerrit.entities.Change.CHANGE_ID_PATTERN", "com.google.gerrit.common.FooterConstants", "com.google.gerrit.server.plugincontext.PluginSetEntryContext", "com.google.gerrit.server.git.validators.CommitValidationInfo.NO_METADATA", "org.eclipse.jgit.revwalk.FooterKey", "org.eclipse.jgit.util.SystemReader", "com.google.gerrit.server.project.LabelConfigValidator", "java.util.concurrent.TimeUnit.MINUTES", "java.util.concurrent.CancellationException", "com.google.gerrit.server.cancellation.RequestStateProvider", "java.util.concurrent.TimeUnit.MILLISECONDS", "com.google.common.base.Ticker", "com.google.gerrit.server.DeadlineChecker.getTimeoutFormatter", "java.util.concurrent.CopyOnWriteArrayList", "com.google.gerrit.server.CancellationMetrics", "com.google.gerrit.common.data.GarbageCollectionResult", "java.util.Properties", "org.eclipse.jgit.lib.TextProgressMonitor", "com.google.gerrit.extensions.events.GarbageCollectorListener", "org.eclipse.jgit.storage.pack.PackConfig", "org.eclipse.jgit.lib.NullProgressMonitor", "org.eclipse.jgit.api.Git", "com.google.gerrit.common.data.GarbageCollectionResult.GcError", "org.eclipse.jgit.lib.ConfigConstants", "com.google.gerrit.server.extensions.events.AbstractNoNotifyEvent", "org.eclipse.jgit.api.GarbageCollectCommand", "com.google.gerrit.server.config.GcConfig", "java.io.PrintWriter", "com.google.inject.PrivateModule", "com.google.gerrit.server.quota.QuotaException", "com.google.gerrit.server.logging.TraceContext.TraceIdConsumer", "java.util.concurrent.TimeoutException", "com.google.gerrit.server.permissions.ProjectPermission", "com.google.gerrit.server.mail.MailUtil.getRecipientsFromReviewers", "com.google.gerrit.server.git.PermissionAwareRepositoryManager", "com.google.inject.Provides", "com.google.gerrit.server.git.receive.ReceiveCommits.MagicBranchInput", "com.google.inject.util.Providers", "org.eclipse.jgit.transport.ReceiveCommand.Result", "com.google.gerrit.server.change.ReviewerModifier", "com.google.gerrit.server.git.receive.RejectionReason.MetricBucket", "com.google.gerrit.metrics.Field", "com.google.gerrit.metrics.Histogram1", "com.google.gerrit.server.PublishCommentsOp", "java.util.concurrent.TimeUnit.NANOSECONDS", "java.util.concurrent.ExecutionException", "com.google.gerrit.server.change.EmailNewPatchSet", "com.google.gerrit.server.config.ReceiveCommitsExecutor", "com.google.gerrit.server.RequestCounter", "com.google.gerrit.metrics.Timer1", "com.google.gerrit.server.account.AccountResolver", "com.google.gerrit.server.git.MergedByPushOp", "com.google.gerrit.server.events.RefReceivedEvent", "java.util.concurrent.FutureTask", "com.google.gerrit.server.git.TransferConfig", "java.io.OutputStream", "org.eclipse.jgit.lib.Constants.R_HEADS", "com.google.gerrit.extensions.api.projects.ProjectConfigEntryType", "com.google.gerrit.server.config.ProjectConfigEntry", "com.google.gerrit.server.git.ProjectRunnable", "com.google.gerrit.server.config.AnonymousCowardName", "com.google.gerrit.server.cache.PerThreadCache", "com.google.gerrit.server.change.ReviewerOp", "com.google.gerrit.common.data.Capable", "com.google.inject.assistedinject.FactoryModuleBuilder", "com.google.gerrit.server.group.db.GroupConfig", "com.google.gerrit.server.query.change.InternalChangeQuery", "com.google.gerrit.server.project.ContributorAgreementsChecker", "com.google.gerrit.server.change.ChangeKindCache", "org.eclipse.jgit.transport.PreReceiveHook", "com.google.gerrit.server.mail.MailUtil.MailRecipients", "com.google.gerrit.server.git.UsersSelfAdvertiseRefsHook", "com.google.gerrit.server.mail.MailUtil.getRecipientsFromFooters", "com.google.gerrit.server.config.PluginConfig", "com.google.inject.name.Named", "org.eclipse.jgit.transport.UploadPack", "org.eclipse.jgit.transport.ReceiveCommand.Result.REJECTED_OTHER_REASON", "org.eclipse.jgit.transport.ServiceMayNotContinueException", "org.eclipse.jgit.notes.NoteMap", "com.google.gerrit.git.ObjectIds.abbreviateName", "org.eclipse.jgit.transport.PreUploadHook", "com.google.gerrit.server.git.validators.CommitValidationMessage", "com.google.gerrit.server.extensions.events.ChangeMerged", "com.google.gerrit.entities.LabelId", "com.google.gerrit.server.mail.EmailFactories.CHANGE_MERGED", "com.google.gerrit.server.submit.IntegrationConflictException", "com.google.gerrit.server.git.validators.OnSubmitValidationListener.Arguments", "com.google.gerrit.server.update.ChainedReceiveCommands", "com.google.gerrit.server.restapi.project.DeleteLabel", "com.google.gerrit.extensions.common.InputWithCommitMessage", "com.google.gerrit.server.restapi.project.SetLabel", "com.google.gerrit.server.restapi.project.GetLabel", "com.google.gerrit.extensions.common.LabelDefinitionInput", "com.google.gerrit.server.restapi.project.CreateLabel", "com.google.gerrit.server.restapi.project.LabelsCollection", "com.google.gerrit.server.quota.QuotaGroupDefinitions.REPOSITORY_SIZE_GROUP", "com.google.gerrit.server.project.LabelResource", "com.google.gerrit.server.quota.QuotaResponse", "org.eclipse.jgit.transport.PostReceiveHook", "org.eclipse.jgit.transport.ReceivePack", "com.google.gerrit.server.quota.QuotaBackend", "com.google.gerrit.server.restapi.account.GetEmails", "com.google.gerrit.server.restapi.change.Check", "com.google.gerrit.server.restapi.change.GetDraftComment", "com.google.gerrit.server.restapi.change.AddToAttentionSet", "com.google.gerrit.extensions.api.changes.ReviewerInput", "com.google.gerrit.extensions.client.EditPreferencesInfo", "com.google.gerrit.server.restapi.account.DeleteExternalIds", "com.google.gerrit.server.restapi.account.PutStatus", "com.google.gerrit.server.restapi.account.GetWatchedProjects", "com.google.gerrit.server.restapi.change.GetHashtags", "com.google.gerrit.server.restapi.account.DeleteSshKey", "com.google.gerrit.extensions.api.accounts.GpgKeyApi", "com.google.gerrit.server.restapi.account.SetEditPreferences", "com.google.gerrit.common.RawInputUtil", "com.google.gerrit.extensions.api.accounts.EmailInput", "com.google.gerrit.server.restapi.change.GetChange", "com.google.gerrit.server.restapi.account.PutActive", "com.google.gerrit.extensions.common.AgreementInfo", "com.google.gerrit.server.restapi.change.SubmittedTogether", "com.google.gerrit.server.restapi.change.CheckSubmitRequirement", "com.google.gerrit.server.restapi.account.PutHttpPassword", "com.google.gerrit.extensions.common.MergePatchSetInput", "com.google.gerrit.server.restapi.change.SetWorkInProgress", "com.google.gerrit.server.restapi.change.DeleteDraftComment", "com.google.gerrit.extensions.api.changes.ApplyPatchPatchSetInput", "com.google.gerrit.server.restapi.change.PutMessage", "org.kohsuke.args4j.CmdLineException", "com.google.gerrit.server.restapi.change.PostReviewers", "com.google.gerrit.extensions.api.changes.MoveInput", "com.google.gerrit.server.restapi.account.GetAvatar", "com.google.gerrit.server.restapi.account.AddSshKey", "com.google.gerrit.server.restapi.change.GetCustomKeyedValues", "com.google.gerrit.server.restapi.change.GetMessage", "com.google.gerrit.extensions.common.RebaseChainInfo", "com.google.gerrit.server.restapi.account.GetEditPreferences", "com.google.gerrit.extensions.api.changes.ReviewerInfo", "com.google.gerrit.extensions.api.changes.AbandonInput", "com.google.gerrit.server.restapi.account.PutDisplayName", "com.google.gerrit.server.restapi.change.DeleteChange", "com.google.gerrit.extensions.common.CommitMessageInfo", "com.google.gerrit.server.restapi.change.RebaseChain", "com.google.gerrit.server.restapi.change.Reviewers", "com.google.gerrit.server.restapi.change.SetReadyForReview", "com.google.gerrit.extensions.common.RevertSubmissionInfo", "javax.servlet.http.HttpServletResponse.SC_OK", "com.google.gerrit.extensions.api.changes.SubmittedTogetherOption", "com.google.gerrit.extensions.api.accounts.StatusInput", "com.google.gerrit.server.restapi.account.SshKeys", "com.google.gerrit.server.restapi.account.GetDetail", "com.google.gerrit.server.restapi.account.PostWatchedProjects", "com.google.gerrit.server.restapi.account.SetDiffPreferences", "com.google.gerrit.server.restapi.change.GetValidationOptions", "com.google.gerrit.extensions.api.accounts.AccountApi", "com.google.gerrit.extensions.common.SshKeyInfo", "com.google.gerrit.extensions.common.GpgKeyInfo", "com.google.gerrit.server.restapi.change.Restore", "com.google.gerrit.extensions.api.accounts.AgreementInput", "com.google.gerrit.server.restapi.account.DeleteActive", "com.google.gerrit.server.change.WorkInProgressOp", "com.google.gerrit.server.restapi.account.DeleteDraftComments", "com.google.gerrit.extensions.common.ChangeInfoDifference", "com.google.gerrit.server.restapi.change.PutTopic", "com.google.gerrit.server.restapi.change.ApplyPatch", "com.google.gerrit.server.restapi.change.Move", "com.google.gerrit.server.restapi.account.GetGroups", "com.google.gerrit.extensions.client.GeneralPreferencesInfo", "com.google.gerrit.server.restapi.account.DeleteAccount", "com.google.gerrit.server.restapi.change.PostPrivate", "com.google.gerrit.extensions.api.changes.ReviewerResult", "com.google.gerrit.extensions.api.accounts.DeletedDraftCommentInfo", "com.google.gerrit.server.restapi.account.GetAgreements", "com.google.gerrit.server.restapi.change.PutDraftComment", "com.google.gerrit.server.restapi.account.DeleteWatchedProjects", "com.google.gerrit.server.restapi.account.GetState", "com.google.gerrit.extensions.api.changes.RevertInput", "com.google.gerrit.server.restapi.account.SetPreferences", "com.google.gerrit.util.cli.CmdLineParser", "com.google.gerrit.server.restapi.account.GetSshKeys", "com.google.gerrit.server.restapi.change.ListChangeComments", "com.google.gerrit.server.restapi.account.Index", "com.google.gerrit.server.restapi.change.SuggestChangeReviewers", "com.google.inject.Injector", "com.google.gerrit.extensions.api.changes.RestoreInput", "com.google.gerrit.extensions.common.AccountStateInfo", "com.google.gerrit.server.restapi.account.GetPreferences", "com.google.gerrit.server.restapi.change.PostHashtags", "com.google.gerrit.server.restapi.change.CreateMergePatchSet", "com.google.gerrit.server.restapi.account.GetExternalIds", "com.google.gerrit.extensions.common.PureRevertInfo", "com.google.gerrit.extensions.api.accounts.DeleteDraftCommentsInput", "com.google.gerrit.server.restapi.change.GetPureRevert", "com.google.gerrit.server.restapi.change.ChangesCollection", "com.google.gerrit.server.restapi.account.GetDiffPreferences", "com.google.gerrit.server.restapi.account.PutAgreement", "com.google.gerrit.server.restapi.change.Abandon", "com.google.gerrit.server.restapi.account.StarredChanges", "com.google.gerrit.server.restapi.change.GetTopic", "com.google.gerrit.server.restapi.account.GetActive", "com.google.gerrit.extensions.common.HttpPasswordInput", "com.google.gerrit.extensions.common.CommitMessageInput", "com.google.gerrit.extensions.common.AccountDetailInfo", "com.google.gerrit.server.restapi.change.Index", "com.google.gerrit.server.change.DraftCommentResource", "com.google.gerrit.server.restapi.change.Revert", "com.google.gerrit.server.restapi.change.ListReviewers", "com.google.gerrit.extensions.api.changes.SubmittedTogetherInfo", "com.google.gerrit.server.restapi.change.GetMetaDiff", "com.google.gerrit.server.restapi.change.ListChangeRobotComments", "com.google.gerrit.extensions.common.AccountExternalIdInfo", "com.google.gerrit.extensions.api.accounts.SshKeyInput", "com.google.gerrit.extensions.api.accounts.DisplayNameInput", "com.google.gerrit.extensions.api.changes.TopicInput", "com.google.gerrit.server.restapi.change.RevertSubmission", "com.google.gerrit.server.restapi.account.PutName", "com.google.gerrit.server.restapi.change.ListChangeDrafts", "com.google.gerrit.server.restapi.change.DeletePrivate", "com.google.gerrit.extensions.client.ProjectWatchInfo", "com.google.gerrit.server.restapi.change.ChangeMessages", "com.google.gerrit.server.restapi.change.AttentionSet", "com.google.gerrit.server.restapi.change.Revisions", "com.google.gerrit.server.restapi.change.PostCustomKeyedValues", "com.google.gerrit.server.restapi.change.ChangeIncludedIn", "com.google.gerrit.server.restapi.account.CreateEmail", "com.google.gerrit.extensions.common.BatchLabelInput", "com.google.gerrit.server.restapi.change.DeleteComment", "com.google.gerrit.server.restapi.project.DeleteBranches", "com.google.gerrit.server.restapi.project.Check", "com.google.gerrit.server.restapi.project.CheckAccess", "com.google.gerrit.extensions.api.projects.CheckProjectInput", "com.google.gerrit.extensions.api.config.AccessCheckInput", "com.google.gerrit.server.restapi.project.ListDashboards", "com.google.gerrit.extensions.api.projects.ProjectApi", "com.google.gerrit.server.update.context.RefUpdateContext.RefUpdateType.HEAD_MODIFICATION", "com.google.gerrit.extensions.api.projects.DeleteTagsInput", "com.google.gerrit.extensions.api.projects.DeleteBranchesInput", "com.google.gerrit.extensions.api.config.AccessCheckInfo", "com.google.gerrit.server.restapi.project.CreateProject", "com.google.gerrit.server.restapi.project.GetDescription", "com.google.gerrit.server.restapi.project.PutConfig", "com.google.gerrit.extensions.api.projects.DescriptionInput", "com.google.gerrit.server.restapi.project.ListBranches", "com.google.gerrit.server.restapi.project.PostSubmitRequirementsReview", "com.google.gerrit.server.restapi.project.GetParent", "com.google.gerrit.extensions.api.projects.ConfigInput", "com.google.gerrit.extensions.api.projects.ConfigInfo", "com.google.gerrit.server.restapi.project.GetAccess", "com.google.gerrit.extensions.api.projects.ParentInput", "com.google.gerrit.extensions.common.LabelDefinitionInfo", "com.google.gerrit.server.restapi.project.PutDescription", "com.google.gerrit.server.restapi.project.PostLabels", "com.google.gerrit.extensions.api.access.ProjectAccessInput", "com.google.gerrit.server.update.context.RefUpdateContext.RefUpdateType.BRANCH_MODIFICATION", "com.google.gerrit.server.restapi.change.GetComment", "com.google.gerrit.server.restapi.project.ListSubmitRequirements", "com.google.gerrit.extensions.api.access.ProjectAccessInfo", "com.google.gerrit.server.restapi.project.ListLabels", "com.google.gerrit.server.restapi.project.IndexChanges", "com.google.gerrit.server.restapi.project.DashboardsCollection.DEFAULT_DASHBOARD_NAME", "com.google.gerrit.server.restapi.project.CommitsIncludedInRefs", "com.google.gerrit.server.restapi.project.PutConfigReview", "com.google.gerrit.extensions.api.projects.CheckProjectResultInfo", "com.google.gerrit.server.restapi.project.SetHead", "com.google.gerrit.extensions.restapi.TopLevelResource", "com.google.gerrit.extensions.api.projects.HeadInput", "com.google.gerrit.extensions.api.projects.ProjectInput", "com.google.gerrit.extensions.api.projects.LabelApi", "com.google.gerrit.server.restapi.project.PostLabelsReview", "com.google.gerrit.server.change.HumanCommentResource", "com.google.gerrit.server.restapi.project.ChildProjectsCollection", "com.google.gerrit.server.restapi.project.PostSubmitRequirements", "com.google.gerrit.server.restapi.project.GetHead", "com.google.gerrit.extensions.api.changes.DeleteCommentInput", "com.google.gerrit.server.restapi.project.Index", "com.google.gerrit.server.restapi.project.SetAccess", "com.google.gerrit.extensions.common.BatchSubmitRequirementInput", "com.google.gerrit.server.restapi.project.SetParent", "com.google.gerrit.server.project.ProjectJson", "com.google.gerrit.server.restapi.project.GetConfig", "com.google.gerrit.server.restapi.project.CommitsCollection", "com.google.gerrit.extensions.api.projects.IndexProjectInput", "com.google.gerrit.server.restapi.project.DeleteTags", "com.google.gerrit.server.restapi.project.ProjectsCollection", "com.google.gerrit.server.restapi.project.CreateAccessChange", "com.google.gerrit.extensions.api.changes.AttentionSetInput", "com.google.gerrit.server.restapi.change.Files", "com.google.gerrit.extensions.api.changes.RevisionApi", "com.google.gerrit.server.group.GroupResource", "com.google.gerrit.extensions.api.groups.GroupApi", "com.google.gerrit.server.change.RebaseUtil", "com.google.gerrit.server.restapi.change.ListRobotComments", "com.google.common.collect.MultimapBuilder.ListMultimapBuilder", "com.google.gerrit.server.restapi.group.PutOptions", "com.google.gerrit.server.restapi.change.Comments", "com.google.gerrit.server.restapi.change.RevisionReviewers", "com.google.gerrit.server.restapi.change.Rebase", "com.google.gerrit.server.restapi.change.RobotComments", "com.google.gerrit.server.restapi.change.ListRevisionDrafts", "com.google.gerrit.server.restapi.group.ListSubgroups", "com.google.gerrit.extensions.common.CommentInfo", "com.google.gerrit.server.restapi.project.FilesInCommitCollection", "com.google.gerrit.extensions.api.groups.OwnerInput", "com.google.gerrit.extensions.common.GroupAuditEventInfo", "com.google.gerrit.server.restapi.change.GetDescription", "com.google.gerrit.server.restapi.group.GetDescription", "com.google.gerrit.server.restapi.group.PutName", "com.google.gerrit.extensions.common.NameInput", "com.google.gerrit.server.restapi.change.ListPortedComments", "com.google.gerrit.server.restapi.project.GetCommit", "com.google.gerrit.server.restapi.change.ListRevisionComments", "com.google.gerrit.server.restapi.group.GetGroup", "com.google.gerrit.server.restapi.group.DeleteMembers", "com.google.gerrit.server.restapi.group.AddSubgroups", "com.google.gerrit.server.restapi.change.CherryPick", "com.google.gerrit.extensions.common.DescriptionInput", "com.google.gerrit.server.account.AccountDirectory.FillOptions", "com.google.gerrit.extensions.api.changes.ChangeApi", "com.google.gerrit.server.restapi.group.GetOptions", "com.google.gerrit.server.restapi.group.DeleteSubgroups", "com.google.gerrit.server.restapi.change.Submit", "com.google.gerrit.server.restapi.group.PutOwner", "com.google.gerrit.server.restapi.group.AddMembers", "com.google.gerrit.extensions.api.changes.CherryPickInput", "com.google.gerrit.server.restapi.change.DraftComments", "com.google.gerrit.server.restapi.group.ListMembers", "com.google.gerrit.extensions.api.projects.CommitApi", "com.google.gerrit.extensions.restapi.NotImplementedException", "com.google.gerrit.extensions.api.changes.DraftInput", "com.google.gerrit.server.restapi.change.TestSubmitType", "com.google.gerrit.server.restapi.group.GetOwner", "com.google.gerrit.server.restapi.change.GetMergeList", "com.google.gerrit.server.restapi.group.GetAuditLog", "com.google.gerrit.server.restapi.change.ApplyStoredFix", "com.google.gerrit.server.restapi.change.PostReview", "com.google.gerrit.server.restapi.change.ListPortedDrafts", "com.google.gerrit.extensions.client.ArchiveFormat", "com.google.gerrit.extensions.common.ActionInfo", "com.google.gerrit.extensions.common.MergeableInfo", "com.google.gerrit.server.restapi.group.PutDescription", "com.google.gerrit.server.restapi.change.TestSubmitRule", "com.google.gerrit.server.restapi.change.GetRevisionActions", "com.google.gerrit.server.restapi.change.CreateDraftComment", "com.google.gerrit.server.restapi.group.GetDetail", "com.google.gerrit.extensions.api.changes.DraftApi", "com.google.gerrit.server.restapi.change.CherryPickCommit", "com.google.gerrit.server.restapi.change.GetCommit", "com.google.gerrit.server.restapi.change.Fixes", "com.google.gerrit.server.restapi.group.Index", "com.google.gerrit.server.restapi.change.Mergeable", "com.google.gerrit.server.restapi.project.CommitIncludedIn", "com.google.gerrit.extensions.api.changes.Changes", "com.google.gerrit.extensions.api.changes.SubmitInput", "com.google.gerrit.server.restapi.group.DeleteGroup", "com.google.gerrit.extensions.api.changes.GetRelatedOption", "com.google.gerrit.server.restapi.change.PreviewFix", "com.google.gerrit.extensions.api.changes.RelatedChangesInfo", "com.google.gerrit.extensions.api.changes.ReviewResult", "com.google.gerrit.server.restapi.change.GetRelated", "com.google.gerrit.server.change.AttentionSetEntryResource", "com.google.gerrit.extensions.api.changes.IncludedInInfo", "com.google.gerrit.server.restapi.change.GetArchive", "com.google.gerrit.server.restapi.change.ApplyProvidedFix", "com.google.gerrit.extensions.common.DeleteGroupInput", "com.google.gerrit.server.restapi.change.PutDescription", "com.google.gerrit.server.project.CommitResource", "com.google.gerrit.server.restapi.group.GetName", "com.google.gerrit.extensions.api.changes.CommentApi", "com.google.gerrit.extensions.common.TestSubmitRuleInput", "com.google.gerrit.server.restapi.change.RemoveFromAttentionSet", "com.google.gerrit.extensions.common.GroupOptionsInfo", "com.google.gerrit.server.restapi.change.GetPatch", "com.google.gerrit.extensions.api.changes.AttentionSetApi", "com.google.gerrit.extensions.common.GroupInfo", "com.google.gerrit.extensions.common.TestSubmitRuleInfo", "com.google.gerrit.extensions.api.changes.RebaseInput", "com.google.gerrit.extensions.common.FileInfo", "com.google.gerrit.server.restapi.project.CreateTag", "com.google.gerrit.server.restapi.account.EmailsCollection", "com.google.gerrit.server.restapi.account.DeleteEmail", "com.google.gerrit.extensions.common.EditInfo", "com.google.gerrit.server.restapi.change.DeleteChangeEdit", "com.google.gerrit.server.plugins.GetStatus", "com.google.gerrit.server.restapi.project.TagsCollection", "com.google.gerrit.index.project.ProjectIndex", "com.google.gerrit.server.update.context.RefUpdateContext.RefUpdateType.TAG_MODIFICATION", "com.google.gerrit.extensions.api.projects.TagInput", "com.google.gerrit.extensions.api.changes.PublishChangeEditInput", "com.google.gerrit.extensions.events.ProjectIndexedListener", "com.google.gerrit.server.restapi.change.ChangeEdits", "com.google.gerrit.index.project.ProjectData", "com.google.gerrit.extensions.api.projects.DashboardApi", "com.google.gerrit.extensions.api.changes.FileContentInput", "com.google.gerrit.index.project.ProjectIndexer", "com.google.gerrit.server.account.AccountResource", "com.google.gerrit.index.project.ProjectIndexCollection", "com.google.gerrit.extensions.common.EmailInfo", "com.google.gerrit.server.plugins.ReloadPlugin", "com.google.gerrit.server.change.ChangeResource", "com.google.gerrit.server.plugins.DisablePlugin", "com.google.gerrit.server.restapi.project.SetDashboard", "com.google.gerrit.server.restapi.change.RebaseChangeEdit", "com.google.gerrit.extensions.api.projects.SetDashboardInput", "com.google.gerrit.extensions.api.projects.DashboardInfo", "com.google.gerrit.extensions.api.plugins.PluginApi", "com.google.gerrit.server.restapi.change.PublishChangeEdit", "com.google.gerrit.server.plugins.EnablePlugin", "com.google.gerrit.server.project.TagResource", "com.google.gerrit.server.change.ChangeEditResource", "com.google.gerrit.extensions.api.projects.TagInfo", "com.google.gerrit.extensions.client.ChangeEditDetailOption", "com.google.gerrit.server.project.DashboardResource", "com.google.gerrit.server.restapi.project.DashboardsCollection", "com.google.gerrit.extensions.api.changes.RebaseChangeEditInput", "com.google.gerrit.extensions.api.changes.ChangeEditApi", "com.google.gerrit.extensions.api.changes.ChangeEditIdentityType", "com.google.gerrit.server.restapi.account.GetEmail", "com.google.gerrit.server.restapi.account.PutPreferred", "com.google.gerrit.extensions.api.accounts.EmailApi", "com.google.gerrit.server.restapi.project.GetDashboard", "com.google.gerrit.server.restapi.project.ListTags", "com.google.gerrit.extensions.common.PluginInfo", "com.google.gerrit.extensions.api.projects.TagApi", "com.google.gerrit.server.plugins.PluginResource", "com.google.gerrit.server.restapi.project.DeleteTag", "com.google.gerrit.server.change.ChangeMessageResource", "com.google.gerrit.server.restapi.change.GetChangeMessage", "com.google.gerrit.server.restapi.project.FilesCollection", "com.google.gerrit.server.restapi.project.DeleteBranch", "com.google.gerrit.server.change.RobotCommentResource", "com.google.gerrit.extensions.api.changes.RobotCommentApi", "com.google.gerrit.extensions.api.projects.ReflogEntryInfo", "com.google.gerrit.extensions.api.projects.BranchInfo", "com.google.gerrit.extensions.common.RobotCommentInfo", "com.google.gerrit.server.restapi.change.DeleteChangeMessage", "com.google.gerrit.server.project.BranchResource", "com.google.gerrit.extensions.api.projects.BranchInput", "com.google.gerrit.server.project.FileResource", "com.google.gerrit.server.restapi.project.GetBranchValidationOptions", "com.google.gerrit.extensions.common.SuggestedReviewerInfo", "com.google.gerrit.extensions.api.changes.DeleteChangeMessageInput", "com.google.gerrit.extensions.api.changes.ChangeMessageApi", "com.google.gerrit.server.restapi.project.BranchesCollection", "com.google.gerrit.extensions.common.ProjectInfo", "com.google.gerrit.server.restapi.change.GetRobotComment", "com.google.gerrit.server.restapi.project.SuggestBranchReviewers", "com.google.gerrit.server.restapi.project.GetChildProject", "com.google.gerrit.extensions.common.ValidationOptionInfos", "com.google.gerrit.server.restapi.project.CreateBranch", "com.google.gerrit.server.restapi.project.GetReflog", "com.google.gerrit.extensions.api.projects.BranchApi", "com.google.gerrit.server.restapi.project.GetBranch", "com.google.gerrit.extensions.api.changes.ChangeApi.SuggestedReviewersRequest", "com.google.gerrit.server.restapi.project.GetContent", "com.google.gerrit.server.project.ChildProjectResource", "com.google.gerrit.extensions.api.projects.ChildProjectApi", "com.google.gerrit.extensions.api.changes.RevisionReviewerApi", "com.google.gerrit.server.restapi.change.Reviewed", "com.google.gerrit.server.restapi.change.DeleteReviewer", "com.google.gerrit.server.restapi.change.GetDiff", "com.google.gerrit.server.change.FileResource", "com.google.gerrit.server.restapi.change.GetBlame", "com.google.gerrit.extensions.common.BlameInfo", "com.google.gerrit.server.change.ReviewerResource", "com.google.gerrit.extensions.restapi.BinaryResult", "com.google.gerrit.server.restapi.change.Votes", "com.google.gerrit.server.change.VoteResource", "com.google.gerrit.server.restapi.change.GetContent", "com.google.gerrit.server.restapi.change.DeleteVote", "com.google.gerrit.extensions.api.changes.FileApi", "com.google.gerrit.extensions.api.changes.ReviewerApi", "com.google.gerrit.server.project.ProjectResource", "com.google.gerrit.extensions.common.SubmitRequirementInput", "com.google.gerrit.extensions.api.projects.SubmitRequirementApi", "com.google.gerrit.server.api.ApiUtil.asRestApiException", "java.util.concurrent.ConcurrentHashMap", "com.google.gerrit.metrics.proc.ThreadMXBeanInterface", "com.google.gerrit.server.account.AccountCacheImpl", "com.google.gerrit.server.restapi.project.UpdateSubmitRequirement", "com.google.gerrit.extensions.events.ChangeIndexedListener", "com.google.gerrit.server.restapi.project.DeleteSubmitRequirement", "com.google.gerrit.metrics.proc.ThreadMXBeanFactory", "com.google.gerrit.server.restapi.project.GetSubmitRequirement", "com.google.gerrit.extensions.events.AccountIndexedListener", "com.google.gerrit.extensions.common.Input", "com.google.gerrit.server.restapi.project.SubmitRequirementsCollection", "com.google.common.base.Objects", "com.google.gerrit.server.query.group.GroupPredicates", "com.google.gerrit.server.project.SubmitRequirementResource", "com.google.gerrit.server.restapi.project.CreateSubmitRequirement", "com.google.gerrit.extensions.common.SubmitRequirementInfo", "com.google.common.util.concurrent.Futures", "com.google.gerrit.server.index.options.IsFirstInsertForEntry", "com.google.gerrit.extensions.restapi.IdString", "com.google.inject.OutOfScopeException", "com.google.gerrit.server.project.RefPattern.isRE", "com.google.gerrit.server.project.RefPatternMatcher.ExpandParameters", "com.google.gerrit.server.project.RefPattern.containsParameters", "java.util.stream.Collectors.mapping", "com.google.gerrit.server.query.account.AccountPredicates", "com.google.gerrit.server.project.RefPattern", "com.google.gerrit.entities.PermissionRule.Action.BLOCK", "com.google.gerrit.server.index.OnlineReindexMode", "java.util.function.Consumer", "com.google.gerrit.index.SiteIndexer", "com.google.common.util.concurrent.Futures.transform", "com.google.common.util.concurrent.Futures.successfulAsList", "com.google.gerrit.server.index.IndexExecutor", "org.eclipse.jgit.lib.ProgressMonitor", "java.util.concurrent.Callable", "java.util.concurrent.RejectedExecutionException", "java.util.concurrent.atomic.AtomicBoolean", "com.google.gerrit.extensions.events.GroupIndexedListener", "com.google.common.util.concurrent.ListenableFuture", "com.google.gerrit.server.git.MultiProgressMonitor", "com.google.common.util.concurrent.ListeningExecutorService", "com.google.gerrit.server.git.MultiProgressMonitor.VolatileTask", "com.google.gerrit.server.git.QueueProvider.QueueType.BATCH", "com.google.common.util.concurrent.MoreExecutors.directExecutor", "com.google.gerrit.server.git.MultiProgressMonitor.TaskKind", "com.google.common.util.concurrent.UncheckedExecutionException", "com.google.common.base.Stopwatch", "com.google.gerrit.server.git.MultiProgressMonitor.Task", "com.google.gerrit.server.notedb.ChangeNotes.Factory.ChangeNotesResult", "com.google.gerrit.index.Index", "com.google.gerrit.server.query.change.ChangePredicates", "com.google.gerrit.index.IndexDefinition", "com.google.gerrit.entities.AccessSection.REGEX_PREFIX", "com.google.gerrit.server.group.SystemGroupBackend", "com.google.gerrit.entities.AccessSection.ALL", "com.google.gerrit.server.index.StalenessCheckResult", "com.google.gerrit.server.project.SectionMatcher", "com.google.gerrit.entities.AccessSection", "com.google.gerrit.server.permissions.PermissionBackend.ForProject", "com.google.gerrit.server.util.MagicBranch.NEW_CHANGE", "com.google.gerrit.entities.RefNames.REFS_TAGS", "java.nio.charset.StandardCharsets.UTF_8", "com.google.gerrit.index.IndexConfig", "com.google.gerrit.extensions.api.access.PluginProjectPermission", "com.google.gerrit.server.config.GitUploadPackGroups", "com.google.gerrit.extensions.api.access.CoreOrPluginProjectPermission", "com.google.gerrit.server.config.GitReceivePackGroups", "com.google.gerrit.server.git.ChangesByProjectCache", "com.google.gerrit.entities.RefNames.REFS_CONFIG", "com.google.gerrit.server.git.TagMatcher", "com.google.common.base.Supplier", "java.util.stream.Collectors.toCollection", "com.google.gerrit.server.permissions.PermissionBackend.RefFilterOptions", "com.google.gerrit.server.git.TagCache", "com.google.common.base.Suppliers", "com.google.gerrit.server.util.MagicBranch", "com.google.gerrit.entities.PermissionRange", "com.google.gerrit.entities.PermissionRule", "com.google.gerrit.server.permissions.PermissionBackend.ForRef", "com.google.gerrit.server.logging.LoggingContext", "com.google.gerrit.entities.PermissionRule.Action", "com.google.gerrit.extensions.conditions.BooleanCondition", "javax.inject.Inject", "com.google.gerrit.server.permissions.PermissionBackend.ForChange", "com.google.gerrit.entities.Permission", "com.google.common.cache.RemovalNotification", "com.google.common.cache.RemovalListener", "com.google.gerrit.extensions.registration.PluginName", "com.googlecode.prolog_cafe.lang.VariableTerm", "com.googlecode.prolog_cafe.lang.ListTerm", "com.googlecode.prolog_cafe.exceptions.CompileException", "com.google.gerrit.entities.Patch.FileMode", "com.google.gerrit.server.patch.filediff.FileDiffOutput", "com.googlecode.prolog_cafe.exceptions.ReductionLimitException", "com.google.gerrit.extensions.client.SubmitType", "com.google.gerrit.server.account.Accounts", "com.google.gerrit.server.query.change.SubmitRequirementChangeQueryBuilder.SUBMODULE_UPDATE_HAS_ARG", "com.googlecode.prolog_cafe.lang.StructureTerm", "java.io.StringReader", "org.eclipse.jgit.lib.Constants", "com.google.gerrit.server.project.NoSuchProjectException", "com.google.gerrit.server.patch.FilePathAdapter", "org.eclipse.jgit.diff.Edit", "com.google.gerrit.server.patch.DiffOptions", "com.googlecode.prolog_cafe.lang.Term", "org.eclipse.jgit.transport.PushCertificate", "com.google.gerrit.server.update.BatchUpdateListener", "com.google.gerrit.server.project.RuleEvalException", "com.google.gerrit.server.patch.filediff.TaggedEdit", "com.google.common.base.CharMatcher", "com.googlecode.prolog_cafe.lang.SymbolTerm", "org.eclipse.jgit.revwalk.RevTree", "com.googlecode.prolog_cafe.lang.IntegerTerm", "com.google.gerrit.server.query.change.LabelPredicate", "com.google.common.base.Enums", "com.google.gerrit.server.account.ServiceUserClassifier", "com.google.gerrit.server.query.change.ChangeQueryBuilder.Arguments", "java.util.Locale", "java.util.regex.Matcher", "java.util.regex.Pattern", "com.google.gerrit.server.query.change.SubmitRequirementPredicate", "com.google.common.base.Splitter", "com.google.gerrit.index.query.QueryParseException", "com.googlecode.prolog_cafe.lang.PrologMachineCopy", "java.util.EnumSet", "com.google.gerrit.server.patch.DiffOperations", "com.googlecode.prolog_cafe.lang.BufferingPrologControl", "com.googlecode.prolog_cafe.lang.PredicateEncoder", "com.google.gerrit.server.account.Emails", "com.google.gerrit.server.config.PluginConfigFactory", "com.googlecode.prolog_cafe.lang.Predicate", "com.googlecode.prolog_cafe.lang.Prolog", "com.google.gerrit.server.config.AllProjectsName", "com.google.gerrit.server.util.TreeFormatter.TreeNode", "java.util.TreeSet", "java.util.NavigableSet", "com.google.gerrit.extensions.api.changes.ReviewInput.DraftHandling", "com.google.gerrit.extensions.api.changes.ReviewInput.CommentInput", "java.util.stream.Collectors.joining", "com.google.common.collect.Table.Cell", "com.google.common.collect.SortedSetMultimap", "com.google.gerrit.server.PublishCommentUtil", "com.google.common.collect.ImmutableTable", "com.google.gerrit.extensions.validators.CommentForValidation", "com.google.gerrit.extensions.api.changes.ReviewInput", "com.google.gerrit.extensions.api.changes.ReviewInput.RobotCommentInput", "java.util.Comparator.comparing", "com.google.gerrit.server.restapi.change.PostReview.CommentSetEntry", "com.google.gerrit.entities.Patch.PATCHSET_LEVEL", "com.google.gerrit.extensions.validators.CommentValidationContext", "java.util.stream.Collectors.toSet", "com.google.gerrit.extensions.validators.CommentValidator", "com.google.common.collect.MultimapBuilder", "com.google.gerrit.extensions.validators.CommentValidationFailure", "com.google.gerrit.extensions.api.changes.DeleteVoteInput", "com.google.gerrit.server.change.NotifyResolver", "org.eclipse.jgit.lib.RefUpdate", "com.google.gerrit.server.extensions.events.VoteDeleted", "com.google.gerrit.git.LockFailureException", "com.google.gerrit.server.config.GerritServerId", "com.google.gerrit.server.update.context.RefUpdateContext", "org.eclipse.jgit.lib.Constants.R_REFS", "com.google.gerrit.exceptions.NoSuchGroupException", "com.google.gerrit.server.extensions.events.GitReferenceUpdated", "com.google.gerrit.server.permissions.LabelRemovalPermission", "com.google.gerrit.server.project.DeleteVoteControl", "com.google.gerrit.server.account.GroupIncludeCache", "org.eclipse.jgit.lib.BatchRefUpdate", "com.google.gerrit.server.account.GroupCache", "com.google.gerrit.server.update.context.RefUpdateContext.RefUpdateType.GROUPS_UPDATE", "com.google.gerrit.server.GerritPersonIdent", "com.google.gerrit.server.index.group.GroupIndexer", "com.google.gerrit.exceptions.DuplicateKeyException", "com.google.gerrit.server.mail.EmailFactories.VOTE_DELETED", "com.google.gerrit.git.RefUpdateUtil", "com.google.gerrit.entities.InternalGroup", "com.google.gerrit.server.group.GroupAuditService", "com.google.gerrit.extensions.common.DiffWebLinkInfo", "com.google.gerrit.server.diff.DiffInfoCreator", "com.google.gerrit.server.change.FixResource", "com.google.gerrit.extensions.restapi.RestModifyView", "com.google.gerrit.extensions.common.DiffInfo", "com.google.gerrit.entities.FixReplacement", "com.google.gerrit.server.change.RevisionResource", "com.google.gerrit.extensions.restapi.RestReadView", "com.google.gerrit.server.diff.DiffSide", "com.google.gerrit.entities.Comment.Range", "com.google.gerrit.extensions.client.DiffPreferencesInfo", "com.google.gerrit.server.diff.DiffWebLinksProvider", "com.google.gerrit.server.git.LargeObjectException", "com.google.gerrit.extensions.common.ApplyProvidedFixInput", "com.google.gerrit.server.patch.PatchScriptFactoryForAutoFix", "com.google.gerrit.extensions.restapi.Response", "com.google.gerrit.server.update.CommentsRejectedException", "com.google.gerrit.server.change.EmailReviewComments", "com.google.gerrit.server.git.DefaultQueueOp", "com.google.gerrit.entities.CachedProjectConfig", "com.google.gerrit.server.project.ProjectConfig", "com.google.gerrit.server.git.meta.MetaDataUpdate", "com.google.gerrit.entities.GroupReference", "com.google.gerrit.server.account.GroupBackend", "com.google.gerrit.server.account.externalids.ExternalId", "com.google.gerrit.server.account.GroupMembership", "com.google.gerrit.entities.AccountGroup", "com.google.gerrit.index.query.Predicate", "com.google.gerrit.server.InternalUser", "com.google.gerrit.server.index.IndexUtils", "com.google.gerrit.index.query.IsVisibleToPredicate", "org.eclipse.jgit.errors.RepositoryNotFoundException", "com.google.gerrit.index.RefState", "com.google.gerrit.server.patch.DiffSummaryKey", "com.google.gerrit.entities.RobotComment", "com.google.gerrit.server.project.SubmitRequirementsEvaluator", "com.google.gerrit.entities.SubmitRequirementResult.Status", "com.google.gerrit.server.change.CommentThread", "com.google.gerrit.server.patch.PatchListKey", "com.google.gerrit.server.util.time.TimeUtil", "java.util.Objects", "com.google.common.collect.ImmutableSetMultimap", "com.google.gerrit.server.project.SubmitRequirementsUtil", "com.google.gerrit.server.config.SkipCurrentRulesEvaluationOnClosedChanges", "java.util.stream.Collectors.toMap", "java.util.stream.Stream", "com.google.common.collect.SetMultimap", "org.eclipse.jgit.revwalk.FooterLine", "com.google.gerrit.server.change.MergeabilityCache", "com.google.gerrit.entities.HumanComment", "com.google.gerrit.server.change.PureRevert", "com.google.gerrit.common.UsedAt", "com.google.gerrit.server.change.CommentThreads", "com.google.gerrit.server.patch.PatchListCache", "com.google.common.annotations.VisibleForTesting", "com.google.gerrit.server.CommentsUtil", "com.google.gerrit.server.project.SubmitRuleEvaluator", "com.google.gerrit.server.patch.DiffSummary", "com.google.gerrit.server.notedb.RobotCommentNotes", "com.google.gerrit.server.DraftCommentsReader", "java.util.LinkedHashSet", "com.google.common.primitives.Ints", "com.google.gerrit.server.project.SubmitRequirementsAdapter", "com.google.common.collect.Table", "java.util.function.Function", "com.google.common.collect.HashBasedTable", "com.google.gerrit.server.update.RepoView", "com.google.gerrit.extensions.restapi.ResourceNotFoundException", "com.google.gerrit.server.extensions.events.ReviewerDeleted", "java.sql.Timestamp", "com.google.gerrit.exceptions.EmailException", "com.google.gerrit.extensions.api.changes.DeleteReviewerInput", "com.google.gerrit.extensions.client.ListChangesOption.ALL_FILES", "com.google.gerrit.server.mail.EmailFactories.NEW_PATCHSET_ADDED", "com.google.gerrit.server.WebLinks", "com.google.gerrit.server.CommonConverters.toGitPerson", "com.google.gerrit.extensions.client.ListChangesOption.PUSH_CERTIFICATES", "org.eclipse.jgit.attributes.AttributesNodeProvider", "com.google.gerrit.server.AnonymousUser", "com.google.gerrit.extensions.client.ListChangesOption.DOWNLOAD_COMMANDS", "com.google.gerrit.extensions.common.ConflictsInfo", "com.google.gerrit.extensions.config.DownloadScheme", "com.google.gerrit.extensions.common.CommitInfo", "com.google.gerrit.extensions.common.PushCertificateInfo", "com.google.gerrit.extensions.config.DownloadCommand", "org.eclipse.jgit.lib.Ref", "com.google.gerrit.entities.ParentCommitData", "com.google.gerrit.extensions.client.ListChangesOption.WEB_LINKS", "com.google.gerrit.extensions.common.RevisionInfo.ParentInfo", "com.google.gerrit.extensions.registration.DynamicMap", "com.google.gerrit.extensions.client.ListChangesOption.PARENTS", "com.google.gerrit.extensions.registration.Extension", "com.google.gerrit.entities.Patch", "com.google.gerrit.server.mail.send.ReplacePatchSetChangeEmailDecorator", "java.util.LinkedHashMap", "com.google.gerrit.extensions.common.WebLinkInfo", "com.google.gerrit.server.account.GpgApiAdapter", "com.google.gerrit.extensions.client.ListChangesOption.CURRENT_FILES", "com.google.gerrit.extensions.common.FetchInfo", "com.google.gerrit.extensions.common.InputWithMessage", "com.google.gerrit.server.extensions.events.PrivateStateChanged", "com.google.gerrit.server.mail.EmailFactories.REVIEW_REQUESTED", "com.google.gerrit.server.mime.FileTypeRegistry", "org.eclipse.jgit.errors.IncorrectObjectTypeException", "org.eclipse.jgit.lib.ObjectReader", "com.google.gerrit.entities.LabelType", "com.google.gerrit.entities.Patch.MERGE_LIST", "com.google.gerrit.entities.LabelTypes", "com.google.gerrit.server.change.ReviewerModifier.newReviewerInputFromCommitIdentity", "com.google.gerrit.entities.BranchNameKey", "org.eclipse.jgit.errors.MissingObjectException", "com.google.gerrit.server.extensions.events.ChangeDeleted", "com.google.gerrit.server.plugincontext.PluginItemContext", "com.google.gerrit.server.update.Context", "com.google.gerrit.server.util.RequestScopePropagator", "com.google.gerrit.server.change.ReviewerModifier.ReviewerModification", "com.google.gerrit.server.util.CommitMessageUtil", "com.google.gerrit.entities.Change.INITIAL_PATCH_SET_ID", "com.google.gerrit.extensions.common.ContextLineInfo", "com.google.gerrit.entities.BooleanProjectConfig", "com.google.auto.value.AutoValue", "com.google.gerrit.extensions.restapi.UnprocessableEntityException", "com.google.gerrit.entities.CommentContext", "com.google.gerrit.server.patch.Text", "com.google.common.collect.ImmutableCollection", "com.google.gerrit.common.data.PatchScript", "com.google.gerrit.server.mail.send.StartReviewChangeEmailDecorator", "org.eclipse.jgit.treewalk.TreeWalk", "com.google.gerrit.entities.SubmissionId", "com.google.gerrit.server.update.InsertChangeOp", "com.google.gerrit.server.extensions.events.CommentAdded", "java.util.stream.Collectors.groupingBy", "com.google.gerrit.server.mail.send.AttentionSetChangeEmailDecorator.AttentionSetChange.USER_REMOVED", "com.google.gerrit.server.patch.ComparisonType", "com.google.gerrit.entities.RefNames", "com.google.gerrit.entities.AttentionSetUpdate.Operation", "eu.medsea.mimeutil.MimeUtil2", "com.google.gerrit.server.change.ReviewerModifier.ReviewerModificationList", "com.google.gerrit.server.StarredChangesWriter", "eu.medsea.mimeutil.MimeType", "com.google.gerrit.server.patch.SrcContentResolver", "com.google.gerrit.server.change.ReviewerModifier.InternalReviewerInput", "com.google.gerrit.server.change.FileContentUtil", "com.google.gerrit.entities.Patch.COMMIT_MSG", "org.eclipse.jgit.errors.ConfigInvalidException", "com.google.gerrit.entities.SubmitRequirement", "com.google.gerrit.entities.Comment", "com.google.gerrit.server.IdentifiedUser", "com.google.gerrit.server.project.ProjectState", "com.google.gerrit.server.mail.send.CommentChangeEmailDecorator", "org.eclipse.jgit.merge.ResolveMerger", "com.google.gerrit.server.mail.send.MessageIdGenerator.MessageId", "com.google.gerrit.server.IdentifiedUser.GenericFactory", "com.google.gerrit.server.util.ThreadLocalRequestContext", "java.util.concurrent.Future", "com.google.gerrit.server.git.MergeUtil", "com.google.gerrit.server.project.NoSuchChangeException", "com.google.gerrit.server.util.LabelVote", "org.eclipse.jgit.lib.PersonIdent", "com.google.gerrit.server.CommentsUtil.COMMENT_ORDER", "com.google.gerrit.server.git.CodeReviewCommit.CodeReviewRevWalk", "com.google.gerrit.server.mail.EmailFactories.COMMENTS_ADDED", "org.eclipse.jgit.dircache.DirCache", "com.google.gerrit.server.patch.DiffNotAvailableException", "com.google.gerrit.server.mail.EmailFactories.CHANGE_ABANDONED", "org.eclipse.jgit.merge.MergeResult", "java.io.UncheckedIOException", "org.eclipse.jgit.diff.Sequence", "com.google.gerrit.server.extensions.events.ChangeAbandoned", "com.google.common.base.MoreObjects.firstNonNull", "com.google.gerrit.server.project.InvalidChangeOperationException", "com.google.gerrit.server.util.RequestContext", "com.google.gerrit.server.git.MergeUtilFactory", "com.google.gerrit.extensions.restapi.MergeConflictException", "com.google.gerrit.server.util.AccountTemplateUtil", "java.time.Instant", "com.google.gerrit.server.config.SendEmailExecutor", "org.eclipse.jgit.merge.Merger", "com.google.gerrit.server.git.CodeReviewCommit", "org.eclipse.jgit.revwalk.RevWalk", "com.google.gerrit.server.git.GroupCollector", "com.google.gerrit.server.change.RebaseUtil.Base", "org.eclipse.jgit.lib.CommitBuilder", "org.eclipse.jgit.merge.ThreeWayMerger", "org.eclipse.jgit.revwalk.RevCommit", "com.google.gerrit.extensions.common.AccountInfo", "com.google.gerrit.server.util.AttentionSetUtil.removalsOnly", "com.google.gerrit.server.notedb.ChangeUpdate.MAX_CUSTOM_KEYED_VALUES", "com.google.gerrit.server.extensions.events.CustomKeyedValuesEdited", "com.google.gerrit.server.project.RemoveReviewerControl", "com.google.gerrit.extensions.client.ListChangesOption.DETAILED_ACCOUNTS", "com.google.gerrit.server.config.AllUsersName", "com.google.gerrit.entities.ChangeMessage", "com.google.gerrit.extensions.client.ListChangesOption.CURRENT_COMMIT", "com.google.gerrit.extensions.api.changes.CustomKeyedValuesInput", "com.google.common.collect.ImmutableMap.toImmutableMap", "com.google.gerrit.extensions.client.ListChangesOption.TRACKING_IDS", "com.google.gerrit.extensions.api.changes.FixInput", "com.google.gerrit.metrics.Description.Units", "com.google.gerrit.extensions.client.ListChangesOption.SKIP_DIFFSTAT", "com.google.gerrit.extensions.restapi.Url", "com.google.gerrit.extensions.common.PluginDefinedInfo", "com.google.gerrit.extensions.client.ListChangesOption.REVIEWER_UPDATES", "com.google.gerrit.exceptions.StorageException", "com.google.gerrit.server.account.AccountLoader", "com.google.gerrit.extensions.common.ProblemInfo", "com.google.gerrit.extensions.client.ListChangesOption.SUBMITTABLE", "com.google.gerrit.server.change.CustomKeyedValuesUtil.extractCustomKeys", "com.google.gerrit.server.permissions.RefPermission", "com.google.gerrit.extensions.client.ListChangesOption.CHECK", "com.google.gerrit.extensions.common.TrackingIdInfo", "com.google.gerrit.extensions.common.ReviewerUpdateInfo", "com.google.gerrit.server.logging.TraceContext", "com.google.common.collect.ImmutableSortedMap", "com.google.gerrit.server.ReviewerByEmailSet", "java.util.HashMap", "com.google.gerrit.server.StarredChangesReader", "com.google.gerrit.extensions.common.ApprovalInfo", "com.google.gerrit.server.change.CustomKeyedValuesUtil.InvalidCustomKeyedValueException", "com.google.gerrit.extensions.client.ListChangesOption.ALL_COMMITS", "com.google.gerrit.server.project.SubmitRuleOptions", "com.google.gerrit.extensions.client.ListChangesOption.CURRENT_ACTIONS", "com.google.gerrit.extensions.client.ListChangesOption.MESSAGES", "com.google.gerrit.extensions.common.LabelInfo", "com.google.gerrit.server.cancellation.RequestCancelledException", "java.util.stream.Collectors", "com.google.common.collect.Maps", "com.google.gerrit.extensions.common.LegacySubmitRequirementInfo", "com.google.gerrit.server.util.AttentionSetUtil", "com.google.gerrit.extensions.client.ListChangesOption.STAR", "com.google.gerrit.extensions.common.RevisionInfo", "com.google.gerrit.entities.Project", "com.google.gerrit.extensions.client.ListChangesOption.DETAILED_LABELS", "com.google.gerrit.server.index.change.ChangeField", "com.google.gerrit.extensions.client.ListChangesOption.SUBMIT_REQUIREMENTS", "com.google.gerrit.server.logging.Metadata", "com.google.gerrit.server.git.GitRepositoryManager", "com.google.gerrit.extensions.client.ListChangesOption.COMMIT_FOOTERS", "com.google.gerrit.entities.LegacySubmitRequirement", "com.google.inject.Provider", "com.google.gerrit.extensions.common.SubmitRequirementResultInfo", "com.google.gerrit.extensions.common.SubmitRecordInfo", "com.google.gerrit.extensions.client.ListChangesOption.ALL_REVISIONS", "com.google.gerrit.extensions.common.ChangeInfo", "com.google.gerrit.server.GpgException", "com.google.gerrit.server.account.AccountInfoComparator", "com.google.gerrit.server.change.CustomKeyedValuesUtil.extractCustomKeyedValues", "com.google.gerrit.entities.SubmitRequirementResult", "com.google.gerrit.server.config.TrackingFooters", "com.google.gerrit.extensions.client.ListChangesOption.REVIEWED", "com.google.gerrit.entities.SubmitTypeRecord", "com.google.gerrit.extensions.client.ListChangesOption.CURRENT_REVISION", "com.google.gerrit.server.logging.TraceContext.TraceTimer", "com.google.gerrit.server.patch.PatchListNotAvailableException", "com.google.common.base.MoreObjects", "com.google.gerrit.entities.SubmitRecord", "com.google.gerrit.extensions.client.ListChangesOption", "com.google.gerrit.extensions.client.ListChangesOption.CUSTOM_KEYED_VALUES", "org.eclipse.jgit.lib.Repository", "com.google.gerrit.server.ChangeMessagesUtil.createChangeMessageInfo", "com.google.gerrit.server.ReviewerStatusUpdate", "com.google.gerrit.entities.SubmitRecord.Status", "com.google.gerrit.server.CurrentUser", "com.google.common.collect.ListMultimap", "com.google.gerrit.metrics.Timer0", "com.google.gerrit.extensions.common.ChangeMessageInfo", "com.google.gerrit.index.query.QueryResult", "com.google.gerrit.server.util.AttentionSetUtil.additionsOnly", "com.google.gerrit.extensions.client.ListChangesOption.CHANGE_ACTIONS", "com.google.gerrit.extensions.client.ListChangesOption.LABELS", "com.google.gerrit.server.validators.CustomKeyedValueValidationListener", "com.google.gerrit.server.query.change.ChangeData.ChangedLines", "org.eclipse.jgit.transport.ReceiveCommand", "com.google.gerrit.entities.PatchSetInfo", "com.google.gerrit.server.project.ProjectCache", "com.google.gerrit.server.mail.send.ChangeEmail", "com.google.gerrit.server.mail.EmailFactories", "java.util.stream.Collectors.toList", "com.google.gerrit.server.extensions.events.WorkInProgressStateChanged", "com.google.gerrit.server.patch.PatchSetInfoFactory", "com.google.gerrit.extensions.client.ChangeKind", "com.google.gerrit.server.ssh.NoSshInfo", "com.google.gerrit.server.extensions.events.RevisionCreated", "com.google.gerrit.server.ReviewerSet", "com.google.gerrit.server.mail.send.OutgoingEmail", "com.google.gerrit.server.notedb.ReviewerStateInternal.CC", "com.google.gerrit.server.patch.AutoMerger", "com.google.gerrit.server.events.CommitReceivedEvent", "com.google.gerrit.server.ValidationOptionsListener", "com.google.gerrit.server.PatchSetUtil", "com.google.common.collect.Lists", "java.util.Optional", "com.google.common.collect.Streams", "com.google.gerrit.extensions.client.ReviewerState.CC", "com.google.gerrit.server.ChangeUtil", "com.google.gerrit.server.notedb.ReviewerStateInternal", "com.google.gerrit.server.update.RepoContext", "com.google.gerrit.server.project.ProjectCache.illegalState", "com.google.gerrit.server.patch.DiffOperationsForCommitValidation", "com.google.gerrit.server.git.validators.CommitValidationInfo", "com.google.gerrit.extensions.client.ReviewerState", "com.google.gerrit.server.account.AccountCache", "com.google.common.collect.ImmutableList.toImmutableList", "com.google.gerrit.server.git.validators.CommitValidationInfoListener", "com.google.gerrit.entities.PatchSetApproval", "com.google.gerrit.extensions.restapi.ResourceConflictException", "com.google.gerrit.extensions.client.ReviewerState.REVIEWER", "com.google.gerrit.server.git.validators.CommitValidators", "com.google.gerrit.server.approval.ApprovalsUtil", "com.google.gerrit.server.notedb.ReviewerStateInternal.REVIEWER", "com.google.gerrit.server.approval.ApprovalCopier", "com.google.common.collect.ImmutableMap", "com.google.gerrit.server.extensions.events.ReviewerAdded", "com.google.gerrit.server.mail.EmailFactories.REVIEWER_DELETED", "com.google.common.collect.ImmutableList", "com.google.common.base.Preconditions.checkArgument", "com.google.gerrit.server.account.AccountState", "com.google.gerrit.server.mail.send.DeleteReviewerChangeEmailDecorator", "com.google.gerrit.entities.PatchSet", "com.google.common.collect.ImmutableSet.toImmutableSet", "com.google.gerrit.extensions.api.changes.NotifyHandling", "org.eclipse.jgit.lib.ObjectId", "com.google.gerrit.server.permissions.ChangePermission", "com.google.gerrit.server.git.validators.CommitValidationException", "com.google.common.collect.ImmutableListMultimap", "com.google.gerrit.server.mail.send.MessageIdGenerator", "com.google.gerrit.entities.Address", "com.google.inject.assistedinject.AssistedInject", "com.google.gerrit.server.git.WorkQueue", "com.google.gerrit.server.update.RetryHelper", "com.google.gerrit.server.mail.send.AttentionSetChangeEmailDecorator.AttentionSetChange.USER_ADDED", "com.google.gerrit.server.config.ChangeCleanupConfig", "com.google.gerrit.entities.Account", "com.google.gerrit.server.query.change.ChangeData", "java.util.Objects.requireNonNull", "com.google.gerrit.server.update.UpdateException", "java.util.concurrent.locks.Lock", "com.google.errorprone.annotations.CanIgnoreReturnValue", "com.google.gerrit.extensions.restapi.RestView", "com.google.gerrit.server.util.OneOffRequestContext", "com.google.gerrit.server.util.ManualRequestContext", "com.google.gerrit.entities.AttentionSetUpdate", "com.google.gerrit.server.project.LockManager", "com.google.gerrit.extensions.restapi.RestApiException", "com.google.gerrit.extensions.restapi.RestResource", "com.google.inject.TypeLiteral", "com.google.gerrit.server.util.AttentionSetEmail", "com.google.gerrit.lifecycle.LifecycleModule", "com.google.gerrit.extensions.api.changes.HashtagsInput", "com.google.gerrit.server.change.HashtagsUtil.extractTags", "com.google.common.collect.ImmutableSortedSet", "com.google.gerrit.common.Nullable", "com.google.common.collect.Ordering", "com.google.gerrit.server.validators.ValidationException", "com.google.gerrit.server.update.BatchUpdateOp", "com.google.gerrit.server.extensions.events.TopicEdited", "com.google.gerrit.server.git.validators.TopicValidator", "java.util.Set", "com.google.gerrit.entities.Change", "com.google.gerrit.server.update.PostUpdateContext", "com.google.gerrit.server.validators.HashtagValidationListener", "com.google.gerrit.extensions.restapi.MethodNotAllowedException", "com.google.gerrit.extensions.restapi.BadRequestException", "com.google.gerrit.server.extensions.events.HashtagsEdited", "com.google.common.collect.ImmutableSet", "com.google.gerrit.server.notedb.ChangeUpdate", "com.google.common.base.Preconditions.checkState", "java.util.HashSet", "com.google.gerrit.server.update.ChangeContext", "com.google.gerrit.server.notedb.ChangeNotes", "com.google.gerrit.server.plugincontext.PluginSetContext", "com.google.gerrit.server.change.HashtagsUtil.InvalidHashtagException", "com.google.gerrit.server.ChangeMessagesUtil", "com.google.common.base.Joiner", "org.apache.sshd.common.random.Random", "org.apache.sshd.common.compression.BuiltinCompressions", "java.util.Collections", "java.util.concurrent.atomic.AtomicInteger", "org.apache.sshd.common.future.CloseFuture", "org.apache.sshd.common.util.buffer.ByteArrayBuffer", "org.apache.sshd.common.file.nonefs.NoneFileSystemFactory", "com.google.common.collect.Iterables", "org.apache.sshd.common.io.AbstractIoServiceFactory", "com.google.gerrit.server.util.IdGenerator", "java.util.Collection", "org.apache.sshd.common.kex.KeyExchangeFactory", "org.apache.sshd.common.random.SingletonRandomFactory", "org.apache.sshd.server.SshServer", "java.net.InetAddress", "com.google.gerrit.server.ssh.HostKey", "org.apache.sshd.core.CoreModuleProperties.REKEY_TIME_LIMIT", "org.apache.sshd.server.auth.pubkey.UserAuthPublicKeyFactory", "com.google.gerrit.server.ssh.SshAddressesModule.IANA_SSH_PORT", "org.apache.sshd.server.forward.ForwardingFilter", "com.google.gerrit.server.config.ConfigUtil", "org.apache.sshd.common.keyprovider.KeyPairProvider", "org.apache.sshd.common.NamedFactory", "java.security.KeyPair", "org.apache.sshd.common.NamedResource", "com.google.gerrit.server.ssh.SshListenAddresses", "org.apache.sshd.server.auth.gss.UserAuthGSSFactory", "org.apache.sshd.core.CoreModuleProperties.AUTH_TIMEOUT", "java.net.InetSocketAddress", "java.util.concurrent.TimeUnit", "org.apache.sshd.core.CoreModuleProperties.REKEY_BYTES_LIMIT", "java.util.Iterator", "org.apache.sshd.common.io.nio2.Nio2ServiceFactoryFactory", "java.security.GeneralSecurityException", "org.apache.sshd.common.io.IoAcceptor", "org.apache.sshd.core.CoreModuleProperties.WAIT_FOR_SPACE_TIMEOUT", "org.apache.sshd.mina.MinaServiceFactoryFactory", "com.google.gerrit.metrics.Counter0", "org.apache.sshd.common.kex.extension.DefaultServerKexExtensionHandler", "org.apache.sshd.server.auth.UserAuthFactory", "java.util.concurrent.ExecutorService", "org.eclipse.jgit.lib.Config", "org.apache.sshd.core.CoreModuleProperties.MAX_CONCURRENT_SESSIONS", "org.apache.sshd.common.util.security.SecurityUtils", "org.apache.sshd.server.global.CancelTcpipForwardHandler", "org.apache.mina.transport.socket.SocketSessionConfig", "com.google.gerrit.extensions.events.LifecycleListener", "org.apache.sshd.common.forward.DefaultForwarderFactory", "org.bouncycastle.crypto.prng.VMPCRandomGenerator", "org.apache.sshd.core.CoreModuleProperties.MAX_AUTH_REQUESTS", "org.apache.sshd.common.compression.Compression", "java.time.Duration", "org.apache.sshd.common.util.buffer.Buffer", "org.apache.sshd.common.io.IoServiceFactory", "com.google.gerrit.metrics.Description", "com.google.common.flogger.FluentLogger", "com.google.gerrit.metrics.MetricMaker", "org.apache.sshd.server.command.CommandFactory", "java.io.File", "org.bouncycastle.crypto.prng.RandomGenerator", "java.util.concurrent.CountDownLatch", "org.apache.sshd.server.auth.gss.GSSAuthenticator", "org.apache.sshd.server.session.SessionFactory", "com.google.inject.Singleton", "org.apache.sshd.mina.MinaSession", "java.security.PublicKey", "java.util.Arrays", "org.apache.sshd.server.ServerBuilder", "com.google.gerrit.server.config.GerritServerConfig", "java.util.Map", "com.google.inject.Inject", "com.google.common.util.concurrent.Atomics", "org.apache.sshd.server.channel.ChannelSession", "com.google.gerrit.server.permissions.GlobalPermission", "com.google.gerrit.server.permissions.PermissionBackend", "java.io.IOException", "com.google.gerrit.server.permissions.PermissionBackendException", "org.apache.sshd.server.Environment", "java.io.StringWriter", "java.util.ArrayList", "com.google.gerrit.server.args4j.SubcommandHandler", "com.google.gerrit.server.DynamicOptions", "org.apache.sshd.server.command.Command", "com.google.gerrit.extensions.registration.DynamicSet", "java.util.List", "com.google.common.collect.Sets", "com.google.gerrit.extensions.restapi.AuthException", "com.google.common.base.Strings", "java.util.concurrent.atomic.AtomicReference", "com.google.inject.assistedinject.Assisted", "org.kohsuke.args4j.Argument", "com.google.common.base.Throwables", "com.google.gerrit.server.ssh.SshInfo", "java.util.concurrent.TimeUnit.SECONDS", "org.apache.sshd.server.session.ServerSessionImpl", "org.apache.sshd.common.io.IoSession", "org.apache.sshd.common.session.Session", "org.apache.sshd.core.CoreModuleProperties.NIO2_READ_TIMEOUT", "org.apache.sshd.common.util.net.SshdSocketAddress", "org.apache.sshd.common.session.helpers.DefaultUnknownChannelReferenceHandler", "org.apache.sshd.common.future.SshFutureListener", "java.security.InvalidKeyException", "org.apache.sshd.server.auth.pubkey.PublickeyAuthenticator", "com.google.gerrit.server.util.SocketUtil", "org.apache.sshd.core.CoreModuleProperties.SERVER_IDENTIFICATION", "org.apache.sshd.server.global.NoMoreSessionsHandler", "java.net.UnknownHostException", "org.apache.sshd.core.CoreModuleProperties.IDLE_TIMEOUT", "org.apache.sshd.common.cipher.Cipher", "com.google.gerrit.server.ssh.SshAdvertisedAddresses", "org.apache.sshd.common.kex.BuiltinDHFactories", "org.apache.sshd.common.global.KeepAliveHandler", "org.apache.sshd.server.global.TcpipForwardHandler", "org.apache.sshd.common.mac.Mac", "org.apache.sshd.common.BaseBuilder", "com.google.gerrit.common.Version", "org.apache.sshd.common.io.IoServiceFactoryFactory", "java.net.SocketAddress" ]
+  }, {
+    "name" : "Builder",
+    "packageName" : "com.google.gerrit.common.data",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "lineNumber",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "toString",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "getPattern", "replace", "next", "getRules", "iterator", "hasNext", "isExclusiveGroup", "asString", "toHeaderString", "ofNullable", "orElse", "multiMatchRefSpecs", "getCommaSeparatedChangeAndPatchSetId", "matchingRefSpecs", "getMax", "trim", "forLabel", "formatValue", "getMin", "getSuperProject", "getPath", "getSubmodule", "map", "stream", "getJavaScriptResourcePath", "maybeTrim", "isEmpty", "getContentLength", "getContentType", "encoded", "value", "statusCode", "of", "collect", "joining", "mapToObj", "size", "decodeUInt16", "getRanges", "getDN", "getBase", "isSingleWord", "getChildCount", "getName", "getChild", "keySet", "getCommit", "getProject", "getId", "getDest", "ids", "nonVisibleIds", "toText", "writeToConfig", "notifyTypes", "account", "firstNonNull", "on", "appendTo", "filter", "getAccountId", "uuid", "getUsername", "getUUID", "setAccessible", "isAssignableFrom", "getDeclaredFields", "identityHashCode", "log", "atFine", "forName", "getType", "getMessage", "getRemoteAddress", "accountId", "slices", "slice", "getRefName", "nameOf", "getSimpleName", "getClass", "toStringHelper", "addValue", "name", "add", "isPresent", "id", "branch", "project", "shortName", "indexOf", "describe", "getOperator", "getValue", "get", "entrySet", "getKey", "append", "encode", "getCacheName", "format", "permissionName" ]
+    }, {
+      "name" : "replace",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "getPluginName", "compareAndSet", "hasField", "getSchema", "allAsList", "delete", "idTerm", "isNew", "change", "get", "toDocument", "replace", "length", "requireNonNull", "toSet", "singleton", "checkSameAccount", "isEmpty", "collect", "equals", "format", "concat", "stream", "map", "remove", "put", "value", "getMap" ]
+    }, {
+      "name" : "modifyRules",
+      "visibility" : "public",
+      "methodCalls" : [ "accept" ]
+    }, {
+      "name" : "setExclusiveGroup",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getRulesBuilders",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "clearRules",
+      "visibility" : "public",
+      "methodCalls" : [ "clear", "modifyRules" ]
+    }, {
+      "name" : "removeRule",
+      "visibility" : "public",
+      "methodCalls" : [ "modifyRules", "removeIf", "sameGroup", "build" ]
+    }, {
+      "name" : "getName",
+      "visibility" : "public",
+      "methodCalls" : [ "id", "preferredEmail", "fullName", "get", "getNameKey", "substring", "lastIndexOf", "getAccount", "getGroup", "getName" ]
+    }, {
+      "name" : "value",
+      "visibility" : "public",
+      "methodCalls" : [ "checkedCast", "evaluatesTriviallyToExpectedValue", "isNotNull", "isPresent", "apply", "get", "check", "testOrFalse", "value" ]
+    }, {
+      "name" : "granted",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "upsertPermission",
+      "visibility" : "public",
+      "methodCalls" : [ "modifyPermissions", "findAny", "equalsIgnoreCase", "stream", "get", "getName", "add", "isPresent", "requireNonNull", "filter", "builder" ]
+    }, {
+      "name" : "removePermission",
+      "visibility" : "public",
+      "methodCalls" : [ "equalsIgnoreCase", "modifyPermissions", "requireNonNull", "removeIf", "getName" ]
+    }, {
+      "name" : "addPermission",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "requireNonNull", "modifyPermissions" ]
+    }, {
+      "name" : "postSubmit",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "uuid",
+      "visibility" : "public",
+      "methodCalls" : [ "uuid", "get" ]
+    }, {
+      "name" : "tag",
+      "visibility" : "public",
+      "methodCalls" : [ "create" ]
+    }, {
+      "name" : "modifyPermissions",
+      "visibility" : "public",
+      "methodCalls" : [ "accept" ]
+    }, {
+      "name" : "realAccountId",
+      "visibility" : "public",
+      "methodCalls" : [ "of", "isIdentifiedUser", "getAccountId", "empty", "getRealUser" ]
+    }, {
+      "name" : "copied",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "displayName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAllowOverrideInChildProjects",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "preferredEmail",
+      "visibility" : "public",
+      "methodCalls" : [ "toLowerCase" ]
+    }, {
+      "name" : "setUniqueTag",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setApplicabilityExpression",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "changeStatus",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOverrideExpression",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "uniqueTag",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "metaId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setInactive",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "fullName",
+      "visibility" : "public",
+      "methodCalls" : [ "startsWith", "equals" ]
+    }, {
+      "name" : "inactive",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "patchSetNumber",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMetaId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "isMergedInTargetBranch",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "changeNumber",
+      "visibility" : "public",
+      "methodCalls" : [ "idStr", "hasField", "toString", "getSchema" ]
+    }, {
+      "name" : "changeKey",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "autoBuild",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSubmittabilityExpression",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "registeredOn",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "patchSetCommitId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "forced",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "legacy",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "submittabilityExpressionResult",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "applicabilityExpressionResult",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "submitRequirement",
+      "visibility" : "public",
+      "methodCalls" : [ "create", "asRestApiException" ]
+    }, {
+      "name" : "hidden",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "overrideExpressionResult",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDeny",
+      "visibility" : "public",
+      "methodCalls" : [ "setAction" ]
+    }, {
+      "name" : "setGroup",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAction",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGroup",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "format", "get", "openRepository", "getGroup" ]
+    }, {
+      "name" : "setMin",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setBlock",
+      "visibility" : "public",
+      "methodCalls" : [ "setAction" ]
+    }, {
+      "name" : "setRange",
+      "visibility" : "public",
+      "methodCalls" : [ "setMin", "setMax", "asCommentRange" ]
+    }, {
+      "name" : "setForce",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMax",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMatchProjectsRegexes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAgreementUrl",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAutoVerify",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setExcludeProjectsRegexes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAccepted",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setConfigRefState",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setBooleanConfig",
+      "visibility" : "public",
+      "methodCalls" : [ "setBooleanConfigs", "replace", "copyOf", "getBooleanConfigs" ]
+    }, {
+      "name" : "setParent",
+      "visibility" : "public",
+      "methodCalls" : [ "setParent", "nameKey", "noParents", "parent" ]
+    }, {
+      "name" : "setDefaultDashboard",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSubmitType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMaxObjectSizeLimit",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setLocalDefaultDashboard",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setState",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addMatchingRefSpec",
+      "visibility" : "public",
+      "methodCalls" : [ "matchingRefSpecsBuilder", "add" ]
+    }, {
+      "name" : "setSuffix",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOverrideOnly",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setEnabled",
+      "visibility" : "public",
+      "methodCalls" : [ "valueOf", "setEnabled" ]
+    }, {
+      "name" : "pushCertificate",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addMultiMatchRefSpec",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "multiMatchRefSpecsBuilder" ]
+    }, {
+      "name" : "setType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setFallbackText",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPrefix",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "branch",
+      "visibility" : "public",
+      "methodCalls" : [ "create", "ref", "substring", "fullName", "startsWith" ]
+    }, {
+      "name" : "realUploader",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setText",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "conflicts",
+      "visibility" : "public",
+      "methodCalls" : [ "create", "add", "or", "size" ]
+    }, {
+      "name" : "uploader",
+      "visibility" : "public",
+      "methodCalls" : [ "toString" ]
+    }, {
+      "name" : "createdOn",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "includeUuid",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setLink",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "groups",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMatch",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addedOn",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addedBy",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "removedLegacy",
+      "visibility" : "public",
+      "methodCalls" : [ "addedBy", "removed", "addedOn" ]
+    }, {
+      "name" : "removed",
+      "visibility" : "public",
+      "methodCalls" : [ "removedBy", "removedOn" ]
+    }, {
+      "name" : "memberId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPatchSetLockFunction",
+      "visibility" : "public",
+      "methodCalls" : [ "setFunction" ]
+    }, {
+      "name" : "failingAtoms",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setRefPatterns",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "explanation",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setIgnoreSelfApproval",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setNoBlockFunction",
+      "visibility" : "public",
+      "methodCalls" : [ "setFunction" ]
+    }, {
+      "name" : "expression",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCanOverride",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMaxNegative",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAllowPostSubmit",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setValues",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "passingAtoms",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "predicateString",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getValues",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addChildPredicateResult",
+      "visibility" : "public",
+      "methodCalls" : [ "childPredicateResultsBuilder", "add" ]
+    }, {
+      "name" : "setFunction",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "atomExplanations",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDefaultValue",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCopyCondition",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMaxPositive",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "errorMessage",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "empty", "submittabilityExpressionResult", "get", "status", "applicabilityExpressionResult", "errorMessage", "isPresent", "overrideExpressionResult", "of", "map", "flatMap", "error", "joining", "collect", "stream" ]
+    }, {
+      "name" : "setSubgroups",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setRefState",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMembers",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCreatedOn",
+      "visibility" : "public",
+      "methodCalls" : [ "from" ]
+    }, {
+      "name" : "setOldChangeInfo",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAdded",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setNewChangeInfo",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setRemoved",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "reset",
+      "visibility" : "public",
+      "methodCalls" : [ "of", "isEmpty", "putAll", "asList" ]
+    }, {
+      "name" : "toBuilder",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "getRules", "map", "getPermissions", "addPermission", "autoToBuilder", "stream", "forEach", "putAll" ]
+    }, {
+      "name" : "addCc",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "ccBuilder" ]
+    }, {
+      "name" : "dateReceived",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addTo",
+      "visibility" : "public",
+      "methodCalls" : [ "toBuilder", "add", "addCommand", "values" ]
+    }, {
+      "name" : "rawContentUTF",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "textContent",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "additionalHeadersBuilder",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addAdditionalHeader",
+      "visibility" : "public",
+      "methodCalls" : [ "additionalHeadersBuilder", "add" ]
+    }, {
+      "name" : "ccBuilder",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "from",
+      "visibility" : "public",
+      "methodCalls" : [ "toImmutableSet", "stream", "toList", "views", "evaluatePermissionBackendConditions", "flatMap", "from", "filter", "concat", "collect", "create", "fullName", "account", "getParameterNames", "get", "hashOf", "email", "isEmpty", "equals", "orElse", "trim", "getRawPattern", "map", "name", "replace", "toString", "or" ]
+    }, {
+      "name" : "rawContent",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "subject",
+      "visibility" : "public",
+      "methodCalls" : [ "subject" ]
+    }, {
+      "name" : "htmlContent",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "stored",
+      "visibility" : "public",
+      "methodCalls" : [ "stored" ]
+    }, {
+      "name" : "name",
+      "visibility" : "public",
+      "methodCalls" : [ "value", "apply", "asRestApiException", "parse", "create", "isNullOrEmpty", "get", "nameKey", "name", "fullName", "hasField", "schema", "equalsNameIncludingSecondaryEmails", "equalsName", "getClass", "getSimpleName" ]
+    }, {
+      "name" : "getter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "fieldType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "required",
+      "visibility" : "public",
+      "methodCalls" : [ "required" ]
+    }, {
+      "name" : "protoConverter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "fieldSetter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addSearchSpecs",
+      "visibility" : "public",
+      "methodCalls" : [ "checkArgument", "getField", "addSearchSpecs", "copyOf", "name", "addAll", "contains", "getName" ]
+    }, {
+      "name" : "remove",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "getGroup", "removeRule", "removePermission", "getName", "getFileName", "newDirectoryStream", "isNullOrEmpty", "move", "exists", "message", "resolveSibling", "toString", "matches", "email", "doRemove", "remove", "requireNonNull", "apply", "asRestApiException", "unlock", "difference", "atWarning", "get", "getNameKey", "lock", "evictAndReindex", "withCause", "copyOf", "put", "of", "log", "repositoryDeleted", "name", "removeAll", "stream", "values", "anyMatch", "getSearchSpecs", "asList", "checkArgument", "add", "invalidate", "compareAndSet", "removeIf" ]
+    }, {
+      "name" : "addIndexedFields",
+      "visibility" : "public",
+      "methodCalls" : [ "copyOf", "addAll", "addIndexedFields" ]
+    }, {
+      "name" : "version",
+      "visibility" : "public",
+      "methodCalls" : [ "of", "version" ]
+    }, {
+      "name" : "add",
+      "visibility" : "public",
+      "methodCalls" : [ "modifyRules", "compareAndSet", "isMasterKey", "getPublicKey", "getFingerprint", "remove", "getVersion", "getSchemaFields", "getIndexFields", "values", "addAll", "isPresent", "version", "getProvider", "of", "checkState", "getDeleteChangeMessageRewriter", "getProjectName", "getDraftUpdate", "getStorageKey", "containsKey", "getRobotCommentUpdate", "getDeleteCommentRewriter", "getOldId", "checkArgument", "getResult", "getNewId", "get", "getRefName", "equals", "add", "put", "requireNonNull" ]
+    }, {
+      "name" : "recomputeOnClosedChanges",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "newAuthor",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "newCommitMessage",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addTreeModification",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "treeModificationsBuilder" ]
+    }, {
+      "name" : "treeModifications",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "newCommitter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setFullName",
+      "visibility" : "public",
+      "methodCalls" : [ "nullToEmpty", "setFullName" ]
+    }, {
+      "name" : "setShouldDeleteAccount",
+      "visibility" : "public",
+      "methodCalls" : [ "setShouldDeleteAccount" ]
+    }, {
+      "name" : "addExternalIds",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll", "createdExternalIdsBuilder", "addExternalIds" ]
+    }, {
+      "name" : "replaceExternalId",
+      "visibility" : "public",
+      "methodCalls" : [ "of", "replaceExternalIds" ]
+    }, {
+      "name" : "setPreferredEmail",
+      "visibility" : "public",
+      "methodCalls" : [ "nullToEmpty", "setPreferredEmail" ]
+    }, {
+      "name" : "replaceExternalIds",
+      "visibility" : "public",
+      "methodCalls" : [ "deleteExternalIds", "addExternalIds" ]
+    }, {
+      "name" : "addExternalId",
+      "visibility" : "public",
+      "methodCalls" : [ "of", "addExternalIds" ]
+    }, {
+      "name" : "updateExternalId",
+      "visibility" : "public",
+      "methodCalls" : [ "updateExternalIds", "of" ]
+    }, {
+      "name" : "setDisplayName",
+      "visibility" : "public",
+      "methodCalls" : [ "setDisplayName", "nullToEmpty", "length", "asRestApiException", "apply" ]
+    }, {
+      "name" : "deleteExternalId",
+      "visibility" : "public",
+      "methodCalls" : [ "deleteExternalIds", "of" ]
+    }, {
+      "name" : "updateExternalIds",
+      "visibility" : "public",
+      "methodCalls" : [ "updateExternalIds", "updatedExternalIdsBuilder", "addAll" ]
+    }, {
+      "name" : "deleteExternalIds",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll", "deleteExternalIds", "deletedExternalIdsBuilder", "apply", "asRestApiException" ]
+    }, {
+      "name" : "updateProjectWatch",
+      "visibility" : "public",
+      "methodCalls" : [ "updateProjectWatches", "of" ]
+    }, {
+      "name" : "deleteProjectWatch",
+      "visibility" : "public",
+      "methodCalls" : [ "deleteProjectWatches", "of" ]
+    }, {
+      "name" : "setActive",
+      "visibility" : "public",
+      "methodCalls" : [ "setInactive", "setActive", "apply", "asRestApiException" ]
+    }, {
+      "name" : "updateProjectWatches",
+      "visibility" : "public",
+      "methodCalls" : [ "putAll", "updateProjectWatches", "updatedProjectWatchesBuilder" ]
+    }, {
+      "name" : "setGeneralPreferences",
+      "visibility" : "public",
+      "methodCalls" : [ "setGeneralPreferences" ]
+    }, {
+      "name" : "deleteProjectWatches",
+      "visibility" : "public",
+      "methodCalls" : [ "deletedProjectWatchesBuilder", "addAll", "deleteProjectWatches" ]
+    }, {
+      "name" : "setEditPreferences",
+      "visibility" : "public",
+      "methodCalls" : [ "setEditPreferences", "apply", "value", "asRestApiException" ]
+    }, {
+      "name" : "setStatus",
+      "visibility" : "public",
+      "methodCalls" : [ "getCode", "nullToEmpty", "setStatus", "checkArgument", "apply", "asRestApiException", "checkState" ]
+    }, {
+      "name" : "deleteAccount",
+      "visibility" : "public",
+      "methodCalls" : [ "setShouldDeleteAccount", "deleteExternalIds" ]
+    }, {
+      "name" : "setDiffPreferences",
+      "visibility" : "public",
+      "methodCalls" : [ "setDiffPreferences", "asRestApiException", "apply", "value" ]
+    }, {
+      "name" : "setSeq",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setValid",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSshPublicKey",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAccountId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "lineRange",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "actionName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "retryWithTrace",
+      "visibility" : "public",
+      "methodCalls" : [ "retryWithTrace" ]
+    }, {
+      "name" : "timeout",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "onAutoTrace",
+      "visibility" : "public",
+      "methodCalls" : [ "onAutoTrace" ]
+    }, {
+      "name" : "listener",
+      "visibility" : "public",
+      "methodCalls" : [ "listener" ]
+    }, {
+      "name" : "skipFilesWithAllEditsDueToRebase",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "generatedContent",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "modifiableContent",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "bTree",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "aTree",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "sizeDelta",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "aCommit",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "size",
+      "visibility" : "public",
+      "methodCalls" : [ "check", "that", "isNotNull", "length", "size", "delta" ]
+    }, {
+      "name" : "oldCommitId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "newCommitId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "newSha",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "headerLines",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "oldSha",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "comparisonType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "bCommit",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "ignoreRebase",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "key",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "named", "key" ]
+    }, {
+      "name" : "newParentId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "oldParentId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "mainDiff",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "parentVsParentDiff",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "newVsParentDiff",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "oldVsParentDiff",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "augmentedKey",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "oldCommit",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "newCommit",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "oldId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "newId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "oldPath",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "oldMode",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "changeType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "newPath",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "newMode",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "edits",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "patchType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "fileHeader",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "negative",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "whitespace",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "oldTree",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "useTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "newTree",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "disableRenameDetection",
+      "visibility" : "public",
+      "methodCalls" : [ "renameScore" ]
+    }, {
+      "name" : "renameScore",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "newFilePath",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addChange",
+      "visibility" : "public",
+      "methodCalls" : [ "getProjectName", "containsKey", "check", "statePermitsRead", "put", "change", "find", "parse", "size", "get", "currentUser", "isEmpty", "addChange", "add", "getChangeId" ]
+    }, {
+      "name" : "magicPush",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setIsPrivate",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setIsWorkInProgress",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setChange",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setIsEdit",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSubject",
+      "visibility" : "public",
+      "methodCalls" : [ "length", "substring" ]
+    }, {
+      "name" : "setPrefixes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setFilterMeta",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGroupUUID",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setNameKey",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setId",
+      "visibility" : "public",
+      "methodCalls" : [ "setId" ]
+    }, {
+      "name" : "getMemberModification",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSubgroupModification",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setVisibleToAll",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setName",
+      "visibility" : "public",
+      "methodCalls" : [ "apply", "asRestApiException" ]
+    }, {
+      "name" : "getSubgroupModification",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOwnerGroupUUID",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setUpdatedOn",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMemberModification",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDescription",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "requestQueryString",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "requestUri",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "callingUser",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addHeader",
+      "visibility" : "public",
+      "methodCalls" : [ "headersBuilder", "add" ]
+    }, {
+      "name" : "traceContext",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "put",
+      "visibility" : "public",
+      "methodCalls" : [ "value", "remove", "getAnnotation", "requireNonNull", "putWithHeaders", "change", "getId", "get", "checkArgument", "add", "nowMs", "execute", "ofEpochMilli", "put" ]
+    }, {
+      "name" : "noteDbSequenceType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addPluginMetadata",
+      "visibility" : "public",
+      "methodCalls" : [ "pluginMetadataBuilder", "add" ]
+    }, {
+      "name" : "caller",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "noteDbRefName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "cause",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "accountId",
+      "visibility" : "public",
+      "methodCalls" : [ "key", "accountId" ]
+    }, {
+      "name" : "patchSetId",
+      "visibility" : "public",
+      "methodCalls" : [ "key", "patchSetId" ]
+    }, {
+      "name" : "commandName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "cacheKey",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "exception",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "groupId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "exportValue",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "projectName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "changeIdType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "authDomainName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "eventType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "requestType",
+      "visibility" : "public",
+      "methodCalls" : [ "requestType", "name" ]
+    }, {
+      "name" : "groupUuid",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "partial",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "memoryPoolName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "cacheName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "pushType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "outdated",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "diffAlgorithm",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "noteDbFilePath",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "methodName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "revision",
+      "visibility" : "public",
+      "methodCalls" : [ "toString", "revision", "create", "fromDecoded", "parse", "asRestApiException" ]
+    }, {
+      "name" : "multiple",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "username",
+      "visibility" : "public",
+      "methodCalls" : [ "toLowerCase", "username" ]
+    }, {
+      "name" : "attempt",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "groupName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "restViewName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "groupSystem",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "indexName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "httpStatus",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "indexVersion",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "resourceCount",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "garbageCollectorName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "className",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "submitRequirementName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "cancellationReason",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "pluginName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "actionType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "gitOperation",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "operationName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "branchName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "commit",
+      "visibility" : "public",
+      "methodCalls" : [ "increment", "copyOrZero", "getResult", "getProjectName", "add", "execute", "open", "openUpdate", "commit", "write", "getCommitBuilder", "create", "parse", "fromDecoded", "setAddLinks", "asRestApiException", "value", "apply", "commitPrefix" ]
+    }, {
+      "name" : "commentSide",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "user",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull" ]
+    }, {
+      "name" : "account",
+      "visibility" : "public",
+      "methodCalls" : [ "build", "toBuilder", "account" ]
+    }, {
+      "name" : "change",
+      "visibility" : "public",
+      "methodCalls" : [ "getNotes", "branch", "branchOrThrow", "equals", "getProjectControl", "getDest", "create", "getProject", "controlFor", "checkArgument", "asForChange", "getChange", "getNameKey", "ref", "changeNumber", "lazyload", "project", "change", "toBuilder", "build" ]
+    }, {
+      "name" : "message",
+      "visibility" : "public",
+      "methodCalls" : [ "flush", "println", "printf", "isEmpty", "create", "asRestApiException", "fromDecoded", "parse", "startsWith", "message", "checkFieldAvailable" ]
+    }, {
+      "name" : "availableTokens",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "filter", "availableTokens", "min", "stream", "mapToLong", "isPresent", "responses", "isOk", "status" ]
+    }, {
+      "name" : "status",
+      "visibility" : "public",
+      "methodCalls" : [ "applicabilityExpressionResult", "orElse", "assertError", "overrideExpressionResult", "assertFail", "submittabilityExpressionResult", "assertPass", "forced", "unreviewed", "equalsIgnoreCase", "parse" ]
+    }, {
+      "name" : "initDefaultAcls",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "initDefaultSubmitRequirements",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "codeReviewLabel",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "administratorsGroup",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "serviceUsersGroup",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "commitMessage",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "booleanProjectConfigsBuilder",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "firstChangeIdForNoteDb",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "codeReviewSubmitRequirement",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "blockedUsersGroup",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addBooleanProjectConfig",
+      "visibility" : "public",
+      "methodCalls" : [ "booleanProjectConfigsBuilder", "put" ]
+    }, {
+      "name" : "projectDescription",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "path",
+      "visibility" : "public",
+      "methodCalls" : [ "string", "resolve", "startsWith", "path" ]
+    }, {
+      "name" : "patchset",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "id",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "getId", "of", "fromUrl", "on", "encode", "join", "asRestApiException", "create", "fromDecoded", "parse", "id", "valueOf", "hasField", "toString", "changeId", "psId" ]
+    }, {
+      "name" : "project",
+      "visibility" : "public",
+      "methodCalls" : [ "asForProject", "create", "getCacheKey", "getCause", "illegalState", "orElseThrow", "getOrCompute", "startsWith", "nameKey", "get", "build", "toBuilder", "project", "branch" ]
+    }, {
+      "name" : "changeId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "contextPadding",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "commitId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "range",
+      "visibility" : "public",
+      "methodCalls" : [ "addSearchSpec" ]
+    }, {
+      "name" : "build",
+      "visibility" : "public",
+      "methodCalls" : [ "finish", "setRules", "map", "distinct", "realAccountId", "key", "count", "toImmutableList", "setPermissions", "stream", "getPermissions", "collect", "accountId", "getOverrideOnly", "setText", "type", "getMatch", "setSuffix", "getPrefix", "getLink", "emptyToNull", "setPrefix", "isNullOrEmpty", "getText", "validateType", "getSuffix", "setMaxNegative", "setValues", "getValues", "checkName", "getName", "getRefPatterns", "sortValues", "setMaxPositive", "setName", "setByValue", "setRefPatterns", "create", "empty", "repeatable", "size", "fieldType", "getter", "isSubtypeOf", "fieldSetter", "protoConverter", "copyOf", "isPresent", "get", "autoBuild", "name", "checkArgument", "matches", "comments", "checkState", "isEmpty", "build", "buildImpl", "getSubject", "setIsEdit", "setIsWorkInProgress", "isEdit", "setSubject", "change", "isWorkInProgress", "subject", "isPrivate", "setIsPrivate", "setChange", "forEach", "getKey", "changes", "getValue", "entrySet", "builder", "put", "endsWith", "modifiableContent", "reset", "getParentCount", "add", "markUninteresting", "parseBody", "getParent", "of", "generatedContent", "markStart", "next", "toByteArray", "getChangeNoteJson", "getNewText" ]
+    }, {
+      "name" : "description",
+      "visibility" : "public",
+      "methodCalls" : [ "apply", "value", "asRestApiException", "message", "error", "isNullOrEmpty", "description" ]
+    }, {
+      "name" : "addComment",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "commentsBuilder" ]
+    }, {
+      "name" : "comments",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "commentsRequest", "value", "asRestApiException", "apply" ]
+    }, {
+      "name" : "filePath",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    } ],
+    "imports" : [ "org.eclipse.jgit.errors.IncorrectObjectTypeException", "com.google.common.primitives.Shorts", "com.google.gerrit.entities.RefNames.REFS_DRAFT_COMMENTS", "com.google.gerrit.extensions.annotations.ExtensionPoint", "com.google.gerrit.entities.RefNames.REFS_STARRED_CHANGES", "com.google.errorprone.annotations.Immutable", "com.google.gerrit.extensions.client.ProjectState", "com.google.gerrit.extensions.client.SubmitType", "org.eclipse.jgit.transport.RefSpec", "com.google.gerrit.common.ConvertibleToProto", "com.google.errorprone.annotations.InlineMe", "com.google.gerrit.extensions.api.projects.CommentLinkInfo", "com.google.common.primitives.Ints", "com.google.gson.TypeAdapter", "java.util.stream.Collectors.toList", "com.google.gerrit.testing.TestActionRefUpdateContext.testRefAction", "com.google.common.collect.Multimap", "com.google.gerrit.server.index.account.AccountIndexer", "com.google.gerrit.server.project.RefPatternMatcher", "com.google.gerrit.index.RefState", "com.google.gerrit.entities.RefNames.REFS_USERS", "com.google.common.collect.ImmutableMultimap", "com.google.common.collect.MultimapBuilder", "java.lang.reflect.ParameterizedType", "com.google.common.reflect.TypeToken", "java.util.Locale", "com.google.gerrit.entities.converter.ProtoConverter", "com.google.protobuf.MessageLite", "com.google.gerrit.index.SchemaFieldDefs.Getter", "com.google.gerrit.index.SchemaFieldDefs.Setter", "java.sql.Timestamp", "java.util.stream.StreamSupport", "java.lang.reflect.Type", "com.google.gerrit.index.SchemaFieldDefs.SchemaField", "com.google.common.collect.ImmutableMap.toImmutableMap", "com.google.gerrit.server.edit.tree.TreeModification", "com.google.gerrit.common.UsedAt.Project", "com.google.gerrit.entities.ProjectWatchKey", "com.google.gerrit.server.account.externalids.DuplicateExternalIdKeyException", "com.google.gerrit.server.account.externalids.ExternalId", "com.google.gerrit.extensions.client.EditPreferencesInfo", "com.google.gerrit.extensions.client.GeneralPreferencesInfo", "com.google.gerrit.entities.NotifyConfig.NotifyType", "java.util.Comparator.comparing", "java.util.HashSet", "com.google.common.collect.Comparators.emptiesFirst", "java.util.stream.Collectors.collectingAndThen", "java.util.stream.Stream", "com.google.common.collect.ImmutableSet.toImmutableSet", "java.util.function.BiFunction", "com.google.gerrit.entities.SubmitRequirementResult", "com.google.gerrit.entities.converter.PatchSetApprovalProtoConverter", "com.google.common.collect.Table", "com.google.gerrit.server.ReviewerByEmailSet", "com.google.gerrit.server.cache.proto.Cache.ChangeNotesStateProto.ChangeColumnsProto", "com.google.gerrit.entities.ChangeMessage", "com.google.gerrit.server.cache.proto.Cache.ChangeNotesStateProto.ReviewerByEmailSetEntryProto", "com.google.gerrit.server.ReviewerSet", "com.google.gson.Gson", "com.google.gerrit.entities.converter.ChangeMessageProtoConverter", "com.google.gerrit.server.ReviewerStatusUpdate", "com.google.gerrit.entities.converter.PatchSetProtoConverter", "com.google.common.collect.ImmutableSortedMap", "com.google.common.collect.ImmutableListMultimap", "com.google.gerrit.entities.AttentionSetUpdate", "com.google.common.collect.ImmutableTable", "com.google.gerrit.json.OutputFormat", "com.google.gerrit.server.cache.proto.Cache.ChangeNotesStateProto", "com.google.gerrit.server.index.change.ChangeField.StoredSubmitRecord", "com.google.common.collect.ListMultimap", "com.google.gerrit.server.cache.proto.Cache.ChangeNotesStateProto.AttentionSetUpdateProto", "com.google.gerrit.server.cache.proto.Cache.ChangeNotesStateProto.ReviewerSetEntryProto", "com.google.gerrit.entities.SubmitRecord", "com.google.gerrit.server.cache.proto.Cache.ChangeNotesStateProto.ReviewerStatusUpdateProto", "com.google.common.collect.ImmutableListMultimap.toImmutableListMultimap", "com.google.gerrit.server.update.RetryableIndexQueryAction.IndexQueryAction", "com.github.rholder.retry.RetryerBuilder", "com.google.gerrit.server.config.GerritServerConfig", "com.google.gerrit.server.logging.RequestId", "java.util.HashMap", "java.util.function.Consumer", "com.google.gerrit.metrics.Counter3", "java.time.Duration", "java.util.function.Predicate", "com.google.gerrit.metrics.Description", "com.google.gerrit.metrics.Field", "com.google.gerrit.server.ExceptionHook", "com.google.gerrit.server.update.RetryableAction.Action", "com.github.rholder.retry.WaitStrategies", "com.github.rholder.retry.Attempt", "com.github.rholder.retry.Retryer", "com.google.gerrit.server.query.group.InternalGroupQuery", "com.google.gerrit.server.update.RetryableChangeAction.ChangeAction", "com.google.gerrit.server.query.account.InternalAccountQuery", "com.github.rholder.retry.StopStrategies", "com.github.rholder.retry.WaitStrategy", "java.util.concurrent.TimeUnit.SECONDS", "com.github.rholder.retry.RetryListener", "java.util.concurrent.ExecutionException", "com.github.rholder.retry.RetryException", "com.google.gerrit.metrics.MetricMaker", "com.google.gerrit.server.plugincontext.PluginSetContext", "com.google.gerrit.server.update.RetryableAction.ActionType", "com.google.gerrit.server.query.change.InternalChangeQuery", "com.google.common.base.MoreObjects.firstNonNull", "java.util.concurrent.TimeUnit.MILLISECONDS", "java.time.format.DateTimeFormatter", "com.google.common.base.CharMatcher", "org.eclipse.jgit.lib.AnyObjectId", "com.google.gerrit.git.ObjectIds", "com.google.gerrit.server.patch.diff.ModifiedFilesCache", "com.google.gerrit.server.patch.diff.ModifiedFilesCacheKey", "com.google.gerrit.server.patch.diff.ModifiedFilesCacheImpl", "org.eclipse.jgit.lib.Config", "com.google.gerrit.server.patch.diff.ModifiedFilesLoader", "com.google.common.collect.ImmutableSortedMap.toImmutableSortedMap", "java.util.Comparator.naturalOrder", "com.google.common.collect.ImmutableCollection", "com.google.gerrit.server.patch.filediff.FileDiffCacheKey", "com.google.inject.Module", "com.google.gerrit.server.patch.gitdiff.GitModifiedFilesCacheImpl", "com.google.gerrit.server.patch.filediff.FileDiffCacheImpl", "com.google.gerrit.server.patch.filediff.FileDiffCache", "java.util.ArrayList", "com.google.gerrit.server.cache.CacheModule", "com.google.gerrit.server.patch.filediff.FileDiffOutput", "com.google.gerrit.server.update.RepoView", "com.google.gerrit.server.patch.gitfilediff.GitFileDiffCacheImpl", "com.google.inject.Singleton", "com.google.gerrit.server.patch.gitdiff.ModifiedFile", "org.eclipse.jgit.lib.ObjectInserter", "com.google.gerrit.server.cache.proto.Cache.GitModifiedFilesKeyProto", "com.google.gerrit.server.patch.DiffUtil", "com.google.gerrit.entities.Patch.FileMode", "com.google.gerrit.server.cache.proto.Cache.ModifiedFileProto", "com.google.gerrit.server.cache.proto.Cache.ModifiedFilesKeyProto", "java.io.Serializable", "com.google.gerrit.server.cache.proto.Cache.FileDiffOutputProto", "com.google.gerrit.server.cache.proto.Cache.FileDiffKeyProto", "com.google.gerrit.entities.Patch", "org.eclipse.jgit.diff.DiffEntry", "com.google.gerrit.server.patch.filediff.Edit", "com.google.gerrit.server.cache.proto.Cache.GitFileDiffProto", "com.google.gerrit.entities.Patch.ChangeType", "com.google.gerrit.entities.Patch.PatchType", "org.eclipse.jgit.lib.AbbreviatedObjectId", "com.google.protobuf.Descriptors.FieldDescriptor", "org.eclipse.jgit.patch.FileHeader", "org.eclipse.jgit.lib.FileMode", "com.google.gerrit.extensions.client.DiffPreferencesInfo", "com.google.gerrit.server.patch.gitfilediff.GitFileDiffCacheImpl.DiffAlgorithm", "com.google.gerrit.server.patch.DiffUtil.stringSize", "com.google.common.base.Enums", "com.google.common.base.Converter", "com.google.gerrit.server.cache.serialize.ObjectIdConverter", "com.google.gerrit.extensions.client.DiffPreferencesInfo.Whitespace", "com.google.gerrit.entities.Project.NameKey", "com.google.gerrit.server.cache.proto.Cache.GitFileDiffKeyProto", "java.util.Arrays", "java.util.EnumMap", "com.google.common.collect.Maps", "com.google.gerrit.server.notedb.ChangeNotes", "org.eclipse.jgit.lib.Ref", "com.google.gerrit.entities.BranchNameKey", "java.util.stream.Collectors.toSet", "com.google.gerrit.extensions.conditions.BooleanCondition", "java.util.Iterator", "org.eclipse.jgit.errors.RepositoryNotFoundException", "java.util.EnumSet", "com.google.inject.ImplementedBy", "com.google.gerrit.extensions.restapi.AuthException", "java.util.Collections", "com.google.gerrit.extensions.api.access.GlobalOrPluginPermission", "com.google.gerrit.extensions.api.access.CoreOrPluginProjectPermission", "com.google.gerrit.extensions.restapi.ResourceNotFoundException", "com.google.gerrit.server.query.change.ChangeData", "org.eclipse.jgit.transport.ReceiveCommand", "org.eclipse.jgit.lib.PersonIdent", "com.google.gerrit.server.account.AccountCache", "java.util.Objects", "java.util.concurrent.TimeUnit", "com.google.gerrit.server.group.GroupAuditService", "com.google.gerrit.server.util.time.TimeUtil", "com.google.gerrit.git.LockFailureException", "com.google.gerrit.exceptions.NoSuchGroupException", "com.google.inject.Provider", "com.google.gerrit.git.RefUpdateUtil", "java.util.concurrent.Future", "com.google.gerrit.server.update.RetryHelper", "com.google.gerrit.exceptions.StorageException", "com.google.common.annotations.VisibleForTesting", "org.eclipse.jgit.lib.Constants.R_REFS", "com.google.gerrit.entities.InternalGroup", "com.google.gerrit.server.IdentifiedUser", "com.google.gerrit.server.update.context.RefUpdateContext", "com.google.gerrit.server.account.GroupCache", "com.google.common.base.Throwables", "com.google.gerrit.server.update.context.RefUpdateContext.RefUpdateType.GROUPS_UPDATE", "org.eclipse.jgit.errors.ConfigInvalidException", "com.google.gerrit.exceptions.DuplicateKeyException", "org.eclipse.jgit.lib.RefUpdate", "org.eclipse.jgit.lib.BatchRefUpdate", "com.google.gerrit.server.account.GroupIncludeCache", "com.google.gerrit.server.git.meta.MetaDataUpdate", "com.google.common.collect.Sets", "com.google.gerrit.server.config.AllUsersName", "com.google.gerrit.server.extensions.events.GitReferenceUpdated", "com.google.gerrit.server.config.GerritServerId", "com.google.gerrit.server.account.GroupBackend", "com.google.gerrit.entities.RefNames", "com.google.inject.assistedinject.AssistedInject", "com.google.gerrit.server.logging.TraceContext.TraceTimer", "com.google.gerrit.server.index.group.GroupIndexer", "com.google.gerrit.server.GerritPersonIdent", "java.time.Instant", "com.google.common.collect.ImmutableSet", "java.util.Set", "com.google.gerrit.entities.AccountGroup", "com.google.common.base.Splitter", "com.google.gerrit.server.logging.TraceContext", "com.google.auto.value.extension.memoized.Memoized", "com.google.common.base.MoreObjects", "com.google.gerrit.server.CurrentUser", "com.google.gerrit.server.AnonymousUser", "com.google.common.collect.ImmutableList.toImmutableList", "com.google.common.base.Strings", "java.util.OptionalLong", "java.util.stream.Collectors", "com.google.gerrit.common.UsedAt", "com.google.gerrit.entities.LabelValue", "com.google.gerrit.extensions.client.InheritableBoolean", "com.google.gerrit.entities.LabelId.CODE_REVIEW", "com.google.gerrit.entities.BooleanProjectConfig", "com.google.gerrit.entities.SubmitRequirement", "com.google.gerrit.extensions.client.ChangeKind", "com.google.gerrit.entities.LabelType", "com.google.gerrit.server.Sequences", "com.google.gerrit.entities.SubmitRequirementExpression", "com.google.gerrit.entities.GroupReference", "com.google.gerrit.proto.Protos", "com.google.gerrit.server.cache.proto.Cache", "com.google.gerrit.entities.Change", "com.google.gerrit.server.cache.serialize.CacheSerializer", "com.google.gerrit.entities.CommentContext", "com.google.gerrit.entities.Project", "com.google.gerrit.server.patch.ComparisonType", "eu.medsea.mimeutil.MimeType", "com.google.gerrit.entities.Patch.MERGE_LIST", "com.google.gerrit.extensions.common.ContextLineInfo", "com.google.gerrit.server.patch.SrcContentResolver", "com.google.common.flogger.FluentLogger", "com.google.gerrit.server.patch.Text", "org.eclipse.jgit.revwalk.RevWalk", "java.util.Collection", "com.google.inject.assistedinject.Assisted", "com.google.gerrit.server.change.FileContentUtil", "org.eclipse.jgit.lib.ObjectId", "com.google.auto.value.AutoValue", "com.google.gerrit.server.logging.Metadata", "com.google.common.base.Preconditions.checkArgument", "java.util.function.BiConsumer", "java.util.function.Function", "java.util.Optional", "java.util.regex.Pattern", "java.util.regex.Matcher", "com.google.gerrit.server.permissions.PermissionBackendException", "com.google.gerrit.entities.PatchSetApproval", "java.util.Objects.requireNonNull", "com.google.gerrit.entities.Account", "com.google.gerrit.entities.Address", "com.google.gerrit.entities.PatchSet", "com.google.common.base.Preconditions.checkState", "com.google.gerrit.server.update.BatchUpdateOp", "com.google.gerrit.extensions.restapi.RestApiException", "com.google.common.collect.ImmutableList", "java.io.IOException", "com.google.gerrit.server.update.ChangeContext", "com.google.gerrit.entities.HumanComment", "com.google.errorprone.annotations.CanIgnoreReturnValue", "com.google.common.collect.Streams", "java.util.List", "com.google.gerrit.entities.Comment", "com.google.common.base.Preconditions", "com.google.gerrit.server.project.ProjectCache", "com.google.gerrit.server.mime.FileTypeRegistry", "com.google.inject.Inject", "java.util.stream.Collectors.groupingBy", "com.google.gerrit.server.project.ProjectCache.illegalState", "com.google.gerrit.server.git.GitRepositoryManager", "com.google.common.collect.ImmutableMap", "com.google.gerrit.entities.Patch.COMMIT_MSG", "eu.medsea.mimeutil.MimeUtil2", "com.google.common.collect.Iterables", "com.google.gerrit.common.data.PatchScript", "java.util.Map", "org.eclipse.jgit.treewalk.TreeWalk", "org.eclipse.jgit.lib.ObjectReader", "com.google.gerrit.common.Nullable", "org.eclipse.jgit.revwalk.RevCommit", "org.eclipse.jgit.errors.MissingObjectException", "org.eclipse.jgit.lib.Repository", "com.google.gerrit.server.project.ProjectState" ]
+  }, {
+    "name" : "Metrics",
+    "packageName" : "com.google.gerrit.pgm.http.jetty",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "getRequestsStarted",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "getMinThreads",
+      "visibility" : "public",
+      "methodCalls" : [ "getMinThreads" ]
+    }, {
+      "name" : "isLowOnThreads",
+      "visibility" : "public",
+      "methodCalls" : [ "isLowOnThreads" ]
+    }, {
+      "name" : "getReceivedBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "getReceivedBytes" ]
+    }, {
+      "name" : "getConnectionsTotal",
+      "visibility" : "public",
+      "methodCalls" : [ "getConnectionsTotal" ]
+    }, {
+      "name" : "getIdleThreads",
+      "visibility" : "public",
+      "methodCalls" : [ "getIdleThreads" ]
+    }, {
+      "name" : "getConnectionDurationMax",
+      "visibility" : "public",
+      "methodCalls" : [ "getConnectionDurationMax" ]
+    }, {
+      "name" : "getMaxThreads",
+      "visibility" : "public",
+      "methodCalls" : [ "getMaxThreads" ]
+    }, {
+      "name" : "getReservedThreads",
+      "visibility" : "public",
+      "methodCalls" : [ "getReservedThreads" ]
+    }, {
+      "name" : "getConnectionDurationMean",
+      "visibility" : "public",
+      "methodCalls" : [ "getConnectionDurationMean" ]
+    }, {
+      "name" : "getBusyThreads",
+      "visibility" : "public",
+      "methodCalls" : [ "getBusyThreads" ]
+    }, {
+      "name" : "getQueueSize",
+      "visibility" : "public",
+      "methodCalls" : [ "getQueueSize" ]
+    }, {
+      "name" : "getConnectionDurationStdDev",
+      "visibility" : "public",
+      "methodCalls" : [ "getConnectionDurationStdDev" ]
+    }, {
+      "name" : "getReceivedMessages",
+      "visibility" : "public",
+      "methodCalls" : [ "getReceivedMessages" ]
+    }, {
+      "name" : "getConnections",
+      "visibility" : "public",
+      "methodCalls" : [ "getConnections" ]
+    }, {
+      "name" : "getThreads",
+      "visibility" : "public",
+      "methodCalls" : [ "getThreads", "stream", "values", "collect", "filter", "toImmutableSet" ]
+    }, {
+      "name" : "getSentBytes",
+      "visibility" : "public",
+      "methodCalls" : [ "getSentBytes" ]
+    }, {
+      "name" : "getSentMessages",
+      "visibility" : "public",
+      "methodCalls" : [ "getSentMessages" ]
+    } ],
+    "imports" : [ "java.util.List", "javax.servlet.http.HttpSessionEvent", "org.eclipse.jetty.server.Connector", "org.eclipse.jetty.server.HttpConfiguration", "java.util.EnumSet", "org.eclipse.jetty.util.BlockingArrayQueue", "java.net.URI", "org.eclipse.jetty.util.ssl.SslContextFactory", "com.google.inject.Injector", "org.eclipse.jetty.servlet.ServletHolder", "org.eclipse.jetty.servlet.DefaultServlet", "org.eclipse.jetty.server.ForwardedRequestCustomizer", "org.eclipse.jetty.server.handler.ContextHandlerCollection", "org.eclipse.jetty.servlet.ServletContextHandler", "org.eclipse.jetty.server.handler.StatisticsHandler", "org.eclipse.jetty.server.Handler", "org.eclipse.jetty.server.ServerConnector", "org.eclipse.jetty.server.handler.ContextHandler", "org.eclipse.jetty.servlet.FilterHolder", "org.eclipse.jetty.util.log.Log", "com.google.inject.servlet.GuiceServletContextListener", "java.net.URISyntaxException", "org.eclipse.jetty.jmx.MBeanContainer", "com.google.gerrit.extensions.client.AuthType", "org.eclipse.jetty.server.handler.RequestLogHandler", "java.lang.management.ManagementFactory", "java.util.concurrent.TimeUnit.MINUTES", "org.eclipse.jetty.server.Server", "org.eclipse.jetty.util.thread.QueuedThreadPool", "javax.servlet.DispatcherType", "java.nio.file.Path", "com.google.gerrit.httpd.CacheBasedWebSession.MAX_AGE_MINUTES", "com.google.gerrit.pgm.http.jetty.HttpLog.HttpLogFactory", "org.eclipse.jetty.http.HttpScheme", "org.eclipse.jetty.io.ConnectionStatistics", "com.google.gerrit.server.config.SitePaths", "javax.servlet.http.HttpSessionListener", "org.eclipse.jetty.server.SslConnectionFactory", "org.eclipse.jetty.server.HttpConnectionFactory", "org.eclipse.jetty.server.SecureRequestCustomizer", "com.google.gerrit.server.config.ThreadSettingsConfig", "com.google.gerrit.extensions.events.LifecycleListener", "com.google.inject.servlet.GuiceFilter", "java.nio.file.Files", "org.eclipse.jetty.server.session.SessionHandler", "java.util.function.IntSupplier", "com.google.gerrit.index.IndexConfig", "com.google.gerrit.index.QueryOptions", "com.google.gerrit.index.SchemaDefinitions", "com.google.common.primitives.Ints", "com.google.gerrit.index.IndexRewriter", "java.util.stream.IntStream", "java.util.concurrent.atomic.AtomicBoolean", "com.google.gerrit.index.PaginationType", "com.google.gerrit.index.IndexCollection", "com.google.gerrit.index.Index", "org.eclipse.jgit.transport.PostUploadHookChain", "org.eclipse.jgit.transport.resolver.ServiceNotAuthorizedException", "com.google.gerrit.server.audit.HttpAuditEvent", "org.eclipse.jgit.transport.resolver.RepositoryResolver", "org.eclipse.jgit.transport.resolver.ServiceNotEnabledException", "com.google.gerrit.server.git.validators.UploadValidators", "javax.servlet.ServletRequest", "org.eclipse.jgit.http.server.GitServlet", "org.eclipse.jgit.transport.PreUploadHookChain", "org.eclipse.jgit.transport.resolver.UploadPackFactory", "com.google.inject.AbstractModule", "org.eclipse.jgit.transport.ServiceMayNotContinueException", "com.google.gerrit.server.git.receive.AsyncReceiveCommits", "com.google.gerrit.server.group.GroupAuditService", "org.eclipse.jgit.http.server.GitSmartHttpTools.sendError", "java.text.MessageFormat", "org.eclipse.jgit.transport.PreUploadHook", "org.eclipse.jgit.http.server.HttpServerText", "org.eclipse.jgit.transport.resolver.ReceivePackFactory", "com.google.common.cache.Cache", "com.google.gerrit.server.git.TracingHook", "org.eclipse.jgit.transport.UploadPack", "javax.servlet.ServletResponse", "com.google.inject.TypeLiteral", "org.eclipse.jgit.errors.PackProtocolException", "javax.servlet.http.HttpServletResponseWrapper", "com.google.gerrit.server.AccessPath", "com.google.gerrit.server.git.UploadPackInitializer", "org.eclipse.jgit.transport.PostUploadHook", "javax.servlet.Filter", "org.eclipse.jgit.http.server.GitSmartHttpTools", "javax.servlet.FilterChain", "javax.servlet.http.HttpServletRequest", "java.util.concurrent.atomic.AtomicLong", "javax.servlet.FilterConfig", "org.eclipse.jgit.http.server.ServletUtils", "org.eclipse.jgit.http.server.resolver.AsIsFileService", "javax.servlet.ServletException", "javax.servlet.http.HttpServletResponse", "org.eclipse.jgit.http.server.UploadPackErrorHandler", "org.eclipse.jgit.errors.RepositoryNotFoundException", "java.util.regex.Pattern", "com.google.gerrit.entities.AccountGroup.UUID", "com.google.gerrit.entities.AccountGroup", "java.util.regex.PatternSyntaxException", "com.google.common.collect.ImmutableCollection", "com.google.gerrit.server.config.UrlFormatter", "com.google.common.base.Preconditions.checkArgument", "com.google.gerrit.entities.PermissionRule.Action", "com.google.gerrit.entities.PermissionRule", "com.google.gerrit.entities.ContributorAgreement", "com.google.gerrit.server.rules.SubmitRule", "com.google.gerrit.server.rules.DefaultSubmitRule", "com.google.gerrit.server.rules.PrologSubmitRuleUtil", "com.google.gerrit.server.index.OnlineReindexMode", "java.util.function.Consumer", "com.github.rholder.retry.Attempt", "com.github.rholder.retry.StopStrategies", "com.google.gerrit.server.update.RetryableAction.Action", "com.google.gerrit.server.query.account.InternalAccountQuery", "com.github.rholder.retry.Retryer", "com.github.rholder.retry.WaitStrategy", "java.time.Duration", "java.util.function.Predicate", "com.github.rholder.retry.WaitStrategies", "com.google.gerrit.server.query.group.InternalGroupQuery", "com.github.rholder.retry.RetryerBuilder", "java.util.concurrent.TimeUnit.MILLISECONDS", "java.util.concurrent.TimeUnit.SECONDS", "com.github.rholder.retry.RetryListener", "com.google.gerrit.server.update.RetryableChangeAction.ChangeAction", "com.google.gerrit.server.update.RetryableIndexQueryAction.IndexQueryAction", "com.google.gerrit.server.update.RetryableAction.ActionType", "com.github.rholder.retry.RetryException", "com.google.gerrit.server.git.receive.ReceiveConstants.PUSH_OPTION_SKIP_VALIDATION", "com.google.inject.util.Providers", "com.google.gerrit.server.patch.PatchSetInfoFactory", "com.google.gerrit.server.patch.DiffOperationsForCommitValidation", "com.google.gerrit.server.permissions.PermissionDeniedException", "org.eclipse.jgit.revwalk.filter.RevFilter", "com.google.gerrit.server.config.ProjectConfigEntry", "com.google.gerrit.server.restapi.change.ReplyAttentionSetUpdates", "com.google.gerrit.server.git.GroupCollector", "com.google.gerrit.server.update.RepoContext", "org.eclipse.jgit.lib.ObjectReader", "com.google.common.collect.BiMap", "com.google.gerrit.extensions.registration.DynamicItem", "com.google.gerrit.entities.BooleanProjectConfig", "com.google.gerrit.server.experiments.ExperimentFeaturesConstants", "com.google.gerrit.server.cancellation.RequestStateContext", "com.google.gerrit.server.project.NoSuchChangeException", "com.google.gerrit.server.git.validators.CommitValidationInfo", "com.google.gerrit.server.project.ProjectConfig", "org.eclipse.jgit.errors.IncorrectObjectTypeException", "com.google.gerrit.server.change.HashtagsUtil.cleanupHashtag", "com.google.gerrit.server.InvalidDeadlineException", "com.google.gerrit.server.account.AccountResolver.UnresolvableAccountException", "com.google.gerrit.server.git.MergedByPushOp", "org.eclipse.jgit.transport.ReceiveCommand.Result.OK", "com.google.common.collect.LinkedListMultimap", "com.google.gerrit.server.update.RepoView", "com.google.gerrit.server.RequestInfo", "javax.servlet.http.HttpServletResponse.SC_INTERNAL_SERVER_ERROR", "com.google.gerrit.server.git.validators.CommentSizeValidator", "com.google.gerrit.server.git.MultiProgressMonitor.Task", "com.google.gerrit.server.CancellationMetrics", "com.google.gerrit.extensions.validators.CommentForValidation.CommentSource", "com.google.gerrit.extensions.validators.CommentValidationContext", "com.google.gerrit.server.config.AllProjectsName", "com.google.gerrit.server.submit.MergeOpRepoManager", "com.google.gerrit.server.git.ValidationError", "com.google.gerrit.server.CreateGroupPermissionSyncer", "java.io.StringWriter", "com.google.gerrit.server.change.SetTopicOp", "com.google.gerrit.server.AclInfoController", "com.google.gerrit.extensions.validators.CommentValidator", "java.util.LinkedHashSet", "com.google.gerrit.server.ExceptionHook", "com.google.common.collect.HashBiMap", "com.google.gerrit.server.update.SubmissionExecutor", "com.google.gerrit.server.update.context.RefUpdateContext.RefUpdateType", "com.google.gerrit.entities.RefNames.isConfigRef", "com.google.gerrit.server.git.validators.RefOperationValidationException", "com.google.common.collect.ImmutableListMultimap.toImmutableListMultimap", "org.eclipse.jgit.transport.ReceiveCommand.Result.REJECTED_OTHER_REASON", "com.google.gerrit.server.DeadlineChecker", "com.google.gerrit.extensions.validators.CommentValidationFailure", "com.google.gerrit.extensions.validators.CommentForValidation", "java.util.stream.Collectors.joining", "java.util.Queue", "org.eclipse.jgit.lib.PersonIdent", "java.util.stream.StreamSupport", "com.google.gerrit.server.mail.MailUtil.MailRecipients", "com.google.gerrit.entities.RefNames.REFS_CHANGES", "com.google.gerrit.git.ObjectIds.abbreviateName", "com.google.gerrit.server.change.SetHashtagsOp", "java.util.Objects.requireNonNull", "com.google.gerrit.server.PublishCommentUtil", "com.google.gerrit.extensions.api.changes.HashtagsInput", "org.eclipse.jgit.revwalk.RevObject", "com.google.gerrit.extensions.client.GeneralPreferencesInfo", "com.google.gerrit.server.git.validators.RefOperationValidators", "com.google.gerrit.server.update.RepoOnlyOp", "com.google.gerrit.server.edit.ChangeEditUtil", "com.google.gerrit.extensions.api.changes.SubmitInput", "com.google.gerrit.server.git.validators.CommentCountValidator", "com.google.gerrit.server.change.AttentionSetUnchangedOp", "com.google.gerrit.server.RequestListener", "org.eclipse.jgit.transport.ReceiveCommand.Result.REJECTED_MISSING_OBJECT", "com.google.gerrit.server.PatchSetUtil", "com.google.gerrit.metrics.Counter3", "com.google.gerrit.entities.SubmissionId", "org.eclipse.jgit.notes.NoteMap", "com.google.gerrit.server.ChangeUtil", "com.google.gerrit.server.patch.AutoMerger", "com.google.gerrit.server.index.change.ChangeIndexer", "com.google.gerrit.entities.RefNames.isRefsUsersSelf", "com.google.gerrit.extensions.api.projects.ProjectConfigEntryType", "java.util.TreeSet", "org.eclipse.jgit.lib.Constants.R_HEADS", "com.google.gerrit.server.PluginPushOption", "com.google.common.collect.ImmutableSetMultimap", "com.google.gerrit.server.git.receive.RejectionReason.MetricBucket", "com.google.gerrit.server.logging.PerformanceLogger", "org.kohsuke.args4j.CmdLineException", "com.google.gerrit.server.config.PluginConfig", "com.google.gerrit.server.update.BatchUpdateOp", "com.google.gerrit.server.git.validators.ValidationMessage", "org.eclipse.jgit.revwalk.FooterLine", "com.google.gerrit.server.update.SubmissionListener", "com.google.gerrit.entities.PatchSetInfo", "com.google.gerrit.server.change.SetPrivateOp", "com.google.gerrit.extensions.registration.DynamicSet", "com.google.gerrit.server.Sequences", "com.google.gerrit.server.edit.ChangeEdit", "com.google.gerrit.server.git.ChangeReportFormatter", "com.google.gerrit.util.cli.CmdLineParser", "com.google.gerrit.server.git.validators.CommitValidators.NEW_PATCHSET_PATTERN", "com.google.gerrit.server.plugincontext.PluginSetContext", "com.google.gerrit.server.git.ReceivePackInitializer", "org.kohsuke.args4j.Option", "com.google.gerrit.server.git.validators.CommitValidationMessage", "com.google.gerrit.server.DraftCommentsReader", "com.google.gerrit.server.account.ServiceUserClassifier", "com.google.gerrit.server.change.ChangeInserter", "com.google.gerrit.server.update.SuperprojectUpdateOnSubmission", "com.google.gerrit.server.logging.RequestId", "com.google.gerrit.server.project.CreateRefControl", "com.google.gerrit.server.git.receive.ReceiveConstants.COMMAND_REJECTION_MESSAGE_FOOTER", "com.google.gerrit.server.project.NoSuchProjectException", "java.net.URLDecoder", "java.util.logging.Level", "com.google.gerrit.extensions.api.changes.RecipientType", "java.util.Arrays", "com.google.gerrit.server.git.MultiProgressMonitor.UNKNOWN", "org.eclipse.jgit.revwalk.RevSort", "com.google.gerrit.extensions.api.changes.NotifyInfo", "java.io.UnsupportedEncodingException", "com.google.gerrit.server.experiments.ExperimentFeatures", "com.google.common.base.Splitter", "com.google.gerrit.server.git.receive.ReceiveConstants.SAME_CHANGE_ID_IN_MULTIPLE_CHANGES", "com.google.gerrit.server.logging.PerformanceLogContext", "com.google.common.collect.SortedSetMultimap", "com.google.gerrit.server.update.ChangeContext", "org.eclipse.jgit.lib.ObjectInserter", "com.google.gerrit.server.util.LabelVote", "com.google.gerrit.extensions.validators.CommentForValidation.CommentType", "com.google.gerrit.server.submit.MergeOp", "com.google.gerrit.server.git.BanCommit", "com.google.gerrit.server.git.receive.ReceiveConstants.ONLY_USERS_WITH_TOGGLE_WIP_STATE_PERM_CAN_MODIFY_WIP", "java.util.concurrent.ConcurrentLinkedQueue", "com.google.gerrit.server.mail.MailUtil.getRecipientsFromFooters", "com.google.gerrit.server.update.PostUpdateContext", "org.eclipse.jgit.transport.ReceiveCommand.Result.NOT_ATTEMPTED", "org.eclipse.jgit.diff.DiffFormatter", "com.google.inject.Module", "org.eclipse.jgit.diff.HistogramDiff", "org.eclipse.jgit.patch.FileHeader", "com.google.gerrit.extensions.client.DiffPreferencesInfo.Whitespace", "org.eclipse.jgit.lib.AbbreviatedObjectId", "com.google.common.collect.Multimaps", "com.google.gerrit.server.cache.CacheModule", "com.google.gerrit.server.util.git.CloseablePool", "java.util.function.Function.identity", "com.google.gerrit.server.patch.DiffExecutor", "com.google.common.cache.LoadingCache", "org.eclipse.jgit.util.io.DisabledOutputStream", "org.eclipse.jgit.diff.DiffEntry.ChangeType", "com.google.common.collect.Iterables", "org.eclipse.jgit.diff.RawTextComparator", "com.google.common.collect.MultimapBuilder", "java.util.concurrent.Future", "java.util.Comparator", "org.eclipse.jgit.errors.MissingObjectException", "org.eclipse.jgit.diff.DiffEntry", "com.google.common.cache.CacheLoader", "com.google.gerrit.server.util.MagicBranch", "com.google.inject.assistedinject.FactoryModuleBuilder", "org.eclipse.jgit.transport.ReceivePack", "java.util.concurrent.ExecutionException", "java.util.concurrent.TimeoutException", "org.eclipse.jgit.transport.PreReceiveHook", "com.google.gerrit.server.git.UsersSelfAdvertiseRefsHook", "com.google.gerrit.server.git.TransferConfig", "com.google.inject.Provides", "com.google.gerrit.server.quota.QuotaBackend", "com.google.gerrit.server.project.ContributorAgreementsChecker", "com.google.gerrit.server.logging.TraceContext.TraceIdConsumer", "java.util.concurrent.TimeUnit.NANOSECONDS", "java.util.concurrent.ExecutorService", "com.google.gerrit.server.util.RequestScopePropagator", "com.google.gerrit.server.git.ProjectRunnable", "com.google.common.util.concurrent.UncheckedExecutionException", "com.google.gerrit.server.git.PermissionAwareRepositoryManager", "com.google.gerrit.server.quota.QuotaException", "com.google.gerrit.server.git.MultiProgressMonitor", "com.google.gerrit.common.data.Capable", "org.eclipse.jgit.transport.ReceiveCommand", "com.google.gerrit.server.git.MultiProgressMonitor.TaskKind", "java.util.concurrent.Callable", "org.eclipse.jgit.transport.ReceiveCommand.Result", "com.google.gerrit.metrics.Timer1", "com.google.gerrit.metrics.Histogram1", "com.google.gerrit.common.UsedAt", "com.google.gerrit.server.RequestCounter", "com.google.inject.name.Named", "com.google.gerrit.server.quota.QuotaGroupDefinitions.REPOSITORY_SIZE_GROUP", "java.io.OutputStream", "java.util.concurrent.FutureTask", "com.google.gerrit.server.config.ConfigUtil", "com.google.gerrit.server.query.change.InternalChangeQuery", "com.google.gerrit.server.PublishCommentsOp", "com.google.inject.PrivateModule", "com.google.gerrit.server.quota.QuotaResponse", "com.google.gerrit.server.permissions.ProjectPermission", "com.google.gerrit.server.config.ReceiveCommitsExecutor", "com.google.gerrit.server.cache.PerThreadCache", "java.util.stream.Collectors.toCollection", "java.util.concurrent.TimeUnit", "com.google.gerrit.server.git.TagMatcher", "com.google.common.base.Suppliers", "org.eclipse.jgit.lib.Constants", "com.google.gerrit.server.git.ChangesByProjectCache", "com.google.gerrit.server.permissions.PermissionBackend.RefFilterOptions", "com.google.gerrit.entities.BranchNameKey", "com.google.gerrit.entities.RefNames.REFS_CONFIG", "com.google.gerrit.entities.RefNames", "com.google.gerrit.server.git.TagCache", "com.google.common.base.Supplier", "com.google.auto.value.AutoValue", "org.eclipse.jgit.errors.ConfigInvalidException", "com.google.gerrit.extensions.restapi.AuthException", "com.google.gerrit.server.permissions.LabelPermission", "com.google.gerrit.server.permissions.AbstractLabelPermission.ForUser.ON_BEHALF_OF", "com.google.gerrit.entities.LabelType", "com.google.gerrit.server.account.AccountResolver", "com.google.gerrit.entities.Comment", "com.google.gerrit.server.change.ChangeResource", "com.google.gerrit.server.account.AccountState", "com.google.gerrit.server.change.ReviewerOp.Result", "com.google.gerrit.server.change.ModifyReviewersEmail", "com.google.gerrit.extensions.api.changes.ReviewInput.CommentInput", "com.google.gerrit.extensions.restapi.BadRequestException", "com.google.gerrit.server.approval.ApprovalsUtil", "com.google.gerrit.extensions.client.Side", "com.google.common.hash.HashCode", "com.google.gerrit.server.change.WorkInProgressOp", "com.google.gerrit.server.change.NotifyResolver", "com.google.gerrit.metrics.Field", "java.util.Iterator", "com.google.common.hash.Hashing", "java.util.Objects", "com.google.gerrit.extensions.restapi.Response", "javax.servlet.http.HttpServletResponse.SC_BAD_REQUEST", "com.google.gerrit.metrics.Counter1", "com.google.gerrit.extensions.api.changes.ReviewerInput", "java.nio.charset.StandardCharsets.UTF_8", "com.google.gerrit.server.update.BatchUpdate", "com.google.common.base.Strings", "com.google.gerrit.server.change.ChangeJson", "com.google.gerrit.server.update.BatchUpdates", "com.google.common.base.MoreObjects.firstNonNull", "com.google.gerrit.entities.LabelTypes", "com.google.gerrit.server.update.context.RefUpdateContext", "com.google.gerrit.extensions.api.changes.ReviewInput.RobotCommentInput", "com.google.gerrit.server.util.time.TimeUtil", "java.time.Instant", "com.google.gerrit.server.extensions.events.ReviewerAdded", "com.google.gerrit.server.change.CommentsValidator", "com.google.gerrit.extensions.api.changes.ReviewerResult", "com.google.gerrit.server.account.AccountCache", "com.google.gerrit.server.update.RetryHelper", "com.google.gerrit.server.change.ReviewerModifier", "com.google.gerrit.server.update.UpdateException", "com.google.gerrit.extensions.restapi.RestApiException", "com.google.gerrit.server.change.RevisionResource", "com.google.gerrit.server.git.CommitUtil", "com.google.common.collect.Ordering", "com.google.gerrit.extensions.restapi.RestModifyView", "com.google.gerrit.extensions.api.changes.ReviewResult", "com.google.gerrit.server.change.ReviewerModifier.ReviewerModification", "com.google.gerrit.extensions.restapi.UnprocessableEntityException", "com.google.gerrit.server.update.context.RefUpdateContext.RefUpdateType.CHANGE_MODIFICATION", "com.google.gerrit.extensions.api.changes.ReviewInput", "com.google.gerrit.extensions.api.changes.ReviewInput.DraftHandling", "com.google.gerrit.extensions.api.changes.NotifyHandling", "com.google.common.collect.Streams", "com.google.gerrit.server.patch.DiffNotAvailableException", "com.google.common.collect.ImmutableList.toImmutableList", "com.google.gerrit.server.patch.DiffOperations", "com.google.gerrit.server.patch.filediff.FileDiffOutput", "com.google.gerrit.server.patch.filediff.TaggedEdit", "com.google.gerrit.server.patch.GitPositionTransformer.Position", "java.util.stream.Collectors.groupingBy", "com.google.common.annotations.VisibleForTesting", "com.google.gerrit.server.patch.GitPositionTransformer.BestPositionOnConflict", "com.google.gerrit.server.patch.DiffOptions", "com.google.gerrit.server.patch.GitPositionTransformer.FileMapping", "java.util.function.Function", "java.util.stream.Stream", "com.google.gerrit.entities.HumanComment", "com.google.gerrit.server.patch.GitPositionTransformer", "com.google.gerrit.server.patch.filediff.FileEdits", "com.google.gerrit.entities.Comment.Range", "com.google.gerrit.server.patch.GitPositionTransformer.Mapping", "com.google.gerrit.metrics.Counter0", "com.google.gerrit.server.patch.DiffMappings", "com.google.common.collect.ImmutableSet.toImmutableSet", "com.google.gerrit.server.CommentsUtil", "com.google.gerrit.server.patch.GitPositionTransformer.PositionedEntity", "com.google.gerrit.server.IdentifiedUser", "com.google.gerrit.extensions.common.WebLinkInfo", "com.google.gerrit.server.project.ProjectCache", "com.google.gerrit.extensions.config.DownloadScheme", "com.google.common.base.Preconditions.checkState", "com.google.gerrit.extensions.config.DownloadCommand", "com.google.gerrit.extensions.common.ConflictsInfo", "com.google.gerrit.server.project.ProjectState", "com.google.gerrit.extensions.client.ListChangesOption.CURRENT_FILES", "com.google.gerrit.extensions.client.ListChangesOption.PUSH_CERTIFICATES", "com.google.gerrit.server.git.MergeUtilFactory", "com.google.gerrit.entities.Patch", "com.google.gerrit.extensions.client.ListChangesOption.DOWNLOAD_COMMANDS", "com.google.gerrit.server.project.ProjectCache.illegalState", "com.google.gerrit.extensions.client.ListChangesOption.ALL_FILES", "org.eclipse.jgit.revwalk.RevCommit", "java.util.LinkedHashMap", "com.google.gerrit.extensions.common.RevisionInfo.ParentInfo", "com.google.gerrit.extensions.common.CommitInfo", "com.google.gerrit.entities.ParentCommitData", "com.google.gerrit.server.WebLinks", "org.eclipse.jgit.lib.Ref", "com.google.gerrit.extensions.common.FetchInfo", "com.google.gerrit.extensions.client.ListChangesOption.WEB_LINKS", "com.google.gerrit.extensions.common.PushCertificateInfo", "org.eclipse.jgit.attributes.AttributesNodeProvider", "com.google.gerrit.server.CommonConverters.toGitPerson", "com.google.gerrit.extensions.client.ListChangesOption.PARENTS", "org.eclipse.jgit.revwalk.RevWalk", "com.google.gerrit.server.account.GpgApiAdapter", "com.google.gerrit.extensions.registration.DynamicMap", "com.google.gerrit.extensions.restapi.ResourceConflictException", "com.google.gerrit.extensions.registration.Extension", "com.google.gerrit.server.AnonymousUser", "com.google.common.flogger.FluentLogger", "com.google.gerrit.server.logging.Metadata", "com.google.gerrit.extensions.client.ListChangesOption.SKIP_DIFFSTAT", "com.google.gerrit.extensions.common.ApprovalInfo", "com.google.gerrit.entities.LegacySubmitRequirement", "com.google.gerrit.server.logging.TraceContext.TraceTimer", "com.google.gerrit.extensions.common.ChangeMessageInfo", "org.eclipse.jgit.lib.ObjectId", "com.google.common.collect.ListMultimap", "com.google.common.base.MoreObjects", "com.google.gerrit.server.util.AttentionSetUtil.removalsOnly", "com.google.gerrit.metrics.Timer0", "com.google.gerrit.extensions.client.ListChangesOption.COMMIT_FOOTERS", "com.google.gerrit.extensions.common.TrackingIdInfo", "com.google.gerrit.extensions.client.ListChangesOption.STAR", "com.google.gerrit.server.git.GitRepositoryManager", "com.google.inject.Inject", "com.google.gerrit.extensions.client.ReviewerState", "com.google.gerrit.extensions.common.ChangeInfo", "com.google.gerrit.server.query.change.ChangeData", "com.google.gerrit.extensions.client.ListChangesOption.CURRENT_REVISION", "com.google.gerrit.server.permissions.GlobalPermission", "com.google.gerrit.extensions.common.AccountInfo", "com.google.common.collect.ImmutableListMultimap", "com.google.gerrit.extensions.common.PluginDefinedInfo", "com.google.gerrit.extensions.client.ListChangesOption.LABELS", "com.google.gerrit.server.CurrentUser", "com.google.gerrit.server.GpgException", "com.google.gerrit.extensions.common.SubmitRecordInfo", "com.google.gerrit.extensions.client.ListChangesOption.SUBMIT_REQUIREMENTS", "com.google.common.collect.ImmutableSet", "com.google.gerrit.server.ReviewerByEmailSet", "com.google.gerrit.extensions.client.ListChangesOption.DETAILED_LABELS", "com.google.gerrit.server.config.TrackingFooters", "com.google.gerrit.server.ReviewerStatusUpdate", "java.util.Map", "com.google.inject.assistedinject.Assisted", "java.util.ArrayList", "com.google.gerrit.server.permissions.ChangePermission", "java.util.stream.Collectors.toList", "com.google.gerrit.extensions.client.ListChangesOption.REVIEWED", "com.google.gerrit.entities.SubmitTypeRecord", "java.util.Collections", "com.google.gerrit.extensions.client.ListChangesOption", "com.google.gerrit.server.account.AccountInfoComparator", "com.google.gerrit.server.util.AttentionSetUtil.additionsOnly", "com.google.gerrit.exceptions.StorageException", "com.google.gerrit.extensions.common.LabelInfo", "java.util.stream.Collectors", "com.google.gerrit.server.logging.TraceContext", "com.google.gerrit.extensions.client.ListChangesOption.CHANGE_ACTIONS", "com.google.common.collect.ImmutableList", "com.google.gerrit.extensions.client.ListChangesOption.TRACKING_IDS", "com.google.gerrit.extensions.api.changes.FixInput", "com.google.gerrit.extensions.client.ListChangesOption.REVIEWER_UPDATES", "com.google.gerrit.common.Nullable", "com.google.gerrit.extensions.client.ListChangesOption.DETAILED_ACCOUNTS", "java.util.Optional", "com.google.gerrit.metrics.MetricMaker", "com.google.gerrit.server.project.SubmitRuleOptions", "com.google.gerrit.server.config.GerritServerConfig", "com.google.gerrit.extensions.common.RevisionInfo", "com.google.common.collect.Maps", "com.google.inject.Singleton", "com.google.common.collect.Sets", "com.google.gerrit.extensions.common.ProblemInfo", "com.google.gerrit.server.notedb.ReviewerStateInternal", "org.eclipse.jgit.lib.Config", "com.google.errorprone.annotations.CanIgnoreReturnValue", "com.google.gerrit.entities.Address", "com.google.gerrit.entities.SubmitRequirementResult", "com.google.gerrit.entities.PatchSetApproval", "com.google.common.base.Joiner", "com.google.gerrit.server.account.AccountLoader", "com.google.gerrit.server.ChangeMessagesUtil.createChangeMessageInfo", "java.util.HashMap", "java.util.HashSet", "com.google.gerrit.extensions.restapi.Url", "com.google.gerrit.server.cancellation.RequestCancelledException", "com.google.gerrit.server.notedb.ChangeNotes", "com.google.common.collect.ImmutableSortedMap", "com.google.gerrit.server.query.change.ChangeData.ChangedLines", "java.util.Collection", "com.google.gerrit.extensions.client.ListChangesOption.SUBMITTABLE", "java.io.IOException", "com.google.gerrit.entities.SubmitRecord.Status", "com.google.gerrit.metrics.Description.Units", "com.google.gerrit.extensions.client.ListChangesOption.CURRENT_ACTIONS", "com.google.common.base.Throwables", "com.google.gerrit.index.query.QueryResult", "com.google.gerrit.extensions.client.ListChangesOption.ALL_COMMITS", "com.google.gerrit.server.util.AttentionSetUtil", "com.google.gerrit.entities.SubmitRecord", "com.google.gerrit.server.permissions.PermissionBackend", "com.google.gerrit.entities.Project", "com.google.gerrit.extensions.client.ListChangesOption.ALL_REVISIONS", "com.google.gerrit.server.ReviewerSet", "com.google.common.collect.ImmutableMap", "com.google.gerrit.server.ChangeMessagesUtil", "com.google.gerrit.server.project.RemoveReviewerControl", "com.google.gerrit.metrics.Description", "com.google.gerrit.extensions.client.ListChangesOption.CUSTOM_KEYED_VALUES", "com.google.gerrit.entities.Account", "com.google.gerrit.server.config.AllUsersName", "com.google.gerrit.server.permissions.RefPermission", "com.google.gerrit.server.patch.PatchListNotAvailableException", "com.google.gerrit.extensions.common.LegacySubmitRequirementInfo", "com.google.gerrit.server.permissions.PermissionBackendException", "com.google.gerrit.extensions.client.ListChangesOption.CURRENT_COMMIT", "com.google.gerrit.server.index.change.ChangeField", "com.google.gerrit.server.StarredChangesReader", "com.google.gerrit.entities.PatchSet", "org.eclipse.jgit.lib.Repository", "com.google.gerrit.extensions.client.ListChangesOption.MESSAGES", "com.google.common.collect.Lists", "com.google.inject.Provider", "com.google.gerrit.entities.ChangeMessage", "java.util.Set", "com.google.gerrit.entities.Change", "com.google.gerrit.extensions.client.ListChangesOption.CHECK", "com.google.common.collect.ImmutableMap.toImmutableMap", "com.google.gerrit.extensions.common.SubmitRequirementResultInfo", "com.google.gerrit.extensions.common.ReviewerUpdateInfo" ]
+  } ]
+}

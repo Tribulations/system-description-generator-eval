@@ -1,0 +1,697 @@
+{
+  "systemName" : "pinpoint",
+  "classes" : [ {
+    "name" : "Builder",
+    "packageName" : "com.navercorp.pinpoint.collector.monitor",
+    "extendedClasses" : [ "Builder" ],
+    "implementedInterfaces" : [ "Provider" ],
+    "methods" : [ {
+      "name" : "build",
+      "visibility" : "public",
+      "methodCalls" : [ "getLoggingTransactionInfo", "toString", "intercept", "callExecutor", "getMaxTraceEvent", "bossEventLoopGroup", "getLogId", "addService", "getId", "executor", "disableStats", "channelType", "workerEventLoopGroup", "usePlaintext", "register", "addTransportFilter", "negotiationType", "getServiceDescriptor", "eventLoopGroup", "maxTraceEvents", "forAddress", "getSimpleName", "sslContext", "getFieldName", "getDataPoint", "getAgentStatType", "getChartType", "withDescription", "currentTimeMillis", "asRuntimeException", "getAndIncrement", "isSet", "newSpanFilter", "getHint", "getTransactionId", "buildLogicalServer", "buildPhysicalServer", "getSlowSlot", "getFastSlot", "getVerySlowSlot", "getNormalSlot", "getSlotName", "getErrorSlot", "getApplication", "getNodeList", "getHistogramList", "copyOf", "getWindowRange", "setGap", "info", "setExecutionMilliseconds", "appendNodeHistogram", "create", "remainingTimeMillis", "createNodeList", "addAgentHistogram", "setId", "createLinkList", "appendServerInfo", "getSpanChunkBoList", "isAsyncSpanChunk", "comparing", "getHistogramSchema", "newBuilder", "get", "getTimeStamp", "put", "getApplicationResponseHistogram", "buildFromTimeHistogram", "getTimeHistogram", "buildLoadChart", "buildLoadStatisticsChart", "setPid", "setContainer", "getPorts", "setVmVersion", "getVmVersion", "getAgentName", "getAgentVersion", "findServiceType", "setAgentVersion", "getApplicationName", "getPid", "getAgentId", "setPorts", "isContainer", "getServiceTypeCode", "getStartTime", "setIp", "getIp", "getHostName", "setStartTimestamp", "setHostName", "getLogPageUrl", "getDisableButtonMessage", "buildLogLinkUrl", "getLogButtonName", "isLogLinkEnable", "ofBidirectional", "makeLinkInfo", "of", "isMatchingType", "computeIfAbsent", "values", "getWindowIndex", "createInitialPoints", "getWindowRangeCount", "getTimestamp", "set", "newAgentsListMap", "getDotAgentInfoSet", "hasLength", "debug", "acceptAllFilter", "getTick", "x", "getIndex", "entrySet", "sort", "getKey", "y", "first", "getValue", "second", "label", "value", "name", "checkValidity", "size", "setTransactionId", "setStartTime", "setAgentId", "setSpanId", "setAgentName", "setApplicationServiceType", "setAcceptorHost", "setCollectorAcceptTime", "setRpc", "setAgentStartTime", "setElapsed", "setErrCode", "addSpanEventBoList", "setParentSpanId", "setParentApplicationServiceType", "setExceptionClass", "setRemoteAddr", "setParentApplicationName", "setExceptionInfo", "setApplicationName", "defaultIfEmpty", "max", "setSequence", "setStartElapsed", "setAnnotationBoList", "setNextAsyncId", "setDepth", "setVersion", "setNextSpanId", "setServiceType", "setEndPoint", "setDestinationId", "setApiId", "setEndElapsed", "setRoot", "setAnnotation", "getParentSpanId", "isNotEmpty", "setErrorCode", "getAnnotationBoList", "getApplicationServiceType", "getCode", "setLoggingTransactionInfo", "getErrCode", "setHasException", "hasException", "getFlag", "setApplicationServiceTypeEncodingStrategy", "setFlag", "wrapRealIpSupport", "getProxyRequestRecorder", "emptyList", "equalsIgnoreCase", "readString", "getAgentArgs", "build", "getInstrumentation", "getBootstrapJarPaths", "getAgentPath", "isStaticResourceCleanup", "getAgentIdType", "getPluginJars", "warn", "buildV1", "toArray", "defineClass", "init", "toMillis", "getProfilerCommandServiceRepository", "isNestedSearch", "isEmpty", "getContainsExceptionMessages", "getHandlerId", "add", "getRangeKey", "buildFirst", "setServiceTypeEncodingStrategy", "requireNonNull", "requireHasLength", "getServiceType", "setDepthEncodingStrategy", "setStartElapsedEncodingStrategy", "setSequenceEncodingStrategy", "getSequence", "getStartElapsed", "getDepth" ]
+    }, {
+      "name" : "addRejectHandler",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "requireNonNull" ]
+    }, {
+      "name" : "setPermitKeepAliveTime",
+      "visibility" : "public",
+      "methodCalls" : [ "isTrue" ]
+    }, {
+      "name" : "setMaxConnectionAgeGrace",
+      "visibility" : "public",
+      "methodCalls" : [ "isTrue" ]
+    }, {
+      "name" : "setAllocator",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMaxHeaderListSize",
+      "visibility" : "public",
+      "methodCalls" : [ "isTrue" ]
+    }, {
+      "name" : "setKeepAliveTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ "isTrue" ]
+    }, {
+      "name" : "setGrpcMaxTermWaitTimeMillis",
+      "visibility" : "public",
+      "methodCalls" : [ "isTrue" ]
+    }, {
+      "name" : "setHandshakeTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ "isTrue" ]
+    }, {
+      "name" : "setReceiveBufferSize",
+      "visibility" : "public",
+      "methodCalls" : [ "isTrue" ]
+    }, {
+      "name" : "setMaxConcurrentCallsPerConnection",
+      "visibility" : "public",
+      "methodCalls" : [ "isTrue" ]
+    }, {
+      "name" : "toString",
+      "visibility" : "public",
+      "methodCalls" : [ "prettyToString", "getClusterKey", "getError", "join", "getServiceType", "getStartTime", "getElapsed", "getApplicationName", "getParentSpanId", "getSpanId", "getCollectorAcceptTime", "getDepth", "getStartTimestamp", "getAgentId", "getEventMessage", "getEventTypeDesc", "getEventTimestamp", "hasEventMessage", "getEventTypeCode", "getCode", "getDesc", "size", "getClass", "getSimpleName", "getRemoteAddress", "isEmpty", "buildDescriptor", "getCompressionAlgorithm", "getColumnFamilyChanges", "getColumnFamilyConfiguration", "getTableConfiguration", "getTo", "getFrom", "format", "name", "duration", "formatSimple", "getSign", "getClassName", "getSuperName", "getInterfaces", "getAccess", "asMap", "stats", "getSql", "getOutput", "keySet", "getId", "toString", "getName", "append", "value", "hashCode" ]
+    }, {
+      "name" : "setBannerSupplier",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMaxConnectionIdle",
+      "visibility" : "public",
+      "methodCalls" : [ "isTrue" ]
+    }, {
+      "name" : "setChannelTypeEnum",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "valueOf" ]
+    }, {
+      "name" : "setKeepAliveTime",
+      "visibility" : "public",
+      "methodCalls" : [ "isTrue" ]
+    }, {
+      "name" : "setMaxConnectionAge",
+      "visibility" : "public",
+      "methodCalls" : [ "isTrue" ]
+    }, {
+      "name" : "setLoggerWriter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMaxInboundMessageSize",
+      "visibility" : "public",
+      "methodCalls" : [ "isTrue" ]
+    }, {
+      "name" : "setProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "getProperty", "info", "isInfoEnabled", "parseBoolean", "setProperties" ]
+    }, {
+      "name" : "setBannerMode",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDumpKeys",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setFlowControlWindow",
+      "visibility" : "public",
+      "methodCalls" : [ "isTrue" ]
+    }, {
+      "name" : "addServerInstance",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "getHostName" ]
+    }, {
+      "name" : "setSimpleResponseHistogram",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addLinkList",
+      "visibility" : "public",
+      "methodCalls" : [ "addLink", "getLinkList", "requireNonNull" ]
+    }, {
+      "name" : "addLink",
+      "visibility" : "public",
+      "methodCalls" : [ "putIfAbsent", "getLinkKey", "requireNonNull" ]
+    }, {
+      "name" : "setUseStatisticsAgentState",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAgentTimeHistogram",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setApplicationTimeHistogram",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAgentHistogramMap",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull" ]
+    }, {
+      "name" : "setApplicationResponseHistogram",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setApplicationHistogram",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull" ]
+    }, {
+      "name" : "setResponseHistogram",
+      "visibility" : "public",
+      "methodCalls" : [ "setApplicationResponseHistogram" ]
+    }, {
+      "name" : "setGap",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setExecutionMilliseconds",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setId",
+      "visibility" : "public",
+      "methodCalls" : [ "clearOriginalSql" ]
+    }, {
+      "name" : "disableMeta",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addAgentHistogram",
+      "visibility" : "public",
+      "methodCalls" : [ "getTimeHistogram", "addAgentHistogram", "getId", "getServiceType", "getAgentHistogramList", "requireNonNull", "addTimeHistogram" ]
+    }, {
+      "name" : "enableMeta",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addTimeHistogram",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "getServiceType", "getTimeStamp", "requireNonNull", "put", "add", "addTimeHistogram" ]
+    }, {
+      "name" : "containsNode",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "containsKey" ]
+    }, {
+      "name" : "size",
+      "visibility" : "public",
+      "methodCalls" : [ "map", "sum", "stream", "mapToInt", "unlock", "lock", "size" ]
+    }, {
+      "name" : "addNode",
+      "visibility" : "public",
+      "methodCalls" : [ "putIfAbsent", "getApplication", "requireNonNull" ]
+    }, {
+      "name" : "addLinkProcessor",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "requireNonNull" ]
+    }, {
+      "name" : "getApplicationServiceType",
+      "visibility" : "public",
+      "methodCalls" : [ "getApplicationServiceType", "getName", "getCode", "hasApplicationServiceType" ]
+    }, {
+      "name" : "getApplicationName",
+      "visibility" : "public",
+      "methodCalls" : [ "getApplicationName", "requireNonNull", "selectApplicationName", "ok", "noContent", "build", "of", "isMeta", "getProperty" ]
+    }, {
+      "name" : "setChild",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setParent",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSibling",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDot",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull" ]
+    }, {
+      "name" : "setEndpoint",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "read",
+      "visibility" : "public",
+      "methodCalls" : [ "setSpanId", "readByte", "setRpc", "setStartTime", "setAgentName", "setRemoteAddr", "readPrefixedString", "setEndpoint", "readLong", "parseShort", "getHeader", "toString", "parseLong", "disableSampling", "read", "checkNamespace", "getRpcName", "getRemoteAddress", "debug", "getState", "requireNonNull", "size", "poll", "get", "getAndIncrement", "info" ]
+    }, {
+      "name" : "setSpanId",
+      "visibility" : "public",
+      "methodCalls" : [ "put" ]
+    }, {
+      "name" : "getDot",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addAgentInfo",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll", "computeIfAbsent", "add" ]
+    }, {
+      "name" : "addResponseTime",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "addCallCount", "add", "addCallCountByElapsedTime" ]
+    }, {
+      "name" : "addHistogram",
+      "visibility" : "public",
+      "methodCalls" : [ "getElapsed", "getAgentId", "addResponseTime", "refineTimestamp" ]
+    }, {
+      "name" : "addLinkHistogram",
+      "visibility" : "public",
+      "methodCalls" : [ "getTimeStamp", "addResponseTime", "refineTimestamp" ]
+    }, {
+      "name" : "addAgentKey",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "addAgentKey", "add" ]
+    }, {
+      "name" : "timestamp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "clear",
+      "visibility" : "public",
+      "methodCalls" : [ "clear", "get", "length" ]
+    }, {
+      "name" : "buildAndClear",
+      "visibility" : "public",
+      "methodCalls" : [ "clear", "build" ]
+    }, {
+      "name" : "get",
+      "visibility" : "public",
+      "methodCalls" : [ "defaultBindValueConverter", "getAttributes", "nanoTime", "increment", "enabledFor", "disabledFor", "enabled", "emptySet", "getDestinationId", "getElapsed", "getParentId", "getServiceType", "setId", "getStartTime", "getAlign", "getTransactionId", "getMethod", "getExecutionMilliseconds", "getClassName", "findServiceType", "getLocation", "getLineNumber", "getId", "hasChild", "setSimpleClassName", "getDepth", "setFullApiDescription", "getApplicationName", "getMethodTypeEnum", "getDescription", "getAgentName", "getGap", "getSpanId", "size", "thenApply", "rethrowHbaseException", "apply", "execute", "mapRow", "segmentFor", "hashCode", "getProperties", "getAgentId", "asList", "newCachedThreadPool", "isStatSslEnable", "getAgentCollectorIp", "isAgentSslEnable", "getStatCollectorIp", "getStatSenderExecutorQueueSize", "getAgentSenderExecutorQueueSize", "getAgentCollectorPort", "getStatCollectorPort", "newAgentGrpcDataSender", "create", "getCompletedUriStatDataLimitSize", "putIfAbsent", "readBoolean", "isUriStatEnable", "wrap", "getMetadataCollectorPort", "getMetadataRetryDelayMillis", "isMetadataSslEnable", "getMetadataCollectorIp", "unconfigurableScheduledExecutorService", "getMetadataSenderExecutorQueueSize", "isMetadataRetryEnable", "getMetadataRetryMaxCount", "newScheduledThreadPool", "newChannelFactoryBuilder", "isPropagateInterceptorException", "getErrorMessageMaxLength", "registerServiceTypes", "getExceptionTraceMaxDepth", "getSpanCollectorPort", "getExceptionTraceNewThroughput", "getSpanSenderExecutorQueueSize", "getSpanCollectorIp", "getLimitCount", "getSpanRpcMaxAgeMillis", "isSpanSslEnable", "isSpanEnableStatLogging", "getLimitTime", "getSpanClientOption", "registerAnnotationKeys", "exists", "getGcType", "getInputStream", "getVmStartTime", "forClient", "isEnable", "getJdbcUrlParserList", "getTrustCertResource", "getProviderType", "getMaxSqlLength", "load", "isRemoveComments", "newSqlCache", "isSqlStatEnable", "createSampler", "add", "getJdbcOption", "newSqlUidCache", "getClassLoader", "getSamplingContinueThroughput", "getSqlErrorCount", "newUrlSampler", "getSamplingNewThroughput", "createAgentInformation", "refresh", "getSamplerType", "getCustomMetricLimitSize", "isSqlErrorEnable", "addListener", "getAgentInfoSendRetryInterval", "isCustomMetricEnable", "isSamplingEnable", "isUrlSamplingEnable", "sendInterval", "newTraceSampler", "defaultString", "getPinpointExcludeSubPackage", "getVmArgs", "isSupportLambdaExpressions", "getPinpointBasePackage", "getAllowJdkClassName", "newSimpleCache", "isEmpty", "tokenizeToStringList", "getServiceTypeLocator", "getProfileInstrumentEngine", "getMetricClassName", "toUpperCase", "getApplicationType", "getVersion", "getDefineClass", "isTraceLogEnabled", "oldSpace", "equals", "values", "containsKey", "newGenName", "oldGenName", "fromVendor", "getType", "get", "currentTraceObject", "value", "empty", "withValue", "findAnnotation", "getInterceptorScope", "debug", "isPrimitive", "isDebugEnabled", "isInstance", "getClass", "getWrapperOf", "getIfPresent", "readInternalClassMetadata", "isInfoEnabled", "info", "concat", "requireNonNull", "accept", "newInterceptor", "getName", "warn", "build", "parse", "readPattern", "getMaxWidth", "setRawBytesConverter", "getByteFormat" ]
+    }, {
+      "name" : "setPort",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setKeyFilePath",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getProviderType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getKeyCertFilePath",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setKeyCertFilePath",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setProviderType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getKeyFilePath",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "execOrder",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "id",
+      "visibility" : "public",
+      "methodCalls" : [ "hasLength" ]
+    }, {
+      "name" : "value",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "substring" ]
+    }, {
+      "name" : "execTimestamp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "checkSum",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull" ]
+    }, {
+      "name" : "createTableName",
+      "visibility" : "public",
+      "methodCalls" : [ "getTableName", "getNumber" ]
+    }, {
+      "name" : "setDoubleTableNameManager",
+      "visibility" : "public",
+      "methodCalls" : [ "self" ]
+    }, {
+      "name" : "setLongTableNameManager",
+      "visibility" : "public",
+      "methodCalls" : [ "self" ]
+    }, {
+      "name" : "setAggregationFunction",
+      "visibility" : "public",
+      "methodCalls" : [ "self" ]
+    }, {
+      "name" : "setTags",
+      "visibility" : "public",
+      "methodCalls" : [ "self" ]
+    }, {
+      "name" : "setLimit",
+      "visibility" : "public",
+      "methodCalls" : [ "self", "constrainToRange" ]
+    }, {
+      "name" : "setTimeWindow",
+      "visibility" : "public",
+      "methodCalls" : [ "getWindowRange", "getWindowRangeCount", "newTimePrecision", "getWindowSlotSize", "self" ]
+    }, {
+      "name" : "setAggreTemporality",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMetricName",
+      "visibility" : "public",
+      "methodCalls" : [ "self" ]
+    }, {
+      "name" : "addValue",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "setMetricType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTenantId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setMetricGroupName",
+      "visibility" : "public",
+      "methodCalls" : [ "self" ]
+    }, {
+      "name" : "setServiceName",
+      "visibility" : "public",
+      "methodCalls" : [ "self" ]
+    }, {
+      "name" : "setUnit",
+      "visibility" : "public",
+      "methodCalls" : [ "self" ]
+    }, {
+      "name" : "setFlags",
+      "visibility" : "public",
+      "methodCalls" : [ "put" ]
+    }, {
+      "name" : "setFieldName",
+      "visibility" : "public",
+      "methodCalls" : [ "self" ]
+    }, {
+      "name" : "addTags",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "putAll" ]
+    }, {
+      "name" : "setAggreFunc",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDataType",
+      "visibility" : "public",
+      "methodCalls" : [ "self", "getNumber" ]
+    }, {
+      "name" : "setEventTime",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDescription",
+      "visibility" : "public",
+      "methodCalls" : [ "self" ]
+    }, {
+      "name" : "setParentApplicationServiceType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setApplicationId",
+      "visibility" : "public",
+      "methodCalls" : [ "setApplicationName" ]
+    }, {
+      "name" : "setFlag",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setExceptionId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addSpanEventBo",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "setAgentStartTime",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setElapsed",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setExceptionClass",
+      "visibility" : "public",
+      "methodCalls" : [ "setExceptionClass" ]
+    }, {
+      "name" : "setParentSpanId",
+      "visibility" : "public",
+      "methodCalls" : [ "put" ]
+    }, {
+      "name" : "setRpc",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setParentApplicationId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setCollectorAcceptTime",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setLoggingTransactionInfo",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAcceptorHost",
+      "visibility" : "public",
+      "methodCalls" : [ "put" ]
+    }, {
+      "name" : "setExceptionMessage",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setErrCode",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTransactionId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setRemoteAddr",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setApplicationServiceType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setLineNumber",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setDepth",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "serverInfo",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setSequence",
+      "visibility" : "public",
+      "methodCalls" : [ "setSequence" ]
+    }, {
+      "name" : "setStartElapsed",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setServiceType",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull" ]
+    }, {
+      "name" : "setNextSpanId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setEndElapsed",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addAnnotationBo",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "setEndPoint",
+      "visibility" : "public",
+      "methodCalls" : [ "debug", "compareAndSet" ]
+    }, {
+      "name" : "serviceInfos",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setNextAsyncId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setApiId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setVersion",
+      "visibility" : "public",
+      "methodCalls" : [ "self", "toUnsignedByte" ]
+    }, {
+      "name" : "vmArgs",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setLocation",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty" ]
+    }, {
+      "name" : "setDestinationId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "newStatBuilder",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setServerMetaData",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setVmVersion",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPorts",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setPid",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAgentId",
+      "visibility" : "public",
+      "methodCalls" : [ "self", "requireHasLength" ]
+    }, {
+      "name" : "isContainer",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setStartTime",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setHostName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setEndTimeStamp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setApplicationName",
+      "visibility" : "public",
+      "methodCalls" : [ "self", "requireHasLength" ]
+    }, {
+      "name" : "setServiceTypeCode",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getServiceTypeCode",
+      "visibility" : "public",
+      "methodCalls" : [ "getCode" ]
+    }, {
+      "name" : "setJvmInfo",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setEndStatus",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setAgentName",
+      "visibility" : "public",
+      "methodCalls" : [ "setAgentName", "isEmpty" ]
+    }, {
+      "name" : "setAgentVersion",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setIp",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull" ]
+    }, {
+      "name" : "serviceLibs",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "serviceName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setValue",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "setValue", "getKey" ]
+    }, {
+      "name" : "addKeyValueList",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "addChecker",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "put", "getCategory" ]
+    }, {
+      "name" : "refreshInterval",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "sendInterval",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "maxTryPerAttempt",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setOwner",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addFilter",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull", "add" ]
+    }, {
+      "name" : "setDesc",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setName",
+      "visibility" : "public",
+      "methodCalls" : [ "isConstructor" ]
+    }, {
+      "name" : "interceptorFactory",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull" ]
+    }, {
+      "name" : "interceptor",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull" ]
+    } ],
+    "imports" : [ "org.objectweb.asm.ClassReader", "java.util.concurrent.ThreadPoolExecutor", "java.util.concurrent.RejectedExecutionHandler", "io.netty.buffer.ByteBufAllocator", "com.navercorp.pinpoint.grpc.ChannelTypeEnum", "com.navercorp.pinpoint.common.util.Assert", "java.util.function.Consumer", "java.util.LinkedHashMap", "com.navercorp.pinpoint.web.vo.SearchOption", "com.navercorp.pinpoint.common.hbase.bo.ColumnGetCount", "com.navercorp.pinpoint.web.applicationmap.nodes.Node", "com.navercorp.pinpoint.web.filter.Filter", "com.navercorp.pinpoint.common.timeseries.time.Range", "com.navercorp.pinpoint.web.view.histogram.HistogramView", "com.navercorp.pinpoint.web.vo.ResponseTimeStatics", "com.navercorp.pinpoint.common.trace.HistogramSchema", "com.navercorp.pinpoint.common.server.bo.SpanChunkBo", "org.apache.commons.collections4.CollectionUtils", "com.navercorp.pinpoint.common.server.bo.AnnotationBo", "com.navercorp.pinpoint.web.vo.ResponseTime", "com.navercorp.pinpoint.common.server.bo.SpanEventBo", "com.navercorp.pinpoint.web.vo.Application", "com.navercorp.pinpoint.web.applicationmap.rawdata.LinkDataMap", "java.util.HashSet", "com.navercorp.pinpoint.web.applicationmap.map.LinkSelectorType", "com.navercorp.pinpoint.web.applicationmap.link.LinkDirection", "com.navercorp.pinpoint.common.server.threaddump.TThreadState", "java.util.Comparator", "com.fasterxml.jackson.annotation.JsonProperty", "java.util.stream.Collectors", "com.navercorp.pinpoint.web.vo.agent.AgentInfo", "com.navercorp.pinpoint.web.applicationmap.histogram.Histogram", "java.util.Set", "com.navercorp.pinpoint.web.applicationmap.histogram.TimeHistogram", "com.navercorp.pinpoint.common.server.bo.SpanBo", "com.navercorp.pinpoint.common.annotations.VisibleForTesting", "com.navercorp.pinpoint.common.server.bo.SimpleAgentKey", "java.util.function.Function", "jakarta.inject.Provider", "jakarta.validation.constraints.Positive", "jakarta.validation.constraints.NotNull", "org.springframework.core.io.Resource", "org.springframework.util.Assert", "com.navercorp.pinpoint.hbase.schema.core.CheckSum", "com.navercorp.pinpoint.common.server.metric.dao.TableNameManager", "com.navercorp.pinpoint.otlp.common.web.definition.property.AggregationFunction", "java.security.InvalidParameterException", "com.navercorp.pinpoint.metric.web.util.QueryParameter", "com.google.common.primitives.Ints", "com.navercorp.pinpoint.common.timeseries.window.TimeWindow", "com.navercorp.pinpoint.common.timeseries.window.TimePrecision", "com.navercorp.pinpoint.otlp.common.model.MetricType", "io.opentelemetry.proto.metrics.v1.AggregationTemporality", "com.navercorp.pinpoint.otlp.common.model.DataType", "com.navercorp.pinpoint.otlp.common.model.AggreFunc", "io.opentelemetry.proto.metrics.v1.DataPointFlags", "com.navercorp.pinpoint.common.server.util.ByteUtils", "com.navercorp.pinpoint.common.profiler.util.TransactionId", "com.navercorp.pinpoint.common.server.bo.MethodTypeEnum", "com.navercorp.pinpoint.common.util.LineNumber", "com.navercorp.pinpoint.common.server.bo.serializer.metadata.MetaDataRowKey", "com.navercorp.pinpoint.common.server.util.FilterUtils", "jakarta.validation.constraints.PositiveOrZero", "java.util.NoSuchElementException", "com.navercorp.pinpoint.common.trace.AnnotationKey", "com.navercorp.pinpoint.common.trace.AnnotationKeyLocator", "jakarta.validation.constraints.NotBlank", "com.navercorp.pinpoint.common.server.util.StringPrecondition", "com.navercorp.pinpoint.common.buffer.FixedBuffer", "com.navercorp.pinpoint.common.buffer.AutomaticBuffer", "com.navercorp.pinpoint.common.buffer.Buffer", "com.navercorp.pinpoint.common.trace.ServiceTypeLocator", "java.util.Collection", "com.navercorp.pinpoint.common.trace.ServiceType", "com.navercorp.pinpoint.common.util.apache.IntHashMap", "com.navercorp.pinpoint.common.trace.AnnotationKeyMatcherLocator", "com.navercorp.pinpoint.common.util.apache.IntHashMapUtils", "com.navercorp.pinpoint.common.trace.AnnotationKeyMatcher", "java.util.Collections", "com.navercorp.pinpoint.bootstrap.context.MethodDescriptor", "java.lang.reflect.InvocationTargetException", "java.util.Map", "java.util.HashMap", "java.util.Objects", "com.navercorp.pinpoint.web.alarm.CheckerCategory", "java.util.concurrent.TimeUnit", "java.util.concurrent.atomic.AtomicInteger", "java.util.concurrent.ExecutionException", "com.navercorp.pinpoint.common.profiler.message.AsyncDataSender", "java.util.Timer", "org.apache.logging.log4j.Logger", "com.navercorp.pinpoint.profiler.util.AgentInfoFactory", "java.util.concurrent.CompletableFuture", "java.util.TimerTask", "com.navercorp.pinpoint.profiler.metadata.MetaDataType", "com.navercorp.pinpoint.common.profiler.message.ResultResponse", "org.apache.logging.log4j.LogManager", "java.util.concurrent.TimeoutException", "com.navercorp.pinpoint.profiler.metadata.AgentInfo", "com.navercorp.pinpoint.common.util.StringUtils", "org.objectweb.asm.tree.MethodInsnNode", "java.util.List", "java.util.ArrayList", "org.objectweb.asm.MethodVisitor", "com.navercorp.pinpoint.profiler.util.JavaAssistUtils", "com.navercorp.pinpoint.profiler.instrument.interceptor.InterceptorSupplier", "java.io.IOException", "org.objectweb.asm.ClassVisitor", "org.objectweb.asm.tree.ClassNode", "com.navercorp.pinpoint.profiler.instrument.interceptor.InterceptorLazyLoadingSupplier", "com.navercorp.pinpoint.profiler.instrument.interceptor.InterceptorHolder", "org.objectweb.asm.ClassWriter", "com.navercorp.pinpoint.bootstrap.instrument.InstrumentException", "com.navercorp.pinpoint.profiler.interceptor.factory.InterceptorFactory", "java.util.function.Supplier", "java.io.InputStream", "com.navercorp.pinpoint.bootstrap.interceptor.Interceptor", "java.lang.reflect.Method", "org.objectweb.asm.Label", "com.navercorp.pinpoint.profiler.instrument.classloading.InterceptorDefineClassHelper" ]
+  }, {
+    "name" : "SpanEventSimpleAroundInterceptorForPlugin",
+    "packageName" : "com.navercorp.pinpoint.bootstrap.interceptor",
+    "extendedClasses" : [ "AbstractSpanEventInterceptorForPlugin" ],
+    "implementedInterfaces" : [ "AroundInterceptor" ],
+    "methods" : [ {
+      "name" : "before",
+      "visibility" : "public",
+      "methodCalls" : [ "getAsyncContext", "_$PINPOINT$_setStatusCode", "isAsyncDispatcherBefore", "_$PINPOINT$_getServiceCode", "_$PINPOINT$_setServiceCode", "_$PINPOINT$_setOperation", "getClientServiceName", "getOutputProtocol", "getTransport", "_$PINPOINT$_setServerMarkerFlag", "setMethodName", "setShouldSample", "response", "getAsyncMethodCallName", "setAcceptorHost", "getTraceHeader", "setProcessName", "getInputProtocol", "setEntryPoint", "getAttachment", "headers", "getParameterDescriptor", "create", "getEndPoint", "getLength", "_$PINPOINT$_getRecordCollector", "setPinpointHeaders", "_$PINPOINT$_getApiVersions", "invoke", "_$PINPOINT$_getEndPoint", "getAttribute", "setCallerDataWhenSampled", "toHttpServletRequest", "toHttpServletResponse", "_$PINPOINT$_setInternalOperatorName", "getDispatcherType", "isAsyncStarted", "setDatabaseInfo", "toHost", "removeAttachment", "setSpanId", "setTraceId", "setSampled", "setParentApplicationName", "setFlags", "setParentApplicationType", "setParentSpanId", "setHost", "setPort", "getValue", "getOrCreateAttachment", "_$PINPOINT$_getResultFuture", "getClassName", "getMethodName", "setWriteBeginTime", "equals", "currentTimeMillis", "setReadBeginTime", "_$PINPOINT$_getCoroutineContext", "getDestinationId", "getURLs", "addServiceInfo", "getServerMetaDataHolder", "notifyListeners", "recordDestinationId", "recordEndPoint", "$plus$plus", "toSeq", "transid", "action", "_$PINPOINT$_setTraceContext", "getParentSpanId", "isDebugEnabled", "getServerTypeCode", "getApplicationName", "getFlags", "currentSpanEventRecorder", "isEmpty", "_$PINPOINT$_getPinpointTrace", "recordException", "setAsyncContext", "apply", "recordApi", "traceBlockEnd", "recordAttribute", "length", "filter", "validate", "_$PINPOINT$_setDataSourceMonitor", "_$PINPOINT$_getDataSourceMonitor", "unregister", "close", "isClosed", "isReceived", "getMethod", "isExchangeExcluded", "_$PINPOINT$_setHeaders", "setAttachment", "remove", "put", "getHttpRequest", "valueOf", "getTransactionId", "recordNextSpanId", "getNextTraceId", "getTraceId", "write", "getArgument", "getSpanId", "apiId", "initialized", "info", "currentRawTraceObject", "getHost", "getPort", "toHostAndPortString", "get", "_$PINPOINT$_getTraceFlag", "request", "_$PINPOINT$_setAsyncContext", "recordNextAsyncContext", "getName", "_$PINPOINT$_getAsyncContext", "continueAsyncTraceObject", "_$PINPOINT$_setEndPoint", "recordServiceType", "currentTraceObject", "createTrace", "canSampled", "getCurrentInvocation", "getClass", "getSpanRecorder", "tryEnter", "getMessage", "set", "isWarnEnabled", "beforeInterceptor", "warn", "debug", "_$PINPOINT$_setDatabaseInfo", "getAsyncTrace", "handleException", "traceBlockBegin", "beforeTrace", "trace", "entryAsyncTraceScope", "before", "doInBeforeTrace", "toString", "logBeforeInterceptor", "accept", "currentTrace", "prepareBeforeTrace", "defaultString", "traceBlockBeginAndGet" ]
+    }, {
+      "name" : "after",
+      "visibility" : "public",
+      "methodCalls" : [ "prepareAfterTrace", "isAsyncDispatcherAfter", "getStatus", "_$PINPOINT$_getAsyncStartFlag", "restClient", "_$PINPOINT$_getCacheName", "getSocket", "getObjectKey", "_$PINPOINT$_setCacheKey", "getTraceId", "_$PINPOINT$_setCacheName", "getSpanId", "getNextTraceId", "recordNextSpanId", "write", "_$PINPOINT$_getOperation", "_$PINPOINT$_getServiceCode", "getHandlingNode", "getTraceHeaderToBeRead", "setTraceHeaderToBeRead", "setTraceHeader", "getTraceHeader", "_$PINPOINT$_getAsyncMarkerFlag", "getOrCreateAttachment", "setMethodName", "response", "_$PINPOINT$_setServerMarkerFlag", "getWrappedTransport", "_$PINPOINT$_getSocket", "socket", "_$PINPOINT$_getTNonblockingTransport", "getSocketChannel", "_$PINPOINT$_setSocket", "getInputProtocol", "_$PINPOINT$_getSocketAddress", "_$PINPOINT$_getServerMarkerFlag", "getInjectionTarget", "getRootSocket", "headers", "injectSocket", "parseJdbcUrl", "getParameterDescriptor", "recordNextAsyncContext", "_$PINPOINT$_setHttpHostInfo", "topic", "responseBody", "defaultIfEmpty", "remove", "isOpen", "next", "iterator", "hasNext", "keySet", "entrySet", "getKey", "hasText", "_$PINPOINT$_getSocketChannelList", "_$PINPOINT$_setSocketAddress", "getRequest", "parseSql", "getDatabaseInfo", "_$PINPOINT$_setParsingResult", "getHost", "complete", "getRequestURI", "getAttribute", "setServerName", "toHttpServletRequest", "getServerInfo", "toHttpServletResponse", "emptyList", "_$PINPOINT$_getDatabaseInfo", "getServerMetaDataHolder", "addConnector", "getProtocol", "notifyListeners", "_$PINPOINT$_setBrokerUri", "getDatabaseName", "getCollectionName", "asList", "getWriteConcern0", "getHostList", "getDispatcherType", "isAsyncStarted", "request", "toArray", "_$PINPOINT$_getUserRequest", "code", "_$PINPOINT$_getUserResponse", "processBean", "invoke", "getBeanName", "setDatabaseInfo", "add", "asInternal", "isTarget", "_$PINPOINT$_getHostList", "addTransformed", "_$PINPOINT$_setHostList", "getBeanDefinition", "transform", "resolve", "getBeanClassName", "getLength", "isDebugEnabled", "values", "recordUriTemplate", "hasLength", "recordUriHttpMethod", "extractAttribute", "getRemoteAddress", "_$PINPOINT$_getActiveMQSession", "getPhysicalName", "_$PINPOINT$_setTopicInfo", "_$PINPOINT$_getTransport", "beforeInterceptor", "getQualifiedName", "setAttachment", "getStatusLine", "setStatusCode", "getStatusCode", "getValue", "getName", "isWriteFail", "getWriteElapsedTime", "isReadFail", "getReadElapsedTime", "setReadEndTime", "getMethodName", "setWriteEndTime", "setReadFail", "currentTimeMillis", "getClassName", "setWriteFail", "removeAttachment", "getAttachment", "recordHeader", "startsWith", "component", "getArguments", "apply", "getContext", "getRemoteAddressString", "_$PINPOINT$_setHystrixKeyName", "_$PINPOINT$_setEnclosingInstance", "_$PINPOINT$_getPinpointTrace", "_$PINPOINT$_setPinpointTrace", "validate", "_$PINPOINT$_setDataSourceMonitor", "register", "_$PINPOINT$_setHttpCallContext", "getInetAddress", "_$PINPOINT$_getAsyncContext", "isEmpty", "isReceived", "getMethod", "close", "getLocalAddress", "_$PINPOINT$_getRemoteAddress", "getConnection", "getLocalPort", "getFrameHandler", "_$PINPOINT$_setRemoteAddress", "getPort", "getAddress", "toHostAndPortString", "_$PINPOINT$_setLocalAddress", "getHostAddress", "equals", "getHttpRequest", "contains", "getPatternReplaceSearchList", "getPatternReplaceWith", "recordAttribute", "getStatusCodeFromHttpResponse", "record", "destroyed", "isInfoEnabled", "info", "_$PINPOINT$_setEndPoint", "getArgument", "_$PINPOINT$_getEndPoint", "setAsyncContext", "find", "getMQClientAPIImpl", "getRemotingClient", "_$PINPOINT$_setChannelTables", "_$PINPOINT$_getChannelTables", "getDefaultMQPushConsumer", "_$PINPOINT$_getMQClientInstance", "getMessageListener", "_$PINPOINT$_getTraceFlag", "recordApiId", "leaveScope", "_$PINPOINT$_setAsyncContext", "isAsync", "recordDestinationId", "isSuccess", "lastIndexOf", "getProperty", "getMultipleHost", "getType", "recordEndPoint", "recordServiceType", "substring", "getDatabaseId", "finishAsyncState", "deleteAsyncTrace", "recordException", "recordApi", "leave", "getClass", "removeTraceObject", "canLeave", "getSpanRecorder", "getCurrentInvocation", "canSampled", "currentRawTraceObject", "deleteTrace", "getTrace", "toString", "defaultString", "currentTrace", "accept", "get", "afterInterceptor", "set", "getMessage", "warn", "isWarnEnabled", "_$PINPOINT$_setReactorActual", "findActual", "debug", "_$PINPOINT$_setBindValue", "getJdbcContext", "formatBindVariable", "put", "getBindVariableService", "toInteger", "_$PINPOINT$_getBindValue", "currentTraceObject", "isThrowable", "isInstance", "_$PINPOINT$_setDatabaseInfo", "length", "isAsyncTraceEndScope", "getAsyncContext", "currentAsyncTraceObject", "traceBlockEnd", "doInAfterTrace", "deleteAsyncContext", "handleException", "after", "currentSpanEventRecorder", "leaveAsyncTraceScope", "trace", "afterTrace", "logAfterInterceptor" ]
+    } ],
+    "imports" : [ "com.navercorp.pinpoint.bootstrap.context.Trace", "java.util.Objects", "com.navercorp.pinpoint.bootstrap.context.SpanEventRecorder", "com.navercorp.pinpoint.bootstrap.context.MethodDescriptor", "com.navercorp.pinpoint.bootstrap.context.TraceContext" ]
+  }, {
+    "name" : "ApplicationContextModule",
+    "packageName" : "com.navercorp.pinpoint.profiler.context.module",
+    "extendedClasses" : [ "AbstractModule" ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ ],
+    "imports" : [ "com.navercorp.pinpoint.profiler.context.provider.ExceptionHandlerFactoryProvider", "com.navercorp.pinpoint.bootstrap.plugin.jdbc.BindVariableService", "com.navercorp.pinpoint.profiler.monitor.DeadlockMonitor", "com.navercorp.pinpoint.bootstrap.plugin.jdbc.JdbcContext", "com.navercorp.pinpoint.profiler.context.ServerMetaDataRegistryService", "com.navercorp.pinpoint.profiler.util.AgentInfoFactory", "com.navercorp.pinpoint.profiler.transformer.DefaultDynamicTransformerRegistry", "com.navercorp.pinpoint.profiler.context.DefaultSpanFactory", "com.navercorp.pinpoint.profiler.context.storage.StorageFactory", "com.navercorp.pinpoint.profiler.context.monitor.DefaultJdbcContext", "com.navercorp.pinpoint.profiler.context.provider.StorageFactoryProvider", "com.navercorp.pinpoint.bootstrap.sampler.Sampler", "com.navercorp.pinpoint.profiler.context.provider.plugin.ProxyRequestParserLoaderServiceProvider", "com.navercorp.pinpoint.profiler.instrument.InstrumentEngine", "com.navercorp.pinpoint.profiler.monitor.DefaultAgentStatMonitor", "com.google.inject.TypeLiteral", "com.navercorp.pinpoint.profiler.context.recorder.DefaultRequestRecorderFactory", "com.navercorp.pinpoint.profiler.context.provider.TraceFactoryProvider", "com.navercorp.pinpoint.bootstrap.instrument.DynamicTransformTrigger", "com.navercorp.pinpoint.profiler.context.provider.DataSourceMonitorRegistryServiceProvider", "com.navercorp.pinpoint.profiler.context.provider.metadata.StringMetadataServiceProvider", "com.navercorp.pinpoint.profiler.metadata.StringMetaDataService", "com.navercorp.pinpoint.profiler.context.id.DefaultAsyncIdGenerator", "com.navercorp.pinpoint.profiler.context.provider.AsyncTraceContextProvider", "com.navercorp.pinpoint.profiler.AgentInfoSender", "com.navercorp.pinpoint.profiler.context.monitor.JdbcUrlParsingService", "com.navercorp.pinpoint.profiler.context.SqlCountService", "com.navercorp.pinpoint.profiler.context.id.DefaultTransactionCounter", "com.navercorp.pinpoint.profiler.context.provider.metric.CustomMetricRegistryServiceProvider", "com.navercorp.pinpoint.profiler.context.provider.CallStackFactoryProvider", "com.navercorp.pinpoint.profiler.context.provider.plugin.ProfilerPluginContextLoaderProvider", "com.navercorp.pinpoint.bootstrap.context.Trace", "com.navercorp.pinpoint.profiler.context.provider.DeadlockThreadRegistryProvider", "org.apache.logging.log4j.LogManager", "com.navercorp.pinpoint.bootstrap.plugin.RequestRecorderFactory", "com.navercorp.pinpoint.profiler.context.id.TraceIdFactory", "com.google.inject.Scopes", "com.navercorp.pinpoint.profiler.context.storage.UriStatStorage", "com.navercorp.pinpoint.profiler.context.TraceFactory", "com.navercorp.pinpoint.bootstrap.sampler.TraceSampler", "com.navercorp.pinpoint.profiler.monitor.AgentStatMonitor", "com.navercorp.pinpoint.profiler.objectfactory.ObjectBinderFactory", "com.google.inject.AbstractModule", "com.navercorp.pinpoint.profiler.plugin.PluginSetup", "com.navercorp.pinpoint.profiler.context.recorder.proxy.ProxyRequestParserLoaderService", "com.navercorp.pinpoint.profiler.context.BaseTraceFactory", "com.navercorp.pinpoint.profiler.context.provider.JvmInformationProvider", "com.navercorp.pinpoint.profiler.monitor.DeadlockThreadRegistry", "com.navercorp.pinpoint.profiler.context.provider.sampler.SamplerProvider", "com.navercorp.pinpoint.profiler.context.id.TransactionCounter", "com.navercorp.pinpoint.profiler.context.id.IdGenerator", "com.navercorp.pinpoint.profiler.context.provider.metadata.SimpleCacheFactory", "com.navercorp.pinpoint.profiler.AgentInformation", "com.navercorp.pinpoint.profiler.monitor.metric.response.ReuseResponseTimeCollector", "com.navercorp.pinpoint.profiler.context.provider.metadata.SimpleCacheFactoryProvider", "com.navercorp.pinpoint.profiler.context.provider.TraceContextProvider", "java.lang.instrument.ClassFileTransformer", "com.navercorp.pinpoint.profiler.context.provider.JdbcUrlParsingServiceProvider", "com.navercorp.pinpoint.profiler.interceptor.factory.ExceptionHandlerFactory", "com.navercorp.pinpoint.profiler.context.provider.BaseTraceFactoryProvider", "com.navercorp.pinpoint.profiler.context.provider.AsyncContextFactoryProvider", "com.navercorp.pinpoint.profiler.context.provider.AgentInfoSenderProvider", "com.navercorp.pinpoint.profiler.JvmInformation", "com.navercorp.pinpoint.profiler.context.provider.DeadlockMonitorProvider", "com.navercorp.pinpoint.profiler.context.provider.BindVariableServiceProvider", "com.navercorp.pinpoint.profiler.context.provider.plugin.PluginSetupProvider", "com.navercorp.pinpoint.profiler.context.provider.ActiveTraceRepositoryProvider", "com.navercorp.pinpoint.profiler.context.method.DefaultPredefinedMethodDescriptorRegistry", "com.navercorp.pinpoint.profiler.context.provider.AgentInfoFactoryProvider", "com.navercorp.pinpoint.profiler.context.provider.SqlCountServiceProvider", "com.navercorp.pinpoint.profiler.context.id.AsyncIdGenerator", "com.navercorp.pinpoint.profiler.plugin.ProfilerPluginContextLoader", "com.navercorp.pinpoint.profiler.context.errorhandler.IgnoreErrorHandler", "com.navercorp.pinpoint.profiler.context.provider.plugin.PluginClassLoaderProvider", "com.navercorp.pinpoint.common.trace.ServiceType", "com.navercorp.pinpoint.profiler.context.provider.ObjectBinderFactoryProvider", "com.navercorp.pinpoint.profiler.context.AsyncContextFactory", "com.navercorp.pinpoint.profiler.context.provider.ApplicationServerTypeProvider", "com.navercorp.pinpoint.profiler.context.method.PredefinedMethodDescriptorRegistry", "com.navercorp.pinpoint.profiler.context.id.AtomicIdGenerator", "com.navercorp.pinpoint.profiler.context.provider.DynamicTransformTriggerProvider", "com.navercorp.pinpoint.profiler.context.active.ActiveTraceRepository", "com.navercorp.pinpoint.profiler.metadata.SqlMetaDataService", "com.navercorp.pinpoint.profiler.transformer.DynamicTransformerRegistry", "com.navercorp.pinpoint.profiler.context.SpanEvent", "com.navercorp.pinpoint.profiler.context.recorder.DefaultRecorderFactory", "com.navercorp.pinpoint.profiler.context.provider.ServerMetaDataHolderProvider", "com.navercorp.pinpoint.profiler.context.provider.PluginContextLoadResultProvider", "com.navercorp.pinpoint.profiler.context.Binder", "com.navercorp.pinpoint.profiler.context.monitor.metric.CustomMetricRegistryService", "com.navercorp.pinpoint.profiler.context.provider.metadata.ApiMetaDataServiceProvider", "com.navercorp.pinpoint.profiler.context.AsyncTraceContext", "com.navercorp.pinpoint.profiler.context.errorhandler.IgnoreErrorHandlerProvider", "com.navercorp.pinpoint.profiler.context.CallStackFactory", "com.navercorp.pinpoint.bootstrap.context.ServerMetaDataHolder", "com.navercorp.pinpoint.profiler.context.provider.ServerMetaDataRegistryServiceProvider", "com.navercorp.pinpoint.profiler.context.ThreadLocalBinder", "com.navercorp.pinpoint.profiler.context.provider.sampler.TraceSamplerProvider", "com.navercorp.pinpoint.profiler.context.provider.InstrumentEngineProvider", "com.navercorp.pinpoint.profiler.context.provider.UriStatStorageProvider", "com.navercorp.pinpoint.profiler.context.provider.ClassFileTransformerProvider", "org.apache.logging.log4j.Logger", "com.navercorp.pinpoint.profiler.context.id.DefaultTraceIdFactory", "com.navercorp.pinpoint.profiler.context.monitor.DataSourceMonitorRegistryService", "com.navercorp.pinpoint.profiler.context.SpanFactory", "com.navercorp.pinpoint.profiler.monitor.metric.response.ResponseTimeCollector", "com.navercorp.pinpoint.profiler.context.id.DefaultTraceRootFactory", "com.navercorp.pinpoint.profiler.context.provider.metadata.SqlMetadataServiceProvider", "com.navercorp.pinpoint.profiler.plugin.PluginContextLoadResult", "com.navercorp.pinpoint.profiler.context.recorder.RecorderFactory", "com.navercorp.pinpoint.profiler.context.provider.AgentInformationProvider", "com.navercorp.pinpoint.profiler.context.id.TraceRootFactory", "com.navercorp.pinpoint.bootstrap.context.TraceContext", "com.navercorp.pinpoint.profiler.metadata.ApiMetaDataService" ]
+  } ]
+}

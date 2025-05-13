@@ -1,0 +1,1241 @@
+{
+  "systemName" : "accumulo",
+  "classes" : [ {
+    "name" : "Client",
+    "packageName" : "org.apache.accumulo.core.clientImpl.thrift",
+    "extendedClasses" : [ "TServiceClient" ],
+    "implementedInterfaces" : [ "Iface" ],
+    "methods" : [ {
+      "name" : "send_closeConditionalUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "setSessID", "sendBaseOneway", "setTinfo" ]
+    }, {
+      "name" : "send_hasNamespacePermission",
+      "visibility" : "public",
+      "methodCalls" : [ "setTblNspcPerm", "sendBase", "setPrincipal", "setNs", "setTinfo", "setCredentials" ]
+    }, {
+      "name" : "recv_grantNamespacePermission",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "hasNamespacePermission",
+      "visibility" : "public",
+      "methodCalls" : [ "send_hasNamespacePermission", "checkReady", "call", "recv_hasNamespacePermission", "getId", "rpcCreds", "validate", "traceInfo", "checkArgument", "checkNamespaceId", "getPermissionById", "getPrincipal", "sync", "warn", "contains", "convertNamespacePermissions", "code", "getData", "encodeToString", "getEncoder", "hasNamespacePermission", "getBytes" ]
+    }, {
+      "name" : "hasTablePermission",
+      "visibility" : "public",
+      "methodCalls" : [ "checkReady", "send_hasTablePermission", "call", "recv_hasTablePermission", "rpcCreds", "checkArgument", "getId", "getSecurityErrorCode", "traceInfo", "getPermissionById", "checkTableId", "getPrincipal", "convertTablePermissions", "warn", "contains", "code", "sync", "getData", "hasTablePermission", "getBytes", "getEncoder", "encodeToString" ]
+    }, {
+      "name" : "recv_hasTablePermission",
+      "visibility" : "public",
+      "methodCalls" : [ "isSetSuccess", "receiveBase" ]
+    }, {
+      "name" : "recv_getSystemProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "getNamespaceProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "send_getNamespaceProperties", "recv_getNamespaceProperties", "checkReady", "call", "getCause", "rpcCreds", "getType", "traceInfo", "getNamespaceProperties", "validate", "execute", "asMap", "get", "checkNamespaceId", "of", "getPropStore" ]
+    }, {
+      "name" : "send_hasTablePermission",
+      "visibility" : "public",
+      "methodCalls" : [ "setPrincipal", "setCredentials", "setTinfo", "setTblPerm", "sendBase", "setTableName" ]
+    }, {
+      "name" : "recv_checkNamespaceClass",
+      "visibility" : "public",
+      "methodCalls" : [ "isSetSuccess", "receiveBase" ]
+    }, {
+      "name" : "ping",
+      "visibility" : "public",
+      "methodCalls" : [ "rpcCreds", "ping", "toHostPortString", "parseAddress", "createTransport", "createClient", "checkReady", "call", "recv_ping", "send_ping", "info" ]
+    }, {
+      "name" : "hasSystemPermission",
+      "visibility" : "public",
+      "methodCalls" : [ "send_hasSystemPermission", "checkReady", "recv_hasSystemPermission", "call", "getId", "checkArgument", "rpcCreds", "traceInfo", "getPermissionById", "code", "warn", "convertSystemPermissions", "getData", "sync", "contains", "hasSystemPermission", "encodeToString", "getEncoder", "getBytes" ]
+    }, {
+      "name" : "recv_authenticate",
+      "visibility" : "public",
+      "methodCalls" : [ "isSetSuccess", "receiveBase" ]
+    }, {
+      "name" : "send_getNamespaceProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "setNs", "sendBase", "setTinfo", "setCredentials" ]
+    }, {
+      "name" : "listLocalUsers",
+      "visibility" : "public",
+      "methodCalls" : [ "recv_listLocalUsers", "send_listLocalUsers", "call", "checkReady", "rpcCreds", "traceInfo", "listLocalUsers", "listUsers" ]
+    }, {
+      "name" : "recv_hasSystemPermission",
+      "visibility" : "public",
+      "methodCalls" : [ "isSetSuccess", "receiveBase" ]
+    }, {
+      "name" : "recv_getVersionedSystemProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "isSetSuccess", "receiveBase" ]
+    }, {
+      "name" : "send_getSystemProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "setTinfo", "sendBase", "setCredentials" ]
+    }, {
+      "name" : "getVersionedSystemProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "call", "recv_getVersionedSystemProperties", "checkReady", "send_getVersionedSystemProperties", "get", "orElseThrow", "asMap", "map", "of", "getDataVersion", "getPropStore" ]
+    }, {
+      "name" : "getDiskUsage",
+      "visibility" : "public",
+      "methodCalls" : [ "debug", "getTableName", "close", "getFirst", "rpcCreds", "getSecond", "getType", "getTables", "getUser", "getCode", "getThriftServerConnection", "sleepUninterruptibly", "getUsage", "call", "send_getDiskUsage", "checkReady", "recv_getDiskUsage", "getNamespaceId", "getPrincipal", "getKey", "entrySet", "canScan", "checkTableId", "add", "getDiskUsage", "getValue" ]
+    }, {
+      "name" : "recv_grantTablePermission",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "revokeNamespacePermission",
+      "visibility" : "public",
+      "methodCalls" : [ "recv_revokeNamespacePermission", "send_revokeNamespacePermission", "checkReady", "call", "getId", "traceInfo", "checkArgument", "validate", "rpcCreds", "getPermissionById", "checkNamespaceId", "error", "remove", "get", "convertNamespacePermissions", "getZooCache", "getPrincipal", "canonical", "isEmpty", "info", "putPersistentData", "recursiveDelete", "asThriftException", "clear", "getMessage", "startsWith", "getBytes", "getEncoder", "encodeToString", "revokeNamespacePermission" ]
+    }, {
+      "name" : "getSystemProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "rpcCreds", "getSystemProperties", "execute", "traceInfo", "recv_getSystemProperties", "call", "checkReady", "send_getSystemProperties", "asMap", "getPropStore", "get", "of" ]
+    }, {
+      "name" : "send_hasSystemPermission",
+      "visibility" : "public",
+      "methodCalls" : [ "setTinfo", "setSysPerm", "sendBase", "setPrincipal", "setCredentials" ]
+    }, {
+      "name" : "send_createLocalUser",
+      "visibility" : "public",
+      "methodCalls" : [ "setCredentials", "sendBase", "setPrincipal", "setTinfo", "setPassword" ]
+    }, {
+      "name" : "send_ping",
+      "visibility" : "public",
+      "methodCalls" : [ "sendBase", "setCredentials" ]
+    }, {
+      "name" : "recv_revokeTablePermission",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "getVersionedTableProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "call", "recv_getVersionedTableProperties", "send_getVersionedTableProperties", "checkReady", "checkTableId", "getDataVersion", "get", "of", "orElseThrow", "map", "asMap", "getPropStore" ]
+    }, {
+      "name" : "grantSystemPermission",
+      "visibility" : "public",
+      "methodCalls" : [ "recv_grantSystemPermission", "send_grantSystemPermission", "call", "checkReady", "getId", "traceInfo", "rpcCreds", "checkArgument", "getPermissionById", "get", "error", "getZooCache", "convertSystemPermissions", "putPersistentData", "add", "clear", "getMessage", "encodeToString", "getBytes", "getEncoder", "grantSystemPermission" ]
+    }, {
+      "name" : "send_getVersionedNamespaceProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "sendBase", "setCredentials", "setNs", "setTinfo" ]
+    }, {
+      "name" : "authenticate",
+      "visibility" : "public",
+      "methodCalls" : [ "send_authenticate", "checkReady", "recv_authenticate", "call", "error", "authenticateUser" ]
+    }, {
+      "name" : "recv_dropLocalUser",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "recv_getUserAuthorizations",
+      "visibility" : "public",
+      "methodCalls" : [ "isSetSuccess", "receiveBase" ]
+    }, {
+      "name" : "recv_getDiskUsage",
+      "visibility" : "public",
+      "methodCalls" : [ "isSetSuccess", "receiveBase" ]
+    }, {
+      "name" : "recv_getConfiguration",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "send_authenticate",
+      "visibility" : "public",
+      "methodCalls" : [ "setTinfo", "setCredentials", "sendBase" ]
+    }, {
+      "name" : "revokeSystemPermission",
+      "visibility" : "public",
+      "methodCalls" : [ "call", "checkReady", "send_revokeSystemPermission", "recv_revokeSystemPermission", "checkArgument", "traceInfo", "getId", "rpcCreds", "getPermissionById", "clear", "getZooCache", "getMessage", "get", "error", "startsWith", "putPersistentData", "convertSystemPermissions", "remove", "revokeSystemPermission", "getBytes", "getEncoder", "encodeToString" ]
+    }, {
+      "name" : "changeAuthorizations",
+      "visibility" : "public",
+      "methodCalls" : [ "send_changeAuthorizations", "checkReady", "call", "recv_changeAuthorizations", "error", "asReaderWriter", "clear", "getMessage", "getZooSession", "putPersistentData", "getZooCache", "convertAuthorizations", "getEncoder", "getBytes", "encodeToString", "changeAuthorizations" ]
+    }, {
+      "name" : "recv_getVersionedNamespaceProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "isSetSuccess", "receiveBase" ]
+    }, {
+      "name" : "recv_getNamespaceProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "authenticateUser",
+      "visibility" : "public",
+      "methodCalls" : [ "recv_authenticateUser", "call", "send_authenticateUser", "checkReady", "getInstanceID", "toThrift", "rpcCreds", "checkArgument", "traceInfo", "error", "userExists", "authenticateUser", "getPrincipal", "createUser", "authenticate", "asThriftException", "fromThrift", "getToken", "clear", "contains", "equals", "rpcPrincipal", "getUsers", "getZooCache", "get", "debug" ]
+    }, {
+      "name" : "send_getTableProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "setTableName", "setTinfo", "setCredentials", "sendBase" ]
+    }, {
+      "name" : "send_getConfiguration",
+      "visibility" : "public",
+      "methodCalls" : [ "setTinfo", "sendBase", "setType", "setCredentials" ]
+    }, {
+      "name" : "getConfiguration",
+      "visibility" : "public",
+      "methodCalls" : [ "call", "checkReady", "recv_getConfiguration", "send_getConfiguration", "getTableName", "tableOperations", "instanceOperations", "validate", "getType", "rpcCreds", "execute", "getCause", "traceInfo", "getNamespaceConfiguration", "getPropStore", "of", "getCache", "remove", "getDefaultConfiguration", "getSiteConfiguration", "get", "getSystemConfiguration", "getTableConfiguration", "getContext", "getConfiguration" ]
+    }, {
+      "name" : "recv_getTableProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "send_grantSystemPermission",
+      "visibility" : "public",
+      "methodCalls" : [ "sendBase", "setPrincipal", "setTinfo", "setPermission", "setCredentials" ]
+    }, {
+      "name" : "checkTableClass",
+      "visibility" : "public",
+      "methodCalls" : [ "send_checkTableClass", "call", "checkReady", "recv_checkTableClass", "getDeclaredConstructor", "checkTableId", "warn", "getClass", "getTableConfiguration", "tableContext", "newInstance", "getClassLoader", "authenticateUser", "loadClass" ]
+    }, {
+      "name" : "getNamespaceConfiguration",
+      "visibility" : "public",
+      "methodCalls" : [ "send_getNamespaceConfiguration", "recv_getNamespaceConfiguration", "checkReady", "call", "checkNamespaceId", "of", "getCache", "remove", "getPropStore", "getNamespaceConfiguration", "get" ]
+    }, {
+      "name" : "recv_changeAuthorizations",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "send_getTableConfiguration",
+      "visibility" : "public",
+      "methodCalls" : [ "setTinfo", "setTableName", "setCredentials", "sendBase" ]
+    }, {
+      "name" : "recv_listLocalUsers",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "createLocalUser",
+      "visibility" : "public",
+      "methodCalls" : [ "checkReady", "send_createLocalUser", "call", "recv_createLocalUser", "checkArgument", "getPassword", "createLocalUser", "traceInfo", "wrap", "rpcCreds", "getMessage", "warn", "getSaslParams", "createUser" ]
+    }, {
+      "name" : "send_checkNamespaceClass",
+      "visibility" : "public",
+      "methodCalls" : [ "setNamespaceId", "setCredentials", "sendBase", "setClassName", "setTinfo", "setInterfaceMatch" ]
+    }, {
+      "name" : "send_checkTableClass",
+      "visibility" : "public",
+      "methodCalls" : [ "setInterfaceMatch", "setClassName", "setTinfo", "setTableId", "sendBase", "setCredentials" ]
+    }, {
+      "name" : "changeLocalUserPassword",
+      "visibility" : "public",
+      "methodCalls" : [ "send_changeLocalUserPassword", "recv_changeLocalUserPassword", "call", "checkReady", "changeLocalUserPassword", "wrap", "checkArgument", "setCredentials", "traceInfo", "getPassword", "equals", "getPrincipal", "getCredentials", "rpcCreds", "changePassword" ]
+    }, {
+      "name" : "send_revokeSystemPermission",
+      "visibility" : "public",
+      "methodCalls" : [ "setCredentials", "setPermission", "setPrincipal", "sendBase", "setTinfo" ]
+    }, {
+      "name" : "recv_ping",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "recv_revokeSystemPermission",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "send_checkClass",
+      "visibility" : "public",
+      "methodCalls" : [ "sendBase", "setClassName", "setCredentials", "setInterfaceMatch", "setTinfo" ]
+    }, {
+      "name" : "send_dropLocalUser",
+      "visibility" : "public",
+      "methodCalls" : [ "sendBase", "setPrincipal", "setCredentials", "setTinfo" ]
+    }, {
+      "name" : "recv_authenticateUser",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "grantTablePermission",
+      "visibility" : "public",
+      "methodCalls" : [ "send_grantTablePermission", "checkReady", "call", "recv_grantTablePermission", "traceInfo", "getId", "rpcCreds", "getSecurityErrorCode", "checkArgument", "getNamespaceId", "checkTableId", "getPermissionById", "clear", "getZooCache", "get", "putPersistentData", "error", "getMessage", "convertTablePermissions", "add", "getBytes", "encodeToString", "getEncoder", "grantTablePermission" ]
+    }, {
+      "name" : "getVersionedNamespaceProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "checkReady", "recv_getVersionedNamespaceProperties", "send_getVersionedNamespaceProperties", "call", "getPropStore", "getDataVersion", "get", "map", "checkNamespaceId", "asMap", "of", "orElseThrow" ]
+    }, {
+      "name" : "recv_checkTableClass",
+      "visibility" : "public",
+      "methodCalls" : [ "isSetSuccess", "receiveBase" ]
+    }, {
+      "name" : "getTableConfiguration",
+      "visibility" : "public",
+      "methodCalls" : [ "recv_getTableConfiguration", "checkReady", "send_getTableConfiguration", "call", "getCache", "getPropStore", "remove", "of", "checkTableId", "get", "getContext", "tableId", "getTableConfiguration" ]
+    }, {
+      "name" : "send_listLocalUsers",
+      "visibility" : "public",
+      "methodCalls" : [ "setCredentials", "setTinfo", "sendBase" ]
+    }, {
+      "name" : "send_changeLocalUserPassword",
+      "visibility" : "public",
+      "methodCalls" : [ "sendBase", "setPrincipal", "setTinfo", "setPassword", "setCredentials" ]
+    }, {
+      "name" : "recv_grantSystemPermission",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "recv_getTableConfiguration",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "getTableProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "traceInfo", "getTableProperties", "execute", "validate", "rpcCreds", "getCause", "getType", "checkReady", "send_getTableProperties", "recv_getTableProperties", "call", "get", "checkTableId", "asMap", "of", "getPropStore" ]
+    }, {
+      "name" : "send_revokeTablePermission",
+      "visibility" : "public",
+      "methodCalls" : [ "setPrincipal", "setPermission", "setCredentials", "sendBase", "setTinfo", "setTableName" ]
+    }, {
+      "name" : "revokeTablePermission",
+      "visibility" : "public",
+      "methodCalls" : [ "recv_revokeTablePermission", "checkReady", "call", "send_revokeTablePermission", "traceInfo", "getId", "rpcCreds", "getSecurityErrorCode", "checkArgument", "checkTableId", "getPermissionById", "getNamespaceId", "putPersistentData", "remove", "recursiveDelete", "get", "startsWith", "clear", "getZooCache", "getMessage", "error", "convertTablePermissions", "isEmpty", "revokeTablePermission", "getEncoder", "getBytes", "encodeToString" ]
+    }, {
+      "name" : "send_getNamespaceConfiguration",
+      "visibility" : "public",
+      "methodCalls" : [ "setCredentials", "setNs", "sendBase", "setTinfo" ]
+    }, {
+      "name" : "dropLocalUser",
+      "visibility" : "public",
+      "methodCalls" : [ "call", "send_dropLocalUser", "checkReady", "recv_dropLocalUser", "traceInfo", "dropLocalUser", "rpcCreds", "checkArgument", "dropUser" ]
+    }, {
+      "name" : "send_changeAuthorizations",
+      "visibility" : "public",
+      "methodCalls" : [ "setAuthorizations", "setTinfo", "setPrincipal", "sendBase", "setCredentials" ]
+    }, {
+      "name" : "send_getUserAuthorizations",
+      "visibility" : "public",
+      "methodCalls" : [ "sendBase", "setCredentials", "setTinfo", "setPrincipal" ]
+    }, {
+      "name" : "recv_getVersionedTableProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "isSetSuccess", "receiveBase" ]
+    }, {
+      "name" : "send_grantTablePermission",
+      "visibility" : "public",
+      "methodCalls" : [ "setTableName", "setTinfo", "sendBase", "setCredentials", "setPrincipal", "setPermission" ]
+    }, {
+      "name" : "send_grantNamespacePermission",
+      "visibility" : "public",
+      "methodCalls" : [ "setCredentials", "setTinfo", "setNs", "setPrincipal", "sendBase", "setPermission" ]
+    }, {
+      "name" : "grantNamespacePermission",
+      "visibility" : "public",
+      "methodCalls" : [ "call", "send_grantNamespacePermission", "checkReady", "recv_grantNamespacePermission", "validate", "checkArgument", "getId", "rpcCreds", "traceInfo", "getPermissionById", "checkNamespaceId", "error", "getPrincipal", "getMessage", "canonical", "add", "asThriftException", "getZooCache", "info", "clear", "get", "convertNamespacePermissions", "putPersistentData", "encodeToString", "getBytes", "grantNamespacePermission", "getEncoder" ]
+    }, {
+      "name" : "send_getVersionedSystemProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "setTinfo", "setCredentials", "sendBase" ]
+    }, {
+      "name" : "checkClass",
+      "visibility" : "public",
+      "methodCalls" : [ "send_checkClass", "recv_checkClass", "call", "checkReady", "getClass", "loadClass", "newInstance", "warn", "getDeclaredConstructor", "authenticateUser", "getClassLoader" ]
+    }, {
+      "name" : "checkNamespaceClass",
+      "visibility" : "public",
+      "methodCalls" : [ "recv_checkNamespaceClass", "call", "send_checkNamespaceClass", "checkReady", "warn", "tableContext", "getClassLoader", "authenticateUser", "newInstance", "checkNamespaceId", "loadClass", "getDeclaredConstructor", "getNamespaceConfiguration", "getClass" ]
+    }, {
+      "name" : "recv_revokeNamespacePermission",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "recv_getNamespaceConfiguration",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "recv_createLocalUser",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "send_revokeNamespacePermission",
+      "visibility" : "public",
+      "methodCalls" : [ "setNs", "setTinfo", "setPrincipal", "sendBase", "setPermission", "setCredentials" ]
+    }, {
+      "name" : "send_getVersionedTableProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "setTableName", "setTinfo", "setCredentials", "sendBase" ]
+    }, {
+      "name" : "recv_changeLocalUserPassword",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "recv_checkClass",
+      "visibility" : "public",
+      "methodCalls" : [ "isSetSuccess", "receiveBase" ]
+    }, {
+      "name" : "send_authenticateUser",
+      "visibility" : "public",
+      "methodCalls" : [ "setToAuth", "setCredentials", "sendBase", "setTinfo" ]
+    }, {
+      "name" : "getUserAuthorizations",
+      "visibility" : "public",
+      "methodCalls" : [ "call", "checkReady", "send_getUserAuthorizations", "recv_getUserAuthorizations", "checkArgument", "rpcCreds", "traceInfo", "getAuthorizationsBB", "getUserAuthorizations", "getPrincipal", "authenticate", "isSystemUser", "equals", "getCachedUserAuthorizations" ]
+    }, {
+      "name" : "send_getDiskUsage",
+      "visibility" : "public",
+      "methodCalls" : [ "setCredentials", "sendBase", "setTables" ]
+    }, {
+      "name" : "recv_hasNamespacePermission",
+      "visibility" : "public",
+      "methodCalls" : [ "isSetSuccess", "receiveBase" ]
+    }, {
+      "name" : "halt",
+      "visibility" : "public",
+      "methodCalls" : [ "call", "send_halt", "checkReady", "recv_halt", "getClient", "rpcCreds", "returnClient", "traceInfo", "info", "checkPermission", "getConfiguration", "getLowMemoryDetector", "requestStop", "unlock", "halt", "getLock", "logGCInfo", "error" ]
+    }, {
+      "name" : "send_fastHalt",
+      "visibility" : "public",
+      "methodCalls" : [ "setLock", "setCredentials", "sendBaseOneway", "setTinfo" ]
+    }, {
+      "name" : "recv_startGetSummaries",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "recv_halt",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "send_startGetSummaries",
+      "visibility" : "public",
+      "methodCalls" : [ "sendBase", "setTinfo", "setRequest", "setCredentials" ]
+    }, {
+      "name" : "recv_startGetSummariesForPartition",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "getTabletServerStatus",
+      "visibility" : "public",
+      "methodCalls" : [ "call", "send_getTabletServerStatus", "recv_getTabletServerStatus", "checkReady", "getStats", "getActiveScansPerTable" ]
+    }, {
+      "name" : "removeLogs",
+      "visibility" : "public",
+      "methodCalls" : [ "call", "send_removeLogs", "checkReady", "warn" ]
+    }, {
+      "name" : "send_allocateTimestamps",
+      "visibility" : "public",
+      "methodCalls" : [ "sendBase", "setCredentials", "setTinfo", "setTablets" ]
+    }, {
+      "name" : "getActiveLogs",
+      "visibility" : "public",
+      "methodCalls" : [ "send_getActiveLogs", "call", "recv_getActiveLogs", "checkReady", "getPath", "singletonList", "emptyList", "getLogEntry" ]
+    }, {
+      "name" : "recv_getHistoricalStats",
+      "visibility" : "public",
+      "methodCalls" : [ "isSetSuccess", "receiveBase" ]
+    }, {
+      "name" : "send_halt",
+      "visibility" : "public",
+      "methodCalls" : [ "setCredentials", "sendBase", "setLock", "setTinfo" ]
+    }, {
+      "name" : "contiuneGetSummaries",
+      "visibility" : "public",
+      "methodCalls" : [ "send_contiuneGetSummaries", "checkReady", "recv_contiuneGetSummaries", "call", "getFuture", "removeSession", "getSession" ]
+    }, {
+      "name" : "send_getHistoricalStats",
+      "visibility" : "public",
+      "methodCalls" : [ "setTinfo", "sendBase", "setCredentials" ]
+    }, {
+      "name" : "send_startGetSummariesForPartition",
+      "visibility" : "public",
+      "methodCalls" : [ "setCredentials", "setRemainder", "setModulus", "setRequest", "sendBase", "setTinfo" ]
+    }, {
+      "name" : "send_getTabletServerStatus",
+      "visibility" : "public",
+      "methodCalls" : [ "setTinfo", "setCredentials", "sendBase" ]
+    }, {
+      "name" : "recv_allocateTimestamps",
+      "visibility" : "public",
+      "methodCalls" : [ "isSetSuccess", "receiveBase" ]
+    }, {
+      "name" : "recv_contiuneGetSummaries",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "allocateTimestamps",
+      "visibility" : "public",
+      "methodCalls" : [ "send_allocateTimestamps", "recv_allocateTimestamps", "checkReady", "call", "put", "getPrincipal", "ifPresent", "canPerformSystemActions", "fromThrift", "allocateTimestamp", "getOnlineTablets", "get", "asThriftException" ]
+    }, {
+      "name" : "recv_getActiveLogs",
+      "visibility" : "public",
+      "methodCalls" : [ "isSetSuccess", "receiveBase" ]
+    }, {
+      "name" : "send_removeLogs",
+      "visibility" : "public",
+      "methodCalls" : [ "setTinfo", "setFilenames", "sendBaseOneway", "setCredentials" ]
+    }, {
+      "name" : "send_getTabletStats",
+      "visibility" : "public",
+      "methodCalls" : [ "setTableId", "setCredentials", "setTinfo", "sendBase" ]
+    }, {
+      "name" : "send_contiuneGetSummaries",
+      "visibility" : "public",
+      "methodCalls" : [ "setTinfo", "sendBase", "setSessionId" ]
+    }, {
+      "name" : "recv_startGetSummariesFromFiles",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "flush",
+      "visibility" : "public",
+      "methodCalls" : [ "traceInfo", "getTableId", "setException", "end", "getClass", "makeCurrent", "startSpan", "checkReady", "call", "send_flush", "finish", "resetState", "hasArray", "rewind", "array", "write", "writeInt", "position", "flush", "wrap", "of", "filter", "stream", "toList", "collect", "getOnlineTablets", "values", "info", "overlaps", "forEach", "toText", "checkPermission", "getMessage", "getExtent", "getFlushID", "error", "get", "isEmpty", "mutateTablet", "getFlushId", "conditionallyMutateTablets", "notifyAll", "getTabletMemory", "getMemTable", "lock", "getNumEntries", "requireSame", "initiateMinorCompaction", "memoryReservedForMinC", "getAmple", "process", "putFlushId", "getStatus", "getTabletSession", "getMetadata", "orElse", "isBeingDeleted", "isClosing", "current", "requireLocation", "unlock", "isClosed", "getContext", "submit", "canonical", "getClient", "rpcCreds", "returnClient" ]
+    }, {
+      "name" : "recv_getTabletServerStatus",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "send_flush",
+      "visibility" : "public",
+      "methodCalls" : [ "setCredentials", "setStartRow", "setEndRow", "sendBaseOneway", "setTableId", "setTinfo", "setLock" ]
+    }, {
+      "name" : "recv_refreshTablets",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "getHistoricalStats",
+      "visibility" : "public",
+      "methodCalls" : [ "send_getHistoricalStats", "checkReady", "recv_getHistoricalStats", "call", "getTabletStats" ]
+    }, {
+      "name" : "fastHalt",
+      "visibility" : "public",
+      "methodCalls" : [ "checkReady", "send_fastHalt", "call", "getClient", "fastHalt", "traceInfo", "rpcCreds", "returnClient", "halt", "warn" ]
+    }, {
+      "name" : "startGetSummaries",
+      "visibility" : "public",
+      "methodCalls" : [ "send_startGetSummaries", "recv_startGetSummaries", "checkReady", "call", "getContext", "getPrincipal", "getSummaryPartitionExecutor", "canonical", "getCryptoService", "of", "canGetSummaries", "getTableConfiguration", "asThriftException", "getTableId", "gather" ]
+    }, {
+      "name" : "send_refreshTablets",
+      "visibility" : "public",
+      "methodCalls" : [ "setTabletsToRefresh", "setCredentials", "sendBase", "setTinfo" ]
+    }, {
+      "name" : "startGetSummariesForPartition",
+      "visibility" : "public",
+      "methodCalls" : [ "call", "checkReady", "recv_startGetSummariesForPartition", "send_startGetSummariesForPartition", "canPerformSystemActions", "getTableConfiguration", "processPartition", "asThriftException", "getTableId", "of", "getSummaryRemoteExecutor", "getContext", "getCryptoService", "getPrincipal" ]
+    }, {
+      "name" : "send_getActiveLogs",
+      "visibility" : "public",
+      "methodCalls" : [ "setTinfo", "setCredentials", "sendBase" ]
+    }, {
+      "name" : "getTabletStats",
+      "visibility" : "public",
+      "methodCalls" : [ "call", "checkReady", "send_getTabletStats", "recv_getTabletStats", "tableId", "getTabletStats", "tailMap", "getValue", "compareTo", "getNumEntries", "of", "ingestRate", "entrySet", "getKey", "queryRate", "getOnlineTablets", "add", "toThrift" ]
+    }, {
+      "name" : "startGetSummariesFromFiles",
+      "visibility" : "public",
+      "methodCalls" : [ "call", "recv_startGetSummariesFromFiles", "checkReady", "send_startGetSummariesFromFiles", "getSummaryCache", "processFiles", "getSummaryRetrievalExecutor", "asThriftException", "canPerformSystemActions", "getPrincipal", "getCryptoService", "getFileLenCache", "of", "getTableId", "getTableConfiguration", "getContext", "getIndexCache", "getVolumeManager" ]
+    }, {
+      "name" : "recv_getTabletStats",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "send_startGetSummariesFromFiles",
+      "visibility" : "public",
+      "methodCalls" : [ "setRequest", "setCredentials", "setFiles", "setTinfo", "sendBase" ]
+    }, {
+      "name" : "refreshTablets",
+      "visibility" : "public",
+      "methodCalls" : [ "remove", "call", "send_refreshTablets", "recv_refreshTablets", "checkReady", "waitForNextAttempt", "getExtent", "debug", "readTablets", "add", "asThriftException", "getPrincipal", "startRefresh", "canPerformSystemActions", "isDebugEnabled", "keySet", "getOnlineTablets", "synchronizedList", "getAmple", "get", "build", "fromThrift", "toThrift", "refreshMetadata", "forTablets", "put", "of", "size", "clear", "fetch", "retryAfter", "computeIfAbsent", "createRetry", "contains", "incrementBy", "getServerInstance", "backOffFactor", "getKey", "submit", "equals", "ofMillis", "removeIf", "builder", "empty", "entrySet", "isEmpty", "ofMinutes", "forEach", "getValue", "logInterval", "trace", "getLocation", "maxWait", "ofSeconds", "infiniteRetries" ]
+    }, {
+      "name" : "recv_getActiveTservers",
+      "visibility" : "public",
+      "methodCalls" : [ "isSetSuccess", "receiveBase" ]
+    }, {
+      "name" : "send_setManagerGoalState",
+      "visibility" : "public",
+      "methodCalls" : [ "setState", "setCredentials", "setTinfo", "sendBase" ]
+    }, {
+      "name" : "send_reportTabletStatus",
+      "visibility" : "public",
+      "methodCalls" : [ "setServerName", "setCredentials", "setTablet", "sendBaseOneway", "setStatus", "setTinfo" ]
+    }, {
+      "name" : "send_getManagerStats",
+      "visibility" : "public",
+      "methodCalls" : [ "setCredentials", "setTinfo", "sendBase" ]
+    }, {
+      "name" : "recv_setSystemProperty",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "setNamespaceProperty",
+      "visibility" : "public",
+      "methodCalls" : [ "send_setNamespaceProperty", "recv_setNamespaceProperty", "call", "checkReady" ]
+    }, {
+      "name" : "recv_initiateFlush",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "send_setTableProperty",
+      "visibility" : "public",
+      "methodCalls" : [ "setValue", "setTinfo", "sendBase", "setTableName", "setProperty", "setCredentials" ]
+    }, {
+      "name" : "send_removeSystemProperty",
+      "visibility" : "public",
+      "methodCalls" : [ "setCredentials", "setTinfo", "setProperty", "sendBase" ]
+    }, {
+      "name" : "removeSystemProperty",
+      "visibility" : "public",
+      "methodCalls" : [ "call", "checkReady", "recv_removeSystemProperty", "send_removeSystemProperty", "canPerformSystemActions", "error", "getMessage", "getPrincipal", "removeSystemProperty" ]
+    }, {
+      "name" : "modifySystemProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "send_modifySystemProperties", "call", "checkReady", "recv_modifySystemProperties", "getVersion", "getMessage", "getProperties", "getKey", "canPerformSystemActions", "getPrincipal", "modifyProperties", "warn", "entrySet", "error" ]
+    }, {
+      "name" : "requestTabletHosting",
+      "visibility" : "public",
+      "methodCalls" : [ "recv_requestTabletHosting", "send_requestTabletHosting", "checkReady", "call", "mustBeOnline", "getPrincipal", "of", "canScan", "hostOndemand", "transform" ]
+    }, {
+      "name" : "recv_setNamespaceProperty",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "waitForBalance",
+      "visibility" : "public",
+      "methodCalls" : [ "executeVoid", "traceInfo", "send_waitForBalance", "recv_waitForBalance", "call", "checkReady", "debug", "displayUnassigned", "waitForEvents", "toString", "wait", "waitForBalance" ]
+    }, {
+      "name" : "send_setNamespaceProperty",
+      "visibility" : "public",
+      "methodCalls" : [ "setValue", "setNs", "setProperty", "sendBase", "setTinfo", "setCredentials" ]
+    }, {
+      "name" : "send_updateTabletMergeability",
+      "visibility" : "public",
+      "methodCalls" : [ "setSplits", "setCredentials", "setTableName", "sendBase", "setTinfo" ]
+    }, {
+      "name" : "getManagerTimeNanos",
+      "visibility" : "public",
+      "methodCalls" : [ "checkReady", "recv_getManagerTimeNanos", "call", "send_getManagerTimeNanos", "getSteadyTime", "getNanos", "authenticateUser" ]
+    }, {
+      "name" : "recv_modifyNamespaceProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "recv_setManagerGoalState",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "tabletServerStopping",
+      "visibility" : "public",
+      "methodCalls" : [ "send_tabletServerStopping", "checkReady", "call", "recv_tabletServerStopping", "tabletServerShuttingDown", "getPrincipal", "canPerformSystemActions", "info" ]
+    }, {
+      "name" : "recv_tabletServerStopping",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "recv_shutdown",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "recv_getManagerTimeNanos",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "send_modifySystemProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "setVProperties", "setTinfo", "setCredentials", "sendBase" ]
+    }, {
+      "name" : "send_setSystemProperty",
+      "visibility" : "public",
+      "methodCalls" : [ "setCredentials", "sendBase", "setTinfo", "setValue", "setProperty" ]
+    }, {
+      "name" : "send_requestTabletHosting",
+      "visibility" : "public",
+      "methodCalls" : [ "setCredentials", "sendBase", "setTinfo", "setExtents", "setTableId" ]
+    }, {
+      "name" : "reportTabletStatus",
+      "visibility" : "public",
+      "methodCalls" : [ "call", "checkReady", "send_reportTabletStatus", "getPrincipal", "error", "event", "trace", "isTraceEnabled", "fromThrift", "canPerformSystemActions" ]
+    }, {
+      "name" : "shutdown",
+      "visibility" : "public",
+      "methodCalls" : [ "info", "clear", "nanoTime", "cancel", "getIdleCountHistory", "type", "shutdownNow", "warn", "initiateShutdown", "compareAndSet", "toMillis", "call", "send_shutdown", "recv_shutdown", "checkReady", "shutdown", "getTracker", "waitForEvents", "size", "getPrincipal", "canPerformSystemActions", "setManagerGoalState", "setManagerState", "countDown", "values", "join", "error", "forEach", "close" ]
+    }, {
+      "name" : "updateTabletMergeability",
+      "visibility" : "public",
+      "methodCalls" : [ "call", "checkReady", "send_updateTabletMergeability", "recv_updateTabletMergeability", "conditionallyMutateTablets", "requireAbsentOperation", "getSteadyTime", "getKey", "canSplitTablet", "forEach", "mutateTablet", "toMetadata", "getStatus", "equals", "entrySet", "add", "getTabletMergeability", "getValue", "getAmple", "debug", "process", "getTableId", "getExtent", "submit", "fromThrift", "putTabletMergeability", "getPrincipal", "toThrift" ]
+    }, {
+      "name" : "initiateFlush",
+      "visibility" : "public",
+      "methodCalls" : [ "recv_initiateFlush", "checkReady", "send_initiateFlush", "call", "toString", "getMessage", "warn", "mutateExisting", "of", "canonical", "canFlush", "asReaderWriter", "getPrincipal", "getZooSession", "getBytes", "parseLong" ]
+    }, {
+      "name" : "getActiveTservers",
+      "visibility" : "public",
+      "methodCalls" : [ "checkReady", "send_getActiveTservers", "call", "recv_getActiveTservers", "add", "getHostPort", "canPerformSystemActions", "getPrincipal", "onlineTabletServers" ]
+    }, {
+      "name" : "setSystemProperty",
+      "visibility" : "public",
+      "methodCalls" : [ "call", "checkReady", "recv_setSystemProperty", "send_setSystemProperty", "getMessage", "getPrincipal", "canPerformSystemActions", "setSystemProperty", "error" ]
+    }, {
+      "name" : "send_getActiveTservers",
+      "visibility" : "public",
+      "methodCalls" : [ "setCredentials", "sendBase", "setTinfo" ]
+    }, {
+      "name" : "recv_getDelegationToken",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "send_shutdownTabletServer",
+      "visibility" : "public",
+      "methodCalls" : [ "setForce", "setTinfo", "sendBase", "setCredentials", "setTabletServer" ]
+    }, {
+      "name" : "send_waitForBalance",
+      "visibility" : "public",
+      "methodCalls" : [ "setTinfo", "sendBase" ]
+    }, {
+      "name" : "modifyNamespaceProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "checkReady", "recv_modifyNamespaceProperties", "send_modifyNamespaceProperties", "call", "warn", "canAlterNamespace", "getProperties", "getPrincipal", "replaceProperties", "canonical", "checkNamespaceId", "of", "getVersion", "getMessage" ]
+    }, {
+      "name" : "getDelegationToken",
+      "visibility" : "public",
+      "methodCalls" : [ "executeTableCommand", "serialize", "getDelegationToken", "getIdentifier", "rpcCreds", "traceInfo", "checkReady", "recv_getDelegationToken", "call", "send_getDelegationToken", "getPrincipal", "getValue", "canObtainDelegationToken", "getKey", "deserialize", "getPassword", "getSecretManager", "getThriftIdentifier", "generateToken", "wrap", "delegationTokensAvailable", "getMessage" ]
+    }, {
+      "name" : "send_initiateFlush",
+      "visibility" : "public",
+      "methodCalls" : [ "setCredentials", "setTinfo", "setTableName", "sendBase" ]
+    }, {
+      "name" : "send_shutdown",
+      "visibility" : "public",
+      "methodCalls" : [ "setTinfo", "setCredentials", "sendBase", "setStopTabletServers" ]
+    }, {
+      "name" : "setTableProperty",
+      "visibility" : "public",
+      "methodCalls" : [ "checkReady", "send_setTableProperty", "call", "recv_setTableProperty" ]
+    }, {
+      "name" : "recv_modifyTableProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "send_getDelegationToken",
+      "visibility" : "public",
+      "methodCalls" : [ "sendBase", "setTinfo", "setCfg", "setCredentials" ]
+    }, {
+      "name" : "recv_getManagerStats",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "send_removeTableProperty",
+      "visibility" : "public",
+      "methodCalls" : [ "setTableName", "sendBase", "setCredentials", "setProperty", "setTinfo" ]
+    }, {
+      "name" : "getManagerStats",
+      "visibility" : "public",
+      "methodCalls" : [ "send_getManagerStats", "checkReady", "call", "recv_getManagerStats", "getManagerMonitorInfo" ]
+    }, {
+      "name" : "setManagerGoalState",
+      "visibility" : "public",
+      "methodCalls" : [ "recv_setManagerGoalState", "call", "checkReady", "send_setManagerGoalState", "getPrincipal", "setManagerGoalState", "canPerformSystemActions" ]
+    }, {
+      "name" : "recv_shutdownTabletServer",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "send_getManagerTimeNanos",
+      "visibility" : "public",
+      "methodCalls" : [ "sendBase", "setTinfo", "setCredentials" ]
+    }, {
+      "name" : "removeNamespaceProperty",
+      "visibility" : "public",
+      "methodCalls" : [ "recv_removeNamespaceProperty", "checkReady", "send_removeNamespaceProperty", "call" ]
+    }, {
+      "name" : "send_waitForFlush",
+      "visibility" : "public",
+      "methodCalls" : [ "setStartRow", "setCredentials", "setMaxLoops", "sendBase", "setTinfo", "setFlushID", "setEndRow", "setTableName" ]
+    }, {
+      "name" : "shutdownTabletServer",
+      "visibility" : "public",
+      "methodCalls" : [ "call", "send_shutdownTabletServer", "recv_shutdownTabletServer", "checkReady", "debug", "getResourceGroup", "fate", "getPrincipal", "warn", "getConnection", "seedTransaction", "delete", "waitForCompletion", "find", "startTransaction", "canPerformSystemActions" ]
+    }, {
+      "name" : "modifyTableProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "call", "recv_modifyTableProperties", "checkReady", "send_modifyTableProperties", "getPrincipal", "replaceProperties", "canAlterTable", "getVersion", "checkTableId", "getProperties", "warn", "of", "getMessage", "canonical" ]
+    }, {
+      "name" : "removeTableProperty",
+      "visibility" : "public",
+      "methodCalls" : [ "call", "send_removeTableProperty", "checkReady", "recv_removeTableProperty" ]
+    }, {
+      "name" : "recv_removeTableProperty",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "recv_waitForFlush",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "recv_updateTabletMergeability",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "send_tabletServerStopping",
+      "visibility" : "public",
+      "methodCalls" : [ "sendBase", "setTinfo", "setTabletServer", "setCredentials" ]
+    }, {
+      "name" : "send_removeNamespaceProperty",
+      "visibility" : "public",
+      "methodCalls" : [ "setCredentials", "sendBase", "setNs", "setProperty", "setTinfo" ]
+    }, {
+      "name" : "recv_removeSystemProperty",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "waitForFlush",
+      "visibility" : "public",
+      "methodCalls" : [ "send_waitForFlush", "recv_waitForFlush", "checkReady", "call", "canFlush", "getConnection", "equals", "orElse", "add", "toString", "debug", "getLocation", "builder", "clear", "compareTo", "tableNodeExists", "tableName", "hasCurrent", "getServerInstance", "toBytes", "getPrincipal", "getLogs", "getCurrentServers", "build", "of", "error", "flush", "getFlushId", "size", "overlapping", "toText", "tableId", "sleepUninterruptibly", "fetch", "forTable", "canonical" ]
+    }, {
+      "name" : "recv_modifySystemProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "recv_waitForBalance",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "recv_removeNamespaceProperty",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "send_modifyNamespaceProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "setNs", "sendBase", "setCredentials", "setVProperties", "setTinfo" ]
+    }, {
+      "name" : "recv_setTableProperty",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "send_modifyTableProperties",
+      "visibility" : "public",
+      "methodCalls" : [ "sendBase", "setTableName", "setTinfo", "setCredentials", "setVProperties" ]
+    }, {
+      "name" : "recv_requestTabletHosting",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "recv_startScan",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "send_finishFateOperation",
+      "visibility" : "public",
+      "methodCalls" : [ "sendBase", "setCredentials", "setOpid", "setTinfo" ]
+    }, {
+      "name" : "send_startMultiScan",
+      "visibility" : "public",
+      "methodCalls" : [ "sendBase", "setSsiList", "setBusyTimeout", "setBatchTimeOut", "setSsio", "setExecutionHints", "setColumns", "setCredentials", "setWaitForWrites", "setAuthorizations", "setSamplerConfig", "setBatch", "setClassLoaderContext", "setTinfo" ]
+    }, {
+      "name" : "recv_finishFateOperation",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "send_continueScan",
+      "visibility" : "public",
+      "methodCalls" : [ "sendBase", "setScanID", "setTinfo", "setBusyTimeout" ]
+    }, {
+      "name" : "recv_closeMultiScan",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "recv_beginFateOperation",
+      "visibility" : "public",
+      "methodCalls" : [ "isSetSuccess", "receiveBase" ]
+    }, {
+      "name" : "recv_continueMultiScan",
+      "visibility" : "public",
+      "methodCalls" : [ "isSetSuccess", "receiveBase" ]
+    }, {
+      "name" : "send_cancelFateOperation",
+      "visibility" : "public",
+      "methodCalls" : [ "sendBase", "setOpid", "setCredentials", "setTinfo" ]
+    }, {
+      "name" : "send_beginFateOperation",
+      "visibility" : "public",
+      "methodCalls" : [ "setTinfo", "setType", "setCredentials", "sendBase" ]
+    }, {
+      "name" : "send_executeFateOperation",
+      "visibility" : "public",
+      "methodCalls" : [ "setCredentials", "setOp", "setOpid", "setTinfo", "setAutoClean", "setArguments", "setOptions", "sendBase" ]
+    }, {
+      "name" : "recv_executeFateOperation",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "getActiveScans",
+      "visibility" : "public",
+      "methodCalls" : [ "orElseThrow", "isPresent", "of", "call", "send_getActiveScans", "recv_getActiveScans", "checkReady", "checkPermission", "getSessionManager", "getActiveScans", "getSessionId", "values", "getScanTask", "currentTimeMillis", "concat", "stream", "getScanServerScans", "getScans", "getMmi", "fromString", "getTServerInfo", "addScan", "forEach", "get", "toString" ]
+    }, {
+      "name" : "recv_cancelFateOperation",
+      "visibility" : "public",
+      "methodCalls" : [ "isSetSuccess", "receiveBase" ]
+    }, {
+      "name" : "waitForFateOperation",
+      "visibility" : "public",
+      "methodCalls" : [ "recv_waitForFateOperation", "call", "send_waitForFateOperation", "checkReady", "getException", "waitForCompletion", "fromThrift", "getReturn", "getType", "fate", "authenticate" ]
+    }, {
+      "name" : "send_continueMultiScan",
+      "visibility" : "public",
+      "methodCalls" : [ "setTinfo", "setScanID", "setBusyTimeout", "sendBase" ]
+    }, {
+      "name" : "continueScan",
+      "visibility" : "public",
+      "methodCalls" : [ "recv_continueScan", "call", "send_continueScan", "checkReady", "continueScan", "getFailures", "getSessionManager", "reserveFilesInstrumented", "reserveSession", "incrementBusy", "isEmpty", "trace", "checkState", "unreserveSession" ]
+    }, {
+      "name" : "closeScan",
+      "visibility" : "public",
+      "methodCalls" : [ "send_closeScan", "checkReady", "call", "closeScan", "format", "getScanMetrics", "get", "addResult", "removeSession", "isTraceEnabled", "tableId", "addScan", "toString", "incrementCloseScan", "trace", "getSessionManager", "currentTimeMillis" ]
+    }, {
+      "name" : "send_startScan",
+      "visibility" : "public",
+      "methodCalls" : [ "setClassLoaderContext", "setColumns", "setBatchTimeOut", "setRange", "setBatchSize", "setIsolated", "setWaitForWrites", "setCredentials", "setAuthorizations", "setTinfo", "sendBase", "setSsio", "setExecutionHints", "setBusyTimeout", "setReadaheadThreshold", "setExtent", "setSamplerConfig", "setSsiList" ]
+    }, {
+      "name" : "beginFateOperation",
+      "visibility" : "public",
+      "methodCalls" : [ "call", "recv_beginFateOperation", "send_beginFateOperation", "checkReady", "fate", "authenticate", "getTxUUIDStr", "startTransaction", "fromThrift" ]
+    }, {
+      "name" : "send_waitForFateOperation",
+      "visibility" : "public",
+      "methodCalls" : [ "sendBase", "setCredentials", "setOpid", "setTinfo" ]
+    }, {
+      "name" : "recv_waitForFateOperation",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "executeFateOperation",
+      "visibility" : "public",
+      "methodCalls" : [ "collect", "checkReady", "recv_executeFateOperation", "send_executeFateOperation", "call", "toMap", "keySet", "getTxUUIDStr", "canAlterTable", "put", "getLength", "canDeleteTable", "canMerge", "canRenameTable", "parseBoolean", "checkTableId", "debug", "canonical", "fate", "contains", "name", "getQualifiedTableName", "getFirst", "updateBulkImportStatus", "canCompact", "valueOf", "getTableId", "canDeleteRange", "deserialize", "toStringSet", "and", "getMessage", "getContext", "from", "endRow", "stream", "isValidProperty", "getKey", "toBytes", "truncate", "of", "substring", "checkNamespaceId", "canImport", "canDeleteNamespace", "mkTempDir", "getType", "canRenameNamespace", "canCreateNamespace", "getPrincipal", "length", "isValidTablePropertyKey", "forEach", "warn", "fromThrift", "anyMatch", "skip", "entrySet", "decodeCompactionConfig", "getAsBytes", "authenticate", "equals", "filter", "always", "map", "add", "sameNamespaceAs", "qualify", "subList", "size", "defaultIfBlank", "canSplitTablet", "getNamespaceId", "startsWith", "get", "getValue", "canBulkImport", "canChangeTableState", "seedTransaction", "toList", "toText", "canExport", "parseInt", "getTableConfiguration", "canCreateTable", "canCloneTable", "toString" ]
+    }, {
+      "name" : "recv_startMultiScan",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "closeMultiScan",
+      "visibility" : "public",
+      "methodCalls" : [ "checkReady", "send_closeMultiScan", "call", "recv_closeMultiScan", "get", "format", "closeMultiScan", "isTraceEnabled", "getSessionManager", "trace", "getScanMetrics", "removeSession", "incrementCloseScan", "currentTimeMillis" ]
+    }, {
+      "name" : "send_closeMultiScan",
+      "visibility" : "public",
+      "methodCalls" : [ "sendBase", "setScanID", "setTinfo" ]
+    }, {
+      "name" : "send_closeScan",
+      "visibility" : "public",
+      "methodCalls" : [ "setTinfo", "sendBaseOneway", "setScanID" ]
+    }, {
+      "name" : "startScan",
+      "visibility" : "public",
+      "methodCalls" : [ "checkReady", "recv_startScan", "call", "send_startScan", "createScanner", "fromThrift", "getSessionManager", "incrementStartScan", "singletonList", "getFailures", "getPrincipal", "getScanMetrics", "getContext", "setScanSessionId", "reserveFilesInstrumented", "getScanID", "tableId", "isSystemTable", "isSystemUser", "of", "getOnlineTablet", "waitForWrites", "toThrift", "type", "getScanTabletResolver", "error", "containsKey", "newTablet", "createSession", "isShutdownRequested", "incrementBusy", "startScan", "continueScan", "trace", "add", "getTablet", "authenticatedUserHasAuthorizations", "canScan", "getKeyExtent", "unreserveSession" ]
+    }, {
+      "name" : "cancelFateOperation",
+      "visibility" : "public",
+      "methodCalls" : [ "call", "recv_cancelFateOperation", "send_cancelFateOperation", "checkReady", "fate", "fromThrift", "canPerformSystemActions", "getPrincipal", "cancel", "getType" ]
+    }, {
+      "name" : "continueMultiScan",
+      "visibility" : "public",
+      "methodCalls" : [ "checkReady", "send_continueMultiScan", "recv_continueMultiScan", "call", "getFailures", "isEmpty", "reserveSession", "reserveFilesInstrumented", "getSessionManager", "unreserveSession", "continueMultiScan", "checkState", "trace", "incrementBusy" ]
+    }, {
+      "name" : "recv_getActiveScans",
+      "visibility" : "public",
+      "methodCalls" : [ "isSetSuccess", "receiveBase" ]
+    }, {
+      "name" : "recv_continueScan",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "finishFateOperation",
+      "visibility" : "public",
+      "methodCalls" : [ "send_finishFateOperation", "call", "recv_finishFateOperation", "checkReady", "delete", "getType", "fate", "fromThrift", "authenticate" ]
+    }, {
+      "name" : "send_getActiveScans",
+      "visibility" : "public",
+      "methodCalls" : [ "setCredentials", "setTinfo", "sendBase" ]
+    }, {
+      "name" : "startMultiScan",
+      "visibility" : "public",
+      "methodCalls" : [ "recv_startMultiScan", "send_startMultiScan", "call", "getValue", "values", "size", "getTabletMetadataExtents", "createSession", "startMultiScan", "fromThrift", "waitForWrites", "getOnlineTablet", "newTablet", "incrementStartScan", "getBatchScanTabletResolver", "map", "tableId", "isShutdownRequested", "next", "getKey", "isSystemUser", "iterator", "getSessionManager", "toList", "emptySet", "getScanID", "canScan", "stream", "getScanMetrics", "transform", "add", "getPrincipal", "isSystemTable", "reserveFilesInstrumented", "authenticatedUserHasAuthorizations", "isEmpty", "forEach", "getKeyExtent", "entrySet", "trace", "collect", "incrementBusy", "setScanSessionId", "put", "unreserveSession", "toMap", "type", "keySet", "error", "checkReady" ]
+    }, {
+      "name" : "recv_cancelUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "closeConditionalUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "send_closeConditionalUpdate", "call", "checkReady", "removeSession" ]
+    }, {
+      "name" : "send_conditionalUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "setMutations", "setSymbols", "sendBase", "setSessID", "setTinfo" ]
+    }, {
+      "name" : "closeUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "send_closeUpdate", "recv_closeUpdate", "checkReady", "call", "format", "debug", "startWrite", "stream", "isTraceEnabled", "keySet", "clear", "sum", "entrySet", "asList", "map", "removeSession", "updateTotalQueuedMutationSize", "toThrift", "collect", "get", "getValue", "toMap", "toString", "isEmpty", "next", "currentTimeMillis", "iterator", "getKey", "finishWrite", "trace", "toList", "size", "reserveSession" ]
+    }, {
+      "name" : "recv_startConditionalUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "recv_startUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "startUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "send_startUpdate", "call", "recv_startUpdate", "checkReady", "fromThrift", "addPermissionErrors", "updateTotalQueuedMutationSize", "trace", "createSession", "getContext", "authenticateUser" ]
+    }, {
+      "name" : "cancelUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "send_cancelUpdate", "call", "recv_cancelUpdate", "checkReady", "removeIfNotReserved" ]
+    }, {
+      "name" : "send_closeUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "setTinfo", "setUpdateID", "sendBase" ]
+    }, {
+      "name" : "startConditionalUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "recv_startConditionalUpdate", "call", "send_startConditionalUpdate", "checkReady", "getUserAuthorizations", "getMaxIdleTime", "createSession", "fromThrift", "contains", "canConditionallyUpdate", "serialize", "getPrincipal", "toBytes", "of", "getLockID" ]
+    }, {
+      "name" : "send_invalidateConditionalUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "sendBase", "setTinfo", "setSessID" ]
+    }, {
+      "name" : "send_startUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "sendBase", "setCredentials", "setTinfo", "setDurability" ]
+    }, {
+      "name" : "conditionalUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "send_conditionalUpdate", "call", "checkReady", "recv_conditionalUpdate", "entrySet", "equals", "fromThrift", "tableId", "toList", "keySet", "startWrite", "getValue", "getKey", "type", "isEmpty", "unreserveSession", "stream", "finishWrite", "reserveSession", "collect", "toMap", "debug", "get", "executeConditionalUpdate", "map", "warn", "waitUntilCommitsAreEnabled" ]
+    }, {
+      "name" : "recv_invalidateConditionalUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "send_cancelUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "setTinfo", "sendBase", "setUpdateID" ]
+    }, {
+      "name" : "recv_closeUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "send_startConditionalUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "setAuthorizations", "setTinfo", "sendBase", "setClassLoaderContext", "setCredentials", "setTableID", "setDurability" ]
+    }, {
+      "name" : "send_applyUpdates",
+      "visibility" : "public",
+      "methodCalls" : [ "setUpdateID", "setMutations", "setTinfo", "setKeyExtent", "sendBaseOneway" ]
+    }, {
+      "name" : "recv_conditionalUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "isSetSuccess", "receiveBase" ]
+    }, {
+      "name" : "invalidateConditionalUpdate",
+      "visibility" : "public",
+      "methodCalls" : [ "call", "send_invalidateConditionalUpdate", "checkReady", "recv_invalidateConditionalUpdate", "removeSession", "set", "reserveSession", "getSession" ]
+    }, {
+      "name" : "send_gracefulShutdown",
+      "visibility" : "public",
+      "methodCalls" : [ "sendBaseOneway", "setCredentials" ]
+    }, {
+      "name" : "send_getMetrics",
+      "visibility" : "public",
+      "methodCalls" : [ "setCredentials", "setTinfo", "sendBase" ]
+    }, {
+      "name" : "gracefulShutdown",
+      "visibility" : "public",
+      "methodCalls" : [ "call", "checkReady", "send_gracefulShutdown", "getPrincipal", "canPerformSystemActions", "warn", "compareAndSet", "getSecurityOperation", "error", "info" ]
+    }, {
+      "name" : "getMetrics",
+      "visibility" : "public",
+      "methodCalls" : [ "put", "add", "get", "getKey", "entrySet", "asMap", "getValue", "send_getMetrics", "checkReady", "recv_getMetrics", "call", "getPrincipal", "clear", "setTimestamp", "getMetricsInfo", "getResourceGroup", "getSecurityOperation", "getHostname", "isMetricsEnabled", "getId", "getDefaultValue", "setServerType", "startsWith", "forEach", "authenticateUser", "error", "match", "currentTimeMillis", "setServer", "getName", "setResourceGroup", "getMeters" ]
+    }, {
+      "name" : "recv_getMetrics",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "flushTablet",
+      "visibility" : "public",
+      "methodCalls" : [ "checkReady", "call", "send_flushTablet", "checkPermission", "error", "getExtent", "info", "fromThrift", "getMessage", "getOnlineTablet", "getFlushID" ]
+    }, {
+      "name" : "loadTablet",
+      "visibility" : "public",
+      "methodCalls" : [ "send_loadTablet", "checkReady", "call", "isMeta", "run", "fromThrift", "addMetaDataAssignment", "isRootTablet", "isEmpty", "getTabletSession", "start", "loading", "addAll", "info", "error", "remove", "findOverlapping", "checkPermission", "addAssignment", "createThread", "getOnlineTablets", "add", "containsKey" ]
+    }, {
+      "name" : "send_unloadTablet",
+      "visibility" : "public",
+      "methodCalls" : [ "setTinfo", "setCredentials", "setGoal", "setRequestTime", "setExtent", "sendBaseOneway", "setLock" ]
+    }, {
+      "name" : "send_loadTablet",
+      "visibility" : "public",
+      "methodCalls" : [ "setLock", "setCredentials", "setTinfo", "setExtent", "sendBaseOneway" ]
+    }, {
+      "name" : "send_flushTablet",
+      "visibility" : "public",
+      "methodCalls" : [ "setTinfo", "setCredentials", "sendBaseOneway", "setExtent", "setLock" ]
+    }, {
+      "name" : "unloadTablet",
+      "visibility" : "public",
+      "methodCalls" : [ "call", "send_unloadTablet", "checkReady", "unloadTablet", "getClient", "rpcCreds", "toThrift", "traceInfo", "returnClient", "addMigration", "fromThrift", "from", "checkPermission", "error" ]
+    }, {
+      "name" : "send_getRunningCompactionId",
+      "visibility" : "public",
+      "methodCalls" : [ "sendBase", "setCredentials", "setTinfo" ]
+    }, {
+      "name" : "send_getRunningCompaction",
+      "visibility" : "public",
+      "methodCalls" : [ "setTinfo", "sendBase", "setCredentials" ]
+    }, {
+      "name" : "getActiveCompactions",
+      "visibility" : "public",
+      "methodCalls" : [ "orElseThrow", "of", "isPresent", "addAll", "recv_getActiveCompactions", "send_getActiveCompactions", "checkReady", "call", "getPrincipal", "asThriftException", "getContext", "getSecurityOperation", "canPerformSystemActions", "getRunningCompactions", "error", "toThrift", "add", "checkPermission", "size", "getCompactions", "forEach", "getMmi", "addCompaction" ]
+    }, {
+      "name" : "recv_getRunningCompactionId",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "send_cancel",
+      "visibility" : "public",
+      "methodCalls" : [ "setCredentials", "sendBase", "setTinfo", "setExternalCompactionId" ]
+    }, {
+      "name" : "recv_cancel",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "getRunningCompaction",
+      "visibility" : "public",
+      "methodCalls" : [ "send_getRunningCompaction", "recv_getRunningCompaction", "call", "checkReady", "getJob", "getPrincipal", "asThriftException", "getContext", "canPerformSystemActions", "getSecurityOperation" ]
+    }, {
+      "name" : "cancel",
+      "visibility" : "public",
+      "methodCalls" : [ "unreserve", "getStatus", "isPresent", "orElseThrow", "info", "sleep", "tryReserve", "setStatus", "setTransactionInfo", "cancel", "checkReady", "call", "send_cancel", "recv_cancel", "getSecurityOperation", "getTableId", "getContext", "getExternalCompactionId", "equals", "isSet", "getPrincipal", "getCompactorAddress", "tableId", "cancelCompactionOnCompactor", "canonical", "asThriftException", "fromThrift", "of", "getJob", "getNamespaceId", "getExtent", "canCompact", "getMessage", "lock", "compareAndSet", "get", "set", "interrupt", "unlock" ]
+    }, {
+      "name" : "getRunningCompactionId",
+      "visibility" : "public",
+      "methodCalls" : [ "send_getRunningCompactionId", "recv_getRunningCompactionId", "call", "checkReady", "canPerformSystemActions", "getPrincipal", "getSecurityOperation", "getContext", "asThriftException", "canonical", "get" ]
+    }, {
+      "name" : "recv_getActiveCompactions",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "send_getActiveCompactions",
+      "visibility" : "public",
+      "methodCalls" : [ "sendBase", "setCredentials", "setTinfo" ]
+    }, {
+      "name" : "recv_getRunningCompaction",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "recv_getStatus",
+      "visibility" : "public",
+      "methodCalls" : [ "isSetSuccess", "receiveBase" ]
+    }, {
+      "name" : "getStatus",
+      "visibility" : "public",
+      "methodCalls" : [ "exists", "requireNonNull", "retryLoop", "getStatus", "getUser", "name", "valueOf", "getTableInfo", "getSecurityErrorCode", "call", "checkReady", "send_getStatus", "recv_getStatus", "getGcStatus" ]
+    }, {
+      "name" : "send_getStatus",
+      "visibility" : "public",
+      "methodCalls" : [ "setTinfo", "setCredentials", "sendBase" ]
+    }, {
+      "name" : "recv_getCompletedCompactions",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "getCompactionJob",
+      "visibility" : "public",
+      "methodCalls" : [ "recv_getCompactionJob", "checkReady", "send_getCompactionJob", "call", "createThriftJob", "put", "getKind", "of", "canPerformSystemActions", "reserveCompaction", "debug", "isPresent", "currentTimeMillis", "getSelectedFateId", "trace", "getExtent", "get", "poll", "asThriftException", "compacting", "from", "getPrincipal", "getExternalCompactionId" ]
+    }, {
+      "name" : "send_getLongRunningCompactions",
+      "visibility" : "public",
+      "methodCalls" : [ "sendBase", "setCredentials", "setTinfo" ]
+    }, {
+      "name" : "getLongRunningCompactions",
+      "visibility" : "public",
+      "methodCalls" : [ "recv_getLongRunningCompactions", "send_getLongRunningCompactions", "call", "checkReady", "getPrincipal", "getUpdates", "getKey", "setUpdates", "entrySet", "hasNext", "getCompactorAddress", "next", "canPerformSystemActions", "asThriftException", "setCompactor", "setJob", "put", "getValue", "addToCompactions", "iterator", "setGroupName", "getJob", "getGroupName" ]
+    }, {
+      "name" : "updateCompactionStatus",
+      "visibility" : "public",
+      "methodCalls" : [ "call", "send_updateCompactionStatus", "checkReady", "recv_updateCompactionStatus", "getGroupName", "computeIfAbsent", "get", "canPerformSystemActions", "getPrincipal", "addUpdate", "remove", "asThriftException", "of", "add", "debug" ]
+    }, {
+      "name" : "recv_getLongRunningCompactions",
+      "visibility" : "public",
+      "methodCalls" : [ "isSetSuccess", "receiveBase" ]
+    }, {
+      "name" : "send_updateCompactionStatus",
+      "visibility" : "public",
+      "methodCalls" : [ "sendBase", "setExternalCompactionId", "setTimestamp", "setCredentials", "setStatus", "setTinfo" ]
+    }, {
+      "name" : "send_compactionFailed",
+      "visibility" : "public",
+      "methodCalls" : [ "setTinfo", "setCredentials", "setExtent", "setExternalCompactionId", "sendBase" ]
+    }, {
+      "name" : "getRunningCompactions",
+      "visibility" : "public",
+      "methodCalls" : [ "recv_getRunningCompactions", "call", "send_getRunningCompactions", "checkReady", "getJob", "getUpdates", "setJob", "getCompactorAddress", "putToCompactions", "canPerformSystemActions", "getPrincipal", "setCompactor", "setUpdates", "setGroupName", "asThriftException", "getGroupName", "forEach", "canonical", "add", "get" ]
+    }, {
+      "name" : "recv_compactionFailed",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "compactionFailed",
+      "visibility" : "public",
+      "methodCalls" : [ "checkReady", "send_compactionFailed", "recv_compactionFailed", "call", "compactionsFailed", "of", "getPrincipal", "info", "asThriftException", "canPerformSystemActions", "fromThrift" ]
+    }, {
+      "name" : "recv_updateCompactionStatus",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "recv_getCompactionJob",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "send_getCompletedCompactions",
+      "visibility" : "public",
+      "methodCalls" : [ "sendBase", "setCredentials", "setTinfo" ]
+    }, {
+      "name" : "send_getRunningCompactions",
+      "visibility" : "public",
+      "methodCalls" : [ "setTinfo", "setCredentials", "sendBase" ]
+    }, {
+      "name" : "send_compactionCompleted",
+      "visibility" : "public",
+      "methodCalls" : [ "setExternalCompactionId", "setExtent", "setCredentials", "setTinfo", "setStats", "sendBase" ]
+    }, {
+      "name" : "recv_compactionCompleted",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase" ]
+    }, {
+      "name" : "compactionCompleted",
+      "visibility" : "public",
+      "methodCalls" : [ "recv_compactionCompleted", "checkReady", "call", "send_compactionCompleted", "getCount", "compactionsFailed", "of", "asThriftException", "fromThrift", "tableId", "info", "getPrincipal", "get", "getExternalCompactions", "getAmple", "sleep", "getContext", "seedTransaction", "debug", "fromTableId", "readTablet", "canPerformSystemActions", "getTableState", "forCompactionCommit", "canCommitCompaction" ]
+    }, {
+      "name" : "send_getCompactionJob",
+      "visibility" : "public",
+      "methodCalls" : [ "setCredentials", "sendBase", "setTinfo", "setExternalCompactionId", "setCompactor", "setGroupName" ]
+    }, {
+      "name" : "getCompletedCompactions",
+      "visibility" : "public",
+      "methodCalls" : [ "checkReady", "recv_getCompletedCompactions", "call", "send_getCompletedCompactions", "setGroupName", "getUpdates", "canonical", "getGroupName", "putToCompactions", "getPrincipal", "setCompactor", "asMap", "getJob", "setJob", "setUpdates", "canPerformSystemActions", "getCompactorAddress", "forEach", "asThriftException" ]
+    }, {
+      "name" : "recv_getRunningCompactions",
+      "visibility" : "public",
+      "methodCalls" : [ "receiveBase", "isSetSuccess" ]
+    }, {
+      "name" : "applyUpdates",
+      "visibility" : "public",
+      "methodCalls" : [ "call", "checkReady", "send_applyUpdates", "getAsBytes", "add", "getConfiguration", "reserveSession", "debug", "numBytes", "unreserveSession", "removeSession", "updateTotalQueuedMutationSize", "getUpdates", "get", "fromThrift" ]
+    } ],
+    "imports" : [ ]
+  }, {
+    "name" : "StandardScheme",
+    "packageName" : "<None>",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ ],
+    "imports" : [ ]
+  }, {
+    "name" : "TupleScheme",
+    "packageName" : "<None>",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ ],
+    "imports" : [ ]
+  } ]
+}

@@ -1,0 +1,1173 @@
+{
+  "systemName" : "checkstyle",
+  "classes" : [ {
+    "name" : "JavaAstVisitor",
+    "packageName" : "com.puppycrawl.tools.checkstyle",
+    "extendedClasses" : [ "JavaLanguageParserBaseVisitor" ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "visitAnnotationTypeBody",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitTypeBoundType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitEnumDeclaration",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitPermittedSubclassesAndInterfaces",
+      "visibility" : "public",
+      "methodCalls" : [ "getPayload", "subList", "size", "LITERAL_PERMITS" ]
+    }, {
+      "name" : "visitClassDeclaration",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitElementValue",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitLiteral",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitMethodBody",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitForStat",
+      "visibility" : "public",
+      "methodCalls" : [ "size", "subList" ]
+    }, {
+      "name" : "visitArrayCreatorRest",
+      "visibility" : "public",
+      "methodCalls" : [ "getPayload", "RBRACK", "LBRACK", "size", "visit", "expression", "get", "addChild" ]
+    }, {
+      "name" : "visitTypeCastParameters",
+      "visibility" : "public",
+      "methodCalls" : [ "getPayload", "visit", "BAND", "typeType", "size" ]
+    }, {
+      "name" : "visitInnerCreator",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitBlockStat",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitCatchType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitPrimitivePrimary",
+      "visibility" : "public",
+      "methodCalls" : [ "LITERAL_CLASS", "arrayDeclarator", "forEach", "visit", "DOT", "addChild" ]
+    }, {
+      "name" : "visitResourceDeclaration",
+      "visibility" : "public",
+      "methodCalls" : [ "variableDeclaratorId", "expression", "addChild", "visit", "ASSIGN" ]
+    }, {
+      "name" : "visitInvOp",
+      "visibility" : "public",
+      "methodCalls" : [ "nonWildcardTypeArguments", "RPAREN", "ofNullable", "id", "expr", "makeAstRoot", "LPAREN", "visit", "expressionList", "addAstChild", "getPayload", "orElseGet" ]
+    }, {
+      "name" : "visitDiamond",
+      "visibility" : "public",
+      "methodCalls" : [ "getPayload", "GT", "LT", "addChild" ]
+    }, {
+      "name" : "visitTypeParameters",
+      "visibility" : "public",
+      "methodCalls" : [ "GT", "addChild", "getPayload", "size", "subList", "LT" ]
+    }, {
+      "name" : "visitEnhancedForControl",
+      "visibility" : "public",
+      "methodCalls" : [ "variableDeclaratorId", "addChild", "COLON", "expression", "visit" ]
+    }, {
+      "name" : "visitAnnotationField",
+      "visibility" : "public",
+      "methodCalls" : [ "addChild", "getFirstChild", "get", "SEMI", "singletonList" ]
+    }, {
+      "name" : "visitRecordPatternDef",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitAssertExp",
+      "visibility" : "public",
+      "methodCalls" : [ "ASSERT", "subList", "size" ]
+    }, {
+      "name" : "visitSwitchBlockStatementGroup",
+      "visibility" : "public",
+      "methodCalls" : [ "addChild", "switchLabel" ]
+    }, {
+      "name" : "visitSimpleMethodCall",
+      "visibility" : "public",
+      "methodCalls" : [ "orElseGet", "addChild", "expressionList", "ofNullable", "RPAREN", "getPayload", "visit", "LPAREN", "id" ]
+    }, {
+      "name" : "visitLambdaExp",
+      "visibility" : "public",
+      "methodCalls" : [ "visit", "block", "lambdaParameters", "LAMBDA", "addChild", "expr" ]
+    }, {
+      "name" : "visitCatchClause",
+      "visibility" : "public",
+      "methodCalls" : [ "getPayload", "size", "subList", "LITERAL_CATCH" ]
+    }, {
+      "name" : "visitModifier",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitTypeBound",
+      "visibility" : "public",
+      "methodCalls" : [ "BAND", "visit", "next", "listIterator", "typeBoundType", "getPayload", "forEach" ]
+    }, {
+      "name" : "visitPrefix",
+      "visibility" : "public",
+      "methodCalls" : [ "addChild", "expr", "getType", "visit" ]
+    }, {
+      "name" : "visitClassBlock",
+      "visibility" : "public",
+      "methodCalls" : [ "getTokenName", "LITERAL_STATIC", "getPayload", "addChild", "block", "setText", "visit" ]
+    }, {
+      "name" : "visitTypeUpperBounds",
+      "visibility" : "public",
+      "methodCalls" : [ "getPayload", "subList", "EXTENDS_CLAUSE", "size" ]
+    }, {
+      "name" : "visitVariableModifier",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitTokenPrimary",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitFormalParameterList",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitEnumConstant",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitSingleSemiImport",
+      "visibility" : "public",
+      "methodCalls" : [ "SEMI" ]
+    }, {
+      "name" : "visitNewExp",
+      "visibility" : "public",
+      "methodCalls" : [ "subList", "size", "LITERAL_NEW" ]
+    }, {
+      "name" : "visitSuperExp",
+      "visibility" : "public",
+      "methodCalls" : [ "expr", "addChild", "visit", "superSuffix", "LITERAL_SUPER", "addPreviousSibling", "getFirstChild" ]
+    }, {
+      "name" : "visitInterfaceExtends",
+      "visibility" : "public",
+      "methodCalls" : [ "EXTENDS_CLAUSE", "typeList", "addChild", "visit" ]
+    }, {
+      "name" : "visitAnnotationTypeDeclaration",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitClassRefPrimary",
+      "visibility" : "public",
+      "methodCalls" : [ "forEach", "addChild", "DOT", "arrayDeclarator", "visit", "isOfType", "LITERAL_CLASS" ]
+    }, {
+      "name" : "visitNonWildcardDiamond",
+      "visibility" : "public",
+      "methodCalls" : [ "LT", "GT", "addChild", "getPayload" ]
+    }, {
+      "name" : "visitParenPrimary",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitMultiLambdaParam",
+      "visibility" : "public",
+      "methodCalls" : [ "multiLambdaParams", "visit", "LPAREN", "RPAREN" ]
+    }, {
+      "name" : "visitNonWildcardTypeArguments",
+      "visibility" : "public",
+      "methodCalls" : [ "addChild", "LT", "typeArgumentsTypeList", "getPayload", "GT", "visit" ]
+    }, {
+      "name" : "visitTypeType",
+      "visibility" : "public",
+      "methodCalls" : [ "getFirstChild" ]
+    }, {
+      "name" : "visitVariableDeclarators",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitAnnotationMethodRest",
+      "visibility" : "public",
+      "methodCalls" : [ "toUnmodifiableList", "forEach", "stream", "filter", "collect", "addChild", "findFirstToken", "visit" ]
+    }, {
+      "name" : "visitEnumConstants",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitPrimaryExp",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitSuperSuffixDot",
+      "visibility" : "public",
+      "methodCalls" : [ "LPAREN", "RPAREN", "ofNullable", "expressionList", "visit", "getPayload", "orElseGet", "DOT", "addChild", "id" ]
+    }, {
+      "name" : "visitTypeArguments",
+      "visibility" : "public",
+      "methodCalls" : [ "size", "subList", "GT", "addChild", "getPayload", "LT" ]
+    }, {
+      "name" : "visitInterfaceBodyDeclaration",
+      "visibility" : "public",
+      "methodCalls" : [ "SEMI", "visit", "interfaceMemberDeclaration" ]
+    }, {
+      "name" : "visitConstructorDeclaration",
+      "visibility" : "public",
+      "methodCalls" : [ "addChild" ]
+    }, {
+      "name" : "visitElementValueArrayInitializer",
+      "visibility" : "public",
+      "methodCalls" : [ "getPayload", "LCURLY", "subList", "size" ]
+    }, {
+      "name" : "visitVariableDeclaratorId",
+      "visibility" : "public",
+      "methodCalls" : [ "LITERAL_THIS", "arrayDeclarator", "addChild", "getFirstChild", "forEach", "qualifiedName", "DOT", "visit" ]
+    }, {
+      "name" : "visitSimpleTypeArgument",
+      "visibility" : "public",
+      "methodCalls" : [ "addChild", "typeType", "visit" ]
+    }, {
+      "name" : "visitWildCardTypeArgument",
+      "visibility" : "public",
+      "methodCalls" : [ "typeType", "annotations", "visit", "QUESTION", "addChild", "getPayload" ]
+    }, {
+      "name" : "visitTypePatternDef",
+      "visibility" : "public",
+      "methodCalls" : [ "id", "visit", "addChild" ]
+    }, {
+      "name" : "visitPrimaryCtorCall",
+      "visibility" : "public",
+      "methodCalls" : [ "stream", "filter", "LITERAL_SUPER", "toUnmodifiableList", "getPayload", "collect", "equals" ]
+    }, {
+      "name" : "visitRecordComponent",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitCaseConstants",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitQualifiedNameList",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitEmptyClass",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitForInit",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitRecordPattern",
+      "visibility" : "public",
+      "methodCalls" : [ "addChild", "size", "subList" ]
+    }, {
+      "name" : "visitForFor",
+      "visibility" : "public",
+      "methodCalls" : [ "addChild", "LPAREN", "getFirstChild", "forInit", "RPAREN", "visit", "SEMI" ]
+    }, {
+      "name" : "visitTextBlockLiteral",
+      "visibility" : "public",
+      "methodCalls" : [ "TEXT_BLOCK_CONTENT", "addChild", "TEXT_BLOCK_LITERAL_BEGIN", "TEXT_BLOCK_LITERAL_END" ]
+    }, {
+      "name" : "visitInterfaceBody",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitBracketsWithExp",
+      "visibility" : "public",
+      "methodCalls" : [ "annotations", "visit", "getFirstChild", "expression", "getPayload", "addChild", "LBRACK" ]
+    }, {
+      "name" : "visitResources",
+      "visibility" : "public",
+      "methodCalls" : [ "subList", "visit", "resource", "addChild", "size" ]
+    }, {
+      "name" : "visitAnnotation",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitImplementsClause",
+      "visibility" : "public",
+      "methodCalls" : [ "visit", "addChild", "typeList", "LITERAL_IMPLEMENTS", "getPayload" ]
+    }, {
+      "name" : "visitCaseConstant",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitDoStat",
+      "visibility" : "public",
+      "methodCalls" : [ "visit", "statement", "addChild", "parExpression", "LITERAL_WHILE", "getPayload", "SEMI" ]
+    }, {
+      "name" : "visitId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitInnerPattern",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitAnnotations",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty" ]
+    }, {
+      "name" : "visitElseStat",
+      "visibility" : "public",
+      "methodCalls" : [ "LITERAL_ELSE", "subList", "size" ]
+    }, {
+      "name" : "visitEnhancedForControlWithRecordPattern",
+      "visibility" : "public",
+      "methodCalls" : [ "pattern", "expression", "COLON", "visit" ]
+    }, {
+      "name" : "visitExplicitCtorCall",
+      "visibility" : "public",
+      "methodCalls" : [ "LITERAL_THIS", "getPayload", "arguments", "typeArguments", "LITERAL_SUPER", "SEMI", "visit", "addChild" ]
+    }, {
+      "name" : "visitRecordComponents",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitTypeArgumentsTypeList",
+      "visibility" : "public",
+      "methodCalls" : [ "addChild", "COMMA", "visit", "typeType", "size" ]
+    }, {
+      "name" : "visitCaseLabel",
+      "visibility" : "public",
+      "methodCalls" : [ "subList", "LITERAL_CASE", "size" ]
+    }, {
+      "name" : "visitInterfaceMethodDeclaration",
+      "visibility" : "public",
+      "methodCalls" : [ "collect", "forEach", "findFirstToken", "filter", "stream", "visit", "addChild", "toUnmodifiableList" ]
+    }, {
+      "name" : "visitSwitchRules",
+      "visibility" : "public",
+      "methodCalls" : [ "visit", "switchLabeledRule", "getFirstChild", "forEach", "addChild" ]
+    }, {
+      "name" : "visitAnnotationTypeElementDeclaration",
+      "visibility" : "public",
+      "methodCalls" : [ "annotationTypeElementRest", "visit", "SEMI" ]
+    }, {
+      "name" : "visitRecordComponentsList",
+      "visibility" : "public",
+      "methodCalls" : [ "LPAREN", "recordComponents", "RPAREN", "visit" ]
+    }, {
+      "name" : "visitElementValuePair",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitClassExtends",
+      "visibility" : "public",
+      "methodCalls" : [ "addChild", "EXTENDS_CLAUSE", "visit" ]
+    }, {
+      "name" : "visitRecordComponentPatternList",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitCreator",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitElementValuePairs",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitBinOp",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "parallelStream", "isEmpty", "addPreviousSibling", "poll", "addChild", "getFirstChild", "map", "visit", "toCollection", "expr", "collect", "add" ]
+    }, {
+      "name" : "visitTypeParameter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitSwitchExpressionOrStatement",
+      "visibility" : "public",
+      "methodCalls" : [ "LITERAL_SWITCH", "LCURLY", "RCURLY", "visit", "switchBlock", "parExpression", "addChild" ]
+    }, {
+      "name" : "visitPostfix",
+      "visibility" : "public",
+      "methodCalls" : [ "getType", "visit", "expr", "addChild" ]
+    }, {
+      "name" : "visitRecordDeclaration",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitThisExp",
+      "visibility" : "public",
+      "methodCalls" : [ "addChild", "expr", "visit", "LITERAL_THIS" ]
+    }, {
+      "name" : "visitEnumBody",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitReturnStat",
+      "visibility" : "public",
+      "methodCalls" : [ "size", "LITERAL_RETURN", "subList" ]
+    }, {
+      "name" : "visitMultiLambdaParams",
+      "visibility" : "public",
+      "methodCalls" : [ "addChild", "size", "id", "COMMA" ]
+    }, {
+      "name" : "visitClassBody",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitThrowsList",
+      "visibility" : "public",
+      "methodCalls" : [ "addChild", "visit", "qualifiedNameList", "LITERAL_THROWS" ]
+    }, {
+      "name" : "visitImportDec",
+      "visibility" : "public",
+      "methodCalls" : [ "LITERAL_STATIC", "DOT", "visit", "STAR", "addChild", "qualifiedName", "SEMI", "setType" ]
+    }, {
+      "name" : "visitWhileStat",
+      "visibility" : "public",
+      "methodCalls" : [ "size", "subList" ]
+    }, {
+      "name" : "visitYieldStat",
+      "visibility" : "public",
+      "methodCalls" : [ "size", "LITERAL_YIELD", "subList" ]
+    }, {
+      "name" : "visitBlock",
+      "visibility" : "public",
+      "methodCalls" : [ "size", "subList" ]
+    }, {
+      "name" : "visitMethodCall",
+      "visibility" : "public",
+      "methodCalls" : [ "expressionList", "DOT", "addChild", "id", "orElseGet", "RPAREN", "ofNullable", "getPayload", "expr", "LPAREN", "visit" ]
+    }, {
+      "name" : "visitPrimitiveType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitPackageDeclaration",
+      "visibility" : "public",
+      "methodCalls" : [ "annotations", "SEMI", "getPayload", "LITERAL_PACKAGE", "addChild", "qualifiedName", "visit" ]
+    }, {
+      "name" : "visitSwitchLabeledExpression",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitInstanceOfExp",
+      "visibility" : "public",
+      "methodCalls" : [ "getChild", "LITERAL_INSTANCEOF", "visit", "expr", "addChild" ]
+    }, {
+      "name" : "visitConstructorBlock",
+      "visibility" : "public",
+      "methodCalls" : [ "subList", "size" ]
+    }, {
+      "name" : "visitParenPattern",
+      "visibility" : "public",
+      "methodCalls" : [ "LPAREN", "visit", "getChild", "addChild", "RPAREN" ]
+    }, {
+      "name" : "visitRefOp",
+      "visibility" : "public",
+      "methodCalls" : [ "expr", "addChild", "visit" ]
+    }, {
+      "name" : "visitFormalLambdaParam",
+      "visibility" : "public",
+      "methodCalls" : [ "formalParameterList", "RPAREN", "ofNullable", "visit", "LPAREN", "orElseGet" ]
+    }, {
+      "name" : "visitFloatLiteral",
+      "visibility" : "public",
+      "methodCalls" : [ "getType", "isOfType" ]
+    }, {
+      "name" : "visitBreakStat",
+      "visibility" : "public",
+      "methodCalls" : [ "subList", "size", "LITERAL_BREAK" ]
+    }, {
+      "name" : "visitAnnotationType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitEnumBodyDeclarations",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitSwitchBlocks",
+      "visibility" : "public",
+      "methodCalls" : [ "getFirstChild", "visit", "forEach", "isEmpty", "addChild" ]
+    }, {
+      "name" : "visitQualifiedName",
+      "visibility" : "public",
+      "methodCalls" : [ "makeAstRoot", "addAstChild", "getRoot", "size", "visit", "id", "subList" ]
+    }, {
+      "name" : "visitVariableDeclarator",
+      "visibility" : "public",
+      "methodCalls" : [ "visit", "arrayDeclarator", "forEach", "id", "variableInitializer", "ASSIGN", "addChild" ]
+    }, {
+      "name" : "visitCompilationUnit",
+      "visibility" : "public",
+      "methodCalls" : [ "subList", "size" ]
+    }, {
+      "name" : "visitArguments",
+      "visibility" : "public",
+      "methodCalls" : [ "RPAREN", "expressionList", "LPAREN", "ofNullable", "orElseGet", "visit" ]
+    }, {
+      "name" : "visitIntegerLiteral",
+      "visibility" : "public",
+      "methodCalls" : [ "getType", "isOfType" ]
+    }, {
+      "name" : "visitLocalVar",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitArrayDeclarator",
+      "visibility" : "public",
+      "methodCalls" : [ "visit", "LBRACK", "addChild", "RBRACK", "getPayload" ]
+    }, {
+      "name" : "visitArrayInitializer",
+      "visibility" : "public",
+      "methodCalls" : [ "subList", "size" ]
+    }, {
+      "name" : "visitLastFormalParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "ELLIPSIS", "variableDeclaratorId", "addPreviousSibling", "addChild", "annotations", "findFirstToken", "visit" ]
+    }, {
+      "name" : "visitIfStat",
+      "visibility" : "public",
+      "methodCalls" : [ "LITERAL_IF", "size", "subList" ]
+    }, {
+      "name" : "visitTypeDeclaration",
+      "visibility" : "public",
+      "methodCalls" : [ "visit", "subList", "size", "get", "forEach" ]
+    }, {
+      "name" : "visitTypeList",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitRecordBody",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitInitExp",
+      "visibility" : "public",
+      "methodCalls" : [ "expr", "LITERAL_NEW", "nonWildcardTypeArguments", "innerCreator", "visit", "addChild" ]
+    }, {
+      "name" : "visitUnnamedPatternDef",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitTryWithResourceStat",
+      "visibility" : "public",
+      "methodCalls" : [ "subList", "size", "LITERAL_TRY" ]
+    }, {
+      "name" : "visitClassCreatorRest",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitParExpression",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitFormalParameters",
+      "visibility" : "public",
+      "methodCalls" : [ "formalParameterList", "visit", "LPAREN", "RPAREN" ]
+    }, {
+      "name" : "visitExpressionList",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitExpStat",
+      "visibility" : "public",
+      "methodCalls" : [ "visit", "SEMI" ]
+    }, {
+      "name" : "visitSyncStat",
+      "visibility" : "public",
+      "methodCalls" : [ "subList", "size" ]
+    }, {
+      "name" : "visitCreatedNameObject",
+      "visibility" : "public",
+      "methodCalls" : [ "size", "visit", "annotations", "id", "typeArgumentsOrDiamond", "subList", "makeAstRoot", "addAstChild" ]
+    }, {
+      "name" : "visitTernaryOp",
+      "visibility" : "public",
+      "methodCalls" : [ "filter", "QUESTION", "equals", "collect", "stream", "toUnmodifiableList" ]
+    }, {
+      "name" : "visitResourceSpecification",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitLabelStat",
+      "visibility" : "public",
+      "methodCalls" : [ "visit", "id", "addChild", "getPayload", "COLON", "statement" ]
+    }, {
+      "name" : "visitEmptyStat",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitThrowStat",
+      "visibility" : "public",
+      "methodCalls" : [ "subList", "size", "LITERAL_THROW" ]
+    }, {
+      "name" : "visitCompactConstructorDeclaration",
+      "visibility" : "public",
+      "methodCalls" : [ "constructorBlock", "addChild", "visit", "id" ]
+    }, {
+      "name" : "visitDefaultLabel",
+      "visibility" : "public",
+      "methodCalls" : [ "LITERAL_DEFAULT", "COLON", "addChild" ]
+    }, {
+      "name" : "visitTypeArgs",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitLastRecordComponent",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visit",
+      "visibility" : "public",
+      "methodCalls" : [ "accept" ]
+    }, {
+      "name" : "visitDefaultValue",
+      "visibility" : "public",
+      "methodCalls" : [ "visit", "addChild", "LITERAL_DEFAULT", "elementValue" ]
+    }, {
+      "name" : "visitPattern",
+      "visibility" : "public",
+      "methodCalls" : [ "innerPattern", "recordPattern", "visit", "getChild", "addChild", "primaryPattern" ]
+    }, {
+      "name" : "visitInterfaceDeclaration",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitMethodDeclaration",
+      "visibility" : "public",
+      "methodCalls" : [ "visit", "addChild", "findFirstToken", "stream", "collect", "toUnmodifiableList", "filter", "forEach" ]
+    }, {
+      "name" : "visitCastExp",
+      "visibility" : "public",
+      "methodCalls" : [ "size", "getPayload", "LPAREN", "subList" ]
+    }, {
+      "name" : "visitSingleLambdaParam",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitSwitchLabeledBlock",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitFinallyBlock",
+      "visibility" : "public",
+      "methodCalls" : [ "size", "subList", "LITERAL_FINALLY" ]
+    }, {
+      "name" : "visitSwitchLabeledThrow",
+      "visibility" : "public",
+      "methodCalls" : [ "expression", "switchLabel", "LAMBDA", "SEMI", "LITERAL_THROW", "addChild", "visit" ]
+    }, {
+      "name" : "visitClassOrInterfaceType",
+      "visibility" : "public",
+      "methodCalls" : [ "addChild", "makeAstRoot", "addAstChild", "visit", "typeArguments", "id", "forEach" ]
+    }, {
+      "name" : "visitIndexOp",
+      "visibility" : "public",
+      "methodCalls" : [ "expr", "LBRACK", "visit", "RBRACK", "getPayload", "addChild" ]
+    }, {
+      "name" : "visitFormalParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "variableDeclaratorId", "addChild", "visitVariableDeclaratorId" ]
+    }, {
+      "name" : "visitBitShift",
+      "visibility" : "public",
+      "methodCalls" : [ "size", "length", "getPayload", "GT", "LT", "visit", "setText", "expr", "addChild" ]
+    }, {
+      "name" : "visitExpression",
+      "visibility" : "public",
+      "methodCalls" : [ "expr" ]
+    }, {
+      "name" : "visitVariableAccess",
+      "visibility" : "public",
+      "methodCalls" : [ "expr", "makeAstRoot", "forEach", "visit", "id", "DOT", "getRoot", "addChild", "isEmpty", "LITERAL_THIS", "getFirstChild", "addAstChild" ]
+    }, {
+      "name" : "visitEnhancedFor",
+      "visibility" : "public",
+      "methodCalls" : [ "getChild", "RPAREN", "visit", "LPAREN", "addChild" ]
+    }, {
+      "name" : "visitGuardedPattern",
+      "visibility" : "public",
+      "methodCalls" : [ "visit", "guard", "addChild", "primaryPattern", "expression" ]
+    }, {
+      "name" : "visitCreatedNamePrimitive",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "visitFieldDeclaration",
+      "visibility" : "public",
+      "methodCalls" : [ "SEMI", "getFirstChild", "size", "subList", "addChild" ]
+    }, {
+      "name" : "visitTryStat",
+      "visibility" : "public",
+      "methodCalls" : [ "subList", "size" ]
+    }, {
+      "name" : "visitContinueStat",
+      "visibility" : "public",
+      "methodCalls" : [ "subList", "LITERAL_CONTINUE", "size" ]
+    }, {
+      "name" : "visitMethodRef",
+      "visibility" : "public",
+      "methodCalls" : [ "DOUBLE_COLON", "filter", "collect", "getPayload", "toUnmodifiableList", "equals", "stream" ]
+    }, {
+      "name" : "visitCatchParameter",
+      "visibility" : "public",
+      "methodCalls" : [ "filter", "toUnmodifiableList", "addChild", "collect", "stream" ]
+    } ],
+    "imports" : [ "com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageLexer", "org.antlr.v4.runtime.CommonTokenStream", "org.antlr.v4.runtime.Token", "org.antlr.v4.runtime.BufferedTokenStream", "org.antlr.v4.runtime.ParserRuleContext", "java.util.List", "com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParserBaseVisitor", "java.util.stream.Collectors", "java.util.Optional", "java.util.Collections", "org.antlr.v4.runtime.tree.ParseTree", "com.puppycrawl.tools.checkstyle.api.TokenTypes", "java.util.Iterator", "java.util.ArrayList", "java.util.Queue", "org.antlr.v4.runtime.tree.TerminalNode", "com.puppycrawl.tools.checkstyle.utils.TokenUtil", "java.util.ArrayDeque", "com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser" ]
+  }, {
+    "name" : "AbstractCheck",
+    "packageName" : "com.puppycrawl.tools.checkstyle.api",
+    "extendedClasses" : [ "AbstractViolationReporter" ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "visitToken",
+      "visibility" : "public",
+      "methodCalls" : [ "forEachChild", "toChars", "isWhitespace", "isCommentType", "nonNull", "startsWith", "getLine", "isNonTight", "getParseErrorMessage", "getMessageKey", "getLineNumber", "substring", "getFirstNonTightHtmlTag", "getTypeParameterNames", "getDetails", "parseJavadocAsDetailNode", "getMessageArguments", "acceptJavadocWithNonTightHtml", "getTree", "processRight", "processLeft", "copyOfRange", "isBlank", "mustCheckName", "length", "hasChildren", "hasWhitespaceBefore", "getBlockCommentContent", "isCodePointWhitespace", "isCorrectJavadocPosition", "getLineCodePoints", "getScope", "getJavadocBefore", "isJavadocComment", "getFileContents", "getJavadocCommentContent", "getDetailAst", "isInInterfaceBlock", "visitToken", "isInRecordBlock", "getHandler", "checkIndentation", "pattern", "split", "locateFinest", "checkAccess", "getColumnNo", "createFullIdentBelow", "isRootNode", "getValue", "fill", "getQualifiedName", "getKey", "put", "isEmpty", "computeIfAbsent", "find", "stripIndentAndInitialNewLineFromTextBlock", "clear", "isEqualsMethod", "isClassFieldDef", "extractQualifiedName", "findFirstTokenByPredicate", "getAccessModifierFromModifiersToken", "requireNonNullElse", "isInCodeBlock", "endsWith", "isValidOn", "replace", "hasOverrideAnnotation", "get", "isPackageInfo", "anyMatch", "containsAnnotation", "getLast", "count", "getFilePath", "setCallingSuper", "allMatch", "isPresent", "takeWhile", "findFirst", "isReceiverParameter", "reduce", "orElse", "size", "getName", "isOuterMostType", "subList", "addField", "filter", "orElseThrow", "map", "stream", "peek", "indexOf", "toString", "ifPresent", "add", "toUnmodifiableList", "getChildCount", "findFirstToken", "getType", "log", "getFirstChild", "getLineNo", "push", "getPreviousSibling", "getNextSibling", "getText", "contains", "createFullIdent", "forEach", "getParent", "isOfType", "areOnSameLine", "equals", "matcher", "getLastChild", "replaceAll", "visitBooleanOperator", "getFirstNode", "isBooleanLiteralType", "collect", "orElseGet" ]
+    }, {
+      "name" : "getRequiredTokens",
+      "visibility" : "public",
+      "methodCalls" : [ "getAcceptableTokens", "getHandledTypes", "getDefaultTokens" ]
+    }, {
+      "name" : "setTabWidth",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "destroy",
+      "visibility" : "public",
+      "methodCalls" : [ "persist", "clear", "remove", "forEach", "destroy" ]
+    }, {
+      "name" : "getLineCodePoints",
+      "visibility" : "public",
+      "methodCalls" : [ "toArray", "codePoints", "getLine" ]
+    }, {
+      "name" : "setFileContents",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "init",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll", "binarySearch", "getClass", "getAcceptableJavadocTokens", "boxed", "getTokenName", "sort", "stream", "toUnmodifiableList", "format", "getName", "isEmpty", "collect", "getDefaultJavadocTokens", "createPattern" ]
+    }, {
+      "name" : "getAcceptableTokens",
+      "visibility" : "public",
+      "methodCalls" : [ "getRequiredTokens", "getDefaultTokens", "getAllTokenIds" ]
+    }, {
+      "name" : "finishTree",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "getDetailAst", "finish", "getText", "remove", "stream", "filter", "replaceAll", "get", "size", "matcher", "getValue", "entrySet", "getKey", "forEach", "getCount", "log", "pop" ]
+    }, {
+      "name" : "getDefaultTokens",
+      "visibility" : "public",
+      "methodCalls" : [ "getRequiredTokens", "getAcceptableTokens" ]
+    }, {
+      "name" : "getFilePath",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "getFileName" ]
+    }, {
+      "name" : "beginTree",
+      "visibility" : "public",
+      "methodCalls" : [ "clear", "get", "getBlockComments", "getSingleLineComments", "clearCreatedHandlers", "checkIndentation", "getFilePath", "find", "getFileNameWithoutExtension", "matcher", "createFullIdent", "compilationUnit", "forEach", "isEmpty", "push", "log", "emptySet", "reset", "addAll", "ignoreCase", "reporter", "getNextSibling", "message", "maximum", "getText", "processLines", "newBuilder", "getParent", "suppressor", "format", "build", "getFileContents", "getFirstChild", "minimum" ]
+    }, {
+      "name" : "isCommentNodesRequired",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setTokens",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll" ]
+    }, {
+      "name" : "getTokenNames",
+      "visibility" : "public",
+      "methodCalls" : [ "unmodifiableSet" ]
+    }, {
+      "name" : "getFileContents",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    }, {
+      "name" : "getLines",
+      "visibility" : "public",
+      "methodCalls" : [ "toLinesArray", "getLines", "get" ]
+    }, {
+      "name" : "leaveToken",
+      "visibility" : "public",
+      "methodCalls" : [ "getLineNo", "forEach", "getTypeDeclarationAst", "baseClassName", "getType", "isTypeDeclaration", "pop", "isEmpty", "log", "getCount", "getParent", "isOfType", "getPreviousSibling", "ofNullable", "filter", "equals", "getText", "values", "getIdentifierAst", "ifPresent", "peek", "getName", "isUsed", "toString", "removeLast", "getMethod", "isCallingSuper", "findFirstToken", "getParameterDefinition", "isRootNode" ]
+    }, {
+      "name" : "clearViolations",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "clear" ]
+    }, {
+      "name" : "getLine",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "getLine", "getLineNo" ]
+    }, {
+      "name" : "log",
+      "visibility" : "public",
+      "methodCalls" : [ "getLine", "get", "getMessageBundle", "lengthExpandedTabs", "getLineNo", "add", "getLines", "getColumnNo", "getCustomMessages", "getId", "getClass", "getType", "getSeverityLevel" ]
+    }, {
+      "name" : "getViolations",
+      "visibility" : "public",
+      "methodCalls" : [ "get" ]
+    } ],
+    "imports" : [ "java.util.HashSet", "java.util.SortedSet", "java.util.TreeSet", "java.util.Set", "com.puppycrawl.tools.checkstyle.utils.CommonUtil", "java.util.Collections" ]
+  }, {
+    "name" : "Example1",
+    "packageName" : "org.checkstyle.suppressionxpathfilter.redundantmodifier",
+    "extendedClasses" : [ "SuperClass", "Exception", "ExternalService1", "TreeSet", "ParentClass1" ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "square",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "Method2",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "exampleMethod",
+      "visibility" : "public",
+      "methodCalls" : [ "parseInt" ]
+    }, {
+      "name" : "MyMethod",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "methodWithVeryLongName",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "arrayDec",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "bitwiseNot",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "lineBreak",
+      "visibility" : "public",
+      "methodCalls" : [ "parseInt" ]
+    }, {
+      "name" : "dotOperator",
+      "visibility" : "public",
+      "methodCalls" : [ "parseInt" ]
+    }, {
+      "name" : "fun",
+      "visibility" : "public",
+      "methodCalls" : [ "bar" ]
+    }, {
+      "name" : "foobar",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "bar",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty" ]
+    }, {
+      "name" : "baz",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "magic",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "m4",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "testMethod",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "m3",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "testMethod4",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "content",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "printCOUNTER",
+      "visibility" : "public",
+      "methodCalls" : [ "println" ]
+    }, {
+      "name" : "Method4",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "method4",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "methodOne",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "createAddress",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "methodTwo",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "findAddresses",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "instance",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "testSingleLine",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "Example1",
+      "visibility" : "public",
+      "methodCalls" : [ "charAt", "equals" ]
+    }, {
+      "name" : "testMethod3",
+      "visibility" : "public",
+      "methodCalls" : [ "println", "getName", "info", "getLogger" ]
+    }, {
+      "name" : "m8",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "m1",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "m2",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "m5",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "m6",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "myFunc",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "myFunction",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "m7",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "processData",
+      "visibility" : "public",
+      "methodCalls" : [ "put" ]
+    }, {
+      "name" : "outerMethod2",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "fun2",
+      "visibility" : "public",
+      "methodCalls" : [ "bar" ]
+    }, {
+      "name" : "outerMethod3",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "outerMethod1",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "fun1",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "needsLotsOfParameters1",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "typeParam",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "function1",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "var",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "test4",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "test1",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "test2",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "method5",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "method1",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "method2",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "method3",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "toString",
+      "visibility" : "public",
+      "methodCalls" : [ "getLineNo", "join", "getColumnNo", "getTokenName", "getName", "hashCode", "valueOf", "append", "nextSetBit", "length", "cardinality", "toString" ]
+    }, {
+      "name" : "InvalidExample",
+      "visibility" : "public",
+      "methodCalls" : [ "substring", "length" ]
+    }, {
+      "name" : "method",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "secondMethod",
+      "visibility" : "public",
+      "methodCalls" : [ "println" ]
+    }, {
+      "name" : "thirdMethod",
+      "visibility" : "public",
+      "methodCalls" : [ "println" ]
+    }, {
+      "name" : "firstMethod",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "main",
+      "visibility" : "public",
+      "methodCalls" : [ "invokeLater", "getRuntime", "setUsageHelpWidth", "isVersionHelpRequested", "valueOf", "setCaseInsensitiveEnumValuesAllowed", "exit", "printStackTrace", "getCommandLine", "parseArgs", "getMessage", "isUsageHelpRequested", "usage", "nextInt", "println", "foo" ]
+    }, {
+      "name" : "foo",
+      "visibility" : "public",
+      "methodCalls" : [ "length", "println", "equals", "equalsIgnoreCase", "bar", "print", "baz", "buzz", "fizz" ]
+    }, {
+      "name" : "g",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "fizz",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "testTwo",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "print",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "testOne",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "testMethod1",
+      "visibility" : "public",
+      "methodCalls" : [ "println" ]
+    }, {
+      "name" : "boo",
+      "visibility" : "public",
+      "methodCalls" : [ "println", "buzz", "print", "g", "f", "fizz" ]
+    }, {
+      "name" : "f",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "buzz",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "testMethod2",
+      "visibility" : "public",
+      "methodCalls" : [ "println" ]
+    }, {
+      "name" : "foo2",
+      "visibility" : "public",
+      "methodCalls" : [ "equals", "println" ]
+    }, {
+      "name" : "foo1",
+      "visibility" : "public",
+      "methodCalls" : [ "foo2", "println" ]
+    }, {
+      "name" : "equals",
+      "visibility" : "public",
+      "methodCalls" : [ "getClass", "equals" ]
+    }, {
+      "name" : "hashCode",
+      "visibility" : "public",
+      "methodCalls" : [ "valueOf", "hashCode", "hash" ]
+    }, {
+      "name" : "clone",
+      "visibility" : "public",
+      "methodCalls" : [ "clone" ]
+    }, {
+      "name" : "signA",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "methodA",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "methodB",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "signB",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "myTest",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "sumOfSquares",
+      "visibility" : "public",
+      "methodCalls" : [ "square" ]
+    }, {
+      "name" : "test",
+      "visibility" : "public",
+      "methodCalls" : [ "test", "condition", "add", "equals", "equalsIgnoreCase" ]
+    }, {
+      "name" : "filter",
+      "visibility" : "public",
+      "methodCalls" : [ "startsWith", "filter", "stream", "forEach" ]
+    } ],
+    "imports" : [ "java.util.List", "com.google.common.collect.Lists", "java.util.Iterator", "java.math.BigInteger.ZERO", "com.puppycrawl.tools.checkstyle.api.AbstractCheck", "com.puppycrawl.tools.checkstyle.checks.imports.redundantimport.Example1", "java.lang.Math.pow", "java.lang.Integer.MAX_VALUE", "java.lang.System", "java.awt.Component", "java.util.function.Function", "java.util.Arrays.copyOf", "java.util.Stack", "java.lang.String", "java.util.Map.copyOf", "java.lang.Integer.parseInt", "org.checkstyle.suppressionxpathfilter.interfaceistype.InputXpathInterfaceIsTypeAllowMarker.a", "java.net", "java.util.Collections", "java.time", "java.util.Scanner", "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck", "org.apache.commons.io.FileUtils", "java.lang.Math", "java.io.File.separator", "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck", "java.io.FileReader", "java.io.FileWriter", "java.util.logging.Logger", "com.google.common.collect.ImmutableMap", "com.google.common.collect.ImmutableSet", "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck.MSG_KEY", "org.junit.Before", "org.mockito.Mock", "javax.annotation.Nonnull", "java.util.TreeMap", "java.util.Optional", "java.util.function.Consumer", "java.util.TreeSet", "java.util.LinkedHashMap", "java.io.Serializable", "java.io.FileInputStream", "java.io.PipedReader", "java.io.IOException", "java.io.OutputStream", "java.io.EOFException", "java.io.Reader", "java.io.PipedOutputStream", "java.util.ArrayList", "java.util.Enumeration", "java.io", "java.sql.Connection", "java.lang.ArithmeticException", "java.util.Arrays", "sun.applet", "java.util.Date", "java.time.DayOfWeek", "java.util", "java.io.InputStream", "java.util.Map", "java.time.LocalTime", "java.time.Instant", "java.util.HashSet", "java.util.HashMap", "java.util.Set", "java.io.File", "java.io.BufferedReader", "java.util.function.IntPredicate", "java.util.function.IntBinaryOperator", "java.util.function.Predicate" ]
+  } ]
+}

@@ -1,12 +1,15 @@
 from deepeval.metrics import GEval
 from deepeval.test_case import LLMTestCase, LLMTestCaseParams
-from prompts import sdg_task_template, usefulness_evaluation_criteria, get_task_introduction_prompt, usefulness_grading_schema
+from prompts import sdg_task_template, get_task_introduction_prompt, usefulness_grading_schema
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # File containing the data sent to the LLM from the SDG-tool
-json_path = "evaluation/javaparser/javaparser.json"
+json_path = "evaluation/g-eval/paimon/paimon.json"
 
 # File containing the generated description to evaluate
-gd_path = "evaluation/javaparser/javaparser_gd2.md"
+gd_path = "evaluation//g-eval/paimon/desc.md"
 
 # Read files and assign to variables
 with open(json_path, "r") as file:
@@ -24,13 +27,6 @@ metric = "Usefulness"
 evaluation_instructions = "{}{}"
 evaluation_instructions = evaluation_instructions.format(get_task_introduction_prompt(metric), usefulness_grading_schema)
 
-# evaluation_steps = [
-#     "Review the actual output to determine if it provides actionable insights or just general information.",
-#     "Evaluate the breadth and clarity of key architectural insights provided in the description to see if they support developer understanding.",
-#     "Compare the level of detail in the input to the actual output to determine if important information is missing or unclear.",
-#     "Assign a usefulness score based on how well the description would help a developer understand and work with the system, considering completeness and clarity."
-# ]
-
 evaluation_steps = [
     "Examine the actual output critically, identifying specific areas where it fails to provide actionable insights or relies on generic descriptions rather than precise technical explanations.",
     "Identify missing technical details that would be essential for a developer to understand the system architecture - be specific about what information should have been included but wasn't.",
@@ -46,7 +42,7 @@ g_eval = GEval(
     criteria=evaluation_instructions,
     evaluation_params=[LLMTestCaseParams.ACTUAL_OUTPUT, LLMTestCaseParams.INPUT],
     model=model,
-    verbose_mode=True,
+    verbose_mode=False,
     evaluation_steps=evaluation_steps
 )
 
@@ -56,3 +52,7 @@ test_case = LLMTestCase(
 )
 
 g_eval.measure(test_case)
+
+# Print the results
+print(f"Score: {g_eval.score}")
+print(f"Reason: {g_eval.reason}")

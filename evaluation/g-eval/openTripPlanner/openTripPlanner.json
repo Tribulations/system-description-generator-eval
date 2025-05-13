@@ -1,0 +1,1633 @@
+{
+  "systemName" : "OpenTripPlanner",
+  "classes" : [ {
+    "name" : "Builder",
+    "packageName" : "org.opentripplanner.transit.model.timetable.booking",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "withHopTime",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withLatestBookingTime",
+      "visibility" : "public",
+      "methodCalls" : [ "relativeTimeSeconds" ]
+    }, {
+      "name" : "withMinimumBookingNotice",
+      "visibility" : "public",
+      "methodCalls" : [ "toSeconds" ]
+    }, {
+      "name" : "withDisableDefaultTransfers",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withCarsAllowedStopMaxTransferDuration",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withMaxTransferDuration",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "step",
+      "visibility" : "public",
+      "methodCalls" : [ "isNaN", "stepYUnknown", "add" ]
+    }, {
+      "name" : "stepYUnknown",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "transformX",
+      "visibility" : "public",
+      "methodCalls" : [ "copyOf", "replaceAll", "transformX", "build" ]
+    }, {
+      "name" : "preferred",
+      "visibility" : "public",
+      "methodCalls" : [ "priority" ]
+    }, {
+      "name" : "notAllowed",
+      "visibility" : "public",
+      "methodCalls" : [ "priority" ]
+    }, {
+      "name" : "priority",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "minTransferTime",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "maxWaitTime",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "guaranteed",
+      "visibility" : "public",
+      "methodCalls" : [ "guaranteed" ]
+    }, {
+      "name" : "staySeated",
+      "visibility" : "public",
+      "methodCalls" : [ "staySeated" ]
+    }, {
+      "name" : "recommended",
+      "visibility" : "public",
+      "methodCalls" : [ "priority" ]
+    }, {
+      "name" : "withValues",
+      "visibility" : "public",
+      "methodCalls" : [ "getValue", "getKey", "entrySet", "with" ]
+    }, {
+      "name" : "withDefault",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withMountDismountTime",
+      "visibility" : "public",
+      "methodCalls" : [ "toSeconds" ]
+    }, {
+      "name" : "withDefaultSec",
+      "visibility" : "public",
+      "methodCalls" : [ "withDefault", "ofSeconds" ]
+    }, {
+      "name" : "withMountDismountCost",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withRoutes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withRoutesFromString",
+      "visibility" : "public",
+      "methodCalls" : [ "parseList", "isEmpty" ]
+    }, {
+      "name" : "withElevatorCost",
+      "visibility" : "public",
+      "methodCalls" : [ "ofCost" ]
+    }, {
+      "name" : "addNot",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "addTransportMode",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "withAgenciesFromString",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "parseList" ]
+    }, {
+      "name" : "withTripCost",
+      "visibility" : "public",
+      "methodCalls" : [ "ofCost" ]
+    }, {
+      "name" : "withTrip",
+      "visibility" : "public",
+      "methodCalls" : [ "copyOfWithDefaultCosts", "apply", "build", "instance" ]
+    }, {
+      "name" : "withAgencies",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withTripOnlyAccessible",
+      "visibility" : "public",
+      "methodCalls" : [ "ofOnlyAccessible" ]
+    }, {
+      "name" : "withMaxSlope",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addModes",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll" ]
+    }, {
+      "name" : "withStop",
+      "visibility" : "public",
+      "methodCalls" : [ "apply", "build", "copyOfWithDefaultCosts" ]
+    }, {
+      "name" : "addRouteIds",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll" ]
+    }, {
+      "name" : "withSlopeExceededReluctance",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withStopOnlyAccessible",
+      "visibility" : "public",
+      "methodCalls" : [ "ofOnlyAccessible" ]
+    }, {
+      "name" : "addSelect",
+      "visibility" : "public",
+      "methodCalls" : [ "add" ]
+    }, {
+      "name" : "withGroupOfRoutes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addAgencyIds",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll" ]
+    }, {
+      "name" : "addSubModeRegexp",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll" ]
+    }, {
+      "name" : "withTransportModes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withStopCost",
+      "visibility" : "public",
+      "methodCalls" : [ "ofCost" ]
+    }, {
+      "name" : "withInaccessibleStreetReluctance",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withElevatorOnlyAccessible",
+      "visibility" : "public",
+      "methodCalls" : [ "ofOnlyAccessible" ]
+    }, {
+      "name" : "unknownCost",
+      "visibility" : "public",
+      "methodCalls" : [ "toSeconds" ]
+    }, {
+      "name" : "withOptimizeTransferWaitTime",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "onlyConsiderAccessible",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withMinSafeWaitTimeFactor",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withBackTravelWaitTimeFactor",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withTo",
+      "visibility" : "public",
+      "methodCalls" : [ "forStop" ]
+    }, {
+      "name" : "withAccessibleOnly",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withPreferences",
+      "visibility" : "public",
+      "methodCalls" : [ "withPreferences", "copyOf", "apply", "build" ]
+    }, {
+      "name" : "withUnknownCost",
+      "visibility" : "public",
+      "methodCalls" : [ "costOfSeconds" ]
+    }, {
+      "name" : "withDateTime",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withNumItineraries",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withExtraStopBoardAlightCostsFactor",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withLocale",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withInaccessibleCost",
+      "visibility" : "public",
+      "methodCalls" : [ "costOfSeconds" ]
+    }, {
+      "name" : "inaccessibleCost",
+      "visibility" : "public",
+      "methodCalls" : [ "toSeconds" ]
+    }, {
+      "name" : "withFrom",
+      "visibility" : "public",
+      "methodCalls" : [ "forStop" ]
+    }, {
+      "name" : "withSearchWindow",
+      "visibility" : "public",
+      "methodCalls" : [ "requireNonNull" ]
+    }, {
+      "name" : "optimizeType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withGroupSimilarityKeepThree",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withAccessibilityScore",
+      "visibility" : "public",
+      "methodCalls" : [ "instance", "copyOf", "build", "withAccessibilityScore" ]
+    }, {
+      "name" : "withParkAndRideDurationRatio",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withDebug",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withBikeRentalDistanceRatio",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setUnpreferredCost",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withFilterDirectFlexBySearchWindow",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withOptimizeType",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withPreferredVehicleParkingTags",
+      "visibility" : "public",
+      "methodCalls" : [ "of" ]
+    }, {
+      "name" : "withRelaxTransitGroupPriority",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withGroupSimilarityKeepOne",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setUnpreferredCostString",
+      "visibility" : "public",
+      "methodCalls" : [ "setUnpreferredCost", "of" ]
+    }, {
+      "name" : "withRaptor",
+      "visibility" : "public",
+      "methodCalls" : [ "copyOf", "apply", "build" ]
+    }, {
+      "name" : "optimizeTriangle",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withBoardSlack",
+      "visibility" : "public",
+      "methodCalls" : [ "apply", "copyOf", "build" ]
+    }, {
+      "name" : "withNotPreferredVehicleParkingTags",
+      "visibility" : "public",
+      "methodCalls" : [ "of" ]
+    }, {
+      "name" : "withMinBikeParkingDistance",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withTransitGeneralizedCostLimit",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withFilterItinerariesWithSameFirstOrLastTrip",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withAlightSlack",
+      "visibility" : "public",
+      "methodCalls" : [ "copyOf", "apply", "build" ]
+    }, {
+      "name" : "withRemoveTransitWithHigherCostThanBestOnStreetOnly",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withRemoveItinerariesWithSameRoutesAndStops",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withOptimizeTriangle",
+      "visibility" : "public",
+      "methodCalls" : [ "accept", "buildOrDefault", "of" ]
+    }, {
+      "name" : "setOtherThanPreferredRoutesPenalty",
+      "visibility" : "public",
+      "methodCalls" : [ "costOfSeconds" ]
+    }, {
+      "name" : "withRequiredVehicleParkingTags",
+      "visibility" : "public",
+      "methodCalls" : [ "of" ]
+    }, {
+      "name" : "withGroupedOtherThanSameLegsMaxCostMultiplier",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withDefaultBoardSlackSec",
+      "visibility" : "public",
+      "methodCalls" : [ "withDefaultSec", "withBoardSlack" ]
+    }, {
+      "name" : "withBannedVehicleParkingTags",
+      "visibility" : "public",
+      "methodCalls" : [ "of" ]
+    }, {
+      "name" : "setIncludePlannedCancellations",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setIncludeRealtimeCancellations",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withUnpreferredVehicleParkingTagCost",
+      "visibility" : "public",
+      "methodCalls" : [ "costOfSeconds" ]
+    }, {
+      "name" : "withDefaultAlightSlackSec",
+      "visibility" : "public",
+      "methodCalls" : [ "withAlightSlack", "withDefaultSec" ]
+    }, {
+      "name" : "withForcedOptimizeTriangle",
+      "visibility" : "public",
+      "methodCalls" : [ "buildOrDefault", "of", "isEmpty", "accept" ]
+    }, {
+      "name" : "setIgnoreRealtimeUpdates",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setReluctanceForMode",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withNonTransitGeneralizedCostLimit",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withWalking",
+      "visibility" : "public",
+      "methodCalls" : [ "apply", "build", "copyOf", "ifNotNull" ]
+    }, {
+      "name" : "withTimeLimit",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withSafety",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "slope",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withMaxDirectDuration",
+      "visibility" : "public",
+      "methodCalls" : [ "withDefault", "build", "withValues", "apply", "withMaxDirectDuration", "copyOf" ]
+    }, {
+      "name" : "withTurnReluctance",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withRelaxGeneralizedCostAtDestination",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withLimitsForModes",
+      "visibility" : "public",
+      "methodCalls" : [ "getKey", "entrySet", "getValue", "with" ]
+    }, {
+      "name" : "withIntersectionTraversalModel",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withPenalty",
+      "visibility" : "public",
+      "methodCalls" : [ "apply", "withValues", "build", "withPenalty", "copyOf" ]
+    }, {
+      "name" : "withDefaultLimit",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withElevator",
+      "visibility" : "public",
+      "methodCalls" : [ "copyOfWithDefaultCosts", "copyOf", "build", "apply" ]
+    }, {
+      "name" : "isEmpty",
+      "visibility" : "public",
+      "methodCalls" : [ "doubleEquals", "isEmpty" ]
+    }, {
+      "name" : "withDrivingDirection",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withProfile",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "time",
+      "visibility" : "public",
+      "methodCalls" : [ "ofNullable", "format", "getTime", "toOffsetDateTime", "arrival", "departure", "timeToStrCompact", "text", "time" ]
+    }, {
+      "name" : "safety",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withAccessEgress",
+      "visibility" : "public",
+      "methodCalls" : [ "copyOf", "build", "apply" ]
+    }, {
+      "name" : "withSearchDirection",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withOptimizations",
+      "visibility" : "public",
+      "methodCalls" : [ "isEmpty", "copyOf", "noneOf" ]
+    }, {
+      "name" : "withSlope",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withTime",
+      "visibility" : "public",
+      "methodCalls" : [ "ofSeconds" ]
+    }, {
+      "name" : "buildOrDefault",
+      "visibility" : "public",
+      "methodCalls" : [ "zeroVector" ]
+    }, {
+      "name" : "withMaxDuration",
+      "visibility" : "public",
+      "methodCalls" : [ "apply", "withValues", "build", "withMaxDuration", "withDefault", "copyOf" ]
+    }, {
+      "name" : "withMaxStopCount",
+      "visibility" : "public",
+      "methodCalls" : [ "build", "withDefaultLimit", "withLimitsForModes", "withMaxStopCount", "apply", "copyOf" ]
+    }, {
+      "name" : "withRoutingTimeout",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "with",
+      "visibility" : "public",
+      "methodCalls" : [ "valueOf", "isSet", "remove", "getEnumConstants", "isEmpty", "requireNonNull", "limitForMode", "hasCustomLimit", "values", "put" ]
+    }, {
+      "name" : "withDropOffTime",
+      "visibility" : "public",
+      "methodCalls" : [ "toSeconds" ]
+    }, {
+      "name" : "withAllowedNetworks",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withBike",
+      "visibility" : "public",
+      "methodCalls" : [ "apply", "ifNotNull", "copyOf", "build" ]
+    }, {
+      "name" : "car",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withAllowArrivingInRentedVehicleAtDestination",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "transit",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "transitLeg", "text" ]
+    }, {
+      "name" : "withArrivingInRentalVehicleAtDestinationCost",
+      "visibility" : "public",
+      "methodCalls" : [ "costOfSeconds" ]
+    }, {
+      "name" : "withWalk",
+      "visibility" : "public",
+      "methodCalls" : [ "build", "apply", "copyOf", "ifNotNull" ]
+    }, {
+      "name" : "withStairsReluctance",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withUseAvailabilityInformation",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withScooter",
+      "visibility" : "public",
+      "methodCalls" : [ "ifNotNull", "build", "apply", "copyOf" ]
+    }, {
+      "name" : "safetyFactor",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "itineraryFilter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "street",
+      "visibility" : "public",
+      "methodCalls" : [ "text" ]
+    }, {
+      "name" : "transfer",
+      "visibility" : "public",
+      "methodCalls" : [ "add", "transferLeg", "transferPath" ]
+    }, {
+      "name" : "speed",
+      "visibility" : "public",
+      "methodCalls" : [ "ofNullable", "roundToZeroDecimals", "roundTo2Decimals", "roundTo1Decimal", "orElse", "speed" ]
+    }, {
+      "name" : "bike",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withStairsTimeFactor",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "wheelchair",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withItineraryFilter",
+      "visibility" : "public",
+      "methodCalls" : [ "ifNotNull", "apply", "build", "copyOf" ]
+    }, {
+      "name" : "withTransfer",
+      "visibility" : "public",
+      "methodCalls" : [ "build", "copyOf", "ifNotNull", "apply" ]
+    }, {
+      "name" : "withSpeed",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withBannedNetworks",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withDropOffCost",
+      "visibility" : "public",
+      "methodCalls" : [ "costOfSeconds" ]
+    }, {
+      "name" : "withSafetyFactor",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "walk",
+      "visibility" : "public",
+      "methodCalls" : [ "walk", "duration", "text" ]
+    }, {
+      "name" : "stairsReluctance",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "system",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "stairsTimeFactor",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withWheelchair",
+      "visibility" : "public",
+      "methodCalls" : [ "build", "ifNotNull", "copyOf", "apply" ]
+    }, {
+      "name" : "withEscalator",
+      "visibility" : "public",
+      "methodCalls" : [ "build", "ifNotNull", "copyOf", "apply" ]
+    }, {
+      "name" : "withTransit",
+      "visibility" : "public",
+      "methodCalls" : [ "ifNotNull", "apply", "build", "copyOf" ]
+    }, {
+      "name" : "scooter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withStreet",
+      "visibility" : "public",
+      "methodCalls" : [ "copyOf", "ifNotNull", "apply", "build" ]
+    }, {
+      "name" : "reluctance",
+      "visibility" : "public",
+      "methodCalls" : [ "normalizedFactor" ]
+    }, {
+      "name" : "withSystem",
+      "visibility" : "public",
+      "methodCalls" : [ "apply", "build", "copyOf", "ifNotNull" ]
+    }, {
+      "name" : "escalator",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withDataOverlay",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withGeoidElevation",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withReluctance",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "addTags",
+      "visibility" : "public",
+      "methodCalls" : [ "map", "addKey", "addTags", "value", "key", "addValue", "addAll" ]
+    }, {
+      "name" : "withPickupCost",
+      "visibility" : "public",
+      "methodCalls" : [ "costOfSeconds" ]
+    }, {
+      "name" : "withPickupTime",
+      "visibility" : "public",
+      "methodCalls" : [ "toSeconds" ]
+    }, {
+      "name" : "withMaxJourneyDuration",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withRental",
+      "visibility" : "public",
+      "methodCalls" : [ "copyOf", "ifNotNull", "build", "apply" ]
+    }, {
+      "name" : "withAccelerationSpeed",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withDecelerationSpeed",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "boardCost",
+      "visibility" : "public",
+      "methodCalls" : [ "toSeconds" ]
+    }, {
+      "name" : "withParking",
+      "visibility" : "public",
+      "methodCalls" : [ "build", "copyOf", "ifNotNull", "apply" ]
+    }, {
+      "name" : "withCost",
+      "visibility" : "public",
+      "methodCalls" : [ "costOfSeconds" ]
+    }, {
+      "name" : "withBoardCost",
+      "visibility" : "public",
+      "methodCalls" : [ "costOfSeconds" ]
+    }, {
+      "name" : "relaxC1",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withRelaxC1",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withRelaxCostAtDestination",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withTransitPriorityCalculator",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "toString",
+      "visibility" : "public",
+      "methodCalls" : [ "addStr", "getDistanceMeters", "getPermission", "isRentingVehicle", "getTime", "isRentingVehicleFromStation", "isVehicleParked", "isRentingFloatingVehicle", "vehicleRentalFormFactor", "buildToString", "getCarSpeed", "getLabel", "getCoordinate", "logName", "arrayToString", "colToString", "getCode", "id", "currentDefinition", "latitude", "longitude", "message", "listFields", "version", "joining", "next", "toLowerCase", "getLanguage", "containsKey", "get", "iterator", "toArray", "localize", "matcher", "replaceAll", "getMessage", "getSequence", "getLon", "getLat", "getShapeId", "getArrivalTime", "getVersionString", "skipNull", "getStopSequence", "hasValue", "timeToStrLong", "getStop", "addCoordinate", "isRealTimeUpdated", "addCost", "headsign", "x", "routeType", "y", "isYUnknown", "totalElevationGained", "getLast", "totalElevationLost", "toStringShort", "getFirst", "legs", "isRegularTransfer", "addColSize", "comparing", "getByIndex", "type", "collect", "getTripPattern", "addObjOpSafe", "getDepartureTime", "getTrip", "getPattern", "addServiceTimeSchedule", "getOriginalTripTimes", "isZero", "toOtpDomainFactor", "raptorCostToDuration", "formatCostCenti", "modesAsString", "addDoubles", "toStr", "time", "stop", "formatC2", "formatTransferPriority", "generalizedCostWaitTimeOptimized", "formatWaitTimeCost", "generalizedCost", "getName", "modes", "getKey", "name", "filters", "entrySet", "equals", "addText", "ordinal", "transit", "getValue", "comparingInt", "isEmpty", "contains", "getStartTime", "getDefaultName", "getWeight", "getLabelString", "getEndTime", "getDuration", "ofEpochSecond", "stopLocationIds", "label", "serialize", "addDateTime", "asList", "routingTimeout", "language", "allowKeepingRentedVehicleAtDestination", "pollingPeriod", "uri", "agency", "serviceDate", "addTime", "pickupBookingInfo", "to", "distanceMeters", "route", "boardStopPosInPattern", "from", "alightStopPosInPattern", "legGeometry", "alightRule", "addObjOp", "dropOffBookingInfo", "trip", "boardRule", "getId", "addDuration", "addDate", "values", "url", "feedId", "formatted", "asOtpArgs", "join", "path", "keySet", "sorted", "forEach", "legsAsStream", "addToString", "buildString", "getSimpleName", "map", "getClass", "toSeconds", "isPassThroughSearch", "size", "addBoolIfTrue", "defaults", "formatTwoDecimals", "transfer", "debug", "format", "append", "apply", "addCollection", "isInReverse", "multiCriteria", "optimizations", "formatC1", "debugInfo", "toStop", "of", "durationInSeconds", "arrivedByAccessOnBoard", "toStringAddBody", "toString", "addObj", "addNum", "asString", "arrivedByAccessOnStreet", "addBool", "addDurationSec", "addCol", "unreachedTime", "addIntArraySize", "addBitSetSize", "stream", "value", "timeToStrCompact", "keys", "addServiceTime", "filter", "mapToObj", "toList", "limit", "pattern", "stopIndex", "boardTime", "alightTime", "durationToStr", "endTime", "summary", "c1", "c2", "startTime", "addEnum" ]
+    }, {
+      "name" : "relaxCostAtDestination",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "transitPriorityCalculator",
+      "visibility" : "public",
+      "methodCalls" : [ "ofNullable" ]
+    }, {
+      "name" : "build",
+      "visibility" : "public",
+      "methodCalls" : [ "size", "empty", "requireNonNull", "unrestricted", "notSet", "sameAs", "buildFromValues", "isNotModified", "forEach", "includeLongitude180", "serialize", "of", "combine", "sort", "deduplicateImmutableList", "costLimitFunction", "intervalRelaxFactor", "addAll", "generalizedCostComparator", "comparator", "costCalculator", "slackProvider", "breakTieCost", "ofCost", "toSeconds", "ofOnlyAccessible", "failure", "getNumStops", "getTrip", "stopIndex", "success", "toResult", "failureValue", "isAllStopsNonRoutable", "getStopPattern", "info", "copyScheduledTimes", "validateNonIncreasingTimes", "getMessage", "errorType", "numberOfStops", "isFailure", "createStopPattern", "result", "setRealTimeState", "debug", "successValue", "getEdges", "copyOf", "build", "c2", "createPathLegs", "equals", "updateAggregatedFields", "c1Total", "getAgency", "computeIfAbsent", "values", "map", "getMode", "sorted", "priorityGroupsByAgency", "getId", "priorityGroupsGlobal", "name", "getNetexSubmode", "add", "lookupTransitGroupPriorityId", "getRoute", "collect", "toString", "joining", "stream", "listStopLocations", "getTransferConstraint", "transitService", "isMinTransferTimeSet", "isGuaranteed", "getVertices", "listTripPatterns", "listTrips", "isNotAllowed", "isStaySeated", "graph", "listAll", "getTransferService", "listRoutes" ]
+    }, {
+      "name" : "addFeeds",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll" ]
+    }, {
+      "name" : "withCar",
+      "visibility" : "public",
+      "methodCalls" : [ "copyOf", "build", "ifNotNull", "apply" ]
+    }, {
+      "name" : "acceptProtobuf",
+      "visibility" : "public",
+      "methodCalls" : [ "put" ]
+    }, {
+      "name" : "add",
+      "visibility" : "public",
+      "methodCalls" : [ "join", "isEmpty", "ifPresent", "debugReject", "resolveKey", "asMap", "put", "putAll", "add", "get", "getBackState", "build", "addAll", "copyOf", "keySet", "putServiceDatesForServiceId", "deduplicateObject", "deduplicateBitSet", "getType", "messageTemplate", "issue", "errorCode", "debug", "getMessage", "messageArguments", "asList", "of", "getId" ]
+    }, {
+      "name" : "acceptApplicationXML",
+      "visibility" : "public",
+      "methodCalls" : [ "put" ]
+    }, {
+      "name" : "withSlack",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withOptimization",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withHopCost",
+      "visibility" : "public",
+      "methodCalls" : [ "costOfSeconds" ]
+    }, {
+      "name" : "withSlackSec",
+      "visibility" : "public",
+      "methodCalls" : [ "withSlack", "ofSeconds", "longValue" ]
+    }, {
+      "name" : "withWaitReluctance",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withBoardTime",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withNonpreferredCost",
+      "visibility" : "public",
+      "methodCalls" : [ "costOfSeconds" ]
+    }, {
+      "name" : "apply",
+      "visibility" : "public",
+      "methodCalls" : [ "accept", "values" ]
+    }, {
+      "name" : "original",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withMaxTransfers",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "withMaxAdditionalTransfers",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    } ],
+    "imports" : [ "org.opentripplanner.framework.model.Units", "java.util.function.Predicate", "org.opentripplanner.model.transfer.TransferPriority.RECOMMENDED", "org.opentripplanner.model.transfer.TransferPriority.ALLOWED", "org.opentripplanner.model.transfer.TransferPriority.PREFERRED", "java.util.function.IntSupplier", "org.opentripplanner.raptor.api.model.RaptorTransferConstraint", "org.opentripplanner.model.transfer.TransferPriority.NOT_ALLOWED", "org.opentripplanner.utils.tostring.ValueObjectToStringBuilder", "org.opentripplanner.framework.model.TimeAndCost", "org.opentripplanner.transit.model.network.TripPattern", "org.opentripplanner.transit.model.framework.FeedScopedId", "org.opentripplanner.routing.api.request.preference.AccessibilityPreferences.ofCost", "java.util.Comparator", "java.util.Arrays", "org.opentripplanner.transit.model.basic.MainAndSubMode", "org.opentripplanner.model.modes.AllowTransitModeFilter", "org.opentripplanner.transit.model.timetable.TripTimes", "org.opentripplanner.model.GenericLocation", "org.opentripplanner.routing.api.request.preference.RoutingPreferences", "org.opentripplanner.framework.application.OTPFeature", "java.util.Locale", "org.opentripplanner.routing.api.request.request.JourneyRequest", "org.opentripplanner.routing.api.request.preference.filter.VehicleParkingSelect", "org.opentripplanner.transit.model.basic.TransitMode", "org.opentripplanner.routing.algorithm.filterchain.api.TransitGeneralizedCostFilterParams", "org.opentripplanner.routing.api.request.preference.filter.VehicleParkingFilter", "org.opentripplanner.routing.core.VehicleRoutingOptimizeType.SAFE_STREETS", "org.opentripplanner.routing.core.VehicleRoutingOptimizeType", "org.opentripplanner.routing.core.VehicleRoutingOptimizeType.TRIANGLE", "org.opentripplanner.routing.api.request.framework.CostLinearFunction", "org.opentripplanner.raptor.api.request.Optimization", "org.opentripplanner.routing.api.request.framework.TimeAndCostPenaltyForEnum", "org.opentripplanner.routing.api.request.framework.DurationForEnum", "org.opentripplanner.utils.lang.IntUtils", "java.util.EnumMap", "org.opentripplanner.street.search.intersection_model.IntersectionTraversalModel", "org.opentripplanner.raptor.api.request.RaptorProfile", "java.time.Duration.ofMinutes", "java.time.Duration.ofHours", "org.opentripplanner.utils.lang.DoubleUtils.roundTo2Decimals", "java.time.Instant", "java.util.Collections", "org.opentripplanner.routing.api.request.framework.TimePenalty", "java.util.EnumSet", "org.opentripplanner.routing.api.request.framework.TimeAndCostPenalty", "org.opentripplanner.street.search.intersection_model.DrivingDirection", "org.opentripplanner.raptor.api.model.SearchDirection", "org.opentripplanner.routing.api.request.StreetMode", "org.opentripplanner.street.search.TraverseMode", "org.opentripplanner.utils.lang.ObjectUtils.ifNotNull", "org.opentripplanner.routing.api.request.RoutingTag", "java.util.Set", "org.opentripplanner.ext.dataoverlay.api.DataOverlayParameters", "org.opentripplanner.utils.lang.DoubleUtils", "java.util.Objects.requireNonNull", "org.opentripplanner.routing.algorithm.transferoptimization.api.TransferOptimizationParameters", "java.util.List", "org.opentripplanner.raptor.rangeraptor.multicriteria.arrivals.McStopArrival", "org.opentripplanner.raptor.api.model.RaptorAccessEgress", "org.opentripplanner.raptor.util.paretoset.ParetoSetEventListener", "org.opentripplanner.raptor.api.model.RaptorTripSchedule", "org.opentripplanner.raptor.util.paretoset.ParetoSetWithMarker", "org.opentripplanner.raptor.api.view.ArrivalView", "org.opentripplanner.raptor.util.paretoset.ParetoComparator", "org.opentripplanner.raptor.rangeraptor.path.DestinationArrivalPaths", "org.opentripplanner.raptor.util.paretoset.ParetoSetEventListenerComposite", "java.util.Objects", "org.opentripplanner.utils.tostring.ToStringBuilder", "java.util.Optional", "org.opentripplanner.raptor.api.model.RelaxFunction", "javax.annotation.Nullable", "java.util.Collection", "java.util.ArrayList", "java.util.Map", "org.opentripplanner.standalone.config.framework.project.EnvironmentVariableReplacer", "java.util.HashMap", "org.opentripplanner.utils.time.DurationUtils", "java.io.Serializable", "java.time.Duration", "java.util.function.Consumer", "org.opentripplanner.framework.model.Cost", "org.opentripplanner.utils.lang.DoubleUtils.doubleEquals" ]
+  }, {
+    "name" : "DefaultTransitService",
+    "packageName" : "org.opentripplanner.transit.service",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ "TransitEditorService" ],
+    "methods" : [ {
+      "name" : "findStopByScheduledStopPoint",
+      "visibility" : "public",
+      "methodCalls" : [ "findStopByScheduledStopPoint", "get", "ofNullable" ]
+    }, {
+      "name" : "getUpdaterStatus",
+      "visibility" : "public",
+      "methodCalls" : [ "getUpdaterManager" ]
+    }, {
+      "name" : "getServiceCode",
+      "visibility" : "public",
+      "methodCalls" : [ "getServiceCodes", "get", "getServiceCode" ]
+    }, {
+      "name" : "getTrips",
+      "visibility" : "public",
+      "methodCalls" : [ "listTrips", "stream", "toList", "getCalendarService", "of", "filter" ]
+    }, {
+      "name" : "findRoutes",
+      "visibility" : "public",
+      "methodCalls" : [ "getRoutesForGroupOfRoutes", "stream", "listRoutes", "getFlexIndex", "of", "checkForTimeout", "getRoutesForStop", "filter", "toList" ]
+    }, {
+      "name" : "getScheduledTrip",
+      "visibility" : "public",
+      "methodCalls" : [ "getTripForId" ]
+    }, {
+      "name" : "getStation",
+      "visibility" : "public",
+      "methodCalls" : [ "getSiteRepository", "getStationById" ]
+    }, {
+      "name" : "findAreaStops",
+      "visibility" : "public",
+      "methodCalls" : [ "checkForTimeout", "getSiteRepository", "findAreaStops" ]
+    }, {
+      "name" : "findStopLocations",
+      "visibility" : "public",
+      "methodCalls" : [ "toList", "filter", "of", "listStopLocations", "stream" ]
+    }, {
+      "name" : "getTransferService",
+      "visibility" : "public",
+      "methodCalls" : [ "getTransferService" ]
+    }, {
+      "name" : "listStopLocations",
+      "visibility" : "public",
+      "methodCalls" : [ "checkForTimeout", "listStopLocations", "getSiteRepository", "values" ]
+    }, {
+      "name" : "listTripPatterns",
+      "visibility" : "public",
+      "methodCalls" : [ "checkForTimeout", "getAllTripPatterns" ]
+    }, {
+      "name" : "findPattern",
+      "visibility" : "public",
+      "methodCalls" : [ "findNewTripPatternForModifiedTrip", "findPattern", "getPatternForTrip", "getId", "getRealTimeAddedPatternForTrip" ]
+    }, {
+      "name" : "getRoute",
+      "visibility" : "public",
+      "methodCalls" : [ "getRouteForId", "getRealtimeAddedRoute", "isTripTransferPoint", "getTrip", "getRoute", "asRouteStationTransferPoint", "asTripTransferPoint", "isRouteStationTransferPoint", "isRouteStopTransferPoint", "asRouteStopTransferPoint" ]
+    }, {
+      "name" : "listRoutes",
+      "visibility" : "public",
+      "methodCalls" : [ "getAllRoutes", "listRealTimeAddedRoutes", "checkForTimeout" ]
+    }, {
+      "name" : "findNewTripPatternForModifiedTrip",
+      "visibility" : "public",
+      "methodCalls" : [ "getNewTripPatternForModifiedTrip" ]
+    }, {
+      "name" : "containsTrip",
+      "visibility" : "public",
+      "methodCalls" : [ "containsTrip", "getRealTimeAddedTrip" ]
+    }, {
+      "name" : "getRoutes",
+      "visibility" : "public",
+      "methodCalls" : [ "toList", "stream", "map", "filter" ]
+    }, {
+      "name" : "getOperator",
+      "visibility" : "public",
+      "methodCalls" : [ "getOperatorForId" ]
+    }, {
+      "name" : "addAgency",
+      "visibility" : "public",
+      "methodCalls" : [ "addAgency", "add", "getId", "getFeedId" ]
+    }, {
+      "name" : "findPatterns",
+      "visibility" : "public",
+      "methodCalls" : [ "addAll", "getPatternsForRoute", "getRealTimeAddedPatternForRoute", "findPatterns", "getPatternsForStop", "checkForTimeout" ]
+    }, {
+      "name" : "findStopTimesInPattern",
+      "visibility" : "public",
+      "methodCalls" : [ "stopTimesForStop", "checkForTimeout" ]
+    }, {
+      "name" : "getTransitServiceStarts",
+      "visibility" : "public",
+      "methodCalls" : [ "getTransitServiceStarts" ]
+    }, {
+      "name" : "getFlexIndex",
+      "visibility" : "public",
+      "methodCalls" : [ "getFlexIndex" ]
+    }, {
+      "name" : "findTripTimeOnDate",
+      "visibility" : "public",
+      "methodCalls" : [ "checkForTimeout", "stopTimesForPatternAtStop" ]
+    }, {
+      "name" : "findNotices",
+      "visibility" : "public",
+      "methodCalls" : [ "get", "getNoticesByElement" ]
+    }, {
+      "name" : "listTripsOnServiceDate",
+      "visibility" : "public",
+      "methodCalls" : [ "listRealTimeAddedTripOnServiceDate", "getAllTripsOnServiceDates" ]
+    }, {
+      "name" : "listFeedIds",
+      "visibility" : "public",
+      "methodCalls" : [ "getFeedIds" ]
+    }, {
+      "name" : "getTripPattern",
+      "visibility" : "public",
+      "methodCalls" : [ "getTripPatternForId" ]
+    }, {
+      "name" : "findTransitModes",
+      "visibility" : "public",
+      "methodCalls" : [ "stream", "getChildStops", "toList", "flatMap" ]
+    }, {
+      "name" : "getRealtimeRaptorTransitData",
+      "visibility" : "public",
+      "methodCalls" : [ "getRealtimeRaptorTransitData", "checkForTimeout", "get" ]
+    }, {
+      "name" : "getRegularStop",
+      "visibility" : "public",
+      "methodCalls" : [ "getRegularStop", "getSiteRepository", "get" ]
+    }, {
+      "name" : "getStopLocation",
+      "visibility" : "public",
+      "methodCalls" : [ "getStopLocation", "getSiteRepository" ]
+    }, {
+      "name" : "getMultiModalStation",
+      "visibility" : "public",
+      "methodCalls" : [ "getMultiModalStation", "getSiteRepository", "get" ]
+    }, {
+      "name" : "getOrCreateServiceIdForDate",
+      "visibility" : "public",
+      "methodCalls" : [ "getServiceCodesRunningForDate", "size", "getCalendarService", "getTimeZone", "asStartOfService", "toInstant", "transitFeedCovers", "asCompactString", "put", "getOrCreateServiceIdForDate", "add", "of", "containsKey", "info", "computeIfAbsent" ]
+    }, {
+      "name" : "addFeedInfo",
+      "visibility" : "public",
+      "methodCalls" : [ "addFeedInfo", "put", "getId" ]
+    }, {
+      "name" : "listGroupStops",
+      "visibility" : "public",
+      "methodCalls" : [ "getSiteRepository", "listGroupStops", "checkForTimeout", "values" ]
+    }, {
+      "name" : "getTripOnServiceDate",
+      "visibility" : "public",
+      "methodCalls" : [ "getRealTimeAddedTripOnServiceDateForTripAndDay", "getTripOnServiceDateForTripAndDay", "getTripOnServiceDateById", "getRealTimeAddedTripOnServiceDateById" ]
+    }, {
+      "name" : "addTransitMode",
+      "visibility" : "public",
+      "methodCalls" : [ "addTransitMode", "add" ]
+    }, {
+      "name" : "listGroupsOfRoutes",
+      "visibility" : "public",
+      "methodCalls" : [ "getAllGroupOfRoutes", "checkForTimeout" ]
+    }, {
+      "name" : "listServiceDates",
+      "visibility" : "public",
+      "methodCalls" : [ "getServiceCodesRunningForDate", "unmodifiableSet", "keySet" ]
+    }, {
+      "name" : "findStopOrChildStops",
+      "visibility" : "public",
+      "methodCalls" : [ "findStopOrChildStops", "getSiteRepository", "getStopLocationsGroup", "of", "getStopLocation", "getChildStops" ]
+    }, {
+      "name" : "getCalendarService",
+      "visibility" : "public",
+      "methodCalls" : [ "getCalendarService" ]
+    }, {
+      "name" : "getTransitAlertService",
+      "visibility" : "public",
+      "methodCalls" : [ "getTransitAlertService" ]
+    }, {
+      "name" : "listTransitModes",
+      "visibility" : "public",
+      "methodCalls" : [ "getTransitModes" ]
+    }, {
+      "name" : "getAgency",
+      "visibility" : "public",
+      "methodCalls" : [ "getAgencyForId" ]
+    }, {
+      "name" : "getTransitServiceEnds",
+      "visibility" : "public",
+      "methodCalls" : [ "getTransitServiceEnds" ]
+    }, {
+      "name" : "findMultiModalStation",
+      "visibility" : "public",
+      "methodCalls" : [ "getMultiModalStationForStation", "getSiteRepository" ]
+    }, {
+      "name" : "transitFeedCovers",
+      "visibility" : "public",
+      "methodCalls" : [ "transitFeedCovers", "toInstant", "isBefore" ]
+    }, {
+      "name" : "listTrips",
+      "visibility" : "public",
+      "methodCalls" : [ "listRealTimeAddedTrips", "getAllTrips", "checkForTimeout", "unmodifiableCollection" ]
+    }, {
+      "name" : "getDeduplicator",
+      "visibility" : "public",
+      "methodCalls" : [ "getDeduplicator" ]
+    }, {
+      "name" : "hasNewTripPatternsForModifiedTrips",
+      "visibility" : "public",
+      "methodCalls" : [ "hasNewTripPatternsForModifiedTrips", "isEmpty" ]
+    }, {
+      "name" : "findAgency",
+      "visibility" : "public",
+      "methodCalls" : [ "findAgencyById" ]
+    }, {
+      "name" : "getTrip",
+      "visibility" : "public",
+      "methodCalls" : [ "getRealTimeAddedTrip", "getScheduledTrip", "isTripTransferPoint", "asTripTransferPoint", "getScheduledTimetable", "getServiceCode", "findPatterns", "getServiceCodesRunningForDate", "getScheduledDepartureTime", "contains", "getDirection", "getTrip", "getTripTimes" ]
+    }, {
+      "name" : "getRaptorTransitData",
+      "visibility" : "public",
+      "methodCalls" : [ "checkForTimeout", "getRaptorTransitData" ]
+    }, {
+      "name" : "addRoutes",
+      "visibility" : "public",
+      "methodCalls" : [ "addRoutes" ]
+    }, {
+      "name" : "getTimeZone",
+      "visibility" : "public",
+      "methodCalls" : [ "getTimeZone", "isPartOfStation", "getTimezone", "getParentStation" ]
+    }, {
+      "name" : "listAgencies",
+      "visibility" : "public",
+      "methodCalls" : [ "checkForTimeout", "getAgencies" ]
+    }, {
+      "name" : "findTimetable",
+      "visibility" : "public",
+      "methodCalls" : [ "checkForTimeout", "getScheduledTimetable", "resolve" ]
+    }, {
+      "name" : "getFeedInfo",
+      "visibility" : "public",
+      "methodCalls" : [ "getFeedInfo", "get" ]
+    }, {
+      "name" : "listCanceledTrips",
+      "visibility" : "public",
+      "methodCalls" : [ "checkForTimeout", "sort", "listCanceledTrips", "of" ]
+    }, {
+      "name" : "getGroupOfRoutes",
+      "visibility" : "public",
+      "methodCalls" : [ "getGroupOfRoutesForId" ]
+    }, {
+      "name" : "listStations",
+      "visibility" : "public",
+      "methodCalls" : [ "listStations", "getSiteRepository", "checkForTimeout", "values" ]
+    }, {
+      "name" : "findTripsOnServiceDate",
+      "visibility" : "public",
+      "methodCalls" : [ "toList", "filter", "stream", "of", "listTripsOnServiceDate" ]
+    }, {
+      "name" : "findRegularStopsByBoundingBox",
+      "visibility" : "public",
+      "methodCalls" : [ "findPatterns", "isEmpty", "envelope", "filter", "findRegularStops", "getSiteRepository", "stream", "checkForTimeout", "toList", "of" ]
+    }, {
+      "name" : "getScheduledTripTimes",
+      "visibility" : "public",
+      "methodCalls" : [ "fromTripTimes", "findPattern", "getScheduledTimetable", "ofNullable" ]
+    }, {
+      "name" : "getTripTimeOnDates",
+      "visibility" : "public",
+      "methodCalls" : [ "getServiceCode", "getServiceCodesRunningForDate", "findTimetable", "fromTripTimes", "findPattern", "toInstant", "of", "contains", "getTripTimes", "empty", "asStartOfService", "getTimeZone" ]
+    }, {
+      "name" : "getServiceCodesRunningForDate",
+      "visibility" : "public",
+      "methodCalls" : [ "getOrDefault", "getServiceCodesRunningForDate", "unmodifiableMap" ]
+    }, {
+      "name" : "findPathTransfers",
+      "visibility" : "public",
+      "methodCalls" : [ "getTransfersByStop" ]
+    }, {
+      "name" : "listOperators",
+      "visibility" : "public",
+      "methodCalls" : [ "getOperators", "checkForTimeout" ]
+    }, {
+      "name" : "listStopLocationGroups",
+      "visibility" : "public",
+      "methodCalls" : [ "checkForTimeout", "getSiteRepository", "listStopLocationGroups", "values" ]
+    }, {
+      "name" : "getStopLocationsGroup",
+      "visibility" : "public",
+      "methodCalls" : [ "getStopLocationsGroup", "getSiteRepository" ]
+    } ],
+    "imports" : [ "org.opentripplanner.transit.model.site.GroupStop", "org.opentripplanner.model.transfer.TransferService", "org.opentripplanner.ext.flex.FlexIndex", "org.opentripplanner.transit.model.site.StopLocationsGroup", "java.util.Collection", "org.opentripplanner.model.FeedInfo", "org.opentripplanner.transit.model.filter.transit.RouteMatcherFactory", "jakarta.inject.Inject", "org.opentripplanner.transit.model.filter.transit.TripOnServiceDateMatcherFactory", "java.util.stream.Collectors", "org.opentripplanner.transit.model.timetable.TripTimes", "java.util.function.Function", "org.opentripplanner.utils.time.ServiceDateUtils", "org.opentripplanner.transit.model.site.StopLocation", "org.opentripplanner.transit.model.timetable.TripOnServiceDate", "org.opentripplanner.transit.model.basic.TransitMode", "org.opentripplanner.transit.model.organization.Operator", "gnu.trove.set.hash.TIntHashSet", "org.opentripplanner.transit.model.framework.AbstractTransitEntity", "org.opentripplanner.model.TripTimeOnDate", "java.time.ZoneId", "javax.annotation.Nullable", "java.util.stream.Stream", "java.util.List", "org.opentripplanner.transit.model.filter.expr.Matcher", "org.opentripplanner.transit.model.filter.transit.StopLocationMatcherFactory", "org.opentripplanner.model.calendar.CalendarService", "org.opentripplanner.transit.model.framework.Deduplicator", "java.util.Optional", "org.locationtech.jts.geom.Envelope", "org.opentripplanner.model.StopTimesInPattern", "org.opentripplanner.transit.model.filter.transit.RegularStopMatcherFactory", "org.opentripplanner.transit.model.network.Route", "java.util.Comparator", "org.opentripplanner.transit.model.site.Station", "org.opentripplanner.transit.api.request.TripRequest", "org.opentripplanner.transit.api.request.FindStopLocationsRequest", "org.opentripplanner.transit.model.network.GroupOfRoutes", "org.opentripplanner.model.PathTransfer", "org.opentripplanner.transit.api.request.FindRegularStopsByBoundingBoxRequest", "java.time.Duration", "org.opentripplanner.transit.model.site.MultiModalStation", "java.util.Set", "org.opentripplanner.transit.model.organization.Agency", "org.opentripplanner.model.Timetable", "org.opentripplanner.transit.model.timetable.Trip", "org.opentripplanner.transit.model.filter.transit.TripMatcherFactory", "org.opentripplanner.transit.api.request.FindRoutesRequest", "org.opentripplanner.routing.algorithm.raptoradapter.transit.RaptorTransitData", "java.time.LocalDate", "org.opentripplanner.model.TimetableSnapshot", "java.util.Objects", "org.opentripplanner.utils.collection.CollectionsView", "org.opentripplanner.updater.GraphUpdaterStatus", "org.opentripplanner.transit.model.site.AreaStop", "java.time.Instant", "java.util.HashSet", "java.time.ZonedDateTime", "org.opentripplanner.transit.model.basic.Notice", "org.opentripplanner.routing.services.TransitAlertService", "org.opentripplanner.transit.model.site.RegularStop", "org.opentripplanner.transit.model.timetable.TripIdAndServiceDate", "gnu.trove.set.TIntSet", "java.util.Map", "org.opentripplanner.framework.application.OTPRequestTimeoutException", "org.opentripplanner.transit.model.network.TripPattern", "java.util.Collections", "org.opentripplanner.transit.model.framework.FeedScopedId", "org.opentripplanner.transit.api.request.TripOnServiceDateRequest" ]
+  }, {
+    "name" : "GraphQLQueryTypePlanArgs",
+    "packageName" : "org.opentripplanner.apis.gtfs.generated",
+    "extendedClasses" : [ ],
+    "implementedInterfaces" : [ ],
+    "methods" : [ {
+      "name" : "setGraphQLTransportModes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLTriangle",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLPageCursor",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLBikeReluctance",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLIgnoreRealtimeUpdates",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLToPlace",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLUnpreferred",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLBikeBoardCost",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLModeWeight",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLOptimize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLFromPlace",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLAllowedVehicleRentalNetworks",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLTo",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLCarParkCarLegWeight",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLTime",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLAllowedBikeRentalNetworks",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLWalkReluctance",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLClaimInitialWait",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLMaxWalkDistance",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLVia",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLBanned",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLBoardSlack",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLDisableRemainingWeightHeuristic",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLWalkSpeed",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLWaitAtBeginningFactor",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLReverseOptimizeOnTheFly",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLDebugItineraryFilter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLAllowBikeRental",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLBikeSwitchCost",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLCarReluctance",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLParking",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLPreferred",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLWheelchair",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLWaitReluctance",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLNonpreferredTransferPenalty",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLOptimize",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLOmitCanceled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLCarReluctance",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLLocale",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLWheelchair",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLSearchWindow",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLBannedVehicleRentalNetworks",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLWalkSafetyFactor",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLBanned",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLItineraryFiltering",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLTime",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLToPlace",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLBatch",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLBoardSlack",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLItineraryFiltering",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLStartTransitTripId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLMaxTransfers",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLPreferred",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLClaimInitialWait",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLWalkOnStreetReluctance",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLHeuristicStepsPerMainStep",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLBikeReluctance",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLReverseOptimizeOnTheFly",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLStartTransitTripId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLFrom",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLIntermediatePlaces",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLBannedVehicleRentalNetworks",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLWalkOnStreetReluctance",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLDate",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLCompactLegsByReversedSearch",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLSearchWindow",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLVia",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLAlightSlack",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLMaxPreTransitTime",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLWalkReluctance",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLWalkSafetyFactor",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLDisableRemainingWeightHeuristic",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLArriveBy",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLMinTransferTime",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLAlightSlack",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLLocale",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLDebugItineraryFilter",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLAllowKeepingRentedBicycleAtDestination",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLStartTransitStopId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLAllowedTicketTypes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLHeuristicStepsPerMainStep",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLMaxWalkDistance",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLModeWeight",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLAllowKeepingRentedBicycleAtDestination",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLBikeSwitchCost",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLArriveBy",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLTriangle",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLWaitAtBeginningFactor",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLWaitReluctance",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLTransferPenalty",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLBikeWalkingReluctance",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLBikeSpeed",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLBatch",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLKeepingRentedBicycleAtDestinationCost",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLUnpreferred",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLNumItineraries",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLBikeSwitchTime",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLNumItineraries",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLBikeWalkingReluctance",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLTo",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLNonpreferredTransferPenalty",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLMaxPreTransitTime",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLBikeSpeed",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLCompactLegsByReversedSearch",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLWalkSpeed",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLOmitCanceled",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLAllowBikeRental",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLWalkBoardCost",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLTransferPenalty",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLIntermediatePlaces",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLAllowedVehicleRentalNetworks",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLCarParkCarLegWeight",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLAllowedBikeRentalNetworks",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLParking",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLBikeBoardCost",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLDate",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLKeepingRentedBicycleAtDestinationCost",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLMaxTransfers",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLBikeSwitchTime",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLStartTransitStopId",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLMinTransferTime",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLFromPlace",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLWalkBoardCost",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLFrom",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLIgnoreRealtimeUpdates",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLAllowedTicketTypes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "setGraphQLPageCursor",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    }, {
+      "name" : "getGraphQLTransportModes",
+      "visibility" : "public",
+      "methodCalls" : [ ]
+    } ],
+    "imports" : [ "java.util.stream.Collectors", "java.util.List", "java.util.Map" ]
+  } ]
+}
