@@ -3,71 +3,17 @@ import textwrap
 def get_task_introduction_prompt(metric_name):
     metric_name = metric_name.lower()
 
-    task_introduction_old = textwrap.dedent(f"""
+    task_introduction = textwrap.dedent(f"""
     You will be given a concise high-level description of an existing software system. 
     This description is intended for developers who will maintain, extend, or contribute new code to the system. 
     Your task is to evaluate the {metric_name.upper()} of this description without comparing it to any reference text. 
     Assign a score for {metric_name} on a scale of 1 to 5, where 1 is the lowest and 5 is the highest based on the Evaluation Criteria.
     Please carefully read and understand these instructions, keeping them available for reference throughout your evaluation.
     """)
-
-    task_introduction = textwrap.dedent(f"""
-    You will be given a high-level description of an existing software system. 
-    This description is intended for developers who will maintain, extend, or contribute new code to the system, but it is only meant as an INITIAL OVERVIEW, not a detailed technical specification.
-
-    A good high-level description should:
-    - Explain the system's primary purpose and functionality
-    - Identify major components and their general responsibilities 
-    - Mention key technologies and dependencies
-    - Provide enough context for a developer to begin exploring the codebase
-
-    A high-level description should NOT be expected to include:
-    - Method-level details or class hierarchies
-    - Implementation specifics
-    - Detailed API references
-    - Low-level technical intricacies
-
-    Your task is to CRITICALLY evaluate the {metric_name.upper()} of this description based on its effectiveness as a high-level overview. Assign a score for {metric_name} on a scale of 1 to 5, where most descriptions should fall in the 2-3 range.
-
-    Please carefully read and understand these instructions, keeping them available for reference throughout your evaluation.
-    """)
     
     return task_introduction
 
 correctness_evaluation_criteria = """
-Correctness (1-5) - Evaluate the technical accuracy and logical consistency of the description.
-
-1: Contains major technical errors or contradictions that would make maintenance work impossible
-2: Has several technical inaccuracies or inconsistencies that would significantly hinder understanding the system
-3: Generally correct but with some minor technical issues or ambiguities
-4: Technically sound with very minor issues that wouldn't affect maintenance or extension work
-5: Completely correct from a technical standpoint with no errors or inconsistencies
-"""
-
-relevance_evaluation_criteria = """
-Relevance (1-5) - How well the description focuses on information that is useful for the developer who will maintain, extend, or contribute new code to the system. 
-A high score means the information is practical, actionable, and at an appropriate level of detail.
-
-1: Contains mostly irrelevant information or is at an inappropriate level of detail
-2: Has significant amounts of irrelevant information or critically mismatches the developer's needs
-3: Mostly relevant but contains some unnecessary information or lacks some detail
-4: Highly relevant with minimal extraneous information
-5: Perfectly tailored to the developer's implementation needs
-"""
-
-usefulness_evaluation_criteria = """
-Usefulness (1-5) - How valuable the description would be to a developer working on the system.
-
-1: Provides little to no actionable information for a developer
-2: Contains some useful information but misses critical aspects needed for maintenance
-3: Moderately useful but lacks detail in important areas
-4: Very useful with most information a developer would need to understand the system
-5: Exceptionally useful, providing comprehensive understanding that would enable confident code changes
-"""
-
-#### New prompts below for testing purposes
-
-correctness_grading_schema = """
 Correctness (1-5) How well the generated description aligns with the actual behavior and structure of the system.
 
 1: Major inaccuracies, misleading or factually incorrect information about system components, behavior, or interactions
@@ -77,7 +23,7 @@ Correctness (1-5) How well the generated description aligns with the actual beha
 5: Fully correct. Aligns with the system's behavior, structure, and architecture. Contains no factual errors
 """
 
-relevance_grading_schema = """
+relevance_evaluation_criteria = """
 Relevance (1-5) - How well the generated description address the key components of the system, avoiding irrelevant details.
 
 1: Entirely irrelevant to the system, it does not relate to the system at all
@@ -87,7 +33,7 @@ Relevance (1-5) - How well the generated description address the key components 
 5: Fully relevant. All information directly relates to the described system and its architecture
 """
 
-usefulness_grading_schema = """
+usefulness_evaluation_criteria = """
 Usefulness (1-5) - How helpful the generated description would be to a developer trying to understand the system at a high-level.
 
 1: Does not provide any actionable or insightful information for understanding the system
@@ -112,3 +58,33 @@ Your response must include:
 - Ensure the response is structured and easy to understand.
 - **Avoid** using uncertain language like "might", "could", "may", etc.
 - Do not return your response as JSON."""
+
+correctness_evaluation_steps = [
+    "Critically examine the system description against the provided knowledge graph data, identifying any factual errors or misrepresentations about components, relationships, or system behavior.",
+    "Check for logical inconsistencies or contradictions within the description itself that would indicate a misunderstanding of the system architecture.",
+    "Evaluate whether the technical terms and concepts used in the description are applied accurately and appropriately for the described system.",
+    "Identify any statements that make unfounded assumptions beyond what's supported by the input data or that inappropriately extrapolate system functionality.",
+    "Compare the system components and relationships mentioned in the input data against those described in the output to identify missing or incorrectly characterized elements.",
+    "Assess whether the description captures the correct system purpose and primary functions according to the input data.",
+    "Assign a correctness score, defaulting to a lower score (2-3) unless the description demonstrates exceptional accuracy and fidelity to the provided system information."
+]
+
+relevance_evaluation_steps = [
+    "Critically analyze whether the description focuses on truly essential system components or dilutes its value with tangential information that would not help a developer understand the system's core functionality.",
+    "Identify specific instances where the description introduces irrelevant technical details, unnecessary background information, or unfocused explanations that detract from understanding the system architecture.",
+    "Assess whether the description maintains appropriate focus on the system's most important architectural elements or if it gives undue attention to minor or peripheral aspects.",
+    "Check if the description provides information at a consistent and appropriate level of abstraction, or if it mixes high-level concepts with unnecessarily low-level details.",
+    "Evaluate whether the description prioritizes information based on what would be most valuable to a developer approaching the system for the first time.",
+    "Compare what was provided in the input data against what appears in the output to identify irrelevant information that doesn't correspond to the system described in the input.",
+    "Assign a relevance score, defaulting to a lower score (2-3) unless the description demonstrates exceptional focus and appropriate selection of information."
+]
+
+usefulness_evaluation_steps = [
+    "Examine the actual output critically, identifying specific areas where it fails to provide actionable insights or relies on generic descriptions rather than precise technical explanations.",
+    "Identify missing technical details that would be essential for a developer to understand the system architecture - be specific about what information should have been included but wasn't.",
+    "Assess whether the description provides concrete examples or merely abstract generalizations. Concrete examples should be weighted more heavily.",
+    "Check if the description clearly explains component relationships and dependencies or if these connections are vague or implied.",
+    "Evaluate whether technical terminology is used precisely and accurately or if terms are used in a way that suggests limited understanding.",
+    "Compare what was provided in the input data against what appears in the output to identify missing or misrepresented information.",
+    "Assign a usefulness score, defaulting to a lower score (3-4) unless the description demonstrates exceptional clarity and completeness."
+]

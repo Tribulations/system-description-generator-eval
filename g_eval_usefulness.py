@@ -1,15 +1,15 @@
 from deepeval.metrics import GEval
 from deepeval.test_case import LLMTestCase, LLMTestCaseParams
-from prompts import sdg_task_template, get_task_introduction_prompt, usefulness_grading_schema
+from prompts import sdg_task_template, get_task_introduction_prompt, usefulness_evaluation_criteria, usefulness_evaluation_steps
 from dotenv import load_dotenv
 
 load_dotenv()
 
 # File containing the data sent to the LLM from the SDG-tool
-json_path = "evaluation/g-eval/paimon/paimon.json"
+json_path = "evaluation/g-eval/javaparser/javaparser.json"
 
 # File containing the generated description to evaluate
-gd_path = "evaluation//g-eval/paimon/desc.md"
+gd_path = "evaluation//g-eval/javaparser/desc.md"
 
 # Read files and assign to variables
 with open(json_path, "r") as file:
@@ -25,17 +25,9 @@ model = "gpt-4o"
 metric = "Usefulness"
 
 evaluation_instructions = "{}{}"
-evaluation_instructions = evaluation_instructions.format(get_task_introduction_prompt(metric), usefulness_grading_schema)
+evaluation_instructions = evaluation_instructions.format(get_task_introduction_prompt(metric), usefulness_evaluation_criteria)
 
-evaluation_steps = [
-    "Examine the actual output critically, identifying specific areas where it fails to provide actionable insights or relies on generic descriptions rather than precise technical explanations.",
-    "Identify missing technical details that would be essential for a developer to understand the system architecture - be specific about what information should have been included but wasn't.",
-    "Assess whether the description provides concrete examples or merely abstract generalizations. Concrete examples should be weighted more heavily.",
-    "Check if the description clearly explains component relationships and dependencies or if these connections are vague or implied.",
-    "Evaluate whether technical terminology is used precisely and accurately or if terms are used in a way that suggests limited understanding.",
-    "Compare what was provided in the input data against what appears in the output to identify missing or misrepresented information.",
-    "Assign a usefulness score, defaulting to a lower score (3-4) unless the description demonstrates exceptional clarity and completeness."
-]
+evaluation_steps = usefulness_evaluation_steps
 
 g_eval = GEval(
     name=metric,

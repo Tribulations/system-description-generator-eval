@@ -1,15 +1,15 @@
 from deepeval.metrics import GEval
 from deepeval.test_case import LLMTestCase, LLMTestCaseParams
-from prompts import sdg_task_template, get_task_introduction_prompt, correctness_grading_schema
+from prompts import sdg_task_template, get_task_introduction_prompt, correctness_evaluation_criteria, correctness_evaluation_steps
 from dotenv import load_dotenv
 
 load_dotenv()
 
 # File containing the data sent to the LLM from the SDG-tool
-json_path = "evaluation/g-eval/paimon/paimon.json"
+json_path = "evaluation/g-eval/gobblin/gobblin.json"
 
 # File containing the generated description to evaluate
-gd_path = "evaluation//g-eval/paimon/desc.md"
+gd_path = "evaluation//g-eval/gobblin/desc.md"
 
 # Read files and assign to variables
 with open(json_path, "r") as file:
@@ -25,17 +25,9 @@ model = "gpt-4o"
 metric = "Correctness"
 
 evaluation_instructions = "{}{}"
-evaluation_instructions = evaluation_instructions.format(get_task_introduction_prompt(metric), correctness_grading_schema)
+evaluation_instructions = evaluation_instructions.format(get_task_introduction_prompt(metric), correctness_evaluation_criteria)
 
-evaluation_steps = [
-    "Critically examine the system description against the provided knowledge graph data, identifying any factual errors or misrepresentations about components, relationships, or system behavior.",
-    "Check for logical inconsistencies or contradictions within the description itself that would indicate a misunderstanding of the system architecture.",
-    "Evaluate whether the technical terms and concepts used in the description are applied accurately and appropriately for the described system.",
-    "Identify any statements that make unfounded assumptions beyond what's supported by the input data or that inappropriately extrapolate system functionality.",
-    "Compare the system components and relationships mentioned in the input data against those described in the output to identify missing or incorrectly characterized elements.",
-    "Assess whether the description captures the correct system purpose and primary functions according to the input data.",
-    "Assign a correctness score, defaulting to a lower score (2-3) unless the description demonstrates exceptional accuracy and fidelity to the provided system information."
-]
+evaluation_steps = correctness_evaluation_steps
 
 g_eval = GEval(
     name=metric,
