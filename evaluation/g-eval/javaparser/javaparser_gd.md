@@ -6,22 +6,22 @@ JavaParser is a Java source code analysis and manipulation tool that provides ca
 2. Key Components & Responsibilities:
 
 Node Class:
-
 Base class for all AST elements
 Handles parent-child relationships
 Manages node traversal and visitor pattern implementation
 Provides common functionality for AST manipulation
-Expression Class:
 
+Expression Class:
 Represents Java expressions in the AST
 Handles various expression types (literals, method calls, operators)
 Provides type resolution and validation capabilities
 Implements expression-specific transformations
-Statement Class:
 
+Statement Class:
 Represents Java statements in the AST
 Manages different statement types (if, while, for, etc.)
 Provides statement transformation and analysis capabilities
+
 3. Core Technologies & Dependencies:
 
 Technologies:
