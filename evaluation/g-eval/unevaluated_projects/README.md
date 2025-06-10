@@ -1,0 +1,1 @@
+The projects in this folder met the inclusion criteria and were initially selected for evaluation. However, they were excluded from the final assessment because they exceeded the maximum token limit during the G-Eval evaluation.
