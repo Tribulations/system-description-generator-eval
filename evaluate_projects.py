@@ -185,9 +185,9 @@ def create_results_file(project_name, results):
     
     print(f"The projects results have been saved to: {results_file}")
 
-def read_projects_file(file_path="projects.md"):
+def read_projects_file(file_path="projects_to_evaluate.md"):
     """
-    Create the list of projects to evaluate from the projects.md file.
+    Create the list of projects to evaluate from the projects_to_evaluate.md file.
     
     Args:
         file_path (str): Path to the projects file
@@ -210,11 +210,11 @@ def read_projects_file(file_path="projects.md"):
     return projects
 
 def main():
-    # Read projects from the projects.md file
+    # Read projects from the projects_to_evaluate.md file
     projects = read_projects_file()
     
     if not projects:
-        print("No projects to evaluate. Please add projects to projects.md file.")
+        print("No projects to evaluate. Please add projects to projects_to_evaluate.md file.")
         return
     
     print(f"Projects to evaluate: {', '.join(projects)}")
