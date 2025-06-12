@@ -1,0 +1,5 @@
+name,correctness,relevance,usefulness
+javaparser,0.75,0.75,0.5
+runelite,0.75,0.75,0.5
+assertj,0.75,0.75,0.5
+junit5,0.75,0.75,0.5

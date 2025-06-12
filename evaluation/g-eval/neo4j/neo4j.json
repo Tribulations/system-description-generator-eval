@@ -1,0 +1,950 @@
+{
+    "systemName" : "neo4j",
+    "classes" : [ {
+      "name" : "Adapter",
+      "packageName" : "org.neo4j.graphdb.traversal",
+      "extendedClasses" : [ "AbstractPrimitiveLongBaseIterator", "TransactionEventListenerAdapter", "Adapter" ],
+      "implementedInterfaces" : [ "Monitor", "PathEvaluator", "InternalTransactionEventListener", "CharReadable", "SourceTraceability", "ProgressListener", "ReadBehaviour", "InputEntityVisitor", "ValuesIterator", "TxStateVisitor", "IndexPopulator", "IndexUpdateListener", "IndexAccessor", "NonUniqueIndexSampler", "CountsVisitor", "CommandVisitor", "ProcessStages", "TransactionApplier", "Layout", "KeyLayout", "ValueWriter" ],
+      "methods" : [ {
+        "name" : "markedAsDeleted",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "evaluate",
+        "visibility" : "public",
+        "methodCalls" : [ "orElseGet", "expression", "get", "add", "put", "includePath", "isEmpty", "ordinal", "includes", "of", "continues", "min", "endNode", "equals", "doubleValue", "setValue", "length", "lastRelationship", "setState", "getCost", "getState", "evaluate", "empty" ]
+      }, {
+        "name" : "blockFlushed",
+        "visibility" : "public",
+        "methodCalls" : [ "blockFlushed" ]
+      }, {
+        "name" : "mergedBlocks",
+        "visibility" : "public",
+        "methodCalls" : [ "mergedBlocks" ]
+      }, {
+        "name" : "mergeIterationFinished",
+        "visibility" : "public",
+        "methodCalls" : [ "mergeIterationFinished" ]
+      }, {
+        "name" : "mergeStarted",
+        "visibility" : "public",
+        "methodCalls" : [ "mergeStarted" ]
+      }, {
+        "name" : "entriesMerged",
+        "visibility" : "public",
+        "methodCalls" : [ "entriesMerged", "addAndGet" ]
+      }, {
+        "name" : "entryAdded",
+        "visibility" : "public",
+        "methodCalls" : [ "entryAdded" ]
+      }, {
+        "name" : "scanCompletedEnded",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "scanCompletedStarted",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "compressionRatio",
+        "visibility" : "public",
+        "methodCalls" : [ "position", "compressionRatio" ]
+      }, {
+        "name" : "position",
+        "visibility" : "public",
+        "methodCalls" : [ "toIntExact", "get", "batchStartPosition", "position", "remaining", "limit", "beginChecksum", "prepareForFlush", "checkState", "requireNonNegative", "mark", "getLogVersion", "setLogPosition", "print", "min", "positionAndGet", "size", "newPosition" ]
+      }, {
+        "name" : "mark",
+        "visibility" : "public",
+        "methodCalls" : [ "mark" ]
+      }, {
+        "name" : "threadLocalReporter",
+        "visibility" : "public",
+        "methodCalls" : [ "threadLocalReporter" ]
+      }, {
+        "name" : "error",
+        "visibility" : "public",
+        "methodCalls" : [ "isErrorEnabled", "log", "getMessage", "javaLevel", "println", "printStackTrace", "authenticatedUser", "subject", "database", "executingUser", "connectionInfo", "emptyList", "get", "getFormattedMessage", "error" ]
+      }, {
+        "name" : "shouldIncludeRelationship",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "shouldIncludeRelationshipProperty",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "unused",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "decorateTokenHolders",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "shouldIncludeNodeProperty",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "removed",
+        "visibility" : "public",
+        "methodCalls" : [ "before", "put" ]
+      }, {
+        "name" : "shouldIncludeNode",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "filterLabels",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "property",
+        "visibility" : "public",
+        "methodCalls" : [ "getOrCreateId", "property", "getState", "getRuleContexts", "enterOuterAlt", "recover", "setState", "reportError", "getRuleContext", "enterRule", "exitRule", "match", "propertyKeyName" ]
+      }, {
+        "name" : "labelField",
+        "visibility" : "public",
+        "methodCalls" : [ "labelField", "emptyList", "setLabelField" ]
+      }, {
+        "name" : "labels",
+        "visibility" : "public",
+        "methodCalls" : [ "labels", "addAll", "get" ]
+      }, {
+        "name" : "startId",
+        "visibility" : "public",
+        "methodCalls" : [ "startId", "setFirstNode" ]
+      }, {
+        "name" : "endOfEntity",
+        "visibility" : "public",
+        "methodCalls" : [ "getOrCreateIds", "putSorted", "allocator", "collectEntityViolatingConstraint", "isEmpty", "put", "entityTokens", "sort", "toArray", "setInUse", "longValue", "clear", "getFirstNode", "apply", "getSecondNode", "intValue", "freeUnusedId", "setFirstInSecondChain", "setFirstPrevRel", "endOfEntity", "prepareForCommit", "setFirstInFirstChain", "setSecondPrevRel", "getId", "collectBadRelationship", "collectRelationshipViolatingConstraint", "setNextProp", "setId", "getType", "increment", "createAndWritePropertyChain", "updateRecord", "inUse", "namedProperties", "reset", "nextId" ]
+      }, {
+        "name" : "propertyId",
+        "visibility" : "public",
+        "methodCalls" : [ "propertyId" ]
+      }, {
+        "name" : "id",
+        "visibility" : "public",
+        "methodCalls" : [ "markFree", "databaseId", "uuid", "toString", "internalQueryId", "numberOfIdsFromCombinedId", "idFromCombinedId", "updateRecord", "setId", "encodeValue", "clear", "allocator", "addPropertyBlock", "id", "setInUse", "max", "nextId", "of" ]
+      }, {
+        "name" : "properties",
+        "visibility" : "public",
+        "methodCalls" : [ "initNode", "initRelationship", "initEmptyRelationship", "properties", "initRelationshipProperties", "longReference", "getNextProp", "initNodeProperties", "getHighId", "get", "reportError", "sync", "LA", "getState", "enterRule", "enterOuterAlt", "exitRule", "setState", "map", "getRuleContext", "recover", "parameter" ]
+      }, {
+        "name" : "type",
+        "visibility" : "public",
+        "methodCalls" : [ "isUpdateLock", "numberOfHolders", "printf", "date", "setState", "match", "typePart", "getState", "getInterpreter", "enterRule", "getRuleContext", "adaptivePredict", "reportError", "exitRule", "recover", "enterOuterAlt", "sync", "getType", "type", "getOrCreateId", "setType", "entityToken" ]
+      }, {
+        "name" : "reset",
+        "visibility" : "public",
+        "methodCalls" : [ "reset", "rollback", "isTransactionOpen", "isConnected", "usedHeap", "usedNative", "checkNotCypherWorkerThread", "release", "formatted", "limit", "position", "getAsBoolean", "checkAllocatedNativeBytes", "releaseNative", "releaseHeap", "getAndSet", "get", "warn", "compareAndSet", "closeTransaction", "debug", "clearImpersonation", "set", "unpin", "up", "fill", "resetToMark", "isPossibleToReset", "none", "clear", "resetState", "setInUse", "nanoTime", "countBytesWritten", "longValue", "setId" ]
+      }, {
+        "name" : "endId",
+        "visibility" : "public",
+        "methodCalls" : [ "endId", "setSecondNode" ]
+      }, {
+        "name" : "currentScore",
+        "visibility" : "public",
+        "methodCalls" : [ "getCurrentDoc" ]
+      }, {
+        "name" : "remaining",
+        "visibility" : "public",
+        "methodCalls" : [ "remaining" ]
+      }, {
+        "name" : "visitDeletedNode",
+        "visibility" : "public",
+        "methodCalls" : [ "visitDeletedNode", "single", "addTokenUpdate", "change", "sort", "labels", "next", "nodeDelete", "add" ]
+      }, {
+        "name" : "visitValueIndexUpdate",
+        "visibility" : "public",
+        "methodCalls" : [ "visitValueIndexUpdate", "putValueUpdate", "getId" ]
+      }, {
+        "name" : "visitNodePropertyChanges",
+        "visibility" : "public",
+        "methodCalls" : [ "single", "nodeIsAddedInThisBatch", "size", "put", "visitNodePropertyChanges", "propertyKeyId", "value", "nodeAddProperty", "nodeChangeProperty", "nodeRemoveProperty", "each" ]
+      }, {
+        "name" : "visitNodeLabelChanges",
+        "visibility" : "public",
+        "methodCalls" : [ "size", "toSortedArray", "newSetWith", "visitNodeLabelChanges", "change", "next", "nodeIsAddedInThisBatch", "single", "labels", "addAll", "addTokenUpdate", "addLabelToNode", "removeLabelFromNode", "each", "add", "contains" ]
+      }, {
+        "name" : "visitAddedIndex",
+        "visibility" : "public",
+        "methodCalls" : [ "visitAddedIndex", "createSchemaRule" ]
+      }, {
+        "name" : "visitRemovedConstraint",
+        "visibility" : "public",
+        "methodCalls" : [ "visitRemovedConstraint", "visitRemovedIndex", "dropSchemaRule", "constraintsGetSingle", "getId", "indexGetForSchema", "getAsLong", "enforcesUniqueness", "build", "from", "isPresent", "getOwningConstraintId" ]
+      }, {
+        "name" : "visitCreatedPropertyKeyToken",
+        "visibility" : "public",
+        "methodCalls" : [ "visitCreatedPropertyKeyToken", "createPropertyKeyToken" ]
+      }, {
+        "name" : "visitCreatedNode",
+        "visibility" : "public",
+        "methodCalls" : [ "visitCreatedNode", "nodeCreate" ]
+      }, {
+        "name" : "visitRemovedIndex",
+        "visibility" : "public",
+        "methodCalls" : [ "visitRemovedIndex", "dropSchemaRule" ]
+      }, {
+        "name" : "visitCreatedLabelToken",
+        "visibility" : "public",
+        "methodCalls" : [ "visitCreatedLabelToken", "createLabelToken" ]
+      }, {
+        "name" : "visitCreatedRelationshipTypeToken",
+        "visibility" : "public",
+        "methodCalls" : [ "visitCreatedRelationshipTypeToken", "createRelationshipTypeToken" ]
+      }, {
+        "name" : "visitRelationshipModifications",
+        "visibility" : "public",
+        "methodCalls" : [ "nodeIsModifiedInThisBatch", "containsKey", "checkState", "size", "put", "next", "single", "addTokenUpdate", "change", "type", "visitRelationshipModifications", "relModify", "relRemoveProperty", "propertyKeyId", "relChangeProperty", "each", "value", "creations", "deletions", "add", "forEach", "updates" ]
+      }, {
+        "name" : "visitAddedConstraint",
+        "visibility" : "public",
+        "methodCalls" : [ "visitAddedConstraint", "createSchemaRule", "asPropertyTypeConstraint", "asKeyConstraint", "asUniquenessConstraint", "createNodeLabelExistenceConstraint", "asNodeLabelExistenceConstraint", "toString", "createPropertyTypeConstraint", "createRelationshipEndpointLabelConstraint", "createExistenceConstraint", "asRelationshipEndpointLabelConstraint", "newRuleId", "type" ]
+      }, {
+        "name" : "visitKernelUpgrade",
+        "visibility" : "public",
+        "methodCalls" : [ "visitKernelUpgrade", "upgrade" ]
+      }, {
+        "name" : "sample",
+        "visibility" : "public",
+        "methodCalls" : [ "buildNonUniqueIndexSample", "isUnique", "result", "seek", "initValuesAsLowest", "key", "get", "compareValue", "newKey", "initialize", "copyKey", "initValuesAsHighest", "next", "createSampler", "sampleIndex", "getIndexReader", "maybeRefreshBlocking", "isEmpty", "sample" ]
+      }, {
+        "name" : "create",
+        "visibility" : "public",
+        "methodCalls" : [ "valueOf", "newInstance", "getClass", "getConstructors", "defaultFactory", "isAssignableFrom", "getParameterTypes", "shouldBeInteractive", "getInputStream", "getHistoryBehaviour", "getFailBehavior", "isInteractive", "isNegative", "isZero", "noTimeout", "loadFailedSandboxed", "signature", "getName", "instantiateUpdater", "userDescription", "checkpoint", "onCheckpointingCompleted", "onFailure", "beginDatabaseFlush", "pageCacheTracer", "stream", "createIndexes", "getDescriptor", "getIndexPopulationProgress", "tokenHolders", "asIndexPopulationFailure", "empty", "onCreationCompleted", "updateValue", "getProgress", "map", "size", "getIndexProxies", "getPopulationFailure", "onUpdate", "contains", "getState", "contextFactory", "writable", "getInternalLogProvider", "loggingClass", "getLog", "getDatabaseName", "addMonitorListener", "internalCreate", "descriptor", "toString", "schema", "instantiateTree", "isUnique", "immediate", "clear", "globalAllocator", "getFileName", "resolveSibling", "getStoreFile", "instantiateValueValidator", "archiveIndex", "withDependencyResolver", "withMonitors", "withTag", "builder", "withReadOnlyChecker", "build", "directoriesByProvider", "position", "getByteOffset", "usesSegments", "getStartPosition", "temporaryFindPreviousChecksumBeforePosition", "getPreviousLogFileChecksum", "getSegmentBlockSize", "getLogFormatVersion", "createRelationshipPropertyUniquenessConstraint", "createNodePropertyUniquenessConstraint", "createPropertyExistenceConstraint", "createRelationshipKeyConstraint", "assertInUnterminatedTransaction", "createNodeKeyConstraint", "createPropertyTypeConstraint", "assertInOpenTransaction", "createIndexDefinition", "resolveDependency", "get", "lazySingleton", "getDependencyResolver", "read", "copyOf", "markSupported", "closeAllSilently", "of", "newInputStream", "longest", "mark", "toMillis", "prestartAllCoreThreads", "currentTimeMillis", "memoryPool", "createForPool", "routingContext", "selectedDefaultDatabase", "getAndIncrement", "database", "memoryTracker", "databaseDoesNotExist", "loginContext", "info", "registerListener", "beginTransaction", "getDatabaseReference", "isEmpty", "ensureNotOpen", "prepareFolder", "reserveIndexFailureStorage", "getIndexFolder", "getIndexWriter", "context", "allocateHeap", "containsKey", "newUnused", "getClassLoader", "newProxyInstance", "subject", "createUnbound", "authenticatedUser", "getLoginContext", "getClientConnectionInfo", "onTransactionBound", "getTxMetadata", "executingUser", "property", "packages", "register", "getType", "registerClasses", "toArray", "addLazyBinding", "clientAddress", "getRemoteAddr", "id", "getRequestURI", "serverAddress", "getCurrentJettyHttpConnection", "getServerPort", "getScheme", "getServerName", "getRemotePort", "wrapAndKeep", "create", "deleteFile", "put", "fileExists", "open", "defaultIdMonitor", "equals", "assertValidUsername", "persistUsers", "name", "add", "createPageCursorTracer", "createVersionContext" ]
+      }, {
+        "name" : "includeSample",
+        "visibility" : "public",
+        "methodCalls" : [ "isUnique", "includeSample" ]
+      }, {
+        "name" : "newPopulatingUpdater",
+        "visibility" : "public",
+        "methodCalls" : [ "writer", "initialize", "isUnique", "assertOpen", "toEquivalentUpdate", "add", "asValueUpdate", "ignore", "incrementAndGet", "process", "newPopulatingUpdater" ]
+      }, {
+        "name" : "markAsFailed",
+        "visibility" : "public",
+        "methodCalls" : [ "getBytes", "storeIndexFailure", "markAsFailed" ]
+      }, {
+        "name" : "scanCompleted",
+        "visibility" : "public",
+        "methodCalls" : [ "getCause", "isEmpty", "beginFileFlush", "currentThread", "enterPhase", "isUnique", "newLocalAllocator", "getStoreFile", "scanCompletedStarted", "flushTreeAndMarkAs", "interrupt", "getFileName", "cancelled", "resolveSibling", "scanCompletedEnded", "allConflicts", "throwIfUnchecked", "countDown", "doneAdding", "scanCompleted" ]
+      }, {
+        "name" : "add",
+        "visibility" : "public",
+        "methodCalls" : [ "assign", "getName", "addParents", "getLog4jMarker", "getMarker", "id", "include", "toTypeMap", "temporaryTypeMapFrom", "createNew", "includes", "writer", "initialize", "process", "write", "max", "remaining", "position", "apply", "getCause", "entryAdded", "entrySize", "isEmpty", "removeFirst", "name", "toUpperCase", "update", "change", "filter", "iterator", "size", "map", "not", "stream", "addDocuments", "getMessage", "isBlank", "forEach", "toAbsolutePath", "isDirectory", "readString", "newDirectoryStream", "copyOf", "setLabelField", "firstDynamicLabelRecordId", "getDynamicLabelRecords", "getUsedDynamicLabelRecords", "getId", "allocateRecordsForDynamicLabels", "getDynamicLabelStore", "dynamicPointer", "ensureHeavy", "getDynamicLabelsArray", "parseInlined", "concatAndSort", "getLabelField", "putSorted", "getLabelsRemoved", "getIndexesRemoved", "getRelationshipsCreated", "getConstraintsRemoved", "containsUpdates", "getLabelsAdded", "getNodesDeleted", "getSystemUpdates", "getNodesCreated", "getConstraintsAdded", "getIndexesAdded", "getPropertiesSet", "getRelationshipsDeleted", "containsSystemUpdates", "addAndGet", "checkState", "run", "executeWithExecutor", "submit", "close", "checkForComodification", "addLast", "hashCode", "remove", "arraycopy", "compareAndSet", "length", "addToSize", "indexFor", "hash", "addExact", "duration", "totalDays", "plusDays", "totalMonths", "plusMonths", "nullableAddDocument", "documentRepresentingProperties", "newTermForChangeOrRemove", "getEntityId", "values", "updateOrDeleteDocument", "ignore", "updateAsDocument", "add", "getEntityTokenIds", "getIfAbsentPut", "schema", "materialize", "append", "accept", "simpleName", "equals", "format", "requireNonNull", "type", "visitInsn", "coerce", "estimatedHeapUsage", "internalAdd", "valueRepresentation", "sizeOf", "allocateHeap", "put", "toLowerCase", "assertValidArithmetic", "replacement", "nanosOfDay", "plus", "plusNanos", "get", "noSuchTemporalField" ]
+      }, {
+        "name" : "createIndexes",
+        "visibility" : "public",
+        "methodCalls" : [ "modify", "startPopulation" ]
+      }, {
+        "name" : "activateIndex",
+        "visibility" : "public",
+        "methodCalls" : [ "name", "getDescriptor", "activate", "getIndexProxy", "info", "awaitStoreScanCompleted", "interrupted" ]
+      }, {
+        "name" : "dropIndex",
+        "visibility" : "public",
+        "methodCalls" : [ "dropIndex", "schedule", "internalIndexDrop", "size", "add", "youngestObservableHorizon", "adaptivePredict", "getInterpreter", "recover", "labelType", "getState", "enterOuterAlt", "reportError", "sync", "setState", "match", "enterRule", "getRuleContext", "nonEmptyNameList", "exitRule", "symbolicNameOrStringParameter", "LA" ]
+      }, {
+        "name" : "applyUpdates",
+        "visibility" : "public",
+        "methodCalls" : [ "asList" ]
+      }, {
+        "name" : "validate",
+        "visibility" : "public",
+        "methodCalls" : [ "exact", "getDelegate", "lock", "unlock", "readLock", "add", "newValueReader", "schedule", "getPropertyIds", "values", "newAllEntriesValueReader", "query", "next", "hasNext", "unconstrained", "throwSizeViolationException", "size", "userDescription", "isEmpty", "getVersionContext", "resetObsoleteHeadState", "handle", "validate", "validateSettingNames", "forEach", "collect", "settingNames", "asLazy", "transaction", "orElse", "getReasonIfTerminated", "code", "classification", "rollbackTransaction", "filter", "getQuery", "getAuthority", "normalize", "name", "assertLoadAllowed", "get", "getMessage", "getHost", "indexEntryConflict", "schema", "closeAllUnchecked" ]
+      }, {
+        "name" : "consistencyCheck",
+        "visibility" : "public",
+        "methodCalls" : [ "isInconsistent", "isValid", "getInstance", "openAllNeoStores", "getDatabaseName", "textual", "ignore", "defaultMemoryLimiter", "start", "formatSpecificDatabaseLayout", "create", "dirtyOnStartup", "bind", "exception", "isConsistent", "getClass", "generation", "pagedFile", "unstableGeneration", "stableGeneration", "check", "io", "awaitAllSubtasks", "path", "consistencyCheck" ]
+      }, {
+        "name" : "estimateNumberOfEntries",
+        "visibility" : "public",
+        "methodCalls" : [ "estimateNumberOfEntriesInTree", "allDocumentsReader", "maxCount", "estimateNumberOfEntries" ]
+      }, {
+        "name" : "snapshotFiles",
+        "visibility" : "public",
+        "methodCalls" : [ "getDelegate", "readLock", "getStoreFile", "unlock", "lock", "add", "concatResourceIterators", "ensureOpen", "iterator", "snapshot", "getIndexFailureFile", "closeAll", "getPartitions", "addSuppressed", "asResourceIterator", "getStoredIndexFailure", "size", "snapshotFiles", "emptyResourceIterator" ]
+      }, {
+        "name" : "refresh",
+        "visibility" : "public",
+        "methodCalls" : [ "getDelegate", "readLock", "unlock", "lock", "collect", "map", "toUnmodifiableSet", "stream", "onRefresh", "maybeRefreshBlocking", "refresh" ]
+      }, {
+        "name" : "force",
+        "visibility" : "public",
+        "methodCalls" : [ "getDelegate", "unlock", "readLock", "checkpoint", "flush", "isReadOnly", "markAsOnline", "maybeRefreshBlocking", "caught", "shouldRetry", "force" ]
+      }, {
+        "name" : "newValueReader",
+        "visibility" : "public",
+        "methodCalls" : [ "valueOf", "getDelegate", "readLock", "lock", "indexIsStillPopulating", "getDescriptor", "unlock", "assertOpen", "getIndexReader", "newValueReader" ]
+      }, {
+        "name" : "sizeInBytes",
+        "visibility" : "public",
+        "methodCalls" : [ "size", "getIndexFolder", "sizeInBytes", "fileSize" ]
+      }, {
+        "name" : "newAllEntriesValueReader",
+        "visibility" : "public",
+        "methodCalls" : [ "key", "initialize", "partitionedSeek", "seek", "initValuesAsHighest", "get", "initValuesAsLowest", "newKey", "add", "close", "getEntityId", "asValues", "partition", "toList", "stream", "allDocumentsReader", "size", "map", "collect", "toArray", "getIndexReader", "closeAllUnchecked", "emptyIterator", "next", "hasNext", "iterator", "newAllEntriesReader", "newAllEntriesValueReader" ]
+      }, {
+        "name" : "insertFrom",
+        "visibility" : "public",
+        "methodCalls" : [ "writer", "newKey", "indexUpdateIgnoreStrategy", "values", "schedule", "indexEntryConflict", "applyAsLong", "threadLocalReporter", "initialize", "closeAllUnchecked", "test", "newAllEntriesValueReader", "process", "schema", "getPropertyIds", "accessClosedDirectories", "remove", "add", "stringValue", "next", "hasNext", "refresh", "newUpdater", "insertFrom" ]
+      }, {
+        "name" : "newUpdater",
+        "visibility" : "public",
+        "methodCalls" : [ "update", "getDelegate", "get", "add", "process", "close", "readLock", "getDescriptor", "lock", "unlock", "assertTreeOpen", "initialize", "schema", "indexUpdateIgnoreStrategy", "assertWritable", "assertOpen", "newKey", "writer", "isReadOnly", "getIndexUpdater", "newUpdater" ]
+      }, {
+        "name" : "drop",
+        "visibility" : "public",
+        "methodCalls" : [ "max", "stop", "prepareToDrop", "deleteDatabaseFilesOnDrop", "databaseDrop", "dropPopulation", "compareAndSet", "asString", "getPopulationFailure", "info", "getDelegate", "getIndexUserDescription", "get", "min", "actualSize", "drop", "awaitCompletion", "cancel", "close", "getIndexFolder", "cleanupFolder", "lock", "unlock", "isReadOnly", "dropConstraint", "assertInUnterminatedTransaction", "isConstraintIndex", "dropIndexDefinitions", "runAll", "archiveIndex", "clear", "closeTree", "setDeleteOnClose", "closeResources", "removeStatisticsForIndex", "reportChangeInSize", "getAndSet", "getDescriptor", "readLock" ]
+      }, {
+        "name" : "exclude",
+        "visibility" : "public",
+        "methodCalls" : [ "exclude", "addToValue", "length", "remove" ]
+      }, {
+        "name" : "include",
+        "visibility" : "public",
+        "methodCalls" : [ "include", "length", "addToValue" ]
+      }, {
+        "name" : "visitRelationshipCount",
+        "visibility" : "public",
+        "methodCalls" : [ "of", "add" ]
+      }, {
+        "name" : "visitNodeCount",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "visitPropertyKeyTokenCommand",
+        "visibility" : "public",
+        "methodCalls" : [ "visit", "isReverseStep", "addPropertyKeyToken", "getPropertyKeyTokenStore" ]
+      }, {
+        "name" : "visitRelationshipCommand",
+        "visibility" : "public",
+        "methodCalls" : [ "visitRelationshipCommand", "acquireRelationshipLock", "getKey", "getAfter", "getId", "visit", "getRelationshipStore", "add" ]
+      }, {
+        "name" : "visitRelationshipTypeTokenCommand",
+        "visibility" : "public",
+        "methodCalls" : [ "visit", "isReverseStep", "addRelationshipTypeToken", "getRelationshipTypeTokenStore" ]
+      }, {
+        "name" : "visitRelationshipGroupCommand",
+        "visibility" : "public",
+        "methodCalls" : [ "getAfter", "getId", "visit", "getRelationshipGroupStore" ]
+      }, {
+        "name" : "visitGroupDegreeCommand",
+        "visibility" : "public",
+        "methodCalls" : [ "delta", "groupId", "increment", "direction", "visit" ]
+      }, {
+        "name" : "visitSchemaRuleCommand",
+        "visibility" : "public",
+        "methodCalls" : [ "getId", "getAfter", "visit", "getSchemaRule", "getKey", "getMode", "getSchemaStore" ]
+      }, {
+        "name" : "visitNodeCountsCommand",
+        "visibility" : "public",
+        "methodCalls" : [ "visit", "delta", "labelId", "incrementNodeCount" ]
+      }, {
+        "name" : "visitMetaDataCommand",
+        "visibility" : "public",
+        "methodCalls" : [ "safeCastLongToByte", "getAfter", "setKernelVersion", "getValue", "getForVersion", "visit" ]
+      }, {
+        "name" : "visitIndexUpdateCommand",
+        "visibility" : "public",
+        "methodCalls" : [ "getIndex", "add", "getAfter", "getBefore", "mode", "getEntityId", "getIndexId", "remove", "change", "visit" ]
+      }, {
+        "name" : "visitNodeCommand",
+        "visibility" : "public",
+        "methodCalls" : [ "getDynamicLabelStore", "visitNodeCommand", "getKey", "acquireNodeLock", "getId", "visit", "getNodeStore", "add", "getDynamicLabelRecords", "getAfter" ]
+      }, {
+        "name" : "visitPropertyCommand",
+        "visibility" : "public",
+        "methodCalls" : [ "getArrayStore", "getStringStore", "getSchemaRuleId", "acquireRelationshipLock", "getRelId", "getNodeId", "visitPropertyCommand", "isSchemaSet", "acquireCustomLock", "acquireNodeLock", "getDeletedRecords", "isLight", "isCreated", "get", "getId", "inUse", "getBefore", "computeIfAbsent", "visit", "getPropertyStore", "add", "isNodeSet", "isRelSet", "getType", "getAfter", "propertyBlocks", "getValueRecords" ]
+      }, {
+        "name" : "visitLabelTokenCommand",
+        "visibility" : "public",
+        "methodCalls" : [ "visit", "isReverseStep", "getLabelTokenStore", "addLabelToken" ]
+      }, {
+        "name" : "visitRelationshipCountsCommand",
+        "visibility" : "public",
+        "methodCalls" : [ "visit", "endLabelId", "delta", "typeId", "incrementRelationshipCount", "startLabelId" ]
+      }, {
+        "name" : "preStart",
+        "visibility" : "public",
+        "methodCalls" : [ "redirectError", "redirectOutput", "addHomeAndConf", "inheritIO" ]
+      }, {
+        "name" : "postStart",
+        "visibility" : "public",
+        "methodCalls" : [ "write", "readAllBytes", "getErrorStream", "toMillis", "getInputStream", "join", "storePid", "postStart", "waitFor", "map", "closeAll", "exitValue", "getOutputStream", "pid", "waitUntilFullyFledged", "start", "waitUntilSuccessful", "installShutdownHook" ]
+      }, {
+        "name" : "visit",
+        "visibility" : "public",
+        "methodCalls" : [ "consumeTerms", "commandBatch", "lockRecoveryCommands", "get", "onSpinWait", "checkState", "submit", "compareAndSet", "txId", "apply", "kernelVersion", "isLessThan", "getCurrentLogPosition", "readLogEntry", "isAtLeast", "getTxId", "getAppendIndex", "getType", "info", "printf", "append", "toString", "values", "forEach", "bind", "stableGeneration", "unstableGeneration", "openRootCursor", "visitTree", "visitFreelist", "generation", "idProvider", "handle", "initialize", "setId", "visit", "size", "batchSize", "nextId", "newRecord", "add", "field", "acceptField" ]
+      }, {
+        "name" : "majorVersion",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "identifier",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "compatibleWith",
+        "visibility" : "public",
+        "methodCalls" : [ "identifier", "minorVersion", "majorVersion" ]
+      }, {
+        "name" : "minorVersion",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "fixedSize",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "toString",
+        "visibility" : "public",
+        "methodCalls" : [ "isUpdateLock", "stringRepresentation", "buildString", "getCompletedPercentage", "requireNonNullElse", "getVersion", "equals", "nodeReference", "getTransactionSequenceNumber", "getBase", "implementationName", "getStoreFile", "toArray", "propertyKey", "getRelationshipTypeById", "entityReference", "isClosed", "relationshipReference", "chunkId", "chunkMetadata", "getStartNode", "getEndNode", "getLeaseId", "addToString", "getDelegate", "getLatestCommittedTxWhenStarted", "consensusIndex", "getTimeStarted", "date", "commandCount", "getTimeCommitted", "leaseId", "getIndexDescriptor", "toStringInternal", "toBinaryString", "asValues", "convert", "databaseLayout", "defaultPathToString", "propertyType", "asPropertyTypeConstraint", "propertyText", "escapeName", "asArgs", "toLowerCase", "upgradeAllowed", "getStatusString", "lineNumber", "sourceDescription", "position", "getHost", "getPort", "isRange", "serialize", "getPorts", "shortName", "version", "javaValue", "isVoid", "reflectionToString", "getStoreVersionUserString", "describe", "forEachKeyValue", "getMajorVersion", "getMinorVersion", "getFormatName", "getStorageEngineName", "updateMode", "getEntityId", "label", "relationshipType", "metadata", "beforeAndAfterToString", "abs", "asLong", "getRelationshipCount", "getNodeCount", "getPropertyCount", "getPayloadSizeLongs", "parseLabelsField", "getFormatFamily", "getNextProp", "getType", "build", "getSingleValueLong", "getKeyIndexId", "isUseFixedReferences", "getSecondaryUnitId", "isCreated", "inUse", "getOwningNode", "additionalToString", "simpleName", "secondaryUnitToString", "isLight", "firstDynamicLabelRecordId", "getFileName", "getRecordDataSize", "getUsedDynamicLabelRecords", "values", "sum", "getRelationshipStore", "getIdGenerator", "getHighId", "range", "getRelationshipGroupStore", "numberOfRanges", "getNodeStore", "bytesToString", "numbersToBitString", "getLabelField", "parseInlined", "entityType", "schema", "getId", "getTransactionLogsDirectory", "fullName", "toAbsolutePath", "apply", "majorVersion", "add", "identifier", "minorVersion", "tryCloseResource", "stableGeneration", "unstableGeneration", "deleteCharAt", "first", "other", "getKey", "getValue", "hasNext", "iterator", "entrySet", "next", "getRefCount", "path", "getName", "getCoordinateReferenceSystem", "prettyPrint", "actualSize", "foreach", "value", "size", "id", "nodes", "relationships", "getTypeName", "lineSeparator", "getTimeWritten", "getTxId", "timestamp", "kernelVersion", "newPosition", "availableSpace", "getPageCount", "tryGetNumberOfPagesToEvict", "hexString", "collect", "indexOf", "isEmpty", "get", "joining", "set", "stream", "keySet", "map", "filter", "code", "toUri", "append", "forEach", "format", "toString", "getSimpleName", "getClass", "userDescription", "valueOf", "name", "transactionLogsRootDirectory", "formatted", "databasesDirectory", "writeTo", "accept", "numberOfHolders", "length" ]
+      }, {
+        "name" : "created",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "updatedTargetSize",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "acquired",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "disposed",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "updatedCurrentPeakSize",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "writeFloatingPoint",
+        "visibility" : "public",
+        "methodCalls" : [ "floatToIntBits", "doubleToLongBits", "writeFloat", "append", "write", "setSingleBlockValue", "setValueBlocks", "doubleToRawLongBits", "floatToRawIntBits", "intValue", "putDouble", "putFloat" ]
+      }, {
+        "name" : "writeTime",
+        "visibility" : "public",
+        "methodCalls" : [ "writeLocalTime", "writeHeader", "writeInt", "requireNonNull", "toLocalTime", "toNanoOfDay", "buffer", "fireTime", "time", "prettyPrint", "append", "writeTime", "encodeTime", "setValueBlocks", "getNanosOfDayUTC", "putInt", "putLong", "getOffset", "getTotalSeconds" ]
+      }, {
+        "name" : "beginArray",
+        "visibility" : "public",
+        "methodCalls" : [ "setType", "initializeArrayMeta", "initializeArray", "ordinal", "getArrayTypes", "writeListHeader", "append", "packArrayHeader", "put", "putInt" ]
+      }, {
+        "name" : "writeDuration",
+        "visibility" : "public",
+        "methodCalls" : [ "writeDurationWithTotalAvgSeconds", "writeInt", "buffer", "writeHeader", "fireDuration", "prettyPrint", "append", "duration", "writeDuration", "setValueBlocks", "encodeDuration", "putInt", "putLong" ]
+      }, {
+        "name" : "endArray",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "writeNull",
+        "visibility" : "public",
+        "methodCalls" : [ "writeMarker", "writeNull", "writeNoValue" ]
+      }, {
+        "name" : "writeInteger",
+        "visibility" : "public",
+        "methodCalls" : [ "writeInt", "append", "write", "setSingleBlock", "getRequiredBits", "setValueBlocks", "setSingleBlockValue", "intValue", "put", "putInt", "putShort", "putLong" ]
+      }, {
+        "name" : "writeLocalTime",
+        "visibility" : "public",
+        "methodCalls" : [ "writeInt", "writeHeader", "requireNonNull", "buffer", "writeTime", "fireLocalTime", "localTime", "append", "prettyPrint", "writeLocalTime", "setValueBlocks", "encodeLocalTime", "toNanoOfDay", "putLong" ]
+      }, {
+        "name" : "writeBoolean",
+        "visibility" : "public",
+        "methodCalls" : [ "setType", "writeMarker", "writeBoolean", "append", "write", "setSingleBlockValue", "put" ]
+      }, {
+        "name" : "writePoint",
+        "visibility" : "public",
+        "methodCalls" : [ "get", "format", "setType", "write", "toString", "requireNonNull", "firePoint", "append", "getTableId", "getTable", "writePoint", "encodePoint", "setValueBlocks", "putInt", "getName", "checkArgument", "putDouble", "getCode", "getDimension" ]
+      }, {
+        "name" : "writeByteArray",
+        "visibility" : "public",
+        "methodCalls" : [ "writeTo", "writeBytes", "wrappedBuffer", "append", "write", "putInt", "put" ]
+      }, {
+        "name" : "writeLocalDateTime",
+        "visibility" : "public",
+        "methodCalls" : [ "writeInt", "buffer", "writeHeader", "requireNonNull", "fireLocalDateTime", "prettyPrint", "localDateTime", "append", "writeLocalDateTime", "encodeLocalDateTime", "setValueBlocks", "getNano", "putLong", "putInt", "toEpochSecond" ]
+      }, {
+        "name" : "writeDate",
+        "visibility" : "public",
+        "methodCalls" : [ "writeHeader", "writeInt", "requireNonNull", "buffer", "fireDate", "append", "prettyPrint", "date", "writeDate", "encodeDate", "setValueBlocks", "toEpochDay", "putLong" ]
+      }, {
+        "name" : "writeDateTime",
+        "visibility" : "public",
+        "methodCalls" : [ "toLocalDateTime", "requireNonNull", "buffer", "getOffset", "writeInt", "writeHeader", "writeString", "fireDateTime", "datetime", "prettyPrint", "append", "writeDateTime", "encodeDateTime", "setValueBlocks", "getId", "putInt", "putLong", "getTotalSeconds", "getNano", "map", "toEpochSecond", "getZone" ]
+      }, {
+        "name" : "writeString",
+        "visibility" : "public",
+        "methodCalls" : [ "valueOf", "writeBytes", "writeMarker", "getBytes", "writeString", "encodeToString", "toString", "append", "write", "allocateStringRecords", "encode", "encodeString", "setType", "getPayloadSize", "setValueRecords", "setSingleBlockValue", "getRecordDataSize", "getId", "newArrayList", "intValue", "first", "putChar", "charAt", "length", "putInt" ]
+      }, {
+        "name" : "clearedCache",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "skippedIdsAtAllocation",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "markedAsReserved",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "markedAsFree",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "close",
+        "visibility" : "public",
+        "methodCalls" : [ "nanoTime", "cleanDbInfo", "removeShutdownHook", "getRuntime", "disconnect", "warn", "unregisterExternalReader", "shutdownNow", "awaitTermination", "doneWaitingOnLock", "assertClosed", "incrementUpdateStatisticsForIndex", "isLast", "getDelegate", "publishAsClosed", "closeTransaction", "assertTreeOpen", "checkNotCypherWorkerThread", "isCompleted", "getClass", "getSimpleName", "getCause", "getAllResults", "schema", "query", "unconstrained", "flushTreeAndMarkAs", "closeTree", "force", "fileExists", "deleteFile", "runAll", "closeResources", "unbindExecutingQuery", "internalClose", "join", "completeWriteProcess", "clearQueue", "complete", "updateRemaining", "checkState", "closeInner", "releasePool", "usedNative", "reset", "usedHeap", "isClosed", "releaseNative", "getAndSet", "debug", "notifyListenersSafely", "inWorkerThread", "compareAndSet", "onClose", "rollback", "queryExecution", "dispatchSafe", "commitLockedClose", "decrementAndGet", "lock", "markAsOnline", "toIntExact", "mkdirs", "write", "length", "getDirectory", "readBytes", "openInput", "resolve", "listAll", "openAsOutputStream", "getIndexCommit", "getIndexDirectory", "getFileName", "deleteDirectory", "closeInternal", "capacity", "applyPendingIndexUpdates", "getGlobalLife", "markHighIds", "stopFlushingPageCache", "bytesToString", "completed", "currentTimeMillis", "info", "getState", "duration", "applyAsync", "newBatch", "createIndexes", "getNodeCommands", "containsAnyEntityOrPropertyUpdate", "indexUpdates", "getRelationshipCommands", "toArray", "feed", "copyOf", "relationshipsRemoved", "nodesImported", "propertiesRemoved", "nodesRemoved", "sum", "contains", "beginFileFlush", "isDeleteOnClose", "flushAndForce", "create", "relationshipsImported", "percentageCompleted", "propertiesImported", "allocate", "longIterator", "setHighestPossibleIdInUse", "committingTransactionId", "activateIndex", "get", "entrySet", "notifyTransactionRollback", "getKey", "getVersionContext", "getIdGenerator", "getValue", "getRemoved", "transactionalMarker", "getAdded", "releasePageRange", "getStorageFile", "submit", "toSortedArray", "ordinal", "getRecordStore", "chain", "derefLatch", "releaseLatch", "isOpen", "awaitAllSubtasks", "nextClearBit", "addToSeenList", "stream", "unusedPage", "countDown", "cleanupClosed", "format", "writeLock", "readLock", "next", "hasNext", "onClosed", "accept", "arraysHeapSize", "fill", "releaseHeap", "arrayHeapSize", "unmap", "awaitUpdateApplication", "isEventuallyConsistent", "addAll", "size", "add", "poll", "dispose", "cleanupFolder", "enqueueTransactionBatchOfUpdates", "closeLogFile", "evictFromSystemCache", "prepareForFlush", "flush", "getBuffer", "markSessionDone", "unlock", "releaseLock", "releaseBuffer", "clean", "free", "run", "stopWatching", "increment", "faults", "pins", "evictions", "vectoredFaults", "filesTruncated", "pagesFlushed", "limitedMillis", "reportEvents", "limitedNumberOfTimes", "ioPerformed", "values", "getRefCount", "interrupt", "path", "currentThread", "append", "toString", "isEmpty", "idType", "closeAll", "clear", "unregisterCloseableResource", "done", "awaitCleanup", "addSuppressed", "cancel", "stop", "close", "deleteRecursively", "closeAllSilently", "constructor", "closeClass", "invokeSuper", "build", "release", "forEach", "removeListener", "shutdown", "closeAllUnchecked", "endBlock", "closeClient" ]
+      }, {
+        "name" : "markedAsUnreserved",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "skippedIdsAtHighId",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "markedAsUsed",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "checkpoint",
+        "visibility" : "public",
+        "methodCalls" : [ "force", "indexMapSnapshot", "getDescriptor", "userDescription", "storeFile", "forEachIndexProxy", "replace", "getName", "beginFileFlush", "getIdGenerator", "debug", "getFileName", "date", "printf", "checkpoint", "get" ]
+      }, {
+        "name" : "cached",
+        "visibility" : "public",
+        "methodCalls" : [ "newFixedThreadPool", "newCachedThreadPool" ]
+      }, {
+        "name" : "normalized",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "clearingCache",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "allocatedFromReused",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "stopped",
+        "visibility" : "public",
+        "methodCalls" : [ "debug" ]
+      }, {
+        "name" : "failed",
+        "visibility" : "public",
+        "methodCalls" : [ "debug", "failed", "signalFailure" ]
+      }, {
+        "name" : "started",
+        "visibility" : "public",
+        "methodCalls" : [ "percentChanged", "println", "info", "millis", "debug", "started" ]
+      }, {
+        "name" : "interrupted",
+        "visibility" : "public",
+        "methodCalls" : [ "debug" ]
+      }, {
+        "name" : "pauseDetected",
+        "visibility" : "public",
+        "methodCalls" : [ "warn" ]
+      }, {
+        "name" : "bridged",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "allocatedFromHigh",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "opened",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "markSessionDone",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      } ],
+      "imports" : [ "org.neo4j.index.internal.gbptree.RecoveryCleanupWorkCollector", "org.neo4j.annotations.api.PublicApi", "org.neo4j.graphdb.Path", "org.neo4j.graphdb.event.TransactionEventListener", "org.neo4j.graphdb.Transaction", "org.neo4j.graphdb.event.TransactionEventListenerAdapter", "org.neo4j.kernel.api.KernelTransaction", "org.neo4j.graphdb.event.TransactionData", "org.neo4j.graphdb.GraphDatabaseService", "java.lang.Math.ceil", "org.neo4j.io.fs.StoreChannel", "java.util.function.IntConsumer", "org.eclipse.collections.api.list.MutableList", "org.neo4j.io.memory.ScopedBuffer", "org.eclipse.collections.impl.factory.Lists", "org.neo4j.io.pagecache.ByteArrayPageCursor", "org.neo4j.kernel.impl.index.schema.BlockStorage.Cancellation.NOT_CANCELLABLE", "java.util.concurrent.CopyOnWriteArrayList", "org.neo4j.kernel.impl.index.schema.NativeIndexUpdater.initializeKeyFromUpdate", "org.neo4j.util.concurrent.Runnables.runAll", "java.util.concurrent.ExecutionException", "org.neo4j.io.memory.ByteBufferFactory", "java.util.List", "java.util.ArrayList", "java.util.stream.Collectors", "org.neo4j.internal.helpers.collection.Iterables.first", "org.neo4j.internal.helpers.Exceptions", "org.neo4j.kernel.api.index.IndexSample", "org.neo4j.index.internal.gbptree.DataTree.W_SPLIT_KEEP_ALL_LEFT", "org.neo4j.kernel.api.index.IndexPopulator", "org.neo4j.index.internal.gbptree.DataTree.W_BATCHED_SINGLE_THREADED", "org.neo4j.memory.MemoryTracker", "org.neo4j.kernel.api.index.IndexValueValidator", "java.util.concurrent.CountDownLatch", "org.neo4j.io.memory.ByteBufferFactory.Allocator", "org.neo4j.index.internal.gbptree.Writer", "org.neo4j.kernel.api.index.IndexEntryConflictHandler", "org.neo4j.kernel.api.index.IndexUpdater", "org.neo4j.io.ByteUnit.kibiBytes", "org.neo4j.kernel.impl.api.index.updater.DelegatingIndexUpdater", "java.nio.CharBuffer", "java.io.Reader", "org.neo4j.token.TokenHolders", "java.nio.ByteBuffer", "org.neo4j.internal.id.IdSequence", "org.neo4j.collection.PrimitiveLongCollections", "org.eclipse.collections.api.iterator.LongIterator", "org.eclipse.collections.api.set.primitive.LongSet", "org.eclipse.collections.api.IntIterable", "org.neo4j.internal.kernel.api.exceptions.schema.ConstraintValidationException", "org.neo4j.internal.kernel.api.Upgrade", "org.neo4j.storageengine.api.StorageProperty", "org.neo4j.internal.schema.ConstraintDescriptor", "java.util.function.Function", "org.neo4j.values.storable.ValueTuple", "org.neo4j.storageengine.api.ValueIndexEntryUpdate", "java.util.Collection", "org.neo4j.storageengine.api.UpdateMode", "java.util.concurrent.Callable", "org.neo4j.internal.kernel.api.InternalIndexState", "org.neo4j.storageengine.api.IndexEntryUpdate", "org.neo4j.kernel.impl.api.index.PhaseTracker", "org.neo4j.storageengine.api.TokenIndexEntryUpdate", "org.neo4j.internal.kernel.api.PopulationProgress", "org.neo4j.exceptions.KernelException", "org.neo4j.internal.schema.IndexDescriptor", "org.neo4j.common.Subject", "org.neo4j.kernel.impl.api.index.SwallowingIndexUpdater", "org.neo4j.graphdb.ResourceIterator", "org.neo4j.internal.helpers.collection.BoundedIterable", "org.neo4j.kernel.impl.index.schema.EntityTokenRange", "org.neo4j.kernel.impl.api.index.IndexUpdateMode", "java.util.Map", "java.util.Iterator", "java.util.function.LongPredicate", "org.neo4j.kernel.api.exceptions.index.IndexEntryConflictException", "org.neo4j.kernel.impl.index.schema.IndexUsageTracking", "org.neo4j.internal.helpers.collection.Iterators.emptyResourceIterator", "org.eclipse.collections.api.block.function.primitive.LongToLongFunction", "org.neo4j.kernel.impl.index.schema.ConsistencyCheckable", "org.neo4j.io.IOUtils", "org.neo4j.values.storable.Value", "java.util.Collections.emptyIterator", "org.neo4j.internal.helpers.progress.ProgressListener", "java.io.Closeable", "org.neo4j.internal.recordstorage.Command.RelationshipCountsCommand", "org.neo4j.internal.recordstorage.Command.GroupDegreeCommand", "org.neo4j.internal.recordstorage.Command.SchemaRuleCommand", "org.neo4j.internal.recordstorage.indexcommand.IndexUpdateCommand", "org.neo4j.internal.recordstorage.Command.NodeCommand", "org.neo4j.internal.recordstorage.Command.RelationshipCommand", "org.neo4j.internal.recordstorage.Command.LabelTokenCommand", "org.neo4j.internal.recordstorage.Command.NodeCountsCommand", "org.neo4j.internal.recordstorage.Command.RelationshipTypeTokenCommand", "org.neo4j.internal.recordstorage.Command.RelationshipGroupCommand", "org.neo4j.internal.recordstorage.Command.MetaDataCommand", "org.neo4j.internal.recordstorage.Command.PropertyCommand", "org.neo4j.internal.recordstorage.Command.PropertyKeyTokenCommand", "org.neo4j.storageengine.api.StorageCommand", "org.neo4j.internal.helpers.collection.Visitor", "org.neo4j.io.pagecache.PageCursor", "java.util.Comparator", "java.util.Queue", "java.time.Duration.ofMinutes", "org.neo4j.function.Factory", "java.util.concurrent.ConcurrentLinkedQueue", "java.time.ZonedDateTime", "java.time.LocalDate", "java.nio.charset.StandardCharsets", "java.time.OffsetTime", "java.time.LocalDateTime", "java.time.LocalTime", "org.neo4j.internal.id.range.ArrayBasedRange", "org.neo4j.configuration.GraphDatabaseSettings.DEFAULT_DATABASE_NAME", "org.neo4j.index.internal.gbptree.GBPTree.NO_HEADER_READER", "org.neo4j.index.internal.gbptree.Layout", "java.util.concurrent.atomic.AtomicInteger", "org.neo4j.collection.PrimitiveLongResourceIterator", "java.util.concurrent.ConcurrentHashMap", "org.neo4j.io.IOUtils.closeAllUnchecked", "org.neo4j.index.internal.gbptree.GBPTree", "java.util.Collections.emptySet", "org.neo4j.index.internal.gbptree.TreeFileNotFoundException", "org.neo4j.io.pagecache.PageCacheOpenOptions.MULTI_VERSIONED", "org.neo4j.internal.id.IdType", "org.neo4j.index.internal.gbptree.StructureWriteLog.structureWriteLog", "java.util.Arrays", "org.neo4j.collection.PrimitiveLongResourceCollections", "org.neo4j.internal.id.FreeIds", "org.neo4j.internal.helpers.progress.ProgressMonitorFactory", "org.neo4j.index.internal.gbptree.ValueHolder", "org.neo4j.internal.id.IdSlotDistribution", "java.nio.file.OpenOption", "java.util.function.Predicate", "java.util.Optional", "org.eclipse.collections.api.set.ImmutableSet", "org.neo4j.io.pagecache.context.CursorContextFactory", "org.neo4j.io.pagecache.tracing.FileFlushEvent", "java.io.UncheckedIOException", "org.eclipse.collections.impl.block.factory.Comparators.naturalOrder", "org.neo4j.configuration.Config", "org.neo4j.collection.PrimitiveLongResourceCollections.count", "java.util.Set", "org.neo4j.index.internal.gbptree.MultiRootGBPTree", "java.io.IOException", "java.util.concurrent.TimeUnit.NANOSECONDS", "java.util.Objects.requireNonNull", "java.lang.Math.max", "java.lang.management.ManagementFactory", "org.neo4j.scheduler.JobMonitoringParams.NOT_MONITORED", "org.neo4j.scheduler.JobHandle", "org.neo4j.scheduler.JobScheduler", "java.lang.String.format", "org.neo4j.util.Preconditions", "java.lang.System.nanoTime", "java.time.Duration", "java.lang.management.GarbageCollectorMXBean", "org.neo4j.scheduler.Group", "org.neo4j.util.VisibleForTesting", "java.util.concurrent.locks.ReentrantLock", "org.apache.commons.lang3.mutable.MutableLong", "org.neo4j.io.fs.FileSystemAbstraction", "org.neo4j.io.pagecache.tracing.PageCacheTracer", "org.neo4j.index.internal.gbptree.TreeNodeLayoutFactory", "org.neo4j.index.internal.gbptree.Seeker", "java.nio.file.NoSuchFileException", "org.neo4j.io.pagecache.context.CursorContext", "org.neo4j.internal.id.range.PageIdRange", "org.neo4j.internal.id.range.ContinuousIdRange", "java.util.concurrent.atomic.AtomicBoolean", "java.io.PrintStream", "org.neo4j.configuration.GraphDatabaseInternalSettings", "org.neo4j.internal.id.IdValidator.assertIdWithinMaxCapacity", "org.neo4j.index.internal.gbptree.GBPTreeVisitor", "org.neo4j.internal.id.IdValidator", "org.neo4j.index.internal.gbptree.RecoveryCleanupWorkCollector.immediate", "org.neo4j.internal.id.IdGenerator", "java.util.concurrent.atomic.AtomicLong", "org.neo4j.common.EmptyDependencyResolver", "java.util.function.LongSupplier", "org.neo4j.annotations.documented.ReporterFactory", "java.nio.file.Path", "java.util.concurrent.locks.Lock", "org.neo4j.io.pagecache.PageCache" ]
+    }, {
+      "name" : "Monitor",
+      "packageName" : "org.neo4j.kernel.recovery",
+      "extendedClasses" : [ "AutoCloseable", "Monitor" ],
+      "implementedInterfaces" : [ ],
+      "methods" : [ {
+        "name" : "markedAsDeleted",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "failToExtractInitialFileHeader",
+        "visibility" : "public",
+        "methodCalls" : [ "warn" ]
+      }, {
+        "name" : "recoveryNotRequired",
+        "visibility" : "public",
+        "methodCalls" : [ "toString", "info", "format" ]
+      }, {
+        "name" : "noCheckPointFound",
+        "visibility" : "public",
+        "methodCalls" : [ "info" ]
+      }, {
+        "name" : "recoveryRequiredAfterLastCheckPoint",
+        "visibility" : "public",
+        "methodCalls" : [ "info", "format" ]
+      }, {
+        "name" : "mergedBlocks",
+        "visibility" : "public",
+        "methodCalls" : [ "mergedBlocks" ]
+      }, {
+        "name" : "mergeIterationFinished",
+        "visibility" : "public",
+        "methodCalls" : [ "mergeIterationFinished" ]
+      }, {
+        "name" : "entriesMerged",
+        "visibility" : "public",
+        "methodCalls" : [ "entriesMerged", "addAndGet" ]
+      }, {
+        "name" : "mergeStarted",
+        "visibility" : "public",
+        "methodCalls" : [ "mergeStarted" ]
+      }, {
+        "name" : "entryAdded",
+        "visibility" : "public",
+        "methodCalls" : [ "entryAdded" ]
+      }, {
+        "name" : "blockFlushed",
+        "visibility" : "public",
+        "methodCalls" : [ "blockFlushed" ]
+      }, {
+        "name" : "scanCompletedStarted",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "scanCompletedEnded",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "threadFinished",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "threadCreated",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "potentialNativeMemoryLeak",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "insufficientHeapSize",
+        "visibility" : "public",
+        "methodCalls" : [ "insufficientHeapSize", "bytesToString", "printf" ]
+      }, {
+        "name" : "mayExceedRelationshipIdCapacity",
+        "visibility" : "public",
+        "methodCalls" : [ "mayExceedRelationshipIdCapacity", "printf" ]
+      }, {
+        "name" : "percentageCompleted",
+        "visibility" : "public",
+        "methodCalls" : [ "percentageCompleted" ]
+      }, {
+        "name" : "abundantHeapSize",
+        "visibility" : "public",
+        "methodCalls" : [ "abundantHeapSize", "bytesToString", "printf" ]
+      }, {
+        "name" : "completed",
+        "visibility" : "public",
+        "methodCalls" : [ "duration", "info", "millis", "completed", "peek", "addAndGet" ]
+      }, {
+        "name" : "doubleRelationshipRecordUnitsEnabled",
+        "visibility" : "public",
+        "methodCalls" : [ "doubleRelationshipRecordUnitsEnabled", "println" ]
+      }, {
+        "name" : "insufficientAvailableMemory",
+        "visibility" : "public",
+        "methodCalls" : [ "insufficientAvailableMemory", "printf", "bytesToString" ]
+      }, {
+        "name" : "mayExceedNodeIdCapacity",
+        "visibility" : "public",
+        "methodCalls" : [ "mayExceedNodeIdCapacity", "printf" ]
+      }, {
+        "name" : "recoveryCleanupStarted",
+        "visibility" : "public",
+        "methodCalls" : [ "info" ]
+      }, {
+        "name" : "recoveryCleanupFailed",
+        "visibility" : "public",
+        "methodCalls" : [ "format", "error", "getStackTrace" ]
+      }, {
+        "name" : "recoveryCleanupClosed",
+        "visibility" : "public",
+        "methodCalls" : [ "info" ]
+      }, {
+        "name" : "recoveryCleanupFinished",
+        "visibility" : "public",
+        "methodCalls" : [ "toString", "add", "duration", "info" ]
+      }, {
+        "name" : "recoveryCleanupRegistered",
+        "visibility" : "public",
+        "methodCalls" : [ "info" ]
+      }, {
+        "name" : "failedToOpenIndex",
+        "visibility" : "public",
+        "methodCalls" : [ "isDebugEnabled", "warn", "getMessage", "getId" ]
+      }, {
+        "name" : "defragmentingNodeRange",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "leafNode",
+        "visibility" : "public",
+        "methodCalls" : [ "add", "getIfAbsentPut" ]
+      }, {
+        "name" : "internalNode",
+        "visibility" : "public",
+        "methodCalls" : [ "getIfAbsentPut", "add" ]
+      }, {
+        "name" : "relationshipsImported",
+        "visibility" : "public",
+        "methodCalls" : [ "add", "sum" ]
+      }, {
+        "name" : "propertiesImported",
+        "visibility" : "public",
+        "methodCalls" : [ "sum", "add" ]
+      }, {
+        "name" : "toString",
+        "visibility" : "public",
+        "methodCalls" : [ "isUpdateLock", "stringRepresentation", "buildString", "getCompletedPercentage", "requireNonNullElse", "getVersion", "equals", "nodeReference", "getTransactionSequenceNumber", "getBase", "implementationName", "getStoreFile", "toArray", "propertyKey", "getRelationshipTypeById", "entityReference", "isClosed", "relationshipReference", "chunkId", "chunkMetadata", "getStartNode", "getEndNode", "getLeaseId", "addToString", "getDelegate", "getLatestCommittedTxWhenStarted", "consensusIndex", "getTimeStarted", "date", "commandCount", "getTimeCommitted", "leaseId", "getIndexDescriptor", "toStringInternal", "toBinaryString", "asValues", "convert", "databaseLayout", "defaultPathToString", "propertyType", "asPropertyTypeConstraint", "propertyText", "escapeName", "asArgs", "toLowerCase", "upgradeAllowed", "getStatusString", "lineNumber", "sourceDescription", "position", "getHost", "getPort", "isRange", "serialize", "getPorts", "shortName", "version", "javaValue", "isVoid", "reflectionToString", "getStoreVersionUserString", "describe", "forEachKeyValue", "getMajorVersion", "getMinorVersion", "getFormatName", "getStorageEngineName", "updateMode", "getEntityId", "label", "relationshipType", "metadata", "beforeAndAfterToString", "abs", "asLong", "getRelationshipCount", "getNodeCount", "getPropertyCount", "getPayloadSizeLongs", "parseLabelsField", "getFormatFamily", "getNextProp", "getType", "build", "getSingleValueLong", "getKeyIndexId", "isUseFixedReferences", "getSecondaryUnitId", "isCreated", "inUse", "getOwningNode", "additionalToString", "simpleName", "secondaryUnitToString", "isLight", "firstDynamicLabelRecordId", "getFileName", "getRecordDataSize", "getUsedDynamicLabelRecords", "values", "sum", "getRelationshipStore", "getIdGenerator", "getHighId", "range", "getRelationshipGroupStore", "numberOfRanges", "getNodeStore", "bytesToString", "numbersToBitString", "getLabelField", "parseInlined", "entityType", "schema", "getId", "getTransactionLogsDirectory", "fullName", "toAbsolutePath", "apply", "majorVersion", "add", "identifier", "minorVersion", "tryCloseResource", "stableGeneration", "unstableGeneration", "deleteCharAt", "first", "other", "getKey", "getValue", "hasNext", "iterator", "entrySet", "next", "getRefCount", "path", "getName", "getCoordinateReferenceSystem", "prettyPrint", "actualSize", "foreach", "value", "size", "id", "nodes", "relationships", "getTypeName", "lineSeparator", "getTimeWritten", "getTxId", "timestamp", "kernelVersion", "newPosition", "availableSpace", "getPageCount", "tryGetNumberOfPagesToEvict", "hexString", "collect", "indexOf", "isEmpty", "get", "joining", "set", "stream", "keySet", "map", "filter", "code", "toUri", "append", "forEach", "format", "toString", "getSimpleName", "getClass", "userDescription", "valueOf", "name", "transactionLogsRootDirectory", "formatted", "databasesDirectory", "writeTo", "accept", "numberOfHolders", "length" ]
+      }, {
+        "name" : "propertiesRemoved",
+        "visibility" : "public",
+        "methodCalls" : [ "add" ]
+      }, {
+        "name" : "relationshipsRemoved",
+        "visibility" : "public",
+        "methodCalls" : [ "add" ]
+      }, {
+        "name" : "nodesImported",
+        "visibility" : "public",
+        "methodCalls" : [ "sum", "add" ]
+      }, {
+        "name" : "nodesRemoved",
+        "visibility" : "public",
+        "methodCalls" : [ "add" ]
+      }, {
+        "name" : "treeShrink",
+        "visibility" : "public",
+        "methodCalls" : [ "treeShrink" ]
+      }, {
+        "name" : "checkpointCompleted",
+        "visibility" : "public",
+        "methodCalls" : [ "pagesFlushed", "getIoLimit", "ioPerformed", "addAndGet", "incrementAndGet", "getTimesLimited", "getMillisLimited", "checkpointCompleted" ]
+      }, {
+        "name" : "cleanupRegistered",
+        "visibility" : "public",
+        "methodCalls" : [ "getStoreFile", "recoveryCleanupRegistered", "cleanupRegistered" ]
+      }, {
+        "name" : "cleanupStarted",
+        "visibility" : "public",
+        "methodCalls" : [ "recoveryCleanupStarted", "getStoreFile", "cleanupStarted" ]
+      }, {
+        "name" : "noStoreFile",
+        "visibility" : "public",
+        "methodCalls" : [ "noStoreFile" ]
+      }, {
+        "name" : "cleanupFinished",
+        "visibility" : "public",
+        "methodCalls" : [ "getStoreFile", "recoveryCleanupFinished", "cleanupFinished" ]
+      }, {
+        "name" : "startupState",
+        "visibility" : "public",
+        "methodCalls" : [ "startupState" ]
+      }, {
+        "name" : "cleanupFailed",
+        "visibility" : "public",
+        "methodCalls" : [ "recoveryCleanupFailed", "getStoreFile", "cleanupFailed" ]
+      }, {
+        "name" : "checkpointStarted",
+        "visibility" : "public",
+        "methodCalls" : [ "checkpointStarted" ]
+      }, {
+        "name" : "cleanupClosed",
+        "visibility" : "public",
+        "methodCalls" : [ "recoveryCleanupClosed", "getStoreFile", "cleanupClosed" ]
+      }, {
+        "name" : "needRecreation",
+        "visibility" : "public",
+        "methodCalls" : [ "needRecreation" ]
+      }, {
+        "name" : "treeGrowth",
+        "visibility" : "public",
+        "methodCalls" : [ "treeGrowth" ]
+      }, {
+        "name" : "recordSkipped",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "reported",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "dataKeysSeen",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "acquiredFreelistPageId",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "releasedFreelistPageId",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "acquired",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "updatedCurrentPeakSize",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "disposed",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "created",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "updatedTargetSize",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "markSessionDone",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "close",
+        "visibility" : "public",
+        "methodCalls" : [ "nanoTime", "cleanDbInfo", "removeShutdownHook", "getRuntime", "disconnect", "warn", "unregisterExternalReader", "shutdownNow", "awaitTermination", "doneWaitingOnLock", "assertClosed", "incrementUpdateStatisticsForIndex", "isLast", "getDelegate", "publishAsClosed", "closeTransaction", "assertTreeOpen", "checkNotCypherWorkerThread", "isCompleted", "getClass", "getSimpleName", "getCause", "getAllResults", "schema", "query", "unconstrained", "flushTreeAndMarkAs", "closeTree", "force", "fileExists", "deleteFile", "runAll", "closeResources", "unbindExecutingQuery", "internalClose", "join", "completeWriteProcess", "clearQueue", "complete", "updateRemaining", "checkState", "closeInner", "releasePool", "usedNative", "reset", "usedHeap", "isClosed", "releaseNative", "getAndSet", "debug", "notifyListenersSafely", "inWorkerThread", "compareAndSet", "onClose", "rollback", "queryExecution", "dispatchSafe", "commitLockedClose", "decrementAndGet", "lock", "markAsOnline", "toIntExact", "mkdirs", "write", "length", "getDirectory", "readBytes", "openInput", "resolve", "listAll", "openAsOutputStream", "getIndexCommit", "getIndexDirectory", "getFileName", "deleteDirectory", "closeInternal", "capacity", "applyPendingIndexUpdates", "getGlobalLife", "markHighIds", "stopFlushingPageCache", "bytesToString", "completed", "currentTimeMillis", "info", "getState", "duration", "applyAsync", "newBatch", "createIndexes", "getNodeCommands", "containsAnyEntityOrPropertyUpdate", "indexUpdates", "getRelationshipCommands", "toArray", "feed", "copyOf", "relationshipsRemoved", "nodesImported", "propertiesRemoved", "nodesRemoved", "sum", "contains", "beginFileFlush", "isDeleteOnClose", "flushAndForce", "create", "relationshipsImported", "percentageCompleted", "propertiesImported", "allocate", "longIterator", "setHighestPossibleIdInUse", "committingTransactionId", "activateIndex", "get", "entrySet", "notifyTransactionRollback", "getKey", "getVersionContext", "getIdGenerator", "getValue", "getRemoved", "transactionalMarker", "getAdded", "releasePageRange", "getStorageFile", "submit", "toSortedArray", "ordinal", "getRecordStore", "chain", "derefLatch", "releaseLatch", "isOpen", "awaitAllSubtasks", "nextClearBit", "addToSeenList", "stream", "unusedPage", "countDown", "cleanupClosed", "format", "writeLock", "readLock", "next", "hasNext", "onClosed", "accept", "arraysHeapSize", "fill", "releaseHeap", "arrayHeapSize", "unmap", "awaitUpdateApplication", "isEventuallyConsistent", "addAll", "size", "add", "poll", "dispose", "cleanupFolder", "enqueueTransactionBatchOfUpdates", "closeLogFile", "evictFromSystemCache", "prepareForFlush", "flush", "getBuffer", "markSessionDone", "unlock", "releaseLock", "releaseBuffer", "clean", "free", "run", "stopWatching", "increment", "faults", "pins", "evictions", "vectoredFaults", "filesTruncated", "pagesFlushed", "limitedMillis", "reportEvents", "limitedNumberOfTimes", "ioPerformed", "values", "getRefCount", "interrupt", "path", "currentThread", "append", "toString", "isEmpty", "idType", "closeAll", "clear", "unregisterCloseableResource", "done", "awaitCleanup", "addSuppressed", "cancel", "stop", "close", "deleteRecursively", "closeAllSilently", "constructor", "closeClass", "invokeSuper", "build", "release", "forEach", "removeListener", "shutdown", "closeAllUnchecked", "endBlock", "closeClient" ]
+      }, {
+        "name" : "skippedIdsAtHighId",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "skippedIdsAtAllocation",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "opened",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "checkpoint",
+        "visibility" : "public",
+        "methodCalls" : [ "force", "indexMapSnapshot", "getDescriptor", "userDescription", "storeFile", "forEachIndexProxy", "replace", "getName", "beginFileFlush", "getIdGenerator", "debug", "getFileName", "date", "printf", "checkpoint", "get" ]
+      }, {
+        "name" : "clearingCache",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "markedAsReserved",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "started",
+        "visibility" : "public",
+        "methodCalls" : [ "percentChanged", "println", "info", "millis", "debug", "started" ]
+      }, {
+        "name" : "stopped",
+        "visibility" : "public",
+        "methodCalls" : [ "debug" ]
+      }, {
+        "name" : "interrupted",
+        "visibility" : "public",
+        "methodCalls" : [ "debug" ]
+      }, {
+        "name" : "failed",
+        "visibility" : "public",
+        "methodCalls" : [ "debug", "failed", "signalFailure" ]
+      }, {
+        "name" : "pauseDetected",
+        "visibility" : "public",
+        "methodCalls" : [ "warn" ]
+      }, {
+        "name" : "markedAsUnreserved",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "allocatedFromHigh",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "cached",
+        "visibility" : "public",
+        "methodCalls" : [ "newFixedThreadPool", "newCachedThreadPool" ]
+      }, {
+        "name" : "markedAsFree",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "clearedCache",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "markedAsUsed",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "normalized",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "bridged",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "allocatedFromReused",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      } ],
+      "imports" : [ "org.neo4j.collection.PrimitiveLongResourceIterator", "org.neo4j.kernel.impl.transaction.log.files.LogTailInformation", "org.neo4j.kernel.impl.transaction.log.CheckpointInfo", "org.neo4j.kernel.recovery.RecoveryStartInformation.NO_RECOVERY_REQUIRED", "org.neo4j.storageengine.api.LogVersionRepository.INITIAL_LOG_VERSION", "org.neo4j.kernel.recovery.RecoveryStartInformation.MISSING_LOGS", "org.neo4j.function.ThrowingSupplier", "org.neo4j.kernel.impl.transaction.log.files.LogFiles", "org.neo4j.exceptions.UnderlyingStorageException", "org.neo4j.kernel.impl.transaction.log.LogPosition", "org.neo4j.io.pagecache.ByteArrayPageCursor", "org.neo4j.kernel.impl.index.schema.BlockStorage.Cancellation.NOT_CANCELLABLE", "java.lang.Math.ceil", "java.util.function.IntConsumer", "org.neo4j.io.memory.ScopedBuffer", "org.neo4j.internal.kernel.api.PopulationProgress", "org.neo4j.kernel.impl.api.index.updater.DelegatingIndexUpdater", "org.neo4j.kernel.impl.index.schema.NativeIndexUpdater.initializeKeyFromUpdate", "org.neo4j.kernel.api.index.IndexUpdater", "org.neo4j.kernel.api.index.IndexValueValidator", "org.neo4j.internal.helpers.collection.Iterables.first", "org.neo4j.kernel.impl.api.index.PhaseTracker", "java.util.stream.Collectors", "org.neo4j.index.internal.gbptree.Writer", "java.util.concurrent.CopyOnWriteArrayList", "org.neo4j.storageengine.api.ValueIndexEntryUpdate", "org.neo4j.kernel.api.index.IndexSample", "org.neo4j.util.concurrent.Runnables.runAll", "org.neo4j.storageengine.api.UpdateMode", "org.neo4j.values.storable.Value", "org.neo4j.index.internal.gbptree.DataTree.W_BATCHED_SINGLE_THREADED", "org.neo4j.kernel.api.index.IndexEntryConflictHandler", "org.neo4j.index.internal.gbptree.DataTree.W_SPLIT_KEEP_ALL_LEFT", "org.neo4j.io.memory.ByteBufferFactory.Allocator", "org.neo4j.kernel.api.index.IndexPopulator", "org.neo4j.io.ByteUnit.kibiBytes", "org.neo4j.kernel.api.exceptions.index.IndexEntryConflictException", "org.neo4j.io.IOUtils", "org.neo4j.storageengine.api.IndexEntryUpdate", "java.util.concurrent.ThreadFactory", "org.neo4j.util.Preconditions.requirePositive", "org.neo4j.kernel.api.exceptions.Status.General.TransactionOutOfMemoryError", "org.neo4j.memory.MemoryPools.NO_TRACKING", "java.util.function.BooleanSupplier", "org.neo4j.util.Preconditions.requireNonNegative", "org.neo4j.internal.schema.IndexType", "org.neo4j.storageengine.api.StorageEngineFactory", "org.neo4j.internal.schema.IndexProviderDescriptor", "org.apache.commons.lang3.StringUtils", "org.neo4j.kernel.impl.api.index.IndexSamplingConfig", "org.neo4j.internal.schema.IndexDescriptor", "org.neo4j.storageengine.migration.StoreMigrationParticipant", "org.neo4j.internal.kernel.api.InternalIndexState", "org.neo4j.io.memory.ByteBufferFactory", "org.neo4j.kernel.lifecycle.LifecycleAdapter", "org.neo4j.kernel.KernelVersion", "org.neo4j.common.TokenNameLookup", "org.neo4j.values.ElementIdMapper", "org.neo4j.internal.schema.IndexPrototype", "org.neo4j.internal.schema.StorageEngineIndexingBehaviour", "org.neo4j.internal.schema.IndexConfigCompleter", "org.neo4j.internal.batchimport.cache.ByteArray", "org.neo4j.io.IOUtils.closeAllSilently", "org.neo4j.internal.batchimport.staging.Stage", "org.neo4j.internal.batchimport.staging.ExecutionSupervisors", "java.util.function.Function", "org.neo4j.kernel.impl.store.cursor.CachedStoreCursors", "org.neo4j.internal.batchimport.cache.NumberArrayFactory", "org.neo4j.storageengine.api.cursor.StoreCursors", "org.neo4j.kernel.impl.store.record.Record", "org.neo4j.internal.batchimport.stats.StatsProvider", "java.util.function.Supplier", "java.util.Collection", "org.neo4j.internal.batchimport.store.BatchingNeoStores", "org.neo4j.batchimport.api.input.Collector", "java.lang.System.currentTimeMillis", "org.neo4j.internal.batchimport.stats.Key", "org.neo4j.batchimport.api.input.InputChunk", "org.neo4j.internal.batchimport.stats.StepStats", "org.neo4j.batchimport.api.input.InputEntityVisitor", "org.neo4j.internal.batchimport.stats.Stat", "java.util.concurrent.Executors", "org.neo4j.batchimport.api.input.Input", "org.neo4j.internal.batchimport.stats.Keys", "org.neo4j.batchimport.api.InputIterator", "org.neo4j.internal.batchimport.stats.Stats", "org.neo4j.internal.batchimport.staging.ExecutionMonitor", "org.neo4j.internal.batchimport.staging.StageExecution", "org.neo4j.internal.batchimport.store.io.IoMonitor", "java.util.concurrent.atomic.LongAdder", "org.neo4j.internal.batchimport.cache.idmapping.IdMapper", "org.neo4j.internal.batchimport.staging.Step", "org.neo4j.batchimport.api.InputIterable", "org.neo4j.io.pagecache.PagedFile.PF_SHARED_WRITE_LOCK", "org.apache.commons.lang3.tuple.Pair", "org.neo4j.index.internal.gbptree.Generation.stableGeneration", "java.nio.file.StandardOpenOption.CREATE", "org.neo4j.index.internal.gbptree.GBPTreeConsistencyChecker.ConsistencyCheckState", "java.nio.ByteOrder", "java.nio.ByteBuffer", "org.neo4j.index.internal.gbptree.Header.CARRY_OVER_PREVIOUS_HEADER", "org.neo4j.function.ThrowingAction", "org.neo4j.index.internal.gbptree.GBPTreeOpenOptions.NO_FLUSH_ON_CLOSE", "org.neo4j.index.internal.gbptree.CursorCreator.bind", "java.nio.file.StandardOpenOption", "java.util.function.Consumer", "java.util.concurrent.CountDownLatch", "org.neo4j.memory.EmptyMemoryTracker", "org.neo4j.index.internal.gbptree.GenerationSafePointer.FIRST_STABLE_GENERATION", "org.neo4j.io.fs.StoreChannel", "org.neo4j.io.pagecache.PagedFile", "java.util.concurrent.locks.ReentrantReadWriteLock", "org.neo4j.index.internal.gbptree.Header.replace", "org.neo4j.index.internal.gbptree.Generation.generation", "org.neo4j.index.internal.gbptree.GenerationSafePointer.FIRST_UNSTABLE_GENERATION", "java.util.Arrays.asList", "java.io.Closeable", "org.neo4j.io.memory.NativeScopedBuffer", "java.util.concurrent.locks.ReadWriteLock", "org.neo4j.io.pagecache.PageCacheOpenOptions", "org.neo4j.io.pagecache.PagedFile.PF_SHARED_READ_LOCK", "org.apache.commons.lang3.mutable.MutableBoolean", "org.neo4j.index.internal.gbptree.RootLayer.TreeRootsVisitor", "org.neo4j.index.internal.gbptree.Generation.unstableGeneration", "org.neo4j.index.internal.gbptree.Header.Reader", "org.neo4j.common.DependencyResolver", "org.eclipse.collections.api.iterator.LongIterator", "org.neo4j.batchimport.api.Configuration", "org.neo4j.memory.MemoryTracker", "org.neo4j.kernel.impl.store.RecordStore", "java.lang.Integer.min", "org.neo4j.kernel.impl.store.record.RelationshipRecord", "org.neo4j.kernel.impl.store.record.RelationshipTypeTokenRecord", "java.lang.reflect.Method", "org.neo4j.consistency.report.ConsistencyReport.RelationshipTypeScanConsistencyReport", "org.neo4j.consistency.report.ConsistencyReport.LabelTokenConsistencyReport", "org.neo4j.annotations.documented.Warning", "org.neo4j.kernel.impl.store.record.RelationshipGroupRecord", "org.neo4j.kernel.impl.store.record.AbstractBaseRecord", "org.neo4j.consistency.store.synthetic.CountsEntry", "org.neo4j.consistency.store.synthetic.TokenScanDocument", "org.neo4j.consistency.report.ConsistencyReport.DynamicLabelConsistencyReport", "org.neo4j.consistency.report.ConsistencyReporter.ProxyFactory.create", "org.neo4j.kernel.impl.store.record.SchemaRecord", "org.neo4j.consistency.report.ConsistencyReport.RelationshipConsistencyReport", "org.neo4j.consistency.report.ConsistencyReport.IndexConsistencyReport", "java.lang.reflect.InvocationHandler", "org.neo4j.consistency.report.ConsistencyReport.RelationshipGroupConsistencyReport", "org.neo4j.kernel.impl.store.record.LabelTokenRecord", "org.neo4j.consistency.report.ConsistencyReport.RelationshipTypeConsistencyReport", "org.neo4j.kernel.impl.store.record.NodeRecord", "org.neo4j.consistency.report.ConsistencyReport.SchemaConsistencyReport", "org.neo4j.kernel.impl.store.record.DynamicRecord", "org.neo4j.consistency.report.ConsistencyReport.PropertyKeyTokenConsistencyReport", "org.neo4j.annotations.documented.DocumentedUtils", "org.neo4j.consistency.store.synthetic.IndexEntry", "org.neo4j.consistency.RecordType", "org.neo4j.consistency.report.ConsistencyReport.DynamicConsistencyReport", "java.lang.reflect.Proxy", "org.neo4j.kernel.impl.store.record.PropertyKeyTokenRecord", "org.neo4j.consistency.report.ConsistencyReport.PropertyConsistencyReport", "org.neo4j.consistency.report.ConsistencyReport.CountsConsistencyReport", "org.neo4j.consistency.report.ConsistencyReport.NodeConsistencyReport", "org.neo4j.consistency.report.ConsistencyReport.LabelScanConsistencyReport", "org.neo4j.kernel.impl.store.record.PropertyRecord", "org.neo4j.index.internal.gbptree.TreeNodeUtil.goTo", "java.util.Collections", "java.util.concurrent.ExecutionException", "java.util.Comparator", "java.util.BitSet", "org.neo4j.io.pagecache.CursorException", "java.lang.Math.toIntExact", "org.eclipse.collections.api.list.MutableList", "java.util.concurrent.ArrayBlockingQueue", "org.neo4j.index.internal.gbptree.GenerationSafePointerPair.pointer", "org.eclipse.collections.api.list.primitive.MutableLongList", "java.util.concurrent.TimeUnit", "java.util.List", "org.neo4j.index.internal.gbptree.TreeNodeUtil.isNode", "java.util.concurrent.ExecutorService", "org.neo4j.function.ThrowingFunction", "org.neo4j.util.concurrent.Futures", "org.eclipse.collections.impl.factory.primitive.LongLists", "org.neo4j.index.internal.gbptree.TreeNodeUtil.NO_OFFLOAD_ID", "java.util.concurrent.ThreadPoolExecutor", "java.util.Iterator", "java.util.ArrayList", "org.neo4j.internal.helpers.Exceptions", "java.util.concurrent.Future", "java.util.LinkedList", "org.neo4j.internal.helpers.progress.ProgressListener", "org.neo4j.internal.helpers.NamedThreadFactory", "org.neo4j.index.internal.gbptree.IdSpace.MIN_TREE_NODE_ID", "org.eclipse.collections.api.list.primitive.LongList", "org.eclipse.collections.impl.factory.Lists", "org.neo4j.index.internal.gbptree.PointerChecking.checkOutOfBounds", "java.util.concurrent.ConcurrentLinkedDeque", "org.neo4j.io.pagecache.PageCursorUtil", "org.neo4j.io.pagecache.PageCursor", "org.neo4j.io.pagecache.PageCursorUtil.goTo", "java.util.concurrent.ConcurrentLinkedQueue", "java.util.Queue", "java.time.Duration.ofMinutes", "org.neo4j.function.Factory", "org.neo4j.internal.id.range.ContinuousIdRange", "java.util.Optional", "org.neo4j.index.internal.gbptree.GBPTreeVisitor", "org.neo4j.index.internal.gbptree.GBPTree.NO_HEADER_READER", "org.eclipse.collections.api.set.ImmutableSet", "org.neo4j.common.EmptyDependencyResolver", "org.neo4j.index.internal.gbptree.Seeker", "org.neo4j.internal.id.IdValidator", "org.neo4j.configuration.GraphDatabaseInternalSettings", "org.neo4j.io.IOUtils.closeAllUnchecked", "org.neo4j.index.internal.gbptree.ValueHolder", "java.util.Collections.emptySet", "java.util.concurrent.locks.Lock", "org.neo4j.configuration.Config", "org.neo4j.io.pagecache.tracing.PageCacheTracer", "java.util.function.LongSupplier", "org.neo4j.index.internal.gbptree.TreeNodeLayoutFactory", "java.io.UncheckedIOException", "java.util.Set", "org.neo4j.collection.PrimitiveLongResourceCollections", "java.util.function.Predicate", "org.neo4j.internal.id.IdValidator.assertIdWithinMaxCapacity", "java.nio.file.OpenOption", "org.neo4j.index.internal.gbptree.GBPTree", "java.nio.file.Path", "java.util.Arrays", "java.util.concurrent.atomic.AtomicInteger", "org.neo4j.io.pagecache.PageCacheOpenOptions.MULTI_VERSIONED", "org.neo4j.internal.id.IdType", "java.nio.file.NoSuchFileException", "org.neo4j.index.internal.gbptree.StructureWriteLog.structureWriteLog", "java.io.PrintStream", "org.neo4j.index.internal.gbptree.MultiRootGBPTree", "org.neo4j.index.internal.gbptree.Layout", "org.neo4j.collection.PrimitiveLongResourceCollections.count", "java.util.concurrent.ConcurrentHashMap", "java.util.concurrent.atomic.AtomicBoolean", "java.lang.management.ManagementFactory", "org.neo4j.scheduler.JobHandle", "java.util.concurrent.TimeUnit.NANOSECONDS", "org.neo4j.scheduler.Group", "java.util.Objects.requireNonNull", "org.neo4j.scheduler.JobMonitoringParams.NOT_MONITORED", "java.lang.Math.max", "java.time.Duration", "java.lang.System.nanoTime", "java.lang.String.format", "java.lang.management.GarbageCollectorMXBean", "org.neo4j.scheduler.JobScheduler", "org.neo4j.util.Preconditions", "org.neo4j.util.VisibleForTesting", "org.neo4j.io.pagecache.PageCache", "org.neo4j.annotations.documented.ReporterFactory", "org.neo4j.internal.id.range.ArrayBasedRange", "org.neo4j.index.internal.gbptree.RecoveryCleanupWorkCollector", "org.apache.commons.lang3.mutable.MutableLong", "java.io.IOException", "org.neo4j.io.pagecache.tracing.FileFlushEvent", "org.eclipse.collections.impl.block.factory.Comparators.naturalOrder", "org.neo4j.io.pagecache.context.CursorContext", "org.neo4j.internal.helpers.progress.ProgressMonitorFactory", "org.neo4j.index.internal.gbptree.RecoveryCleanupWorkCollector.immediate", "java.util.concurrent.atomic.AtomicLong", "org.neo4j.io.pagecache.context.CursorContextFactory", "org.neo4j.io.fs.FileSystemAbstraction", "org.neo4j.internal.id.IdGenerator", "org.neo4j.internal.id.FreeIds", "org.neo4j.internal.id.IdSlotDistribution", "org.neo4j.configuration.GraphDatabaseSettings.DEFAULT_DATABASE_NAME", "java.util.concurrent.locks.ReentrantLock", "org.neo4j.index.internal.gbptree.TreeFileNotFoundException", "org.neo4j.internal.id.range.PageIdRange" ]
+    }, {
+      "name" : "AstRuleCtx",
+      "packageName" : "org.neo4j.cypher.internal.parser",
+      "extendedClasses" : [ "ParserRuleContext" ],
+      "implementedInterfaces" : [ ],
+      "methods" : [ {
+        "name" : "getTokens",
+        "visibility" : "public",
+        "methodCalls" : [ "getType", "emptyList", "get", "size", "getSymbol", "add" ]
+      }, {
+        "name" : "getRuleContexts",
+        "visibility" : "public",
+        "methodCalls" : [ "add", "isInstance", "emptyList", "cast", "get", "size" ]
+      }, {
+        "name" : "ast",
+        "visibility" : "public",
+        "methodCalls" : [ ]
+      }, {
+        "name" : "getChild",
+        "visibility" : "public",
+        "methodCalls" : [ "cast", "isInstance", "get", "size" ]
+      }, {
+        "name" : "getText",
+        "visibility" : "public",
+        "methodCalls" : [ "getText", "toString", "get", "append", "size" ]
+      }, {
+        "name" : "getToken",
+        "visibility" : "public",
+        "methodCalls" : [ "getToken", "getTokenStoreCursor", "getStringFor", "getRecordByCursor", "getIntId", "newRecord", "getNextToken", "isInternal", "get", "getSymbol", "getType", "size" ]
+      } ],
+      "imports" : [ "org.antlr.v4.runtime.ParserRuleContext", "java.util.Collections", "org.antlr.v4.runtime.tree.ParseTree", "org.antlr.v4.runtime.tree.TerminalNode", "java.util.List", "java.util.ArrayList" ]
+    } ]
+  }
+  

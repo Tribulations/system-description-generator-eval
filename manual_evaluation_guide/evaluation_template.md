@@ -39,9 +39,6 @@ Strengths:
 Weaknesses:
 [List of missing insights or unclear explanations]
 
-## Overall Assessment
-[Summary of the evaluation highlighting key observations]
-
 ## Normalization
 After evaluating a generated description Normalize manual scores from 1-5 scale to 0-1 scale using:
    ```

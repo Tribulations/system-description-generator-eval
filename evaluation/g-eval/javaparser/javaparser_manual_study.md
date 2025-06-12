@@ -10,7 +10,6 @@ JavaParser is an open-source parsing library written in Java. It allows interact
 
 JavaParser consists of 5 Main modules and 3 testing modules (identified by examining the project directory structure, analayze dependencies tool, and pom.xml file). Clear separation of concerns using a modular approach. Built around the javaparser-core module. 
 
-
 ## Key Modules and Components
 **Main modules:**
 - javaparser-core (Main module all other modules depend on)
@@ -47,7 +46,6 @@ com.github.javaparser.ast.visitor.Visitable
 - com.github.javaparser.ast.observer.Observable
 
 ## Relationships and Dependencies
-[Description of key relationships between components]
 
 1. **Core module**
 - The Core module has no dependencies on other modules
@@ -67,13 +65,8 @@ com.github.javaparser.ast.visitor.Visitable
 **Inheritance hierarchy**
 Node is the base class of the AST node hierarchy with concrete nodes such as ClassOrInterfaceDeclaration, MethodCallExpr, MethodDeclaration, and many others.
 
-## Important Implementation Details
-[Notable implementation aspects relevant to high-level understanding (If applicable)]
-
 ## References
 - [JavaParser: Visited](https://leanpub.com/javaparservisited)
 - [README](https://github.com/javaparser/javaparser/blob/master/doc/readme.md)
 - [Component diagram](https://github.com/javaparser/javaparser/blob/master/doc/component_diagram.puml)
 - [JavaParser GitHub](https://github.com/javaparser/javaparser)
-
----
